@@ -1,0 +1,420 @@
+- id: vocab.caveat
+  headword: caveat
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈkæv.i.æt/
+  audio_ref: null
+  definition_en: A formal warning, qualification, or proviso detailing specific stipulations, conditions, or limitations.
+  meaning_tr: şerh, ikaz, ihtiyati kayıt, çekince
+  collocations:
+    - text: with one major caveat
+      tr: önemli bir şerhle birlikte
+    - text: enter a caveat
+      tr: şerh düşmek
+    - text: crucial caveat
+      tr: kritik çekince
+  examples:
+    - en: The acquisition agreement was approved by the board with one important caveat regarding intellectual property rights.
+      tr: Satın alma anlaşması, yönetim kurulu tarafından fikri mülkiyet haklarına ilişkin önemli bir şerhle onaylandı.
+      context: Corporate M&A
+    - en: The financial projections look promising, but a crucial caveat is that interest rates remain stable through Q4.
+      tr: Finansal tahminler umut verici görünüyor, ancak kritik bir çekince faiz oranlarının 4. çeyrek boyunca sabit kalmasıdır.
+      context: Financial Forecasting
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Latince kökenli olan "caveat" ("uyarı/dikkat"), modern iş ve hukuk İngilizcesinde bir teklife
+        veya anlaşmaya eklenen "istisna, şart, çekince" anlamında tek bir kelime olarak kullanılır
+        ("with the caveat that...").
+      incorrect_example: We accepted the contract with a condition note.
+      correct_example: We accepted the contract with the caveat that milestones are met.
+  register: formal
+  topic_tags:
+    - business
+    - legal
+    - negotiation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.conundrum
+  headword: conundrum
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /kəˈnʌn.drəm/
+  audio_ref: null
+  definition_en: A confusing, intricate, and deeply difficult problem or question with no obvious or easy answer.
+  meaning_tr: içinden çıkılmaz bilmece, karmaşık açmaz, çözümü güç mesele
+  collocations:
+    - text: ethical conundrum
+      tr: etik açmaz
+    - text: face a conundrum
+      tr: bir açmazla karşı karşıya kalmak
+    - text: solve a conundrum
+      tr: karmaşık bir bilmeceyi çözmek
+  examples:
+    - en: Balancing user data privacy with real-time algorithmic personalization poses a modern ethical conundrum for tech leaders.
+      tr: Kullanıcı verisi gizliliği ile gerçek zamanlı algoritmik kişiselleştirmeyi dengelemek, teknoloji liderleri için modern bir etik açmaz yaratıyor.
+      context: Tech Ethics
+    - en: "The engineering team faced a complex conundrum: migrate immediately and risk downtime, or delay and accumulate technical debt."
+      tr: "Mühendislik ekibi karmaşık bir açmazla karşılaştı: hemen geçiş yapıp kesinti riskini göze almak ya da erteleyip teknik borç biriktirmek."
+      context: Engineering Strategy
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Conundrum" sıradan bir "problem" değildir; iki veya daha fazla çelişkili seçenek arasında
+        kalınan karmaşık çıkmazları ve ikilemleri ifade eder. Yüksek düzey yönetici sunumlarında
+        ve akademik yazılarda kullanılır.
+      incorrect_example: I cannot log in to my email; it is a big conundrum.
+      correct_example: I cannot log in to my email; it is a simple technical glitch.
+  register: formal
+  topic_tags:
+    - problem-solving
+    - ethics
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ramification
+  headword: ramification
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˌræm.ɪ.fɪˈkeɪ.ʃən/
+  audio_ref: null
+  definition_en: A complex, unwelcome, or multi-order consequence resulting from an action, policy, or decision.
+  meaning_tr: dolaylı sonuç, karmaşık yankı, geniş kapsamlı tesir
+  collocations:
+    - text: far-reaching ramifications
+      tr: geniş kapsamlı/uzun vadeli yankılar
+    - text: legal ramifications
+      tr: hukuki sonuçlar/yansımalar
+    - text: consider the ramifications
+      tr: olası sonuçları enine boyuna düşünmek
+  examples:
+    - en: Abruptly terminating the enterprise supplier contract could have catastrophic financial ramifications across the supply chain.
+      tr: Kurumsal tedarikçi sözleşmesini aniden feshetmek, tedarik zinciri genelinde felaket niteliğinde mali sonuçlar doğurabilir.
+      context: Supply Chain Management
+    - en: Corporate executives spent weeks analyzing the geopolitical ramifications of expanding operations into emerging regions.
+      tr: Şirket yöneticileri, gelişmekte olan bölgelerde faaliyetleri genişletmenin jeopolitik yansımalarını haftalarca analiz etti.
+      context: Geopolitical Strategy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Ramification" sözcüğü hemen hemen her zaman çoğul kullanılır ("ramifications").
+        Tekil kullanımı nadirdir ve daha çok botanikteki dallanmayı ifade eder. İş İngilizcesinde
+        "consider the ramifications" şeklinde çoğul kullanmak gerekir.
+      incorrect_example: We must analyze every single ramification of this single tax law.
+      correct_example: We must analyze the full ramifications of this tax law.
+  register: formal
+  topic_tags:
+    - academic-analytical
+    - strategy
+    - risk-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.bolster
+  headword: bolster
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈbəʊl.stər/
+  audio_ref: null
+  definition_en: To support, strengthen, or reinforce something that is vulnerable with additional resources, proof, or advocacy.
+  meaning_tr: güçlendirmek, desteklemek, tahkim etmek
+  collocations:
+    - text: bolster confidence
+      tr: güveni pekiştirmek
+    - text: bolster an argument
+      tr: bir savı/argümanı güçlendirmek
+    - text: bolster defenses
+      tr: savunmayı/güvenliği tahkim etmek
+  examples:
+    - en: The central bank intervened with foreign reserve sales to bolster the national currency against external shocks.
+      tr: Merkez bankası, ulusal para birimini dış şoklara karşı güçlendirmek için döviz rezervi satışlarıyla müdahalede bulundu.
+      context: Monetary Policy
+    - en: The data science team introduced benchmark comparisons from peer institutions to bolster their funding proposal.
+      tr: Veri bilimi ekibi, fonlama tekliflerini güçlendirmek için emsal kurumlardan kıyaslama verileri sundu.
+      context: Research Funding
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Bolster", sıradan "support" veya "help" fiillerine kıyasla zayıflayan veya takviyeye ihtiyaç duyan
+        bir yapıyı, argümanı ya da piyasayı dışarıdan ek güç vererek ayakta tutmayı ve canlandırmayı ifade eder.
+      incorrect_example: Can you bolster me open the office door?
+      correct_example: Can you help me open the office door?
+  register: formal
+  topic_tags:
+    - work-career
+    - strategy
+    - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.delineate
+  headword: delineate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /dɪˈlɪn.i.eɪt/
+  audio_ref: null
+  definition_en: To describe, portray, or set forth boundaries, roles, or relationships with precise detail and accuracy.
+  meaning_tr: sınırlarını çizmek, ayrıntılarıyla tanımlamak, açıkça ortaya koymak
+  collocations:
+    - text: clearly delineate
+      tr: sınırları açıkça çizmek
+    - text: delineate responsibilities
+      tr: sorumlulukları net olarak belirlemek
+    - text: delineate the scope
+      tr: kapsamı ayrıntılarıyla belirlemek
+  examples:
+    - en: The project charter must clearly delineate the respective responsibilities of the client and internal development teams.
+      tr: Proje tüzüğü, müşteri ile şirket içi geliştirme ekiplerinin karşılıklı sorumluluklarını açıkça ve ayrıntılarıyla tanımlamalıdır.
+      context: Project Governance
+    - en: The revised cloud service level agreement carefully delineates liability thresholds for unexpected hardware outages.
+      tr: Revize edilen bulut hizmet seviyesi sözleşmesi, beklenmeyen donanım kesintileri için sorumluluk eşiklerini dikkatle belirler.
+      context: Legal SLA Contracting
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Delineate" sıradan bir "describe" (tanımlamak) değildir; harita üzerinde sınır çizer gibi
+        kesin ve belirgin hatlar koymak anlamına gelir ("delineate boundaries").
+      incorrect_example: She delineated a funny joke during lunch.
+      correct_example: She told a funny joke during lunch.
+  register: formal
+  topic_tags:
+    - communication
+    - contracts
+    - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.reiterate
+  headword: reiterate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /riˈɪt.ər.eɪt/
+  audio_ref: null
+  definition_en: To state something again repeatedly or emphasize a critical point to ensure complete clarity.
+  meaning_tr: yinelemek, tekrar vurgulamak, defaatle belirtmek
+  collocations:
+    - text: reiterate commitment
+      tr: bağlılığı/taahhüdü yinelemek
+    - text: reiterate a point
+      tr: bir noktayı tekrar vurgulamak
+    - text: wish to reiterate
+      tr: bir kez daha belirtmek istemek
+  examples:
+    - en: In her closing remarks at the annual general meeting, the CEO reiterated the company's commitment to net-zero emissions.
+      tr: Yıllık olağan genel kuruldaki kapanış konuşmasında CEO, şirketin net sıfır emisyon taahhüdünü bir kez daha vurguladı.
+      context: Executive Address
+    - en: I would like to reiterate that all production changes require two independent peer sign-offs before deployment.
+      tr: Canlı ortamdaki tüm değişikliklerin dağıtımdan önce iki bağımsız eşdüzey onayı gerektirdiğini defaatle vurgulamak isterim.
+      context: Change Management Policy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Reiterate" zaten "tekrar söylemek" anlamına geldiğinden "reiterate again" demek anlatım
+        bozukluğudur (pleonasm/tautology). Doğru kullanım sadece "reiterate"dir.
+      incorrect_example: Let me reiterate again the importance of password security.
+      correct_example: Let me reiterate the importance of password security.
+  register: formal
+  topic_tags:
+    - communication
+    - leadership
+    - policy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.disparate
+  headword: disparate
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˈdɪs.pər.ət/
+  audio_ref: null
+  definition_en: Essentially different in kind, origin, or nature; so distinct as to make direct comparison impractical.
+  meaning_tr: birbirinden tamamen farklı, ayrışık, türdeş olmayan
+  collocations:
+    - text: disparate data sources
+      tr: birbirinden bağımsız/ayrışık veri kaynakları
+    - text: disparate groups
+      tr: türdeş olmayan gruplar
+    - text: unite disparate elements
+      tr: ayrışık unsurları bir araya getirmek
+  examples:
+    - en: The enterprise data lake consolidates logs from disparate legacy microservices into one searchable analytical warehouse.
+      tr: Kurumsal veri gölü, birbirinden tamamen farklı eski mikroservislerden gelen günlükleri aranabilir tek bir analitik ambarında birleştirir.
+      context: Data Engineering
+    - en: The mergers and acquisitions team struggled to integrate the disparate organizational cultures of the two software firms.
+      tr: Birleşme ve satın alma ekibi, iki yazılım firmasının birbiriyle taban tabana zıt organizasyon kültürlerini bütünleştirmekte zorlandı.
+      context: Post-Merger Integration
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Disparate", "desperate" (çaresiz, umutsuz) kelimesi ile yazım ve okunuş olarak karıştırılmamalıdır.
+        "Disparate" (/ˈdɪs.pər.ət/) "türdeş olmayan, birbirinden bağımsız", "desperate" (/ˈdes.pər.ət/) ise "çaresiz" demektir.
+      incorrect_example: We need a desperate data model for this analytics tool.
+      correct_example: We need to unify disparate data sources for this analytics tool.
+  register: academic
+  topic_tags:
+    - academic-analytical
+    - technology
+    - data
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ubiquitous
+  headword: ubiquitous
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /juːˈbɪk.wɪ.təs/
+  audio_ref: null
+  definition_en: Present, appearing, or encountered everywhere at the same time; omnipresent in everyday life or technology.
+  meaning_tr: her yerde bulunan, yaygın, her an karşımıza çıkan
+  collocations:
+    - text: become ubiquitous
+      tr: her yerde bulunur hale gelmek
+    - text: ubiquitous computing
+      tr: her yerde hazır bulunan bilişim
+    - text: almost ubiquitous
+      tr: neredeyse her yerde var olan
+  examples:
+    - en: Smartphones and wireless high-speed internet have become truly ubiquitous elements of contemporary urban life.
+      tr: Akıllı telefonlar ve kablosuz yüksek hızlı internet, çağdaş kent yaşamının gerçekten her yerde bulunan unsurları haline geldi.
+      context: Tech & Society
+    - en: Microservices architecture has become ubiquitous across Silicon Valley technology firms over the past decade.
+      tr: Mikroservis mimarisi, son on yılda Silikon Vadisi teknoloji şirketleri genelinde her yerde karşımıza çıkar hale geldi.
+      context: Industry Trends
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Ubiquitous", "everywhere" veya "common" sözcüklerinin en yüksek entelektüel ve akademik
+        eşdeğeridir. Hem teknolojide ("ubiquitous computing") hem de sosyolojik analizlerde yüksek prestij taşır.
+      incorrect_example: Traffic jam is very common and everywhere in Istanbul.
+      correct_example: Traffic congestion is virtually ubiquitous in metropolitan Istanbul.
+  register: academic
+  topic_tags:
+    - technology
+    - trends
+    - sociology
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.seamlessly
+  headword: seamlessly
+  cefr_level: C2
+  part_of_speech: adverb
+  phonetic: /ˈsiːm.ləs.li/
+  audio_ref: null
+  definition_en: In a smooth, continuous, and flawless manner, with no apparent seams, gaps, or operational interruptions.
+  meaning_tr: kesintisiz, pürüzsüz biçimde, entegre şekilde
+  collocations:
+    - text: integrate seamlessly
+      tr: pürüzsüz biçimde entegre olmak
+    - text: transition seamlessly
+      tr: kesintisiz geçiş yapmak
+    - text: work seamlessly together
+      tr: birbiriyle kusursuz uyum içinde çalışmak
+  examples:
+    - en: The single sign-on authentication module integrates seamlessly with the enterprise corporate Active Directory.
+      tr: Tek oturum açma (SSO) kimlik doğrulama modülü, kurumsal Active Directory altyapısıyla pürüzsüz biçimde entegre olur.
+      context: Enterprise Identity
+    - en: Thanks to automated container orchestration, user traffic transitioned seamlessly to the backup cluster during maintenance.
+      tr: Otomatik konteyner orkestrasyonu sayesinde, bakım sırasında kullanıcı trafiği yedek kümeye kesintisiz ve pürüzsüz şekilde aktarıldı.
+      context: Cloud High Availability
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Seamlessly" iş ve yazılım dünyasında "integrate" veya "transition" fiilleriyle neredeyse
+        ayrılmaz bir kalıptır ("integrate seamlessly"). "Smoothly" yerine sistem ve arayüz uyumunu anlatırken
+        "seamlessly" profesyonel bir standarttır.
+      incorrect_example: The new module connected with zero problems and without lines.
+      correct_example: The new module integrated seamlessly with our existing platform.
+  register: formal
+  topic_tags:
+    - technology
+    - architecture
+    - operations
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.at-stake
+  headword: at stake
+  cefr_level: C2
+  part_of_speech: phrase
+  phonetic: /æt steɪk/
+  audio_ref: null
+  definition_en: At risk of being lost, damaged, or won; in jeopardy or crucially dependent on the outcome of an event.
+  meaning_tr: tehlikede, söz konusu olan, riske girmiş
+  collocations:
+    - text: reputation at stake
+      tr: itibarı tehlikede / söz konusu
+    - text: high stakes
+      tr: yüksek riskler/kazançlar
+    - text: what is at stake
+      tr: söz konusu olan şey
+  examples:
+    - en: With millions of dollars in enterprise contract renewals at stake, the executive leadership team intervened directly.
+      tr: Milyonlarca dolarlık kurumsal sözleşme yenilemeleri tehlikedeyken, üst yönetim ekibi doğrudan müdahale etti.
+      context: Executive Negotiation
+    - en: When national security and critical energy infrastructure are at stake, cybersecurity compliance cannot be compromised.
+      tr: Ulusal güvenlik ve kritik enerji altyapısı söz konusu olduğunda, siber güvenlik uyumluluğundan ödün verilemez.
+      context: Critical Infrastructure
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "At stake" deyimi Türkçedeki "söz konusu olmak" veya "tehlikede/masada olmak" ifadesini karşılar.
+        "In stake" veya "on stake" denmez; daima "at stake" şeklinde kullanılır.
+      incorrect_example: The future of our startup is on stake in this pitch.
+      correct_example: The future of our startup is at stake in this pitch.
+  register: formal
+  topic_tags:
+    - business
+    - risk-management
+    - negotiation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.play-devils-advocate
+  headword: play devil's advocate
+  cefr_level: C2
+  part_of_speech: idiom
+  phonetic: /pleɪ ˈdev.əlz ˈæd.və.kət/
+  audio_ref: null
+  definition_en: To argue against an idea, proposal, or prevailing consensus purely for the sake of exploring its flaws and testing its strength.
+  meaning_tr: şeytanın avukatlığını yapmak, karşıt görüşü savunarak fikri sınamak
+  collocations:
+    - text: play devil's advocate in a meeting
+      tr: toplantıda şeytanın avukatlığını yapmak
+    - text: just to play devil's advocate
+      tr: sadece farklı bir açıdan sorgulamak adına
+  examples:
+    - en: Just to play devil's advocate, what happens to our margins if key raw material costs surge by forty percent next quarter?
+      tr: Sadece karşıt olasılığı sınamak adına soruyorum, önümüzdeki çeyrekte ana hammadde maliyetleri yüzde kırk artarsa kâr marjlarımıza ne olur?
+      context: Strategic Risk Assessment
+    - en: During the design critique, the staff architect intentionally played devil's advocate to stress-test our caching strategy.
+      tr: Tasarım eleştirisi sırasında kıdemli mimar, önbellekleme stratejimizi stres testine tabi tutmak için bilinçli olarak şeytanın avukatlığını yaptı.
+      context: Architectural Review
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede de aynı deyim ("şeytanın avukatı") kullanılır. Ancak İngilizcede bu deyim tartışmayı
+        sabote etmek için değil, entelektüel ve analitik titizlikle kör noktaları ortaya çıkarmak
+        için yapıcı bir toplantı tekniği olarak çok sık kullanılır ("allow me to play devil's advocate").
+      incorrect_example: I want to be the advocate of the devil.
+      correct_example: Let me play devil's advocate for a moment.
+  register: formal
+  topic_tags:
+    - communication
+    - critical-thinking
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1

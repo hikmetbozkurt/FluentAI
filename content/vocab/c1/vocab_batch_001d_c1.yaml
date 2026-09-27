@@ -1,0 +1,489 @@
+- id: vocab.accountability
+  headword: accountability
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /əˌkaʊn.təˈbɪl.ə.ti/
+  audio_ref: null
+  definition_en: The obligation and willingness of an individual or organization to accept responsibility for actions, decisions, and outcomes.
+  meaning_tr: hesap verebilirlik, sorumluluk üstlenme
+  collocations:
+    - text: mutual accountability
+      tr: karşılıklı hesap verebilirlik
+    - text: clear accountability
+      tr: net sorumluluk / hesap verebilirlik
+    - text: hold someone to accountability
+      tr: birini sorumlu tutmak
+    - text: culture of accountability
+      tr: hesap verebilirlik kültürü
+  examples:
+    - en: "Establishing single-threaded ownership ensures clear individual accountability for production system availability."
+      tr: "Tek bir sorumlu belirlemek, canlı sistem erişilebilirliği için net bir bireysel hesap verebilirlik sağlar."
+      context: Engineering Management
+    - en: "A mature blameless postmortem culture fosters collective accountability without instilling fear of failure."
+      tr: "Olgun bir suçlamasız kaza inceleme kültürü, başarısızlık korkusu aşılamadan kolektif hesap verebilirliği teşvik eder."
+      context: Site Reliability Engineering
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Accountability" muhasebe ("accounting") ile değil; bir yetki veya görevin sonucunda hesap verme ve sorumluluğu üstlenme ilkesiyle ilgilidir. "Responsibility" (görev sorumluluğu) ile "accountability" (sonuçtan hesap verme) kurumsal dilde ayırt edilir.
+      incorrect_example: "Our finance department does the accountability for invoices."
+      correct_example: "Our finance department manages invoice accounting."
+  register: business
+  topic_tags:
+    - leadership
+    - governance
+    - ownership
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.complexity
+  headword: complexity
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /kəmˈplek.sə.ti/
+  audio_ref: null
+  definition_en: The state or quality of having many interconnected parts or aspects, making comprehension or management challenging.
+  meaning_tr: karmaşıklık, giriftlik
+  collocations:
+    - text: inherent complexity
+      tr: doğasında olan karmaşıklık
+    - text: reduce complexity
+      tr: karmaşıklığı azaltmak
+    - text: manage complexity
+      tr: karmaşıklığı yönetmek
+    - text: architectural complexity
+      tr: mimari karmaşıklık
+  examples:
+    - en: "Microservice sprawl often introduces accidental operational complexity that outweighs its modular benefits."
+      tr: "Kontrolsüz mikroservis artışı genellikle modüler faydalarından daha ağır basan arızi operasyonel karmaşıklığa yol açar."
+      context: Distributed Systems
+    - en: "Domain-driven design provides a structured methodology for managing inherent domain complexity."
+      tr: "Alana dayalı tasarım, alanın doğasında bulunan karmaşıklığı yönetmek için yapılandırılmış bir metodoloji sunar."
+      context: Software Design
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Complexity" (karmaşıklık/giriftlik) sözcüğü psikolojik bir aşağılık duygusu ("inferiority complex") anlamına gelmez; sistem veya düşüncelerin çok katmanlı yapısını ifade eder.
+      incorrect_example: "The developer has an ego complexity so he writes bad code."
+      correct_example: "The codebase has immense structural complexity that slows down feature delivery."
+  register: formal
+  topic_tags:
+    - architecture
+    - technology
+    - systems
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.trajectory
+  headword: trajectory
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /trəˈdʒek.tər.i/
+  audio_ref: null
+  definition_en: The curved path of an object through space, or the progressive course and directional path of growth or development.
+  meaning_tr: yörünge, gidişat, gelişim çizgisi
+  collocations:
+    - text: career trajectory
+      tr: kariyer çizgisi / gidişatı
+    - text: growth trajectory
+      tr: büyüme çizgisi / trendi
+    - text: upward trajectory
+      tr: yükseliş trendi / eğrisi
+    - text: alter the trajectory
+      tr: gidişatı değiştirmek
+  examples:
+    - en: "The recent round of venture capital funding placed the artificial intelligence startup on an exponential growth trajectory."
+      tr: "Son risk sermayesi finansman turu, yapay zekâ girişimini katlanarak büyüyen bir gidişat çizgisine oturttu."
+      context: Venture Capital
+    - en: "Mentoring junior engineers early substantially improves their long-term professional trajectory."
+      tr: "Kıdemsiz mühendislere erkenden mentorluk yapmak, onların uzun vadeli mesleki gelişim çizgilerini kayda değer biçimde iyileştirir."
+      context: Engineering Leadership
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Trajectory" fiziksel mermi yörüngesinin yanı sıra profesyonel iş dünyasında bir şirketin, kariyerin veya metriğin geleceğe dönük rotasını/gidişatını tanımlamak için çok prestijli bir C1 terimidir.
+      incorrect_example: "Our project has a straight trajectory with no road."
+      correct_example: "Our product followed an impressive growth trajectory throughout the past fiscal year."
+  register: business
+  topic_tags:
+    - growth
+    - progress
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.divergence
+  headword: divergence
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /daɪˈvɜː.dʒəns/
+  audio_ref: null
+  definition_en: The process of drawing apart, moving in different directions, or developing significant differences from a common baseline.
+  meaning_tr: ıraksama, farklılaşma, ayrışma
+  collocations:
+    - text: divergence of opinions
+      tr: görüş ayrılığı
+    - text: noticeable divergence
+      tr: belirgin ayrışma
+    - text: divergence between
+      tr: arasındaki ayrışma
+  examples:
+    - en: "Code review surfaced a noticeable divergence between the mobile and web client authentication flows."
+      tr: "Kod incelemesi, mobil ve web istemci kimlik doğrulama akışları arasında belirgin bir ayrışmayı ortaya çıkardı."
+      context: API Standardization
+    - en: "There was a sharp divergence of opinions among board members regarding the overseas expansion timeline."
+      tr: "Yurtdışı genişleme takvimi konusunda yönetim kurulu üyeleri arasında keskin bir görüş ayrılığı vardı."
+      context: Corporate Governance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki olgu veya görüş arasındaki ayrışmayı ifade ederken "divergence between X and Y" kullanılır; "from" ise bir standarttan sapmayı belirtir: "divergence from the standard".
+      incorrect_example: "There is a divergence with the original architecture design."
+      correct_example: "There is a divergence from the original architecture design."
+  register: academic
+  topic_tags:
+    - analysis
+    - differentiation
+    - variance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.oversight
+  headword: oversight
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈəʊ.və.saɪt/
+  audio_ref: null
+  definition_en: Regulatory supervision and governance; or an unintentional mistake resulting from failure to notice something.
+  meaning_tr: "gözetim, denetim; (diğer anlamı: gözden kaçırma, sehven yapılan hata)"
+  collocations:
+
+    - text: regulatory oversight
+      tr: mevzuat denetimi / gözetimi
+    - text: operational oversight
+      tr: operasyonel gözetim
+    - text: unfortunate oversight
+      tr: talihsiz bir gözden kaçırma
+    - text: due to an oversight
+      tr: bir dikkatsizlik sonucu / sehven
+  examples:
+    - en: "The independent audit committee provides vital corporate oversight to ensure ethical compliance."
+      tr: "Bağımsız denetim komitesi, etik uyumu güvenceye almak için hayati kurumsal gözetim sağlar."
+      context: Corporate Governance
+    - en: "Due to an unfortunate clerical oversight, the security certificate was not renewed before its expiration date."
+      tr: "Talihsiz bir gözden kaçırma nedeniyle güvenlik sertifikası son kullanma tarihinden önce yenilenmedi."
+      context: Incident Retrospective
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Oversight" çift zıt anlamlı (contronym) bir sözcüktür: Hem "dikkatli denetleme/gözetim" (supervision) hem de "dikkatsizlikten gözden kaçırma" (lapse/omission) anlamına gelir. Bağlam dikkatle değerlendirilmelidir.
+      incorrect_example: "The manager made an oversight to watch the employees work."
+      correct_example: "The manager provided rigorous oversight while reviewing the team's pull requests."
+  register: formal
+  topic_tags:
+    - governance
+    - compliance
+    - quality-assurance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.curtail
+  headword: curtail
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /kəˈteɪl/
+  audio_ref: null
+  definition_en: To reduce in extent, duration, or quantity; to impose an intentional restriction on an activity.
+  meaning_tr: kısıtlamak, kısmak, sınırlandırmak, kısaltmak
+  collocations:
+    - text: curtail spending
+      tr: harcamaları kısmak
+    - text: curtail operations
+      tr: faaliyetleri kısıtlamak
+    - text: severely curtail
+      tr: ciddi şekilde kısıtlamak
+  examples:
+    - en: "The executive committee decided to curtail discretionary marketing expenditure to protect operational cash reserves."
+      tr: "İcra komitesi, operasyonel nakit rezervlerini korumak için ihtiyari pazarlama harcamalarını kısmaya karar verdi."
+      context: Financial Prudence
+    - en: "Unexpected hardware delivery delays severely curtailed our ability to scale compute clusters on time."
+      tr: "Beklenmeyen donanım teslimat gecikmeleri, işlem kümelerini zamanında ölçeklendirme kabiliyetimizi ciddi şekilde kısıtladı."
+      context: Data Center Operations
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Curtail" sözcüğünün perde ("curtain") ile hiçbir bağı yoktur. Harcamaları, özgürlükleri veya süreçleri kısıtlamak ve kısmak anlamına gelen resmi bir fiildir.
+      incorrect_example: "Please curtail the window so the sun does not come in."
+      correct_example: "Management had to curtail project budgets to stay solvent."
+  register: formal
+  topic_tags:
+    - financial-control
+    - restriction
+    - budget
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.encompass
+  headword: encompass
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ɪnˈkʌm.pəs/
+  audio_ref: null
+  definition_en: To include or comprehend a wide range of subjects, areas, ideas, or entities comprehensively.
+  meaning_tr: kapsamak, içine almak, kucaklamak
+  collocations:
+    - text: encompass a wide range
+      tr: geniş bir yelpazeyi kapsamak
+    - text: fully encompass
+      tr: tamamen kapsamak
+    - text: encompass various disciplines
+      tr: çeşitli disiplinleri içermek
+  examples:
+    - en: "The proposed enterprise architecture framework encompasses cloud infrastructure, data governance, and edge security."
+      tr: "Önerilen kurumsal mimari çerçevesi; bulut altyapısını, veri yönetişimini ve uç güvenliği kapsamaktadır."
+      context: Enterprise Architecture
+    - en: "Our quarterly performance review encompasses both technical delivery metrics and peer collaboration feedback."
+      tr: "Üç aylık performans değerlendirmemiz hem teknik teslimat ölçütlerini hem de meslektaş iş birliği geri bildirimlerini kapsar."
+      context: HR Evaluation
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Encompass" sözcüğü pusula ("compass") ile aynı kökten gelse de bir alana yönelmek değil, sınırları içine alarak "kapsamak" demektir. "Include" fiilinin daha bütüncül ve resmi karşılığıdır.
+      incorrect_example: "We used an encompass to find our direction on the mountain."
+      correct_example: "The comprehensive training syllabus encompasses all facets of backend engineering."
+  register: formal
+  topic_tags:
+    - scope
+    - comprehensive
+    - coverage
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.orchestrate
+  headword: orchestrate
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈɔː.kɪ.streɪt/
+  audio_ref: null
+  definition_en: To coordinate, arrange, or manage the elements of a complex situation or distributed systems to achieve a desired result.
+  meaning_tr: koordine etmek, ustalıkla organize etmek / yönetmek
+  collocations:
+    - text: orchestrate a campaign
+      tr: bir kampanyayı organize etmek
+    - text: carefully orchestrate
+      tr: dikkatle koordine etmek
+    - text: orchestrate container workloads
+      tr: konteyner iş yüklerini koordine etmek
+  examples:
+    - en: "Kubernetes is widely utilized to orchestrate containerized microservices across dynamic cloud infrastructure."
+      tr: "Kubernetes, dinamik bulut altyapısında konteynerleştirilmiş mikroservisleri koordine etmek için yaygın olarak kullanılır."
+      context: Cloud Infrastructure
+    - en: "The program manager carefully orchestrated the multi-team deployment to ensure zero downtime."
+      tr: "Program yöneticisi, sıfır kesinti süresi sağlamak amacıyla çoklu ekip dağıtımını dikkatle koordine etti."
+      context: Release Engineering
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Orchestrate" müzikte enstrüman düzenlemek anlamına gelse de, kurumsal ve teknolojik dünyada karmaşık süreçleri, sistemleri veya işleri "ustalıkla koordine etmek" anlamında bir metafor olarak çok yaygındır.
+      incorrect_example: "He orchestrated the violin during the rock concert."
+      correct_example: "The chief architect orchestrated the migration of five legacy systems simultaneously."
+  register: formal
+  topic_tags:
+    - orchestration
+    - management
+    - coordination
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.pioneer
+  headword: pioneer
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˌpaɪəˈnɪər/
+  audio_ref: null
+  definition_en: To develop, introduce, or be among the first to explore and implement a new method, technology, or approach.
+  meaning_tr: öncülük etmek, çığır açmak, ilk geliştiren olmak
+  collocations:
+    - text: pioneer a technique
+      tr: bir tekniğe öncülük etmek
+    - text: pioneer new methods
+      tr: yeni yöntemler geliştirmede öncü olmak
+    - text: successfully pioneer
+      tr: başarıyla öncülük etmek
+  examples:
+    - en: "The research lab pioneered an innovative approach to reducing battery consumption in mobile neural inference."
+      tr: "Araştırma laboratuvarı, mobil yapay zekâ çıkarımında pil tüketimini azaltmaya yönelik yenilikçi bir yaklaşıma öncülük etti."
+      context: AI Innovation
+    - en: "Early fintech startups pioneered automated micro-investing platforms for retail consumers."
+      tr: "İlk fintek girişimleri, bireysel tüketiciler için otomatik mikro yatırım platformlarına öncülük etti."
+      context: Financial Technology
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Pioneer" Türkçede genellikle yalnızca "öncü" (isim) olarak bilinir; ancak ileri düzey İngilizcede doğrudan bir yeniliğe "öncülük etmek / ilk kez geliştirmek" anlamında aktif bir fiildir.
+      incorrect_example: "They were making pioneer of the electric car revolution."
+      correct_example: "They pioneered the modern electric vehicle revolution."
+  register: formal
+  topic_tags:
+    - innovation
+    - technology
+    - breakthrough
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.burgeoning
+  headword: burgeoning
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈbɜː.dʒən.ɪŋ/
+  audio_ref: null
+  definition_en: Beginning to grow, expand, or develop rapidly and successfully in a flourishing manner.
+  meaning_tr: hızla gelişen, filizlenen, süratle büyüyen
+  collocations:
+    - text: burgeoning market
+      tr: hızla büyüyen pazar
+    - text: burgeoning industry
+      tr: filizlenen sanayi
+    - text: burgeoning demand
+      tr: hızla artan talep
+  examples:
+    - en: "Venture capital firms poured billions into the burgeoning generative artificial intelligence sector."
+      tr: "Risk sermayesi şirketleri, hızla büyüyen üretken yapay zekâ sektörüne milyarlarca dolar akıttı."
+      context: Venture Capital
+    - en: "Meeting the burgeoning demand for cloud engineering talent requires continuous corporate reskilling."
+      tr: "Bulut mühendisliği yeteneğine yönelik hızla artan talebi karşılamak, sürekli kurumsal yeniden beceri kazandırma gerektirir."
+      context: Tech Industry Talent
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Burgeoning" sıfatının burjuvazi ("bourgeoisie") ile hiçbir ilgisi yoktur; bir pazarın, talebin veya sektörün "hızla serpilip gelişmesi" anlamına gelir.
+      incorrect_example: "He belongs to the burgeoning class because he is rich."
+      correct_example: "The country witnessed a burgeoning demand for clean renewable energy."
+  register: formal
+  topic_tags:
+    - growth
+    - market-trends
+    - economic-expansion
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.imperceptible
+  headword: imperceptible
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˌɪm.pəˈsep.tə.bəl/
+  audio_ref: null
+  definition_en: So subtle, slight, gradual, or small as not to be easily perceived or noticed by the senses or mind.
+  meaning_tr: fark edilmez, hissedilmeyecek kadar az, sezilmez
+  collocations:
+    - text: almost imperceptible
+      tr: neredeyse fark edilmez
+    - text: imperceptible difference
+      tr: sezilmez fark
+    - text: imperceptible change
+      tr: fark edilemeyecek kadar küçük değişim
+  examples:
+    - en: "The database query optimization reduced end-to-end latency by an almost imperceptible five milliseconds."
+      tr: "Veritabanı sorgu optimizasyonu, uçtan uca gecikmeyi neredeyse fark edilmeyecek beş milisaniye kadar azalttı."
+      context: Performance Tuning
+    - en: "Gradual code degradation is often imperceptible until catastrophic production regressions suddenly emerge."
+      tr: "Koddaki kademeli bozulma, canlı ortamda aniden feci regresyonlar ortaya çıkana kadar genellikle fark edilmez."
+      context: Code Quality
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Imperceptible" (algılanamaz/sezilmez), "impossible" (imkânsız) ile karıştırılmamalıdır. Bir şey mevcuttur ve gerçekleşmektedir ancak o kadar incedir ki çıplak gözle veya anında fark edilmez.
+      incorrect_example: "Fixing this catastrophic bug is imperceptible for us."
+      correct_example: "Fixing this catastrophic bug is impossible within the current sprint timeline."
+  register: academic
+  topic_tags:
+    - precision
+    - nuance
+    - perception
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.boil-down-to
+  headword: boil down to
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /bɔɪl daʊn tuː/
+  audio_ref: null
+  definition_en: To have something as its most essential, fundamental, or underlying core factor or explanation.
+  meaning_tr: -e dayanmak, özetle -den ibaret olmak, temelinde - yatmak
+  collocations:
+    - text: boil down to a simple question
+      tr: basit bir soruya indirgenmek
+    - text: it all boils down to
+      tr: her şey sonuçta -e dayanır
+    - text: boils down to trust
+      tr: temelinde güven yatar
+  examples:
+    - en: "When scaling distributed databases, the core architectural challenge ultimately boils down to network latency."
+      tr: "Dağıtık veritabanlarını ölçeklendirirken temel mimari zorluk nihayetinde ağ gecikmesine dayanır."
+      context: Distributed Systems
+    - en: "Most product adoption failures boil down to poor user onboarding rather than a lack of platform features."
+      tr: "Ürün benimseme başarısızlıklarının çoğu, platform özelliklerinin eksikliğinden ziyade zayıf kullanıcı adaptasyonuna dayanır."
+      context: Product Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Boil down to" mecazi bir deyimsel fiildir; kelimenin tencerede su kaynatmakla ilgisi yoktur. Karmaşık bir durumu en yalın ve öz haline indirgeyerek "işin özü şudur" demek için kullanılır.
+      incorrect_example: "We boiled down the soup until the problem vanished."
+      correct_example: "The entire discussion boils down to whether we have the engineering capacity to deliver."
+  register: general
+  topic_tags:
+    - analytical-thinking
+    - simplification
+    - core-factors
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.phase-in
+  headword: phase in
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /feɪz ɪn/
+  audio_ref: null
+  definition_en: To introduce, deploy, or adopt a new system, regulation, or technology gradually in planned stages.
+  meaning_tr: kademeli olarak devreye sokmak / uygulamaya koymak
+  collocations:
+    - text: phase in new regulations
+      tr: yeni düzenlemeleri kademeli olarak uygulamak
+    - text: gradually phase in
+      tr: aşamalı olarak devreye almak
+    - text: plan to phase in
+      tr: devreye sokmayı planlamak
+  examples:
+    - en: "The engineering team will phase in the new OAuth2 authentication service across twenty percent of traffic initially."
+      tr: "Mühendislik ekibi, yeni OAuth2 kimlik doğrulama servisini başlangıçta trafiğin yüzde yirmisinde kademeli olarak devreye sokacak."
+      context: Canary Deployment
+    - en: "Enterprises typically phase in mandatory multifactor authentication over several successive quarters."
+      tr: "Büyük şirketler zorunlu çok faktörlü kimlik doğrulamayı genellikle birbirini izleyen birkaç çeyrek boyunca kademeli olarak uygulamaya koyar."
+      context: Security Compliance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Phase in" (kademeli olarak yürürlüğe sokmak), "phase out" (kademeli olarak yürürlükten kaldırmak) fiilinin tam zıddıdır. İki yönün edatları ("in" vs "out") karıştırılmamalıdır.
+      incorrect_example: "We will phase in the obsolete server by turning it off permanently."
+      correct_example: "We will phase out the obsolete server and phase in the modern cloud service."
+  register: business
+  topic_tags:
+    - transition
+    - rollout
+    - implementation
+  related_ids: []
+  status: APPROVED
+  version: 1

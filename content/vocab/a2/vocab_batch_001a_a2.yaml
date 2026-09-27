@@ -1,0 +1,230 @@
+- id: vocab.customer
+  headword: customer
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈkʌs.tə.mər/
+  audio_ref: null
+  definition_en: A person or organization that buys goods or services from a store or business.
+  meaning_tr: müşteri, alıcı
+  collocations:
+    - text: regular customer
+      tr: düzenli müşteri
+    - text: customer service
+      tr: müşteri hizmetleri
+    - text: satisfy a customer
+      tr: müşteriyi memnun etmek
+  examples:
+    - en: The store manager always greets every customer with a friendly smile.
+      tr: Mağaza müdürü her müşteriyi her zaman güler yüzle karşılar.
+      context: Retail Operations
+    - en: We received positive feedback from a new customer regarding our fast delivery.
+      tr: Hızlı teslimatımızla ilgili olarak yeni bir müşteriden olumlu geri bildirim aldık.
+      context: Customer Support
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Customer" bireysel veya perakende alışveriş yapan müşterileri ifade eder.
+        Profesyonel danışmanlık, hukuk veya kurumsal B2B hizmet alan müşteriler için
+        genellikle "client" sözcüğü tercih edilir.
+      incorrect_example: Our law firm has a new customer today.
+      correct_example: Our law firm has a new client today.
+  register: general
+  topic_tags:
+    - business
+    - retail
+    - customer-service
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.receipt
+  headword: receipt
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /rɪˈsiːt/
+  audio_ref: null
+  definition_en: A printed or electronic document acknowledging that money or goods have been received.
+  meaning_tr: fiş, makbuz, alındı belgesi
+  collocations:
+    - text: keep the receipt
+      tr: fişi saklamak
+    - text: issue a receipt
+      tr: makbuz kesmek / düzenlemek
+    - text: tax receipt
+      tr: vergi makbuzu
+  examples:
+    - en: Please keep your sales receipt in case you want to exchange the item later.
+      tr: Ürünü daha sonra değiştirmek istemeniz ihtimaline karşı lütfen satış fişinizi saklayın.
+      context: In-Store Shopping
+    - en: The accounting department needs the hotel receipt to process your travel expenses.
+      tr: Muhasebe departmanı seyahat masraflarınızı işleme almak için otel faturasına/makbuzuna ihtiyaç duyuyor.
+      context: Expense Reporting
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Receipt" kelimesindeki "p" harfi okunmaz (/rɪˈsiːt/). Ayrıca Türkçedeki yemek
+        tarifi ("recipe" - /ˈres.ə.pi/) ile sıkça karıştırılır. Fiş/makbuz için "receipt",
+        yemek tarifi için "recipe" kullanılır.
+      incorrect_example: She gave me a delicious receipt for lentil soup.
+      correct_example: She gave me a delicious recipe for lentil soup.
+  register: general
+  topic_tags:
+    - shopping
+    - expenses
+    - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.borrow
+  headword: borrow
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈbɒr.əʊ/
+  audio_ref: null
+  definition_en: To take and use something belonging to someone else with the intention of returning it.
+  meaning_tr: ödünç almak, borç almak
+  collocations:
+    - text: borrow money
+      tr: borç para almak
+    - text: borrow a book
+      tr: ödünç kitap almak
+    - text: borrow from someone
+      tr: birinden ödünç almak
+  examples:
+    - en: Can I borrow your laptop charger for an hour while mine is at home?
+      tr: Benimki evdeyken laptop şarj aletini bir saatliğine ödünç alabilir miyim?
+      context: Office Courtesy
+    - en: The startup had to borrow funds from a regional bank to purchase new machinery.
+      tr: Girişim, yeni makineler satın almak için bölgesel bir bankadan kredi/borç almak zorunda kaldı.
+      context: Small Business Finance
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "ödünç vermek" ve "ödünç almak" karıştırılabilir. "Borrow", başkasından geçici
+        olarak bir şeyi almaktır ("borrow from"). Birine geçici olarak vermek ise "lend" fiilidir ("lend to").
+      incorrect_example: Can you borrow me your car this weekend?
+      correct_example: Can you lend me your car this weekend?
+  register: general
+  topic_tags:
+    - daily-life
+    - personal-finance
+    - courtesy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.convenient
+  headword: convenient
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /kənˈviː.ni.ənt/
+  audio_ref: null
+  definition_en: Fitting in well with a person's needs, activities, or easy to use without causing difficulty.
+  meaning_tr: elverişli, uygun, zahmetsiz
+  collocations:
+    - text: convenient time
+      tr: uygun zaman
+    - text: convenient location
+      tr: elverişli konum
+    - text: highly convenient
+      tr: son derece pratik/uygun
+  examples:
+    - en: Is tomorrow afternoon at three convenient for our weekly check-in call?
+      tr: Yarın öğleden sonra saat üç haftalık değerlendirme görüşmemiz için uygun mu?
+      context: Meeting Scheduling
+    - en: The new metro station makes commuting to our corporate office very convenient.
+      tr: Yeni metro istasyonu, şirket ofisimize gidip gelmeyi oldukça pratik ve kolay hale getiriyor.
+      context: Commuting
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "Uygun musun?" ifadesi doğrudan "Are you convenient?" şeklinde çevrilmez.
+        "Convenient" insanlar için değil durumlar, saatler ve yerler için kullanılır:
+        "Is tomorrow convenient for you?" veya insan için "Are you free / available?".
+      incorrect_example: Are you convenient for a short meeting right now?
+      correct_example: Is it convenient for you to have a short meeting right now?
+  register: general
+  topic_tags:
+    - daily-life
+    - scheduling
+    - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.carefully
+  headword: carefully
+  cefr_level: A2
+  part_of_speech: adverb
+  phonetic: /ˈkeə.fəl.i/
+  audio_ref: null
+  definition_en: With great attention, caution, or concern to avoid mistakes, harm, or damage.
+  meaning_tr: dikkatle, özenle, dikkatlice
+  collocations:
+    - text: listen carefully
+      tr: dikkatlice dinlemek
+    - text: read carefully
+      tr: dikkatle okumak
+    - text: tread carefully
+      tr: temkinli davranmak
+  examples:
+    - en: Please read the software installation instructions carefully before clicking accept.
+      tr: Kabul et butonuna tıklamadan önce lütfen yazılım kurulum talimatlarını dikkatle okuyun.
+      context: Software Setup
+    - en: The technician handled the sensitive optical equipment very carefully during transport.
+      tr: Teknisyen, taşıma sırasında hassas optik ekipmanı son derece özenle taşıdı.
+      context: Equipment Handling
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        Eylemlerin nasıl yapıldığını belirtirken sıfat olan "careful" değil, zarf olan "carefully"
+        kullanılmalıdır. "Drive careful" konuşma dilinde duyulsa da standart İngilizcede "drive carefully" doğrudur.
+      incorrect_example: You should check the financial report careful.
+      correct_example: You should check the financial report carefully.
+  register: general
+  topic_tags:
+    - daily-life
+    - quality
+    - precision
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.look-for
+  headword: look for
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /lʊk fɔːr/
+  audio_ref: null
+  definition_en: To search for or attempt to find someone or something that is lost or needed.
+  meaning_tr: aramak, bulmaya çalışmak
+  collocations:
+    - text: look for a job
+      tr: iş aramak
+    - text: look for a solution
+      tr: çözüm aramak
+    - text: look for information
+      tr: bilgi aramak
+  examples:
+    - en: I am currently looking for my office security badge, which I misplaced this morning.
+      tr: Şu anda bu sabah nereye koyduğumu unuttuğum ofis güvenlik kartımı arıyorum.
+      context: Workplace Routine
+    - en: The engineering team is looking for an experienced backend developer to lead the project.
+      tr: Mühendislik ekibi, projeye liderlik edecek deneyimli bir backend geliştirici arıyor.
+      context: Talent Recruitment
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "aramak" fiili doğrudan nesne alır ("iş arıyorum"). İngilizcede ise nesne
+        "for" edatı ile bağlanır: "look for a job". "For" olmadan "look a job" denemez.
+      incorrect_example: She is looking a new apartment near the subway.
+      correct_example: She is looking for a new apartment near the subway.
+  register: general
+  topic_tags:
+    - daily-life
+    - search
+    - career
+  related_ids: []
+  status: APPROVED
+  version: 1

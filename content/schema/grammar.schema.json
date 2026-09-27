@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/grammar.schema.json",
+  "title": "FluentAI Grammar Lesson Schema",
+  "description": "Schema for offline-first CEFR-graded grammar lessons with explicit Turkish transfer trap analysis (ADR-010).",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "cefr_level",
+    "category",
+    "summary_en",
+    "summary_tr",
+    "explanation_en",
+    "explanation_tr",
+    "rules",
+    "turkish_traps",
+    "examples",
+    "topic_tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^grammar\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)?$",
+      "description": "Stable semantic content identifier, e.g. grammar.present-perfect-vs-past-simple or grammar.b2.inversion"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Lesson title in English, e.g. Present Perfect vs. Past Simple"
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A2", "B1", "B2", "C1", "C2"],
+      "description": "Target CEFR level"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "tenses_and_aspect",
+        "modals_and_semi_modals",
+        "conditionals_and_hypotheticals",
+        "passive_and_causative",
+        "relative_and_participle_clauses",
+        "inversion_and_emphasis",
+        "cleft_sentences",
+        "reported_speech",
+        "verb_patterns_and_infinitives",
+        "noun_phrases_and_articles",
+        "discourse_markers_and_cohesion",
+        "prepositions_and_particles"
+      ],
+      "description": "Primary structural category"
+    },
+    "summary_en": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Concise English overview of the grammatical rule"
+    },
+    "summary_tr": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Concise Turkish summary highlighting core meaning"
+    },
+    "explanation_en": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Structured English explanation sections",
+      "items": {
+        "type": "object",
+        "required": ["title", "content"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content": {
+            "type": "string",
+            "minLength": 10
+          },
+          "patterns": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "explanation_tr": {
+      "type": "string",
+      "minLength": 20,
+      "description": "Turkish conceptual guide clarifying structural shifts between Turkish L1 and English L2"
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Formulaic patterns and functional use cases",
+      "items": {
+        "type": "object",
+        "required": ["name", "pattern", "use_cases"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Short rule name, e.g. Unfinished Time Frame"
+          },
+          "pattern": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Syntactic pattern, e.g. Subject + have/has + Past Participle (V3)"
+          },
+          "use_cases": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" },
+            "description": "Communicative functions when this rule is applied"
+          },
+          "time_markers": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Signal words and adverbial markers (e.g. since, for, already, yet)"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "contrasts": {
+      "type": "array",
+      "description": "Explicit side-by-side contrasts between confusing grammatical forms",
+      "items": {
+        "type": "object",
+        "required": [
+          "structure_a",
+          "structure_b",
+          "difference_explanation_en",
+          "difference_explanation_tr"
+        ],
+        "properties": {
+          "structure_a": {
+            "type": "string",
+            "minLength": 1,
+            "description": "First structure statement / example"
+          },
+          "structure_b": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Second structure statement / example"
+          },
+          "difference_explanation_en": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Grammatical distinction in English"
+          },
+          "difference_explanation_tr": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Grammatical distinction in Turkish"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "turkish_traps": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Turkish-specific negative transfer traps and false assumptions (ADR-010)",
+      "items": {
+        "type": "object",
+        "required": [
+          "trap_type",
+          "trap_title",
+          "explanation_tr",
+          "incorrect_example",
+          "correct_example"
+        ],
+        "properties": {
+          "trap_type": {
+            "type": "string",
+            "enum": [
+              "tense_transfer",
+              "aspect_confusion",
+              "preposition_trap",
+              "word_order_svo_vs_sov",
+              "null_subject_transfer",
+              "voice_and_causative_transfer",
+              "conditional_overgeneralization"
+            ],
+            "description": "Category of Turkish linguistic transfer trap"
+          },
+          "trap_title": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Clear name of the trap in Turkish"
+          },
+          "explanation_tr": {
+            "type": "string",
+            "minLength": 15,
+            "description": "Why Turkish speakers naturally produce this error and how to rewire it"
+          },
+          "incorrect_example": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Incorrect formulation produced by Turkish transfer"
+          },
+          "correct_example": {
+            "type": "string",
+            "minLength": 3,
+            "description": "Natural and grammatically accurate English sentence"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 2,
+      "description": "Curated example sentences demonstrating the grammatical structure",
+      "items": {
+        "type": "object",
+        "required": ["en", "tr"],
+        "properties": {
+          "en": {
+            "type": "string",
+            "minLength": 5
+          },
+          "tr": {
+            "type": "string",
+            "minLength": 5
+          },
+          "rule_highlight": {
+            "type": "string",
+            "description": "Target rule or construction illustrated"
+          },
+          "context": {
+            "type": "string",
+            "description": "Professional or conversational setting"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "topic_tags": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Thematic or structural tags",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "related_ids": {
+      "type": "array",
+      "description": "Related grammar or vocabulary semantic IDs",
+      "items": {
+        "type": "string",
+        "pattern": "^(vocab|grammar|speaking|reading|listening)\\.[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "AI_REVIEWED",
+        "VALIDATED",
+        "APPROVED",
+        "PUBLISHED",
+        "DEPRECATED"
+      ],
+      "default": "APPROVED",
+      "description": "Curriculum editorial state"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

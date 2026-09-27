@@ -1,0 +1,66 @@
+batch_id: vocab_batch_001a
+source_manifest: vocab_batch_001_manifest
+produced_at: "2026-09-25T11:15:00Z"
+item_count: 50
+cefr_distribution:
+  A2: 6
+  B1: 9
+  B2: 11
+  C1: 13
+  C2: 11
+produced_ids:
+  A2:
+    - vocab.customer
+    - vocab.receipt
+    - vocab.borrow
+    - vocab.convenient
+    - vocab.carefully
+    - vocab.look-for
+  B1:
+    - vocab.solution
+    - vocab.relationship
+    - vocab.suggestion
+    - vocab.apologize
+    - vocab.convince
+    - vocab.handle
+    - vocab.flexible
+    - vocab.definitely
+    - vocab.deal-with
+  B2:
+    - vocab.agenda
+    - vocab.capacity
+    - vocab.alternative
+    - vocab.anticipate
+    - vocab.facilitate
+    - vocab.tackle
+    - vocab.crucial
+    - vocab.diverse
+    - vocab.furthermore
+    - vocab.bring-up
+    - vocab.point-out
+  C1:
+    - vocab.catalyst
+    - vocab.cohesion
+    - vocab.implication
+    - vocab.disruption
+    - vocab.advocate
+    - vocab.foster
+    - vocab.undermine
+    - vocab.compelling
+    - vocab.inherent
+    - vocab.robust
+    - vocab.arguably
+    - vocab.inadvertently
+    - vocab.stem-from
+  C2:
+    - vocab.caveat
+    - vocab.conundrum
+    - vocab.ramification
+    - vocab.bolster
+    - vocab.delineate
+    - vocab.reiterate
+    - vocab.disparate
+    - vocab.ubiquitous
+    - vocab.seamlessly
+    - vocab.at-stake
+    - vocab.play-devils-advocate

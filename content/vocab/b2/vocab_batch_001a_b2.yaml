@@ -1,0 +1,416 @@
+- id: vocab.agenda
+  headword: agenda
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /əˈdʒen.də/
+  audio_ref: null
+  definition_en: A formal list of items, topics, or business issues to be discussed or transacted at a meeting.
+  meaning_tr: gündem, toplantı programı
+  collocations:
+    - text: set the agenda
+      tr: gündemi belirlemek
+    - text: on the agenda
+      tr: gündemde olmak
+    - text: hidden agenda
+      tr: gizli ajanda / art niyet
+  examples:
+    - en: The project manager circulated the meeting agenda twenty-four hours before the sprint planning session.
+      tr: Proje yöneticisi, toplantı gündemini sprint planlama oturumundan yirmi dört saat önce paylaştı.
+      context: Project Management
+    - en: Cloud migration costs are the first priority item on today's executive steering committee agenda.
+      tr: Bulut geçiş maliyetleri, bugünkü icra yönlendirme komitesi gündeminin ilk öncelikli maddesidir.
+      context: Executive Steering
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Gündemde" derken Türkçeden doğrudan çeviriyle "in the agenda" demek yanlıştır.
+        İngilizcede "on the agenda" kullanılır: "This issue is on the agenda".
+      incorrect_example: Data privacy regulations are currently in our department agenda.
+      correct_example: Data privacy regulations are currently on our department agenda.
+  register: business
+  topic_tags:
+    - business
+    - meetings
+    - management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.capacity
+  headword: capacity
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /kəˈpæs.ə.ti/
+  audio_ref: null
+  definition_en: The maximum amount that something can contain, produce, or handle, or an individual's mental/operational ability.
+  meaning_tr: kapasite, hacim, iş gücü yeterliliği
+  collocations:
+    - text: operating at full capacity
+      tr: tam kapasiteyle çalışmak
+    - text: storage capacity
+      tr: depolama kapasitesi
+    - text: team capacity
+      tr: ekip kapasitesi/iş yükü kotası
+  examples:
+    - en: Our cloud servers reached maximum capacity during the annual Black Friday flash sales campaign.
+      tr: Bulut sunucularımız, yıllık Black Friday indirim kampanyası sırasında maksimum kapasiteye ulaştı.
+      context: Cloud Engineering
+    - en: Before committing to extra sprint deliverables, the engineering lead evaluated the team's available bandwidth and capacity.
+      tr: Ekstra sprint çıktılarını taahhüt etmeden önce mühendislik lideri ekibin mevcut iş hacmini ve kapasitesini değerlendirdi.
+      context: Agile Capacity Planning
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Kapasiteyi aşmak" derken "overcome capacity" denmez; "exceed capacity" kullanılır.
+        "Tam kapasite" için ise "full capacity" veya "at capacity" ifadeleri tercih edilir.
+      incorrect_example: The database traffic overcame its server capacity last night.
+      correct_example: The database traffic exceeded its server capacity last night.
+  register: general
+  topic_tags:
+    - technology
+    - infrastructure
+    - planning
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.alternative
+  headword: alternative
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ɒlˈtɜː.nə.tɪv/
+  audio_ref: null
+  definition_en: One of two or more available possibilities, options, or courses of action that can be selected.
+  meaning_tr: alternatif, seçenek, diğer imkan
+  collocations:
+    - text: viable alternative
+      tr: uygulanabilir alternatif
+    - text: consider alternatives
+      tr: alternatifleri değerlendirmek
+    - text: cost-effective alternative
+      tr: maliyet açısından avantajlı alternatif
+  examples:
+    - en: After discovering architectural bottlenecks in the third-party API, the developers evaluated two open-source alternatives.
+      tr: Geliştiriciler, üçüncü taraf API'deki mimari darboğazları tespit ettikten sonra iki açık kaynaklı alternatifi değerlendirdi.
+      context: Software Architecture
+    - en: We have no viable alternative but to postpone the product launch until automated regression tests pass.
+      tr: Otomatik regresyon testleri başarılı olana kadar ürün lansmanını ertelemekten başka uygulanabilir bir alternatifimiz yok.
+      context: Product Release Gate
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Bir şeye alternatif" derken Türkçeden doğrudan çeviriyle "alternative for" sıklıkla yanlış kullanılır.
+        İngilizcede "alternative to something" denir: "an alternative to proprietary databases".
+      incorrect_example: This framework is a modern alternative for legacy desktop applications.
+      correct_example: This framework is a modern alternative to legacy desktop applications.
+  register: general
+  topic_tags:
+    - problem-solving
+    - decision-making
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.anticipate
+  headword: anticipate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ænˈtɪs.ɪ.peɪt/
+  audio_ref: null
+  definition_en: To regard an event or circumstance as probable and take proactive measures or prepare in advance.
+  meaning_tr: öngörmek, önceden sezmek, beklemek
+  collocations:
+    - text: anticipate problems
+      tr: sorunları önceden öngörmek
+    - text: anticipate customer needs
+      tr: müşteri ihtiyaçlarını öngörmek
+    - text: fully anticipate
+      tr: bütünüyle beklemek / öngörmek
+  examples:
+    - en: Experienced product owners anticipate user edge cases well before engineers start writing code.
+      tr: Deneyimli ürün sahipleri, mühendisler kod yazmaya başlamadan çok önce uç senaryoları öngörür.
+      context: Product Discovery
+    - en: We do not anticipate any significant delays in receiving our enterprise security certification.
+      tr: Kurumsal güvenlik sertifikamızı alma sürecinde kayda değer herhangi bir gecikme öngörmüyoruz.
+      context: Regulatory Compliance
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Anticipate" sadece pasif bir şekilde beklemek ("wait for" / "expect") değil;
+        olabilecek bir şeyi önceden tahmin edip ona göre hazırlıklı olmak anlamına gelir.
+      incorrect_example: We are anticipating at the station for the train to arrive.
+      correct_example: We are waiting at the station for the train to arrive.
+  register: business
+  topic_tags:
+    - work-career
+    - planning
+    - risk-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.facilitate
+  headword: facilitate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /fəˈsɪl.ɪ.teɪt/
+  audio_ref: null
+  definition_en: To make an action, process, or outcome easier, smoother, or more efficient to achieve.
+  meaning_tr: kolaylaştırmak, aracılık etmek, önünü açmak
+  collocations:
+    - text: facilitate communication
+      tr: iletişimi kolaylaştırmak
+    - text: facilitate a workshop
+      tr: bir çalıştayı yönetmek / kolaylaştırıcılık yapmak
+    - text: facilitate collaboration
+      tr: iş birliğini kolaylaştırmak
+  examples:
+    - en: Adopting a unified Slack workspace helped facilitate cross-functional collaboration between designers and engineers.
+      tr: Ortak bir Slack çalışma alanı benimsemek, tasarımcılar ve mühendisler arasındaki departmanlar arası iş birliğini kolaylaştırmaya yardımcı oldu.
+      context: Internal Communications
+    - en: The agile coach was invited to facilitate a complex retrospection workshop for the leadership group.
+      tr: Çevik koç, liderlik grubu için karmaşık bir retrospektif çalıştayını kolaylaştırıp yönetmek üzere davet edildi.
+      context: Agile Coaching
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Facilitate" bir süreci kolaylaştırmak demektir; "make easy" yerine iş dünyasında sıkça
+        tercih edilen resmi bir fiildir. "Facility" (tesis/bina) sözcüğüyle kökteş olsa da eylemsel olarak
+        "kolaylaştırmak" anlamı taşır.
+      incorrect_example: The software will facility our daily workflow.
+      correct_example: The software will facilitate our daily workflow.
+  register: formal
+  topic_tags:
+    - work-career
+    - collaboration
+    - productivity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.tackle
+  headword: tackle
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈtæk.əl/
+  audio_ref: null
+  definition_en: To make determined and active efforts to deal with, resolve, or overcome a difficult problem or challenge.
+  meaning_tr: ele almak, çözmeye girişmek, üzerine gitmek
+  collocations:
+    - text: tackle a problem
+      tr: bir sorunu çözmeye girişmek
+    - text: tackle the root cause
+      tr: kök nedeni ele almak
+    - text: tackle a challenge
+      tr: bir zorluğun üzerine gitmek
+  examples:
+    - en: The platform architecture team convened an emergency spike to tackle the distributed memory leak.
+      tr: Platform mimari ekibi, dağıtık bellek sızıntısını çözmeye girişmek için acil bir araştırma oturumu düzenledi.
+      context: Software Reliability
+    - en: We must tackle tech debt decisively before releasing the next major release to enterprise clients.
+      tr: Bir sonraki ana sürümü kurumsal müşterilere yayınlamadan önce teknik borcu kararlılıkla ele almalıyız.
+      context: Technical Debt Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Tackle" doğrudan nesne alır: "tackle the issue". Türkçedeki "bir meseleyle uğraşmak"
+        ifadesine aldanarak "tackle with the problem" demek gramer hatasıdır.
+      incorrect_example: Our engineers are currently tackling with the database bottleneck.
+      correct_example: Our engineers are currently tackling the database bottleneck.
+  register: general
+  topic_tags:
+    - problem-solving
+    - engineering
+    - execution
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.crucial
+  headword: crucial
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ˈkruː.ʃəl/
+  audio_ref: null
+  definition_en: Decisive or critically important, especially in determining the success or failure of something.
+  meaning_tr: kritik, hayati önemde, belirleyici
+  collocations:
+    - text: crucial role
+      tr: hayati rol
+    - text: crucial decision
+      tr: kritik karar
+    - text: play a crucial part
+      tr: belirleyici bir rol oynamak
+  examples:
+    - en: Accurate data telemetry plays a crucial role in diagnosing microservice communication failures.
+      tr: Doğru veri telemetrisi, mikroservis iletişim arızalarını teşhis etmede hayati bir rol oynar.
+      context: Observability Systems
+    - en: Conducting thorough user interviews is crucial before writing functional product requirements.
+      tr: Fonksiyonel ürün gereksinimlerini yazmadan önce kapsamlı kullanıcı görüşmeleri yapmak son derece kritiktir.
+      context: Product Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Bir şey için kritik/hayati" derken "crucial for" veya "crucial to" kullanılır.
+        "Crucial with" kesinlikle kullanılmaz.
+      incorrect_example: Strict code review is crucial with preventing security bugs.
+      correct_example: Strict code review is crucial for preventing security bugs.
+  register: general
+  topic_tags:
+    - problem-solving
+    - decision-making
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.diverse
+  headword: diverse
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /daɪˈvɜːs/
+  audio_ref: null
+  definition_en: Showing a great deal of variety; composed of distinct elements or qualities.
+  meaning_tr: çeşitli, farklı niteliklerde, çok yönlü
+  collocations:
+    - text: diverse perspectives
+      tr: farklı bakış açıları
+    - text: diverse background
+      tr: çeşitli/farklı geçmişler
+    - text: culturally diverse
+      tr: kültürel açıdan çeşitli
+  examples:
+    - en: Our global engineering organization brings together developers with diverse technical backgrounds.
+      tr: Küresel mühendislik organizasyonumuz, farklı teknik geçmişlere sahip yazılımcıları bir araya getiriyor.
+      context: Organizational Culture
+    - en: Having a diverse team enables us to design software that meets international accessibility standards.
+      tr: Çeşitliliğe sahip bir ekibe sahip olmak, uluslararası erişilebilirlik standartlarını karşılayan yazılımlar tasarlamamızı sağlıyor.
+      context: Product Inclusivity
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Diverse" sadece "different" (farklı) anlamına gelmez; içinde zengin bir çeşitlilik barındıran
+        yapılar ve gruplar için kullanılır ("diverse workforce", "diverse portfolio").
+      incorrect_example: My shoes and your shoes are diverse.
+      correct_example: My shoes and your shoes are different.
+  register: general
+  topic_tags:
+    - society
+    - culture
+    - human-resources
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.furthermore
+  headword: furthermore
+  cefr_level: B2
+  part_of_speech: adverb
+  phonetic: /ˌfɜː.ðəˈmɔːr/
+  audio_ref: null
+  definition_en: In addition to what has already been stated; used to introduce a further connecting point.
+  meaning_tr: dahası, üstelik, ayrıca
+  collocations:
+    - text: state furthermore
+      tr: ayrıca belirtmek
+    - text: argument stands furthermore
+      tr: argüman dahası geçerliliğini korur
+  examples:
+    - en: The proposed cloud provider offers lower compute rates; furthermore, their compliance tooling meets banking regulations.
+      tr: Önerilen bulut sağlayıcısı daha düşük işlem ücretleri sunuyor; dahası, uyumluluk araçları bankacılık düzenlemelerini karşılıyor.
+      context: Vendor Evaluation
+    - en: The code was delivered three days late; furthermore, it failed several critical integration test cases.
+      tr: Kod üç gün geç teslim edildi; üstelik birkaç kritik entegrasyon test senaryosundan da geçemedi.
+      context: Project Review
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Furthermore" resmi ve profesyonel yazı diline aittir (raporlar, e-postalar, sunumlar).
+        Günlük samimi konuşma dilinde bunun yerine "also", "plus" veya "besides" daha doğal karşılanır.
+      incorrect_example: Hey bro, let's grab coffee; furthermore, bring your laptop.
+      correct_example: Hey bro, let's grab coffee; also, bring your laptop.
+  register: formal
+  topic_tags:
+    - communication
+    - discourse
+    - rhetoric
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.bring-up
+  headword: bring up
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /brɪŋ ʌp/
+  audio_ref: null
+  definition_en: To mention or introduce a topic or issue for discussion during a conversation or meeting.
+  meaning_tr: gündeme getirmek, bahsini açmak, ortaya atmak
+  collocations:
+    - text: bring up a topic
+      tr: bir konuyu gündeme getirmek
+    - text: bring up an issue
+      tr: bir sorunu dile getirmek
+    - text: bring up concerns
+      tr: endişeleri dile getirmek
+  examples:
+    - en: During the weekly retrospective, the QA lead brought up concerns about test suite execution time.
+      tr: Haftalık retrospektif sırasında QA lideri, test paketinin çalışma süresiyle ilgili endişeleri gündeme getirdi.
+      context: Agile Meetings
+    - en: I plan to bring up budget allocation for staff training in our quarterly strategic review.
+      tr: Üç aylık stratejik incelememizde personel eğitimi bütçe tahsisini gündeme getirmeyi planlıyorum.
+      context: Quarterly Planning
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Bring up" aynı zamanda "çocuk büyütmek/yetiştirmek" anlamına da gelir ("She was brought up in Ankara").
+        İş bağlamında ise neredeyse her zaman "bir konuyu toplantıda açmak, bahsetmek" anlamındadır.
+      incorrect_example: I want to open this topic in the meeting.
+      correct_example: I want to bring up this topic in the meeting.
+  register: general
+  topic_tags:
+    - communication
+    - meetings
+    - discussions
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.point-out
+  headword: point out
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /pɔɪnt aʊt/
+  audio_ref: null
+  definition_en: To direct someone's attention toward a specific fact, risk, or detail that they may not have noticed.
+  meaning_tr: dikkat çekmek, belirtmek, işaret etmek
+  collocations:
+    - text: point out an error
+      tr: bir hataya dikkat çekmek
+    - text: point out risks
+      tr: riskleri belirtmek
+    - text: rightly point out
+      tr: haklı olarak belirtmek
+  examples:
+    - en: The security auditor pointed out several exposed ports in our production network configuration.
+      tr: Güvenlik denetçisi, canlı ağ yapılandırmamızda açık kalmış birkaç porta dikkat çekti.
+      context: Security Audit
+    - en: The lead developer rightly pointed out that refactoring the authentication module would require two full sprints.
+      tr: Baş geliştirici, kimlik doğrulama modülünü yeniden düzenlemenin iki tam sprint gerektireceğini haklı olarak belirtti.
+      context: Sprint Estimation
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Point out" arkasından doğrudan nesne veya "that" cümleciği alabilir ("point out the problem",
+        "point out that..."). "Point out to someone" kalıbında "to" kişiyi bağlar, ancak nesneye edatsız bağlanır.
+      incorrect_example: The architect pointed out to the architectural mistake.
+      correct_example: The architect pointed out the architectural mistake.
+  register: general
+  topic_tags:
+    - communication
+    - review
+    - quality
+  related_ids: []
+  status: APPROVED
+  version: 1

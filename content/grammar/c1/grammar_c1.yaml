@@ -1,0 +1,154 @@
+- id: grammar.c1.inversion-negative-adverbials
+  title: Inversion with Negative and Restrictive Adverbials
+  cefr_level: C1
+  category: inversion_and_emphasis
+  summary_en: Elevate rhetoric and create dramatic emphasis by fronting negative adverbials followed by question-order inversion.
+  summary_tr: Olumsuz ve kısıtlayıcı zarfları cümle başına alarak ve devrik soru sözdizimi uygulayarak retorik güç ve resmiyet katma.
+  explanation_en:
+    - title: "The Mechanics of Inversion: Auxiliary Before Subject"
+      content: >-
+        When negative or restrictive adverbials are placed at the beginning of a clause for emphatic effect,
+        the normal English word order (Subject + Auxiliary + Verb) must be inverted into question word order (Auxiliary + Subject + Verb).
+      patterns:
+        - "Negative Adverbial + Auxiliary / Modal + Subject + Main Verb"
+        - "Not only + Auxiliary + S + V, but (also) ..."
+        - "Under no circumstances + Modal + S + V"
+        - "Seldom / Rarely + Auxiliary + S + V"
+        - "Hardly / Scarcely + had + S + V3 + when ..."
+    - title: "Stylistic Weight in Executive and Legal Contexts"
+      content: >-
+        Inversion is a hallmark of C1/C2 advanced English. It is not used in casual chit-chat, but conveys
+        supreme authority, uncompromising certainty, or stylistic refinement in executive memos and contractual clauses.
+      patterns:
+        - "Standard: We will not accept liability under any circumstances."
+        - "Inverted: Under no circumstances will we accept liability."
+  explanation_tr: >-
+    Türkçede cümledeki vurgu, vurgulanacak kelimeyi doğrudan cümlenin sonundaki yüklemin önüne getirerek sağlanır.
+    İngilizcede ise bu tür güçlü resmi vurgular 'devrik cümle' (inversion) yapılarak oluşturulur.
+    En yaygın Türk öğrenici hatası, olumsuz zarfı başa koyduktan sonra sözdizimini devirmeyi unutmaktır
+    ('Under no circumstances we will agree' gibi). Doğru yapıda soru kalıbı gibi yardımcı fiil özneden önce gelmelidir
+    ('Under no circumstances will we agree').
+  rules:
+    - name: Fronted Negative Inversion
+      pattern: Negative/Restrictive Marker + Aux/Modal + Subject + Main Verb
+      use_cases:
+        - Non-negotiable contractual restrictions (Under no circumstances will the provider...)
+        - Emphasizing exceptional performance or rarity (Rarely has our firm achieved...)
+        - Compound emphasis (Not only did we achieve profitability, but we also...)
+      time_markers:
+        - Under no circumstances
+        - Seldom
+        - Rarely
+        - Barely
+        - Not only
+        - At no time
+  contrasts:
+    - structure_a: The company has rarely experienced such unprecedented user growth. (Standard neutral)
+      structure_b: Rarely has the company experienced such unprecedented user growth. (Inverted emphatic)
+      difference_explanation_en: >-
+        Sentence A is a standard neutral statement. Sentence B front-loads the adverbial to deliver commanding stylistic emphasis.
+      difference_explanation_tr: >-
+        A cümlesi standart ve nötr bir tespittir. B cümlesi ise zarfı öne alıp devrik yaparak etkileyici ve resmi bir vurgu yaratır.
+  turkish_traps:
+    - trap_type: word_order_svo_vs_sov
+      trap_title: "Devrik Cümlede Yardımcı Fiili Özneden Önceye Almayı Unutma"
+      explanation_tr: >-
+        Türk öğreniciler 'Not only' veya 'Under no circumstances' ile cümleye başladıklarında, düz SVO sözdizimini koruyarak
+        'Not only the company expanded' derler. Kural gereği yardımcı fiil özneden önceye gelmelidir: 'Not only did the company expand'.
+      incorrect_example: Under no circumstances our engineers should disable two-factor authentication.
+      correct_example: Under no circumstances should our engineers disable two-factor authentication.
+  examples:
+    - en: Not only did the platform sustain ten million concurrent connections, but it also maintained sub-second latency.
+      tr: Platform sadece on milyon eşzamanlı bağlantıyı kaldırmakla kalmadı, aynı zamanda saniye altı gecikme süresini de korudu.
+      rule_highlight: Compound Inversion (Not only did the platform sustain...)
+      context: Cloud Architecture Benchmark
+    - en: Under no circumstances will proprietary client algorithms be shared with third-party vendors.
+      tr: Müşteriye ait özel algoritmalar hiçbir koşul altında üçüncü taraf tedarikçilerle paylaşılmayacaktır.
+      rule_highlight: Strict Prohibition Inversion (Under no circumstances will...)
+      context: Compliance Policy
+  topic_tags:
+    - inversion
+    - emphasis
+    - executive-style
+    - c1-advanced
+  related_ids:
+    - vocab.deliberation
+    - vocab.contingency
+  status: APPROVED
+  version: 1
+
+- id: grammar.c1.participle-clauses
+  title: Participle Clauses for Executive Briefings & Cohesion
+  cefr_level: C1
+  category: relative_and_participle_clauses
+  summary_en: Condense complex compound sentences into concise, high-density participle clauses while avoiding dangling participles.
+  summary_tr: Karmaşık uzun cümleleri bağlaç kalabalığından arındırıp yüksek yoğunluklu ortaç (participle) yapılarına dönüştürme ve özne uyumsuzluğundan (dangling participle) kaçınma.
+  explanation_en:
+    - title: "Information Density via Present, Past, and Perfect Participles"
+      content: >-
+        Participle clauses allow advanced speakers to pack background conditions, sequential actions, and causality
+        into fewer words without cluttering discourse with conjunctions like 'because', 'after', or 'since'.
+      patterns:
+        - "Present Participle (Active / Simultaneous): Working across three time zones, our team coordinates asynchronously."
+        - "Past Participle (Passive / State): Stored in immutable ledgers, the records cannot be modified."
+        - "Perfect Participle (Completed prior action): Having resolved the kernel vulnerability, we initiated deployment."
+    - title: "The Dangling Participle Hazard"
+      content: >-
+        The implied subject of the participle clause MUST be identical to the grammatical subject of the main clause.
+        Violating this rule produces confusing or comical sentences where an inanimate object appears to perform the action.
+      patterns:
+        - "Incorrect: Having audited the code, the report was submitted by the team. (The report did not audit the code!)"
+        - "Correct: Having audited the code, the team submitted the report."
+  explanation_tr: >-
+    Türkçedeki '-erek / -arak' (yaparak), '-dikten sonra' (yaptıktan sonra) ve '-en / -an' (yapan) zarf fiil ve sıfat fiil ekleri,
+    İngilizcede participle clause olarak adlandırılan yapılara birebir karşılık gelir.
+    Türk öğrenicilerin en sık yaptığı aktarım hatası 'Dangling Participle' (boşta kalan ortaç) problemidir:
+    Cümlenin başındaki eylemi yapan özne ile ana cümlenin öznesinin farklı olması durumunda İngilizce cümle anlamsal olarak çöker.
+  rules:
+    - name: Sequential Prior Action (Perfect Participle)
+      pattern: Having + Past Participle (V3), Subject + Main Verb
+      use_cases:
+        - Outlining completed milestones before introducing the subsequent executive decision
+    - name: Concurrent Circumstance (Present Participle)
+      pattern: Verb-ing ..., Subject + Main Verb
+      use_cases:
+        - Explaining concurrent operational conditions or reasoning
+    - name: Passive State Precondition (Past Participle)
+      pattern: Past Participle (V3) by/with ..., Subject + Main Verb
+      use_cases:
+        - Technical preconditions and established specifications
+  contrasts:
+    - structure_a: After the team had completed the penetration test, they briefed the board. (Conjunction clause)
+      structure_b: Having completed the penetration test, the team briefed the board. (Participle clause)
+      difference_explanation_en: >-
+        Sentence B achieves greater conciseness and sophisticated cadence suitable for C-level executive memos.
+      difference_explanation_tr: >-
+        B cümlesi daha az kelimeyle daha yüksek bir anlatım yoğunluğu ve üst düzey yönetici dili sağlar.
+  turkish_traps:
+    - trap_type: null_subject_transfer
+      trap_title: "Özne Uyuşmazlığı ve Boşta Kalan Ortaç (Dangling Participle)"
+      explanation_tr: >-
+        Türkçede gizli özne kullanımı ve esnek zarf fiil bağlamları nedeniyle cümlenin başına 'İncelemeyi bitirdikten sonra'
+        denilip ana cümleye 'rapor sunuldu' diye devam edilmesi kulağı tırmalamaz. Ancak İngilizcede 'Having finished the review,
+        the report was submitted' derseniz, incelemeyi bitirenin 'rapor' olduğu anlaşılır! Ana cümlenin öznesi eylemi yapan kişi olmalıdır.
+      incorrect_example: Having analyzed the customer churn data, a new retention campaign was launched by marketing.
+      correct_example: Having analyzed the customer churn data, the marketing team launched a new retention campaign.
+  examples:
+    - en: Having secured regulatory clearance from all EU jurisdictions, the fintech consortium initiated their international payment rail.
+      tr: Tüm AB yetkili makamlarından yasal izni almış olan fintech konsorsiyumu, uluslararası ödeme ağını başlattı.
+      rule_highlight: Perfect Participle Sequence (Having secured...)
+      context: FinTech Regulatory Compliance
+    - en: Operating under strict SOC2 compliance constraints, our platform encrypts all data both at rest and in transit.
+      tr: Katı SOC2 uyumluluk kısıtlamaları altında çalışan platformumuz, tüm verileri hem beklemede hem de iletim halindeyken şifreler.
+      rule_highlight: Present Participle Condition (Operating under...)
+      context: Information Security Architecture
+  topic_tags:
+    - participle-clauses
+    - syntax
+    - executive-briefing
+    - c1-advanced
+  related_ids:
+    - vocab.scrutiny
+    - vocab.benchmark
+  status: APPROVED
+  version: 1

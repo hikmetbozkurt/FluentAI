@@ -1,0 +1,408 @@
+- id: speaking.b2.freetalk.weekend-brainstorm
+  title: "Casual Brainstorm: Creative Work & Hobbies"
+  category: FREE_TALK
+  cefr_level: B2
+  system_prompt: "You are an intelligent, engaging conversation partner. Discuss hobbies, side projects, and productivity habits in a natural, supportive conversational style. Ask open-ended questions and encourage the user to share thoughts fluidly."
+  context_description: "An informal chat about side projects, personal productivity routines, and creative interests."
+  target_vocab_ids:
+    - vocab.align
+    - vocab.leverage
+  target_grammar_ids:
+    - grammar.present-perfect-vs-past-simple
+  suggested_starter_phrases:
+    - "Lately, I've been experimenting with a new approach to..."
+    - "In my free time, I find myself drawn towards..."
+    - "One thing I really enjoy working on outside my job is..."
+  recommended_correction_mode: FLOW
+  voice_name: Puck
+  topic_tags:
+    - lifestyle
+    - productivity
+    - creative_work
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.freetalk.future-ai-workplace
+  title: "Discourse: AI Ethics & Workplace Evolution"
+  category: FREE_TALK
+  cefr_level: C1
+  system_prompt: "You are an articulate technology philosopher and strategist. Discuss how artificial intelligence and automation are transforming corporate structures, creative professions, and ethical frameworks. Challenge arguments thoughtfully and invite nuanced points."
+  context_description: "An intellectual discussion debating the ethical boundaries and economic disruptions of artificial intelligence."
+  target_vocab_ids:
+    - vocab.ambiguity
+    - vocab.nuance
+    - vocab.paradigm
+  target_grammar_ids:
+    - grammar.c1.participle-clauses
+  suggested_starter_phrases:
+    - "When we evaluate the societal implications of AI, the primary tension lies in..."
+    - "It's imperative to distinguish between mere automation and true cognitive reasoning."
+    - "From a pragmatic standpoint, organizational structures will have to adapt by..."
+  recommended_correction_mode: FLOW
+  voice_name: Aoede
+  topic_tags:
+    - technology
+    - ethics
+    - strategy
+  status: APPROVED
+  version: 1
+
+- id: speaking.a2.dailylife.restaurant-dining
+  title: "Daily Life: Ordering at a Gourmet Bistro"
+  category: DAILY_LIFE
+  cefr_level: A2
+  system_prompt: "You are a courteous, attentive waiter at a modern bistro in London. Help the guest understand the menu, take their food and drink order, accommodate dietary requests, and ensure they have a pleasant dining experience."
+  context_description: "You are having dinner at a bistro and need to place your order, inquire about ingredients, and ask for recommendations."
+  target_vocab_ids:
+    - vocab.brief
+    - vocab.deliver
+  target_grammar_ids:
+    - grammar.a2.modal-verbs-necessity
+  suggested_starter_phrases:
+    - "Could you please tell me what you recommend for dinner?"
+    - "I'd like to order the fish, but could you check if it contains dairy?"
+    - "Could we also get some sparkling water for the table, please?"
+  recommended_correction_mode: COACH
+  voice_name: Aoede
+  topic_tags:
+    - dining
+    - daily_routine
+    - travel
+  status: APPROVED
+  version: 1
+
+- id: speaking.b1.dailylife.travel-hotel-concierge
+  title: "Daily Life: Hotel Concierge & City Exploration"
+  category: DAILY_LIFE
+  cefr_level: B1
+  system_prompt: "You are a helpful boutique hotel concierge in Amsterdam. Assist the guest with city recommendations, arranging transport, museum tickets, and addressing a minor room air-conditioning request."
+  context_description: "Speaking with the hotel concierge to plan your afternoon activities and report a mild room temperature issue."
+  target_vocab_ids:
+    - vocab.feedback
+    - vocab.collaborate
+  target_grammar_ids:
+    - grammar.b1.used-to-vs-be-used-to
+  suggested_starter_phrases:
+    - "Good morning, I was wondering if you could suggest some quiet spots nearby."
+    - "Also, the thermostat in room 402 seems to be slightly off."
+    - "What's the most convenient way to reach the modern art museum?"
+  recommended_correction_mode: COACH
+  voice_name: Puck
+  topic_tags:
+    - travel
+    - customer_service
+    - daily_life
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.career.performance-review-goals
+  title: "Career: Annual Performance & Growth Review"
+  category: CAREER
+  cefr_level: B2
+  system_prompt: "You are an empathetic yet performance-driven Director of Operations conducting an annual review. Guide the conversation through accomplishments, collaborative feedback, growth objectives, and milestone goals for the coming year."
+  context_description: "Your annual performance review where you articulate your achievements, overcome setbacks, and negotiate professional growth goals."
+  target_vocab_ids:
+    - vocab.align
+    - vocab.bottleneck
+    - vocab.escalate
+  target_grammar_ids:
+    - grammar.present-perfect-vs-past-simple
+    - grammar.b2.passive-voice-formal
+  suggested_starter_phrases:
+    - "Over the past year, my main objective has been to streamline our team's..."
+    - "One significant hurdle we encountered was a communication bottleneck between..."
+    - "Looking forward, I intend to take full ownership of the cross-functional..."
+  recommended_correction_mode: COACH
+  voice_name: Fenrir
+  topic_tags:
+    - career
+    - leadership
+    - performance
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.career.salary-negotiation-leadership
+  title: "Career: Executive Role & Compensation Negotiation"
+  category: CAREER
+  cefr_level: C1
+  system_prompt: "You are the Chief People Officer at a fast-growing global enterprise. Negotiate terms, scope of authority, equity compensation, and team expansion with a senior candidate stepping into an executive director role."
+  context_description: "High-stakes negotiation aligning executive remuneration, equity incentives, and resource allocation."
+  target_vocab_ids:
+    - vocab.concur
+    - vocab.imperative
+    - vocab.lucrative
+    - vocab.viable
+  target_grammar_ids:
+    - grammar.c1.inversion-negative-adverbials
+    - grammar.c1.participle-clauses
+  suggested_starter_phrases:
+    - "Given the scope of responsibilities and market benchmarks, I believe a compensation package that reflects..."
+    - "Under no circumstances would I compromise on the strategic autonomy required to deliver..."
+    - "Having established a proven track record in scaling engineering organizations, my expectation is..."
+  recommended_correction_mode: MOCK
+  voice_name: Kore
+  topic_tags:
+    - negotiation
+    - executive
+    - compensation
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.jobinterview.behavioral-star
+  title: "Job Interview: Behavioral STAR Method Drill"
+  category: JOB_INTERVIEW
+  cefr_level: B2
+  system_prompt: "You are a seasoned talent acquisition lead at a top international firm. Ask behavioral questions using the STAR framework (Situation, Task, Action, Result) regarding conflict resolution, tight deadlines, and ownership."
+  context_description: "A formal behavioral interview testing your ability to explain complex workplace challenges concisely and compellingly."
+  target_vocab_ids:
+    - vocab.cross-functional
+    - vocab.contingency
+    - vocab.stakeholder
+  target_grammar_ids:
+    - grammar.present-perfect-vs-past-simple
+  suggested_starter_phrases:
+    - "In my previous role, we were faced with an unforeseen delay when..."
+    - "My immediate responsibility was to align the cross-functional stakeholders..."
+    - "As a consequence of implementing that contingency plan, we achieved a 25% reduction in..."
+  recommended_correction_mode: MOCK
+  voice_name: Fenrir
+  topic_tags:
+    - interview
+    - behavioral
+    - star_method
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.jobinterview.system-architecture-lead
+  title: "Job Interview: Principal Engineer Architecture Defense"
+  category: JOB_INTERVIEW
+  cefr_level: C1
+  system_prompt: "You are a Distinguished Architect interviewing a candidate for a Staff/Principal Engineer position. Probe distributed consensus, eventual consistency, partition tolerance, database caching layers, and high-concurrency trade-offs with rigorous technical depth."
+  context_description: "Defending a large-scale distributed system design under rigorous scrutiny from a technical architect."
+  target_vocab_ids:
+    - vocab.discrepancy
+    - vocab.scrutiny
+    - vocab.paradigm
+    - vocab.proactive
+  target_grammar_ids:
+    - grammar.c1.inversion-negative-adverbials
+    - grammar.c2.subjunctive-and-formal-modals
+  suggested_starter_phrases:
+    - "When designing for high throughput, we opted for an event-driven architecture because..."
+    - "Rarely do distributed systems maintain strict consistency without incurring significant latency penalties."
+    - "To mitigate potential data discrepancies during network partitions, we implemented..."
+  recommended_correction_mode: MOCK
+  voice_name: Fenrir
+  topic_tags:
+    - interview
+    - technical
+    - software_architecture
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.meeting.project-standup-blockers
+  title: "Meeting: Agile Standup & Critical Blockers"
+  category: MEETING
+  cefr_level: B2
+  system_prompt: "You are an Agile Delivery Manager running a daily standup for a distributed squad. Keep the cadence brisk, inquire about completed user stories, upcoming sprint deliverables, and probe any blocking dependencies."
+  context_description: "A fast-paced daily sprint standup where you give your status update and raise a dependency blocker."
+  target_vocab_ids:
+    - vocab.bottleneck
+    - vocab.escalate
+    - vocab.clarify
+  target_grammar_ids:
+    - grammar.present-perfect-vs-past-simple
+  suggested_starter_phrases:
+    - "Yesterday, I finished the API integration for user authentication."
+    - "Today, I am focusing on the caching layer, but I am blocked on..."
+    - "We might need to escalate this dependency to the infrastructure team to avoid slipping the sprint."
+  recommended_correction_mode: DRILL
+  voice_name: Puck
+  topic_tags:
+    - agile
+    - meeting
+    - engineering
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.meeting.quarterly-business-review
+  title: "Meeting: Quarterly Executive QBR Presentation"
+  category: MEETING
+  cefr_level: C1
+  system_prompt: "You are a VP of Global Product Strategy listening to a Quarterly Business Review (QBR). Challenge revenue metrics, customer churn assumptions, go-to-market speed, and operational redundancies with incisive business questions."
+  context_description: "Presenting quarterly performance metrics and justifying strategic roadmaps to executive leadership."
+  target_vocab_ids:
+    - vocab.deliberation
+    - vocab.comprehensive
+    - vocab.redundancy
+    - vocab.scrutiny
+  target_grammar_ids:
+    - grammar.c1.participle-clauses
+    - grammar.b2.third-mixed-conditionals
+  suggested_starter_phrases:
+    - "Looking at our Q3 indicators, customer retention has remained robust despite market volatility."
+    - "Had we not diversified our enterprise portfolio earlier, our margin compression would have been much steeper."
+    - "We subjected our operational expenditures to rigorous scrutiny to eliminate structural redundancies."
+  recommended_correction_mode: MOCK
+  voice_name: Kore
+  topic_tags:
+    - executive
+    - meeting
+    - business_review
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.ielts.part2-part3-technology
+  title: "IELTS Speaking: Technology & Modern Connectivity"
+  category: IELTS
+  cefr_level: B2
+  system_prompt: "You are an official IELTS Speaking Examiner. Administer Part 2 by giving the candidate a 1-2 minute prompt about an impactful technological innovation, followed by Part 3 abstract analytical discussion on social isolation, screen time, and digital literacy."
+  context_description: "Official IELTS Speaking test format simulating a 1-2 minute long turn followed by analytical abstract debate."
+  target_vocab_ids:
+    - vocab.enhance
+    - vocab.isolate
+    - vocab.significant
+  target_grammar_ids:
+    - grammar.b2.passive-voice-formal
+    - grammar.b1.first-second-conditional
+  suggested_starter_phrases:
+    - "I'd like to talk about an electronic device that has revolutionized how I organize my daily schedule..."
+    - "From a broader societal perspective, while digital tools increase efficiency, they may also lead to..."
+    - "If people were to disconnect for a week, they would likely experience both relief and anxiety."
+  recommended_correction_mode: MOCK
+  voice_name: Fenrir
+  topic_tags:
+    - ielts
+    - exam_preparation
+    - technology
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.ielts.part2-part3-urbanization
+  title: "IELTS Speaking: Mega-Cities & Urban Sustainability"
+  category: IELTS
+  cefr_level: C1
+  system_prompt: "You are an experienced IELTS Examiner evaluating for Bands 7.5 to 9.0. Conduct an advanced Part 3 discussion on demographic migration, architectural heritage preservation versus urbanization, and smart city infrastructure."
+  context_description: "Advanced IELTS Part 3 discussion demanding academic vocabulary, complex syntactic structures, and nuanced abstract evaluation."
+  target_vocab_ids:
+    - vocab.disparity
+    - vocab.indispensable
+    - vocab.pragmatic
+    - vocab.resilience
+  target_grammar_ids:
+    - grammar.c1.inversion-negative-adverbials
+    - grammar.c2.cleft-sentences-emphasis
+  suggested_starter_phrases:
+    - "What stands out most prominently in mega-city urbanization is the socio-economic disparity..."
+    - "Not only do sustainable transit systems reduce carbon emissions, but they also foster civic cohesion."
+    - "It is the integration of public green spaces that fundamentally determines the resilience of modern metropolises."
+  recommended_correction_mode: MOCK
+  voice_name: Fenrir
+  topic_tags:
+    - ielts
+    - urban_planning
+    - environment
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.vocabdrill.business-strategy
+  title: "Vocabulary Drill: Precision in Business Strategy"
+  category: VOCAB_DRILL
+  cefr_level: B2
+  system_prompt: "You are a specialized Business English vocabulary trainer. Challenge the learner to explain a workplace initiative using specific target collocations: 'align with', 'identify bottlenecks', 'leverage existing assets', and 'contingency plan'. Praise accurate collocations and push for higher precision."
+  context_description: "A fast-paced targeted drill to practice using high-frequency corporate strategy terms naturally in spontaneous speech."
+  target_vocab_ids:
+    - vocab.align
+    - vocab.bottleneck
+    - vocab.leverage
+    - vocab.contingency
+  target_grammar_ids:
+    - grammar.b2.passive-voice-formal
+  suggested_starter_phrases:
+    - "To ensure our roadmap succeeds, we must align our engineering priorities with marketing."
+    - "Our team identified a significant bottleneck during deployment and leveraged automated tests to resolve it."
+    - "We also formulated a contingency plan in case cloud infrastructure costs exceed expectations."
+  recommended_correction_mode: DRILL
+  voice_name: Puck
+  topic_tags:
+    - vocabulary_drill
+    - business
+    - strategy
+  status: APPROVED
+  version: 1
+
+- id: speaking.c1.vocabdrill.executive-nuance
+  title: "Vocabulary Drill: Executive Nuance & Reformulation"
+  category: VOCAB_DRILL
+  cefr_level: C1
+  system_prompt: "You are an executive communications coach. Guide the learner through a targeted drill where they must replace generic colloquial phrases with high-register executive vocabulary such as 'proactive', 'pragmatic', 'nuanced', 'imperative', and 'reconcile'."
+  context_description: "Elevate your spontaneous speaking register by actively replacing simple phrasing with precise executive vocabulary."
+  target_vocab_ids:
+    - vocab.proactive
+    - vocab.pragmatic
+    - vocab.nuance
+    - vocab.imperative
+    - vocab.reconcile
+  target_grammar_ids:
+    - grammar.c1.participle-clauses
+  suggested_starter_phrases:
+    - "Rather than adopting a reactive stance, it is imperative that we take a proactive approach."
+    - "The situation requires a pragmatic solution that acknowledges the cultural nuances of both teams."
+    - "We managed to reconcile conflicting stakeholder expectations by proposing a viable compromise."
+  recommended_correction_mode: DRILL
+  voice_name: Aoede
+  topic_tags:
+    - vocabulary_drill
+    - executive_presence
+    - precision
+  status: APPROVED
+  version: 1
+
+- id: speaking.b1.grammardrill.present-perfect-experience
+  title: "Grammar Drill: Past Simple vs Present Perfect"
+  category: GRAMMAR_DRILL
+  cefr_level: B1
+  system_prompt: "You are an attentive grammar coach specializing in Turkish learner traps. Turkish speakers frequently confuse Past Simple ('I finished in 2021') and Present Perfect ('I have worked here for three years'). Guide the learner through asking and answering questions about past experiences versus ongoing achievements, gently nudging correct tense choices."
+  context_description: "Targeted drill to overcome Turkish L1 transfer regarding 'since/for' and the distinction between completed past events and life experiences."
+  target_vocab_ids:
+    - vocab.deliver
+    - vocab.feedback
+  target_grammar_ids:
+    - grammar.present-perfect-vs-past-simple
+  suggested_starter_phrases:
+    - "I have been working as a software developer for four years."
+    - "In 2022, I graduated from university and joined my current company."
+    - "I have already delivered several major client features this quarter."
+  recommended_correction_mode: DRILL
+  voice_name: Aoede
+  topic_tags:
+    - grammar_drill
+    - tenses
+    - turkish_traps
+  status: APPROVED
+  version: 1
+
+- id: speaking.b2.grammardrill.hypotheticals-conditionals
+  title: "Grammar Drill: Hypotheticals & Mixed Conditionals"
+  category: GRAMMAR_DRILL
+  cefr_level: B2
+  system_prompt: "You are an encouraging grammar drill coach. Focus on Second, Third, and Mixed Conditionals in professional decision-making contexts. Ask the learner what they would do if their budget was doubled, or how their career would be different if they had chosen a different specialization."
+  context_description: "Master hypothetical thinking and conditional reasoning in English without translating from Turkish conditional suffixes."
+  target_vocab_ids:
+    - vocab.contingency
+    - vocab.viable
+  target_grammar_ids:
+    - grammar.b2.third-mixed-conditionals
+    - grammar.b1.first-second-conditional
+  suggested_starter_phrases:
+    - "If our team had more resources, we would readily invest in automated testing."
+    - "If we hadn't migrated to microservices last year, our current scaling would be impossible."
+    - "Had we anticipated the server spike, we would have provisioned extra instances."
+  recommended_correction_mode: DRILL
+  voice_name: Puck
+  topic_tags:
+    - grammar_drill
+    - conditionals
+    - decision_making
+  status: APPROVED
+  version: 1

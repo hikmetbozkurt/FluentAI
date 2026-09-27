@@ -1,0 +1,4987 @@
+- id: vocab.catch-22
+  headword: catch-22
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌkætʃ twenti ˈtuː/
+  audio_ref: null
+  definition_en: A paradoxical and frustrating situation from which an individual cannot escape because of contradictory rules
+    or conditions.
+  meaning_tr: içinden çıkılmaz çelişkili durum, kısır döngü
+  examples:
+  - en: Job seekers often face a catch-22 where employers require experience that can only be obtained by having a job.
+    tr: İş arayanlar genellikle işverenlerin yalnızca bir işe sahip olarak kazanılabilecek deneyim talep ettiği bir kısır
+      döngüyle karşılaşırlar.
+    context: career
+  - en: Without credit history you cannot get a loan, creating a financial catch-22.
+    tr: Kredi geçmişi olmadan kredi alamazsınız, bu da finansal bir çıkmaz yaratır.
+    context: finance
+  collocations:
+  - text: classic catch-22
+    tr: klasik kısır döngü
+  - text: face a catch-22
+    tr: içinden çıkılmaz durumla yüzleşmek
+  register: general
+  topic_tags:
+  - problem-solving
+  - dilemma
+  - logic
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stumbling-block
+  headword: stumbling block
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈstʌmblɪŋ blɑːk/
+  audio_ref: null
+  definition_en: An obstacle or circumstance that causes difficulties, delays, or prevents progress.
+  meaning_tr: engel, köstek, pürüz
+  examples:
+  - en: Disagreements over intellectual property rights proved to be the main stumbling block in the negotiations.
+    tr: Fikri mülkiyet hakları konusundaki anlaşmazlıklar müzakerelerdeki ana engel haline geldi.
+    context: business
+  - en: Budgetary constraints remain a serious stumbling block for urban infrastructure development.
+    tr: Bütçe kısıtlamaları kentsel altyapı geliştirme için ciddi bir engel olmaya devam ediyor.
+    context: governance
+  collocations:
+  - text: major stumbling block
+    tr: büyük engel
+  - text: overcome a stumbling block
+    tr: bir engeli aşmak
+  register: formal
+  topic_tags:
+  - problem-solving
+  - barriers
+  - challenges
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.consternation
+  headword: consternation
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌkɑːnstərˈneɪʃn/
+  audio_ref: null
+  definition_en: Feelings of anxiety, distress, or dismay, typically at something unexpected that disrupts plans.
+  meaning_tr: şaşkınlık, dehşet, endişeli telaş
+  examples:
+  - en: The sudden collapse of the regional supplier caused widespread consternation among factory directors.
+    tr: Bölgesel tedarikçinin ani çöküşü fabrika müdürleri arasında yaygın bir dehşet ve telaşa yol açtı.
+    context: business
+  - en: Much to the consternation of investors, the central bank unexpectedly raised interest rates.
+    tr: Yatırımcıların büyük endişesine rağmen merkez bankası faiz oranlarını beklenmedik bir şekilde artırdı.
+    context: finance
+  collocations:
+  - text: much to someone's consternation
+    tr: birinin büyük şaşkınlığına ve üzüntüsüne yol açarak
+  - text: cause consternation
+    tr: panik ve endişe yaratmak
+  register: formal
+  topic_tags:
+  - problem-solving
+  - emotions
+  - crisis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.fiasco
+  headword: fiasco
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /fiˈæskoʊ/
+  audio_ref: null
+  definition_en: A thing that is a complete failure, especially in a ludicrous or humiliating way.
+  meaning_tr: fiyasko, tam bir hezimet
+  examples:
+  - en: The product launch turned into a complete fiasco when the live demonstration crashed on stage.
+    tr: Canlı tanıtım sahnede çökünce ürün lansmanı tam bir fiyaskoya dönüştü.
+    context: technology
+  - en: Poor organizational planning transformed the high-profile summit into an international fiasco.
+    tr: Zayıf organizasyonel planlama, üst düzey zirveyi uluslararası bir fiyaskoya çevirdi.
+    context: politics
+  collocations:
+  - text: complete fiasco
+    tr: tam bir fiyasko
+  - text: turn into a fiasco
+    tr: fiyaskoya dönüşmek
+  register: general
+  topic_tags:
+  - problem-solving
+  - failure
+  - crisis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.aberration
+  headword: aberration
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌæbəˈreɪʃn/
+  audio_ref: null
+  definition_en: A departure from what is normal, usual, or expected, typically one that is unwelcome.
+  meaning_tr: sapma, anormal durum, olağandışılık
+  examples:
+  - en: The board dismissed the third-quarter revenue dip as a temporary aberration caused by supply shortages.
+    tr: Yönetim kurulu üçüncü çeyrek gelir düşüşünü tedarik sıkıntılarının yol açtığı geçici bir sapma olarak değerlendirdi.
+    context: business
+  - en: His reckless outburst during the meeting was an uncharacteristic aberration from his usual composure.
+    tr: Toplantıdaki fevri çıkışı, olağan soğukkanlılığından alışılmadık bir sapmaydı.
+    context: professional
+  collocations:
+  - text: statistical aberration
+    tr: istatistiksel sapma
+  - text: temporary aberration
+    tr: geçici olağandışılık
+  register: formal
+  topic_tags:
+  - problem-solving
+  - deviation
+  - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dearth
+  headword: dearth
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /dɜːrθ/
+  audio_ref: null
+  definition_en: A scarcity or lack of something essential.
+  meaning_tr: kıtlık, eksiklik, yokluk
+  examples:
+  - en: The critical dearth of skilled software engineers has stalled several flagship digital initiatives.
+    tr: Yetenekli yazılım mühendislerinin ciddi kıtlığı, birçok önemli dijital girişimi durma noktasına getirdi.
+    context: technology
+  - en: Researchers struggled to formulate conclusions due to a dearth of reliable empirical data.
+    tr: Araştırmacılar, güvenilir ampirik veri kıtlığı nedeniyle sonuç çıkarmakta zorlandılar.
+    context: academic
+  collocations:
+  - text: dearth of information
+    tr: bilgi kıtlığı
+  - text: critical dearth
+    tr: ciddi eksiklik
+  register: formal
+  topic_tags:
+  - problem-solving
+  - shortage
+  - scarcity
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.subvert
+  headword: subvert
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /səbˈvɜːrt/
+  audio_ref: null
+  definition_en: To undermine the power, authority, or integrity of an established system or institution.
+  meaning_tr: altını oymak, temelini sarsmak, yıkmaya çalışmak
+  examples:
+  - en: Internal factions attempted to subvert the leadership's reform agenda through covert leaks.
+    tr: İç hizipler, gizli sızıntılar yoluyla yönetimin reform gündeminin altını oymaya çalıştı.
+    context: governance
+  - en: Innovative startups frequently subvert traditional business models by delivering decentralized services.
+    tr: Yenilikçi girişimler, merkeziyetsiz hizmetler sunarak geleneksel iş modellerini sıklıkla altüst eder.
+    context: business
+  collocations:
+  - text: subvert authority
+    tr: otoriteyi sarsmak
+  - text: subvert expectations
+    tr: beklentileri boşa çıkarmak/altüst etmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - power
+  - disruption
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.culminate
+  headword: culminate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈkʌlmɪneɪt/
+  audio_ref: null
+  definition_en: To reach a climax, high point, or decisive final outcome after a protracted process.
+  meaning_tr: ile sonuçlanmak, zirveye ulaşmak, noktalanmak
+  examples:
+  - en: Months of tense arbitration culminated in a landmark agreement that satisfied both unions and management.
+    tr: Aylar süren gergin hakemlik süreci, hem sendikaları hem de yönetimi tatmin eden tarihi bir anlaşmayla noktalandı.
+    context: work
+  - en: Years of painstaking laboratory experiments culminated in the synthesis of a novel compound.
+    tr: Yıllar süren titiz laboratuvar deneyleri, yeni bir bileşiğin sentezlenmesiyle zirveye ulaştı.
+    context: science
+  collocations:
+  - text: culminate in success
+    tr: başarıyla sonuçlanmak
+  - text: culminate in a dispute
+    tr: anlaşmazlıkla sonuçlanmak
+  register: formal
+  topic_tags:
+  - problem-solving
+  - outcomes
+  - resolution
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.attenuate
+  headword: attenuate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /əˈtenjueɪt/
+  audio_ref: null
+  definition_en: To reduce the force, intensity, effect, or value of something.
+  meaning_tr: hafifletmek, şiddetini azaltmak, zayıflatmak
+  examples:
+  - en: The central bank introduced fiscal buffers to attenuate the macroeconomic impact of commodity price shocks.
+    tr: Merkez bankası emtia fiyat şoklarının makroekonomik etkisini hafifletmek için mali tamponlar getirdi.
+    context: economics
+  - en: Acoustic panels were installed throughout the auditorium to attenuate reverberation and background noise.
+    tr: Yankıyı ve arka plan gürültüsünü zayıflatmak için oditoryumun her yerine akustik paneller kuruldu.
+    context: engineering
+  collocations:
+  - text: attenuate risk
+    tr: riski azaltmak
+  - text: attenuate the impact
+    tr: etkiyi hafifletmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - mitigation
+  - control
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.extenuate
+  headword: extenuate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪkˈstenjueɪt/
+  audio_ref: null
+  definition_en: To make guilt, an offense, or an error seem less serious by providing mitigating justifications.
+  meaning_tr: hafifletmek (suçu/hatayı), mazeret göstererek yumuşatmak
+  examples:
+  - en: Nothing can extenuate such gross negligence on the part of the supervising engineers.
+    tr: Denetçi mühendisler tarafındaki böylesine ağır bir ihmali hiçbir şey mazur gösteremez.
+    context: legal
+  - en: The defense attorney presented evidence of psychological stress to extenuate the defendant's conduct.
+    tr: Savunma avukatı sanığın davranışını hafifletmek için psikolojik stres kanıtları sundu.
+    context: law
+  collocations:
+  - text: extenuating circumstances
+    tr: hafifletici nedenler
+  - text: extenuate the blame
+    tr: kusuru hafifletmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - mitigation
+  - justice
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.thwart
+  headword: thwart
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /θwɔːrt/
+  audio_ref: null
+  definition_en: To prevent someone from accomplishing something or to prevent an ambition from succeeding.
+  meaning_tr: engellemek, boşa çıkarmak, köstek olmak
+  examples:
+  - en: Vigilant cybersecurity protocols thwarted repeated attempts by hackers to breach the repository.
+    tr: Teyakkuz halindeki siber güvenlik protokolleri, bilgisayar korsanlarının depoya sızmaya yönelik mükerrer girişimlerini
+      boşa çıkardı.
+    context: technology
+  - en: Adverse atmospheric conditions thwarted the expedition's attempt to summit the mountain.
+    tr: Olumsuz atmosferik koşullar sefer heyetinin dağın zirvesine ulaşma girişimini engelledi.
+    context: general
+  collocations:
+  - text: thwart an attempt
+    tr: bir girişimi boşa çıkarmak
+  - text: thwart someone's plans
+    tr: birinin planlarını suya düşürmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - prevention
+  - obstacles
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stymie
+  headword: stymie
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈstaɪmi/
+  audio_ref: null
+  definition_en: To prevent or hinder the progress of an initiative or investigation.
+  meaning_tr: çıkmaza sokmak, ilerlemesine engel olmak, tıkamak
+  examples:
+  - en: Bureaucratic red tape has repeatedly stymied efforts to expedite renewable energy permits.
+    tr: Bürokratik kırtasiyecilik yenilenebilir enerji izinlerini hızlandırma çabalarını defalarca tıkadı.
+    context: governance
+  - en: Investigators were stymied by the suspect's encrypted hard drives and evasive answers.
+    tr: Soruşturmacılar şüphelinin şifreli sabit diskleri ve kaçamak yanıtları nedeniyle çıkmaza girdiler.
+    context: legal
+  collocations:
+  - text: stymie progress
+    tr: ilerlemeyi engellemek
+  - text: stymie efforts
+    tr: çabaları çıkmaza sokmak
+  register: formal
+  topic_tags:
+  - problem-solving
+  - obstruction
+  - delays
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.insidious
+  headword: insidious
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ɪnˈsɪdiəs/
+  audio_ref: null
+  definition_en: Proceeding in a gradual, subtle way, but with very harmful effects.
+  meaning_tr: sinsi, gizlice ilerleyen ve zararlı
+  examples:
+  - en: Inflation can have an insidious effect on savings, quietly eroding purchasing power over decades.
+    tr: Enflasyon tasarruflar üzerinde sinsi bir etkiye sahip olabilir ve on yıllar boyunca satın alma gücünü sessizce aşındırabilir.
+    context: economics
+  - en: The malware was insidious because it operated undetected in background threads for months.
+    tr: Kötü amaçlı yazılım sinsiceydi çünkü aylarca arka plan iş parçacıklarında fark edilmeden çalıştı.
+    context: technology
+  collocations:
+  - text: insidious influence
+    tr: sinsi etki
+  - text: insidious disease
+    tr: sinsi hastalık
+  register: formal
+  topic_tags:
+  - problem-solving
+  - risks
+  - subtle-threats
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tenuous
+  headword: tenuous
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈtenjuəs/
+  audio_ref: null
+  definition_en: Very weak, slight, or unsubstantiated; having little substance.
+  meaning_tr: zayıf, eğreti, temelsiz, pamuk ipliğine bağlı
+  examples:
+  - en: The coalition maintained only a tenuous hold on parliamentary power following the vote.
+    tr: Koalisyon oylamanın ardından parlamento gücü üzerinde yalnızca pamuk ipliğine bağlı bir hâkimiyet kurabildi.
+    context: politics
+  - en: Critics argued that the connection between the two variables was tenuous at best.
+    tr: Eleştirmenler iki değişken arasındaki bağlantının en iyi ihtimalle son derece zayıf olduğunu savundular.
+    context: academic
+  collocations:
+  - text: tenuous link
+    tr: zayıf bağlantı
+  - text: tenuous grasp
+    tr: eğreti hâkimiyet
+  register: formal
+  topic_tags:
+  - problem-solving
+  - weakness
+  - evidence
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.superfluous
+  headword: superfluous
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /suːˈpɜːrfluəs/
+  audio_ref: null
+  definition_en: Exceeding what is sufficient or necessary; redundant and unneeded.
+  meaning_tr: gereksiz, fuzuli, lüzumsuz, fazlalık
+  examples:
+  - en: Automating data ingestion rendered manual document reconciliation entirely superfluous.
+    tr: Veri alımını otomatikleştirmek manuel belge mutabakatını tamamen fuzuli kıldı.
+    context: technology
+  - en: The technical report was revised to eliminate superfluous jargon and streamline recommendations.
+    tr: Teknik rapor gereksiz mesleki terimleri ayıklamak ve tavsiyeleri sadeleştirmek için gözden geçirildi.
+    context: professional
+  collocations:
+  - text: render superfluous
+    tr: fuzuli hale getirmek
+  - text: superfluous details
+    tr: gereksiz ayrıntılar
+  register: formal
+  topic_tags:
+  - problem-solving
+  - efficiency
+  - redundancy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.unprecedented
+  headword: unprecedented
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ʌnˈpresɪdentɪd/
+  audio_ref: null
+  definition_en: Never done or known before; extraordinary and without parallel.
+  meaning_tr: eşi benzeri görülmemiş, görülmemiş, emsalsiz
+  examples:
+  - en: The abrupt supply chain shock prompted an unprecedented surge in transport tariffs.
+    tr: Ani tedarik zinciri şoku nakliye tarifelerinde eşi benzeri görülmemiş bir artışı tetikledi.
+    context: logistics
+  - en: The team responded to unprecedented server loads by deploying auto-scaling microservices.
+    tr: Ekip görülmemiş sunucu yüklerine otomatik ölçeklenen mikro hizmetler devreye sokarak yanıt verdi.
+    context: technology
+  collocations:
+  - text: unprecedented scale
+    tr: emsalsiz boyut/ölçek
+  - text: unprecedented event
+    tr: eşi görülmemiş olay
+  register: formal
+  topic_tags:
+  - problem-solving
+  - extraordinary
+  - change
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.remediable
+  headword: remediable
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /rɪˈmiːdiəbl/
+  audio_ref: null
+  definition_en: Capable of being remedied, corrected, or cured.
+  meaning_tr: düzeltilebilir, çaresi olan, telafi edilebilir
+  examples:
+  - en: Fortunately, the discrepancy in the financial statements was determined to be easily remediable.
+    tr: Neyse ki mali tablolardaki tutarsızlığın kolayca düzeltilebilir olduğu belirlendi.
+    context: finance
+  - en: Structural flaws in the legacy architecture are remediable through iterative refactoring.
+    tr: Eski mimarideki yapısal kusurlar yinelemeli yeniden yapılandırma yoluyla düzeltilebilir niteliktedir.
+    context: technology
+  collocations:
+  - text: readily remediable
+    tr: kolaylıkla düzeltilebilir
+  - text: remediable defect
+    tr: giderilebilir kusur
+  register: formal
+  topic_tags:
+  - problem-solving
+  - corrective-action
+  - solutions
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.elusive
+  headword: elusive
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ɪˈluːsɪv/
+  audio_ref: null
+  definition_en: Difficult to find, catch, achieve, or fully comprehend.
+  meaning_tr: yakalanması/ulaşılması zor, ele avuca sığmaz, anlaşılması güç
+  examples:
+  - en: A durable diplomatic solution to the border dispute has remained frustratingly elusive.
+    tr: Sınır ihtilafına yönelik kalıcı bir diplomatik çözüm can sıkıcı derecede ulaşılamaz kalmaya devam etti.
+    context: politics
+  - en: Root-cause identification proved elusive because the concurrency bug appeared non-deterministically.
+    tr: Kök neden tespiti güç oldu çünkü eşzamanlılık hatası deterministik olmayan bir şekilde ortaya çıkıyordu.
+    context: technology
+  collocations:
+  - text: remain elusive
+    tr: ulaşılmazlığını korumak
+  - text: elusive goal
+    tr: ulaşılması güç hedef
+  register: formal
+  topic_tags:
+  - problem-solving
+  - challenges
+  - complexity
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.quandary-prone
+  headword: quandary-prone
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈkwɑːndəri proʊn/
+  audio_ref: null
+  definition_en: Tending to experience or generate dilemmas and states of perplexity.
+  meaning_tr: ikilemlere yatkın, çıkmaza sürüklenmeye elverişli
+  examples:
+  - en: Complex cross-border mergers are inherently quandary-prone due to diverging jurisdictional statutes.
+    tr: Karmaşık sınır ötesi birleşmeler, farklılaşan yargı yetkisi kanunları nedeniyle doğası gereği ikilemlere yatkındır.
+    context: business
+  - en: Inexperienced project leads often find ambiguous requirement phases highly quandary-prone.
+    tr: Deneyimsiz proje liderleri, belirsiz gereksinim aşamalarını sıklıkla çıkmaza yatkın bulurlar.
+    context: management
+  collocations:
+  - text: quandary-prone process
+    tr: ikilemlere gebe süreç
+  - text: quandary-prone environment
+    tr: çıkmazlara yatkın ortam
+  register: formal
+  topic_tags:
+  - problem-solving
+  - dilemma
+  - uncertainty
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.insoluble
+  headword: insoluble
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ɪnˈsɑːljəbl/
+  audio_ref: null
+  definition_en: Impossible to solve, explain, or resolve; also incapable of being dissolved in a liquid.
+  meaning_tr: çözülemez, halledilemez (sorun); çözünmez (kimya)
+  examples:
+  - en: The panel concluded that the jurisdictional impasse presented an insoluble dilemma under current treaties.
+    tr: Panel, yargı yetkisi çıkmazının mevcut anlaşmalar altında çözülemez bir ikilem teşkil ettiği sonucuna vardı.
+    context: legal
+  - en: What initially seemed like an insoluble engineering bottleneck was surmounted using composite materials.
+    tr: Başlangıçta çözülemez bir mühendislik tıkanıklığı gibi görünen sorun, kompozit malzemeler kullanılarak aşıldı.
+    context: engineering
+  collocations:
+  - text: insoluble problem
+    tr: çözülemez problem
+  - text: seem insoluble
+    tr: çözümsüz görünmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - impossibility
+  - complexity
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.resourcefully
+  headword: resourcefully
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /rɪˈsɔːrsfəli/
+  audio_ref: null
+  definition_en: In a manner characterized by ingenuity, adaptability, and clever problem-solving.
+  meaning_tr: beceriklilikle, kaynakları ustalıkla kullanarak, pratik zekayla
+  examples:
+  - en: When supply chains froze, the operations manager acted resourcefully by procuring domestic substitutes.
+    tr: Tedarik zincirleri donduğunda operasyon müdürü yerli ikameler temin ederek beceriklilikle hareket etti.
+    context: business
+  - en: The stranded expedition resourcefully repaired their communications antenna using scrap wire.
+    tr: Mahsur kalan keşif heyeti hurda tel kullanarak iletişim antenlerini ustalıkla onardı.
+    context: general
+  collocations:
+  - text: act resourcefully
+    tr: beceriklilikle hareket etmek
+  - text: respond resourcefully
+    tr: ustaca karşılık vermek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - ingenuity
+  - adaptability
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tactfully
+  headword: tactfully
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˈtæktfəli/
+  audio_ref: null
+  definition_en: With sensitivity and discretion in dealing with others or handling difficult issues.
+  meaning_tr: incelikle, nazikçe, kırmadan, usturuplu bir şekilde
+  examples:
+  - en: The mediator tactfully steered discussions away from personal grievances and toward compromise.
+    tr: Arabulucu görüşmeleri incelikle kişisel kırgınlıklardan uzaklaştırıp uzlaşmaya yönlendirdi.
+    context: work
+  - en: She tactfully pointed out the computational error without embarrassing the junior analyst.
+    tr: Kıdemsiz analisti utandırmadan hesaplama hatasını nazikçe ve usturuplu bir şekilde belirtti.
+    context: professional
+  collocations:
+  - text: handle tactfully
+    tr: incelikle ele almak
+  - text: phrase tactfully
+    tr: usturuplu şekilde ifade etmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - diplomacy
+  - communication
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.judiciously
+  headword: judiciously
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /dʒuːˈdɪʃəsli/
+  audio_ref: null
+  definition_en: With good judgment, wisdom, or sensible discretion.
+  meaning_tr: sağduyuyla, basiretle, akıllıca, yerli yerinde
+  examples:
+  - en: The investment committee allocated venture capital judiciously across high-potential sectors.
+    tr: Yatırım komitesi risk sermayesini yüksek potansiyelli sektörler arasında sağduyuyla tahsis etti.
+    context: finance
+  - en: System resources must be utilized judiciously to prevent thread contention during peak traffic.
+    tr: Yoğun trafik sırasında iş parçacığı çakışmasını önlemek için sistem kaynakları basiretle kullanılmalıdır.
+    context: technology
+  collocations:
+  - text: apply judiciously
+    tr: sağduyuyla uygulamak
+  - text: exercise judiciously
+    tr: basiretle icra etmek
+  register: formal
+  topic_tags:
+  - problem-solving
+  - judgment
+  - wisdom
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.thrash-out
+  headword: thrash out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /θræʃ aʊt/
+  audio_ref: null
+  definition_en: To discuss a problem, controversy, or plan thoroughly in order to resolve differences or reach an agreement.
+  meaning_tr: enine boyuna tartışıp tatlıya bağlamak, etraflıca müzakere edip çözmek
+  examples:
+  - en: Delegates worked through the night to thrash out a compromise on cross-border carbon tariffs.
+    tr: Delegeler sınır ötesi karbon tarifeleri konusunda bir uzlaşmaya varmak için bütün gece enine boyuna tartıştı.
+    context: politics
+  - en: We need an emergency strategy session to thrash out these licensing ambiguities.
+    tr: Bu lisans belirsizliklerini etraflıca müzakere edip çözmek için acil bir strateji toplantısına ihtiyacımız var.
+    context: business
+  collocations:
+  - text: thrash out a compromise
+    tr: tartışarak uzlaşmaya varmak
+  - text: thrash out details
+    tr: ayrıntıları enine boyuna tartışmak
+  register: general
+  topic_tags:
+  - problem-solving
+  - negotiation
+  - resolution
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.wrestle-with
+  headword: wrestle with
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /ˈresl wɪð/
+  audio_ref: null
+  definition_en: To struggle persistently to deal with, understand, or solve a difficult problem or decision.
+  meaning_tr: ile cebelleşmek, boğuşmak, mücadele etmek
+  examples:
+  - en: Economists continue to wrestle with the conundrum of persistent inflation alongside slowing growth.
+    tr: Ekonomistler yavaşlayan büyümenin yanı sıra inatçı enflasyon muammasıyla cebelleşmeye devam ediyor.
+    context: economics
+  - en: The engineering team wrestled with severe memory fragmentation before arriving at a cache rewrite.
+    tr: Mühendislik ekibi önbellek yeniden yazımına varmadan önce ciddi bellek parçalanmasıyla boğuştu.
+    context: technology
+  collocations:
+  - text: wrestle with a dilemma
+    tr: bir ikilemle cebelleşmek
+  - text: wrestle with uncertainty
+    tr: belirsizlikle boğuşmak
+  register: general
+  topic_tags:
+  - problem-solving
+  - struggle
+  - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.against-all-odds
+  headword: against all odds
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /əˈɡenst ɔːl ɑːdz/
+  audio_ref: null
+  definition_en: Despite very low probability of success and extreme difficulties or opposition.
+  meaning_tr: her türlü ihtimale/engellere rağmen, tüm imkânsızlıklara karşın
+  examples:
+  - en: Against all odds, the bootstrapped venture became profitable within its first fiscal quarter.
+    tr: Tüm imkânsızlıklara rağmen kendi kaynaklarıyla kurulan girişim ilk mali çeyreğinde kâra geçti.
+    context: business
+  - en: The surgical team saved the trauma victim against all odds after a six-hour operation.
+    tr: Cerrahi ekip altı saatlik ameliyatın ardından her türlü olumsuz ihtimale rağmen travma kurbanını kurtardı.
+    context: medical
+  collocations:
+  - text: succeed against all odds
+    tr: her şeye rağmen başarmak
+  - text: survive against all odds
+    tr: tüm engellere rağmen hayatta kalmak
+  register: general
+  topic_tags:
+  - problem-solving
+  - perseverance
+  - triumph
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.grasp-at-straws
+  headword: grasp at straws
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /ɡræsp æt strɔːz/
+  audio_ref: null
+  definition_en: To desperately try any solution or hope in a dire situation, even when it has virtually no chance of succeeding.
+  meaning_tr: denize düşüp yılana sarılmak, son bir çareye umutsuzca tutunmak
+  examples:
+  - en: Citing unverified rumors as definitive evidence was merely grasping at straws by the defense.
+    tr: Doğrulanmamış söylentileri kesin kanıt olarak sunmak savunma adına sadece çaresizce son umuda sarılmaktı.
+    context: legal
+  - en: As revenue plummeted, the failing firm grasped at straws by releasing hasty, unpolished products.
+    tr: Gelirler çakıldıkça batan firma aceleci ve ham ürünler çıkararak umutsuzca kurtuluş aradı.
+    context: business
+  collocations:
+  - text: be grasping at straws
+    tr: çaresizce çare arayışında olmak
+  - text: mere grasping at straws
+    tr: sadece boş bir çırpınış
+  register: informal
+  topic_tags:
+  - problem-solving
+  - desperation
+  - crisis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.bark-up-the-wrong-tree
+  headword: bark up the wrong tree
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /bɑːrk ʌp ðə rɔːŋ triː/
+  audio_ref: null
+  definition_en: To pursue a mistaken line of thought or course of action in seeking an explanation or solution.
+  meaning_tr: yanlış kapıyı çalmak, yanlış iz üzerinde olmak, boşuna kürek çekmek
+  examples:
+  - en: If you think server latency is caused by the database engine, you are barking up the wrong tree; it is DNS resolution.
+    tr: Sunucu gecikmesine veritabanı motorunun neden olduğunu düşünüyorsanız yanlış kapıyı çalıyorsunuz; sebep DNS çözümlemesidir.
+    context: technology
+  - en: The auditors were barking up the wrong tree by examining employee travel expenses instead of procurement fraud.
+    tr: Denetçiler satın alma yolsuzluğu yerine çalışan seyahat masraflarını inceleyerek yanlış iz peşinde koştular.
+    context: finance
+  collocations:
+  - text: completely barking up the wrong tree
+    tr: tamamen yanlış iz üzerinde olmak
+  - text: realize one is barking up the wrong tree
+    tr: yanlış kapıyı çaldığını fark etmek
+  register: informal
+  topic_tags:
+  - problem-solving
+  - misdirection
+  - error
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cross-that-bridge-when-one-comes-to-it
+  headword: cross that bridge when one comes to it
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /krɔːs ðæt brɪdʒ wen wʌn kʌmz tuː ɪt/
+  audio_ref: null
+  definition_en: To deal with a problem or difficulty only if and when it actually occurs, rather than worrying beforehand.
+  meaning_tr: o gün bir gelsin bakarız, dereyi görmeden paçaları sıvamamak
+  examples:
+  - en: Let us finalize the contract terms first and cross that bridge when we come to it if regulatory delays arise.
+    tr: Önce sözleşme şartlarını kesinleştirelim; mevzuat gecikmeleri ortaya çıkarsa o gün gelince çaresine bakarız.
+    context: business
+  - en: Rather than catastrophizing prospective server migrations, we will cross that bridge when we come to it.
+    tr: Olası sunucu geçişleri hakkında felaket senaryoları üretmek yerine zamanı geldiğinde icabına bakacağız.
+    context: technology
+  collocations:
+  - text: cross that bridge later
+    tr: o konuyu sonraya bırakmak
+  - text: decide to cross that bridge
+    tr: zamanı gelince ilgilenmeye karar vermek
+  register: informal
+  topic_tags:
+  - problem-solving
+  - pragmatism
+  - timing
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.syllogism
+  headword: syllogism
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈsɪlədʒɪzəm/
+  audio_ref: null
+  definition_en: An instance of a form of reasoning in which a conclusion is drawn from two given or assumed propositions.
+  meaning_tr: tasımlama, kıyas, tasım
+  examples:
+  - en: Classical Aristotelian syllogisms consist of a major premise, a minor premise, and a necessary deduction.
+    tr: Klasik Aristotelesçi tasımlar büyük bir öncül, küçük bir öncül ve zorunlu bir çıkarımdan oluşur.
+    context: philosophy
+  - en: The speaker constructed an unsound syllogism that conflated correlation with direct causation.
+    tr: Konuşmacı korelasyonu doğrudan nedensellikle karıştıran kusurlu bir kıyas inşa etti.
+    context: academic
+  collocations:
+  - text: categorical syllogism
+    tr: kategorik kıyas
+  - text: valid syllogism
+    tr: geçerli tasımlama
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - logic
+  - philosophy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tautology
+  headword: tautology
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /tɔːˈtɑːlədʒi/
+  audio_ref: null
+  definition_en: The saying of the same thing twice in different words, generally considered a fault of style or circular
+    logic.
+  meaning_tr: totoloji, gereksiz yineleme, aynı anlama gelen sözcük tekrarı
+  examples:
+  - en: Phrases like 'free gift' or 'unconfirmed rumor' represent textbook examples of rhetorical tautology.
+    tr: '''Ücretsiz hediye'' veya ''doğrulanmamış söylenti'' gibi ifadeler retorik totolojinin ders kitabı niteliğinde örnekleridir.'
+    context: linguistics
+  - en: The circular argument degenerated into a meaningless tautology that offered no empirical insight.
+    tr: Kısır döngülü argüman hiçbir ampirik kavrayış sunmayan anlamsız bir totolojiye dönüştü.
+    context: academic
+  collocations:
+  - text: pure tautology
+    tr: katıksız totoloji
+  - text: rhetorical tautology
+    tr: retorik yineleme
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - logic
+  - language
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.heuristics
+  headword: heuristics
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /hjuːˈrɪstɪks/
+  audio_ref: null
+  definition_en: Practical problem-solving methods or strategies that employ rules of thumb rather than guaranteed algorithms.
+  meaning_tr: sezgisel yöntemler, buluşsal teknikler, sezgisel yaklaşım
+  examples:
+  - en: Search engines leverage complex heuristics to estimate document relevance when full indexing is too slow.
+    tr: Arama motorları tam indeksleme çok yavaş kaldığında belge ilgisini tahmin etmek için karmaşık sezgisel yöntemlerden
+      yararlanır.
+    context: technology
+  - en: Behavioral economists demonstrated that human decision-makers rely heavily on cognitive heuristics under pressure.
+    tr: Davranışsal ekonomistler insan karar vericilerin baskı altında bilişsel sezgisellere büyük ölçüde güvendiğini gösterdi.
+    context: academic
+  collocations:
+  - text: cognitive heuristics
+    tr: bilişsel sezgiseller
+  - text: judgmental heuristics
+    tr: yargısal buluşsal yöntemler
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - cognition
+  - algorithms
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.aporia
+  headword: aporia
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /əˈpɔːriə/
+  audio_ref: null
+  definition_en: An irresolvable internal contradiction or logical impasse in an argument or theory.
+  meaning_tr: apori, çözümsüz çelişki, mantıksal çıkmaz
+  examples:
+  - en: Derrida identified an essential aporia at the foundation of modern legal theory regarding justice and law.
+    tr: Derrida adalet ve yasa konusunda modern hukuk teorisinin temelinde temel bir apori tespit etti.
+    context: philosophy
+  - en: The dialogue concluded in an epistemological aporia where neither disputant could justify their premise.
+    tr: Diyalog hiçbir tartışmacının kendi öncülünü haklı çıkaramadığı epistemolojik bir çıkmazla sonuçlandı.
+    context: academic
+  collocations:
+  - text: epistemological aporia
+    tr: epistemolojik çıkmaz
+  - text: textual aporia
+    tr: metinsel çelişki
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - philosophy
+  - deconstruction
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.adduce
+  headword: adduce
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /əˈduːs/
+  audio_ref: null
+  definition_en: To cite as evidence, justification, or proof in support of an argument.
+  meaning_tr: kanıt/örnek olarak öne sürmek, ileri sürmek
+  examples:
+  - en: The defense adduced several historical precedents to demonstrate that the statute had lapsed.
+    tr: Savunma kanunun hükümsüz kaldığını göstermek için çeşitli tarihi emsalleri öne sürdü.
+    context: legal
+  - en: Researchers adduced experimental metrics to corroborate the proposed thermodynamic hypothesis.
+    tr: Araştırmacılar önerilen termodinamik hipotezi doğrulamak için deneysel ölçümleri kanıt olarak ileri sürdüler.
+    context: academic
+  collocations:
+  - text: adduce evidence
+    tr: kanıt öne sürmek
+  - text: adduce reasons
+    tr: gerekçeler ileri sürmek
+  register: formal
+  topic_tags:
+  - academic-analytical
+  - evidence
+  - argumentation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.interpolate
+  headword: interpolate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪnˈtɜːrpəleɪt/
+  audio_ref: null
+  definition_en: To insert something between other things; or to estimate unknown values from neighboring known values.
+  meaning_tr: araya eklemek, ara değerini hesaplamak/tahmin etmek (matematik)
+  examples:
+  - en: Data analysts interpolated missing sensor readings between discrete recording intervals.
+    tr: Veri analistleri ayrık kayıt aralıkları arasındaki eksik sensör okumalarının ara değerlerini tahmin ettiler.
+    context: statistics
+  - en: Scholars discovered that later copyists had interpolated moralistic glosses into the classical text.
+    tr: Bilim insanları sonraki müstensihlerin klasik metnin içine ahlaki şerhler eklediğini keşfettiler.
+    context: academic
+  collocations:
+  - text: interpolate values
+    tr: ara değerleri hesaplamak
+  - text: interpolate data points
+    tr: veri noktalarını enterpole etmek
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - mathematics
+  - data
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dissent
+  headword: dissent
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈsent/
+  audio_ref: null
+  definition_en: To hold or express opinions that are at variance with those commonly or officially held.
+  meaning_tr: muhalif olmak, karşı oy kullanmak, görüş ayrılığına düşmek
+  examples:
+  - en: Two appellate judges dissented from the majority opinion, arguing that privacy protections had been violated.
+    tr: İki istinaf yargıcı mahremiyet korumalarının ihlal edildiğini savunarak çoğunluk kararına muhalefet etti.
+    context: legal
+  - en: Academic scholars rarely hesitate to dissent from established orthodoxy when counter-evidence emerges.
+    tr: Karşıt kanıtlar ortaya çıktığında akademisyenler yerleşik ortodoksiye muhalif olmaktan nadiren çekinirler.
+    context: academic
+  collocations:
+  - text: dissent from a decision
+    tr: bir karara muhalefet etmek
+  - text: vigorously dissent
+    tr: şiddetle muhalif olmak
+  register: formal
+  topic_tags:
+  - academic-analytical
+  - disagreement
+  - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.recapitulate
+  headword: recapitulate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˌriːkəˈpɪtʃuleɪt/
+  audio_ref: null
+  definition_en: To summarize and state again the main points of an argument or discourse.
+  meaning_tr: özetlemek, ana hatlarıyla tekrarlamak
+  examples:
+  - en: Before opening the floor to debate, the moderator briefly recapitulated the central thesis.
+    tr: Tartışmayı başlatmadan önce moderatör ana tezi kısaca özetledi.
+    context: academic
+  - en: The final chapter recapitulates key empirical findings and suggests vectors for future research.
+    tr: Son bölüm temel ampirik bulguları özetlemekte ve gelecekteki araştırmalar için yönler önermektedir.
+    context: academic
+  collocations:
+  - text: recapitulate key findings
+    tr: temel bulguları özetlemek
+  - text: briefly recapitulate
+    tr: kısaca özetlemek
+  register: formal
+  topic_tags:
+  - academic-analytical
+  - summary
+  - discourse
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.normative
+  headword: normative
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈnɔːrmətɪv/
+  audio_ref: null
+  definition_en: Establishing, relating to, or deriving from a standard or norm, especially of behavior or ethical rules.
+  meaning_tr: normatif, kural koyucu, norm bildiren
+  examples:
+  - en: Normative ethics investigates how moral agents ought to act rather than merely describing how they behave.
+    tr: Normatif etik ahlaki aktörlerin yalnızca nasıl davrandıklarını tanımlamaktan ziyade nasıl davranmaları gerektiğini
+      araştırır.
+    context: philosophy
+  - en: The regulatory whitepaper set forth a normative framework for governing algorithmic liability.
+    tr: Düzenleyici beyaz bülten algoritmik sorumluluğu yönetmek için normatif bir çerçeve ortaya koydu.
+    context: law
+  collocations:
+  - text: normative framework
+    tr: normatif çerçeve
+  - text: normative claims
+    tr: kural koyucu iddialar
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - ethics
+  - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.paradigmatic
+  headword: paradigmatic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌpærədɪɡˈmætɪk/
+  audio_ref: null
+  definition_en: Serving as a typical archetype, exemplary model, or paradigm.
+  meaning_tr: paradigmatik, örnek teşkil eden, model niteliğinde
+  examples:
+  - en: The trial is widely viewed as a paradigmatic case study in prosecutorial misconduct.
+    tr: Dava savcılık suiistimalinde geniş çapta örnek teşkil eden bir vaka çalışması olarak görülmektedir.
+    context: legal
+  - en: Newtonian mechanics stands as a paradigmatic formulation of classical deterministic physics.
+    tr: Newton mekaniği klasik deterministik fiziğin model niteliğinde bir formülasyonu olarak durur.
+    context: science
+  collocations:
+  - text: paradigmatic example
+    tr: model niteliğindeki örnek
+  - text: paradigmatic shift
+    tr: paradigma düzeyinde değişim
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - exemplar
+  - models
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.nomothetic
+  headword: nomothetic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌnɑːməˈθetɪk/
+  audio_ref: null
+  definition_en: Relating to the formulation of general or universal scientific laws and principles.
+  meaning_tr: nomotetik, genel yasalar koymaya çalışan, yasa koyucu
+  examples:
+  - en: Quantitative sociology tends to pursue a nomothetic approach seeking generalizable societal laws.
+    tr: Nicel sosyoloji genellenebilir toplumsal yasalar arayan nomotetik bir yaklaşım izleme eğilimindedir.
+    context: sociology
+  - en: In contrast to idiographic historical narratives, nomothetic analysis relies on standardized statistical patterns.
+    tr: Özel betimleyici tarihsel anlatıların aksine nomotetik analiz standartlaştırılmış istatistiksel örüntülere dayanır.
+    context: academic
+  collocations:
+  - text: nomothetic approach
+    tr: nomotetik yaklaşım
+  - text: nomothetic laws
+    tr: genel geçer yasalar
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - epistemology
+  - methodology
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dialectical
+  headword: dialectical
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌdaɪəˈlektɪkl/
+  audio_ref: null
+  definition_en: Relating to the logical discussion of ideas and opinions through thesis, antithesis, and synthesis.
+  meaning_tr: diyalektik, karşılıklı çelişkilerden senteze varan
+  examples:
+  - en: Hegel conceptualized history as a dialectical unfolding driven by contradictory societal forces.
+    tr: Hegel tarihi çelişkili toplumsal güçlerin yönlendirdiği diyalektik bir açılım olarak kavramsallaştırdı.
+    context: philosophy
+  - en: The relationship between market demand and technological innovation is profoundly dialectical.
+    tr: Piyasa talebi ile teknolojik inovasyon arasındaki ilişki son derece diyalektiktir.
+    context: economics
+  collocations:
+  - text: dialectical process
+    tr: diyalektik süreç
+  - text: dialectical materialism
+    tr: diyalektik materyalizm
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - philosophy
+  - synthesis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.prescriptively
+  headword: prescriptively
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /prɪˈskrɪptɪvli/
+  audio_ref: null
+  definition_en: In a manner that establishes rules, directions, or authoritative standards rather than describing reality.
+  meaning_tr: kuralcı bir şekilde, emredici olarak, reçete sunarcasına
+  examples:
+  - en: Traditional grammarians approached language prescriptively, enforcing strict stylistic conventions.
+    tr: Geleneksel dilbilimciler dile kuralcı bir şekilde yaklaşarak katı üslup kurallarını zorunlu kıldılar.
+    context: linguistics
+  - en: The management guidelines were laid out prescriptively, leaving little latitude for team discretion.
+    tr: Yönetim kılavuzları kuralcı bir şekilde düzenlendi ve ekip takdirine çok az hareket alanı bıraktı.
+    context: management
+  collocations:
+  - text: act prescriptively
+    tr: kuralcı hareket etmek
+  - text: defined prescriptively
+    tr: kuralcı tarzda tanımlanmış
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - rules
+  - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tautologically
+  headword: tautologically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌtɔːtəˈlɑːdʒɪkli/
+  audio_ref: null
+  definition_en: In a way that unnecessarily repeats the same concept in different words or relies on circular reasoning.
+  meaning_tr: totolojik olarak, döngüsel mantıkla yineleyerek
+  examples:
+  - en: The author defined survival of the fittest tautologically by stating that those who survived were the fittest.
+    tr: Yazar en uyumluların hayatta kalmasını hayatta kalanların en uyumlular olduğunu belirterek totolojik bir biçimde tanımladı.
+    context: biology
+  - en: Stating that unnecessary spending is waste amounts to arguing tautologically.
+    tr: Gereksiz harcamanın israf olduğunu söylemek totolojik bir argüman öne sürmek anlamına gelir.
+    context: academic
+  collocations:
+  - text: argue tautologically
+    tr: döngüsel biçimde tartışmak
+  - text: tautologically phrased
+    tr: totolojik olarak ifade edilmiş
+  register: academic
+  topic_tags:
+  - academic-analytical
+  - logic
+  - redundancy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rest-on
+  headword: rest on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /rest ɑːn/
+  audio_ref: null
+  definition_en: To depend, rely, or be based fundamentally upon something.
+  meaning_tr: -e dayanmak, temeline dayanmak, bağlı olmak
+  examples:
+  - en: The validity of the econometric model rests on the assumption that agents act with rational expectations.
+    tr: Ekonometrik modelin geçerliliği aktörlerin rasyonel beklentilerle hareket ettiği varsayımına dayanır.
+    context: economics
+  - en: Democratic legitimacy ultimately rests on the consent and active civic participation of the governed.
+    tr: Demokratik meşruiyet nihai olarak yönetilenlerin rızasına ve aktif sivil katılımına dayanır.
+    context: politics
+  collocations:
+  - text: rest on assumptions
+    tr: varsayımlara dayanmak
+  - text: rest on evidence
+    tr: kanıtlar üzerine inşa edilmek
+  register: formal
+  topic_tags:
+  - academic-analytical
+  - foundation
+  - dependency
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.in-and-of-itself
+  headword: in and of itself
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /ɪn ənd əv ɪtˈself/
+  audio_ref: null
+  definition_en: Considered on its own, without reference to other things; inherently.
+  meaning_tr: kendi başına, başlı başına, kendiliğinden
+  examples:
+  - en: Accumulating vast volumes of telemetry data is not valuable in and of itself without actionable analysis.
+    tr: Eyleme dönüştürülebilir analiz olmadan büyük hacimlerde telemetri verisi toplamak kendi başına değerli değildir.
+    context: technology
+  - en: High intelligence is an asset, but in and of itself it cannot guarantee emotional resilience.
+    tr: Yüksek zekâ bir artıdır ancak tek ve kendi başına duygusal dayanıklılığı garanti edemez.
+    context: psychology
+  collocations:
+  - text: valuable in and of itself
+    tr: kendi başına değerli
+  - text: insufficient in and of itself
+    tr: tek başına yetersiz
+  register: formal
+  topic_tags:
+  - academic-analytical
+  - inherence
+  - context
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.curatorship
+  headword: curatorship
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /kjʊˈreɪtərʃɪp/
+  audio_ref: null
+  definition_en: The role, responsibilities, or tenure of a curator who manages and interprets cultural or artistic collections.
+  meaning_tr: küratörlük, sergi/koleksiyon yöneticiliği
+  examples:
+  - en: Under her visionary curatorship, the municipal gallery acquired pioneering post-war installations.
+    tr: Onun vizyoner küratörlüğü altında belediye galerisi çığır açan savaş sonrası yerleştirmelerini bünyesine kattı.
+    context: arts
+  - en: Rigorous curatorship requires balancing archival preservation with public educational accessibility.
+    tr: Titiz küratörlük arşivsel koruma ile halka açık eğitsel erişilebilirlik arasında denge kurmayı gerektirir.
+    context: museums
+  collocations:
+  - text: expert curatorship
+    tr: uzman küratörlük
+  - text: museum curatorship
+    tr: müze küratörlüğü
+  register: formal
+  topic_tags:
+  - culture
+  - museums
+  - art
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.aesthetician
+  headword: aesthetician
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌesθəˈtɪʃn/
+  audio_ref: null
+  definition_en: A philosopher or scholar who specializes in the study of aesthetics and theories of beauty.
+  meaning_tr: estetik uzmanı, sanat felsefecisi
+  examples:
+  - en: Eighteenth-century aestheticians debated whether the sublime could be separated from terror.
+    tr: On sekizinci yüzyıl estetik uzmanları yücenin dehşetten ayrılıp ayrılamayacağını tartıştılar.
+    context: philosophy
+  - en: The keynote address was delivered by a renowned aesthetician exploring digital materiality.
+    tr: Açılış konuşması dijital maddeselliği araştıran tanınmış bir sanat felsefecisi tarafından yapıldı.
+    context: culture
+  collocations:
+  - text: philosophical aesthetician
+    tr: felsefi estetik kuramcısı
+  - text: leading aesthetician
+    tr: önde gelen sanat kuramcısı
+  register: academic
+  topic_tags:
+  - culture
+  - philosophy
+  - aesthetics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.milieu
+  headword: milieu
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /miːlˈjɜː/
+  audio_ref: null
+  definition_en: A person's social environment or cultural background.
+  meaning_tr: muhit, çevre, sosyal ortam
+  examples:
+  - en: Growing up in the avant-garde intellectual milieu of Vienna profoundly shaped his musical compositions.
+    tr: Viyana'nın avangart entelektüel muhitinde büyümek onun müzik bestelerini derinden şekillendirdi.
+    context: biography
+  - en: The novel captures the decadent aristocratic milieu of late nineteenth-century Paris.
+    tr: Roman on dokuzuncu yüzyıl sonu Paris'inin yozlaşmış aristokratik çevresini başarıyla yakalar.
+    context: literature
+  collocations:
+  - text: cultural milieu
+    tr: kültürel çevre
+  - text: social milieu
+    tr: sosyal muhit
+  register: formal
+  topic_tags:
+  - culture
+  - society
+  - environment
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.harbinger
+  headword: harbinger
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈhɑːrbɪndʒər/
+  audio_ref: null
+  definition_en: A person, object, or event that announces or signals the approach of another.
+  meaning_tr: haberci, müjdeci, öncü belirti
+  examples:
+  - en: The emergence of minimalist architecture was seen as a harbinger of broader modernist design.
+    tr: Minimalist mimarinin ortaya çıkışı daha geniş modernist tasarımın bir habercisi olarak görüldü.
+    context: architecture
+  - en: Early falling leaves are often greeted as an unwelcome harbinger of harsh winter storms.
+    tr: Erken dökülen yapraklar genellikle sert kış fırtınalarının istenmeyen bir habercisi olarak karşılanır.
+    context: general
+  collocations:
+  - text: harbinger of doom
+    tr: kıyamet/felaket habercisi
+  - text: harbinger of change
+    tr: değişimin habercisi
+  register: formal
+  topic_tags:
+  - culture
+  - omens
+  - history
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.eulogize
+  headword: eulogize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈjuːlədʒaɪz/
+  audio_ref: null
+  definition_en: To praise someone or something highly in speech or writing, especially at a commemoration.
+  meaning_tr: övgüler yağdırmak, methiye düzmek, anısına övgü dolu konuşma yapmak
+  examples:
+  - en: Critics and fellow artists eulogized the deceased poet for her unyielding linguistic courage.
+    tr: Eleştirmenler ve sanatçı dostları vefat eden şaire sarsılmaz dilsel cesareti nedeniyle methiyeler düzdüler.
+    context: literature
+  - en: The editorial eulogized traditional artisanal bookbinding in an era dominated by electronic media.
+    tr: Başyazı elektronik medyanın hâkim olduğu bir çağda geleneksel zanaatkar ciltçiliğine övgüler yağdırdı.
+    context: culture
+  collocations:
+  - text: eulogize someone's achievements
+    tr: birinin başarılarını göklere çıkarmak
+  - text: publicly eulogize
+    tr: alenen övgüde bulunmak
+  register: formal
+  topic_tags:
+  - culture
+  - praise
+  - literature
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rhapsodize
+  headword: rhapsodize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈræpsədaɪz/
+  audio_ref: null
+  definition_en: To speak or write about someone or something with great enthusiasm, passion, or lyricism.
+  meaning_tr: coşkuyla anlatmak, heyecanla övmek, methiyeler dökmek
+  examples:
+  - en: The travel essayist rhapsodized about the timeless tranquility of rural Anatolian villages.
+    tr: Seyahat denemecisi kırsal Anadolu köylerinin zamansız sükuneti hakkında coşkuyla yazdı.
+    context: culture
+  - en: Critics rhapsodized over the soprano's breathtaking vocal phrasing throughout the third act.
+    tr: Eleştirmenler üçünçü perde boyunca sopranonun nefes kesici vokal cümlelemesi üzerine heyecanla methiyeler döktüler.
+    context: music
+  collocations:
+  - text: rhapsodize about beauty
+    tr: güzellik hakkında coşkuyla konuşmak
+  - text: rhapsodize over performance
+    tr: performansı heyecanla övmek
+  register: formal
+  topic_tags:
+  - culture
+  - enthusiasm
+  - arts
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.re-enact
+  headword: re-enact
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˌriː ɪˈnækt/
+  audio_ref: null
+  definition_en: To act out a past event or scenario again, typically for dramatic or ceremonial performance.
+  meaning_tr: yeniden canlandırmak, sahnelemek
+  examples:
+  - en: Local historical societies gather annually to re-enact pivotal moments of the revolutionary war.
+    tr: Yerel tarih dernekleri devrim savaşının dönüm noktası anlarını yeniden canlandırmak için her yıl toplanır.
+    context: history
+  - en: The contemporary performance troupe re-enacted an ancient ritual dance in the ruins of the amphitheater.
+    tr: Çağdaş performans grubu amfitiyatro kalıntılarında kadim bir ritüel dansını yeniden canlandırdı.
+    context: theatre
+  collocations:
+  - text: re-enact historical events
+    tr: tarihi olayları yeniden canlandırmak
+  - text: faithfully re-enact
+    tr: aslına sadık kalarak sahnelemek
+  register: general
+  topic_tags:
+  - culture
+  - history
+  - performance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.reverberate
+  headword: reverberate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /rɪˈvɜːrbəreɪt/
+  audio_ref: null
+  definition_en: To echo repeatedly; or to have long-lasting, profound cultural or political repercussions.
+  meaning_tr: yankılanmak, derin yankı uyandırmak, etkisi sürmek
+  examples:
+  - en: The organ's sonorous chords reverberated through the vaulted arches of the medieval cathedral.
+    tr: Orgun gür akorları ortaçağ katedralinin tonozlu kemerlerinde yankılandı.
+    context: music
+  - en: The philosopher's radical critique continues to reverberate across contemporary sociology.
+    tr: Filozofun radikal eleştirisi çağdaş sosyoloji genelinde derin yankılar uyandırmaya devam ediyor.
+    context: academic
+  collocations:
+  - text: reverberate through history
+    tr: tarih boyunca yankılanmak
+  - text: reverberate around the world
+    tr: dünyanın dört bir yanında yankı bulmak
+  register: formal
+  topic_tags:
+  - culture
+  - resonance
+  - music
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.baroque
+  headword: baroque
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /bəˈroʊk/
+  audio_ref: null
+  definition_en: Relating to an elaborate, flamboyant European architectural and artistic style of the 17th-18th centuries;
+    extravagantly ornate.
+  meaning_tr: barok, aşırı süslü, gösterişli
+  examples:
+  - en: Visitors marveled at the baroque ornamentation adorning the gilded basilica ceilings.
+    tr: Ziyaretçiler yaldızlı bazilika tavanlarını süsleyen barok tezyinata hayran kaldılar.
+    context: architecture
+  - en: His prose style was criticized as unnecessarily baroque and overburdened with obscure allegories.
+    tr: Düzyazı üslubu gereksiz derecede barok ve anlaşılması güç alegorilerle aşırı yüklü olduğu için eleştirildi.
+    context: literature
+  collocations:
+  - text: baroque architecture
+    tr: barok mimari
+  - text: baroque style
+    tr: barok tarz
+  register: formal
+  topic_tags:
+  - culture
+  - art
+  - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.ineffable
+  headword: ineffable
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ɪnˈefəbl/
+  audio_ref: null
+  definition_en: Too great, beautiful, or sacred to be expressed or described in words.
+  meaning_tr: kelimelerle anlatılamaz, tarif edilemez, dile sığmaz
+  examples:
+  - en: Witnessing the northern lights in utter silence evoked a sense of ineffable wonder.
+    tr: Kuzey ışıklarına tam bir sessizlik içinde tanıklık etmek kelimelerle tarif edilemez bir hayranlık duygusu uyandırdı.
+    context: general
+  - en: Mystics often describe their spiritual ecstasies as intrinsically ineffable experiences.
+    tr: Mistikler ruhani vecid hallerini sıklıkla doğası gereği dile dökülemez deneyimler olarak tanımlarlar.
+    context: philosophy
+  collocations:
+  - text: ineffable beauty
+    tr: tarif edilemez güzellik
+  - text: ineffable joy
+    tr: kelimelere sığmayan neşe
+  register: formal
+  topic_tags:
+  - culture
+  - transcendence
+  - aesthetics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pastoral
+  headword: pastoral
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈpæstərəl/
+  audio_ref: null
+  definition_en: Portraying or evoking country life, typically in a romanticized or idealized manner.
+  meaning_tr: pastoral, kırsal yaşamı anlatan, çobanıl
+  examples:
+  - en: Beethoven's Sixth Symphony evokes idyllic pastoral landscapes through woodwind melodies.
+    tr: Beethoven'ın Altıncı Senfonisi nefesli saz melodileriyle pastoral kır manzaralarını canlandırır.
+    context: music
+  - en: Renaissance poets frequently employed pastoral imagery to allegorize courtly intrigues.
+    tr: Rönesans şairleri saray entrikalarını alegorileştirmek için pastoral imgeleri sıklıkla kullandılar.
+    context: literature
+  collocations:
+  - text: pastoral symphony
+    tr: pastoral senfoni
+  - text: pastoral poetry
+    tr: pastoral şiir
+  register: formal
+  topic_tags:
+  - culture
+  - arts
+  - literature
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.idiosyncratic
+  headword: idiosyncratic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌɪdioʊsɪŋˈkrætɪk/
+  audio_ref: null
+  definition_en: Peculiar, individual, or distinct to a specific person, artistic style, or group.
+  meaning_tr: kendine özgü, nevi şahsına münhasır, tipik olmayan
+  examples:
+  - en: The filmmaker became famous for his idiosyncratic visual framing and offbeat soundtracks.
+    tr: Yönetmen kendine özgü görsel kadrajlaması ve alışılmadık film müzikleriyle ünlendi.
+    context: cinema
+  - en: She possesses an idiosyncratic approach to oil painting that defies conventional classifications.
+    tr: Geleneksel sınıflandırmalara meydan okuyan nevi şahsına münhasır bir yağlı boya yaklaşımına sahiptir.
+    context: arts
+  collocations:
+  - text: idiosyncratic style
+    tr: kendine özgü üslup
+  - text: idiosyncratic behavior
+    tr: alışılmadık davranış
+  register: formal
+  topic_tags:
+  - culture
+  - individuality
+  - style
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.ceremonially
+  headword: ceremonially
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌserəˈmoʊniəli/
+  audio_ref: null
+  definition_en: In accordance with formal ritual, tradition, or etiquette.
+  meaning_tr: törensel olarak, merasimle, geleneksel ritüele uygun biçimde
+  examples:
+  - en: The ceremonial sword was presented ceremonially to the sovereign upon coronation.
+    tr: Tören kılıcı taç giyme merasiminde hükümdara geleneksel ritüele uygun biçimde takdim edildi.
+    context: history
+  - en: Elders broke bread ceremonially to mark the formal reconciliation of the two communities.
+    tr: Yaşlılar iki topluluğun resmi uzlaşmasını simgelemek üzere merasimle ekmek böldüler.
+    context: culture
+  collocations:
+  - text: presented ceremonially
+    tr: merasimle takdim edilmiş
+  - text: robed ceremonially
+    tr: tören kıyafetleriyle donanmış
+  register: formal
+  topic_tags:
+  - culture
+  - ritual
+  - ceremony
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spring-up
+  headword: spring up
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /sprɪŋ ʌp/
+  audio_ref: null
+  definition_en: To suddenly appear, develop, or come into existence in large numbers.
+  meaning_tr: birdenbire ortaya çıkmak, mantar gibi bitmek, türemek
+  examples:
+  - en: Indie art collectives sprang up across abandoned industrial districts during the cultural renaissance.
+    tr: Kültürel rönesans sırasında terk edilmiş sanayi bölgelerinde bağımsız sanat kolektifleri birdenbire mantar gibi bitti.
+    context: culture
+  - en: Pop-up galleries regularly spring up in urban centers during international design biennials.
+    tr: Uluslararası tasarım bienalleri sırasında şehir merkezlerinde geçici galeriler düzenli olarak ortaya çıkar.
+    context: arts
+  collocations:
+  - text: spring up overnight
+    tr: bir gecede türemek
+  - text: spring up everywhere
+    tr: her yerde mantar gibi bitmek
+  register: general
+  topic_tags:
+  - culture
+  - emergence
+  - trends
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.a-work-in-progress
+  headword: a work in progress
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /ə wɜːrk ɪn ˈprɑːɡres/
+  audio_ref: null
+  definition_en: Something that is being actively developed or refined and has not yet reached its final completed state.
+  meaning_tr: henüz tamamlanmamış çalışma, gelişmekte olan süreç
+  examples:
+  - en: The museum preview featured a retrospective showcasing the maestro's symphony as a work in progress.
+    tr: Müze ön izlemesi ustanın senfonisini henüz tamamlanmamış bir çalışma olarak sergileyen bir retrospektife yer verdi.
+    context: arts
+  - en: Our understanding of cultural assimilation remains an evolving work in progress among sociologists.
+    tr: Kültürel asimilasyona ilişkin anlayışımız sosyologlar arasında gelişmekte olan bir süreç olmaya devam etmektedir.
+    context: academic
+  collocations:
+  - text: treat as a work in progress
+    tr: gelişmekte olan çalışma olarak değerlendirmek
+  - text: remain a work in progress
+    tr: tamamlanmamış olmayı sürdürmek
+  register: general
+  topic_tags:
+  - culture
+  - development
+  - process
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.steal-the-show
+  headword: steal the show
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /stiːl ðə ʃoʊ/
+  audio_ref: null
+  definition_en: To attract the most attention and praise by giving a spectacular or memorable performance.
+  meaning_tr: gözleri üzerine çekmek, rol çalmak, gecenin yıldızı olmak
+  examples:
+  - en: Despite appearing in only two scenes, the veteran character actor stole the show at the theatrical gala.
+    tr: Yalnızca iki sahnede görünmesine rağmen kıdemli karakter oyuncusu tiyatro galasında gecenin yıldızı oldu.
+    context: theatre
+  - en: The youth orchestra stole the show with their dazzling rendition of Stravinsky's Firebird.
+    tr: Gençlik orkestrası Stravinsky'nin Ateş Kuşu'nu göz kamaştırıcı yorumuyla herkesin beğenisini topladı.
+    context: music
+  collocations:
+  - text: completely steal the show
+    tr: bütün dikkatleri tamamen üzerine çekmek
+  - text: effortlessly steal the show
+    tr: zahmetsizce gecenin yıldızı olmak
+  register: informal
+  topic_tags:
+  - culture
+  - performance
+  - acclaim
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tundra
+  headword: tundra
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈtʌndrə/
+  audio_ref: null
+  definition_en: A vast, flat, treeless Arctic region of Europe, Asia, and North America in which the subsoil is permanently
+    frozen.
+  meaning_tr: tundra, kutup bozkırı
+  examples:
+  - en: Thawing permafrost across the Siberian tundra is releasing vast quantities of trapped methane.
+    tr: Sibirya tundrası genelinde eriyen donmuş toprak hapsolmuş büyük miktarlarda metan gazı salmaktadır.
+    context: ecology
+  - en: Lichen and dwarf shrubs constitute the primary vegetation resilient enough to survive on arctic tundra.
+    tr: Kutup tundrasında hayatta kalabilecek kadar dayanıklı birincil bitki örtüsünü likenler ve bodur çalılar oluşturur.
+    context: botany
+  collocations:
+  - text: arctic tundra
+    tr: kutup tundrası
+  - text: tundra ecosystem
+    tr: tundra ekosistemi
+  register: academic
+  topic_tags:
+  - environment
+  - biomes
+  - arctic
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.estuary
+  headword: estuary
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈestʃueri/
+  audio_ref: null
+  definition_en: The tidal mouth of a large river, where the freshwater tide meets and mixes with seawater.
+  meaning_tr: haliç, nehir ağzı, liman koyu
+  examples:
+  - en: The estuary serves as a critical nursery ground for migratory waterfowl and marine fry.
+    tr: Haliç göçmen su kuşları ve deniz yavruları için kritik bir üreme ve beslenme alanı işlevi görür.
+    context: marine-biology
+  - en: Industrial effluents entering the river mouth have severely disrupted the brackish estuary ecology.
+    tr: Nehir ağzına giren endüstriyel atık sular acı su haliç ekolojisini ciddi biçimde bozmuştur.
+    context: environmental
+  collocations:
+  - text: river estuary
+    tr: nehir ağzı/haliç
+  - text: tidal estuary
+    tr: gelgitli haliç
+  register: academic
+  topic_tags:
+  - environment
+  - aquatic
+  - wetlands
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.silt
+  headword: silt
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /sɪlt/
+  audio_ref: null
+  definition_en: Fine sand, clay, or other material carried by running water and deposited as a sediment.
+  meaning_tr: mil, alüvyon, balçık
+  examples:
+  - en: Annual flooding used to deposit nutrient-rich silt across the Nile river basin, sustaining agriculture.
+    tr: Yıllık taşkınlar Nil nehri havzasına besin açısından zengin mil bırakarak tarımı sürdürürdü.
+    context: geography
+  - en: Excessive accumulation of silt behind the hydroelectric dam has reduced its reservoir storage capacity.
+    tr: Hidroelektrik barajın arkasında aşırı mil birikmesi rezervuar depolama kapasitesini azaltmıştır.
+    context: engineering
+  collocations:
+  - text: fine silt
+    tr: ince mil
+  - text: silt deposits
+    tr: alüvyon birikintileri
+  register: formal
+  topic_tags:
+  - environment
+  - geology
+  - sediment
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.watershed
+  headword: watershed
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈwɔːtərʃed/
+  audio_ref: null
+  definition_en: An area or ridge of land that separates waters flowing to different rivers or basins; also a crucial turning
+    point.
+  meaning_tr: su toplama havzası; dönüm noktası
+  examples:
+  - en: Strict conservation policies protect the forested watershed that supplies municipal drinking water.
+    tr: Katı koruma politikaları belediyenin içme suyunu sağlayan ormanlık su toplama havzasını korumaktadır.
+    context: conservation
+  - en: The signing of the Paris Climate Agreement marked a historical watershed in multilateral diplomacy.
+    tr: Paris İklim Anlaşması'nın imzalanması çok taraflı diplomaside tarihi bir dönüm noktası teşkil etti.
+    context: diplomacy
+  collocations:
+  - text: forested watershed
+    tr: ormanlık su havzası
+  - text: watershed moment
+    tr: dönüm noktası olan an
+  register: formal
+  topic_tags:
+  - environment
+  - hydrology
+  - milestones
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.overgraze
+  headword: overgraze
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˌoʊvərˈɡreɪz/
+  audio_ref: null
+  definition_en: To graze grassland so heavily that the vegetation is damaged and the soil becomes liable to erosion.
+  meaning_tr: aşırı otlatmak, meraları tahrip edercesine otlatmak
+  examples:
+  - en: Allowing livestock to overgraze semi-arid pastures inevitably accelerates desertification.
+    tr: Büyükbaş ve küçükbaş hayvanların yarı kurak meraları aşırı otlatmasına izin vermek çölleşmeyi kaçınılmaz olarak hızlandırır.
+    context: agriculture
+  - en: Nomadic pastoralists manage herd rotations carefully to avoid overgrazing fragile highland meadows.
+    tr: Göçebe çobanlar kırılgan yayla çayırlarını aşırı otlatmaktan kaçınmak için sürü rotasyonlarını dikkatle yönetir.
+    context: ecology
+  collocations:
+  - text: overgraze pastures
+    tr: otlakları aşırı otlatmak
+  - text: severely overgraze
+    tr: ağır derecede aşırı otlatmak
+  register: formal
+  topic_tags:
+  - environment
+  - agriculture
+  - land-degradation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.denude
+  headword: denude
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈnuːd/
+  audio_ref: null
+  definition_en: To strip something of its covering, foliage, or natural assets; to bare.
+  meaning_tr: soymak, çıplak bırakmak, ağaçsızlandırmak
+  examples:
+  - en: Commercial clear-cutting operations denuded entire hillsides, causing devastating mudslides.
+    tr: Ticari tıraşlama kesim operasyonları tüm yamaçları çıplak bırakarak yıkıcı çamur kaymalarına yol açtı.
+    context: forestry
+  - en: Wildfires swept through the valley, denuding thousands of hectares of ancient pine forest.
+    tr: Orman yangınları vadiden geçerek binlerce hektarlık asırlık çam ormanını çıplak bıraktı.
+    context: disaster
+  collocations:
+  - text: denude the landscape
+    tr: manzarayı çıplak bırakmak
+  - text: denude hillsides
+    tr: yamaçları ağaçsızlandırmak
+  register: formal
+  topic_tags:
+  - environment
+  - deforestation
+  - erosion
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.reseed
+  headword: reseed
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˌriːˈsiːd/
+  audio_ref: null
+  definition_en: To sow seeds again on barren or damaged ground; or (of a plant) to produce seed naturally.
+  meaning_tr: yeniden tohumlamak, tekrar tohum saçmak
+  examples:
+  - en: Conservationists deployed drone fleets to reseed scorched mountainsides with native tree species.
+    tr: Çevreciler kavrulmuş dağ yamaçlarını yerli ağaç türleriyle yeniden tohumlamak için dron filoları görevlendirdi.
+    context: forestry
+  - en: The perennial grasses naturally reseed before winter sets in, ensuring spring regrowth.
+    tr: Çok yıllık otlar kış başlamadan önce doğal olarak tohum saçar ve baharda yeniden büyümeyi güvenceye alır.
+    context: botany
+  collocations:
+  - text: reseed burnt land
+    tr: yanmış araziyi yeniden tohumlamak
+  - text: naturally reseed
+    tr: doğal olarak tohum dökmek
+  register: formal
+  topic_tags:
+  - environment
+  - reforestation
+  - restoration
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.fallow-verb
+  headword: fallow
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈfæloʊ/
+  audio_ref: null
+  definition_en: To leave arable land unseeded during a growing season to restore soil fertility.
+  meaning_tr: nadasa bırakmak, dinlendirmek (toprağı)
+  examples:
+  - en: Sustainable farming dictates that agrarian estates fallow one-third of their fields on rotational cycles.
+    tr: Sürdürülebilir tarım tarım arazilerinin ekim nöbeti döngülerinde tarlalarının üçte birini nadasa bırakmasını şart
+      koşar.
+    context: agriculture
+  - en: By fallowing the parcel for two seasons, nitrogen levels were naturally replenished.
+    tr: Parseli iki sezon boyunca nadasa bırakarak azot seviyeleri doğal yollarla tazelendi.
+    context: soil-science
+  collocations:
+  - text: fallow fields
+    tr: tarlaları nadasa bırakmak
+  - text: fallow land rotationally
+    tr: toprağı nöbetleşe dinlendirmek
+  register: formal
+  topic_tags:
+  - environment
+  - agriculture
+  - soil
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.hydroelectric
+  headword: hydroelectric
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌhaɪdroʊɪˈlektrɪk/
+  audio_ref: null
+  definition_en: Relating to the generation of electricity using the gravitational force of falling or flowing water.
+  meaning_tr: hidroelektrik, su gücüyle elektrik üreten
+  examples:
+  - en: The river basin powers five major hydroelectric plants that provide carbon-neutral baseline energy.
+    tr: Nehir havzası karbon nötr baz enerji sağlayan beş büyük hidroelektrik santrale güç vermektedir.
+    context: energy
+  - en: Environmental impact assessments must scrutinize whether hydroelectric dams block fish migration pathways.
+    tr: Çevresel etki değerlendirmeleri hidroelektrik barajların balık göç yollarını engelleyip engellemediğini titizlikle
+      incelemelidir.
+    context: ecology
+  collocations:
+  - text: hydroelectric dam
+    tr: hidroelektrik barajı
+  - text: hydroelectric power generation
+    tr: hidroelektrik enerji üretimi
+  register: formal
+  topic_tags:
+  - environment
+  - clean-energy
+  - hydrology
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.riparian
+  headword: riparian
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /raɪˈperiən/
+  audio_ref: null
+  definition_en: Relating to or situated on the banks of a natural watercourse such as a river or stream.
+  meaning_tr: kıyısal, nehir kenarına ait, ırmak kıyısı
+  examples:
+  - en: Dense riparian vegetation prevents riverbank soil erosion and filters agrochemical runoff.
+    tr: Yoğun nehir kıyısı bitki örtüsü nehir kıyısı toprak erozyonunu önler ve tarımsal kimyasal akıntıları filtreler.
+    context: conservation
+  - en: The riparian landowners contested the municipal drainage scheme in international environmental court.
+    tr: Kıyı arazisi sahipleri belediyenin drenaj planına uluslararası çevre mahkemesinde itiraz etti.
+    context: law
+  collocations:
+  - text: riparian buffer
+    tr: kıyı tampon bölgesi
+  - text: riparian habitat
+    tr: ırmak kıyısı yaşam alanı
+  register: academic
+  topic_tags:
+  - environment
+  - hydrology
+  - ecosystems
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.benthic
+  headword: benthic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈbenθɪk/
+  audio_ref: null
+  definition_en: Relating to or occurring at the bottom of a body of water, especially the ocean floor.
+  meaning_tr: bentik, deniz veya göl tabanına ait
+  examples:
+  - en: Deep-sea trawling causes catastrophic disruption to fragile benthic communities like cold-water corals.
+    tr: Derin deniz trol avcılığı soğuk su mercanları gibi kırılgan dip canlı topluluklarında felakete yol açan yıkımlara
+      sebep olur.
+    context: oceanography
+  - en: Sediment core samples revealed changes in benthic micro-organism populations over millennia.
+    tr: Tortu karot örnekleri bin yıllar boyunca bentik mikroorganizma popülasyonlarındaki değişimleri ortaya çıkardı.
+    context: marine-science
+  collocations:
+  - text: benthic zone
+    tr: bentik bölge / deniz tabanı kuşağı
+  - text: benthic organisms
+    tr: dip canlıları
+  register: academic
+  topic_tags:
+  - environment
+  - oceanography
+  - marine-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.subterranean
+  headword: subterranean
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌsʌbtəˈreɪniən/
+  audio_ref: null
+  definition_en: Existing, situated, or operating below the surface of the earth.
+  meaning_tr: yeraltı, yeraltında bulunan/işleyen
+  examples:
+  - en: Over-extraction of groundwater is causing irreversible subsidence in subterranean aquifer systems.
+    tr: Yeraltı sularının aşırı çekilmesi yeraltı akifer sistemlerinde geri döndürülemez çökmelere neden olmaktadır.
+    context: hydrology
+  - en: Biologists cataloged unique blind salamanders inhabiting subterranean karst cave streams.
+    tr: Biyologlar yeraltı karstik mağara akarsularında yaşayan eşsiz kör semenderleri katalogladılar.
+    context: biospeleology
+  collocations:
+  - text: subterranean rivers
+    tr: yeraltı nehirleri
+  - text: subterranean aquifers
+    tr: yeraltı akiferleri
+  register: formal
+  topic_tags:
+  - environment
+  - geology
+  - underground
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.atmospherically
+  headword: atmospherically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌætməsˈfɪrɪkli/
+  audio_ref: null
+  definition_en: With regard to the atmosphere or climate; or in a manner that creates distinct mood.
+  meaning_tr: atmosferik olarak, atmosfer açısından, havaküre bakımından
+  examples:
+  - en: Volcanic particulate matter spread atmospherically around the globe, dampening solar irradiance.
+    tr: Volkanik partikül maddeler küre çapında atmosferik olarak yayılarak güneş ışınımını zayıflattı.
+    context: meteorology
+  - en: Atmospherically, the valley retains severe thermal inversions during late autumn.
+    tr: Atmosferik açıdan vadi sonbahar sonlarında şiddetli sıcaklık terselmelerini muhafaza eder.
+    context: climatology
+  collocations:
+  - text: atmospherically dispersed
+    tr: atmosfer yoluyla dağılmış
+  - text: atmospherically stable
+    tr: atmosferik bakımdan kararlı
+  register: formal
+  topic_tags:
+  - environment
+  - meteorology
+  - climate
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.hydrologically
+  headword: hydrologically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌhaɪdrəˈlɑːdʒɪkli/
+  audio_ref: null
+  definition_en: In a manner relating to hydrology, the study of the properties and movement of water.
+  meaning_tr: hidrolojik olarak, su döngüsü ve su kaynakları açısından
+  examples:
+  - en: The wetland is hydrologically connected to the adjacent subterranean limestone reservoir.
+    tr: Sulak alan hidrolojik olarak bitişikteki yeraltı kireçtaşı rezervuarına bağlıdır.
+    context: hydrology
+  - en: Hydrologically, the dam has fundamentally altered seasonal sedimentation cycles downstream.
+    tr: Hidrolojik bakımdan baraj mansaptaki mevsimsel tortulanma döngülerini kökten değiştirmiştir.
+    context: environmental
+  collocations:
+  - text: hydrologically linked
+    tr: hidrolojik bakımdan bağlantılı
+  - text: hydrologically active
+    tr: hidrolojik olarak aktif
+  register: academic
+  topic_tags:
+  - environment
+  - hydrology
+  - water-resources
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.die-out
+  headword: die out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /daɪ aʊt/
+  audio_ref: null
+  definition_en: To become extinct or completely disappear over time.
+  meaning_tr: soyu tükenmek, yok olmak, ortadan kalkmak
+  examples:
+  - en: Without immediate habitat corridors, isolated populations of apex predators may die out entirely.
+    tr: Acil yaşam alanı koridorları oluşturulmazsa izole tepe yırtıcı popülasyonlarının soyu tamamen tükenebilir.
+    context: conservation
+  - en: Traditional agrarian harvesting practices began to die out as mechanized agriculture spread.
+    tr: Mekanize tarım yayıldıkça geleneksel tarımsal hasat uygulamaları ortadan kalkmaya başladı.
+    context: anthropology
+  collocations:
+  - text: die out completely
+    tr: tamamen yok olmak/soyu tükenmek
+  - text: threatened to die out
+    tr: soyu tükenme tehlikesiyle karşı karşıya kalmak
+  register: general
+  topic_tags:
+  - environment
+  - extinction
+  - wildlife
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.at-the-eleventh-hour
+  headword: at the eleventh hour
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /æt ðə ɪˈlevnθ ˈaʊər/
+  audio_ref: null
+  definition_en: At the latest possible moment before a deadline or catastrophe.
+  meaning_tr: son anda, son dakikada, yumurta kapıya dayanınca
+  examples:
+  - en: Delegates reached a landmark treaty to curb ocean plastics at the eleventh hour before talks collapsed.
+    tr: Delegeler görüşmeler çökmeden hemen önce son dakikada okyanus plastiklerini sınırlamaya yönelik tarihi bir anlaşmaya
+      vardılar.
+    context: diplomacy
+  - en: Emergency flood barriers were hoisted at the eleventh hour as the river crested above flood stage.
+    tr: Nehir taşkın seviyesinin üzerine çıkarken son anda acil sel bariyerleri kaldırıldı.
+    context: disaster
+  collocations:
+  - text: arrive at the eleventh hour
+    tr: son anda yetişmek
+  - text: decision at the eleventh hour
+    tr: son dakikada alınan karar
+  register: general
+  topic_tags:
+  - environment
+  - timing
+  - crisis
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.diffraction
+  headword: diffraction
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /dɪˈfrækʃn/
+  audio_ref: null
+  definition_en: The process by which a beam of light or other system of waves is spread out as a result of passing through
+    a narrow aperture or across an edge.
+  meaning_tr: kırınım, dalgaların engelden sapması
+  examples:
+  - en: X-ray diffraction patterns allowed crystallographers to deduce the double-helix structure of DNA.
+    tr: X-ışını kırınım desenleri kristalografların DNA'nın ikili sarmal yapısını çıkarmasını sağladı.
+    context: biophysics
+  - en: Laser diffraction analysis is utilized industrially to quantify particulate size distributions.
+    tr: Lazer kırınım analizi partikül boyutu dağılımlarını ölçmek için endüstriyel olarak kullanılır.
+    context: engineering
+  collocations:
+  - text: X-ray diffraction
+    tr: X-ışını kırınımı
+  - text: diffraction grating
+    tr: kırınım ağı
+  register: academic
+  topic_tags:
+  - science
+  - physics
+  - optics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.valence
+  headword: valence
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈveɪləns/
+  audio_ref: null
+  definition_en: The combining power of an element, determined by the number of electrons in its outer shell; also emotional
+    directionality in psychology.
+  meaning_tr: değerlik (kimya); valans
+  examples:
+  - en: Carbon exhibits a tetravalent chemical valence, enabling the formation of intricate organic macromolecules.
+    tr: Karbon dört değerlikli bir kimyasal değerlik sergileyerek karmaşık organik makromoleküllerin oluşumunu mümkün kılar.
+    context: chemistry
+  - en: The oxidation state changes the ion's valence, fundamentally shifting its electrical reactivity.
+    tr: Yükseltgenme basamağı iyonun değerliğini değiştirerek elektriksel reaktivitesini kökten başkalaştırır.
+    context: science
+  collocations:
+  - text: valence electron
+    tr: değerlik elektronu
+  - text: chemical valence
+    tr: kimyasal değerlik
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - bonding
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.refraction
+  headword: refraction
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /rɪˈfrækʃn/
+  audio_ref: null
+  definition_en: The bending of a wave when it enters a medium where its speed is different.
+  meaning_tr: kırılma (ışık/dalga)
+  examples:
+  - en: Atmospheric refraction causes celestial bodies to appear slightly higher above the horizon than they actually are.
+    tr: Atmosferik kırılma gök cisimlerinin ufuk çizgisinin üzerinde gerçekte olduklarından biraz daha yüksekte görünmesine
+      neden olur.
+    context: astronomy
+  - en: High-precision optical lenses minimize chromatic refraction to eliminate peripheral aberration.
+    tr: Yüksek hassasiyetli optik mercekler çevresel sapmayı gidermek için kromatik kırılmayı en aza indirir.
+    context: optics
+  collocations:
+  - text: index of refraction
+    tr: kırılma indisi
+  - text: light refraction
+    tr: ışık kırılması
+  register: academic
+  topic_tags:
+  - science
+  - physics
+  - optics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.effervescence
+  headword: effervescence
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌefərˈvesns/
+  audio_ref: null
+  definition_en: Bubbles in a liquid or fizz; or vivacity and enthusiastic vitality.
+  meaning_tr: köpürme, gaz kabarcığı çıkarma; coşku
+  examples:
+  - en: Adding hydrochloric acid to limestone produces vigorous effervescence as carbon dioxide gas is liberated.
+    tr: Kireçtaşına hidroklorik asit eklenmesi karbondioksit gazı açığa çıktıkça kuvvetli bir köpürme üretir.
+    context: chemistry
+  - en: The chemist observed the rate of effervescence inside the pressurized reaction vessel.
+    tr: Kimyager basınçlı reaksiyon kabının içindeki gaz kabarcığı çıkma hızını gözlemledi.
+    context: science
+  collocations:
+  - text: vigorous effervescence
+    tr: şiddetli köpürme
+  - text: chemical effervescence
+    tr: kimyasal gaz çıkışı
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - reactions
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.ionize
+  headword: ionize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈaɪənaɪz/
+  audio_ref: null
+  definition_en: To convert an atom, molecule, or substance into an ion or ions, typically by removing one or more electrons.
+  meaning_tr: iyonlaştırmak, iyonize etmek
+  examples:
+  - en: High-energy cosmic radiation ionizes atmospheric gas molecules, creating conductive plasma layers.
+    tr: Yüksek enerjili kozmik radyasyon atmosferik gaz moleküllerini iyonlaştırarak iletken plazma katmanları oluşturur.
+    context: astrophysics
+  - en: Mass spectrometers ionize neutral chemical analytes before accelerating them through electromagnetic fields.
+    tr: Kütle spektrometreleri nötr kimyasal analitleri elektromanyetik alanlarda hızlandırmadan önce iyonlaştırır.
+    context: chemistry
+  collocations:
+  - text: ionize gas
+    tr: gazı iyonlaştırmak
+  - text: fully ionize
+    tr: tamamen iyonlaşmak
+  register: academic
+  topic_tags:
+  - science
+  - physics
+  - ions
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.coagulate
+  headword: coagulate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /koʊˈæɡjuleɪt/
+  audio_ref: null
+  definition_en: To change from a fluid into a thickened, semi-solid mass; to clot.
+  meaning_tr: pıhtılaşmak, koyulaşmak, çökelmek
+  examples:
+  - en: Certain snake venoms contain enzymes that cause blood proteins to coagulate within seconds.
+    tr: Bazı yılan zehirleri kan proteinlerinin saniyeler içinde pıhtılaşmasına yol açan enzimler içerir.
+    context: biochemistry
+  - en: The industrial wastewater was treated with aluminum sulfate to coagulate suspended toxic particulates.
+    tr: Endüstriyel atık su askıda kalan toksik partikülleri pıhtılaştırıp çöktürmek için alüminyum sülfat ile işlendi.
+    context: chemical-engineering
+  collocations:
+  - text: coagulate blood
+    tr: kanı pıhtılaştırmak
+  - text: cause to coagulate
+    tr: pıhtılaşmaya neden olmak
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - biology
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.sediment
+  headword: sediment
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈsedɪment/
+  audio_ref: null
+  definition_en: To settle to the bottom of a liquid as a precipitate or particulate deposit.
+  meaning_tr: tortulaşmak, dibe çökmek, çökelti oluşturmak
+  examples:
+  - en: Heavy colloidal particles gradually sedimented out of the suspension over a forty-eight-hour period.
+    tr: Ağır koloidal partiküller kırk sekiz saatlik bir süre zarfında süspansiyondan kademeli olarak dibe çöktü.
+    context: chemistry
+  - en: Centrifugation accelerates the rate at which macromolecules sediment according to molecular density.
+    tr: Santrifüjleme makromoleküllerin moleküler yoğunluğa göre çökme hızını artırır.
+    context: biotechnology
+  collocations:
+  - text: sediment out
+    tr: çökelti olarak dibe ayrışmak
+  - text: rapidly sediment
+    tr: hızla çökmek
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - separation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.fluctuate
+  headword: fluctuate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈflʌktʃueɪt/
+  audio_ref: null
+  definition_en: To rise and fall irregularly in number or amount; to oscillate non-deterministically.
+  meaning_tr: dalgalanmak, iniş çıkış göstermek, istikrarsız seyretmek
+  examples:
+  - en: Quantum vacuum fluctuations give rise to spontaneous virtual particle-antiparticle pairs.
+    tr: Kuantum vakum dalgalanmaları kendiliğinden sanal parçacık-antiparçacık çiftlerinin ortaya çıkmasına neden olur.
+    context: quantum-physics
+  - en: Core reactor temperatures must not fluctuate beyond designated cryogenic safety margins.
+    tr: Çekirdek reaktör sıcaklıkları belirlenen kriyojenik güvenlik paylarının ötesinde dalgalanmamalıdır.
+    context: nuclear-physics
+  collocations:
+  - text: fluctuate wildly
+    tr: çılgınca dalgalanmak
+  - text: temperature fluctuates
+    tr: sıcaklık dalgalanır
+  register: formal
+  topic_tags:
+  - science
+  - physics
+  - dynamics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.subatomic
+  headword: subatomic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌsʌbəˈtɑːmɪk/
+  audio_ref: null
+  definition_en: Smaller than or occurring within an atom.
+  meaning_tr: atomaltı, atomdan daha küçük
+  examples:
+  - en: Particle accelerators collide hadron beams at near light-speed to probe subatomic forces.
+    tr: Parçacık hızlandırıcılar atomaltı kuvvetleri araştırmak için hadron demetlerini neredeyse ışık hızında çarpıştırır.
+    context: physics
+  - en: Quarks and leptons represent the fundamental subatomic constituents of baryonic matter.
+    tr: Kuarklar ve leptonlar baryonik maddenin temel atomaltı bileşenlerini temsil eder.
+    context: quantum-physics
+  collocations:
+  - text: subatomic particles
+    tr: atomaltı parçacıklar
+  - text: subatomic level
+    tr: atomaltı seviye
+  register: academic
+  topic_tags:
+  - science
+  - physics
+  - particles
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.endothermic
+  headword: endothermic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌendoʊˈθɜːrmɪk/
+  audio_ref: null
+  definition_en: Accompanied by or requiring the absorption of heat.
+  meaning_tr: endotermik, ısı alan
+  examples:
+  - en: Photosynthesis is an endothermic biochemical pathway that absorbs solar photon energy to synthesize glucose.
+    tr: Fotosentez glikoz sentezlemek için güneş foton enerjisini emen endotermik bir biyokimyasal yoldur.
+    context: biochemistry
+  - en: Because thermal decomposition is endothermic, the reaction chamber requires continuous caloric input.
+    tr: Termal bozunma ısı alan bir süreç olduğundan reaksiyon odası sürekli kalori girdisi gerektirir.
+    context: thermodynamics
+  collocations:
+  - text: endothermic reaction
+    tr: endotermik reaksiyon
+  - text: endothermic process
+    tr: ısı alan süreç
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - thermodynamics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.exothermic
+  headword: exothermic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌeksoʊˈθɜːrmɪk/
+  audio_ref: null
+  definition_en: Accompanied by the release of heat or thermal energy.
+  meaning_tr: ekzotermik, ısı veren
+  examples:
+  - en: Combustion of hydrocarbons constitutes a violently exothermic chemical transformation.
+    tr: Hidrokarbonların yanması şiddetli bir biçimde ısı veren kimyasal bir dönüşüm teşkil eder.
+    context: chemistry
+  - en: Nuclear fission releases immense energy through exothermic mass-defect conversion.
+    tr: Nükleer fisyon ekzotermik kütle açığı dönüşümü yoluyla muazzam enerji açığa çıkarır.
+    context: physics
+  collocations:
+  - text: exothermic reaction
+    tr: ekzotermik tepkime
+  - text: highly exothermic
+    tr: yüksek derecede ısı açığa çıkaran
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - energy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.heterogeneous
+  headword: heterogeneous
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌhetərəˈdʒiːniəs/
+  audio_ref: null
+  definition_en: Diverse in character or content; consisting of dissimilar or non-uniform components.
+  meaning_tr: heterojen, çoktürlü, farklı bileşenlerden oluşan
+  examples:
+  - en: Heterogeneous catalysis involves reactants and catalysts existing in distinct physical phases.
+    tr: Heterojen kataliz farklı fiziksel fazlarda bulunan reaktanları ve katalizörleri içerir.
+    context: chemistry
+  - en: Composite alloys exhibit heterogeneous microstructures that impart superior tensile resilience.
+    tr: Kompozit alaşımlar üstün çekme dayanıklılığı kazandıran heterojen mikro yapılar sergiler.
+    context: materials-science
+  collocations:
+  - text: heterogeneous mixture
+    tr: heterojen karışım
+  - text: heterogeneous catalyst
+    tr: heterojen katalizör
+  register: academic
+  topic_tags:
+  - science
+  - chemistry
+  - materials
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spectroscopically
+  headword: spectroscopically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌspektrəˈskɑːpɪkli/
+  audio_ref: null
+  definition_en: By means of or in relation to spectroscopy, the analysis of light spectra.
+  meaning_tr: spektroskopik olarak, tayfölçümsel yöntemle
+  examples:
+  - en: Astrophysicists confirmed the presence of methane on the exoplanet spectroscopically.
+    tr: Astrofizikçiler ötegezegende metan varlığını spektroskopik olarak doğruladılar.
+    context: astronomy
+  - en: The synthesized organic intermediate was spectroscopically verified via nuclear magnetic resonance.
+    tr: Sentezlenen organik ara ürün nükleer manyetik rezonans yoluyla spektroskopik olarak teyit edildi.
+    context: chemistry
+  collocations:
+  - text: spectroscopically analyzed
+    tr: spektroskopik olarak analiz edilmiş
+  - text: spectroscopically confirmed
+    tr: tayfölçümsel olarak doğrulanmış
+  register: academic
+  topic_tags:
+  - science
+  - spectroscopy
+  - physics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.molecularly
+  headword: molecularly
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /məˈlekjələrli/
+  audio_ref: null
+  definition_en: With regard to molecules or at a molecular structural scale.
+  meaning_tr: moleküler olarak, molekül düzeyinde
+  examples:
+  - en: The two synthetic polymers are molecularly indistinguishable yet display divergent elasticity.
+    tr: İki sentetik polimer moleküler olarak ayırt edilemez niteliktedir ancak farklı elastikiyet sergiler.
+    context: materials-science
+  - en: CRISPR gene editing operates by molecularly cleaving targeted nucleotide sequences.
+    tr: CRISPR gen düzenleme hedeflenen nükleotid dizilerini moleküler düzeyde keserek çalışır.
+    context: genetics
+  collocations:
+  - text: molecularly imprinted
+    tr: moleküler olarak basılmış/şablonlanmış
+  - text: molecularly engineered
+    tr: moleküler düzeyde tasarlanmış
+  register: academic
+  topic_tags:
+  - science
+  - molecules
+  - biochemistry
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.derive-from
+  headword: derive from
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /dɪˈraɪv frəm/
+  audio_ref: null
+  definition_en: To obtain, deduce, or originate something from a specified foundational source or premise.
+  meaning_tr: -den türemek, -den elde etmek, kökenini -den almak
+  examples:
+  - en: Theoretical physicists derived the relativistic energy equation directly from invariance principles.
+    tr: Teorik fizikçiler rölativistik enerji denklemini doğrudan değişmezlik ilkelerinden türettiler.
+    context: physics
+  - en: Many contemporary pharmaceutical treatments derive from active bio-compounds discovered in rainforest fungi.
+    tr: Birçok çağdaş farmasötik tedavi yağmur ormanı mantarlarında keşfedilen aktif biyo-bileşiklerden elde edilir.
+    context: pharmacology
+  collocations:
+  - text: derive from equations
+    tr: denklemlerden türetmek
+  - text: derive from natural sources
+    tr: doğal kaynaklardan elde etmek
+  register: academic
+  topic_tags:
+  - science
+  - derivation
+  - origin
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.state-of-flux
+  headword: state of flux
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /steɪt əv flʌks/
+  audio_ref: null
+  definition_en: A condition of continuous, unpredictable change, transition, or instability.
+  meaning_tr: sürekli değişim hali, akışkan durum, istikrarsız geçiş süreci
+  examples:
+  - en: Thermodynamic equilibrium cannot be maintained while the plasma remains in a state of flux.
+    tr: Plazma sürekli bir akış ve değişim halinde kaldığı sürece termodinamik denge korunamaz.
+    context: plasma-physics
+  - en: Atmospheric systems over the gulf are in a constant state of flux due to converging jet streams.
+    tr: Körfez üzerindeki atmosferik sistemler birleşen jet akımları nedeniyle sürekli bir değişim halindedir.
+    context: meteorology
+  collocations:
+  - text: in a constant state of flux
+    tr: sürekli bir değişim içinde
+  - text: remain in a state of flux
+    tr: akışkanlığını/değişkenliğini korumak
+  register: formal
+  topic_tags:
+  - science
+  - dynamics
+  - change
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.didactics
+  headword: didactics
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /daɪˈdæktɪks/
+  audio_ref: null
+  definition_en: The theory and practical methodology of teaching and instructional delivery.
+  meaning_tr: öğretim bilimi, didaktik, öğretme sanatı ve kuramı
+  examples:
+  - en: Modern university faculty undergo continuous training in digital didactics and hybrid pedagogy.
+    tr: Modern üniversite öğretim üyeleri dijital didaktik ve hibrit pedagoji alanında sürekli eğitime tabi tutulur.
+    context: higher-education
+  - en: Her research examines comparative didactics in multilingual primary education systems.
+    tr: Araştırması çok dilli ilköğretim sistemlerinde karşılaştırmalı öğretim bilimini inceler.
+    context: academic
+  collocations:
+  - text: principles of didactics
+    tr: öğretim biliminin ilkeleri
+  - text: instructional didactics
+    tr: eğitimsel didaktik
+  register: academic
+  topic_tags:
+  - education
+  - teaching
+  - pedagogy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.sabbatical
+  headword: sabbatical
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /səˈbætɪkl/
+  audio_ref: null
+  definition_en: A period of paid leave granted to a university professor or teacher for study, research, or travel.
+  meaning_tr: akademik izin, araştırma izni, sebt izni
+  examples:
+  - en: Professor Higgins took a year-long sabbatical in Oxford to complete his treatise on Hellenistic philosophy.
+    tr: Profesör Higgins Helenistik felsefe üzerine incelemesini tamamlamak için Oxford'da bir yıllık akademik izin aldı.
+    context: academia
+  - en: Applying for a research sabbatical requires submitting a rigorous publication and funding prospectus.
+    tr: Araştırma iznine başvurmak titiz bir yayın ve fonlama izahnamesi sunmayı gerektirir.
+    context: higher-education
+  collocations:
+  - text: take a sabbatical
+    tr: akademik izne ayrılmak
+  - text: sabbatical leave
+    tr: ücretli araştırma izni
+  register: formal
+  topic_tags:
+  - education
+  - academia
+  - research
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.curriculum-vitae
+  headword: curriculum vitae
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /kəˌrɪkjələm ˈviːtaɪ/
+  audio_ref: null
+  definition_en: A detailed biographical overview of an individual's academic credentials, publications, and professional
+    appointments.
+  meaning_tr: özgeçmiş, akademik hayat hikâyesi (CV)
+  examples:
+  - en: Her comprehensive curriculum vitae listed three monographs and dozens of peer-reviewed articles.
+    tr: Kapsamlı özgeçmişi üç monografi ve hakemli dergilerde yayımlanmış onlarca makaleyi listeliyordu.
+    context: academia
+  - en: The tenure committee carefully evaluated every entry on the applicant's curriculum vitae.
+    tr: Kadro komitesi başvuru sahibinin özgeçmişindeki her bir maddeyi dikkatle değerlendirdi.
+    context: higher-education
+  collocations:
+  - text: submit a curriculum vitae
+    tr: özgeçmiş sunmak
+  - text: extensive curriculum vitae
+    tr: kapsamlı akademik özgeçmiş
+  register: formal
+  topic_tags:
+  - education
+  - academia
+  - credentials
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.impart
+  headword: impart
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪmˈpɑːrt/
+  audio_ref: null
+  definition_en: To communicate, bestow, or pass on information, knowledge, or a quality.
+  meaning_tr: aktarmak, kazandırmak, vermek (bilgi/nitelik)
+  examples:
+  - en: Great educators do not merely dictate facts; they impart a lifelong enthusiasm for critical inquiry.
+    tr: Büyük eğitimciler yalnızca olguları dikte etmezler; eleştirel sorgulamaya yönelik ömür boyu sürecek bir coşku aktarırlar.
+    context: education
+  - en: Senior artisans gathered to impart traditional ceramic techniques to the apprentice guild.
+    tr: Kıdemli zanaatkârlar çırak loncasına geleneksel seramik tekniklerini aktarmak üzere toplandı.
+    context: culture
+  collocations:
+  - text: impart knowledge
+    tr: bilgi aktarmak
+  - text: impart wisdom
+    tr: bilgelik kazandırmak
+  register: formal
+  topic_tags:
+  - education
+  - pedagogy
+  - mentorship
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cohere
+  headword: cohere
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /koʊˈhɪr/
+  audio_ref: null
+  definition_en: To be logically consistent, unified, or firmly held together.
+  meaning_tr: tutarlı olmak, birbiriyle uyumlu/bağlantılı olmak, kenetlenmek
+  examples:
+  - en: The doctoral dissertation failed to cohere because its analytical frameworks contradicted one another.
+    tr: Doktora tezi analitik çerçeveleri birbiriyle çeliştiği için tutarlı bir bütün oluşturamadı.
+    context: academic
+  - en: A multidisciplinary curriculum must cohere across sciences and humanities to provide holistic insight.
+    tr: Çok disiplinli bir müfredat bütüncül kavrayış sağlamak için fen ve beşeri bilimler arasında tutarlı bir şekilde kenetlenmelidir.
+    context: education
+  collocations:
+  - text: cohere into a whole
+    tr: tutarlı bir bütün halinde birleşmek
+  - text: fail to cohere
+    tr: tutarlılık sağlayamamak
+  register: academic
+  topic_tags:
+  - education
+  - logic
+  - coherence
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.instill
+  headword: instill
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪnˈstɪl/
+  audio_ref: null
+  definition_en: To gradually but firmly establish an idea, value, or attitude in a person's mind.
+  meaning_tr: aşılamak, yavaş yavaş telkin etmek/yerleştirmek
+  examples:
+  - en: Early childhood education should primarily instill empathy, intellectual curiosity, and cooperation.
+    tr: Erken çocukluk eğitimi öncelikle empatiyi, entelektüel merakı ve iş birliğini aşılamalıdır.
+    context: pedagogy
+  - en: Rigorous academic debate instills a deep respect for empirical evidence and logical consistency.
+    tr: Titiz akademik tartışma ampirik kanıtlara ve mantıksal tutarlılığa derin bir saygı aşılar.
+    context: education
+  collocations:
+  - text: instill values
+    tr: değerleri aşılamak
+  - text: instill confidence
+    tr: güven telkin etmek
+  register: formal
+  topic_tags:
+  - education
+  - values
+  - teaching
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pedagogic
+  headword: pedagogic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌpedəˈɡɑːdʒɪk/
+  audio_ref: null
+  definition_en: Relating to teachers, the profession of teaching, or instructional methodology.
+  meaning_tr: eğitbilimsel, pedagojik, öğretimsel
+  examples:
+  - en: The university curriculum committee reformed its pedagogic strategies to emphasize active problem-solving.
+    tr: Üniversite müfredat komitesi aktif problem çözmeyi vurgulamak için pedagojik stratejilerini yeniden düzenledi.
+    context: higher-education
+  - en: Socratic seminars remain a highly effective pedagogic instrument for sharpening critical analysis.
+    tr: Sokratik seminerler eleştirel analizi keskinleştirmek için son derece etkili bir pedagojik araç olmaya devam etmektedir.
+    context: education
+  collocations:
+  - text: pedagogic approach
+    tr: pedagojik yaklaşım
+  - text: pedagogic skills
+    tr: eğitbilimsel beceriler
+  register: academic
+  topic_tags:
+  - education
+  - pedagogy
+  - instruction
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.doctoral
+  headword: doctoral
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈdɑːktərəl/
+  audio_ref: null
+  definition_en: Relating to or suitable for the award of a doctorate, the highest university academic degree.
+  meaning_tr: doktora düzeyinde, doktoraya ait
+  examples:
+  - en: Doctoral research requires independent formulation of original hypotheses and extensive peer validation.
+    tr: Doktora araştırması özgün hipotezlerin bağımsız olarak formüle edilmesini ve kapsamlı akran doğrulamasını gerektirir.
+    context: academia
+  - en: Candidates defend their doctoral theses before an international committee of discipline specialists.
+    tr: Adaylar doktora tezlerini disiplin uzmanlarından oluşan uluslararası bir kurul önünde savunurlar.
+    context: higher-education
+  collocations:
+  - text: doctoral dissertation
+    tr: doktora tezi
+  - text: doctoral candidate
+    tr: doktora adayı
+  register: academic
+  topic_tags:
+  - education
+  - doctorate
+  - academia
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.curricular
+  headword: curricular
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /kəˈrɪkjələr/
+  audio_ref: null
+  definition_en: Of or relating to the subjects comprising a course of study in a school or college.
+  meaning_tr: müfredatla ilgili, programa ait, öğretim programına dair
+  examples:
+  - en: Substantial curricular reform was introduced to integrate artificial intelligence ethics into computer science.
+    tr: Yapay zekâ etiğini bilgisayar bilimlerine entegre etmek için kapsamlı müfredat reformu getirildi.
+    context: education
+  - en: Accreditation agencies mandate strict alignment between curricular objectives and assessment rubrics.
+    tr: Akreditasyon kurumları müfredat hedefleri ile değerlendirme ölçekleri arasında katı bir uyum zorunlu kılar.
+    context: higher-education
+  collocations:
+  - text: curricular reform
+    tr: müfredat reformu
+  - text: curricular requirements
+    tr: müfredat gerekleri
+  register: formal
+  topic_tags:
+  - education
+  - curriculum
+  - academics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.encyclopedic
+  headword: encyclopedic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ɪnˌsaɪkləˈpiːdɪk/
+  audio_ref: null
+  definition_en: Comprehensive and exhaustive in terms of information and knowledge.
+  meaning_tr: ansiklopedik, son derece kapsamlı ve derin bilgiye sahip
+  examples:
+  - en: The senior professor was revered across the faculty for her encyclopedic knowledge of medieval manuscripts.
+    tr: Kıdemli profesör ortaçağ el yazmalarına dair ansiklopedik bilgisi nedeniyle fakülte genelinde saygıyla anılırdı.
+    context: higher-education
+  - en: The newly published botanical compendium provides an encyclopedic survey of alpine flora.
+    tr: Yeni yayımlanan botanik el kitabı alpin floraya dair ansiklopedik bir inceleme sunmaktadır.
+    context: science
+  collocations:
+  - text: encyclopedic knowledge
+    tr: ansiklopedik bilgi
+  - text: encyclopedic memory
+    tr: ansiklopedik hafıza
+  register: formal
+  topic_tags:
+  - education
+  - knowledge
+  - scholarship
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.eruditely
+  headword: eruditely
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˈerudaɪtli/
+  audio_ref: null
+  definition_en: In a manner displaying profound scholarly learning, knowledge, and intellectual depth.
+  meaning_tr: âlimce, derin bir bilgi ve kültürle, bilgece
+  examples:
+  - en: The keynote speaker argued eruditely on the historical continuity of civil jurisprudence.
+    tr: Açılış konuşmacısı medeni hukukun tarihi sürekliliği üzerine âlimce bir argüman sundu.
+    context: academic
+  - en: She responded eruditely to challenging questions from the doctoral examination panel.
+    tr: Doktora jürisinden gelen zorlu soruları derin bir bilgi ve yetkinlikle bilgece yanıtladı.
+    context: higher-education
+  collocations:
+  - text: argue eruditely
+    tr: âlimce savunmak/tartışmak
+  - text: write eruditely
+    tr: derin bilgiyle kaleme almak
+  register: academic
+  topic_tags:
+  - education
+  - erudition
+  - scholarship
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pedantically
+  headword: pedantically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /pɪˈdæntɪkli/
+  audio_ref: null
+  definition_en: In a manner excessively concerned with minor details, formal rules, or literal precision.
+  meaning_tr: kılı kırk yararcasına, aşırı kuralcı/ukalaca, şekilci bir biçimde
+  examples:
+  - en: The peer reviewer pedantically cataloged split infinitives rather than engaging with the core argument.
+    tr: Hakem ana tezle ilgilenmek yerine kılı kırk yararcasına ayrılmış mastarları tek tek listeledi.
+    context: academic
+  - en: He adhered pedantically to the archaic formatting guide, delaying manuscript submission by weeks.
+    tr: Eski biçimlendirme kılavuzuna aşırı kuralcı bir şekilde bağlı kalarak taslak teslimini haftalarca geciktirdi.
+    context: publishing
+  collocations:
+  - text: insist pedantically
+    tr: şekilci bir inatla diretmek
+  - text: follow pedantically
+    tr: kuralcı biçimde harfiyen izlemek
+  register: formal
+  topic_tags:
+  - education
+  - pedantry
+  - precision
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.catch-up-on
+  headword: catch up on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /kætʃ ʌp ɑːn/
+  audio_ref: null
+  definition_en: To do what needs to be done because one has fallen behind, especially academic reading or coursework.
+  meaning_tr: arayı kapatmak, eksikleri gidermek, geciken işleri/okumaları yetiştirmek
+  examples:
+  - en: During the semester break, graduate scholars must catch up on recent literature in computational linguistics.
+    tr: Dönem tatili süresince lisansüstü araştırmacılar hesaplamalı dilbilimdeki son literatürü okuyarak arayı kapatmalıdır.
+    context: academia
+  - en: She spent the weekend in the archives to catch up on missed seminar reading assignments.
+    tr: Kaçırılan seminer okuma ödevlerini yetiştirmek için hafta sonunu arşivlerde geçirdi.
+    context: education
+  collocations:
+  - text: catch up on reading
+    tr: okumaları yetiştirmek/arayı kapatmak
+  - text: catch up on research
+    tr: araştırma eksiklerini tamamlamak
+  register: general
+  topic_tags:
+  - education
+  - study
+  - catch-up
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.the-school-of-thought
+  headword: the school of thought
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /ðə skuːl əv θɔːt/
+  audio_ref: null
+  definition_en: A particular philosophy, doctrine, or perspective shared by a group of scholars or thinkers.
+  meaning_tr: düşünce ekolü, fikir akımı
+  examples:
+  - en: The Austrian school of thought emphasizes the primacy of subjective individual choices in market formation.
+    tr: Avusturya düşünce ekolü piyasa oluşumunda öznel bireysel tercihlerin önceliğini vurgular.
+    context: economics
+  - en: Our department subscribes to the behavioral school of thought regarding second language acquisition.
+    tr: Bölümümüz ikinci dil edinimi konusunda davranışsal fikir akımını benimsemektedir.
+    context: linguistics
+  collocations:
+  - text: belong to a school of thought
+    tr: bir düşünce ekolüne mensup olmak
+  - text: divergent schools of thought
+    tr: farklı fikir akımları
+  register: formal
+  topic_tags:
+  - education
+  - philosophy
+  - intellectual-movements
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.hit-the-books
+  headword: hit the books
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /hɪt ðə bʊks/
+  audio_ref: null
+  definition_en: To begin studying diligently and with concentrated effort.
+  meaning_tr: harıl harıl ders çalışmaya başlamak, kitaplara gömülmek
+  examples:
+  - en: With comprehensive qualifying examinations only a month away, doctoral candidates must hit the books.
+    tr: Kapsamlı yeterlik sınavlarına yalnızca bir ay kalmışken doktora adayları harıl harıl çalışmaya başlamalıdır.
+    context: academia
+  - en: He resolved to hit the books every evening to master organic synthesis reaction mechanisms.
+    tr: Organik sentez reaksiyon mekanizmalarında uzmanlaşmak için her akşam kitaplara gömülmeye karar verdi.
+    context: education
+  collocations:
+  - text: time to hit the books
+    tr: ders çalışma vakti
+  - text: hit the books hard
+    tr: sıkı bir şekilde ders çalışmaya koyulmak
+  register: informal
+  topic_tags:
+  - education
+  - study
+  - diligence
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.sovereignty
+  headword: sovereignty
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈsɑːvrənti/
+  audio_ref: null
+  definition_en: Supreme power or independent authority claimed and exercised by a state or governing entity.
+  meaning_tr: egemenlik, hâkimiyet, bağımsız otorite
+  examples:
+  - en: Cross-border cyberspace governance raises complex questions regarding national digital sovereignty.
+    tr: Sınır ötesi siber alan yönetişimi ulusal dijital egemenliğe ilişkin karmaşık sorular doğurmaktadır.
+    context: governance
+  - en: The constitution explicitly enshrines the principle that sovereign authority originates from the electorate.
+    tr: Anayasa egemen otoritenin seçmenlerden kaynaklandığı ilkesini açıkça güvence altına alır.
+    context: politics
+  collocations:
+  - text: national sovereignty
+    tr: ulusal egemenlik
+  - text: violate sovereignty
+    tr: egemenliği ihlal etmek
+  register: formal
+  topic_tags:
+  - society
+  - governance
+  - politics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.authoritarianism
+  headword: authoritarianism
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ɔːˌθɔːrɪˈteriənɪzəm/
+  audio_ref: null
+  definition_en: The enforcement of strict obedience to governmental authority at the expense of personal freedoms.
+  meaning_tr: otoriterlik, otoriter rejim/anlayış
+  examples:
+  - en: Political scientists warned that curbing journalistic freedoms is often the precursor to creeping authoritarianism.
+    tr: Siyaset bilimciler gazetecilik özgürlüklerini kısıtlamanın sıklıkla sinsi otoriterliğin habercisi olduğu konusunda
+      uyardılar.
+    context: political-science
+  - en: Civil society organizations mobilize to protect judicial independence against resurgent authoritarianism.
+    tr: Sivil toplum kuruluşları yeniden yükselen otoriterliğe karşı yargı bağımsızlığını korumak için seferber olmaktadır.
+    context: society
+  collocations:
+  - text: rise of authoritarianism
+    tr: otoriterliğin yükselişi
+  - text: drift toward authoritarianism
+    tr: otoriterliğe kayma
+  register: formal
+  topic_tags:
+  - society
+  - politics
+  - power
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.gerrymander
+  headword: gerrymander
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈdʒerimændər/
+  audio_ref: null
+  definition_en: The manipulation of the boundaries of an electoral constituency so as to favor one political party or class.
+  meaning_tr: seçim hilesi için seçim bölgelerini manipüle etme, bölge sınırlarıyla oynama
+  examples:
+  - en: Critics characterized the legislative redistricting map as a brazen partisan gerrymander.
+    tr: Eleştirmenler yasama yeniden sınırlandırma haritasını yüzsüzce yapılmış partizan bir seçim bölgesi oyunu olarak nitelendirdi.
+    context: politics
+  - en: Independent redistricting commissions were instituted to eliminate unfair congressional gerrymanders.
+    tr: Adaletsiz kongre seçim bölgesi hilelerini ortadan kaldırmak için bağımsız sınır belirleme komisyonları kuruldu.
+    context: governance
+  collocations:
+  - text: partisan gerrymander
+    tr: partizan seçim bölgesi manipülasyonu
+  - text: electoral gerrymander
+    tr: seçim bölgesi oyunu
+  register: formal
+  topic_tags:
+  - society
+  - elections
+  - politics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.filibuster
+  headword: filibuster
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈfɪlɪbʌstər/
+  audio_ref: null
+  definition_en: An action such as a prolonged speech that obstructs legislative progress in an assembly.
+  meaning_tr: kürsü işgali, oylamayı engelleme/geciktirme taktiği
+  examples:
+  - en: The opposition senator staged a fourteen-hour filibuster to delay the vote on judicial appointments.
+    tr: Muhalefet senatörü yargı atamaları oylamasını geciktirmek için on dört saatlik bir kürsü konuşması taktiği yürüttü.
+    context: politics
+  - en: Debates have intensified over whether the parliamentary filibuster protects minorities or paralyzes governance.
+    tr: Parlamenter engelleme taktiğinin azınlıkları mı koruduğu yoksa yönetişimi mi felç ettiği konusundaki tartışmalar yoğunlaştı.
+    context: governance
+  collocations:
+  - text: stage a filibuster
+    tr: engelleme konuşması taktiği yürütmek
+  - text: overcome a filibuster
+    tr: engelleme taktiğini aşmak
+  register: formal
+  topic_tags:
+  - society
+  - parliament
+  - obstruction
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.nationalize
+  headword: nationalize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈnæʃnəlaɪz/
+  audio_ref: null
+  definition_en: To transfer a major industry or enterprise from private to state ownership or control.
+  meaning_tr: millileştirmek, devletleştirmek, kamulaştırmak
+  examples:
+  - en: Following the financial insolvency, the emergency council voted to nationalize the critical railway network.
+    tr: Mali iflasın ardından acil durum konseyi kritik demiryolu ağını kamulaştırma yönünde oy kullandı.
+    context: economics
+  - en: Developing nations historically sought to nationalize foreign-owned oil reserves to assert resource sovereignty.
+    tr: Gelişmekte olan ülkeler tarihsel olarak kaynak egemenliğini tesis etmek için yabancıların sahip olduğu petrol rezervlerini
+      millileştirmeye çalışmıştır.
+    context: history
+  collocations:
+  - text: nationalize key industries
+    tr: kilit sanayileri devletleştirmek
+  - text: nationalize banks
+    tr: bankaları kamulaştırmak
+  register: formal
+  topic_tags:
+  - society
+  - economics
+  - state
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.disparage
+  headword: disparage
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈspærɪdʒ/
+  audio_ref: null
+  definition_en: To regard or represent as being of little worth; to belittle public figures or marginalized communities.
+  meaning_tr: küçük düşürmek, kötülemek, itibarını sarsmak
+  examples:
+  - en: The demagogue repeatedly disparaged independent judicial officials during populist rallies.
+    tr: Demagog popülist mitingler sırasında bağımsız adli yetkilileri defalarca kötüleyip küçük düşürdü.
+    context: politics
+  - en: Societal cohesion frays when political pundits disparage the legitimate grievances of working-class families.
+    tr: Siyasi yorumcular işçi sınıfı ailelerin meşru şikayetlerini önemsiz gösterip küçümsediğinde toplumsal uyum aşınır.
+    context: society
+  collocations:
+  - text: disparage someone's efforts
+    tr: birinin çabalarını küçümsemek
+  - text: openly disparage
+    tr: alenen kötülemek
+  register: formal
+  topic_tags:
+  - society
+  - discourse
+  - belittlement
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.balkanize
+  headword: balkanize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈbɔːlkənaɪz/
+  audio_ref: null
+  definition_en: To divide a region, institution, or domain into smaller mutually hostile or uncooperative states or factions.
+  meaning_tr: balkanlaştırmak, parçalayıp birbirine düşürmek, küçük hizipleşmelere bölmek
+  examples:
+  - en: Cybersecurity analysts worry that diverging internet regulations will balkanize the global digital economy.
+    tr: Siber güvenlik analistleri farklılaşan internet düzenlemelerinin küresel dijital ekonomiyi balkanlaştırıp parçalayacağından
+      endişeleniyor.
+    context: technology
+  - en: Ethnic factionalism threatened to balkanize the fledgling federal democracy into warring enclaves.
+    tr: Etnik hizipçilik yeni kurulan federal demokrasiyi savaşan küçük anklavlara bölüp balkanlaştırmakla tehdit etti.
+    context: politics
+  collocations:
+  - text: threaten to balkanize
+    tr: balkanlaştırmakla tehdit etmek
+  - text: balkanize into factions
+    tr: hiziplere bölünmek
+  register: formal
+  topic_tags:
+  - society
+  - division
+  - geopolitics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.plutocratic
+  headword: plutocratic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌpluːtəˈkrætɪk/
+  audio_ref: null
+  definition_en: Relating to or characterized by government or social order controlled by the wealthy class.
+  meaning_tr: plütokratik, zenginler yönetimine ait, zenginlerin egemen olduğu
+  examples:
+  - en: Critics argued that unlimited campaign spending transformed the democracy into a plutocratic oligarchy.
+    tr: Eleştirmenler sınırsız seçim kampanyası harcamalarının demokrasiyi plütokratik bir oligarşiye dönüştürdüğünü savundu.
+    context: politics
+  - en: The investigative journalist exposed how plutocratic interests dictated regulatory rollbacks behind closed doors.
+    tr: Araştırmacı gazeteci zengin sınıfın çıkarlarının kapalı kapılar ardında mevzuat gevşetmelerini nasıl dikte ettiğini
+      ifşa etti.
+    context: journalism
+  collocations:
+  - text: plutocratic elite
+    tr: plütokratik seçkinler
+  - text: plutocratic rule
+    tr: zenginler egemenliği
+  register: formal
+  topic_tags:
+  - society
+  - wealth
+  - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.nepotistic
+  headword: nepotistic
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌnepəˈtɪstɪk/
+  audio_ref: null
+  definition_en: Showing favoritism to relatives or close associates, especially by giving them jobs or privileges.
+  meaning_tr: akraba kayırıcı, nepotist, torpilci
+  examples:
+  - en: The anti-corruption commission denounced the ministry's nepotistic appointment practices.
+    tr: Yolsuzlukla mücadele komisyonu bakanlığın akraba kayırıcı atama uygulamalarını kınadı.
+    context: governance
+  - en: Employees staged walkouts to protest nepotistic promotions that bypassed experienced candidates.
+    tr: Çalışanlar deneyimli adayları görmezden gelen kayırmacı terfileri protesto etmek için iş bırakma eylemi yaptı.
+    context: work
+  collocations:
+  - text: nepotistic appointments
+    tr: akraba kayırıcı atamalar
+  - text: nepotistic practices
+    tr: iltimasçı uygulamalar
+  register: formal
+  topic_tags:
+  - society
+  - favoritism
+  - ethics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.subversive
+  headword: subversive
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /səbˈvɜːrsɪv/
+  audio_ref: null
+  definition_en: Seeking or intended to subvert an established system or institution.
+  meaning_tr: yıkıcı, düzeni sarsıcı, yerleşik nizama karşı
+  examples:
+  - en: Authoritarian censors banned the allegorical drama, labeling its satirical humor politically subversive.
+    tr: Otoriter sansürcüler hicivli mizahını siyasi bakımdan düzeni sarsıcı bularak alegorik tiyatro oyununu yasakladı.
+    context: politics
+  - en: Satirical street art plays a distinctly subversive role in authoritarian urban landscapes.
+    tr: Hicivli sokak sanatı otoriter kentsel manzaralarda belirgin biçimde düzene karşıt yıkıcı bir rol oynar.
+    context: culture
+  collocations:
+  - text: subversive activity
+    tr: yıkıcı faaliyet
+  - text: subversive ideas
+    tr: yerleşik nizama aykırı fikirler
+  register: formal
+  topic_tags:
+  - society
+  - dissent
+  - politics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.disingenuous
+  headword: disingenuous
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌdɪsɪnˈdʒenjuəs/
+  audio_ref: null
+  definition_en: Not candid or sincere, typically by pretending that one knows less about something than one really does.
+  meaning_tr: samimiyetsiz, sinsi, bilmezden gelen, iki yüzlü
+  examples:
+  - en: The politician's claim that she had no foreknowledge of the scandal was widely condemned as disingenuous.
+    tr: Siyasetçinin skandaldan önceden haberdar olmadığı yönündeki iddiası geniş çapta samimiyetsiz ve iki yüzlü olarak kınandı.
+    context: politics
+  - en: It is disingenuous to advocate fiscal austerity while simultaneously granting corporate subsidies.
+    tr: Kurumsal teşvikler dağıtırken eşzamanlı olarak mali kemer sıkmayı savunmak samimiyetsizliktir.
+    context: economics
+  collocations:
+  - text: disingenuous remark
+    tr: samimiyetsiz ifade
+  - text: disingenuous argument
+    tr: bilmezden gelen iki yüzlü argüman
+  register: formal
+  topic_tags:
+  - society
+  - ethics
+  - rhetoric
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.publicly
+  headword: publicly
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˈpʌblɪkli/
+  audio_ref: null
+  definition_en: So as to be seen or heard by the community at large; openly and officially.
+  meaning_tr: alenen, kamuya açık bir şekilde, halkın önünde
+  examples:
+  - en: The prime minister publicly apologized for the historical mistreatment of indigenous communities.
+    tr: Başbakan yerli topluluklara yönelik geçmişteki kötü muameleden dolayı alenen ve halkın önünde özür diledi.
+    context: governance
+  - en: Civic whistleblowers stepped forward to publicly disclose documentary evidence of corporate fraud.
+    tr: Sivil ihbarcılar kurumsal dolandırıcılığın belgesel kanıtlarını kamuoyuna alenen ifşa etmek için öne çıktılar.
+    context: society
+  collocations:
+  - text: publicly acknowledge
+    tr: alenen kabul etmek
+  - text: publicly condemn
+    tr: kamuoyu önünde kınamak
+  register: formal
+  topic_tags:
+  - society
+  - openness
+  - civic
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.look-down-on
+  headword: look down on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /lʊk daʊn ɑːn/
+  audio_ref: null
+  definition_en: To consider someone or something as inferior, unworthy, or socially beneath oneself.
+  meaning_tr: tepeden bakmak, hor görmek, küçümsemek
+  examples:
+  - en: Entrenched urban elites often unfairly look down on agrarian lifestyles and vernacular dialects.
+    tr: Yerleşik kentsel seçkinler genellikle tarımsal yaşam tarzlarına ve yerel lehçelere haksız yere tepeden bakarlar.
+    context: sociology
+  - en: Class prejudices lead certain employers to look down on applicants from vocational colleges.
+    tr: Sınıfsal önyargılar belirli işverenlerin meslek yüksekokulu mezunu adayları hor görmesine yol açmaktadır.
+    context: society
+  collocations:
+  - text: look down on others
+    tr: başkalarına tepeden bakmak
+  - text: tend to look down on
+    tr: küçümseme eğiliminde olmak
+  register: general
+  topic_tags:
+  - society
+  - class
+  - prejudice
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.the-fabric-of-society
+  headword: the fabric of society
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /ðə ˈfæbrɪk əv səˈsaɪəti/
+  audio_ref: null
+  definition_en: The fundamental structure of social institutions, shared values, and trust that holds a community together.
+  meaning_tr: toplumun dokusu, toplumsal yapı ve dayanışma ağı
+  examples:
+  - en: Prolonged economic polarization threatens to tear the moral fabric of society apart.
+    tr: Uzun süreli ekonomik kutuplaşma toplumun ahlaki dokusunu parçalamakla tehdit etmektedir.
+    context: sociology
+  - en: Universal access to healthcare and education strengthens the civic fabric of society.
+    tr: Sağlık ve eğitime evrensel erişim toplumun sivil dokusunu güçlendirir.
+    context: governance
+  collocations:
+  - text: tear the fabric of society
+    tr: toplumun dokusunu parçalamak
+  - text: weaken the fabric of society
+    tr: toplumsal dokuyu zayıflatmak
+  register: formal
+  topic_tags:
+  - society
+  - cohesion
+  - civic-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.toe-the-line
+  headword: toe the line
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /toʊ ðə laɪn/
+  audio_ref: null
+  definition_en: To strictly conform to the rules, policies, or standards set by an authority or political party.
+  meaning_tr: kurallara harfiyen uymak, hizaya gelmek, parti çizgisine riayet etmek
+  examples:
+  - en: Dissenting legislators were pressured to toe the line during the high-stakes parliamentary budget vote.
+    tr: Muhalif milletvekilleri kritik parlamento bütçe oylamasında parti çizgisine harfiyen uymaları için baskı gördü.
+    context: politics
+  - en: In rigidly hierarchical corporations, ambitious executives learn quickly to toe the company line.
+    tr: Katı hiyerarşik şirketlerde hırslı yöneticiler şirket çizgisine hizalanmayı hızla öğrenirler.
+    context: business
+  collocations:
+  - text: toe the party line
+    tr: parti çizgisine riayet etmek
+  - text: refuse to toe the line
+    tr: hizaya gelmeyi reddetmek
+  register: informal
+  topic_tags:
+  - society
+  - conformity
+  - discipline
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.middleware
+  headword: middleware
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈmɪdlwer/
+  audio_ref: null
+  definition_en: Software that acts as a bridge between an operating system or database and applications, managing communication
+    and data exchange.
+  meaning_tr: ara yazılım, ara katman yazılımı
+  examples:
+  - en: Enterprise service buses function as sophisticated middleware connecting legacy mainframes with cloud services.
+    tr: Kurumsal hizmet yolları eski ana bilgisayarları bulut hizmetleriyle bağlayan gelişmiş ara yazılımlar olarak işlev
+      görür.
+    context: software-engineering
+  - en: The authentication middleware verifies bearer tokens before routing requests to downstream microservices.
+    tr: Kimlik doğrulama ara yazılımı istekleri aşağı akış mikro hizmetlerine yönlendirmeden önce taşıyıcı belirteçleri doğrular.
+    context: technology
+  collocations:
+  - text: middleware layer
+    tr: ara yazılım katmanı
+  - text: messaging middleware
+    tr: mesajlaşma ara yazılımı
+  register: formal
+  topic_tags:
+  - technology
+  - software-architecture
+  - integration
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.metadata
+  headword: metadata
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈmetədeɪtə/
+  audio_ref: null
+  definition_en: A set of data that describes and gives information about other data, such as author, creation timestamp,
+    and file format.
+  meaning_tr: üstveri, metaveri
+  examples:
+  - en: Privacy advocates pointed out that telecom metadata alone can expose an individual's behavioral patterns.
+    tr: Mahremiyet savunucuları yalnızca telekomünikasyon üstverisinin bile bir bireyin davranışsal örüntülerini ifşa edebileceğini
+      belirtti.
+    context: data-privacy
+  - en: Automated indexing pipelines extract EXIF metadata from uploaded imagery to classify geolocation.
+    tr: Otomatik indeksleme işlem hatları coğrafi konumu sınıflandırmak için yüklenen görüntülerden EXIF üstverisini çıkarır.
+    context: technology
+  collocations:
+  - text: metadata schema
+    tr: üstveri şeması
+  - text: file metadata
+    tr: dosya metaverisi
+  register: formal
+  topic_tags:
+  - technology
+  - data
+  - information-systems
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.namespace
+  headword: namespace
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈneɪmspeɪs/
+  audio_ref: null
+  definition_en: A declarative region that provides a scope to identifiers, preventing naming collisions between modular codebases.
+  meaning_tr: ad alanı, isim uzayı
+  examples:
+  - en: Encapsulating third-party libraries within isolated namespaces prevents global identifier collisions.
+    tr: Üçüncü taraf kütüphaneleri izole ad alanları içinde sarmalamak küresel tanımlayıcı çakışmalarını önler.
+    context: programming
+  - en: Kubernetes clusters utilize namespaces to partition virtual cluster resources among multiple development teams.
+    tr: Kubernetes kümeleri sanal küme kaynaklarını birden fazla geliştirme ekibi arasında bölümlere ayırmak için ad alanlarını
+      kullanır.
+    context: cloud-infrastructure
+  collocations:
+  - text: global namespace
+    tr: küresel ad alanı
+  - text: namespace collision
+    tr: isim uzayı çakışması
+  register: formal
+  topic_tags:
+  - technology
+  - programming
+  - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.instantiate
+  headword: instantiate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪnˈstænʃieɪt/
+  audio_ref: null
+  definition_en: To represent as or produce an instance of a class, archetype, or abstract blueprint in memory.
+  meaning_tr: örneğini oluşturmak, somutlaştırmak, nesne oluşturmak (yazılım)
+  examples:
+  - en: Dependency injection frameworks automatically instantiate required repositories at application startup.
+    tr: Bağımlılık enjeksiyonu çerçeveleri uygulama başlangıcında gerekli depoların örneğini otomatik olarak oluşturur.
+    context: software-engineering
+  - en: The runtime throws an out-of-memory exception when attempting to instantiate millions of concurrent threads.
+    tr: Çalışma zamanı milyonlarca eşzamanlı iş parçacığının örneğini oluşturmaya çalışırken yetersiz bellek istisnası fırlatır.
+    context: technology
+  collocations:
+  - text: instantiate an object
+    tr: bir nesnenin örneğini oluşturmak
+  - text: dynamically instantiate
+    tr: dinamik olarak somutlaştırmak
+  register: formal
+  topic_tags:
+  - technology
+  - object-oriented
+  - programming
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.serialize
+  headword: serialize
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈsɪriəlaɪz/
+  audio_ref: null
+  definition_en: To convert an in-memory data object into a stream of bytes for transmission or storage.
+  meaning_tr: serileştirmek, veri nesnesini bayt dizisine dönüştürmek
+  examples:
+  - en: The API client serializes domain models into compact JSON payloads before transmitting HTTP POST requests.
+    tr: API istemcisi HTTP POST isteklerini iletmeden önce etki alanı modellerini kompakt JSON yüklerine serileştirir.
+    context: software-engineering
+  - en: High-throughput systems serialize messages into protocol buffers to minimize network serialization overhead.
+    tr: Yüksek verimli sistemler ağ serileştirme ek yükünü en aza indirmek için iletileri protokol arabelleklerine serileştirir.
+    context: networking
+  collocations:
+  - text: serialize data
+    tr: veriyi serileştirmek
+  - text: serialize into JSON
+    tr: JSON formatında serileştirmek
+  register: formal
+  topic_tags:
+  - technology
+  - data-structures
+  - networking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.minify
+  headword: minify
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈmɪnɪfaɪ/
+  audio_ref: null
+  definition_en: To remove all unnecessary characters from source code without altering its functionality in order to reduce
+    file size.
+  meaning_tr: küçültmek (kod dosyasını), gereksiz boşlukları/karakterleri ayıklamak
+  examples:
+  - en: Build bundlers minify production JavaScript bundles to reduce cold-start download times on mobile clients.
+    tr: Derleme paketleyicileri mobil istemcilerde ilk indirme sürelerini azaltmak için üretim JavaScript paketlerini küçültür.
+    context: web-development
+  - en: Modern CSS toolchains compress and minify stylesheets automatically during the deployment pipeline.
+    tr: Modern CSS araç zincirleri dağıtım işlem hattı sırasında stil sayfalarını otomatik olarak sıkıştırır ve küçültür.
+    context: software-engineering
+  collocations:
+  - text: minify code
+    tr: kodu küçültmek
+  - text: minify bundle
+    tr: paketi küçültmek
+  register: formal
+  topic_tags:
+  - technology
+  - optimization
+  - web
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.headless
+  headword: headless
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈhedləs/
+  audio_ref: null
+  definition_en: Operating without a graphical user interface or physical monitor, controlled exclusively via API or command-line.
+  meaning_tr: başsız, grafik arayüzü olmayan, yalnızca arka uç/API ile çalışan
+  examples:
+  - en: End-to-end integration tests execute against headless browsers inside continuous delivery containers.
+    tr: Uçtan uca entegrasyon testleri sürekli teslimat konteynerleri içindeki başlıksız tarayıcılarda çalışır.
+    context: software-engineering
+  - en: A headless content management system exposes RESTful endpoints, leaving frontend presentation decoupled.
+    tr: Başsız bir içerik yönetim sistemi RESTful uç noktalarını kullanıma sunar ve ön uç sunumunu bağımsız bırakır.
+    context: web-architecture
+  collocations:
+  - text: headless browser
+    tr: grafik arayüzsüz tarayıcı
+  - text: headless CMS
+    tr: başsız içerik yönetim sistemi
+  register: formal
+  topic_tags:
+  - technology
+  - architecture
+  - automation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stateful
+  headword: stateful
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈsteɪtfʊl/
+  audio_ref: null
+  definition_en: Retaining knowledge of previous interactions or configuration across successive requests or transactions.
+  meaning_tr: durum bilgisi tutan, durum korumalı, önceki durumu hatırlayan
+  examples:
+  - en: Managing distributed databases is inherently difficult because stateful storage requires strict consistency replication.
+    tr: Dağıtık veritabanlarını yönetmek doğası gereği zordur çünkü durum korumalı depolama katı tutarlılık çoğaltması gerektirir.
+    context: cloud-computing
+  - en: Websocket connections maintain a stateful, bidirectional channel between the client and server.
+    tr: Websocket bağlantıları istemci ile sunucu arasında durum bilgisi tutan iki yönlü bir kanal sağlar.
+    context: networking
+  collocations:
+  - text: stateful architecture
+    tr: durum korumalı mimari
+  - text: stateful session
+    tr: durum bilgisi tutan oturum
+  register: formal
+  topic_tags:
+  - technology
+  - networking
+  - state-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.distributed
+  headword: distributed
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /dɪˈstrɪbjuːtɪd/
+  audio_ref: null
+  definition_en: Spread across multiple physical or virtual computers that coordinate via networked communication.
+  meaning_tr: dağıtık, dağıtılmış (sistemler/mimari)
+  examples:
+  - en: The CAP theorem establishes fundamental trade-offs in distributed systems between consistency, availability, and partition
+      tolerance.
+    tr: CAP teoremi dağıtık sistemlerde tutarlılık, kullanılabilirlik ve bölümlenme toleransı arasında temel ödünleşimler
+      kurar.
+    context: computer-science
+  - en: Distributed ledger technology ensures cryptographic immutability across decentralized validator nodes.
+    tr: Dağıtık defter teknolojisi merkeziyetsiz doğrulayıcı düğümler genelinde kriptografik değişmezliği güvenceye alır.
+    context: blockchain
+  collocations:
+  - text: distributed system
+    tr: dağıtık sistem
+  - text: distributed computing
+    tr: dağıtılmış bilgi işlem
+  register: formal
+  topic_tags:
+  - technology
+  - distributed-systems
+  - networks
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.biometric
+  headword: biometric
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˌbaɪoʊˈmetrɪk/
+  audio_ref: null
+  definition_en: Relating to the statistical measurement and technical analysis of unique human physiological characteristics.
+  meaning_tr: biyometrik, biyolojik ölçümlemeye dayalı
+  examples:
+  - en: Modern mobile operating systems store encrypted biometric templates within hardware security enclaves.
+    tr: Modern mobil işletim sistemleri şifrelenmiş biyometrik şablonları donanım güvenlik anklavlarında saklar.
+    context: cybersecurity
+  - en: Border control gates rely on facial biometric verification to process international travelers securely.
+    tr: Sınır kontrol kapıları uluslararası yolcuları güvenli bir şekilde işlemek için yüz biyometrik doğrulamasına dayanır.
+    context: security
+  collocations:
+  - text: biometric authentication
+    tr: biyometrik kimlik doğrulama
+  - text: biometric data
+    tr: biyometrik veri
+  register: formal
+  topic_tags:
+  - technology
+  - security
+  - identity
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.programmatically
+  headword: programmatically
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˌproʊɡrəˈmætɪkli/
+  audio_ref: null
+  definition_en: By means of computer code, software instructions, or automation rather than manual human intervention.
+  meaning_tr: programatik olarak, kod/yazılım yoluyla, otomatik olarak
+  examples:
+  - en: Cloud resources can be provisioned programmatically using declarative infrastructure-as-code manifests.
+    tr: Bulut kaynakları bildirimsel kod olarak altyapı bildirimleri kullanılarak programatik olarak sağlanabilir.
+    context: devops
+  - en: The script programmatically downloads, parses, and validates nightly database backup snapshots.
+    tr: Betik gecelik veritabanı yedek anlık görüntülerini programatik olarak indirir, ayrıştırır ve doğrular.
+    context: automation
+  collocations:
+  - text: configure programmatically
+    tr: kod yoluyla yapılandırmak
+  - text: generate programmatically
+    tr: yazılımla otomatik üretmek
+  register: formal
+  topic_tags:
+  - technology
+  - automation
+  - programming
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.iteratively
+  headword: iteratively
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˈɪtərətɪvli/
+  audio_ref: null
+  definition_en: In a repetitive manner involving cycles of operations or refinement where each cycle builds upon the prior.
+  meaning_tr: yinelemeli olarak, adım adım tekrarlayarak, aşamalı döngülerle
+  examples:
+  - en: Machine learning weights are adjusted iteratively across hundreds of gradient descent epochs.
+    tr: Makine öğrenimi ağırlıkları yüzlerce gradyan inişi dönemi boyunca yinelemeli olarak ayarlanır.
+    context: artificial-intelligence
+  - en: Agile engineering teams iteratively refine user-facing prototypes based on production metrics.
+    tr: Çevik mühendislik ekipleri üretim metriklerine dayanarak kullanıcıya dönük prototipleri yinelemeli olarak iyileştirir.
+    context: software-engineering
+  collocations:
+  - text: improve iteratively
+    tr: yinelemeli olarak geliştirmek
+  - text: execute iteratively
+    tr: tekrarlı döngülerle yürütmek
+  register: formal
+  topic_tags:
+  - technology
+  - algorithms
+  - engineering
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.boot-up
+  headword: boot up
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /buːt ʌp/
+  audio_ref: null
+  definition_en: To start up a computer, operating system, or server hardware and load system software.
+  meaning_tr: başlatmak, açılmak (bilgisayar/sistem), önyükleme yapmak
+  examples:
+  - en: Embedded automotive microcontrollers must boot up within fifty milliseconds of ignition.
+    tr: Gömülü otomotiv mikrodenetleyicileri kontağın açılmasından itibaren elli milisaniye içinde önyükleme yapmalıdır.
+    context: embedded-systems
+  - en: Server instances in the auto-scaling group automatically boot up when ingress load exceeds target thresholds.
+    tr: Otomatik ölçekleme grubundaki sunucu örnekleri gelen yük hedef eşikleri aştığında otomatik olarak açılır.
+    context: cloud-infrastructure
+  collocations:
+  - text: boot up successfully
+    tr: başarıyla açılmak/başlatılmak
+  - text: fast boot up
+    tr: hızlı önyükleme
+  register: general
+  topic_tags:
+  - technology
+  - hardware
+  - operating-systems
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.log-off-from
+  headword: log off from
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /lɔːɡ ɔːf frəm/
+  audio_ref: null
+  definition_en: To disconnect or terminate an authenticated user session from a networked computer system.
+  meaning_tr: oturumunu kapatmak, -den çıkış yapmak
+  examples:
+  - en: Security compliance policies require employees to log off from administrative consoles when leaving workstations.
+    tr: Güvenlik uyumluluk politikaları çalışanların çalışma istasyonlarından ayrılırken yönetici konsollarından çıkış yapmalarını
+      gerektirir.
+    context: cybersecurity
+  - en: The session manager automatically logs off users from remote banking portals after fifteen minutes of inactivity.
+    tr: Oturum yöneticisi on beş dakikalık hareketsizliğin ardından kullanıcıların uzaktan bankacılık portallarındaki oturumlarını
+      otomatik olarak kapatır.
+    context: technology
+  collocations:
+  - text: log off from the network
+    tr: ağdan çıkış yapmak
+  - text: automatically log off from
+    tr: -den otomatik olarak oturumu kapatmak
+  register: general
+  topic_tags:
+  - technology
+  - security
+  - sessions
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.under-the-hood
+  headword: under the hood
+  part_of_speech: phrase
+  cefr_level: C2
+  phonetic: /ˈʌndər ðə hʊd/
+  audio_ref: null
+  definition_en: Referring to the underlying internal mechanisms, engine, or technical workings of a complex system.
+  meaning_tr: arka planda, kaputun altında, işin mutfağında/derininde
+  examples:
+  - en: While the mobile application UI appears minimalist, there is an extraordinarily complex distributed cache under the
+      hood.
+    tr: Mobil uygulamanın kullanıcı arayüzü minimalist görünse de kaputun altında olağanüstü karmaşık bir dağıtık önbellek
+      bulunmaktadır.
+    context: software-engineering
+  - en: Under the hood, the modern database engine relies on log-structured merge-trees for lightning-fast disk writes.
+    tr: Arka planda modern veritabanı motoru yıldırım hızında disk yazımları için günlük yapılı birleştirme ağaçlarına dayanır.
+    context: technology
+  collocations:
+  - text: look under the hood
+    tr: arka plandaki işleyişe bakmak
+  - text: what happens under the hood
+    tr: kaputun altında neler olup bittiği
+  register: general
+  topic_tags:
+  - technology
+  - internals
+  - mechanisms
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.innuendo
+  headword: innuendo
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌɪnjuˈendoʊ/
+  audio_ref: null
+  definition_en: An allusive or oblique remark or hint, typically a suggestive, disparaging, or malicious one.
+  meaning_tr: ima, üstü kapalı dokundurma, kinaye
+  examples:
+  - en: The political campaign relied heavily on subtle innuendo to undermine the opponent's integrity without making actionable
+      slander.
+    tr: Siyasi kampanya davalık iftiraya yol açmadan rakibin dürüstlüğünü sarsmak için büyük ölçüde üstü kapalı imalara dayandı.
+    context: politics
+  - en: Diplomats avoid caustic innuendo during bilateral communiqués to prevent unwarranted escalations.
+    tr: Diplomatlar haksız gerilimleri önlemek için ikili bildiriler sırasında iğneleyici kinayelerden kaçınırlar.
+    context: diplomacy
+  collocations:
+  - text: subtle innuendo
+    tr: ince ima
+  - text: hurtful innuendo
+    tr: kırıcı dokundurma
+  register: formal
+  topic_tags:
+  - communication
+  - rhetoric
+  - insinuation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.platitude
+  headword: platitude
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˈplætɪtuːd/
+  audio_ref: null
+  definition_en: A remark or statement, especially one with moral content, that has been used too often to be interesting
+    or thoughtful.
+  meaning_tr: basmakalıp söz, beylik laf, klişe
+  examples:
+  - en: Instead of offering substantive crisis mitigation plans, the spokesperson recited empty corporate platitudes.
+    tr: Sözcü somut kriz hafifletme planları sunmak yerine içi boş kurumsal beylik laflar sıraladı.
+    context: business
+  - en: Voters grew weary of political speeches filled with tired moral platitudes about shared sacrifice.
+    tr: Seçmenler ortak fedakârlık üzerine basmakalıp ahlaki sözlerle dolu siyasi konuşmalardan bıktı.
+    context: politics
+  collocations:
+  - text: empty platitude
+    tr: içi boş beylik söz
+  - text: utter platitudes
+    tr: klişeler gevelemek
+  register: formal
+  topic_tags:
+  - communication
+  - cliche
+  - discourse
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.denounce
+  headword: denounce
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈnaʊns/
+  audio_ref: null
+  definition_en: To publicly declare to be wrong, corrupt, or evil; or to inform against someone authoritatively.
+  meaning_tr: alenen kınamak, ihbar etmek, lanetlemek
+  examples:
+  - en: The United Nations General Assembly voted overwhelmingly to denounce the unilateral embargo.
+    tr: Birleşmiş Milletler Genel Kurulu tek taraflı ambargoyu kınamak için ezici çoğunlukla oy kullandı.
+    context: diplomacy
+  - en: Whistleblower groups denounced the multinational company for systematically concealing hazardous emissions.
+    tr: İhbarcı gruplar çok uluslu şirketi tehlikeli emisyonları sistematik olarak gizlediği için kamuoyu önünde kınadı.
+    context: governance
+  collocations:
+  - text: publicly denounce
+    tr: alenen kınamak
+  - text: vehemently denounce
+    tr: şiddetle lanetlemek
+  register: formal
+  topic_tags:
+  - communication
+  - criticism
+  - ethics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.reproach
+  headword: reproach
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /rɪˈproʊtʃ/
+  audio_ref: null
+  definition_en: To express to someone disapproval of or disappointment in their actions.
+  meaning_tr: sitem etmek, ayıplamak, serzenişte bulunmak
+  examples:
+  - en: The board reproached the chief executive for prioritizing short-term share buybacks over capital investment.
+    tr: Yönetim kurulu sermaye yatırımı yerine kısa vadeli hisse geri alımlarına öncelik verdiği için icra kurulu başkanını
+      ayıpladı.
+    context: business
+  - en: He did not shout; he merely reproached her with a quiet, devastating question about ethical consistency.
+    tr: Bağırmadı; sadece etik tutarlılık hakkında sessiz ve sarsıcı bir soruyla ona sitem etti.
+    context: relationships
+  collocations:
+  - text: gently reproach
+    tr: nazikçe serzenişte bulunmak
+  - text: reproach someone for failure
+    tr: birini başarısızlığı yüzünden ayıplamak
+  register: formal
+  topic_tags:
+  - communication
+  - disapproval
+  - feedback
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.extol
+  headword: extol
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪkˈstoʊl/
+  audio_ref: null
+  definition_en: To praise enthusiastically and lavishly in public speech or writing.
+  meaning_tr: göklere çıkarmak, öve öve bitirememek, methetmek
+  examples:
+  - en: Technology evangelists extol the virtues of decentralized ledger consensus while downplaying its energy footprint.
+    tr: Teknoloji havarileri merkeziyetsiz defter mutabakatının erdemlerini göklere çıkarırken enerji ayak izini küçümsemektedir.
+    context: technology
+  - en: The keynote speaker extolled the resilience of frontline healthcare workers during the epidemic.
+    tr: Açılış konuşmacısı salgın sırasında ön saflardaki sağlık çalışanlarının dirençliliğini öve öve bitiremedi.
+    context: healthcare
+  collocations:
+  - text: extol the virtues of
+    tr: erdemlerini göklere çıkarmak
+  - text: extol the merits
+    tr: faydalarını methetmek
+  register: formal
+  topic_tags:
+  - communication
+  - praise
+  - public-speaking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rhetorical
+  headword: rhetorical
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /rɪˈtɔːrɪkl/
+  audio_ref: null
+  definition_en: Relating to the art of rhetoric; or expressed in terms intended to persuade or impress rather than convey
+    literal information.
+  meaning_tr: retorik, hitabet sanatına ait, söz sanatıyla ilgili
+  examples:
+  - en: The senator posed a rhetorical question that required no literal answer but effectively swayed the chamber.
+    tr: Senatör gerçek bir yanıt gerektirmeyen ancak meclisi etkili bir şekilde yönlendiren retorik bir soru sordu.
+    context: politics
+  - en: Behind the rhetorical flourish of the manifesto lay a surprisingly pragmatic operational roadmap.
+    tr: Bildirinin retorik süslemelerinin ardında şaşırtıcı derecede pragmatik operasyonel bir yol haritası yatıyordu.
+    context: governance
+  collocations:
+  - text: rhetorical question
+    tr: retorik soru
+  - text: rhetorical skill
+    tr: hitabet becerisi
+  register: formal
+  topic_tags:
+  - communication
+  - rhetoric
+  - persuasion
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spurious
+  headword: spurious
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈspjʊriəs/
+  audio_ref: null
+  definition_en: Not being what it purports to be; false, unauthentic, or specious in reasoning.
+  meaning_tr: sahte, temelsiz, yanıltıcı, gayrimeşru
+  examples:
+  - en: Data analysts dismantled the spurious correlation between ice cream sales and municipal burglary rates.
+    tr: Veri analistleri dondurma satışları ile şehirdeki hırsızlık oranları arasındaki temelsiz ve yanıltıcı korelasyonu
+      çürüttü.
+    context: statistics
+  - en: The defendant's claim of diplomatic immunity was dismissed as entirely spurious by the presiding judge.
+    tr: Sanığın diplomatik dokunulmazlık iddiası başkanlık eden yargıç tarafından tamamen temelsiz sayılarak reddedildi.
+    context: law
+  collocations:
+  - text: spurious correlation
+    tr: sahte/yanıltıcı korelasyon
+  - text: spurious argument
+    tr: temelsiz argüman
+  register: formal
+  topic_tags:
+  - communication
+  - fallacy
+  - logic
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.facetious
+  headword: facetious
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /fəˈsiːʃəs/
+  audio_ref: null
+  definition_en: Treating serious issues with deliberately inappropriate humor; flippant.
+  meaning_tr: yersiz şaka yapan, ciddiyetsiz, alaycı
+  examples:
+  - en: The executive's facetious remarks regarding workplace safety regulations drew severe reprimands from the union.
+    tr: Yöneticinin işyeri güvenliği yönetmeliklerine ilişkin yersiz şakacı açıklamaları sendikadan sert kınama aldı.
+    context: work
+  - en: I was merely being facetious when I proposed working through the weekend without overtime compensation.
+    tr: Hafta sonu mesai ücreti almadan çalışmayı önerdiğimde yalnızca alaycı bir şaka yapıyordum.
+    context: professional
+  collocations:
+  - text: facetious remark
+    tr: yersiz şaka/alaycı söz
+  - text: be purely facetious
+    tr: tamamen şakaya vurmak
+  register: formal
+  topic_tags:
+  - communication
+  - humor
+  - tone
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.vividly
+  headword: vividly
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /ˈvɪvɪdli/
+  audio_ref: null
+  definition_en: In a way that produces powerful, clear, and detailed images or impressions in the mind.
+  meaning_tr: canlı bir şekilde, tüm açıklığıyla, gözler önüne serercesine
+  examples:
+  - en: The investigative report vividly depicted the squalid living conditions inside the unlicensed immigrant dormitories.
+    tr: Araştırmacı rapor ruhsatsız göçmen yatakhanelerindeki sefil yaşam koşullarını tüm canlılığıyla gözler önüne serdi.
+    context: journalism
+  - en: Decades later, she still remembers vividly the collective jubilation when the border wall came down.
+    tr: On yıllar sonra bile sınır duvarı yıkıldığında yaşanan toplu sevinci tüm canlılığıyla hatırlıyor.
+    context: history
+  collocations:
+  - text: remember vividly
+    tr: tüm canlılığıyla hatırlamak
+  - text: describe vividly
+    tr: canlı biçimde tasvir etmek
+  register: formal
+  topic_tags:
+  - communication
+  - description
+  - clarity
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spell-out
+  headword: spell out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  phonetic: /spel aʊt/
+  audio_ref: null
+  definition_en: To explain something in detail, clearly and unambiguously, leaving no room for misunderstanding.
+  meaning_tr: harfi harfine açıklamak, ayrıntılarıyla netleştirmek, tane tane anlatmak
+  examples:
+  - en: The compliance officer took time to spell out the legal repercussions of insider trading to new hires.
+    tr: Uyum görevlisi yeni işe alınanlara içeriden bilgi ticaretinin hukuki yaptırımlarını tane tane ve ayrıntılarıyla açıkladı.
+    context: finance
+  - en: The memorandum spells out the exact criteria required for international research grant eligibility.
+    tr: Genelge uluslararası araştırma hibesi uygunluğu için gereken kesin kriterleri ayrıntılarıyla netleştirmektedir.
+    context: academic
+  collocations:
+  - text: spell out the consequences
+    tr: sonuçları tane tane açıklamak
+  - text: spell out details
+    tr: ayrıntıları netleştirmek
+  register: general
+  topic_tags:
+  - communication
+  - clarity
+  - explanation
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.beat-around-the-bush
+  headword: beat around the bush
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /biːt əˈraʊnd ðə bʊʃ/
+  audio_ref: null
+  definition_en: To discuss a matter without coming to the main point, often deliberately to avoid uncomfortable facts.
+  meaning_tr: lafı dolandırmak, kem küm etmek, sadede gelmemek
+  examples:
+  - en: Stop beating around the bush and tell the board plainly whether the fourth-quarter revenue projections will be met.
+    tr: Lafı dolandırmayı bırakın ve dördüncü çeyrek gelir projeksiyonlarının karşılanıp karşılanmayacağını yönetim kuruluna
+      açıkça söyleyin.
+    context: business
+  - en: During the performance appraisal, the supervisor beat around the bush rather than confronting the engineer's missed
+      deadlines.
+    tr: Performans değerlendirmesinde amir mühendisin kaçırdığı teslim tarihlerini yüzüne vurmak yerine lafı dolandırdı.
+    context: management
+  collocations:
+  - text: stop beating around the bush
+    tr: lafı dolandırmayı bırakmak
+  - text: no need to beat around the bush
+    tr: lafı uzatmaya/gevelemeye gerek yok
+  register: informal
+  topic_tags:
+  - communication
+  - evasion
+  - directness
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spill-the-beans
+  headword: spill the beans
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /spɪl ðə biːnz/
+  audio_ref: null
+  definition_en: To divulge confidential or secret information prematurely, intentionally or indiscreetly.
+  meaning_tr: baklayı ağzından çıkarmak, sırrı ifşa etmek, her şeyi anlatmak
+  examples:
+  - en: An anonymous insider spilled the beans to tech journalists regarding the unannounced virtual reality headset.
+    tr: Anonim bir şirket çalışanı duyurulmamış sanal gerçeklik başlığı hakkında teknoloji gazetecilerine baklayı ağzından
+      çıkardı.
+    context: technology
+  - en: Under intense regulatory interrogation, the co-conspirator spilled the beans about the offshore account network.
+    tr: Yoğun mevzuat sorgulaması altında suç ortağı kıyı ötesi hesap ağı hakkında her şeyi bir bir anlattı.
+    context: finance
+  collocations:
+  - text: accidentally spill the beans
+    tr: kazara sırrı ağzından kaçırmak
+  - text: threaten to spill the beans
+    tr: her şeyi ifşa etmekle tehdit etmek
+  register: informal
+  topic_tags:
+  - communication
+  - disclosure
+  - secrets
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.amortization
+  headword: amortization
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌæmərtəˈzeɪʃn/
+  audio_ref: null
+  definition_en: The action or process of gradually writing off the initial cost of an intangible asset, or repaying a loan
+    over time.
+  meaning_tr: amortisman, itfa payı, borç taksitiyle erteleme
+  examples:
+  - en: Accelerated amortization schedules allow corporate entities to mitigate taxable gross income in early investment years.
+    tr: Hızlandırılmış amortisman çizelgeleri kurumsal şirketlerin erken yatırım yıllarında vergilendirilebilir brüt geliri
+      düşürmelerini sağlar.
+    context: accounting
+  - en: The bank provided a thirty-year fixed amortization schedule detailing principal and interest payments.
+    tr: Banka anapara ve faiz ödemelerini ayrıntılandıran otuz yıllık sabit bir itfa çizelgesi sundu.
+    context: finance
+  collocations:
+  - text: amortization schedule
+    tr: itfa/amortisman çizelgesi
+  - text: loan amortization
+    tr: kredi itfası
+  register: business
+  topic_tags:
+  - business
+  - accounting
+  - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.indemnity
+  headword: indemnity
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ɪnˈdemnəti/
+  audio_ref: null
+  definition_en: Security or protection against a loss or other financial burden; contractual compensation for damages.
+  meaning_tr: tazminat, tazmin güvencesi, telafi
+  examples:
+  - en: The enterprise software vendor insisted on an indemnity clause protecting against third-party patent infringement
+      claims.
+    tr: Kurumsal yazılım tedarikçisi üçüncü taraf patent ihlali iddialarına karşı koruma sağlayan bir tazminat maddesinde
+      ısrar etti.
+    context: contract-law
+  - en: Insurers paid out full indemnity after an independent forensic audit verified structural warehouse damage.
+    tr: Bağımsız bir adli denetim depodaki yapısal hasarı doğruladıktan sonra sigortacılar tam tazminat ödedi.
+    context: insurance
+  collocations:
+  - text: clause of indemnity
+    tr: tazminat klozu/maddesi
+  - text: full indemnity
+    tr: tam tazminat
+  register: business
+  topic_tags:
+  - business
+  - legal
+  - contracts
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.foreclosure
+  headword: foreclosure
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /fɔːrˈkloʊʒər/
+  audio_ref: null
+  definition_en: The legal process by which a lender takes possession of a mortgaged property when the borrower fails to make
+    payments.
+  meaning_tr: haciz yoluyla ipoteğe el koyma, haciz işlemi
+  examples:
+  - en: The subprime mortgage meltdown precipitated an unprecedented surge in nationwide residential foreclosures.
+    tr: Eşik altı mortgage çöküşü ülke çapında konut hacizlerinde eşi görülmemiş bir artışı tetikledi.
+    context: finance
+  - en: Commercial banks initiated foreclosure proceedings on the bankrupt retail chain's flagship properties.
+    tr: Ticari bankalar iflas eden perakende zincirinin prestijli mülkleri üzerinde haciz ve el koyma işlemlerini başlattı.
+    context: real-estate
+  collocations:
+  - text: foreclosure proceedings
+    tr: haciz ve ipotek işlemleri
+  - text: rate of foreclosure
+    tr: haciz oranı
+  register: business
+  topic_tags:
+  - business
+  - banking
+  - real-estate
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.depreciate
+  headword: depreciate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈpriːʃieɪt/
+  audio_ref: null
+  definition_en: To diminish in value over a period of time, especially assets subject to wear and tear; or of a currency.
+  meaning_tr: değer kaybetmek, amortismana uğramak, fiyatı düşmek
+  examples:
+  - en: Fleet transport vehicles depreciate at approximately twenty percent per annum on the corporate balance sheet.
+    tr: Filo nakliye araçları kurumsal bilançoda yıllık yaklaşık yüzde yirmi oranında değer kaybeder.
+    context: accounting
+  - en: Unsound fiscal policies caused the national currency to depreciate precipitously against major foreign exchange reserves.
+    tr: Sağlıksız mali politikalar ulusal para biriminin başlıca döviz rezervleri karşısında hızla değer kaybetmesine yol
+      açtı.
+    context: economics
+  collocations:
+  - text: depreciate rapidly
+    tr: hızla değer kaybetmek
+  - text: depreciate on the balance sheet
+    tr: bilançoda amortismana tabi tutulmak
+  register: business
+  topic_tags:
+  - business
+  - valuation
+  - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.default-on
+  headword: default on
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /dɪˈfɔːlt ɑːn/
+  audio_ref: null
+  definition_en: To fail to fulfill a legal or financial obligation, especially repayment of a debt or bond.
+  meaning_tr: temerrüde düşmek, borcunu ödeyememek
+  examples:
+  - en: Credit rating agencies downgraded the sovereign debt after the treasury defaulted on its dollar-denominated eurobonds.
+    tr: Kredi derecelendirme kuruluşları hazine dolar cinsi eurotahvillerinde temerrüde düştükten sonra devlet borcunun notunu
+      indirdi.
+    context: finance
+  - en: Failure to refinance commercial paper forced the leveraged holding company to default on syndicated bank loans.
+    tr: Finansman bonolarını yeniden finanse edememek kaldıraçlı holdingi konsorsiyum banka kredilerinde temerrüde düşmeye
+      zorladı.
+    context: banking
+  collocations:
+  - text: default on a loan
+    tr: kredide temerrüde düşmek
+  - text: default on obligations
+    tr: yükümlülüklerini yerine getirememek
+  register: business
+  topic_tags:
+  - business
+  - debt
+  - insolvency
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.hedge
+  headword: hedge
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /hedʒ/
+  audio_ref: null
+  definition_en: To protect oneself against loss on an investment or risk by making compensatory, balanced transactions.
+  meaning_tr: riskten korunmak, hedge etmek, kendini garantiye almak
+  examples:
+  - en: Multinational airlines routinely hedge fuel expenses by purchasing futures contracts on jet kerosene.
+    tr: Çok uluslu havayolları uçak gazyağı üzerine vadeli işlem sözleşmeleri satın alarak yakıt giderlerini rutin olarak
+      hedge eder.
+    context: finance
+  - en: Corporate treasurers hedge currency exposure using cross-currency interest rate swaps.
+    tr: Kurumsal veznedarlar para birimi faiz takaslarını kullanarak döviz kuru riskinden korunurlar.
+    context: banking
+  collocations:
+  - text: hedge against risk
+    tr: riske karşı korunmak/hedge etmek
+  - text: hedge against inflation
+    tr: enflasyona karşı risk dengelemek
+  register: business
+  topic_tags:
+  - business
+  - risk-management
+  - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.leveraged
+  headword: leveraged
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈlevərɪdʒd/
+  audio_ref: null
+  definition_en: Financed by or having a high ratio of debt and borrowed capital relative to equity.
+  meaning_tr: kaldıraçlı, borçla finanse edilen
+  examples:
+  - en: Private equity syndicates structured a highly leveraged buyout using subordinated mezzanine debt.
+    tr: Özel sermaye konsorsiyumları ikincil ara finansman borcu kullanarak yüksek kaldıraçlı bir satın alma yapılandırdı.
+    context: finance
+  - en: Severely leveraged corporations face heightened vulnerability when central banks hike benchmark borrowing rates.
+    tr: Ağır kaldıraçlı şirketler merkez bankaları gösterge borçlanma faizlerini artırdığında yüksek kırılganlıkla karşılaşır.
+    context: economics
+  collocations:
+  - text: leveraged buyout
+    tr: kaldıraçlı satın alma
+  - text: highly leveraged
+    tr: yüksek kaldıraçlı/borçlu
+  register: business
+  topic_tags:
+  - business
+  - private-equity
+  - debt
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.mercantile
+  headword: mercantile
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈmɜːrkəntaɪl/
+  audio_ref: null
+  definition_en: Relating to trade, merchants, or commercial business affairs.
+  meaning_tr: ticari, tüccarlığa ait, merkantil
+  examples:
+  - en: Maritime port cities historically flourished by establishing extensive overseas mercantile networks.
+    tr: Deniz aşırı liman kentleri tarihsel olarak geniş denizaşırı ticari ağlar kurarak zenginleşti.
+    context: history
+  - en: The arbitral tribunal resolved disputes arising under international mercantile law conventions.
+    tr: Tahkim mahkemesi uluslararası ticaret hukuku sözleşmeleri kapsamında ortaya çıkan anlaşmazlıkları karara bağladı.
+    context: law
+  collocations:
+  - text: mercantile law
+    tr: ticaret hukuku
+  - text: mercantile trade
+    tr: ticari mal değişimi
+  register: formal
+  topic_tags:
+  - business
+  - commerce
+  - trade
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.tighten-ones-belt
+  headword: tighten one's belt
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /ˈtaɪtn wʌnz belt/
+  audio_ref: null
+  definition_en: To adopt strict financial austerity and cut expenditures in response to economic hardship.
+  meaning_tr: kemerleri sıkmak, tasarrufa gitmek, masrafları kısmak
+  examples:
+  - en: Faced with dwindling venture liquidity, tech startups have had to tighten their belts and cut marketing overhead.
+    tr: Azalan risk sermayesi likiditesiyle karşı karşıya kalan teknoloji girişimleri kemerleri sıkmak ve pazarlama giderlerini
+      kısmak zorunda kaldı.
+    context: business
+  - en: Households were forced to tighten their belts as utility tariffs and grocery inflation surged simultaneously.
+    tr: Fatura tarifeleri ve gıda enflasyonu eşzamanlı olarak fırlarken hanehalkları kemerleri sıkmak zorunda kaldı.
+    context: economics
+  collocations:
+  - text: forced to tighten one's belt
+    tr: kemerleri sıkmak zorunda kalmak
+  - text: tighten one's belt financially
+    tr: mali açıdan kemer sıkmak
+  register: informal
+  topic_tags:
+  - business
+  - austerity
+  - spending
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pass-the-buck
+  headword: pass the buck
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /pæs ðə bʌk/
+  audio_ref: null
+  definition_en: To shift responsibility or blame for a failure or difficult decision onto someone else.
+  meaning_tr: sorumluluğu başkasına atmak, topu başkasına taca atmak, suçu üstünden atmak
+  examples:
+  - en: Rather than taking accountability for the factory shutdown, the plant manager attempted to pass the buck to procurement.
+    tr: Fabrika kapanışının sorumluluğunu üstlenmek yerine fabrika müdürü suçu satın alma departmanına atmaya çalıştı.
+    context: management
+  - en: True executive leadership means refusing to pass the buck when organizational crises erupt.
+    tr: Gerçek yönetici liderliği örgütsel krizler patlak verdiğinde sorumluluğu başkalarına atmayı reddetmek demektir.
+    context: business
+  collocations:
+  - text: try to pass the buck
+    tr: suçu başkasına atmaya çalışmak
+  - text: refuse to pass the buck
+    tr: sorumluluğu başkasına devretmeyi reddetmek
+  register: informal
+  topic_tags:
+  - business
+  - accountability
+  - blame
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.resignation
+  headword: resignation
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /ˌrezɪɡˈneɪʃn/
+  audio_ref: null
+  definition_en: An act of voluntarily relinquishing a job, office, or position; or the acceptance of an inevitable, difficult
+    situation.
+  meaning_tr: istifa, görevden ayrılma; boyun eğme/tevekkül
+  examples:
+  - en: The managing director tendered her formal letter of resignation following policy disagreements with the board.
+    tr: Yönetici direktör yönetim kuruluyla yaşanan politika anlaşmazlıklarının ardından resmi istifa mektubunu sundu.
+    context: career
+  - en: Faced with unavoidable restructuring layoffs, the engineering staff greeted the news with somber resignation.
+    tr: Kaçınılmaz yeniden yapılanma işten çıkarmalarıyla karşılaşan mühendislik personeli haberi buruk bir tevekkülle karşıladı.
+    context: work
+  collocations:
+  - text: tender one's resignation
+    tr: istifasını sunmak
+  - text: accept a resignation
+    tr: istifayı kabul etmek
+  register: formal
+  topic_tags:
+  - work-career
+  - departure
+  - employment
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.seniority
+  headword: seniority
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /siːnˈjɔːrəti/
+  audio_ref: null
+  definition_en: The state of being older or having higher rank and longer service than others in an organization.
+  meaning_tr: kıdem, üst rütbe, hizmet yılı üstünlüğü
+  examples:
+  - en: Collective bargaining agreements stipulate that promotion schedules must weigh performance alongside seniority.
+    tr: Toplu iş sözleşmeleri terfi çizelgelerinin kıdemin yanı sıra performansı da tartması gerektiğini şart koşar.
+    context: human-resources
+  - en: She attained partner seniority at the international law firm after fifteen years of exemplary litigation practice.
+    tr: On beş yıllık örnek dava avukatlığı uygulamasının ardından uluslararası hukuk bürosunda ortaklık kıdemine ulaştı.
+    context: career
+  collocations:
+  - text: gain seniority
+    tr: kıdem kazanmak
+  - text: seniority-based promotion
+    tr: kıdeme dayalı terfi
+  register: formal
+  topic_tags:
+  - work-career
+  - hierarchy
+  - tenure
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.prerogative
+  headword: prerogative
+  part_of_speech: noun
+  cefr_level: C2
+  phonetic: /prɪˈrɑːɡətɪv/
+  audio_ref: null
+  definition_en: A special right, privilege, or exclusive authority exercised by a particular official, executive, or body.
+  meaning_tr: ayrıcalık, öncelikli hak, münhasır yetki
+  examples:
+  - en: Allocating discretionary bonus compensation remains the exclusive managerial prerogative of the board.
+    tr: İsteğe bağlı prim tazminatını tahsis etmek yönetim kurulunun münhasır idari yetkisi olmaya devam etmektedir.
+    context: management
+  - en: It is the prerogative of executive leadership to determine strategic roadmap pivots.
+    tr: Stratejik yol haritası dönüşlerini belirlemek üst düzey yönetimin ayrıcalıklı hakkıdır.
+    context: business
+  collocations:
+  - text: managerial prerogative
+    tr: yönetimsel yetki/ayrıcalık
+  - text: sole prerogative
+    tr: yegane imtiyaz/hak
+  register: formal
+  topic_tags:
+  - work-career
+  - authority
+  - rights
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stipulate
+  headword: stipulate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ˈstɪpjuleɪt/
+  audio_ref: null
+  definition_en: To demand or specify a requirement, typically as part of an employment contract or official agreement.
+  meaning_tr: şart koşmak, sözleşmeyle bağlamak, koşul koymak
+  examples:
+  - en: The employment contract stipulates that intellectual property created during employment belongs solely to the firm.
+    tr: İş sözleşmesi istihdam süresince oluşturulan fikri mülkiyetin münhasıran şirkete ait olduğunu şart koşar.
+    context: contract-law
+  - en: Union agreements strictly stipulate maximum consecutive overtime hours permitted for hazardous roles.
+    tr: Sendika sözleşmeleri tehlikeli roller için izin verilen azami ardışık fazla mesai saatlerini katı bir şekilde koşula
+      bağlar.
+    context: work
+  collocations:
+  - text: stipulate conditions
+    tr: koşulları şart koşmak
+  - text: expressly stipulate
+    tr: açıkça hükme bağlamak
+  register: formal
+  topic_tags:
+  - work-career
+  - contracts
+  - terms
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.interrogate
+  headword: interrogate
+  part_of_speech: verb
+  cefr_level: C2
+  phonetic: /ɪnˈterəɡeɪt/
+  audio_ref: null
+  definition_en: To question closely, aggressively, or systematically, especially during an investigation or workplace audit.
+  meaning_tr: sorguya çekmek, çapraz sorgulamak, derinlemesine sorgulamak
+  examples:
+  - en: Forensic auditors interrogated internal accounting personnel regarding unauthorized offshore transfers.
+    tr: Adli denetçiler yetkisiz denizaşırı transferlerle ilgili olarak dahili muhasebe personelini derinlemesine sorguladılar.
+    context: audit
+  - en: A rigorous candidate interview will thoroughly interrogate an engineer's past architectural choices.
+    tr: Titiz bir aday mülakatı bir mühendisin geçmiş mimari tercihlerini kapsamlı bir şekilde sorgulayacaktır.
+    context: recruitment
+  collocations:
+  - text: thoroughly interrogate
+    tr: etraflıca sorgulamak
+  - text: interrogate assumptions
+    tr: varsayımları sorgulamak
+  register: formal
+  topic_tags:
+  - work-career
+  - investigation
+  - interview
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.perfunctory
+  headword: perfunctory
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /pərˈfʌŋktəri/
+  audio_ref: null
+  definition_en: Carried out with a minimum of effort or reflection; superficial and mechanical.
+  meaning_tr: baştan savma, laf olsun diye yapılan, gelişigüzel, formalite icabı
+  examples:
+  - en: The manager conducted only a perfunctory review of the security audit before signing off on the release.
+    tr: Müdür sürüme onay vermeden önce güvenlik denetimini yalnızca laf olsun diye baştan savma inceledi.
+    context: technology
+  - en: She offered a perfunctory apology for missing the quarterly team sprint planning session.
+    tr: Üç aylık ekip sprint planlama oturumunu kaçırdığı için formalite icabı gelişigüzel bir özür diledi.
+    context: work
+  collocations:
+  - text: perfunctory inspection
+    tr: baştan savma teftiş
+  - text: perfunctory nod
+    tr: laf olsun diye baş sallama
+  register: formal
+  topic_tags:
+  - work-career
+  - quality
+  - diligence
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.labor-intensive
+  headword: labor-intensive
+  part_of_speech: adjective
+  cefr_level: C2
+  phonetic: /ˈleɪbər ɪnˌtensɪv/
+  audio_ref: null
+  definition_en: Requiring a large amount of human labor and workforce relative to capital and machine automation.
+  meaning_tr: emek-yoğun, insan emeğine dayalı, çok işgücü gerektiren
+  examples:
+  - en: Manual data annotation remains a notoriously labor-intensive bottleneck in training computer vision models.
+    tr: Manuel veri etiketleme bilgisayarla görme modellerini eğitmede herkesçe bilinen emek-yoğun bir tıkanıklık olmaya devam
+      ediyor.
+    context: technology
+  - en: The enterprise is automating repetitive invoicing workflows to eliminate tedious labor-intensive operations.
+    tr: Şirket can sıkıcı emek-yoğun operasyonları ortadan kaldırmak için tekrarlayan faturalandırma iş akışlarını otomatikleştiriyor.
+    context: business
+  collocations:
+  - text: labor-intensive industry
+    tr: emek-yoğun sanayi
+  - text: labor-intensive task
+    tr: çok işgücü gerektiren görev
+  register: formal
+  topic_tags:
+  - work-career
+  - operations
+  - workforce
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.productively
+  headword: productively
+  part_of_speech: adverb
+  cefr_level: C2
+  phonetic: /prəˈdʌktɪvli/
+  audio_ref: null
+  definition_en: In a manner that yields significant, effective, and high-quality results or output.
+  meaning_tr: üretken bir şekilde, verimli olarak, semereli biçimde
+  examples:
+  - en: Asynchronous communication tools enable distributed engineering pods to collaborate productively across time zones.
+    tr: Eşzamanlı olmayan iletişim araçları dağıtık mühendislik ekiplerinin zaman dilimleri arasında üretken bir şekilde iş
+      birliği yapmasını sağlar.
+    context: remote-work
+  - en: She structured her daily schedule productively, reserving mornings for deep, uninterrupted architectural design.
+    tr: Sabahları derin ve kesintisiz mimari tasarıma ayırarak günlük programını son derece verimli bir şekilde yapılandırdı.
+    context: career
+  collocations:
+  - text: work productively
+    tr: üretken çalışmak
+  - text: collaborate productively
+    tr: verimli biçimde iş birliği yapmak
+  register: formal
+  topic_tags:
+  - work-career
+  - productivity
+  - efficiency
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.call-the-shots
+  headword: call the shots
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /kɔːl ðə ʃɑːts/
+  audio_ref: null
+  definition_en: To be in the position of executive authority and make the decisive choices in an organization.
+  meaning_tr: borusu ötmek, ipleri elinde tutmak, kararları vermek
+  examples:
+  - en: Although the founder retains an honorary title, institutional venture investors now call the shots.
+    tr: Kurucu onursal unvanını korusa da artık kararları kurumsal risk sermayesi yatırımcıları veriyor.
+    context: business
+  - en: In matrix organizations, senior program leads call the shots regarding budget allocation.
+    tr: Matris organizasyonlarda bütçe tahsisi konusunda ipleri kıdemli program liderleri ellerinde tutar.
+    context: management
+  collocations:
+  - text: who calls the shots
+    tr: kararları kimin verdiği/borusu öttüğü
+  - text: position to call the shots
+    tr: iplerin elde olduğu konum
+  register: informal
+  topic_tags:
+  - work-career
+  - authority
+  - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.in-the-drivers-seat
+  headword: in the driver's seat
+  part_of_speech: idiom
+  cefr_level: C2
+  phonetic: /ɪn ðə ˈdraɪvərz siːt/
+  audio_ref: null
+  definition_en: In a commanding position of control and leadership over a situation or enterprise.
+  meaning_tr: dümende olmak, kontrolü elinde tutmak, direksiyon başında olmak
+  examples:
+  - en: With three competing job offers in hand, the veteran systems architect was firmly in the driver's seat during salary
+      negotiations.
+    tr: Elinde rekabet halinde üç iş teklifi bulunan kıdemli sistem mimarı maaş müzakerelerinde kontrolü sağlam bir şekilde
+      elinde tutuyordu.
+    context: career
+  - en: The newly appointed CEO placed herself in the driver's seat by overhauling the corporate management committee.
+    tr: Yeni atanan CEO kurumsal yönetim komitesini baştan aşağı yenileyerek kendisini dümene geçirdi.
+    context: business
+  collocations:
+  - text: firmly in the driver's seat
+    tr: sağlam bir şekilde direksiyon başında
+  - text: put someone in the driver's seat
+    tr: birini dümene geçirmek
+  register: informal
+  topic_tags:
+  - work-career
+  - control
+  - leadership
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []

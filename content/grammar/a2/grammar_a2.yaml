@@ -1,0 +1,189 @@
+- id: grammar.a2.modal-verbs-necessity
+  title: Modals of Obligation and Necessity
+  cefr_level: A2
+  category: modals_and_semi_modals
+  summary_en: Express internal duty with 'must', external requirements with 'have to', and lack of obligation with 'don't have to'.
+  summary_tr: İçsel zorunluluk için 'must', dış kurallar ve şirket prosedürleri için 'have to', zorunluluk olmadığını belirtmek için 'don't have to' kullanılır.
+  explanation_en:
+    - title: "Must vs. Have to: Internal vs. External Authority"
+      content: >-
+        In business and daily communication, 'must' reflects the speaker's personal conviction or urgent rule,
+        whereas 'have to' indicates an external requirement such as company policy, contract terms, or law.
+      patterns:
+        - "Affirmative: Subject + must / have to + Base Verb"
+        - "Negative Prohibition: Subject + must not (mustn't) + Base Verb"
+        - "Negative Absence of Obligation: Subject + don't / doesn't have to + Base Verb"
+    - title: "The Critical Difference: Mustn't vs. Don't Have To"
+      content: >-
+        'Must not' means strictly prohibited (forbidden). 'Do not have to' means it is optional (no obligation, you can do it if you want).
+      patterns:
+        - "Mustn't = It is forbidden (Yasak)"
+        - "Don't have to = Not necessary (Gerek yok / serbest)"
+  explanation_tr: >-
+    Türkçede 'yapmak zorunda değilsin' ile 'yapmamalısın / yapman yasak' anlamları çok farklıdır.
+    Ancak Türk öğreniciler 'must' kelimesini 'zorunluluk' olarak öğrendiklerinde, 'must not' ifadesini
+    'zorunda değilsin' sanarak büyük bir iletişim hatasına düşerler. 'Must not' kesin bir yasak bildirir
+    (yapamazsın). 'Zorunda değilsin / gerek yok' demek için 'don't have to' veya 'needn't' kullanılır.
+  rules:
+    - name: External Obligation (Have to)
+      pattern: Subject + have/has to + Base Verb
+      use_cases:
+        - Company regulations and security guidelines
+        - Deadlines imposed by clients or managers
+        - Legal requirements
+      time_markers:
+        - by Friday
+        - every morning
+        - according to policy
+    - name: Prohibition (Must not)
+      pattern: Subject + must not + Base Verb
+      use_cases:
+        - Strict safety protocols
+        - Non-disclosure and confidential data rules
+      time_markers:
+        - under no circumstances
+        - never
+    - name: Absence of Obligation (Don't have to)
+      pattern: Subject + do/does not have to + Base Verb
+      use_cases:
+        - Optional tasks or meetings
+        - Flexible dress code or working hours
+  contrasts:
+    - structure_a: You mustn't share the database credentials.
+      structure_b: You don't have to attend the optional workshop.
+      difference_explanation_en: >-
+        The first indicates a strict security prohibition (sharing is forbidden).
+        The second indicates that attendance is optional (no obligation).
+      difference_explanation_tr: >-
+        İlk cümle katı bir güvenlik yasağını ifade eder (şifreyi paylaşmak kesinlikle yasaktır).
+        İkinci cümle ise katılımın isteğe bağlı olduğunu belirtir (zorunluluk yoktur).
+  turkish_traps:
+    - trap_type: tense_transfer
+      trap_title: "Zorunluluk Yokluğu İle Yasaklama Karışıklığı (Mustn't vs. Don't have to)"
+      explanation_tr: >-
+        Türk öğreniciler 'Bugün raporu teslim etmek zorunda değilsin' derken sıklıkla 'You mustn't submit the report today'
+        derler. Bu cümle yabancı bir meslektaşa 'Raporu bugün teslim etmen yasak / sakın teslim etme' gibi kaba ve sert bir emir gibi duyulur.
+        Doğrusu 'You don't have to submit' olmalıdır.
+      incorrect_example: You mustn't come to the office tomorrow because it is an optional remote day.
+      correct_example: You don't have to come to the office tomorrow because it is an optional remote day.
+  examples:
+    - en: All employees have to wear security badges in the server room.
+      tr: Tüm çalışanların sunucu odasında güvenlik kartı takması zorunludur.
+      rule_highlight: External Obligation (Have to)
+      context: Corporate Security
+    - en: You don't have to finalize the slide deck tonight; the review is on Thursday.
+      tr: Slaytları bu gece tamamlamak zorunda değilsiniz; inceleme perşembe günü.
+      rule_highlight: Absence of Obligation (Don't have to)
+      context: Project Management
+    - en: Contractors must not export proprietary code to external personal storage.
+      tr: Yüklenicilerin şirket kodunu harici kişisel disklere aktarması kesinlikle yasaktır.
+      rule_highlight: Prohibition (Must not)
+      context: Compliance & IP
+  topic_tags:
+    - modals
+    - obligation
+    - workplace-rules
+    - a2-foundation
+  related_ids:
+    - vocab.schedule
+    - vocab.manage
+  status: APPROVED
+  version: 1
+
+- id: grammar.a2.prepositions-time-place
+  title: "Prepositions of Time and Place: In, On, At"
+  cefr_level: A2
+  category: prepositions_and_particles
+  summary_en: Master the hierarchy of general to specific for time (century to exact hour) and space (country to exact address).
+  summary_tr: Zaman (yüzyıldan tam saate) ve mekanda (ülkeden tam adrese) genelden özele doğru 'in, on, at' kullanım hiyerarşisi.
+  explanation_en:
+    - title: "The Pyramid Principle: General to Specific"
+      content: >-
+        Think of 'in', 'on', and 'at' as a pyramid from widest to narrowest.
+        Use 'in' for broad time periods (centuries, years, months) and large enclosed areas (countries, cities, rooms).
+        Use 'on' for surfaces and specific days/dates (on Monday, on the second floor, on the train).
+        Use 'at' for precise pinpoint points in time (at 9:00 AM) and specific functional locations (at the office, at the airport).
+      patterns:
+        - "Time: in 2024 / in July -> on Tuesday / on July 14 -> at 3:30 PM"
+        - "Place: in Germany / in the building -> on Wall Street / on the screen -> at desk 4B / at the station"
+    - title: "Digital Workspaces & Electronic Media"
+      content: >-
+        In modern business, communication on electronic surfaces takes 'on' (on the website, on Slack, on Zoom, on my laptop),
+        while functional physical presence uses 'at' (at my desk, at headquarters).
+      patterns:
+        - "Digital: on Slack, on LinkedIn, on the server, on the dashboard"
+        - "Institutional: at the university, at Google, at the conference"
+  explanation_tr: >-
+    Türkçede mekan ve zaman bildiren '-de / -da / -te / -ta' bulunma eki (ofiste, masada, saat üçte, temmuzda, ekranda)
+    İngilizcede üç farklı edata (in, on, at) karşılık gelir. Türk öğreniciler bu tek ekin rahatlığı nedeniyle
+    İngilizce konuşurken 'in Monday', 'at May' veya 'in the screen' gibi hatalar yaparlar.
+    Piramit kuralını zihne yerleştirmek bu transfer hatasını çözer.
+  rules:
+    - name: In (Broad / Enclosed)
+      pattern: in + month/year/century OR enclosed 3D area/city
+      use_cases:
+        - Months, quarters, and seasons (in Q3, in October)
+        - Cities and countries (in Istanbul, in London)
+        - Enclosed rooms (in the conference hall)
+      time_markers:
+        - in 2025
+        - in autumn
+        - in the morning
+    - name: On (Surface / Specific Day)
+      pattern: on + day/date/surface/digital platform
+      use_cases:
+        - Days of the week and exact dates (on Friday, on April 5th)
+        - Physical surfaces and floors (on the whiteboard, on the 3rd floor)
+        - Digital interfaces (on the portal, on mobile)
+      time_markers:
+        - on weekdays
+        - on schedule
+    - name: At (Pinpoint / Precise Point)
+      pattern: at + exact hour/specific functional point
+      use_cases:
+        - Exact clock times (at 10:15 AM, at noon)
+        - Specific institutions or meetup spots (at reception, at the airport)
+      time_markers:
+        - at midnight
+        - at the moment
+  contrasts:
+    - structure_a: The product demo starts at 2:00 PM on Friday.
+      structure_b: The sprint finishes in December.
+      difference_explanation_en: >-
+        Exact clock time takes 'at', specific calendar day takes 'on', while an entire month takes 'in'.
+      difference_explanation_tr: >-
+        Tam saat 'at', belirli takvim günü 'on', tüm ayı kapsayan geniş zaman 'in' alır.
+    - structure_a: The diagram is on the intranet homepage.
+      structure_b: The server is in the primary datacenter.
+      difference_explanation_en: >-
+        Digital screens and surfaces take 'on'; physical enclosed 3D spaces take 'in'.
+      difference_explanation_tr: >-
+        Dijital yüzeyler ve sayfalar 'on' alır; üç boyutlu kapalı binalar ve alanlar 'in' alır.
+  turkish_traps:
+    - trap_type: preposition_trap
+      trap_title: "Türkçedeki Tek '-de/-da' Ekinin İngilizceye Aktarımı"
+      explanation_tr: >-
+        Türkçede 'toplantıda', 'ekranda', 'saat 9'da' ve 'pazartesi gününde' ifadelerinin hepsi '-de/-da' ile kurulur.
+        Öğreniciler 'in Monday' veya 'in the website' demeye meyillidir. Günler daima 'on', web arayüzleri 'on',
+        kesin saatler ise daima 'at' gerektirir.
+      incorrect_example: We will discuss the architecture in Monday in the website.
+      correct_example: We will discuss the architecture on Monday on the website.
+  examples:
+    - en: The sprint planning session begins at 10:00 AM on Monday in Room 402.
+      tr: Sprint planlama oturumu pazartesi saat 10:00'da 402 numaralı odada başlıyor.
+      rule_highlight: Pyramid Principle (At, On, In)
+      context: Agile Sprint Meeting
+    - en: Please upload the signed contract on the vendor portal by 5:00 PM.
+      tr: Lütfen imzalı sözleşmeyi saat 17:00'ye kadar tedarikçi portalına yükleyin.
+      rule_highlight: Digital interface (on) and clock deadline (by/at)
+      context: Procurement
+  topic_tags:
+    - prepositions
+    - time-expressions
+    - spatial-relations
+    - a2-foundation
+  related_ids:
+    - vocab.schedule
+    - vocab.deadline
+  status: APPROVED
+  version: 1

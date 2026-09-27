@@ -1,0 +1,227 @@
+- id: vocab.discount
+  headword: discount
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈdɪs.kaʊnt/
+  audio_ref: null
+  definition_en: A reduction in the usual price of a product or service.
+  meaning_tr: indirim, tenzilat
+  collocations:
+    - text: special discount
+      tr: özel indirim
+    - text: offer a discount
+      tr: indirim teklif etmek / sunmak
+    - text: discount price
+      tr: indirimli fiyat
+  examples:
+    - en: "The software vendor offered a ten percent discount for annual corporate subscriptions."
+      tr: "Yazılım tedarikçisi yıllık kurumsal abonelikler için yüzde on indirim sundu."
+      context: Corporate Procurement
+    - en: "Students can receive a substantial discount at local bookstores with their valid school card."
+      tr: "Öğrenciler geçerli okul kartlarıyla yerel kitapçılarda önemli bir indirim alabilirler."
+      context: Retail Shopping
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçedeki "indirim yapmak" ifadesi İngilizceye "make a discount" olarak çevrilmez;
+        "offer a discount" veya "give a discount" kalıpları kullanılır.
+      incorrect_example: "The store made a big discount on winter coats."
+      correct_example: "The store offered a big discount on winter coats."
+  register: general
+  topic_tags:
+    - shopping
+    - retail
+    - pricing
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.flight
+  headword: flight
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /flaɪt/
+  audio_ref: null
+  definition_en: A scheduled journey made by an aircraft traveling through the air.
+  meaning_tr: uçuş, uçak seferi
+  collocations:
+    - text: book a flight
+      tr: uçak bileti ayırtmak
+    - text: direct flight
+      tr: aktarmasız uçuş
+    - text: flight delay
+      tr: uçuş gecikmesi / rötari
+  examples:
+    - en: "We booked an early morning flight to Berlin for the European developer summit."
+      tr: "Avrupa geliştirici zirvesi için Berlin'e sabah erken bir uçuş ayarladık."
+      context: Business Travel
+    - en: "Severe weather conditions caused a two-hour flight delay at Istanbul Airport."
+      tr: "Şiddetli hava koşulları İstanbul Havalimanı'nda iki saatlik uçuş gecikmesine yol açtı."
+      context: Travel Operations
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Flight" uçakla yapılan yolculuğu ve seferi tanımlar; fiziksel hava aracının kendisi için
+        "plane" veya "airplane" sözcüğü kullanılmalıdır.
+      incorrect_example: "Look at the sky, there is a flight flying."
+      correct_example: "Look at the sky, there is a plane flying."
+  register: general
+  topic_tags:
+    - travel
+    - transportation
+    - airport
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.explain
+  headword: explain
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ɪkˈspleɪn/
+  audio_ref: null
+  definition_en: To make something clear or easy to comprehend by describing it in detail.
+  meaning_tr: açıklamak, izah etmek
+  collocations:
+    - text: explain clearly
+      tr: net şekilde açıklamak
+    - text: explain the situation
+      tr: durumu açıklamak
+    - text: explain in detail
+      tr: ayrıntılı olarak açıklamak
+  examples:
+    - en: "The team lead explained the sprint goals during Monday's standup meeting."
+      tr: "Takım lideri pazartesi günkü ayaküstü toplantısında sprint hedeflerini açıkladı."
+      context: Agile Standup
+    - en: "Could you please explain how this new authorization flow works?"
+      tr: "Lütfen bu yeni yetkilendirme akışının nasıl çalıştığını açıklayabilir misiniz?"
+      context: Technical Onboarding
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçe "bana açıkla" ifadesinden etkilenerek "explain me" demek sık yapılan bir hatadır;
+        İngilizcede kime açıklandığı "to" edatıyla belirtilir ("explain to me").
+      incorrect_example: "Please explain me why the server crashed."
+      correct_example: "Please explain to me why the server crashed."
+  register: general
+  topic_tags:
+    - communication
+    - workplace
+    - learning
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.decide
+  headword: decide
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /dɪˈsaɪd/
+  audio_ref: null
+  definition_en: To make a definitive choice between two or more possibilities after consideration.
+  meaning_tr: karar vermek
+  collocations:
+    - text: decide to do
+      tr: yapmaya karar vermek
+    - text: decide between
+      tr: arasında karar vermek
+    - text: quickly decide
+      tr: çabucak karar vermek
+  examples:
+    - en: "After reviewing both proposals, management decided to approve the cloud migration budget."
+      tr: "Yönetim, her iki teklifi de inceledikten sonra bulut geçiş bütçesini onaylamaya karar verdi."
+      context: Project Governance
+    - en: "It was hard to decide between the two candidates because both had impressive technical backgrounds."
+      tr: "İki aday arasında karar vermek zordu çünkü her ikisinin de etkileyici teknik geçmişi vardı."
+      context: Recruitment
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Decide" fiilinden sonra bir eylem belirtilirken gerund (-ing) değil, mastar (to + infinitive) gelir.
+        "Decide going" yerine "decide to go" denir.
+      incorrect_example: "We decided postponing the sprint demo until next week."
+      correct_example: "We decided to postpone the sprint demo until next week."
+  register: general
+  topic_tags:
+    - decision-making
+    - planning
+    - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.comfortable
+  headword: comfortable
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈkʌm.fə.tə.bəl/
+  audio_ref: null
+  definition_en: Providing physical ease, pleasant support, and relaxation without strain or discomfort.
+  meaning_tr: rahat, konforlu
+  collocations:
+    - text: comfortable chair
+      tr: rahat koltuk / sandalye
+    - text: feel comfortable
+      tr: rahat hissetmek
+    - text: comfortable environment
+      tr: konforlu ortam
+  examples:
+    - en: "Investing in comfortable ergonomic chairs helped the remote engineering team work longer hours without back pain."
+      tr: "Ergonomik ve rahat sandalyelere yatırım yapmak, uzaktan çalışan mühendislik ekibinin sırt ağrısı yaşamadan daha uzun saatler çalışmasına yardımcı oldu."
+      context: Office Environment
+    - en: "The company offers a very comfortable onboarding process for all international hires."
+      tr: "Şirket tüm uluslararası yeni çalışanlar için oldukça rahat bir oryantasyon süreci sunuyor."
+      context: Human Resources
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Comfortable" fiziksel veya psikolojik rahatlığı ("rahat, huzurlu") ifade eder; zaman ve konum açısından
+        uygunluk veya pratiklik belirtmek için "convenient" tercih edilmelidir.
+      incorrect_example: "Is tomorrow comfortable for our sprint planning session?"
+      correct_example: "Is tomorrow convenient for our sprint planning session?"
+  register: general
+  topic_tags:
+    - comfort
+    - lifestyle
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.turn-on
+  headword: turn on
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /tɜːn ɒn/
+  audio_ref: null
+  definition_en: To activate a device, system, or power supply by operating a switch or control.
+  meaning_tr: açmak (cihaz, elektrik, ışık vb.)
+  collocations:
+    - text: turn on the light
+      tr: ışığı açmak
+    - text: turn on the computer
+      tr: bilgisayarı açmak
+    - text: turn on the camera
+      tr: kamerayı açmak
+  examples:
+    - en: "Please remember to turn on your camera during the weekly sprint retrospective."
+      tr: "Lütfen haftalık sprint retrospektifi sırasında kameranızı açmayı unutmayın."
+      context: Virtual Meeting
+    - en: "The building maintenance team turned on the air conditioning before the clients arrived."
+      tr: "Bina bakım ekibi, müşteriler gelmeden önce klimayı açtı."
+      context: Facilities Management
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede elektronik aletler için de kullanılan "açmak" eylemi İngilizceye "open" olarak çevrilemez;
+        cihazlar ve elektrikli sistemler için mutlaka "turn on" ya da "switch on" kullanılır.
+      incorrect_example: "Could you open the monitor and log in to the portal?"
+      correct_example: "Could you turn on the monitor and log in to the portal?"
+  register: general
+  topic_tags:
+    - technology
+    - daily-routine
+    - appliances
+  related_ids: []
+  status: APPROVED
+  version: 1

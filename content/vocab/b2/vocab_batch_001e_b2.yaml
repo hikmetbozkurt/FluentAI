@@ -1,0 +1,424 @@
+- id: vocab.turnover
+  headword: turnover
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈtɜːnˌəʊ.vər/
+  audio_ref: null
+  definition_en: The amount of money taken in by a business over a period; or the rate at which employees leave an organization.
+  meaning_tr: "ciro, iş hacmi; (ikinci anlamı: personel devir hızı)"
+  collocations:
+    - text: annual turnover
+      tr: yıllık ciro
+    - text: high employee turnover
+      tr: yüksek personel devir hızı
+    - text: reduce turnover
+      tr: personel devrini azaltmak
+    - text: business turnover
+      tr: işletme cirosu
+  examples:
+    - en: "The European e-commerce subsidiary generated record annual turnover in the fourth quarter."
+      tr: "Avrupa e-ticaret iştiraki dördüncü çeyrekte rekor yıllık ciro elde etti."
+      context: Commercial Finance
+    - en: "Investing in internal mentorship programs significantly reduced engineer turnover across the department."
+      tr: "Şirket içi mentorluk programlarına yatırım yapmak departman genelindeki mühendis devir hızını önemli ölçüde azalttı."
+      context: Engineering Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Turnover" iş dünyasında iki temel anlama sahiptir: İngiliz İngilizcesinde "şirket cirosu" (sales revenue), İK yönetiminde ise "personel devri/sirkülasyonu" (employee turnover). Sporda ise top kaybı demektir.
+      incorrect_example: "Our pastry shop made a good turnover, so we gave everyone an apple pastry."
+      correct_example: "The company reported healthy turnover despite supply chain headwinds."
+  register: business
+  topic_tags:
+    - finance
+    - human-resources
+    - business-metrics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.aspect
+  headword: aspect
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈæs.pekt/
+  audio_ref: null
+  definition_en: A particular part, feature, or distinct angle of a situation, problem, or topic being considered.
+  meaning_tr: yön, veçe, boyut, özellik
+  collocations:
+    - text: key aspect
+      tr: kilit yön / temel boyut
+    - text: critical aspect
+      tr: kritik yön
+    - text: every aspect of
+      tr: -in her yönü
+    - text: negative aspect
+      tr: olumsuz yön
+  examples:
+    - en: "Data privacy is a critical aspect of modern mobile application architecture."
+      tr: "Veri gizliliği, modern mobil uygulama mimarisinin kritik bir yönüdür."
+      context: System Architecture
+    - en: "The architectural review examined every aspect of the distributed payment processing pipeline."
+      tr: "Mimari inceleme, dağıtık ödeme işleme boru hattının her yönünü tetkik etti."
+      context: System Governance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir durumun veya konunun yönünü belirtirken "aspect of" kullanılır; "aspect about" veya "aspect with" kullanımı yanlıştır.
+      incorrect_example: "We discussed the technical aspects about the cloud migration."
+      correct_example: "We discussed the technical aspects of the cloud migration."
+  register: formal
+  topic_tags:
+    - analysis
+    - features
+    - evaluation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.retention
+  headword: retention
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /rɪˈten.ʃən/
+  audio_ref: null
+  definition_en: The continued possession, holding, or preservation of employees, customers, or data over time.
+  meaning_tr: elde tutma, muhafaza etme; akılda tutma
+  collocations:
+    - text: customer retention
+      tr: müşteri tutma / elde tutma
+    - text: employee retention
+      tr: personel elde tutma
+    - text: retention rate
+      tr: elde tutma oranı
+    - text: data retention policy
+      tr: veri saklama politikası
+  examples:
+    - en: "Improving developer onboarding workflows positively impacts long-term engineer retention rates."
+      tr: "Yazılımcı oryantasyon akışlarını iyileştirmek, uzun vadeli mühendis elde tutma oranlarını olumlu etkiler."
+      context: Talent Management
+    - en: "The compliance team updated the cloud data retention policy to comply with GDPR guidelines."
+      tr: "Uyum ekibi, GDPR yönergelerine uymak için bulut veri saklama politikasını güncelledi."
+      context: Regulatory Compliance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Retention" tıbbi bir terim (idrar tutma) olarak da kullanılsa da kurumsal dünyada "müşteri/çalışan elde tutma" veya "veri saklama" anlamında kilit bir iş metriğidir.
+      incorrect_example: "We need more retention to buy new computers."
+      correct_example: "High employee retention saves the organization substantial recruitment costs."
+  register: business
+  topic_tags:
+    - business-metrics
+    - hr
+    - customer-success
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.assess
+  headword: assess
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /əˈses/
+  audio_ref: null
+  definition_en: To evaluate, estimate, or judge the quality, importance, value, or risk of something systematically.
+  meaning_tr: değerlendirmek, kıymet biçmek, ölçmek
+  collocations:
+    - text: assess the impact
+      tr: etkiyi değerlendirmek
+    - text: assess risk
+      tr: riski değerlendirmek
+    - text: carefully assess
+      tr: dikkatle değerlendirmek
+    - text: assess performance
+      tr: performansı ölçmek / değerlendirmek
+  examples:
+    - en: "Before authorizing the breaking API change, architects met to assess the impact on mobile clients."
+      tr: "Geriye dönük uyumsuz API değişikliğini onaylamadan önce mimarlar, mobil istemciler üzerindeki etkiyi değerlendirmek üzere toplandı."
+      context: API Governance
+    - en: "The technical committee assessed candidate database technologies against strict latency benchmarks."
+      tr: "Teknik komite, aday veritabanı teknolojilerini sıkı gecikme ölçütlerine göre değerlendirdi."
+      context: Technology Selection
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Assess" (değerlendirmek/ölçmek) fiilini, erişmek ("access") ve varlık ("asset") kelimeleriyle karıştırmayınız. Telaffuzları ve anlamları tamamen farklıdır.
+      incorrect_example: "I cannot assess my company email without my security token."
+      correct_example: "I cannot access my company email without my security token."
+  register: formal
+  topic_tags:
+    - evaluation
+    - analysis
+    - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.consolidate
+  headword: consolidate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /kənˈsɒl.ɪ.deɪt/
+  audio_ref: null
+  definition_en: To combine a number of separate things into a single more effective, coherent, or secure whole; to strengthen a position.
+  meaning_tr: birleştirmek, pekiştirmek, konsolide etmek
+  collocations:
+    - text: consolidate systems
+      tr: sistemleri birleştirmek
+    - text: consolidate debt
+      tr: borçları konsolide etmek
+    - text: consolidate market position
+      tr: pazar konumunu pekiştirmek
+    - text: consolidate data
+      tr: verileri tek bir yerde toplamak
+  examples:
+    - en: "The platform group worked to consolidate multiple legacy internal monitoring dashboards into a single portal."
+      tr: "Platform grubu, birden fazla eski dahili izleme panelini tek bir portal altında birleştirmek için çalıştı."
+      context: Infrastructure Optimization
+    - en: "The recent acquisition helped the company consolidate its leading market position in enterprise cybersecurity."
+      tr: "Son satın alma, şirketin kurumsal siber güvenlik alanındaki lider pazar konumunu pekiştirmesine yardımcı oldu."
+      context: Corporate M&A
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Consolidate" sadece muhasebede bilanço birleştirmek değildir; mimaride dağınık sistemleri sadeleştirmek veya konumunu güçlendirmek için de çok yaygın kullanılır.
+      incorrect_example: "We consolidated the brick wall with solid cement."
+      correct_example: "We consolidated our server clusters to reduce ongoing operational overhead."
+  register: formal
+  topic_tags:
+    - systems
+    - integration
+    - corporate-strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.differentiate
+  headword: differentiate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˌdɪf.əˈren.ʃi.eɪt/
+  audio_ref: null
+  definition_en: To recognize, show, or constitute the difference between things; or to make a product unique in the market.
+  meaning_tr: ayırt etmek, farklı kılmak, ayrışmak
+  collocations:
+    - text: differentiate between
+      tr: arasında ayrım yapmak
+    - text: differentiate a product
+      tr: ürünü farklılaştırmak
+    - text: key factor that differentiates
+      tr: farklı kılan kilit faktör
+  examples:
+    - en: "Superior offline-first functionality is the key architectural feature that differentiates our app from competitors."
+      tr: "Üstün çevrimdışı öncelikli işlevsellik, uygulamamızı rakiplerinden farklı kılan temel mimari özelliktir."
+      context: Product Differentiation
+    - en: "Experienced engineers can easily differentiate between superficial symptoms and true root causes."
+      tr: "Deneyimli mühendisler yüzeysel belirtiler ile gerçek kök nedenleri kolayca ayırt edebilirler."
+      context: Problem Solving
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki şeyi birbirinden ayırt ederken "differentiate between X and Y" veya "differentiate X from Y" kullanılır. "Differentiate with" yanlıştır.
+      incorrect_example: "It is difficult to differentiate this component with that one."
+      correct_example: "It is difficult to differentiate this component from that one."
+  register: formal
+  topic_tags:
+    - strategy
+    - comparison
+    - unique-value
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.obtain
+  headword: obtain
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /əbˈteɪn/
+  audio_ref: null
+  definition_en: To get, acquire, or secure something through deliberate effort, planning, or formal application.
+  meaning_tr: elde etmek, edinmek, temin etmek
+  collocations:
+    - text: obtain permission
+      tr: izin almak / temin etmek
+    - text: obtain results
+      tr: sonuç elde etmek
+    - text: obtain information
+      tr: bilgi edinmek
+    - text: obtain approval
+      tr: onay almak
+  examples:
+    - en: "The devops lead had to obtain executive approval before provisioning expensive high-memory compute instances."
+      tr: "DevOps lideri, pahalı yüksek bellekli işlem örnekleri tahsis etmeden önce yönetici onayını almak zorundaydı."
+      context: Infrastructure Procurement
+    - en: "Researchers obtained consistent latency metrics after running one million synthetic benchmark requests."
+      tr: "Araştırmacılar bir milyon yapay kıyaslama isteği çalıştırdıktan sonra tutarlı gecikme ölçütleri elde ettiler."
+      context: System Benchmarking
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Obtain" biçimsel ve yazılı İngilizcede tercih edilen bir fiildir ("obtain permission/data"). Günlük samimi konuşmada bunun yerine basitçe "get" kullanılır.
+      incorrect_example: "Can I obtain a glass of water from the kitchen please?"
+      correct_example: "Could you get me a glass of water from the kitchen, please?"
+  register: formal
+  topic_tags:
+    - procurement
+    - acquisition
+    - approvals
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.sufficient
+  headword: sufficient
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /səˈfɪʃ.ənt/
+  audio_ref: null
+  definition_en: Enough for a particular purpose or to satisfy an explicit requirement; adequate.
+  meaning_tr: yeterli, kafi
+  collocations:
+    - text: sufficient time
+      tr: yeterli zaman
+    - text: sufficient evidence
+      tr: yeterli kanıt
+    - text: sufficient resources
+      tr: yeterli kaynaklar
+    - text: self-sufficient
+      tr: kendine yeten
+  examples:
+    - en: "Two weeks of regression testing provided sufficient time to validate the new offline database sync engine."
+      tr: "İki haftalık regresyon testi, yeni çevrimdışı veritabanı senkronizasyon motorunu doğrulamak için yeterli zaman sağladı."
+      context: Quality Assurance
+    - en: "Ensure that local server nodes have sufficient disk space before starting the data replication process."
+      tr: "Veri replikasyonu sürecini başlatmadan önce yerel sunucu düğümlerinin yeterli disk alanına sahip olduğundan emin olun."
+      context: Database Operations
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Sufficient" resmi ve akademik metinlerde "enough" yerine kullanılır. Bir amaç için yeterli olmayı belirtirken "sufficient for (something)" veya "sufficient to (do something)" kalıbı kurulur.
+      incorrect_example: "We have sufficient of money to pay the server bill."
+      correct_example: "We have sufficient funds to pay the annual server bill."
+  register: formal
+  topic_tags:
+    - adequacy
+    - requirements
+    - evaluation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.promising
+  headword: promising
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ˈprɒm.ɪ.sɪŋ/
+  audio_ref: null
+  definition_en: Showing signs of future success, development, excellence, or positive outcomes.
+  meaning_tr: umut verici, gelecek vadeden, parlak
+  collocations:
+    - text: promising candidate
+      tr: gelecek vadeden aday
+    - text: promising results
+      tr: umut verici sonuçlar
+    - text: promising start
+      tr: umut verici başlangıç
+    - text: show promising potential
+      tr: umut verici potansiyel göstermek
+  examples:
+    - en: "The initial benchmark tests showed promising results for the experimental garbage collection algorithm."
+      tr: "İlk kıyaslama testleri, deneysel çöp toplama algoritması için umut verici sonuçlar gösterdi."
+      context: Runtime Performance
+    - en: "The junior engineer is a promising talent who quickly masters complex domain logic."
+      tr: "Kıdemsiz mühendis, karmaşık alan mantığını hızla kavrayan gelecek vadeden bir yetenektir."
+      context: Engineering Mentorship
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Promising" (umut verici/gelecek vadeden), "söz veren kişi" demek değildir; geleceğe dair olumlu ve parlak işaretler taşıyan durum ve kişileri niteleyen bir sıfattır.
+      incorrect_example: "He is promising because he gave me a promise to fix the bug."
+      correct_example: "He is a promising engineer whose innovative solutions impress the entire team."
+  register: general
+  topic_tags:
+    - potential
+    - talent
+    - outlook
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.predictable
+  headword: predictable
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /prɪˈdɪk.tə.bəl/
+  audio_ref: null
+  definition_en: Capable of being foreseen, anticipated, or calculated in advance; behaving in a consistent manner.
+  meaning_tr: öngörülebilir, tahmin edilebilir
+  collocations:
+    - text: predictable behavior
+      tr: öngörülebilir davranış
+    - text: predictable outcome
+      tr: öngörülebilir sonuç
+    - text: predictable latency
+      tr: öngörülebilir gecikme
+    - text: highly predictable
+      tr: son derece öngörülebilir
+  examples:
+    - en: "Deterministic state machines ensure predictable behavior across all client application transitions."
+      tr: "Belirleyici durum makineleri, tüm istemci uygulama geçişlerinde öngörülebilir davranış sağlar."
+      context: Application Architecture
+    - en: "Enterprise cloud workloads require highly predictable disk throughput to avoid request queuing."
+      tr: "Kurumsal bulut iş yükleri, istek kuyruğa girmesini önlemek için son derece öngörülebilir disk çıktısı gerektirir."
+      context: Storage Infrastructure
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Predictable" teknik mimaride "istikrarlı ve tutarlı" (olumlu) anlamda kullanılırken; yaratıcı sanatlar veya toplantılarda "klişe ve sıkıcı" (olumsuz) anlam taşıyabilir.
+      incorrect_example: "The movie was so predictable that everyone loved the surprise."
+      correct_example: "The movie plot was predictable and lacked any real suspense."
+  register: academic
+  topic_tags:
+    - determinism
+    - stability
+    - foresight
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.approximately
+  headword: approximately
+  cefr_level: B2
+  part_of_speech: adverb
+  phonetic: /əˈprɒk.sɪ.mət.li/
+  audio_ref: null
+  definition_en: Close to a particular number, measurement, or time, but not completely accurate; roughly.
+  meaning_tr: yaklaşık olarak, tahminen, takriben
+  collocations:
+    - text: approximately equal to
+      tr: yaklaşık olarak eşit
+    - text: approximately fifty percent
+      tr: yaklaşık yüzde elli
+    - text: cost approximately
+      tr: yaklaşık olarak mal olmak
+  examples:
+    - en: "The database table contains approximately ten million indexed user activity records."
+      tr: "Veritabanı tablosu yaklaşık on milyon indekslenmiş kullanıcı aktivite kaydı içerir."
+      context: Database Scaling
+    - en: "The architectural refactoring took approximately three weeks of dedicated engineering effort."
+      tr: "Mimari yeniden düzenleme yaklaşık üç haftalık yoğun mühendislik çabası gerektirdi."
+      context: Sprint Review
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Approximately", günlük konuşmadaki "about" veya "around" sözcüklerinin resmi, teknik ve yazılı dildeki tam karşılığıdır. İş raporlarında "about 50%" yerine "approximately 50%" tercih edilir.
+      incorrect_example: "I will call you in approximately five minutes from the phone."
+      correct_example: "The server migration will require approximately four hours of scheduled downtime."
+  register: formal
+  topic_tags:
+    - estimation
+    - metrics
+    - precision
+  related_ids: []
+  status: APPROVED
+  version: 1

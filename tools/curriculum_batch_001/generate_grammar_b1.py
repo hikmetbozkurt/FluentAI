@@ -1,0 +1,468 @@
+#!/usr/bin/env python3
+"""
+Grammar B1 Lessons Generator (7 new lessons, bringing B1 total to 10).
+"""
+
+B1_LESSONS = [
+    {
+        "id": "grammar.b1.past-continuous-interrupted-actions",
+        "title": "Past Continuous vs. Past Simple: Interrupted Actions and Parallel Backgrounds",
+        "cefr_level": "B1",
+        "category": "tenses_and_aspect",
+        "summary_en": "Use Past Continuous for longer background actions in progress when interrupted by a shorter, discrete event in Past Simple.",
+        "summary_tr": "Geçmişte arka planda devam eden uzun eylemler için Past Continuous; o eylemi bölen anlık kısa olaylar için Past Simple kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Background Activity vs. Sudden Interruption",
+                "content": "In incident retrospectives and project narratives, 'while' or 'as' introduces the ongoing background action in Past Continuous (was/were + -ing), while 'when' introduces the interrupting completed action in Past Simple.",
+                "patterns": [
+                    "Interruption: Subject + was/were + Verb-ing + WHEN + Subject + Past Simple",
+                    "Background Clause: WHILE + Subject + was/were + Verb-ing, Subject + Past Simple"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Veritabanı yedeğini alırken elektrikler kesildi' cümlesinde 'alırken' eki devam eden süreci, 'kesildi' ise anlık kesintiyi ifade eder. İngilizcede 'alırken' kısmı 'was backing up' (Past Continuous), 'kesildi' kısmı ise 'cut out' (Past Simple) olur. İki zamanın doğru bağlanması profesyonel vaka analizlerinde esastır.",
+        "rules": [
+            {
+                "name": "Interrupted Background Actions",
+                "pattern": "While + Subject + was/were + Verb-ing, Subject + Past Simple",
+                "use_cases": [
+                    "Explaining the timeline of a server outage or production bug",
+                    "Recounting team discussions during an unexpected client call"
+                ],
+                "time_markers": ["while", "as", "when", "at that exact moment"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "While the SRE engineer was updating the firewall, the primary gateway crashed.",
+                "structure_b": "The SRE engineer updated the firewall and then the primary gateway crashed.",
+                "difference_explanation_en": "Structure A describes an interruption during the ongoing update. Structure B describes two consecutive events in sequence.",
+                "difference_explanation_tr": "A cümlesi güncelleme devam ederken kesinti olduğunu belirtir. B cümlesi ise güncelleme bittikten sonra kesinti olduğunu anlatır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "aspect_confusion",
+                "trap_title": "'When' ve 'While' Bağlaçlarında Zaman Kipi Kayması",
+                "explanation_tr": "Türk öğreniciler sıklıkla 'While the gateway crashed...' veya 'When I was updating...' kalıplarını birbirine karıştırır. 'While' devam eden eylemi (-ing), 'when' ise ani ve kısa olayı (Past Simple) bağlamalıdır.",
+                "incorrect_example": "While the power cut occurred, we ran the migration script.",
+                "correct_example": "While we were running the migration script, the power outage occurred."
+            }
+        ],
+        "examples": [
+            {
+                "en": "While our backend team was preparing the microservice deployment, a high-severity vulnerability alert appeared.",
+                "tr": "Backend ekibimiz mikroservis dağıtımını hazırlarken, yüksek öncelikli bir güvenlik açığı uyarısı belirdi.",
+                "rule_highlight": "Past Continuous Background with While",
+                "context": "Incident Retrospective"
+            },
+            {
+                "en": "The frontend lead was presenting the design sprint results when the Zoom connection dropped.",
+                "tr": "Frontend lideri tasarım sprinti sonuçlarını sunarken Zoom bağlantısı koptu.",
+                "rule_highlight": "Past Continuous interrupted by when",
+                "context": "Remote Meeting"
+            }
+        ],
+        "topic_tags": ["tenses", "past-continuous", "when-while", "b1-intermediate"],
+        "related_ids": ["vocab.interrupt", "vocab.disruption"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.present-perfect-continuous-duration",
+        "title": "Present Perfect Continuous: Duration of Unfinished Activities (Since/For)",
+        "cefr_level": "B1",
+        "category": "tenses_and_aspect",
+        "summary_en": "Emphasize the ongoing duration of an activity that started in the past and is still actively continuing using 'have/has been + Verb-ing' with 'since' or 'for'.",
+        "summary_tr": "Geçmişte başlayıp şu anda halen devam eden eylemlerin süresini ve kesintisizliğini vurgulamak için 'since' (den beri) ve 'for' (boyunca) ile 'have/has been + -ing' kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Activity in Progress Over Time",
+                "content": "Unlike Present Perfect Simple (which emphasizes completion or result count), Present Perfect Continuous focuses on the duration of an ongoing effort that is not yet completed.",
+                "patterns": [
+                    "Affirmative: Subject + have/has been + Verb-ing",
+                    "Time Starting Point: SINCE + Specific Date/Time (since October, since 9:00 AM)",
+                    "Time Duration: FOR + Length of Time (for three sprints, for six months)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Üç aydır bu modül üzerinde çalışıyorum' cümlesinde şimdiki zaman kipi kullanılır. Ancak İngilizcede geçmişten bugüne uzanan bir süreyi ifade etmek için Present Continuous ('I am working for three months') KESİNLİKLE kullanılamaz. Mutlaka 'I have been working for three months' denmelidir.",
+        "rules": [
+            {
+                "name": "Ongoing Duration from Past to Present",
+                "pattern": "Subject + have/has been + Verb-ing + for/since + Time Expression",
+                "use_cases": [
+                    "Reporting continuous debugging or refactoring in standup meetings",
+                    "Expressing how long a client partnership or subscription has existed"
+                ],
+                "time_markers": ["since last sprint", "for three weeks", "all morning", "how long"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "I have been writing API unit tests all morning.",
+                "structure_b": "I have written fifteen API unit tests this morning.",
+                "difference_explanation_en": "Structure A focuses on the continuous duration of the activity. Structure B focuses on the completed output/quantity.",
+                "difference_explanation_tr": "A cümlesi sabahtan beri süren kesintisiz çalışma sürecine odaklanır. B cümlesi ise tamamlanan test sayısına (çıktıya) odaklanır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "tense_transfer",
+                "trap_title": "'For' ve 'Since' ile Şimdiki Zaman (Present Continuous) Kullanma Hatası",
+                "explanation_tr": "Türkçe düşünerek 'I am working at this software firm for two years' demek ana dili İngilizce olanlara son derece bozuk duyulur. 'For' ve 'since' ile devam eden süreçlerde Present Perfect Continuous zorunludur.",
+                "incorrect_example": "We are waiting for the API response since ten minutes.",
+                "correct_example": "We have been waiting for the API response for ten minutes."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Our mobile team has been debugging this memory leak for three consecutive days.",
+                "tr": "Mobil ekibimiz ardışık üç gündür bu bellek sızıntısını ayıklamakla uğraşıyor.",
+                "rule_highlight": "Present Perfect Continuous with for",
+                "context": "Sprint Troubleshooting"
+            },
+            {
+                "en": "She has been leading the payment security audit since January.",
+                "tr": "Ocak ayından beri ödeme güvenliği denetimini yönetiyor.",
+                "rule_highlight": "Present Perfect Continuous with since",
+                "context": "Project Leadership"
+            }
+        ],
+        "topic_tags": ["tenses", "present-perfect-continuous", "since-for", "b1-intermediate"],
+        "related_ids": ["vocab.schedule", "vocab.manage"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.future-arrangements-present-continuous",
+        "title": "Future Nuances: Present Continuous for Fixed Scheduled Arrangements",
+        "cefr_level": "B1",
+        "category": "tenses_and_aspect",
+        "summary_en": "Employ Present Continuous to communicate firm, confirmed future appointments and arrangements already locked in the calendar with other participants.",
+        "summary_tr": "Takvimde diğer katılımcılarla kesinleşmiş, yeri ve zamanı belli gelecekteki randevu ve toplantıları bildirmek için Present Continuous kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Confirmed Diary Arrangements",
+                "content": "When a future event involves other people, scheduled calendar invitations, or booked flights, English speakers use the Present Continuous rather than 'will' or 'going to'.",
+                "patterns": [
+                    "Arrangement: Subject + am/is/are + Verb-ing + Future Time Marker (e.g., I am meeting the VP tomorrow)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Yarın yönetim kuruluyla toplanıyorum / toplanacağım' ifadesi rahatlıkla kullanılır. İngilizcede iki tarafın da ajandasında kesinleşmiş bir randevu varsa 'I will meet' yerine 'I am meeting' demek profesyonel dilde daha kesin ve doğal bir intiba bırakır.",
+        "rules": [
+            {
+                "name": "Fixed Professional Calendar Appointments",
+                "pattern": "Subject + am/is/are + Verb-ing + Specific Future Time/Date",
+                "use_cases": [
+                    "Confirming scheduled interviews, client demos, or team lunches",
+                    "Announcing booked business travel or conference attendance"
+                ],
+                "time_markers": ["tomorrow morning", "on Thursday at 2 PM", "next Monday"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We are presenting the quarterly product roadmap on Thursday at 10:00 AM.",
+                "structure_b": "We will probably present the quarterly product roadmap sometime next week.",
+                "difference_explanation_en": "Structure A is a locked calendar commitment. Structure B is an uncertain future prediction with 'will'.",
+                "difference_explanation_tr": "A cümlesi takvime işlenmiş kesin bir taahhüttür. B cümlesi ise belirsiz bir geleceğe dair tahmindir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "tense_transfer",
+                "trap_title": "Kesinleşmiş Toplantılarda Aşırı 'Will' Kullanımı",
+                "explanation_tr": "Takvimde yeri ve saati belli olan bir iş görüşmesini yabancı bir meslektaşa aktarırken 'I will meet with the client tomorrow' demek sanki o anda karar verilmiş gibi duyulabilir. 'I am meeting...' daha profesyoneldir.",
+                "incorrect_example": "I will interview the candidate at 3 PM tomorrow, it is already in my calendar.",
+                "correct_example": "I am interviewing the candidate at 3 PM tomorrow; it is already in my calendar."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The enterprise sales director is flying to Frankfurt next Wednesday for client negotiations.",
+                "tr": "Kurumsal satış direktörü müşteri müzakereleri için önümüzdeki çarşamba Frankfurt'a uçuyor.",
+                "rule_highlight": "Present Continuous for Travel Arrangement",
+                "context": "Business Travel"
+            },
+            {
+                "en": "We are conducting our quarterly performance reviews all day on Friday.",
+                "tr": "Cuma günü tüm gün üç aylık performans değerlendirmelerimizi yapıyoruz.",
+                "rule_highlight": "Present Continuous for Fixed Event",
+                "context": "Corporate Schedule"
+            }
+        ],
+        "topic_tags": ["future", "present-continuous-future", "arrangements", "b1-intermediate"],
+        "related_ids": ["vocab.schedule", "vocab.agenda"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.passive-voice-foundations",
+        "title": "Passive Voice Foundations: Present and Past Simple Formations",
+        "cefr_level": "B1",
+        "category": "passive_and_causative",
+        "summary_en": "Construct basic passive sentences using 'be + Past Participle (V3)' to focus on the object, process, or deliverable rather than the agent.",
+        "summary_tr": "Eylemi yapan kişiden ziyade sürece, ürüne veya sonuca odaklanmak için 'be + V3' yapısıyla temel edilgen (passive) cümleler oluşturulur.",
+        "explanation_en": [
+            {
+                "title": "Focus on Action and Result over Agent",
+                "content": "In technical documentation, bug reports, and executive summaries, the actor is often obvious, irrelevant, or unknown. The passive voice places the affected system or result at the front of the sentence.",
+                "patterns": [
+                    "Present Simple Passive: Subject + is/are + Past Participle (V3)",
+                    "Past Simple Passive: Subject + was/were + Past Participle (V3)",
+                    "Optional Agent: ... by + Agent (only if adding critical new information)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede edilgen çatı fiil köküne '-il / -in' eklenerek yapılır ('kod derlendi', 'veriler kaydedilir'). İngilizcede ise 'be' yardımcı fiili zaman kipine göre çekimlenir ve ana fiil daima 3. halini (V3) alır. 'Is merged', 'were deleted' gibi yapılar teknik yazışmaların belkemiğidir.",
+        "rules": [
+            {
+                "name": "Present and Past Passive Constructions",
+                "pattern": "Object (as Subject) + am/is/are/was/were + Past Participle (V3)",
+                "use_cases": [
+                    "Writing release notes and system status reports",
+                    "Describing standard automated pipelines where the computer is the agent"
+                ],
+                "time_markers": ["automatically", "during the build", "last night"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The security team patched the server vulnerability.",
+                "structure_b": "The server vulnerability was patched by the security team.",
+                "difference_explanation_en": "Structure A is active, focusing on the team. Structure B is passive, focusing on the vulnerability and resolution.",
+                "difference_explanation_tr": "A cümlesi etken olup ekibe odaklanır. B cümlesi edilgen olup güvenlik açığına ve çözüme odaklanır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "voice_and_causative_transfer",
+                "trap_title": "'Be' Yardımcı Fiilini Unutup Sadece V3 Kullanma Hatası",
+                "explanation_tr": "Türk öğreniciler sıklıkla 'The bug fixed yesterday' derler. Bu cümle İngilizcede 'Hata dünü tamir etti' gibi anlamsız bir etken cümle olur. 'The bug was fixed yesterday' denmelidir.",
+                "incorrect_example": "The database updated every night at midnight.",
+                "correct_example": "The database is updated every night at midnight."
+            }
+        ],
+        "examples": [
+            {
+                "en": "All sensitive customer credentials are encrypted using AES-256 before storage.",
+                "tr": "Tüm hassas müşteri kimlik bilgileri saklanmadan önce AES-256 ile şifrelenir.",
+                "rule_highlight": "Present Simple Passive (are encrypted)",
+                "context": "Security Compliance"
+            },
+            {
+                "en": "The critical payment bottleneck was resolved by our backend engineering squad yesterday.",
+                "tr": "Kritik ödeme tıkanıklığı dün backend mühendislik ekibimiz tarafından çözüldü.",
+                "rule_highlight": "Past Simple Passive (was resolved)",
+                "context": "Incident Resolution"
+            }
+        ],
+        "topic_tags": ["passive-voice", "technical-writing", "b1-intermediate"],
+        "related_ids": ["vocab.solution", "vocab.deliverable"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.reported-speech-statements",
+        "title": "Reported Speech: Tense Shifting and Core Reporting Verbs",
+        "cefr_level": "B1",
+        "category": "reported_speech",
+        "summary_en": "Report past conversations and executive updates by shifting tenses back (backshifting) and selecting precise reporting verbs (say, tell, explain, confirm).",
+        "summary_tr": "Geçmiş konuşmaları ve toplantı notlarını aktarırken zaman kiplerini bir derece geriye kaydırma (backshift) ve doğru aktarım fiillerini (say, tell, confirm) seçme kuralları.",
+        "explanation_en": [
+            {
+                "title": "The Backshift Principle",
+                "content": "When relaying what a colleague or stakeholder stated in a past meeting, verbs shift one step into the past (Present Simple -> Past Simple; Present Continuous -> Past Continuous; will -> would).",
+                "patterns": [
+                    "Direct: 'We need more resources.' -> Reported: She said (that) they needed more resources.",
+                    "Direct: 'I will deploy the fix.' -> Reported: He confirmed (that) he would deploy the fix.",
+                    "Say vs. Tell: said (that) ... VS told ME / US (that) ..."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede dolaylı anlatımda zaman kipi genellikle değişmez ('Geleceğini söyledi'). İngilizcede ise ana fiil geçmiş zamandaysa ('said', 'told'), aktarılan cümlenin zamanı bir basamak geçmişe kayar (am/is -> was; will -> would; have -> had). Ayrıca 'said me' denmez, 'told me' veya 'said to me' denir.",
+        "rules": [
+            {
+                "name": "Backshifting Tenses in Indirect Statements",
+                "pattern": "Subject + said / told + (that) + Subject + Backshifted Verb",
+                "use_cases": [
+                    "Briefing a manager on what a client said in a discovery call",
+                    "Documenting agreement terms discussed during vendor meetings"
+                ],
+                "time_markers": ["in yesterday's call", "during the standup"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The product owner said that the sprint deadline was realistic.",
+                "structure_b": "The product owner told the engineering team that the sprint deadline was realistic.",
+                "difference_explanation_en": "'Say' does not require a personal object pronoun. 'Tell' strictly requires a personal object ('the engineering team').",
+                "difference_explanation_tr": "'Say' sonrasında kişi zamiri gerekmezken, 'tell' sonrasında kime söylendiği mutlaka belirtilmelidir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "'Said me' Yanılgısı (Say ile Tell Karışıklığı)",
+                "explanation_tr": "Türkçedeki 'bana söyledi' ifadesini doğrudan çeviren çalışanlar sıklıkla 'He said me that...' derler. İngilizcede 'say' doğrudan kişi nesnesi almaz; 'He told me' veya 'He said to me' denmelidir.",
+                "incorrect_example": "The scrum master said me that the sprint review was postponed.",
+                "correct_example": "The scrum master told me that the sprint review was postponed."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The lead architect confirmed that the legacy database would be decommissioned by Q3.",
+                "tr": "Baş mimar eski veritabanının üçüncü çeyreğe kadar kullanımdan kaldırılacağını doğruladı.",
+                "rule_highlight": "Backshifted modal (will -> would)",
+                "context": "Architecture Governance"
+            },
+            {
+                "en": "She told the committee that our cloud infrastructure was ready for heavy load testing.",
+                "tr": "Komiteye bulut altyapımızın ağır yük testlerine hazır olduğunu söyledi.",
+                "rule_highlight": "Told + object + backshifted past",
+                "context": "Executive Review"
+            }
+        ],
+        "topic_tags": ["reported-speech", "indirect-speech", "say-tell", "b1-intermediate"],
+        "related_ids": ["vocab.solution", "vocab.suggestion"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.modals-deduction-present",
+        "title": "Modals of Present Deduction: Must, Can't, and Might",
+        "cefr_level": "B1",
+        "category": "modals_and_semi_modals",
+        "summary_en": "Deduce present situations based on evidence: 'must be' for high certainty, 'can't be' for logical impossibility, and 'might/could be' for possibility.",
+        "summary_tr": "Mevcut kanıtlara dayanarak mantıksal çıkarım yapma: kesinlik için 'must be', imkansızlık için 'can't be', olasılık için 'might/could be'.",
+        "explanation_en": [
+            {
+                "title": "Logical Certainty Spectrum",
+                "content": "When evaluating logs or system metrics, 'must' reflects 95%+ certainty (The CPU is at 100%, there must be an infinite loop). 'Can't' reflects impossibility (The server responded in 5ms, it can't be down). 'Might' reflects 50% possibility.",
+                "patterns": [
+                    "Positive Certainty (95%): Subject + must + Base Verb",
+                    "Negative Certainty (Impossible): Subject + cannot (can't) + Base Verb",
+                    "Uncertain Possibility (30-50%): Subject + might / may / could + Base Verb"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Sunucu kapalı olmalı' (kesin çıkarım) ile 'Sunucu kapalı olamaz' (imkansızlık) ifadeleri mantıksal tahmin bildirir. İngilizcede olumsuz kesinlik için asla 'must not' kullanılmaz; imkansızlık durumunda daima 'can't' kullanılır ('It can't be a network issue').",
+        "rules": [
+            {
+                "name": "Present Deduction Based on Evidence",
+                "pattern": "Subject + [must / can't / might] + Base Verb",
+                "use_cases": [
+                    "Diagnosing production anomalies during an on-call rotation",
+                    "Estimating feature release readiness from pull request activity"
+                ],
+                "time_markers": ["based on logs", "look at the metrics", "obviously"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The database latency is so low; the query must be hitting the cache.",
+                "structure_b": "The response took 10 seconds; the query can't be hitting the cache.",
+                "difference_explanation_en": "Structure A deduces logical positive certainty (must). Structure B deduces logical impossibility (can't).",
+                "difference_explanation_tr": "A cümlesi kanıta dayalı kesinliği ('must') ifade eder. B cümlesi ise mantıksal imkansızlığı ('can't') belirtir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "aspect_confusion",
+                "trap_title": "Mantıksal İmkansızlık İçin 'Mustn't' Kullanma Hatası",
+                "explanation_tr": "Türk öğreniciler 'Bu doğru olamaz' derken 'must' kelimesinin olumsuzunu alarak 'This mustn't be true' derler. Bu 'Bunun doğru olması yasaktır' gibi anlamsız bir emir olur. Mantıksal imkansızlık daima 'can't be' ile kurulur.",
+                "incorrect_example": "The API is responding normally, so the database mustn't be offline.",
+                "correct_example": "The API is responding normally, so the database can't be offline."
+            }
+        ],
+        "examples": [
+            {
+                "en": "All tests are failing simultaneously; there must be an invalid environment variable.",
+                "tr": "Tüm testler aynı anda başarısız oluyor; kesinlikle geçersiz bir ortam değişkeni olmalı.",
+                "rule_highlight": "Must for logical positive deduction",
+                "context": "CI/CD Debugging"
+            },
+            {
+                "en": "He committed code five minutes ago, so he can't be on annual leave today.",
+                "tr": "Beş dakika önce kod commit etti, dolayısıyla bugün yıllık izinde olamaz.",
+                "rule_highlight": "Can't for logical impossibility",
+                "context": "Team Collaboration"
+            }
+        ],
+        "topic_tags": ["modals", "deduction", "must-cant-might", "b1-intermediate"],
+        "related_ids": ["vocab.solution", "vocab.crucial"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.b1.gerunds-after-prepositions-verbs",
+        "title": "Gerunds vs. Infinitives: Verb Patterns and Prepositional Complements",
+        "cefr_level": "B1",
+        "category": "verb_patterns_and_infinitives",
+        "summary_en": "Master which verbs take gerunds (-ing) or infinitives (to + verb), and enforce the strict rule that any verb following a preposition must be a gerund.",
+        "summary_tr": "Hangi fiillerin ardından gerund (-ing) veya infinitive (to + fiil) geldiği ve edatlardan sonra gelen fiillerin daima -ing alması kuralı.",
+        "explanation_en": [
+            {
+                "title": "Preposition + Gerund Golden Rule",
+                "content": "Any verb that directly follows a preposition (in, on, at, about, of, for, without, by, before, after) MUST take the gerund (-ing) form without exception.",
+                "patterns": [
+                    "Golden Rule: Preposition + Verb-ing (e.g., thank you for helping, succeeded in resolving)",
+                    "Verbs taking Gerunds: avoid, consider, enjoy, finish, postpone, suggest + Verb-ing",
+                    "Verbs taking Infinitives: agree, decide, expect, hope, plan, promise + to + Verb"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede hem mastar (yapmak) hem isim-fiil (yapma) için benzer yapılar kullanılır. İngilizcede en katı kural: bir edattan (in, of, without, by vb.) sonra fiil geliyorsa İSTİSNASIZ -ing alır. 'Without test' denemez, 'without testing' denir.",
+        "rules": [
+            {
+                "name": "Prepositional Complementation",
+                "pattern": "Preposition + Verb-ing",
+                "use_cases": [
+                    "Explaining technical methods with 'by' (by optimizing the query)",
+                    "Describing conditions with 'without' (without causing downtime)"
+                ],
+                "time_markers": ["before deploying", "after merging"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We decided to postpone the production rollout.",
+                "structure_b": "We considered postponing the production rollout.",
+                "difference_explanation_en": "'Decide' strictly takes the infinitive ('to postpone'). 'Consider' strictly takes the gerund ('postponing').",
+                "difference_explanation_tr": "'Decide' fiili infinitive ('to postpone') alırken, 'consider' fiili mutlaka gerund ('postponing') alır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "preposition_trap",
+                "trap_title": "Edattan Sonra Yalın Fiil Kullanma Hatası",
+                "explanation_tr": "Türk öğreniciler 'Deploy etmeden önce' derken 'Before deploy the code' demeye meyillidir. 'Before' bir edat olarak kullanıldığında ardından gelen fiil mutlaka -ing almalıdır: 'Before deploying the code'.",
+                "incorrect_example": "You cannot merge the pull request without get approval from the team lead.",
+                "correct_example": "You cannot merge the pull request without getting approval from the team lead."
+            }
+        ],
+        "examples": [
+            {
+                "en": "We improved system throughput by implementing an in-memory caching layer.",
+                "tr": "Bellek içi önbellekleme katmanı uygulayarak sistem işlem hacmini geliştirdik.",
+                "rule_highlight": "Preposition + Gerund (by implementing)",
+                "context": "Performance Optimization"
+            },
+            {
+                "en": "The security team suggested auditing our cloud access permissions immediately.",
+                "tr": "Güvenlik ekibi bulut erişim izinlerimizi derhal denetlememizi önerdi.",
+                "rule_highlight": "Verb taking Gerund (suggested auditing)",
+                "context": "Governance"
+            }
+        ],
+        "topic_tags": ["gerund-infinitive", "verb-patterns", "prepositions", "b1-intermediate"],
+        "related_ids": ["vocab.solution", "vocab.suggestion"],
+        "status": "APPROVED",
+        "version": 1
+    }
+]
+
+print(f"Defined {len(B1_LESSONS)} B1 grammar lessons.")

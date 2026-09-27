@@ -1,0 +1,429 @@
+- id: vocab.polarity
+  headword: polarity
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /pəˈlær.ə.ti/
+  audio_ref: null
+  definition_en: The state or condition of having two opposite, contradictory, or completely contrasting attributes, tendencies, or opinions.
+  meaning_tr: kutupluluk, zıt kutuplara ayrılmış olma durumu, kutupsallık
+  collocations:
+    - text: political polarity
+      tr: siyasi kutuplaşma / zıtlık
+    - text: extreme polarity
+      tr: aşırı kutupluluk
+    - text: growing polarity
+      tr: giderek artan kutupsallık
+    - text: ideological polarity
+      tr: ideolojik zıtlık
+  examples:
+    - en: "The sharp polarity of opinions among committee members made reaching an architectural consensus exceedingly difficult."
+      tr: "Komite üyeleri arasındaki keskin görüş zıtlığı, mimari bir uzlaşıya varmayı son derece zorlaştırdı."
+      context: Engineering Governance
+    - en: "Market analysts noted growing polarity between high-performing cloud vendors and legacy IT providers struggling to adapt."
+      tr: "Piyasa analistleri, yüksek performans gösteren bulut tedarikçileri ile uyum sağlamakta zorlanan geleneksel BT sağlayıcıları arasında artan kutupsallığa dikkat çekti."
+      context: Industry Analysis
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Polarity" yalnızca fizik veya elektrikteki kutuplar için değil; kurumsal, siyasal ve felsefi alanda iki taban tabana zıt kutbun veya görüşün varlığını ifade etmek için soyut anlamda sıklıkla kullanılır.
+      incorrect_example: "The team had a strong polarity because everyone agreed on the design."
+      correct_example: "The intense polarity between product managers and engineers stalled the sprint roadmap."
+  register: formal
+  topic_tags:
+    - divergence
+    - debate
+    - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.veracity
+  headword: veracity
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /vəˈræs.ə.ti/
+  audio_ref: null
+  definition_en: Habitual observance of truth, accuracy, or conformity to factual reality.
+  meaning_tr: doğruluk, gerçeklik, dürüstlük, hakikate uygunluk
+  collocations:
+    - text: assess the veracity
+      tr: doğruluğunu değerlendirmek
+    - text: doubt the veracity of
+      tr: -in doğruluğundan şüphe etmek
+    - text: unquestioned veracity
+      tr: sorgulanamaz doğruluk
+    - text: test the veracity
+      tr: gerçekliğini test etmek
+  examples:
+    - en: "Before publishing the investigation findings, the forensic audit team rigorously verified the veracity of the whistleblower's claims."
+      tr: "Soruşturma bulgularını yayımlamadan önce adli denetim ekibi, ihbarcının iddialarının doğruluğunu titizlikle teyit etti."
+      context: Forensic Auditing
+    - en: "Given the rapid proliferation of synthetic media, algorithmic systems must be designed to evaluate source veracity in real time."
+      tr: "Yapay medyanın hızla yayılması göz önüne alındığında, algoritmik sistemler kaynak doğruluğunu gerçek zamanlı olarak değerlendirecek şekilde tasarlanmalıdır."
+      context: Information Security
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Veracity" (/vəˈræs.ə.ti/ - doğruluk/hakikat) kelimesi "voracity" (/vəˈræs.ə.ti/ - oburluk/doyumsuz iştah) ile ses benzerliği nedeniyle karıştırılmamalıdır.
+      incorrect_example: "His voracity as a reliable witness convinced the judge."
+      correct_example: "His unwavering veracity as a witness convinced the judge."
+  register: formal
+  topic_tags:
+    - truth
+    - accuracy
+    - integrity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.decimate
+  headword: decimate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈdes.ɪ.meɪt/
+  audio_ref: null
+  definition_en: To destroy, diminish, or wipe out a very large proportion of something; to inflict devastating damage upon a population, resource, or market.
+  meaning_tr: büyük bir kısmını yok etmek, kırıp geçirmek, ağır darbe vurup tüketmek
+  collocations:
+    - text: decimate the workforce
+      tr: iş gücünü büyük ölçüde eritmek / kıymak
+    - text: virtually decimate
+      tr: neredeyse tamamen yok etmek
+    - text: decimate profits
+      tr: kârları kırıp geçirmek / aşırı derecede eritmek
+    - text: decimate supply chains
+      tr: tedarik zincirlerini yerle bir etmek
+  examples:
+    - en: "The aggressive price war decimated the profit margins of small regional logistics operators across the sector."
+      tr: "Agresif fiyat savaşı, sektör genelindeki küçük bölgesel lojistik işletmecilerinin kâr marjlarını kırıp geçirdi."
+      context: Market Strategy
+    - en: "A critical security flaw combined with an untracked failover decimated user trust within hours of the public release."
+      tr: "Kritik bir güvenlik açığı ve izlenemeyen bir yedekleme çöküşü, genel kullanıma sunulduktan sonraki saatler içinde kullanıcı güvenini yerle bir etti."
+      context: Incident Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Decimate" etimolojik olarak Roma ordusunda "her on kişiden birini cezalandırmak" kökünden gelse de modern İngilizcede "büyük bir kısmını kırıp geçirmek, neredeyse tamamen mahvetmek" anlamında kullanılır; sadece %10'luk kayıp demek değildir.
+      incorrect_example: "The firm decimated its revenue by five percent due to slight tax adjustments."
+      correct_example: "The sudden economic crisis decimated consumer discretionary spending across the region."
+  register: formal
+  topic_tags:
+    - destruction
+    - crisis
+    - economic-impact
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.epitomize
+  headword: epitomize
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ɪˈpɪt.ə.maɪz/
+  audio_ref: null
+  definition_en: To be a perfect, quintessential embodiment or representative example of a quality, concept, or standard.
+  meaning_tr: kusursuz bir şekilde simgelemek / temsil etmek, timsali olmak, somut örneği olmak
+  collocations:
+    - text: epitomize the spirit of
+      tr: -in ruhunu simgelemek / somutlaştırmak
+    - text: epitomize excellence
+      tr: mükemmelliğin timsali olmak
+    - text: best epitomize
+      tr: en iyi şekilde temsil etmek
+    - text: epitomize the transformation
+      tr: dönüşümü somutlaştırmak
+  examples:
+    - en: "Her career journey from junior contributor to chief architect epitomizes the meritocratic ethos of the engineering organization."
+      tr: "Kıdemsiz çalışandan baş mimarlığa uzanan kariyer yolculuğu, mühendislik organizasyonunun liyakate dayalı anlayışını kusursuz biçimde simgelemektedir."
+      context: Professional Growth
+    - en: "The new flagship product was designed to epitomize modern enterprise reliability and seamless integration."
+      tr: "Yeni amiral gemisi ürün, modern kurumsal güvenilirliği ve sorunsuz entegrasyonu kusursuzca temsil edecek şekilde tasarlandı."
+      context: Product Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Epitomize" özetlemek ("summarize") değil, bir kavramın veya kalitenin "en yetkin ve somut örneği olmak / timsali olmak" demektir.
+      incorrect_example: "Please epitomize this 50-page technical report into bullet points."
+      correct_example: "Her composure and strategic clarity epitomize true executive leadership."
+  register: formal
+  topic_tags:
+    - representation
+    - excellence
+    - standards
+  related_ids:
+    - vocab.epitome
+  status: APPROVED
+  version: 1
+
+- id: vocab.repudiate
+  headword: repudiate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /rɪˈpjuː.di.eɪt/
+  audio_ref: null
+  definition_en: To formally reject, disown, or deny the validity, authority, or truth of something; to refuse to fulfill an obligation.
+  meaning_tr: reddetmek, tanımamak, feshetmek, yalanlamak / inkâr etmek
+  collocations:
+    - text: repudiate allegations
+      tr: iddiaları kesin bir dille reddetmek
+    - text: repudiate a contract
+      tr: sözleşmeyi tanımamak / feshetmek
+    - text: repudiate a debt
+      tr: borcu ödemeyi reddetmek
+    - text: publicly repudiate
+      tr: kamuoyu önünde reddetmek
+  examples:
+    - en: "The corporation issued an emphatic statement to repudiate unfounded allegations of anti-competitive practices."
+      tr: "Şirket, rekabeti engelleyici uygulamalara dair asılsız iddiaları kesin bir dille reddetmek için net bir açıklama yaptı."
+      context: Corporate Legal
+    - en: "If a supplier unilaterally repudiates key terms of a service level agreement, dispute arbitration is triggered immediately."
+      tr: "Bir tedarikçi hizmet seviyesi sözleşmesinin temel şartlarını tek taraflı olarak fesheder veya reddederse, uyuşmazlık tahkimi derhal devreye girer."
+      context: Contract Management
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Repudiate", günlük dildeki basit bir "refuse" veya "say no" yerine, hukuki, felsefi veya kurumsal düzeyde bir iddiayı, borcu ya da doktrini resmi ve kesin bir şekilde reddetmek veya feshetmek için kullanılan yüksek düzeyde resmi bir fiildir.
+      incorrect_example: "I repudiated the dinner invitation from my colleague."
+      correct_example: "The executive board explicitly repudiated the fraudulent statements made by former managers."
+  register: formal
+  topic_tags:
+    - rejection
+    - legal
+    - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.concomitant
+  headword: concomitant
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /kənˈkɒm.ɪ.tənt/
+  audio_ref: null
+  definition_en: Naturally accompanying, associated with, or occurring alongside something else, usually as a consequence or secondary feature.
+  meaning_tr: eşlik eden, beraberinde gelen, yan (özellik/etki), müterafik
+  collocations:
+    - text: concomitant rise
+      tr: beraberinde gelen artış
+    - text: concomitant risk
+      tr: eşlik eden risk
+    - text: concomitant benefits
+      tr: beraberinde gelen faydalar
+    - text: without concomitant increases
+      tr: beraberinde gelen artışlar olmaksızın
+  examples:
+    - en: "Rapid international expansion brought an increase in top-line revenue, but also the concomitant challenge of regulatory compliance across multiple jurisdictions."
+      tr: "Hızlı uluslararası genişleme, brüt gelirde bir artış sağladı ancak birden fazla yargı alanındaki mevzuata uyumun beraberinde getirdiği zorluğu da beraberinde taşıdı."
+      context: International Business
+    - en: "The adoption of microservices architectures yielded greater deployment velocity alongside concomitant increases in operational observability complexity."
+      tr: "Mikroservis mimarilerinin benimsenmesi, operasyonel gözlemlenebilirlik karmaşıklığındaki beraberinde gelen artışların yanı sıra daha yüksek dağıtım hızı sağladı."
+      context: Cloud Architecture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Concomitant" (/kənˈkɒm.ɪ.tənt/), bir sürecin doğası gereği yan ürünü veya eşlikçisi olan olguları niteleyen akademik/formel bir sıfattır; rastlantısal birlikteliklerden ziyade nedensel veya yapısal paralellikleri ifade eder.
+      incorrect_example: "He bought a concomitant sandwich during his lunch break."
+      correct_example: "Economic prosperity and concomitant urban expansion transformed the coastal region."
+  register: academic
+  topic_tags:
+    - causality
+    - analysis
+    - correlation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.fastidious
+  headword: fastidious
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /fæsˈtɪd.i.əs/
+  audio_ref: null
+  definition_en: Very attentive to and concerned about accuracy, precision, cleanliness, or small details; hard to please due to exacting standards.
+  meaning_tr: titiz, kılı kırk yaran, aşırı dikkatli ve müşkülpesent
+  collocations:
+    - text: fastidious attention to detail
+      tr: detaylara gösterilen kılı kırk yaran titizlik
+    - text: fastidious craftsmanship
+      tr: titiz işçilik / ustalık
+    - text: fastidious standards
+      tr: titiz ve tavizsiz standartlar
+    - text: fastidious about quality
+      tr: kalite konusunda son derece titiz
+  examples:
+    - en: "The principal engineer was known for her fastidious attention to detail during distributed systems code reviews."
+      tr: "Baş mühendis, dağıtık sistemler kod incelemeleri sırasında detaylara gösterdiği kılı kırk yaran titizliğiyle tanınırdı."
+      context: Engineering Quality
+    - en: "Maintaining secure transaction processing requires fastidious adherence to cryptographic protocols and zero-trust guidelines."
+      tr: "Güvenli işlem gerçekleştirmeyi sürdürmek, kriptografik protokollere ve sıfır güven yönergelerine titizlikle bağlı kalmayı gerektirir."
+      context: Cybersecurity
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Fastidious" (/fæsˈtɪd.i.əs/), "hızlı" ("fast") kökünden türememiştir; hızla hiçbir ilgisi yoktur. "Kılı kırk yaran, ayrıntılara aşırı titiz, zor beğenen" anlamına gelir.
+      incorrect_example: "He was very fastidious and ran the race in record time."
+      correct_example: "His fastidious review uncovered several subtle memory leaks before production deployment."
+  register: formal
+  topic_tags:
+    - precision
+    - quality
+    - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.innocuous
+  headword: innocuous
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪˈnɒk.ju.əs/
+  audio_ref: null
+  definition_en: Not harmful, toxic, or offensive; unlikely to provoke hostility or cause injury.
+  meaning_tr: zararsız, tehlikesiz, incitmeyen / masum
+  collocations:
+    - text: seemingly innocuous
+      tr: masum / zararsız görünen
+    - text: perfectly innocuous
+      tr: tamamen zararsız
+    - text: innocuous remark
+      tr: zararsız / art niyetsiz bir söz
+    - text: innocuous change
+      tr: masum bir değişiklik
+  examples:
+    - en: "What appeared to be a completely innocuous configuration change inadvertently triggered a cascading failure across the database cluster."
+      tr: "Tamamen zararsız görünen bir yapılandırma değişikliği, veri tabanı kümesi genelinde istemeden basamaklı bir sistem çöküşünü tetikledi."
+      context: Systems Reliability
+    - en: "Although the interviewer's opening question sounded innocuous, it was formulated to gauge the candidate's strategic problem-solving instincts."
+      tr: "Mülakatçının açılış sorusu zararsız ve masum gibi görünse de adayın stratejik problem çözme içgüdülerini ölçmek için formüle edilmişti."
+      context: Executive Hiring
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Innocuous" (/ɪˈnɒk.ju.əs/), "innovative" (yenilikçi) veya "inoculate" (aşılamak) kelimeleriyle karıştırılmamalıdır; "hiçbir zararı veya art niyeti olmayan, masum, tehlikesiz" demektir.
+      incorrect_example: "The lab developed an innocuous software that brought cutting-edge AI breakthroughs."
+      correct_example: "The email attachment seemed innocuous, but security analysts isolated embedded malicious scripts."
+  register: formal
+  topic_tags:
+    - safety
+    - risk
+    - nuance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ostensible
+  headword: ostensible
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɒsˈten.sə.bəl/
+  audio_ref: null
+  definition_en: Stated or appearing to be true on the surface, but often concealing a different underlying reality, intention, or motive.
+  meaning_tr: görünürdeki, sözde, bahane edilen (aslı farklı olabilen)
+  collocations:
+    - text: ostensible reason
+      tr: görünürdeki sebep / gerekçe
+    - text: ostensible purpose
+      tr: görünürdeki amaç
+    - text: ostensible goal
+      tr: görünürdeki hedef
+    - text: despite ostensible success
+      tr: görünürdeki başarıya rağmen
+  examples:
+    - en: "The ostensible reason for restructuring the division was cost optimization, but leadership primarily aimed to eliminate operational bottlenecks."
+      tr: "Bölümü yeniden yapılandırmanın görünürdeki sebebi maliyet optimizasyonuydu, ancak liderlik öncelikle operasyonel darboğazları ortadan kaldırmayı hedefliyordu."
+      context: Organizational Strategy
+    - en: "While the vendor made ostensible commitments to open standards, their core API retained proprietary locks that prevented seamless export."
+      tr: "Tedarikçi açık standartlara görünürde taahhütlerde bulunsa da çekirdek API'si sorunsuz dışa aktarımı engelleyen tescilli kilitleri muhafaza etti."
+      context: Vendor Assessment
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Ostensible" (/ɒsˈten.sə.bəl/), yalnızca "görünen" değil; "dışarıya karşı öne sürülen ama arka planda başka bir gerçek bulunan (sözde / görünüşte)" anlamını taşır. "Visible" veya "obvious" ile eş anlamlı değildir.
+      incorrect_example: "The ostensible stars were shining brightly in the clear night sky."
+      correct_example: "The ostensible rationale for delaying the launch was technical debugging, although market conditions were the true factor."
+  register: formal
+  topic_tags:
+    - skepticism
+    - analysis
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.exponentially
+  headword: exponentially
+  cefr_level: C2
+  part_of_speech: adverb
+  phonetic: /ˌek.spəˈnen.ʃəl.i/
+  audio_ref: null
+  definition_en: At an increasingly rapid, compounded rate; by geometric progression rather than linear addition.
+  meaning_tr: katlanarak, üssel olarak, katlanarak artan bir hızla
+  collocations:
+    - text: grow exponentially
+      tr: katlanarak büyümek
+    - text: increase exponentially
+      tr: katlanarak artmak
+    - text: expand exponentially
+      tr: katlanarak genişlemek
+    - text: rising exponentially
+      tr: katlanarak yükselen
+  examples:
+    - en: "As distributed event streams scaled across regions, synchronization latency and memory consumption grew exponentially."
+      tr: "Dağıtık olay akışları bölgeler arasında ölçeklendikçe, senkronizasyon gecikmesi ve bellek tüketimi katlanarak arttı."
+      context: Distributed Systems
+    - en: "Platform adoption increased exponentially once third-party developers gained access to well-documented open APIs."
+      tr: "Üçüncü taraf geliştiriciler iyi belgelenmiş açık API'lere erişim kazandığında platformun benimsenmesi katlanarak arttı."
+      context: Platform Economics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Exponentially" (/ˌek.spəˈnen.ʃəl.i/), matematiksel ve istatistiksel olarak her adımda bir önceki miktarın katlanarak büyümesini (geometrik artış) ifade eder; basitçe "hızlıca" ("rapidly" veya "greatly") demek değildir.
+      incorrect_example: "He drove exponentially on the highway to reach the meeting."
+      correct_example: "Data volumes in enterprise lakes are compounding exponentially year over year."
+  register: academic
+  topic_tags:
+    - growth
+    - analytics
+    - scale
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.unabashedly
+  headword: unabashedly
+  cefr_level: C2
+  part_of_speech: adverb
+  phonetic: /ˌʌn.əˈbæʃ.ɪd.li/
+  audio_ref: null
+  definition_en: Without shame, embarrassment, hesitation, or apology; in an unapologetically open and confident manner.
+  meaning_tr: çekinmeden, sıkılmadan, açıkça ve kendinden emin şekilde, pervasızca
+  collocations:
+    - text: unabashedly optimistic
+      tr: çekinmeden / apaçık iyimser
+    - text: unabashedly ambitious
+      tr: iddiasını gizlemeyen / açıkça hırslı
+    - text: promote unabashedly
+      tr: çekinmeden ve gururla tanıtmak / desteklemek
+    - text: unabashedly direct
+      tr: açık yürekli ve dolambaçsız
+  examples:
+    - en: "The founder unabashedly articulated an audacious roadmap to challenge industry incumbents during the series B pitch."
+      tr: "Kurucu, B serisi yatırım sunumu sırasında sektörün yerleşik devlerine meydan okuyacak cesur bir yol haritasını çekinmeden ve kendinden emin biçimde dile getirdi."
+      context: Venture Capital Pitch
+    - en: "The design team unabashedly prioritized extreme simplicity over redundant enterprise configuration options."
+      tr: "Tasarım ekibi, gereksiz kurumsal yapılandırma seçenekleri yerine aşırı sadeliği açıkça ve ödün vermeksizin önceliklendirdi."
+      context: Product Philosophy
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Unabashedly" (/ˌʌn.əˈbæʃ.ɪd.li/), olumsuz bir utanmazlık anlamından ziyade, özellikle profesyonel ve entelektüel söylemde bir fikri, vizyonu veya ilkeyi "hiç çekinmeden, özür dilemeden ve tam bir özgüvenle" savunmayı niteleyen güçlü bir zarftır.
+      incorrect_example: "He unabashedly stole a wallet from the table."
+      correct_example: "The engineering team unabashedly defended their uncompromising focus on software reliability."
+  register: formal
+  topic_tags:
+    - confidence
+    - leadership
+    - rhetoric
+  related_ids: []
+  status: APPROVED
+  version: 1

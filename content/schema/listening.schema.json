@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/listening.schema.json",
+  "title": "FluentAI Listening Scenario Schema",
+  "description": "Schema for offline-first CEFR-graded listening scenarios with timestamped transcripts, speakers, and comprehension checks.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "cefr_level",
+    "category",
+    "scenario_context",
+    "speakers",
+    "audio_ref",
+    "duration_seconds",
+    "transcript_items",
+    "comprehension_questions",
+    "topic_tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^listening\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)?$",
+      "description": "Stable semantic content identifier, e.g. listening.b2.incident-postmortem"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Dialogue / scenario title in English"
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A2", "B1", "B2", "C1", "C2"],
+      "description": "Target CEFR level"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "engineering_meeting",
+        "product_discovery",
+        "stakeholder_alignment",
+        "executive_briefing",
+        "incident_response",
+        "negotiation"
+      ],
+      "description": "Workplace listening genre"
+    },
+    "scenario_context": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Setting and objective of the conversation"
+    },
+    "speakers": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Participant personas in the dialogue",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "role"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 2
+          },
+          "accent": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "audio_ref": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Relative path to pre-recorded offline audio file"
+    },
+    "duration_seconds": {
+      "type": "integer",
+      "minimum": 5
+    },
+    "transcript_items": {
+      "type": "array",
+      "minItems": 2,
+      "description": "Timestamped sentence-level dialogue lines",
+      "items": {
+        "type": "object",
+        "required": ["index", "speaker_id", "start_ms", "end_ms", "text_en", "text_tr"],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "speaker_id": {
+            "type": "string"
+          },
+          "start_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text_en": {
+            "type": "string",
+            "minLength": 2
+          },
+          "text_tr": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "key_vocabulary": {
+      "type": "array",
+      "description": "Key vocabulary items demonstrated in the audio",
+      "items": {
+        "type": "object",
+        "required": ["word", "context_note_tr"],
+        "properties": {
+          "word": {
+            "type": "string",
+            "minLength": 1
+          },
+          "vocab_id": {
+            "type": "string",
+            "pattern": "^vocab\\.[a-z0-9_-]+$"
+          },
+          "context_note_tr": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "comprehension_questions": {
+      "type": "array",
+      "minItems": 2,
+      "description": "Comprehension questions (attempted first with hidden transcript)",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question_en",
+          "options",
+          "correct_answer",
+          "explanation_en",
+          "explanation_tr"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question_en": {
+            "type": "string",
+            "minLength": 5
+          },
+          "question_tr_hint": {
+            "type": "string"
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "correct_answer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "explanation_en": {
+            "type": "string",
+            "minLength": 10
+          },
+          "explanation_tr": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "topic_tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "related_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(vocab|grammar|speaking|reading|listening)\\.[a-z0-9_-]+$"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "AI_REVIEWED",
+        "VALIDATED",
+        "APPROVED",
+        "PUBLISHED",
+        "DEPRECATED"
+      ],
+      "default": "APPROVED"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

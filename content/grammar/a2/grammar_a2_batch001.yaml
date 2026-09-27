@@ -1,0 +1,564 @@
+- id: grammar.a2.present-simple-vs-continuous
+  title: 'Present Simple vs. Present Continuous: Habits vs. In-Progress Actions'
+  cefr_level: A2
+  category: tenses_and_aspect
+  summary_en: Use Present Simple for recurring routines, timeless truths, and permanent
+    facts; use Present Continuous for activities occurring right now or temporary
+    situations.
+  summary_tr: Düzenli alışkanlıklar, değişmeyen gerçekler ve rutinler için Present
+    Simple; şu anda gerçekleşen eylemler ve geçici durumlar için Present Continuous
+    kullanılır.
+  explanation_en:
+  - title: 'Core Distinction: Permanent Habits vs. Temporary States'
+    content: Present Simple describes regular routines and unchanging business facts
+      (e.g., 'We release updates on Tuesdays'). Present Continuous describes actions
+      happening at the moment of speaking or temporary workflows (e.g., 'I am testing
+      the new login form today').
+    patterns:
+    - 'Present Simple: Subject + Verb(s/es) + Object'
+    - 'Present Continuous: Subject + am/is/are + Verb-ing'
+  - title: Stative Verbs Trap
+    content: Verbs expressing mental states, emotions, or possession (know, understand,
+      want, believe, belong) normally stay in Present Simple even if referring to
+      right now.
+    patterns:
+    - 'Correct: I understand the acceptance criteria now.'
+    - 'Incorrect: I am understanding the acceptance criteria now.'
+  explanation_tr: Türkçede şimdiki zaman eki (-iyor) hem o anda yapılan işler hem
+    de genel alışkanlıklar için sıklıkla kullanılır ('Her sabah koşuyorum', 'Şimdi
+    rapor yazıyorum'). İngilizcede bu iki kavram katı biçimde ayrılmıştır. Her gün
+    yapılan rutinler 'run every morning' olurken, şu an yapılan iş 'am writing' gerektirir.
+    Ayrıca 'know', 'want' gibi durum fiilleri -ing almaz.
+  rules:
+  - name: Habitual Actions & General Truths
+    pattern: Subject + Base Verb (+ s/es for 3rd person singular)
+    use_cases:
+    - Daily workplace routines and scheduled events
+    - Permanent facts and organizational roles
+    time_markers:
+    - always
+    - usually
+    - every sprint
+    - on Mondays
+    - never
+  - name: Actions Happening Right Now or Temporary Projects
+    pattern: Subject + am/is/are + Verb-ing
+    use_cases:
+    - Activities currently in progress during the call
+    - Temporary projects or unusual workflows this week
+    time_markers:
+    - right now
+    - at the moment
+    - this week
+    - currently
+    - today
+  contrasts:
+  - structure_a: Emre manages the database infrastructure.
+    structure_b: Emre is managing the server migration this afternoon.
+    difference_explanation_en: Structure A describes Emre's permanent job responsibility.
+      Structure B describes a specific temporary activity happening today.
+    difference_explanation_tr: A cümlesi Emre'nin kalıcı görevini belirtir. B cümlesi
+      ise bu öğleden sonra yürüttüğü geçici bir operasyonu anlatır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: Türkçe '-iyor' Ekinin Aşırı Genellenmesi
+    explanation_tr: Türkçede 'Şirketimiz fintech yazılımları geliştiriyor' derken
+      genel faaliyet için '-iyor' kullanılır. Türk öğreniciler bunu İngilizceye çevirirken
+      'Our company is developing fintech software' diyerek sanki geçici bir işmiş
+      gibi aktarırlar. Doğrusu 'develops' olmalıdır.
+    incorrect_example: Our engineering department is working on five sprint tasks
+      every month.
+    correct_example: Our engineering department works on five sprint tasks every month.
+  examples:
+  - en: We hold the retrospective meeting every other Friday at 4:00 PM.
+    tr: İki haftada bir cuma günleri saat 16:00'da retrospektif toplantısı yaparız.
+    rule_highlight: Present Simple for Routine
+    context: Agile Cadence
+  - en: The quality assurance team is running automated regression tests right now.
+    tr: Kalite güvence ekibi şu anda otomatik regresyon testlerini çalıştırıyor.
+    rule_highlight: Present Continuous for in-progress action
+    context: CI/CD Pipeline
+  topic_tags:
+  - tenses
+  - present-simple
+  - present-continuous
+  - routines
+  - a2-foundation
+  related_ids:
+  - vocab.schedule
+  - vocab.manage
+  status: APPROVED
+  version: 1
+- id: grammar.a2.past-simple-regular-irregular
+  title: 'Past Simple: Regular & Irregular Completed Past Actions'
+  cefr_level: A2
+  category: tenses_and_aspect
+  summary_en: Form the Past Simple using -ed for regular verbs and distinct forms
+    for irregular verbs to report finished actions at specific past times.
+  summary_tr: Geçmişte belirli bir zamanda tamamlanmış eylemleri anlatmak için düzenli
+    fiillere -ed eklenir; düzensiz fiillerin ise özel ikinci halleri (V2) kullanılır.
+  explanation_en:
+  - title: Definite Finished Past Actions
+    content: Past Simple requires a completed action that occurred at a specific time
+      in the past. If the time frame is finished (yesterday, last quarter, in 2023),
+      Past Simple is mandatory.
+    patterns:
+    - 'Affirmative Regular: Subject + Verb-ed (deployed, merged, tested)'
+    - 'Affirmative Irregular: Subject + V2 (wrote, built, sent, met)'
+    - 'Negative: Subject + did not (didn''t) + Base Verb'
+    - 'Question: Did + Subject + Base Verb?'
+  explanation_tr: İngilizcede geçmiş zamanda olumsuz cümlelerde ve sorularda 'did
+    / didn't' yardımcı fiili kullanıldığında ana fiil daima yalın haline döner ('didn't
+    send', 'did you see?'). Türk öğreniciler geçmiş zaman ekini hem yardımcı fiile
+    hem ana fiile ekleyerek 'didn't sent' gibi hatalar yaparlar.
+  rules:
+  - name: Finished Time Past Events
+    pattern: Subject + Verb(past) + Time Marker
+    use_cases:
+    - Reporting sprint progress from yesterday
+    - Describing project milestones completed last quarter
+    time_markers:
+    - yesterday
+    - last week
+    - two days ago
+    - in 2024
+    - at 9:00 AM
+  contrasts:
+  - structure_a: We deployed the hotfix yesterday.
+    structure_b: We didn't deploy the hotfix yesterday.
+    difference_explanation_en: Affirmative takes past form 'deployed'. Negative uses
+      auxiliary 'did not' with bare infinitive 'deploy'.
+    difference_explanation_tr: Olumlu cümlede fiil geçmiş halini ('deployed') alırken,
+      olumsuz cümlede 'didn't' sonrasında fiil yalın kalır ('deploy').
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Olumsuz ve Soru Cümlelerinde Çift Geçmiş Zaman Hatası
+    explanation_tr: Türk öğreniciler 'Dün e-postayı göndermedim' derken 'I didn't
+      sent' deme eğilimindedir. 'Did' zaten geçmiş zamanı taşıdığı için fiil asla
+      ikinci halinde kalamaz.
+    incorrect_example: Did you reviewed the pull request yesterday?
+    correct_example: Did you review the pull request yesterday?
+  examples:
+  - en: The lead developer wrote the microservice specification last Tuesday.
+    tr: Kıdemli yazılımcı mikroservis şartnamesini geçen salı yazdı.
+    rule_highlight: Irregular V2 (wrote)
+    context: Sprint Planning
+  - en: We launched the beta program two weeks ago without any major bugs.
+    tr: Beta programını iki hafta önce önemli bir hata olmadan başlattık.
+    rule_highlight: Regular past verb (launched)
+    context: Product Release
+  topic_tags:
+  - past-simple
+  - regular-verbs
+  - irregular-verbs
+  - a2-foundation
+  related_ids:
+  - vocab.deadline
+  - vocab.deliverable
+  status: APPROVED
+  version: 1
+- id: grammar.a2.future-plans-will-going-to
+  title: 'Future Intentions: Be Going to vs. Spontaneous Will'
+  cefr_level: A2
+  category: tenses_and_aspect
+  summary_en: Differentiate between pre-planned future intentions with 'be going to'
+    and spontaneous instant decisions, offers, or promises with 'will'.
+  summary_tr: Önceden planlanmış niyetler için 'be going to'; konuşma anında alınan
+    ani kararlar, teklifler ve sözler için 'will' kullanılır.
+  explanation_en:
+  - title: Planned Intentions vs. Instant Decisions
+    content: When a roadmap decision or meeting is already planned before the conversation,
+      use 'be going to'. When deciding on the spot or offering immediate assistance,
+      use 'will'.
+    patterns:
+    - 'Pre-decided Plan: Subject + am/is/are going to + Base Verb'
+    - 'Instant Decision / Offer: Subject + will (''ll) + Base Verb'
+  explanation_tr: Türkçede hem planlı gelecek hem ani kararlar için tek bir gelecek
+    zaman eki (-ecek / -acak) kullanılır ('Yarın toplantı yapacağım', 'Ben kapıya
+    bakarım/bakacağım'). İngilizcede önceden kararlaştırılmış planlar için 'going
+    to', konuşma anında gelişen ani kararlar için 'will' ayrımı yapılır.
+  rules:
+  - name: Premeditated Intentions (Going to)
+    pattern: Subject + am/is/are + going to + Base Verb
+    use_cases:
+    - Discussing roadmap features decided in previous planning
+    - Personal career decisions already finalized
+    time_markers:
+    - next sprint
+    - next month
+    - after the release
+  - name: Instant Decisions & Offers (Will)
+    pattern: Subject + will ('ll) + Base Verb
+    use_cases:
+    - Volunteering to help a colleague with a blocker
+    - Promising to send documentation immediately
+    time_markers:
+    - right away
+    - in a second
+    - now
+  contrasts:
+  - structure_a: I am going to present the architecture deck tomorrow.
+    structure_b: Don't worry, I will present the architecture deck if you are busy.
+    difference_explanation_en: Structure A is a pre-arranged schedule. Structure B
+      is a spontaneous offer made at the moment.
+    difference_explanation_tr: A cümlesi önceden planlanmış bir sunumdur. B cümlesi
+      ise o anda yapılan bir yardım teklifidir.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Ani Kararlarda 'Going to' Kullanımı Hatası
+    explanation_tr: Biri 'Who can review this code?' diye sorduğunda anında 'I am
+      going to review it' demek kulağa garip gelir. Konuşma anında karar verildiği
+      için 'I will review it' denmelidir.
+    incorrect_example: The phone is ringing; I am going to answer it.
+    correct_example: The phone is ringing; I'll answer it.
+  examples:
+  - en: Our squad is going to refactor the payment module next month.
+    tr: Ekibimiz önümüzdeki ay ödeme modülünü yeniden yapılandıracak.
+    rule_highlight: Pre-planned intention
+    context: Roadmap
+  - en: I will send you the Zoom link right away.
+    tr: Zoom bağlantısını size hemen şimdi göndereceğim.
+    rule_highlight: Spontaneous offer
+    context: Daily Communication
+  topic_tags:
+  - future-forms
+  - will
+  - going-to
+  - intentions
+  - a2-foundation
+  related_ids:
+  - vocab.schedule
+  - vocab.solution
+  status: APPROVED
+  version: 1
+- id: grammar.a2.comparatives-superlatives
+  title: 'Comparatives and Superlatives: Measuring Differences and Rank'
+  cefr_level: A2
+  category: noun_phrases_and_articles
+  summary_en: Compare two items using comparative forms with 'than', and highlight
+    the supreme item among three or more using superlative forms with 'the'.
+  summary_tr: İki unsuru kıyaslamak için 'than' ile karşılaştırma (comparative); üç
+    veya daha fazlası arasında en üstünü belirtmek için 'the' ile üstünlük (superlative)
+    yapıları kullanılır.
+  explanation_en:
+  - title: Forming Comparatives and Superlatives
+    content: 'Short adjectives (1 syllable) add -er / -est (fast -> faster than ->
+      the fastest). Long adjectives (2+ syllables) use more / most (efficient -> more
+      efficient than -> the most efficient). Irregular forms: good/better/best, bad/worse/worst.'
+    patterns:
+    - 'Short Comparative: Adjective + -er + than'
+    - 'Long Comparative: more + Adjective + than'
+    - 'Superlative: the + Adjective + -est / the most + Adjective'
+  explanation_tr: Türkçede 'daha' ve 'en' sözcükleri sıfatın uzunluğuna bakılmaksızın
+    aynı kalır ('daha hızlı', 'daha verimli'). İngilizcede ise tek heceli sıfatlar
+    -er/-est alırken, çok heceli sıfatlar 'more/most' alır. Ayrıca karşılaştırmalarda
+    'than' kelimesini unutmamak şarttır.
+  rules:
+  - name: Comparing Two Metrics or Items
+    pattern: Noun A + is + comparative adjective + than + Noun B
+    use_cases:
+    - Benchmarking server performance between two clouds
+    - Evaluating two software licenses
+    time_markers:
+    - compared to
+    - than before
+  contrasts:
+  - structure_a: PostgreSQL is faster than our legacy database.
+    structure_b: PostgreSQL is the fastest database in our benchmark suite.
+    difference_explanation_en: Structure A compares two specific options. Structure
+      B identifies the absolute top performer across all options.
+    difference_explanation_tr: A cümlesi iki veritabanını kıyaslar. B cümlesi tüm
+      seçenekler arasındaki en hızlı olanı belirtir.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: '''More'' ve ''-er'' Eklerinin Birlikte Kullanılması (Çift Kıyaslama)'
+    explanation_tr: Türk öğreniciler sıklıkla pekiştirme amacıyla 'more faster' veya
+      'more cheaper' derler. Bu İngilizcede ciddi bir dilbilgisi hatasıdır; ya 'faster'
+      ya da 'more expensive' denir.
+    incorrect_example: The new API endpoint is more faster than the old service.
+    correct_example: The new API endpoint is faster than the old service.
+  examples:
+  - en: This cloud provider is more reliable than our previous hosting service.
+    tr: Bu bulut sağlayıcısı önceki barındırma hizmetimizden daha güvenilirdir.
+    rule_highlight: Long Comparative (more reliable than)
+    context: Infrastructure Evaluation
+  - en: Database latency was the most critical blocker during the black Friday sale.
+    tr: Veritabanı gecikmesi cuma indirimleri sırasındaki en kritik engeldi.
+    rule_highlight: Superlative (the most critical)
+    context: System Reliability
+  topic_tags:
+  - comparatives
+  - superlatives
+  - adjectives
+  - a2-foundation
+  related_ids:
+  - vocab.alternative
+  - vocab.crucial
+  status: APPROVED
+  version: 1
+- id: grammar.a2.countable-uncountable-quantifiers
+  title: Countable vs. Uncountable Nouns and Quantifiers (Much, Many, A lot of)
+  cefr_level: A2
+  category: noun_phrases_and_articles
+  summary_en: Distinguish countable nouns (taking plural -s and 'many') from uncountable
+    nouns (taking singular verbs and 'much'), and use 'a lot of' universally.
+  summary_tr: Sayılabilen isimler (-s takısı ve 'many' alan) ile sayılamayan isimler
+    (tekil fiil ve 'much' alan) arasındaki fark ve miktar belirteçleri.
+  explanation_en:
+  - title: Countable vs. Uncountable Architecture
+    content: Countable nouns represent discrete individual units (bug, ticket, server).
+      Uncountable nouns represent mass concepts, data, or abstract qualities (information,
+      advice, software, feedback, traffic).
+    patterns:
+    - 'Countable Questions/Negatives: many + Plural Countable Noun (e.g., How many
+      tickets?)'
+    - 'Uncountable Questions/Negatives: much + Uncountable Noun (e.g., How much storage?)'
+    - 'Affirmative Quantifier: a lot of / lots of + Countable or Uncountable'
+  explanation_tr: Türkçede 'bilgiler', 'tavsiyeler', 'yazılımlar' denilebilir. Ancak
+    İngilizcede 'information', 'advice', 'software', 'feedback' kesinlikle sayılamaz
+    (uncountable); çoğul -s takısı alamaz ve 'many informations' denemez. Saymak için
+    'a piece of advice / feedback' kullanılır.
+  rules:
+  - name: Quantifiers for Countable and Uncountable
+    pattern: many + Plural Nouns | much + Singular Mass Nouns
+    use_cases:
+    - Tracking open tickets and bugs in a sprint
+    - Measuring disk capacity and bandwidth usage
+    time_markers:
+    - in this sprint
+    - per month
+  contrasts:
+  - structure_a: We don't have many open bugs in this release.
+    structure_b: We don't have much storage left on the server.
+    difference_explanation_en: Bugs are countable (take 'many'). Storage is uncountable
+      (takes 'much').
+    difference_explanation_tr: '''Bug'' sayılabilir bir isimdir (''many'' alır). ''Storage''
+      sayılamaz bir isimdir (''much'' alır).'
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: '''Information'' ve ''Feedback'' Kelimelerini Çoğul Yapma Hatası'
+    explanation_tr: Türk çalışanların en yaygın hatası 'I received many feedbacks
+      from the client' demektir. 'Feedback' sayılamaz; 'a lot of feedback' veya 'several
+      pieces of feedback' denmelidir.
+    incorrect_example: The client sent us many useful informations about the project.
+    correct_example: The client sent us a lot of useful information about the project.
+  examples:
+  - en: How many developers are assigned to this integration module?
+    tr: Bu entegrasyon modülüne kaç yazılımcı atandı?
+    rule_highlight: Countable question (How many)
+    context: Resource Allocation
+  - en: We do not have much time before the quarterly board review.
+    tr: Üç aylık yönetim kurulu incelemesinden önce fazla zamanımız yok.
+    rule_highlight: Uncountable negative (much time)
+    context: Deadline Pressure
+  topic_tags:
+  - quantifiers
+  - countable-uncountable
+  - much-many
+  - a2-foundation
+  related_ids:
+  - vocab.capacity
+  - vocab.suggestion
+  status: APPROVED
+  version: 1
+- id: grammar.a2.basic-modals-ability-permission
+  title: 'Modals of Ability and Permission: Can, Could, and May'
+  cefr_level: A2
+  category: modals_and_semi_modals
+  summary_en: Express present capability with 'can', past general ability with 'could',
+    and polite requests or formal permission with 'could' and 'may'.
+  summary_tr: Şimdiki yetenek için 'can', geçmiş yetenek için 'could', kibar istek
+    ve resmi izin için 'could' ve 'may' kipleri kullanılır.
+  explanation_en:
+  - title: Ability vs. Polite Permission
+    content: '''Can'' expresses factual ability (I can write Python code). In professional
+      workplace requests, ''Could you...?'' and ''May I...?'' sound significantly
+      more polite than ''Can you...?'' or imperative commands.'
+    patterns:
+    - 'Direct Ability: Subject + can/cannot (can''t) + Base Verb'
+    - 'Past Ability: Subject + could/couldn''t + Base Verb'
+    - 'Polite Request: Could you + Base Verb...?'
+    - 'Formal Permission: May I + Base Verb...?'
+  explanation_tr: Türkçedeki '-ebilmek / -abilmek' kurallı birleşik fiili hem yetenek,
+    hem olasılık hem de rica anlamı taşır. Türk çalışanlar iş ortamında 'Can you do
+    this?' dediğinde ana dili İngilizce olanlara fazla buyurgan ve kaba duyulabilir.
+    İş yazışmalarında 'Could you please...?' veya 'May I ask...?' tercih edilmelidir.
+  rules:
+  - name: Polite Workplace Requests
+    pattern: Could you + please + Base Verb + Object?
+    use_cases:
+    - Asking a teammate for a code review or database access
+    - Requesting meeting schedule adjustments
+    time_markers:
+    - when you have a moment
+    - please
+  contrasts:
+  - structure_a: Can you share the repository link?
+    structure_b: Could you please share the repository link?
+    difference_explanation_en: Structure A is direct and informal. Structure B is
+      polite and standard professional etiquette.
+    difference_explanation_tr: A cümlesi doğrudan ve gayri resmidir. B cümlesi ise
+      profesyonel iş ortamında tercih edilen kibar biçimdir.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: '''Can'' ve ''Could'' Arasındaki Nezaket Derecesini Kaçırma'
+    explanation_tr: Müşterilere veya yöneticilere hitap ederken 'Can you send the
+      invoice?' demek kaba bir talep etkisi yaratabilir. 'Could you please send...'
+      nezaketi sağlar.
+    incorrect_example: Give me the password, or can you give me it?
+    correct_example: Could you please share the access credentials with me?
+  examples:
+  - en: She can diagnose network connectivity issues very quickly.
+    tr: Ağ bağlantısı sorunlarını çok hızlı teşhis edebilir.
+    rule_highlight: Present Ability (can)
+    context: Technical Skills
+  - en: Could you please review the attached architecture draft before tomorrow's
+      call?
+    tr: Yarınki görüşmeden önce ekteki mimari taslağı inceleyebilir misiniz lütfen?
+    rule_highlight: Polite Request (Could you please)
+    context: Professional Collaboration
+  topic_tags:
+  - modals
+  - can
+  - could
+  - polite-requests
+  - a2-foundation
+  related_ids:
+  - vocab.collaborate
+  - vocab.solution
+  status: APPROVED
+  version: 1
+- id: grammar.a2.defining-relative-clauses-basics
+  title: 'Basic Defining Relative Clauses: Who, Which, That'
+  cefr_level: A2
+  category: relative_and_participle_clauses
+  summary_en: 'Connect information seamlessly using relative pronouns: ''who'' for
+    people, ''which'' for objects/technologies, and ''that'' for both in essential
+    defining clauses.'
+  summary_tr: 'Bilgileri akıcı bağlamak için ilgi zamirleri kullanılır: insanlar için
+    ''who'', nesneler ve teknolojiler için ''which'', tanımlayıcı cümleciklerde her
+    ikisi için de ''that''.'
+  explanation_en:
+  - title: Defining Necessary Information
+    content: A defining relative clause provides essential information that identifies
+      exactly which person or system is being discussed. Without this clause, the
+      sentence meaning is incomplete.
+    patterns:
+    - 'For People: Person + who / that + Verb'
+    - 'For Things / Tools: Thing + which / that + Verb'
+  explanation_tr: Türkçede sıfat fiil ekleri (-en/-an, -dığı/-diği) ismin önüne gelirken
+    ('kodu yazan mühendis', 'kullandığımız araç'), İngilizcede ilgi cümleciği tanımlanan
+    ismin hemen arkasına gelir ('the engineer who wrote the code', 'the tool that
+    we use').
+  rules:
+  - name: Essential Identification of Nouns
+    pattern: Noun + [who / which / that] + Clause
+    use_cases:
+    - Specifying the exact team member responsible for an incident
+    - Identifying specific software tools or servers
+    time_markers:
+    - currently
+    - in this sprint
+  contrasts:
+  - structure_a: The developer who built the payment gateway is on vacation.
+    structure_b: The script which automates our builds failed this morning.
+    difference_explanation_en: Structure A refers to a human developer ('who'). Structure
+      B refers to an automated script ('which').
+    difference_explanation_tr: A cümlesi bir insandan bahsettiği için 'who' alır.
+      B cümlesi bir programlama scriptinden bahsettiği için 'which' alır.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Türkçe Sıfat-Fiil Sıralamasını İngilizceye Aktarma
+    explanation_tr: Türkçe düşünen öğreniciler bazen sıfat cümleciğini ismin önüne
+      koymaya çalışırlar veya zamiri atıp cümleyi yarım bırakırlar. Tanımlayıcı zamir
+      ismin hemen ardından gelmelidir.
+    incorrect_example: The yesterday the server restarted engineer is not here.
+    correct_example: The engineer who restarted the server yesterday is not here.
+  examples:
+  - en: We hired a cybersecurity consultant who specializes in cloud penetration testing.
+    tr: Bulut sızma testlerinde uzmanlaşan bir siber güvenlik danışmanı işe aldık.
+    rule_highlight: Relative pronoun for person (who)
+    context: Staffing
+  - en: This is the configuration file that caused the deployment failure.
+    tr: Dağıtım hatasına neden olan yapılandırma dosyası budur.
+    rule_highlight: Relative pronoun for thing (that)
+    context: Incident Root Cause
+  topic_tags:
+  - relative-clauses
+  - who
+  - which
+  - that
+  - a2-foundation
+  related_ids:
+  - vocab.solution
+  - vocab.customer
+  status: APPROVED
+  version: 1
+- id: grammar.a2.zero-conditional-general-truths
+  title: 'Zero Conditional: Facts, Routines, and General Realities'
+  cefr_level: A2
+  category: conditionals_and_hypotheticals
+  summary_en: State universal facts, technical rules, and standard operating procedures
+    using Present Simple in both the condition and result clauses.
+  summary_tr: Evrensel doğruları, teknik kuralları ve standart çalışma prosedürlerini
+    ifade etmek için hem şart hem de sonuç cümleciğinde Present Simple kullanılır.
+  explanation_en:
+  - title: Scientific and Operational Realities
+    content: Zero conditional is used when the outcome always happens automatically
+      whenever the condition is met. In technical environments, this applies to software
+      rules and system behavior (e.g., 'If memory exceeds 90%, the system triggers
+      an alert').
+    patterns:
+    - 'Zero Conditional: If / When + Present Simple, ... Present Simple'
+    - 'Inverted Order: Present Simple + if / when + Present Simple'
+  explanation_tr: Türkçede 'Eğer şifreyi üç kez yanlış girerseniz, hesap kilitlenir'
+    cümlesi geniş zaman ile kurulur. İngilizcede de her zaman gerçekleşen bu tip teknik
+    kurallarda 'will' kullanılmaz; her iki tarafta da Present Simple kalır.
+  rules:
+  - name: Automatic Technical Cause and Effect
+    pattern: If + Subject + Present Simple, Subject + Present Simple
+    use_cases:
+    - Defining automated alerts and monitoring triggers
+    - Documenting operational company policies
+    time_markers:
+    - whenever
+    - always
+    - every time
+  contrasts:
+  - structure_a: If you push code to main, the CI pipeline runs tests automatically.
+    structure_b: If you push code to main today, I will review it this evening.
+    difference_explanation_en: Structure A is an automated universal system rule (Zero
+      Conditional). Structure B is a specific future commitment (First Conditional
+      with 'will').
+    difference_explanation_tr: A cümlesi her zaman gerçekleşen otomatik bir sistem
+      kuralıdır (Zero Conditional). B cümlesi ise bugüne özel bir gelecek taahhüdüdür
+      (First Conditional).
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Sistem Kurallarında Gereksiz 'Will' Kullanımı
+    explanation_tr: Teknik şartnamelerde genel bir sistem davranışını anlatırken 'will'
+      koymak cümlenin evrensel kural olma özelliğini zayıflatır. Otomatik sonuçlar
+      için her iki taraf da Present Simple olmalıdır.
+    incorrect_example: If the battery level drops below 10%, the device will automatically
+      shutdown.
+    correct_example: If the battery level drops below 10%, the device automatically
+      shuts down.
+  examples:
+  - en: If a user enters an invalid password five times, the system locks the account.
+    tr: Bir kullanıcı beş kez geçersiz şifre girerse sistem hesabı kilitler.
+    rule_highlight: Zero Conditional for System Logic
+    context: Security Policy
+  - en: When server CPU temperature reaches 85 degrees, the cooling fans accelerate.
+    tr: Sunucu işlemci sıcaklığı 85 dereceye ulaştığında soğutma fanları hızlanır.
+    rule_highlight: Zero Conditional with When
+    context: Hardware Monitoring
+  topic_tags:
+  - conditionals
+  - zero-conditional
+  - technical-rules
+  - a2-foundation
+  related_ids:
+  - vocab.solution
+  - vocab.manage
+  status: APPROVED
+  version: 1

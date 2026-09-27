@@ -1,0 +1,779 @@
+#!/usr/bin/env python3
+"""
+Grammar Batch 002: C2 (10 lessons) definitions.
+"""
+
+from typing import List, Dict, Any
+
+C2_LESSONS: List[Dict[str, Any]] = [
+    {
+        "id": "grammar.c2.absolute-constructions",
+        "title": "Nominative Absolute Clauses: Syntactic Independence and Rhetorical Economy",
+        "cefr_level": "C2",
+        "category": "relative_and_participle_clauses",
+        "summary_en": "Use nominative absolute constructions (Noun + Participle/Complement) possessing their own explicit subject to compress circumstantial background without finite conjunctions.",
+        "summary_tr": "Kendi bağımsız öznesine sahip olan ve bağlaçsız ortaç öbekleriyle (Noun + Participle) kurulan mutlak yan cümleler (absolute clauses) üst düzey edebi ve kurumsal tasarruf sağlar.",
+        "explanation_en": [
+            {
+                "title": "Syntactic Independence of the Absolute Clause",
+                "content": "Unlike dangling participles, a nominative absolute construction possesses its own overt subject that is grammatically detached from the subject of the main clause ('The audit completed, the engineers resumed feature development'). It establishes temporal, causal, or concessive background with extreme rhetorical conciseness, avoiding repetitive conjunctions like 'Because the audit was completed...'.",
+                "patterns": [
+                    "Noun / Pronoun + Past Participle (e.g., The contract signed, both parties celebrated)",
+                    "Noun / Pronoun + Present Participle (e.g., Time permitting, we will examine the logs)",
+                    "Noun / Pronoun + Prepositional / Adjective Phrase (e.g., His laptop battery dead, he took notes by hand)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki 'Toplantı sona erince / Denetim tamamlanmış olarak' gibi zarf-fiil yapılarıdır. İngilizcede 'Because the migration was finished' demek yerine 'The migration finished, we decommissioned the servers' şeklinde bağımsız öznesi olan bağlaçsız mutlak cümle kurmak, C2 seviyesinde zarif ve yoğun bir anlatım sağlar.",
+        "rules": [
+            {
+                "name": "Absolute Nominative Autonomy",
+                "pattern": "[Independent Noun Phrase] + [Participle/Complement], [Main Clause]",
+                "use_cases": [
+                    "Drafting formal executive debriefs, legal recitals, and board resolutions",
+                    "Authoring dense historical narratives and high-register financial commentary"
+                ],
+                "time_markers": ["weather permitting", "all things considered", "the audit concluded"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "When the database migration had concluded, the on-call engineer initiated cluster verification.",
+                "structure_b": "The database migration concluded, the on-call engineer initiated cluster verification.",
+                "difference_explanation_en": "Structure B converts the subordinate finite clause into a nominative absolute, achieving executive compression and stylistic gravitas.",
+                "difference_explanation_tr": "B yapısı yan cümleciği mutlak ortaç yapısına dönüştürerek anlatıma kurumsal bir ciddiyet ve tasarruf kazandırır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "Absolute Yapıyı Bağlaçla Başlatma Hatası",
+                "explanation_tr": "Absolute clause zaten kendi öznesine sahip bağlaçsız bir yapıdır; başına 'Because' veya 'While' koymak yapının mantığını bozar.",
+                "incorrect_example": "Because the agreement finalized, we signed the commercial lease.",
+                "correct_example": "The agreement finalized, we signed the commercial lease."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The critical security vulnerability resolved, the infrastructure squad transitioned back to normal sprint commitments.",
+                "tr": "Kritik güvenlik açığı giderilmiş olarak, altyapı takımı normal koşu taahhütlerine geri döndü.",
+                "rule_highlight": "vulnerability resolved (nominative absolute)",
+                "context": "Incident closure"
+            },
+            {
+                "en": "Weather permitting, the executive board will tour the new renewable energy datacenter tomorrow.",
+                "tr": "Hava şartları elverirse, yönetim kurulu yarın yeni yenilenebilir enerji veri merkezini gezecek.",
+                "rule_highlight": "Weather permitting (idiomatic absolute clause)",
+                "context": "Corporate itinerary"
+            },
+            {
+                "en": "Our primary database clusters fully synchronized, we initiated the final DNS traffic cutover.",
+                "tr": "Birincil veritabanı kümelerimiz tamamen senkronize edilmiş durumda, nihai DNS trafik geçişini başlattık.",
+                "rule_highlight": "clusters fully synchronized",
+                "context": "Data migration"
+            },
+            {
+                "en": "All things considered, the microservice architecture has proven remarkably anti-fragile.",
+                "tr": "Her şey göz önüne alındığında, mikro servis mimarisi kayda değer ölçüde anti-kırılgan olduğunu kanıtladı.",
+                "rule_highlight": "All things considered (fixed absolute formula)",
+                "context": "Architecture retrospective"
+            }
+        ],
+        "topic_tags": ["absolute_clauses", "participles", "rhetorical_compression", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.proleptic-and-anticipatory-it",
+        "title": "Anticipatory and Proleptic 'It': Object Extraposition with Evaluative Verbs",
+        "cefr_level": "C2",
+        "category": "verb_patterns_and_infinitives",
+        "summary_en": "Use anticipatory 'it' as a provisional direct object before adjectives or complement clauses with cognitive and evaluative verbs (regard it as, take it that, leave it to someone to).",
+        "summary_tr": "Bilişsel ve değerlendirme bildiren fiillerle (regard it as, leave it to vb.) mastar veya yan cümle öncesinde geçici nesne olarak 'it' (anticipatory it) kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Mechanics of Object Extraposition",
+                "content": "In sophisticated English, clausal objects (that-clauses or to-infinitives) cannot sit directly adjacent to verbs of judgment (consider, find, deem, think, make) when an object complement adjective follows. An anticipatory 'it' must fill the direct object slot: 'We deem it essential to conduct load tests', not 'We deem to conduct load tests essential'. Similarly, idioms like 'take it that', 'owe it to someone to', and 'leave it to someone to' require proleptic 'it'.",
+                "patterns": [
+                    "Subject + find / consider / deem + it + Adjective + to-infinitive / that-clause",
+                    "owe it to + Object + to-infinitive (e.g., We owe it to our customers to protect their data)",
+                    "leave it to + Object + to-infinitive (e.g., We leave it to legal to interpret the treaty)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'yük testleri yapmayı gerekli görüyoruz' derken araya fazladan bir zamir girmez. İngilizcede ise 'We deem essential to test' denemez; 'it' zamiri zorunlu bir yer tutucu olarak fiille sıfat arasına girer: 'We deem it essential to test'. 'It' atıldığında cümle dilbilgisel olarak çöker.",
+        "rules": [
+            {
+                "name": "Anticipatory Object Formula",
+                "pattern": "Verb + it + Complement (Adj/Noun) + [to-infinitive / that-clause]",
+                "use_cases": [
+                    "Formulating high-level governance mandates and corporate accountability statements",
+                    "Evaluating architectural paradigms and statutory requirements"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We consider to migrate our legacy database essential. (INCORRECT)",
+                "structure_b": "We consider it essential to migrate our legacy database. (CORRECT Extraposition)",
+                "difference_explanation_en": "English syntax rejects heavy clausal objects trapped between the verb and the complement adjective. Anticipatory 'it' extraposes the heavy clause to the right.",
+                "difference_explanation_tr": "İngilizce sözdizimi, fiil ile sıfat arasına sıkışmış ağır mastar öbeklerini reddeder; 'it' geçici nesnesi eylemi sağa kaydırır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "Geçici 'It' Nesnesini Atma Hatası",
+                "explanation_tr": "'I find difficult to understand' demek Türkçe aktarımıdır. 'I find it difficult to understand' denmesi şarttır.",
+                "incorrect_example": "The executive committee finds unacceptable to delay the release.",
+                "correct_example": "The executive committee finds it unacceptable to delay the release."
+            }
+        ],
+        "examples": [
+            {
+                "en": "We deem it imperative to decouple compute resources from storage tiers before holiday traffic peaks.",
+                "tr": "Tatil trafiği zirveye ulaşmadan önce hesaplama kaynaklarını depolama katmanlarından ayırmayı zorunlu görüyoruz.",
+                "rule_highlight": "deem it imperative to decouple (anticipatory it)",
+                "context": "Architecture strategy"
+            },
+            {
+                "en": "We owe it to our enterprise customers to maintain absolute cryptographic integrity across all endpoints.",
+                "tr": "Tüm uç noktalarda mutlak kriptografik bütünlüğü korumayı kurumsal müşterilerimize bir borç biliriz.",
+                "rule_highlight": "owe it to our customers to maintain",
+                "context": "Corporate ethics"
+            },
+            {
+                "en": "The board took it for granted that the proprietary consensus algorithm would withstand judicial scrutiny.",
+                "tr": "Yönetim kurulu, tescilli mutabakat algoritmasının yargı denetimine dayanacağını peşinen kabul etti.",
+                "rule_highlight": "took it for granted that",
+                "context": "Legal governance"
+            },
+            {
+                "en": "The engineering director left it to the individual squads to determine their sprint cadence.",
+                "tr": "Mühendislik direktörü, koşu ritimlerini belirlemeyi her bir takımın kendi inisiyatifine bıraktı.",
+                "rule_highlight": "left it to the squads to determine",
+                "context": "Engineering leadership"
+            }
+        ],
+        "topic_tags": ["anticipatory_it", "extraposition", "proleptic_it", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.anaphoric-and-cataphoric-reference",
+        "title": "Textual Cohesion: Cataphoric Forward-Pointers and Complex Anaphoric Tracking",
+        "cefr_level": "C2",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Orchestrate discourse momentum using cataphoric references (anticipatory pronouns pointing forward) and multi-tiered anaphoric tracking in statutory and academic exposition.",
+        "summary_tr": "Metin içi akışı ve beklentiyi yönetmek için ileriye işaret eden kataforik (cataphoric) zamirler ve katmanlı anaforik bağlar kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Forward Reference and Thematic Anticipation",
+                "content": "While anaphora refers back to already established entities, cataphora points forward, placing a pronoun before the explicit noun phrase to generate dramatic suspension or rhetorical momentum ('Although it was initially criticized by auditors, the zero-trust authentication framework became industry standard'). At C2, master writers interweave cataphoric hooks with demonstrative tracking (the former... the latter, such, this very defect) to guide complex technical deductions.",
+                "patterns": [
+                    "Cataphoric Pronoun in Subordinate Clause -> Explicit Noun Phrase in Main Clause",
+                    "Demonstrative Tracking: the former... the latter / such X as... / this very..."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Henüz o hayattayken Atatürk'ün fikirleri...' derken zamirin isimden önce kullanılması kataforik göndermedir. İngilizcede ana cümleden önceki yan cümlede 'it' veya 'her' kullanarak asıl ismi ana cümleye bırakmak, okuyucuda merak ve edebi ağırlık uyandırır.",
+        "rules": [
+            {
+                "name": "Cataphoric Suspense Alignment",
+                "pattern": "[Subordinate Clause with Pronoun] -> [Main Clause with Explicit Nominal]",
+                "use_cases": [
+                    "Composing high-stakes keynote openings and executive strategic narratives",
+                    "Structuring formal treaty preambles and definitive academic monographs"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The zero-trust framework was criticized by auditors, but it became the industry benchmark.",
+                "structure_b": "Although it was initially criticized by auditors, the zero-trust framework became the industry benchmark.",
+                "difference_explanation_en": "Structure B uses cataphoric 'it' in the opening subordinate clause to withhold the identity of 'the zero-trust framework' until the main clause, creating rhetorical sophistication.",
+                "difference_explanation_tr": "B yapısı ilk cümlecikte kataforik 'it' kullanarak asıl öznenin adını ana cümleye kadar askıda tutar ve güçlü bir edebi etki yaratır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "Kataforik Yapıda İsmi Yan Cümleye Hapsedip Ana Cümleyi Zamirle Bırakma",
+                "explanation_tr": "Yan cümlede asıl ismi kullanıp ana cümlede sadece zamir bırakmak ('Although the system was tested, it failed') sıradandır; üst düzey retorik için ana cümlede tam ismin yer alması gerekir.",
+                "incorrect_example": "Although the software crashed, it was praised.",
+                "correct_example": "Although it initially crashed under stress, the proprietary consensus software earned high praise."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Although it had long been dismissed as impractical, the decentralized ledger architecture eventually revolutionized interbank clearing.",
+                "tr": "Uzun süredir uygulanamaz görülerek reddedilmiş olmasına rağmen, merkeziyetsiz defter mimarisi nihayetinde bankalararası takası kökten değiştirdi.",
+                "rule_highlight": "Although it had long been ... the ledger architecture (cataphoric 'it')",
+                "context": "Financial technology history"
+            },
+            {
+                "en": "Engineers evaluated both relational partitioning and key-value indexing; the former offered strict consistency, while the latter maximized throughput.",
+                "tr": "Mühendisler hem ilişkisel bölümlemeyi hem de anahtar-değer indekslemeyi değerlendirdi; ilki katı tutarlılık sunarken ikincisi veri hacmini maksimize etti.",
+                "rule_highlight": "the former ... the latter (anaphoric dual tracking)",
+                "context": "Database architecture trade-off"
+            },
+            {
+                "en": "For all its apparent complexity, the new micro-kernel design is fundamentally minimalist at its core.",
+                "tr": "Tüm görünür karmaşıklığına rağmen, yeni mikro çekirdek tasarımı özünde temel olarak minimalisttir.",
+                "rule_highlight": "For all its ... the micro-kernel design (cataphoric 'its')",
+                "context": "Systems analysis"
+            },
+            {
+                "en": "Such were the technical vulnerabilities discovered that the board mandated an immediate moratorium on code releases.",
+                "tr": "Keşfedilen teknik güvenlik açıkları öylesine vahimdi ki yönetim kurulu kod sürümleri üzerinde derhal bir moratoryum ilan etti.",
+                "rule_highlight": "Such were the vulnerabilities (demonstrative anaphora)",
+                "context": "Crisis management"
+            }
+        ],
+        "topic_tags": ["cohesion", "cataphora", "anaphora", "discourse_tracking", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.parenthetical-intercalation",
+        "title": "Syntactic Intercalation: Parenthetical Suspension and Authorial Comment",
+        "cefr_level": "C2",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Intercalate parenthetical evaluations (em-dashes, commas, parenthetical finite clauses) directly between subject and predicate to control reader interpretation.",
+        "summary_tr": "Yazarın analitik değerlendirmesini özne ile yüklem arasına ara söz (intercalation / parenthesis) olarak yerleştirip cümlenin ritmini ve ağırlığını yönetin.",
+        "explanation_en": [
+            {
+                "title": "Intercalary Suspension Between Core Syntactic Nodes",
+                "content": "Master stylists deliberately suspend the grammatical completion of a clause by inserting evaluative commentary between the subject and the main verb: 'The database cluster—and this cannot be overemphasized—remains the single point of architectural failure.' Intercalated elements can be finite clauses ('as history demonstrates'), verbless adjective phrases ('remarkable in its elegance'), or appositive corrections.",
+                "patterns": [
+                    "Subject + — and this is critical — + Verb Phrase",
+                    "Subject + , if we may judge by telemetry , + Verb Phrase",
+                    "Subject + , whether by design or negligence , + Verb Phrase"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki ara cümle ve parantez içi açıklama sanatıdır ('Sunucu—ki bu durum daha önce hiç yaşanmamıştı—aniden çöktü'). C2 düzeyinde araya giren cümlenin ana cümlenin özne-yüklem uyumunu bozmaması esastır. Araya giren ara söz iki tire veya iki virgülle ayrılır.",
+        "rules": [
+            {
+                "name": "Syntactic Suspension Rule",
+                "pattern": "Subject + [Intercalated Parenthesis] + Main Verb (subject-verb agreement preserved)",
+                "use_cases": [
+                    "Injecting authoritative expert caveats and editorial nuance into statutory reports",
+                    "Calibrating rhetorical cadence in high-stakes boardroom arguments"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The migration algorithm failed, which was unexpected by the entire team.",
+                "structure_b": "The migration algorithm—unexpected though it was by the engineering squad—failed to maintain atomicity.",
+                "difference_explanation_en": "Structure B intercalates the evaluation between subject and predicate, creating deliberate syntactic suspension and authoritative intellectual weight.",
+                "difference_explanation_tr": "B yapısı değerlendirmeyi özne ile yüklem arasına alarak sözdizimsel bir gerilim ve yetkin bir ağırlık oluşturur."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Ara Sözden Sonra Özne-Fiil Uyumunu Kaybetme",
+                "explanation_tr": "Araya uzun bir parantez girdiğinde ana cümlenin öznesinin tekillik/çoğulluk durumunu unutup yanlış fiil çekimi yapmak sık görülen bir hatadır.",
+                "incorrect_example": "The lead architect, together with three staff engineers, have resigned.",
+                "correct_example": "The lead architect, together with three staff engineers, has resigned."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The proposed consensus algorithm—novel though it may appear on paper—suffers from fatal Byzantine latency flaws.",
+                "tr": "Önerilen mutabakat algoritması—kağıt üzerinde ne kadar yeni görünürse görünsün—ölümcül Bizans gecikme kusurlarından muzdariptir.",
+                "rule_highlight": "algorithm—novel though it may appear—suffers (intercalated concession)",
+                "context": "Cryptographic review"
+            },
+            {
+                "en": "The legacy billing engine, and this is by no means an isolated anomaly, frequently drops transaction metadata.",
+                "tr": "Eski faturalandırma motoru—ki bu kesinlikle münferit bir anormallik değildir—işlem meta verilerini sıklıkla kaybetmektedir.",
+                "rule_highlight": ", and this is by no means an isolated anomaly ,",
+                "context": "System architecture audit"
+            },
+            {
+                "en": "Such architectural debt, accumulated over a decade of rapid expansion, cannot be dismantled in a single sprint.",
+                "tr": "On yıllık hızlı genişleme boyunca biriken böylesi bir mimari borç, tek bir koşuda ortadan kaldırılamaz.",
+                "rule_highlight": "debt, accumulated over a decade ..., cannot be",
+                "context": "Technical leadership"
+            },
+            {
+                "en": "The CTO, as subsequent external forensic reviews made clear, acted with commendable speed.",
+                "tr": "CTO, sonraki harici adli incelemelerin açıkça ortaya koyduğu üzere, takdire şayan bir hızla hareket etti.",
+                "rule_highlight": ", as subsequent reviews made clear ,",
+                "context": "Executive postmortem"
+            }
+        ],
+        "topic_tags": ["intercalation", "parenthesis", "rhetorical_suspension", "style", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.correlative-subordination-and-inversion",
+        "title": "Concessive Correlatives and Inverted Optative Clauses: 'Be That as It May'",
+        "cefr_level": "C2",
+        "category": "conditionals_and_hypotheticals",
+        "summary_en": "Use fossilized concessive correlatives and inverted optative clauses (be that as it may, come what may, try as they might, cost what it will) to project diplomatic resolve.",
+        "summary_tr": "Kararlı ve diplomatik bir duruş sergilemek için kalıplaşmış ödünleyici ve devrik istek kalıpları (be that as it may, try as they might vb.) kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Archaic and Formal Concessive Formulas",
+                "content": "Formal diplomatic, legal, and boardroom discourse retains highly structured formulaic concessive inversions: 'Be that as it may' (acknowledging a counter-argument before dismissing it); 'Try as they might' (inversion expressing futile effort: 'No matter how hard they try'); 'Come what may' (expressing unconditional commitment); 'Cost what it will' (regardless of financial consequence).",
+                "patterns": [
+                    "Be that as it may, [Main Clause]",
+                    "Try as + Subject + might, [Main Clause describing failure]",
+                    "Come what may, [Main Clause expressing resolve]"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki 'Öyle olsa bile / Durum ne olursa olsun / Ne kadar çabalasalar da' gibi yüksek düzey kalıplardır. 'Try as they might, they could not fix the bug' cümlesi, 'No matter how hard they tried' yapısının en üst düzey edebi eşdeğeridir. 'Be that as it may' ise diplomatik müzakerelerde karşı tarafın tezini nazikçe kenara bırakıp kendi pozisyonunu savunmak için kullanılır.",
+        "rules": [
+            {
+                "name": "Concessive Formula Application",
+                "pattern": "Be that as it may / Try as [S] might / Come what may + Proposition",
+                "use_cases": [
+                    "Negotiating commercial contract breaches with firm diplomatic politeness",
+                    "Acknowledging valid engineering criticisms while affirming strategic policy"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "Even though that is true, we must still meet the deadline. (Informal B1)",
+                "structure_b": "Be that as it may, we must adhere strictly to our statutory delivery timeline. (Executive C2)",
+                "difference_explanation_en": "Structure B replaces the pedestrian 'even though that is true' with the authoritative diplomatic formula 'Be that as it may'.",
+                "difference_explanation_tr": "B yapısı sıradan 'even though' yerine diplomatik ve yetkin 'Be that as it may' kalıbını kullanarak üslubu zirveye taşır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "conditional_overgeneralization",
+                "trap_title": "'Try As They Might' Kalıbını Yanlış Kurma",
+                "explanation_tr": "'Try as they might' kalıbında 'try' başa gelir ve fiil yalındır. 'Trying as they might' veya 'Though they try' ile karıştırılmamalıdır.",
+                "incorrect_example": "Trying as they might, the engineers could not reproduce the race condition.",
+                "correct_example": "Try as they might, the engineers could not reproduce the race condition."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The vendor argued that the outage was an act of god; be that as it may, our commercial contract mandates liquidated damages.",
+                "tr": "Tedarikçi kesintinin mücbir sebep olduğunu savundu; öyle olsa bile, ticari sözleşmemiz tazminat ödenmesini zorunlu kılmaktadır.",
+                "rule_highlight": "be that as it may (diplomatic concessive formula)",
+                "context": "Commercial contract dispute"
+            },
+            {
+                "en": "Try as they might, the security analysts could not decrypt the exfiltrated database payload.",
+                "tr": "Güvenlik analistleri ne kadar çabalasalar da sızdırılan veritabanı yükünün şifresini çözemediler.",
+                "rule_highlight": "Try as they might (futile effort inversion)",
+                "context": "Threat intelligence report"
+            },
+            {
+                "en": "Come what may, our enterprise platform will maintain ninety-nine point nine-nine percent availability this quarter.",
+                "tr": "Ne olursa olsun, kurumsal platformumuz bu çeyrekte yüzde doksan dokuz nokta doksan dokuz erişilebilirliği koruyacaktır.",
+                "rule_highlight": "Come what may (unconditional resolve)",
+                "context": "Executive commitment"
+            },
+            {
+                "en": "Suffice it to say that the preliminary architectural prototype did not meet our high-throughput benchmarks.",
+                "tr": "Şunu söylemek yeterlidir ki, ilk mimari prototip yüksek veri hacmi kıyaslama ölçütlerimizi karşılamadı.",
+                "rule_highlight": "Suffice it to say (optative formula)",
+                "context": "Technical assessment"
+            }
+        ],
+        "topic_tags": ["concessive_correlatives", "optative", "idiomatic_inversion", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.marked-theme-and-rheme-reorganization",
+        "title": "Information Structure: Marked Theme-Rheme Progression and Focus Reorganization",
+        "cefr_level": "C2",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Manipulate Theme (given context) and Rheme (new focal information) through marked topicalization and passive inversion to control the reader's inferential processing.",
+        "summary_tr": "Okuyucunun çıkarım sürecini kusursuz yönlendirmek için Tema (bilinen bağlam) ve Rema (yeni odak bilgi) dengesini ve işaretli konu öne alımını (topicalization) yönetin.",
+        "explanation_en": [
+            {
+                "title": "Functional Sentence Perspective and Information Dynamics",
+                "content": "At C2, grammatical mastery serves information ergonomics. A sentence begins with the 'Theme' (the departure point, typically linking to prior discourse) and culminates in the 'Rheme' (the new, informative climax). When standard SVO violates smooth flow, writers employ marked themes—fronting prepositional phrases, adverbials, or non-finite clauses—to ensure that old information introduces new information smoothly.",
+                "patterns": [
+                    "Marked Theme (Given) + Unmarked Rheme (New Focal Climax)",
+                    "Fronted Prepositional Complement + Inverted Verb + Heavy Subject",
+                    "Equally significant is + Noun Phrase (thematic bridge)"
+                ]
+            }
+        ],
+        "explanation_tr": "Metindilbilimsel Tema-Rema teorisidir. Her cümlenin başı önceki cümleyle köprü kurmalı (Tema), sonu ise asıl yeni bilgiyi vurmalıdır (Rema). 'Equally significant is the lack of testing' yapısında 'Equally significant' başa alınarak önceki argümanla köprü kurulur ve asıl ağır özne sona bırakılır.",
+        "rules": [
+            {
+                "name": "Given-to-New Information Principle",
+                "pattern": "Departure Anchor (Theme / Prior Discourse) -> Informational Climax (Rheme)",
+                "use_cases": [
+                    "Crafting seamless, coherent transitions in multi-page whitepapers and technical proposals",
+                    "Preventing jarring reader disorientation in dense algorithmic exposition"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "A secondary latency issue was equally significant. (Unmarked, pedestrian)",
+                "structure_b": "Equally significant was a secondary latency issue that emerged during load testing. (Marked Theme: smooth cohesion)",
+                "difference_explanation_en": "Structure B fronts the comparative evaluation to establish immediate cohesion with the preceding paragraph, delaying the heavy noun phrase to the position of end-weight.",
+                "difference_explanation_tr": "B yapısı karşılaştırmalı değerlendirmeyi başa alarak önceki paragrafla anında köprü kurar ve ağır isim öbeğini cümle sonuna bırakır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Bilgi Akışında Mantıksal Sıçrama Yaratma",
+                "explanation_tr": "Cümle başında önceki cümleyle hiçbir bağı olmayan tamamen yeni bir kavramla başlamak metin akıcılığını koparır; Tema-Rema dengesi kurulmalıdır.",
+                "incorrect_example": "Distributed caches are fast. The latency dropped because of them.",
+                "correct_example": "Distributed caches are fast; through their deployment, transmission latency dropped precipitously."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Crucial to the resilience of the entire platform is the asynchronous replication mechanism between data centers.",
+                "tr": "Tüm platformun dayanıklılığı için hayati önem taşıyan unsur, veri merkezleri arasındaki eşzamansız çoğaltma mekanizmasıdır.",
+                "rule_highlight": "Crucial to the resilience ... is the mechanism (marked thematic fronting)",
+                "context": "System resilience analysis"
+            },
+            {
+                "en": "Equally alarming was the realization that our telemetry logging pipeline had dropped thirty percent of critical error packets.",
+                "tr": "Aynı derecede endişe verici olan, telemetri kayıt işlem hattımızın kritik hata paketlerinin yüzde otuzunu düşürdüğünün fark edilmesiydi.",
+                "rule_highlight": "Equally alarming was the realization (inverted rheme-theme transition)",
+                "context": "Forensic audit debrief"
+            },
+            {
+                "en": "From this architectural deadlock arose the imperative to decompose the monolithic database into micro-services.",
+                "tr": "Bu mimari çıkmazdan, monolitik veritabanını mikro servislere ayırma zorunluluğu doğdu.",
+                "rule_highlight": "From this deadlock arose the imperative (locative thematic progression)",
+                "context": "Architecture evolution"
+            },
+            {
+                "en": "Underpinning these performance gains was an entirely re-engineered garbage collection algorithm.",
+                "tr": "Bu performans kazanımlarının temelinde, tamamen yeniden tasarlanmış bir çöp toplama algoritması yatıyordu.",
+                "rule_highlight": "Underpinning these gains was (participial thematic bridge)",
+                "context": "Performance engineering"
+            }
+        ],
+        "topic_tags": ["theme_rheme", "information_structure", "cohesion", "stylistics", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.modal-past-in-subjunctive-hypotheticals",
+        "title": "Subjunctive Idioms and Hypothetical Stance Formulas",
+        "cefr_level": "C2",
+        "category": "modals_and_semi_modals",
+        "summary_en": "Incorporate idiomatic subjunctive formulas ('as it were', 'if need be', 'far be it from me to', 'would that it were') to achieve supreme rhetorical polish.",
+        "summary_tr": "'As it were' (tabiri caizse), 'if need be' (gerekirse), 'far be it from me to' (haddim olmayarak) gibi köklü subjunctive deyimleriyle üslubunuzu mükemmelleştirin.",
+        "explanation_en": [
+            {
+                "title": "Fossilized Subjunctive Expressions in Modern High Register",
+                "content": "Contemporary English preserves the subjunctive in polished rhetorical idioms: 'as it were' (acting as an intellectual metaphor softener, equivalent to 'so to speak'); 'if need be' (elliptical conditional for 'if need should be'); 'far be it from me to disagree' (diplomatically disclaiming presumption before offering a sharp counter-critique); 'would that it were so simple' (archaic/literary expression of wistful impossibility).",
+                "patterns": [
+                    "as it were (intellectual metaphor softening)",
+                    "if need be (contingency provision)",
+                    "far be it from me to + Base Verb (diplomatic disclaimer before criticism)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki 'tabiri caizse', 'haddim olmayarak belirtmek isterim ki', 'icap ederse' gibi üst düzey deyimlerdir. 'The database was the heart of the company, as it were' cümlesinde 'as it were' bir metaforu yumuşatır. 'Far be it from me to dictate your sprint' ise hem tevazu hem de ağırlık katar.",
+        "rules": [
+            {
+                "name": "Subjunctive Idiom Insertion",
+                "pattern": "[Clause], as it were, [Clause] / Far be it from me to + V1 / if need be",
+                "use_cases": [
+                    "Diplomatic executive pushback against superior authority",
+                    "Softening daring technical analogies in thought-leadership essays"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "I don't want to criticize, but your architectural design has flaws. (Blunt / Informal)",
+                "structure_b": "Far be it from me to challenge the principal architect, but this consensus layer introduces severe latency. (Polished C2)",
+                "difference_explanation_en": "Structure B employs 'Far be it from me' to couch sharp intellectual dissent in immaculate diplomatic decorum.",
+                "difference_explanation_tr": "B yapısı 'Far be it from me' kullanarak sert bir teknik eleştiriyi kusursuz bir diplomatik nezaketle sunar."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "aspect_confusion",
+                "trap_title": "'As It Were' ile 'As It Was' Karışıklığı",
+                "explanation_tr": "'As it were' sabit bir deyimdir; cümlenin zamanı geçmiş olsa bile 'as it was' şeklinde değiştirilmez.",
+                "incorrect_example": "The cluster was the brain of the network, as it was.",
+                "correct_example": "The cluster was the brain of the network, as it were."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The automated deployment pipeline became our digital nervous system, as it were, orchestrating microservices across regions.",
+                "tr": "Otomatik dağıtım işlem hattı, tabiri caizse dijital sinir sistemimiz haline geldi ve bölgeler arasındaki mikro servisleri koordine etti.",
+                "rule_highlight": "as it were (intellectual metaphor softener)",
+                "context": "Architecture keynote"
+            },
+            {
+                "en": "Far be it from me to question the audit findings, but the methodology appears somewhat deficient.",
+                "tr": "Denetim bulgularını sorgulamak haddime değil, ancak metodoloji biraz yetersiz görünüyor.",
+                "rule_highlight": "Far be it from me to question (diplomatic disclaimer)",
+                "context": "Executive committee dissent"
+            },
+            {
+                "en": "The on-call engineers are prepared to execute an emergency database failover tonight, if need be.",
+                "tr": "Nöbetçi mühendisler, gerekirse bu gece acil bir veritabanı yedeğine geçişi yürütmeye hazırdır.",
+                "rule_highlight": "if need be (contingency idiom)",
+                "context": "Operations readiness"
+            },
+            {
+                "en": "Would that all legacy integrations were as seamless as this single sign-on implementation.",
+                "tr": "Keşke tüm eski sistem entegrasyonları bu tekli oturum açma uygulaması kadar sorunsuz olsaydı.",
+                "rule_highlight": "Would that all integrations were (wistful hypothetical)",
+                "context": "Engineering debrief"
+            }
+        ],
+        "topic_tags": ["subjunctive_idioms", "as_it_were", "diplomatic_stance", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.nominal-group-premodification-stacking",
+        "title": "Dense Nominal Premodification and Attributive Stacking in Specialist Prose",
+        "cefr_level": "C2",
+        "category": "noun_phrases_and_articles",
+        "summary_en": "Decipher and synthesize multi-layered premodifying nominal chains without creating ambiguous lexical clutter or cognitive overload.",
+        "summary_tr": "Teknik ve akademik metinlerde çok katmanlı isim tamlaması yığılmalarını (nominal stacking) anlam kaybı ve belirsizlik yaratmadan ustalıkla kurun.",
+        "explanation_en": [
+            {
+                "title": "Lexical Compression vs. Syntactic Ambiguity",
+                "content": "Specialist English achieves maximum information density by converting prepositional phrases into premodifying noun-noun sequences: 'an algorithm for the detection of memory leaks in real time' -> 'a real-time memory leak detection algorithm'. At C2, the skill lies in balancing compression against decipherability, ensuring that modifiers cleanly nest (e.g., [ultra-low-latency] [[packet processing] pipeline]) without causing reader confusion.",
+                "patterns": [
+                    "[Adverb + Participle] + [Noun + Noun] + Head Noun",
+                    "Hyphenated compound premodifiers before head noun",
+                    "De-compression into post-modifying prepositional phrases when stacking exceeds 4 elements"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki zincirleme isim tamlamalarının İngilizcedeki karşılığıdır. 'A low-latency database replication mechanism' gibi 4-5 kelimelik öbeklerde hangi kelimenin hangisini nitelediğini anlamak ve tire (-) işaretlerini doğru bağlamak C2 uzmanlığı gerektirir. Aşırı yığılma olduğunda 'of' veya 'for' ile açmak üslup zarafetidir.",
+        "rules": [
+            {
+                "name": "Attributive Nesting Hierarchy",
+                "pattern": "Descriptor / State -> Target Domain -> Functional Type -> Head Noun",
+                "use_cases": [
+                    "Formulating dense patent claims, system architecture diagrams, and hardware specifications",
+                    "Authoring concise executive summary headings and academic paper titles"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "A system for the management of the configuration of cloud infrastructure.",
+                "structure_b": "A cloud infrastructure configuration management system.",
+                "difference_explanation_en": "Structure B compresses four prepositional phrases into a clean, hyphen-free four-noun hierarchical compound, typical of high-density technical English.",
+                "difference_explanation_tr": "B yapısı hantal dört adet 'of' edatını ortadan kaldırarak kusursuz bir teknik isim zinciri kurar."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "İsim Tamlamasında Çoğul Takısı Kullanma Hatası",
+                "explanation_tr": "İsim tamlamasında niteleyici olarak öne geçen isimler kural olarak tekil kalır ('customers report' değil, 'customer report').",
+                "incorrect_example": "We deployed an automated errors tracking system.",
+                "correct_example": "We deployed an automated error tracking system."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The platform utilizes an ultra-low-latency distributed consensus verification protocol.",
+                "tr": "Platform, ultra düşük gecikmeli bir dağıtık mutabakat doğrulama protokolü kullanır.",
+                "rule_highlight": "ultra-low-latency distributed consensus verification protocol (stacked premodification)",
+                "context": "Cryptographic architecture"
+            },
+            {
+                "en": "We established a high-throughput asynchronous message ingestion pipeline for IoT telemetry.",
+                "tr": "Nesnelerin interneti telemetrisi için yüksek veri hacimli bir eşzamansız mesaj alım hattı kurduk.",
+                "rule_highlight": "high-throughput asynchronous message ingestion pipeline",
+                "context": "Data engineering"
+            },
+            {
+                "en": "The enterprise cybersecurity risk assessment committee delivered its quarterly findings yesterday.",
+                "tr": "Kurumsal siber güvenlik risk değerlendirme komitesi üç aylık bulgularını dün sundu.",
+                "rule_highlight": "cybersecurity risk assessment committee",
+                "context": "Governance"
+            },
+            {
+                "en": "Engineers resolved a complex multi-tenant database connection starvation defect.",
+                "tr": "Mühendisler, karmaşık bir çok kiracılı veritabanı bağlantı açlığı kusurunu giderdi.",
+                "rule_highlight": "multi-tenant database connection starvation defect",
+                "context": "Database engineering"
+            }
+        ],
+        "topic_tags": ["nominalization", "noun_stacking", "premodification", "information_density", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.syntactic-blends-and-zeugma-in-rhetoric",
+        "title": "Stylistic Coordination, Condensed Ellipsis, and Syllepsis in Rhetoric",
+        "cefr_level": "C2",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Harness advanced coordination, predicate gapping, and sylleptic ellipsis (sharing a single verb across literal and figurative objects) for rhetorical impact.",
+        "summary_tr": "Retorik etki yaratmak için yüklem boşaltımı (gapping) ve tek bir fiilin hem somut hem soyut nesneyle ortak bağlandığı zevgma/sillepsis sanatını kullanın.",
+        "explanation_en": [
+            {
+                "title": "Advanced Rhetorical Coordination and Elliptical Density",
+                "content": "In polished rhetorical rhetoric, writers employ deliberate predicate ellipsis and syllepsis (yoking a single verb to multiple complements with shifting senses: 'The CTO compromised the security keys and the company's integrity'). Furthermore, predicate gapping coordinates parallel clauses without repeating the verb: 'The frontend squad refactored the UI; the backend squad, the database schema.'",
+                "patterns": [
+                    "Predicate Gapping: Subject 1 + Verb + Object 1; Subject 2 + [comma] + Object 2",
+                    "Syllepsis / Zeugma: Subject + Verb + [Concrete Object] + and + [Abstract Object]"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki 'ortak yüklem kullanımı' ve zevgma (sözcük oyunlu bağlama) sanatıdır. 'Ali raporu hazırladı; Veli ise sunumu' cümlesindeki gibi ikinci cümlede fiili atıp yerine virgül koymak (predicate gapping) İngilizcede en üst düzey edebi tasarruf biçimidir.",
+        "rules": [
+            {
+                "name": "Predicate Gapping and Stylistic Yoking",
+                "pattern": "Clause 1; Subject 2, Object 2 (Verb gapped with comma)",
+                "use_cases": [
+                    "Authoring memorable annual report narratives and visionary keynote addresses",
+                    "Creating balanced, aphoristic summaries in architectural retrospectives"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The frontend team refactored the styling, and the backend team refactored the storage layer.",
+                "structure_b": "The frontend team refactored the styling; the backend team, the storage layer.",
+                "difference_explanation_en": "Structure B replaces the second verb with an elliptical comma (gapping), producing sophisticated rhythmic symmetry.",
+                "difference_explanation_tr": "B yapısı ikinci fiili atarak yerine virgül koyar ve sofistike bir ritmik simetri oluşturur."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Yüklem Boşaltımında Virgülü Unutma Hatası",
+                "explanation_tr": "Fiilin atıldığı yere virgül koymamak ('the backend team the storage layer') cümleyi anlamsızlaştırır; virgül zorunludur.",
+                "incorrect_example": "Alice handled frontend; Bob backend.",
+                "correct_example": "Alice handled the frontend; Bob, the backend."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The mobile engineering team migrated their codebase to declarative UI; the web squad, to server-side components.",
+                "tr": "Mobil mühendislik ekibi kod tabanını bildirimsel arayüze taşıdı; web takımı ise sunucu taraflı bileşenlere.",
+                "rule_highlight": "the web squad, to server-side components (predicate gapping with comma)",
+                "context": "Frontend modernization"
+            },
+            {
+                "en": "In a single fateful deploy, the rogue script wiped the database partition and the company's reputation.",
+                "tr": "Kötü amaçlı betik, tek bir talihsiz dağıtımda hem veritabanı bölümünü hem de şirketin itibarını sildi / yok etti.",
+                "rule_highlight": "wiped the partition and the company's reputation (syllepsis / zeugma)",
+                "context": "Crisis narrative"
+            },
+            {
+                "en": "Senior architects value modular simplicity; junior developers, bleeding-edge complexity.",
+                "tr": "Kıdemli mimarlar modüler sadeliğe değer verir; genç geliştiriciler ise en son teknoloji karmaşıklığına.",
+                "rule_highlight": "junior developers, bleeding-edge complexity (gapped verb)",
+                "context": "Engineering philosophy"
+            },
+            {
+                "en": "The chief executive surrendered his executive equity and his composure before the parliamentary inquiry committee.",
+                "tr": "Genel müdür, parlamento soruşturma komitesi önünde hem hisse senetlerini hem de soğukkanlılığını kaybetti / teslim etti.",
+                "rule_highlight": "surrendered his equity and his composure (syllepsis)",
+                "context": "Statutory inquiry"
+            }
+        ],
+        "topic_tags": ["rhetoric", "ellipsis", "zeugma", "predicate_gapping", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c2.adversative-and-reformulative-connectors",
+        "title": "Adversative and Reformulative Particles: Albeit, Notwithstanding, and To Wit",
+        "cefr_level": "C2",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Deploy high-register discourse particles ('albeit', 'notwithstanding', 'to wit', 'withal') to execute precise semantic reformulation and concession.",
+        "summary_tr": "Hukuki, akademik ve üst düzey kurumsal metinlerde 'albeit' (her ne kadar), 'notwithstanding' (-e karşın) ve 'to wit' (şöyle ki / yani) gibi bağlaçlar kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Elite Lexical Connectors in Statutory and High-Register Prose",
+                "content": "'Albeit' introduces a concessive adjective or adverb phrase without a finite verb ('The upgrade was successful, albeit costly'). 'Notwithstanding' can function as a preposition ('Notwithstanding the objections...'), a postposition ('Her objections notwithstanding...'), or a transitional adverb. 'To wit' introduces a definitive clarification or legal enumeration ('The agreement covers three key jurisdictions, to wit: Germany, France, and Spain').",
+                "patterns": [
+                    "Adjective / Adverb + , albeit + Adjective / Adverb (e.g., successful, albeit delayed)",
+                    "Notwithstanding + Noun Phrase, [Main Clause] OR [Noun Phrase] + notwithstanding",
+                    "Statement, to wit: [Enumeration or Specific Clarification]"
+                ]
+            }
+        ],
+        "explanation_tr": "Hukuki ve felsefi metinlerde 'albeit' (her ne kadar ... olsa da) tam cümle almaz, doğrudan sıfat veya zarf alır ('an effective, albeit expensive solution'). 'Notwithstanding' ise hem isimden önce hem de isimden sonra gelebilen nadir edatlardandır ('The risks notwithstanding' = 'Notwithstanding the risks'). 'To wit' ise 'şöyle ki / yani' anlamındadır.",
+        "rules": [
+            {
+                "name": "High-Register Particle Syntax",
+                "pattern": "albeit + Adj/Adv | notwithstanding + NP (or NP + notwithstanding) | to wit + Enumeration",
+                "use_cases": [
+                    "Drafting formal terms of service, governance policies, and judicial filings",
+                    "Conducting nuanced technical assessments with precise concession"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "The migration was successful, although it was very slow.",
+                "structure_b": "The migration was successful, albeit slow.",
+                "difference_explanation_en": "Structure B uses 'albeit' to attach the concession directly to the adjective, avoiding clausal bloat and elevating the register.",
+                "difference_explanation_tr": "B yapısı 'albeit' kullanarak ödünü doğrudan sıfata bağlar, cümle fazlalığından kaçınır ve üslubu yükseltir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "preposition_trap",
+                "trap_title": "'Albeit' Sonrasına Tam Cümle Bağlama Hatası",
+                "explanation_tr": "'Albeit' arkasına tam bir SVO cümle almaz. 'Albeit it was slow' yanlıştır; 'albeit slow' denmelidir.",
+                "incorrect_example": "The database patch was effective, albeit it took hours.",
+                "correct_example": "The database patch was effective, albeit time-consuming."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The consensus algorithm delivered remarkable throughput, albeit at the expense of elevated memory consumption.",
+                "tr": "Mutabakat algoritması, yüksek bellek tüketimi pahasına da olsa, kayda değer bir veri hacmi sağladı.",
+                "rule_highlight": "albeit at the expense of (concessive particle)",
+                "context": "Performance benchmarking"
+            },
+            {
+                "en": "The external auditor's vehement objections notwithstanding, the board approved the proprietary cloud migration.",
+                "tr": "Dış denetçinin şiddetli itirazlarına rağmen, yönetim kurulu tescilli bulut geçişini onayladı.",
+                "rule_highlight": "objections notwithstanding (postpositional use)",
+                "context": "Executive governance"
+            },
+            {
+                "en": "The enterprise license covers precisely two operating environments, to wit: staging and production.",
+                "tr": "Kurumsal lisans tam olarak iki işletim ortamını kapsamaktadır, şöyle ki: hazırlık ve canlı.",
+                "rule_highlight": "to wit: staging and production (reformulative enumeration)",
+                "context": "Commercial licensing"
+            },
+            {
+                "en": "Notwithstanding recent market volatility, our capital expenditure commitments to AI infrastructure remain resolute.",
+                "tr": "Son dönemdeki piyasa dalgalanmalarına rağmen, yapay zeka altyapısına yönelik sermaye harcaması taahhütlerimiz kararlılıkla sürmektedir.",
+                "rule_highlight": "Notwithstanding recent volatility (prepositional use)",
+                "context": "Financial strategy"
+            }
+        ],
+        "topic_tags": ["discourse_particles", "albeit", "notwithstanding", "to_wit", "c2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    }
+]
+
+print("C2 lessons count:", len(C2_LESSONS))

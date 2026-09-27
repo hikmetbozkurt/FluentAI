@@ -1,0 +1,1203 @@
+#!/usr/bin/env python3
+"""
+Listening Generator for B1 (8 new scenarios, bringing B1 total to 9).
+All scenarios adhere to listening.schema.json:
+- CEFR: B1
+- Valid category enum
+- Real speakers
+- Timestamped transcript items with text_en and text_tr
+- 5 MCQs per scenario using McqBalancer
+- Key vocabulary and related_ids with verified IDs
+"""
+
+from mcq_balancer import McqBalancer
+
+balancer = McqBalancer(seed=602)
+
+def build_q(qid, q_en, q_tr_hint, correct, distractors, exp_en, exp_tr):
+    options, idx = balancer.balance_options(correct, distractors)
+    return {
+        "id": qid,
+        "question_en": q_en,
+        "question_tr_hint": q_tr_hint,
+        "options": options,
+        "correct_answer": correct,
+        "explanation_en": exp_en,
+        "explanation_tr": exp_tr
+    }
+
+B1_LISTENING_SCENARIOS = [
+    {
+        "id": "listening.b1.code-review-feedback",
+        "title": "Pull Request Review: Unit Tests and Refactoring",
+        "cefr_level": "B1",
+        "category": "engineering_meeting",
+        "scenario_context": "Leyla, a backend developer, meets with Robert, a senior engineer, to discuss feedback on her authentication pull request.",
+        "speakers": [
+            {"id": "leyla", "name": "Leyla", "role": "Backend Engineer", "accent": "Turkish"},
+            {"id": "robert", "name": "Robert", "role": "Senior Staff Engineer", "accent": "British"}
+        ],
+        "audio_ref": "audio/listening/b1_code_review.mp3",
+        "duration_seconds": 52,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "robert",
+                "start_ms": 0,
+                "end_ms": 6500,
+                "text_en": "Hi Leyla, thanks for submitting PR 402. Overall the business logic for token validation looks very solid.",
+                "text_tr": "Selam Leyla, 402 numaralı PR'ı gönderdiğin için teşekkürler. Genel olarak belirteç doğrulama iş mantığı gayet sağlam görünüyor."
+            },
+            {
+                "index": 2,
+                "speaker_id": "leyla",
+                "start_ms": 6800,
+                "end_ms": 13200,
+                "text_en": "Thanks Robert. I saw your inline comment regarding the user session service. Did you want me to break that into smaller methods?",
+                "text_tr": "Teşekkürler Robert. Kullanıcı oturum servisiyle ilgili satır içi yorumunu gördüm. Onu daha küçük metotlara bölmemi mi istedin?"
+            },
+            {
+                "index": 3,
+                "speaker_id": "robert",
+                "start_ms": 13600,
+                "end_ms": 22400,
+                "text_en": "Exactly. Right now, that single function handles database queries, password hashing, and audit logging. It violates the single responsibility principle.",
+                "text_tr": "Kesinlikle. Şu anda o tek fonksiyon veritabanı sorgularını, şifre özetlemeyi ve denetim günlüğü tutmayı aynı anda yapıyor. Tek sorumluluk ilkesini ihlal ediyor."
+            },
+            {
+                "index": 4,
+                "speaker_id": "leyla",
+                "start_ms": 22800,
+                "end_ms": 31500,
+                "text_en": "That makes complete sense. If I decouple the audit logger, it will also be much easier to write isolated unit tests without mocking the entire database.",
+                "text_tr": "Bu son derece mantıklı. Denetim günlüğünü ayırırsam tüm veritabanını taklit etmeden (mocking) yalıtılmış birim testleri yazmak da çok daha kolay olacaktır."
+            },
+            {
+                "index": 5,
+                "speaker_id": "robert",
+                "start_ms": 32000,
+                "end_ms": 41800,
+                "text_en": "Precisely. Once you extract that and achieve at least eighty percent test coverage on edge cases, I will gladly approve the merge.",
+                "text_tr": "Kesinlikle öyle. Onu ayırıp sınır durumlarında en az yüzde seksen test kapsamına ulaştığında birleştirmeyi memnuniyetle onaylayacağım."
+            },
+            {
+                "index": 6,
+                "speaker_id": "leyla",
+                "start_ms": 42200,
+                "end_ms": 50500,
+                "text_en": "Awesome. I will push the refactored commits and update the test suite this afternoon.",
+                "text_tr": "Harika. Bu öğleden sonra yeniden yapılandırılmış commit'leri gönderip test paketini güncelleyeceğim."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "collaborate",
+                "vocab_id": "vocab.collaborate",
+                "context_note_tr": "Kod inceleme sürecinde meslektaşlar arasında yapıcı iş birliği."
+            },
+            {
+                "word": "maintain",
+                "vocab_id": "vocab.maintain",
+                "context_note_tr": "Kod tabanının sürdürülebilirliğini ve test kapsamını korumak."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_cr_01",
+                "What architectural concern does Robert raise about the user session function?",
+                "Robert kullanıcı oturum fonksiyonuyla ilgili hangi mimari endişeyi dile getirmektedir?",
+                "It performs multiple distinct responsibilities: database queries, hashing, and audit logging",
+                [
+                    "It consumes seventy percent of the server's graphics processor memory",
+                    "It was written in an outdated programming language from twenty years ago",
+                    "It automatically charges user credit cards without authorization"
+                ],
+                "Robert notes that the single function handles database queries, hashing, and audit logging, violating the single responsibility principle.",
+                "Robert tek fonksiyonun veritabanı, özetleme ve loglama işlemlerini aynı anda yaparak tek sorumluluk ilkesini ihlal ettiğini belirtir."
+            ),
+            build_q(
+                "q_b1_cr_02",
+                "What testing benefit does Leyla identify from decoupling the audit logger?",
+                "Leyla denetim loglayıcısını ayırmanın hangi test avantajını sağlayacağını fark etmektedir?",
+                "It allows writing isolated unit tests without mocking the entire database",
+                [
+                    "It eliminates the need to run any software tests in production",
+                    "It makes the tests run ten times slower so developers can take a break",
+                    "It permanently disables all database security passwords"
+                ],
+                "Leyla notes that decoupling allows writing unit tests without mocking the whole database.",
+                "Leyla ayırmanın tüm veritabanını mock'lamadan yalıtılmış testler yazmayı kolaylaştıracağını belirtir."
+            ),
+            build_q(
+                "q_b1_cr_03",
+                "What test coverage threshold does Robert require for approval?",
+                "Robert onay vermek için hangi test kapsamı eşiğini şart koşmaktadır?",
+                "At least eighty percent test coverage on edge cases",
+                [
+                    "One hundred percent coverage of all operating system drivers",
+                    "Exactly ten percent coverage of documentation files",
+                    "Fifty percent coverage of graphic UI animations"
+                ],
+                "Robert states: 'achieve at least eighty percent test coverage on edge cases, I will gladly approve.'",
+                "Robert sınır durumlarında en az yüzde seksen test kapsamına ulaşılmasını ister."
+            ),
+            build_q(
+                "q_b1_cr_04",
+                "What was Robert's overall assessment of Leyla's initial business logic?",
+                "Robert'ın Leyla'nın ilk iş mantığına dair genel değerlendirmesi nasıldı?",
+                "He thought the business logic for token validation was very solid",
+                [
+                    "He believed the entire pull request should be deleted immediately",
+                    "He thought the code was completely plagiarized from an external blog",
+                    "He said the logic was too simple and elementary for a junior engineer"
+                ],
+                "Robert opens by saying: 'Overall the business logic for token validation looks very solid.'",
+                "Robert belirteç doğrulama iş mantığının genel olarak çok sağlam olduğunu belirtir."
+            ),
+            build_q(
+                "q_b1_cr_05",
+                "When does Leyla commit to pushing the refactored changes?",
+                "Leyla yeniden düzenlenen değişiklikleri ne zaman göndereceğini taahhüt etmektedir?",
+                "This afternoon",
+                [
+                    "Next month during the quarterly planning session",
+                    "Late on Friday evening right before leaving the office",
+                    "Next year after returning from sabbatical"
+                ],
+                "Leyla confirms: 'I will push the refactored commits and update the test suite this afternoon.'",
+                "Leyla bu öğleden sonra commit'leri göndereceğini teyit eder."
+            )
+        ],
+        "topic_tags": ["code-review", "unit-testing", "clean-code", "software-engineering"],
+        "related_ids": ["vocab.collaborate", "vocab.maintain"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.user-onboarding-dropoff",
+        "title": "UX Discovery: Addressing Onboarding Drop-Off Rates",
+        "cefr_level": "B1",
+        "category": "product_discovery",
+        "scenario_context": "Yasemin, a UX researcher, presents user telemetry to Patrick, the product manager, highlighting a steep drop-off at step three of mobile signup.",
+        "speakers": [
+            {"id": "yasemin", "name": "Yasemin", "role": "UX Researcher", "accent": "Turkish"},
+            {"id": "patrick", "name": "Patrick", "role": "Product Manager", "accent": "American"}
+        ],
+        "audio_ref": "audio/listening/b1_onboarding_dropoff.mp3",
+        "duration_seconds": 50,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "patrick",
+                "start_ms": 0,
+                "end_ms": 5800,
+                "text_en": "Thanks for compiling the analytics report, Yasemin. What do the latest funnel metrics show for our mobile onboarding?",
+                "text_tr": "Analitik raporunu hazırladığın için teşekkürler Yasemin. Mobil ilk katılımımız için en son huni metrikleri ne gösteriyor?"
+            },
+            {
+                "index": 2,
+                "speaker_id": "yasemin",
+                "start_ms": 6200,
+                "end_ms": 14200,
+                "text_en": "Unfortunately, Patrick, we are losing thirty-five percent of new users at step three, where we request phone number verification.",
+                "text_tr": "Ne yazık ki Patrick, telefon numarası doğrulaması istediğimiz üçüncü adımda yeni kullanıcıların yüzde otuz beşini kaybediyoruz."
+            },
+            {
+                "index": 3,
+                "speaker_id": "patrick",
+                "start_ms": 14600,
+                "end_ms": 21800,
+                "text_en": "That is an alarming drop-off. Did our qualitative user interviews reveal why prospective customers are hesitating?",
+                "text_tr": "Bu endişe verici bir kayıp oranı. Niteliksel kullanıcı görüşmelerimiz potansiyel müşterilerin neden tereddüt ettiğini ortaya koydu mu?"
+            },
+            {
+                "index": 4,
+                "speaker_id": "yasemin",
+                "start_ms": 22200,
+                "end_ms": 31500,
+                "text_en": "Yes. Users feel uncomfortable sharing phone numbers before they even explore the core product features. They suspect marketing spam.",
+                "text_tr": "Evet. Kullanıcılar temel ürün özelliklerini henüz keşfetmeden telefon numaralarını paylaşmaktan rahatsızlık duyuyorlar. Pazarlama spam'inden şüpheleniyorlar."
+            },
+            {
+                "index": 5,
+                "speaker_id": "patrick",
+                "start_ms": 32000,
+                "end_ms": 40200,
+                "text_en": "What if we defer phone verification until they attempt to make their first financial transaction in the app?",
+                "text_tr": "Telefon doğrulamasını kullanıcılar uygulamada ilk finansal işlemlerini yapmaya kalkışana kadar ertelesek nasıl olur?"
+            },
+            {
+                "index": 6,
+                "speaker_id": "yasemin",
+                "start_ms": 40600,
+                "end_ms": 49000,
+                "text_en": "That would dramatically reduce upfront friction. Let's design an A/B experiment for next sprint to test that hypothesis.",
+                "text_tr": "Bu baştaki sürtünmeyi çarpıcı biçimde azaltacaktır. Bu hipotezi test etmek için gelecek sprint'e bir A/B deneyi tasarlayalım."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "customer",
+                "vocab_id": "vocab.customer",
+                "context_note_tr": "Ürünü kullanan ve deneyimini test eden son kullanıcılar."
+            },
+            {
+                "word": "effective",
+                "vocab_id": "vocab.effective",
+                "context_note_tr": "Kullanıcı deneyiminde sürtünmeyi azaltan etkili ürün çözümleri."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_ux_01",
+                "At which onboarding step does the sharpest user drop-off occur?",
+                "En sert kullanıcı kaybı ilk katılımın hangi adımında gerçekleşmektedir?",
+                "At step three, where phone number verification is requested",
+                [
+                    "At step one, when entering the username",
+                    "At the final congratulations screen",
+                    "After users have used the application for six months"
+                ],
+                "Yasemin states: 'we are losing thirty-five percent of new users at step three, where we request phone number verification.'",
+                "Yasemin telefon doğrulaması istenen 3. adımda kullanıcıların %35'inin kaybedildiğini belirtir."
+            ),
+            build_q(
+                "q_b1_ux_02",
+                "What percentage of new users abandon signup at that step?",
+                "Yeni kullanıcıların yüzde kaçı bu adımda kayıt olmayı bırakmaktadır?",
+                "Thirty-five percent",
+                [
+                    "Five percent",
+                    "Eighty percent",
+                    "Ninety-nine percent"
+                ],
+                "Yasemin explicitly cites: 'thirty-five percent of new users.'",
+                "Yasemin açıkça yüzde otuz beş rakamını verir."
+            ),
+            build_q(
+                "q_b1_ux_03",
+                "Why are users reluctant to enter their phone number early in the process?",
+                "Kullanıcılar neden sürecin başında telefon numaralarını vermekte tereddüt etmektedir?",
+                "They have not explored core features yet and fear receiving marketing spam",
+                [
+                    "Their mobile devices lack physical numeric keyboards",
+                    "Entering a phone number automatically charges fifty dollars",
+                    "Local laws make phone numbers completely confidential"
+                ],
+                "Yasemin notes users feel uncomfortable sharing numbers before exploring features and suspect spam.",
+                "Yasemin kullanıcıların özellikleri görmeden numara paylaşmaktan çekindiğini ve spam'den şüphelendiğini söyler."
+            ),
+            build_q(
+                "q_b1_ux_04",
+                "What solution does Patrick propose to reduce upfront friction?",
+                "Patrick ilk sürtünmeyi azaltmak için hangi çözümü önermektedir?",
+                "Deferring phone verification until the user makes their first transaction",
+                [
+                    "Requiring users to visit a physical office with their passport",
+                    "Removing all user accounts and making the app anonymous",
+                    "Doubling the length of the signup registration form"
+                ],
+                "Patrick asks: 'What if we defer phone verification until they attempt to make their first financial transaction?'",
+                "Patrick telefon doğrulamasını ilk işleme kadar ertelemeyi önerir."
+            ),
+            build_q(
+                "q_b1_ux_05",
+                "How do Yasemin and Patrick plan to evaluate this proposed change?",
+                "Yasemin ve Patrick önerilen bu değişikliği nasıl değerlendirmeyi planlamaktadır?",
+                "By designing an A/B experiment for the upcoming sprint",
+                [
+                    "By polling fifty random people on a public sidewalk",
+                    "By asking company executives to guess the outcome",
+                    "By immediately replacing all production databases"
+                ],
+                "Yasemin concludes: 'Let's design an A/B experiment for next sprint to test that hypothesis.'",
+                "Yasemin gelecek sprint için hipotezi test edecek bir A/B deneyi tasarlamayı önerir."
+            )
+        ],
+        "topic_tags": ["ux-research", "analytics", "product-management", "funnel-optimization"],
+        "related_ids": ["vocab.customer", "vocab.effective"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.staging-environment-outage",
+        "title": "Incident Sync: Investigating Staging Cluster Outage",
+        "cefr_level": "B1",
+        "category": "incident_response",
+        "scenario_context": "Berk, a DevOps engineer, coordinates with Sandra, the QA lead, after an automated container deployment crashes the staging environment.",
+        "speakers": [
+            {"id": "berk", "name": "Berk", "role": "DevOps Engineer", "accent": "Turkish"},
+            {"id": "sandra", "name": "Sandra", "role": "QA Lead", "accent": "American"}
+        ],
+        "audio_ref": "audio/listening/b1_staging_outage.mp3",
+        "duration_seconds": 51,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "sandra",
+                "start_ms": 0,
+                "end_ms": 6200,
+                "text_en": "Berk, our automated end-to-end regression tests failed completely on staging twenty minutes ago. Is the cluster down?",
+                "text_tr": "Berk, otomatik uçtan uca regresyon testlerimiz yirmi dakika önce staging ortamında tamamen başarısız oldu. Küme (cluster) çöktü mü?"
+            },
+            {
+                "index": 2,
+                "speaker_id": "berk",
+                "start_ms": 6600,
+                "end_ms": 14500,
+                "text_en": "Yes Sandra. The Kubernetes staging namespace entered a CrashLoopBackOff state immediately following the twelve-fifteen deployment.",
+                "text_tr": "Evet Sandra. Kubernetes staging ad alanı on iki on beş dağıtımının hemen ardından CrashLoopBackOff durumuna girdi."
+            },
+            {
+                "index": 3,
+                "speaker_id": "sandra",
+                "start_ms": 14900,
+                "end_ms": 21800,
+                "text_en": "Did the server logs show an out-of-memory exception or a database connection timeout?",
+                "text_tr": "Sunucu günlüklerinde bellek yetersizliği hatası mı yoksa bir veritabanı bağlantı zaman aşımı mı göründü?"
+            },
+            {
+                "index": 4,
+                "speaker_id": "berk",
+                "start_ms": 22200,
+                "end_ms": 31200,
+                "text_en": "It was a missing environment secret. The new microservice required an API key that was not configured in the staging Helm values file.",
+                "text_tr": "Eksik bir ortam gizli anahtarıydı (secret). Yeni mikro servis staging Helm değerler dosyasında yapılandırılmamış bir API anahtarı gerektiriyordu."
+            },
+            {
+                "index": 5,
+                "speaker_id": "sandra",
+                "start_ms": 31600,
+                "end_ms": 40500,
+                "text_en": "Ah, that explains why the container could not initialize. Can you inject the missing key into the staging vault right now?",
+                "text_tr": "Ah, bu durum konteynerin neden başlatılamadığını açıklıyor. Eksik anahtarı hemen şimdi staging kasasına (vault) ekleyebilir misin?"
+            },
+            {
+                "index": 6,
+                "speaker_id": "berk",
+                "start_ms": 41000,
+                "end_ms": 49800,
+                "text_en": "I already injected the secret and restarted the pods. All health checks are green now, so you can restart your test run.",
+                "text_tr": "Gizli anahtarı az önce ekledim ve pod'ları yeniden başlattım. Tüm sağlık kontrolleri artık yeşil, bu yüzden test çalıştırmanızı yeniden başlatabilirsiniz."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "verify",
+                "vocab_id": "vocab.verify",
+                "context_note_tr": "Sistem sağlığını ve konfigürasyon anahtarlarını doğrulamak."
+            },
+            {
+                "word": "bottleneck",
+                "vocab_id": "vocab.bottleneck",
+                "context_note_tr": "Test ve dağıtım süreçlerini durduran operasyonel tıkanıklık."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_out_01",
+                "What status did the staging Kubernetes namespace enter after the deployment?",
+                "Dağıtımdan sonra staging Kubernetes ad alanı hangi duruma girdi?",
+                "CrashLoopBackOff",
+                [
+                    "HibernationMode",
+                    "ReadyForTraffic",
+                    "SafeShutdown"
+                ],
+                "Berk explains that the namespace entered CrashLoopBackOff immediately following deployment.",
+                "Berk dağıtımın ardından ortamın CrashLoopBackOff durumuna girdiğini belirtir."
+            ),
+            build_q(
+                "q_b1_out_02",
+                "What was the actual root cause of the container startup failure?",
+                "Konteynerin başlatılamamasının gerçek kök nedeni neydi?",
+                "A required API key secret was missing from the staging Helm configuration",
+                [
+                    "The cloud hosting provider experienced a regional power cut",
+                    "Someone spilled hot coffee onto the primary physical server rack",
+                    "All software testing frameworks were permanently uninstalled"
+                ],
+                "Berk identifies that a new microservice required an API key that was not configured in Helm values.",
+                "Berk yeni mikro servisin Helm değerlerinde yapılandırılmamış bir API anahtarı gerektirdiğini açıklar."
+            ),
+            build_q(
+                "q_b1_out_03",
+                "At what time did the problematic deployment take place?",
+                "Sorunlu dağıtım saat kaçta gerçekleştirilmişti?",
+                "At twelve-fifteen",
+                [
+                    "At seven o'clock in the morning",
+                    "At midnight yesterday",
+                    "At four-thirty in the afternoon"
+                ],
+                "Berk refers to: 'immediately following the twelve-fifteen deployment.'",
+                "Berk on iki on beş dağıtımının hemen ardından olduğunu söyler."
+            ),
+            build_q(
+                "q_b1_out_04",
+                "What corrective action did Berk take to resolve the outage?",
+                "Berk kesintiyi gidermek için hangi düzeltici adımı attı?",
+                "He injected the missing secret into the vault and restarted the pods",
+                [
+                    "He deleted all automated test scripts from the repository",
+                    "He shut down the entire staging cluster permanently",
+                    "He asked Sandra to rewrite the microservice from scratch"
+                ],
+                "Berk states: 'I already injected the secret and restarted the pods.'",
+                "Berk gizli anahtarı kasaya ekleyip pod'ları yeniden başlattığını söyler."
+            ),
+            build_q(
+                "q_b1_out_05",
+                "What is Sandra able to do now that the health checks are green?",
+                "Sağlık kontrolleri yeşile döndüğüne göre Sandra şimdi ne yapabilir?",
+                "Restart the automated end-to-end regression test suite",
+                [
+                    "Deploy the untested code straight into production",
+                    "Go home because the staging cluster will be offline for a week",
+                    "Cancel all upcoming product releases indefinitely"
+                ],
+                "Berk tells Sandra: 'All health checks are green now, so you can restart your test run.'",
+                "Berk kontrollerin yeşil olduğunu ve test çalıştırmasını yeniden başlatabileceğini söyler."
+            )
+        ],
+        "topic_tags": ["devops", "incident-response", "kubernetes", "troubleshooting"],
+        "related_ids": ["vocab.verify", "vocab.bottleneck"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.saas-license-renewal",
+        "title": "Vendor Negotiation: Developer Tooling License Renewal",
+        "cefr_level": "B1",
+        "category": "negotiation",
+        "scenario_context": "Cenk, an IT procurement specialist, negotiates annual developer IDE cloud license pricing with Chloe, a SaaS account executive.",
+        "speakers": [
+            {"id": "cenk", "name": "Cenk", "role": "IT Procurement Specialist", "accent": "Turkish"},
+            {"id": "chloe", "name": "Chloe", "role": "SaaS Account Executive", "accent": "American"}
+        ],
+        "audio_ref": "audio/listening/b1_saas_renewal.mp3",
+        "duration_seconds": 49,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "chloe",
+                "start_ms": 0,
+                "end_ms": 5800,
+                "text_en": "Hello Cenk, thank you for making time today. Your company's annual IDE subscription renewal is coming up next month.",
+                "text_tr": "Merhaba Cenk, bugün vakit ayırdığın için teşekkürler. Şirketinizin yıllık IDE abonelik yenilemesi gelecek ay yaklaşıyor."
+            },
+            {
+                "index": 2,
+                "speaker_id": "cenk",
+                "start_ms": 6200,
+                "end_ms": 13800,
+                "text_en": "Hi Chloe. We are currently utilizing one hundred seats, but our engineering leadership plans to expand to one hundred and fifty developers.",
+                "text_tr": "Selam Chloe. Şu anda yüz lisans koltuğu kullanıyoruz ancak mühendislik liderliğimiz yüz elli geliştiriciye genişlemeyi planlıyor."
+            },
+            {
+                "index": 3,
+                "speaker_id": "chloe",
+                "start_ms": 14200,
+                "end_ms": 22000,
+                "text_en": "That is exciting growth! Our standard enterprise tier is forty dollars per seat per month for that volume.",
+                "text_tr": "Bu heyecan verici bir büyüme! Bu hacim için standart kurumsal seviyemiz kullanıcı başına aylık kırk dolar."
+            },
+            {
+                "index": 4,
+                "speaker_id": "cenk",
+                "start_ms": 22400,
+                "end_ms": 31500,
+                "text_en": "That represents a substantial budget increase. If we commit to a two-year contract upfront, can you offer a fifteen percent volume discount?",
+                "text_tr": "Bu önemli bir bütçe artışını temsil ediyor. Peşin olarak iki yıllık bir sözleşme taahhüt edersek yüzde on beş hacim indirimi sunabilir misiniz?"
+            },
+            {
+                "index": 5,
+                "speaker_id": "chloe",
+                "start_ms": 32000,
+                "end_ms": 40200,
+                "text_en": "For a two-year commitment on one hundred and fifty seats, I can definitely approve a fifteen percent reduction down to thirty-four dollars.",
+                "text_tr": "Yüz elli koltukta iki yıllık taahhüt karşılığında kesinlikle yüzde on beş indirimle otuz dört dolara inmeyi onaylayabilirim."
+            },
+            {
+                "index": 6,
+                "speaker_id": "cenk",
+                "start_ms": 40600,
+                "end_ms": 48500,
+                "text_en": "That fits comfortably within our annual IT allocation. Please email the formal agreement so I can submit it for legal review.",
+                "text_tr": "Bu yıllık IT bütçe tahsisatımıza rahatlıkla uyuyor. Hukuki incelemeye sunabilmem için lütfen resmi sözleşmeyi e-posta ile gönderin."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "objective",
+                "vocab_id": "vocab.objective",
+                "context_note_tr": "Müzakere sürecinde belirlenen bütçe ve maliyet hedefleri."
+            },
+            {
+                "word": "customer",
+                "vocab_id": "vocab.customer",
+                "context_note_tr": "Yazılım sağlayıcısı nezdinde kurumsal müşteri ilişkisi."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_saas_01",
+                "How many developer seats does Cenk plan to license for the upcoming year?",
+                "Cenk önümüzdeki yıl için kaç geliştirici lisansı almayı planlamaktadır?",
+                "One hundred and fifty seats",
+                [
+                    "Ten seats",
+                    "One thousand seats",
+                    "Only five seats"
+                ],
+                "Cenk states: 'our engineering leadership plans to expand to one hundred and fifty developers.'",
+                "Cenk yüz elli geliştiriciye genişlemeyi planladıklarını söyler."
+            ),
+            build_q(
+                "q_b1_saas_02",
+                "What was the vendor's standard list price before negotiation?",
+                "Pazarlıktan önce tedarikçinin standart liste fiyatı ne kadardı?",
+                "Forty dollars per seat per month",
+                [
+                    "Ten dollars per seat per year",
+                    "One hundred dollars per day",
+                    "Free with advertising"
+                ],
+                "Chloe states: 'Our standard enterprise tier is forty dollars per seat per month.'",
+                "Chloe standart fiyatın aylık 40 dolar olduğunu belirtir."
+            ),
+            build_q(
+                "q_b1_saas_03",
+                "What condition does Cenk propose in exchange for a fifteen percent discount?",
+                "Cenk yüzde on beş indirim karşılığında hangi şartı önermektedir?",
+                "Committing to a two-year contract upfront",
+                [
+                    "Paying entirely in physical gold bullion",
+                    "Promising never to open customer support tickets",
+                    "Sending company developers to work in the vendor's office"
+                ],
+                "Cenk asks: 'If we commit to a two-year contract upfront, can you offer a fifteen percent volume discount?'",
+                "Cenk peşin iki yıllık sözleşme karşılığında %15 indirim ister."
+            ),
+            build_q(
+                "q_b1_saas_04",
+                "What discounted monthly seat price does Chloe agree to provide?",
+                "Chloe kullanıcı başına hangi indirimli aylık fiyatı onaylamaktadır?",
+                "Thirty-four dollars per seat",
+                [
+                    "Twenty dollars per seat",
+                    "Thirty-nine dollars per seat",
+                    "Fifteen dollars per seat"
+                ],
+                "Chloe confirms: 'I can definitely approve a fifteen percent reduction down to thirty-four dollars.'",
+                "Chloe fiyatın otuz dört dolara indirilmesini onaylayabileceğini söyler."
+            ),
+            build_q(
+                "q_b1_saas_05",
+                "What is Cenk's next step after reaching the price agreement?",
+                "Fiyat anlaşmasına vardıktan sonra Cenk'in bir sonraki adımı nedir?",
+                "Submitting the formal agreement for company legal review",
+                [
+                    "Immediately wiring fifty thousand dollars from his personal account",
+                    "Canceling all software tools used by the engineering department",
+                    "Hosting an office party to celebrate the discount"
+                ],
+                "Cenk requests: 'Please email the formal agreement so I can submit it for legal review.'",
+                "Cenk resmi sözleşmenin hukuki incelemeye sunulması için gönderilmesini ister."
+            )
+        ],
+        "topic_tags": ["procurement", "negotiation", "saas-licensing", "budgeting"],
+        "related_ids": ["vocab.objective", "vocab.customer"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.cross-team-api-contract",
+        "title": "Architecture Alignment: Payment Microservice Schema",
+        "cefr_level": "B1",
+        "category": "stakeholder_alignment",
+        "scenario_context": "Derya, a mobile tech lead, and Simon, a payments backend architect, negotiate field formats for a new checkout endpoint.",
+        "speakers": [
+            {"id": "derya", "name": "Derya", "role": "Mobile Tech Lead", "accent": "Turkish"},
+            {"id": "simon", "name": "Simon", "role": "Payment Backend Architect", "accent": "British"}
+        ],
+        "audio_ref": "audio/listening/b1_cross_team_api.mp3",
+        "duration_seconds": 48,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "simon",
+                "start_ms": 0,
+                "end_ms": 5500,
+                "text_en": "Hi Derya. Let's align on the JSON payload for the new v2 mobile checkout API.",
+                "text_tr": "Selam Derya. Yeni v2 mobil ödeme API'si için JSON veri yükü (payload) üzerinde uzlaşalım."
+            },
+            {
+                "index": 2,
+                "speaker_id": "derya",
+                "start_ms": 5800,
+                "end_ms": 13500,
+                "text_en": "Thanks Simon. On the mobile client, we noticed that currency amounts are currently formatted as floating-point numbers in your draft schema.",
+                "text_tr": "Teşekkürler Simon. Mobil istemci tarafında taslak şemanızda para birimi tutarlarının kayan noktalı (float) sayılar olarak biçimlendirildiğini fark ettik."
+            },
+            {
+                "index": 3,
+                "speaker_id": "simon",
+                "start_ms": 13900,
+                "end_ms": 21800,
+                "text_en": "You are right to flag that. Floating-point numbers can introduce subtle rounding inaccuracies across different mobile processors.",
+                "text_tr": "Bunu belirtmekte çok haklısın. Kayan noktalı sayılar farklı mobil işlemcilerde ince yuvarlama hatalarına yol açabilir."
+            },
+            {
+                "index": 4,
+                "speaker_id": "derya",
+                "start_ms": 22200,
+                "end_ms": 31200,
+                "text_en": "Exactly. We strongly recommend transmitting amounts in minor currency units—like cents—as 64-bit integers.",
+                "text_tr": "Kesinlikle. Tutarların sent gibi alt para birimi cinsinden 64-bitlik tam sayılar (integer) olarak iletilmesini şiddetle öneriyoruz."
+            },
+            {
+                "index": 5,
+                "speaker_id": "simon",
+                "start_ms": 31600,
+                "end_ms": 39800,
+                "text_en": "Agreed. We will update the schema to use integer cents and add an explicit three-letter ISO currency code string.",
+                "text_tr": "Anlaştık. Şemayı tam sayı sent kullanacak şekilde güncelleyecek ve açık bir üç harfli ISO para birimi kodu ekleyeceğiz."
+            },
+            {
+                "index": 6,
+                "speaker_id": "derya",
+                "start_ms": 40200,
+                "end_ms": 47500,
+                "text_en": "That makes our client parsing completely deterministic. I will update our Kotlin serialization models today.",
+                "text_tr": "Bu durum istemci ayrıştırmamızı tamamen deterministik hale getirir. Bugün Kotlin serileştirme modellerimizi güncelleyeceğim."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "collaborate",
+                "vocab_id": "vocab.collaborate",
+                "context_note_tr": "Ekipler arası teknik sözleşmelerde ortak mimari uzlaşma."
+            },
+            {
+                "word": "verify",
+                "vocab_id": "vocab.verify",
+                "context_note_tr": "Veri tiplerinin ve API sözleşmelerinin doğrulanması."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_api_01",
+                "What potential issue does Derya raise regarding floating-point numbers in the payment schema?",
+                "Derya ödeme şemasındaki kayan noktalı (float) sayılarla ilgili hangi potansiyel sorunu gündeme getirmektedir?",
+                "Floating-point numbers can cause subtle rounding inaccuracies across different mobile processors",
+                [
+                    "Floating numbers double the physical battery drain of mobile smartphones",
+                    "They cause Android devices to automatically disconnect from Wi-Fi",
+                    "Floating-point values cannot be stored in modern cloud databases"
+                ],
+                "Both Derya and Simon agree that floating-point numbers can lead to rounding errors across devices.",
+                "Kayan noktalı sayıların cihazlar arasında yuvarlama hatalarına yol açabileceği konusunda uzlaşırlar."
+            ),
+            build_q(
+                "q_b1_api_02",
+                "What data format does Derya recommend for financial amounts?",
+                "Derya finansal tutarlar için hangi veri biçimini önermektedir?",
+                "Minor currency units as 64-bit integers",
+                [
+                    "Unformatted descriptive paragraphs of text",
+                    "High-resolution photographic images of paper receipts",
+                    "Random hexadecimal encryption hashes"
+                ],
+                "Derya recommends transmitting amounts in minor currency units—like cents—as 64-bit integers.",
+                "Derya tutarların sent gibi alt birimlerde 64-bitlik tam sayı olarak gönderilmesini önerir."
+            ),
+            build_q(
+                "q_b1_api_03",
+                "What additional field will Simon incorporate into the updated schema?",
+                "Simon güncellenmiş şemaya hangi ek alanı dahil edecektir?",
+                "A three-letter ISO currency code string",
+                [
+                    "The personal home address of the software developer",
+                    "A link to the developer's favorite music album",
+                    "The current atmospheric temperature in London"
+                ],
+                "Simon agrees to: 'add an explicit three-letter ISO currency code string.'",
+                "Simon açık bir üç harfli ISO para birimi kodu ekleyeceğini ifade eder."
+            ),
+            build_q(
+                "q_b1_api_04",
+                "What framework will Derya use to update the mobile application models?",
+                "Derya mobil uygulama modellerini güncellemek için hangi çatıyı kullanacaktır?",
+                "Kotlin serialization",
+                [
+                    "Manual paper spreadsheets",
+                    "C++ memory pointers",
+                    "Visual Basic scripts"
+                ],
+                "Derya states: 'I will update our Kotlin serialization models today.'",
+                "Derya Kotlin serileştirme modellerini güncelleyeceğini söyler."
+            ),
+            build_q(
+                "q_b1_api_05",
+                "What is the main advantage of this change for the mobile client?",
+                "Bu değişikliğin mobil istemci için temel avantajı nedir?",
+                "It makes client-side payload parsing completely deterministic",
+                [
+                    "It cuts download file sizes by ninety-nine percent",
+                    "It allows payments without having a valid bank account",
+                    "It removes the need to connect to the internet"
+                ],
+                "Derya highlights: 'That makes our client parsing completely deterministic.'",
+                "Derya bunun istemci tarafında ayrıştırmayı tamamen deterministik kıldığını vurgular."
+            )
+        ],
+        "topic_tags": ["api-design", "cross-team-alignment", "mobile-architecture", "data-contracts"],
+        "related_ids": ["vocab.collaborate", "vocab.verify"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.sprint-retrospective-action-items",
+        "title": "Sprint Retrospective: Flaky Automated UI Tests",
+        "cefr_level": "B1",
+        "category": "engineering_meeting",
+        "scenario_context": "Tolga, a scrum master, leads a retrospective discussion with Hannah, a fullstack engineer, about reducing CI pipeline build times.",
+        "speakers": [
+            {"id": "tolga", "name": "Tolga", "role": "Scrum Master", "accent": "Turkish"},
+            {"id": "hannah", "name": "Hannah", "role": "Fullstack Engineer", "accent": "American"}
+        ],
+        "audio_ref": "audio/listening/b1_retro_action.mp3",
+        "duration_seconds": 47,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "tolga",
+                "start_ms": 0,
+                "end_ms": 5800,
+                "text_en": "Welcome to our retrospective. Looking at our sprint retro board, the biggest frustration was slow CI build pipelines.",
+                "text_tr": "Retrospektif toplantımıza hoş geldiniz. Sprint retro panomuza baktığımızda en büyük hayal kırıklığı yavaş CI derleme hatlarıydı."
+            },
+            {
+                "index": 2,
+                "speaker_id": "hannah",
+                "start_ms": 6200,
+                "end_ms": 14500,
+                "text_en": "Yes Tolga. Our build pipeline currently takes forty-two minutes because fifty end-to-end UI tests run sequentially.",
+                "text_tr": "Evet Tolga. Elli adet uçtan uca UI testi sırayla çalıştığı için derleme hattımız şu anda kırk iki dakika sürüyor."
+            },
+            {
+                "index": 3,
+                "speaker_id": "tolga",
+                "start_ms": 14900,
+                "end_ms": 21800,
+                "text_en": "And many of those UI tests are flaky, meaning developers have to re-trigger builds multiple times.",
+                "text_tr": "Ve bu UI testlerinin çoğu kararsız (flaky), yani geliştiriciler derlemeleri birden fazla kez yeniden tetiklemek zorunda kalıyor."
+            },
+            {
+                "index": 4,
+                "speaker_id": "hannah",
+                "start_ms": 22200,
+                "end_ms": 31200,
+                "text_en": "Exactly. I propose we convert thirty of those UI tests into fast unit tests and run the remaining twenty UI tests in parallel.",
+                "text_tr": "Kesinlikle. Bu UI testlerinin otuz tanesini hızlı birim testlerine dönüştürmeyi ve kalan yirmi UI testini paralel çalıştırmayı öneriyorum."
+            },
+            {
+                "index": 5,
+                "speaker_id": "tolga",
+                "start_ms": 31600,
+                "end_ms": 39500,
+                "text_en": "That would be a massive improvement. What target build duration do you think we can realistically achieve?",
+                "text_tr": "Bu muazzam bir gelişme olur. Gerçekçi olarak hangi hedef derleme süresine ulaşabileceğimizi düşünüyorsun?"
+            },
+            {
+                "index": 6,
+                "speaker_id": "hannah",
+                "start_ms": 40000,
+                "end_ms": 46500,
+                "text_en": "With parallel execution, our pipeline should finish in under twelve minutes. I will take ownership of this action item.",
+                "text_tr": "Paralel yürütme ile derleme hattımız on iki dakikanın altında tamamlanmalıdır. Bu aksiyon maddesinin sorumluluğunu ben alacağım."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "bottleneck",
+                "vocab_id": "vocab.bottleneck",
+                "context_note_tr": "Geliştirici hızını ve teslimat süresini engelleyen darboğaz."
+            },
+            {
+                "word": "maintain",
+                "vocab_id": "vocab.maintain",
+                "context_note_tr": "CI hatlarının ve test otomasyonunun sağlıklı bakımını sürdürmek."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_retro_01",
+                "What was identified as the main developer frustration during the sprint?",
+                "Sprint boyunca temel geliştirici hayal kırıklığı olarak ne belirlendi?",
+                "Slow and unreliable CI build pipelines",
+                [
+                    "Lack of free snacks in the office kitchen",
+                    "Excessive room temperature in the conference rooms",
+                    "Computer keyboards having the wrong color keycaps"
+                ],
+                "Tolga opens by pointing out: 'the biggest frustration was slow CI build pipelines.'",
+                "Tolga en büyük hayal kırıklığının yavaş CI derleme hatları olduğunu belirtir."
+            ),
+            build_q(
+                "q_b1_retro_02",
+                "How long does the current build pipeline take to complete?",
+                "Mevcut derleme hattının tamamlanması ne kadar sürüyor?",
+                "Forty-two minutes",
+                [
+                    "Five minutes",
+                    "Two full days",
+                    "Ten seconds"
+                ],
+                "Hannah states: 'Our build pipeline currently takes forty-two minutes.'",
+                "Hannah derleme hattının şu anda kırk iki dakika sürdüğünü söyler."
+            ),
+            build_q(
+                "q_b1_retro_03",
+                "What does the term 'flaky test' describe in this engineering context?",
+                "Bu mühendislik bağlamında 'flaky test' terimi neyi tanımlamaktadır?",
+                "Tests that intermittently fail without any actual code change, forcing developers to re-trigger builds",
+                [
+                    "Tests that test whether the screen brightness is high enough",
+                    "Tests written in poetic rhyming English verse",
+                    "Tests that verify the physical weight of computer monitors"
+                ],
+                "Tolga clarifies that flaky tests fail unpredictably, forcing developers to re-run builds.",
+                "Tolga kararsız testlerin öngörülemez şekilde başarısız olup tekrar derleme gerektirdiğini belirtir."
+            ),
+            build_q(
+                "q_b1_retro_04",
+                "What concrete restructuring does Hannah propose for the test suite?",
+                "Hannah test paketi için hangi somut yeniden yapılandırmayı önermektedir?",
+                "Converting thirty UI tests to unit tests and running the remaining twenty in parallel",
+                [
+                    "Deleting all fifty UI tests and never testing software again",
+                    "Paying external contractors to click buttons manually all night",
+                    "Running tests only once per calendar year on Christmas Eve"
+                ],
+                "Hannah proposes turning 30 tests into unit tests and running the rest in parallel.",
+                "Hannah 30 testi birim testine dönüştürmeyi ve kalanları paralel çalıştırmayı önerir."
+            ),
+            build_q(
+                "q_b1_retro_05",
+                "What target build duration does Hannah expect after completing the work?",
+                "Hannah çalışmayı tamamladıktan sonra hangi hedef derleme süresini beklemektedir?",
+                "Under twelve minutes",
+                [
+                    "Exactly thirty-nine minutes",
+                    "Zero seconds instantaneously",
+                    "One hour and fifteen minutes"
+                ],
+                "Hannah projects that with parallel execution, the pipeline should finish in under twelve minutes.",
+                "Hannah paralel yürütme ile sürenin on iki dakikanın altına ineceğini öngörür."
+            )
+        ],
+        "topic_tags": ["agile", "retrospective", "continuous-integration", "testing"],
+        "related_ids": ["vocab.bottleneck", "vocab.maintain"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.customer-feedback-prioritization",
+        "title": "Backlog Grooming: Search Performance and Filtering",
+        "cefr_level": "B1",
+        "category": "product_discovery",
+        "scenario_context": "Gizem, a customer success lead, reviews user complaint tickets with Arthur, the product owner, to prioritize search filters for the next release.",
+        "speakers": [
+            {"id": "gizem", "name": "Gizem", "role": "Customer Success Lead", "accent": "Turkish"},
+            {"id": "arthur", "name": "Arthur", "role": "Product Owner", "accent": "British"}
+        ],
+        "audio_ref": "audio/listening/b1_search_feedback.mp3",
+        "duration_seconds": 49,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "arthur",
+                "start_ms": 0,
+                "end_ms": 5500,
+                "text_en": "Thanks for joining this grooming session, Gizem. Which customer feedback themes surfaced most frequently this month?",
+                "text_tr": "Bu detaylandırma oturumuna katıldığın için teşekkürler Gizem. Bu ay en sık hangi müşteri geri bildirim temaları ortaya çıktı?"
+            },
+            {
+                "index": 2,
+                "speaker_id": "gizem",
+                "start_ms": 5900,
+                "end_ms": 13800,
+                "text_en": "Over forty percent of user support tickets complained about our product search functionality when browsing large catalogs.",
+                "text_tr": "Kullanıcı destek biletlerinin yüzde kırktan fazlası, büyük kataloglara göz atarken ürün arama işlevimizden şikayet etti."
+            },
+            {
+                "index": 3,
+                "speaker_id": "arthur",
+                "start_ms": 14200,
+                "end_ms": 21500,
+                "text_en": "Are users unhappy with search result accuracy, or is query response latency the primary issue?",
+                "text_tr": "Kullanıcılar arama sonuçlarının doğruluğundan mı memnun değil yoksa sorgu yanıt gecikmesi mi ana sorun?"
+            },
+            {
+                "index": 4,
+                "speaker_id": "gizem",
+                "start_ms": 22000,
+                "end_ms": 31200,
+                "text_en": "Both. Queries take more than four seconds to load, and users cannot filter search results by brand or price range.",
+                "text_tr": "Her ikisi de. Sorguların yüklenmesi dört saniyeden fazla sürüyor ve kullanıcılar arama sonuçlarını marka veya fiyat aralığına göre filtreleyemiyor."
+            },
+            {
+                "index": 5,
+                "speaker_id": "arthur",
+                "start_ms": 31600,
+                "end_ms": 40500,
+                "text_en": "Understood. The backend team recently indexed the product catalog in Elasticsearch, which reduces query latency to under two hundred milliseconds.",
+                "text_tr": "Anlaşıldı. Backend ekibi yakın zamanda ürün kataloğunu Elasticsearch'te dizinledi, bu da sorgu gecikmesini iki yüz milisaniyenin altına indiriyor."
+            },
+            {
+                "index": 6,
+                "speaker_id": "gizem",
+                "start_ms": 41000,
+                "end_ms": 48500,
+                "text_en": "That is wonderful! If we combine that with multi-select filter chips on the UI, our customer satisfaction scores will improve significantly.",
+                "text_tr": "Bu harika! Bunu kullanıcı arayüzündeki çoklu seçim filtreleme etiketleriyle birleştirirsek müşteri memnuniyeti puanlarımız belirgin şekilde artacaktır."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "customer",
+                "vocab_id": "vocab.customer",
+                "context_note_tr": "Kullanıcı deneyimi ve müşteri destek geri bildirimleri."
+            },
+            {
+                "word": "effective",
+                "vocab_id": "vocab.effective",
+                "context_note_tr": "Arama deneyimini hızlandıran etkili indeksleme çözümü."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_feed_01",
+                "What proportion of customer support tickets concerned the product search feature?",
+                "Müşteri destek biletlerinin ne kadarlık bir oranı ürün arama özelliğine ilişkindi?",
+                "Over forty percent of tickets",
+                [
+                    "Less than one percent",
+                    "Exactly five tickets in total",
+                    "One hundred percent of all company emails"
+                ],
+                "Gizem states: 'Over forty percent of user support tickets complained about our product search.'",
+                "Gizem destek biletlerinin yüzde kırktan fazlasının ürün aramayla ilgili olduğunu belirtir."
+            ),
+            build_q(
+                "q_b1_feed_02",
+                "What are the two specific pain points users experienced when searching?",
+                "Kullanıcıların arama yaparken yaşadığı iki spesifik sorun noktası nedir?",
+                "Queries take over four seconds, and results cannot be filtered by brand or price",
+                [
+                    "The computer monitor turns off and the search bar requires a password",
+                    "Search results are displayed entirely in upside-down letters",
+                    "Users are charged five dollars for every word they type into the search bar"
+                ],
+                "Gizem explains that queries take over 4 seconds and lack brand or price filtering.",
+                "Gizem sorguların 4 saniyeden uzun sürdüğünü ve marka/fiyat filtrelemesi yapılamadığını söyler."
+            ),
+            build_q(
+                "q_b1_feed_03",
+                "What backend indexing technology was recently implemented to accelerate queries?",
+                "Sorguları hızlandırmak için yakın zamanda hangi backend dizinleme teknolojisi uygulandı?",
+                "Elasticsearch",
+                [
+                    "Handwritten index paper cards",
+                    "A single flat text file stored on an office USB drive",
+                    "Microsoft Word document tables"
+                ],
+                "Arthur explains: 'The backend team recently indexed the product catalog in Elasticsearch.'",
+                "Arthur ürün kataloğunun Elasticsearch'te dizinlendiğini açıklar."
+            ),
+            build_q(
+                "q_b1_feed_04",
+                "To what response time will the new search index reduce query latency?",
+                "Yeni arama dizini sorgu gecikmesini hangi yanıt süresine indirecektir?",
+                "Under two hundred milliseconds",
+                [
+                    "Around forty-five seconds",
+                    "Exactly five minutes",
+                    "Ten milliseconds slower than before"
+                ],
+                "Arthur confirms it reduces latency to under two hundred milliseconds.",
+                "Arthur sürenin iki yüz milisaniyenin altına ineceğini teyit eder."
+            ),
+            build_q(
+                "q_b1_feed_05",
+                "What frontend UI component does Gizem suggest introducing alongside the fast backend?",
+                "Gizem hızlı backend'in yanına hangi ön yüz UI bileşeninin eklenmesini önermektedir?",
+                "Multi-select filter chips",
+                [
+                    "Flashing red pop-up advertisements",
+                    "An automatic video player with sound enabled",
+                    "A mandatory twenty-question satisfaction quiz"
+                ],
+                "Gizem says: 'If we combine that with multi-select filter chips on the UI, satisfaction will improve.'",
+                "Gizem arayüze çoklu seçim filtreleme etiketleri eklenmesini önerir."
+            )
+        ],
+        "topic_tags": ["product-management", "customer-feedback", "search-ux", "elasticsearch"],
+        "related_ids": ["vocab.customer", "vocab.effective"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "listening.b1.security-audit-compliance-check",
+        "title": "Security Briefing: Two-Factor Authentication Compliance",
+        "cefr_level": "B1",
+        "category": "executive_briefing",
+        "scenario_context": "Kaan, an information security analyst, briefs Rachel, the corporate compliance director, on regional two-factor authentication adoption.",
+        "speakers": [
+            {"id": "kaan", "name": "Kaan", "role": "Security Analyst", "accent": "Turkish"},
+            {"id": "rachel", "name": "Rachel", "role": "Compliance Director", "accent": "British"}
+        ],
+        "audio_ref": "audio/listening/b1_security_audit.mp3",
+        "duration_seconds": 48,
+        "transcript_items": [
+            {
+                "index": 1,
+                "speaker_id": "rachel",
+                "start_ms": 0,
+                "end_ms": 5500,
+                "text_en": "Good morning Kaan. With our external SOC 2 security audit scheduled in two weeks, where do we stand on 2FA enforcement?",
+                "text_tr": "Günaydın Kaan. İki hafta içinde harici SOC 2 güvenlik denetimimiz varken iki faktörlü kimlik doğrulama (2FA) zorunluluğunda ne durumdayız?"
+            },
+            {
+                "index": 2,
+                "speaker_id": "kaan",
+                "start_ms": 5900,
+                "end_ms": 13800,
+                "text_en": "Ninety-four percent of all staff across our European and Turkish offices have already enrolled their hardware security tokens.",
+                "text_tr": "Avrupa ve Türkiye ofislerimizdeki tüm personelin yüzde doksan dördü donanım güvenlik belirteçlerini çoktan kaydetti."
+            },
+            {
+                "index": 3,
+                "speaker_id": "rachel",
+                "start_ms": 14200,
+                "end_ms": 20800,
+                "text_en": "That is solid progress, but our compliance policy requires one hundred percent mandatory participation before the audit.",
+                "text_tr": "Bu sağlam bir ilerleme ancak uyumluluk politikamız denetimden önce yüzde yüz zorunlu katılım gerektiriyor."
+            },
+            {
+                "index": 4,
+                "speaker_id": "kaan",
+                "start_ms": 21200,
+                "end_ms": 29800,
+                "text_en": "The remaining six percent are contractors who joined the organization in the past ten days and haven't completed onboarding.",
+                "text_tr": "Kalan yüzde altı, son on gün içinde organizasyona katılan ve henüz ilk katılımı tamamlamamış yüklenicilerden oluşuyor."
+            },
+            {
+                "index": 5,
+                "speaker_id": "rachel",
+                "start_ms": 30200,
+                "end_ms": 39500,
+                "text_en": "Let's configure an automated access rule: if a contractor does not enroll by Friday at five p.m., internal VPN access is suspended.",
+                "text_tr": "Otomatik bir erişim kuralı yapılandıralım: Bir yüklenici Cuma günü saat beşe kadar kayıt yaptırmazsa dahili VPN erişimi askıya alınsın."
+            },
+            {
+                "index": 6,
+                "speaker_id": "kaan",
+                "start_ms": 40000,
+                "end_ms": 47500,
+                "text_en": "I will send a reminder notification today and enforce the policy cutoff on Friday. That will guarantee one hundred percent compliance.",
+                "text_tr": "Bugün bir hatırlatma bildirimi göndereceğim ve Cuma günü politika kesintisini uygulayacağım. Bu yüzde yüz uyumluluğu garanti edecektir."
+            }
+        ],
+        "key_vocabulary": [
+            {
+                "word": "verify",
+                "vocab_id": "vocab.verify",
+                "context_note_tr": "Kullanıcı kimliğini iki faktörlü sistemlerle doğrulamak."
+            },
+            {
+                "word": "objective",
+                "vocab_id": "vocab.objective",
+                "context_note_tr": "Denetim öncesi belirlenen uyumluluk ve güvenlik hedefleri."
+            }
+        ],
+        "comprehension_questions": [
+            build_q(
+                "q_b1_sec_01",
+                "What upcoming milestone makes 2FA compliance urgent for the organization?",
+                "Hangi yaklaşan dönüm noktası 2FA uyumluluğunu kurum için acil kılmaktadır?",
+                "An external SOC 2 security audit scheduled in two weeks",
+                [
+                    "A mandatory company physical fitness examination",
+                    "An international video game tournament between regional branches",
+                    "A holiday celebration dinner with external suppliers"
+                ],
+                "Rachel opens by stating: 'With our external SOC 2 security audit scheduled in two weeks.'",
+                "Rachel iki hafta sonraki harici SOC 2 denetiminin yaklaştığını belirtir."
+            ),
+            build_q(
+                "q_b1_sec_02",
+                "What current percentage of company staff has already enrolled in 2FA?",
+                "Şirket personelinin şu anda yüzde kaçı 2FA sistemine kayıt yaptırmıştır?",
+                "Ninety-four percent",
+                [
+                    "Twelve percent",
+                    "Fifty percent",
+                    "One hundred percent"
+                ],
+                "Kaan reports: 'Ninety-four percent of all staff... have already enrolled.'",
+                "Kaan personelin yüzde doksan dördünün kaydolduğunu bildirir."
+            ),
+            build_q(
+                "q_b1_sec_03",
+                "Who makes up the remaining six percent who have not yet enrolled?",
+                "Henüz kayıt yaptırmamış olan kalan yüzde altılık kesimi kimler oluşturmaktadır?",
+                "Contractors who joined the company within the last ten days",
+                [
+                    "Executive board members who refuse to use computers",
+                    "Employees who work exclusively during night shifts",
+                    "Software engineers who lost their company laptops"
+                ],
+                "Kaan explains that the remaining 6% are contractors who joined in the last 10 days.",
+                "Kaan kalan %6'nın son on günde katılan yükleniciler olduğunu belirtir."
+            ),
+            build_q(
+                "q_b1_sec_04",
+                "What automated consequence will occur if someone fails to enroll by Friday at 5 p.m.?",
+                "Biri Cuma saat 17:00'ye kadar kayıt yaptırmazsa hangi otomatik yaptırım uygulanacaktır?",
+                "Their internal VPN network access will be suspended",
+                [
+                    "Their monthly salary will be permanently cancelled",
+                    "Their computer will be remotely wiped and deleted",
+                    "They will be asked to work in the office during weekends"
+                ],
+                "Rachel instructs: 'if a contractor does not enroll by Friday at five p.m., internal VPN access is suspended.'",
+                "Rachel kaydolmayanların VPN erişiminin askıya alınması talimatını verir."
+            ),
+            build_q(
+                "q_b1_sec_05",
+                "What target compliance rate is required by corporate policy for the audit?",
+                "Denetim için kurumsal politika gereği hangi hedef uyumluluk oranı şarttır?",
+                "One hundred percent mandatory participation",
+                [
+                    "Eighty-five percent",
+                    "Seventy percent",
+                    "Fifty percent"
+                ],
+                "Rachel notes policy requires one hundred percent mandatory participation before the audit.",
+                "Rachel politikanın yüzde yüz zorunlu katılım gerektirdiğini vurgular."
+            )
+        ],
+        "topic_tags": ["cybersecurity", "compliance", "soc2-audit", "two-factor-authentication"],
+        "related_ids": ["vocab.verify", "vocab.objective"],
+        "status": "APPROVED",
+        "version": 1
+    }
+]
+
+if __name__ == "__main__":
+    print(f"Generated {len(B1_LISTENING_SCENARIOS)} B1 listening scenarios.")
+    for s in B1_LISTENING_SCENARIOS:
+        print(f"  [{s['cefr_level']}] {s['id']} - {s['title']} ({len(s['transcript_items'])} items, {len(s['comprehension_questions'])} questions)")

@@ -1,0 +1,553 @@
+- id: vocab.consensus
+  headword: consensus
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /kənˈsen.səs/
+  audio_ref: null
+  definition_en: A widespread collective agreement or harmony of opinion arrived at by a group after comprehensive deliberation.
+  meaning_tr: uzlaşı, ortak mutabakat, genel fikir birliği
+  collocations:
+    - text: reach a consensus
+      tr: uzlaşıya varmak
+    - text: broad consensus
+      tr: geniş mutabakat
+  examples:
+    - en: Building consensus across distributed cross-functional teams requires transparent leadership and active listening.
+      tr: Dağıtık ve çapraz fonksiyonlu ekipler arasında uzlaşı inşa etmek, şeffaf liderlik ve etkin dinleme gerektirir.
+      context: Executive Leadership
+    - en: Despite conflicting stakeholder interests, the architecture committee arrived at a solid technical consensus.
+      tr: Paydaşların birbiriyle çelişen çıkarlarına rağmen mimari komitesi sağlam bir teknik fikir birliğine vardı.
+      context: Technical Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Consensus" zaten ortak bir fikir birliğini ifade ettiği için İngilizcede "general consensus of opinion"
+        veya "consensus agreement" kullanımı anlatım bozukluğu (pleonasm/redundancy) olarak kabul edilir.
+        Sadece "reach a consensus" veya "broad consensus" denilmesi yeterlidir.
+      incorrect_example: We need to reach a mutual consensus agreement.
+      correct_example: We need to reach a consensus.
+  register: formal
+  topic_tags:
+    - business
+    - leadership
+    - governance
+  related_ids:
+    - vocab.deliberation
+    - vocab.concur
+  status: APPROVED
+  version: 1
+
+- id: vocab.anomaly
+  headword: anomaly
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /əˈnɒm.ə.li/
+  audio_ref: null
+  definition_en: Something that deviates from what is standard, normal, or expected in a system or dataset.
+  meaning_tr: kuraldışılık, aykırılık, anomali, istisnai sapma
+  collocations:
+    - text: detect an anomaly
+      tr: bir anomali tespit etmek
+    - text: statistical anomaly
+      tr: istatistiksel sapma
+  examples:
+    - en: The automated fraud detection engine flagged an anomaly in transaction volume originating from Southeast Asia.
+      tr: Otomatik sahtecilik tespit motoru, Güneydoğu Asya kaynaklı işlem hacminde bir anomali belirledi.
+      context: Machine Learning & Fraud
+    - en: The sudden spike in CPU temperature was an anomaly caused by a cooling fan mechanical failure.
+      tr: İşlemci sıcaklığındaki ani yükselme, soğutma fanındaki mekanik bir arızanın yol açtığı bir anomaliydi.
+      context: Hardware Operations
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Anomaly" rastgele bir hata (error) veya böcek (bug) değildir; kurulu düzen veya istatistiksel
+        dağılım içindeki "anormal ve sıra dışı sapmadır".
+      incorrect_example: There is an error anomaly in the code syntax.
+      correct_example: The algorithm detected an anomaly in traffic distribution.
+  register: academic
+  topic_tags:
+    - tech
+    - analysis
+  related_ids:
+    - vocab.discrepancy
+    - vocab.scrutiny
+  status: APPROVED
+  version: 1
+
+- id: vocab.benchmark-v
+  headword: benchmark
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈbentʃ.mɑːk/
+  audio_ref: null
+  definition_en: To evaluate or check something by comparison with a standard or peer group.
+  meaning_tr: sektör standardına göre kıyaslamak, referans alarak ölçmek
+  collocations:
+    - text: benchmark against peers
+      tr: emsalleriyle kıyaslamak
+    - text: rigorously benchmark
+      tr: titizlikle kıyaslamak
+  examples:
+    - en: We benchmarked our on-device speech transcription latency against state-of-the-art cloud inference models.
+      tr: Cihaz üstü konuşma yazıya dökme gecikmemizi, son teknoloji bulut çıkarım modelleriyle kıyasladık.
+      context: AI Benchmark Evaluation
+    - en: Top European banks benchmark their cybersecurity resilience against rigorous European Central Bank frameworks.
+      tr: Önde gelen Avrupa bankaları, siber güvenlik dayanıklılıklarını Avrupa Merkez Bankası'nın titiz çerçeveleriyle kıyaslar.
+      context: Enterprise Compliance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Fiil olarak "benchmark against" kalıbıyla kullanılır ("benchmark X against Y").
+      incorrect_example: We benchmarked our app with competitors.
+      correct_example: We benchmarked our app against competitors.
+  register: formal
+  topic_tags:
+    - strategy
+    - tech
+  related_ids:
+    - vocab.benchmark
+    - vocab.optimize
+  status: APPROVED
+  version: 1
+
+- id: vocab.dichotomy
+  headword: dichotomy
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /daɪˈkɒt.ə.mi/
+  audio_ref: null
+  definition_en: A division or contrast between two things that are or are represented as being opposed or entirely different.
+  meaning_tr: ikilik, iki zıt kutba ayrılma, dikotomi
+  collocations:
+    - text: false dichotomy
+      tr: sahte ikilik (yanıltıcı kutuplaşma)
+    - text: sharp dichotomy
+      tr: keskin kutuplaşma/ayrım
+  examples:
+    - en: Presenting security and developer velocity as mutually exclusive represents a false dichotomy.
+      tr: Güvenlik ile geliştirici hızını birbirini dışlayan kavramlar olarak sunmak, sahte bir ikiliktir.
+      context: Engineering Philosophy
+    - en: The dichotomy between proprietary commercial models and open-source foundation models defines the modern AI era.
+      tr: Tescilli ticari modeller ile açık kaynaklı temel modeller arasındaki kutuplaşma, modern yapay zeka çağını tanımlar.
+      context: Industry Analysis
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "False dichotomy" mantıksal bir safsatadır (logical fallacy): kişiyi "ya o ya bu" seçimine zorlayıp
+        üçüncü bir alternatifin varlığını gizleme durumudur.
+      incorrect_example: We have a dual dilemma in our choices.
+      correct_example: We should avoid falling into a false dichotomy.
+  register: academic
+  topic_tags:
+    - rhetoric
+    - philosophy
+  related_ids:
+    - vocab.paradox
+    - vocab.nuance
+  status: APPROVED
+  version: 1
+
+- id: vocab.equivocal
+  headword: equivocal
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪˈkwɪv.ə.kəl/
+  audio_ref: null
+  definition_en: Open to more than one interpretation; ambiguous; uncertain or questionable in nature.
+  meaning_tr: iki anlamlı, kaçamaklı, kuşkulu, yoruma açık
+  collocations:
+    - text: equivocal response
+      tr: kaçamaklı/kesin olmayan yanıt
+    - text: equivocal results
+      tr: kesin sonuç vermeyen veriler
+  examples:
+    - en: The vendor gave an equivocal response when asked whether our user data would be used to train their models.
+      tr: Kullanıcı verilerimizin modellerini eğitmek için kullanılıp kullanılmayacağı sorulduğunda tedarikçi kaçamaklı bir yanıt verdi.
+      context: Vendor Scrutiny
+    - en: The clinical audit yielded equivocal results regarding the efficacy of the automated diagnostics tool.
+      tr: Klinik denetim, otomatik tanı aracının etkinliğine ilişkin yoruma açık ve net olmayan sonuçlar verdi.
+      context: Medical Compliance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Equivocal" kelimesi "equal" veya "equivalent" (eşdeğer) ile karıştırılmamalıdır!
+        "Equivocal", kasti olarak birden fazla anlama gelebilecek şekilde "kaçamaklı ve belirsiz" demektir.
+        Zıttı ise "unequivocal" (net, kesin) kelimesidir.
+      incorrect_example: The two prices are equivocal.
+      correct_example: The CEO gave an equivocal answer during the press conference.
+  register: formal
+  topic_tags:
+    - diplomacy
+    - communication
+  related_ids:
+    - vocab.unequivocal
+    - vocab.ambiguity
+  status: APPROVED
+  version: 1
+
+- id: vocab.exacerbate
+  headword: exacerbate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ɪɡˈzæs.ə.beɪt/
+  audio_ref: null
+  definition_en: To make a problem, bad situation, or negative feeling worse or more severe.
+  meaning_tr: kötüleştirmek, tırmandırmak, yangına körükle gitmek
+  collocations:
+    - text: exacerbate the problem
+      tr: sorunu daha da kötüleştirmek
+    - text: exacerbate tensions
+      tr: gerilimi tırmandırmak
+  examples:
+    - en: Prematurely restarting all microservices during a network partition only exacerbated the connection storm.
+      tr: Ağ bölünmesi sırasında tüm mikro servisleri erkenden yeniden başlatmak, bağlantı fırtınasını yalnızca daha da kötüleştirdi.
+      context: Incident Postmortem
+    - en: Micromanagement under high-pressure deadlines exacerbates engineer burnout and increases voluntary turnover.
+      tr: Yüksek baskılı teslim tarihlerinde mikro yönetim uygulamak, mühendislerin tükenmişliğini tırmandırır ve istifaları artırır.
+      context: Team Culture
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türk öğreniciler genellikle "make worse" ifadesini kullanır. Üst düzey kurumsal ve akademik metinlerde
+        bir krizi veya hatayı derinleştirmek anlamında "exacerbate" standart C2 kelimedir.
+      incorrect_example: This action made the crisis worse.
+      correct_example: This hasty rollback exacerbated the outage.
+  register: formal
+  topic_tags:
+    - risk
+    - management
+  related_ids:
+    - vocab.mitigate
+    - vocab.bottleneck
+  status: APPROVED
+  version: 1
+
+- id: vocab.implicit
+  headword: implicit
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪmˈplɪs.ɪt/
+  audio_ref: null
+  definition_en: Implied though not plainly expressed; essentially or very closely connected with; with no qualification or doubt.
+  meaning_tr: örtük, zımni, üstü kapalı, kendiliğinden anlaşılan
+  collocations:
+    - text: implicit assumption
+      tr: örtük varsayım
+    - text: implicit trust
+      tr: tam/koşulsuz güven
+  examples:
+    - en: Code reviewers should make implicit assumptions explicit by documenting expected edge case constraints.
+      tr: Kod inceleyicileri, beklenen sınır durum kısıtlamalarını belgeleyerek örtük varsayımları açık hale getirmelidir.
+      context: Software Engineering
+    - en: There was an implicit understanding among founders that major strategic pivots required unanimous consent.
+      tr: Kurucular arasında, büyük stratejik yön değişimlerinin oy birliği gerektirdiğine dair zımni bir mutabakat vardı.
+      context: Partnership Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Explicit" (açıkça belirtilmiş, sarih) ile "implicit" (üstü kapalı, ima edilen, zımni)
+        birbirinin zıttıdır.
+      incorrect_example: The contract was implicit with clear written terms.
+      correct_example: The contract was explicit with clear written terms.
+  register: formal
+  topic_tags:
+    - communication
+    - rhetoric
+  related_ids:
+    - vocab.nuance
+    - vocab.ambiguity
+  status: APPROVED
+  version: 1
+
+- id: vocab.intrinsic
+  headword: intrinsic
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪnˈtrɪn.zɪk/
+  audio_ref: null
+  definition_en: Belonging naturally; essential; inherent to the true nature of something.
+  meaning_tr: içkin, özünde olan, ayrılmaz parçası niteliğinde
+  collocations:
+    - text: intrinsic value
+      tr: içsel/öz değer
+    - text: intrinsic motivation
+      tr: içsel motivasyon
+  examples:
+    - en: Latency is an intrinsic characteristic of network transmissions across planetary geographical distances.
+      tr: Gecikme, gezegen çapındaki coğrafi mesafeler arası ağ aktarımlarının özünde olan içkin bir özelliğidir.
+      context: Network Architecture
+    - en: Creative autonomy and technical mastery provide the strongest intrinsic motivation for senior software engineers.
+      tr: Yaratıcı özerklik ve teknik ustalık, kıdemli yazılım mühendisleri için en güçlü içsel motivasyonu sağlar.
+      context: Talent Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Intrinsic" (içkin/özünde olan) kelimesinin zıttı "extrinsic"tir (dışsal/dıştan gelen).
+      incorrect_example: Safety is an inside feature of this car.
+      correct_example: Safety is an intrinsic feature of this car's design.
+  register: formal
+  topic_tags:
+    - quality
+    - philosophy
+  related_ids:
+    - vocab.indispensable
+    - vocab.coherent
+  status: APPROVED
+  version: 1
+
+- id: vocab.juxtapose
+  headword: juxtapose
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˌdʒʌk.stəˈpəʊz/
+  audio_ref: null
+  definition_en: To place or deal with close together for contrasting effect.
+  meaning_tr: karşıtlıkları ortaya koymak için yan yana koymak, mukayese etmek
+  collocations:
+    - text: juxtapose two ideas
+      tr: iki fikri yan yana koyup mukayese etmek
+    - text: juxtaposed side by side
+      tr: yan yana dizilmiş
+  examples:
+    - en: The annual shareholder presentation juxtaposed last year's losses with this year's record-breaking cloud revenues.
+      tr: Yıllık hissedar sunumu, geçen yılın zararları ile bu yılın rekor kıran bulut gelirlerini çarpıcı bir tezatla yan yana koydu.
+      context: Executive Presentation
+    - en: In the design sprint, we juxtaposed the legacy multi-step checkout with the new single-tap tablet experience.
+      tr: Tasarım sprintinde, eski çok adımlı ödeme akışıyla yeni tek dokunuşlu tablet deneyimini yan yana getirip kıyasladık.
+      context: UI/UX Critique
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki şeyi yan yana koyup tezat oluşturmak için "juxtapose X with Y" veya "juxtapose X and Y" kullanılır.
+      incorrect_example: We juxtaposed the two designs to each other.
+      correct_example: We juxtaposed the two designs to highlight usability improvements.
+  register: formal
+  topic_tags:
+    - analysis
+    - rhetoric
+  related_ids:
+    - vocab.dichotomy
+    - vocab.nuance
+  status: APPROVED
+  version: 1
+
+- id: vocab.meticulous
+  headword: meticulous
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /məˈtɪk.jə.ləs/
+  audio_ref: null
+  definition_en: Showing great attention to detail; very careful, precise, and thorough.
+  meaning_tr: kılı kırk yaran, aşırı titiz, özenli
+  collocations:
+    - text: meticulous attention to detail
+      tr: ayrıntılara azami/kılı kırk yaran dikkat
+    - text: meticulous planning
+      tr: kılı kırk yaran planlama
+  examples:
+    - en: Designing a reliable offline-first database synchronization protocol demands meticulous engineering discipline.
+      tr: Güvenilir bir çevrimdışı öncelikli veritabanı eşzamanlama protokolü tasarlamak, kılı kırk yaran bir mühendislik disiplini gerektirir.
+      context: Software Architecture
+    - en: The medical software team maintained meticulous records of all safety-critical test runs.
+      tr: Tıbbi yazılım ekibi, güvenliği kritik tüm test çalıştırmalarının son derece titiz kayıtlarını tuttu.
+      context: Quality Assurance
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        En yaygın üst düzey collocation kalıbı "meticulous attention to detail"dir.
+        Sadece "careful" yerine kurumsal CV ve değerlendirmelerde "meticulous" kullanımı üstün bir profesyonellik vurgular.
+      incorrect_example: He is very carefully about the code.
+      correct_example: He shows meticulous attention to detail during code reviews.
+  register: formal
+  topic_tags:
+    - quality
+    - engineering
+  related_ids:
+    - vocab.scrutiny
+    - vocab.comprehensive
+  status: APPROVED
+  version: 1
+
+- id: vocab.paradox
+  headword: paradox
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈpær.ə.dɒks/
+  audio_ref: null
+  definition_en: A seemingly absurd or self-contradictory statement or proposition that when investigated or explained may prove to be well founded or true.
+  meaning_tr: çelişki, tezat, paradoks
+  collocations:
+    - text: central paradox
+      tr: temel/merkezi paradoks
+    - text: apparent paradox
+      tr: görünürdeki paradoks
+  examples:
+    - en: The central paradox of software development is that adding developers to a late project often makes it later.
+      tr: Yazılım geliştirmenin temel paradoksu, geciken bir projeye geliştirici eklemenin projeyi genellikle daha da geciktirmesidir.
+      context: Brooks Law / Management
+    - en: It is an apparent paradox that giving teams greater architectural autonomy produces more coherent systems.
+      tr: Ekiplere daha fazla mimari özerklik tanımanın daha tutarlı sistemler üretmesi görünürde bir paradokstur.
+      context: Engineering Culture
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        İsim hali "paradox"tur. Sıfat hali "paradoxical" (paradoksal/çelişkili), zarf hali "paradoxically"dir.
+      incorrect_example: Paradox, the smaller team shipped faster.
+      correct_example: Paradoxically, the smaller team shipped features faster.
+  register: formal
+  topic_tags:
+    - philosophy
+    - strategy
+  related_ids:
+    - vocab.dichotomy
+    - vocab.nuance
+  status: APPROVED
+  version: 1
+
+- id: vocab.quintessential
+  headword: quintessential
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˌkwɪn.tɪˈsen.ʃəl/
+  audio_ref: null
+  definition_en: Representing the most perfect, typical, or essential example of a quality or class.
+  meaning_tr: en yetkin örnek niteliğinde, tipik örneğini teşkil eden, tam manasıyla
+  collocations:
+    - text: quintessential example
+      tr: en yetkin/mükemmel örnek
+    - text: quintessential leader
+      tr: tam manasıyla lider
+  examples:
+    - en: Steve Jobs was the quintessential visionary who merged cutting-edge technology with minimalist aesthetics.
+      tr: Steve Jobs, ileri teknolojiyi minimalist estetikle birleştiren tam manasıyla bir vizyonerdi.
+      context: Business Leadership
+    - en: The Apollo guidance computer is the quintessential example of fault-tolerant real-time embedded systems.
+      tr: Apollo kılavuz bilgisayarı, hataya dayanıklı gerçek zamanlı gömülü sistemlerin en yetkin örneğidir.
+      context: Computing History
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Classic example" veya "typical example" yerine en üst düzey stilistik zenginlik katmak için
+        "the quintessential example" kullanılır.
+      incorrect_example: This is a classic perfect sample of bad architecture.
+      correct_example: This is the quintessential example of architectural debt.
+  register: formal
+  topic_tags:
+    - excellence
+    - rhetoric
+  related_ids:
+    - vocab.meticulous
+    - vocab.articulate-adj
+  status: APPROVED
+  version: 1
+
+- id: vocab.resilience
+  headword: resilience
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /rɪˈzɪl.jəns/
+  audio_ref: null
+  definition_en: The capacity to withstand or recover quickly from difficulties, shocks, or system failures.
+  meaning_tr: esneklik, toparlanma gücü, dayanıklılık, direnç
+  collocations:
+    - text: build resilience
+      tr: dayanıklılık ve toparlanma gücü inşa etmek
+    - text: system resilience
+      tr: sistem dayanıklılığı
+  examples:
+    - en: Chaos engineering deliberately injects infrastructure failures into production to test system resilience.
+      tr: Kaos mühendisliği, sistemin toparlanma gücünü test etmek için canlı ortama bilerek altyapı arızaları enjekte eder.
+      context: Reliability Engineering
+    - en: Professional resilience is the ability of leaders to navigate market downturns without compromising core company values.
+      tr: Mesleki dayanıklılık, liderlerin şirket temel değerlerinden ödün vermeksizin piyasa krizlerini aşabilme becerisidir.
+      context: Executive Mindset
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Resistance" (direnç) dışarıdan gelen bir güce karşı koymaktır. "Resilience" ise bir şok, darbe veya
+        arıza sonrasında "esneyip hızla eski sağlıklı haline dönebilme gücüdür".
+      incorrect_example: The server has good resistance after a crash.
+      correct_example: The server demonstrated excellent resilience after the regional network drop.
+  register: business
+  topic_tags:
+    - leadership
+    - engineering
+  related_ids:
+    - vocab.mitigate
+    - vocab.sustainable
+  status: APPROVED
+  version: 1
+
+- id: vocab.substantiate
+  headword: substantiate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /səbˈstæn.ʃi.eɪt/
+  audio_ref: null
+  definition_en: To provide evidence to support or prove the truth of a claim, hypothesis, or finding.
+  meaning_tr: somut delillerle kanıtlamak, doğrulamak, dayanaklandırmak
+  collocations:
+    - text: substantiate a claim
+      tr: bir iddiayı somut delillerle kanıtlamak
+    - text: substantiate findings
+      tr: bulguları somut verilerle desteklemek
+  examples:
+    - en: The vendor must substantiate their performance improvement claims with independent benchmark data.
+      tr: Tedarikçi, performans artışı iddialarını bağımsız kıyaslama verileriyle somut olarak kanıtlamalıdır.
+      context: Vendor Evaluation
+    - en: Without empirical user analytics, we cannot substantiate the hypothesis that the new UI reduces onboarding drop-off.
+      tr: Ampirik kullanıcı analitiği olmadan, yeni arayüzün kayıt terkini azalttığı hipotezini somut verilere dayandıramayız.
+      context: Product Analytics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Prove" genel bir ispatlama fiilidir. "Substantiate" ise bir iddiayı veya tezi "belgeler, veriler ve
+        somut kanıtlarla sağlam bir temele oturtmak" anlamına gelen resmi ve akademik bir fiildir.
+      incorrect_example: You must prove your claim with papers.
+      correct_example: You must substantiate your claim with verified audit logs.
+  register: formal
+  topic_tags:
+    - legal
+    - audit
+  related_ids:
+    - vocab.scrutiny
+    - vocab.benchmark-v
+  status: APPROVED
+  version: 1
+
+- id: vocab.unequivocal
+  headword: unequivocal
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˌʌn.ɪˈkwɪv.ə.kəl/
+  audio_ref: null
+  definition_en: Leaving no doubt; completely clear, explicit, and unambiguous.
+  meaning_tr: kesin, açık, yoruma kapalı, şüpheye yer bırakmayan
+  collocations:
+    - text: unequivocal statement
+      tr: şüpheye yer bırakmayan kesin beyanat
+    - text: unequivocal evidence
+      tr: tartışmasız somut kanıt
+  examples:
+    - en: The board gave its unequivocal approval to the European market expansion plan.
+      tr: Yönetim kurulu, Avrupa pazarına açılma planına kesin ve tartışmasız onayını verdi.
+      context: Board Resolution
+    - en: The benchmark telemetry provided unequivocal evidence that the query optimization eliminated the database bottleneck.
+      tr: Kıyaslama telemetrisi, sorgu optimizasyonunun veritabanı darboğazını ortadan kaldırdığına dair şüpheye yer bırakmayan kanıt sundu.
+      context: Performance Verification
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Unequivocal" kelimesi "kesin, net ve asla yanlış anlaşılamayacak" anlamına gelir.
+        "Clear" kelimesinin C2 düzeyindeki en güçlü ve resmi karşılığıdır.
+      incorrect_example: The CEO gave a very certain clear answer.
+      correct_example: The CEO delivered an unequivocal statement regarding executive commitment.
+  register: formal
+  topic_tags:
+    - executive
+    - rhetoric
+  related_ids:
+    - vocab.equivocal
+    - vocab.articulate-adj
+  status: APPROVED
+  version: 1

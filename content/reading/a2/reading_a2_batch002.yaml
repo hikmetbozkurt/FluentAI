@@ -1,0 +1,877 @@
+- id: reading.a2.smart-grocery-planning
+  title: Smart Grocery Planning for Busy Professionals
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: How creating weekly meal plans and organized grocery lists saves time, reduces food waste, and supports healthy
+    daily routines.
+  summary_tr: Haftalık yemek planı ve düzenli alışveriş listeleri oluşturmanın nasıl zaman kazandırdığını ve israfı önlediğini
+    anlatan rehber.
+  word_count: 260
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: The Problem with Daily Decisions
+    content_en: Many modern professionals arrive home exhausted in the evening without knowing what to prepare for dinner.
+      Deciding what to cook every single night consumes mental energy and frequently leads to ordering expensive takeout meals.
+      Taking thirty minutes on Sunday afternoon to plan five simple weekday dinners eliminates this daily stress. When your
+      menu is planned in advance, grocery shopping becomes a fast and focused errand rather than a chaotic chore.
+    content_tr: Birçok modern profesyonel, akşam eve yorgun gelip akşam yemeğinde ne hazırlayacağını bilmez. Her akşam ne
+      pişireceğine karar vermek zihinsel enerji tüketir ve sıklıkla pahalı hazır yemek siparişlerine yol açar. Pazar öğleden
+      sonra otuz dakikanızı beş basit hafta içi akşam yemeğini planlamaya ayırmak bu günlük stresi ortadan kaldırır. Menünüz
+      önceden planlandığında, market alışverişi kaotik bir angarya yerine hızlı ve odaklı bir iş haline gelir.
+  - paragraph_index: 2
+    title: Structuring the Grocery List
+    content_en: 'An effective grocery shopping list should be categorized by supermarket sections: fresh produce, pantry staples,
+      dairy, and household essentials. When items appear in the order of the store layout, shoppers move systematically through
+      the aisles and resist impulsive candy purchases near the checkout counter. Additionally, checking kitchen cupboards
+      before leaving home prevents buying duplicate ingredients like olive oil or rice. These simple habits save money and
+      keep daily eating routines nutritious.'
+    content_tr: 'Etkili bir market alışveriş listesi süpermarket bölümlerine göre kategorize edilmelidir: taze sebze-meyve,
+      kiler temel gıdaları, süt ürünleri ve ev ihtiyaçları. Ürünler mağaza düzenine göre sıralandığında, alışveriş yapanlar
+      reyonlar arasında sistemli bir şekilde ilerler ve kasa yanındaki anlık şekerleme alışverişlerine direnir. Ayrıca evden
+      çıkmadan önce mutfak dolaplarını kontrol etmek, zeytinyağı veya pirinç gibi mükerrer malzemelerin alınmasını önler.
+      Bu basit alışkanlıklar para tasarrufu sağlar ve günlük beslenme rutinlerini besleyici tutar.'
+  - paragraph_index: 3
+    title: Cooking in Batches
+    content_en: Another useful technique is cooking large portions of food on quiet evenings. Making a big pot of soup, roasted
+      seasonal vegetables, or seasoned chicken provides meals for two or three days. You can store these prepared containers
+      in the refrigerator or freezer. On busy workdays, reheating a wholesome homemade dish takes only five minutes, allowing
+      you to relax immediately after work.
+    content_tr: Diğer faydalı bir teknik de sakin akşamlarda büyük porsiyonlar pişirmektir. Büyük bir tencere çorba, fırınlanmış
+      mevsim sebzeleri veya baharatlı tavuk hazırlamak iki ya da üç günlük yemek sağlar. Bu hazırlanmış kapları buzdolabında
+      veya dondurucuda saklayabilirsiniz. Yoğun iş günlerinde sağlıklı ev yemeğini ısıtmak sadece beş dakika sürer ve işten
+      sonra hemen dinlenmenize imkan tanır.
+  - paragraph_index: 4
+    title: Reviewing and Adjusting the Plan
+    content_en: At the end of each week, look at what food remains in your refrigerator. If fresh spinach or berries were
+      not eaten, adjust your list for the next shopping trip. Gradually, you will discover your exact weekly consumption patterns.
+      Planning your food brings calm predictability to your home life and leaves you with more energy for your hobbies.
+    content_tr: Her haftanın sonunda buzdolabınızda hangi yiyeceklerin kaldığına bakın. Taze ıspanak veya meyveler yenmediyse,
+      bir sonraki alışveriş gezisi için listenizi ayarlayın. Kademeli olarak tam haftalık tüketim düzeninizi keşfedeceksiniz.
+      Yiyeceklerinizi planlamak ev hayatınıza sakin bir öngörülebilirlik getirir ve hobileriniz için size daha fazla enerji
+      bırakır.
+  vocabulary_annotations:
+  - word: produce
+    context_definition_en: Fresh agricultural goods like fruits and vegetables.
+    context_meaning_tr: taze sebze ve meyve
+  - word: staples
+    context_definition_en: Basic, essential food supplies regularly used.
+    context_meaning_tr: temel gıda maddeleri
+  - word: predictability
+    context_definition_en: The quality of being known or expected beforehand.
+    context_meaning_tr: öngörülebilirlik
+  comprehension_questions:
+  - id: q_reading_a2_smart-grocery-planning_01
+    question_en: According to the article, why is deciding what to cook every evening problematic?
+    question_tr_hint: Metne göre her akşam ne pişirileceğine karar vermek neden sorunludur?
+    options:
+    - It depletes mental energy and often results in costly food deliveries.
+    - It requires hiring an expensive personal chef.
+    - It prevents people from having breakfast on time.
+    - It causes kitchen appliances to break down frequently.
+    correct_answer: It depletes mental energy and often results in costly food deliveries.
+    explanation_en: Paragraph 1 explains that deciding daily consumes mental energy and leads to expensive takeout.
+    explanation_tr: 1. paragraf günlük karar vermenin zihinsel enerji tükettiğini ve pahalı hazır yemeklere yönlendirdiğini
+      açıklar.
+  - id: q_reading_a2_smart-grocery-planning_02
+    question_en: When does the author recommend organizing the weekday menu?
+    question_tr_hint: Yazar hafta içi menüsünü ne zaman organize etmeyi öneriyor?
+    options:
+    - On Sunday afternoon for approximately thirty minutes.
+    - Every morning before heading to the office.
+    - Only on national public holidays.
+    - Immediately after finishing Friday dinner.
+    correct_answer: On Sunday afternoon for approximately thirty minutes.
+    explanation_en: Paragraph 1 mentions dedicating thirty minutes on Sunday afternoon to plan five dinners.
+    explanation_tr: 1. paragrafta Pazar öğleden sonra otuz dakikanın beş akşam yemeğini planlamaya ayrılması önerilir.
+  - id: q_reading_a2_smart-grocery-planning_03
+    question_en: How should an efficient shopping list be structured?
+    question_tr_hint: Verimli bir alışveriş listesi nasıl yapılandırılmalıdır?
+    options:
+    - Grouped by the physical sections of the supermarket aisles.
+    - By the color and packaging size of the products.
+    - Alphabetically from A to Z across all categories.
+    - Strictly in order of item expiration dates.
+    correct_answer: Grouped by the physical sections of the supermarket aisles.
+    explanation_en: Paragraph 2 states that the list should be categorized by supermarket sections.
+    explanation_tr: 2. paragraf listenin süpermarket reyonlarına göre kategorize edilmesi gerektiğini belirtir.
+  - id: q_reading_a2_smart-grocery-planning_04
+    question_en: What is the primary benefit of cooking in large batches?
+    question_tr_hint: Büyük porsiyonlar halinde yemek pişirmenin temel faydası nedir?
+    options:
+    - It eliminates the need for fresh drinking water.
+    - It provides ready meals that take only minutes to reheat on busy workdays.
+    - It requires buying three new refrigerators every month.
+    - It allows you to open a commercial restaurant from home.
+    correct_answer: It provides ready meals that take only minutes to reheat on busy workdays.
+    explanation_en: Paragraph 3 explains that batch cooking allows reheating a healthy meal in five minutes.
+    explanation_tr: 3. paragraf toplu yemek pişirmenin yoğun günlerde yemeği beş dakikada ısıtma imkanı sağladığını belirtir.
+  - id: q_reading_a2_smart-grocery-planning_05
+    question_en: Why should you check what food remains in your refrigerator at the end of the week?
+    question_tr_hint: Hafta sonunda buzdolabında kalan yiyecekleri neden kontrol etmelisiniz?
+    options:
+    - To turn off the electricity in your kitchen completely.
+    - To adjust future shopping lists and understand true consumption patterns.
+    - To throw away all kitchen cooking utensils immediately.
+    - To invite thirty strangers for a sudden party.
+    correct_answer: To adjust future shopping lists and understand true consumption patterns.
+    explanation_en: Paragraph 4 explains that reviewing leftovers helps adjust future lists and discover consumption patterns.
+    explanation_tr: 4. paragraf kalan yiyecekleri incelemenin gelecek listeleri ayarlamaya ve tüketim alışkanlıklarını anlamaya
+      yaradığını söyler.
+  topic_tags:
+  - daily-life
+  - planning
+  - habits
+  - routine
+  status: APPROVED
+  version: 1
+- id: reading.a2.walking-for-desk-workers
+  title: The Health Benefits of Daily Walking for Office Workers
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: Simple strategies for incorporating regular walking breaks into sedentary office days to boost physical and
+    mental health.
+  summary_tr: Masa başı çalışanların fiziksel ve zihinsel sağlıklarını korumak için günlük yürüyüş molalarını rutinlerine
+    ekleme stratejileri.
+  word_count: 264
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: The Sedentary Desk Problem
+    content_en: Sitting in an office chair for eight consecutive hours places significant strain on the human body. Office
+      workers frequently experience tight hip flexors, stiff shoulder muscles, and sluggish circulation by mid-afternoon.
+      Scientific studies show that human bodies require regular movement to metabolize sugars and maintain healthy blood pressure
+      levels. Even a gym session in the evening cannot completely undo the negative effects of sitting motionless all day
+      long. Long periods without muscular activity lower metabolic rates and make the body feel sluggish by late afternoon.
+    content_tr: Ofis koltuğunda aralıksız sekiz saat oturmak insan vücuduna önemli bir yük bindirir. Masa başı çalışanlar
+      öğleden sonra sık sık gergin kalça kasları, sert omuzlar ve yavaşlayan kan dolaşımı yaşarlar. Bilimsel çalışmalar, insan
+      vücudunun şekerleri metabolize etmek ve sağlıklı kan basıncını korumak için düzenli harekete ihtiyaç duyduğunu göstermektedir.
+      Akşam spor salonuna gitmek bile bütün gün hareketsiz oturmanın olumsuz etkilerini tamamen ortadan kaldıramaz.
+  - paragraph_index: 2
+    title: Small Walking Habits
+    content_en: Fortunately, you do not need intense athletic workouts to counteract sedentary desk time. Taking a brisk ten-minute
+      walk after lunch stimulates digestion and prevents the heavy fatigue that often strikes at two o'clock. Walking to colleagues'
+      desks instead of sending instant chat messages also increases daily step totals. Using stairs instead of elevators provides
+      gentle cardiovascular stimulation without requiring extra workout clothes. These brief moments of activity accumulate
+      into substantial physical exercise over weeks of office work.
+    content_tr: Neyse ki, hareketsiz masa saatlerini telafi etmek için yoğun atletik antrenmanlara ihtiyacınız yok. Öğle yemeğinden
+      sonra on dakikalık tempolu bir yürüyüş yapmak sindirimi uyarır ve genellikle saat ikide vuran ağır yorgunluğu önler.
+      Anlık mesajlar göndermek yerine meslektaşlarınızın masasına yürümek de günlük adım toplamını artırır. Asansör yerine
+      merdivenleri kullanmak, ekstra spor kıyafetleri gerektirmeden hafif kardiyovasküler uyarı sağlar.
+  - paragraph_index: 3
+    title: Mental Benefits of Walking
+    content_en: Walking also provides wonderful mental benefits. Stepping away from computer screens into fresh outdoor air
+      helps clear mental fog and reduces workday anxiety. Many famous writers and business leaders hold walking meetings because
+      gentle physical movement sparks creative problem-solving. When you walk, ideas flow more freely than when staring at
+      blank monitors.
+    content_tr: Yürüyüş ayrıca harika zihinsel faydalar da sunar. Bilgisayar ekranlarından uzaklaşıp açık havaya çıkmak zihinsel
+      sisi temizlemeye ve iş kaygısını azaltmaya yardımcı olur. Birçok ünlü yazar ve iş lideri yürüyüş toplantıları düzenler
+      çünkü hafif fiziksel hareket yaratıcı problem çözmeyi tetikler. Yürüdüğünüzde, fikirler boş monitörlere bakmaktan çok
+      daha serbest akar.
+  - paragraph_index: 4
+    title: Setting Achievable Targets
+    content_en: Begin by aiming for five thousand steps each day instead of demanding an intimidating ten-thousand-step goal
+      immediately. Track your daily progress with a smartphone sensor or a simple wristwatch pedometer. Celebrating these
+      small daily achievements builds confidence. Consistent daily walking transforms your energy levels and keeps your body
+      feeling resilient.
+    content_tr: Hemen on bin adımlık korkutucu bir hedef koymak yerine her gün beş bin adımı hedefleyerek başlayın. Günlük
+      ilerlemenizi bir akıllı telefon sensörü veya basit bir adımsayar kol saati ile takip edin. Bu küçük günlük başarıları
+      kutlamak özgüven kazandırır. Tutarlı günlük yürüyüş enerji seviyenizi dönüştürür ve vücudunuzun dirençli hissetmesini
+      sağlar.
+  vocabulary_annotations:
+  - word: sedentary
+    context_definition_en: Involving much sitting and little physical exercise.
+    context_meaning_tr: hareketsiz, oturarak yapılan
+  - word: fatigue
+    context_definition_en: Extreme tiredness resulting from mental or physical exertion.
+    context_meaning_tr: yorgunluk, bitkinlik
+  - word: resilient
+    context_definition_en: Able to withstand or recover quickly from difficult conditions.
+    context_meaning_tr: dirençli, güçlü
+  comprehension_questions:
+  - id: q_reading_a2_walking-for-desk-workers_01
+    question_en: What physical problem is caused by sitting continuously at a desk all day?
+    question_tr_hint: Bütün gün masada sürekli oturmak hangi fiziksel soruna yol açar?
+    options:
+    - Permanent loss of color vision.
+    - Stiff shoulder muscles, tight hips, and sluggish circulation.
+    - An immediate loss of fingernail growth.
+    - Sudden allergic reactions to wooden office furniture.
+    correct_answer: Stiff shoulder muscles, tight hips, and sluggish circulation.
+    explanation_en: Paragraph 1 lists tight hip flexors, stiff shoulders, and sluggish circulation as consequences.
+    explanation_tr: 1. paragraf kalça gerginliği, omuz sertliği ve yavaş kan dolaşımını oturmanın sonuçları olarak sıralar.
+  - id: q_reading_a2_walking-for-desk-workers_02
+    question_en: Why is a short walk recommended directly after lunch?
+    question_tr_hint: Öğle yemeğinden hemen sonra neden kısa bir yürüyüş önerilir?
+    options:
+    - It aids digestion and prevents afternoon drowsiness and fatigue.
+    - It allows workers to buy another full meal.
+    - It cools down office computers during peak hours.
+    - It replaces the need for night sleep completely.
+    correct_answer: It aids digestion and prevents afternoon drowsiness and fatigue.
+    explanation_en: Paragraph 2 states that a brisk walk after lunch stimulates digestion and prevents afternoon fatigue.
+    explanation_tr: 2. paragraf öğle yemeğinden sonraki tempolu yürüyüşün sindirimi hızlandırdığını ve yorgunluğu önlediğini
+      belirtir.
+  - id: q_reading_a2_walking-for-desk-workers_03
+    question_en: How does walking benefit mental performance and creativity?
+    question_tr_hint: Yürüyüş zihinsel performansa ve yaratıcılığa nasıl fayda sağlar?
+    options:
+    - It helps people memorize random telephone directories.
+    - It prevents people from having any dreams at night.
+    - It eliminates the need for team communication tools.
+    - It clears mental fog and stimulates creative problem-solving.
+    correct_answer: It clears mental fog and stimulates creative problem-solving.
+    explanation_en: Paragraph 3 explains that stepping outside clears fog and sparks creative ideas.
+    explanation_tr: 3. paragraf açık havada yürümenin zihinsel sisi temizlediğini ve yaratıcı fikirleri tetiklediğini açıklar.
+  - id: q_reading_a2_walking-for-desk-workers_04
+    question_en: What realistic initial goal does the author suggest for daily steps?
+    question_tr_hint: Yazar günlük adımlar için başlangıçta hangi gerçekçi hedefi önerir?
+    options:
+    - Fifty thousand steps before morning breakfast.
+    - Only walking on alternating weekend days.
+    - Exactly five hundred steps per week.
+    - Starting with five thousand steps instead of an intimidating ten thousand.
+    correct_answer: Starting with five thousand steps instead of an intimidating ten thousand.
+    explanation_en: Paragraph 4 advises starting with a manageable goal of five thousand steps daily.
+    explanation_tr: 4. paragraf günde beş bin adımlık makul bir hedefle başlanmasını tavsiye eder.
+  - id: q_reading_a2_walking-for-desk-workers_05
+    question_en: What is the main message of the article?
+    question_tr_hint: Makalenin ana iletisi nedir?
+    options:
+    - Office workers must immediately quit desk jobs to become athletes.
+    - Consistent, modest walking breaks provide substantial physical and mental health benefits.
+    - Physical exercise only works when conducted in specialized private gyms.
+    - Sitting on office chairs is completely safe for twelve hours continuously.
+    correct_answer: Consistent, modest walking breaks provide substantial physical and mental health benefits.
+    explanation_en: The passage shows that simple walking routines yield major health and energy enhancements.
+    explanation_tr: Metin, basit yürüyüş rutinlerinin sağlık ve enerji açısından büyük kazanımlar sağladığını gösterir.
+  topic_tags:
+  - health-lifestyle
+  - wellness
+  - exercise
+  - routine
+  status: APPROVED
+  version: 1
+- id: reading.a2.train-travel-in-europe
+  title: Exploring European Cities by High-Speed Rail
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: Why modern passenger trains offer a comfortable, scenic, and sustainable way to explore diverse European destinations.
+  summary_tr: Modern yolcu trenlerinin Avrupa şehirlerini keşfetmek için neden konforlu, manzaralı ve sürdürülebilir bir yol
+    sunduğu.
+  word_count: 250
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: A Relaxing Alternative to Flying
+    content_en: Traveling between major European capitals by airplane is often exhausting. Passengers spend hours queuing
+      at security checkpoints, taking long airport shuttles, and waiting at boarding gates. High-speed rail travel provides
+      a significantly more pleasant, tranquil, and comfortable alternative for busy travelers. Modern passenger train terminals
+      are located in city centers, allowing travelers to arrive twenty minutes before departure and step directly onto comfortable
+      passenger cars. Eliminating tedious transfers saves substantial travel time and removes the anxiety of missing strict
+      flights.
+    content_tr: Büyük Avrupa başkentleri arasında uçakla seyahat etmek genellikle yorucudur. Yolcular güvenlik kontrol noktalarında
+      kuyrukta bekleyerek, uzun havaalanı servislerine binerek ve biniş kapılarında bekleyerek saatler harcarlar. Yüksek hızlı
+      demiryolu seyahati çok daha keyifli bir alternatif sunar. Modern yolcu tren garları şehir merkezlerinde yer alır, bu
+      da yolcuların kalkıştan yirmi dakika önce varıp doğrudan konforlu vagonlara binmelerine olanak tanır.
+  - paragraph_index: 2
+    title: Working and Relaxing on Board
+    content_en: Onboard high-speed trains, passengers enjoy spacious seats, generous legroom, and expansive windows displaying
+      picturesque countrysides. Free electrical sockets and wireless internet enable travelers to reply to work emails or
+      watch favorite movies comfortably. Moving freely to visit the café carriage for fresh espresso and sandwiches makes
+      long journeys feel surprisingly fast, relaxing, and delightful. Traveling through rolling countryside allows passengers
+      to appreciate the changing scenery in comfort.
+    content_tr: Yüksek hızlı trenlerde yolcular geniş koltukların, bol bacak mesafesinin ve pitoresk kırsal manzaraları sergileyen
+      geniş pencerelerin keyfini çıkarırlar. Ücretsiz prizler ve kablosuz internet, yolcuların iş e-postalarını yanıtlamasına
+      veya en sevdikleri filmleri rahatça izlemesine olanak tanır. Taze espresso ve sandviçler için kafe vagonunu ziyaret
+      etmek üzere serbestçe hareket edebilmek, uzun yolculukların şaşırtıcı derecede hızlı ve keyifli geçmesini sağlar.
+  - paragraph_index: 3
+    title: Environmental Advantages
+    content_en: Another major advantage of train travel is its low environmental footprint. Modern electric trains produce
+      up to ninety percent fewer greenhouse gas emissions per passenger compared to commercial aircraft flights. Environmentally
+      conscious travelers can journey across multiple international borders knowing that their journey produces minimal environmental
+      damage. Choosing green rail options helps protect historic landscapes for future generations to enjoy.
+    content_tr: Tren yolculuğunun diğer bir büyük avantajı düşük çevresel ayak izidir. Modern elektrikli trenler, ticari uçak
+      uçuşlarına kıyasla yolcu başına yüzde doksana kadar daha az sera gazı emisyonu üretir. Çevreye duyarlı gezginler, yolculuklarının
+      minimum çevresel zarara yol açtığını bilerek birden fazla uluslararası sınırı geçebilirler.
+  - paragraph_index: 4
+    title: Planning Train Journeys
+    content_en: To find affordable tickets, book reservations several weeks in advance through unified European ticketing
+      websites. Major rail operators offer flexible passes that permit unlimited regional travel across several countries.
+      Arriving directly in the vibrant heart of an ancient city makes rail travel unforgettable.
+    content_tr: Uygun fiyatlı biletler bulmak için rezervasyonları birleşik Avrupa biletleme sitelerinden birkaç hafta önce
+      yapın. Büyük demiryolu işletmecileri, birden fazla ülkede sınırsız bölgesel seyahate izin veren esnek biletler sunar.
+      Doğrudan tarihi bir şehrin canlı kalbine varmak, tren seyahatini unutulmaz kılar.
+  vocabulary_annotations:
+  - word: terminals
+    context_definition_en: Railway stations at the end of a line or major hubs.
+    context_meaning_tr: garlar, istasyon terminalleri
+  - word: picturesque
+    context_definition_en: Visually attractive, charming, like a picture.
+    context_meaning_tr: manzaralı, kartpostal gibi
+  - word: unlimited
+    context_definition_en: Not limited or restricted in terms of number or quantity.
+    context_meaning_tr: sınırsız
+  comprehension_questions:
+  - id: q_reading_a2_train-travel-in-europe_01
+    question_en: Why is train travel often more convenient than flying between European cities?
+    question_tr_hint: Tren seyahati Avrupa şehirleri arasında uçmaktan neden genellikle daha uygundur?
+    options:
+    - Airplanes are completely banned between European countries.
+    - Train stations are situated in central city locations, minimizing travel to remote airports.
+    - Train passengers do not have to purchase any travel tickets.
+    - Trains travel twice as fast as modern jet airplanes.
+    correct_answer: Train stations are situated in central city locations, minimizing travel to remote airports.
+    explanation_en: Paragraph 1 explains that rail terminals are located in city centers, eliminating airport commutes.
+    explanation_tr: 1. paragraf tren garlarının şehir merkezlerinde olduğunu ve havaalanı transferlerini ortadan kaldırdığını
+      belirtir.
+  - id: q_reading_a2_train-travel-in-europe_02
+    question_en: What onboard amenity helps passengers stay productive while traveling by train?
+    question_tr_hint: Trenle seyahat ederken yolcuların üretken kalmasına hangi araç yardımcı olur?
+    options:
+    - Access to high-speed helicopter launchpads on train roofs.
+    - Free private sleeping quarters in every single car.
+    - Mandatory silent meditation periods with no conversation.
+    - Power sockets and wireless internet connections at spacious seats.
+    correct_answer: Power sockets and wireless internet connections at spacious seats.
+    explanation_en: Paragraph 2 mentions electrical sockets and wireless internet that allow answering work emails.
+    explanation_tr: 2. paragraf e-postaları yanıtlamaya imkan tanıyan priz ve kablosuz internet bağlantısını belirtir.
+  - id: q_reading_a2_train-travel-in-europe_03
+    question_en: How do electric trains compare to airplanes regarding greenhouse gas emissions?
+    question_tr_hint: Elektrikli trenler sera gazı emisyonları açısından uçaklarla nasıl karşılaştırılır?
+    options:
+    - Their emissions are identical to commercial wide-body jets.
+    - They consume more fossil fuel than private maritime yachts.
+    - They emit significantly more harmful smog than heavy diesel trucks.
+    - They produce up to ninety percent fewer emissions per passenger.
+    correct_answer: They produce up to ninety percent fewer emissions per passenger.
+    explanation_en: Paragraph 3 states that electric trains produce up to 90% fewer greenhouse emissions per traveler.
+    explanation_tr: 3. paragraf elektrikli trenlerin yolcu başına %90'a kadar daha az emisyon yaydığını açıklar.
+  - id: q_reading_a2_train-travel-in-europe_04
+    question_en: How can travelers secure the best ticket prices for European train routes?
+    question_tr_hint: Gezginler Avrupa tren rotalarında en iyi bilet fiyatlarını nasıl elde edebilir?
+    options:
+    - By buying train tickets exclusively in post office stations.
+    - By waiting until ten seconds before the train departs.
+    - By negotiating cash prices directly with locomotive drivers.
+    - By booking several weeks early through unified rail booking portals.
+    correct_answer: By booking several weeks early through unified rail booking portals.
+    explanation_en: Paragraph 4 advises booking tickets weeks in advance through unified websites.
+    explanation_tr: 4. paragraf biletlerin haftalar öncesinden birleşik web siteleri üzerinden ayırtılmasını önerir.
+  - id: q_reading_a2_train-travel-in-europe_05
+    question_en: What is the author's overall evaluation of passenger rail travel in Europe?
+    question_tr_hint: Yazarın Avrupa'daki yolcu treni seyahatine ilişkin genel değerlendirmesi nedir?
+    options:
+    - It is a relaxing, picturesque, and environmentally friendly mode of transport.
+    - It is only useful for transporting heavy mining raw materials.
+    - It causes more air pollution than commercial airliners.
+    - It is extremely dangerous and should always be avoided by tourists.
+    correct_answer: It is a relaxing, picturesque, and environmentally friendly mode of transport.
+    explanation_en: The passage portrays rail journeys as scenic, sustainable, and highly comfortable.
+    explanation_tr: Metin, tren yolculuklarını konforlu, manzaralı ve çevre dostu olarak değerlendirir.
+  topic_tags:
+  - travel
+  - transportation
+  - europe
+  - sustainability
+  status: APPROVED
+  version: 1
+- id: reading.a2.effective-team-communication
+  title: Effective Communication in Cross-Functional Teams
+  cefr_level: A2
+  category: leadership_and_management
+  summary_en: How clear project updates, active listening, and simple documentation prevent misunderstandings in modern workplaces.
+  summary_tr: Net proje güncellemeleri, aktif dinleme ve basit dokümantasyonun işyerinde yanlış anlaşılmaları nasıl önlediği.
+  word_count: 254
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: The Challenge of Different Perspectives
+    content_en: When software developers, graphic designers, and marketing managers collaborate on a single product launch,
+      misunderstandings frequently occur. Each discipline uses specialized technical vocabulary and naturally holds distinctly
+      different expectations regarding project delivery timelines. For instance, an engineer might consider a feature complete
+      when the core code runs, while a marketer expects polished graphics and user manuals. Recognizing these differing professional
+      viewpoints is the foundational first step toward cultivating effective, supportive workplace teamwork. Every department
+      possesses distinct responsibilities, and learning to bridge these gaps prevents costly friction during crucial deadlines.
+    content_tr: Yazılım geliştiriciler, grafik tasarımcılar ve pazarlama yöneticileri tek bir ürün lansmanında işbirliği yaptığında
+      sık sık yanlış anlaşılmalar meydana gelir. Her disiplin özel bir terminoloji kullanır ve zaman çizelgelerine ilişkin
+      farklı beklentilere sahiptir. Örneğin bir mühendis çekirdek kod çalıştığında bir özelliği tamamlanmış sayabilirken,
+      bir pazarlamacı cilalı grafikler ve kullanıcı kılavuzları bekler. Bu farklı bakış açılarını tanımak, etkili işyeri takım
+      çalışmasına doğru ilk adımdır.
+  - paragraph_index: 2
+    title: Active Listening and Shared Notes
+    content_en: Successful cross-functional teams prevent confusion by practicing active listening during meetings. Team members
+      paraphrase colleagues' requests before answering, confirming that they understand the underlying problem. Furthermore,
+      maintaining brief written notes in shared digital documents ensures that agreed deliverables, ownership roles, and target
+      delivery dates remain transparent to all participants across departments.
+    content_tr: Başarılı çapraz fonksiyonlu ekipler, toplantılar sırasında aktif dinleme uygulayarak kafa karışıklığını önler.
+      Ekip üyeleri cevap vermeden önce meslektaşlarının isteklerini kendi cümleleriyle özetleyerek asıl sorunu anladıklarını
+      teyit ederler. Ayrıca paylaşılan dijital belgelerde kısa yazılı notlar tutmak; üzerinde anlaşılan çıktıların, sahiplik
+      rollerinin ve hedef teslim tarihlerinin departmanlar genelinde tüm katılımcılar için şeffaf kalmasını sağlar.
+  - paragraph_index: 3
+    title: Encouraging Constructive Questions
+    content_en: In many fast-paced corporate teams, junior members frequently hesitate to ask clarifying questions because
+      they secretly fear appearing inexperienced. Team leaders should explicitly encourage inquiries during weekly catch-ups.
+      When leaders celebrate questions instead of treating them as delays, errors are caught early before they become costly
+      emergencies. Open curiosity creates an environment where everyone feels safe sharing honest feedback and innovative
+      thoughts.
+    content_tr: Birçok ekipte genç üyeler deneyimsiz görünmekten korktukları için netleştirici sorular sormaktan çekinirler.
+      Ekip liderleri haftalık değerlendirmelerde soruları açıkça teşvik etmelidir. Liderler soruları gecikme olarak görmek
+      yerine memnuniyetle karşıladıklarında, hatalar maliyetli acil durumlara dönüşmeden önce erken yakalanır.
+  - paragraph_index: 4
+    title: Building Strong Interpersonal Bonds
+    content_en: Finally, spending informal time together during coffee breaks or team lunches strengthens interpersonal trust.
+      When colleagues know one another as individuals, they assume positive intent during disagreements. Mutual respect transforms
+      diverse opinions into innovative company solutions. When team members celebrate mutual contributions, the entire organization
+      thrives and achieves ambitious business milestones together.
+    content_tr: Son olarak, kahve molalarında veya ekip yemeklerinde gayriresmi zaman geçirmek kişisel güveni pekiştirir.
+      Meslektaşlar birbirlerini birey olarak tanıdıklarında, anlaşmazlıklarda olumlu niyet varsayarlar. Karşılıklı saygı,
+      farklı görüşleri yenilikçi şirket çözümlerine dönüştürür.
+  vocabulary_annotations:
+  - word: discipline
+    context_definition_en: A branch of knowledge or area of professional practice.
+    context_meaning_tr: disiplin, uzmanlık alanı
+  - word: deliverables
+    context_definition_en: Tangible products or outcomes delivered upon project completion.
+    context_meaning_tr: teslim edilecek çıktılar
+  - word: interpersonal
+    context_definition_en: Relating to relationships or communication between people.
+    context_meaning_tr: kişilerarası
+  comprehension_questions:
+  - id: q_reading_a2_effective-team-communication_01
+    question_en: Why do misunderstandings often arise in cross-functional project teams?
+    question_tr_hint: Çapraz fonksiyonlu proje ekiplerinde yanlış anlaşılmalar neden sıkça ortaya çıkar?
+    options:
+    - Different departments use specialized jargon and hold contrasting expectations.
+    - Software tools delete project files automatically every morning.
+    - Corporate managers intentionally give contradictory instructions.
+    - Employees are not permitted to speak the same language at work.
+    correct_answer: Different departments use specialized jargon and hold contrasting expectations.
+    explanation_en: Paragraph 1 explains that each discipline uses specialized vocabulary and has different expectations.
+    explanation_tr: 1. paragraf her disiplinin farklı terimler ve beklentiler taşıdığını açıklar.
+  - id: q_reading_a2_effective-team-communication_02
+    question_en: How does paraphrasing during conversations improve communication?
+    question_tr_hint: Konuşmalar sırasında söylenenleri özetlemek iletişimi nasıl geliştirir?
+    options:
+    - It doubles the required meeting length for each attendee.
+    - It translates spoken English into automated code strings.
+    - It proves that the listener is smarter than the team manager.
+    - It verifies that the listener accurately comprehended the speaker's request.
+    correct_answer: It verifies that the listener accurately comprehended the speaker's request.
+    explanation_en: Paragraph 2 states that paraphrasing confirms mutual understanding of the problem.
+    explanation_tr: 2. paragraf söylenenleri tekrarlamanın sorunun anlaşıldığını teyit ettiğini belirtir.
+  - id: q_reading_a2_effective-team-communication_03
+    question_en: What is the purpose of documenting decisions in shared digital documents?
+    question_tr_hint: Kararları paylaşılan dijital belgelerde kaydetmenin amacı nedir?
+    options:
+    - To print hundreds of paper flyers for promotional street distribution.
+    - To keep deliverables, responsibility, and deadlines transparent to everyone.
+    - To hide confidential mistakes from executive management audits.
+    - To prevent workers from taking mandatory lunch breaks.
+    correct_answer: To keep deliverables, responsibility, and deadlines transparent to everyone.
+    explanation_en: Paragraph 2 notes that shared notes keep deliverables, roles, and deadlines transparent.
+    explanation_tr: 2. paragraf paylaşılan notların çıktıları ve teslim tarihlerini şeffaf tuttuğunu söyler.
+  - id: q_reading_a2_effective-team-communication_04
+    question_en: Why should team leaders explicitly encourage questions during meetings?
+    question_tr_hint: Ekip liderleri toplantılarda neden soruları açıkça teşvik etmelidir?
+    options:
+    - To test which employees have memorized the company dictionary.
+    - To eliminate all written documentation requirements.
+    - To prolong meetings until the end of the working day.
+    - To catch mistakes early before they become costly emergencies.
+    correct_answer: To catch mistakes early before they become costly emergencies.
+    explanation_en: Paragraph 3 explains that welcoming questions helps catch mistakes early.
+    explanation_tr: 3. paragraf soruları teşvik etmenin hataların erken yakalanmasını sağladığını belirtir.
+  - id: q_reading_a2_effective-team-communication_05
+    question_en: What is a key benefit of having informal coffee breaks with team members?
+    question_tr_hint: Ekip üyeleriyle gayriresmi kahve molaları yapmanın temel faydası nedir?
+    options:
+    - It guarantees an immediate salary bonus for all participants.
+    - It eliminates all company payroll processing requirements.
+    - It ensures employees do not need to attend formal client presentations.
+    - It builds personal trust, leading to positive assumptions during disagreements.
+    correct_answer: It builds personal trust, leading to positive assumptions during disagreements.
+    explanation_en: Paragraph 4 states that informal time strengthens trust and fosters positive intent during debates.
+    explanation_tr: 4. paragraf gayriresmi vakit geçirmenin güveni güçlendirdiğini ve tartışmalarda olumlu niyeti sağladığını
+      ifade eder.
+  topic_tags:
+  - relationships
+  - communication
+  - teamwork
+  - workplace
+  status: APPROVED
+  version: 1
+- id: reading.a2.learning-languages-asynchronously
+  title: The Flexibility of Asynchronous Language Learning
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: How modern digital platforms allow adult learners to study foreign languages at their own pace without rigid
+    classroom schedules.
+  summary_tr: Modern dijital platformların yetişkin öğrenenlerin katı sınıf programları olmadan kendi hızlarında dil öğrenmelerine
+    nasıl olanak tanıdığı.
+  word_count: 253
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Escaping the Rigid Classroom Schedule
+    content_en: Traditional evening language schools require students to travel across busy cities to attend classes at predetermined
+      hours twice a week. For working professionals with fluctuating overtime demands and family commitments, missing lessons
+      is almost inevitable. When students miss sequential sessions, they fall behind and often feel discouraged, leading many
+      to abandon their language goals completely. The emotional pressure of falling behind causes unnecessary frustration
+      for people who genuinely desire to become fluent.
+    content_tr: Geleneksel akşam dil okulları, öğrencilerin haftada iki kez önceden belirlenmiş saatlerde derslere katılmak
+      için yoğun şehirlerde seyahat etmelerini gerektirir. Değişken fazla mesai talepleri ve aile sorumlulukları olan çalışan
+      profesyoneller için dersleri kaçırmak neredeyse kaçınılmazdır. Öğrenciler ardışık dersleri kaçırdıklarında geride kalırlar
+      ve genellikle cesaretleri kırılır, bu da birçoğunun dil hedeflerini tamamen terk etmesine yol açar.
+  - paragraph_index: 2
+    title: The Autonomy of Self-Paced Learning
+    content_en: Asynchronous language learning platforms solve this problem by putting learners in complete control of their
+      educational calendar. Using mobile applications, learners complete grammar exercises, practice vocabulary with spaced
+      repetition flashcards, and listen to authentic dialogue recordings whenever free moments emerge. Whether studying fifteen
+      minutes during a morning commute or an hour on Saturday, learning adapts seamlessly to personal lifestyles. This empowering
+      approach transforms wasted transit time into productive educational milestones.
+    content_tr: Asenkron dil öğrenme platformları, öğrenenleri eğitim takvimlerinin tam kontrolüne koyarak bu sorunu çözer.
+      Mobil uygulamaları kullanan öğrenciler, dilbilgisi alıştırmalarını tamamlar, aralıklı tekrar kartlarıyla kelime pratiği
+      yapar ve boş zamanlar ortaya çıktıkça özgün diyalog kayıtlarını dinlerler. İster sabah yolculuğunda on beş dakika, ister
+      cumartesi günü bir saat çalışılsın, öğrenme kişisel yaşam tarzlarına sorunsuz şekilde uyarlanır.
+  - paragraph_index: 3
+    title: Reviewing at Your Own Speed
+    content_en: In a physical classroom, teachers must progress at an average pace that suits the majority of students. Fast
+      learners may feel bored, while others feel rushed when complex grammatical concepts are introduced. With asynchronous
+      digital courses, you can replay recorded audio sentences twenty times without feeling self-conscious. You move forward
+      only when you feel genuinely confident and comfortable with the material. Taking full ownership of your learning velocity
+      leads to deeper comprehension and greater personal satisfaction.
+    content_tr: Fiziksel bir sınıfta öğretmenler çoğu öğrenciye uyan ortalama bir hızda ilerlemek zorundadır. Hızlı öğrenenler
+      sıkılabilirken, diğerleri karmaşık dilbilgisi kavramları sunulduğunda aceleye getirilmiş hissedebilir. Asenkron dijital
+      kurslarla, çekinmeden ses kayıtlarını yirmi kez tekrar çalabilirsiniz. Yalnızca gerçekten kendinizden emin hissettiğinizde
+      ilerlersiniz.
+  - paragraph_index: 4
+    title: Consistency Over Intensity
+    content_en: Educational psychologists confirm that ten minutes of focused daily study creates stronger neural memories
+      than one long class every two weeks. Small, consistent daily practices turn language acquisition into an enjoyable and
+      lasting personal habit.
+    content_tr: Eğitim psikologları, her gün on dakikalık odaklanmış çalışmanın iki haftada bir yapılan uzun bir dersten daha
+      güçlü sinirsel anılar oluşturduğunu doğrulamaktadır. Küçük ve tutarlı günlük pratikler dil edinimini keyifli ve kalıcı
+      bir kişisel alışkanlığa dönüştürür.
+  vocabulary_annotations:
+  - word: inevitable
+    context_definition_en: Certain to happen; unavoidable.
+    context_meaning_tr: kaçınılmaz
+  - word: asynchronous
+    context_definition_en: Not occurring at the same time; self-paced.
+    context_meaning_tr: eşzamansız, asenkron
+  - word: acquisition
+    context_definition_en: The learning or development of a skill or habit.
+    context_meaning_tr: edinme, kazanım
+  comprehension_questions:
+  - id: q_reading_a2_learning-languages-asynchronously_01
+    question_en: What common issue do working adults face with traditional evening language courses?
+    question_tr_hint: Çalışan yetişkinler geleneksel akşam dil kurslarında hangi yaygın sorunla karşılaşır?
+    options:
+    - Traditional schools only teach ancient languages that are no longer spoken.
+    - Classrooms require students to bring their own electrical generators.
+    - Rigid fixed schedules make missing sequential lessons very likely.
+    - Adults are legally prohibited from learning foreign languages after age thirty.
+    correct_answer: Rigid fixed schedules make missing sequential lessons very likely.
+    explanation_en: Paragraph 1 states that busy work schedules make missing rigid classes almost inevitable.
+    explanation_tr: 1. paragraf yoğun çalışma saatlerinin katı ders saatlerini kaçırmayı kaçınılmaz hale getirdiğini açıklar.
+  - id: q_reading_a2_learning-languages-asynchronously_02
+    question_en: What does asynchronous learning allow students to do?
+    question_tr_hint: Asenkron öğrenme öğrencilerin ne yapmasına olanak tanır?
+    options:
+    - Speak English fluently in less than twenty-four hours guaranteed.
+    - Receive free international airline flights to practice conversation.
+    - Earn a university degree without answering any assessment questions.
+    - Study grammar and vocabulary whenever they have free moments throughout the day.
+    correct_answer: Study grammar and vocabulary whenever they have free moments throughout the day.
+    explanation_en: Paragraph 2 explains that learners can study whenever free moments emerge in their day.
+    explanation_tr: 2. paragraf öğrencilerin gün içindeki boş vakitlerinde çalışabildiklerini belirtir.
+  - id: q_reading_a2_learning-languages-asynchronously_03
+    question_en: What is an advantage of digital courses over traditional classroom pacing?
+    question_tr_hint: Dijital kursların geleneksel sınıf hızına göre avantajı nedir?
+    options:
+    - Computers take all comprehension tests on behalf of the student.
+    - Digital courses eliminate all grammar rules from human language.
+    - Learners can replay challenging audio sentences multiple times without embarrassment.
+    - Students never need to listen to foreign speech sounds.
+    correct_answer: Learners can replay challenging audio sentences multiple times without embarrassment.
+    explanation_en: Paragraph 3 notes that students can replay audio twenty times without feeling self-conscious.
+    explanation_tr: 3. paragraf öğrencilerin çekinmeden ses kayıtlarını yirmi kez tekrar çalabileceğini ifade eder.
+  - id: q_reading_a2_learning-languages-asynchronously_04
+    question_en: What does educational research conclude about study frequency?
+    question_tr_hint: Eğitim araştırmaları çalışma sıklığı hakkında ne sonuca varmaktadır?
+    options:
+    - Language skills can only be acquired during unconscious sleep.
+    - Brief daily practice builds stronger retention than rare, lengthy study sessions.
+    - Studying once every three months is the most effective approach.
+    - Daily practice destroys short-term memory completely.
+    correct_answer: Brief daily practice builds stronger retention than rare, lengthy study sessions.
+    explanation_en: Paragraph 4 confirms that ten minutes of daily study creates stronger memories than biweekly classes.
+    explanation_tr: 4. paragraf günlük on dakikanın iki haftada bir yapılan dersten daha güçlü hafıza oluşturduğunu doğrular.
+  - id: q_reading_a2_learning-languages-asynchronously_05
+    question_en: What is the primary conclusion of the text?
+    question_tr_hint: Metnin ana sonucu nedir?
+    options:
+    - Learning languages is impossible without moving abroad permanently.
+    - Traditional classrooms will be completely closed by international treaty.
+    - Adults should never study without hiring three private tutors simultaneously.
+    - Flexible, self-paced learning integrates sustainably into modern adult routines.
+    correct_answer: Flexible, self-paced learning integrates sustainably into modern adult routines.
+    explanation_en: The article demonstrates that flexible self-paced learning fits adult lifestyles smoothly.
+    explanation_tr: Makale, esnek ve kendi hızında öğrenmenin yetişkin rutinlerine sorunsuz şekilde uyduğunu gösterir.
+  topic_tags:
+  - education
+  - language-learning
+  - technology
+  - self-improvement
+  status: APPROVED
+  version: 1
+- id: reading.a2.urban-bike-sharing-programs
+  title: The Growth of Urban Bike-Sharing Programs
+  cefr_level: A2
+  category: engineering_culture
+  summary_en: How shared bicycle networks reduce traffic congestion, lower pollution, and encourage healthy commuting habits
+    in modern cities.
+  summary_tr: Paylaşımlı bisiklet ağlarının modern şehirlerde trafik sıkışıklığını ve kirliliği nasıl azalttığı ve sağlıklı
+    ulaşım alışkanlıklarını nasıl teşvik ettiği.
+  word_count: 254
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Combating Gridlock in Crowded Cities
+    content_en: Traffic congestion in major metropolitan regions wastes billions of hours every year. Commuters sit motionless
+      in long queues of private automobiles, breathing exhaust fumes and arriving at workplaces agitated and exhausted. In
+      response, municipal planners around the world are investing in municipal bike-sharing systems to provide clean, healthy,
+      and convenient transportation for short city journeys. By offering accessible bicycles across neighborhoods, local governments
+      encourage active transit and reduce the number of private cars entering central districts.
+    content_tr: Büyük metropol bölgelerindeki trafik sıkışıklığı her yıl milyarlarca saat israfına neden olur. İşe gidip gelenler
+      özel otomobillerden oluşan uzun kuyruklarda hareketsiz oturur, egzoz dumanı solur ve iş yerlerine huzursuz ve bitkin
+      varırlar. Buna karşılık, dünyanın dört bir yanındaki şehir plancıları kısa şehir yolculukları için temiz, sağlıklı ve
+      kullanışlı ulaşım sağlamak amacıyla belediye bisiklet paylaşım sistemlerine yatırım yapıyor.
+  - paragraph_index: 2
+    title: How Bike Sharing Works
+    content_en: Modern bike-sharing networks are remarkably straightforward to use. Commuters unlock bicycles using smartphone
+      applications, ride safely along protected urban bike lanes, and return the bicycles to any designated docking station
+      near their destination. Electric-assist bicycles now make riding uphill effortless, enabling older residents and business
+      commuters wearing professional attire to travel comfortably without breaking into a heavy sweat. Modern geofencing technology
+      ensures bicycles are returned neatly to designated zones, maintaining tidy sidewalks for pedestrians.
+    content_tr: Modern bisiklet paylaşım ağlarının kullanımı son derece basittir. İşe gidip gelenler akıllı telefon uygulamalarını
+      kullanarak bisikletlerin kilidini açar, korumalı şehir içi bisiklet yollarında güvenle sürer ve bisikletleri varış noktalarının
+      yakınındaki herhangi bir belirlenmiş istasyona iade eder. Elektrik destekli bisikletler artık yokuş yukarı sürmeyi zahmetsiz
+      hale getirerek yaşlı sakinlerin ve profesyonel kıyafetler giyen iş insanlarının aşırı terlemeden rahatça seyahat etmelerini
+      sağlıyor.
+  - paragraph_index: 3
+    title: Environmental and Economic Benefits
+    content_en: Widespread bicycle use dramatically reduces urban air pollution and noise levels. Furthermore, bike sharing
+      is exceptionally economical compared to owning a private vehicle. Users avoid costly parking fees, fuel expenses, and
+      routine mechanical maintenance, saving hundreds of euros every month while staying physically active. Many forward-thinking
+      companies even subsidize monthly bike-share memberships for their employees to promote wellness.
+    content_tr: Yaygın bisiklet kullanımı kentsel hava kirliliğini ve gürültü seviyelerini önemli ölçüde azaltır. Ayrıca bisiklet
+      paylaşımı özel bir araca sahip olmaya kıyasla son derece ekonomiktir. Kullanıcılar pahalı park ücretlerinden, yakıt
+      masraflarından ve rutin mekanik bakımlardan kaçınarak fiziksel olarak aktif kalırken her ay yüzlerce avro tasarruf ederler.
+  - paragraph_index: 4
+    title: Supporting Healthier Lifestyles
+    content_en: Integrating moderate physical activity into daily commutes enhances cardiovascular stamina and lifts everyday
+      mood. As cities expand dedicated cycling lanes, bicycles are becoming the preferred mode of travel for modern urban
+      citizens. Embracing pedal power creates cleaner air, quieter streets, and happier communities across the metropolis.
+    content_tr: Orta düzeyde fiziksel aktiviteyi günlük işe gidiş gelişlere entegre etmek kardiyovasküler dayanıklılığı artırır
+      ve günlük ruh halini yükseltir. Şehirler özel bisiklet yollarını genişlettikçe, bisikletler modern şehir sakinleri için
+      tercih edilen seyahat modu haline geliyor.
+  vocabulary_annotations:
+  - word: congestion
+    context_definition_en: The state of being crowded and full of traffic.
+    context_meaning_tr: trafik sıkışıklığı
+  - word: designated
+    context_definition_en: Officially allocated or specified for a particular purpose.
+    context_meaning_tr: belirlenmiş, tahsis edilmiş
+  - word: economical
+    context_definition_en: Giving good value or return in relation to money or effort.
+    context_meaning_tr: ekonomik, tasarruflu
+  comprehension_questions:
+  - id: q_reading_a2_urban-bike-sharing-programs_01
+    question_en: What primary problem prompted cities to build shared bicycle networks?
+    question_tr_hint: Şehirlerin paylaşımlı bisiklet ağları kurmasına hangi temel sorun yol açtı?
+    options:
+    - The complete collapse of all municipal electricity grids.
+    - Severe traffic gridlock and exhaust pollution caused by private car commutes.
+    - A mandatory international ban on pedestrian walking.
+    - An unexpected shortage of asphalt on municipal streets.
+    correct_answer: Severe traffic gridlock and exhaust pollution caused by private car commutes.
+    explanation_en: Paragraph 1 identifies traffic congestion and exhaust fumes as the core reasons.
+    explanation_tr: 1. paragraf trafik sıkışıklığını ve egzoz dumanını temel nedenler olarak tanımlar.
+  - id: q_reading_a2_urban-bike-sharing-programs_02
+    question_en: How do riders typically unlock shared bicycles today?
+    question_tr_hint: Sürücüler günümüzde paylaşımlı bisikletlerin kilidini genellikle nasıl açar?
+    options:
+    - By answering complex mathematical calculus equations.
+    - Using dedicated mobile applications on their smartphones.
+    - By presenting an international pilot's license.
+    - By purchasing physical metal keys at city hall once a year.
+    correct_answer: Using dedicated mobile applications on their smartphones.
+    explanation_en: Paragraph 2 states that commuters unlock bikes using smartphone applications.
+    explanation_tr: 2. paragraf kullanıcıların akıllı telefon uygulamalarıyla kilit açtığını belirtir.
+  - id: q_reading_a2_urban-bike-sharing-programs_03
+    question_en: What advantage do electric-assist bicycles provide to commuters?
+    question_tr_hint: Elektrik destekli bisikletler işe gidip gelenlere hangi avantajı sağlar?
+    options:
+    - They fly above tall skyscrapers to avoid traffic lights.
+    - They do not require riders to hold onto the handlebars.
+    - They can travel underwater across city rivers.
+    - They make riding uphill easy, preventing heavy sweating in office clothes.
+    correct_answer: They make riding uphill easy, preventing heavy sweating in office clothes.
+    explanation_en: Paragraph 2 explains that electric bikes make uphill riding effortless without sweating in work clothes.
+    explanation_tr: 2. paragraf elektrikli bisikletlerin yokuşları kolaylaştırdığını ve iş kıyafetleriyle terlemeyi önlediğini
+      açıklar.
+  - id: q_reading_a2_urban-bike-sharing-programs_04
+    question_en: How does using bike-sharing programs save money for city dwellers?
+    question_tr_hint: Bisiklet paylaşım programlarını kullanmak şehir sakinlerine nasıl para tasarrufu sağlar?
+    options:
+    - Cyclists receive free luxury apartments near bike stations.
+    - Supermarkets give free groceries to anyone riding a shared bike.
+    - By eliminating expensive parking fees, fuel costs, and vehicle repairs.
+    - Cities pay each cyclist a thousand euros for every kilometer traveled.
+    correct_answer: By eliminating expensive parking fees, fuel costs, and vehicle repairs.
+    explanation_en: Paragraph 3 notes that users avoid parking fees, fuel costs, and vehicle maintenance.
+    explanation_tr: 3. paragraf kullanıcıların otopark, yakıt ve bakım masraflarından tasarruf ettiğini belirtir.
+  - id: q_reading_a2_urban-bike-sharing-programs_05
+    question_en: What is the author's viewpoint regarding bicycle networks in modern cities?
+    question_tr_hint: Yazarın modern şehirlerdeki bisiklet ağlarına ilişkin görüşü nedir?
+    options:
+    - They should only be permitted in rural countryside areas.
+    - They cause far more traffic accidents than high-speed sports cars.
+    - They are a temporary fad that will vanish within twelve months.
+    - They are practical, sustainable, and beneficial for public health.
+    correct_answer: They are practical, sustainable, and beneficial for public health.
+    explanation_en: The passage highlights the comprehensive environmental, financial, and physical benefits of bikes.
+    explanation_tr: Metin, bisiklet paylaşımının çevresel, ekonomik ve fiziksel kazanımlarını vurgular.
+  topic_tags:
+  - society
+  - transportation
+  - urban-life
+  - sustainability
+  status: APPROVED
+  version: 1
+- id: reading.a2.coffee-culture-around-the-world
+  title: Coffee Rituals and Traditions Across Cultures
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: How preparing and sharing coffee serves as an important social anchor and cultural tradition in diverse nations.
+  summary_tr: Kahve hazırlama ve paylaşmanın farklı ülkelerde nasıl önemli bir sosyal bağ ve kültürel gelenek olarak hizmet
+    ettiği.
+  word_count: 261
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: More Than Just a Morning Drink
+    content_en: For millions of people worldwide, morning coffee is an indispensable beverage that provides an energizing
+      caffeine boost. However, across various world cultures, coffee represents far more than a simple biological stimulant.
+      Coffee preparation and consumption function as vital social rituals that foster interpersonal bonds, facilitate deep
+      conversations, and celebrate warm hospitality. Around the globe, welcoming an acquaintance with freshly prepared coffee
+      remains a fundamental symbol of generosity and goodwill.
+    content_tr: Dünya çapında milyonlarca insan için sabah kahvesi, enerji verici bir kafein takviyesi sağlayan vazgeçilmez
+      bir içecektir. Ancak çeşitli dünya kültürlerinde kahve, basit bir biyolojik uyarıcıdan çok daha fazlasını temsil eder.
+      Kahve hazırlama ve tüketimi, kişilerarası bağları güçlendiren, derin sohbetleri kolaylaştıran ve sıcak misafirperverliği
+      kutlayan hayati sosyal ritüeller olarak işlev görür.
+  - paragraph_index: 2
+    title: Distinctive International Traditions
+    content_en: In Italy, coffee culture revolves around rapid, focused visits to neighborhood espresso bars. Patrons stand
+      at marble counters, drink single shots of freshly brewed espresso in two quick sips, and exchange brief pleasantries
+      with familiar baristas before heading to work. Conversely, in Turkey, coffee is brewed slowly in small copper pots called
+      cezve. Fine coffee grounds settle gently at the bottom of delicate porcelain cups, accompanied by sweet Turkish delight
+      and unhurried conversation that can last for hours.
+    content_tr: İtalya'da kahve kültürü, mahalle espresso barlarına yapılan hızlı ve odaklı ziyaretler etrafında döner. Müşteriler
+      mermer tezgahlarda durur, taze demlenmiş tek shot espressoyu iki hızlı yudumda içer ve işe gitmeden önce tanıdık baristalarla
+      kısa sohbetler ederler. Tersine, Türkiye'de kahve cezve adı verilen küçük bakır kaplarda yavaş yavaş demlenir. İnce
+      kahve telvesi narin porselen fincanların dibine hafifçe çöker ve buna saatlerce sürebilen acelesiz sohbetler ve tatlı
+      Türk lokumu eşlik eder.
+  - paragraph_index: 3
+    title: The Ethiopian Coffee Ceremony
+    content_en: In Ethiopia, where the coffee plant originated, the traditional coffee ceremony is an elaborate communal event.
+      The host roasts green coffee beans over fragrant burning charcoal, grinds them by hand using a wooden mortar, and brews
+      the coffee in a clay pot called a jebena. Guests enjoy three consecutive rounds of coffee while inhaling sweet frankincense
+      smoke, honoring family ties and community solidarity.
+    content_tr: Kahve bitkisinin doğduğu yer olan Etiyopya'da geleneksel kahve seremonisi ayrıntılı bir toplumsal etkinliktir.
+      Ev sahibi, yeşil kahve çekirdeklerini kokulu yanan kömür üzerinde kavurur, ahşap bir havan kullanarak elle öğütür ve
+      jebena adı verilen kil bir kapta demler. Misafirler, tatlı tütsü kokusunu içlerine çekerek aile bağlarını ve topluluk
+      dayanışmasını onurlandıran üç ardışık tur kahvenin tadını çıkarırlar.
+  - paragraph_index: 4
+    title: A Universal Bridge for Connection
+    content_en: Whether enjoyed standing at a busy European counter or during an unhurried afternoon ceremony, coffee brings
+      diverse people together. Taking time to share a warm cup reminds us of our shared human desire for community, meaningful
+      connection, and quiet reflection. This humble warm drink continues to unite diverse cultures across centuries.
+    content_tr: İster hareketli bir Avrupa tezgahında ayakta, ister acelesiz bir öğleden sonra töreninde içilsin, kahve farklı
+      insanları bir araya getirir. Sıcak bir fincanı paylaşmaya zaman ayırmak, bize topluluk ve düşünme konusundaki ortak
+      insani arzumuzu hatırlatır.
+  vocabulary_annotations:
+  - word: stimulant
+    context_definition_en: A substance that raises levels of physiological or nervous activity in the body.
+    context_meaning_tr: uyarıcı madde
+  - word: baristas
+    context_definition_en: People whose job involves preparing and serving different types of coffee.
+    context_meaning_tr: baristalar, kahve hazırlayıcıları
+  - word: elaborate
+    context_definition_en: Involving many carefully arranged parts or details; detailed and complicated.
+    context_meaning_tr: ayrıntılı, özenli
+  comprehension_questions:
+  - id: q_reading_a2_coffee-culture-around-the-world_01
+    question_en: Beyond providing caffeine, what social role does coffee play across cultures?
+    question_tr_hint: Kafein sağlamanın ötesinde, kahve kültürler arasında hangi sosyal rolü oynar?
+    options:
+    - It serves as a social ritual that strengthens interpersonal bonds and hospitality.
+    - It is mandated by law during parliamentary elections.
+    - It replaces all formal school education for young children.
+    - It is used exclusively as a legal currency to buy real estate.
+    correct_answer: It serves as a social ritual that strengthens interpersonal bonds and hospitality.
+    explanation_en: Paragraph 1 notes that coffee functions as a social ritual fostering personal connections and hospitality.
+    explanation_tr: 1. paragraf kahvenin kişisel bağları ve misafirperverliği güçlendiren sosyal bir ritüel olduğunu belirtir.
+  - id: q_reading_a2_coffee-culture-around-the-world_02
+    question_en: How do patrons typically enjoy coffee in traditional Italian bars?
+    question_tr_hint: Geleneksel İtalyan barlarında müşteriler kahveyi genellikle nasıl tüketirler?
+    options:
+    - Sitting in private armchairs for five uninterrupted hours.
+    - Standing up at the counter and drinking quick shots of espresso.
+    - Drinking three liters of iced milk through large plastic straws.
+    - Taking coffee beans home to chew them completely raw.
+    correct_answer: Standing up at the counter and drinking quick shots of espresso.
+    explanation_en: Paragraph 2 describes patrons standing at counters drinking quick shots of espresso.
+    explanation_tr: 2. paragraf müşterilerin tezgahta ayakta durup hızlı shotlar içtiğini anlatır.
+  - id: q_reading_a2_coffee-culture-around-the-world_03
+    question_en: What accompanies Turkish coffee according to the article?
+    question_tr_hint: Makaleye göre Türk kahvesine ne eşlik eder?
+    options:
+    - Mandatory glasses of boiling hot vinegar.
+    - Sweet Turkish delight and unhurried conversation with settled grounds.
+    - Raw green coffee beans sprinkled with table salt.
+    - Large slices of spicy pepperoni pizza.
+    correct_answer: Sweet Turkish delight and unhurried conversation with settled grounds.
+    explanation_en: Paragraph 2 mentions fine grounds, sweet Turkish delight, and leisurely conversation.
+    explanation_tr: 2. paragraf ince telve, tatlı Türk lokumu ve sakin sohbetleri belirtir.
+  - id: q_reading_a2_coffee-culture-around-the-world_04
+    question_en: What vessel is traditionally used to brew coffee in Ethiopian ceremonies?
+    question_tr_hint: Etiyopya seremonilerinde kahve demlemek için geleneksel olarak hangi kap kullanılır?
+    options:
+    - A disposable cardboard takeaway coffee cup.
+    - A hollowed wooden tree log filled with boiling sea water.
+    - A pressurized stainless-steel nuclear steam tank.
+    - A traditional clay pot called a jebena.
+    correct_answer: A traditional clay pot called a jebena.
+    explanation_en: Paragraph 3 explicitly identifies the clay brewing pot as a jebena.
+    explanation_tr: 3. paragraf kil demleme kabını açıkça 'jebena' olarak adlandırır.
+  - id: q_reading_a2_coffee-culture-around-the-world_05
+    question_en: What is the central theme uniting the different coffee traditions in the text?
+    question_tr_hint: Metindeki farklı kahve geleneklerini birleştiren ana tema nedir?
+    options:
+    - Cold brewed coffee will soon replace all other hot beverages worldwide.
+    - Coffee serves as a universal medium for human connection and community.
+    - Every nation prepares coffee using identical electronic equipment.
+    - Coffee must always be consumed in total silence without looking at others.
+    correct_answer: Coffee serves as a universal medium for human connection and community.
+    explanation_en: The final paragraph emphasizes coffee as a bridge that unites people and fosters community.
+    explanation_tr: Son paragraf kahveyi insanları birleştiren ve topluluk duygusu oluşturan bir köprü olarak vurgular.
+  topic_tags:
+  - culture
+  - tradition
+  - social-life
+  - lifestyle
+  status: APPROVED
+  version: 1

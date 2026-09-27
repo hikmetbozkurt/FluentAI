@@ -1,0 +1,19 @@
+batch_id: reading_batch_002
+domain: reading
+produced_at: '2026-09-26T23:14:58Z'
+target_level_distribution:
+  A2: 15
+  B1: 17
+  B2: 20
+  C1: 23
+  C2: 25
+  TOTAL: 100
+added_counts:
+  A2: 7
+  B1: 8
+  B2: 10
+  C1: 12
+  C2: 13
+  TOTAL: 50
+status: APPROVED
+description: Multi-Domain Curriculum Expansion Batch 002 Reading Tranche (+50 articles, +250 questions)

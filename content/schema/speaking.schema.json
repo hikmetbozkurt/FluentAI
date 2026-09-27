@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/speaking.schema.json",
+  "title": "FluentAI Speaking Scenario Schema",
+  "description": "Schema for live speaking scenarios across 8 curriculum categories with correction modes and learning targets.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "category",
+    "cefr_level",
+    "system_prompt",
+    "context_description",
+    "target_vocab_ids",
+    "target_grammar_ids",
+    "suggested_starter_phrases",
+    "recommended_correction_mode"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^speaking\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)*$",
+      "description": "Stable semantic content identifier, e.g. speaking.b2.meeting.quarterly-review"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Scenario title"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "FREE_TALK",
+        "DAILY_LIFE",
+        "CAREER",
+        "JOB_INTERVIEW",
+        "MEETING",
+        "IELTS",
+        "VOCAB_DRILL",
+        "GRAMMAR_DRILL"
+      ],
+      "description": "One of 8 core speaking categories defined in Phase 6"
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A2", "B1", "B2", "C1", "C2"],
+      "description": "Target CEFR proficiency level"
+    },
+    "system_prompt": {
+      "type": "string",
+      "minLength": 20,
+      "description": "AI Coach Persona & scenario instruction prompt"
+    },
+    "context_description": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Brief situational context shown to the learner"
+    },
+    "target_vocab_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^vocab\\.[a-z0-9_.-]+$"
+      },
+      "description": "Curriculum vocabulary IDs targeted by this scenario"
+    },
+    "target_grammar_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^grammar\\.[a-z0-9_.-]+$"
+      },
+      "description": "Curriculum grammar IDs targeted by this scenario"
+    },
+    "suggested_starter_phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "description": "Starter phrases to help learner initiate conversation"
+    },
+    "recommended_correction_mode": {
+      "type": "string",
+      "enum": ["FLOW", "COACH", "DRILL", "MOCK"],
+      "description": "Recommended correction mode for this scenario"
+    },
+    "voice_name": {
+      "type": "string",
+      "default": "Aoede"
+    },
+    "topic_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "AI_REVIEWED",
+        "VALIDATED",
+        "APPROVED",
+        "PUBLISHED",
+        "DEPRECATED"
+      ],
+      "default": "APPROVED"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

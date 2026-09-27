@@ -1,0 +1,893 @@
+- id: listening.a2.apartment-lease-viewing
+  title: Viewing a Rental Apartment in London
+  cefr_level: A2
+  category: negotiation
+  scenario_context: Murat visits a one-bedroom apartment in London and discusses the rent, deposit, and move-in date with
+    the property manager, Sarah.
+  speakers:
+  - id: sarah
+    name: Sarah
+    role: Property Manager
+    accent: British
+  - id: murat
+    name: Murat
+    role: Prospective Tenant
+    accent: Turkish
+  audio_ref: audio/listening/a2_apartment_lease_viewing.mp3
+  duration_seconds: 60
+  transcript_items:
+  - index: 1
+    speaker_id: sarah
+    start_ms: 0
+    end_ms: 8268
+    text_en: Good morning Murat. Welcome to the apartment on High Street. Let me show you around the living room.
+    text_tr: Günaydın Murat. High Street'teki daireye hoş geldin. Sana oturma odasını gezdireyim.
+  - index: 2
+    speaker_id: murat
+    start_ms: 8668
+    end_ms: 16547
+    text_en: Good morning Sarah. It looks very bright and clean. Is the heating included in the monthly rent?
+    text_tr: Günaydın Sarah. Çok aydınlık ve temiz görünüyor. Isınma aylık kiraya dahil mi?
+  - index: 3
+    speaker_id: sarah
+    start_ms: 16947
+    end_ms: 24560
+    text_en: No, the rent is one thousand two hundred pounds per month, but water and electricity bills are separate.
+    text_tr: Hayır, kira aylık bin iki yüz sterlin, ancak su ve elektrik faturaları ayrıdır.
+  - index: 4
+    speaker_id: murat
+    start_ms: 24960
+    end_ms: 30989
+    text_en: I understand. And how much is the security deposit before moving in?
+    text_tr: Anlıyorum. Peki taşınmadan önceki güvence depozitosu ne kadar?
+  - index: 5
+    speaker_id: sarah
+    start_ms: 31389
+    end_ms: 38752
+    text_en: The deposit is five weeks of rent. It is kept safely in a government tenancy protection scheme.
+    text_tr: Depozito beş haftalık kiradır. Hükümetin kiracı koruma planında güvenle tutulur.
+  - index: 6
+    speaker_id: murat
+    start_ms: 39152
+    end_ms: 44880
+    text_en: That sounds fair. When would the apartment be available for me to move in?
+    text_tr: Kulağa adil geliyor. Daireye taşınmam için ne zaman müsait olur?
+  - index: 7
+    speaker_id: sarah
+    start_ms: 45280
+    end_ms: 52049
+    text_en: It is available starting from the first of next month, once we verify your employment reference.
+    text_tr: İş yeri referansınızı doğruladıktan sonra, gelecek ayın birinden itibaren müsaittir.
+  - index: 8
+    speaker_id: murat
+    start_ms: 52449
+    end_ms: 59002
+    text_en: Great. I will email my employer letter and bank statements to you this afternoon.
+    text_tr: Harika. İşveren mektubumu ve banka hesap dökümlerimi bu öğleden sonra size e-posta ile göndereceğim.
+  comprehension_questions:
+  - id: q_listening_a2_apartment-lease-viewing_01
+    question_en: What is the monthly rent for the apartment?
+    question_tr_hint: Dairenin aylık kirası ne kadardır?
+    options:
+    - Five hundred pounds.
+    - One thousand two hundred pounds.
+    - Three thousand five hundred pounds.
+    - Two thousand pounds.
+    correct_answer: One thousand two hundred pounds.
+    explanation_en: Sarah states the rent is 1,200 pounds per month.
+    explanation_tr: Sarah kiranın ayda 1200 sterlin olduğunu belirtir.
+  - id: q_listening_a2_apartment-lease-viewing_02
+    question_en: Are utility bills included in the monthly rent?
+    question_tr_hint: Fatura giderleri aylık kiraya dahil midir?
+    options:
+    - Yes, all bills are completely free.
+    - The landlord pays for all heating costs.
+    - Only the high-speed internet bill is included.
+    - No, water and electricity bills are separate.
+    correct_answer: No, water and electricity bills are separate.
+    explanation_en: Sarah explains that water and electricity are separate.
+    explanation_tr: Sarah su ve elektriğin ayrı olduğunu açıklar.
+  - id: q_listening_a2_apartment-lease-viewing_03
+    question_en: How much is the security deposit?
+    question_tr_hint: Güvence depozitosu ne kadardır?
+    options:
+    - Five weeks of rent.
+    - Fifty pounds in cash.
+    - One full year of rent.
+    - Ten days of rent.
+    correct_answer: Five weeks of rent.
+    explanation_en: Sarah says the deposit is five weeks of rent.
+    explanation_tr: Sarah depozitonun beş haftalık kira olduğunu söyler.
+  - id: q_listening_a2_apartment-lease-viewing_04
+    question_en: When can Murat move into the apartment?
+    question_tr_hint: Murat daireye ne zaman taşınabilir?
+    options:
+    - In six months after summer renovation.
+    - Immediately this afternoon without any paperwork.
+    - From the first of next month, after reference verification.
+    - Only on weekends during December.
+    correct_answer: From the first of next month, after reference verification.
+    explanation_en: Sarah says it is available from the first of next month once references are checked.
+    explanation_tr: Sarah referanslar kontrol edildikten sonra gelecek ayın birinden itibaren müsait olduğunu belirtir.
+  - id: q_listening_a2_apartment-lease-viewing_05
+    question_en: What will Murat send to Sarah this afternoon?
+    question_tr_hint: Murat bu öğleden sonra Sarah'ya ne gönderecek?
+    options:
+    - A box of furniture for the living room.
+    - His employer letter and bank statements.
+    - The keys to his old house.
+    - A physical paper contract signed in ink.
+    correct_answer: His employer letter and bank statements.
+    explanation_en: Murat promises to email his employer letter and bank statements.
+    explanation_tr: Murat işveren mektubunu ve hesap dökümlerini e-postayla göndereceğini söyler.
+  topic_tags:
+  - daily-life
+  - housing
+  - renting
+  - london
+- id: listening.a2.metro-transit-card
+  title: Buying a Subway Transit Card
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Deniz asks a subway station customer service clerk, Oliver, for help buying and topping up a travel card
+    in a new city.
+  speakers:
+  - id: oliver
+    name: Oliver
+    role: Station Customer Service Agent
+    accent: American
+  - id: deniz
+    name: Deniz
+    role: Commuter
+    accent: Turkish
+  audio_ref: audio/listening/a2_metro_transit_card.mp3
+  duration_seconds: 58
+  transcript_items:
+  - index: 1
+    speaker_id: oliver
+    start_ms: 0
+    end_ms: 4729
+    text_en: Hello there! Can I help you with the ticket machine?
+    text_tr: Merhaba! Bilet makinesi konusunda size yardımcı olabilir miyim?
+  - index: 2
+    speaker_id: deniz
+    start_ms: 5129
+    end_ms: 12842
+    text_en: Yes please. I am new in town. I need a card for daily subway travel to work.
+    text_tr: Evet lütfen. Şehirde yeniyim. İşe günlük metro seyahatleri için bir karta ihtiyacım var.
+  - index: 3
+    speaker_id: oliver
+    start_ms: 13242
+    end_ms: 22011
+    text_en: You should get our rechargeable MetroPass. The plastic card costs five dollars, and then you add travel credit.
+    text_tr: Şarj edilebilir MetroPass kartımızı almalısınız. Plastik kart beş dolar, ardından seyahat kredisi yüklüyorsunuz.
+  - index: 4
+    speaker_id: deniz
+    start_ms: 22411
+    end_ms: 26570
+    text_en: How much does a single subway ride cost with the pass?
+    text_tr: Kartla tek bir metro yolculuğu ne kadar tutuyor?
+  - index: 5
+    speaker_id: oliver
+    start_ms: 26970
+    end_ms: 36063
+    text_en: It is two dollars and fifty cents per ride. If you ride every day, a weekly unlimited pass for thirty dollars
+      is cheaper.
+    text_tr: Yolculuk başına iki dolar elli sent. Her gün biniyorsanız, otuz dolarlık haftalık sınırsız kart daha ucuzdur.
+  - index: 6
+    speaker_id: deniz
+    start_ms: 36463
+    end_ms: 43136
+    text_en: That weekly pass sounds perfect for me. Can I pay with a contactless credit card?
+    text_tr: Haftalık kart benim için mükemmel. Temassız kredi kartıyla ödeyebilir miyim?
+  - index: 7
+    speaker_id: oliver
+    start_ms: 43536
+    end_ms: 50695
+    text_en: Yes, tap your card on the payment terminal right here. Here is your pass and receipt.
+    text_tr: Evet, kartınızı hemen buradaki ödeme terminaline okutun. İşte kartınız ve makbuzunuz.
+  - index: 8
+    speaker_id: deniz
+    start_ms: 51095
+    end_ms: 57303
+    text_en: Thank you Oliver. Which platform goes toward Downtown Central Station?
+    text_tr: Teşekkürler Oliver. Downtown Central İstasyonu'na hangi peron gidiyor?
+  comprehension_questions:
+  - id: q_listening_a2_metro-transit-card_01
+    question_en: Why does Deniz need a transit card?
+    question_tr_hint: Deniz neden bir ulaşım kartına ihtiyaç duyuyor?
+    options:
+    - For daily subway travel to work in a new town.
+    - To rent an electric bicycle for the weekend.
+    - To enter an international airport lounge.
+    - To buy coffee inside the subway terminal.
+    correct_answer: For daily subway travel to work in a new town.
+    explanation_en: Deniz mentions being new in town and needing a card for daily travel to work.
+    explanation_tr: Deniz şehirde yeni olduğunu ve işe günlük seyahat için karta ihtiyacı olduğunu söyler.
+  - id: q_listening_a2_metro-transit-card_02
+    question_en: How much does the plastic MetroPass card cost initially?
+    question_tr_hint: Plastik MetroPass kartın başlangıç maliyeti ne kadardır?
+    options:
+    - Twenty-five dollars.
+    - It is completely free.
+    - Five dollars.
+    - Fifty dollars.
+    correct_answer: Five dollars.
+    explanation_en: Oliver states the plastic card costs five dollars.
+    explanation_tr: Oliver plastik kartın beş dolar olduğunu belirtir.
+  - id: q_listening_a2_metro-transit-card_03
+    question_en: How much does a weekly unlimited pass cost?
+    question_tr_hint: Haftalık sınırsız bilet ne kadardır?
+    options:
+    - One hundred dollars.
+    - Thirty dollars.
+    - Ten dollars.
+    - Two dollars and fifty cents.
+    correct_answer: Thirty dollars.
+    explanation_en: Oliver explains the weekly unlimited pass is thirty dollars.
+    explanation_tr: Oliver haftalık sınırsız kartın otuz dolar olduğunu açıklar.
+  - id: q_listening_a2_metro-transit-card_04
+    question_en: How does Deniz pay for the pass?
+    question_tr_hint: Deniz biletin ödemesini nasıl yapıyor?
+    options:
+    - With physical paper cash bills.
+    - By writing a personal paper check.
+    - With a contactless credit card tapped on the terminal.
+    - With an old gold coin.
+    correct_answer: With a contactless credit card tapped on the terminal.
+    explanation_en: Deniz asks if contactless credit card works, and Oliver confirms tapping it on the terminal.
+    explanation_tr: Deniz temassız kredi kartını sorar ve Oliver terminale okutmasını onaylar.
+  - id: q_listening_a2_metro-transit-card_05
+    question_en: What destination does Deniz ask about at the end?
+    question_tr_hint: Deniz sonunda hangi varış noktasını soruyor?
+    options:
+    - The regional soccer stadium.
+    - The international seaport harbor.
+    - Downtown Central Station.
+    - North Mountain Ski Resort.
+    correct_answer: Downtown Central Station.
+    explanation_en: Deniz asks which platform goes toward Downtown Central Station.
+    explanation_tr: Deniz hangi peronun Downtown Central İstasyonu'na gittiğini sorar.
+  topic_tags:
+  - daily-life
+  - transit
+  - subway
+  - tickets
+- id: listening.a2.hotel-check-in-late
+  title: Late Evening Hotel Check-In
+  cefr_level: A2
+  category: incident_response
+  scenario_context: Selin arrives at a hotel front desk past midnight after a delayed flight and checks into her reserved
+    room with receptionist James.
+  speakers:
+  - id: james
+    name: James
+    role: Hotel Night Auditor
+    accent: American
+  - id: selin
+    name: Selin
+    role: Hotel Guest
+    accent: Turkish
+  audio_ref: audio/listening/a2_hotel_check_in_late.mp3
+  duration_seconds: 56
+  transcript_items:
+  - index: 1
+    speaker_id: james
+    start_ms: 0
+    end_ms: 6724
+    text_en: Good evening, welcome to Grand Central Hotel. How can I assist you tonight?
+    text_tr: İyi akşamlar, Grand Central Hotel'e hoş geldiniz. Bu gece size nasıl yardımcı olabilirim?
+  - index: 2
+    speaker_id: selin
+    start_ms: 7124
+    end_ms: 15112
+    text_en: Hello. I have a reservation under Selin Yilmaz. My flight was delayed by four hours.
+    text_tr: Merhaba. Selin Yılmaz adına bir rezervasyonum var. Uçağım dört saat rötar yaptı.
+  - index: 3
+    speaker_id: james
+    start_ms: 15512
+    end_ms: 25085
+    text_en: I see your booking right here, Ms. Yilmaz. A standard queen room for three nights. May I see your passport?
+    text_tr: Rezervasyonunuzu tam burada görüyorum Bayan Yılmaz. Üç gece için standart queen oda. Pasaportunuzu görebilir
+      miyim?
+  - index: 4
+    speaker_id: selin
+    start_ms: 25485
+    end_ms: 30664
+    text_en: Here is my passport. Is breakfast included in the morning?
+    text_tr: İşte pasaportum. Sabah kahvaltı dahil mi?
+  - index: 5
+    speaker_id: james
+    start_ms: 31064
+    end_ms: 36643
+    text_en: Yes, breakfast is served on the second floor from seven to ten in the morning.
+    text_tr: Evet, kahvaltı sabah yediden ona kadar ikinci katta servis ediliyor.
+  - index: 6
+    speaker_id: selin
+    start_ms: 37043
+    end_ms: 42481
+    text_en: Wonderful. What is the password for the room wireless internet?
+    text_tr: Harika. Oda kablosuz internetinin şifresi nedir?
+  - index: 7
+    speaker_id: james
+    start_ms: 42881
+    end_ms: 49949
+    text_en: Your room number is 412, and the Wi-Fi password is printed on your keycard sleeve.
+    text_tr: Oda numaranız 412 ve Wi-Fi şifresi anahtar kartı kılıfınızın üzerinde basılıdır.
+  - index: 8
+    speaker_id: selin
+    start_ms: 50349
+    end_ms: 55748
+    text_en: Thank you very much James. Where are the elevators located?
+    text_tr: Çok teşekkür ederim James. Asansörler nerede bulunuyor?
+  comprehension_questions:
+  - id: q_listening_a2_hotel-check-in-late_01
+    question_en: Why did Selin arrive at the hotel late at night?
+    question_tr_hint: Selin otele neden gece geç saatte vardı?
+    options:
+    - Her rental car ran out of fuel.
+    - She lost her train ticket at the station.
+    - She was attending an all-night concert.
+    - Her flight was delayed by four hours.
+    correct_answer: Her flight was delayed by four hours.
+    explanation_en: Selin mentions her flight was delayed by four hours.
+    explanation_tr: Selin uçuşunun dört saat rötar yaptığını belirtir.
+  - id: q_listening_a2_hotel-check-in-late_02
+    question_en: How many nights is Selin staying at the hotel?
+    question_tr_hint: Selin otelde kaç gece konaklıyor?
+    options:
+    - One single night.
+    - Three nights.
+    - Two whole weeks.
+    - One month.
+    correct_answer: Three nights.
+    explanation_en: James confirms her booking is for three nights.
+    explanation_tr: James rezervasyonunun üç gece olduğunu onaylar.
+  - id: q_listening_a2_hotel-check-in-late_03
+    question_en: Where and when is breakfast served?
+    question_tr_hint: Kahvaltı nerede ve ne zaman servis ediliyor?
+    options:
+    - In the basement at midnight only.
+    - Delivered to rooms at 5:00 AM.
+    - On the second floor from 7:00 to 10:00 AM.
+    - At a nearby restaurant down the road.
+    correct_answer: On the second floor from 7:00 to 10:00 AM.
+    explanation_en: James states breakfast is on the 2nd floor from 7 to 10 AM.
+    explanation_tr: James kahvaltının 2. katta sabah 7 ile 10 arasında olduğunu belirtir.
+  - id: q_listening_a2_hotel-check-in-late_04
+    question_en: What is Selin's room number?
+    question_tr_hint: Selin'in oda numarası kaçtır?
+    options:
+    - '850.'
+    - '204.'
+    - '412.'
+    - '101.'
+    correct_answer: '412.'
+    explanation_en: James tells Selin her room number is 412.
+    explanation_tr: James Selin'e oda numarasının 412 olduğunu söyler.
+  - id: q_listening_a2_hotel-check-in-late_05
+    question_en: Where can Selin find the Wi-Fi password?
+    question_tr_hint: Selin Wi-Fi şifresini nerede bulabilir?
+    options:
+    - She must call the hotel manager in the morning.
+    - Printed on her keycard sleeve.
+    - Sent to her personal postal mail address.
+    - Written on a chalkboard in the lobby.
+    correct_answer: Printed on her keycard sleeve.
+    explanation_en: James notes the Wi-Fi password is on the keycard sleeve.
+    explanation_tr: James Wi-Fi şifresinin anahtar kartı kılıfında basılı olduğunu belirtir.
+  topic_tags:
+  - travel
+  - hotel
+  - hospitality
+  - check-in
+- id: listening.a2.pharmacy-cold-medicine
+  title: Asking for Cold Medicine at a Pharmacy
+  cefr_level: A2
+  category: product_discovery
+  scenario_context: Emre visits a neighborhood pharmacy to ask pharmacist Claire for advice on over-the-counter medicine for
+    a sore throat and mild fever.
+  speakers:
+  - id: claire
+    name: Claire
+    role: Pharmacist
+    accent: British
+  - id: emre
+    name: Emre
+    role: Customer
+    accent: Turkish
+  audio_ref: audio/listening/a2_pharmacy_cold_medicine.mp3
+  duration_seconds: 56
+  transcript_items:
+  - index: 1
+    speaker_id: claire
+    start_ms: 0
+    end_ms: 4754
+    text_en: Hello, how can I assist you at the pharmacy counter today?
+    text_tr: Merhaba, bugün eczane bankosunda size nasıl yardımcı olabilirim?
+  - index: 2
+    speaker_id: emre
+    start_ms: 5154
+    end_ms: 14112
+    text_en: Hi. I started feeling sick yesterday. I have a sore throat, a runny nose, and a mild fever.
+    text_tr: Merhaba. Dün kendimi hasta hissetmeye başladım. Boğaz ağrım, burun akıntım ve hafif ateşim var.
+  - index: 3
+    speaker_id: claire
+    start_ms: 14512
+    end_ms: 22540
+    text_en: I am sorry to hear that. Do you have any allergies to medications like paracetamol or ibuprofen?
+    text_tr: Bunu duyduğuma üzüldüm. Parasetamol veya ibuprofen gibi ilaçlara herhangi bir alerjiniz var mı?
+  - index: 4
+    speaker_id: emre
+    start_ms: 22940
+    end_ms: 27039
+    text_en: No, I do not have any known drug allergies.
+    text_tr: Hayır, bilinen herhangi bir ilaç alerjim yok.
+  - index: 5
+    speaker_id: claire
+    start_ms: 27439
+    end_ms: 35538
+    text_en: This multi-symptom cold syrup will relieve your fever and congestion. Take two teaspoons every six hours.
+    text_tr: Bu çok belirtili soğuk algınlığı şurubu ateşinizi ve tıkanıklığınızı rahatlatacaktır. Her altı saatte bir iki
+      çay kaşığı alın.
+  - index: 6
+    speaker_id: emre
+    start_ms: 35938
+    end_ms: 40281
+    text_en: Will this syrup make me feel drowsy or sleepy during the day?
+    text_tr: Bu şurup gün içinde uykulu veya sersem hissettirir mi?
+  - index: 7
+    speaker_id: claire
+    start_ms: 40681
+    end_ms: 48949
+    text_en: This is a daytime non-drowsy formula, so you can work normally. Also drink plenty of warm fluids.
+    text_tr: Bu gündüz için uyku yapmayan bir formüldür, böylece normal şekilde çalışabilirsiniz. Ayrıca bolca ılık sıvı tüketin.
+  - index: 8
+    speaker_id: emre
+    start_ms: 49349
+    end_ms: 55613
+    text_en: Thank you Claire. I will take this bottle and a box of throat lozenges please.
+    text_tr: Teşekkürler Claire. Bu şişeyi ve bir kutu boğaz pastilini alayım lütfen.
+  comprehension_questions:
+  - id: q_listening_a2_pharmacy-cold-medicine_01
+    question_en: What symptoms has Emre been experiencing since yesterday?
+    question_tr_hint: Emre dünden beri hangi semptomları yaşıyor?
+    options:
+    - A broken arm and severe wrist pain.
+    - A sore throat, runny nose, and mild fever.
+    - Extreme toothache after eating ice cream.
+    - Severe food poisoning from fish.
+    correct_answer: A sore throat, runny nose, and mild fever.
+    explanation_en: Emre describes having a sore throat, runny nose, and mild fever.
+    explanation_tr: Emre boğaz ağrısı, burun akıntısı ve hafif ateşi olduğunu anlatır.
+  - id: q_listening_a2_pharmacy-cold-medicine_02
+    question_en: Does Emre have any drug allergies?
+    question_tr_hint: Emre'nin herhangi bir ilaç alerjisi var mı?
+    options:
+    - No, he has no known medication allergies.
+    - He is allergic to pure warm water.
+    - Yes, he cannot consume any liquid medicine.
+    - Yes, he is severely allergic to paracetamol.
+    correct_answer: No, he has no known medication allergies.
+    explanation_en: Emre confirms he does not have any drug allergies.
+    explanation_tr: Emre bilinen bir ilaç alerjisi olmadığını onaylar.
+  - id: q_listening_a2_pharmacy-cold-medicine_03
+    question_en: How often should Emre take the cold syrup?
+    question_tr_hint: Emre soğuk algınlığı şurubunu ne sıklıkla almalıdır?
+    options:
+    - Two teaspoons every six hours.
+    - One entire bottle every morning.
+    - Ten drops every thirty minutes.
+    - Only once a week before bedtime.
+    correct_answer: Two teaspoons every six hours.
+    explanation_en: Claire advises two teaspoons every six hours.
+    explanation_tr: Claire her altı saatte bir iki çay kaşığı almasını tavsiye eder.
+  - id: q_listening_a2_pharmacy-cold-medicine_04
+    question_en: Why can Emre work normally after taking the syrup?
+    question_tr_hint: Emre şurubu aldıktan sonra neden normal şekilde çalışabilir?
+    options:
+    - It contains massive doses of caffeine.
+    - The syrup cures the illness within two minutes.
+    - It is a daytime non-drowsy formula that does not cause sleepiness.
+    - His employer forbids him from resting at home.
+    correct_answer: It is a daytime non-drowsy formula that does not cause sleepiness.
+    explanation_en: Claire confirms it is a non-drowsy daytime formula.
+    explanation_tr: Claire ilacın uyku yapmayan gündüz formülü olduğunu doğrular.
+  - id: q_listening_a2_pharmacy-cold-medicine_05
+    question_en: What additional item does Emre decide to purchase?
+    question_tr_hint: Emre ek olarak hangi ürünü satın almaya karar veriyor?
+    options:
+    - An electric heating blanket.
+    - A large bottle of hand sanitizer.
+    - A box of throat lozenges.
+    - A digital medical thermometer.
+    correct_answer: A box of throat lozenges.
+    explanation_en: Emre asks for a box of throat lozenges in addition to the syrup.
+    explanation_tr: Emre şurubun yanı sıra bir kutu boğaz pastili ister.
+  topic_tags:
+  - health-lifestyle
+  - pharmacy
+  - medicine
+  - wellness
+- id: listening.a2.grocery-market-fresh
+  title: Buying Fresh Produce at a Farmers Market
+  cefr_level: A2
+  category: product_discovery
+  scenario_context: Aylin shops for seasonal organic vegetables and fruit at a weekend open-air market and chats with the
+    farmer, Tom.
+  speakers:
+  - id: tom
+    name: Tom
+    role: Market Vendor
+    accent: American
+  - id: aylin
+    name: Aylin
+    role: Shopper
+    accent: Turkish
+  audio_ref: audio/listening/a2_grocery_market_fresh.mp3
+  duration_seconds: 57
+  transcript_items:
+  - index: 1
+    speaker_id: tom
+    start_ms: 0
+    end_ms: 6958
+    text_en: Good morning! We harvested these heirloom tomatoes and crisp apples just yesterday morning.
+    text_tr: Günaydın! Bu ata tohumu domatesleri ve çıtır elmaları daha dün sabah hasat ettik.
+  - index: 2
+    speaker_id: aylin
+    start_ms: 7358
+    end_ms: 14702
+    text_en: Good morning! The tomatoes smell wonderful. Are they grown without chemical sprays?
+    text_tr: Günaydın! Domatesler harika kokuyor. Kimyasal ilaçlar olmadan mı yetiştirildiler?
+  - index: 3
+    speaker_id: tom
+    start_ms: 15102
+    end_ms: 23300
+    text_en: Yes, our farm is certified organic. We use natural compost and biological pest control.
+    text_tr: Evet, çiftliğimiz sertifikalı organiktir. Doğal kompost ve biyolojik zararlı kontrolü kullanıyoruz.
+  - index: 4
+    speaker_id: aylin
+    start_ms: 23700
+    end_ms: 28699
+    text_en: That is great. How much are the red apples per kilogram?
+    text_tr: Bu harika. Kırmızı elmaların kilosu ne kadar?
+  - index: 5
+    speaker_id: tom
+    start_ms: 29099
+    end_ms: 35642
+    text_en: They are three dollars per kilogram, or you can get a three-kilo wooden basket for eight dollars.
+    text_tr: Kilosu üç dolar ya da sekiz dolara üç kiloluk ahşap bir sepet alabilirsiniz.
+  - index: 6
+    speaker_id: aylin
+    start_ms: 36042
+    end_ms: 41711
+    text_en: I will take the three-kilo basket of apples and two kilos of the organic tomatoes.
+    text_tr: Üç kiloluk elma sepetini ve iki kilo organik domatesi alayım.
+  - index: 7
+    speaker_id: tom
+    start_ms: 42111
+    end_ms: 48674
+    text_en: That comes to fourteen dollars in total. Would you like a paper bag for carrying them?
+    text_tr: Toplamda on dört dolar tutuyor. Taşımak için kağıt bir kese kağıdı ister misiniz?
+  - index: 8
+    speaker_id: aylin
+    start_ms: 49074
+    end_ms: 56333
+    text_en: No thank you, I brought my own reusable cloth tote bag. Here is my credit card.
+    text_tr: Hayır teşekkürler, kendi yeniden kullanılabilir bez çantamı getirdim. İşte kredi kartım.
+  comprehension_questions:
+  - id: q_listening_a2_grocery-market-fresh_01
+    question_en: When were the tomatoes and apples harvested?
+    question_tr_hint: Domatesler ve elmalar ne zaman hasat edildi?
+    options:
+    - Three weeks ago.
+    - Yesterday morning.
+    - Last month during autumn.
+    - Early this morning before sunrise.
+    correct_answer: Yesterday morning.
+    explanation_en: Tom explains they harvested them yesterday morning.
+    explanation_tr: Tom ürünleri dün sabah hasat ettiklerini açıklar.
+  - id: q_listening_a2_grocery-market-fresh_02
+    question_en: How are crops grown on Tom's farm?
+    question_tr_hint: Tom'un çiftliğinde ürünler nasıl yetiştiriliyor?
+    options:
+    - Using industrial chemical synthetic sprays.
+    - Organically with natural compost and biological pest control.
+    - Inside artificial glass test tubes without soil.
+    - Imported from overseas greenhouses.
+    correct_answer: Organically with natural compost and biological pest control.
+    explanation_en: Tom confirms the farm is certified organic with natural compost.
+    explanation_tr: Tom çiftliğin doğal kompost kullanan sertifikalı organik olduğunu doğrular.
+  - id: q_listening_a2_grocery-market-fresh_03
+    question_en: What special discount does Tom offer for the apples?
+    question_tr_hint: Tom elmalar için nasıl özel bir indirim sunuyor?
+    options:
+    - A fifty percent discount on rotten fruit.
+    - Buy one apple and get five free.
+    - Free apples if the customer pays in cash.
+    - A three-kilogram basket for eight dollars instead of nine.
+    correct_answer: A three-kilogram basket for eight dollars instead of nine.
+    explanation_en: Tom says a 3-kilo basket is eight dollars instead of $3/kg.
+    explanation_tr: Tom 3 kiloluk sepetin kilo başına 3 dolar yerine 8 dolar olduğunu söyler.
+  - id: q_listening_a2_grocery-market-fresh_04
+    question_en: What is the total price for Aylin's purchases?
+    question_tr_hint: Aylin'in alışverişinin toplam tutarı ne kadardır?
+    options:
+    - Fourteen dollars.
+    - Thirty dollars.
+    - Five dollars.
+    - Fifty dollars.
+    correct_answer: Fourteen dollars.
+    explanation_en: Tom calculates the total comes to fourteen dollars.
+    explanation_tr: Tom toplamın 14 dolar tuttuğunu belirtir.
+  - id: q_listening_a2_grocery-market-fresh_05
+    question_en: Why does Aylin refuse Tom's offer of a paper bag?
+    question_tr_hint: Aylin Tom'un kağıt poşet teklifini neden reddediyor?
+    options:
+    - She plans to eat all the apples immediately on the street.
+    - She has a shopping cart in her car.
+    - She thinks paper bags are too expensive to buy.
+    - She brought her own reusable cloth tote bag.
+    correct_answer: She brought her own reusable cloth tote bag.
+    explanation_en: Aylin says she brought her own reusable cloth bag.
+    explanation_tr: Aylin kendi bez çantasını getirdiğini söyler.
+  topic_tags:
+  - food-shopping
+  - market
+  - organic
+  - produce
+- id: listening.a2.neighbor-package-delivery
+  title: Collecting a Delivered Parcel from a Neighbor
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Kerem knocks on his neighbor Emma's apartment door to retrieve an online shopping parcel that the courier
+    left with her.
+  speakers:
+  - id: emma
+    name: Emma
+    role: Neighbor
+    accent: British
+  - id: kerem
+    name: Kerem
+    role: Apartment Resident
+    accent: Turkish
+  audio_ref: audio/listening/a2_neighbor_package_delivery.mp3
+  duration_seconds: 61
+  transcript_items:
+  - index: 1
+    speaker_id: kerem
+    start_ms: 0
+    end_ms: 7669
+    text_en: Hi Emma! Sorry to bother you on a Tuesday evening. Did the courier leave a box for me?
+    text_tr: Selam Emma! Bir salı akşamı seni rahatsız ettiğim için kusura bakma. Kurye benim için bir kutu bıraktı mı?
+  - index: 2
+    speaker_id: emma
+    start_ms: 8069
+    end_ms: 16242
+    text_en: Hello Kerem! Yes, the postal driver rang my doorbell around two o'clock because you were at work.
+    text_tr: Merhaba Kerem! Evet, sen işte olduğun için posta şoförü saat iki civarında benim zilimi çaldı.
+  - index: 3
+    speaker_id: kerem
+    start_ms: 16642
+    end_ms: 23546
+    text_en: Thank you so much for taking it in. It is a new ergonomic keyboard for my home office.
+    text_tr: Aldığın için çok teşekkür ederim. Ev ofisim için yeni bir ergonomik klavyeydi.
+  - index: 4
+    speaker_id: emma
+    start_ms: 23946
+    end_ms: 31104
+    text_en: Here it is. The box was quite light, and it is in perfect condition with no damage.
+    text_tr: İşte burada. Kutu oldukça hafifti ve hiç hasar görmemiş, mükemmel durumda.
+  - index: 5
+    speaker_id: kerem
+    start_ms: 31504
+    end_ms: 39762
+    text_en: I really appreciate your help. If you ever have deliveries when you are away, feel free to use my address.
+    text_tr: Yardımın için gerçekten minnettarım. Uzakta olduğunda teslimatların olursa, çekinmeden benim adresimi kullanabilirsin.
+  - index: 6
+    speaker_id: emma
+    start_ms: 40162
+    end_ms: 45771
+    text_en: That is very kind of you Kerem. Neighbors should look out for each other.
+    text_tr: Çok naziksin Kerem. Komşular birbirine göz kulak olmalı.
+  - index: 7
+    speaker_id: kerem
+    start_ms: 46171
+    end_ms: 53884
+    text_en: By the way, I baked some fresh Turkish walnut cookies yesterday. I will bring some over tomorrow.
+    text_tr: Bu arada dün taze Türk cevizli kurabiyesi pişirdim. Yarın biraz getiririm.
+  - index: 8
+    speaker_id: emma
+    start_ms: 54284
+    end_ms: 59858
+    text_en: Oh, that sounds delicious! Have a wonderful evening Kerem.
+    text_tr: Kulağa çok lezzetli geliyor! İyi akşamlar Kerem.
+  comprehension_questions:
+  - id: q_listening_a2_neighbor-package-delivery_01
+    question_en: Why did the postal driver deliver Kerem's package to Emma?
+    question_tr_hint: Posta şoförü Kerem'in paketini neden Emma'ya teslim etti?
+    options:
+    - The package was addressed to Emma by mistake.
+    - Kerem's front door was locked with a chain.
+    - Kerem forgot his apartment building number.
+    - Kerem was away at work when the courier arrived.
+    correct_answer: Kerem was away at work when the courier arrived.
+    explanation_en: Emma explains the courier rang her bell because Kerem was at work.
+    explanation_tr: Emma Kerem işte olduğu için kuryenin kendi zilini çaldığını açıklar.
+  - id: q_listening_a2_neighbor-package-delivery_02
+    question_en: What item was inside the delivered parcel?
+    question_tr_hint: Teslim edilen paketin içinde ne vardı?
+    options:
+    - A printed paperback novel.
+    - A set of ceramic coffee cups.
+    - An ergonomic keyboard for Kerem's home office.
+    - A pair of leather running shoes.
+    correct_answer: An ergonomic keyboard for Kerem's home office.
+    explanation_en: Kerem mentions it is a new ergonomic keyboard for his home office.
+    explanation_tr: Kerem ev ofisi için yeni ergonomik bir klavye olduğunu söyler.
+  - id: q_listening_a2_neighbor-package-delivery_03
+    question_en: At approximately what time did the delivery occur?
+    question_tr_hint: Teslimat yaklaşık olarak saat kaçta gerçekleşti?
+    options:
+    - Around two o'clock in the afternoon.
+    - At noon sharp.
+    - Past midnight on Sunday.
+    - At seven o'clock in the morning.
+    correct_answer: Around two o'clock in the afternoon.
+    explanation_en: Emma notes the driver rang her doorbell around two o'clock.
+    explanation_tr: Emma şoförün saat iki civarında zilini çaldığını belirtir.
+  - id: q_listening_a2_neighbor-package-delivery_04
+    question_en: What reciprocal offer does Kerem make to Emma?
+    question_tr_hint: Kerem Emma'ya nasıl karşılıklı bir teklifte bulunuyor?
+    options:
+    - He offers to drive her to work every morning.
+    - He will clean her apartment windows every Saturday.
+    - She can have her packages delivered to his apartment when she is away.
+    - He will pay for her monthly internet subscription.
+    correct_answer: She can have her packages delivered to his apartment when she is away.
+    explanation_en: Kerem offers that Emma can use his address for deliveries when away.
+    explanation_tr: Kerem Emma'nın uzaktayken teslimatlar için kendi adresini kullanabileceğini teklif eder.
+  - id: q_listening_a2_neighbor-package-delivery_05
+    question_en: What food item does Kerem promise to share with Emma tomorrow?
+    question_tr_hint: Kerem yarın Emma ile hangi yiyeceği paylaşacağına söz veriyor?
+    options:
+    - Homemade chocolate ice cream.
+    - A loaf of freshly baked sourdough bread.
+    - Fresh Turkish walnut cookies.
+    - A bowl of spicy tomato pasta.
+    correct_answer: Fresh Turkish walnut cookies.
+    explanation_en: Kerem says he baked fresh Turkish walnut cookies and will bring some over.
+    explanation_tr: Kerem cevizli kurabiye pişirdiğini ve yarın getireceğini söyler.
+  topic_tags:
+  - relationships
+  - community
+  - neighbors
+  - delivery
+- id: listening.a2.language-course-registration
+  title: Enrolling in an Evening English Class
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Zeynep visits a community college continuing education office to register for an evening conversational
+    English course with advisor Mark.
+  speakers:
+  - id: mark
+    name: Mark
+    role: Course Registration Advisor
+    accent: American
+  - id: zeynep
+    name: Zeynep
+    role: Prospective Student
+    accent: Turkish
+  audio_ref: audio/listening/a2_language_course_registration.mp3
+  duration_seconds: 59
+  transcript_items:
+  - index: 1
+    speaker_id: mark
+    start_ms: 0
+    end_ms: 6708
+    text_en: Good afternoon! Are you interested in enrolling in our autumn adult education classes?
+    text_tr: Tünaydın! Sonbahar yetişkin eğitimi sınıflarımıza kaydolmakla ilgileniyor musunuz?
+  - index: 2
+    speaker_id: zeynep
+    start_ms: 7108
+    end_ms: 14101
+    text_en: Yes, I would like to join an intermediate English conversation class that meets after work hours.
+    text_tr: Evet, mesai saatlerinden sonra toplanan orta düzey bir İngilizce konuşma sınıfına katılmak istiyorum.
+  - index: 3
+    speaker_id: mark
+    start_ms: 14501
+    end_ms: 21435
+    text_en: We have an excellent conversational class on Tuesday and Thursday evenings from six thirty to eight thirty.
+    text_tr: Salı ve perşembe akşamları altı buçuktan sekiz buçuğa kadar mükemmel bir konuşma sınıfımız var.
+  - index: 4
+    speaker_id: zeynep
+    start_ms: 21835
+    end_ms: 28608
+    text_en: That schedule fits my working hours perfectly. How many weeks does the course last?
+    text_tr: Bu program çalışma saatlerime tam olarak uyuyor. Kurs kaç hafta sürüyor?
+  - index: 5
+    speaker_id: mark
+    start_ms: 29008
+    end_ms: 37651
+    text_en: The term runs for ten weeks, starting on the fifteenth of next month. Total tuition is two hundred dollars.
+    text_tr: Dönem gelecek ayın on beşinde başlayarak on hafta sürüyor. Toplam eğitim ücreti iki yüz dolardır.
+  - index: 6
+    speaker_id: zeynep
+    start_ms: 38051
+    end_ms: 43790
+    text_en: Do I need to take a placement assessment test before my registration is confirmed?
+    text_tr: Kaydım onaylanmadan önce seviye belirleme sınavına girmem gerekiyor mu?
+  - index: 7
+    speaker_id: mark
+    start_ms: 44190
+    end_ms: 50883
+    text_en: Yes, we have a short fifteen-minute online test to ensure the class level is right for you.
+    text_tr: Evet, sınıf seviyesinin sizin için uygun olduğundan emin olmak için on beş dakikalık kısa bir çevrimiçi testimiz
+      var.
+  - index: 8
+    speaker_id: zeynep
+    start_ms: 51283
+    end_ms: 57942
+    text_en: Sounds great. I will complete the online placement test tonight on my computer.
+    text_tr: Kulağa harika geliyor. Çevrimiçi seviye belirleme sınavını bu gece bilgisayarımda tamamlayacağım.
+  comprehension_questions:
+  - id: q_listening_a2_language-course-registration_01
+    question_en: What type of course is Zeynep looking for?
+    question_tr_hint: Zeynep ne tür bir kurs arıyor?
+    options:
+    - A weekend beginner French cooking workshop.
+    - A full-time morning intensive medical degree.
+    - An online advanced computer programming course.
+    - An intermediate English conversation class meeting after work hours.
+    correct_answer: An intermediate English conversation class meeting after work hours.
+    explanation_en: Zeynep states she wants an intermediate English conversation class after work hours.
+    explanation_tr: Zeynep iş saatlerinden sonra orta düzey bir konuşma sınıfı istediğini belirtir.
+  - id: q_listening_a2_language-course-registration_02
+    question_en: On which days and times does the course meet?
+    question_tr_hint: Kurs hangi günlerde ve saatlerde toplanıyor?
+    options:
+    - Monday and Wednesday mornings from 9:00 to 11:00 AM.
+    - Saturday afternoons from 1:00 to 5:00 PM.
+    - Every day during lunch hour.
+    - Tuesday and Thursday evenings from 6:30 to 8:30 PM.
+    correct_answer: Tuesday and Thursday evenings from 6:30 to 8:30 PM.
+    explanation_en: Mark confirms Tuesday and Thursday evenings from 6:30 to 8:30 PM.
+    explanation_tr: Mark salı ve perşembe akşamları 18:30 ile 20:30 arasında olduğunu onaylar.
+  - id: q_listening_a2_language-course-registration_03
+    question_en: How long is the course duration and what is the tuition?
+    question_tr_hint: Kurs süresi ne kadardır ve eğitim ücreti nedir?
+    options:
+    - Six months free of charge.
+    - Three weeks for five hundred dollars.
+    - One full year for fifty dollars.
+    - Ten weeks for two hundred dollars.
+    correct_answer: Ten weeks for two hundred dollars.
+    explanation_en: Mark states the term runs for 10 weeks and tuition is $200.
+    explanation_tr: Mark dönemin 10 hafta olduğunu ve ücretin 200 dolar olduğunu söyler.
+  - id: q_listening_a2_language-course-registration_04
+    question_en: What must Zeynep complete before registration is confirmed?
+    question_tr_hint: Kaydı onaylanmadan önce Zeynep neyi tamamlamalıdır?
+    options:
+    - A medical physical examination at a clinic.
+    - A short fifteen-minute online placement assessment test.
+    - An in-person interview with the university president.
+    - A formal three-hour written grammar dissertation.
+    correct_answer: A short fifteen-minute online placement assessment test.
+    explanation_en: Mark explains she needs a short 15-minute online placement test.
+    explanation_tr: Mark 15 dakikalık kısa bir çevrimiçi seviye belirleme sınavı gerektiğini açıklar.
+  - id: q_listening_a2_language-course-registration_05
+    question_en: When does Zeynep plan to take the online placement test?
+    question_tr_hint: Zeynep çevrimiçi seviye belirleme sınavına ne zaman girmeyi planlıyor?
+    options:
+    - In two weeks after returning from vacation.
+    - Tonight on her computer.
+    - Next month after classes begin.
+    - Tomorrow morning at the university campus.
+    correct_answer: Tonight on her computer.
+    explanation_en: Zeynep says she will complete the online test tonight on her computer.
+    explanation_tr: Zeynep çevrimiçi testi bu gece bilgisayarında tamamlayacağını söyler.
+  topic_tags:
+  - education
+  - registration
+  - language-learning
+  - college

@@ -1,0 +1,1033 @@
+- id: listening.a2.it-support-ticket
+  title: 'Helpdesk Call: Password Reset and Account Access'
+  cefr_level: A2
+  category: incident_response
+  scenario_context: Can, a new data analyst, calls the company IT helpdesk because his account is locked after entering the
+    wrong password three times.
+  speakers:
+  - id: can
+    name: Can
+    role: Data Analyst
+    accent: Turkish
+  - id: maya
+    name: Maya
+    role: IT Support Specialist
+    accent: British
+  audio_ref: audio/listening/a2_it_support_ticket.mp3
+  duration_seconds: 54
+  transcript_items:
+  - index: 1
+    speaker_id: maya
+    start_ms: 0
+    end_ms: 6749
+    text_en: Hello, IT Helpdesk, Maya speaking. How can I help you today?
+    text_tr: Merhaba, IT Destek Hattı, ben Maya. Bugün size nasıl yardımcı olabilirim?
+  - index: 2
+    speaker_id: can
+    start_ms: 7149
+    end_ms: 15838
+    text_en: Hi Maya, my name is Can. I cannot log into my company email. My account is locked.
+    text_tr: Merhaba Maya, benim adım Can. Şirket e-postama giriş yapamıyorum. Hesabım kilitlendi.
+  - index: 3
+    speaker_id: maya
+    start_ms: 16238
+    end_ms: 22716
+    text_en: No problem, Can. Did you enter the wrong password multiple times?
+    text_tr: Sorun değil Can. Yanlış şifreyi birkaç kez mi girdiniz?
+  - index: 4
+    speaker_id: can
+    start_ms: 23116
+    end_ms: 29695
+    text_en: Yes, I typed it three times incorrectly after updating my laptop system this morning.
+    text_tr: Evet, bu sabah dizüstü bilgisayar sistemimi güncelledikten sonra üç kez yanlış yazdım.
+  - index: 5
+    speaker_id: maya
+    start_ms: 30095
+    end_ms: 37488
+    text_en: I understand. I am sending a secure temporary reset code to your registered mobile phone now.
+    text_tr: Anlıyorum. Şimdi kayıtlı cep telefonunuza güvenli bir geçici sıfırlama kodu gönderiyorum.
+  - index: 6
+    speaker_id: can
+    start_ms: 37888
+    end_ms: 44692
+    text_en: I received the SMS code. I will create a new twelve-character password right now.
+    text_tr: SMS kodunu aldım. Hemen şimdi on iki karakterli yeni bir şifre oluşturacağım.
+  - index: 7
+    speaker_id: maya
+    start_ms: 45092
+    end_ms: 53315
+    text_en: Great! Please call us back if you encounter any other technical difficulties. Have a good day.
+    text_tr: Harika! Başka bir teknik sorunla karşılaşırsanız lütfen bizi tekrar arayın. İyi günler.
+  key_vocabulary:
+  - word: office
+    vocab_id: vocab.office
+    context_note_tr: Çalışılan şirket ofisi veya çalışma ortamı.
+  - word: receive
+    vocab_id: vocab.receive
+    context_note_tr: Mesaj veya sıfırlama kodunu teslim almak.
+  comprehension_questions:
+  - id: q_a2_it_01
+    question_en: Why is Can unable to access his company email account?
+    question_tr_hint: Can neden şirket e-posta hesabına erişememektedir?
+    options:
+    - His account was locked after he entered an incorrect password three times
+    - His company laptop was permanently confiscated by building security guards
+    - He forgot his own full name and employee identification number
+    - The entire corporate internet network was disconnected for holiday renovations
+    correct_answer: His account was locked after he entered an incorrect password three times
+    explanation_en: Can explains that he entered his password incorrectly three times after a system update, locking the account.
+    explanation_tr: Can, sistem güncellemesinden sonra şifresini üç kez yanlış girdiği için hesabının kilitlendiğini belirtir.
+  - id: q_a2_it_02
+    question_en: How does Maya deliver the temporary verification code to Can?
+    question_tr_hint: Maya geçici doğrulama kodunu Can'a nasıl ulaştırmaktadır?
+    options:
+    - By printing a physical letter and mailing it through postal services
+    - By asking a colleague to announce the code over the office loudspeaker
+    - By sending a secure text message to his registered mobile phone
+    - By uploading the code publicly to the corporate marketing website
+    correct_answer: By sending a secure text message to his registered mobile phone
+    explanation_en: Maya confirms she is sending a temporary reset code to Can's registered mobile phone via SMS.
+    explanation_tr: Maya, Can'ın kayıtlı cep telefonuna SMS ile geçici bir sıfırlama kodu gönderdiğini teyit eder.
+  - id: q_a2_it_03
+    question_en: When did Can begin experiencing the password problem?
+    question_tr_hint: Can şifre sorununu ne zaman yaşamaya başlamıştır?
+    options:
+    - Three weeks ago during an overseas business vacation
+    - This morning after performing a system update on his laptop
+    - Last year before joining the company's data department
+    - Late yesterday evening while driving his personal car home
+    correct_answer: This morning after performing a system update on his laptop
+    explanation_en: 'Can states: ''I typed it three times incorrectly after updating my laptop system this morning.'''
+    explanation_tr: 'Can: ''Bu sabah dizüstü bilgisayar sistemimi güncelledikten sonra üç kez yanlış yazdım'' demektedir.'
+  - id: q_a2_it_04
+    question_en: What length of password is Can planning to set up?
+    question_tr_hint: Can nasıl bir şifre belirlemeyi planlamaktadır?
+    options:
+    - A four-digit numerical banking PIN
+    - A single capital letter with no numbers
+    - A fifty-word philosophical quotation
+    - A twelve-character password
+    correct_answer: A twelve-character password
+    explanation_en: 'Can confirms: ''I will create a new twelve-character password right now.'''
+    explanation_tr: 'Can: ''Hemen şimdi on iki karakterli yeni bir şifre oluşturacağım'' der.'
+  - id: q_a2_it_05
+    question_en: What final advice does Maya offer before ending the phone call?
+    question_tr_hint: Maya görüşmeyi sonlandırmadan önce hangi tavsiyede bulunmaktadır?
+    options:
+    - To immediately purchase a brand new personal laptop computer
+    - To refrain from using corporate computers for the rest of the week
+    - To call helpdesk back if he encounters further technical difficulties
+    - To delete all existing spreadsheet files stored on his hard drive
+    correct_answer: To call helpdesk back if he encounters further technical difficulties
+    explanation_en: Maya politely asks him to call back if he encounters any other technical difficulties.
+    explanation_tr: Maya başka teknik sorunlarla karşılaşması halinde yardım masasını tekrar aramasını söyler.
+  topic_tags:
+  - it-support
+  - helpdesk
+  - troubleshooting
+  - workplace-basics
+  related_ids:
+  - vocab.office
+  - vocab.receive
+  status: APPROVED
+  version: 1
+- id: listening.a2.office-equipment-delivery
+  title: 'Delivery Coordination: Ergonomic Office Chairs'
+  cefr_level: A2
+  category: engineering_meeting
+  scenario_context: Zeynep and Alex coordinate the arrival of twenty ergonomic chairs and new computer monitors on the third
+    floor.
+  speakers:
+  - id: zeynep
+    name: Zeynep
+    role: HR Assistant
+    accent: Turkish
+  - id: alex
+    name: Alex
+    role: Office Coordinator
+    accent: American
+  audio_ref: audio/listening/a2_office_equipment.mp3
+  duration_seconds: 41
+  transcript_items:
+  - index: 1
+    speaker_id: zeynep
+    start_ms: 0
+    end_ms: 5869
+    text_en: Alex, the delivery van has just arrived downstairs at the main entrance.
+    text_tr: Alex, teslimat kamyoneti az önce ana girişe aşağıya geldi.
+  - index: 2
+    speaker_id: alex
+    start_ms: 6269
+    end_ms: 12727
+    text_en: Great! Are all twenty ergonomic office chairs included in this morning's shipment?
+    text_tr: Harika! Bu sabahki sevkiyata yirmi ergonomik ofis koltuğunun tümü dahil mi?
+  - index: 3
+    speaker_id: zeynep
+    start_ms: 13127
+    end_ms: 19460
+    text_en: Yes, twenty chairs and ten dual-monitor desk mounts are inside the delivery boxes.
+    text_tr: Evet, teslimat kutularının içinde yirmi koltuk ve on adet çift monitörlü masa aparatı var.
+  - index: 4
+    speaker_id: alex
+    start_ms: 19860
+    end_ms: 25159
+    text_en: We should use the large service elevator on the left to move them up to the third floor.
+    text_tr: Onları üçüncü kata çıkarmak için sol taraftaki büyük servis asansörünü kullanmalıyız.
+  - index: 5
+    speaker_id: zeynep
+    start_ms: 25559
+    end_ms: 32368
+    text_en: Good idea. I will ask the facilities team to help us assemble the chairs after lunch.
+    text_tr: İyi fikir. Öğle yemeğinden sonra koltukları monte etmemize yardım etmesi için bina teknik ekibine danışacağım.
+  - index: 6
+    speaker_id: alex
+    start_ms: 32768
+    end_ms: 40471
+    text_en: Sounds like a solid plan. Let's go sign the delivery receipt right now so the driver can unload.
+    text_tr: Sağlam bir plan gibi görünüyor. Sürücünün eşyaları indirebilmesi için hemen şimdi teslimat makbuzunu imzalamaya
+      gidelim.
+  key_vocabulary:
+  - word: deliver
+    vocab_id: vocab.deliver
+    context_note_tr: Sipariş edilen eşyaların adrese teslim edilmesi.
+  - word: office
+    vocab_id: vocab.office
+    context_note_tr: Şirket çalışma binası ve çalışma alanı.
+  comprehension_questions:
+  - id: q_a2_deliv_01
+    question_en: How many ergonomic chairs arrived in the delivery van?
+    question_tr_hint: Teslimat kamyonetinde kaç adet ergonomik koltuk gelmiştir?
+    options:
+    - Twenty ergonomic chairs
+    - Five plastic stools
+    - One hundred wooden dining chairs
+    - Three antique armchairs
+    correct_answer: Twenty ergonomic chairs
+    explanation_en: Alex asks if all twenty chairs are included, and Zeynep confirms there are twenty chairs.
+    explanation_tr: Alex yirmi koltuğun da dahil olup olmadığını sorar ve Zeynep yirmi koltuk olduğunu onaylar.
+  - id: q_a2_deliv_02
+    question_en: Which floor will the new equipment be moved to?
+    question_tr_hint: Yeni ekipmanlar hangi kata taşınacaktır?
+    options:
+    - The basement parking lot
+    - The roof garden terrace
+    - The tenth floor boardroom
+    - The third floor
+    correct_answer: The third floor
+    explanation_en: Alex specifies using the service elevator to take them to the third floor.
+    explanation_tr: Alex eşyaları üçüncü kata çıkarmak için servis asansörünü kullanmayı belirtir.
+  - id: q_a2_deliv_03
+    question_en: How do Alex and Zeynep plan to transport the heavy delivery boxes upstairs?
+    question_tr_hint: Alex ve Zeynep ağır teslimat kutularını yukarıya nasıl taşımayı planlamaktadır?
+    options:
+    - By carrying them one by one up the fire escape staircase
+    - By using the large service elevator on the left
+    - By hiring a commercial helicopter crane
+    - By sliding them along the hallway floor with ropes
+    correct_answer: By using the large service elevator on the left
+    explanation_en: 'Alex explicitly suggests: ''We should use the large service elevator on the left.'''
+    explanation_tr: 'Alex: ''Onları çıkarmak için sol taraftaki büyük servis asansörünü kullanmalıyız'' der.'
+  - id: q_a2_deliv_04
+    question_en: When will the chairs be assembled?
+    question_tr_hint: Koltuklar ne zaman monte edilecektir?
+    options:
+    - After lunch with assistance from the facilities team
+    - Next month during the annual company retreat
+    - Immediately at midnight by external security guards
+    - During tomorrow's quarterly shareholder meeting
+    correct_answer: After lunch with assistance from the facilities team
+    explanation_en: Zeynep says she will ask facilities for help assembling the chairs after lunch.
+    explanation_tr: Zeynep öğle yemeğinden sonra montaj için teknik ekipten yardım isteyeceğini belirtir.
+  - id: q_a2_deliv_05
+    question_en: What immediate action must Alex and Zeynep take downstairs?
+    question_tr_hint: Alex ve Zeynep'in aşağıda atması gereken acil adım nedir?
+    options:
+    - Paying the driver five thousand dollars in cash banknotes
+    - Washing the exterior windows of the delivery truck
+    - Cooking lunch for the warehouse logistics crew
+    - Signing the delivery receipt so the driver can unload the boxes
+    correct_answer: Signing the delivery receipt so the driver can unload the boxes
+    explanation_en: 'Alex says: ''Let''s go sign the delivery receipt right now so the driver can unload.'''
+    explanation_tr: Alex sürücünün indirebilmesi için teslimat makbuzunu imzalamaya gitmeyi önerir.
+  topic_tags:
+  - facilities
+  - office-logistics
+  - coordination
+  - equipment
+  related_ids:
+  - vocab.deliver
+  - vocab.office
+  status: APPROVED
+  version: 1
+- id: listening.a2.scheduling-team-lunch
+  title: 'Team Celebration: Organizing Friday Lunch'
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Burak, a software intern, and Sarah, his engineering manager, discuss arranging a team lunch to celebrate
+    shipping the mobile app update.
+  speakers:
+  - id: burak
+    name: Burak
+    role: Software Intern
+    accent: Turkish
+  - id: sarah
+    name: Sarah
+    role: Engineering Team Lead
+    accent: British
+  audio_ref: audio/listening/a2_team_lunch.mp3
+  duration_seconds: 51
+  transcript_items:
+  - index: 1
+    speaker_id: sarah
+    start_ms: 0
+    end_ms: 8414
+    text_en: Burak, since our team successfully deployed the app update yesterday, we should organize a team lunch on Friday.
+    text_tr: Burak, ekibimiz dün uygulama güncellemesini başarıyla yayına aldığına göre Cuma günü bir ekip yemeği düzenlemeliyiz.
+  - index: 2
+    speaker_id: burak
+    start_ms: 8814
+    end_ms: 16372
+    text_en: That sounds wonderful, Sarah! Should we reserve a table at the Italian bistro near the park?
+    text_tr: Kulağa harika geliyor Sarah! Parkın yakınındaki İtalyan bistrosunda masa ayırtalım mı?
+  - index: 3
+    speaker_id: sarah
+    start_ms: 16772
+    end_ms: 25180
+    text_en: That restaurant is lovely. However, please remember that Elena is vegetarian and Murat cannot eat gluten.
+    text_tr: O restoran çok güzel. Ancak lütfen Elena'nın vejetaryen olduğunu ve Murat'ın glüten tüketemediğini unutma.
+  - index: 4
+    speaker_id: burak
+    start_ms: 25580
+    end_ms: 33778
+    text_en: I checked their menu online. They offer certified gluten-free pasta and several fresh vegetarian salads.
+    text_tr: İnternetten menülerini kontrol ettim. Sertifikalı glütensiz makarna ve birkaç taze vejetaryen salata sunuyorlar.
+  - index: 5
+    speaker_id: sarah
+    start_ms: 34178
+    end_ms: 41551
+    text_en: Excellent research! What time works best between our scheduled code reviews and customer demos?
+    text_tr: Mükemmel araştırma! Planlanan kod incelemelerimiz ve müşteri demolarımız arasında en uygun saat hangisi?
+  - index: 6
+    speaker_id: burak
+    start_ms: 41951
+    end_ms: 50269
+    text_en: Everyone is completely free between twelve-thirty and two o'clock. I will book a table for eight people at twelve-thirty.
+    text_tr: Herkes on iki buçuk ile iki arası tamamen müsait. On iki buçuğa sekiz kişilik bir masa ayırtacağım.
+  key_vocabulary:
+  - word: collaborate
+    vocab_id: vocab.collaborate
+    context_note_tr: Ekip arkadaşlarıyla ortak etkinlik ve planlamada iş birliği yapmak.
+  - word: customer
+    vocab_id: vocab.customer
+    context_note_tr: Şirketin ürün ve hizmetlerini kullanan müşteri kitlesi.
+  comprehension_questions:
+  - id: q_a2_lunch_01
+    question_en: What milestone is the engineering team celebrating with Friday's lunch?
+    question_tr_hint: Mühendislik ekibi Cuma günkü yemekle hangi başarıyı kutlamaktadır?
+    options:
+    - Signing a ten-year corporate office lease agreement
+    - Successfully deploying the mobile app update
+    - Moving the entire engineering team to a foreign branch
+    - Purchasing eighty brand new desktop computers
+    correct_answer: Successfully deploying the mobile app update
+    explanation_en: 'Sarah opens by saying: ''since our team successfully deployed the app update yesterday, we should organize
+      a team lunch.'''
+    explanation_tr: Sarah ekibin dün uygulama güncellemesini başarıyla yayına almasını kutlamak istediklerini söyler.
+  - id: q_a2_lunch_02
+    question_en: What dietary restriction does Murat have?
+    question_tr_hint: Murat'ın hangi beslenme kısıtlaması bulunmaktadır?
+    options:
+    - He is allergic to drinking clean water
+    - He strictly eats only raw meat
+    - He cannot eat gluten
+    - He cannot consume any hot cooked food
+    correct_answer: He cannot eat gluten
+    explanation_en: 'Sarah explicitly notes: ''Elena is vegetarian and Murat cannot eat gluten.'''
+    explanation_tr: Sarah açıkça Elena'nın vejetaryen olduğunu ve Murat'ın glüten tüketemediğini belirtir.
+  - id: q_a2_lunch_03
+    question_en: Why is the suggested Italian bistro suitable for the whole team?
+    question_tr_hint: Önerilen İtalyan bistrosu tüm ekip için neden uygundur?
+    options:
+    - It serves certified gluten-free pasta and vegetarian salads
+    - It gives free laptop chargers to every customer
+    - It has no chairs so everyone stands during the meal
+    - It serves only sugary desserts and chocolate shakes
+    correct_answer: It serves certified gluten-free pasta and vegetarian salads
+    explanation_en: Burak checked the online menu and confirmed they offer gluten-free pasta and vegetarian options.
+    explanation_tr: Burak internetten menüyü incelemiş ve glütensiz makarna ile vejetaryen seçeneklerin bulunduğunu teyit
+      etmiştir.
+  - id: q_a2_lunch_04
+    question_en: What time is the lunch reservation scheduled for?
+    question_tr_hint: Yemek rezervasyonu saat kaça planlanmaktadır?
+    options:
+    - Nine o'clock in the morning
+    - Six o'clock in the evening
+    - Twelve-thirty in the afternoon
+    - Eleven o'clock at night
+    correct_answer: Twelve-thirty in the afternoon
+    explanation_en: 'Burak states: ''I will book a table for eight people at twelve-thirty.'''
+    explanation_tr: Burak on iki buçuğa sekiz kişilik masa ayırtacağını belirtir.
+  - id: q_a2_lunch_05
+    question_en: How many seats will Burak reserve at the restaurant?
+    question_tr_hint: Burak restoranda kaç kişilik yer ayırtacaktır?
+    options:
+    - Two people
+    - Eight people
+    - Twenty-five people
+    - Fifty people
+    correct_answer: Eight people
+    explanation_en: Burak confirms he is booking a table for eight people.
+    explanation_tr: Burak sekiz kişilik bir masa ayırtacağını ifade eder.
+  topic_tags:
+  - team-building
+  - social
+  - workplace-culture
+  - scheduling
+  related_ids:
+  - vocab.collaborate
+  - vocab.customer
+  status: APPROVED
+  version: 1
+- id: listening.a2.new-hire-orientation-call
+  title: 'Onboarding Check-In: First Week Essentials'
+  cefr_level: A2
+  category: product_discovery
+  scenario_context: David, a senior mentor, welcomes Deniz, a junior frontend developer, and reviews his first-week orientation
+    schedule and tools.
+  speakers:
+  - id: david
+    name: David
+    role: Senior Engineer
+    accent: American
+  - id: deniz
+    name: Deniz
+    role: Junior Developer
+    accent: Turkish
+  audio_ref: audio/listening/a2_new_hire_orientation.mp3
+  duration_seconds: 48
+  transcript_items:
+  - index: 1
+    speaker_id: david
+    start_ms: 0
+    end_ms: 6899
+    text_en: Good morning Deniz, and welcome to the team! How was your very first day yesterday?
+    text_tr: Günaydın Deniz, ekibe hoş geldin! Dünkü ilk günün nasıl geçti?
+  - index: 2
+    speaker_id: deniz
+    start_ms: 7299
+    end_ms: 15352
+    text_en: Good morning David! It was great. I set up my development environment and configured Git.
+    text_tr: Günaydın David! Harikaydı. Geliştirme ortamımı kurdum ve Git ayarlarımı yaptım.
+  - index: 3
+    speaker_id: david
+    start_ms: 15752
+    end_ms: 23595
+    text_en: Fantastic. Today our main goal is to review our team channels on Slack and our sprint board on Jira.
+    text_tr: Harika. Bugün temel hedefimiz Slack üzerindeki ekip kanallarımızı ve Jira üzerindeki sprint panomuzu incelemek.
+  - index: 4
+    speaker_id: deniz
+    start_ms: 23995
+    end_ms: 31403
+    text_en: Sounds good. Where should I post questions if I encounter an error while running the build scripts?
+    text_tr: Kulağa iyi geliyor. Derleme komutlarını çalıştırırken bir hatayla karşılaşırsam sorularımı nereye yazmalıyım?
+  - index: 5
+    speaker_id: david
+    start_ms: 31803
+    end_ms: 39167
+    text_en: Always post them in the dev-help channel. We also pair program every afternoon from two to three.
+    text_tr: Her zaman dev-help kanalına yaz. Ayrıca her öğleden sonra iki ile üç arası eşli programlama (pair programming)
+      yapıyoruz.
+  - index: 6
+    speaker_id: deniz
+    start_ms: 39567
+    end_ms: 47010
+    text_en: That is very reassuring. I will review the documentation and join the pairing session at two o'clock.
+    text_tr: Bu çok rahatlatıcı. Dokümantasyonu inceleyip saat ikideki eşli çalışma oturumuna katılacağım.
+  key_vocabulary:
+  - word: professional
+    vocab_id: vocab.professional
+    context_note_tr: İş ortamında sergilenen yetkin ve saygılı profesyonel tutum.
+  - word: support
+    vocab_id: vocab.support-v
+    context_note_tr: Yeni katılan ekip üyesine rehberlik ve destek sağlama.
+  comprehension_questions:
+  - id: q_a2_orient_01
+    question_en: What did Deniz successfully finish during his first day at work?
+    question_tr_hint: Deniz işteki ilk gününde neyi başarıyla tamamlamıştır?
+    options:
+    - Deploying a major architectural database migration to live servers
+    - Conducting annual performance appraisals for twenty senior directors
+    - Negotiating an international cloud contract with foreign investors
+    - Setting up his development environment and configuring Git
+    correct_answer: Setting up his development environment and configuring Git
+    explanation_en: 'Deniz confirms: ''I set up my development environment and configured Git.'''
+    explanation_tr: Deniz geliştirme ortamını kurduğunu ve Git yapılandırmasını yaptığını söyler.
+  - id: q_a2_orient_02
+    question_en: Which Slack channel should Deniz use when asking technical build questions?
+    question_tr_hint: Deniz teknik derleme soruları sorarken hangi Slack kanalını kullanmalıdır?
+    options:
+    - The general-announcements channel
+    - The executive-boardroom channel
+    - The dev-help channel
+    - The random-jokes channel
+    correct_answer: The dev-help channel
+    explanation_en: 'David instructs: ''Always post them in the dev-help channel.'''
+    explanation_tr: David her zaman dev-help kanalına yazmasını belirtir.
+  - id: q_a2_orient_03
+    question_en: At what time does the daily pair programming session take place?
+    question_tr_hint: Günlük eşli programlama (pair programming) oturumu saat kaçta gerçekleşmektedir?
+    options:
+    - Between two and three in the afternoon
+    - At seven o'clock in the early morning
+    - Between nine and ten at night
+    - During the Sunday morning weekend breakfast
+    correct_answer: Between two and three in the afternoon
+    explanation_en: 'David explains: ''We also pair program every afternoon from two to three.'''
+    explanation_tr: David her öğleden sonra iki ile üç arası eşli programlama yaptıklarını açıklar.
+  - id: q_a2_orient_04
+    question_en: What are the two tools David wants Deniz to review today?
+    question_tr_hint: David bugün Deniz'in incelemesini istediği iki araç hangisidir?
+    options:
+    - Word processing documents and personal bank statements
+    - Analog telephone lines and printed paper encyclopedias
+    - Cryptocurrency wallets and video game consoles
+    - Slack channels and the Jira sprint board
+    correct_answer: Slack channels and the Jira sprint board
+    explanation_en: David states the goal is to review team channels on Slack and the sprint board on Jira.
+    explanation_tr: David Slack ekip kanallarını ve Jira sprint panosunu incelemenin bugünkü hedef olduğunu söyler.
+  - id: q_a2_orient_05
+    question_en: How does Deniz react to learning about the daily pairing session?
+    question_tr_hint: Deniz günlük eşli çalışma oturumunu öğrenince nasıl bir tepki vermektedir?
+    options:
+    - He becomes angry and threatens to submit his immediate resignation
+    - He finds it reassuring and commits to joining at two o'clock
+    - He refuses to turn on his computer or speak to his colleagues
+    - He demands that all pair programming be permanently cancelled
+    correct_answer: He finds it reassuring and commits to joining at two o'clock
+    explanation_en: 'Deniz expresses relief: ''That is very reassuring. I will review the documentation and join the pairing
+      session at two o''clock.'''
+    explanation_tr: Deniz rahatladığını belirterek saat ikideki oturuma katılacağını söyler.
+  topic_tags:
+  - onboarding
+  - mentorship
+  - developer-tools
+  - collaboration
+  related_ids:
+  - vocab.professional
+  - vocab.support-v
+  status: APPROVED
+  version: 1
+- id: listening.a2.project-deadline-checkin
+  title: 'Sprint Sync: Documentation Update Status'
+  cefr_level: A2
+  category: engineering_meeting
+  scenario_context: Tom, a project manager, checks in with Melis, a frontend engineer, regarding the upcoming deadline for
+    release notes documentation.
+  speakers:
+  - id: tom
+    name: Tom
+    role: Project Manager
+    accent: American
+  - id: melis
+    name: Melis
+    role: Frontend Developer
+    accent: Turkish
+  audio_ref: audio/listening/a2_project_deadline.mp3
+  duration_seconds: 47
+  transcript_items:
+  - index: 1
+    speaker_id: tom
+    start_ms: 0
+    end_ms: 6504
+    text_en: Hi Melis. Do you have a quick minute to review the documentation release schedule?
+    text_tr: Selam Melis. Dokümantasyon yayın takvimini gözden geçirmek için kısa bir vaktin var mı?
+  - index: 2
+    speaker_id: melis
+    start_ms: 6904
+    end_ms: 12992
+    text_en: Sure Tom! I have finished writing the user guide for the new dark mode theme.
+    text_tr: Elbette Tom! Yeni karanlık mod teması için kullanıcı kılavuzunu yazmayı bitirdim.
+  - index: 3
+    speaker_id: tom
+    start_ms: 13392
+    end_ms: 21060
+    text_en: That is great progress. Are the screenshot tutorials and Turkish translations also completed?
+    text_tr: Bu harika bir ilerleme. Ekran görüntüsü anlatımları ve Türkçe çeviriler de tamamlandı mı?
+  - index: 4
+    speaker_id: melis
+    start_ms: 21460
+    end_ms: 30234
+    text_en: The screenshots are uploaded. I am finalizing the Turkish translations and will submit the pull request by four
+      p.m.
+    text_tr: Ekran görüntüleri yüklendi. Türkçe çevirileri tamamlıyorum ve saat dörde kadar çekme isteğini (PR) göndereceğim.
+  - index: 5
+    speaker_id: tom
+    start_ms: 30634
+    end_ms: 38902
+    text_en: Perfect. If you submit it by four, our technical editor can review and approve it before tomorrow morning.
+    text_tr: Kusursuz. Dörde kadar gönderirsen teknik editörümüz yarın sabahtan önce inceleyip onaylayabilir.
+  - index: 6
+    speaker_id: melis
+    start_ms: 39302
+    end_ms: 46300
+    text_en: Understood. I will send you a quick direct message as soon as the PR is ready for review.
+    text_tr: Anlaşıldı. PR incelemeye hazır olur olmaz sana kısa bir doğrudan mesaj atacağım.
+  key_vocabulary:
+  - word: deliver
+    vocab_id: vocab.deliver
+    context_note_tr: Belirlenen saatte iş çıktısını teslim etmek.
+  - word: tone
+    vocab_id: vocab.tone
+    context_note_tr: Yazılan dokümantasyondaki dil ve üslup tonu.
+  comprehension_questions:
+  - id: q_a2_deadl_01
+    question_en: What part of the documentation has Melis already finished?
+    question_tr_hint: Melis dokümantasyonun hangi bölümünü çoktan bitirmiştir?
+    options:
+    - The user guide for the new dark mode theme
+    - The annual financial audit report for international investors
+    - The legal terms of service for corporate banking clients
+    - The physical blueprints for constructing a new office tower
+    correct_answer: The user guide for the new dark mode theme
+    explanation_en: 'Melis explains: ''I have finished writing the user guide for the new dark mode theme.'''
+    explanation_tr: Melis yeni karanlık mod teması için kullanıcı kılavuzunu yazmayı bitirdiğini söyler.
+  - id: q_a2_deadl_02
+    question_en: By what time does Melis promise to submit her pull request?
+    question_tr_hint: Melis çekme isteğini (PR) saat kaça kadar göndereceğine söz vermektedir?
+    options:
+    - By midnight on Sunday
+    - By eight a.m. next Monday
+    - In three weeks time
+    - By four p.m. today
+    correct_answer: By four p.m. today
+    explanation_en: Melis explicitly states she will submit the pull request by four p.m.
+    explanation_tr: Melis saat dörde kadar çekme isteğini göndereceğini açıkça ifade eder.
+  - id: q_a2_deadl_03
+    question_en: Why is the four p.m. deadline important for Tom?
+    question_tr_hint: Saat dört teslim tarihi Tom için neden önemlidir?
+    options:
+    - The company internet servers will be permanently shut down at five p.m.
+    - It allows the technical editor to review and approve the document before tomorrow morning
+    - Tom has a flight to take to an international gaming championship
+    - All employee badges expire automatically at four-fifteen p.m.
+    correct_answer: It allows the technical editor to review and approve the document before tomorrow morning
+    explanation_en: Tom explains that submitting by four allows the technical editor to approve it before tomorrow morning.
+    explanation_tr: Tom dörde kadar gönderilmesinin editörün yarın sabahtan önce inceleyip onaylamasına olanak tanıyacağını
+      söyler.
+  - id: q_a2_deadl_04
+    question_en: What remaining task is Melis currently working on?
+    question_tr_hint: Melis şu anda hangi kalan görev üzerinde çalışmaktadır?
+    options:
+    - Designing new cartoon company logos
+    - Reinstalling the operating system on Tom's computer
+    - Finalizing the Turkish translations
+    - Ordering forty cups of iced coffee for the team
+    correct_answer: Finalizing the Turkish translations
+    explanation_en: 'Melis says: ''I am finalizing the Turkish translations and will submit the pull request by four p.m.'''
+    explanation_tr: Melis Türkçe çevirileri tamamladığını belirtir.
+  - id: q_a2_deadl_05
+    question_en: How will Melis notify Tom when the pull request is open?
+    question_tr_hint: Melis çekme isteği açıldığında Tom'a nasıl haber verecektir?
+    options:
+    - By sending him a direct message
+    - By ringing a physical bell in the middle of the hallway
+    - By printing a notice on the office bulletin board
+    - By mailing a postcard to his home address
+    correct_answer: By sending him a direct message
+    explanation_en: 'Melis confirms: ''I will send you a quick direct message as soon as the PR is ready.'''
+    explanation_tr: Melis PR hazır olur olmaz kısa bir doğrudan mesaj göndereceğini belirtir.
+  topic_tags:
+  - project-management
+  - deadlines
+  - documentation
+  - workflow
+  related_ids:
+  - vocab.deliver
+  - vocab.tone
+  status: APPROVED
+  version: 1
+- id: listening.a2.printer-troubleshooting
+  title: 'Facility Help: Fixing the Shared Office Printer'
+  cefr_level: A2
+  category: incident_response
+  scenario_context: Emre, an accountant, encounters an error on the floor printer and asks Lisa, the facilities coordinator,
+    for assistance.
+  speakers:
+  - id: emre
+    name: Emre
+    role: Accountant
+    accent: Turkish
+  - id: lisa
+    name: Lisa
+    role: Facilities Coordinator
+    accent: British
+  audio_ref: audio/listening/a2_printer_trouble.mp3
+  duration_seconds: 48
+  transcript_items:
+  - index: 1
+    speaker_id: emre
+    start_ms: 0
+    end_ms: 7733
+    text_en: Excuse me, Lisa. The shared printer in corridor B is showing a flashing red warning light.
+    text_tr: Afedersin Lisa. B koridorundaki ortak yazıcı yanıp sönen kırmızı bir uyarı ışığı gösteriyor.
+  - index: 2
+    speaker_id: lisa
+    start_ms: 8133
+    end_ms: 15072
+    text_en: Hi Emre. Let's take a look. Does the digital display show an error code?
+    text_tr: Selam Emre. Bir bakalım. Dijital ekranda bir hata kodu görünüyor mu?
+  - index: 3
+    speaker_id: emre
+    start_ms: 15472
+    end_ms: 23540
+    text_en: Yes, it says 'Paper Jam in Tray Two'. I need to print twenty invoice copies before my meeting.
+    text_tr: Evet, '2 Nolu Tepside Kağıt Sıkışması' yazıyor. Toplantımdan önce yirmi fatura kopyası basmam gerekiyor.
+  - index: 4
+    speaker_id: lisa
+    start_ms: 23940
+    end_ms: 30904
+    text_en: Don't worry. I will open the side access panel and gently pull out the stuck sheet of paper.
+    text_tr: Endişelenme. Yan erişim kapağını açıp sıkışan kağıdı nazikçe dışarı çekeceğim.
+  - index: 5
+    speaker_id: emre
+    start_ms: 31304
+    end_ms: 39157
+    text_en: Thank you! The red light just turned green. Should I also refill the blank paper tray?
+    text_tr: Teşekkürler! Kırmızı ışık az önce yeşile döndü. Boş kağıt tepsisini de doldurayım mı?
+  - index: 6
+    speaker_id: lisa
+    start_ms: 39557
+    end_ms: 47205
+    text_en: Yes please. A fresh ream of standard A4 paper is stored inside the cabinet beneath the printer.
+    text_tr: Evet lütfen. Yazıcının altındaki dolapta yeni bir paket standart A4 kağıdı bulunuyor.
+  key_vocabulary:
+  - word: support
+    vocab_id: vocab.support-v
+    context_note_tr: Ofis içi teknik aksaklıklarda sağlanan operasyonel destek.
+  - word: office
+    vocab_id: vocab.office
+    context_note_tr: Ortak ofis ekipmanlarının kullanımı ve bakımı.
+  comprehension_questions:
+  - id: q_a2_print_01
+    question_en: Where is the malfunctioning printer located in the building?
+    question_tr_hint: Arızalanan yazıcı binanın neresinde bulunmaktadır?
+    options:
+    - Inside the executive underground garage
+    - On the outdoor cafeteria balcony
+    - In corridor B
+    - Inside the server room cooling duct
+    correct_answer: In corridor B
+    explanation_en: 'Emre states: ''The shared printer in corridor B is showing a flashing red warning light.'''
+    explanation_tr: Emre B koridorundaki yazıcının kırmızı uyarı ışığı yaktığını söyler.
+  - id: q_a2_print_02
+    question_en: What exact error message does the printer display?
+    question_tr_hint: Yazıcı tam olarak hangi hata mesajını göstermektedir?
+    options:
+    - Total System Memory Overheat
+    - Paper Jam in Tray Two
+    - Invalid Credit Card Payment
+    - Missing High-Voltage Power Cable
+    correct_answer: Paper Jam in Tray Two
+    explanation_en: 'Emre reads: ''it says Paper Jam in Tray Two.'''
+    explanation_tr: Emre '2 Nolu Tepside Kağıt Sıkışması' yazdığını söyler.
+  - id: q_a2_print_03
+    question_en: Why does Emre urgently need the printer to work?
+    question_tr_hint: Emre'nin acilen yazıcıya ihtiyaç duymasının sebebi nedir?
+    options:
+    - He wants to print high-resolution vacation photographs
+    - He is printing five hundred political campaign posters
+    - He needs to shred old personal identity documents
+    - He must print twenty invoice copies before his upcoming meeting
+    correct_answer: He must print twenty invoice copies before his upcoming meeting
+    explanation_en: 'Emre explains: ''I need to print twenty invoice copies before my meeting.'''
+    explanation_tr: Emre toplantısından önce yirmi fatura kopyası basması gerektiğini belirtir.
+  - id: q_a2_print_04
+    question_en: How does Lisa resolve the paper jam?
+    question_tr_hint: Lisa kağıt sıkışmasını nasıl çözmektedir?
+    options:
+    - By striking the machine with a heavy steel hammer
+    - By pouring clean water into the paper intake feed
+    - By opening the side panel and gently removing the trapped sheet of paper
+    - By replacing the printer with an entirely new machine
+    correct_answer: By opening the side panel and gently removing the trapped sheet of paper
+    explanation_en: 'Lisa says: ''I will open the side access panel and gently pull out the stuck sheet of paper.'''
+    explanation_tr: Lisa yan kapağı açıp sıkışan kağıdı nazikçe çıkaracağını açıklar.
+  - id: q_a2_print_05
+    question_en: Where is the spare A4 paper stored?
+    question_tr_hint: Yedek A4 kağıtları nerede saklanmaktadır?
+    options:
+    - Inside the cabinet located directly beneath the printer
+    - In a locked warehouse on the other side of town
+    - Inside Lisa's personal vehicle trunk
+    - On the top shelf of the corporate kitchen refrigerator
+    correct_answer: Inside the cabinet located directly beneath the printer
+    explanation_en: 'Lisa specifies: ''stored inside the cabinet beneath the printer.'''
+    explanation_tr: Lisa kağıdın yazıcının altındaki dolapta durduğunu söyler.
+  topic_tags:
+  - facilities
+  - troubleshooting
+  - office-equipment
+  - workplace-communication
+  related_ids:
+  - vocab.support-v
+  - vocab.office
+  status: APPROVED
+  version: 1
+- id: listening.a2.ordering-catering-supplies
+  title: 'Vendor Call: Restocking Kitchen Snacks and Coffee'
+  cefr_level: A2
+  category: negotiation
+  scenario_context: Aylin, an office operations specialist, calls Kevin from a catering supplier to adjust their weekly coffee
+    bean and fruit order.
+  speakers:
+  - id: aylin
+    name: Aylin
+    role: Office Operations Specialist
+    accent: Turkish
+  - id: kevin
+    name: Kevin
+    role: Supplier Sales Representative
+    accent: American
+  audio_ref: audio/listening/a2_catering_order.mp3
+  duration_seconds: 57
+  transcript_items:
+  - index: 1
+    speaker_id: kevin
+    start_ms: 0
+    end_ms: 6804
+    text_en: Sunrise Catering Supplies, Kevin speaking. How can I assist you today?
+    text_tr: Sunrise İkram Malzemeleri, ben Kevin. Bugün size nasıl yardımcı olabilirim?
+  - index: 2
+    speaker_id: aylin
+    start_ms: 7204
+    end_ms: 15972
+    text_en: Hello Kevin, this is Aylin from Nexus Software. I would like to modify our weekly office delivery for Thursday.
+    text_tr: Merhaba Kevin, ben Nexus Yazılım'dan Aylin. Perşembe günkü haftalık ofis teslimatımızı güncellemek istiyorum.
+  - index: 3
+    speaker_id: kevin
+    start_ms: 16372
+    end_ms: 25050
+    text_en: Of course, Aylin. Your regular order is ten kilograms of dark roast coffee and four boxes of apples.
+    text_tr: Elbette Aylin. Normal siparişiniz on kilogram koyu kavrulmuş kahve ve dört kutu elmaydı.
+  - index: 4
+    speaker_id: aylin
+    start_ms: 25450
+    end_ms: 34973
+    text_en: We are hosting an engineering workshop this Thursday, so please increase the coffee to fifteen kilograms and
+      add two boxes of bananas.
+    text_tr: Bu Perşembe bir mühendislik çalıştayı düzenliyoruz, bu nedenle lütfen kahveyi on beş kilograma çıkarın ve iki
+      kutu muz ekleyin.
+  - index: 5
+    speaker_id: kevin
+    start_ms: 35373
+    end_ms: 46686
+    text_en: Got it! Fifteen kilograms of dark roast, four boxes of apples, and two boxes of bananas. Can we deliver by nine
+      a.m.?
+    text_tr: Anlaşıldı! On beş kilogram koyu kavrulmuş kahve, dört kutu elma ve iki kutu muz. Sabah saat dokuza kadar teslim
+      edebilir miyiz?
+  - index: 6
+    speaker_id: aylin
+    start_ms: 47086
+    end_ms: 56604
+    text_en: Nine a.m. is perfect before the workshop begins. Please send the revised invoice to our finance team. Thank you!
+    text_tr: Sabah dokuz çalıştay başlamadan önce kusursuz. Lütfen güncellenmiş faturayı finans ekibimize gönderin. Teşekkürler!
+  key_vocabulary:
+  - word: customer
+    vocab_id: vocab.customer
+    context_note_tr: Tedarikçi ile müşteri arasındaki sipariş yönetimi.
+  - word: receive
+    vocab_id: vocab.receive
+    context_note_tr: Sevkiyat ve güncellenmiş faturanın teslim alınması.
+  comprehension_questions:
+  - id: q_a2_cater_01
+    question_en: Why does Aylin need to increase the office snack and coffee order?
+    question_tr_hint: Aylin ofis atıştırmalık ve kahve siparişini neden artırmak istemektedir?
+    options:
+    - The company cafeteria will be permanently closed by local health inspectors
+    - All employees have decided to sleep in the office for an entire week
+    - Aylin wants to open a private grocery store inside her personal home
+    - The company is hosting an engineering workshop on Thursday
+    correct_answer: The company is hosting an engineering workshop on Thursday
+    explanation_en: 'Aylin explains: ''We are hosting an engineering workshop this Thursday, so please increase the coffee.'''
+    explanation_tr: Aylin bu Perşembe bir mühendislik çalıştayı düzenleyecekleri için siparişi artırdığını belirtir.
+  - id: q_a2_cater_02
+    question_en: To what quantity does Aylin increase the coffee bean order?
+    question_tr_hint: Aylin kahve çekirdeği siparişini hangi miktara yükseltmektedir?
+    options:
+    - Two kilograms
+    - Fifteen kilograms
+    - One hundred kilograms
+    - Fifty kilograms
+    correct_answer: Fifteen kilograms
+    explanation_en: Aylin asks to increase the coffee from ten to fifteen kilograms.
+    explanation_tr: Aylin kahveyi on beş kilograma çıkarmasını ister.
+  - id: q_a2_cater_03
+    question_en: What new fruit item is added to the delivery?
+    question_tr_hint: Teslimata hangi yeni meyve eklenmiştir?
+    options:
+    - Two boxes of fresh bananas
+    - Ten watermelons
+    - Twenty boxes of pineapples
+    - Five crates of fresh oranges
+    correct_answer: Two boxes of fresh bananas
+    explanation_en: Aylin asks to add two boxes of bananas to the existing order of four boxes of apples.
+    explanation_tr: Aylin dört kutu elmaya ek olarak iki kutu muz eklenmesini ister.
+  - id: q_a2_cater_04
+    question_en: What delivery arrival time is agreed upon?
+    question_tr_hint: Hangi teslimat saati üzerinde anlaşmaya varılmıştır?
+    options:
+    - Two o'clock in the afternoon
+    - Six o'clock in the evening
+    - Midnight on Wednesday
+    - Nine o'clock on Thursday morning
+    correct_answer: Nine o'clock on Thursday morning
+    explanation_en: Kevin asks if nine a.m. works, and Aylin confirms nine a.m. is perfect.
+    explanation_tr: Kevin sabah dokuzun uygun olup olmadığını sorar ve Aylin dokuzun kusursuz olduğunu onaylar.
+  - id: q_a2_cater_05
+    question_en: Where should Kevin email the revised invoice?
+    question_tr_hint: Kevin güncellenmiş faturayı nereye e-postalamalıdır?
+    options:
+    - To Aylin's personal social media account
+    - To the company finance department
+    - To the local municipal tax building
+    - To an anonymous external internet forum
+    correct_answer: To the company finance department
+    explanation_en: 'Aylin instructs: ''Please send the revised invoice to our finance team.'''
+    explanation_tr: Aylin güncellenmiş faturanın finans ekibine gönderilmesini söyler.
+  topic_tags:
+  - vendor-management
+  - operations
+  - catering
+  - negotiation
+  related_ids:
+  - vocab.customer
+  - vocab.receive
+  status: APPROVED
+  version: 1
+- id: listening.a2.visitor-badge-reception
+  title: 'Front Desk Reception: Visitor Security Badge'
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Mark, an external security consultant, arrives at company headquarters and checks in with Ece at the reception
+    desk.
+  speakers:
+  - id: mark
+    name: Mark
+    role: Security Consultant
+    accent: American
+  - id: ece
+    name: Ece
+    role: Receptionist
+    accent: Turkish
+  audio_ref: audio/listening/a2_visitor_badge.mp3
+  duration_seconds: 50
+  transcript_items:
+  - index: 1
+    speaker_id: mark
+    start_ms: 0
+    end_ms: 8358
+    text_en: Good morning. My name is Mark Vance from SecureNet Consulting. I have a meeting with Karen at ten.
+    text_tr: Günaydın. Benim adım SecureNet Danışmanlık'tan Mark Vance. Saat onda Karen ile bir toplantım var.
+  - index: 2
+    speaker_id: ece
+    start_ms: 8758
+    end_ms: 17667
+    text_en: Good morning Mr. Vance. Welcome to our headquarters. May I please see a photo ID for registration?
+    text_tr: Günaydın Bay Vance. Genel merkezimize hoş geldiniz. Kayıt için fotoğraflı bir kimlik görebilir miyim lütfen?
+  - index: 3
+    speaker_id: mark
+    start_ms: 18067
+    end_ms: 24610
+    text_en: Here is my driver's license. Karen mentioned we would meet in conference room four.
+    text_tr: İşte sürücü belgem. Karen dört numaralı konferans salonunda buluşacağımızı söylemişti.
+  - index: 4
+    speaker_id: ece
+    start_ms: 25010
+    end_ms: 33888
+    text_en: Thank you. Here is your temporary guest badge. Please wear it visibly at all times while inside the building.
+    text_tr: Teşekkürler. İşte geçici misafir kartınız. Bina içindeyken lütfen kartı her zaman görünür şekilde takın.
+  - index: 5
+    speaker_id: mark
+    start_ms: 34288
+    end_ms: 40867
+    text_en: I will pin it to my jacket right now. Should I take the elevator up to the fourth floor?
+    text_tr: Hemen şimdi ceketimin üzerine takıyorum. Dördüncü kata asansörle mi çıkmalıyım?
+  - index: 6
+    speaker_id: ece
+    start_ms: 41267
+    end_ms: 49325
+    text_en: Actually, conference room four is on the second floor. Karen is on her way down to greet you in the lobby.
+    text_tr: Aslında dört numaralı konferans salonu ikinci katta. Karen sizi lobide karşılamak için aşağıya iniyor.
+  key_vocabulary:
+  - word: professional
+    vocab_id: vocab.professional
+    context_note_tr: Misafir karşılama ve kurumsal güvenlik kurallarına uyum.
+  - word: office
+    vocab_id: vocab.office
+    context_note_tr: Şirket genel merkezi ve resepsiyon alanı.
+  comprehension_questions:
+  - id: q_a2_visit_01
+    question_en: What organization does Mark represent?
+    question_tr_hint: Mark hangi kuruluşu temsil etmektedir?
+    options:
+    - Sunrise Catering Bakery
+    - City Public Transportation Authority
+    - SecureNet Consulting
+    - Global Airport Logistics
+    correct_answer: SecureNet Consulting
+    explanation_en: 'Mark introduces himself: ''My name is Mark Vance from SecureNet Consulting.'''
+    explanation_tr: Mark SecureNet Danışmanlık'tan geldiğini söyler.
+  - id: q_a2_visit_02
+    question_en: What document does Mark provide for visitor registration?
+    question_tr_hint: Mark ziyaretçi kaydı için hangi belgeyi sunmaktadır?
+    options:
+    - His driver's license
+    - A handwritten utility electricity bill
+    - His university diploma certificate
+    - A library membership borrowing card
+    correct_answer: His driver's license
+    explanation_en: 'Mark says: ''Here is my driver''s license.'''
+    explanation_tr: Mark sürücü belgesini sunduğunu ifade eder.
+  - id: q_a2_visit_03
+    question_en: What security instruction does Ece give Mark regarding his badge?
+    question_tr_hint: Ece kartıyla ilgili Mark'a hangi güvenlik talimatını vermektedir?
+    options:
+    - To hide it inside his shoes whenever walking past offices
+    - To return it to the local police department after thirty minutes
+    - To wear it visibly at all times while inside the building
+    - To photocopy it fifty times on the corridor printer
+    correct_answer: To wear it visibly at all times while inside the building
+    explanation_en: 'Ece instructs: ''Please wear it visibly at all times while inside the building.'''
+    explanation_tr: Ece bina içindeyken kartı her zaman görünür şekilde takması talimatını verir.
+  - id: q_a2_visit_04
+    question_en: On which floor is conference room four actually located?
+    question_tr_hint: Dört numaralı konferans salonu gerçekte hangi katta bulunmaktadır?
+    options:
+    - On the fourth floor
+    - On the second floor
+    - On the rooftop observation platform
+    - In the sub-basement boiler room
+    correct_answer: On the second floor
+    explanation_en: 'Ece clarifies: ''Actually, conference room four is on the second floor.'''
+    explanation_tr: Ece aslında dört numaralı salonun ikinci katta olduğunu belirtir.
+  - id: q_a2_visit_05
+    question_en: Where will Karen meet Mark?
+    question_tr_hint: Karen Mark ile nerede buluşacaktır?
+    options:
+    - At a cafeteria three blocks away from headquarters
+    - In the underground subway station across the street
+    - Inside the executive parking garage elevator
+    - She is coming down to greet him in the lobby
+    correct_answer: She is coming down to greet him in the lobby
+    explanation_en: 'Ece says: ''Karen is on her way down to greet you in the lobby.'''
+    explanation_tr: Ece Karen'ın kendisini karşılamak için lobiye inmekte olduğunu söyler.
+  topic_tags:
+  - reception
+  - security
+  - visitor-management
+  - workplace-communication
+  related_ids:
+  - vocab.professional
+  - vocab.office
+  status: APPROVED
+  version: 1

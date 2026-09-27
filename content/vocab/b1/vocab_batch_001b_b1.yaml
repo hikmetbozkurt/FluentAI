@@ -1,0 +1,341 @@
+- id: vocab.opportunity
+  headword: opportunity
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˌɒp.əˈtʃuː.nə.ti/
+  audio_ref: null
+  definition_en: A favorable set of circumstances that makes it possible to accomplish a goal or make progress.
+  meaning_tr: fırsat, olanak
+  collocations:
+    - text: career opportunity
+      tr: kariyer fırsatı
+    - text: seize an opportunity
+      tr: bir fırsatı değerlendirmek / yakalamak
+    - text: business opportunity
+      tr: iş fırsatı
+  examples:
+    - en: "Leading the overseas architecture migration was a tremendous career opportunity for the senior engineer."
+      tr: "Yurtdışı mimari geçiş projesini yönetmek, kıdemli mühendis için muazzam bir kariyer fırsatıydı."
+      context: Professional Growth
+    - en: "The company quickly seized the market opportunity by launching their mobile application ahead of competitors."
+      tr: "Şirket, rakiplerinden önce mobil uygulamasını piyasaya sürerek pazar fırsatını hızla değerlendirdi."
+      context: Business Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçedeki "fırsatı değerlendirmek" kalıbı için sıklıkla "evaluate the opportunity" şeklinde yanlış
+        çeviri yapılır; İngilizcede fırsattan yararlanmak eylemi için "take advantage of" veya "seize an opportunity" denir.
+      incorrect_example: "We should evaluate this opportunity before our rivals do."
+      correct_example: "We should seize this opportunity before our rivals do."
+  register: general
+  topic_tags:
+    - career
+    - professional-growth
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.environment
+  headword: environment
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪnˈvaɪ.rən.mənt/
+  audio_ref: null
+  definition_en: The physical, ecological, or operational surroundings and conditions under which an activity takes place.
+  meaning_tr: çevre, ortam (çalışma ortamı, sistem ortamı)
+  collocations:
+    - text: work environment
+      tr: çalışma ortamı
+    - text: protect the environment
+      tr: çevreyi korumak
+    - text: production environment
+      tr: canlı / üretim ortamı
+  examples:
+    - en: "Our startup promotes a collaborative work environment where junior developers can ask questions freely."
+      tr: "Girişimimiz, genç geliştiricilerin özgürce soru sorabildiği işbirlikçi bir çalışma ortamını teşvik ediyor."
+      context: Corporate Culture
+    - en: "The software patch was thoroughly tested in staging before deployment to the production environment."
+      tr: "Yazılım yaması, canlı üretim ortamına dağıtılmadan önce hazırlık (staging) ortamında kapsamlı şekilde test edildi."
+      context: Software Engineering
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Environment" hem ekolojik doğal çevreyi hem de yazılımdaki "test / prod environment" gibi operasyonel
+        çalışma ortamlarını ifade eder; sadece doğa bağlamıyla sınırlı düşünülmemelidir.
+      incorrect_example: "Our code is currently deployed to the live nature."
+      correct_example: "Our code is currently deployed to the live environment."
+  register: general
+  topic_tags:
+    - environment
+    - sustainability
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.budget
+  headword: budget
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈbʌdʒ.ɪt/
+  audio_ref: null
+  definition_en: A comprehensive estimate of planned income and expenditure for a specific timeframe or initiative.
+  meaning_tr: bütçe
+  collocations:
+    - text: annual budget
+      tr: yıllık bütçe
+    - text: allocated budget
+      tr: tahsis edilen bütçe
+    - text: stay within budget
+      tr: bütçe sınırları içinde kalmak
+  examples:
+    - en: "The engineering department managed to deliver the new customer portal while staying well within budget."
+      tr: "Mühendislik departmanı, bütçe sınırları içerisinde kalarak yeni müşteri portalını teslim etmeyi başardı."
+      context: Project Accounting
+    - en: "Our quarterly marketing budget was adjusted to accommodate unforeseen social media advertising costs."
+      tr: "Üç aylık pazarlama bütçemiz, öngörülemeyen sosyal medya reklam maliyetlerini karşılamak üzere revize edildi."
+      context: Financial Planning
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bütçeye uygun kalmak "on budget" veya "within budget" ile ifade edilir; bütçeyi aşmak ise "over budget",
+        bütçenin altında kalmak ise "under budget" olarak kullanılır.
+      incorrect_example: "The software project was delivered inside the budget."
+      correct_example: "The software project was delivered within budget."
+  register: business
+  topic_tags:
+    - finance
+    - planning
+    - project-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.recommend
+  headword: recommend
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˌrek.əˈmend/
+  audio_ref: null
+  definition_en: To suggest that someone or something is particularly suitable, advisable, or advantageous for a purpose.
+  meaning_tr: tavsiye etmek, önermek
+  collocations:
+    - text: highly recommend
+      tr: şiddetle tavsiye etmek
+    - text: recommend doing
+      tr: yapmayı önermek
+    - text: recommend someone for
+      tr: birini bir şey için tavsiye etmek
+  examples:
+    - en: "I highly recommend migrating our backend services to containerized infrastructure for better scalability."
+      tr: "Daha iyi ölçeklenebilirlik için arka uç servislerimizi konteyner mimarisine taşımayı şiddetle tavsiye ediyorum."
+      context: Technical Proposal
+    - en: "The mentor recommended reading the corporate style guide before submitting the first pull request."
+      tr: "Mentor, ilk çekme isteğini (PR) göndermeden önce kurumsal kod yazım kılavuzunu okumayı önerdi."
+      context: Developer Mentorship
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçe "bana tavsiye etti" ifadesi "recommended me a book" şeklinde yanlış çevrilebilir;
+        İngilizcede "recommended a book to me" veya "recommended that I read a book" kalıbı kurulmalıdır.
+      incorrect_example: "The senior architect recommended me this architectural pattern."
+      correct_example: "The senior architect recommended this architectural pattern to me."
+  register: general
+  topic_tags:
+    - communication
+    - advice
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.encourage
+  headword: encourage
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ɪnˈkʌr.ɪdʒ/
+  audio_ref: null
+  definition_en: To give support, confidence, or motivation to someone so that they continue or undertake an action.
+  meaning_tr: teşvik etmek, cesaretlendirmek
+  collocations:
+    - text: encourage teamwork
+      tr: takım çalışmasını teşvik etmek
+    - text: actively encourage
+      tr: aktif olarak teşvik etmek
+    - text: encourage someone to do
+      tr: birini bir şey yapmaya teşvik etmek
+  examples:
+    - en: "Our engineering director encourages all staff members to dedicate four hours weekly to personal research."
+      tr: "Mühendislik direktörümüz tüm ekip üyelerini haftada dört saatlerini kişisel araştırmaya ayırmaya teşvik ediyor."
+      context: Professional Development
+    - en: "Clear and constructive peer reviews encourage junior engineers to write cleaner, more maintainable code."
+      tr: "Açık ve yapıcı meslektaş incelemeleri, yeni mühendisleri daha temiz ve sürdürülebilir kod yazmaya cesaretlendirir."
+      context: Code Review Culture
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Encourage" birini bir şey yapmaya yönlendirirken "encourage + nesne + to-infinitive" yapısıyla kullanılır;
+        "encourage someone doing" yapısı dilbilgisel olarak hatalıdır.
+      incorrect_example: "Management encourages developers contributing to open source."
+      correct_example: "Management encourages developers to contribute to open source."
+  register: general
+  topic_tags:
+    - leadership
+    - motivation
+    - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.maintain
+  headword: maintain
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /meɪnˈteɪn/
+  audio_ref: null
+  definition_en: To preserve something in an ongoing state of efficiency, quality, or continuous functionality.
+  meaning_tr: sürdürmek, korumak, bakımını yapmak
+  collocations:
+    - text: maintain quality
+      tr: kaliteyi korumak / sürdürmek
+    - text: maintain software
+      tr: yazılımın bakımını yapmak
+    - text: maintain standards
+      tr: standartları korumak
+  examples:
+    - en: "Writing automated regression tests makes it much easier to maintain legacy codebases over several years."
+      tr: "Otomatik regresyon testleri yazmak, eski kod tabanlarının yıllar boyunca bakımını yapmayı çok daha kolaylaştırır."
+      context: Software Maintenance
+    - en: "The operations team worked tirelessly to maintain uninterrupted service during peak holiday sales."
+      tr: "Operasyon ekibi, yoğun tatil satışları sırasında kesintisiz hizmeti sürdürmek için aralıksız çalıştı."
+      context: Site Reliability
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Maintain", sistemlerin ve makinelerin düzenli bakımını yapmayı da kapsar; sadece "korumak" anlamına gelmez.
+        "Software maintenance" yazılım bakımı demektir.
+      incorrect_example: "We need someone to do the preservation of our backend services."
+      correct_example: "We need someone to maintain our backend services."
+  register: general
+  topic_tags:
+    - technology
+    - maintenance
+    - quality
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.reliable
+  headword: reliable
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /rɪˈlaɪ.ə.bəl/
+  audio_ref: null
+  definition_en: Consistently good in performance, dependable, and capable of being trusted with confidence.
+  meaning_tr: güvenilir, itimat edilir
+  collocations:
+    - text: reliable partner
+      tr: güvenilir ortak
+    - text: highly reliable
+      tr: son derece güvenilir
+    - text: reliable data
+      tr: güvenilir veri
+  examples:
+    - en: "She is an exceptionally reliable engineer who always delivers critical features ahead of deadlines."
+      tr: "O, kritik özellikleri her zaman son teslim tarihlerinden önce teslim eden son derece güvenilir bir mühendistir."
+      context: Performance Review
+    - en: "We need a reliable payment gateway provider that guarantees ninety-nine percent uptime."
+      tr: "Yüzde doksan dokuz çalışma süresi garantisi veren güvenilir bir ödeme geçidi sağlayıcısına ihtiyacımız var."
+      context: Vendor Evaluation
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Reliable" güvenilir ve dayanıklı anlamına gelirken; "reliant" birine veya bir sisteme bağımlı olmak demektir.
+        İkisi biçimsel benzerlikleri nedeniyle karıştırılmamalıdır.
+      incorrect_example: "Our architecture is too reliable on external third-party APIs."
+      correct_example: "Our architecture is too reliant on external third-party APIs."
+  register: general
+  topic_tags:
+    - professionalism
+    - quality
+    - trustworthiness
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.actually
+  headword: actually
+  cefr_level: B1
+  part_of_speech: adverb
+  phonetic: /ˈæk.tʃu.ə.li/
+  audio_ref: null
+  definition_en: In fact, in reality, or used to clarify an unexpected truth or gently correct an assumption.
+  meaning_tr: aslında, doğrusu, gerçekten
+  collocations:
+    - text: actually happen
+      tr: gerçekten olmak / vuku bulmak
+    - text: actually think
+      tr: aslında düşünmek
+    - text: not actually true
+      tr: aslında doğru değil
+  examples:
+    - en: "I thought the refactoring would take three days, but it actually took less than four hours."
+      tr: "Kod yenilemenin üç gün süreceğini düşünmüştüm ama aslında dört saatten daha kısa sürdü."
+      context: Estimation Retrospective
+    - en: "Actually, the database migration succeeded without a single customer experiencing service downtime."
+      tr: "Doğrusu, veritabanı geçişi tek bir müşteri dahi hizmet kesintisi yaşamadan başarıyla tamamlandı."
+      context: Release Communication
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Actually", "günümüzde / şu anda" anlamına GELMEZ; "aslında, gerçekte" demektir.
+        "Şu anda / günümüzde" demek için "currently", "presently" veya "nowadays" tercih edilmelidir.
+      incorrect_example: "Actually, I am working on the customer profile page right now."
+      correct_example: "Currently, I am working on the customer profile page right now."
+  register: general
+  topic_tags:
+    - communication
+    - nuance
+    - conversation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.look-forward-to
+  headword: look forward to
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /lʊk ˈfɔː.wəd tuː/
+  audio_ref: null
+  definition_en: To anticipate a forthcoming event with positive feelings of excitement and pleasant anticipation.
+  meaning_tr: dört gözle beklemek, sabırsızlıkla / memnuniyetle beklemek
+  collocations:
+    - text: look forward to hearing
+      tr: haber almayı sabırsızlıkla beklemek
+    - text: look forward to meeting
+      tr: tanışmayı / görüşmeyi dört gözle beklemek
+    - text: look forward to working
+      tr: birlikte çalışmayı memnuniyetle beklemek
+  examples:
+    - en: "We look forward to collaborating with your frontend development team on the upcoming design overhaul."
+      tr: "Gelecek tasarım yenileme projesinde ön yüz geliştirme ekibinizle iş birliği yapmayı memnuniyetle bekliyoruz."
+      context: Business Correspondence
+    - en: "I look forward to discussing the quarterly product roadmap during our face-to-face workshop."
+      tr: "Yüz yüze çalıştayımız sırasında üç aylık ürün yol haritasını ele almayı sabırsızlıkla bekliyorum."
+      context: Strategic Planning
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Look forward to" ifadesindeki "to" mastar eki değil, edattır (preposition). Bu nedenle kendisinden
+        sonra gelen fiil mutlaka -ing (gerund) takısı almalıdır ("look forward to hearing", NOT "look forward to hear").
+      incorrect_example: "I look forward to receive your feedback on the sprint proposal."
+      correct_example: "I look forward to receiving your feedback on the sprint proposal."
+  register: general
+  topic_tags:
+    - correspondence
+    - professional-communication
+    - politeness
+  related_ids: []
+  status: APPROVED
+  version: 1

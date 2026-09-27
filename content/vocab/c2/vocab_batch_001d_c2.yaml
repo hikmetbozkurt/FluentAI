@@ -1,0 +1,415 @@
+- id: vocab.anecdote
+  headword: anecdote
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈæn.ɪk.dəʊt/
+  audio_ref: null
+  definition_en: A brief, engaging, or amusing account of a real incident or biographical experience used to illustrate a point.
+  meaning_tr: anekdot, kısa ve ibretli/eğlenceli hikâye, fıkra
+  collocations:
+    - text: personal anecdote
+      tr: kişisel anekdot
+    - text: illustrative anecdote
+      tr: açıklayıcı / örnekleyici anekdot
+    - text: tell an anecdote
+      tr: bir anekdot anlatmak
+    - text: anecdotal evidence
+      tr: anekdotsal kanıt
+  examples:
+    - en: "The keynote speaker opened the conference with an amusing personal anecdote about early mobile computing."
+      tr: "Ana konuşmacı konferansı ilk dönem mobil bilişim hakkında eğlenceli bir kişisel anekdotla açtı."
+      context: Technology Keynote
+    - en: "Engineers should rely on rigorous telemetry metrics rather than mere subjective anecdotes when diagnosing latency."
+      tr: "Mühendisler gecikmeyi teşhis ederken yalnızca öznel anekdotlara değil, sıkı telemetri ölçütlerine güvenmelidir."
+      context: Site Reliability Engineering
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Anecdote" (/ˈæn.ɪk.dəʊt/ - kısa gerçek yaşam hikâyesi/örnek olay), "antidote" (/ˈæn.ti.dəʊt/ - panzehir) ile telaffuz benzerliği nedeniyle karıştırılmamalıdır.
+      incorrect_example: "The doctor gave him an anecdote after the snake bite."
+      correct_example: "The doctor administered an antidote immediately after the snake bite."
+  register: formal
+  topic_tags:
+    - storytelling
+    - rhetoric
+    - communication
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.epitome
+  headword: epitome
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ɪˈpɪt.ə.mi/
+  audio_ref: null
+  definition_en: A person or thing that is a quintessential, perfect example of a particular quality, principle, or type.
+  meaning_tr: mükemmel örnek, timsal, somutlaşmış hali
+  collocations:
+    - text: the epitome of
+      tr: -in timsali / somut örneği
+    - text: consider the epitome
+      tr: timsali olarak kabul etmek
+    - text: epitome of elegance
+      tr: zarafetin timsali
+    - text: epitome of craftsmanship
+      tr: ustalığın somut örneği
+  examples:
+    - en: "The clean architecture implementation was considered the epitome of maintainable software design by the review panel."
+      tr: "Temiz mimari uygulaması, inceleme paneli tarafından sürdürülebilir yazılım tasarımının mükemmel bir timsali olarak kabul edildi."
+      context: Software Craftsmanship
+    - en: "Her unflappable composure during the high-severity production outage was the epitome of professional leadership."
+      tr: "Yüksek ciddiyetli canlı sistem kesintisi sırasındaki sarsılmaz soğukkanlılığı, profesyonel liderliğin timsaliydi."
+      context: Engineering Leadership
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Epitome" sonundaki "e" harfi okunur (/ɪˈpɪt.ə.mi/); kısa bir özet ("epitaph" veya "summary") değil, bir erdemin veya niteliğin "en kusursuz örneği/timsali" demektir.
+      incorrect_example: "He read an epitome on the tombstone in the cemetery."
+      correct_example: "He read an epitaph on the tombstone in the cemetery."
+  register: formal
+  topic_tags:
+    - perfection
+    - representation
+    - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.impetus
+  headword: impetus
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈɪm.pɪ.təs/
+  audio_ref: null
+  definition_en: The force or energy that makes something happen or accelerate; an inciting stimulus or momentum.
+  meaning_tr: itici güç, dürtü, ivme, teşvik
+  collocations:
+    - text: provide the impetus
+      tr: itici gücü sağlamak
+    - text: give an impetus to
+      tr: -e ivme / itici güç kazandırmak
+    - text: fresh impetus
+      tr: taze bir itici güç
+    - text: initial impetus
+      tr: başlangıçtaki itici güç
+  examples:
+    - en: "The sudden shift to remote work provided the primary impetus for accelerating digital workplace modernization."
+      tr: "Uzaktan çalışmaya ani geçiş, dijital çalışma alanı modernizasyonunu hızlandırmak için birincil itici gücü sağladı."
+      context: Corporate Transformation
+    - en: "A government innovation grant gave fresh impetus to the university's quantum cryptography research project."
+      tr: "Hükümetin inovasyon hibesi, üniversitenin kuantum kriptografi araştırma projesine taze bir itici güç kazandırdı."
+      context: Scientific Research
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Impetus" sözcüğü fevrilik veya düşüncesizlik ("impetuous") demek değildir; bir projeyi, reformu veya süreci harekete geçiren "itici güç/enerji" anlamına gelen asil bir C2 ismidir.
+      incorrect_example: "He made an impetus decision without thinking."
+      correct_example: "He made an impetuous decision without thinking."
+  register: formal
+  topic_tags:
+    - catalyst
+    - momentum
+    - innovation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.propensity
+  headword: propensity
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /prəˈpen.sə.ti/
+  audio_ref: null
+  definition_en: An innate natural inclination, tendency, or predisposition to behave in a particular manner.
+  meaning_tr: eğilim, meyil, yatkınlık
+  collocations:
+    - text: propensity to take risks
+      tr: risk alma eğilimi
+    - text: propensity for
+      tr: -e karşı eğilim / yatkınlık
+    - text: natural propensity
+      tr: doğal eğilim
+    - text: increased propensity
+      tr: artan meyil
+  examples:
+    - en: "Successful venture capitalists demonstrate a measured propensity for calculated technical risk."
+      tr: "Başarılı risk sermayedarları, hesaplanmış teknik risklere karşı ölçülü bir yatkınlık sergilerler."
+      context: Venture Investment
+    - en: "Novice developers often display a propensity to over-engineer solutions before understanding core constraints."
+      tr: "Acemi yazılımcılar genellikle temel kısıtları anlamadan önce çözümleri aşırı karmaşıklaştırma eğilimi gösterirler."
+      context: Engineering Mentorship
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Propensity" isimlerle "for", eylemlerle ise mastar ("propensity to do something") ile kullanılır: "a propensity for risk" veya "a propensity to overcomplicate".
+      incorrect_example: "He has a propensity about arguing in every retrospective."
+      correct_example: "He has a propensity to argue during retrospectives."
+  register: academic
+  topic_tags:
+    - behavioral-tendencies
+    - psychology
+    - disposition
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.embellish
+  headword: embellish
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ɪmˈbel.ɪʃ/
+  audio_ref: null
+  definition_en: To make something sound or look more attractive, impressive, or entertaining by adding exaggerated or decorative details.
+  meaning_tr: süslemek; allayıp pullamak, abartılı ayrıntılar eklemek
+  collocations:
+    - text: embellish the truth
+      tr: gerçeği allayıp pullamak
+    - text: embellish a story
+      tr: bir hikâyeyi süslemek
+    - text: embellish with details
+      tr: ayrıntılarla bezemek
+  examples:
+    - en: "The spokesperson was accused of embellishing performance figures during the annual stakeholder briefing."
+      tr: "Sözcü, yıllık paydaş bilgilendirmesi sırasında performans rakamlarını allayıp pullamakla suçlandı."
+      context: Corporate Communications
+    - en: "Engineers should present objective architectural trade-offs without feeling the need to embellish benchmark outcomes."
+      tr: "Mühendisler, kıyaslama sonuçlarını abartılı ayrıntılarla süsleme ihtiyacı hissetmeden nesnel mimari ödünleşimleri sunmalıdır."
+      context: Technical Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Embellish" fiziksel olarak süslemek anlamına gelse de (dekorasyon), entelektüel söylemde neredeyse her zaman anlatılan bir olayı veya raporu "gerçeğin ötesinde allayıp pullamak / abartmak" için eleştirel kullanılır.
+      incorrect_example: "He embellished the bug by writing clean unit tests."
+      correct_example: "He embellished his resume by claiming expertise in technologies he barely used."
+  register: formal
+  topic_tags:
+    - rhetoric
+    - communication
+    - credibility
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.garner
+  headword: garner
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈɡɑː.nər/
+  audio_ref: null
+  definition_en: To gather, collect, or acquire something valuable, especially praise, support, information, or prestige through effort.
+  meaning_tr: toplamak, kazanmak, elde etmek (özellikle destek, beğeni, saygınlık)
+  collocations:
+    - text: garner support
+      tr: destek toplamak
+    - text: garner praise
+      tr: övgü kazanmak
+    - text: garner attention
+      tr: dikkat çekmek / toplamak
+    - text: garner widespread acclaim
+      tr: geniş çapta beğeni toplamak
+  examples:
+    - en: "The open-source library garnered widespread praise across the developer community for its elegant API design."
+      tr: "Açık kaynak kütüphane, zarif API tasarımı sayesinde geliştirici topluluğu genelinde yaygın bir övgü topladı."
+      context: Open Source Software
+    - en: "Before submitting the budget request, the product lead worked to garner cross-departmental executive support."
+      tr: "Ürün lideri bütçe talebini sunmadan önce departmanlar arası yönetici desteği toplamak için çalıştı."
+      context: Corporate Alignment
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Garner" sıradan fiziksel nesneler (çöp, elma) için değil; soyut ve değerli kazanımlar için kullanılır: "garner support/praise/acclaim/votes".
+      incorrect_example: "She went to the market to garner some apples."
+      correct_example: "The research paper garnered international acclaim within scientific circles."
+  register: formal
+  topic_tags:
+    - achievement
+    - support
+    - reputation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.obfuscate
+  headword: obfuscate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈɒb.fʌs.keɪt/
+  audio_ref: null
+  definition_en: To deliberately make something obscure, unclear, or unintelligible to conceal the truth or protect intellectual property.
+  meaning_tr: "muğlaklaştırmak, gizlemek, anlaşılmaz kılmak (yazılımda: kodu karartmak)"
+  collocations:
+
+    - text: obfuscate the truth
+      tr: gerçeği gizlemek / bulandırmak
+    - text: obfuscate code
+      tr: kodu karartmak / anlaşılmaz kılmak
+    - text: deliberately obfuscate
+      tr: kasten anlaşılmaz kılmak
+  examples:
+    - en: "Production JavaScript and ProGuard rules are configured to obfuscate client source code before distribution."
+      tr: "Canlı JavaScript ve ProGuard kuralları, dağıtımdan önce istemci kaynak kodunu karartacak şekilde yapılandırılmıştır."
+      context: Application Security
+    - en: "Bureaucratic jargon was utilized during the inquiry to deliberately obfuscate administrative accountability."
+      tr: "Soruşturma sırasında idari hesap verebilirliği kasten muğlaklaştırmak amacıyla bürokratik jargon kullanıldı."
+      context: Governance Audit
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Obfuscate" hem dilde gerçeği bulandırmak/gizlemek hem de yazılım dünyasında tersine mühendisliği önlemek için "kod karartma" (code obfuscation) terimi olarak evrenseldir.
+      incorrect_example: "The bright light obfuscated the entire dark room."
+      correct_example: "The executive used overly complex financial terms to obfuscate the drop in profitability."
+  register: academic
+  topic_tags:
+    - security
+    - communication
+    - clarity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.exemplary
+  headword: exemplary
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪɡˈzem.plər.i/
+  audio_ref: null
+  definition_en: Serving as a desirable model, benchmark, or ideal; representing the highest standard of its kind.
+  meaning_tr: örnek teşkil eden, model alınacak, kusursuz
+  collocations:
+    - text: exemplary conduct
+      tr: örnek davranış
+    - text: exemplary performance
+      tr: kusursuz performans
+    - text: exemplary service
+      tr: örnek hizmet
+  examples:
+    - en: "The lead architect was recognized by the board for her exemplary stewardship of the multi-cloud initiative."
+      tr: "Baş mimar, çoklu bulut girişimini örnek teşkil edecek şekilde yönetmesinden ötürü yönetim kurulu tarafından takdir edildi."
+      context: Corporate Recognition
+    - en: "Maintaining exemplary code quality standards is vital for mission-critical medical device software."
+      tr: "Hayati önem taşıyan tıbbi cihaz yazılımları için örnek kod kalitesi standartlarını korumak hayati önem taşır."
+      context: Medical Software Engineering
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Exemplary" (örnek niteliğinde/mükemmel) sıfatı, sadece bir örneği belirten "example" kelimesinden farklı olarak yüksek bir övgü ve ideal model anlamı taşır. Kötü durumlar için "exemplary bad" denmez.
+      incorrect_example: "He made an exemplary mistake that ruined the server."
+      correct_example: "He received an award for his exemplary dedication to customer reliability."
+  register: formal
+  topic_tags:
+    - excellence
+    - leadership
+    - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.precarious
+  headword: precarious
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /prɪˈkeə.ri.əs/
+  audio_ref: null
+  definition_en: Not securely held or in position; dangerously unstable, dependent on chance, and liable to collapse.
+  meaning_tr: istikrarsız, pamuk ipliğine bağlı, güvencesiz, tehlikeli
+  collocations:
+    - text: precarious position
+      tr: riskli / pamuk ipliğine bağlı konum
+    - text: precarious balance
+      tr: hassas / kırılgan denge
+    - text: precarious financial state
+      tr: sallantıda olan mali durum
+  examples:
+    - en: "Operating with only two weeks of cash reserves put the early-stage venture in an extremely precarious financial position."
+      tr: "Yalnızca iki haftalık nakit rezerviyle faaliyet göstermek, erken aşamadaki girişimi son derece istikrarsız ve riskli bir mali konuma soktu."
+      context: Startup Solvency
+    - en: "The distributed storage system hung in a precarious state following consecutive disk failures in the primary rack."
+      tr: "Dağıtık depolama sistemi, birincil kabindeki ardışık disk arızalarının ardından pamuk ipliğine bağlı bir durumda asılı kaldı."
+      context: Data Center Resilience
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Precarious" sıfatı tedbirli olmak ("precautionary") demek değildir; tam tersine "istikrarsız, dengesi bozulmaya hazır ve her an çökebilecek tehlikeli durumu" ifade eder.
+      incorrect_example: "We took precarious steps to keep the server safe."
+      correct_example: "We took precautionary steps because the server was in a precarious state."
+  register: formal
+  topic_tags:
+    - risk
+    - instability
+    - vulnerability
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.metaphorically
+  headword: metaphorically
+  cefr_level: C2
+  part_of_speech: adverb
+  phonetic: /ˌmet.əˈfɒr.ɪ.kəl.i/
+  audio_ref: null
+  definition_en: By means of a figure of speech in which a word or phrase is applied to an object or action to which it is not literally applicable.
+  meaning_tr: mecazi olarak, metaforik biçimde
+  collocations:
+    - text: metaphorically speaking
+      tr: mecazen söylersek / mecazi anlamda
+    - text: apply metaphorically
+      tr: mecazi olarak uygulamak
+  examples:
+    - en: "When the engineering manager spoke of building firewalls, she was speaking metaphorically about organizational boundaries."
+      tr: "Mühendislik yöneticisi güvenlik duvarları inşa etmekten bahsederken, organizasyonel sınırlar hakkında mecazi olarak konuşuyordu."
+      context: Organizational Dynamics
+    - en: "The technical documentation used nautical analogies metaphorically to demystify container orchestration concepts."
+      tr: "Teknik dokümantasyon, konteyner koordinasyon kavramlarını aydınlatmak için denizcilik analojilerini mecazi biçimde kullandı."
+      context: Technical Writing
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Metaphorically" sözcüğünün karşıtı "literally" (harfi harfine/kelimenin tam anlamıyla) sözcüğüdür. Günlük konuşmada sıklıkla yanlışlıkla abartı için "literally" kullanılırken, biçimsel dilde mecazlar için "metaphorically speaking" tercih edilir.
+      incorrect_example: "My head literally exploded during the complex algorithm review."
+      correct_example: "Metaphorically speaking, my brain was completely fried after the algorithm review."
+  register: academic
+  topic_tags:
+    - rhetoric
+    - figurative-language
+    - discourse
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.set-in-stone
+  headword: set in stone
+  cefr_level: C2
+  part_of_speech: idiom
+  phonetic: /set ɪn stəʊn/
+  audio_ref: null
+  definition_en: Completely fixed, permanent, unalterable, and impossible to modify or renegotiate.
+  meaning_tr: kesinleşmiş, kanun hükmünde, asla değişmez
+  collocations:
+    - text: not set in stone
+      tr: asla değişmez değil / esnetilebilir
+    - text: consider set in stone
+      tr: kesinleşmiş kabul etmek
+    - text: nothing is set in stone
+      tr: hiçbir şey kesin değildir
+  examples:
+    - en: "The lead designer reminded stakeholders that the initial system wireframes were preliminary and by no means set in stone."
+      tr: "Baş tasarımcı, paydaşlara ilk sistem taslaklarının ön çalışma olduğunu ve hiçbir şekilde değiştirilemez olmadığını hatırlattı."
+      context: Agile Discovery
+    - en: "While the regulatory compliance deadlines are set in stone, the internal implementation roadmap remains flexible."
+      tr: "Mevzuata uyum son teslim tarihleri kesinleşmiş ve değiştirilemez olsa da, dahili uygulama yol haritası esnekliğini koruyor."
+      context: Regulatory Compliance
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Bu deyim profesyonel dilde neredeyse her zaman olumsuz ("not set in stone") bağlamda, bir planın veya tasarımın esnetilebilir ve geri bildirimlere açık olduğunu vurgulamak için kullanılır.
+      incorrect_example: "The contract is written on stone, so do not break it."
+      correct_example: "The agreement terms are not set in stone and can be adapted to client feedback."
+  register: general
+  topic_tags:
+    - flexibility
+    - decisions
+    - agreements
+  related_ids: []
+  status: APPROVED
+  version: 1

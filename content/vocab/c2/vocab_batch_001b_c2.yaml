@@ -1,0 +1,416 @@
+- id: vocab.acumen
+  headword: acumen
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈæk.jə.mən/
+  audio_ref: null
+  definition_en: Exceptional sharpness of judgment, mental penetration, and speed of discernment, especially in commercial or strategic matters.
+  meaning_tr: keskin kavrayış, sezgi gücü, ticari zeka / feraset
+  collocations:
+    - text: business acumen
+      tr: ticari zeka / deha
+    - text: financial acumen
+      tr: finansal sezgi ve ustalık
+    - text: strategic acumen
+      tr: stratejik basiret / keskinlik
+  examples:
+    - en: "The chief executive's astute financial acumen steered the enterprise safely through unpredictable macroeconomic turbulence."
+      tr: "İcra kurulu başkanının keskin finansal zekası, şirketi öngörülemeyen makroekonomik dalgalanmalardan güvenle çıkardı."
+      context: Corporate Leadership
+    - en: "Her technical acumen combined with sharp market awareness made her an outstanding product strategy lead."
+      tr: "Teknik sezgisi keskin pazar farkındalığıyla birleştiğinde, onu olağanüstü bir ürün stratejisi lideri haline getirdi."
+      context: Executive Evaluation
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Acumen" sözcüğü için "yapmak" veya "etmek" denmez; bir vasıf olarak "possess acumen", "demonstrate acumen"
+        veya "display acumen" fiilleriyle kullanılır.
+      incorrect_example: "The new director made great business acumen during the restructuring."
+      correct_example: "The new director displayed great business acumen during the restructuring."
+  register: formal
+  topic_tags:
+    - business
+    - leadership
+    - intelligence
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.fallacy
+  headword: fallacy
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈfæl.ə.si/
+  audio_ref: null
+  definition_en: A fundamentally flawed premise or logically unsound argument that invalidates a line of reasoning.
+  meaning_tr: yanılgı, safsata, mantık hatası
+  collocations:
+    - text: logical fallacy
+      tr: mantıksal safsata
+    - text: commit a fallacy
+      tr: mantık hatasına düşmek
+    - text: widespread fallacy
+      tr: yaygın yanılgı / safsata
+  examples:
+    - en: "Believing that doubling team headcounts automatically halves delivery timelines is a classic managerial fallacy."
+      tr: "Ekip sayısını iki katına çıkarmanın teslimat sürelerini otomatik olarak yarıya indireceğine inanmak klasik bir yönetim safsatasıdır."
+      context: Engineering Management
+    - en: "The peer review report methodically exposed the statistical fallacy behind the vendor's benchmark claims."
+      tr: "Hakem inceleme raporu, tedarikçinin performans testi iddialarının arkasındaki istatistiksel safsatayı yöntemsel olarak açığa çıkardı."
+      context: Scientific Peer Review
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Fallacy" sözcüğü sıradan bir teknik kusur ("fault") veya arıza ("failure") değildir;
+        özellikle akıl yürütme, mantık ve delillendirme süreçlerindeki aldatıcı yanılgıları ve safsataları tanımlar.
+      incorrect_example: "The database server crashed because of a network fallacy."
+      correct_example: "The researcher's conclusion was undermined by an evident logical fallacy."
+  register: academic
+  topic_tags:
+    - logic
+    - critical-thinking
+    - philosophy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.quandary
+  headword: quandary
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈkwɒn.dri/
+  audio_ref: null
+  definition_en: A state of acute perplexity, profound uncertainty, or ethical difficulty regarding a choice between challenging alternatives.
+  meaning_tr: çıkmaz, ikilem, müşkil durum
+  collocations:
+    - text: in a quandary
+      tr: çıkmazda / ikilem içinde
+    - text: face a quandary
+      tr: bir ikilemle karşı karşıya kalmak
+    - text: resolve a quandary
+      tr: bir ikilemi / müşkil durumu çözmek
+  examples:
+    - en: "The board found itself in a delicate quandary when choosing between rapid monetization and strict customer data privacy."
+      tr: "Yönetim kurulu, hızlı gelir elde etme ile sıkı müşteri veri gizliliği arasında seçim yaparken kendisini hassas bir çıkmazda buldu."
+      context: Ethical Governance
+    - en: "The security team faced an operational quandary: patch the critical vulnerability immediately with downtime, or defer until nightfall."
+      tr: "Güvenlik ekibi operasyonel bir ikilemle karşı karşıya kaldı: kritik açığı kesintiyle hemen yamalamak mı yoksa geceye kadar ertelemek mi."
+      context: Site Reliability
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "İkilemde olmak" veya "müşkil durumda kalmak" İngilizcede "in a quandary" şeklinde kurulur;
+        "at a quandary" veya "on a quandary" yanlıştır.
+      incorrect_example: "The product manager was on a quandary regarding which feature to prioritize."
+      correct_example: "The product manager was in a quandary regarding which feature to prioritize."
+  register: formal
+  topic_tags:
+    - dilemma
+    - decision-making
+    - ethics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.corroborate
+  headword: corroborate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /kəˈrɒb.ə.reɪt/
+  audio_ref: null
+  definition_en: To substantiate, confirm, or give independent verification to a statement, hypothesis, or theoretical finding using concrete proof.
+  meaning_tr: doğrulamak, teyit etmek, bağımsız delillerle pekiştirmek
+  collocations:
+    - text: corroborate evidence
+      tr: kanıtları doğrulamak / pekiştirmek
+    - text: corroborate findings
+      tr: araştırma bulgularını teyit etmek
+    - text: independent data corroborates
+      tr: bağımsız veriler doğrulamaktadır
+  examples:
+    - en: "Independent server telemetry corroborated our diagnosis that memory leaks caused the database service degradation."
+      tr: "Bağımsız sunucu telemetrisi, bellek sızıntılarının veritabanı performans düşüşüne yol açtığına dair teşhisimizi doğruladı."
+      context: Systems Postmortem
+    - en: "Subsequent clinical and empirical trials failed to corroborate the ambitious claims published by the biotech startup."
+      tr: "Daha sonraki klinik ve ampirik deneyler, biyoteknoloji girişiminin yayımladığı iddialı tezleri doğrulamakta yetersiz kaldı."
+      context: Research Verification
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        Akademik, bilimsel veya adli denetim belgelerinde sıradan "confirm" veya "back up" yerine,
+        bağımsız kanıtlarla doğrulamayı belirten yüksek düzey C2 fiili "corroborate" kullanılır.
+      incorrect_example: "External telemetry backed up our hypothesis regarding the distributed memory leak."
+      correct_example: "External telemetry corroborated our hypothesis regarding the distributed memory leak."
+  register: academic
+  topic_tags:
+    - verification
+    - evidence
+    - research
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.dispel
+  headword: dispel
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /dɪˈspel/
+  audio_ref: null
+  definition_en: To banish, dissipate, or completely eliminate persistent misconceptions, unfounded rumors, or collective anxieties.
+  meaning_tr: gidermek, dağıtmak (şüphe, dedikodu, korku vb.)
+  collocations:
+    - text: dispel doubts
+      tr: şüpheleri gidermek / dağıtmak
+    - text: dispel myths
+      tr: efsaneleri / yanlış inanışları çürütmek
+    - text: dispel rumors
+      tr: söylentileri ortadan kaldırmak
+  examples:
+    - en: "The chief technology officer held a company-wide town hall to dispel persistent rumors regarding impending workforce layoffs."
+      tr: "Teknoloji direktörü, yaklaşan işten çıkarmalara dair süregelen söylentileri gidermek için şirket genelinde bir toplantı düzenledi."
+      context: Corporate Communications
+    - en: "Publishing reproducible open benchmarks quickly dispelled widespread doubts about the runtime efficiency of the new compiler."
+      tr: "Yinelenebilir açık performans testleri yayımlamak, yeni derleyicinin çalışma zamanı verimliliği hakkındaki yaygın şüpheleri hızla dağıttı."
+      context: Open Source Governance
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Şüpheleri veya dedikoduları ortadan kaldırmak için "destroy doubts" veya "delete rumors" denmez;
+        İngilizcede bu tür soyut algıları dağıtmak için kalıplaşmış C2 fiili "dispel" kullanılır.
+      incorrect_example: "The leadership team made an announcement to delete all false rumors."
+      correct_example: "The leadership team made an announcement to dispel all false rumors."
+  register: formal
+  topic_tags:
+    - persuasion
+    - clarity
+    - leadership
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.galvanize
+  headword: galvanize
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ˈɡæl.və.naɪz/
+  audio_ref: null
+  definition_en: To shock, stimulate, or awaken a group into sudden, passionate, and purposeful collective action.
+  meaning_tr: harekete geçirmek, şevke getirmek, galeyana getirip birleştirmek
+  collocations:
+    - text: galvanize public opinion
+      tr: kamuoyunu harekete geçirmek
+    - text: galvanize support
+      tr: desteği bir araya getirmek / canlandırmak
+    - text: galvanize into action
+      tr: eyleme geçmeye sevk etmek
+  examples:
+    - en: "The severe ransomware breach galvanized the entire engineering organization into prioritizing defensive infrastructure upgrades."
+      tr: "Ağır fidye yazılımı ihlali, tüm mühendislik organizasyonunu savunma amaçlı altyapı yükseltmelerini önceliklendirmeye sevk etti."
+      context: Crisis Management
+    - en: "An impassioned keynote by the open-source founder galvanized global contributors to rebuild the accessibility modules."
+      tr: "Açık kaynak kurucusunun tutkulu açılış konuşması, küresel katılımcıları erişilebilirlik modüllerini yeniden inşa etmek üzere harekete geçirdi."
+      context: Community Leadership
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Galvanize" birini eyleme geçirmek anlamında "galvanize someone into action" yapısıyla kullanılır;
+        "to action" şeklinde kurulması yaygın bir edat hatasıdır.
+      incorrect_example: "The security breach galvanized our engineering team to action."
+      correct_example: "The security breach galvanized our engineering team into action."
+  register: formal
+  topic_tags:
+    - leadership
+    - motivation
+    - mobilization
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ephemeral
+  headword: ephemeral
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪˈfem.ər.əl/
+  audio_ref: null
+  definition_en: Lasting, surviving, or operating for only a fleetingly brief moment in time; strictly transitory and transient.
+  meaning_tr: geçici, kısa ömürlü, anlık (ör. ephemeral token/container)
+  collocations:
+    - text: ephemeral storage
+      tr: geçici depolama
+    - text: ephemeral nature
+      tr: kısa ömürlü / geçici doğa
+    - text: ephemeral trend
+      tr: gelip geçici akım
+  examples:
+    - en: "Serverless container instances rely heavily on ephemeral storage volumes that terminate automatically upon task completion."
+      tr: "Sunucusuz konteyner örnekleri, görev tamamlandığında otomatik olarak sonlanan geçici depolama birimlerine büyük ölçüde güvenir."
+      context: Cloud Computing
+    - en: "The product strategist cautioned that viral engagement spikes are often ephemeral and do not guarantee sustained user retention."
+      tr: "Ürün stratejisti, viral etkileşim artışlarının çoğunlukla geçici olduğunu ve kalıcı kullanıcı bağlılığını garanti etmediğini hatırlattı."
+      context: Growth Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Ephemeral" sözcüğü fonetik olarak "eternal" (sonsuz) ile karıştırılmamalıdır; bilakis tam zıddı olan
+        "göz açıp kapayıncaya kadar geçen, çok kısa ömürlü" anlamındadır.
+      incorrect_example: "We built an ephemeral foundation meant to last for the next fifty years."
+      correct_example: "Serverless workloads run on ephemeral containers designed to terminate after execution."
+  register: academic
+  topic_tags:
+    - cloud
+    - computing
+    - transience
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.impeccable
+  headword: impeccable
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ɪmˈpek.ə.bəl/
+  audio_ref: null
+  definition_en: Conforming strictly to the highest conceivable standards of excellence; entirely free from flaw, blemish, or error.
+  meaning_tr: kusursuz, lekesiz, mükemmel
+  collocations:
+    - text: impeccable credentials
+      tr: kusursuz yetkinlikler / referanslar
+    - text: impeccable reputation
+      tr: lekesiz itibar
+    - text: impeccable timing
+      tr: mükemmel zamanlama
+  examples:
+    - en: "The principal candidate presented impeccable architectural credentials and an unblemished record of enterprise delivery."
+      tr: "Baş mimar adayı, kusursuz mimari yetkinlikler ve kurumsal teslimatlarda lekesiz bir sicil sundu."
+      context: Executive Hiring
+    - en: "With impeccable timing, the security patch was deployed seconds before automated scanners detected the exploit."
+      tr: "Kusursuz bir zamanlamayla, otomatik tarayıcılar güvenlik açığını tespit etmeden saniyeler önce güvenlik yaması dağıtıldı."
+      context: Cyber Defense
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçe "kusursuz" için her zaman "perfect" kullanmak dilde tekdüzeliğe yol açar; özellikle mesleki itibar,
+        tavır, yetkinlik ve zamanlama söz konusu olduğunda C2 düzeyinde "impeccable" tercih edilmelidir.
+      incorrect_example: "The lead consultant has a completely faultless professional reputation."
+      correct_example: "The lead consultant has an impeccable professional reputation."
+  register: formal
+  topic_tags:
+    - excellence
+    - professionalism
+    - reputation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.salient
+  headword: salient
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˈseɪ.li.ənt/
+  audio_ref: null
+  definition_en: Conspicuously prominent, striking, and commanding analytical attention; central to the understanding of an issue.
+  meaning_tr: en göze çarpan, en belirgin, can alıcı
+  collocations:
+    - text: salient points
+      tr: en belirgin / can alıcı noktalar
+    - text: salient features
+      tr: en göze çarpan özellikler
+    - text: salient characteristics
+      tr: can alıcı nitelikler
+  examples:
+    - en: "The executive summary condensed a forty-page compliance audit down to three salient strategic recommendations."
+      tr: "Yönetici özeti, kırk sayfalık bir uyumluluk denetimini üç can alıcı stratejik öneriye indirgedi."
+      context: Executive Briefing
+    - en: "Latency reduction and predictable cost structures emerged as the most salient requirements of the enterprise client."
+      tr: "Gecikme süresinin azaltılması ve öngörülebilir maliyet yapıları, kurumsal müşterinin en belirgin gereksinimleri olarak öne çıktı."
+      context: Systems Requirements
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Salient" (belirgin, can alıcı) sözcüğü fonetik yakınlığı sebebiyle "silent" (sessiz) ile karıştırılmamalıdır.
+      incorrect_example: "Please turn your phone to salient mode during the client presentation."
+      correct_example: "The speaker highlighted the salient points of the architectural overhaul."
+  register: formal
+  topic_tags:
+    - prominence
+    - analysis
+    - synthesis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.conspicuously
+  headword: conspicuously
+  cefr_level: C2
+  part_of_speech: adverb
+  phonetic: /kənˈspɪk.ju.əs.li/
+  audio_ref: null
+  definition_en: In a clearly visible, unmistakable, or striking manner that immediately attracts attention or scrutiny.
+  meaning_tr: bariz biçimde, gözle görülür şekilde, dikkat çekecek derecede
+  collocations:
+    - text: conspicuously absent
+      tr: yokluğu derhal göze çarpan / bariz biçimde eksik
+    - text: conspicuously display
+      tr: açıkça / göze çarpar şekilde sergilemek
+    - text: conspicuously lack
+      tr: bariz biçimde eksikliğini hissettirmek
+  examples:
+    - en: "Security safeguards and rate-limiting middleware were conspicuously absent from the vendor's initial code submission."
+      tr: "Güvenlik önlemleri ve istek sınırlama ara yazılımları, tedarikçinin ilk kod tesliminde bariz biçimde eksikti."
+      context: Code Audit
+    - en: "Her name was conspicuously missing from the author list of the seminal distributed consensus research paper."
+      tr: "Onun adı, çığır açan dağıtık mutabakat araştırma makalesinin yazar listesinde dikkat çekecek derecede yoktu."
+      context: Academic Attribution
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Conspicuously absent" üst düzey İngilizcede sıkça kullanılan ve bir şeyin yokluğunun barizliğini
+        vurgulayan sabit bir kalıptır; "obviously missing" yerine bu deyimsel kalıp tercih edilmelidir.
+      incorrect_example: "Automated test coverage was obviously missing in the legacy payment module."
+      correct_example: "Automated test coverage was conspicuously absent in the legacy payment module."
+  register: formal
+  topic_tags:
+    - observation
+    - emphasis
+    - nuance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.in-hindsight
+  headword: in hindsight
+  cefr_level: C2
+  part_of_speech: phrase
+  phonetic: /ɪn ˈhaɪnd.saɪt/
+  audio_ref: null
+  definition_en: With retrospective understanding and analytical clarity that is accessible only after an event has unfolded.
+  meaning_tr: sonradan bakıldığında, iş işten geçtikten sonra anlaşıldığında
+  collocations:
+    - text: in hindsight it is clear
+      tr: geriye dönüp bakıldığında açıktır ki
+    - text: with the benefit of hindsight
+      tr: geriye dönüp bakmanın getirdiği tecrübeyle
+    - text: obvious in hindsight
+      tr: sonradan bakıldığında apaçık ortada
+  examples:
+    - en: "In hindsight, splitting the monolithic backend into sixty microservices simultaneously was unnecessarily risky."
+      tr: "Geriye dönüp bakıldığında, monolitik arka ucu aynı anda altmış mikroservise bölmek gereksiz derecede riskliydi."
+      context: Architectural Postmortem
+    - en: "With the benefit of hindsight, the management team recognized that their initial market adoption projections were overly optimistic."
+      tr: "Sonradan bakmanın getirdiği tecrübeyle yönetim ekibi, ilk pazar benimseme tahminlerinin aşırı iyimser olduğunu kabul etti."
+      context: Strategic Retrospective
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçedeki "geriye dönüp bakıldığında" ifadesi motamot "looking backwards" olarak çevrilmez;
+        olgun ve akademik İngilizcede yerleşik deyim "in hindsight" veya "with the benefit of hindsight" şeklindedir.
+      incorrect_example: "Looking backwards, choosing that unmaintained open-source library was an error."
+      correct_example: "In hindsight, choosing that unmaintained open-source library was an error."
+  register: general
+  topic_tags:
+    - retrospective
+    - analysis
+    - wisdom
+  related_ids: []
+  status: APPROVED
+  version: 1

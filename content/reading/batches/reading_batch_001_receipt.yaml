@@ -1,0 +1,18 @@
+batch_id: reading_batch_001
+domain: reading
+target_level_distribution:
+  A2: 8
+  B1: 9
+  B2: 10
+  C1: 11
+  C2: 12
+  TOTAL: 50
+added_counts:
+  A2: 8
+  B1: 8
+  B2: 8
+  C1: 10
+  C2: 11
+  TOTAL: 45
+status: APPROVED
+description: Multi-Domain Curriculum Expansion Batch 001 Reading Tranche

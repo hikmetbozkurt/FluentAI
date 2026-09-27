@@ -1,0 +1,2084 @@
+- id: vocab.condiment
+  headword: condiment
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈkɒn.dɪ.mənt/
+  audio_ref: null
+  definition_en: A substance such as salt, mustard, or pickle that is used to add flavor to food.
+  meaning_tr: çeşni, sos, baharat (sofra çeşnisi)
+  examples:
+  - en: The waiter brought a tray of condiments including mustard, olive oil, and balsamic vinegar.
+    tr: Garson; hardal, zeytinyağı ve balzamik sirke içeren bir çeşni tepsisi getirdi.
+    context: Dining
+  collocations:
+  - text: tray of condiments
+    tr: çeşni tepsisi
+  - text: favourite condiment
+    tr: en sevilen çeşni
+  register: general
+  topic_tags:
+  - food-shopping
+  - dining
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pastry
+  headword: pastry
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈpeɪ.stri/
+  audio_ref: null
+  definition_en: A dough of flour, fat, and water used as a base and crust for baked sweet or savoury foods.
+  meaning_tr: hamur işi, pasta hamuru
+  examples:
+  - en: The bakery is famous for its delicate French pastries made with fresh butter.
+    tr: Fırın, taze tereyağıyla yapılan narin Fransız hamur işleriyle ünlüdür.
+    context: Bakery
+  collocations:
+  - text: puff pastry
+    tr: milföy hamuru
+  - text: flaky pastry
+    tr: kıtır/puf hamur işi
+  register: general
+  topic_tags:
+  - food-shopping
+  - baking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.portion
+  headword: portion
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈpɔː.ʃən/
+  audio_ref: null
+  definition_en: An amount of food served for one person, especially at a meal or in a restaurant.
+  meaning_tr: porsiyon, pay, hisse
+  examples:
+  - en: The restaurant serves generous portions of grilled vegetables with every main dish.
+    tr: Restoran, her ana yemeğin yanında cömert porsiyonlarda ızgara sebze servis eder.
+    context: Restaurant
+  collocations:
+  - text: generous portion
+    tr: cömert porsiyon
+  - text: portion size
+    tr: porsiyon boyutu
+  register: general
+  topic_tags:
+  - food-shopping
+  - dining
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dairy
+  headword: dairy
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈdeə.ri/
+  audio_ref: null
+  definition_en: Food products made from or containing milk, such as cheese, butter, and yoghurt.
+  meaning_tr: süt ürünleri
+  examples:
+  - en: People with lactose intolerance often substitute almond milk for ordinary dairy products.
+    tr: Laktoz intoleransı olan kişiler sıradan süt ürünleri yerine genellikle badem sütü tüketirler.
+    context: Nutrition
+  collocations:
+  - text: dairy products
+    tr: süt ürünleri
+  - text: dairy section
+    tr: süt ürünleri reyonu
+  register: general
+  topic_tags:
+  - food-shopping
+  - groceries
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.marinate
+  headword: marinate
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈmær.ɪ.neɪt/
+  audio_ref: null
+  definition_en: To soak meat, fish, or vegetables in a seasoned sauce before cooking to enrich flavour.
+  meaning_tr: marine etmek, terbiyelemek
+  examples:
+  - en: Marinate the chicken in olive oil, garlic, and lemon juice for at least two hours.
+    tr: Tavuğu zeytinyağı, sarımsak ve limon suyunda en az iki saat marine edin.
+    context: Cooking
+  collocations:
+  - text: marinate the chicken
+    tr: tavuğu marine etmek
+  - text: marinate overnight
+    tr: geceden terbiyelemek
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.garnish
+  headword: garnish
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈɡɑː.nɪʃ/
+  audio_ref: null
+  definition_en: To decorate a culinary dish with a small amount of herbs or other colourful food item.
+  meaning_tr: süslemek, garnitür eklemek
+  examples:
+  - en: The chef garnished the roasted salmon with fresh sprigs of dill and lemon slices.
+    tr: Şef, fırında somonu taze dereotu dalları ve limon dilimleriyle süsledi.
+    context: Presentation
+  collocations:
+  - text: garnish with herbs
+    tr: otlarla süslemek
+  - text: garnish the dish
+    tr: yemeği süslemek
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.simmer
+  headword: simmer
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈsɪm.ər/
+  audio_ref: null
+  definition_en: To stay just below boiling point while bubbling very gently during cooking.
+  meaning_tr: kısık ateşte kaynamak, ağır ağır pişmek
+  examples:
+  - en: Let the tomato and herb sauce simmer gently on low heat for twenty minutes.
+    tr: Domates ve otlu sosun kısık ateşte yirmi dakika boyunca ağır ağır pişmesine izin verin.
+    context: Cooking
+  collocations:
+  - text: simmer gently
+    tr: ağır ağır kaynamak
+  - text: bring to a simmer
+    tr: kısık ateşte kaynama noktasına getirmek
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.steam-verb
+  headword: steam
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /stiːm/
+  audio_ref: null
+  definition_en: To cook food using the vapour produced by boiling water rather than immersing it in liquid.
+  meaning_tr: buharda pişirmek
+  examples:
+  - en: Steaming vegetables helps preserve their natural nutrients and vibrant colour.
+    tr: Sebzeleri buharda pişirmek, doğal besin maddelerini ve canlı renklerini korumaya yardımcı olur.
+    context: Healthy Cooking
+  collocations:
+  - text: steamed vegetables
+    tr: buharda pişmiş sebzeler
+  - text: steam over hot water
+    tr: sıcak suyun üzerinde buharda pişirmek
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.wholesome
+  headword: wholesome
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈhəʊl.səm/
+  audio_ref: null
+  definition_en: Good for your health and physical well-being; nourishing and natural.
+  meaning_tr: sağlıklı, besleyici, yararlı
+  examples:
+  - en: She prepares wholesome family dinners using organic grains and fresh seasonal produce.
+    tr: Organik tahıllar ve taze mevsim ürünleri kullanarak sağlıklı aile yemekleri hazırlar.
+    context: Healthy Eating
+  collocations:
+  - text: wholesome meal
+    tr: sağlıklı ve besleyici öğün
+  - text: wholesome food
+    tr: besleyici gıda
+  register: general
+  topic_tags:
+  - food-shopping
+  - nutrition
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.appetizing
+  headword: appetizing
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈæp.ə.taɪ.zɪŋ/
+  audio_ref: null
+  definition_en: Appealing to the sense of taste or smell; looking or smelling delicious.
+  meaning_tr: iştah açıcı, leziz görünen
+  examples:
+  - en: The freshly prepared banquet table looked extraordinarily colourful and appetizing.
+    tr: Taze hazırlanmış ziyafet masası son derece renkli ve iştah açıcı görünüyordu.
+    context: Catering
+  collocations:
+  - text: appetizing smell
+    tr: iştah açıcı koku
+  - text: look appetizing
+    tr: iştah açıcı görünmek
+  register: general
+  topic_tags:
+  - food-shopping
+  - dining
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.savoury
+  headword: savoury
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈseɪ.vər.i/
+  audio_ref: null
+  definition_en: Belonging to the category of salty or spicy food rather than sweet desserts.
+  meaning_tr: tuzlu, baharatlı, tatlı olmayan (yiyecek)
+  examples:
+  - en: They served savoury pastries filled with spinach and cheese before the sweet dessert.
+    tr: Tatlıdan önce ıspanak ve peynirle doldurulmuş tuzlu hamur işleri ikram ettiler.
+    context: Buffet
+  collocations:
+  - text: savoury snack
+    tr: tuzlu atıştırmalık
+  - text: savoury dish
+    tr: tuzlu/lezzetli yemek
+  register: general
+  topic_tags:
+  - food-shopping
+  - food
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.moderately
+  headword: moderately
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /ˈmɒd.ər.ət.li/
+  audio_ref: null
+  definition_en: To a medium degree; neither excessively nor insufficiently.
+  meaning_tr: ölçülü bir şekilde, ılımlı olarak, orta derecede
+  examples:
+  - en: Doctors recommend eating sugary foods only moderately to maintain stable energy.
+    tr: Doktorlar, dengeli enerjiyi korumak için şekerli yiyecekleri yalnızca ölçülü tüketmeyi önerir.
+    context: Nutrition Guidance
+  collocations:
+  - text: consume moderately
+    tr: ölçülü tüketmek
+  - text: moderately priced
+    tr: makul fiyatlı
+  register: general
+  topic_tags:
+  - food-shopping
+  - health
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.whip-up
+  headword: whip up
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /wɪp ʌp/
+  audio_ref: null
+  definition_en: To prepare a meal or quick snack quickly and with little advance effort.
+  meaning_tr: çabucak hazırlayıvermek (yemek)
+  examples:
+  - en: She managed to whip up a delicious pasta dish in less than fifteen minutes.
+    tr: On beş dakikadan kısa sürede lezzetli bir makarna yemeğini çabucak hazırlayıverdi.
+    context: Home Cooking
+  collocations:
+  - text: whip up a meal
+    tr: çabucak yemek hazırlamak
+  - text: whip up dinner
+    tr: akşam yemeğini çabucak yapmak
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.landlady
+  headword: landlady
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈlændˌleɪ.di/
+  audio_ref: null
+  definition_en: A woman who owns and leases a house, apartment, or room to tenants.
+  meaning_tr: ev sahibi kadın, ev sahibesi
+  examples:
+  - en: Our landlady promptly arranged for the central heating boiler to be repaired.
+    tr: Ev sahibemiz merkezi ısıtma kazanının derhal tamir edilmesini sağladı.
+    context: Housing
+  collocations:
+  - text: pay the landlady
+    tr: ev sahibesine ödeme yapmak
+  - text: strict landlady
+    tr: katı ev sahibesi
+  register: general
+  topic_tags:
+  - daily-life
+  - renting
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.balcony
+  headword: balcony
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈbæl.kə.ni/
+  audio_ref: null
+  definition_en: An elevated platform built onto the outside wall of a building with a railing.
+  meaning_tr: balkon
+  examples:
+  - en: We enjoy drinking morning coffee on the sunny balcony overlooking the quiet park.
+    tr: Sakin parka bakan güneşli balkonda sabah kahvesi içmekten keyif alırız.
+    context: Home Living
+  collocations:
+  - text: sunny balcony
+    tr: güneşli balkon
+  - text: step onto the balcony
+    tr: balkona çıkmak
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.attic
+  headword: attic
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈæt.ɪk/
+  audio_ref: null
+  definition_en: A space or room just below the roof of a house, often used for storing old possessions.
+  meaning_tr: tavan arası
+  examples:
+  - en: They stored cardboard boxes of old family photograph albums up in the dry attic.
+    tr: Eski aile fotoğraf albümlerinin bulunduğu karton kutuları kuru tavan arasında sakladılar.
+    context: Storage
+  collocations:
+  - text: store in the attic
+    tr: tavan arasında saklamak
+  - text: attic stairs
+    tr: tavan arası merdivenleri
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.basement
+  headword: basement
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈbeɪs.mənt/
+  audio_ref: null
+  definition_en: A floor of a building located partly or entirely below ground level.
+  meaning_tr: bodrum katı
+  examples:
+  - en: The laundry washing machines and bicycle racks are kept in the building's basement.
+    tr: Çamaşır makineleri ve bisiklet rafları binanın bodrum katında tutuluyor.
+    context: Building
+  collocations:
+  - text: in the basement
+    tr: bodrum katında
+  - text: basement apartment
+    tr: bodrum dairesi
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.furnish
+  headword: furnish
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈfɜː.nɪʃ/
+  audio_ref: null
+  definition_en: To provide a house or room with tables, chairs, beds, and other necessary furniture.
+  meaning_tr: döşemek, mobilya yerleştirmek
+  examples:
+  - en: It cost several thousand euros to furnish their new two-bedroom flat nicely.
+    tr: Yeni iki yatak odalı dairelerini güzelce döşemek birkaç bin avroya mal oldu.
+    context: Interior Setup
+  collocations:
+  - text: furnish an apartment
+    tr: daireyi döşemek
+  - text: fully furnish
+    tr: tamamen döşemek
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.decorate
+  headword: decorate
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈdek.ə.reɪt/
+  audio_ref: null
+  definition_en: To make a room look more attractive by painting walls or putting up wall coverings.
+  meaning_tr: dekore etmek, süslemek, boyamak
+  examples:
+  - en: They spent the weekend decorating the nursery with light green paint and wallpapers.
+    tr: Hafta sonunu bebek odasını açık yeşil boya ve duvar kağıtlarıyla dekore ederek geçirdiler.
+    context: Home Improvement
+  collocations:
+  - text: decorate a room
+    tr: bir odayı dekore etmek
+  - text: tastefully decorate
+    tr: zevkli bir şekilde dekore etmek
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.assemble
+  headword: assemble
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /əˈsem.bəl/
+  audio_ref: null
+  definition_en: To fit together the separate parts of a piece of furniture or machinery.
+  meaning_tr: monte etmek, parçalarını birleştirmek
+  examples:
+  - en: It took him two hours to assemble the flat-pack bookcase using a screwdriver.
+    tr: Düz paket kitaplığı bir tornavida kullanarak monte etmesi iki saatini aldı.
+    context: Furniture Assembly
+  collocations:
+  - text: assemble furniture
+    tr: mobilya monte etmek
+  - text: easy to assemble
+    tr: montajı kolay
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rearrange
+  headword: rearrange
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˌriː.əˈreɪndʒ/
+  audio_ref: null
+  definition_en: To change the position, layout, or order of items in a living or working space.
+  meaning_tr: yeniden düzenlemek, yerini değiştirmek
+  examples:
+  - en: She rearranged the living room furniture to create more open floor space.
+    tr: Daha açık bir alan yaratmak için oturma odası mobilyalarının yerini yeniden düzenledi.
+    context: Home Layout
+  collocations:
+  - text: rearrange furniture
+    tr: mobilyaların yerini değiştirmek
+  - text: rearrange the room
+    tr: odayı yeniden düzenlemek
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.spacious
+  headword: spacious
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈspeɪ.ʃəs/
+  audio_ref: null
+  definition_en: Having a large amount of room and open space to move around freely.
+  meaning_tr: ferah, geniş
+  examples:
+  - en: The modern apartment features a spacious open-plan kitchen and living room.
+    tr: Modern dairede ferah, açık planlı bir mutfak ve oturma odası bulunmaktadır.
+    context: Real Estate
+  collocations:
+  - text: spacious room
+    tr: ferah oda
+  - text: spacious apartment
+    tr: geniş daire
+  register: general
+  topic_tags:
+  - daily-life
+  - housing
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cramped
+  headword: cramped
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /kræmpt/
+  audio_ref: null
+  definition_en: Uncomfortably small or restrictive with insufficient space for movement.
+  meaning_tr: dar, sıkışık, basık
+  examples:
+  - en: Working all day in a cramped home office made him feel exhausted and stiff.
+    tr: Bütün gün dar bir ev ofisinde çalışmak onu bitkin ve tutulmuş hissettirdi.
+    context: Workspace
+  collocations:
+  - text: cramped room
+    tr: dar oda
+  - text: feel cramped
+    tr: sıkışık hissetmek
+  register: general
+  topic_tags:
+  - daily-life
+  - housing
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.smoothly
+  headword: smoothly
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /ˈsmuːð.li/
+  audio_ref: null
+  definition_en: Without any problems, disruptions, or sudden interruptions.
+  meaning_tr: pürüzsüzce, tıkırında, sorunsuz bir şekilde
+  examples:
+  - en: The household relocation went smoothly thanks to careful packing and planning.
+    tr: Dikkatli paketleme ve planlama sayesinde ev taşınması pürüzsüzce geçti.
+    context: Moving House
+  collocations:
+  - text: run smoothly
+    tr: tıkırında gitmek
+  - text: go smoothly
+    tr: sorunsuz ilerlemek
+  register: general
+  topic_tags:
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.settle-in
+  headword: settle in
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /ˈset.əl ɪn/
+  audio_ref: null
+  definition_en: To become comfortable and accustomed to living in a new home or environment.
+  meaning_tr: alışmak, yerleşmek, düzenini kurmak
+  examples:
+  - en: It took the family about two weeks to settle in after moving to the new neighbourhood.
+    tr: Yeni mahalleye taşındıktan sonra ailenin yerleşip alışması yaklaşık iki hafta sürdü.
+    context: Relocation
+  collocations:
+  - text: settle in quickly
+    tr: hızlıca alışmak/yerleşmek
+  - text: settle into a new home
+    tr: yeni bir eve yerleşmek
+  register: general
+  topic_tags:
+  - daily-life
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.ferryboat
+  headword: ferryboat
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈfer.i.bəʊt/
+  audio_ref: null
+  definition_en: A boat designed for transporting passengers and vehicles across a river or sea channel.
+  meaning_tr: vapur, araba vapuru, feribot
+  examples:
+  - en: We boarded the evening ferryboat to cross the strait between the two continents.
+    tr: İki kıta arasındaki boğazı geçmek için akşam vapuruna bindik.
+    context: Water Transport
+  collocations:
+  - text: take a ferryboat
+    tr: vapura binmek
+  - text: passenger ferryboat
+    tr: yolcu vapuru
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.locomotive
+  headword: locomotive
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˌləʊ.kəˈməʊ.tɪv/
+  audio_ref: null
+  definition_en: A powered railway engine that pulls or pushes carriages along tracks.
+  meaning_tr: lokomotif, tren motoru
+  examples:
+  - en: A historic steam locomotive hauled vintage wooden carriages along the mountain route.
+    tr: Tarihi bir buharlı lokomotif, dağ güzergahı boyunca klasik ahşap vagonları çekti.
+    context: Railways
+  collocations:
+  - text: steam locomotive
+    tr: buharlı lokomotif
+  - text: diesel locomotive
+    tr: dizel lokomotif
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.carriage
+  headword: carriage
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈkær.ɪdʒ/
+  audio_ref: null
+  definition_en: One of the separate passenger sections of a railway train.
+  meaning_tr: vagon (tren)
+  examples:
+  - en: We walked down the train to find empty seats in the quiet carriage.
+    tr: Sessiz vagonda boş koltuk bulmak için tren boyunca yürüdük.
+    context: Train Journey
+  collocations:
+  - text: quiet carriage
+    tr: sessiz vagon
+  - text: train carriage
+    tr: tren vagonu
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.round-trip
+  headword: round-trip
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈraʊnd.trɪp/
+  audio_ref: null
+  definition_en: A complete journey to a destination and back to the starting point.
+  meaning_tr: gidiş-dönüş yolculuğu
+  examples:
+  - en: Buying a round-trip ticket is often cheaper than purchasing two single fares.
+    tr: Gidiş-dönüş bileti almak, iki tek yön bileti almaktan genellikle daha ucuzdur.
+    context: Ticketing
+  collocations:
+  - text: round-trip ticket
+    tr: gidiş-dönüş bileti
+  - text: make a round-trip
+    tr: gidiş-dönüş yolculuğu yapmak
+  register: general
+  topic_tags:
+  - travel
+  - transit
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.wander
+  headword: wander
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈwɒn.dər/
+  audio_ref: null
+  definition_en: To walk slowly around an area without a fixed destination or urgent purpose.
+  meaning_tr: dolaşmak, gezinmek, amaçsızca yürümek
+  examples:
+  - en: We loved to wander through the cobbled alleys of the old historic quarter.
+    tr: Tarihi eski mahallenin taş sokaklarında gezinmeyi çok sevdik.
+    context: Sightseeing
+  collocations:
+  - text: wander through the streets
+    tr: sokaklarda gezinmek
+  - text: wander around
+    tr: etrafta dolaşmak
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stroll
+  headword: stroll
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /strəʊl/
+  audio_ref: null
+  definition_en: To walk in a leisurely, relaxed manner for pleasure rather than haste.
+  meaning_tr: gezinmek, aheste aheste yürümek
+  examples:
+  - en: Tourists strolled along the seaside boulevard enjoying the warm evening breeze.
+    tr: Turistler ılık akşam esintisinin tadını çıkararak sahil bulvarı boyunca aheste aheste yürüdüler.
+    context: Evening Walk
+  collocations:
+  - text: stroll along the beach
+    tr: plaj boyunca gezinmek
+  - text: take a stroll
+    tr: yürüyüşe çıkmak
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.roam
+  headword: roam
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /rəʊm/
+  audio_ref: null
+  definition_en: To travel or explore freely over a wide geographic area without a strict itinerary.
+  meaning_tr: serbestçe dolaşmak, gezip tozmak
+  examples:
+  - en: Wild mountain ponies roam freely across the wide national park plains.
+    tr: Vahşi dağ midillileri geniş milli park ovalarında serbestçe dolaşırlar.
+    context: Nature Exploration
+  collocations:
+  - text: roam freely
+    tr: özgürce dolaşmak
+  - text: roam the countryside
+    tr: kırsalda gezinmek
+  register: general
+  topic_tags:
+  - travel
+  - outdoors
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.overtake
+  headword: overtake
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˌəʊ.vəˈteɪk/
+  audio_ref: null
+  definition_en: To catch up with and pass another slower vehicle moving in the same direction.
+  meaning_tr: sollamak, önüne geçmek
+  examples:
+  - en: Drivers should never overtake another car on sharp road bends or narrow bridges.
+    tr: Sürücüler keskin virajlarda veya dar köprülerde asla başka bir aracı sollamamalıdır.
+    context: Road Safety
+  collocations:
+  - text: overtake a car
+    tr: bir arabayı sollamak
+  - text: safe to overtake
+    tr: sollamak için güvenli
+  register: general
+  topic_tags:
+  - travel
+  - driving
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.remote
+  headword: remote
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /rɪˈməʊt/
+  audio_ref: null
+  definition_en: Far away from main population centres, cities, and major transport links.
+  meaning_tr: uzak, ıssız, ücra
+  examples:
+  - en: They stayed at a remote wooden cabin nestled deep inside the northern forest.
+    tr: Kuzey ormanının derinliklerinde yer alan ücra bir ahşap kulübede kaldılar.
+    context: Off the Beaten Track
+  collocations:
+  - text: remote village
+    tr: ücra köy
+  - text: remote area
+    tr: ıssız bölge
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.bustling
+  headword: bustling
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈbʌs.lɪŋ/
+  audio_ref: null
+  definition_en: Full of energetic activity, lively crowds, and vibrant movement.
+  meaning_tr: hareketli, cıvıl cıvıl, capcanlı
+  examples:
+  - en: The bustling street bazaar was filled with foreign visitors and fragrant spice stalls.
+    tr: Cıvıl cıvıl sokak pazarı yabancı ziyaretçiler ve hoş kokulu baharat tezgahlarıyla doluydu.
+    context: Urban Life
+  collocations:
+  - text: bustling city
+    tr: hareketli şehir
+  - text: bustling market
+    tr: cıvıl cıvıl pazar
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.overseas
+  headword: overseas
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /ˌəʊ.vəˈsiːz/
+  audio_ref: null
+  definition_en: In, to, or by way of places situated across an ocean or foreign sea.
+  meaning_tr: denizaşırı ülkelerde/ülkelere, yurt dışına
+  examples:
+  - en: She decided to study overseas for a semester to broaden her cultural horizons.
+    tr: Kültürel ufkunu genişletmek için bir dönem denizaşırı bir ülkede eğitim almaya karar verdi.
+    context: International Travel
+  collocations:
+  - text: travel overseas
+    tr: denizaşırı seyahat etmek
+  - text: study overseas
+    tr: yurt dışında okumak
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.stop-over
+  headword: stop over
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /stɒp ˈəʊ.vər/
+  audio_ref: null
+  definition_en: To interrupt a long journey temporarily for a short stay before continuing.
+  meaning_tr: mola vermek, aktarma arasında konaklamak
+  examples:
+  - en: On our flight to Australia, we stopped over in Singapore for two memorable days.
+    tr: Avustralya uçuşumuzda unutulmaz iki gün boyunca Singapur'da konakladık.
+    context: Long-Haul Travel
+  collocations:
+  - text: stop over for a night
+    tr: bir gece mola vermek
+  - text: stop over in London
+    tr: Londra'da mola vermek
+  register: general
+  topic_tags:
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.apparatus
+  headword: apparatus
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˌæp.əˈreɪ.təs/
+  audio_ref: null
+  definition_en: The technical equipment or machinery needed for a particular scientific experiment.
+  meaning_tr: cihaz, aygıt, deney düzeneği
+  examples:
+  - en: The research team assembled the glass apparatus to measure gas pressure accurately.
+    tr: Araştırma ekibi gaz basıncını doğru ölçmek için cam deney düzeneğini monte etti.
+    context: Scientific Experiment
+  collocations:
+  - text: laboratory apparatus
+    tr: laboratuvar düzeneği
+  - text: scientific apparatus
+    tr: bilimsel aygıt
+  register: general
+  topic_tags:
+  - science
+  - experiment
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.microscope
+  headword: microscope
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈmaɪ.krə.skəʊp/
+  audio_ref: null
+  definition_en: An optical instrument used for viewing very small objects magnified several hundred times.
+  meaning_tr: mikroskop
+  examples:
+  - en: Biologists looked through the digital microscope to inspect the bacterial cell walls.
+    tr: Biyologlar bakteri hücre duvarlarını incelemek için dijital mikroskoptan baktılar.
+    context: Biology
+  collocations:
+  - text: look through a microscope
+    tr: mikroskoptan bakmak
+  - text: electron microscope
+    tr: elektron mikroskobu
+  register: general
+  topic_tags:
+  - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.telescope
+  headword: telescope
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈtel.ɪ.skəʊp/
+  audio_ref: null
+  definition_en: An optical device designed to make distant celestial objects appear clearer and closer.
+  meaning_tr: teleskop
+  examples:
+  - en: Using an observatory telescope, astronomers tracked the movement of the distant comet.
+    tr: Gökbilimciler bir gözlemevi teleskobu kullanarak uzak kuyruklu yıldızın hareketini takip ettiler.
+    context: Astronomy
+  collocations:
+  - text: space telescope
+    tr: uzay teleskobu
+  - text: look through a telescope
+    tr: teleskoptan bakmak
+  register: general
+  topic_tags:
+  - science
+  - astronomy
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.calculate
+  headword: calculate
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈkæl.kjə.leɪt/
+  audio_ref: null
+  definition_en: To determine a mathematical or physical amount using numbers and formulas.
+  meaning_tr: hesaplamak
+  examples:
+  - en: Students must calculate the exact velocity before plotting the motion on a graph.
+    tr: Öğrenciler hareketi bir grafikte çizmeden önce tam hızı hesaplamalıdır.
+    context: Physics
+  collocations:
+  - text: calculate accurately
+    tr: doğru hesaplamak
+  - text: calculate the cost
+    tr: maliyeti hesaplamak
+  register: general
+  topic_tags:
+  - science
+  - mathematics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.verify
+  headword: verify
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈver.ɪ.faɪ/
+  audio_ref: null
+  definition_en: To check that scientific data or facts are accurate through testing and evidence.
+  meaning_tr: doğrulamak, teyit etmek
+  examples:
+  - en: Independent researchers repeated the laboratory trial to verify the initial findings.
+    tr: Bağımsız araştırmacılar ilk bulguları doğrulamak için laboratuvar denemesini tekrarladılar.
+    context: Research
+  collocations:
+  - text: verify the results
+    tr: sonuçları doğrulamak
+  - text: verify findings
+    tr: bulguları teyit etmek
+  register: general
+  topic_tags:
+  - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dissolve
+  headword: dissolve
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /dɪˈzɒlv/
+  audio_ref: null
+  definition_en: To become incorporated into a liquid so as to form a uniform chemical solution.
+  meaning_tr: çözünmek, eritmek
+  examples:
+  - en: Salt crystals dissolve rapidly when stirred into warm water.
+    tr: Tuz kristalleri ılık suya karıştırıldığında hızla çözünür.
+    context: Chemistry
+  collocations:
+  - text: dissolve in water
+    tr: suda çözünmek
+  - text: dissolve completely
+    tr: tamamen erimek/çözünmek
+  register: general
+  topic_tags:
+  - science
+  - chemistry
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.magnetize
+  headword: magnetize
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈmæɡ.nə.taɪz/
+  audio_ref: null
+  definition_en: To give magnetic properties to an iron or steel object so it attracts other metals.
+  meaning_tr: mıknatıslamak, manyetik hale getirmek
+  examples:
+  - en: Rubbing an iron nail along a permanent magnet will magnetize it temporarily.
+    tr: Bir demir çiviyi kalıcı bir mıknatıs boyunca sürtmek onu geçici olarak mıknatıslar.
+    context: Physics
+  collocations:
+  - text: magnetize metal
+    tr: metali mıknatıslamak
+  - text: strongly magnetize
+    tr: güçlü şekilde manyetik hale getirmek
+  register: general
+  topic_tags:
+  - science
+  - physics
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.scientific
+  headword: scientific
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˌsaɪənˈtɪf.ɪk/
+  audio_ref: null
+  definition_en: Based on or characterized by the rigorous methods and principles of science.
+  meaning_tr: bilimsel
+  examples:
+  - en: The conclusion was supported by robust scientific evidence gathered over three years.
+    tr: Sonuç, üç yıl boyunca toplanan güçlü bilimsel kanıtlarla desteklendi.
+    context: Research
+  collocations:
+  - text: scientific evidence
+    tr: bilimsel kanıt
+  - text: scientific method
+    tr: bilimsel yöntem
+  register: general
+  topic_tags:
+  - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.measurable
+  headword: measurable
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈmeʒ.ər.ə.bəl/
+  audio_ref: null
+  definition_en: Able to be measured or quantified using standard scientific units.
+  meaning_tr: ölçülebilir
+  examples:
+  - en: The experimental treatment produced a measurable improvement in patient mobility.
+    tr: Deneysel tedavi, hasta hareketliliğinde ölçülebilir bir iyileşme sağladı.
+    context: Clinical Trial
+  collocations:
+  - text: measurable effect
+    tr: ölçülebilir etki
+  - text: measurable improvement
+    tr: ölçülebilir gelişme
+  register: general
+  topic_tags:
+  - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.precisely
+  headword: precisely
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /prɪˈsaɪs.li/
+  audio_ref: null
+  definition_en: In an exact, meticulous manner with complete accuracy.
+  meaning_tr: tam olarak, kesinlikle, hassas bir biçimde
+  examples:
+  - en: The chemist weighed the powdered substance precisely to avoid altering the reaction.
+    tr: Kimyager, reaksiyonu değiştirmemek için toz maddeyi hassas bir biçimde tarttı.
+    context: Laboratory
+  collocations:
+  - text: measure precisely
+    tr: hassas biçimde ölçmek
+  - text: precisely at noon
+    tr: tam öğle vaktinde
+  register: general
+  topic_tags:
+  - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.neighbourhood
+  headword: neighbourhood
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈneɪ.bə.hʊd/
+  audio_ref: null
+  definition_en: A district or community within a larger town or city where people reside.
+  meaning_tr: mahalle, muhit, çevre
+  examples:
+  - en: Families value living in a peaceful neighbourhood with good schools and parks.
+    tr: Aileler iyi okulları ve parkları olan huzurlu bir mahallede yaşamaya değer verirler.
+    context: Urban Community
+  collocations:
+  - text: quiet neighbourhood
+    tr: sessiz mahalle
+  - text: residential neighbourhood
+    tr: yerleşim muhiti
+  register: general
+  topic_tags:
+  - society
+  - community
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.population
+  headword: population
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˌpɒp.jəˈleɪ.ʃən/
+  audio_ref: null
+  definition_en: All the inhabitants of a particular town, area, or country considered collectively.
+  meaning_tr: nüfus, ahali
+  examples:
+  - en: The urban population of the coastal city has grown dramatically over the last decade.
+    tr: Sahil kentinin kentsel nüfusu son on yılda çarpıcı bir şekilde büyüdü.
+    context: Demographics
+  collocations:
+  - text: growing population
+    tr: artan nüfus
+  - text: total population
+    tr: toplam nüfus
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.minority
+  headword: minority
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /maɪˈnɒr.ə.ti/
+  audio_ref: null
+  definition_en: A smaller group of people within a community differing in race, religion, or language.
+  meaning_tr: azınlık
+  examples:
+  - en: Local laws ensure that minority communities enjoy equal rights and representation.
+    tr: Yerel yasalar, azınlık topluluklarının eşit haklara ve temsile sahip olmasını sağlar.
+    context: Civic Rights
+  collocations:
+  - text: ethnic minority
+    tr: etnik azınlık
+  - text: minority rights
+    tr: azınlık hakları
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.contribute
+  headword: contribute
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /kənˈtrɪb.juːt/
+  audio_ref: null
+  definition_en: To give money, time, or assistance towards achieving a common goal for society.
+  meaning_tr: katkıda bulunmak, katkı sağlamak
+  examples:
+  - en: Many local residents contribute their free time to clean up community parks on weekends.
+    tr: Birçok yerel sakin, hafta sonları topluluk parklarını temizlemek için boş zamanlarıyla katkıda bulunur.
+    context: Volunteering
+  collocations:
+  - text: contribute to society
+    tr: topluma katkı sağlamak
+  - text: contribute time
+    tr: zaman ayırarak katkıda bulunmak
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.obey
+  headword: obey
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /əˈbeɪ/
+  audio_ref: null
+  definition_en: To comply with or carry out the rules, laws, or instructions established by authority.
+  meaning_tr: itaat etmek, uymak (kurala/kanuna)
+  examples:
+  - en: Every citizen has a duty to obey traffic regulations to prevent road accidents.
+    tr: Trafik kazalarını önlemek için her vatandaşın trafik kurallarına uyma görevi vardır.
+    context: Law and Order
+  collocations:
+  - text: obey the law
+    tr: yasaya uymak
+  - text: obey rules
+    tr: kurallara itaat etmek
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cooperate
+  headword: cooperate
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /kəʊˈɒp.ər.eɪt/
+  audio_ref: null
+  definition_en: To act together and work mutually towards a shared purpose or outcome.
+  meaning_tr: işbirliği yapmak, birlikte çalışmak
+  examples:
+  - en: Neighbours cooperated to organize a weekend charity festival for the children's shelter.
+    tr: Komşular, çocuk sığınağı için hafta sonu hayır festivali düzenlemek üzere işbirliği yaptılar.
+    context: Community Project
+  collocations:
+  - text: cooperate with each other
+    tr: birbiriyle işbirliği yapmak
+  - text: willing to cooperate
+    tr: işbirliği yapmaya istekli
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.equal-adj
+  headword: equal
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈiː.kwəl/
+  audio_ref: null
+  definition_en: Having the same rights, status, or opportunities for all individuals in society.
+  meaning_tr: eşit
+  examples:
+  - en: The constitution guarantees equal opportunities in education regardless of background.
+    tr: Anayasa, kökene bakılmaksızın eğitimde eşit fırsatları garanti eder.
+    context: Human Rights
+  collocations:
+  - text: equal rights
+    tr: eşit haklar
+  - text: equal opportunity
+    tr: fırsat eşitliği
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.peaceful
+  headword: peaceful
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈpiːs.fəl/
+  audio_ref: null
+  definition_en: Free from disturbance, conflict, or violence; calm and orderly.
+  meaning_tr: barışçıl, huzurlu
+  examples:
+  - en: Thousands of citizens gathered for a peaceful rally in support of clean city air.
+    tr: Binlerce vatandaş temiz şehir havasını desteklemek için barışçıl bir mitingde toplandı.
+    context: Civic Gathering
+  collocations:
+  - text: peaceful demonstration
+    tr: barışçıl gösteri
+  - text: peaceful society
+    tr: huzurlu toplum
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.communal
+  headword: communal
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /kəˈmjuː.nəl/
+  audio_ref: null
+  definition_en: Shared by all members of a residential community; collective.
+  meaning_tr: ortaklaşa, toplu, müşterek
+  examples:
+  - en: The apartment block has a communal rooftop garden where residents grow herbs.
+    tr: Apartman bloğunda sakinlerin şifalı otlar yetiştirdiği ortak bir çatı bahçesi var.
+    context: Shared Living
+  collocations:
+  - text: communal area
+    tr: ortak alan
+  - text: communal garden
+    tr: ortak bahçe
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.common-good
+  headword: common good
+  part_of_speech: phrase
+  cefr_level: B1
+  phonetic: /ˈkɒm.ən ɡʊd/
+  audio_ref: null
+  definition_en: The general benefit, welfare, and well-being of all members of a community.
+  meaning_tr: kamu yararı, toplumun ortak çıkarı
+  examples:
+  - en: Citizens should sometimes prioritize the common good over individual commercial interests.
+    tr: Vatandaşlar bazen kamu yararını bireysel ticari çıkarların önüne koymalıdır.
+    context: Civic Duty
+  collocations:
+  - text: for the common good
+    tr: kamu yararı için
+  - text: serve the common good
+    tr: toplumun ortak çıkarına hizmet etmek
+  register: general
+  topic_tags:
+  - society
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.confidant
+  headword: confidant
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈkɒn.fɪ.dænt/
+  audio_ref: null
+  definition_en: A trusted person with whom one shares personal secrets and private matters.
+  meaning_tr: sırdaş, dert ortağı
+  examples:
+  - en: She has been my closest confidant whenever I faced difficult family decisions.
+    tr: Zor ailevi kararlarla karşılaştığımda her zaman en yakın sırdaşım olmuştur.
+    context: Close Friendship
+  collocations:
+  - text: trusted confidant
+    tr: güvenilir sırdaş
+  - text: close confidant
+    tr: yakın sırdaş
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.companion
+  headword: companion
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /kəmˈpæn.jən/
+  audio_ref: null
+  definition_en: A person with whom one spends a great deal of time or travels with.
+  meaning_tr: yoldaş, arkadaş, refakatçi
+  examples:
+  - en: He proved to be an entertaining travel companion throughout the long train journey.
+    tr: Uzun tren yolculuğu boyunca eğlenceli bir seyahat arkadaşı olduğunu gösterdi.
+    context: Travel Friendship
+  collocations:
+  - text: travel companion
+    tr: seyahat arkadaşı
+  - text: constant companion
+    tr: sürekli yoldaş
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.peer
+  headword: peer
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /pɪər/
+  audio_ref: null
+  definition_en: A person who is the same age or has the same social position as you.
+  meaning_tr: akran, denk, yaşıt
+  examples:
+  - en: Teenagers often feel significant pressure to fit in with their peers at school.
+    tr: Gençler okulda akranlarına uyum sağlamak için sıklıkla belirgin bir baskı hissederler.
+    context: Social Environment
+  collocations:
+  - text: peer pressure
+    tr: akran baskısı
+  - text: peer group
+    tr: akran grubu
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rely
+  headword: rely
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /rɪˈlaɪ/
+  audio_ref: null
+  definition_en: To depend on someone with trust and full confidence.
+  meaning_tr: güvenmek, bel bağlamak
+  examples:
+  - en: True friends know that they can always rely on each other in times of trouble.
+    tr: Gerçek dostlar, sıkıntılı zamanlarda birbirlerine her zaman güvenebileceklerini bilirler.
+    context: Friendship
+  collocations:
+  - text: rely on friends
+    tr: arkadaşlara güvenmek
+  - text: rely heavily on
+    tr: büyük ölçüde bel bağlamak
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cherish
+  headword: cherish
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈtʃer.ɪʃ/
+  audio_ref: null
+  definition_en: To protect and care for someone or something lovingly and treasure them.
+  meaning_tr: el üstünde tutmak, değer vermek, şefkatle sevmek
+  examples:
+  - en: She cherishes the memories of summer holidays spent with her grandparents.
+    tr: Büyükanne ve büyükbabasıyla geçirdiği yaz tatillerinin anılarını el üstünde tutar.
+    context: Family Memory
+  collocations:
+  - text: cherish memories
+    tr: anıları el üstünde tutmak
+  - text: cherish friendship
+    tr: dostluğa değer vermek
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.console-verb
+  headword: console
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /kənˈsəʊl/
+  audio_ref: null
+  definition_en: To comfort someone who is sad, disappointed, or grieving.
+  meaning_tr: teselli etmek, avundurmak
+  examples:
+  - en: We stayed beside him to console him after he received the distressing news.
+    tr: Üzücü haberi aldıktan sonra onu teselli etmek için yanında kaldık.
+    context: Support
+  collocations:
+  - text: console a friend
+    tr: bir arkadaşını teselli etmek
+  - text: attempt to console
+    tr: teselli etmeye çalışmak
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.trustworthy
+  headword: trustworthy
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈtrʌstˌwɜː.ði/
+  audio_ref: null
+  definition_en: Able to be relied on as honest, truthful, and dependable.
+  meaning_tr: güvenilir, itimat edilir
+  examples:
+  - en: He is an entirely trustworthy partner who always keeps his confidential promises.
+    tr: Gizli vaatlerini her zaman tutan tamamen güvenilir bir ortaktır.
+    context: Personal Integrity
+  collocations:
+  - text: trustworthy person
+    tr: güvenilir kişi
+  - text: completely trustworthy
+    tr: tamamen güvenilir
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.loyal
+  headword: loyal
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˈlɔɪ.əl/
+  audio_ref: null
+  definition_en: Giving firm and constant support or allegiance to a person, group, or cause.
+  meaning_tr: sadık, vefalı
+  examples:
+  - en: She remained a loyal friend even when others doubted his intentions.
+    tr: Başkaları onun niyetlerinden şüphe duyduğunda bile sadık bir dost olarak kaldı.
+    context: Friendship
+  collocations:
+  - text: loyal friend
+    tr: sadık dost
+  - text: remain loyal
+    tr: sadık kalmak
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.count-on
+  headword: count on
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /kaʊnt ɒn/
+  audio_ref: null
+  definition_en: To rely on someone with certainty to do what is promised or needed.
+  meaning_tr: güvenmek, bel bağlamak, hesaba katmak
+  examples:
+  - en: You can always count on David to help you move heavy boxes into a new apartment.
+    tr: Ağır kutuları yeni daireye taşırken yardım etmesi konusunda David'e her zaman güvenebilirsin.
+    context: Support
+  collocations:
+  - text: count on someone
+    tr: birine güvenmek
+  - text: count on support
+    tr: desteğe bel bağlamak
+  register: general
+  topic_tags:
+  - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.remedy
+  headword: remedy
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˈrem.ə.di/
+  audio_ref: null
+  definition_en: A medicine, herbal treatment, or therapy that cures or relieves an illness.
+  meaning_tr: çare, deva, ilaç, tedavi
+  examples:
+  - en: Hot ginger tea with lemon is a traditional home remedy for seasonal colds.
+    tr: Limonlu sıcak zencefil çayı, mevsimsel soğuk algınlığı için geleneksel bir ev devasıdır.
+    context: Natural Health
+  collocations:
+  - text: home remedy
+    tr: evde yapılan doğal tedavi
+  - text: natural remedy
+    tr: doğal çare
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - medicine
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.digestion
+  headword: digestion
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /daɪˈdʒes.tʃən/
+  audio_ref: null
+  definition_en: The biological process of breaking down food in the stomach and intestines.
+  meaning_tr: sindirim, hazım
+  examples:
+  - en: Drinking plenty of water and walking after meals aids healthy digestion.
+    tr: Bol su içmek ve yemeklerden sonra yürümek sağlıklı sindirime yardımcı olur.
+    context: Wellness
+  collocations:
+  - text: aid digestion
+    tr: sindirime yardımcı olmak
+  - text: poor digestion
+    tr: zayıf sindirim/hazımsızlık
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - body
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.injure
+  headword: injure
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈɪn.dʒər/
+  audio_ref: null
+  definition_en: To harm or damage a part of the physical body during an accident or workout.
+  meaning_tr: incitmek, yaralamak, sakatlamak
+  examples:
+  - en: He injured his shoulder while lifting heavy weights without warming up properly.
+    tr: Düzgün ısınmadan ağır ağırlık kaldırırken omzunu sakatladı.
+    context: Sports Injury
+  collocations:
+  - text: injure a shoulder
+    tr: omzunu incitmek
+  - text: badly injure
+    tr: kötü şekilde yaralamak
+  register: general
+  topic_tags:
+  - health-lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.strengthen
+  headword: strengthen
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈstreŋ.θən/
+  audio_ref: null
+  definition_en: To make bodily muscles, bones, or immune resistance stronger and more robust.
+  meaning_tr: güçlendirmek, kuvvetlendirmek
+  examples:
+  - en: Regular swimming helps strengthen your back muscles and improve posture.
+    tr: Düzenli yüzme sırt kaslarınızı güçlendirmeye ve duruşunuzu iyileştirmeye yardımcı olur.
+    context: Fitness
+  collocations:
+  - text: strengthen muscles
+    tr: kasları güçlendirmek
+  - text: strengthen the immune system
+    tr: bağışıklık sistemini kuvvetlendirmek
+  register: general
+  topic_tags:
+  - health-lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.diagnose
+  headword: diagnose
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈdaɪ.əɡ.nəʊz/
+  audio_ref: null
+  definition_en: To identify the nature and cause of an illness by examining symptoms.
+  meaning_tr: teşhis etmek, tanı koymak
+  examples:
+  - en: The clinic doctor diagnosed a mild ear infection after examining the patient carefully.
+    tr: Klinik doktoru hastayı dikkatle muayene ettikten sonra hafif bir kulak enfeksiyonu teşhis etti.
+    context: Medical Care
+  collocations:
+  - text: diagnose an illness
+    tr: bir hastalığı teşhis etmek
+  - text: correctly diagnose
+    tr: doğru tanı koymak
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - medicine
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.energetic
+  headword: energetic
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˌen.əˈdʒet.ɪk/
+  audio_ref: null
+  definition_en: Possessing or exhibiting high vitality, physical enthusiasm, and active energy.
+  meaning_tr: enerjik, zinde, hareketli
+  examples:
+  - en: After getting eight hours of sleep, she felt energetic and ready for her morning run.
+    tr: Sekiz saat uyuduktan sonra kendini enerjik ve sabah koşusuna hazır hissetti.
+    context: Daily Vitality
+  collocations:
+  - text: feel energetic
+    tr: enerjik hissetmek
+  - text: energetic workout
+    tr: tempolu/enerjik antrenman
+  register: general
+  topic_tags:
+  - health-lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.nutritious
+  headword: nutritious
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /njuːˈtrɪʃ.əs/
+  audio_ref: null
+  definition_en: Efficient in providing the vitamins, proteins, and minerals necessary for health.
+  meaning_tr: besleyici, besin değeri yüksek
+  examples:
+  - en: Lentils and spinach are affordable, nutritious foods that support physical recovery.
+    tr: Mercimek ve ıspanak, fiziksel toparlanmayı destekleyen uygun fiyatlı, besleyici gıdalardır.
+    context: Healthy Diet
+  collocations:
+  - text: nutritious meal
+    tr: besleyici öğün
+  - text: highly nutritious
+    tr: son derece besleyici
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - nutrition
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.cool-down
+  headword: cool down
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /kuːl daʊn/
+  audio_ref: null
+  definition_en: To do gentle stretches and light exercise after a workout to return heart rate to normal.
+  meaning_tr: soğuma hareketleri yapmak, sakinleşmek
+  examples:
+  - en: Athletes should always cool down for ten minutes after a high-intensity workout.
+    tr: Sporcular, yüksek yoğunluklu bir antrenmandan sonra her zaman on dakika boyunca soğuma hareketleri yapmalıdır.
+    context: Post-Workout
+  collocations:
+  - text: cool down after running
+    tr: koşudan sonra soğuma yapmak
+  - text: time to cool down
+    tr: soğuma zamanı
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - fitness
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.dilemma
+  headword: dilemma
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /daɪˈlem.ə/
+  audio_ref: null
+  definition_en: A difficult situation in which one must choose between two equally desirable or unwelcome choices.
+  meaning_tr: ikilem, çıkmaz
+  examples:
+  - en: He faced a dilemma between accepting an overseas promotion and remaining close to family.
+    tr: Yurt dışı terfisini kabul etmek ile ailesine yakın kalmak arasında bir ikilemle karşı karşıya kaldı.
+    context: Decision Making
+  collocations:
+  - text: face a dilemma
+    tr: bir ikilemle karşılaşmak
+  - text: moral dilemma
+    tr: ahlaki ikilem
+  register: general
+  topic_tags:
+  - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.pinpoint-verb
+  headword: pinpoint
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈpɪn.pɔɪnt/
+  audio_ref: null
+  definition_en: To locate, identify, or determine something with extreme accuracy.
+  meaning_tr: tam olarak saptamak, yerini/nedenini kesin belirlemek
+  examples:
+  - en: The diagnostic software helped the engineer pinpoint the exact cause of the system failure.
+    tr: Tanı yazılımı mühendisin sistem arızasının tam nedenini kesin olarak saptamasına yardımcı oldu.
+    context: Troubleshooting
+  collocations:
+  - text: pinpoint the cause
+    tr: nedenini tam olarak saptamak
+  - text: pinpoint the problem
+    tr: sorunu tam olarak belirlemek
+  register: general
+  topic_tags:
+  - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.rule-of-thumb
+  headword: rule of thumb
+  part_of_speech: phrase
+  cefr_level: B1
+  phonetic: /ˌruːl əv ˈθʌm/
+  audio_ref: null
+  definition_en: A practical and approximate guideline based on experience rather than exact science.
+  meaning_tr: pratik kural, el yordamı kuralı
+  examples:
+  - en: As a general rule of thumb, save at least twenty percent of your monthly income.
+    tr: Genel bir pratik kural olarak, aylık gelirinizin en az yüzde yirmisini biriktirin.
+    context: Practical Advice
+  collocations:
+  - text: general rule of thumb
+    tr: genel pratik kural
+  - text: useful rule of thumb
+    tr: faydalı el yordamı kuralı
+  register: general
+  topic_tags:
+  - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.clientele
+  headword: clientele
+  part_of_speech: noun
+  cefr_level: B1
+  phonetic: /ˌkliː.ɒnˈtel/
+  audio_ref: null
+  definition_en: The customers or clients of a particular shop, restaurant, or business collectively.
+  meaning_tr: müşteri kitlesi, müdavimler
+  examples:
+  - en: The boutique hotel caters mainly to an international business clientele.
+    tr: Butik otel ağırlıklı olarak uluslararası bir iş müşteri kitlesine hizmet vermektedir.
+    context: Hospitality
+  collocations:
+  - text: loyal clientele
+    tr: sadık müşteri kitlesi
+  - text: wealthy clientele
+    tr: varlıklı müşteri kitlesi
+  register: business
+  topic_tags:
+  - business
+  - commerce
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.compensate
+  headword: compensate
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˈkɒm.pən.seɪt/
+  audio_ref: null
+  definition_en: To pay someone money or give value in exchange for work, damage, loss, or inconvenience.
+  meaning_tr: tazmin etmek, telafi etmek, bedelini ödemek
+  examples:
+  - en: The airline agreed to compensate passengers whose flights had been cancelled without notice.
+    tr: Havayolu şirketi, uçuşları önceden bildirilmeden iptal edilen yolculara tazminat ödemeyi kabul etti.
+    context: Customer Rights
+  collocations:
+  - text: compensate for loss
+    tr: kaybı tazmin etmek
+  - text: fairly compensate
+    tr: adil şekilde tazmin etmek
+  register: business
+  topic_tags:
+  - business
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.eco-friendly
+  headword: eco-friendly
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˌiː.kəʊˈfrend.li/
+  audio_ref: null
+  definition_en: Not harmful to the natural environment; ecologically safe and sustainable.
+  meaning_tr: çevre dostu, doğaya zararsız
+  examples:
+  - en: Consumers increasingly prefer goods packaged in reusable and eco-friendly materials.
+    tr: Tüketiciler giderek yeniden kullanılabilir ve çevre dostu malzemelerle paketlenmiş ürünleri tercih ediyor.
+    context: Sustainability
+  collocations:
+  - text: eco-friendly products
+    tr: çevre dostu ürünler
+  - text: eco-friendly packaging
+    tr: çevre dostu ambalaj
+  register: general
+  topic_tags:
+  - environment
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.comprehend
+  headword: comprehend
+  part_of_speech: verb
+  cefr_level: B1
+  phonetic: /ˌkɒm.prɪˈhend/
+  audio_ref: null
+  definition_en: To grasp mentally the full meaning or significance of a text or concept.
+  meaning_tr: kavramak, idrak etmek, anlamak
+  examples:
+  - en: It takes patience to comprehend advanced scientific explanations written in a foreign language.
+    tr: Yabancı bir dilde yazılmış ileri düzey bilimsel açıklamaları kavramak sabır gerektirir.
+    context: Reading Comprehension
+  collocations:
+  - text: comprehend the meaning
+    tr: anlamı kavramak
+  - text: difficult to comprehend
+    tr: kavraması güç
+  register: general
+  topic_tags:
+  - education
+  - study
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.ceremonial
+  headword: ceremonial
+  part_of_speech: adjective
+  cefr_level: B1
+  phonetic: /ˌser.ɪˈməʊ.ni.əl/
+  audio_ref: null
+  definition_en: Relating to or used for formal rituals, traditions, and public ceremonies.
+  meaning_tr: törensel, merasim niteliğindeki
+  examples:
+  - en: The village elders wore ceremonial robes during the annual harvest celebration.
+    tr: Köyün ileri gelenleri yıllık hasat kutlaması sırasında törensel cüppeler giydiler.
+    context: Cultural Tradition
+  collocations:
+  - text: ceremonial dress
+    tr: tören kıyafeti
+  - text: ceremonial role
+    tr: törensel rol
+  register: general
+  topic_tags:
+  - culture
+  - traditions
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.log-in
+  headword: log in
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  phonetic: /lɒɡ ɪn/
+  audio_ref: null
+  definition_en: To enter credentials such as username and password to access a computer or website.
+  meaning_tr: giriş yapmak (hesaba/sisteme)
+  examples:
+  - en: You must log in using two-factor authentication to view your bank balance securely.
+    tr: Banka bakiyenizi güvenle görüntülemek için iki faktörlü kimlik doğrulamayla giriş yapmalısınız.
+    context: Digital Security
+  collocations:
+  - text: log in securely
+    tr: güvenli şekilde giriş yapmak
+  - text: log in to the account
+    tr: hesaba giriş yapmak
+  register: general
+  topic_tags:
+  - technology
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.fluently
+  headword: fluently
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /ˈfluː.ənt.li/
+  audio_ref: null
+  definition_en: In a smooth, graceful, and natural manner when speaking or reading a language.
+  meaning_tr: akıcı bir şekilde, takılmadan
+  examples:
+  - en: After two years of daily practice, he can speak English fluently in business calls.
+    tr: İki yıllık günlük pratikten sonra iş görüşmelerinde İngilizceyi akıcı bir şekilde konuşabiliyor.
+    context: Language Fluency
+  collocations:
+  - text: speak fluently
+    tr: akıcı konuşmak
+  - text: read fluently
+    tr: akıcı okumak
+  register: general
+  topic_tags:
+  - communication
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []
+- id: vocab.professionally
+  headword: professionally
+  part_of_speech: adverb
+  cefr_level: B1
+  phonetic: /prəˈfeʃ.ən.əl.i/
+  audio_ref: null
+  definition_en: In a manner that conforms to high standards of expertise, conduct, and ethics.
+  meaning_tr: profesyonelce, mesleğin gerektirdiği şekilde
+  examples:
+  - en: The account manager handled the client dispute calmly and professionally.
+    tr: Müşteri yöneticisi, müşteriyle yaşanan anlaşmazlığı sakince ve profesyonelce yönetti.
+    context: Workplace Conduct
+  collocations:
+  - text: act professionally
+    tr: profesyonelce davranmak
+  - text: dress professionally
+    tr: mesleğe uygun/şık giyinmek
+  register: general
+  topic_tags:
+  - work-career
+  related_ids: []
+  status: APPROVED
+  version: 1
+  turkish_traps: []

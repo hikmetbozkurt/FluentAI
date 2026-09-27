@@ -1,0 +1,66 @@
+batch_id: vocab_batch_001e
+source_manifest: vocab_batch_001_manifest
+produced_at: "2026-09-25T12:30:00Z"
+item_count: 50
+cefr_distribution:
+  A2: 6
+  B1: 9
+  B2: 11
+  C1: 13
+  C2: 11
+produced_ids:
+  A2:
+    - vocab.task
+    - vocab.return-v
+    - vocab.expensive
+    - vocab.delicious
+    - vocab.quickly
+    - vocab.fill-in
+  B1:
+    - vocab.employer
+    - vocab.permission
+    - vocab.purpose
+    - vocab.interrupt
+    - vocab.require
+    - vocab.permanent
+    - vocab.successful
+    - vocab.probably
+    - vocab.set-up
+  B2:
+    - vocab.turnover
+    - vocab.aspect
+    - vocab.retention
+    - vocab.assess
+    - vocab.consolidate
+    - vocab.differentiate
+    - vocab.obtain
+    - vocab.sufficient
+    - vocab.promising
+    - vocab.predictable
+    - vocab.approximately
+  C1:
+    - vocab.acquisition
+    - vocab.deterioration
+    - vocab.manifestation
+    - vocab.volatility
+    - vocab.convergence
+    - vocab.instigate
+    - vocab.diversify
+    - vocab.exhaustive
+    - vocab.formidable
+    - vocab.pervasive
+    - vocab.predominantly
+    - vocab.substantially
+    - vocab.draw-on
+  C2:
+    - vocab.polarity
+    - vocab.veracity
+    - vocab.decimate
+    - vocab.epitomize
+    - vocab.repudiate
+    - vocab.concomitant
+    - vocab.fastidious
+    - vocab.innocuous
+    - vocab.ostensible
+    - vocab.exponentially
+    - vocab.unabashedly

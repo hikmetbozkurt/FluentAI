@@ -1,0 +1,4010 @@
+batch_id: vocab_batch_004
+description: FluentAI Vocabulary Expansion Batch 004 - Planning Manifest (A2-C2)
+item_count: 500
+cefr_distribution:
+  A2: 60
+  B1: 85
+  B2: 110
+  C1: 125
+  C2: 120
+items:
+- id: vocab.cushion
+  headword: cushion
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A fabric bag filled with soft material, used on chairs or sofas for co...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.wardrobe
+  headword: wardrobe
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A tall piece of furniture with doors, used for hanging and storing clo...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.kettle
+  headword: kettle
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: An electric appliance or metal container used for boiling water quickl...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.sponge
+  headword: sponge
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A piece of soft, porous material used for washing dishes or wiping kit...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.rinse-verb
+  headword: rinse
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To wash something with clean water only, without soap, to remove deter...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.hang-verb
+  headword: hang
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To fasten something at the top so that the lower part falls freely, su...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.scrub-verb
+  headword: scrub
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To rub something hard with a stiff brush or cloth to clean it thorough...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.vacuum-verb
+  headword: vacuum
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To clean carpets or floors using an electrical machine that sucks up d...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.cozy
+  headword: cozy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Giving a pleasant feeling of warmth, comfort, and security.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.dusty
+  headword: dusty
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Covered with or containing dry dirt particles that have settled from t...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.put-away
+  headword: put away
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To return something to its proper place where it is kept when not in u...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.tram
+  headword: tram
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: An electric passenger vehicle that runs on rails set into town streets...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.railway
+  headword: railway
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A track with pairs of steel rails on which passenger or freight trains...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.harbour
+  headword: harbour
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: An area of sheltered water on the coast where ships and fishing boats ...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.pathway
+  headword: pathway
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A designated track or walkway for pedestrians, especially through a pa...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.sail-verb
+  headword: sail
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel across water in a boat or ship powered by sails or engines.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.hike-verb
+  headword: hike
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To take a long, energetic walk in countryside hills or forests for ple...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.ride-verb
+  headword: ride
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To sit on and travel on a bicycle, motorcycle, or horse while controll...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.punctual
+  headword: punctual
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Doing something or arriving at the exact planned time; not arriving la...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.foggy
+  headword: foggy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Filled with or obscured by thick mist that makes it difficult to see a...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.coastal
+  headword: coastal
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Located along or situated near the edge of the sea or ocean.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.onward
+  headword: onward
+  part_of_speech: adverb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: In a continuing direction forward to the next stage of a journey.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.head-to
+  headword: head to
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: To travel or go in the direction of a particular destination.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.apron
+  headword: apron
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A protective garment worn over clothing while cooking or cleaning to k...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.teapot
+  headword: teapot
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A lidded vessel with a spout and handle used for brewing loose tea lea...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.fork
+  headword: fork
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A small table utensil with several pointed prongs used for picking up ...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.napkin
+  headword: napkin
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A small piece of paper or cloth used at the dining table for wiping li...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.chop-verb
+  headword: chop
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To cut vegetables or meat into small square pieces using a sharp kitch...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.stir-verb
+  headword: stir
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To move a spoon or utensil around in liquid food to mix ingredients sm...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.peel-verb
+  headword: peel
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To remove the outer skin, rind, or protective layer from fruit or raw ...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.pour-verb
+  headword: pour
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To cause a liquid to flow smoothly out of one container into another v...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.crispy
+  headword: crispy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Pleasantly crunchy and firm on the outside when bitten, especially fri...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.sour
+  headword: sour
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Having an acid taste like unripe lemons or fermented vinegar; not swee...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.deliciously
+  headword: deliciously
+  part_of_speech: adverb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: In a manner that provides an exceptionally pleasant taste, aroma, or d...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.warm-up-pv
+  headword: warm up
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: To heat cold leftover food or beverage until it is warm enough to enjo...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.flatmate
+  headword: flatmate
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A person with whom one rents and shares an apartment or flat.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.twin
+  headword: twin
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Either of two children or animals born at the same birth to the same m...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.uncle
+  headword: uncle
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: The brother of one's father or mother, or the husband of one's aunt.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.comfort-verb
+  headword: comfort
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To make someone feel less sorrowful, anxious, or distressed through ge...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.congratulate
+  headword: congratulate
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To express praise, pleasure, and good wishes to someone for an achieve...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.reassure
+  headword: reassure
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To say something reassuring to free someone from fear, anxiety, or dou...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.caring
+  headword: caring
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Displaying kindness, empathy, and helpful concern towards other indivi...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.talkative
+  headword: talkative
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Inclined to talk a lot in social conversations; communicative and chat...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.look-after
+  headword: look after
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To take care of or take responsibility for someone who needs assistanc...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.eraser
+  headword: eraser
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: A small block of rubber used for rubbing out pencil writing or marks o...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.ruler
+  headword: ruler
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: A straight flat strip of plastic or wood marked with centimetres, used...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.folder
+  headword: folder
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: A cardboard or plastic cover used for holding loose printed study shee...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.pronounce
+  headword: pronounce
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: To speak the sound of a word or letter using correct vocal sounds.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.translate
+  headword: translate
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: To express the meaning of words or text in a different human language.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.attentive
+  headword: attentive
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: Listening, observing, or watching very carefully without losing concen...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.take-notes
+  headword: take notes
+  part_of_speech: phrase
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: phrase
+  sense: To write down key facts or information systematically while listening ...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.keyboard
+  headword: keyboard
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: A panel of keys used for operating a computer or entering textual data...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.recharge
+  headword: recharge
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To restore electrical power in a battery by connecting it to a power s...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.unplug
+  headword: unplug
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To disconnect an electrical appliance by removing its plug from a wall...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.cordless
+  headword: cordless
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Operating without an electrical connecting wire; portable and powered ...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.wallet
+  headword: wallet
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.business
+  lexical_type: headword
+  sense: A small flat folding leather case used for holding paper money and ban...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.purchase-verb
+  headword: purchase
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.business
+  lexical_type: headword
+  sense: To acquire goods or services by paying a sum of money for them.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.sleepy
+  headword: sleepy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Feeling tired, drowsy, and ready to fall asleep.
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.calmly
+  headword: calmly
+  part_of_speech: adverb
+  cefr_level: A2
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a peaceful, quiet, and self-possessed manner without agitation or a...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.promote-verb
+  headword: promote
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To advance an employee to a higher position, rank, or seniority at wor...
+  reason_for_inclusion: Batch 004 A2 lexical unit balancing curriculum coverage.
+- id: vocab.condiment
+  headword: condiment
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A substance such as salt, mustard, or pickle that is used to add flavo...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.pastry
+  headword: pastry
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A dough of flour, fat, and water used as a base and crust for baked sw...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.portion
+  headword: portion
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: An amount of food served for one person, especially at a meal or in a ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.dairy
+  headword: dairy
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Food products made from or containing milk, such as cheese, butter, an...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.marinate
+  headword: marinate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To soak meat, fish, or vegetables in a seasoned sauce before cooking t...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.garnish
+  headword: garnish
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To decorate a culinary dish with a small amount of herbs or other colo...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.simmer
+  headword: simmer
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To stay just below boiling point while bubbling very gently during coo...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.steam-verb
+  headword: steam
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To cook food using the vapour produced by boiling water rather than im...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.wholesome
+  headword: wholesome
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Good for your health and physical well-being; nourishing and natural.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.appetizing
+  headword: appetizing
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Appealing to the sense of taste or smell; looking or smelling deliciou...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.savoury
+  headword: savoury
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Belonging to the category of salty or spicy food rather than sweet des...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.moderately
+  headword: moderately
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To a medium degree; neither excessively nor insufficiently.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.whip-up
+  headword: whip up
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: To prepare a meal or quick snack quickly and with little advance effor...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.landlady
+  headword: landlady
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A woman who owns and leases a house, apartment, or room to tenants.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.balcony
+  headword: balcony
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: An elevated platform built onto the outside wall of a building with a ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.attic
+  headword: attic
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A space or room just below the roof of a house, often used for storing...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.basement
+  headword: basement
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A floor of a building located partly or entirely below ground level.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.furnish
+  headword: furnish
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To provide a house or room with tables, chairs, beds, and other necess...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.decorate
+  headword: decorate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To make a room look more attractive by painting walls or putting up wa...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.assemble
+  headword: assemble
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To fit together the separate parts of a piece of furniture or machiner...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.rearrange
+  headword: rearrange
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To change the position, layout, or order of items in a living or worki...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.spacious
+  headword: spacious
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Having a large amount of room and open space to move around freely.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.cramped
+  headword: cramped
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Uncomfortably small or restrictive with insufficient space for movemen...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.smoothly
+  headword: smoothly
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Without any problems, disruptions, or sudden interruptions.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.settle-in
+  headword: settle in
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To become comfortable and accustomed to living in a new home or enviro...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.ferryboat
+  headword: ferryboat
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A boat designed for transporting passengers and vehicles across a rive...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.locomotive
+  headword: locomotive
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A powered railway engine that pulls or pushes carriages along tracks.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.carriage
+  headword: carriage
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: One of the separate passenger sections of a railway train.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.round-trip
+  headword: round-trip
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A complete journey to a destination and back to the starting point.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.wander
+  headword: wander
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: To walk slowly around an area without a fixed destination or urgent pu...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.stroll
+  headword: stroll
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: To walk in a leisurely, relaxed manner for pleasure rather than haste.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.roam
+  headword: roam
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel or explore freely over a wide geographic area without a stri...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.overtake
+  headword: overtake
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: To catch up with and pass another slower vehicle moving in the same di...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.remote
+  headword: remote
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: Far away from main population centres, cities, and major transport lin...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.bustling
+  headword: bustling
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: Full of energetic activity, lively crowds, and vibrant movement.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.overseas
+  headword: overseas
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: In, to, or by way of places situated across an ocean or foreign sea.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.stop-over
+  headword: stop over
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: To interrupt a long journey temporarily for a short stay before contin...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.apparatus
+  headword: apparatus
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: The technical equipment or machinery needed for a particular scientifi...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.microscope
+  headword: microscope
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: An optical instrument used for viewing very small objects magnified se...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.telescope
+  headword: telescope
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: An optical device designed to make distant celestial objects appear cl...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.calculate
+  headword: calculate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: To determine a mathematical or physical amount using numbers and formu...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.verify
+  headword: verify
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: To check that scientific data or facts are accurate through testing an...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.dissolve
+  headword: dissolve
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: To become incorporated into a liquid so as to form a uniform chemical ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.magnetize
+  headword: magnetize
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: To give magnetic properties to an iron or steel object so it attracts ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.scientific
+  headword: scientific
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: Based on or characterized by the rigorous methods and principles of sc...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.measurable
+  headword: measurable
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: Able to be measured or quantified using standard scientific units.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.precisely
+  headword: precisely
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: In an exact, meticulous manner with complete accuracy.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.neighbourhood
+  headword: neighbourhood
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A district or community within a larger town or city where people resi...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.population
+  headword: population
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: All the inhabitants of a particular town, area, or country considered ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.minority
+  headword: minority
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A smaller group of people within a community differing in race, religi...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.contribute
+  headword: contribute
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: To give money, time, or assistance towards achieving a common goal for...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.obey
+  headword: obey
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: To comply with or carry out the rules, laws, or instructions establish...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.cooperate
+  headword: cooperate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: To act together and work mutually towards a shared purpose or outcome.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.equal-adj
+  headword: equal
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: Having the same rights, status, or opportunities for all individuals i...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.peaceful
+  headword: peaceful
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: Free from disturbance, conflict, or violence; calm and orderly.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.communal
+  headword: communal
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: Shared by all members of a residential community; collective.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.common-good
+  headword: common good
+  part_of_speech: phrase
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: phrase
+  sense: The general benefit, welfare, and well-being of all members of a commu...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.confidant
+  headword: confidant
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A trusted person with whom one shares personal secrets and private mat...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.companion
+  headword: companion
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A person with whom one spends a great deal of time or travels with.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.peer
+  headword: peer
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A person who is the same age or has the same social position as you.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.rely
+  headword: rely
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To depend on someone with trust and full confidence.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.cherish
+  headword: cherish
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To protect and care for someone or something lovingly and treasure the...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.console-verb
+  headword: console
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To comfort someone who is sad, disappointed, or grieving.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.trustworthy
+  headword: trustworthy
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Able to be relied on as honest, truthful, and dependable.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.loyal
+  headword: loyal
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Giving firm and constant support or allegiance to a person, group, or ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.count-on
+  headword: count on
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To rely on someone with certainty to do what is promised or needed.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.remedy
+  headword: remedy
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A medicine, herbal treatment, or therapy that cures or relieves an ill...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.digestion
+  headword: digestion
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The biological process of breaking down food in the stomach and intest...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.injure
+  headword: injure
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To harm or damage a part of the physical body during an accident or wo...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.strengthen
+  headword: strengthen
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To make bodily muscles, bones, or immune resistance stronger and more ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.diagnose
+  headword: diagnose
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To identify the nature and cause of an illness by examining symptoms.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.energetic
+  headword: energetic
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Possessing or exhibiting high vitality, physical enthusiasm, and activ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.nutritious
+  headword: nutritious
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Efficient in providing the vitamins, proteins, and minerals necessary ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.cool-down
+  headword: cool down
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: To do gentle stretches and light exercise after a workout to return he...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.dilemma
+  headword: dilemma
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A difficult situation in which one must choose between two equally des...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.pinpoint-verb
+  headword: pinpoint
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To locate, identify, or determine something with extreme accuracy.
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.rule-of-thumb
+  headword: rule of thumb
+  part_of_speech: phrase
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: A practical and approximate guideline based on experience rather than ...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.clientele
+  headword: clientele
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.business
+  lexical_type: headword
+  sense: The customers or clients of a particular shop, restaurant, or business...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.compensate
+  headword: compensate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.business
+  lexical_type: headword
+  sense: To pay someone money or give value in exchange for work, damage, loss,...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.eco-friendly
+  headword: eco-friendly
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Not harmful to the natural environment; ecologically safe and sustaina...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.comprehend
+  headword: comprehend
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: To grasp mentally the full meaning or significance of a text or concep...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.ceremonial
+  headword: ceremonial
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Relating to or used for formal rituals, traditions, and public ceremon...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.log-in
+  headword: log in
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.technology
+  lexical_type: phrasal_verb
+  sense: To enter credentials such as username and password to access a compute...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.fluently
+  headword: fluently
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a smooth, graceful, and natural manner when speaking or reading a l...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.professionally
+  headword: professionally
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: In a manner that conforms to high standards of expertise, conduct, and...
+  reason_for_inclusion: Batch 004 B1 lexical unit balancing curriculum coverage.
+- id: vocab.sweetener
+  headword: sweetener
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: An artificial or natural substance added to food and drinks instead of...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.preservative
+  headword: preservative
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A chemical substance added to food or drinks to prevent decay or spoil...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.confectionery
+  headword: confectionery
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Sweets, chocolates, and candied treats collectively, or the retail sho...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.infuse
+  headword: infuse
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To steep herbs, fruit, or spices in hot liquid to extract their flavor...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.blanch
+  headword: blanch
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To plunge vegetables into boiling water briefly, then plunge into iced...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.caramelize
+  headword: caramelize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To cook sugar or foods with natural sugar until they turn golden brown...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.poach-verb
+  headword: poach
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To cook food gently in simmering liquid just below the boiling point, ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.delectable
+  headword: delectable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Extremely delicious, pleasant, and enticing to the palate.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.crunchy
+  headword: crunchy
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Making a sharp crisp sound when crushed or chewed; firm and crackling.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.flavourful
+  headword: flavourful
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Having a pronounced, rich, and enjoyable flavor; full of culinary tast...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.sparingly
+  headword: sparingly
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: In a restricted, economical, or moderate amount without wasteful abund...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.dish-out
+  headword: dish out
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: To distribute or serve food generously from a larger pot or bowl onto ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.serve-up
+  headword: serve up
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: To present and distribute a prepared meal or specialty dish to diners.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.expedition
+  headword: expedition
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: An organized journey undertaken by a group of people with a specific e...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.waterway
+  headword: waterway
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A river, canal, or other navigable body of water used as a regular tra...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.fare
+  headword: fare
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: The specified price charged to a passenger for travelling on a bus, tr...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.circumnavigate
+  headword: circumnavigate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel completely around the world or an island, especially by boat...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.trek-verb
+  headword: trek
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To undertake a long and arduous journey across difficult mountainous o...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.journey-verb
+  headword: journey
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel over a significant distance or duration to a remote destinat...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.panoramic
+  headword: panoramic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Providing an unobstructed, wide-angle view of a broad surrounding phys...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.hilly
+  headword: hilly
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Characterized by an undulating landscape featuring many natural hills ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.winding
+  headword: winding
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Following a course with continuous curves, turns, and bends rather tha...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.inland
+  headword: inland
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Towards or in the interior parts of a country or land away from the se...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.pull-in
+  headword: pull in
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: Of a vehicle or train, to arrive and come to a halt at a station platf...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.pull-over
+  headword: pull over
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: To steer a road vehicle to the roadside and bring it to a complete sto...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.fixture
+  headword: fixture
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: An item of plumbing or electrical equipment permanently attached to a ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.renovation
+  headword: renovation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: The process of repairing, updating, and improving a domestic building ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.mortgage
+  headword: mortgage
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A formal loan agreement in which a bank lends money to purchase proper...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.refurbish
+  headword: refurbish
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To renovate and redecorate a room or building to restore it to excelle...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.straighten-verb
+  headword: straighten
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To make neat, tidy, or aligned in an orderly manner; put things in ord...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.overhaul-verb
+  headword: overhaul
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To examine a mechanism thoroughly and make all necessary repairs or to...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.functional
+  headword: functional
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Designed to be practical, useful, and efficient rather than merely dec...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.habitable
+  headword: habitable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Suitable, safe, and comfortable enough for human beings to live in.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.methodically
+  headword: methodically
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: In an orderly, systematic, and well-organized manner according to a cl...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.clear-away
+  headword: clear away
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To remove objects or waste from a surface to leave it clean and unencu...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.clean-out
+  headword: clean out
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To clean the interior of a room, cupboard, or drawer thoroughly by rem...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.compound
+  headword: compound
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: A chemical substance formed from two or more elements chemically bonde...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.velocity
+  headword: velocity
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: The speed of something moving in a given specific directional path.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.evaporate
+  headword: evaporate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: To change from liquid state into vapour or gas through rising heat.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.condense
+  headword: condense
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: To transition from a gas or vapor state into a denser liquid form.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.liquefy
+  headword: liquefy
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: To convert a solid or gas into a liquid state through pressure or heat...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.thermal
+  headword: thermal
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to heat, temperature differences, or the retention of warmth.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.cellular
+  headword: cellular
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to or consisting of microscopic biological cells.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.synthetic
+  headword: synthetic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: Made by chemical synthesis especially to imitate a natural product; ar...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.chemically
+  headword: chemically
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: By means of chemical processes, reactions, or molecular properties.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.experimentally
+  headword: experimentally
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: By means of controlled experimentation and empirical testing rather th...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.hierarchy
+  headword: hierarchy
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: A system in which members of an organization or society are ranked acc...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.demographic
+  headword: demographic
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: A particular sector of a population defined by age, income, or social ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.integrate
+  headword: integrate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: To bring people or communities into equal participation in a social gr...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.reform-verb
+  headword: reform
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: To make changes in a social, political, or economic system in order to...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.unify
+  headword: unify
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: To bring together different political or social factions into a single...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.inclusive
+  headword: inclusive
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: Aiming to include and accommodate people of all backgrounds, abilities...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.marginalized
+  headword: marginalized
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: Pushed to the outer edges of society with reduced power, voice, and so...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.pluralistic
+  headword: pluralistic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: Characterized by the coexistence of diverse ethnic, cultural, and poli...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.socially
+  headword: socially
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: In a way that relates to human society, social relationships, or colle...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.social-mobility
+  headword: social mobility
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: phrase
+  sense: The ability of individuals or families to move up or down the socioeco...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.lineage
+  headword: lineage
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Direct descent from an ancestor; ancestry or pedigree traced through g...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.relic
+  headword: relic
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: An ancient object, custom, or building that has survived from an earli...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.commemorate
+  headword: commemorate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To recall and show respect for an important historical event or deceas...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.symbolize
+  headword: symbolize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To serve as a symbol, representation, or meaningful emblem of an idea ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.revere
+  headword: revere
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To feel deep respect or profound admiration for someone of extraordina...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.ancestral
+  headword: ancestral
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Inherited from, belonging to, or associated with one's historical ance...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.artistic
+  headword: artistic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Having or revealing natural creative skill in painting, music, theatre...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.festive
+  headword: festive
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Cheerful and celebratory, suitable for a holiday, feast, or public fes...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.historically
+  headword: historically
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: With reference to past historical events, traditions, or long-term evo...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.cultural-heritage
+  headword: cultural heritage
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: phrase
+  sense: The legacy of tangible artifacts and intangible traditions inherited f...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.sanctuary
+  headword: sanctuary
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: A protected natural area where wild animals and birds are sheltered fr...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.wilderness
+  headword: wilderness
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: An uncultivated, wild natural region undisturbed by human habitation o...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.pollute
+  headword: pollute
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To contaminate the natural environment, air, or water with harmful was...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.restore-verb
+  headword: restore
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To return damaged natural ecosystems, forests, or wetlands to their or...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.endanger
+  headword: endanger
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To put an animal species, forest, or ecosystem at serious risk of exti...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.hazardous
+  headword: hazardous
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Risky and potentially dangerous, especially to environmental safety or...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.arid
+  headword: arid
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Having very little or no rain; too dry and barren to support normal ag...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.environmentally
+  headword: environmentally
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a manner relating to the natural environment or ecological preserva...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.dry-up
+  headword: dry up
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: phrasal_verb
+  sense: To lose all moisture and water completely, especially of streams, lake...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.kinship
+  headword: kinship
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Blood relationship or strong feeling of affinity and mutual family con...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.rivalry
+  headword: rivalry
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Competition between two individuals or teams striving for the same sup...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.betray
+  headword: betray
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To break trust or be disloyal to a friend or partner in a hurtful mann...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.befriend
+  headword: befriend
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To act as a friend to someone, especially someone who is lonely or in ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.disappoint
+  headword: disappoint
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To fail to fulfill the hopes, expectations, or trust of someone who ca...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.devoted
+  headword: devoted
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Extremely loving, loyal, and dedicated to a person or family over time...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.cordial
+  headword: cordial
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Warm, polite, and friendly in a respectful interpersonal manner.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.affectionately
+  headword: affectionately
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: In a way that demonstrates deep affection, warmth, fondness, or tender...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.make-up-with
+  headword: make up with
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To forgive and re-establish friendly relations after an argument or di...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.posture
+  headword: posture
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The position in which someone holds their body when standing, sitting,...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.immunity
+  headword: immunity
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The physiological ability of an organism to resist a particular infect...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.endure
+  headword: endure
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To suffer something painful or difficult patiently without giving up o...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.fatigued
+  headword: fatigued
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Feeling extreme physical or mental tiredness resulting from sustained ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.vigorous
+  headword: vigorous
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Characterized by forceful physical energy, strenuous effort, and robus...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.hydrated
+  headword: hydrated
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Containing sufficient bodily water and fluid balance to function optim...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.vigorously
+  headword: vigorously
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: With great physical force, high energy, and resolute dynamism.
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.cut-back-on
+  headword: cut back on
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: To reduce one's consumption or expenditure of something such as sugar ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.hurdle
+  headword: hurdle
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A problem, obstacle, or difficulty that must be solved before achievin...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.glitch
+  headword: glitch
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A sudden, usually temporary malfunction or minor technical fault in a ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.cope
+  headword: cope
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To manage and deal successfully with a difficult situation or heavy wo...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.bypass
+  headword: bypass
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To go around or avoid a technical bottleneck, obstacle, or rigid proce...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.feasible
+  headword: feasible
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Capable of being done, achieved, or implemented easily and successfull...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.work-around
+  headword: work around
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To find an alternative way to overcome or circumvent an obstacle witho...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.contingency-plan
+  headword: contingency plan
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: A backup plan designed to take effect only if an unexpected emergency ...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.thesis
+  headword: thesis
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: A long research essay or proposition maintained by systematic academic...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.categorize
+  headword: categorize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To classify or place people or things into particular defined groups b...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.methodical
+  headword: methodical
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Characterized by systematic, orderly, and disciplined procedures in th...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.deductively
+  headword: deductively
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: By reasoning logically from general principles to arrive at a specific...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.food-for-thought
+  headword: food for thought
+  part_of_speech: idiom
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: idiom
+  sense: An idea, proposition, or point of information that warrants serious an...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.merchandise
+  headword: merchandise
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: Goods and products offered for sale in commercial markets or retail st...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.reimburse
+  headword: reimburse
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: To repay an employee or customer for out-of-pocket expenses incurred o...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.enrol
+  headword: enrol
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: To officially register oneself or someone else as a participant or mem...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.configure
+  headword: configure
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To set up and customize a software program or computer system for a sp...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.articulate-verb
+  headword: articulate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To express an idea, thought, or feeling clearly, fluently, and persuas...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.oversee
+  headword: oversee
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To supervise a person, project, or process to ensure work is done corr...
+  reason_for_inclusion: Batch 004 B2 lexical unit balancing curriculum coverage.
+- id: vocab.mosaic
+  headword: mosaic
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A complex combination of diverse cultural elements forming a cohesive ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.tapestry
+  headword: tapestry
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: An intricate combination or complex sequence of cultural events, tradi...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.patronage
+  headword: patronage
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: The financial support, encouragement, or privilege bestowed by a wealt...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.sensibility
+  headword: sensibility
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: The capacity to respond intellectually and emotionally to aesthetic im...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.embody
+  headword: embody
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To express, realize, or exemplify a cultural principle or aesthetic id...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.dramatize
+  headword: dramatize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To adapt a novel, poem, or historical narrative into a powerful theatr...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.immortalize
+  headword: immortalize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To confer enduring, timeless fame or cultural memory upon a person or ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.resonate
+  headword: resonate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To evoke a deep emotional connection or lasting intellectual harmony i...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.venerate
+  headword: venerate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To regard someone or something with profound, sacred reverence and tra...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.transcend
+  headword: transcend
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: To rise above or go beyond the conventional boundaries of time, cultur...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.evocative
+  headword: evocative
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Bringing strong images, memories, or feelings vividly into the conscio...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.timeless
+  headword: timeless
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Not affected by the passage of time or changing cultural fashions; ete...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.nuanced
+  headword: nuanced
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Characterized by subtle distinctions, fine gradations, and sophisticat...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.allegorical
+  headword: allegorical
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Containing a hidden moral or political meaning expressed through symbo...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.thematic
+  headword: thematic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Relating to or organized according to unified subjects, motifs, or art...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.subtly
+  headword: subtly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: In a delicate, refined, or understated manner that is not immediately ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.poignantly
+  headword: poignantly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: In a manner that evokes a keen sense of sadness, touching sorrow, or s...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.spring-from
+  headword: spring from
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: phrasal_verb
+  sense: To originate or arise from a specific historical tradition or cultural...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.trace-back-to
+  headword: trace back to
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: phrasal_verb
+  sense: To discover and track the original source, provenance, or historical o...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.living-heritage
+  headword: living heritage
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: phrase
+  sense: Cultural practices, knowledge, and artistic traditions actively practi...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.biosphere
+  headword: biosphere
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: The global ecological system integrating all living beings and their a...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.canopy
+  headword: canopy
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: The high continuous upper layer of foliage and tree branches formed by...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.catchment
+  headword: catchment
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: The natural geographical basin or drainage area from which rainfall fl...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.degradation
+  headword: degradation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: The progressive deterioration and decline of environmental quality, la...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.sequester
+  headword: sequester
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To absorb, isolate, and trap carbon dioxide from the atmosphere inside...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.disrupt
+  headword: disrupt
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To drastically interrupt the normal functioning, cycles, or equilibriu...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.ravage
+  headword: ravage
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To cause extensive and devastating damage, destruction, or ruin to lan...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.plunder
+  headword: plunder
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To exploit natural mineral or timber resources aggressively and unsust...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.imperil
+  headword: imperil
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To put delicate environmental habitats, wildlife, or drinking supplies...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.pristine
+  headword: pristine
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: In its original, unspoiled condition; completely clean and unpolluted ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.catastrophic
+  headword: catastrophic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Involving or causing sudden, extensive, and disastrous ecological or h...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.resilient-adj
+  headword: resilient
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Able to withstand or recover quickly from difficult conditions, enviro...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.vulnerable
+  headword: vulnerable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Susceptible to physical harm, extinction, or environmental damage from...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.catastrophically
+  headword: catastrophically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: With disastrous, ruinous, and irreversible ecological consequences.
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.irreversibly
+  headword: irreversibly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a way that cannot be undone, altered, or returned to an original co...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.spill-over-into
+  headword: spill over into
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: phrasal_verb
+  sense: To spread beyond initial boundaries into surrounding ecological habita...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.take-a-toll-on
+  headword: take a toll on
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: phrasal_verb
+  sense: To cause gradual damage, wear, or suffering over an extended period of...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.carbon-footprint
+  headword: carbon footprint
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: phrase
+  sense: The total amount of greenhouse gases emitted directly or indirectly by...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.metabolism
+  headword: metabolism
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The bodily biochemical processes that convert nutrients into energy to...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.remission
+  headword: remission
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A temporary or permanent diminution of the severity of disease symptom...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.constitution
+  headword: constitution
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: An individual's physical makeup, inherent vitality, and natural bodily...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.nourish
+  headword: nourish
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To provide the essential food and minerals necessary for bodily health...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.invigorate
+  headword: invigorate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To give renewed strength, active energy, and vibrant vitality to someo...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.afflict
+  headword: afflict
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To cause persistent physical pain, disease, or deep suffering to a per...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.impair
+  headword: impair
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To damage, weaken, or worsen the faculties of vision, hearing, or bodi...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.incapacitate
+  headword: incapacitate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To deprive someone of physical or mental capacity through severe injur...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.therapeutic
+  headword: therapeutic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Relating to the healing of disease or contributing to overall physical...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.restorative
+  headword: restorative
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Having the beneficial property of restoring vitality, health, and phys...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.salutary
+  headword: salutary
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Producing good effects or beneficial bodily improvements despite initi...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.pathological
+  headword: pathological
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Relating to or caused by a physical or mental disease; manifesting an ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.therapeutically
+  headword: therapeutically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: In a manner that contributes to healing, rehabilitation, or medical th...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.chronically
+  headword: chronically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: In a persistent, recurring manner over an extended period of time; con...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.bounce-back-from
+  headword: bounce back from
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: To recover quickly and successfully from a severe injury, illness, or ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.ward-off
+  headword: ward off
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: To prevent an infection, viral illness, or physical danger from affect...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.clean-bill-of-health
+  headword: clean bill of health
+  part_of_speech: idiom
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: idiom
+  sense: An official confirmation or medical declaration that someone is comple...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.strife
+  headword: strife
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Angry or bitter disagreement, contention, or conflict over fundamental...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.enfranchisement
+  headword: enfranchisement
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: The granting of the legal right to vote and full civic participation i...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.polarize
+  headword: polarize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: To divide a community into two sharply contrasting and hostile ideolog...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.entrench
+  headword: entrench
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: To establish an attitude, privilege, or inequality so firmly that chan...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.emancipate
+  headword: emancipate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: To set free from legal, social, or political restrictions and servitud...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.entrenched
+  headword: entrenched
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Firmly fixed and difficult to change, especially deeply held beliefs o...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.polarized
+  headword: polarized
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Divided into completely opposing factions with stark ideological diffe...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.disadvantaged
+  headword: disadvantaged
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Lacking the basic socioeconomic resources, opportunities, or comforts ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.systemically
+  headword: systemically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: In a manner relating to or affecting an entire societal, legal, or ins...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.clamour-for
+  headword: clamour for
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: phrasal_verb
+  sense: To demand something loudly, publicly, and insistently by large groups ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.social-cohesion
+  headword: social cohesion
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: phrase
+  sense: The strength of interpersonal relationships, trust, and shared values ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.camaraderie
+  headword: camaraderie
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Mutual trust, genuine goodwill, and lighthearted friendship built thro...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.reconciliation
+  headword: reconciliation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: The restoration of friendly relations and harmony following an estrang...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.nurture
+  headword: nurture
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To care for, encourage the growth of, and protect a person or close in...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.jeopardize
+  headword: jeopardize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To put a valued relationship or mutual trust at serious risk of collap...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.estrange
+  headword: estrange
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To cause someone to become alienated, hostile, or unsympathetic to a f...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.unwavering
+  headword: unwavering
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Steady, resolute, and unchanging in emotional loyalty, affection, or m...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.tumultuous
+  headword: tumultuous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Characterized by emotional disorder, turbulent conflict, and intense v...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.strained
+  headword: strained
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Marked by unspoken tension, guarded unease, and lack of natural warmth...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.unwaveringly
+  headword: unwaveringly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: In a constant, determined, and reliably loyal manner without hesitatio...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.open-up-to
+  headword: open up to
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To speak honestly and vulnerably about personal emotions and innermost...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.pillar-of-strength
+  headword: pillar of strength
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: phrase
+  sense: A dependable, courageous person who provides constant emotional suppor...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.mutation
+  headword: mutation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: A permanent structural alteration in the DNA genetic sequence of an or...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.corollary
+  headword: corollary
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: A direct or natural consequence or proposition that follows from one a...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.mutate
+  headword: mutate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To undergo or cause to undergo an alteration in physical form or genet...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.propagate
+  headword: propagate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To transmit motion, light, or sound waves through a physical medium.
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.deflect
+  headword: deflect
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To cause a beam of light, particle trajectory, or force to change its ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.anomalous
+  headword: anomalous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Deviating from what is standard, normal, expected, or scientifically t...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.theoretical
+  headword: theoretical
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Concerned with or based on the principles of science rather than pract...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.molecular
+  headword: molecular
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to or consisting of molecules at a fundamental microscopic sc...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.speculative
+  headword: speculative
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Based on conjecture or theoretical contemplation rather than establish...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.conceptually
+  headword: conceptually
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: In terms of abstract ideas, underlying principles, or conceptual desig...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.competence
+  headword: competence
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: The ability to perform a task, language, or clinical skill successfull...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.proficiency
+  headword: proficiency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: A high degree of skill, expertise, and fluency in a foreign language o...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.instil
+  headword: instil
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: To gradually but firmly establish a moral value, work ethic, or critic...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.internalize
+  headword: internalize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: To make attitudes, grammar patterns, or philosophical principles an un...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.rigorous-adj
+  headword: rigorous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Extremely thorough, exhaustive, and adhering strictly to exacting acad...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.intellectual
+  headword: intellectual
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to the intellect, rational faculties, and serious theoretical...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.pedagogically
+  headword: pedagogically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: From the perspective of educational theory, teaching methods, and inst...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.read-up-on
+  headword: read up on
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To read a great deal about a particular academic topic in order to bec...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.deadlock
+  headword: deadlock
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A situation, typically involving opposing parties, in which no progres...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.decipher
+  headword: decipher
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To succeed in understanding, interpreting, or identifying the meaning ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.salvage
+  headword: salvage
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To rescue or retrieve valuable components from impending disaster, rui...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.intractable
+  headword: intractable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Hard to control, manage, or deal with; extremely stubborn or difficult...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.ingenious
+  headword: ingenious
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Clever, original, and inventive in finding practical solutions to comp...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.ingeniously
+  headword: ingeniously
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: In a remarkably clever, resourceful, and original manner.
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.puzzle-out
+  headword: puzzle out
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To solve or understand a complicated, bewildering problem through conc...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.conjecture
+  headword: conjecture
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: An opinion or conclusion formed on the basis of incomplete empirical i...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.premise
+  headword: premise
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: A previous statement or theoretical proposition from which another con...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.theorize
+  headword: theorize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To formulate or discuss academic theories about an observed phenomenon...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.conceptualize
+  headword: conceptualize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To form an abstract concept or general intellectual idea of something ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.analytical
+  headword: analytical
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Relating to or using analysis or logical, systematic reasoning to exam...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.cogently
+  headword: cogently
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a clear, logical, and powerfully persuasive manner that compels int...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.beg-the-question
+  headword: beg the question
+  part_of_speech: idiom
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: idiom
+  sense: To invite an obvious fundamental question or to assume the truth of a ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.encryption
+  headword: encryption
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: The process of converting plain information or data into a secure math...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.automate-verb
+  headword: automate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To convert a manual operational process to largely automatic, computer...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.digitize
+  headword: digitize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To convert paper documents, audio recordings, or analog media into dig...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.modular
+  headword: modular
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: Constructed with standardized independent units or components for flex...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.algorithmically
+  headword: algorithmically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: By means of an automated, step-by-step mathematical algorithm or compu...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.roll-out
+  headword: roll out
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: phrasal_verb
+  sense: To launch or officially introduce a new technical system, software rel...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.brevity
+  headword: brevity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: The concise and exact use of words in writing or speech; shortness of ...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.narrate
+  headword: narrate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: To give a spoken or written account of connected events; recount a sto...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.unambiguous
+  headword: unambiguous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Expressed in a clear, definite manner not open to more than one interp...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.lucidly
+  headword: lucidly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a clear, easily intelligible, and transparently reasoned manner.
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.competency
+  headword: competency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: An essential qualification, professional capability, or demonstrable o...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.pilot-verb
+  headword: pilot
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To test or run a new professional scheme, technology, or program on an...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.industrious
+  headword: industrious
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Consistently diligent, hardworking, and productive in professional tas...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.capitalize
+  headword: capitalize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: To take full commercial advantage of an opportunity or strategic compe...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.profitable
+  headword: profitable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: Yielding financial gain, economic profit, or useful commercial advanta...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.strategically
+  headword: strategically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: In a manner that serves long-term business goals, competitive position...
+  reason_for_inclusion: Batch 004 C1 lexical unit balancing curriculum coverage.
+- id: vocab.scholasticism
+  headword: scholasticism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: A traditional method of learning and philosophical discourse emphasizi...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.didactic-method
+  headword: didactic method
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: An educational approach structured primarily around direct instruction...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.epistemic-community
+  headword: epistemic community
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: A network of recognized knowledge-based experts who share principled b...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.pontificate
+  headword: pontificate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To express one's opinions in an authoritative, pompous, or dogmatic wa...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.intellectualize
+  headword: intellectualize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To analyze or explain something in purely intellectual, abstract, or r...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.contextualize
+  headword: contextualize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To place an idea, event, or piece of evidence within its relevant surr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.philosophize
+  headword: philosophize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To speculate, theorize, or engage in deep abstract reflection about fu...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.propound
+  headword: propound
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To put forward an idea, hypothesis, or theory for consideration, debat...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.explicate
+  headword: explicate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To analyze and explain the detailed implications, principles, or hidde...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.hermeneutic
+  headword: hermeneutic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Concerning interpretation and understanding, particularly the philosop...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.polymathic
+  headword: polymathic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Possessing, demonstrating, or drawing upon encyclopedic learning acros...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.autodidactic
+  headword: autodidactic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to or acquired through independent self-education rather than...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.socratic
+  headword: socratic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to Socrates or his pedagogical method of cooperative argument...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.doctrinal
+  headword: doctrinal
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to, based on, or strictly adhering to an established system o...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.intellective
+  headword: intellective
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to or characterized by the faculty of pure intellect, reasoni...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.scholastically
+  headword: scholastically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: In a manner relating to academic education, scholarly achievement, or ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.autodidactically
+  headword: autodidactically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: By means of independent self-directed learning without formal institut...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.epistemically
+  headword: epistemically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: In a manner relating to the nature, grounds, justification, or limits ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.bone-up-on
+  headword: bone up on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To study a subject intensively and thoroughly within a short period, t...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.body-of-knowledge
+  headword: body of knowledge
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrase
+  sense: The complete, structured set of concepts, terms, and activities that m...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.have-at-fingertips
+  headword: have something at one's fingertips
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: idiom
+  sense: To possess comprehensive information, facts, or specialized knowledge ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.fault-tolerance
+  headword: fault tolerance
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: The structural capability of a computing system to continue operating ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.algorithmic-governance
+  headword: algorithmic governance
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: The institutional regulation, monitoring, and administration of public...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.computational-complexity
+  headword: computational complexity
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: The intrinsic amount of time, memory, or computational resources requi...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.parallelize
+  headword: parallelize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To adapt, redesign, or execute a computing task across multiple proces...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.virtualize
+  headword: virtualize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To create a software-based, virtual version of a computing resource, s...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.operationalize
+  headword: operationalize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To put a theoretical system, conceptual framework, or algorithmic mode...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.instrument
+  headword: instrument
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To equip software code or computing infrastructure with diagnostic mon...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.cryptographic
+  headword: cryptographic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Relating to the mathematical techniques and computational protocols us...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.concurrent
+  headword: concurrent
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Occurring, operating, or executing simultaneously within overlapping p...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.stateless
+  headword: stateless
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Describing a system, protocol, or software architecture that does not ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.polymorphic
+  headword: polymorphic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Occurring in several distinct forms, or in software engineering, descr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.computationally
+  headword: computationally
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: In a manner relating to computational capacity, mathematical processin...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.concurrently
+  headword: concurrently
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: At the exact same time; simultaneously and in parallel.
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.spin-up
+  headword: spin up
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: phrasal_verb
+  sense: To instantiate, initialize, or launch an automated virtual machine, co...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.provenance
+  headword: provenance
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: The documented history of ownership, custodial origin, and authenticit...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.historiography
+  headword: historiography
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: The critical study of the methodology, interpretations, and ideologica...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.lionize
+  headword: lionize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To treat someone with great public acclaim, adulation, or celebration ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.canonize
+  headword: canonize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To officially elevate a work of literature, art, or thinker to an acce...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.mythologize
+  headword: mythologize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: To convert realistic historical events, individuals, or movements into...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.quixotic
+  headword: quixotic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Extremely idealistic, unrealistic, romantic, or impractical in the pur...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.visceral
+  headword: visceral
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Originating from deep inward emotional instincts rather than reasoned ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.rhapsodic
+  headword: rhapsodic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Extravagantly enthusiastic, ecstatic, or emotionally exalted in artist...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.viscerally
+  headword: viscerally
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: In a manner driven by deep instinctual emotion rather than intellectua...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.hark-back-to
+  headword: hark back to
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: phrasal_verb
+  sense: To recall, evoke, or return to an earlier artistic style, historical t...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.strike-a-chord
+  headword: strike a chord
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: idiom
+  sense: To elicit a strong emotional resonance, sympathetic recognition, or de...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.parochialism
+  headword: parochialism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A narrow, limited outlook or policy focused exclusively on local conce...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.tribalism
+  headword: tribalism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Fierce, uncritical loyalty to one's own social, political, or cultural...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.ostracize
+  headword: ostracize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: To systematically exclude, shun, or banish an individual from a social...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.subjugate
+  headword: subjugate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: To bring a population, nation, or social group under absolute control,...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.secularize
+  headword: secularize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: To transfer state institutions, education, legal frameworks, or civic ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.patriarchal
+  headword: patriarchal
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Relating to or characteristic of a social or political system where po...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.chauvinistic
+  headword: chauvinistic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Displaying exaggerated, aggressive, or prejudiced belief in the natura...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.polarizing
+  headword: polarizing
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Causing sharp, irreconcilable divisions of public opinion, sentiment, ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.parochially
+  headword: parochially
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: In a narrow, insular manner limited to immediate regional interests an...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.clamp-down-on
+  headword: clamp down on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: phrasal_verb
+  sense: To take resolute, coercive, or punitive governmental or institutional ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.level-the-playing-field
+  headword: level the playing field
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: idiom
+  sense: To establish fair conditions, regulatory equality, or equal opportunit...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.predicament
+  headword: predicament
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A complex, perplexing, or perilous situation from which extraction is ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.logjam
+  headword: logjam
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A state of total deadlock, operational blockage, or paralysis where pr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.obviate
+  headword: obviate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To anticipate and eliminate a need, risk, or difficulty in advance, re...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.redress
+  headword: redress
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To remedy, rectify, or make amends for an unfair situation, injury, gr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.nullify
+  headword: nullify
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To invalidate, cancel, or render something legally void or operational...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.efficacious
+  headword: efficacious
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Successful in producing the intended result; highly effective in resol...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.tenable
+  headword: tenable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Able to be maintained, defended, or justified against attack, logical ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.expediently
+  headword: expediently
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: In a manner suited to achieving a practical end quickly and efficientl...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.hammer-out
+  headword: hammer out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To reach an agreement, treaty, or workable solution through long, inte...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.a-moot-point
+  headword: a moot point
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: A matter that is open to argument or debate, but typically of no pract...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.nip-in-the-bud
+  headword: nip something in the bud
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: idiom
+  sense: To stop, suppress, or resolve an emerging problem, conflict, or bad ha...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.hyperbole
+  headword: hyperbole
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Deliberate and extravagant rhetorical exaggeration used for emphasis o...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.prevaricate
+  headword: prevaricate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To speak, argue, or respond evasively and equivocally in order to conc...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.dissemble
+  headword: dissemble
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To disguise, conceal, or deliberately misrepresent one's real motives,...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.rebut
+  headword: rebut
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To systematically claim or prove that an accusation, argument, or piec...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.trenchant
+  headword: trenchant
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Incisive, sharp, forceful, and vigorously effective in expression or c...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.pellucid
+  headword: pellucid
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Extremely clear, transparent, and easy to comprehend in intellectual s...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.laconic
+  headword: laconic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Using very few words in speech or writing; concise to the point of see...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.trenchantly
+  headword: trenchantly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a sharp, incisive, and vigorously perceptive or critical manner.
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.pellucidly
+  headword: pellucidly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: In an impeccably clear, lucid, and unambiguous manner.
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.gloss-over
+  headword: gloss over
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: phrasal_verb
+  sense: To treat a serious mistake, contentious flaw, or unfavorable fact ligh...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.speak-volumes
+  headword: speak volumes
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: idiom
+  sense: To convey an enormous amount of revealing meaning, truth, or insight w...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.desertification
+  headword: desertification
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The gradual transformation of fertile, arable land into arid, unproduc...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.biomagnification
+  headword: biomagnification
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The progressive bioaccumulation of toxic chemical pollutants at consec...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.replenish
+  headword: replenish
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To restore, refill, or build up an exhausted natural supply, water tab...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.reclaim
+  headword: reclaim
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To recover damaged, abandoned, or submerged land or ecosystems and res...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.desalinate
+  headword: desalinate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To remove dissolved mineral salts and impurities from seawater or brac...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.ecocentric
+  headword: ecocentric
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Centering philosophy, ethics, and ecological policies around the intri...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.perennial
+  headword: perennial
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Lasting, persisting, or recurring continuously through many years, or ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.perennially
+  headword: perennially
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a persistent, continually recurring, or enduring manner year after ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.die-off
+  headword: die off
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: phrasal_verb
+  sense: To perish or become extinct gradually until very few or none of an org...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.tipping-point
+  headword: tipping point
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: phrase
+  sense: A critical ecological or environmental threshold beyond which minor di...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.symbiosis
+  headword: symbiosis
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: A close, prolonged, and ecologically intimate physiological associatio...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.entropy
+  headword: entropy
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: A fundamental thermodynamic measure of the disorder, randomness, or th...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.coalesce
+  headword: coalesce
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To come together, merge, or fuse separate physical elements, droplets,...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.transmute
+  headword: transmute
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To alter or transform the fundamental nature, physical state, or chemi...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.calibrate
+  headword: calibrate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To precisely adjust, standardize, and verify an analytical instrument ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.symbiotic
+  headword: symbiotic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Characterized by, relating to, or engaging in a mutually beneficial, i...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.falsifiable
+  headword: falsifiable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Capable of being tested, challenged, and proven false through empirica...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.homeostatic
+  headword: homeostatic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to the physiological or mechanical self-regulating processes ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.inductively
+  headword: inductively
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: By reasoning from specific empirical observations to derive broad, gen...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.a-quantum-leap
+  headword: a quantum leap
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: idiom
+  sense: A sudden, monumental advance, breakthrough, or qualitative transformat...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.presenteeism
+  headword: presenteeism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: The workplace practice of remaining at one's desk or job for excessive...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.subcontract
+  headword: subcontract
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To assign, outsource, or delegate parts of a larger commercial contrac...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.deputize
+  headword: deputize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To officially authorize, empower, or appoint someone to act as a tempo...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.enterprising
+  headword: enterprising
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Showing initiative, resourcefulness, energetic drive, and commercial w...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.punctilious
+  headword: punctilious
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Showing meticulous, scrupulous, and painstaking attention to formal pr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.industriously
+  headword: industriously
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: In a diligent, steadily productive, and hardworking manner.
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.step-down
+  headword: step down
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: phrasal_verb
+  sense: To resign voluntarily from an important executive office, political le...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.track-record
+  headword: track record
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: phrase
+  sense: The documented past history of achievements, failures, performance, or...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.teleology
+  headword: teleology
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: The philosophical doctrine or analytical approach that explains phenom...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.problematize
+  headword: problematize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To critically question, interrogate, or reveal hidden complexities and...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.teleological
+  headword: teleological
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Relating to or based on the explanation of phenomena by their ultimate...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.apodictic
+  headword: apodictic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Expressing, displaying, or possessing absolute, necessary, and incontr...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.axiomatically
+  headword: axiomatically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a manner taken to be self-evidently true, unquestionable, or establ...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.bear-out
+  headword: bear out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: phrasal_verb
+  sense: To substantiate, confirm, or verify the validity of a hypothesis, pred...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.in-the-final-analysis
+  headword: in the final analysis
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: phrase
+  sense: When all relevant factors, subtleties, and evidence have been thorough...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.split-hairs
+  headword: split hairs
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: idiom
+  sense: To argue pedantically over petty, trivial, or insignificant distinctio...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.arbitrage
+  headword: arbitrage
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: The simultaneous purchase and sale of an asset in different markets to...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.amortize
+  headword: amortize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: To gradually extinguish a financial debt through scheduled periodic in...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.illiquid
+  headword: illiquid
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: Describing an asset that cannot be quickly converted into cash without...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.monopolistic
+  headword: monopolistic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: Relating to, characterized by, or seeking exclusive, uncompetitive con...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.
+- id: vocab.speculatively
+  headword: speculatively
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: In a manner driven by high-risk financial speculation on market moveme...
+  reason_for_inclusion: Batch 004 C2 lexical unit balancing curriculum coverage.

@@ -1,0 +1,414 @@
+- id: vocab.strategy
+  headword: strategy
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈstræt.ə.dʒi/
+  audio_ref: null
+  definition_en: A comprehensive plan of action designed to achieve long-term objectives and gain sustainable advantage.
+  meaning_tr: strateji, uzun vadeli plan
+  collocations:
+    - text: business strategy
+      tr: iş stratejisi
+    - text: formulate a strategy
+      tr: strateji geliştirmek / formüle etmek
+    - text: growth strategy
+      tr: büyüme stratejisi
+    - text: execute a strategy
+      tr: stratejiyi uygulamak
+  examples:
+    - en: "The board approved a digital transformation strategy to modernize customer touchpoints."
+      tr: "Yönetim kurulu, müşteri temas noktalarını modernize etmek için bir dijital dönüşüm stratejisini onayladı."
+      context: Corporate Leadership
+    - en: "Our product strategy focuses on developer productivity and seamless platform integration."
+      tr: "Ürün stratejimiz, geliştirici üretkenliğine ve sorunsuz platform entegrasyonuna odaklanmaktadır."
+      context: Product Management
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Strateji yapmak" kalıbı İngilizcede "make a strategy" yerine "develop a strategy", "formulate a strategy" veya "devise a strategy" olarak ifade edilir.
+      incorrect_example: "The leadership team made an aggressive expansion strategy."
+      correct_example: "The leadership team formulated an aggressive expansion strategy."
+  register: business
+  topic_tags:
+    - strategy
+    - planning
+    - corporate-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.criterion
+  headword: criterion
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /kraɪˈtɪə.ri.ən/
+  audio_ref: null
+  definition_en: A principle, standard, or metric by which something is judged, evaluated, or decided.
+  meaning_tr: kriter, ölçüt, kıstas
+  collocations:
+    - text: primary criterion
+      tr: birincil ölçüt
+    - text: selection criteria
+      tr: seçim kriterleri
+    - text: meet the criteria
+      tr: kriterleri karşılamak
+  examples:
+    - en: "System latency was the primary criterion used to evaluate candidate database architectures."
+      tr: "Sistem gecikmesi, aday veritabanı mimarilerini değerlendirmek için kullanılan birincil ölçüttü."
+      context: System Architecture
+    - en: "Applicants must satisfy every technical criterion listed in the job specification."
+      tr: "Adayların iş tanımında listelenen her teknik kriteri karşılaması gerekmektedir."
+      context: Talent Acquisition
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Criterion" tekildir; çoğul hali ise "criteria" sözcüğüdür. Türkçede sıklıkla tekil bir durum için bile çoğul olan "criteria" yanlış kullanılır. Tekil özne ile "criterion is...", çoğul ile "criteria are..." denmelidir.
+      incorrect_example: "What is the main criteria for promotion?"
+      correct_example: "What is the main criterion for promotion?"
+  register: academic
+  topic_tags:
+    - evaluation
+    - standards
+    - metrics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.trend
+  headword: trend
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /trend/
+  audio_ref: null
+  definition_en: A general direction in which market demand, user behavior, or technology is developing or changing over time.
+  meaning_tr: eğilim, akım, yönelim, trend
+  collocations:
+    - text: upward trend
+      tr: yukarı yönlü eğilim
+    - text: emerging trend
+      tr: yeni ortaya çıkan akım
+    - text: market trend
+      tr: pazar eğilimi
+    - text: reverse the trend
+      tr: eğilimi tersine çevirmek
+  examples:
+    - en: "Data analysts observed a steady upward trend in mobile subscription renewals."
+      tr: "Veri analistleri, mobil abonelik yenilemelerinde istikrarlı bir yukarı yönlü eğilim gözlemledi."
+      context: Business Analytics
+    - en: "Remote work is an emerging trend that fundamentally reshapes urban housing demand."
+      tr: "Uzaktan çalışma, kentsel konut talebini kökten yeniden şekillendiren yükselen bir eğilimdir."
+      context: Socioeconomic Analysis
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir alandaki eğilimden bahsederken "trend in" veya "trend towards" kullanılır; "trend about" kullanımı hatalıdır.
+      incorrect_example: "We discussed the current trends about cloud computing."
+      correct_example: "We discussed the current trends in cloud computing."
+  register: general
+  topic_tags:
+    - analytics
+    - market-trends
+    - data
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.generate
+  headword: generate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈdʒen.ə.reɪt/
+  audio_ref: null
+  definition_en: To cause something to arise, come into existence, or produce energy, revenue, or automated outputs.
+  meaning_tr: üretmek, ortaya çıkarmak, oluşturmak, hasılat sağlamak
+  collocations:
+    - text: generate revenue
+      tr: gelir üretmek
+    - text: generate leads
+      tr: potansiyel müşteri yaratmak
+    - text: generate reports
+      tr: rapor oluşturmak
+  examples:
+    - en: "The enterprise SaaS platform generated significant recurring revenue in its first fiscal year."
+      tr: "Kurumsal SaaS platformu, ilk mali yılında önemli düzeyde yinelenen gelir sağladı."
+      context: Revenue Operations
+    - en: "Automated test scripts generate comprehensive code coverage reports after each build."
+      tr: "Otomatik test betikleri her derlemeden sonra kapsamlı kod kapsama raporları üretir."
+      context: Continuous Integration
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Generate" fiili Türkçe "jeneratör" kelimesiyle kökteş olsa da sadece elektrik üretmek için değil; fikir, gelir, ilgi veya dijital çıktı oluşturmak için yaygın kullanılır. Fiziksel fabrika üretimi için ise "produce" veya "manufacture" tercih edilir.
+      incorrect_example: "Our factory generates five thousand cars each month."
+      correct_example: "Our factory manufactures five thousand cars each month."
+  register: business
+  topic_tags:
+    - business
+    - revenue
+    - automation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.evaluate
+  headword: evaluate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ɪˈvæl.ju.eɪt/
+  audio_ref: null
+  definition_en: To assess or judge the value, quality, importance, or performance of something systematically.
+  meaning_tr: değerlendirmek, değer biçmek
+  collocations:
+    - text: evaluate performance
+      tr: performansı değerlendirmek
+    - text: evaluate options
+      tr: seçenekleri değerlendirmek
+    - text: carefully evaluate
+      tr: dikkatle değerlendirmek
+  examples:
+    - en: "The engineering committee met to evaluate three competing framework proposals."
+      tr: "Mühendislik komitesi, yarışan üç çatı önerisini değerlendirmek üzere toplandı."
+      context: Technical Governance
+    - en: "Managers must evaluate team member progress against predefined quarterly benchmarks."
+      tr: "Yöneticiler, ekip üyelerinin ilerlemesini önceden belirlenmiş üç aylık ölçütlere göre değerlendirmelidir."
+      context: Performance Review
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Türkçedeki "fırsatı değerlendirmek" (fırsattan istifade etmek) anlamı için "evaluate an opportunity" denmez; bunun yerine "seize an opportunity" veya "capitalize on an opportunity" kullanılır. "Evaluate", analiz edip not/değer vermektir.
+      incorrect_example: "We should evaluate this discount opportunity before it ends."
+      correct_example: "We should take advantage of this discount opportunity before it ends."
+  register: academic
+  topic_tags:
+    - assessment
+    - decision-making
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.postpone
+  headword: postpone
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /pəʊstˈpəʊn/
+  audio_ref: null
+  definition_en: To arrange for an event, meeting, or action to take place at a later date or time than initially planned.
+  meaning_tr: ertelemek, tehir etmek
+  collocations:
+    - text: postpone a meeting
+      tr: toplantıyı ertelemek
+    - text: postpone the deadline
+      tr: son teslim tarihini ertelemek
+    - text: indefinitely postpone
+      tr: süresiz olarak ertelemek
+  examples:
+    - en: "Due to unscheduled server maintenance, the product launch was postponed until next Friday."
+      tr: "Planlanmamış sunucu bakımı nedeniyle ürün lansmanı gelecek cumaya ertelendi."
+      context: Release Management
+    - en: "The committee decided to postpone the quarterly audit until all documentation was ready."
+      tr: "Komite, tüm belgeler hazır olana kadar üç aylık denetimi ertelemeye karar verdi."
+      context: Corporate Governance
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Postpone" bir etkinliği ileri bir zamana ertelemektir; "cancel" (tamamen iptal etmek) veya "delay" (gecikmeye uğramak) ile karıştırılmamalıdır. Ayrıca "postpone to" veya "postpone until" kullanılır.
+      incorrect_example: "They postponed the meeting forever because nobody wanted it."
+      correct_example: "They cancelled the meeting because nobody wanted it."
+  register: formal
+  topic_tags:
+    - scheduling
+    - time-management
+    - work
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.appropriate
+  headword: appropriate
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /əˈprəʊ.pri.ət/
+  audio_ref: null
+  definition_en: Suitable, fitting, or proper for a particular person, purpose, occasion, or social context.
+  meaning_tr: uygun, yerinde, münasip
+  collocations:
+    - text: appropriate measure
+      tr: uygun tedbir
+    - text: take appropriate action
+      tr: uygun eylemi gerçekleştirmek
+    - text: appropriate for the occasion
+      tr: ortama / duruma uygun
+  examples:
+    - en: "The security team took appropriate countermeasures immediately after detecting the anomaly."
+      tr: "Güvenlik ekibi, anormalliği tespit ettikten hemen sonra uygun karşı tedbirleri aldı."
+      context: Cybersecurity
+    - en: "Professional business casual attire is appropriate for daily office collaboration."
+      tr: "Profesyonel iş-rahat giyim tarzı, günlük ofis iş birliği için uygundur."
+      context: Workplace Culture
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Appropriate" sıfatı "uygun" anlamında "for" veya "to" edatıyla kullanılır; "with" kullanımı Türkçedeki "ile uyumlu" düşüncesinden kaynaklanan bir hatadır.
+      incorrect_example: "This software is not appropriate with large enterprises."
+      correct_example: "This software is not appropriate for large enterprises."
+  register: formal
+  topic_tags:
+    - standards
+    - professional-conduct
+    - suitability
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.relevant
+  headword: relevant
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ˈrel.ə.vənt/
+  audio_ref: null
+  definition_en: Closely connected with or directly applicable to the matter or topic currently under consideration.
+  meaning_tr: ilgili, alakalı, konuyla ilişkili
+  collocations:
+    - text: highly relevant
+      tr: son derece alakalı
+    - text: relevant information
+      tr: ilgili bilgi
+    - text: directly relevant
+      tr: doğrudan ilgili
+    - text: relevant experience
+      tr: ilgili deneyim
+  examples:
+    - en: "Candidates should highlight only relevant professional experience on their resume."
+      tr: "Adaylar özgeçmişlerinde yalnızca ilgili mesleki deneyimlerini öne çıkarmalıdır."
+      context: Job Application
+    - en: "The research paper cited multiple relevant case studies from fintech startups."
+      tr: "Araştırma makalesi, finansal teknoloji girişimlerinden çok sayıda ilgili vaka analizine atıfta bulundu."
+      context: Academic Research
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Relevant" sıfatı ile ilgili olmayı belirtirken "to" kullanılır ("relevant to the topic"). "Relevant with" veya "relevant about" yanlıştır.
+      incorrect_example: "Please send documents that are relevant with the case."
+      correct_example: "Please send documents that are relevant to the case."
+  register: general
+  topic_tags:
+    - communication
+    - relevance
+    - clarity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.competitive
+  headword: competitive
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /kəmˈpet.ə.tɪv/
+  audio_ref: null
+  definition_en: Capable of competing successfully with rivals in quality, capability, price, or market appeal.
+  meaning_tr: rekabetçi, yarışmacı, piyasa koşullarına uygun
+  collocations:
+    - text: competitive salary
+      tr: rekabetçi maaş
+    - text: competitive pricing
+      tr: rekabetçi fiyatlandırma
+    - text: competitive market
+      tr: rekabetçi piyasa
+    - text: highly competitive
+      tr: oldukça rekabetçi
+  examples:
+    - en: "To attract senior talent, the tech company offered highly competitive salaries and equity packages."
+      tr: "Kıdemli yetenekleri çekmek için teknoloji şirketi son derece rekabetçi maaşlar ve hisse paketleri teklif etti."
+      context: Talent Acquisition
+    - en: "Cloud providers maintain competitive pricing to retain high-volume enterprise clients."
+      tr: "Bulut sağlayıcıları, yüksek hacimli kurumsal müşterileri elde tutmak için rekabetçi fiyatlandırmayı korur."
+      context: Commercial Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        İş ilanlarında geçen "competitive salary" ifadesi çalışanların yarıştığı değil, şirketin piyasa ortalamasının üzerinde veya piyasa ile boy ölçüşen iyi bir maaş verdiğini gösterir.
+      incorrect_example: "They gave me a competitive salary, so I have to fight with coworkers."
+      correct_example: "They offered a competitive salary that matches top industry benchmarks."
+  register: business
+  topic_tags:
+    - business
+    - competition
+    - market-economics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.carry-out
+  headword: carry out
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /ˈkær.i aʊt/
+  audio_ref: null
+  definition_en: To perform, execute, or conduct an investigation, instruction, experiment, or scheduled plan.
+  meaning_tr: yürütmek, icra etmek, gerçekleştirmek, uygulamak
+  collocations:
+    - text: carry out research
+      tr: araştırma yürütmek
+    - text: carry out an audit
+      tr: denetim gerçekleştirmek
+    - text: carry out instructions
+      tr: talimatları yerine getirmek
+  examples:
+    - en: "The quality assurance team carried out extensive load tests before approving the release."
+      tr: "Kalite güvence ekibi, sürümü onaylamadan önce kapsamlı yük testleri gerçekleştirdi."
+      context: Software QA
+    - en: "Investigators carried out a detailed audit into corporate expense reporting."
+      tr: "Müfettişler, kurumsal masraf bildirimlerine ilişkin ayrıntılı bir denetim yürüttü."
+      context: Corporate Compliance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Carry out" mecazi olarak bir görevi, testi veya araştırmayı "yürütmek/tamamlamak" demektir; lokantadan paket yemek almak ("carryout / takeout") ile karıştırılmamalıdır.
+      incorrect_example: "We carried out the pizza to the meeting room."
+      correct_example: "We brought the takeout pizza to the meeting room."
+  register: general
+  topic_tags:
+    - execution
+    - operations
+    - tasks
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.phase-out
+  headword: phase out
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /feɪz aʊt/
+  audio_ref: null
+  definition_en: To stop using, producing, or supporting something gradually in planned steps over a period of time.
+  meaning_tr: kademeli olarak sonlandırmak / kullanımdan kaldırmak
+  collocations:
+    - text: phase out legacy systems
+      tr: eski sistemleri kademeli olarak kaldırmak
+    - text: gradually phase out
+      tr: aşamalı olarak bitirmek
+    - text: plan to phase out
+      tr: kaldırmayı planlamak
+  examples:
+    - en: "The engineering department plans to phase out the legacy monolith over the next three quarters."
+      tr: "Mühendislik departmanı, eski monolitik yapıyı önümüzdeki üç çeyrek boyunca kademeli olarak kaldırmayı planlıyor."
+      context: Technology Modernization
+    - en: "Automakers are committing to phase out internal combustion engines in favor of electric drivetrains."
+      tr: "Otomobil üreticileri, elektrikli aktarma organları lehine içten yanmalı motorları aşamalı olarak sonlandırmayı taahhüt ediyor."
+      context: Industrial Transition
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Phase out", bir şeyi aniden değil "kademeli/aşamalı olarak" bitirmektir. Aniden bitirmek veya iptal etmek için "terminate" veya "shut down" kullanılır.
+      incorrect_example: "The server crashed instantly and phased out immediately."
+      correct_example: "The server crashed instantly and shut down immediately."
+  register: general
+  topic_tags:
+    - technology
+    - transition
+    - systems
+  related_ids: []
+  status: APPROVED
+  version: 1

@@ -1,0 +1,28 @@
+batch_id: exercises_batch_002
+produced_at: '2026-09-26T23:14:58Z'
+total_exercises_added: 2000
+distribution_by_domain:
+  grammar: 1000
+  vocabulary: 1000
+distribution_by_cefr:
+  A2: 225
+  B1: 375
+  B2: 465
+  C1: 510
+  C2: 425
+mcq_position_stats:
+  A:
+    count: 518
+    percentage: 25.9
+  B:
+    count: 501
+    percentage: 25.05
+  C:
+    count: 496
+    percentage: 24.8
+  D:
+    count: 485
+    percentage: 24.25
+max_same_position_streak: 3
+status: APPROVED
+description: 'Multi-Domain Curriculum Expansion Batch 002 Central Exercises (+2000 items: 1000 grammar + 1000 vocab)'

@@ -1,0 +1,638 @@
+- id: grammar.c2.stylistic-and-locative-inversion
+  title: Stylistic, Locative, and Comparative Inversion (Down came..., So acute was...)
+  cefr_level: C2
+  category: inversion_and_emphasis
+  summary_en: Deploy full verb inversion (Verb before Subject) with locative/directional
+    fronting and correlative degree structures ('So acute was the crisis that...').
+  summary_tr: 'Yer ve yön zarflarının öne alınmasıyla tam fiil devrikliği (''Locative
+    Inversion: Behind this strategy lies...'') ve ''So/Such'' ile kurulan yüksek retorik
+    devrik yapılar.'
+  explanation_en:
+  - title: Full Subject-Verb Inversion Mechanics
+    content: 'Unlike auxiliary inversion (where only ''did/would'' moves), locative
+      and comparative inversion in C2 prose moves the entire main verb ahead of a
+      heavy nominal subject (e.g., ''At the heart of the architectural debate lies
+      the question of data sovereignty''). Note: this inversion is prohibited if the
+      subject is a pronoun.'
+    patterns:
+    - 'Locative / Directional: Prepositional Phrase + Verb (lie, stand, exist, remain)
+      + Heavy Noun Subject'
+    - 'Comparative Degree Inversion: So + Adjective + was/were + Subject + THAT +
+      Clause'
+    - 'Pronoun Exception: Here comes the architect (noun: inverted) vs. Here he comes
+      (pronoun: NOT inverted)'
+  explanation_tr: Türkçede 'Bu kararın arkasında derin bir finansal kriz yatmaktadır'
+    ifadesi doğal bir sözdizimidir. İngilizcede bunu 'Behind this decision lies a
+    deep financial crisis' şeklinde tam fiil devrikliğiyle kurmak C2 seviyesinde kusursuz
+    bir editoryal derinlik sağlar. Ancak özne bir zamirse ('it', 'they') devriklik
+    yapılamaz ('Behind it they stand').
+  rules:
+  - name: Full Locative Inversion with Intransitive Stative Verbs
+    pattern: '[Locative Prepositional Phrase] + [lie / stand / sit / remain / come]
+      + [Heavy Noun Subject]'
+    use_cases:
+    - Opening analytical book chapters or executive annual whitepapers
+    - Framing central foundational concepts in legal or architectural treatises
+    time_markers:
+    - therein
+    - beneath the surface
+    - at the intersection of
+  contrasts:
+  - structure_a: A profound philosophical disagreement lies beneath these competing
+      technical proposals.
+    structure_b: Beneath these competing technical proposals lies a profound philosophical
+      disagreement.
+    difference_explanation_en: Structure A follows ordinary SVO word order. Structure
+      B uses locative inversion to position the heavy new concept ('a profound philosophical
+      disagreement') in focal end-position.
+    difference_explanation_tr: A cümlesi standart düz cümledir. B cümlesi ise yer
+      edatını başa alıp tüm fiili öne çekerek yeni ve ağır kavramı cümlenin sonuna,
+      odak noktasına taşır.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Zamir Öznelerde Mekanik Olarak Devrik Yapma Hatası
+    explanation_tr: Özne bir zamir (he, she, it, they) olduğunda locative inversion
+      uygulanamaz. 'Down came it' denemez; 'Down it came' denmelidir.
+    incorrect_example: At the summit of the organization sits he, overseeing all sovereign
+      operations.
+    correct_example: At the summit of the organization he sits, overseeing all sovereign
+      operations.
+  examples:
+  - en: So pervasive was the systemic contagion across decentralized lending pools
+      that emergency liquidation halts were triggered within minutes.
+    tr: Merkeziyetsiz borç verme havuzları genelindeki sistemsel bulaşma o kadar yaygındı
+      ki, dakikalar içinde acil likidasyon durdurmaları tetiklendi.
+    rule_highlight: So + Adjective + was + Subject + that (degree inversion)
+    context: Financial Crisis Retrospective
+  - en: At the core of modern cloud governance lies the fundamental tension between
+      autonomous engineering velocity and strict regulatory compliance.
+    tr: Modern bulut yönetişiminin merkezinde, otonom mühendislik hızı ile katı yasal
+      uyumluluk arasındaki temel gerilim yatmaktadır.
+    rule_highlight: Locative full verb inversion (At the core... lies the tension)
+    context: Enterprise Architecture Treatise
+  topic_tags:
+  - inversion
+  - locative-inversion
+  - stylistic-inversion
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.complex-discourse-ellipsis
+  title: Discourse Ellipsis and Predicate Gapping in Formal Rhetoric
+  cefr_level: C2
+  category: discourse_markers_and_cohesion
+  summary_en: Attain extreme rhetorical poise and density by omitting redundant verbal
+    predicates (gapping), auxiliaries, and complement clauses in balanced parallel
+    periods.
+  summary_tr: Dengeli paralel cümlelerde fazlalık oluşturan yüklemleri (gapping),
+    yardımcı fiilleri ve yan cümlecikleri eksilterek (ellipsis) kusursuz bir edebi
+    ve editoryal denge kurma.
+  explanation_en:
+  - title: Gapping and Pseudogapping in Coordinated Structures
+    content: In high-register parallel argumentation, repeating the transitive verb
+      or auxiliary weakens stylistic momentum. Predicate gapping cleanly drops the
+      verb in subsequent coordinated clauses, marked only by a comma.
+    patterns:
+    - 'Gapping: The CFO championed fiscal austerity; the CTO, aggressive technological
+      expansion.'
+    - 'Auxiliary Ellipsis: Many have evaluated the cryptographic proof, but few understood
+      its systemic ramifications.'
+    - 'Clausal Ellipsis in Conditionals: Address the compliance audit if necessary
+      (omitting ''it is'').'
+  explanation_tr: Türkçede 'Ahmet elmayı, Mehmet armudu sever' örneğinde olduğu gibi
+    yüklemin ortaklaşa eksiltilmesi (gapping) zarafet katar. İngilizcede de C2 seviyesinde
+    'The architect advocated microservices; the engineering manager, a modular monolith'
+    şeklinde fiili tekrarlamadan virgülle bağlamak üst düzey bir retorik yetkinliktir.
+  rules:
+  - name: Coordinated Predicate Gapping
+    pattern: '[Subject A + Verb + Object A] ; [Subject B , Object B]'
+    use_cases:
+    - Drafting balanced executive deliberations contrasting leadership stances
+    - Authoring legal summaries where parallel precision without redundancy is paramount
+    time_markers:
+    - simultaneously
+    - in tandem
+  contrasts:
+  - structure_a: The lead architect championed microservices, and the security officer
+      championed monolithic containment.
+    structure_b: The lead architect championed microservices; the security officer,
+      monolithic containment.
+    difference_explanation_en: Structure A repeats 'championed'. Structure B employs
+      rhetorical gapping (represented by the comma) to generate rhythmic, elite prose.
+    difference_explanation_tr: A cümlesi aynı fiili hantalca tekrar eder. B cümlesi
+      ise fiili eksilterek ('gapping') ritmik, seçkin bir C2 retorik denge sağlar.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Gapping Sırasında Noktalı Virgül ve Virgül Ayrımını Atlama
+    explanation_tr: İngilizcede fiil eksiltildiğinde iki bağımsız cümle noktalı virgülle
+      (;) ayrılır ve eksilen fiilin yerine bir virgül (,) konur. Noktalama işaretini
+      eksik bırakmak anlatım bozukluğuna yol açar.
+    incorrect_example: The founders sought rapid market growth the conservative investors
+      capital preservation.
+    correct_example: The founders sought rapid market growth; the conservative investors,
+      capital preservation.
+  examples:
+  - en: The European regulators demanded granular consumer privacy protections; their
+      North American counterparts, unencumbered commercial innovation.
+    tr: Avrupalı düzenleyiciler ayrıntılı tüketici gizliliği korumaları talep etti;
+      Kuzey Amerikalı mevkidaşları ise engelsiz ticari inovasyon.
+    rule_highlight: Predicate Gapping (; ... , ...)
+    context: International Policy Briefing
+  - en: Some board members argued passionately for immediate divestiture, others for
+      patient recapitalization.
+    tr: Bazı yönetim kurulu üyeleri derhal elden çıkarma için tutkuyla savundu, diğerleri
+      ise sabırlı bir yeniden sermayelendirme için.
+    rule_highlight: Ellipsis of verbal predicate across comma splice
+    context: Executive Deliberations
+  topic_tags:
+  - ellipsis
+  - gapping
+  - rhetorical-parallelism
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.dense-nominal-syntagms
+  title: Dense Nominal Syntagms and Lexical Compression in Statutory and Executive
+    Texts
+  cefr_level: C2
+  category: noun_phrases_and_articles
+  summary_en: Master hyper-dense nominal modification (pre-modifying noun adjuncts,
+    Latinate abstract heads, complex genitives) characteristic of legal statutes and
+    C-suite strategy.
+  summary_tr: Yasal şartnameler ve C-seviyesi strateji belgelerinde görülen çok katmanlı
+    isim tamlamaları (pre-modifying noun adjuncts) ve yoğun anlamsal sıkıştırma.
+  explanation_en:
+  - title: Lexical Compression in Nominal Heads
+    content: At C2, information density reaches peak efficiency by chaining noun adjuncts,
+      possessives, and participial modifiers to create self-contained conceptual blocks
+      without relative clauses.
+    patterns:
+    - 'Multi-tiered Compound Modifier: multi-region cross-cloud disaster recovery
+      orchestration framework'
+    - 'Genitive + Nominal Chain: The sovereign fund''s asymmetric liquidity buffer
+      allocation mandate'
+    - 'Abstract Relational Modification: Post-quantum cryptographic agility transition
+      roadmaps'
+  explanation_tr: Türkçe sondan eklemeli bir dil olduğu için isim tamlamalarını zincirleme
+    bağlamaya çok uygundur ('bulut tabanlı veri tabanı yönetim sistemi mimarisi').
+    İngilizcede de C2 seviyesinde yan cümlelerle uzatmak yerine isimleri ardışık olarak
+    sıfatlaştırmak ('enterprise-grade real-time streaming telemetry pipeline') son
+    derece yaygın ve prestijlidir.
+  rules:
+  - name: Multi-Adjunct Nominal Packaging
+    pattern: '[Noun Adjunct 1 + Noun Adjunct 2 + Participle Modifier] + Head Noun'
+    use_cases:
+    - Drafting enterprise architectural charters and statutory governance bylaws
+    - Naming complex multi-tier technical platforms and financial derivatives
+    time_markers:
+    - in accordance with
+    - pursuant to
+  contrasts:
+  - structure_a: A plan that sets out how we will recover when a disaster occurs across
+      multiple clouds in different regions.
+    structure_b: A multi-region cross-cloud disaster recovery orchestration blueprint.
+    difference_explanation_en: Structure A is a verbose, clause-heavy paraphrase.
+      Structure B is an ultra-dense, precise professional nominal syntagm.
+    difference_explanation_tr: A cümlesi yan cümlelerle dolu uzun bir açıklamadır.
+      B cümlesi ise sektör profesyonellerinin kullandığı son derece sıkı ve teknik
+      bir isim bileşiğidir.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: İsim Tamlamasında Niteleyici İsme Çoğul Eki Ekleme Hatası
+    explanation_tr: İngilizcede bir isim başka bir ismin önüne gelip onu nitelediğinde
+      (sıfatlaştığında) kural olarak TEKİL kalır ('customer service', 'network setting').
+      'Customers service' veya 'networks latency' denemez.
+    incorrect_example: The systems architecture team finalized the microservices deployment
+      pipeline.
+    correct_example: The system architecture team finalized the microservice deployment
+      pipeline.
+  examples:
+  - en: The bank implemented an automated zero-trust cross-border payment reconciliation
+      protocol to preempt liquidity fragmentation.
+    tr: Banka, likidite parçalanmasının önüne geçmek için otomatik bir sıfır güvenli
+      sınır ötesi ödeme mutabakat protokolü uyguladı.
+    rule_highlight: Dense nominal syntagm (zero-trust cross-border payment reconciliation
+      protocol)
+    context: Fintech Governance
+  - en: Pursuant to the sovereign cloud mandate, all tier-one critical infrastructure
+      telemetry workloads must remain air-gapped.
+    tr: Egemen bulut talimatı uyarınca, tüm birinci seviye kritik altyapı telemetri
+      iş yükleri hava boşluklu (air-gapped) kalmalıdır.
+    rule_highlight: Nominal compounding with regulatory pre-modifiers
+    context: Regulatory Compliance
+  topic_tags:
+  - nominal-syntagms
+  - noun-chains
+  - lexical-density
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.conundrum
+  status: APPROVED
+  version: 1
+- id: grammar.c2.aspectual-coercion-stative-nuances
+  title: 'Aspectual Nuance: Stative Verbs in Continuous Aspect for Tentative Pragmatics'
+  cefr_level: C2
+  category: tenses_and_aspect
+  summary_en: 'Harness aspectual coercion: strategically deploying traditionally stative
+    verbs (understand, hear, love, consider, hope) into continuous aspect to express
+    supreme diplomatic tentativeness.'
+  summary_tr: Diplomatik müzakerelerde aşırı katılığı yumuşatmak için normalde durum
+    bildiren fiilleri (understand, hear, hope) şimdiki/sürekli zaman kipine zorlayarak
+    (aspectual coercion) geçici ve ihtiyatlı yaklaşım sergileme.
+  explanation_en:
+  - title: Pragmatic Aspectual Coercion
+    content: While lower levels teach that stative verbs never take -ing, C2 speakers
+      purposefully override this constraint to convey evolving mental processes, tentative
+      politeness, or provisional stance during high-stakes negotiations.
+    patterns:
+    - 'Tentative Understanding: I am understanding that your consortium requires board
+      parity (provisional, open to correction).'
+    - 'Evolving Perspective: We are seeing unprecedented structural convergence across
+      these regulatory silos.'
+    - 'Diplomatic Hope: We were hoping to explore alternative liquidation settlement
+      frameworks.'
+  explanation_tr: A2 seviyesinde 'stative fiiller -ing almaz' kuralı öğretilirken,
+    C2 seviyesindeki diplomatlar ve üst düzey müzakereciler 'I understand' (katı ve
+    nihai) yerine 'I am understanding that...' diyerek 'Ben şu anda böyle anlıyorum,
+    yanılıyorsam düzeltin' mesajı verirler. Bu pragmatik esneklik üst düzey iletişimin
+    sırrıdır.
+  rules:
+  - name: Pragmatic Continuous for Diplomatic Attenuation
+    pattern: Subject + [am/is/are / was/were] + [hoping / hearing / understanding
+      / considering] + that-clause
+    use_cases:
+    - High-stakes merger and acquisition negotiations where direct assertions cause
+      defensiveness
+    - Navigating sovereign regulatory arbitrations with delicate diplomatic deference
+    time_markers:
+    - at this preliminary juncture
+    - provisionally
+  contrasts:
+  - structure_a: I understand your demands, but we reject them.
+    structure_b: I am understanding your regulatory concerns, yet we are hoping to
+      identify more flexible implementation pathways.
+    difference_explanation_en: Structure A is abrupt and confrontational. Structure
+      B uses aspectual coercion (am understanding, are hoping) to keep the diplomatic
+      corridor open.
+    difference_explanation_tr: A cümlesi keskin ve uzlaşmazdır. B cümlesi ise durum
+      fiillerini sürece yayarak müzakere zeminini açık tutan C2 diplomatik zarafet
+      örneğidir.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: Aspectual Coercion ile Basit Dilbilgisi Hatasını Birbirine Karıştırma
+    explanation_tr: Durum fiillerine -ing eklemek yalnızca kasıtlı bir pragmatik yumuşatma
+      veya geçici süreç vurgusu olduğunda geçerlidir; rastgele 'I am knowing English'
+      demek hala temel bir hatadır.
+    incorrect_example: I am knowing the answer to this security question.
+    correct_example: I am understanding that this security exemption is purely provisional.
+  examples:
+  - en: We are hearing significant institutional apprehension regarding the cross-border
+      data transfer covenants.
+    tr: Sınır ötesi veri aktarımı taahhütlerine ilişkin ciddi kurumsal endişeler kulağımıza
+      gelmekte (duymaktayız).
+    rule_highlight: Aspectual coercion of stative verb (are hearing)
+    context: Treaty Negotiation
+  - en: The sovereign wealth fund was hoping to finalize the term sheet before the
+      close of trading on Friday.
+    tr: Varlık fonu, cuma günü borsa kapanışından önce şartnameyi sonuçlandırmayı
+      umut etmekteydi (kibar beklenti).
+    rule_highlight: Tentative past continuous (was hoping)
+    context: High-Stakes Finance
+  topic_tags:
+  - aspectual-coercion
+  - stative-verbs
+  - diplomatic-pragmatics
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.epistemic-deontic-ambiguity-precision
+  title: Disentangling Epistemic and Deontic Modality in Legal and Treaty Drafting
+  cefr_level: C2
+  category: modals_and_semi_modals
+  summary_en: Navigate the subtle intersection between deontic duty (obligation/permission)
+    and epistemic stance (probability), mastering strict drafting canons (shall vs.
+    must vs. will).
+  summary_tr: Hukuki sözleşmeler ve uluslararası anlaşmalarda zorunluluk (deontic)
+    ile olasılık (epistemic) kiplerinin kesin sınırlarını çizme ('shall', 'must',
+    'may' ayrımı).
+  explanation_en:
+  - title: The Strict Drafting Taxonomy of Legal Modality
+    content: In statutory drafting and enterprise contracts, careless modal choice
+      creates multimillion-dollar ambiguities. 'Shall' imposes a strict mandatory
+      legal duty on a person. 'Must' establishes a condition precedent or impersonal
+      requirement. 'May' confers discretionary authority.
+    patterns:
+    - 'Mandatory Obligation (Deontic): The Licensee SHALL encrypt all personal identifiers.'
+    - 'Condition Precedent: System components MUST satisfy FIPS-140 standards prior
+      to certification.'
+    - 'Discretionary Permission: The Auditor MAY demand unannounced physical inspections.'
+    - 'Epistemic Probability (to be avoided in covenants): The vendor will likely
+      maintain...'
+  explanation_tr: Türkçedeki '-meli / -malı' eki hem zorunluluk ('ödemeli') hem de
+    tahmin ('evde olmalı') ifade eder. Uluslararası sözleşmelerde bu iki anlamın karışması
+    büyük hukuki ihtilaflara yol açar. Profesyonel sözleşme dilinde 'shall' katı yasal
+    yükümlülük, 'must' teknik şart, 'may' ise münhasır yetki/izin bildirir.
+  rules:
+  - name: Statutory Modal Precision
+    pattern: Contractual Entity + [shall / must not / may] + Bare Infinitive
+    use_cases:
+    - Drafting Master Services Agreements (MSAs) and Service Level Agreements (SLAs)
+    - Authoring corporate governance charters and international compliance mandates
+    time_markers:
+    - forthwith
+    - in perpetuity
+    - upon written demand
+  contrasts:
+  - structure_a: The vendor will deploy security patches within twenty-four hours.
+    structure_b: The vendor shall deploy security patches within twenty-four hours.
+    difference_explanation_en: Structure A uses 'will', which may be construed legally
+      as mere future prediction. Structure B uses 'shall', establishing an enforceable
+      legal covenant.
+    difference_explanation_tr: A cümlesindeki 'will' mahkemelerde yalnızca bir gelecek
+      tahmini olarak yorumlanabilir. B cümlesindeki 'shall' ise bağlayıcı, dava edilebilir
+      yasal bir yükümlülük kurar.
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Sözleşmelerde 'Shall' Yerine 'Should' Kullanarak Zorunluluğu Zayıflatma
+    explanation_tr: Türk avukatlar ve yöneticiler sıklıkla 'The contractor should
+      notify the bank' yazarlar. Hukuk dilinde 'should' bir zorunluluk değil, yalnızca
+      bir tavsiyedir; sözleşme ihlali teşkil etmez. Zorunluluk için 'shall' veya 'must'
+      yazılmalıdır.
+    incorrect_example: The service provider should guarantee 99.99% availability.
+    correct_example: The service provider shall guarantee 99.99% availability.
+  examples:
+  - en: The custodian shall not commingle client sovereign assets with proprietary
+      balance-sheet holdings under any circumstances.
+    tr: Saklama kuruluşu, hiçbir koşulda müşteri egemen varlıklarını kendi bilanço
+      varlıklarıyla birbirine karıştıramaz (katı yasal yasak).
+    rule_highlight: Deontic prohibition in statutory drafting (shall not commingle)
+    context: Financial Custody Agreement
+  - en: Failure to satisfy third-party attestation requirements shall render this
+      agreement voidable at the sole discretion of the enterprise licensee.
+    tr: Üçüncü taraf onay gerekliliklerinin karşılanmaması, bu anlaşmayı kurumsal
+      lisans sahibinin yegane takdirinde feshedilebilir kılacaktır.
+    rule_highlight: Mandatory legal consequence (shall render... voidable)
+    context: Enterprise Software Licensing
+  topic_tags:
+  - deontic-modality
+  - epistemic-modality
+  - legal-drafting
+  - statutory-precision
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.concessive-conditional-inversion-without-if
+  title: 'Concessive and Inverted Conditional Protases: ''Were it not for'', ''Had
+    we known'', ''Should need arise'''
+  cefr_level: C2
+  category: conditionals_and_hypotheticals
+  summary_en: Form elite counterfactual and formal hypothetical clauses without 'if'
+    by inverting auxiliaries ('Were it not for...', 'Had the board consented...',
+    'Should you require...').
+  summary_tr: '''If'' bağlacını tamamen atıp yardımcı fiili öne alarak (''Were it
+    not for...'', ''Had we not acted...'', ''Should need arise'') kurulan üst düzey
+    şart cümleleri.'
+  explanation_en:
+  - title: Zero-'If' Conditional Protasis Inversion
+    content: In sophisticated treaties, diplomatic prose, and formal executive declarations,
+      conditional clauses discard the word 'if' entirely. Inversion of the auxiliary
+      (Were, Had, Should) signals conditionality with unparalleled elegance.
+    patterns:
+    - 'Type 1 Formal Inversion: SHOULD + Subject + Base Verb (Should you require further
+      clarification...)'
+    - 'Type 2 Subjunctive Inversion: WERE + Subject + to-infinitive (Were the central
+      bank to intervene...)'
+    - 'Type 2 Negative Attribution: WERE IT NOT FOR + Noun Phrase (Were it not for
+      our contingency reserve...)'
+    - 'Type 3 Past Counterfactual Inversion: HAD + Subject + V3 (Had the auditor disclosed
+      the discrepancy...)'
+  explanation_tr: Türkçede 'Eğer bilseydik' yerine 'Bilmeyeydik / Bilmiş olsaydık'
+    gibi edebi yapılar kurulabilir. İngilizcede 'If it were not for...' yerine 'Were
+    it not for...' veya 'If we had known' yerine 'Had we known' demek C2 düzeyinde
+    sözdizimsel ustalığın zirvesidir.
+  rules:
+  - name: Auxiliary Fronting in Protasis Clauses
+    pattern: '[Were it not for / Had + Subject + V3 / Should + Subject + Verb], Main
+      Clause'
+    use_cases:
+    - Crafting high-level diplomatic diplomatic notes and joint communiqués
+    - Authoring legal indemnification clauses and liability waivers
+    time_markers:
+    - heretofore
+    - under any circumstance
+  contrasts:
+  - structure_a: If we had not implemented multi-region failover, the outage would
+      have been catastrophic.
+    structure_b: Had we not implemented multi-region failover, the outage would have
+      been catastrophic.
+    difference_explanation_en: Structure A is conventional standard conditional. Structure
+      B employs auxiliary-fronted protasis inversion, stripping 'if' for elevated
+      rhetoric.
+    difference_explanation_tr: A cümlesi standart şart cümlesidir. B cümlesi ise 'if'
+      bağlacını atıp 'Had we not...' ile başlayan seçkin bir editoryal stil sunar.
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Inverted Conditional Cümlelerde 'If' Kelimesini Bırakma Hatası
+    explanation_tr: Öğreniciler bazen hem devriklik yapıp hem de 'if' bağlacını koruyarak
+      'If had we known' derler. Bu çift işaretleme İngilizcede kural dışıdır; ya 'If
+      we had known' ya da 'Had we known' denmelidir.
+    incorrect_example: If had the security team caught the breach earlier, the fallout
+      would be minimal.
+    correct_example: Had the security team caught the breach earlier, the fallout
+      would be minimal.
+  examples:
+  - en: Were it not for our sovereign liquidity backstop, the interbank contagion
+      would have destabilized the regional clearing network.
+    tr: Egemen likidite güvencemiz olmasaydı, bankalar arası bulaşma bölgesel takas
+      ağını istikrarsızlaştırmış olurdu.
+    rule_highlight: Were it not for + Noun Phrase (Counterfactual conditional)
+    context: Central Bank Macro-Prudential Review
+  - en: Should unforeseen regulatory constraints impede direct asset settlement, the
+      parties shall arbitrate in Geneva.
+    tr: Öngörülemeyen yasal kısıtlamaların doğrudan varlık takasını engellemesi halinde,
+      taraflar Cenevre'de tahkime gidecektir.
+    rule_highlight: Should + Subject + Base Verb (formal conditional inversion)
+    context: International Commercial Arbitration
+  topic_tags:
+  - conditionals
+  - inverted-conditionals
+  - were-it-not-for
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.diplomatic-attenuation-and-litotes
+  title: Diplomatic Attenuation, Litotes, and Double Negation in High-Stakes Discourse
+  cefr_level: C2
+  category: discourse_markers_and_cohesion
+  summary_en: Deploy double negation (litotes) and diplomatic attenuation ('not unmindful
+    of', 'scarcely insignificant') to convey calculated understatement and master
+    subtle negotiation nuance.
+  summary_tr: 'Çift olumsuzluk (litotes: ''not unaware'', ''scarcely insignificant'')
+    ve diplomatik mesafeleme teknikleriyle müzakerelerde hesaplanmış incelik ve üst
+    düzey nezaket sergileme.'
+  explanation_en:
+  - title: Litotes as Strategic Understatement
+    content: Litotes affirms a positive proposition by negating its contrary (e.g.,
+      'not unhelpful' = helpful, but discreetly so). In delicate multilateral diplomacy,
+      litotes conveys prudent agreement without surrendering strategic leverage.
+    patterns:
+    - 'Double Negation: not + [unpleasant / unaware / unmindful / unfamiliar / insignificant]'
+    - 'Adverbial Litotes: scarcely unimportant / hardly negligible'
+    - 'Modal Attenuation: It would not be unreasonable to suggest...'
+  explanation_tr: Türkçede 'Farkında değil değiliz' veya 'Önemsiz sayılamaz' gibi
+    çift olumsuzluk ifadeleri hem tevazu hem de stratejik bir ima taşır. İngilizcede
+    'We are aware' demek bazen fazla kaba veya taahhüt edici olabilir; 'We are not
+    unmindful of your concerns' demek hem endişeleri anladığını belirtir hem de müzakere
+    üstünlüğünü korur.
+  rules:
+  - name: Strategic Litotes in Diplomatic Discourse
+    pattern: Subject + [is/are not un-] + Adjective + of Phrase
+    use_cases:
+    - Crafting diplomatic communiqués and multilateral treaty reservations
+    - Responding to hostile takeover bids or antitrust depositions with guarded restraint
+    time_markers:
+    - at this stage
+    - in due course
+  contrasts:
+  - structure_a: We recognize that the financial risk is substantial.
+    structure_b: The executive committee is not unmindful of the financial risks at
+      stake.
+    difference_explanation_en: Structure A makes an unhedged direct admission. Structure
+      B uses litotes ('not unmindful') to signal awareness while retaining diplomatic
+      ambiguity and authority.
+    difference_explanation_tr: A cümlesi doğrudan ve çıplak bir kabulleniştir. B cümlesi
+      ise litotes ('not unmindful') ile durumu bildiğini ima ederken kurumsal otorite
+      ve mesafeyi korur.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: Çift Olumsuzluğun İma Ettiği İnce Anlam Tonunu Kaçırma
+    explanation_tr: Öğreniciler 'not insignificant' ifadesini düz 'significant' gibi
+      çevirirler. Oysa litotes ifadesi 'tam anlamıyla büyük olmasa da görmezden gelinemeyecek
+      kadar önemli' manasında hafifletilmiş, hesaplı bir nüans taşır.
+    incorrect_example: The cost overrun is not totally zero.
+    correct_example: The financial cost overrun is scarcely negligible.
+  examples:
+  - en: The sovereign delegation was not unmindful of the geopolitical ramifications
+      of signing the bilateral energy accord.
+    tr: Egemen heyet, ikili enerji anlaşmasını imzalamanın jeopolitik yansımalarının
+      kesinlikle farkındaydı (farkında değil değildi).
+    rule_highlight: Litotes (not unmindful of)
+    context: Bilateral Summit
+  - en: It would not be entirely inaccurate to characterize the merger as an aggressive
+      defensive maneuver against hostile takeovers.
+    tr: Birleşmeyi düşmanca devralmalara karşı agresif bir savunma manevrası olarak
+      nitelendirmek büsbütün yanlış olmayacaktır.
+    rule_highlight: Attenuated assertion (It would not be entirely inaccurate to...)
+    context: M&A Strategic Analysis
+  topic_tags:
+  - litotes
+  - diplomatic-attenuation
+  - double-negation
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1
+- id: grammar.c2.information-packaging-end-weight
+  title: Information Packaging, End-Weight, and End-Focus in Advanced Composition
+  cefr_level: C2
+  category: discourse_markers_and_cohesion
+  summary_en: 'Master the Principles of End-Weight and End-Focus: orchestrating sentence
+    architecture so that complex, cognitively demanding lexical units naturally occupy
+    the sentence terminal position.'
+  summary_tr: 'Cümle mimarisinde ''End-Weight'' (son ağırlık) ve ''End-Focus'' (son
+    odak) prensipleri: bilişsel açıdan karmaşık ve ağır unsurları cümlenin sonuna
+    yerleştirerek kusursuz akış sağlama.'
+  explanation_en:
+  - title: The End-Weight Principle
+    content: In sophisticated English prose, heavy nominal clauses, relative structures,
+      or complex infinitive phrases feel awkward and top-heavy when placed in the
+      subject position. Masterful composition employs extraposition (It... that) or
+      passive restructuring to shift heavy elements to the clause end.
+    patterns:
+    - 'Top-Heavy (Clumsy): That autonomous algorithmic models operating in volatile
+      derivatives markets can trigger liquidity crises is undeniable.'
+    - 'Extraposed (End-Weight): It is undeniable that autonomous algorithmic models
+      operating in volatile derivatives markets can trigger liquidity crises.'
+    - 'End-Focus Realignment: The committee rejected the proposal submitted by external
+      consultants detailing five alternative tax structures (short subject -> long
+      predicate).'
+  explanation_tr: Türkçe cümlenin sonu yüklemle biterken, İngilizcede cümlenin sonu
+    en önemli veya en ağır bilgiye (End-Focus/End-Weight) ayrılır. Özneyi 20 kelimelik
+    bir isim tamlaması yapıp fiili cümlenin sonuna sıkıştırmak İngilizcede okuma akıcılığını
+    bozar. 'Extraposition' (It is evident that...) veya edilgen yapılarla ağır ögeleri
+    sona kaydırmak C2 kompozisyonunun temel şartıdır.
+  rules:
+  - name: Syntactic Extraposition for End-Weight
+    pattern: It + [be + Adjective / Passive Verb] + that + [Heavy Propositional Clause]
+    use_cases:
+    - Writing executive summaries for dense scientific, legal, or financial treatises
+    - Restructuring top-heavy academic theses to ensure maximum readability for global
+      peers
+    time_markers:
+    - indisputably
+    - patently
+    - self-evidently
+  contrasts:
+  - structure_a: That decentralized cryptographic consensus mechanisms suffer from
+      scalability bottlenecks is widely acknowledged.
+    structure_b: It is widely acknowledged that decentralized cryptographic consensus
+      mechanisms suffer from scalability bottlenecks.
+    difference_explanation_en: Structure A is clumsy and top-heavy. Structure B obeys
+      the Principle of End-Weight by postponing the heavy that-clause to the end.
+    difference_explanation_tr: A cümlesi başı ağır ('top-heavy') ve okunması güç bir
+      yapıdır. B cümlesi ise 'It is widely acknowledged that...' ile son ağırlık prensibine
+      uyarak akıcılığı maksimize eder.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Cümle Başını Aşırı Uzun İsim Cümlecikleriyle Boğma
+    explanation_tr: Türkçe düşünce yapısında özne başa konup uzun sıfatlarla süslenir
+      ve yüklem sona atılır. Bu yapıyı İngilizceye aktaran yazarlar 3 satırlık bir
+      özne yazıp sonuna tek bir 'is true' koyarlar. İngilizcede bu 'top-heavy' kusurdur;
+      'It is true that...' ile ağır öge sona ertelenmelidir.
+    incorrect_example: That the team failed to implement automated database sharding
+      before peak traffic caused the outage.
+    correct_example: It was the team's failure to implement automated database sharding
+      before peak traffic that caused the outage.
+  examples:
+  - en: It is self-evidently crucial that regulatory oversight frameworks evolve in
+      tandem with the exponential advancement of generative algorithmic systems.
+    tr: Düzenleyici denetim çerçevelerinin üretken algoritmik sistemlerin üstel gelişimiyle
+      eş zamanlı olarak evrilmesi kendiliğinden apaçık bir zorunluluktur.
+    rule_highlight: Extraposition obeying the Principle of End-Weight
+    context: AI Regulatory Governance
+  - en: The board ratified without amendment the sweeping governance restructuring
+      charter formulated by the independent audit committee.
+    tr: Yönetim kurulu, bağımsız denetim komitesi tarafından oluşturulan kapsamlı
+      yönetişim yeniden yapılandırma tüzüğünü herhangi bir değişiklik yapmaksızın
+      onayladı.
+    rule_highlight: End-weight displacement of heavy direct object
+    context: Corporate Governance Resolution
+  topic_tags:
+  - information-packaging
+  - end-weight
+  - end-focus
+  - extraposition
+  - c2-mastery
+  related_ids:
+  - vocab.delineate
+  - vocab.disparate
+  status: APPROVED
+  version: 1

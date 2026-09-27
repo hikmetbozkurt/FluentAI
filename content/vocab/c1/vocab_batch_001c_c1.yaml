@@ -1,0 +1,488 @@
+- id: vocab.momentum
+  headword: momentum
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /məˈmen.təm/
+  audio_ref: null
+  definition_en: The impetus, forward drive, or force gained by a developing process, campaign, or commercial enterprise.
+  meaning_tr: ivme, hızlanma gücü, hareket gücü
+  collocations:
+    - text: gain momentum
+      tr: ivme kazanmak
+    - text: maintain momentum
+      tr: ivmeyi korumak
+    - text: gather momentum
+      tr: ivme toplamak
+    - text: lose momentum
+      tr: ivme kaybetmek
+  examples:
+    - en: "The startup gained significant commercial momentum following its Series A funding announcement."
+      tr: "Girişim, Seri A yatırım duyurusunun ardından önemli bir ticari ivme kazandı."
+      context: Startup Venture
+    - en: "Cross-functional synchronization meetings help the product team maintain delivery momentum."
+      tr: "Fonksiyonlar arası senkronizasyon toplantıları, ürün ekibinin teslimat ivmesini korumasına yardımcı olur."
+      context: Agile Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Fizik terimi olan "momentum", iş dünyasında sıklıkla mecazi olarak "ilerleme ivmesi/hızı" anlamında kullanılır; Türkçedeki "anlık durum" veya "moment" ile karıştırılmamalıdır.
+      incorrect_example: "At that exact momentum, the electricity went off."
+      correct_example: "At that exact moment, the electricity went off."
+  register: business
+  topic_tags:
+    - momentum
+    - business-growth
+    - execution
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.precedent
+  headword: precedent
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈpres.ɪ.dənt/
+  audio_ref: null
+  definition_en: An earlier decision, case, or event that is considered as an authoritative guide or justification in subsequent similar situations.
+  meaning_tr: emsal, içtihat, örnek olay
+  collocations:
+    - text: set a precedent
+      tr: emsal teşkil etmek / oluşturmak
+    - text: unprecedented growth
+      tr: eşi görülmemiş büyüme
+    - text: legal precedent
+      tr: hukuki emsal
+    - text: follow precedent
+      tr: emsali izlemek
+  examples:
+    - en: "The supreme court ruling set an important legal precedent for digital data privacy disputes."
+      tr: "Yüksek mahkeme kararı, dijital veri gizliliği anlaşmazlıkları için önemli bir hukuki emsal oluşturdu."
+      context: Corporate Law
+    - en: "Approving an exceptional bonus without board consensus would set a dangerous precedent."
+      tr: "Yönetim kurulu mutabakatı olmadan istisnai bir prim onaylamak tehlikeli bir emsal teşkil ederdi."
+      context: Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Precedent" (/ˈpres.ɪ.dənt/ - emsal) sözcüğü, telaffuz ve yazım olarak "president" (/ˈprez.ɪ.dənt/ - başkan) sözcüğü ile karıştırılmamalıdır.
+      incorrect_example: "The precedent of the company gave an inspiring speech."
+      correct_example: "The president of the company gave an inspiring speech."
+  register: formal
+  topic_tags:
+    - jurisprudence
+    - precedent
+    - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.correlation
+  headword: correlation
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌkɒr.əˈleɪ.ʃən/
+  audio_ref: null
+  definition_en: A mutual, statistical, or reciprocal relationship between two or more variables or events.
+  meaning_tr: korelasyon, karşılıklı ilişki, bağıntı
+  collocations:
+    - text: strong correlation
+      tr: güçlü korelasyon
+    - text: negative correlation
+      tr: negatif korelasyon
+    - text: direct correlation
+      tr: doğrudan ilişki / bağıntı
+    - text: correlation between
+      tr: arasındaki korelasyon
+  examples:
+    - en: "The research demonstrated a strong positive correlation between employee autonomy and retention rates."
+      tr: "Araştırma, çalışan özerkliği ile personeli elde tutma oranları arasında güçlü bir pozitif korelasyon olduğunu ortaya koydu."
+      context: Organizational Research
+    - en: "Remember that statistical correlation does not necessarily imply direct causation."
+      tr: "İstatistiksel korelasyonun mutlaka doğrudan bir nedensellik anlamına gelmediğini unutmayın."
+      context: Data Science
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki değişken arasındaki ilişkiyi belirtirken "correlation between X and Y" veya "correlation with" kullanılır; "correlation to" daha az tercih edilir ve "correlation about" tamamen yanlıştır.
+      incorrect_example: "There is a clear correlation about salary and job satisfaction."
+      correct_example: "There is a clear correlation between salary and job satisfaction."
+  register: academic
+  topic_tags:
+    - statistics
+    - data-science
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.proliferation
+  headword: proliferation
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /prəˌlɪf.əˈreɪ.ʃən/
+  audio_ref: null
+  definition_en: A rapid increase in the number, volume, or dissemination of something, such as software tools or devices.
+  meaning_tr: hızlı yayılma, çoğalma, mantar gibi türeme
+  collocations:
+    - text: rapid proliferation
+      tr: hızlı çoğalma / yayılma
+    - text: proliferation of tools
+      tr: araçların hızla artması
+    - text: prevent the proliferation
+      tr: yayılmasını önlemek
+  examples:
+    - en: "The sudden proliferation of internal messaging tools caused significant information fragmentation."
+      tr: "Şirket içi mesajlaşma araçlarının hızla çoğalması, önemli bir bilgi parçalanmasına yol açtı."
+      context: Workplace Technology
+    - en: "Security teams must manage the rapid proliferation of edge devices across corporate networks."
+      tr: "Güvenlik ekipleri, kurumsal ağlardaki uç cihazların hızlı yayılmasını yönetmek zorundadır."
+      context: Network Infrastructure
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Proliferation" yüksek formaliteye sahip akademik ve teknik bir terimdir. Günlük konuşmada basit bir sayı artışı için "growth" veya "increase" yeterliyken; kontrolsüz, hızlı ve çok yönlü yayılmaları ifade etmek için "proliferation" seçilir.
+      incorrect_example: "There was a proliferation of two apples in the basket."
+      correct_example: "There was an increase of two apples in the basket."
+  register: academic
+  topic_tags:
+    - technology
+    - proliferation
+    - systems
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.synthesize
+  headword: synthesize
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈsɪn.θə.saɪz/
+  audio_ref: null
+  definition_en: To combine a variety of distinct concepts, evidence, or data sources into a unified and coherent whole.
+  meaning_tr: sentezlemek, birleştirmek
+  collocations:
+    - text: synthesize data
+      tr: veriyi sentezlemek
+    - text: synthesize findings
+      tr: bulguları sentezlemek
+    - text: synthesize information
+      tr: bilgileri sentezlemek
+  examples:
+    - en: "The lead researcher synthesized customer feedback from twenty interviews into three strategic themes."
+      tr: "Baş araştırmacı, yirmi mülakattan elde edilen müşteri geri bildirimlerini üç stratejik tema halinde sentezledi."
+      context: UX Research
+    - en: "Effective executives can rapidly synthesize complex market reports into clear executive summaries."
+      tr: "Etkili yöneticiler, karmaşık pazar raporlarını hızlı bir şekilde anlaşılır yönetici özetlerine sentezleyebilir."
+      context: Executive Leadership
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Synthesize" kimyasal sentezin yanı sıra düşünce, bilgi ve argümanları bir araya getirip bütünleştirmek için çok yaygın kullanılır; sadece kimya laboratuvarına özgü değildir.
+      incorrect_example: "We summarized the points, but we did not make a chemistry synthesis."
+      correct_example: "We synthesized the key arguments from all participants into a coherent proposal."
+  register: academic
+  topic_tags:
+    - analytical-thinking
+    - synthesis
+    - research
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.elicit
+  headword: elicit
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /iˈlɪs.ɪt/
+  audio_ref: null
+  definition_en: To evoke or draw out a reaction, answer, or information from someone through skilled questioning or discussion.
+  meaning_tr: ortaya çıkarmak, (bilgi/tepki) almak, söyletmek
+  collocations:
+    - text: elicit feedback
+      tr: geri bildirim almak / toplamak
+    - text: elicit requirements
+      tr: gereksinimleri ortaya çıkarmak
+    - text: elicit a response
+      tr: bir yanıt uyandırmak / almak
+  examples:
+    - en: "The business analyst structured the workshop to elicit detailed functional requirements from stakeholders."
+      tr: "İş analisti, paydaşlardan ayrıntılı fonksiyonel gereksinimleri ortaya çıkarmak için çalıştayı yapılandırdı."
+      context: Requirements Engineering
+    - en: "Carefully phrased interview questions help elicit candid opinions from prospective candidates."
+      tr: "Özenle ifade edilmiş mülakat soruları, adaylardan samimi görüşler alabilmeye yardımcı olur."
+      context: Hiring Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Elicit" (/iˈlɪs.ɪt/ - ortaya çıkarmak/öğrenmek) fiili, sesteş olan "illicit" (/ɪˈlɪs.ɪt/ - yasa dışı) sıfatı ile telaffuz benzerliği nedeniyle kesinlikle karıştırılmamalıdır.
+      incorrect_example: "The police caught the suspect doing an elicit trade."
+      correct_example: "The police caught the suspect doing an illicit trade."
+  register: formal
+  topic_tags:
+    - communication
+    - interview
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.champion
+  headword: champion
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈtʃæm.pi.ən/
+  audio_ref: null
+  definition_en: To vigorously support, defend, or spearhead a cause, principle, or technical initiative within an organization.
+  meaning_tr: hararetle savunmak, öncülük etmek, arkasında durmak
+  collocations:
+    - text: champion a cause
+      tr: bir davaya öncülük etmek
+    - text: champion an initiative
+      tr: bir girişimi hararetle savunmak
+    - text: champion diversity
+      tr: çeşitliliği savunmak / desteklemek
+  examples:
+    - en: "The chief technology officer championed the adoption of zero-trust architecture across all divisions."
+      tr: "Teknoloji direktörü, tüm departmanlarda sıfır güven mimarisinin benimsenmesine öncülük etti ve bunu hararetle savundu."
+      context: Technology Leadership
+    - en: "Senior managers must actively champion psychological safety in distributed engineering squads."
+      tr: "Kıdemli yöneticiler, dağıtık mühendislik ekiplerinde psikolojik güvenliği aktif olarak savunmalıdır."
+      context: Engineering Management
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Champion" Türkçede genellikle yalnızca "şampiyon" (isim) olarak bilinir; ancak profesyonel İngilizcede bir fikri veya projeyi tutkuyla desteklemek anlamında güçlü bir fiildir.
+      incorrect_example: "She was the champion of the meeting because she spoke loud."
+      correct_example: "She championed the new design proposal throughout the executive meeting."
+  register: formal
+  topic_tags:
+    - leadership
+    - advocacy
+    - initiative
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.embark
+  headword: embark
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ɪmˈbɑːk/
+  audio_ref: null
+  definition_en: To begin or launch a significant, demanding, or adventurous course of action, project, or career path.
+  meaning_tr: girişmek, (önemli bir yola/projeye) koyulmak, başlamak
+  collocations:
+    - text: embark on a journey
+      tr: bir yolculuğa çıkmak
+    - text: embark upon a project
+      tr: bir projeye girişmek
+    - text: embark on digital transformation
+      tr: dijital dönüşüme başlamak
+  examples:
+    - en: "The retail bank decided to embark on a multi-year cloud modernization journey."
+      tr: "Perakende bankası, çok yıllı bir bulut modernizasyonu yolculuğuna çıkmaya karar verdi."
+      context: Enterprise Strategy
+    - en: "Before embarking upon this complex refactoring, ensure that test suites have high code coverage."
+      tr: "Bu karmaşık kod iyileştirmesine girişmeden önce, test paketlerinin yüksek kod kapsamına sahip olduğundan emin olun."
+      context: Software Engineering
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Embark" fiili bir projeye veya sürece başlarken neredeyse her zaman "on" veya "upon" edatı ile birlikte kullanılır: "embark on a venture". Edatsız geçişli kullanılmaz.
+      incorrect_example: "We embarked our new strategy last month."
+      correct_example: "We embarked on our new strategy last month."
+  register: formal
+  topic_tags:
+    - initiative
+    - milestones
+    - career
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.standardize
+  headword: standardize
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈstæn.də.daɪz/
+  audio_ref: null
+  definition_en: To cause things to conform to an established, uniform standard, specification, or procedure.
+  meaning_tr: standartlaştırmak, tek tip hale getirmek
+  collocations:
+    - text: standardize procedures
+      tr: prosedürleri standartlaştırmak
+    - text: standardize the codebase
+      tr: kod tabanını standartlaştırmak
+    - text: effort to standardize
+      tr: standartlaştırma çabası
+  examples:
+    - en: "The platform group worked to standardize container deployment manifests across all engineering teams."
+      tr: "Platform grubu, tüm mühendislik ekiplerinde konteyner dağıtım bildirimlerini standartlaştırmak için çalıştı."
+      context: DevOps Engineering
+    - en: "Multinational companies standardize their reporting frameworks to maintain global financial visibility."
+      tr: "Çok uluslu şirketler, küresel finansal görünürlüğü korumak için raporlama sistemlerini standartlaştırır."
+      context: Corporate Finance
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "standart getirmek" veya "standart yapmak" ifadeleri İngilizcede "make standard" şeklinde değil, fiil türetimi olan "standardize" sözcüğüyle karşılanır.
+      incorrect_example: "We need to make standard the security rules for all branches."
+      correct_example: "We need to standardize the security rules for all branches."
+  register: formal
+  topic_tags:
+    - standardization
+    - technology
+    - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.inevitable
+  headword: inevitable
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ɪnˈev.ɪ.tə.bəl/
+  audio_ref: null
+  definition_en: Certain to happen and unable to be avoided, prevented, or escaped.
+  meaning_tr: kaçınılmaz, önüne geçilemez
+  collocations:
+    - text: inevitable outcome
+      tr: kaçınılmaz sonuç
+    - text: almost inevitable
+      tr: neredeyse kaçınılmaz
+    - text: accept the inevitable
+      tr: kaçınılmazı kabullenmek
+    - text: inevitable delay
+      tr: kaçınılmaz gecikme
+  examples:
+    - en: "Given the aggressive scope and tight staffing, a project deadline slip was almost inevitable."
+      tr: "Geniş kapsam ve kısıtlı personel göz önüne alındığında, proje teslim tarihinin sarkması neredeyse kaçınılmazdı."
+      context: Project Management
+    - en: "Technological obsolescence is an inevitable reality in modern consumer hardware manufacturing."
+      tr: "Teknolojik eskime, modern tüketici donanımı üretiminde kaçınılmaz bir gerçektir."
+      context: Industry Analysis
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Inevitable" (kaçınılmaz) sözcüğü çaresiz bir kabullenişi ifade eder; "unavoidable" ile eşanlamlıdır. Türkçedeki "ihtimal" (olasılık) kelimesine ses benzerliği olsa da kesin gerçekleşecek durumlar için kullanılır.
+      incorrect_example: "It is inevitable whether he will join us tomorrow."
+      correct_example: "It is uncertain whether he will join us tomorrow."
+  register: formal
+  topic_tags:
+    - probability
+    - outcomes
+    - risk
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.stringent
+  headword: stringent
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈstrɪn.dʒənt/
+  audio_ref: null
+  definition_en: Extremely rigorous, strict, and precise regarding rules, regulations, conditions, or standards.
+  meaning_tr: sıkı, katı, tavizsiz, bağlayıcı
+  collocations:
+    - text: stringent regulations
+      tr: sıkı düzenlemeler
+    - text: stringent criteria
+      tr: katı ölçütler
+    - text: stringent security standards
+      tr: sıkı güvenlik standartları
+  examples:
+    - en: "Fintech payment processors must adhere to stringent international data security standards."
+      tr: "Fintek ödeme işlemcileri, uluslararası sıkı veri güvenliği standartlarına uymak zorundadır."
+      context: Regulatory Compliance
+    - en: "The aerospace contractor applied stringent quality checks throughout every manufacturing stage."
+      tr: "Havacılık yüklenicisi, her üretim aşaması boyunca sıkı kalite kontrolleri uyguladı."
+      context: Industrial Quality
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Strict" ve "stringent" yakın anlamlıdır; ancak mevzuat, kurallar, denetimler ve bütçe kısıtlamaları için kurumsal ve resmi bağlamlarda "stringent" tercih edilir. İnsanların disiplinli kişiliği için "strict parent/teacher" kullanılır, "stringent person" denmez.
+      incorrect_example: "Our team manager is very stringent with working hours."
+      correct_example: "Our team manager is very strict with working hours."
+  register: formal
+  topic_tags:
+    - regulations
+    - standards
+    - compliance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.rule-out
+  headword: rule out
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /ruːl aʊt/
+  audio_ref: null
+  definition_en: To exclude or eliminate someone or something as a viable possibility, candidate, or explanation.
+  meaning_tr: ihtimal dışı bırakmak, elemek, göz ardı etmek
+  collocations:
+    - text: rule out the possibility
+      tr: olasılığı elemek / dışlamak
+    - text: completely rule out
+      tr: tamamen ihtimal dışı bırakmak
+    - text: cannot be ruled out
+      tr: ihtimal dışı bırakılamaz
+  examples:
+    - en: "Initial investigations ruled out hardware failure as the underlying cause of the outage."
+      tr: "İlk incelemeler, kesintinin altında yatan neden olarak donanım arızası olasılığını eledi."
+      context: Incident Management
+    - en: "The executive committee has not ruled out the possibility of a strategic corporate merger."
+      tr: "İcra komitesi, stratejik bir şirket birleşmesi olasılığını henüz ihtimal dışı bırakmadı."
+      context: Corporate M&A
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Rule out" bir olasılığı "elemek/hesap dışı bırakmak" demektir; "kural koymak" veya "hüküm vermek" (rule) anlamına gelmez.
+      incorrect_example: "The government ruled out a new law about taxes."
+      correct_example: "The government introduced a new law about taxes."
+  register: general
+  topic_tags:
+    - problem-solving
+    - analysis
+    - deduction
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.pave-the-way
+  headword: pave the way
+  cefr_level: C1
+  part_of_speech: phrase
+  phonetic: /peɪv ðə weɪ/
+  audio_ref: null
+  definition_en: To create conditions, opportunities, or groundwork that make future progress, development, or success possible.
+  meaning_tr: zemin hazırlamak, yol açmak, önünü açmak
+  collocations:
+    - text: pave the way for
+      tr: -e zemin hazırlamak
+    - text: help pave the way
+      tr: önünü açmaya yardımcı olmak
+    - text: pave the way toward
+      tr: -e doğru yol açmak
+  examples:
+    - en: "The pioneering research paved the way for subsequent breakthroughs in machine learning."
+      tr: "Bu öncü araştırma, makine öğrenimindeki müteakip atılımların önünü açtı."
+      context: AI Research
+    - en: "Establishing open API standards paved the way for seamless interoperability between health platforms."
+      tr: "Açık API standartlarının oluşturulması, sağlık platformları arasında kesintisiz bir birlikte çalışabilirliğe zemin hazırladı."
+      context: Health Technology
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bu deyim "bir şeye zemin hazırlamak" anlamında her zaman "for" veya "towards" edatıyla kullanılır; "pave the way to" bazen görülse de en yaygın ve doğru yapı "pave the way for" kalıbıdır.
+      incorrect_example: "The new agreement paved the way about long-term trade collaboration."
+      correct_example: "The new agreement paved the way for long-term trade collaboration."
+  register: general
+  topic_tags:
+    - progress
+    - groundwork
+    - innovation
+  related_ids: []
+  status: APPROVED
+  version: 1

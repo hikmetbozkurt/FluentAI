@@ -1,0 +1,148 @@
+- id: grammar.b2.third-mixed-conditionals
+  title: Third and Mixed Conditionals in Root-Cause Analysis
+  cefr_level: B2
+  category: conditionals_and_hypotheticals
+  summary_en: Formulate past regrets with Type 3 (had done -> would have done) and connect past events to present reality with Mixed Conditionals.
+  summary_tr: Geçmiş pişmanlıklar ve vaka analizleri için Tip 3 (had + V3 -> would have + V3), geçmiş kararların bugünkü sonucunu bağlamak için karma koşul (Mixed Conditional) kullanılır.
+  explanation_en:
+    - title: "Type 3: Unchangeable Past Counterfactuals"
+      content: >-
+        Third conditional sentences reflect on what did NOT happen in the past and imagine a different past outcome.
+        They are essential in business incident post-mortems, retrospective meetings, and legal reviews.
+      patterns:
+        - "If + Subject + had + V3 (Past Perfect), Subject + would have + V3 (Past Participle)"
+        - "Inverted Variant: Had we secured the certificates earlier, we would not have faced outage."
+    - title: "Mixed Conditionals: Past Action, Present Consequence"
+      content: >-
+        Often, a past decision directly shapes our current state today. We combine a past condition with a present outcome.
+      patterns:
+        - "Past Condition -> Present Consequence: If + had + V3, ... would + Base Verb (today / right now)"
+        - "Present Permanent State -> Past Consequence: If + Past Simple, ... would have + V3"
+  explanation_tr: >-
+    Türkçede 'Eğer o zaman yapsaydık, şimdi böyle olurdu' gibi geçmiş ve şimdiki zamanı birleştiren karma yapılar
+    Türkçe düşüncede doğaldır. Ancak İngilizceye çevirirken her iki tarafa da 'would' ya da yanlış zaman kipi koyma
+    hatası çok yaygındır. Geçmişteki olay için 'had + V3', şu an devam eden sonuç için ise 'would + V1' kullanılır.
+  rules:
+    - name: Pure Past Counterfactual (Type 3)
+      pattern: If + Subject + had + Past Participle, Subject + would have + Past Participle
+      use_cases:
+        - Post-mortem analysis of system outages or missed deadlines
+        - Financial impact assessments of past decisions
+    - name: Past Action to Present Result (Mixed Type)
+      pattern: If + Subject + had + Past Participle, Subject + would + Base Verb (now)
+      use_cases:
+        - Explaining current competitive advantage or technical debt due to historical choices
+  contrasts:
+    - structure_a: If we had implemented redundancy last quarter, the cluster would not have crashed yesterday. (Type 3)
+      structure_b: If we had implemented redundancy last quarter, our servers would be fully operational right now. (Mixed)
+      difference_explanation_en: >-
+        Sentence A connects a past cause with a past effect (yesterday).
+        Sentence B connects a past cause with the current ongoing operational state (right now).
+      difference_explanation_tr: >-
+        A cümlesi geçmişteki sebebi geçmişteki bir sonuçla (dün) birleştirir.
+        B cümlesi ise geçmişteki kararı şu anki operasyonel durumla (şu anda) birleştirir.
+  turkish_traps:
+    - trap_type: conditional_overgeneralization
+      trap_title: "Geçmiş Şart Cümlelerinde 'Would Have' Aşırı Genellemesi"
+      explanation_tr: >-
+        Türk öğreniciler 'Eğer bilseydik' ifadesini 'If we would have known' şeklinde kurmaya eğilimlidir.
+        'If' cümlesi içinde asla 'would have' kullanılmaz; 'If we had known' denmelidir.
+      incorrect_example: If our security team would have patched the vulnerability, the leak would not occur.
+      correct_example: If our security team had patched the vulnerability, the leak would not have occurred.
+  examples:
+    - en: If the architecture committee had approved the microservices proposal last year, we would not have struggled with scalability during Black Friday.
+      tr: Mimari komite geçen yıl mikroservis önerisini onaylamış olsaydı, Efsane Cuma döneminde ölçeklenebilirlik sorunu yaşamazdık.
+      rule_highlight: Type 3 Counterfactual (had approved -> would not have struggled)
+      context: Infrastructure Post-Mortem
+    - en: If we had secured the seed funding in March, our engineering team would be twice as large today.
+      tr: Tohum yatırımı mart ayında almış olsaydık, mühendislik ekibimiz bugün iki kat daha büyük olurdu.
+      rule_highlight: Mixed Conditional (had secured -> would be today)
+      context: Startup Growth
+  topic_tags:
+    - conditionals
+    - mixed-conditionals
+    - post-mortem
+    - b2-vantage
+  related_ids:
+    - vocab.mitigate
+    - vocab.contingency
+  status: APPROVED
+  version: 1
+
+- id: grammar.b2.passive-voice-formal
+  title: Passive and Causative in Technical & Formal Reporting
+  cefr_level: B2
+  category: passive_and_causative
+  summary_en: Employ agentless passives for objective documentation and 'have/get something done' for delegated services.
+  summary_tr: Kurumsal raporlarda nesnellik için edilgen çatı (passive) ve delege edilen işler için ettirgen çatı (have/get done) kullanımı.
+  explanation_en:
+    - title: "Objective Tone Through Agentless Passives"
+      content: >-
+        In executive summaries, technical documentation, and compliance audits, the action or result matters more
+        than who performed it. Passive voice creates an authoritative, diplomatic, and objective tone.
+      patterns:
+        - "Passive Formula: Subject + be (appropriate tense) + Past Participle (V3)"
+        - "Present Perfect Passive: has / have been + V3"
+        - "Modal Passive: must / should / can + be + V3"
+    - title: "Causative Structures: Delegating to External Parties"
+      content: >-
+        When an organization arranges for an external specialist, auditor, or contractor to perform work,
+        use the causative structure: 'have / get + object + Past Participle (V3)'.
+      patterns:
+        - "Causative: Subject + have / get + Object + V3 (e.g., We had the code audited by a third party.)"
+  explanation_tr: >-
+    Türkçedeki ettirgenlik (-dir/-tir eki: yaptırmak, denetletmek) ile edilgenlik (-il/-in eki: yapıldı, denetlendi)
+    İngilizcede farklı yapılarla kurulur. Türk öğrenicilerin en sık düştüğü hata 'I had my computer repair'
+    şeklinde nesneden sonra fiili yalın bırakmaktır. İngilizcede 'have/get something done' yapısında fiil daima
+    3. haliyle (past participle: repaired, audited, deployed) yer almalıdır.
+  rules:
+    - name: Formal Impersonal Passive
+      pattern: Subject + be + Past Participle (V3)
+      use_cases:
+        - Official policy releases and technical specifications
+        - Incident reports where assigning direct personal blame is tactless
+    - name: Delegated Causative
+      pattern: Subject + have/get + Object + Past Participle (V3)
+      use_cases:
+        - Outsourcing compliance, pen-testing, or legal translations
+        - Hardware maintenance and infrastructure provisioning
+  contrasts:
+    - structure_a: The QA team tested the payment module thoroughly. (Active)
+      structure_b: The payment module was tested thoroughly before rollout. (Passive)
+      difference_explanation_en: >-
+        The active sentence highlights the QA team as the actor. The passive sentence emphasizes the module and its verified state.
+      difference_explanation_tr: >-
+        Etken cümle testi yapan ekibi öne çıkarır. Edilgen cümle ise ödeme modülünü ve güvenli durumunu vurgular.
+    - structure_a: We had the vendor review our security policies. (Active Causative with base verb)
+      structure_b: We had our security policies reviewed by an external vendor. (Passive Causative with V3)
+      difference_explanation_en: >-
+        Sentence A uses 'have + agent + base verb'. Sentence B uses the standard business causative 'have + object + V3'.
+      difference_explanation_tr: >-
+        A cümlesi işi yapana odaklanır (have someone do). B cümlesi ise denetlenen nesneye ve sonuca odaklanır (have something done).
+  turkish_traps:
+    - trap_type: voice_and_causative_transfer
+      trap_title: "Ettirgen Çatıda Fiili 3. Hal Yerine Yalın Bırakma Hatası"
+      explanation_tr: >-
+        Türkçe 'sistemi denetlettim' derken fiil kökü kullanılır. İngilizcede 'I had the system audit' dendiğinde
+        cümle gramer olarak bozulur. Doğru kalıp 'I had the system audited' (V3) olmalıdır.
+      incorrect_example: We must have our smart contracts verify before launching on mainnet.
+      correct_example: We must have our smart contracts verified before launching on mainnet.
+  examples:
+    - en: The annual financial statements have been verified by an independent accounting firm.
+      tr: Yıllık mali tablolar bağımsız bir denetim şirketi tarafından doğrulanmıştır.
+      rule_highlight: Present Perfect Passive (have been verified)
+      context: Corporate Compliance
+    - en: The engineering department gets the production servers backed up every six hours.
+      tr: Mühendislik departmanı, canlı sunucuların yedeğini her altı saatte bir aldırmaktadır.
+      rule_highlight: Causative of Regular Process (gets the servers backed up)
+      context: Systems Operations
+  topic_tags:
+    - passive-voice
+    - causative
+    - formal-reporting
+    - b2-vantage
+  related_ids:
+    - vocab.streamline
+    - vocab.contingency
+  status: APPROVED
+  version: 1

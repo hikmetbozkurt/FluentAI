@@ -1,0 +1,1819 @@
+- id: listening.c1.smart-home-iot-integration
+  title: Architecting Heterogeneous Smart Home IoT Standards
+  cefr_level: C1
+  category: product_discovery
+  scenario_context: Selin, an IoT systems architect, consults with Marcus, a firmware engineering lead, about unifying disparate
+    Zigbee, Thread, and Matter protocols across consumer hardware ecosystems.
+  speakers:
+  - id: marcus
+    name: Marcus
+    role: Lead Embedded Firmware Engineer
+    accent: American
+  - id: selin
+    name: Selin
+    role: Principal IoT Architect
+    accent: Turkish
+  audio_ref: audio/listening/c1_smart_home_iot_integration.mp3
+  duration_seconds: 76
+  transcript_items:
+  - index: 1
+    speaker_id: marcus
+    start_ms: 0
+    end_ms: 9632
+    text_en: Selin, looking at our upcoming appliance firmware roadmap, our dual-stack Zigbee and Bluetooth architecture is
+      struggling to maintain low latency when bridging to Matter over Thread.
+    text_tr: Selin, yaklaşan cihaz bellenimi yol haritamıza baktığımızda, ikili Zigbee ve Bluetooth mimarimiz Matter over
+      Thread köprüsüne geçerken düşük gecikmeyi korumakta zorlanıyor.
+  - index: 2
+    speaker_id: selin
+    start_ms: 10032
+    end_ms: 20590
+    text_en: I anticipated this bottleneck. Matter relies heavily on IPv6 routing throughout the mesh, whereas our legacy
+      Zigbee clusters depend on application-layer gateway translation.
+    text_tr: Bu darboğazı öngörmüştüm. Matter, mesh ağı boyunca büyük ölçüde IPv6 yönlendirmesine dayanır, oysa eski Zigbee
+      kümelerimiz uygulama katmanı ağ geçidi çevirisine bağımlıdır.
+  - index: 3
+    speaker_id: marcus
+    start_ms: 20990
+    end_ms: 31532
+    text_en: Exactly. When the gateway translates Zigbee cluster libraries into Matter data models, we observe intermittent
+      packet drops and round-trip times exceeding six hundred milliseconds.
+    text_tr: Kesinlikle. Ağ geçidi Zigbee küme kütüphanelerini Matter veri modellerine dönüştürürken, kesintili paket kayıpları
+      ve altı yüz milisaniyeyi aşan gidiş-dönüş süreleri gözlemliyoruz.
+  - index: 4
+    speaker_id: selin
+    start_ms: 31932
+    end_ms: 40574
+    text_en: We should deprecate direct proprietary bridging. Instead, we can implement an OpenThread Border Router daemon
+      directly on our primary hub chipset.
+    text_tr: Doğrudan tescilli köprülemeyi kullanımdan kaldırmalıyız. Bunun yerine, ana hub yonga setimiz üzerinde doğrudan
+      bir OpenThread Border Router arka plan programı uygulamalıyız.
+  - index: 5
+    speaker_id: marcus
+    start_ms: 40974
+    end_ms: 48712
+    text_en: That would allow Thread-enabled endpoint devices to establish end-to-end encrypted IP sessions without packet
+      payload re-encoding at the gateway boundary.
+    text_tr: Bu, Thread özellikli uç cihazların ağ geçidi sınırında paket yükü yeniden kodlamasına gerek kalmadan uçtan uca
+      şifrelenmiş IP oturumları kurmasına olanak tanır.
+  - index: 6
+    speaker_id: selin
+    start_ms: 49112
+    end_ms: 60020
+    text_en: Precisely. Furthermore, by offloading Matter commissioning to standard Bluetooth Low Energy advertising, initial
+      device onboarding friction drops significantly for non-technical consumers.
+    text_tr: Tam olarak öyle. Dahası, Matter devreye alımını standart Bluetooth Düşük Enerji duyurularına devrederek, teknik
+      olmayan tüketiciler için ilk cihaz kurulum sürtünmesi önemli ölçüde azalır.
+  - index: 7
+    speaker_id: marcus
+    start_ms: 60420
+    end_ms: 66048
+    text_en: What about backward compatibility for the half-million legacy Zigbee units currently in customer households?
+    text_tr: Peki müşterilerin evlerinde bulunan yarım milyon eski Zigbee ünitesinin geriye dönük uyumluluğu ne olacak?
+  - index: 8
+    speaker_id: selin
+    start_ms: 66448
+    end_ms: 75705
+    text_en: We will containerize the legacy translation service in isolated flash memory, dedicating dedicated hardware crypto-acceleration
+      solely to modern IPv6 traffic.
+    text_tr: Eski çeviri hizmetini yalıtılmış flaş bellekte konteynerleştireceğiz ve özel donanım kripto hızlandırmasını yalnızca
+      modern IPv6 trafiğine tahsis edeceğiz.
+  comprehension_questions:
+  - id: q_listening_c1_smart-home-iot-integration_01
+    question_en: What architectural divergence causes latency between Zigbee and Matter?
+    question_tr_hint: Zigbee ve Matter arasındaki gecikmeye hangi mimari farklılık neden oluyor?
+    options:
+    - Matter operates natively over IPv6 mesh routing, whereas legacy Zigbee relies on application-layer gateway translation.
+    - Matter disables all encryption protocols to prioritize raw transmission speed.
+    - Zigbee lacks radio transmitters capable of broadcasting electromagnetic waves.
+    - Zigbee requires high-voltage power lines while Matter runs on solar energy.
+    correct_answer: Matter operates natively over IPv6 mesh routing, whereas legacy Zigbee relies on application-layer gateway
+      translation.
+    explanation_en: Selin explains that Matter utilizes IPv6 mesh routing while Zigbee requires gateway translation.
+    explanation_tr: Selin, Matter'ın IPv6 yönlendirmesi kullandığını, Zigbee'nin ise ağ geçidi çevirisi gerektirdiğini belirtir.
+  - id: q_listening_c1_smart-home-iot-integration_02
+    question_en: What specific component does Selin propose implementing on the main hub?
+    question_tr_hint: Selin ana hub üzerinde hangi özel bileşenin uygulanmasını öneriyor?
+    options:
+    - An OpenThread Border Router daemon running directly on the primary hub chipset.
+    - An external analog modem connected via dial-up phone lines.
+    - A liquid cooling system for battery thermal regulation.
+    - A manual physical toggle switch for alternating between radios.
+    correct_answer: An OpenThread Border Router daemon running directly on the primary hub chipset.
+    explanation_en: Selin suggests embedding an OpenThread Border Router daemon on the chipset.
+    explanation_tr: Selin, yonga seti üzerinde bir OpenThread Border Router arka plan programı çalıştırmayı önerir.
+  - id: q_listening_c1_smart-home-iot-integration_03
+    question_en: How does offloading onboarding to Bluetooth Low Energy improve consumer experience?
+    question_tr_hint: Kurulumun BLE'ye aktarılması tüketici deneyimini nasıl iyileştirir?
+    options:
+    - It automatically registers the device with international patent authorities.
+    - It minimizes device onboarding friction during initial setup for non-technical users.
+    - It guarantees infinite battery life across all home sensors.
+    - It eliminates the need for household electricity during pairing.
+    correct_answer: It minimizes device onboarding friction during initial setup for non-technical users.
+    explanation_en: Selin notes that using BLE advertising lowers onboarding friction for regular consumers.
+    explanation_tr: Selin, BLE kullanımının teknik olmayan kullanıcılar için kurulum sürtünmesini azalttığını açıklar.
+  - id: q_listening_c1_smart-home-iot-integration_04
+    question_en: How will legacy Zigbee devices maintain support under the revised firmware plan?
+    question_tr_hint: Eski Zigbee cihazları revize edilen bellenim planı altında nasıl desteklenmeye devam edecek?
+    options:
+    - A postal recall program will replace every installed circuit board.
+    - Their translation service will be containerized in isolated flash memory alongside dedicated IPv6 crypto-acceleration.
+    - Customers will be forced to discard all existing hardware immediately.
+    - Legacy units will communicate strictly using audible ultrasonic frequencies.
+    correct_answer: Their translation service will be containerized in isolated flash memory alongside dedicated IPv6 crypto-acceleration.
+    explanation_en: Selin states the legacy translation service will be containerized in isolated flash memory.
+    explanation_tr: Selin, eski çeviri servisinin yalıtılmış bellekte konteynerleştirileceğini belirtir.
+  - id: q_listening_c1_smart-home-iot-integration_05
+    question_en: What symptom did Marcus observe during payload conversion at the gateway boundary?
+    question_tr_hint: Marcus ağ geçidi sınırında veri yükü dönüşümü sırasında hangi belirtiyi gözlemledi?
+    options:
+    - Intermittent packet loss and round-trip times surpassing six hundred milliseconds.
+    - Inversion of screen display colors on domestic mobile devices.
+    - Spontaneous hardware combustion in central processing units.
+    - Permanent loss of internet connectivity across the entire municipality.
+    correct_answer: Intermittent packet loss and round-trip times surpassing six hundred milliseconds.
+    explanation_en: Marcus noted packet drops and latency exceeding 600 ms during conversion.
+    explanation_tr: Marcus paket kayıpları ve 600 ms'yi aşan gecikmeler gözlemlediğini aktarır.
+  topic_tags:
+  - technology
+  - daily_life
+- id: listening.c1.airline-flight-cancellation-rebooking
+  title: Managing Cascading Transatlantic Flight Disruptions
+  cefr_level: C1
+  category: incident_response
+  scenario_context: Mert, an international traveler stranded in London due to airspace restrictions, negotiates complex interline
+    rerouting, visa waivers, and duty-of-care vouchers with Claire, a premium service duty manager.
+  speakers:
+  - id: claire
+    name: Claire
+    role: Premium Airport Duty Manager
+    accent: British
+  - id: mert
+    name: Mert
+    role: Enterprise Management Consultant
+    accent: Turkish
+  audio_ref: audio/listening/c1_airline_flight_cancellation_rebooking.mp3
+  duration_seconds: 74
+  transcript_items:
+  - index: 1
+    speaker_id: claire
+    start_ms: 0
+    end_ms: 9683
+    text_en: Good afternoon, Mr. Demir. As you are aware, severe convective weather across the North Atlantic corridor has
+      led to widespread ground stops and cancellations.
+    text_tr: İyi günler Sayın Demir. Bildiğiniz gibi, Kuzey Atlantik koridoru boyunca etkili olan şiddetli konvektif hava
+      koşulları yaygın yer durdurmalarına ve iptallere yol açtı.
+  - index: 2
+    speaker_id: mert
+    start_ms: 10083
+    end_ms: 18540
+    text_en: I understand the meteorological constraints, Claire, but I have a high-stakes board presentation in Chicago tomorrow
+      at nine in the morning local time.
+    text_tr: Meteorolojik kısıtlamaları anlıyorum Claire, ancak yarın yerel saatle sabah dokuzda Chicago'da çok kritik bir
+      yönetim kurulu sunumum var.
+  - index: 3
+    speaker_id: claire
+    start_ms: 18940
+    end_ms: 27543
+    text_en: Under our standard carrier policies, the next available direct seat on our metal departs tomorrow evening, which
+      clearly will not fulfill your operational schedule.
+    text_tr: Standart şirket politikalarımız gereği, kendi uçaklarımızdaki bir sonraki müsait direkt koltuk yarın akşam kalkıyor;
+      bu da çalışma programınıza açıkça uymuyor.
+  - index: 4
+    speaker_id: mert
+    start_ms: 27943
+    end_ms: 34636
+    text_en: Could you invoke an involuntary interline endorsement to route me through Dublin or Frankfurt on a Star Alliance
+      partner carrier tonight?
+    text_tr: Bu akşam bir Star Alliance ortak taşıyıcısıyla beni Dublin veya Frankfurt üzerinden yönlendirmek için zorunlu
+      hatlar arası ciro kuralını işletebilir misiniz?
+  - index: 5
+    speaker_id: claire
+    start_ms: 35036
+    end_ms: 44433
+    text_en: Because you are traveling on a full-fare business itinerary and hold elite tier status, I can authorize an involuntary
+      reroute on Lufthansa via Frankfurt departing in two hours.
+    text_tr: Tam ücretli business seyahat ettiğiniz ve elit statüye sahip olduğunuz için, iki saat sonra kalkan Frankfurt
+      aktarmalı Lufthansa uçuşuna zorunlu yeniden rota izni verebilirim.
+  - index: 6
+    speaker_id: mert
+    start_ms: 44833
+    end_ms: 54916
+    text_en: Does that transfer my checked luggage with biometric expedited handling, and will transit through Frankfurt necessitate
+      a Schengen transit visa for a Turkish passport with a valid US B1 visa?
+    text_tr: Bu işlem biyometrik hızlandırılmış bagajımı da aktarır mı ve geçerli ABD B1 vizesi olan Türk pasaportu için Frankfurt
+      transit geçişi Schengen transit vizesi gerektirir mi?
+  - index: 7
+    speaker_id: claire
+    start_ms: 55316
+    end_ms: 66323
+    text_en: Holding a valid United States visa exempts you from airport transit visa requirements in Frankfurt, provided
+      you remain within the international transit concourse. Luggage transfers automatically.
+    text_tr: Geçerli bir Amerika Birleşik Devletleri vizesine sahip olmak, uluslararası transit salonunda kalmanız şartıyla
+      sizi Frankfurt'ta havalimanı transit vizesi şartından muaf tutar. Bagajınız otomatik aktarılacaktır.
+  - index: 8
+    speaker_id: mert
+    start_ms: 66723
+    end_ms: 73676
+    text_en: That is a tremendous relief. Please reissue the electronic boarding passes and print the interline baggage tags
+      immediately.
+    text_tr: Bu muazzam bir rahatlama oldu. Lütfen elektronik biniş kartlarını yeniden düzenleyin ve hatlar arası bagaj etiketlerini
+      hemen yazdırın.
+  comprehension_questions:
+  - id: q_listening_c1_airline-flight-cancellation-rebooking_01
+    question_en: Why is the direct flight offered under standard carrier policy unacceptable to Mert?
+    question_tr_hint: Standart şirket politikası kapsamında sunulan direkt uçuş Mert için neden kabul edilemez?
+    options:
+    - It requires him to travel in an unpressurized cargo hold.
+    - It reroutes through three unauthorized international jurisdictions.
+    - It charges an exorbitant additional baggage surcharge.
+    - It departs tomorrow evening, causing him to miss a critical morning board presentation.
+    correct_answer: It departs tomorrow evening, causing him to miss a critical morning board presentation.
+    explanation_en: Mert explains he has a crucial board presentation tomorrow at 9:00 AM, so tomorrow evening is too late.
+    explanation_tr: Mert yarın sabah 9'da sunumu olduğunu, bu yüzden yarın akşamki uçuşun çok geç olduğunu belirtir.
+  - id: q_listening_c1_airline-flight-cancellation-rebooking_02
+    question_en: What enables Claire to authorize an involuntary interline endorsement on a partner carrier?
+    question_tr_hint: Claire'in ortak bir havayolunda zorunlu hatlar arası bilet onaylamasını sağlayan nedir?
+    options:
+    - Mert's full-fare business itinerary combined with his elite frequent-flyer status.
+    - A written presidential emergency decree signed by civil aviation authorities.
+    - A mandatory random lottery held at the customer service counter.
+    - The complete insolvency and bankruptcy of the original operating airline.
+    correct_answer: Mert's full-fare business itinerary combined with his elite frequent-flyer status.
+    explanation_en: Claire points out his full-fare business ticket and elite tier status allow the exception.
+    explanation_tr: Claire, tam ücretli business bileti ve elit statüsünün bu istisnaya izin verdiğini söyler.
+  - id: q_listening_c1_airline-flight-cancellation-rebooking_03
+    question_en: Why is Mert exempt from obtaining a Schengen transit visa during his layover in Frankfurt?
+    question_tr_hint: Mert Frankfurt'taki aktarma sırasında neden Schengen transit vizesi almaktan muaftır?
+    options:
+    - All international visa treaties were permanently abolished across Europe.
+    - Lufthansa operates a private subterranean tunnel outside legal territory.
+    - He is traveling as an accredited ambassador of the United Nations.
+    - His valid United States visa waives the transit visa rule while staying in the international concourse.
+    correct_answer: His valid United States visa waives the transit visa rule while staying in the international concourse.
+    explanation_en: Claire clarifies that holding a valid US visa grants an airport transit visa exemption.
+    explanation_tr: Claire, geçerli bir ABD vizesine sahip olmanın uluslararası transit bölgesinde muafiyet sağladığını açıklar.
+  - id: q_listening_c1_airline-flight-cancellation-rebooking_04
+    question_en: What route does Claire arrange to accommodate Mert's urgent timeline?
+    question_tr_hint: Claire Mert'in acil takvimine uyum sağlamak için hangi rotayı düzenler?
+    options:
+    - A flight connecting through Tokyo and Vancouver arriving two days later.
+    - A thirty-hour transoceanic maritime ferry across the Atlantic.
+    - A direct supersonic charter flight landing directly in downtown Chicago.
+    - A Lufthansa flight routing through Frankfurt departing in two hours.
+    correct_answer: A Lufthansa flight routing through Frankfurt departing in two hours.
+    explanation_en: Claire arranges an involuntary reroute on Lufthansa via Frankfurt departing in two hours.
+    explanation_tr: Claire, iki saat içinde kalkan Frankfurt aktarmalı bir Lufthansa uçuşu ayarlar.
+  - id: q_listening_c1_airline-flight-cancellation-rebooking_05
+    question_en: What handling will happen to Mert's checked luggage during the Frankfurt connection?
+    question_tr_hint: Frankfurt aktarması sırasında Mert'in kayıtlı bagajına ne işlem yapılacaktır?
+    options:
+    - Mert must collect and re-check it manually during his brief connection.
+    - It will be automatically transferred across carriers to his final destination.
+    - It must be discarded due to international hazardous material regulations.
+    - It will remain in London until the weather clears three days later.
+    correct_answer: It will be automatically transferred across carriers to his final destination.
+    explanation_en: Claire assures Mert that luggage transfers automatically.
+    explanation_tr: Claire, bagajın otomatik olarak aktarılacağı güvencesini verir.
+  topic_tags:
+  - travel
+  - customer_service
+- id: listening.c1.functional-medicine-longevity-consult
+  title: Consulting on Integrative Biomarker Diagnostics and Longevity
+  cefr_level: C1
+  category: product_discovery
+  scenario_context: Dr. Bennett, a functional medicine specialist, interprets comprehensive metabolomic, lipid particle, and
+    epigenetic methylation profiling for Ayla, tailoring an evidence-based preventative intervention.
+  speakers:
+  - id: dr_bennett
+    name: Dr. Bennett
+    role: Functional Medicine Physician
+    accent: American
+  - id: ayla
+    name: Ayla
+    role: Healthcare Executive
+    accent: Turkish
+  audio_ref: audio/listening/c1_functional_medicine_longevity_consult.mp3
+  duration_seconds: 79
+  transcript_items:
+  - index: 1
+    speaker_id: dr_bennett
+    start_ms: 0
+    end_ms: 11702
+    text_en: Welcome back, Ayla. We have gathered your advanced biomarker panel, including your ApoB particle count, fasting
+      insulin sensitivity, and DNA methylation biological age score.
+    text_tr: Tekrar hoş geldiniz Ayla Hanım. ApoB parçacık sayınız, açlık insülin duyarlılığınız ve DNA metilasyon biyolojik
+      yaş skorunuz dahil olmak üzere gelişmiş biyobelirteç panelinizi topladık.
+  - index: 2
+    speaker_id: ayla
+    start_ms: 12102
+    end_ms: 22549
+    text_en: I was anxious to review the results, Dr. Bennett. My routine physical showed normal total cholesterol, but I
+      suspect that aggregated metric masks underlying vascular risk.
+    text_tr: Sonuçları incelemek için sabırsızlanıyordum Dr. Bennett. Rutin tahlillerim toplam kolesterolü normal gösterdi
+      ancak bu birleştirilmiş metriğin altta yatan damar riskini maskelediğinden şüpheleniyorum.
+  - index: 3
+    speaker_id: dr_bennett
+    start_ms: 22949
+    end_ms: 33231
+    text_en: Your intuition is spot on. While standard LDL-C appears benign at ninety-five milligrams per deciliter, your
+      Apolipoprotein B is elevated at one hundred and fifteen.
+    text_tr: Sezgileriniz tam olarak doğru. Standart LDL-C desilitrede doksan beş miligram ile zararsız görünse de, Apolipoprotein
+      B değeriniz yüz on beşte yüksek seyrediyor.
+  - index: 4
+    speaker_id: ayla
+    start_ms: 33631
+    end_ms: 40809
+    text_en: Which indicates an atherogenic particle concentration that could drive plaque accumulation despite normal volumetric
+      lipid concentrations.
+    text_tr: Bu da normal hacimsel lipid konsantrasyonlarına rağmen plak birikimini tetikleyebilecek aterojenik bir parçacık
+      yoğunluğuna işaret ediyor.
+  - index: 5
+    speaker_id: dr_bennett
+    start_ms: 41209
+    end_ms: 50882
+    text_en: Precisely. Furthermore, your Horvath epigenetic clock estimates your biological age at forty-one, approximately
+      three years older than your chronological age.
+    text_tr: Kesinlikle. Dahası, Horvath epigenetik saatiniz biyolojik yaşınızı kırk bir olarak tahmin ediyor, bu da takvim
+      yaşınızdan yaklaşık üç yıl daha yaşlı.
+  - index: 6
+    speaker_id: ayla
+    start_ms: 51282
+    end_ms: 57905
+    text_en: I assume that delta stems from chronic sleep deprivation and elevated cortisol from international corporate restructuring.
+    text_tr: Bu farkın uluslararası kurumsal yeniden yapılanmadan kaynaklanan kronik uykusuzluk ve yüksek kortizolden kaynaklandığını
+      tahmin ediyorum.
+  - index: 7
+    speaker_id: dr_bennett
+    start_ms: 58305
+    end_ms: 70627
+    text_en: 'Without question. Rather than prescribing statins immediately, I recommend a multifaceted protocol: targeted
+      high-intensity interval training, zone-two mitochondrial conditioning, and time-restricted feeding.'
+    text_tr: 'Şüphesiz. Hemen statin reçete etmek yerine çok yönlü bir protokol öneriyorum: hedefe yönelik yüksek yoğunluklu
+      interval antrenmanı, ikinci bölge mitokondriyal kondisyon ve zaman kısıtlamalı beslenme.'
+  - index: 8
+    speaker_id: ayla
+    start_ms: 71027
+    end_ms: 78410
+    text_en: I will incorporate the zone-two aerobic sessions immediately and track my continuous glucose monitor metrics
+      to evaluate glycemic variance.
+    text_tr: İkinci bölge aerobik seanslarını hemen dahil edeceğim ve glisemik değişkenliği değerlendirmek için sürekli glikoz
+      monitörü metriklerimi takip edeceğim.
+  comprehension_questions:
+  - id: q_listening_c1_functional-medicine-longevity-consult_01
+    question_en: Why does Dr. Bennett express concern despite Ayla's normal total cholesterol?
+    question_tr_hint: Ayla'nın toplam kolesterolü normal olmasına rağmen Dr. Bennett neden endişe duyuyor?
+    options:
+    - Her body temperature has permanently dropped below hypothermic levels.
+    - She has contracted an acute viral infection affecting respiratory membranes.
+    - Her elevated Apolipoprotein B indicates a high concentration of atherogenic plaque-forming particles.
+    - Her red blood cell count has dropped below critical transfusion thresholds.
+    correct_answer: Her elevated Apolipoprotein B indicates a high concentration of atherogenic plaque-forming particles.
+    explanation_en: Dr. Bennett notes her ApoB is elevated, revealing atherogenic risk that standard cholesterol hides.
+    explanation_tr: Dr. Bennett, yüksek ApoB'nin standart kolesterolün gizlediği aterojenik riski ortaya koyduğunu belirtir.
+  - id: q_listening_c1_functional-medicine-longevity-consult_02
+    question_en: What did the epigenetic methylation clock reveal about Ayla's physiology?
+    question_tr_hint: Epigenetik metilasyon saati Ayla'nın fizyolojisi hakkında neyi ortaya koydu?
+    options:
+    - She possesses genetic immunity to all forms of cellular aging.
+    - Her biological cellular age is equivalent to that of an infant.
+    - Her biological age is approximately three years older than her chronological age.
+    - Her genetic markers indicate acute hereditary muscle atrophy.
+    correct_answer: Her biological age is approximately three years older than her chronological age.
+    explanation_en: The Horvath epigenetic clock estimated her biological age at 41, three years older than her chronological
+      age.
+    explanation_tr: Epigenetik saat biyolojik yaşının takvim yaşından 3 yaş büyük olduğunu göstermiştir.
+  - id: q_listening_c1_functional-medicine-longevity-consult_03
+    question_en: What primary lifestyle factor does Ayla attribute her biological age acceleration to?
+    question_tr_hint: Ayla biyolojik yaşının hızlanmasını hangi temel yaşam tarzı faktörüne bağlıyor?
+    options:
+    - Frequent participation in Olympic-distance marathons.
+    - Chronic sleep deprivation and sustained cortisol elevation related to professional stress.
+    - Living at extremely high altitudes without supplemental oxygen.
+    - Extensive consumption of organic leafy green vegetables.
+    correct_answer: Chronic sleep deprivation and sustained cortisol elevation related to professional stress.
+    explanation_en: Ayla links the delta to chronic sleep deprivation and elevated cortisol from corporate stress.
+    explanation_tr: Ayla bu farkı kurumsal strese bağlı kronik uykusuzluk ve yüksek kortizole bağlar.
+  - id: q_listening_c1_functional-medicine-longevity-consult_04
+    question_en: What intervention does Dr. Bennett favor prior to considering pharmacological statins?
+    question_tr_hint: Dr. Bennett farmakolojik statinleri düşünmeden önce hangi müdahaleyi tercih ediyor?
+    options:
+    - Immediate invasive coronary bypass surgical intervention.
+    - Complete bed rest and physical immobilization for six months.
+    - A strictly liquid diet consisting exclusively of citrus juice.
+    - Zone-two mitochondrial conditioning, targeted intervals, and time-restricted nutrition.
+    correct_answer: Zone-two mitochondrial conditioning, targeted intervals, and time-restricted nutrition.
+    explanation_en: Dr. Bennett recommends zone-two conditioning, HIIT, and time-restricted feeding.
+    explanation_tr: Dr. Bennett bölge 2 kondisyonu, HIIT ve zaman kısıtlamalı beslenmeyi önerir.
+  - id: q_listening_c1_functional-medicine-longevity-consult_05
+    question_en: How does Ayla plan to objectively monitor her metabolic response to the new regimen?
+    question_tr_hint: Ayla yeni düzene verdiği metabolik tepkiyi nesnel olarak nasıl izlemeyi planlıyor?
+    options:
+    - By measuring her body weight six times throughout each afternoon.
+    - By recording daily voice memos regarding subjective fatigue.
+    - By analyzing continuous glucose monitor data to observe glycemic fluctuations.
+    - By counting the exact number of steps taken in her office hallway.
+    correct_answer: By analyzing continuous glucose monitor data to observe glycemic fluctuations.
+    explanation_en: Ayla intends to track continuous glucose monitor metrics to evaluate glycemic variance.
+    explanation_tr: Ayla glisemik değişkenliği izlemek için sürekli glikoz monitörü verilerini takip etmeyi planlar.
+  topic_tags:
+  - health_lifestyle
+  - consulting
+- id: listening.c1.farm-to-table-procurement
+  title: Negotiating Regenerative Agricultural Procurement Contracts
+  cefr_level: C1
+  category: negotiation
+  scenario_context: Chef Julien and regional co-op director Elif negotiate an annual supply agreement for biodynamic heirloom
+    produce, addressing harvest yield volatility, cold-chain compliance, and price hedging.
+  speakers:
+  - id: julien
+    name: Julien
+    role: Executive Restaurateur
+    accent: French
+  - id: elif
+    name: Elif
+    role: Agricultural Cooperative Director
+    accent: Turkish
+  audio_ref: audio/listening/c1_farm_to_table_procurement.mp3
+  duration_seconds: 77
+  transcript_items:
+  - index: 1
+    speaker_id: julien
+    start_ms: 0
+    end_ms: 10542
+    text_en: Elif, our culinary reputation depends on uncompromising ingredient integrity. We want your cooperative to become
+      our exclusive supplier for heritage brassicas and heirloom nightshades.
+    text_tr: Elif, mutfak itibarımız tavizsiz malzeme bütünlüğüne dayanıyor. Kooperatifinizin ata tohumu lahanagiller ve yadigâr
+      patlıcangiller konusunda tek tedarikçimiz olmasını istiyoruz.
+  - index: 2
+    speaker_id: elif
+    start_ms: 10942
+    end_ms: 21214
+    text_en: We appreciate your patronage, Julien. However, farming under biodynamic regenerative standards leaves us vulnerable
+      to unseasonal microclimate shifts and late frosts.
+    text_tr: İlginiz için teşekkür ederiz Julien. Ancak biyodinamik onarıcı standartlar altında çiftçilik yapmak bizi mevsimsiz
+      mikroklima değişimlerine ve geç donlara karşı savunmasız bırakıyor.
+  - index: 3
+    speaker_id: julien
+    start_ms: 21614
+    end_ms: 28467
+    text_en: We cannot operate a Michelin-starred dining room if half our vegetable menu disappears whenever a frost impacts
+      the Aegean foothills.
+    text_tr: Ege eteklerini bir don vurduğunda sebze menümüzün yarısı ortadan kaybolursa Michelin yıldızlı bir restoranı işletemeyiz.
+  - index: 4
+    speaker_id: elif
+    start_ms: 28867
+    end_ms: 40475
+    text_en: We propose a dynamic quota collar. If extreme weather impairs yield by more than thirty percent, our agreement
+      permits substituting secondary heirloom cultivars that share identical organoleptic profiles.
+    text_tr: Dinamik bir kota aralığı öneriyoruz. Aşırı hava koşulları verimi yüzde otuzdan fazla düşürürse, anlaşmamız aynı
+      organoleptik profili paylaşan ikincil ata tohumu çeşitlerinin ikame edilmesine izin verir.
+  - index: 5
+    speaker_id: julien
+    start_ms: 40875
+    end_ms: 50352
+    text_en: That flexibility is acceptable provided substitution notices arrive at least forty-eight hours before daily prep
+      cycles, allowing our sous chefs to adjust our tasting pairings.
+    text_tr: Sous şeflerimizin tadım eşleştirmelerini ayarlamasına olanak sağlamak için ikame bildirimleri günlük hazırlık
+      döngülerinden en az kırk sekiz saat önce gelirse bu esneklik kabul edilebilir.
+  - index: 6
+    speaker_id: elif
+    start_ms: 50752
+    end_ms: 60280
+    text_en: Agreed. In return, we require a guaranteed price floor with a twenty percent upfront retainer to finance our
+      cover-crop seeding and mycorrhizal soil inoculants.
+    text_tr: Anlaştık. Karşılığında, örtü bitkisi ekimimizi ve mikorizal toprak aşılarımızı finanse etmek için garantili bir
+      taban fiyat ve yüzde yirmi peşin ön ödeme talep ediyoruz.
+  - index: 7
+    speaker_id: julien
+    start_ms: 60680
+    end_ms: 67533
+    text_en: What cold-chain telemetry guarantees do you provide to prevent enzymatic degradation during transport across
+      the Marmara straits?
+    text_tr: Marmara boğazı üzerinden sevkiyat sırasında enzimatik bozulmayı önlemek için hangi soğuk zincir telemetri garantilerini
+      sağlıyorsunuz?
+  - index: 8
+    speaker_id: elif
+    start_ms: 67933
+    end_ms: 75850
+    text_en: Every delivery crate carries IoT temperature loggers transmitting real-time readings between three and five degrees
+      Celsius directly to your kitchen tablet.
+    text_tr: Her teslimat kasasında, doğrudan mutfak tabletinize üç ila beş santigrat derece arasında gerçek zamanlı okumalar
+      ileten IoT sıcaklık kayıt cihazları bulunur.
+  comprehension_questions:
+  - id: q_listening_c1_farm-to-table-procurement_01
+    question_en: What ecological challenge creates supply unpredictability for Elif's cooperative?
+    question_tr_hint: Elif'in kooperatifi için hangi ekolojik zorluk tedarik öngörülemezliği yaratıyor?
+    options:
+    - Catastrophic insect swarms destroying all greenhouse glass structures.
+    - A total labor embargo enacted by neighboring municipal authorities.
+    - Contamination of regional water tables with synthetic industrial solvents.
+    - Vulnerability to unseasonal microclimate fluctuations and late frost events under regenerative practices.
+    correct_answer: Vulnerability to unseasonal microclimate fluctuations and late frost events under regenerative practices.
+    explanation_en: Elif explains that biodynamic farming is vulnerable to microclimate shifts and late frosts.
+    explanation_tr: Elif, onarıcı tarımın mikroklima değişimlerine ve geç donlara duyarlı olduğunu belirtir.
+  - id: q_listening_c1_farm-to-table-procurement_02
+    question_en: How does the proposed quota collar handle extreme agricultural yield losses?
+    question_tr_hint: Önerilen kota aralığı aşırı tarımsal verim kayıplarını nasıl yönetir?
+    options:
+    - It automatically forces the restaurant to close until the next seasonal harvest.
+    - It cancels all contractual liabilities without any financial compensation.
+    - It imports cheap frozen vegetables from commercial overseas distributors.
+    - It permits substituting secondary heirloom cultivars with matching flavor and culinary characteristics.
+    correct_answer: It permits substituting secondary heirloom cultivars with matching flavor and culinary characteristics.
+    explanation_en: Elif proposes substituting secondary cultivars with identical organoleptic profiles if yields drop >30%.
+    explanation_tr: Elif, verim %30'dan fazla düşerse eşdeğer tat profiline sahip alternatif çeşitlerin ikamesini önerir.
+  - id: q_listening_c1_farm-to-table-procurement_03
+    question_en: What operational stipulation does Chef Julien attach to vegetable substitutions?
+    question_tr_hint: Şef Julien sebze ikamelerine hangi operasyonel koşulu ekliyor?
+    options:
+    - Substituted vegetables must be discounted by ninety percent.
+    - Substitutions must be formally notified at least forty-eight hours ahead of kitchen prep.
+    - Substitutions must be personally inspected by regional agricultural ministers.
+    - The cooperative must supply gold-plated packaging for all substitute produce.
+    correct_answer: Substitutions must be formally notified at least forty-eight hours ahead of kitchen prep.
+    explanation_en: Julien insists on at least 48 hours notice before prep cycles so menus can adjust.
+    explanation_tr: Julien, hazırlık döngülerinden en az 48 saat önce bildirim yapılmasını şart koşar.
+  - id: q_listening_c1_farm-to-table-procurement_04
+    question_en: Why does Elif request a twenty percent upfront financial retainer?
+    question_tr_hint: Elif neden yüzde yirmilik bir peşin avans talep ediyor?
+    options:
+    - To construct luxury executive suites at the agricultural co-op headquarters.
+    - To finance cover-crop seeding and mycorrhizal soil inoculants ahead of planting.
+    - To settle outstanding municipal parking violations across the fleet.
+    - To purchase an armada of commercial cargo airplanes.
+    correct_answer: To finance cover-crop seeding and mycorrhizal soil inoculants ahead of planting.
+    explanation_en: Elif states the retainer finances cover-crop seeding and mycorrhizal soil inoculants.
+    explanation_tr: Elif, avansın örtü bitkisi tohumları ve toprak aşılarını finanse etmek için gerektiğini belirtir.
+  - id: q_listening_c1_farm-to-table-procurement_05
+    question_en: How does the cooperative guarantee cold-chain integrity during produce transit?
+    question_tr_hint: Kooperatif ürün sevkiyatı sırasında soğuk zincir bütünlüğünü nasıl garanti eder?
+    options:
+    - By shipping all vegetables packed tightly inside dry ice blocks.
+    - By relying on verbal driver assurances upon delivery arrival.
+    - Via IoT temperature loggers transmitting real-time readings between 3°C and 5°C directly to the kitchen.
+    - By flying produce aboard supersonic cargo drones in twenty minutes.
+    correct_answer: Via IoT temperature loggers transmitting real-time readings between 3°C and 5°C directly to the kitchen.
+    explanation_en: Elif explains each crate carries IoT sensors transmitting 3-5°C readings to their tablet.
+    explanation_tr: Elif, her kasada tablete 3-5°C arası canlı veri gönderen IoT sensörleri bulunduğunu açıklar.
+  topic_tags:
+  - food_shopping
+  - supply_chain
+- id: listening.c1.co-founder-equity-dispute
+  title: Mediating Founder Vesting and IP Contribution Equities
+  cefr_level: C1
+  category: negotiation
+  scenario_context: Venture legal mediator Rachel mediates a restructuring of cap table percentages and reverse-vesting milestones
+    between early-stage tech co-founders Kaan and David following a technical pivot.
+  speakers:
+  - id: rachel
+    name: Rachel
+    role: Startup Legal Mediator
+    accent: American
+  - id: kaan
+    name: Kaan
+    role: Co-Founder & Chief Technology Officer
+    accent: Turkish
+  audio_ref: audio/listening/c1_co_founder_equity_dispute.mp3
+  duration_seconds: 76
+  transcript_items:
+  - index: 1
+    speaker_id: rachel
+    start_ms: 0
+    end_ms: 10637
+    text_en: Thank you for coming in, Kaan. David and I spoke earlier. Our goal today is to establish an equitable path forward
+      without compromising your upcoming Series A valuation.
+    text_tr: Geldiğin için teşekkürler Kaan. David ile az önce konuştuk. Bugünkü amacımız, yaklaşan Seri A değerlemenizi tehlikeye
+      atmadan adil bir uzlaşma yolu oluşturmaktır.
+  - index: 2
+    speaker_id: kaan
+    start_ms: 11037
+    end_ms: 21290
+    text_en: I appreciate your neutrality, Rachel. However, when David founded the company, equity was split fifty-fifty based
+      on our initial B2B sales automation concept.
+    text_tr: Tarafsızlığın için teşekkürler Rachel. Ancak şirketi ilk kurduğumuzda hisseler, başlangıçtaki B2B satış otomasyonu
+      konseptimize dayanarak yarı yarıya paylaştırılmıştı.
+  - index: 3
+    speaker_id: rachel
+    start_ms: 21690
+    end_ms: 30572
+    text_en: And since then, the enterprise pivoted entirely into autonomous distributed database architecture, which represents
+      exclusively your proprietary engineering.
+    text_tr: Ve o zamandan bu yana girişim tamamen, münhasıran senin tescilli mühendisliğini temsil eden otonom dağıtık veritabanı
+      mimarisine yöneldi.
+  - index: 4
+    speaker_id: kaan
+    start_ms: 30972
+    end_ms: 40270
+    text_en: Exactly. I have authored eighty percent of the foundational codebase and secured our core patents, while David
+      has struggled to close enterprise pilot contracts.
+    text_tr: Kesinlikle. Temel kod tabanının yüzde seksenini ben yazdım ve ana patentlerimizi aldım; David ise kurumsal pilot
+      sözleşmelerini kapatmakta zorlandı.
+  - index: 5
+    speaker_id: rachel
+    start_ms: 40670
+    end_ms: 49187
+    text_en: David acknowledges the intellectual property disparity, but he argues his early sweat equity and initial seed
+      capital secured your first eighteen months of runway.
+    text_tr: David fikri mülkiyet farkını kabul ediyor ancak erken dönem emek ortaklığının ve tohum sermayesinin ilk on sekiz
+      aylık nakit akışınızı sağladığını savunuyor.
+  - index: 6
+    speaker_id: kaan
+    start_ms: 49587
+    end_ms: 58030
+    text_en: That runway was vital, but investors in our lead syndicate are already questioning why a non-technical CEO retains
+      fifty percent without commercial validation.
+    text_tr: O nakit akışı hayatiydi, ancak lider yatırımcı grubumuzdaki yatırımcılar şimdiden ticari doğrulama olmaksızın
+      teknik olmayan bir CEO'nun neden yüzde elli paya sahip olduğunu sorguluyor.
+  - index: 7
+    speaker_id: rachel
+    start_ms: 58430
+    end_ms: 65603
+    text_en: 'Here is a balanced compromise: we implement a dynamic milestone-based reverse vesting schedule on a ten percent
+      equity tranche.'
+    text_tr: 'İşte dengeli bir uzlaşma: yüzde onluk bir hisse dilimi üzerinde dinamik, dönüm noktasına dayalı bir ters hak
+      ediş takvimi uygulayabiliriz.'
+  - index: 8
+    speaker_id: kaan
+    start_ms: 66003
+    end_ms: 75160
+    text_en: If David hits two million in annual recurring revenue within four quarters, he vests that tranche; if not, those
+      shares return to the employee stock option pool.
+    text_tr: David dört çeyrek içinde iki milyon yıllık tekrarlayan gelire ulaşırsa bu dilimi hak eder; ulaşamazsa o hisseler
+      çalışan hisse opsiyon havuzuna geri döner.
+  comprehension_questions:
+  - id: q_listening_c1_co-founder-equity-dispute_01
+    question_en: What primary operational shift precipitated the equity disagreement between Kaan and David?
+    question_tr_hint: Kaan ve David arasındaki hisse anlaşmazlığını tetikleyen temel operasyonel değişim neydi?
+    options:
+    - A hostile corporate buyout by an international defense conglomerate.
+    - The accidental loss of all customer credit card information.
+    - A total relocation of the company headquarters to an offshore territory.
+    - The startup pivoted from a sales platform to a distributed database system engineered primarily by Kaan.
+    correct_answer: The startup pivoted from a sales platform to a distributed database system engineered primarily by Kaan.
+    explanation_en: Rachel notes the company pivoted into autonomous distributed database architecture built by Kaan.
+    explanation_tr: Rachel, girişimin Kaan'ın geliştirdiği otonom dağıtık veritabanı mimarisine yöneldiğini belirtir.
+  - id: q_listening_c1_co-founder-equity-dispute_02
+    question_en: What contribution does David cite to justify maintaining his original equity percentage?
+    question_tr_hint: David orijinal hisse oranını korumayı haklı çıkarmak için hangi katkısını öne sürüyor?
+    options:
+    - His personal relationship with federal trade regulatory commissioners.
+    - His early founder labor and initial seed funding that financed their first eighteen months of operations.
+    - His authorship of the company's trademarked logo illustrations.
+    - His victory in an international competitive hackathon tournament.
+    correct_answer: His early founder labor and initial seed funding that financed their first eighteen months of operations.
+    explanation_en: Rachel explains David points to his early sweat equity and initial seed capital financing 18 months of
+      runway.
+    explanation_tr: Rachel, David'in ilk 18 aylık süreyi finanse eden emek ortaklığı ve tohum sermayesini öne sürdüğünü söyler.
+  - id: q_listening_c1_co-founder-equity-dispute_03
+    question_en: What pressure from external investors does Kaan convey to the mediator?
+    question_tr_hint: Kaan arabulucuya dış yatırımcılardan gelen hangi baskıyı aktarıyor?
+    options:
+    - Investors insist on replacing all human employees with automated algorithms.
+    - Lead investors question why a non-technical founder holds half the equity without commercial validation.
+    - Investors demand an immediate liquidation of all corporate assets.
+    - Investors require both founders to surrender all voting rights immediately.
+    correct_answer: Lead investors question why a non-technical founder holds half the equity without commercial validation.
+    explanation_en: Kaan notes lead investors question why a non-technical CEO retains 50% without commercial traction.
+    explanation_tr: Kaan, lider yatırımcıların teknik olmayan CEO'nun ticari başarı olmadan %50 tutmasını sorguladığını söyler.
+  - id: q_listening_c1_co-founder-equity-dispute_04
+    question_en: What mechanism does Rachel recommend to resolve the cap table stalemate?
+    question_tr_hint: Rachel hisse tablosu kilitlenmesini çözmek için hangi mekanizmayı öneriyor?
+    options:
+    - Selling all company intellectual property to the highest anonymous bidder.
+    - A coin-toss ceremony conducted before independent court bailiffs.
+    - Splitting the company into two separate bankrupt corporate entities.
+    - A performance-contingent reverse vesting schedule applied to a ten percent equity block.
+    correct_answer: A performance-contingent reverse vesting schedule applied to a ten percent equity block.
+    explanation_en: Rachel proposes a dynamic milestone-based reverse vesting schedule on a 10% equity tranche.
+    explanation_tr: Rachel, %10'luk dilim üzerinde dönüm noktasına bağlı ters hak ediş takvimi önerir.
+  - id: q_listening_c1_co-founder-equity-dispute_05
+    question_en: What consequence occurs if David fails to meet the two-million ARR benchmark?
+    question_tr_hint: David iki milyonluk ARR hedefine ulaşamazsa nasıl bir sonuç ortaya çıkar?
+    options:
+    - Kaan is legally obligated to purchase the shares at full market price.
+    - The shares are confiscated by federal tax authorities.
+    - David is sentenced to mandatory unpaid community service.
+    - The unvested ten percent equity returns to the employee incentive pool.
+    correct_answer: The unvested ten percent equity returns to the employee incentive pool.
+    explanation_en: Kaan states that if David misses the target, those shares revert to the employee option pool.
+    explanation_tr: Kaan, hedefe ulaşılamazsa bu hisselerin çalışan opsiyon havuzuna geri döneceğini belirtir.
+  topic_tags:
+  - relationships
+  - work_career
+- id: listening.c1.university-curriculum-accreditation
+  title: Reviewing Transnational Engineering Accreditation Standards
+  cefr_level: C1
+  category: stakeholder_alignment
+  scenario_context: Dean Harrison and Vice Dean Deniz assess program alignment with ABET and EUR-ACE criteria, discussing
+    laboratory modernization, interdisciplinary capstone rubrics, and faculty research quotas.
+  speakers:
+  - id: harrison
+    name: Dean Harrison
+    role: Faculty Dean
+    accent: British
+  - id: deniz
+    name: Deniz
+    role: Associate Dean of Academic Affairs
+    accent: Turkish
+  audio_ref: audio/listening/c1_university_curriculum_accreditation.mp3
+  duration_seconds: 79
+  transcript_items:
+  - index: 1
+    speaker_id: harrison
+    start_ms: 0
+    end_ms: 10058
+    text_en: Deniz, our upcoming decennial ABET and EUR-ACE evaluation visits are less than six months away. How is the outcome
+      assessment documentation progressing across departments?
+    text_tr: Deniz, yaklaşan on yıllık ABET ve EUR-ACE değerlendirme ziyaretlerimize altı aydan az bir süre kaldı. Bölümler
+      genelinde çıktı değerlendirme belgeleri nasıl ilerliyor?
+  - index: 2
+    speaker_id: deniz
+    start_ms: 10458
+    end_ms: 22704
+    text_en: We have consolidated student learning outcome portfolios for ninety percent of core engineering courses, Dean
+      Harrison. However, our multidisciplinary capstone evaluation criteria remain somewhat subjective.
+    text_tr: Temel mühendislik derslerinin yüzde doksanı için öğrenci öğrenme çıktısı portföylerini birleştirdik Dekan Harrison.
+      Ancak çok disiplinli bitirme projesi değerlendirme kriterlerimiz hâlâ biraz sübjektif kalıyor.
+  - index: 3
+    speaker_id: harrison
+    start_ms: 23104
+    end_ms: 34546
+    text_en: Subjectivity in capstones is an immediate red flag for accreditation evaluators. They expect quantifiable rubrics
+      covering professional ethics, life-cycle sustainability, and economic feasibility.
+    text_tr: Bitirme projelerindeki öznellik, akreditasyon denetçileri için doğrudan bir kırmızı bayraktır. Mesleki etik,
+      yaşam döngüsü sürdürülebilirliği ve ekonomik fizibiliteyi kapsayan ölçülebilir dereceli puanlama anahtarları bekliyorlar.
+  - index: 4
+    speaker_id: deniz
+    start_ms: 34946
+    end_ms: 43389
+    text_en: I will standardize an institutional grading matrix benchmarked against IEEE ethical canons and lifecycle carbon
+      accounting before next month's faculty senate.
+    text_tr: Gelecek ayki fakülte senatosundan önce IEEE etik kuralları ve yaşam döngüsü karbon muhasebesi ile kıyaslanan
+      kurumsal bir notlandırma matrisi standartlaştıracağım.
+  - index: 5
+    speaker_id: harrison
+    start_ms: 43789
+    end_ms: 50557
+    text_en: Splendid. What about the feedback from our external industrial advisory board regarding laboratory modernization?
+    text_tr: Harika. Dış endüstriyel danışma kurulumuzun laboratuvar modernizasyonuna ilişkin geri bildirimleri ne durumda?
+  - index: 6
+    speaker_id: deniz
+    start_ms: 50957
+    end_ms: 60589
+    text_en: Industry advisors voiced concern that our cleanroom semiconductor microfabrication rigs and FPGA hardware synthesis
+      benches lag behind modern wafer fabrication facilities.
+    text_tr: Sektör danışmanları, temiz oda yarı iletken mikro fabrikasyon cihazlarımızın ve FPGA donanım sentez tezgahlarımızın
+      modern yonga üretim tesislerinin gerisinde kaldığı endişesini dile getirdiler.
+  - index: 7
+    speaker_id: harrison
+    start_ms: 60989
+    end_ms: 68902
+    text_en: We have allocated a four-million-euro infrastructure endowment grant to procure modern electron lithography tooling
+      and advanced embedded testbeds this summer.
+    text_tr: Bu yaz modern elektron litografi araçları ve gelişmiş gömülü test yatakları temin etmek için dört milyon avroluk
+      bir altyapı bağış fonu tahsis ettik.
+  - index: 8
+    speaker_id: deniz
+    start_ms: 69302
+    end_ms: 78114
+    text_en: That investment will ensure our laboratory facilities not only satisfy accreditation criteria but position our
+      graduates at the vanguard of applied nanoelectronics.
+    text_tr: Bu yatırım, laboratuvar tesislerimizin yalnızca akreditasyon kriterlerini karşılamakla kalmayıp mezunlarımızı
+      uygulamalı nanoelektroniğin ön saflarına yerleştirmesini sağlayacaktır.
+  comprehension_questions:
+  - id: q_listening_c1_university-curriculum-accreditation_01
+    question_en: What specific shortcoming does Deniz identify in the current engineering portfolio documentation?
+    question_tr_hint: Deniz mevcut mühendislik portföy belgelerinde hangi özel eksikliği tespit ediyor?
+    options:
+    - Failure to teach basic differential calculus to engineering freshmen.
+    - Total absence of certified teaching credentials among senior professors.
+    - Evaluation rubrics for multidisciplinary capstone design projects remain excessively subjective.
+    - A complete lack of attendance records across all undergraduate lectures.
+    correct_answer: Evaluation rubrics for multidisciplinary capstone design projects remain excessively subjective.
+    explanation_en: Deniz notes that multidisciplinary capstone evaluation criteria remain somewhat subjective.
+    explanation_tr: Deniz, çok disiplinli bitirme projelerinin değerlendirme kriterlerinin sübjektif kaldığını belirtir.
+  - id: q_listening_c1_university-curriculum-accreditation_02
+    question_en: What dimensions must the standardized capstone rubric include to satisfy accreditation teams?
+    question_tr_hint: Standartlaştırılmış bitirme projesi puanlama anahtarı akreditasyon ekiplerini tatmin etmek için hangi
+      boyutları içermelidir?
+    options:
+    - Professional ethics, life-cycle sustainability, and economic feasibility assessments.
+    - Artistic aesthetic evaluations of student engineering sketchbooks.
+    - Memorization of historical patent registry identification numbers.
+    - Physical athletic performance benchmarks in campus recreation facilities.
+    correct_answer: Professional ethics, life-cycle sustainability, and economic feasibility assessments.
+    explanation_en: Dean Harrison emphasizes rubrics covering professional ethics, sustainability, and economic feasibility.
+    explanation_tr: Dekan Harrison mesleki etik, sürdürülebilirlik ve ekonomik fizibiliteyi vurgular.
+  - id: q_listening_c1_university-curriculum-accreditation_03
+    question_en: What concern was raised by the external industrial advisory board?
+    question_tr_hint: Dış endüstriyel danışma kurulu tarafından hangi endişe dile getirildi?
+    options:
+    - Faculty parking garages lacked electric vehicle recharging plugs.
+    - Semiconductor microfabrication and FPGA laboratory benches lagged behind contemporary industry standards.
+    - Engineering students were spending too much time studying mathematics.
+    - The campus cafeteria lacked vegan and gluten-free dining options.
+    correct_answer: Semiconductor microfabrication and FPGA laboratory benches lagged behind contemporary industry standards.
+    explanation_en: Advisors noted microfabrication rigs and FPGA benches lagged behind modern facilities.
+    explanation_tr: Danışmanlar temiz oda ve FPGA donanımlarının güncel tesislerin gerisinde kaldığını bildirmiştir.
+  - id: q_listening_c1_university-curriculum-accreditation_04
+    question_en: How does the administration plan to remediate laboratory equipment deficiencies?
+    question_tr_hint: Yönetim laboratuvar ekipmanı eksikliklerini nasıl gidermeyi planlıyor?
+    options:
+    - By deploying a four-million-euro endowment to procure electron lithography and embedded testbeds.
+    - By mandating that students bring personal laptop computers to all practical exams.
+    - By requesting second-hand donation surplus from local community colleges.
+    - By replacing all physical laboratories with virtual two-dimensional video games.
+    correct_answer: By deploying a four-million-euro endowment to procure electron lithography and embedded testbeds.
+    explanation_en: Dean Harrison announces a 4-million-euro grant to acquire electron lithography tooling and testbeds.
+    explanation_tr: Dekan Harrison 4 milyon avroluk bütçeyle elektron litografi ve test sistemleri alınacağını açıklar.
+  - id: q_listening_c1_university-curriculum-accreditation_05
+    question_en: When are the formal accreditation peer-review evaluation visits scheduled to take place?
+    question_tr_hint: Resmi akreditasyon hakem değerlendirme ziyaretlerinin ne zaman yapılması planlanıyor?
+    options:
+    - In five years following curriculum overhauls.
+    - By tomorrow morning.
+    - In exactly three years.
+    - Within the next six months.
+    correct_answer: Within the next six months.
+    explanation_en: Dean Harrison notes the evaluation visits are less than six months away.
+    explanation_tr: Dekan Harrison değerlendirme ziyaretlerine altı aydan az bir süre kaldığını belirtir.
+  topic_tags:
+  - education
+  - academic
+- id: listening.c1.crisis-communications-data-breach
+  title: Formulating Executive Crisis Communications for Security Breaches
+  cefr_level: C1
+  category: incident_response
+  scenario_context: Strategic communications director Patricia and Chief Information Security Officer Burak draft public disclosure
+    disclosures and regulatory notifications following an unauthorized API extraction incident.
+  speakers:
+  - id: patricia
+    name: Patricia
+    role: VP of Strategic Communications
+    accent: American
+  - id: burak
+    name: Burak
+    role: Chief Information Security Officer
+    accent: Turkish
+  audio_ref: audio/listening/c1_crisis_communications_data_breach.mp3
+  duration_seconds: 75
+  transcript_items:
+  - index: 1
+    speaker_id: patricia
+    start_ms: 0
+    end_ms: 9762
+    text_en: Burak, the executive committee convenes in forty-five minutes. We need absolute clarity on the scope of the incident
+      before wire services start running speculative headlines.
+    text_tr: Burak, icra kurulu kırk beş dakika içinde toplanıyor. Haber ajansları spekülatif başlıklar atmaya başlamadan
+      önce olayın kapsamı konusunda mutlak netliğe ihtiyacımız var.
+  - index: 2
+    speaker_id: burak
+    start_ms: 10162
+    end_ms: 21104
+    text_en: Understood, Patricia. At two-fifteen UTC, our automated anomaly detection flagged an unauthorized scraping cluster
+      exploiting an authenticated API rate-limiting vulnerability.
+    text_tr: Anlaşıldı Patricia. Saat 02:15 UTC'de otomatik anomali tespit sistemimiz, kimliği doğrulanmış bir API hız sınırlama
+      açığından yararlanan yetkisiz bir kazıma kümesini işaretledi.
+  - index: 3
+    speaker_id: patricia
+    start_ms: 21504
+    end_ms: 31042
+    text_en: Was personal identifiable information compromised, and does this trigger the statutory seventy-two-hour GDPR
+      European Data Protection Board notification threshold?
+    text_tr: Kişisel olarak tanımlanabilir bilgiler tehlikeye girdi mi ve bu durum yasal yetmiş iki saatlik GDPR Avrupa Veri
+      Koruma Kurulu bildirim eşiğini tetikliyor mu?
+  - index: 4
+    speaker_id: burak
+    start_ms: 31442
+    end_ms: 40645
+    text_en: Forensic log analysis indicates that salted-and-hashed passwords and financial payment instruments remained completely
+      uncompromised inside our hardware security module vault.
+    text_tr: Adli bilişim kayıt analizi, tuzlanmış ve özetlenmiş parolalar ile finansal ödeme araçlarının donanım güvenlik
+      modülü kasamızda tamamen güvende kaldığını gösteriyor.
+  - index: 5
+    speaker_id: patricia
+    start_ms: 41045
+    end_ms: 45878
+    text_en: What specific data was exfiltrated by the threat actor during the three-hour egress window?
+    text_tr: Üç saatlik veri çıkış penceresi sırasında tehdit aktörü tarafından tam olarak hangi veriler sızdırıldı?
+  - index: 6
+    speaker_id: burak
+    start_ms: 46278
+    end_ms: 56515
+    text_en: The adversary extracted approximately forty thousand enterprise profile records containing publicly indexed business
+      email addresses, job titles, and hashed corporate domain identifiers.
+    text_tr: Saldırgan; herkese açık olarak dizinlenmiş iş e-posta adreslerini, unvanları ve karma kurumsal alan adı tanımlayıcılarını
+      içeren yaklaşık kırk bin kurumsal profil kaydını çıkardı.
+  - index: 7
+    speaker_id: patricia
+    start_ms: 56915
+    end_ms: 66348
+    text_en: That substantially mitigates our catastrophic liability profile. We will structure our disclosure around transparent
+      remediation rather than evasive corporate obfuscation.
+    text_tr: Bu durum felaket niteliğindeki sorumluluk profilimizi önemli ölçüde hafifletiyor. Açıklamamızı kaçamak kurumsal
+      gizleme yerine şeffaf iyileştirme etrafında yapılandıracağız.
+  - index: 8
+    speaker_id: burak
+    start_ms: 66748
+    end_ms: 74670
+    text_en: We have already revoked all associated session tokens, patched the vulnerable endpoints, and rotated our microservice
+      cryptographic keys.
+    text_tr: İlişkili tüm oturum belirteçlerini iptal ettik, savunmasız uç noktaları yamaladık ve mikro hizmet kriptografik
+      anahtarlarımızı rotasyona tabi tuttuk.
+  comprehension_questions:
+  - id: q_listening_c1_crisis-communications-data-breach_01
+    question_en: What security vulnerability enabled the unauthorized data extraction?
+    question_tr_hint: Yetkisiz veri çıkarımına hangi güvenlik açığı olanak sağladı?
+    options:
+    - An unencrypted backup tape misplaced in a public airport terminal.
+    - A physical break-in into the main data center server room.
+    - An authenticated API rate-limiting configuration loophole exploited by automated scrapers.
+    - A rogue employee manually copying files onto USB flash drives.
+    correct_answer: An authenticated API rate-limiting configuration loophole exploited by automated scrapers.
+    explanation_en: Burak explains that scrapers exploited an authenticated API rate-limiting vulnerability.
+    explanation_tr: Burak, kazıyıcıların kimliği doğrulanmış bir API hız sınırlama açığından yararlandığını belirtir.
+  - id: q_listening_c1_crisis-communications-data-breach_02
+    question_en: What critical user security data remained fully safeguarded in the security vault?
+    question_tr_hint: Güvenlik kasasında hangi kritik kullanıcı güvenliği verileri tamamen korunmuş olarak kaldı?
+    options:
+    - Unclassified corporate promotional event flyers.
+    - Salted-and-hashed passwords and financial payment instrument records.
+    - Public marketing press releases and social media posts.
+    - Employee payroll compensation spreadsheets.
+    correct_answer: Salted-and-hashed passwords and financial payment instrument records.
+    explanation_en: Burak confirms hashed passwords and financial payment instruments remained completely uncompromised.
+    explanation_tr: Burak, tuzlanmış şifrelerin ve ödeme araçlarının donanım kasasında güvende kaldığını teyit eder.
+  - id: q_listening_c1_crisis-communications-data-breach_03
+    question_en: What was the exact composition of the data exfiltrated during the incident?
+    question_tr_hint: Olay sırasında sızdırılan verilerin tam içeriği neydi?
+    options:
+    - Patient healthcare genetic diagnostic histories.
+    - Biometric retinal scan records of all European citizens.
+    - Top-secret national military defense coordinates.
+    - Approximately forty thousand enterprise profiles containing public business emails, titles, and domain hashes.
+    correct_answer: Approximately forty thousand enterprise profiles containing public business emails, titles, and domain
+      hashes.
+    explanation_en: Burak reports 40,000 enterprise profiles with public business emails, titles, and domain hashes were taken.
+    explanation_tr: Burak, 40 bin kurumsal profilin (iş e-postaları, unvanlar, alan adı özetleri) sızdığını açıklar.
+  - id: q_listening_c1_crisis-communications-data-breach_04
+    question_en: What strategic posture does Patricia select for the upcoming public disclosure?
+    question_tr_hint: Patricia yaklaşan kamuoyu açıklaması için nasıl bir stratejik tutum seçiyor?
+    options:
+    - Blaming competitor technology companies for fabricating false claims.
+    - Permanently deleting all corporate social media and public relations channels.
+    - Proactive and transparent disclosure highlighting swift technical remediation.
+    - Denying all knowledge of the event until legal injunctions force disclosure.
+    correct_answer: Proactive and transparent disclosure highlighting swift technical remediation.
+    explanation_en: Patricia chooses transparent remediation over evasive corporate obfuscation.
+    explanation_tr: Patricia kaçamak gizleme yerine şeffaf iyileştirme odaklı bir açıklama seçer.
+  - id: q_listening_c1_crisis-communications-data-breach_05
+    question_en: What immediate technical remediation did Burak's team enact?
+    question_tr_hint: Burak'ın ekibi hangi acil teknik iyileştirmeyi gerçekleştirdi?
+    options:
+    - Shutting down the global electrical power grid entirely.
+    - Destroying all enterprise server hard drives with industrial shredders.
+    - Reverting corporate infrastructure back to paper-based filing cabinets.
+    - Revoking session tokens, deploying API endpoint patches, and rotating microservice crypto keys.
+    correct_answer: Revoking session tokens, deploying API endpoint patches, and rotating microservice crypto keys.
+    explanation_en: Burak confirms tokens were revoked, endpoints patched, and crypto keys rotated.
+    explanation_tr: Burak oturumların iptal edildiğini, açıkların yamandığını ve anahtarların yenilendiğini belirtir.
+  topic_tags:
+  - communication
+  - leadership
+- id: listening.c1.technical-fellow-executive-briefing
+  title: Briefing Leadership on AI Compute Infrastructure and Microarchitectures
+  cefr_level: C1
+  category: executive_briefing
+  scenario_context: Principal AI Research Scientist Melis briefs Chief Technology Officer Greg on high-bandwidth memory interconnects,
+    accelerator cluster utilization, and capital expenditure forecasts.
+  speakers:
+  - id: greg
+    name: Greg
+    role: Chief Technology Officer
+    accent: American
+  - id: melis
+    name: Melis
+    role: Distinguished Technical Fellow
+    accent: Turkish
+  audio_ref: audio/listening/c1_technical_fellow_executive_briefing.mp3
+  duration_seconds: 77
+  transcript_items:
+  - index: 1
+    speaker_id: greg
+    start_ms: 0
+    end_ms: 11387
+    text_en: Melis, the board is questioning our projected fifty-million-dollar capital outlay for next-generation accelerator
+      hardware. They want to know why our current GPU clusters cannot sustain model fine-tuning.
+    text_tr: Melis, yönetim kurulu yeni nesil hızlandırıcı donanımı için öngörülen elli milyon dolarlık sermaye harcamamızı
+      sorguluyor. Mevcut GPU kümelerimizin neden model ince ayarını sürdüremediğini bilmek istiyorlar.
+  - index: 2
+    speaker_id: melis
+    start_ms: 11787
+    end_ms: 24329
+    text_en: The core constraint is not raw floating-point operations per second, Greg; it is the memory-wall bottleneck.
+      Our trillion-parameter multimodal models require high-bandwidth memory interconnects that exceed PCIe bandwidth.
+    text_tr: Temel kısıtlama saniye başına ham kayan nokta işlemleri değil Greg; bellek duvarı darboğazıdır. Trilyon parametreli
+      çok modlu modellerimiz, PCIe bant genişliğini aşan yüksek bant genişlikli bellek ara bağlantıları gerektirir.
+  - index: 3
+    speaker_id: greg
+    start_ms: 24729
+    end_ms: 30917
+    text_en: Meaning that our tensor processing cores spend substantial cycles sitting idle waiting for memory cache lines
+      to refill?
+    text_tr: Yani tensör işleme çekirdeklerimiz bellek önbellek satırlarının yeniden dolmasını beklerken önemli sayıda döngüyü
+      boşta mı geçiriyor?
+  - index: 4
+    speaker_id: melis
+    start_ms: 31317
+    end_ms: 44448
+    text_en: Precisely. Our Model Flops Utilization is hovering at twenty-eight percent. Transitioning to custom ASIC accelerators
+      with HBM3e stacks and liquid-cooled optical interconnects will elevate MFU to sixty-two percent.
+    text_tr: Kesinlikle. Model Flops Kullanım oranımız yüzde yirmi sekizde seyrediyor. HBM3e yığınlarına ve sıvı soğutmalı
+      optik ara bağlantılara sahip özel ASIC hızlandırıcılarına geçmek MFU'yu yüzde altmış ikiye çıkaracaktır.
+  - index: 5
+    speaker_id: greg
+    start_ms: 44848
+    end_ms: 49782
+    text_en: More than doubling our effective computational throughput per watt of datacenter power consumed.
+    text_tr: Tüketilen veri merkezi gücünün watt'ı başına etkin hesaplama verimimizi iki katından fazla artıracak.
+  - index: 6
+    speaker_id: melis
+    start_ms: 50182
+    end_ms: 62444
+    text_en: Correct. Furthermore, by partitioning KV-cache memory across distributed non-volatile storage, we can scale context
+      windows from thirty-two thousand tokens up to one million tokens without out-of-memory faults.
+    text_tr: Doğru. Dahası, KV önbellek belleğini dağıtık kalıcı depolama boyunca bölümleyerek, bellek yetersizliği hataları
+      olmaksızın bağlam pencerelerini otuz iki bin belirteçten bir milyon belirtece kadar ölçeklendirebiliriz.
+  - index: 7
+    speaker_id: greg
+    start_ms: 62844
+    end_ms: 67262
+    text_en: What is the lead time on procurement and fabrication from our foundry partners?
+    text_tr: Dökümhane ortaklarımızdan tedarik ve üretim için teslim süresi nedir?
+  - index: 8
+    speaker_id: melis
+    start_ms: 67662
+    end_ms: 76745
+    text_en: If we place wafer allocation deposits this quarter, initial cluster rack integration begins in nine months, allowing
+      production deployment before fiscal year-end.
+    text_tr: Bu çeyrekte plaka tahsis depozitolarını yatırırsak, ilk küme kabin entegrasyonu dokuz ay içinde başlar ve mali
+      yıl sonundan önce üretime geçişe olanak tanır.
+  comprehension_questions:
+  - id: q_listening_c1_technical-fellow-executive-briefing_01
+    question_en: What architectural bottleneck prevents existing GPU clusters from efficiently training trillion-parameter
+      models?
+    question_tr_hint: Mevcut GPU kümelerinin trilyon parametreli modelleri verimli şekilde eğitmesini hangi mimari darboğaz
+      engelliyor?
+    options:
+    - The memory-wall constraint where data bus throughput fails to feed tensor compute cores rapidly.
+    - Excessive processor fan noise exceeding occupational health thresholds.
+    - A complete lack of electrical wiring in modern enterprise server facilities.
+    - An incompatible operating system kernel that cannot execute binary files.
+    correct_answer: The memory-wall constraint where data bus throughput fails to feed tensor compute cores rapidly.
+    explanation_en: Melis explains the constraint is the memory-wall bottleneck exceeding PCIe bandwidth.
+    explanation_tr: Melis, temel kısıtlamanın PCIe bant genişliğini aşan bellek duvarı darboğazı olduğunu açıklar.
+  - id: q_listening_c1_technical-fellow-executive-briefing_02
+    question_en: What quantitative improvement in Model Flops Utilization (MFU) does Melis forecast?
+    question_tr_hint: Melis Model Flops Kullanımında (MFU) nasıl bir niceliksel iyileşme öngörüyor?
+    options:
+    - A tenfold decrease in computational algorithmic efficiency.
+    - A reduction down to zero percent during scheduled maintenance.
+    - An increase from twenty-eight percent up to sixty-two percent.
+    - A marginal rise from ninety-eight to ninety-nine percent.
+    correct_answer: An increase from twenty-eight percent up to sixty-two percent.
+    explanation_en: Melis states MFU will jump from 28% to 62% with custom ASICs and HBM3e.
+    explanation_tr: Melis MFU'nun %28'den %62'ye yükseleceğini belirtir.
+  - id: q_listening_c1_technical-fellow-executive-briefing_03
+    question_en: How will distributed KV-cache partitioning impact model capabilities?
+    question_tr_hint: Dağıtık KV önbellek bölümlemesi model yeteneklerini nasıl etkileyecek?
+    options:
+    - It will compress all text documents into binary Morse code.
+    - It will restrict language models to single-sentence responses.
+    - It will expand context windows from 32,000 tokens to one million tokens without memory overflow.
+    - It will permanently prevent models from learning foreign languages.
+    correct_answer: It will expand context windows from 32,000 tokens to one million tokens without memory overflow.
+    explanation_en: Melis explains it scales context windows from 32k tokens up to 1 million tokens.
+    explanation_tr: Melis bağlam penceresinin 32 bin belirteçten 1 milyon belirtece ölçekleneceğini ifade eder.
+  - id: q_listening_c1_technical-fellow-executive-briefing_04
+    question_en: What thermodynamic innovation is incorporated into the proposed accelerator architecture?
+    question_tr_hint: Önerilen hızlandırıcı mimarisine hangi termodinamik yenilik dahil edilmiştir?
+    options:
+    - Liquid-cooled optical interconnects accompanying HBM3e high-bandwidth memory stacks.
+    - Attaching manual hand-cranked ventilation fans to server doors.
+    - Operating servers exclusively in outer-space vacuum orbits.
+    - Submerging servers in Arctic glacial ice packs.
+    correct_answer: Liquid-cooled optical interconnects accompanying HBM3e high-bandwidth memory stacks.
+    explanation_en: Melis highlights HBM3e stacks paired with liquid-cooled optical interconnects.
+    explanation_tr: Melis HBM3e yığınları ve sıvı soğutmalı optik ara bağlantıları vurgular.
+  - id: q_listening_c1_technical-fellow-executive-briefing_05
+    question_en: What operational timeline governs the delivery of the new compute cluster?
+    question_tr_hint: Yeni bilgi işlem kümesinin teslimatını hangi operasyonel takvim yönetiyor?
+    options:
+    - Deployment will occur indefinitely after corporate dissolution.
+    - Rack integration commences in nine months, achieving deployment within the fiscal year.
+    - Fabrication will require fifteen consecutive calendar years.
+    - Hardware delivery arrives by tomorrow afternoon via overnight courier.
+    correct_answer: Rack integration commences in nine months, achieving deployment within the fiscal year.
+    explanation_en: Melis outlines rack integration in 9 months, enabling deployment before fiscal year-end.
+    explanation_tr: Melis kabin entegrasyonunun 9 ayda başlayıp mali yıl bitmeden devreye alınacağını belirtir.
+  topic_tags:
+  - work_career
+  - technology
+- id: listening.c1.mergers-acquisitions-due-diligence
+  title: Evaluating Strategic Cross-Border FinTech Mergers & Acquisitions
+  cefr_level: C1
+  category: negotiation
+  scenario_context: Private equity investment partner Simon and acquisition lead Yasemin evaluate regulatory anti-trust exposure,
+    customer churn metrics, and intellectual property indemnification in a cross-border deal.
+  speakers:
+  - id: simon
+    name: Simon
+    role: Private Equity Partner
+    accent: British
+  - id: yasemin
+    name: Yasemin
+    role: M&A Strategy Lead
+    accent: Turkish
+  audio_ref: audio/listening/c1_mergers_acquisitions_due_diligence.mp3
+  duration_seconds: 76
+  transcript_items:
+  - index: 1
+    speaker_id: simon
+    start_ms: 0
+    end_ms: 10018
+    text_en: Yasemin, our investment committee sits in forty-eight hours to decide whether to tender our formal offer for
+      BalticPay. Have your due diligence workstreams uncovered any deal-breakers?
+    text_tr: Yasemin, yatırım komitemiz BalticPay için resmi teklifimizi sunup sunmayacağımıza karar vermek üzere kırk sekiz
+      saat içinde toplanıyor. Durum tespiti çalışma gruplarınız herhangi bir anlaşmayı bozacak pürüz ortaya çıkardı mı?
+  - index: 2
+    speaker_id: yasemin
+    start_ms: 10418
+    end_ms: 21849
+    text_en: 'We haven''t uncovered outright fraud, Simon, but there are two significant valuation adjustments we must account
+      for: recurring customer churn and regulatory exposure under the revised Payment Services Directive.'
+    text_tr: 'Açık bir dolandırıcılık tespit etmedik Simon, ancak hesaba katmamız gereken iki önemli değerleme düzeltmesi
+      var: tekrarlayan müşteri kaybı ve revize edilmiş Ödeme Hizmetleri Direktifi kapsamındaki düzenleyici risk.'
+  - index: 3
+    speaker_id: simon
+    start_ms: 22249
+    end_ms: 30098
+    text_en: Let's unpack customer churn first. Their pitch deck claimed ninety-four percent net revenue retention across
+      Nordic enterprise merchants.
+    text_tr: Önce müşteri kaybını ele alalım. Sunum dosyaları İskandinav kurumsal üye işyerleri genelinde yüzde doksan dört
+      net gelir elde tutma oranı iddia ediyordu.
+  - index: 4
+    speaker_id: yasemin
+    start_ms: 30498
+    end_ms: 41979
+    text_en: Our forensic cohort analysis revealed that tier-one merchant retention is masked by heavy discounts. Once promotional
+      interchange subsidies lapse, underlying gross merchant churn spikes to eighteen percent.
+    text_tr: Adli kohort analizimiz, birinci sınıf üye işyeri elde tutma oranının ağır indirimlerle maskelendiğini ortaya
+      koydu. Promosyonel takas sübvansiyonları sona erdiğinde, altta yatan brüt üye işyeri kaybı yüzde on sekize fırlıyor.
+  - index: 5
+    speaker_id: simon
+    start_ms: 42379
+    end_ms: 49873
+    text_en: That substantially dampens our terminal EBITDA multiple expectations. What about their regulatory capital compliance?
+    text_tr: Bu durum nihai FAVÖK çarpanı beklentilerimizi önemli ölçüde zayıflatıyor. Peki ya düzenleyici sermaye uyumları?
+  - index: 6
+    speaker_id: yasemin
+    start_ms: 50273
+    end_ms: 60910
+    text_en: The European Banking Authority is probing their cross-border remittance corridor into non-EEA jurisdictions.
+      They have under-provisioned anti-money laundering reserves by approximately twelve million euros.
+    text_tr: Avrupa Bankacılık Otoritesi, AEA dışı yargı bölgelerine yönelik sınır ötesi havale koridorlarını inceliyor. Kara
+      para aklamayı önleme karşılıklarını yaklaşık on iki milyon avro eksik ayırmışlar.
+  - index: 7
+    speaker_id: simon
+    start_ms: 61310
+    end_ms: 66153
+    text_en: That necessitates a substantial purchase price haircut and an escrow indemnity holdback.
+    text_tr: Bu da satın alma fiyatında ciddi bir indirim ve bir emanet tazminat kesintisi gerektirir.
+  - index: 8
+    speaker_id: yasemin
+    start_ms: 66553
+    end_ms: 75401
+    text_en: I recommend shaving thirty million euros off the enterprise valuation and conditioning twenty percent of the
+      cash consideration on an eighteen-month regulatory indemnity escrow.
+    text_tr: Firma değerinden otuz milyon avro kırpılmasını ve nakit bedelin yüzde yirmisinin on sekiz aylık bir düzenleyici
+      tazminat emanetine bağlanmasını öneriyorum.
+  comprehension_questions:
+  - id: q_listening_c1_mergers-acquisitions-due-diligence_01
+    question_en: What discrepancy did forensic cohort analysis reveal regarding BalticPay's merchant retention?
+    question_tr_hint: Adli kohort analizi BalticPay'in üye işyeri elde tutma oranına ilişkin hangi tutarsızlığı ortaya çıkardı?
+    options:
+    - Merchant retention was artificially inflated by fabricating fictitious transactions.
+    - BalticPay was processing transactions without using mathematical addition.
+    - All Nordic merchants had terminated their contracts simultaneously last week.
+    - Promotional subsidies concealed an underlying gross merchant churn rate of eighteen percent.
+    correct_answer: Promotional subsidies concealed an underlying gross merchant churn rate of eighteen percent.
+    explanation_en: Yasemin reveals that after promotional subsidies lapse, gross merchant churn spikes to 18%.
+    explanation_tr: Yasemin teşvikler bittiğinde gerçek müşteri kaybının %18'e fırladığını ortaya koyar.
+  - id: q_listening_c1_mergers-acquisitions-due-diligence_02
+    question_en: What regulatory liability did Yasemin uncover during compliance audits?
+    question_tr_hint: Yasemin uyum denetimleri sırasında hangi düzenleyici yükümlülüğü ortaya çıkardı?
+    options:
+    - A mandatory bankruptcy decree signed by European commercial courts.
+    - An estimated twelve-million-euro shortfall in anti-money laundering reserves under investigation.
+    - An environmental fine for using unrecyclable cardboard envelopes.
+    - An unpaid parking ticket issued to BalticPay's delivery bicycles.
+    correct_answer: An estimated twelve-million-euro shortfall in anti-money laundering reserves under investigation.
+    explanation_en: Yasemin notes the EBA probe and a 12-million-euro under-provisioning in AML reserves.
+    explanation_tr: Yasemin kara para aklamayı önleme karşılıklarında 12 milyon avro açık olduğunu belirtir.
+  - id: q_listening_c1_mergers-acquisitions-due-diligence_03
+    question_en: How does Yasemin propose restructuring the purchase offer to insulate against liabilities?
+    question_tr_hint: Yasemin yükümlülüklere karşı korunmak için satın alma teklifini nasıl yeniden yapılandırmayı öneriyor?
+    options:
+    - Refusing to sign any legal agreements until next decade.
+    - Paying double the purchase price in cash to expedite closing.
+    - Borrowing money from predatory offshore loan syndicates.
+    - Reducing enterprise value by €30M and withholding 20% in an 18-month indemnity escrow.
+    correct_answer: Reducing enterprise value by €30M and withholding 20% in an 18-month indemnity escrow.
+    explanation_en: Yasemin recommends shaving €30M off valuation and putting 20% in an 18-month indemnity escrow.
+    explanation_tr: Yasemin değerlemeden 30 milyon avro düşülmesini ve %20'nin emanet hesabında tutulmasını önerir.
+  - id: q_listening_c1_mergers-acquisitions-due-diligence_04
+    question_en: How do these due diligence findings impact Simon's financial projections?
+    question_tr_hint: Bu durum tespiti bulguları Simon'ın finansal projeksiyonlarını nasıl etkiliyor?
+    options:
+    - They guarantee an immediate guaranteed return of ten thousand percent.
+    - They force the immediate retirement of all private equity general partners.
+    - They significantly lower the anticipated terminal EBITDA multiple upon eventual exit.
+    - They eliminate all taxes owed by the private equity firm permanently.
+    correct_answer: They significantly lower the anticipated terminal EBITDA multiple upon eventual exit.
+    explanation_en: Simon notes the findings substantially dampen terminal EBITDA multiple expectations.
+    explanation_tr: Simon bulguların nihai FAVÖK çarpanı beklentilerini önemli ölçüde düşürdüğünü söyler.
+  - id: q_listening_c1_mergers-acquisitions-due-diligence_05
+    question_en: When must the private equity investment committee reach a conclusive decision?
+    question_tr_hint: Özel sermaye yatırım komitesi ne zaman nihai bir karara varmak zorundadır?
+    options:
+    - Before this morning's financial markets close at noon.
+    - In exactly three business years.
+    - Following the complete restructuring of European banking legislation.
+    - Within forty-eight hours.
+    correct_answer: Within forty-eight hours.
+    explanation_en: Simon opens by stating the investment committee sits in forty-eight hours.
+    explanation_tr: Simon komitenin kırk sekiz saat içinde toplanacağını belirtir.
+  topic_tags:
+  - business
+  - finance
+- id: listening.c1.cloud-security-penetration-testing
+  title: Analyzing Zero-Trust Cloud Penetration Test Debriefings
+  cefr_level: C1
+  category: engineering_meeting
+  scenario_context: Offensive security specialist Leo debriefs cloud infrastructure director Emre regarding privilege escalation
+    vectors identified in identity federation and cross-tenant IAM policies.
+  speakers:
+  - id: leo
+    name: Leo
+    role: Lead Penetration Tester
+    accent: Australian
+  - id: emre
+    name: Emre
+    role: Director of Cloud Infrastructure
+    accent: Turkish
+  audio_ref: audio/listening/c1_cloud_security_penetration_testing.mp3
+  duration_seconds: 80
+  transcript_items:
+  - index: 1
+    speaker_id: leo
+    start_ms: 0
+    end_ms: 11427
+    text_en: G'day Emre. Our red team has finalized our two-week blind adversarial assessment of your multi-cloud production
+      environment. Overall, your perimeter perimeter ingress controls were solid.
+    text_tr: İyi günler Emre. Kırmızı ekibimiz çoklu bulut üretim ortamınızdaki iki haftalık kör düşman değerlendirmesini
+      tamamladı. Genel olarak, çevre giriş kontrolleriniz sağlamdı.
+  - index: 2
+    speaker_id: emre
+    start_ms: 11827
+    end_ms: 21110
+    text_en: Thanks Leo. We invested heavily in web application firewalls and zero-trust mutual TLS. Did you identify any
+      exploitable footholds?
+    text_tr: Teşekkürler Leo. Web uygulaması güvenlik duvarlarına ve sıfır güven karşılıklı TLS'e büyük yatırım yaptık. Yararlanılabilecek
+      herhangi bir sızma noktası belirlediniz mi?
+  - index: 3
+    speaker_id: leo
+    start_ms: 21510
+    end_ms: 31038
+    text_en: Once we compromised a developer staging credential through an unrotated OAuth refresh token, we bypassed your
+      internal network segmentation via identity federation abuse.
+    text_tr: Döndürülmemiş bir OAuth yenileme belirteci aracılığıyla bir geliştirici hazırlık kimlik bilgisini ele geçirdikten
+      sonra, kimlik federasyonu suistimali yoluyla dahili ağ bölümlemenizi aştık.
+  - index: 4
+    speaker_id: emre
+    start_ms: 31438
+    end_ms: 36986
+    text_en: How did you bridge from a low-privilege staging environment into our restricted production Kubernetes cluster?
+    text_tr: Düşük ayrıcalıklı bir hazırlık ortamından kısıtlı üretim Kubernetes kümemize nasıl geçiş yaptınız?
+  - index: 5
+    speaker_id: leo
+    start_ms: 37386
+    end_ms: 49677
+    text_en: Your cloud IAM role permitted excessive wildcard permissions on instance metadata services. By assuming an over-privileged
+      CI/CD service principal, we extracted temporary STS session credentials.
+    text_tr: Bulut IAM rolünüz, bulut sunucusu meta veri hizmetlerinde aşırı joker karakter izinlerine olanak tanıyordu. Aşırı
+      yetkili bir CI/CD hizmet sorumlusunu üstlenerek geçici STS oturum kimlik bilgilerini çıkardık.
+  - index: 6
+    speaker_id: emre
+    start_ms: 50077
+    end_ms: 58435
+    text_en: Which granted access to our centralized Key Management Service and secrets store without generating an alert
+      in our Security Information and Event Management platform.
+    text_tr: Bu da Güvenlik Bilgileri ve Olay Yönetimi platformumuzda bir uyarı oluşturmadan merkezi Anahtar Yönetim Hizmetimize
+      ve sırlar depomuza erişim sağladı.
+  - index: 7
+    speaker_id: leo
+    start_ms: 58835
+    end_ms: 70222
+    text_en: Spot on. Because your SIEM lacked behavioral anomaly detection for cross-account assume-role API calls, our lateral
+      movement was virtually indistinguishable from legitimate automated build pipelines.
+    text_tr: Tam üstüne bastın. SIEM platformunuz hesaplar arası rol üstlenme API çağrıları için davranışsal anomali tespitinden
+      yoksun olduğundan, yanal hareketimiz meşru otomatik derleme işlem hatlarından neredeyse ayırt edilemezdi.
+  - index: 8
+    speaker_id: emre
+    start_ms: 70622
+    end_ms: 79290
+    text_en: We will immediately enforce IMDSv2 token-bound metadata across all instances and restrict IAM role assumption
+      using cryptographic session-tag policies.
+    text_tr: Tüm bulut sunucularında derhal IMDSv2 belirteç bağlantılı meta verileri zorunlu kılacağız ve kriptografik oturum
+      etiketi ilkelerini kullanarak IAM rol üstlenimini kısıtlayacağız.
+  comprehension_questions:
+  - id: q_listening_c1_cloud-security-penetration-testing_01
+    question_en: What initial entry vector enabled the red team to gain a foothold?
+    question_tr_hint: Kırmızı ekibin sisteme sızmasını sağlayan ilk giriş vektörü neydi?
+    options:
+    - An unencrypted Wi-Fi router operating without a password.
+    - An unrotated OAuth refresh token granting access to developer staging credentials.
+    - A malicious USB drive planted in the office reception lobby.
+    - A brute-force dictionary attack against public SSH ports.
+    correct_answer: An unrotated OAuth refresh token granting access to developer staging credentials.
+    explanation_en: Leo explains they compromised a developer staging credential through an unrotated OAuth token.
+    explanation_tr: Leo döndürülmemiş bir OAuth belirteci ile geliştirici ortamına sızdıklarını açıklar.
+  - id: q_listening_c1_cloud-security-penetration-testing_02
+    question_en: How did the testers achieve privilege escalation from staging to production?
+    question_tr_hint: Test uzmanları hazırlık ortamından üretime ayrıcalık yükseltmeyi nasıl başardı?
+    options:
+    - By assuming an over-privileged CI/CD principal via wildcard permissions on instance metadata.
+    - By disconnecting the physical fiber-optic cables connecting the building.
+    - By bribing a senior database administrator with monetary gifts.
+    - By guessing the root administrative password on the main console.
+    correct_answer: By assuming an over-privileged CI/CD principal via wildcard permissions on instance metadata.
+    explanation_en: Leo details how excessive wildcard permissions on instance metadata allowed assuming an over-privileged
+      CI/CD role.
+    explanation_tr: Leo sunucu meta verilerindeki joker izinlerin aşırı yetkili CI/CD rolünü üstlenmelerini sağladığını söyler.
+  - id: q_listening_c1_cloud-security-penetration-testing_03
+    question_en: Why did the lateral movement fail to trigger alerts in the organization's SIEM platform?
+    question_tr_hint: Yanal hareket kuruluşun SIEM platformunda neden uyarı tetiklemedi?
+    options:
+    - The security operations team was absent due to a national holiday.
+    - The monitoring system lacked behavioral anomaly heuristics for cross-account role assumption.
+    - All logging hard drives were filled to complete capacity.
+    - The SIEM software was accidentally turned off during the assessment.
+    correct_answer: The monitoring system lacked behavioral anomaly heuristics for cross-account role assumption.
+    explanation_en: Leo notes the SIEM lacked behavioral anomaly detection for cross-account assume-role calls.
+    explanation_tr: Leo SIEM sisteminin hesaplar arası rol üstlenme anomalilerini algılayamadığını belirtir.
+  - id: q_listening_c1_cloud-security-penetration-testing_04
+    question_en: What specific cloud security remediation does Emre commit to enacting immediately?
+    question_tr_hint: Emre derhal hangi özel bulut güvenliği iyileştirmesini gerçekleştirmeyi taahhüt ediyor?
+    options:
+    - Enforcing IMDSv2 token-bound metadata and session-tag policy constraints on role assumptions.
+    - Disabling all user passwords in favor of handwritten paper signatures.
+    - Permanently terminating all cloud contracts and hosting servers on-premises.
+    - Prohibiting developers from utilizing automated software build pipelines.
+    correct_answer: Enforcing IMDSv2 token-bound metadata and session-tag policy constraints on role assumptions.
+    explanation_en: Emre pledges to mandate IMDSv2 metadata and enforce cryptographic session-tag policies.
+    explanation_tr: Emre IMDSv2 meta veri zorunluluğu ve oturum etiketi ilkeleri getireceğini taahhüt eder.
+  - id: q_listening_c1_cloud-security-penetration-testing_05
+    question_en: What aspect of Emre's defensive infrastructure performed well according to Leo?
+    question_tr_hint: Leo'ya göre Emre'nin savunma altyapısının hangi yönü iyi performans gösterdi?
+    options:
+    - Perimeter ingress boundary controls including web application firewalls and mutual TLS.
+    - Paper shredding procedures within the corporate accounting department.
+    - Biometric voice recognition access controls on workstation microphones.
+    - Automated physical security doors guarding executive office corridors.
+    correct_answer: Perimeter ingress boundary controls including web application firewalls and mutual TLS.
+    explanation_en: Leo acknowledges that perimeter ingress controls and WAF/mTLS were solid.
+    explanation_tr: Leo çevre giriş kontrolleri ve WAF/mTLS yapısının sağlam olduğunu kabul eder.
+  topic_tags:
+  - technology
+  - security
+- id: listening.c1.municipal-smart-grid-zoning
+  title: Aligning Urban District Decentralized Microgrid Planning
+  cefr_level: C1
+  category: stakeholder_alignment
+  scenario_context: City urban development commissioner Vance and renewable energy consortium lead Hande review civic zoning
+    permits, battery energy storage safety easements, and substation interconnects.
+  speakers:
+  - id: vance
+    name: Vance
+    role: Urban Planning Commissioner
+    accent: American
+  - id: hande
+    name: Hande
+    role: Clean Energy Program Director
+    accent: Turkish
+  audio_ref: audio/listening/c1_municipal_smart_grid_zoning.mp3
+  duration_seconds: 81
+  transcript_items:
+  - index: 1
+    speaker_id: vance
+    start_ms: 0
+    end_ms: 9073
+    text_en: Hande, our municipal planning commission is enthusiastic about your consortium's proposal for an eight-megawatt
+      decentralized urban microgrid in the historic port district.
+    text_tr: Hande, belediye planlama komisyonumuz konsorsiyumunuzun tarihi liman bölgesinde sekiz megavatlık merkezi olmayan
+      kentsel mikro şebeke önerisi konusunda çok hevesli.
+  - index: 2
+    speaker_id: hande
+    start_ms: 9473
+    end_ms: 20245
+    text_en: Thank you Commissioner Vance. Integrating rooftop solar, commercial district fuel cells, and utility-scale battery
+      energy storage will reduce peak grid strain by thirty-five percent.
+    text_tr: Teşekkürler Komisyon Üyesi Vance. Çatı güneş enerjisini, ticari bölge yakıt hücrelerini ve şebeke ölçeğinde batarya
+      enerji depolamasını entegre etmek zirve şebeke yükünü yüzde otuz beş azaltacaktır.
+  - index: 3
+    speaker_id: vance
+    start_ms: 20645
+    end_ms: 30952
+    text_en: However, several neighborhood civic associations have filed zoning objections concerning the twenty-megawatt-hour
+      lithium iron phosphate battery installation adjacent to residential heritage quarters.
+    text_tr: Ancak, bazı mahalle sivil dernekleri, konut mirası mahallelerine komşu yirmi megavatsaatlik lityum demir fosfat
+      batarya kurulumuyla ilgili imar itirazlarında bulundu.
+  - index: 4
+    speaker_id: hande
+    start_ms: 31352
+    end_ms: 43559
+    text_en: I understand their apprehension regarding thermal runaway and fire propagation risks. However, lithium iron phosphate
+      chemistry is intrinsically resistant to oxygen release compared to nickel manganese cobalt cells.
+    text_tr: Termal kaçak ve yangın yayılma risklerine ilişkin endişelerini anlıyorum. Ancak lityum demir fosfat kimyası nikel
+      manganez kobalt hücrelerine kıyasla oksijen salınımına karşı doğal olarak dirençlidir.
+  - index: 5
+    speaker_id: vance
+    start_ms: 43959
+    end_ms: 51577
+    text_en: What engineered safeguards are integrated into the enclosure design to meet National Fire Protection Association
+      standard 855?
+    text_tr: Ulusal Yangından Korunma Birliği 855 standardını karşılamak için muhafaza tasarımına hangi mühendislik güvenlik
+      önlemleri entegre edilmiştir?
+  - index: 6
+    speaker_id: hande
+    start_ms: 51977
+    end_ms: 63503
+    text_en: Each battery module incorporates dedicated aerosol fire suppression canisters, deflagration pressure-relief venting,
+      and continuous infrared gas sniffing to detect off-gassing thirty minutes prior to thermal events.
+    text_tr: Her batarya modülü özel aerosol yangın bastırma kutuları, patlama basınç tahliye delikleri ve termal olaylardan
+      otuz dakika önce gaz çıkışını tespit etmek için sürekli kızılötesi gaz algılayıcıları içerir.
+  - index: 7
+    speaker_id: vance
+    start_ms: 63903
+    end_ms: 72616
+    text_en: If you supplement that with a fifty-foot landscaped green buffer and host an informational town hall for local
+      residents, the commission is prepared to approve the zoning variance.
+    text_tr: Bunu elli metrelik peyzajlı yeşil bir tampon bölgeyle tamamlarsanız ve bölge sakinleri için bilgilendirici bir
+      halk toplantısı düzenlerseniz, komisyon imar değişikliğini onaylamaya hazırdır.
+  - index: 8
+    speaker_id: hande
+    start_ms: 73016
+    end_ms: 80139
+    text_en: We will gladly commit to the acoustic green barrier and coordinate with municipal fire chiefs to conduct joint
+      emergency drills next month.
+    text_tr: Akustik yeşil bariyere memnuniyetle bağlı kalacağız ve önümüzdeki ay ortak acil durum tatbikatları yapmak üzere
+      belediye itfaiye şefleriyle koordinasyon sağlayacağız.
+  comprehension_questions:
+  - id: q_listening_c1_municipal-smart-grid-zoning_01
+    question_en: What primary civic concern was raised by neighborhood associations regarding the microgrid project?
+    question_tr_hint: Mikro şebeke projesine ilişkin mahalle dernekleri tarafından hangi temel toplumsal endişe dile getirildi?
+    options:
+    - Fire hazards and thermal runaway risks stemming from battery storage near residential heritage zones.
+    - Radioactivity leaks from underground miniature nuclear reactors.
+    - Excessive dust generated by manual bicycle charging generators.
+    - Loss of cellular mobile phone signals throughout the historic port.
+    correct_answer: Fire hazards and thermal runaway risks stemming from battery storage near residential heritage zones.
+    explanation_en: Vance notes objections over fire propagation and thermal runaway risks near homes.
+    explanation_tr: Vance konut alanlarına yakın bataryalardaki termal kaçak ve yangın riskine dair itirazları belirtir.
+  - id: q_listening_c1_municipal-smart-grid-zoning_02
+    question_en: Why does Hande argue lithium iron phosphate (LFP) chemistry offers superior safety?
+    question_tr_hint: Hande lityum demir fosfat (LFP) kimyasının neden üstün güvenlik sunduğunu savunuyor?
+    options:
+    - LFP cells do not conduct electrical current under any circumstances.
+    - LFP chemistry is fundamentally resistant to thermal runaway oxygen release compared to NMC cells.
+    - LFP enclosures operate at absolute zero degrees temperature permanently.
+    - LFP batteries can be completely extinguished with household tap water.
+    correct_answer: LFP chemistry is fundamentally resistant to thermal runaway oxygen release compared to NMC cells.
+    explanation_en: Hande clarifies LFP is intrinsically resistant to oxygen release during thermal events.
+    explanation_tr: Hande LFP kimyasının NMC hücrelerine kıyasla oksijen salınımına dirençli olduğunu açıklar.
+  - id: q_listening_c1_municipal-smart-grid-zoning_03
+    question_en: What advanced early-warning detection system is embedded inside each battery module?
+    question_tr_hint: Her batarya modülünün içine hangi gelişmiş erken uyarı algılama sistemi yerleştirilmiştir?
+    options:
+    - A canary bird cage mounted on top of the external transformer.
+    - Continuous infrared gas sniffing that detects off-gassing 30 minutes before thermal acceleration.
+    - A human guard standing watch twenty-four hours a day with binoculars.
+    - An acoustic microphone listening for lightning strikes.
+    correct_answer: Continuous infrared gas sniffing that detects off-gassing 30 minutes before thermal acceleration.
+    explanation_en: Hande describes infrared gas sniffing that detects off-gassing 30 minutes prior to events.
+    explanation_tr: Hande termal olaylardan 30 dakika önce gaz çıkışını saptayan kızılötesi sensörleri anlatır.
+  - id: q_listening_c1_municipal-smart-grid-zoning_04
+    question_en: What civic concessions does Commissioner Vance require before granting the zoning variance?
+    question_tr_hint: Komisyon Üyesi Vance imar değişikliğini onaylamadan önce hangi toplumsal tavizleri şart koşuyor?
+    options:
+    - Painting all solar panels in historical Victorian heritage colors.
+    - Relocating the entire project to an uninhabited desert island.
+    - Payment of personal cash stipends to every city municipal employee.
+    - A landscaped fifty-foot green buffer and an informational public town hall for neighborhood residents.
+    correct_answer: A landscaped fifty-foot green buffer and an informational public town hall for neighborhood residents.
+    explanation_en: Vance requests a 50-foot green buffer and an informational town hall.
+    explanation_tr: Vance 50 metrelik peyzajlı yeşil tampon ve halk bilgilendirme toplantısı talep eder.
+  - id: q_listening_c1_municipal-smart-grid-zoning_05
+    question_en: What overall grid performance benefit does the decentralized microgrid deliver?
+    question_tr_hint: Merkezi olmayan mikro şebeke genel şebeke performansına nasıl bir fayda sağlar?
+    options:
+    - A thirty-five percent reduction in peak electricity grid strain across the urban district.
+    - A hundred percent reduction in water consumption across the municipality.
+    - Free unlimited electricity for every commercial entity in the nation.
+    - Total eradication of all atmospheric greenhouse gas emissions globally.
+    correct_answer: A thirty-five percent reduction in peak electricity grid strain across the urban district.
+    explanation_en: Hande highlights a 35% reduction in peak grid strain.
+    explanation_tr: Hande zirve şebeke yükünde %35 azalma sağlanacağını ifade eder.
+  topic_tags:
+  - society
+  - urban_planning
+- id: listening.c1.museum-curation-indigenous-artifacts
+  title: Establishing Ethical Repatriation and Provenance Protocols
+  cefr_level: C1
+  category: stakeholder_alignment
+  scenario_context: Senior museum curator Jonathan and cultural heritage jurist Serra confer over contested provenance documentation,
+    reciprocal loan frameworks, and ethical restitution guidelines for antiquities.
+  speakers:
+  - id: jonathan
+    name: Jonathan
+    role: Senior Antiquities Curator
+    accent: British
+  - id: serra
+    name: Serra
+    role: International Cultural Heritage Jurist
+    accent: Turkish
+  audio_ref: audio/listening/c1_museum_curation_indigenous_artifacts.mp3
+  duration_seconds: 78
+  transcript_items:
+  - index: 1
+    speaker_id: jonathan
+    start_ms: 0
+    end_ms: 9523
+    text_en: Serra, thank you for reviewing our classical Aegean statuary archive. Our board of trustees is committed to navigating
+      provenance inquiries with absolute ethical rigor.
+    text_tr: Serra, klasik Ege heykelleri arşivimizi incelediğin için teşekkür ederim. Mütevelli heyetimiz köken araştırmalarını
+      mutlak etik titizlikle yürütmeye kararlıdır.
+  - index: 2
+    speaker_id: serra
+    start_ms: 9923
+    end_ms: 20415
+    text_en: It is an essential endeavor, Jonathan. The legal landscape has shifted irreversibly from nineteen-seventy UNESCO
+      compliance toward proactive decolonization and bilateral restitution.
+    text_tr: Bu çok önemli bir girişim Jonathan. Hukuki zemin bin dokuz yüz yetmiş UNESCO uyumluluğundan proaktif dekolonizasyon
+      ve ikili iadelere doğru geri döndürülemez biçimde değişti.
+  - index: 3
+    speaker_id: jonathan
+    start_ms: 20815
+    end_ms: 29633
+    text_en: Specifically, we are examining the provenance file for the fourth-century BCE marble votive frieze acquired through
+      a Geneva antiquities dealership in nineteen eighty-four.
+    text_tr: Özellikle, bin dokuz yüz seksen dört yılında bir Cenevre antikacılık bayisi aracılığıyla edinilen MÖ dördüncü
+      yüzyıl mermer adak frizinin köken dosyasını inceliyoruz.
+  - index: 4
+    speaker_id: serra
+    start_ms: 30033
+    end_ms: 42244
+    text_en: The export documentation in that archive relies on a notarized declaration that recent isotopic marble analysis
+      directly contradicts. The strontium isotope ratios map conclusively to an Anatolian quarry site.
+    text_tr: Bu arşivdeki ihracat belgeleri son izotopik mermer analizinin doğrudan çürüttüğü noter tasdikli bir beyana dayanıyor.
+      Stronsiyum izotop oranları kesin olarak bir Anadolu taş ocağı sahasıyla eşleşiyor.
+  - index: 5
+    speaker_id: jonathan
+    start_ms: 42644
+    end_ms: 48563
+    text_en: Which suggests illicit excavation and clandestine smuggling prior to its arrival in Swiss art trade circles.
+    text_tr: Bu da İsviçre sanat ticareti çevrelerine ulaşmadan önce yasadışı kazı ve gizli kaçakçılığa işaret ediyor.
+  - index: 6
+    speaker_id: serra
+    start_ms: 48963
+    end_ms: 60609
+    text_en: Indubitably. A confrontational legal dispute will generate reputational damage. Instead, I recommend proposing
+      a collaborative bilateral cultural heritage partnership with the origin ministry.
+    text_tr: Kuşkusuz. Çatışmacı bir hukuki ihtilaf itibar kaybı yaratacaktır. Bunun yerine, menşe bakanlığıyla işbirlikçi
+      ikili bir kültürel miras ortaklığı önermenizi tavsiye ederim.
+  - index: 7
+    speaker_id: jonathan
+    start_ms: 61009
+    end_ms: 70267
+    text_en: Whereby legal title unconditionally transfers back to the source nation, while the physical frieze remains on
+      reciprocal long-term loan with collaborative conservation exchanges?
+    text_tr: Yani yasal mülkiyet koşulsuz olarak kaynak ülkeye geri devredilirken, fiziki friz işbirlikçi koruma değişimleriyle
+      karşılıklı uzun vadeli ödünçte mi kalacak?
+  - index: 8
+    speaker_id: serra
+    start_ms: 70667
+    end_ms: 77270
+    text_en: Precisely. That framework converts a historical injustice into an enduring international scholarly alliance.
+    text_tr: Kesinlikle. Bu çerçeve tarihsel bir adaletsizliği kalıcı bir uluslararası akademik ittifaka dönüştürür.
+  comprehension_questions:
+  - id: q_listening_c1_museum-curation-indigenous-artifacts_01
+    question_en: What scientific evidence contradicted the museum's historic acquisition paperwork?
+    question_tr_hint: Müzenin tarihi edinim belgeleriyle hangi bilimsel kanıt çelişti?
+    options:
+    - Carbon dating revealed the statue was constructed from modern synthetic plastic.
+    - Infrared photography showed signature stamps from an Italian tourist gift shop.
+    - Microscopic examination revealed machine-tooled CNC cutting patterns.
+    - Strontium isotope ratios in the marble conclusively matched an Anatolian quarry rather than documented origin.
+    correct_answer: Strontium isotope ratios in the marble conclusively matched an Anatolian quarry rather than documented
+      origin.
+    explanation_en: Serra highlights that strontium isotope ratios conclusively map to an Anatolian quarry.
+    explanation_tr: Serra mermerdeki stronsiyum izotop analizinin eserin Anadolu menşeini kanıtladığını belirtir.
+  - id: q_listening_c1_museum-curation-indigenous-artifacts_02
+    question_en: Why does Serra advise against pursuing a formal court litigation battle?
+    question_tr_hint: Serra neden resmi bir mahkeme davası açılmasını tavsiye etmiyor?
+    options:
+    - The statue possesses negative spiritual curses that affect courtroom judges.
+    - Public litigation creates severe reputational damage compared to collaborative partnership.
+    - Attorneys fees would exceed the entire national gross domestic product.
+    - International courts have ceased all legal adjudication globally.
+    correct_answer: Public litigation creates severe reputational damage compared to collaborative partnership.
+    explanation_en: Serra warns that a confrontational legal dispute generates severe reputational damage.
+    explanation_tr: Serra çatışmacı bir hukuki sürecin ciddi itibar kaybı yaratacağı konusunda uyarır.
+  - id: q_listening_c1_museum-curation-indigenous-artifacts_03
+    question_en: What collaborative solution does Jonathan formulate based on Serra's counsel?
+    question_tr_hint: Jonathan Serra'nın tavsiyesi üzerine nasıl bir işbirlikçi çözüm formüle ediyor?
+    options:
+    - Melting the marble frieze down to build museum cafeteria countertops.
+    - Transferring full legal ownership to origin authorities while retaining reciprocal loan and conservation exchanges.
+    - Selling the artwork at an unreserved international auction to highest private bidder.
+    - Burying the statue in a deep concrete vault to evade public scrutiny.
+    correct_answer: Transferring full legal ownership to origin authorities while retaining reciprocal loan and conservation
+      exchanges.
+    explanation_en: Jonathan suggests transferring legal title while maintaining reciprocal long-term loans.
+    explanation_tr: Jonathan mülkiyetin devredilip eserin karşılıklı uzun vadeli ödünçte kalmasını önerir.
+  - id: q_listening_c1_museum-curation-indigenous-artifacts_04
+    question_en: In what decade was the controversial marble frieze originally acquired by the museum?
+    question_tr_hint: Tartışmalı mermer friz müze tarafından ilk olarak hangi on yılda edinilmişti?
+    options:
+    - The nineteen-eighties (specifically 1984).
+    - The nineteen-twenties.
+    - The late nineteen-fifties.
+    - The early eighteen-hundreds.
+    correct_answer: The nineteen-eighties (specifically 1984).
+    explanation_en: Jonathan specifies the frieze was acquired in 1984 through a Geneva dealer.
+    explanation_tr: Jonathan frizin 1984 yılında bir Cenevre bayisi aracılığıyla alındığını belirtir.
+  - id: q_listening_c1_museum-curation-indigenous-artifacts_05
+    question_en: How has the broader legal and cultural landscape regarding antiquities shifted according to Serra?
+    question_tr_hint: Serra'ya göre antik eserlere ilişkin daha geniş hukuki ve kültürel zemin nasıl değişti?
+    options:
+    - Toward abolishing all scientific provenance testing on cultural antiquities.
+    - Toward banning all international travel for museum curatorial personnel.
+    - From mere treaty compliance toward proactive restitution and cultural decolonization.
+    - Toward the complete privatized commercialization of all public heritage.
+    correct_answer: From mere treaty compliance toward proactive restitution and cultural decolonization.
+    explanation_en: Serra notes the shift from 1970 UNESCO compliance toward proactive decolonization and restitution.
+    explanation_tr: Serra UNESCO uyumundan proaktif iade ve dekolonizasyona doğru bir kayma olduğunu açıklar.
+  topic_tags:
+  - culture
+  - arts
+- id: listening.c1.distributed-consensus-split-brain
+  title: Triage and Remediation of Distributed Raft Split-Brain Partition
+  cefr_level: C1
+  category: engineering_meeting
+  scenario_context: Site Reliability Director Chloe and Distributed Database Architect Kerem examine asynchronous network
+    partition logs to verify Paxos/Raft leader lease invariants and eliminate phantom writes.
+  speakers:
+  - id: chloe
+    name: Chloe
+    role: Site Reliability Director
+    accent: American
+  - id: kerem
+    name: Kerem
+    role: Distributed Systems Architect
+    accent: Turkish
+  audio_ref: audio/listening/c1_distributed_consensus_split_brain.mp3
+  duration_seconds: 75
+  transcript_items:
+  - index: 1
+    speaker_id: chloe
+    start_ms: 0
+    end_ms: 9188
+    text_en: Kerem, during our transatlantic network fiber flap at twenty past eleven last night, our multi-region database
+      cluster experienced a partial split-brain state.
+    text_tr: Kerem, dün gece saat on biri yirmi geçe yaşanan transatlantik ağ fiber dalgalanması sırasında, çok bölgeli veritabanı
+      kümemiz kısmi bir bölünmüş beyin durumu yaşadı.
+  - index: 2
+    speaker_id: kerem
+    start_ms: 9588
+    end_ms: 19965
+    text_en: I analyzed the Raft consensus state machine logs, Chloe. Both the European and North American regions elected
+      independent leader nodes concurrently for approximately twelve seconds.
+    text_tr: Raft mutabakat durum makinesi günlüklerini inceledim Chloe. Hem Avrupa hem de Kuzey Amerika bölgeleri yaklaşık
+      on iki saniye boyunca eşzamanlı olarak bağımsız lider düğümler seçti.
+  - index: 3
+    speaker_id: chloe
+    start_ms: 20365
+    end_ms: 26618
+    text_en: How could two leaders be elected simultaneously under strict majority quorum consensus across our five-node cluster?
+    text_tr: Beş düğümlü kümemizde kesin çoğunluk nisap mutabakatı altındayken nasıl iki lider aynı anda seçilebildi?
+  - index: 4
+    speaker_id: kerem
+    start_ms: 27018
+    end_ms: 36995
+    text_en: The root cause was clock drift across AWS regions interacting with our leader-lease renewal mechanism. Node three
+      suffered a six-hundred-millisecond NTP desynchronization.
+    text_tr: Kök neden, lider kiralama yenileme mekanizmamızla etkileşime giren AWS bölgeleri arasındaki saat kaymasıydı.
+      Üçüncü düğümde altı yüz milisaniyelik bir NTP senkronizasyon kaybı yaşandı.
+  - index: 5
+    speaker_id: chloe
+    start_ms: 37395
+    end_ms: 44912
+    text_en: Causing node three to consider its leadership lease valid while the overseas majority quorum had already timed
+      out and initiated a new term election.
+    text_tr: Bu da yurt dışındaki çoğunluk nisabının zaman aşımına uğrayıp yeni bir dönem seçimi başlatmasına rağmen üçüncü
+      düğümün liderlik kiralamasını geçerli saymasına neden oldu.
+  - index: 6
+    speaker_id: kerem
+    start_ms: 45312
+    end_ms: 54600
+    text_en: Exactly. During that twelve-second window, Node three accepted approximately four hundred write transactions
+      that were never replicated to the global majority log.
+    text_tr: Kesinlikle. Bu on iki saniyelik pencere sırasında, Üçüncü Düğüm küresel çoğunluk günlüğüne hiçbir zaman kopyalanmayan
+      yaklaşık dört yüz yazma işlemini kabul etti.
+  - index: 7
+    speaker_id: chloe
+    start_ms: 55000
+    end_ms: 61058
+    text_en: Did those unreplicated writes result in dirty phantom reads or silent data corruption for enterprise banking
+      tenants?
+    text_tr: Bu kopyalanmamış yazmalar kurumsal bankacılık kiracıları için kirli hayali okumalara veya sessiz veri bozulmalarına
+      yol açtı mı?
+  - index: 8
+    speaker_id: kerem
+    start_ms: 61458
+    end_ms: 74375
+    text_en: Fortunately, our multi-version concurrency control flagged the uncommitted terms, and write-ahead transaction
+      logs rolled back cleanly without data loss. We are now mandating monotonic TrueTime GPS hardware references.
+    text_tr: Neyse ki, çok sürümlü eşzamanlılık kontrolümüz kesinleşmemiş dönemleri işaretledi ve işlem öncesi yazma günlükleri
+      veri kaybı olmaksızın temiz bir şekilde geri alındı. Artık monoton TrueTime GPS donanım referanslarını zorunlu kılıyoruz.
+  comprehension_questions:
+  - id: q_listening_c1_distributed-consensus-split-brain_01
+    question_en: What underlying physical defect triggered concurrent leader elections across regions?
+    question_tr_hint: Bölgeler arasında eşzamanlı lider seçimlerini hangi temel fiziksel kusur tetikledi?
+    options:
+    - A power outage disabling all five server motherboards at once.
+    - Clock drift and a 600ms NTP desynchronization colliding with the leader-lease interval.
+    - An unauthorized firmware update deleting the consensus source code.
+    - Malicious ransom software corrupting all disk partitioning tables.
+    correct_answer: Clock drift and a 600ms NTP desynchronization colliding with the leader-lease interval.
+    explanation_en: Kerem identifies clock drift and a 600ms NTP desynchronization on node 3 as the root cause.
+    explanation_tr: Kerem kök nedenin saat kayması ve 3. düğümdeki 600 ms'lik NTP gecikmesi olduğunu belirtir.
+  - id: q_listening_c1_distributed-consensus-split-brain_02
+    question_en: How long did the split-brain dual-leader condition persist during the network flap?
+    question_tr_hint: Ağ dalgalanması sırasında çift liderli bölünmüş beyin durumu ne kadar sürdü?
+    options:
+    - Exactly twenty-four hours.
+    - Less than one nanosecond.
+    - Approximately twelve seconds.
+    - Over three full calendar weeks.
+    correct_answer: Approximately twelve seconds.
+    explanation_en: Kerem states both regions elected independent leaders for approximately 12 seconds.
+    explanation_tr: Kerem bağımsız lider durumunun yaklaşık 12 saniye sürdüğünü söyler.
+  - id: q_listening_c1_distributed-consensus-split-brain_03
+    question_en: What happened to the four hundred write transactions accepted by the disconnected leader node?
+    question_tr_hint: Bağlantısı kesilen lider düğüm tarafından kabul edilen dört yüz yazma işlemine ne oldu?
+    options:
+    - They were identified by multi-version concurrency control and cleanly rolled back without corruption.
+    - They resulted in the immediate bankruptcy of fifty multinational banks.
+    - They overwrote the entire operating system of every customer device.
+    - They were permanently published to international public newspapers.
+    correct_answer: They were identified by multi-version concurrency control and cleanly rolled back without corruption.
+    explanation_en: Kerem reports MVCC flagged uncommitted terms and transaction logs rolled back cleanly.
+    explanation_tr: Kerem MVCC kontrolünün işlemleri yakalayıp veri kaybı olmadan temizce geri aldığını belirtir.
+  - id: q_listening_c1_distributed-consensus-split-brain_04
+    question_en: What permanent hardware and architectural safeguard does Kerem mandate to prevent recurrence?
+    question_tr_hint: Kerem tekrarı önlemek için hangi kalıcı donanım ve mimari güvenlik önlemini zorunlu kılıyor?
+    options:
+    - Using mechanical grandfather clocks inside datacenter server halls.
+    - Requiring software engineers to manually approve every database query.
+    - Eliminating all automated failover algorithms in favor of manual rebooting.
+    - Mandating monotonic TrueTime GPS hardware time references across all cluster datacenters.
+    correct_answer: Mandating monotonic TrueTime GPS hardware time references across all cluster datacenters.
+    explanation_en: Kerem specifies mandating monotonic TrueTime GPS hardware references.
+    explanation_tr: Kerem TrueTime GPS donanım saat referanslarının zorunlu kılınacağını açıklar.
+  - id: q_listening_c1_distributed-consensus-split-brain_05
+    question_en: How many total nodes comprise the consensus cluster under review?
+    question_tr_hint: İnceleme altındaki mutabakat kümesi toplam kaç düğümden oluşmaktadır?
+    options:
+    - A single solitary mainframe server node.
+    - Two hundred thousand individual server nodes.
+    - Five nodes operating under majority quorum.
+    - Exactly two interconnected server nodes.
+    correct_answer: Five nodes operating under majority quorum.
+    explanation_en: Chloe refers to strict majority quorum across our five-node cluster.
+    explanation_tr: Chloe beş düğümlü kümede kesin çoğunluk nisabından bahseder.
+  topic_tags:
+  - problem_solving
+  - engineering

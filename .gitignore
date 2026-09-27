@@ -1,0 +1,47 @@
+# Local build state and IDE files
+.gradle/
+.gradle-user/
+.kotlin/
+**/build/
+.android/
+.externalNativeBuild/
+.cxx/
+.idea/
+.vscode/
+*.iml
+local.properties
+.bootstrap/
+.superpowers/
+
+# Generated packages and reports
+*.apk
+*.aab
+
+# Local credentials, signing material, and personal data
+.env
+.env.*
+!.env.example
+secrets.properties
+keystore.properties
+signing.properties
+key.properties
+credentials.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+!app/src/main/assets/content.db
+
+# Python, OS, and editor temporary files
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

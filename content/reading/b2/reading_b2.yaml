@@ -1,0 +1,174 @@
+- id: reading.b2.microservices-tradeoffs
+  title: The Architectural Trade-Offs of Microservices
+  cefr_level: B2
+  category: technology
+  summary_en: A critical evaluation of moving from monolithic architectures to distributed microservices, balancing independent
+    deployment against operational complexity.
+  summary_tr: Monolitik yapılardan dağıtık mikroservislere geçişin bağımsız yaygınlaştırma ve operasyonel karmaşıklık arasındaki
+    mimari ödünleşimleri.
+  word_count: 162
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: The Allure of Independent Deployability
+    content_en: 'In the era of cloud-native computing, modern software enterprises frequently abandon monolithic codebases
+      in favor of microservices. The driving premise is simple: dividing a massive, tightly coupled application into autonomous,
+      single-purpose services enables cross-functional teams to build, test, and deploy features independently. Engineers
+      can iterate quickly without risking global regressions, vastly accelerating product delivery cycles. Every architectural
+      decision involves a fundamental trade-off between simplicity and scale. Engineers leverage container orchestration to
+      manage distributed microservices.'
+    content_tr: 'Bulut tabanlı bilişim çağında modern yazılım şirketleri devasa monolitik kod tabanlarını bırakıp mikroservis
+      mimarilerine yönelmektedir. Temel gerekçe basittir: Büyük ve sıkı bağlı bir uygulamayı otonom, tek amaçlı servislere
+      bölmek, fonksiyonlar arası ekiplerin özellikleri bağımsızca inşa etmesine, test etmesine ve canlıya almasına olanak
+      tanır. Mühendisler tüm sistemi çökertme riski olmadan hızlıca yineleme yapabilir ve ürün teslimat döngülerini hızlandırırlar.
+      Her mimari karar, basitlik ve ölçek arasında temel bir ödünleşim içerir. Mühendisler dağıtık mikroservisleri yönetmek
+      için konteyner orkestrasyonundan yararlanırlar.'
+  - paragraph_index: 2
+    title: The Hidden Burden of Distributed Systems
+    content_en: However, microservices introduce substantial operational overhead. When database transactions span multiple
+      network boundaries, maintaining data consistency becomes inherently complicated. Network latency replaces in-memory
+      function calls, and transient connectivity failures require sophisticated retry mechanisms, circuit breakers, and distributed
+      tracing infrastructure to diagnose latency spikes.
+    content_tr: Bununla birlikte, mikroservisler ciddi bir operasyonel yük getirir. Veritabanı işlemleri birden fazla ağ sınırına
+      yayıldığında veri tutarlılığını sağlamak karmaşıklaşır. Bellek içi fonksiyon çağrılarının yerini ağ gecikmesi alır ve
+      geçici bağlantı kopmaları gecikme artışlarını teşhis etmek için gelişmiş devre kesiciler ve dağıtık izleme araçları
+      gerektirir.
+  - paragraph_index: 3
+    title: Organizational and Cognitive Overhead
+    content_en: Furthermore, Conway's Law dictates that system architecture reflects an organization's communication structures.
+      Without mature DevOps automation, managing dozens of CI/CD pipelines, container clusters, and API contracts creates
+      a cognitive bottleneck. Smaller engineering organizations frequently discover that the operational friction of microservices
+      outweighs the productivity gains.
+    content_tr: Dahası, Conway Kanunu sistem mimarisinin kurumun iletişim yapılarını yansıttığını söyler. Olgun bir DevOps
+      otomasyonu olmadan düzinelerce CI/CD hattını, konteyner kümesini ve API sözleşmesini yönetmek bilişsel bir tıkanıklık
+      yaratır. Küçük ekipler genellikle mikroservislerin operasyonel yükünün üretkenlik kazanımlarını aştığını görür.
+  vocabulary_annotations:
+  - word: trade-off
+    vocab_id: vocab.trade-off
+    context_definition_en: A balance achieved between two desirable but incompatible features; a compromise.
+    context_meaning_tr: İki faydalı durum arasındaki ödünleşim, karşılıklı denge.
+  - word: bottleneck
+    vocab_id: vocab.bottleneck
+    context_definition_en: A point of congestion in a system that stops or slows progress.
+    context_meaning_tr: Darboğaz, sistemi yavaşlatan tıkanıklık noktası.
+  - word: leverage
+    vocab_id: vocab.leverage
+    context_definition_en: To use something to maximum advantage.
+    context_meaning_tr: Bir avantajdan veya teknolojiden en üst düzeyde yararlanmak.
+  comprehension_questions:
+  - id: q_micro_01
+    question_en: What is cited as the primary incentive for adopting a microservices architecture?
+    question_tr_hint: Mikroservis mimarisini seçmenin metindeki birincil gerekçesini belirleyiniz.
+    options:
+    - Reducing the total number of cloud servers needed
+    - Enabling cross-functional teams to build and deploy features independently
+    - Eliminating the need for automated testing and CI/CD pipelines
+    - Simplifying database transactions across multiple network segments
+    correct_answer: Enabling cross-functional teams to build and deploy features independently
+    explanation_en: The opening paragraph notes that dividing the codebase into autonomous services enables teams to build,
+      test, and deploy independently without risking global regressions.
+    explanation_tr: İlk paragrafta sistemin otonom servislere bölünmesinin ekiplere bağımsız geliştirme ve yaygınlaştırma
+      imkanı tanıdığı vurgulanmıştır.
+  - id: q_micro_02
+    question_en: Why might smaller organizations struggle with microservices?
+    question_tr_hint: Küçük ekiplerin mikroservislerle neden zorlanabileceğini metne göre bulunuz.
+    options:
+    - Cloud providers refuse to host microservices for small businesses
+    - Microservices cannot be written in modern programming languages
+    - The operational and cognitive overhead of distributed systems can outweigh productivity gains
+    - Monolithic architectures are illegal in most European jurisdictions
+    correct_answer: The operational and cognitive overhead of distributed systems can outweigh productivity gains
+    explanation_en: The concluding paragraph warns that without mature DevOps automation, managing distributed complexity
+      creates operational friction that outweighs productivity benefits for smaller teams.
+    explanation_tr: Son paragrafta olgun bir otomasyon olmadan dağıtık sistemleri yönetmenin getirdiği bilişsel ve operasyonel
+      yükün küçük ekipler için faydadan çok zarar getirebileceği belirtilmiştir.
+  topic_tags:
+  - architecture
+  - microservices
+  - distributed-systems
+  - technology
+  related_ids:
+  - vocab.trade-off
+  - vocab.bottleneck
+  - vocab.leverage
+  status: APPROVED
+  version: 1
+- id: reading.b2.strategic-delegation
+  title: Strategic Delegation and Avoiding Micromanagement
+  cefr_level: B2
+  category: leadership_and_management
+  summary_en: Principles of empowering senior contributors through outcome-oriented delegation rather than step-by-step task
+    control.
+  summary_tr: Kıdemli çalışanları adım adım kontrol etmek yerine sonuç odaklı delege etme ve yetkilendirme ilkeleri.
+  word_count: 98
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: The Trap of Task-Oriented Control
+    content_en: First-time managers frequently stumble into micromanagement by defining how work should be executed rather
+      than defining the desired outcome. When leaders dictate every mechanical step, they demotivate senior engineers and
+      inadvertently position themselves as the single bottleneck for team decisions. Effective leaders learn when to delegate
+      complex operational tasks to their squads. Clarifying ownership helps streamline cross-functional decision workflows.
+    content_tr: Yeni yöneticiler istenen sonucu tanımlamak yerine işin nasıl yapılacağını dikte ederek sıkça mikro-yönetim
+      tuzağına düşerler. Liderler her mekanik adımı belirlediğinde kıdemli mühendislerin motivasyonu kırılır ve yönetici istemeden
+      ekip kararlarındaki tek darboğaz haline gelir. Etkili liderler karmaşık operasyonel görevleri ekiplerine ne zaman devredeceklerini
+      öğrenirler. Sahipliği netleştirmek, işlevler arası karar iş akışlarını kolaylaştırmaya yardımcı olur.
+  - paragraph_index: 2
+    title: Outcome-Based Alignment and Guardrails
+    content_en: Effective strategic delegation shifts focus from process surveillance to outcome-based alignment. High-performing
+      managers articulate the business context, establish clear quality standards, and provide safe operational guardrails.
+      Once expectations are calibrated, contributors are granted autonomy to architect their own solutions.
+    content_tr: Etkili stratejik delege etme, odağı süreç gözetiminden sonuç odaklı hizalanmaya kaydırır. Başarılı yöneticiler
+      iş bağlamını netleştirir, kalite standartlarını belirler ve güvenli operasyonel sınırlar çizer. Beklentiler netleştikten
+      sonra çalışanlara kendi çözümlerini tasarlama özerkliği verilir.
+  vocabulary_annotations:
+  - word: delegate
+    vocab_id: vocab.delegate
+    context_definition_en: To entrust a task or responsibility to another person, typically a subordinate.
+    context_meaning_tr: Görev ve sorumluluğu başkasına devretmek, yetkilendirmek.
+  - word: streamline
+    vocab_id: vocab.streamline
+    context_definition_en: To make an organization or system more efficient by simplifying working methods.
+    context_meaning_tr: Süreçleri basitleştirip daha verimli ve pürüzsüz hale getirmek.
+  - word: align
+    vocab_id: vocab.align
+    context_definition_en: To bring components, goals, or stakeholders into precise agreement.
+    context_meaning_tr: Hedefleri ve paydaşları ortak doğrultuda hizalamak.
+  comprehension_questions:
+  - id: q_deleg_01
+    question_en: What happens when leaders dictate every mechanical step of a project?
+    question_tr_hint: Yöneticilerin her adımı dikte etmesinin sonucunu bulunuz.
+    options:
+    - Team members are demotivated and the manager becomes a decision bottleneck
+    - The project speed quadruples due to extreme clarity
+    - The company eliminates all operational expenditures
+    - Engineering quality automatically meets ISO certifications
+    correct_answer: Team members are demotivated and the manager becomes a decision bottleneck
+    explanation_en: The first paragraph notes that dictating every mechanical step demotivates experienced contributors and
+      creates a decision bottleneck around the manager.
+    explanation_tr: İlk paragrafta her detayı yönetmenin kıdemli çalışanların motivasyonunu kırdığı ve yöneticiyi darboğaza
+      dönüştürdüğü açıklanmıştır.
+  - id: q_deleg_02
+    question_en: What do effective managers provide instead of process surveillance?
+    question_tr_hint: Başarılı yöneticilerin süreç takibi yerine ne sağladığını bulunuz.
+    options:
+    - Daily mandatory time-tracking software
+    - Unlimited vacation without performance benchmarks
+    - Clear business context, quality standards, and operational guardrails
+    - Weekly written examinations for all contributors
+    correct_answer: Clear business context, quality standards, and operational guardrails
+    explanation_en: The second paragraph specifies that effective managers articulate business context, establish quality
+      standards, and supply guardrails while granting autonomy.
+    explanation_tr: İkinci paragrafta etkili yöneticilerin iş bağlamını, kalite ölçütlerini ve güvenli sınırları belirleyip
+      özerklik tanıdığı belirtilmiştir.
+  topic_tags:
+  - leadership
+  - management
+  - autonomy
+  - delegation
+  related_ids:
+  - vocab.delegate
+  - vocab.streamline
+  - vocab.align
+  status: APPROVED
+  version: 1

@@ -1,0 +1,4010 @@
+batch_id: vocab_batch_003
+description: FluentAI Vocabulary Expansion Batch 003 - Planning Manifest (A2-C2)
+item_count: 500
+cefr_distribution:
+  A2: 60
+  B1: 90
+  B2: 110
+  C1: 130
+  C2: 110
+items:
+- id: vocab.laundry
+  headword: laundry
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Clothes, sheets, and other fabric items that are being washed, have...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.fold-v
+  headword: fold
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Bend something flexible over on itself so that one part covers anot...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.pillow
+  headword: pillow
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A soft cushion used to support the head while sleeping or resting
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.blanket
+  headword: blanket
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A large piece of woolen or thick fabric used as a warm bed covering
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.sweep
+  headword: sweep
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Clean an area by brushing away dirt, dust, or litter using a broom
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.mop-v
+  headword: mop
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Clean, wash, or wipe a floor using a wet cloth or sponge attached t...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.dust-v
+  headword: dust
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Wipe the dust off furniture, shelves, or other surfaces with a soft...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.drawer
+  headword: drawer
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A box-shaped container that slides into and out of a piece of furni...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.lock-v
+  headword: lock
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Fasten or secure a door, window, or container with a key or electro...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.unlock
+  headword: unlock
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Open a lock on a door, device, or box using a key, passcode, or fin...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.wipe
+  headword: wipe
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Clean or dry something by rubbing its surface with a cloth, napkin,...
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.neat
+  headword: neat
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Arranged well, tidy, clean, and in good order
+  reason_for_inclusion: High-utility A2 lexical unit for daily-life.
+- id: vocab.departure
+  headword: departure
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: The action of leaving, especially when starting a journey by plane,...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.arrival
+  headword: arrival
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: The act of reaching a destination or landing after a journey
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.timetable
+  headword: timetable
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A chart or list showing the scheduled times at which events, trains...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.ferry
+  headword: ferry
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A boat or ship that carries passengers and vehicles across a river,...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.subway
+  headword: subway
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: An underground electric railway system used for passenger travel in...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.suitcase
+  headword: suitcase
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A rectangular case with a handle, used for carrying clothes and bel...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.backpack
+  headword: backpack
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A bag with straps that allow it to be carried on one's back, often ...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.land-v
+  headword: land
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Come down through the air and settle on the ground or water, especi...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.unpack
+  headword: unpack
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Take things out of a suitcase, box, or bag after arriving at a dest...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.boarding-pass
+  headword: boarding pass
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A printed or digital document given to a passenger that permits the...
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.catch
+  headword: catch
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Arrive in time to board a bus, train, ferry, or airplane
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.miss-v
+  headword: miss
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Arrive too late for a bus, train, or flight and fail to travel on it
+  reason_for_inclusion: High-utility A2 lexical unit for travel.
+- id: vocab.groceries
+  headword: groceries
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Food and other everyday domestic goods bought at a supermarket or f...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.aisle
+  headword: aisle
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A passage between rows of shelves in a supermarket or between rows ...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.cart
+  headword: cart
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A metal wheeled basket used by shoppers for carrying large quantiti...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.basket
+  headword: basket
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A handheld lightweight container used by shoppers for carrying a fe...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.slice-v
+  headword: slice
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Cut food or bread into thin, flat, and broad pieces using a knife
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.boil-v
+  headword: boil
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Heat a liquid until it bubbles and turns to steam, or cook food in ...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.fry
+  headword: fry
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Cook food in hot fat or oil, typically in a shallow pan on the stove
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.bake
+  headword: bake
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Cook food by dry heat without direct exposure to a flame, typically...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.on-sale
+  headword: on sale
+  part_of_speech: phrase
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: phrase
+  sense: Available for purchase at a price lower than the standard retail price
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.fitting-room
+  headword: fitting room
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A private cubicle in a clothing shop where customers can try on gar...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.try-on
+  headword: try on
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: Put on an item of clothing or shoes to verify whether it fits and l...
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.fit-v
+  headword: fit
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Be of the correct size and shape for a person, garment, or space
+  reason_for_inclusion: High-utility A2 lexical unit for food-shopping.
+- id: vocab.sore-throat
+  headword: sore throat
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A painful or irritated feeling in the throat, typically caused by i...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.cough-v
+  headword: cough
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Expel air from the lungs suddenly with a sharp sound, often to clea...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.fever
+  headword: fever
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: An abnormally high body temperature, usually occurring as a symptom...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.dizzy
+  headword: dizzy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Having a sensation of spinning around and temporarily losing one's ...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.painkiller
+  headword: painkiller
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A medicine or drug taken to reduce or relieve physical pain
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.bandage
+  headword: bandage
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A strip of cloth or other material used to bind up or protect a wou...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.bleed
+  headword: bleed
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Lose blood from the vascular system, typically through a cut or inj...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.hurt-v
+  headword: hurt
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Cause physical pain or injury to someone, or feel pain in a part of...
+  reason_for_inclusion: High-utility A2 lexical unit for health-lifestyle.
+- id: vocab.classmate
+  headword: classmate
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A fellow member of the same class at a school, university, or langu...
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.roommate
+  headword: roommate
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A person with whom one shares an apartment, flat, or bedroom
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.relative
+  headword: relative
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A person connected to another by blood, adoption, or marriage
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.get-along
+  headword: get along
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: Have a friendly, harmonious, and pleasant relationship with someone
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.hang-out
+  headword: hang out
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: Spend time relaxing, chatting, or socializing informally with friends
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.close-friend
+  headword: close friend
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A friend with whom one shares deep mutual trust, affection, and per...
+  reason_for_inclusion: High-utility A2 lexical unit for relationships.
+- id: vocab.textbook
+  headword: textbook
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: A book used as a standard source of information for studying a part...
+  reason_for_inclusion: High-utility A2 lexical unit for education.
+- id: vocab.homework
+  headword: homework
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: Schoolwork or study exercises assigned by a teacher to be completed...
+  reason_for_inclusion: High-utility A2 lexical unit for education.
+- id: vocab.memorize
+  headword: memorize
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: Learn something thoroughly so that you can remember it exactly from...
+  reason_for_inclusion: High-utility A2 lexical unit for education.
+- id: vocab.mark
+  headword: mark
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: A point, percentage, or grade given for a student's answer or perfo...
+  reason_for_inclusion: High-utility A2 lexical unit for education.
+- id: vocab.screen
+  headword: screen
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: The flat glass surface of a computer monitor, tablet, or phone wher...
+  reason_for_inclusion: High-utility A2 lexical unit for technology.
+- id: vocab.cable
+  headword: cable
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: A thick wire or group of wires covered in plastic, used to carry el...
+  reason_for_inclusion: High-utility A2 lexical unit for technology.
+- id: vocab.voicemail
+  headword: voicemail
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.communication
+  lexical_type: headword
+  sense: An electronic system that records and stores voice messages spoken ...
+  reason_for_inclusion: High-utility A2 lexical unit for communication.
+- id: vocab.ring-v
+  headword: ring
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Make a clear, resonant sound, or call someone using a telephone
+  reason_for_inclusion: High-utility A2 lexical unit for communication.
+- id: vocab.shift
+  headword: shift
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: A scheduled period of time worked by a group of workers who relieve...
+  reason_for_inclusion: High-utility A2 lexical unit for work-career.
+- id: vocab.cash
+  headword: cash
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.business
+  lexical_type: headword
+  sense: Money in the physical form of coins or banknotes, rather than check...
+  reason_for_inclusion: High-utility A2 lexical unit for business.
+- id: vocab.plumbing
+  headword: plumbing
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: The system of pipes, tanks, fittings, and other apparatus required ...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.electrician
+  headword: electrician
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A person whose job is to install, maintain, and repair electrical e...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.tenant
+  headword: tenant
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A person who occupies land or property rented from a landlord
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.landlord
+  headword: landlord
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A person, especially a man, who rents land, a building, or an accom...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.chores
+  headword: chores
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Routine tasks, especially household jobs such as cleaning, washing,...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.messy
+  headword: messy
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Untidy, dirty, or disorganized in appearance or arrangement
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.cluttered
+  headword: cluttered
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Crowded, covered, or filled with too many disorganized objects
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.renovate
+  headword: renovate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Restore, repair, and modernize a building or room to a good state o...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.spill-v
+  headword: spill
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Cause or allow liquid to flow over the edge of its container, typic...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.leak-v
+  headword: leak
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Allow liquid or gas to escape through a hole or crack, or escape th...
+  reason_for_inclusion: High-utility B1 lexical unit for daily-life.
+- id: vocab.sightseeing
+  headword: sightseeing
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: The activity of visiting places of interest, landmarks, and histori...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.layover
+  headword: layover
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A period of resting or waiting between connecting flights during a ...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.cruise
+  headword: cruise
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A voyage on a ship or boat taken for pleasure, typically visiting s...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.monument
+  headword: monument
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A statue, building, or other structure erected to commemorate a not...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.charter-v
+  headword: charter
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: Hire an aircraft, ship, or motor vehicle for private temporary use ...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.harbor
+  headword: harbor
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A sheltered body of water where ships, boats, and barges can seek s...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.voyage
+  headword: voyage
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A long journey involving travel by sea, across the ocean, or into o...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.campsite
+  headword: campsite
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A place used for camping, often equipped with facilities such as wa...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.resort
+  headword: resort
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A self-contained commercial establishment that provides lodging, fo...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.boarding-gate
+  headword: boarding gate
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: The specific doorway and passenger area in an airport terminal wher...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.souvenir
+  headword: souvenir
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: A thing that is kept as a reminder of a person, place, holiday, or ...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.baggage-claim
+  headword: baggage claim
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: The area in an airport terminal where arriving passengers collect l...
+  reason_for_inclusion: High-utility B1 lexical unit for travel.
+- id: vocab.flavor
+  headword: flavor
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: The distinctive taste of a food or drink, often combined with its a...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.appetizer
+  headword: appetizer
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A small dish of food or drink served before the main course of a me...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.dessert
+  headword: dessert
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: The sweet course eaten at the conclusion of a formal or informal meal
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.seafood
+  headword: seafood
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Shellfish and sea fish served as food, whether cooked or consumed f...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.dietary
+  headword: dietary
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Relating to or provided by an individual's diet and food intake rules
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.spicy
+  headword: spicy
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Flavored with or containing strong spices, creating a hot or pungen...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.vendor
+  headword: vendor
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A person or company offering items or services for sale, especially...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.wholesale
+  headword: wholesale
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Relating to the sale of goods in large quantities to retailers or b...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.leftovers
+  headword: leftovers
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Food remaining uneaten at the end of a meal, often saved in contain...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.expiry-date
+  headword: expiry date
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: The date stamped on food packaging or medicine after which the item...
+  reason_for_inclusion: High-utility B1 lexical unit for food-shopping.
+- id: vocab.nutrition
+  headword: nutrition
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The process of providing or obtaining the food necessary for health...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.workout
+  headword: workout
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A session of vigorous physical exercise or training conducted to ma...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.hydrate
+  headword: hydrate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Cause to absorb water or moisture, or drink enough liquids to maint...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.digest-v
+  headword: digest
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Break down food in the alimentary canal into substances that can be...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.allergy
+  headword: allergy
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A damaging immune response by the body to a substance, especially p...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.sprain-v
+  headword: sprain
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Wrench or twist the ligaments of an ankle, wrist, or joint violentl...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.fatigue
+  headword: fatigue
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Extreme physical or mental tiredness resulting from illness, prolon...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.wellness
+  headword: wellness
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The state of being in good health, especially as an actively pursue...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.prescription
+  headword: prescription
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: An instruction written by a medical practitioner that authorizes a ...
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.heal-v
+  headword: heal
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Become sound, healthy, or whole again after an injury, cut, or wound
+  reason_for_inclusion: High-utility B1 lexical unit for health-lifestyle.
+- id: vocab.partner
+  headword: partner
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Either member of a married couple, an established romantic relation...
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.forgive
+  headword: forgive
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Stop feeling angry or resentful toward someone for an offense, flaw...
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.quarrel-v
+  headword: quarrel
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Have an angry argument, disagreement, or dispute with someone
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.sympathy
+  headword: sympathy
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Feelings of pity, sorrow, and compassion for someone else's misfort...
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.bond-n
+  headword: bond
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A close connection or relationship joining people together through ...
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.compromise-v
+  headword: compromise
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Settle a dispute or reach an agreement by mutual concession
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.jealous
+  headword: jealous
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Feeling or showing envy of someone or their achievements and advant...
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.affection
+  headword: affection
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: A gentle feeling of fondness, warmth, or tender liking toward someone
+  reason_for_inclusion: High-utility B1 lexical unit for relationships.
+- id: vocab.citizen
+  headword: citizen
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A legally recognized subject or national of a state or commonwealth...
+  reason_for_inclusion: High-utility B1 lexical unit for society.
+- id: vocab.community
+  headword: community
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A group of people living in the same place or having a particular c...
+  reason_for_inclusion: High-utility B1 lexical unit for society.
+- id: vocab.charity
+  headword: charity
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: An organization set up to provide aid and raise money for those in ...
+  reason_for_inclusion: High-utility B1 lexical unit for society.
+- id: vocab.neighborhood
+  headword: neighborhood
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A district or community within a town or city, regarded as a distin...
+  reason_for_inclusion: High-utility B1 lexical unit for society.
+- id: vocab.resident
+  headword: resident
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: A person who lives permanently or on a long-term basis in a particu...
+  reason_for_inclusion: High-utility B1 lexical unit for society.
+- id: vocab.custom
+  headword: custom
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A widely accepted way of behaving or doing something that is specif...
+  reason_for_inclusion: High-utility B1 lexical unit for culture.
+- id: vocab.festival
+  headword: festival
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A day or period of celebration, typically religious or cultural, fe...
+  reason_for_inclusion: High-utility B1 lexical unit for culture.
+- id: vocab.folklore
+  headword: folklore
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: The traditional beliefs, myths, tales, and customs of a people, tra...
+  reason_for_inclusion: High-utility B1 lexical unit for culture.
+- id: vocab.craft
+  headword: craft
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: An activity involving skill in making decorative or practical thing...
+  reason_for_inclusion: High-utility B1 lexical unit for culture.
+- id: vocab.costume
+  headword: costume
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A set of clothes in a style typical of a particular country, histor...
+  reason_for_inclusion: High-utility B1 lexical unit for culture.
+- id: vocab.conserve
+  headword: conserve
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Protect something valuable from harm, wasteful overuse, or environm...
+  reason_for_inclusion: High-utility B1 lexical unit for environment.
+- id: vocab.habitat
+  headword: habitat
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: The natural home or native environment of an animal, plant, or othe...
+  reason_for_inclusion: High-utility B1 lexical unit for environment.
+- id: vocab.wildlife
+  headword: wildlife
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Wild animals, birds, and other living things collectively in their ...
+  reason_for_inclusion: High-utility B1 lexical unit for environment.
+- id: vocab.litter-n
+  headword: litter
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Waste products such as paper, plastic bottles, or cans left lying u...
+  reason_for_inclusion: High-utility B1 lexical unit for environment.
+- id: vocab.ecosystem
+  headword: ecosystem
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: A biological community of interacting organisms and their physical ...
+  reason_for_inclusion: High-utility B1 lexical unit for environment.
+- id: vocab.laboratory
+  headword: laboratory
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: A room or building equipped for scientific experiments, research, o...
+  reason_for_inclusion: High-utility B1 lexical unit for science.
+- id: vocab.gravity
+  headword: gravity
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: The physical force that attracts a body toward the center of the ea...
+  reason_for_inclusion: High-utility B1 lexical unit for science.
+- id: vocab.observe-v
+  headword: observe
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: Notice, watch, or perceive something carefully, especially for scie...
+  reason_for_inclusion: High-utility B1 lexical unit for science.
+- id: vocab.substance
+  headword: substance
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: A particular kind of matter with uniform properties and a definite ...
+  reason_for_inclusion: High-utility B1 lexical unit for science.
+- id: vocab.chemical-adj
+  headword: chemical
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to chemistry or the interactions and composition of substa...
+  reason_for_inclusion: High-utility B1 lexical unit for science.
+- id: vocab.obstacle
+  headword: obstacle
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A thing that blocks one's way or prevents or hinders progress
+  reason_for_inclusion: High-utility B1 lexical unit for problem-solving.
+- id: vocab.workaround
+  headword: workaround
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: A method or technique for overcoming a problem or limitation withou...
+  reason_for_inclusion: High-utility B1 lexical unit for problem-solving.
+- id: vocab.step-by-step
+  headword: step-by-step
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Gradually, systematically, and proceeding through a sequence of dis...
+  reason_for_inclusion: High-utility B1 lexical unit for problem-solving.
+- id: vocab.sort-out
+  headword: sort out
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: Resolve a problem or difficulty successfully, or organize a confuse...
+  reason_for_inclusion: High-utility B1 lexical unit for problem-solving.
+- id: vocab.overcome
+  headword: overcome
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Succeed in dealing with or controlling a problem, difficulty, or pe...
+  reason_for_inclusion: High-utility B1 lexical unit for problem-solving.
+- id: vocab.lecture-n
+  headword: lecture
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: An educational talk given to an audience, especially to students in...
+  reason_for_inclusion: High-utility B1 lexical unit for education.
+- id: vocab.assignment
+  headword: assignment
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: A task or piece of academic or professional work allocated to someo...
+  reason_for_inclusion: High-utility B1 lexical unit for education.
+- id: vocab.tutor-n
+  headword: tutor
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: A private teacher, typically one who teaches a single student or ve...
+  reason_for_inclusion: High-utility B1 lexical unit for education.
+- id: vocab.seminar
+  headword: seminar
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: A conference or other meeting for discussion or training, especiall...
+  reason_for_inclusion: High-utility B1 lexical unit for education.
+- id: vocab.campus
+  headword: campus
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: The grounds and buildings of a university, college, or large corpor...
+  reason_for_inclusion: High-utility B1 lexical unit for education.
+- id: vocab.install
+  headword: install
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.technology
+  lexical_type: headword
+  sense: Place software, an application, or equipment into a computer or sys...
+  reason_for_inclusion: High-utility B1 lexical unit for technology.
+- id: vocab.software
+  headword: software
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.technology
+  lexical_type: headword
+  sense: The programs and other operating information used by a computer or ...
+  reason_for_inclusion: High-utility B1 lexical unit for technology.
+- id: vocab.browser
+  headword: browser
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.technology
+  lexical_type: headword
+  sense: A computer program with a graphical user interface used for display...
+  reason_for_inclusion: High-utility B1 lexical unit for technology.
+- id: vocab.notify
+  headword: notify
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Inform someone formally or officially of something that has happene...
+  reason_for_inclusion: High-utility B1 lexical unit for communication.
+- id: vocab.respond
+  headword: respond
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Say or write something in reply to a question, message, email, or r...
+  reason_for_inclusion: High-utility B1 lexical unit for communication.
+- id: vocab.inquire
+  headword: inquire
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Ask for information from someone in a formal or polite manner
+  reason_for_inclusion: High-utility B1 lexical unit for communication.
+- id: vocab.promotion
+  headword: promotion
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: The advancement of an employee to a higher rank, grade, or more sen...
+  reason_for_inclusion: High-utility B1 lexical unit for work-career.
+- id: vocab.vacancy
+  headword: vacancy
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: An unoccupied position or job available for someone to apply for, o...
+  reason_for_inclusion: High-utility B1 lexical unit for work-career.
+- id: vocab.supplier
+  headword: supplier
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.business
+  lexical_type: headword
+  sense: A company or person that provides goods, materials, or services to ...
+  reason_for_inclusion: High-utility B1 lexical unit for business.
+- id: vocab.profit-n
+  headword: profit
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.business
+  lexical_type: headword
+  sense: A financial gain, especially the difference between the amount earn...
+  reason_for_inclusion: High-utility B1 lexical unit for business.
+- id: vocab.clutter
+  headword: clutter
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A state of untidiness, disorder, or a large collection of items in ...
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.multitask
+  headword: multitask
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To deal with more than one task or activity at the same time
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.procrastinate
+  headword: procrastinate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: To delay doing something that you should do, often because you do n...
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.frugally
+  headword: frugally
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: In a careful and economical way with money or food, avoiding waste
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.hassle-n
+  headword: hassle
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: A situation that causes difficulty, irritation, or extra effort in ...
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.tedious
+  headword: tedious
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: Boring, monotonous, and continuing for an unpleasantly long time
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.habitually
+  headword: habitually
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: By way of habitual practice
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.spruce-up
+  headword: spruce up
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To make someone or something look cleaner, neater, or more attractive
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.sort-through
+  headword: sort through
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: To look through a collection of things carefully to find something ...
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.routinely
+  headword: routinely
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: As part of a regular procedure rather than for a special reason
+  reason_for_inclusion: High-utility B2 lexical unit for daily-life.
+- id: vocab.off-the-beaten-track
+  headword: off the beaten track
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrase
+  sense: In or into an isolated place where few people or tourists go
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.hospitable
+  headword: hospitable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Friendly, welcoming, and generous to guests or visitors
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.disembark
+  headword: disembark
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To leave a ship, aircraft, or train after a journey
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.wanderlust
+  headword: wanderlust
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A strong and constant impulse or desire to travel and explore the w...
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.picturesque
+  headword: picturesque
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Visually charming or attractive in a quaint, scenic, or postcard-li...
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.quaint
+  headword: quaint
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Attractively unusual or old-fashioned in a pleasing way
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.secluded
+  headword: secluded
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: Sheltered or screened from general view and public access
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.hitchhike
+  headword: hitchhike
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel by getting free rides in passing private vehicles
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.traverse
+  headword: traverse
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: To travel or extend across or through an area or terrain
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.stop-off
+  headword: stop off
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: To pause briefly in a journey before proceeding to one's final dest...
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.touch-down
+  headword: touch down
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: To make contact with the ground upon landing (of an aircraft)
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.backpacker
+  headword: backpacker
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: A traveler who journeys independently and cheaply, carrying their g...
+  reason_for_inclusion: High-utility B2 lexical unit for travel.
+- id: vocab.savory
+  headword: savory
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Belonging to the category that is salty or spicy rather than sweet ...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.bargain-v
+  headword: bargain
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To negotiate with someone about the price or terms of a purchase
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.artisan
+  headword: artisan
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Produced on a small scale using traditional, high-quality, and non-...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.overcharge
+  headword: overcharge
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To ask an unreasonably high price or bill more than the rightful am...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.exquisite
+  headword: exquisite
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Extremely beautiful, delicately made, or exceptionally pleasing in ...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.staple
+  headword: staple
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: A basic food item or product that is consumed regularly in standard...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.splurge
+  headword: splurge
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To spend an extravagant amount of money on luxury items or self-ind...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.succulent
+  headword: succulent
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: Juicy, tender, and mouth-watering when eaten (especially fruit or r...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.stock-up-on
+  headword: stock up on
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: phrasal_verb
+  sense: To buy a large quantity of something so that you cannot run out of it
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.window-shop
+  headword: window shop
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: To look at goods displayed in store windows without intending to bu...
+  reason_for_inclusion: High-utility B2 lexical unit for food-shopping.
+- id: vocab.stamina
+  headword: stamina
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The physical or mental endurance needed to sustain prolonged effort...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.burnout
+  headword: burnout
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: A state of emotional, physical, and mental exhaustion caused by exc...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.nourishing
+  headword: nourishing
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Containing substances that your body needs to grow and remain healthy
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.rehabilitate
+  headword: rehabilitate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To restore someone to good health or normal life through training a...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.strenuous
+  headword: strenuous
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Requiring or using great exertion, physical effort, or labor
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.invigorating
+  headword: invigorating
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Making one feel strong, healthy, and full of fresh energy
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.vitality
+  headword: vitality
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The state of being strong, active, and filled with lively energy
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.aerobic
+  headword: aerobic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Relating to or denoting exercise that improves oxygen consumption b...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.insomnia
+  headword: insomnia
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Habitual sleeplessness or inability to fall and stay asleep comfort...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.mindfulness
+  headword: mindfulness
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The practice of maintaining a nonjudgmental state of awareness of o...
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.dehydrated
+  headword: dehydrated
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Suffering from a lack of water or fluids in the body
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.bounce-back
+  headword: bounce back
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: To recover quickly from an illness, setback, injury, or hardship
+  reason_for_inclusion: High-utility B2 lexical unit for health-lifestyle.
+- id: vocab.empathize
+  headword: empathize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To understand and share the feelings of another person deeply
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.estranged
+  headword: estranged
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: No longer close or on friendly terms with a family member or friend
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.confide-in
+  headword: confide in
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To share personal secrets or sensitive matters with someone you tru...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.amicable
+  headword: amicable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Characterized by friendliness, goodwill, and absence of conflict or...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.fall-out
+  headword: fall out
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: To argue with someone and stop being friendly with them as a conseq...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.mutual-respect
+  headword: mutual respect
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrase
+  sense: A condition in which two people or groups regard each other with de...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.sympathize
+  headword: sympathize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To feel or express compassion and sorrow for someone suffering misf...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.unconditional
+  headword: unconditional
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Not subject to any limiting conditions, prerequisites, or reservations
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.hit-it-off
+  headword: hit it off
+  part_of_speech: idiom
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: idiom
+  sense: To quickly form a natural rapport and friendly relationship from th...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.make-amends
+  headword: make amends
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrase
+  sense: To compensate or make reparations for harm, hurt, or wrongdoing don...
+  reason_for_inclusion: High-utility B2 lexical unit for relationships.
+- id: vocab.cram
+  headword: cram
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: To study intensively over a very short period just before an examin...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.tuition
+  headword: tuition
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: Money paid for teaching, instruction, or schooling at a college or ...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.extracurricular
+  headword: extracurricular
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: Pursued in addition to the normal school course or university acade...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.drop-out
+  headword: drop out
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To leave school, college, or an academic course before finishing on...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.syllabus
+  headword: syllabus
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: An outline or summary of subjects in a course of study or academic ...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.plagiarism
+  headword: plagiarism
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: The practice of using someone else's work or ideas and passing them...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.keep-up-with
+  headword: keep up with
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To stay at the same pace or level as others, or remain current with...
+  reason_for_inclusion: High-utility B2 lexical unit for education.
+- id: vocab.grapple-with
+  headword: grapple with
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To struggle or engage in a sustained effort to overcome a difficult...
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.root-cause
+  headword: root cause
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: The basic fundamental reason behind an undesirable condition or pro...
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.trial-and-error
+  headword: trial and error
+  part_of_speech: phrase
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: A method of discovering solutions by trying various possibilities u...
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.straighten-out
+  headword: straighten out
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To resolve a complicated confusion, misunderstanding, or problemati...
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.snag
+  headword: snag
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: An unexpected, unforeseen, or minor problem or obstacle in a plan
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.defuse
+  headword: defuse
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To make a tense or dangerous situation calmer, safer, or less volatile
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.improvise
+  headword: improvise
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To invent, create, or perform something spontaneously using whateve...
+  reason_for_inclusion: High-utility B2 lexical unit for problem-solving.
+- id: vocab.correlate
+  headword: correlate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To have a mutual relationship or connection, in which one thing dep...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.preliminary
+  headword: preliminary
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Preceding or done in preparation for something fuller or more impor...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.methodology
+  headword: methodology
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: A system of methods, principles, and rules used in a particular are...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.qualitative
+  headword: qualitative
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Relating to, measuring, or measured by the quality of something rat...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.infer
+  headword: infer
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To deduce or conclude information from evidence and reasoning rathe...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.statistically
+  headword: statistically
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: With respect to data analysis or mathematical calculations of proba...
+  reason_for_inclusion: High-utility B2 lexical unit for academic-analytical.
+- id: vocab.census
+  headword: census
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: An official systematic count or survey of a population, recording v...
+  reason_for_inclusion: High-utility B2 lexical unit for society.
+- id: vocab.welfare
+  headword: welfare
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: Financial or social support provided by the state to people in need...
+  reason_for_inclusion: High-utility B2 lexical unit for society.
+- id: vocab.marginalize
+  headword: marginalize
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: To treat a person or group as insignificant, peripheral, or powerle...
+  reason_for_inclusion: High-utility B2 lexical unit for society.
+- id: vocab.solidarity
+  headword: solidarity
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: Unity, agreement, and mutual support among people who share a commo...
+  reason_for_inclusion: High-utility B2 lexical unit for society.
+- id: vocab.activism
+  headword: activism
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: The policy or action of using campaigning, advocacy, or public acti...
+  reason_for_inclusion: High-utility B2 lexical unit for society.
+- id: vocab.customary
+  headword: customary
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: According to customary practice
+  reason_for_inclusion: High-utility B2 lexical unit for culture.
+- id: vocab.ritual
+  headword: ritual
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: A religious or solemn ceremony consisting of a series of actions pe...
+  reason_for_inclusion: High-utility B2 lexical unit for culture.
+- id: vocab.indigenous
+  headword: indigenous
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Originating or occurring naturally in a particular place
+  reason_for_inclusion: High-utility B2 lexical unit for culture.
+- id: vocab.patron
+  headword: patron
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: A person who gives financial or other support to a person, organiza...
+  reason_for_inclusion: High-utility B2 lexical unit for culture.
+- id: vocab.mythology
+  headword: mythology
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: A collection of myths, especially one belonging to a particular rel...
+  reason_for_inclusion: High-utility B2 lexical unit for culture.
+- id: vocab.biodegradable
+  headword: biodegradable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Capable of being decomposed by bacteria or other living organisms n...
+  reason_for_inclusion: High-utility B2 lexical unit for environment.
+- id: vocab.deforestation
+  headword: deforestation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The permanent removal of trees to make that land available for othe...
+  reason_for_inclusion: High-utility B2 lexical unit for environment.
+- id: vocab.landfill
+  headword: landfill
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The disposal of waste material by burying it, or an area of land us...
+  reason_for_inclusion: High-utility B2 lexical unit for environment.
+- id: vocab.deplete
+  headword: deplete
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To use up the supply or resources of something to a dangerously low...
+  reason_for_inclusion: High-utility B2 lexical unit for environment.
+- id: vocab.emission
+  headword: emission
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The production and discharge of something, especially gas, smoke, o...
+  reason_for_inclusion: High-utility B2 lexical unit for environment.
+- id: vocab.evolution
+  headword: evolution
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: The gradual process of change and development over generations thro...
+  reason_for_inclusion: High-utility B2 lexical unit for science.
+- id: vocab.molecule
+  headword: molecule
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: A group of atoms bonded together, representing the smallest fundame...
+  reason_for_inclusion: High-utility B2 lexical unit for science.
+- id: vocab.organism
+  headword: organism
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: An individual animal, plant, bacterium, or single-celled life form
+  reason_for_inclusion: High-utility B2 lexical unit for science.
+- id: vocab.microscopic
+  headword: microscopic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: So small as to be visible only with the aid of a microscope
+  reason_for_inclusion: High-utility B2 lexical unit for science.
+- id: vocab.radiation
+  headword: radiation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: The emission of energy as electromagnetic waves or moving subatomic...
+  reason_for_inclusion: High-utility B2 lexical unit for science.
+- id: vocab.elaborate-v
+  headword: elaborate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To develop or present an idea, theory, or statement in further detail
+  reason_for_inclusion: High-utility B2 lexical unit for communication.
+- id: vocab.misinterpret
+  headword: misinterpret
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To interpret or understand something wrongly or incorrectly
+  reason_for_inclusion: High-utility B2 lexical unit for communication.
+- id: vocab.paraphrase
+  headword: paraphrase
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To express the meaning of written or spoken words using different w...
+  reason_for_inclusion: High-utility B2 lexical unit for communication.
+- id: vocab.rephrase
+  headword: rephrase
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To express an idea or question again using different phrasing to ma...
+  reason_for_inclusion: High-utility B2 lexical unit for communication.
+- id: vocab.dialogue
+  headword: dialogue
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: A formal or open discussion between two groups or people aimed at r...
+  reason_for_inclusion: High-utility B2 lexical unit for communication.
+- id: vocab.probation
+  headword: probation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: A period of trial during which a new employee's suitability and per...
+  reason_for_inclusion: High-utility B2 lexical unit for work-career.
+- id: vocab.appraisal
+  headword: appraisal
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: A formal assessment of the performance and development of an employee
+  reason_for_inclusion: High-utility B2 lexical unit for work-career.
+- id: vocab.telecommute
+  headword: telecommute
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To work from home making use of the internet, email, and telephone
+  reason_for_inclusion: High-utility B2 lexical unit for work-career.
+- id: vocab.vocational
+  headword: vocational
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Relating to education or training directed at a particular occupati...
+  reason_for_inclusion: High-utility B2 lexical unit for work-career.
+- id: vocab.franchise
+  headword: franchise
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: An authorization granted by a company to an individual to retail it...
+  reason_for_inclusion: High-utility B2 lexical unit for business.
+- id: vocab.overhead
+  headword: overhead
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: Regular business operating expenses not directly tied to creating a...
+  reason_for_inclusion: High-utility B2 lexical unit for business.
+- id: vocab.merger
+  headword: merger
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: A combination of two commercial companies or corporations into one ...
+  reason_for_inclusion: High-utility B2 lexical unit for business.
+- id: vocab.subsidiary
+  headword: subsidiary
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: A company controlled by a holding or parent company that owns more ...
+  reason_for_inclusion: High-utility B2 lexical unit for business.
+- id: vocab.bandwidth
+  headword: bandwidth
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.technology
+  lexical_type: headword
+  sense: The transmission capacity of a computer network connection, or ment...
+  reason_for_inclusion: High-utility B2 lexical unit for technology.
+- id: vocab.firmware
+  headword: firmware
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Permanent software programmed into a read-only memory to control el...
+  reason_for_inclusion: High-utility B2 lexical unit for technology.
+- id: vocab.malware
+  headword: malware
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Software designed specifically to disrupt, damage, or gain unauthor...
+  reason_for_inclusion: High-utility B2 lexical unit for technology.
+- id: vocab.asynchronous
+  headword: asynchronous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: Not existing or occurring at the same time
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.asynchronously
+  headword: asynchronously
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: In a manner whereby operations or communications occur independentl...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.scalable
+  headword: scalable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: Able to be easily expanded or upgraded on demand without losing str...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.deprecate
+  headword: deprecate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To declare a software feature obsolete and recommend against its fu...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.latency
+  headword: latency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: The delay between the initiation of an instruction or data transfer...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.refactor
+  headword: refactor
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To restructure existing computer code without changing its external...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.throughput
+  headword: throughput
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: The rate at which a system processes a given amount of data or tran...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.provision-v
+  headword: provision
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To set up, configure, and allocate telecommunications or cloud infr...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.authenticate
+  headword: authenticate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To verify the identity of a user, process, or device prior to grant...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.decouple
+  headword: decouple
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To separate or disentangle software components so that each can evo...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.idempotent
+  headword: idempotent
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: Denoting an operation that produces the exact same result whether e...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.concurrency
+  headword: concurrency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: The ability of different parts of a program or problem to be execut...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.modularize
+  headword: modularize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To organize or divide a complex codebase into smaller, self-contain...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.backport
+  headword: backport
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: To adapt a software patch or modern feature from a newer version in...
+  reason_for_inclusion: High-utility C1 lexical unit for technology.
+- id: vocab.ecological
+  headword: ecological
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Relating to or concerned with the relation of living organisms to o...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.sustainably
+  headword: sustainably
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a way that can be maintained continuously without depleting natu...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.reforest
+  headword: reforest
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To replant trees on an area of land that was previously cleared of ...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.carbon-neutral
+  headword: carbon-neutral
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Making or resulting in no net release of carbon dioxide into the at...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.remediate
+  headword: remediate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To clean, decontaminate, or reverse environmental damage in soil, w...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.endangered
+  headword: endangered
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Seriously at risk of extinction in the wild as a species of animal ...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.pollutant
+  headword: pollutant
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: A toxic substance that contaminates water, air, or soil, damaging e...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.repurpose
+  headword: repurpose
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To adapt for use in a different purpose rather than discarding as w...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.subside
+  headword: subside
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To sink to a lower level, or diminish in intensity (of floodwaters,...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.afforest
+  headword: afforest
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To establish a forest on land not previously forested, in contrast ...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.ecotourism
+  headword: ecotourism
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: Responsible travel to natural areas that conserves the environment ...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.degrade-v
+  headword: degrade
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: To deteriorate chemically, biologically, or physically, or break do...
+  reason_for_inclusion: High-utility C1 lexical unit for environment.
+- id: vocab.crystallize
+  headword: crystallize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To form or cause to form crystals, or to become definite, clear, an...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.catalyze
+  headword: catalyze
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To cause or accelerate a chemical reaction by acting as a catalyst
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.hypothesize
+  headword: hypothesize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To formulate an assumption or proposition as a basis for reasoning ...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.metabolize
+  headword: metabolize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To process a substance biochemically to produce energy and essentia...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.dissect
+  headword: dissect
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: To cut apart an animal or plant body to study internal parts, or an...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.osmosis
+  headword: osmosis
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: The movement of a solvent through a semipermeable membrane into a s...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.adhesion
+  headword: adhesion
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: The intermolecular attraction and binding between unlike molecules ...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.viscosity
+  headword: viscosity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: A fluid's internal resistance to gradual deformation by shear or te...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.permeable
+  headword: permeable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Allowing liquids, gases, or small particles to pass through its por...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.corrosive
+  headword: corrosive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Tending to cause the gradual destruction or eating away of material...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.soluble
+  headword: soluble
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: Able to be dissolved, especially easily in water or another specifi...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.combustion
+  headword: combustion
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: The rapid chemical reaction of a substance with oxygen, accompanied...
+  reason_for_inclusion: High-utility C1 lexical unit for science.
+- id: vocab.solidify
+  headword: solidify
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To make a relationship, alliance, or agreement stronger, firmer, or...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.reciprocate
+  headword: reciprocate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To respond to a gesture, affection, or favor by making a correspond...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.interpersonal
+  headword: interpersonal
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Relating to relationships or communication between individual people
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.rekindle
+  headword: rekindle
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: To revive or renew an old relationship, friendship, or emotion afte...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.disenchanted
+  headword: disenchanted
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Disappointed by someone or something previously respected or admired
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.empathetic
+  headword: empathetic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: Showing an ability to understand and share the feelings of others w...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.amicably
+  headword: amicably
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: In a peaceful, friendly, and agreeable manner, without acrimony or ...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.estrangement
+  headword: estrangement
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: The state of being alienated or separated from a former friend or f...
+  reason_for_inclusion: High-utility C1 lexical unit for relationships.
+- id: vocab.theoretically
+  headword: theoretically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that relates to what is theoretically possible, even if un...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.conclusively
+  headword: conclusively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that settles an issue or argument convincingly and leaves ...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.analytically
+  headword: analytically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: By means of analysis
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.hypothetically
+  headword: hypothetically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: By way of hypothesis
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.tentatively
+  headword: tentatively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Subject to further confirmation
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.indisputably
+  headword: indisputably
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a manner that is incontrovertible, undeniable, and impossible to...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.falsify
+  headword: falsify
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To prove a statement or scientific hypothesis to be false by empiri...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.disprove
+  headword: disprove
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: To prove that something is false, incorrect, or invalid by presenti...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.cohesive
+  headword: cohesive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Characterized by being unified, tightly connected, or logically con...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.cohesively
+  headword: cohesively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a manner showing logical consistency, unified structure, and tig...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.deductive
+  headword: deductive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Characterized by the inference of particular instances from a gener...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.inductive
+  headword: inductive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: Characterized by the inference of general laws or principles from s...
+  reason_for_inclusion: High-utility C1 lexical unit for academic-analytical.
+- id: vocab.polarization
+  headword: polarization
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Division into two sharply contrasting, hostile, or opposing groups,...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.segregate
+  headword: segregate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: To set apart from the rest or from each other
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.egalitarian
+  headword: egalitarian
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Believing in or based on the principle that all people are equal an...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.bureaucratic
+  headword: bureaucratic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Relating to a system of government or administration marked by offi...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.xenophobia
+  headword: xenophobia
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Dislike of or prejudice against people from other countries or perc...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.civic-minded
+  headword: civic-minded
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Dedicated to community welfare, active citizenship, and fulfilling ...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.gentrification
+  headword: gentrification
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: The process of renovating a deteriorated urban neighborhood, often ...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.empowerment
+  headword: empowerment
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: The process of becoming stronger and more confident, especially in ...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.societal
+  headword: societal
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Relating to society or social relations in a broad, overarching mac...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.inequity
+  headword: inequity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: Lack of fairness, justice, or equal treatment in socioeconomic or i...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.collectivism
+  headword: collectivism
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: The practice or principle of giving a group priority over each indi...
+  reason_for_inclusion: High-utility C1 lexical unit for society.
+- id: vocab.acculturation
+  headword: acculturation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Assimilation to a different culture, typically the dominant one, wh...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.iconic
+  headword: iconic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Widely recognized and well-established as representing an epoch, cu...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.aesthetically
+  headword: aesthetically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: In a manner that is concerned with beauty, artistic appreciation, o...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.renaissance
+  headword: renaissance
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A revival of or renewed interest in something, especially art, lite...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.ethos
+  headword: ethos
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: The characteristic spirit of a culture, era, or community as manife...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.parochial
+  headword: parochial
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Having a limited or narrow outlook or scope
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.cosmopolitan
+  headword: cosmopolitan
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Familiar with and at ease in many different countries and varied cu...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.canonical
+  headword: canonical
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Included in the list of sacred books officially accepted as genuine
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.folktale
+  headword: folktale
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: A story originating in popular culture, typically passed on by word...
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.tangible
+  headword: tangible
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Perceptible by touch
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.intangible
+  headword: intangible
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: Unable to be touched
+  reason_for_inclusion: High-utility C1 lexical unit for culture.
+- id: vocab.debilitating
+  headword: debilitating
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Causing serious impairment of strength, bodily functioning, or vita...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.convalesce
+  headword: convalesce
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To recover one's health and strength gradually after an illness or ...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.recuperation
+  headword: recuperation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The period or process of recovering from an illness, exertion, or s...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.ailment
+  headword: ailment
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: An illness or physical disorder, typically a minor or chronic one c...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.cardiopulmonary
+  headword: cardiopulmonary
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: Relating to or affecting the heart and the lungs together as an int...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.rejuvenate
+  headword: rejuvenate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: To make someone feel or look fresher, more lively, or youthful again
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.alleviation
+  headword: alleviation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The action or process of making pain, suffering, or a difficulty le...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.holistically
+  headword: holistically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: In a way that considers the whole system, body, and person rather t...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.prognosis
+  headword: prognosis
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: The likely outcome, course, or forecast of a disease or medical con...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.symptomatically
+  headword: symptomatically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: In a manner according to or by means of symptoms rather than treati...
+  reason_for_inclusion: High-utility C1 lexical unit for health-lifestyle.
+- id: vocab.circumvent
+  headword: circumvent
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To find a way around an obstacle, regulation, or difficulty, often ...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.ameliorate
+  headword: ameliorate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To make something bad, unsatisfactory, or intolerable better or mor...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.disentangle
+  headword: disentangle
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To free something from an entanglement, confusion, or intricate com...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.forestall
+  headword: forestall
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To prevent or obstruct an anticipated problem by taking advance pro...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.avert
+  headword: avert
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To turn away or prevent the occurrence of an impending catastrophe ...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.deconstruct
+  headword: deconstruct
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To analyze a complex concept or problem by breaking it down into co...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.troublesome
+  headword: troublesome
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: Causing persistent difficulty, annoyance, or prolonged anxiety
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.tip-of-the-iceberg
+  headword: tip of the iceberg
+  part_of_speech: idiom
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: idiom
+  sense: A small, visible part of a much larger, more serious, and hidden pr...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.in-light-of
+  headword: in light of
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: Taking into consideration
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.sift-through
+  headword: sift through
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To examine a vast amount of data, documents, or objects thoroughly ...
+  reason_for_inclusion: High-utility C1 lexical unit for problem-solving.
+- id: vocab.pedagogical
+  headword: pedagogical
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Relating to teaching, instructional methods, or the science of educ...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.scholastic
+  headword: scholastic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Of or concerning schools, formal education, and academic achievement
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.erudite
+  headword: erudite
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Having or showing profound knowledge acquired by sustained academic...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.didactic
+  headword: didactic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Intended to teach, particularly in having moral instruction as an u...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.intellectually
+  headword: intellectually
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: In a way that relates to the intellect, reason, and higher facultie...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.accreditation
+  headword: accreditation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Official recognition that an educational institution meets prescrib...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.inquisitive
+  headword: inquisitive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: Curious, inquiring, and eager for knowledge and understanding
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.comprehensively
+  headword: comprehensively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: In a way that covers, includes, or deals with substantially all asp...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.pore-over
+  headword: pore over
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To read or study something attentively, with deep and sustained con...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.brush-up-on
+  headword: brush up on
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To refresh, review, or polish one's knowledge of a skill or subject...
+  reason_for_inclusion: High-utility C1 lexical unit for education.
+- id: vocab.eloquent
+  headword: eloquent
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Fluent or persuasive in speaking or writing, conveying deep emotion...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.eloquently
+  headword: eloquently
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a fluent, persuasive, and beautifully expressive rhetorical manner
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.discursive
+  headword: discursive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: Digressing from subject to subject
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.discursively
+  headword: discursively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a manner characterized by broad discourse, reasoned exploration,...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.enunciate
+  headword: enunciate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: To pronounce words clearly and distinctly, or state an idea definit...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.expound
+  headword: expound
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: To present and explain a theory, doctrine, or argument systematical...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.persuasively
+  headword: persuasively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: In a manner good at convincing someone to do or believe something t...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.read-between-the-lines
+  headword: read between the lines
+  part_of_speech: idiom
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: idiom
+  sense: To look for or discover a meaning that is implied rather than expli...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.by-virtue-of
+  headword: by virtue of
+  part_of_speech: phrase
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: phrase
+  sense: Because of or on the basis of a particular quality, power, or autho...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.smooth-over
+  headword: smooth over
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: phrasal_verb
+  sense: To make problems, disagreements, or embarrassments appear less seri...
+  reason_for_inclusion: High-utility C1 lexical unit for communication.
+- id: vocab.severance
+  headword: severance
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Compensation, money, or benefits paid to an employee upon involunta...
+  reason_for_inclusion: High-utility C1 lexical unit for work-career.
+- id: vocab.remuneration
+  headword: remuneration
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Money paid for work performed or services rendered
+  reason_for_inclusion: High-utility C1 lexical unit for work-career.
+- id: vocab.delegation
+  headword: delegation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: The assignment of authority or responsibility to another person to ...
+  reason_for_inclusion: High-utility C1 lexical unit for work-career.
+- id: vocab.downsize
+  headword: downsize
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To reduce the operating staff size of a company in order to cut exp...
+  reason_for_inclusion: High-utility C1 lexical unit for work-career.
+- id: vocab.restructure
+  headword: restructure
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To organize differently in order to improve efficiency, productivit...
+  reason_for_inclusion: High-utility C1 lexical unit for work-career.
+- id: vocab.diversification
+  headword: diversification
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: The process of entering new business fields or expanding product va...
+  reason_for_inclusion: High-utility C1 lexical unit for business.
+- id: vocab.liquidity
+  headword: liquidity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: The availability of liquid assets to a market or company
+  reason_for_inclusion: High-utility C1 lexical unit for business.
+- id: vocab.insolvency
+  headword: insolvency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: The state of being unable to pay one's debts as they fall due
+  reason_for_inclusion: High-utility C1 lexical unit for business.
+- id: vocab.deregulate
+  headword: deregulate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: To remove government regulations, restrictions, and statutory contr...
+  reason_for_inclusion: High-utility C1 lexical unit for business.
+- id: vocab.fiscally
+  headword: fiscally
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: In a way that relates to government revenue, taxes, or corporate fi...
+  reason_for_inclusion: High-utility C1 lexical unit for business.
+- id: vocab.deterministic
+  headword: deterministic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Denoting an algorithm or system whose output is determined strictly...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.deterministically
+  headword: deterministically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: In a manner determined strictly by preceding causes or fixed algori...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.immutable
+  headword: immutable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Unchanging over time or unable to be modified following its instant...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.immutably
+  headword: immutably
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: In a way that cannot be altered, mutated, or modified once created
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.granular
+  headword: granular
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Characterized by a high level of detail, fine division, or precise ...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.granularly
+  headword: granularly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: With an extremely fine level of detail or precision
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.parse
+  headword: parse
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To analyze a string of characters or syntax elements in conformity ...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.ingest
+  headword: ingest
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To absorb, collect, and import continuous data streams from dispara...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.shard
+  headword: shard
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To partition a large database horizontally across multiple physical...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.sanitize
+  headword: sanitize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To clean and filter untrusted user input to remove potentially harm...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.monolithic
+  headword: monolithic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Formed of a single large, rigid, and indivisible structure without ...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.fault-tolerant
+  headword: fault-tolerant
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: Enabling a system to continue operating properly in the event of th...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.containerize
+  headword: containerize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To package a software application and its dependencies into an isol...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.parameterize
+  headword: parameterize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: To express or define something in terms of parameters or variables ...
+  reason_for_inclusion: High-utility C2 lexical unit for technology.
+- id: vocab.anthropogenically
+  headword: anthropogenically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a manner originating in human activity and industrial developmen...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.recalibrate
+  headword: recalibrate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To adjust or standardize sensory or environmental monitoring equipm...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.degradable
+  headword: degradable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Capable of being chemically broken down into simpler compounds by b...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.topsoil
+  headword: topsoil
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The upper, outermost layer of soil, usually the top five to ten inc...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.salinization
+  headword: salinization
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The process by which water-soluble salts accumulate in agricultural...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.unsustainable
+  headword: unsustainable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Not able to be maintained at the current rate or level without caus...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.unsustainably
+  headword: unsustainably
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: In a manner that depletes resources or causes damage that cannot be...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.rewild
+  headword: rewild
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: To restore an area of land to its uncultivated natural state, reint...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.rewilding
+  headword: rewilding
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: Large-scale conservation aimed at restoring natural processes and w...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.permafrost
+  headword: permafrost
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: A thick subsurface layer of soil that remains frozen continuously t...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.microclimate
+  headword: microclimate
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The climate of a very small or restricted area, especially when thi...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.acidification
+  headword: acidification
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The process of becoming acidic, especially the ongoing decrease in ...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.biomass
+  headword: biomass
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: The total quantity or weight of organisms in a given area or volume...
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.tributary
+  headword: tributary
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: A river or stream flowing into a larger river or a lake
+  reason_for_inclusion: High-utility C2 lexical unit for environment.
+- id: vocab.sublimate
+  headword: sublimate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To transition directly from a solid phase into a gas state without ...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.centrifugal
+  headword: centrifugal
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Moving or tending to move away from a center
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.fission
+  headword: fission
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: The action of dividing or splitting an atomic nucleus into two ligh...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.fusion
+  headword: fusion
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: A nuclear reaction in which atomic nuclei of low atomic number fuse...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.superposition
+  headword: superposition
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: The quantum principle that a physical system exists simultaneously ...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.entanglement
+  headword: entanglement
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: A quantum phenomenon in which subatomic particles become interconne...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.kinetic
+  headword: kinetic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Relating to or resulting from the motion of physical bodies and obj...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.kinetically
+  headword: kinetically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: In a manner characterized by or relating to movement, motion, or ki...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.dilute
+  headword: dilute
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To make a liquid weaker, thinner, or less concentrated by adding wa...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.diffuse
+  headword: diffuse
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To spread out or cause to spread out over a wide area or through a ...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.diffusely
+  headword: diffusely
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: In a dispersed, non-localized, or widely scattered manner across a ...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.precipitate-v
+  headword: precipitate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: To cause a dissolved substance to separate as a solid from a liquid...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.stochastic
+  headword: stochastic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: Having a random probability distribution or pattern that may be ana...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.stochastically
+  headword: stochastically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: In a manner determined by random probability variables and mathemat...
+  reason_for_inclusion: High-utility C2 lexical unit for science.
+- id: vocab.demagogue
+  headword: demagogue
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A political leader who seeks support by appealing to popular desire...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.oligarchy
+  headword: oligarchy
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A small group of people having control of a country, organization, ...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.totalitarian
+  headword: totalitarian
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Relating to a system of government that is centralized and dictator...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.secularism
+  headword: secularism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: The principle of separation of state institutions and persons manda...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.meritocracy
+  headword: meritocracy
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A political system in which economic goods or political power are v...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.cleavage
+  headword: cleavage
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A sharp, deep split or division between groups in society, particul...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.disillusionment
+  headword: disillusionment
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A feeling of disappointment resulting from the discovery that somet...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.xenophobic
+  headword: xenophobic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Having or showing a deep prejudice, fear, or dislike against people...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.populism
+  headword: populism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: A political approach that strives to appeal to ordinary people who ...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.sedition
+  headword: sedition
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: Conduct or speech inciting people to rebel against the authority of...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.civic-duty
+  headword: civic duty
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: phrase
+  sense: The moral and legal responsibility of a citizen to participate cons...
+  reason_for_inclusion: High-utility C2 lexical unit for society.
+- id: vocab.anachronism
+  headword: anachronism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: A thing belonging or appropriate to a period other than that in whi...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.anachronistic
+  headword: anachronistic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Belonging to a different chronological era
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.ephemerality
+  headword: ephemerality
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: The concept of things existing or lasting for only a very short and...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.iconoclast
+  headword: iconoclast
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: A person who attacks cherished beliefs, orthodox traditions, or est...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.iconoclastic
+  headword: iconoclastic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Characterized by attacking settled or orthodox cultural beliefs and...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.pastiche
+  headword: pastiche
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: An artistic work in a style that imitates that of another work, art...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.kitsch
+  headword: kitsch
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Art, objects, or design considered to be in poor taste because of e...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.avant-garde
+  headword: avant-garde
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Favoring or introducing experimental, radically unorthodox, or pion...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.syncretism
+  headword: syncretism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: The amalgamation or attempted amalgamation of different religions, ...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.sublime
+  headword: sublime
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Of very great excellence, beauty, or grandeur, inspiring awe, rever...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.bourgeois
+  headword: bourgeois
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: Characteristic of the middle class, typically with reference to its...
+  reason_for_inclusion: High-utility C2 lexical unit for culture.
+- id: vocab.untangle
+  headword: untangle
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To free from a tangled, complicated, or confusing condition
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.unpick
+  headword: unpick
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: To analyze, deconstruct, or dismantle an intricate problem or argum...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.zero-in-on
+  headword: zero in on
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To focus all one's attention, scrutiny, or effort directly onto one...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.single-out
+  headword: single out
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrasal_verb
+  sense: To choose one person or factor from a group for special attention o...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.bite-the-bullet
+  headword: bite the bullet
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: idiom
+  sense: To accept or confront a grim, painful, or difficult situation that ...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.touch-and-go
+  headword: touch and go
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: idiom
+  sense: Extremely uncertain, precarious, or fraught with the danger of sudd...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.weather-the-storm
+  headword: weather the storm
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: idiom
+  sense: To successfully survive, endure, or withstand a period of severe cr...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.a-double-edged-sword
+  headword: a double-edged sword
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: Something that has both favorable and unfavorable consequences simu...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.at-the-expense-of
+  headword: at the expense of
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: So as to cause harm, sacrifice, or damage to another thing in order...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.in-jeopardy
+  headword: in jeopardy
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: phrase
+  sense: In a situation in which someone or something is exposed to imminent...
+  reason_for_inclusion: High-utility C2 lexical unit for problem-solving.
+- id: vocab.paradoxically
+  headword: paradoxically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a seemingly absurd, contradictory, or self-defeating manner that...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.intrinsically
+  headword: intrinsically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that belongs naturally
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.inexorably
+  headword: inexorably
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that is impossible to stop, prevent, or persuade
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.pervasively
+  headword: pervasively
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a manner spreading widely throughout an area or group of people
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.tacitly
+  headword: tacitly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that is understood or implied without being directly state...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.implicitly
+  headword: implicitly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that is not directly expressed, but suggested or understoo...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.pragmatically
+  headword: pragmatically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a realistic and practical manner that evaluates theories or clai...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.substantively
+  headword: substantively
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: In a way that is meaningful, real, or relates to the substantial co...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.heuristically
+  headword: heuristically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: By means of exploratory problem-solving techniques that utilize pra...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.axiom
+  headword: axiom
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: A statement or proposition which is regarded as being established, ...
+  reason_for_inclusion: High-utility C2 lexical unit for academic-analytical.
+- id: vocab.indoctrinate
+  headword: indoctrinate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To teach a person or group to accept a set of beliefs uncritically ...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.indoctrination
+  headword: indoctrination
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: The process of teaching someone to accept beliefs uncritically and ...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.edify
+  headword: edify
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: To instruct or improve someone morally or intellectually
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.edifying
+  headword: edifying
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: Providing moral or intellectual instruction, enlightenment, or uplift
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.inquisitively
+  headword: inquisitively
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: In a manner showing curiosity, intellectual eagerness, and a desire...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.rote-memorization
+  headword: rote memorization
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrase
+  sense: The memorization of information based on mechanical repetition with...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.burn-the-candle-at-both-ends
+  headword: burn the candle at both ends
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: idiom
+  sense: To exhaust someone's energy by working excessively early in the mor...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.chime-in
+  headword: chime in
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To interject, join in, or interrupt a spoken conversation or debate...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.touch-upon
+  headword: touch upon
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To mention or deal with a subject briefly or in passing without com...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.wade-through
+  headword: wade through
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: phrasal_verb
+  sense: To read through a large amount of tedious, dense, or difficult text...
+  reason_for_inclusion: High-utility C2 lexical unit for education.
+- id: vocab.equivocate
+  headword: equivocate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: To use ambiguous language so as to conceal the truth or avoid commi...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.euphemism
+  headword: euphemism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: A mild or indirect word or expression substituted for one considere...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.euphemistic
+  headword: euphemistic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Using or of the nature of a euphemism
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.polemic
+  headword: polemic
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: A strong verbal or written attack on someone or something, often ag...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.polemical
+  headword: polemical
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: Relating to or involving strongly critical, controversial, or dispu...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.hit-the-nail-on-the-head
+  headword: hit the nail on the head
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: idiom
+  sense: To state or identify a situation, problem, or truth with absolute a...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.the-elephant-in-the-room
+  headword: the elephant in the room
+  part_of_speech: idiom
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: idiom
+  sense: An obvious major problem or controversial issue that people avoid d...
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.succinctness
+  headword: succinctness
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: The quality of expressing something clearly and in few words
+  reason_for_inclusion: High-utility C2 lexical unit for communication.
+- id: vocab.moonlight
+  headword: moonlight
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: To have an additional paid job in secret, especially at night, in a...
+  reason_for_inclusion: High-utility C2 lexical unit for work-career.
+- id: vocab.underemployed
+  headword: underemployed
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: Employed in a job that does not make full, adequate, or economic us...
+  reason_for_inclusion: High-utility C2 lexical unit for work-career.
+- id: vocab.glass-ceiling
+  headword: glass ceiling
+  part_of_speech: phrase
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: phrase
+  sense: An unacknowledged discriminatory barrier that prevents women and mi...
+  reason_for_inclusion: High-utility C2 lexical unit for work-career.
+- id: vocab.ramp-up
+  headword: ramp up
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: phrasal_verb
+  sense: To substantially increase or cause to increase the level, volume, o...
+  reason_for_inclusion: High-utility C2 lexical unit for work-career.
+- id: vocab.monopolize
+  headword: monopolize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: To obtain exclusive possession or control of the trade in a commodi...
+  reason_for_inclusion: High-utility C2 lexical unit for business.
+- id: vocab.underwrite
+  headword: underwrite
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: To sign and accept financial liability under an insurance policy, g...
+  reason_for_inclusion: High-utility C2 lexical unit for business.
+- id: vocab.insolvent
+  headword: insolvent
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: Unable to pay debts owed, with liabilities exceeding all realizable...
+  reason_for_inclusion: High-utility C2 lexical unit for business.
+- id: vocab.shore-up
+  headword: shore up
+  part_of_speech: phrasal_verb
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: phrasal_verb
+  sense: To support or strengthen something that is weak or in danger of eco...
+  reason_for_inclusion: High-utility C2 lexical unit for business.

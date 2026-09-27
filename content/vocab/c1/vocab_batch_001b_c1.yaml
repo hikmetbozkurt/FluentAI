@@ -1,0 +1,493 @@
+- id: vocab.rationale
+  headword: rationale
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌræʃ.əˈnɑːl/
+  audio_ref: null
+  definition_en: A set of fundamental logical reasons or principled justification underpinning a strategic decision, policy, or belief.
+  meaning_tr: mantıksal gerekçe, temel dayanak
+  collocations:
+    - text: underlying rationale
+      tr: altında yatan gerekçe
+    - text: economic rationale
+      tr: ekonomik gerekçe
+    - text: explain the rationale
+      tr: gerekçesini açıklamak
+  examples:
+    - en: "The lead architect documented the rationale for choosing an event-driven microservices architecture over a monolith."
+      tr: "Baş mimar, monolitik yapı yerine olay güdümlü mikroservis mimarisini tercih etmenin mantıksal gerekçesini dökümante etti."
+      context: Architecture Decision Record
+    - en: "Without a clear business rationale, the investment committee declined to fund the experimental blockchain initiative."
+      tr: "Net bir ticari dayanak olmaksızın, yatırım komitesi deneysel blokzincir girişimine fon sağlamayı reddetti."
+      context: Investment Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Rationale" (isim; mantıksal gerekçe) sözcüğü ile "rational" (sıfat; akılcı, mantıklı) birbiriyle karıştırılmamalıdır.
+        "The rationale behind the decision" denir, "the rational behind" denmez.
+      incorrect_example: "What is the rational behind sunsetting this popular legacy product?"
+      correct_example: "What is the rationale behind sunsetting this popular legacy product?"
+  register: formal
+  topic_tags:
+    - logic
+    - justification
+    - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.integration
+  headword: integration
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌɪn.tɪˈɡreɪ.ʃən/
+  audio_ref: null
+  definition_en: The structured process of combining disparate software subsystems, workflows, or entities into a unified and coherent whole.
+  meaning_tr: entegrasyon, bütünleşme, sistem uyumu
+  collocations:
+    - text: seamless integration
+      tr: sorunsuz / pürüzsüz entegrasyon
+    - text: system integration
+      tr: sistem entegrasyonu
+    - text: continuous integration
+      tr: sürekli entegrasyon (CI)
+  examples:
+    - en: "Our payment gateway requires seamless integration with existing banking protocols to prevent transaction timeouts."
+      tr: "Ödeme geçidimiz, işlem zaman aşımlarını önlemek için mevcut bankacılık protokolleriyle pürüzsüz bir entegrasyon gerektirir."
+      context: Fintech Architecture
+    - en: "Continuous integration practices allow our distributed engineering squad to merge multiple daily code contributions safely."
+      tr: "Sürekli entegrasyon (CI) uygulamaları, dağıtık mühendislik ekibimizin günlük çok sayıda kod katkısını güvenle birleştirmesini sağlar."
+      context: Software Engineering
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçedeki "entegrasyon sağlamak" ifadesi "make an integration" olarak çevrilmez;
+        "achieve seamless integration", "facilitate integration" veya "integrate systems" kullanılır.
+      incorrect_example: "We need to make an integration between our CRM and ERP platforms."
+      correct_example: "We need to achieve seamless integration between our CRM and ERP platforms."
+  register: formal
+  topic_tags:
+    - technology
+    - systems
+    - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.leeway
+  headword: leeway
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈliː.weɪ/
+  audio_ref: null
+  definition_en: Permissible latitude, discretionary margin of freedom, or flexible maneuvering space within specified parameters.
+  meaning_tr: hareket alanı, esneklik payı, serbestlik
+  collocations:
+    - text: give someone leeway
+      tr: birine esneklik payı / hareket alanı tanımak
+    - text: sufficient leeway
+      tr: yeterli esneklik payı
+    - text: financial leeway
+      tr: mali esneklik payı
+  examples:
+    - en: "The engineering director gave the squad substantial technical leeway in determining their own testing frameworks."
+      tr: "Mühendislik direktörü, kendi test çatılarını belirleme konusunda ekibe kayda değer bir teknik hareket alanı tanıdı."
+      context: Autonomous Squads
+    - en: "Our contract budget allows little leeway for schedule slippage during the critical compliance certification phase."
+      tr: "Sözleşme bütçemiz, kritik uyumluluk sertifikasyonu aşamasında takvim sarkmaları için neredeyse hiç esneklik payı bırakmıyor."
+      context: Project Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Leeway" fiziksel bir yol ("way") değildir; denizcilik kökenli bir terim olup rüzgar sürüklenmesi payından türemiştir.
+        İş dünyasında "serbestlik payı / inisiyatif alanı" anlamında kullanılır.
+      incorrect_example: "We built a new leeway between our database servers."
+      correct_example: "We gave the development team sufficient leeway to refactor the database layer."
+  register: formal
+  topic_tags:
+    - autonomy
+    - flexibility
+    - leadership
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.demystify
+  headword: demystify
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˌdiːˈmɪs.tɪ.faɪ/
+  audio_ref: null
+  definition_en: To clarify, unpack, and make an intimidatingly complex or esoteric technical concept easily understandable.
+  meaning_tr: anlaşılır kılmak, gizemini çözmek, basitleştirerek açıklamak
+  collocations:
+    - text: demystify the process
+      tr: süreci anlaşılır kılmak
+    - text: demystify technology
+      tr: teknolojiyi basitleştirip anlaşılır hale getirmek
+    - text: help demystify
+      tr: anlaşılmasına yardımcı olmak
+  examples:
+    - en: "Her introductory workshop aimed to demystify neural network optimization for non-technical product managers."
+      tr: "Onun giriş çalıştayı, teknik olmayan ürün yöneticileri için yapay sinir ağı optimizasyonunu anlaşılır kılmayı amaçladı."
+      context: Technical Education
+    - en: "The documentation overhaul successfully demystified the cryptographic verification steps behind the authentication protocol."
+      tr: "Dokümantasyon yenilemesi, kimlik doğrulama protokolünün arkasındaki kriptografik doğrulama adımlarını başarıyla basitleştirip anlaşılır hale getirdi."
+      context: Developer Relations
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçe "gizemini kaldırmak" veya "anlaşılmazlığını gidermek" için karmaşık tamlamalar yerine
+        İngilizcede tek bir güçlü C1 fiil olan "demystify" kullanılır.
+      incorrect_example: "The speaker tried to remove the mystery of generative artificial intelligence."
+      correct_example: "The speaker tried to demystify generative artificial intelligence."
+  register: formal
+  topic_tags:
+    - education
+    - communication
+    - clarity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.disseminate
+  headword: disseminate
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /dɪˈsem.ɪ.neɪt/
+  audio_ref: null
+  definition_en: To broadcast, circulate, or distribute findings, policies, or vital knowledge widely across an organization or domain.
+  meaning_tr: yaymak, geniş kitlelere ulaştırmak (bilgi, araştırma vb.)
+  collocations:
+    - text: disseminate information
+      tr: bilgi yaymak / duyurmak
+    - text: disseminate findings
+      tr: bulguları geniş kitlelere ulaştırmak
+    - text: widely disseminate
+      tr: geniş çapta yaymak
+  examples:
+    - en: "The security committee disseminates vulnerability alerts across all engineering divisions within minutes of detection."
+      tr: "Güvenlik komitesi, tespit edilmelerinden itibaren birkaç dakika içinde tüm mühendislik bölümlerine güvenlik açığı uyarılarını yayar."
+      context: Cyber Security Operations
+    - en: "Academic institutions must effectively disseminate peer-reviewed research findings to foster broader technological progress."
+      tr: "Akademik kurumlar, daha geniş teknolojik ilerlemeyi teşvik etmek için hakemli araştırma bulgularını etkin biçimde yaymalıdır."
+      context: Scientific Research
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        Kurumsal veya akademik belgelerde "bilgi yaymak" eylemi için gündelik "spread" fiili yerine
+        daha resmi ve prestijli olan "disseminate" sözcüğü tercih edilir.
+      incorrect_example: "The legal department spread the updated privacy policy to all clients."
+      correct_example: "The legal department disseminated the updated privacy policy to all clients."
+  register: formal
+  topic_tags:
+    - communication
+    - research
+    - distribution
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.harness
+  headword: harness
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈhɑː.nəs/
+  audio_ref: null
+  definition_en: To capture, control, and systematically utilize the capabilities of a natural, technical, or human resource for a purpose.
+  meaning_tr: dizginleyip verimli şekilde kullanmak, yararlanmak (enerji, potansiyel, teknoloji)
+  collocations:
+    - text: harness the power of
+      tr: gücünden / kudretinden yararlanmak
+    - text: harness technology
+      tr: teknolojiyi verimli kullanmak
+    - text: harness potential
+      tr: potansiyeli harekete geçirmek / değerlendirmek
+  examples:
+    - en: "Modern algorithmic trading platforms harness the power of low-latency networks to execute millions of transactions per second."
+      tr: "Modern algoritmik ticaret platformları, saniyede milyonlarca işlem gerçekleştirmek için düşük gecikmeli ağların gücünden yararlanır."
+      context: Quantitative Finance
+    - en: "Enterprises that successfully harness open-source collaboration tend to innovate faster than closed proprietary competitors."
+      tr: "Açık kaynak iş birliğini verimli şekilde dizginleyip kullanan işletmeler, kapalı tescilli rakiplerine göre daha hızlı inovasyon yapma eğilimindedir."
+      context: Technology Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Harness", salt "use" (kullanmak) veya "exploit" (sömürmek) demek değildir; kontrol altına alarak,
+        yönlendirerek bir güç veya kaynaktan azami verim sağlamayı ifade eden zengin bir metafordur.
+      incorrect_example: "We must exploit the power of modern machine learning tools for our business."
+      correct_example: "We must harness the power of modern machine learning tools for our business."
+  register: formal
+  topic_tags:
+    - technology
+    - capability
+    - innovation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.scrutinize
+  headword: scrutinize
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈskruː.tɪ.naɪz/
+  audio_ref: null
+  definition_en: To examine, audit, or inspect someone or something with intense, meticulous, and critical rigor.
+  meaning_tr: kılı kırk yararcasına incelemek, mercek altına almak, didik didik etmek
+  collocations:
+    - text: closely scrutinize
+      tr: yakından incelemek
+    - text: carefully scrutinize
+      tr: dikkatle mercek altına almak
+    - text: scrutinize the data
+      tr: veriyi kılı kırk yararak incelemek
+  examples:
+    - en: "External security auditors scrutinized every cryptographic handshake implementation in our mobile banking client."
+      tr: "Harici güvenlik denetçileri, mobil bankacılık istemcimizdeki her kriptografik el sıkışma uygulamasını kılı kırk yararcasına inceledi."
+      context: Compliance Audit
+    - en: "Before signing the acquisition agreement, venture capitalists scrutinized the target company's financial balance sheets."
+      tr: "Girişim sermayedarları, satın alma anlaşmasını imzalamadan önce hedef şirketin mali bilançolarını didik didik etti."
+      context: Due Diligence
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Çok derinlemesine incelemek" fikri için "examine very deeply" demek yerine, profesyonel ve hukuki
+        analiz dilinde doğrudan "scrutinize" fiili kullanılır.
+      incorrect_example: "Regulators will examine very deeply every bank transaction over ten thousand dollars."
+      correct_example: "Regulators will scrutinize every bank transaction over ten thousand dollars."
+  register: formal
+  topic_tags:
+    - analysis
+    - auditing
+    - diligence
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ambivalent
+  headword: ambivalent
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /æmˈbɪv.ə.lənt/
+  audio_ref: null
+  definition_en: Experiencing simultaneous conflicting emotions, contradictory attitudes, or persistent uncertainty toward an outcome.
+  meaning_tr: karmaşık / çelişik duygular besleyen, ikircikli, kararsız
+  collocations:
+    - text: ambivalent attitude
+      tr: ikircikli tutum
+    - text: feel ambivalent about
+      tr: hakkında çelişik duygular beslemek
+    - text: remain ambivalent
+      tr: ikircikli / kararsız kalmak
+  examples:
+    - en: "The engineering team remained ambivalent about adopting micro-frontends due to the added orchestration complexity."
+      tr: "Mühendislik ekibi, getirdiği ek orkestrasyon karmaşıklığı sebebiyle mikro ön yüz mimarisini benimseme konusunda ikircikli kaldı."
+      context: Architectural Debate
+    - en: "Many senior staff members felt ambivalent about mandatory return-to-office mandates following years of remote autonomy."
+      tr: "Birçok kıdemli çalışan, yıllar süren uzaktan çalışma özerkliğinin ardından zorunlu ofise dönüş talimatları karşısında çelişik duygular yaşadı."
+      context: Organizational Dynamics
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir konuya veya karara karşı ikircikli hissetmek İngilizcede "ambivalent about" veya "ambivalent toward(s)"
+        ile kurulur; "ambivalent against" kullanımı yanlıştır.
+      incorrect_example: "The leadership team was ambivalent against introducing automated code generation."
+      correct_example: "The leadership team was ambivalent about introducing automated code generation."
+  register: formal
+  topic_tags:
+    - psychology
+    - sentiment
+    - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.detrimental
+  headword: detrimental
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˌdet.rɪˈmen.təl/
+  audio_ref: null
+  definition_en: Causing distinct damage, degradation, impairment, or measurable harm to a system, outcome, or condition.
+  meaning_tr: zararlı, yıpratıcı, menfi tesiri olan
+  collocations:
+    - text: detrimental effect
+      tr: zararlı etki
+    - text: detrimental to
+      tr: -e zararlı / zarar verici
+    - text: prove detrimental
+      tr: zararlı olduğu ortaya çıkmak
+  examples:
+    - en: "Chronic technical debt has a severely detrimental effect on an organization's capability to innovate rapidly."
+      tr: "Kronik teknik borç, bir organizasyonun hızla inovasyon yapma kabiliyeti üzerinde son derece zararlı bir etkiye sahiptir."
+      context: Software Lifecycle
+    - en: "Prolonged sleep deprivation is unequivocally detrimental to analytical reasoning and executive decision-making."
+      tr: "Uzun süreli uykusuzluk, analitik akıl yürütme ve yönetsel karar alma süreçleri açısından tartışmasız biçimde zararlıdır."
+      context: Cognitive Performance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Detrimental" sıfatından sonra bir şeye zarar vermek bağlamında "for" değil, "to" edatı gelir
+        ("detrimental to software performance", NOT "detrimental for software performance").
+      incorrect_example: "Premature optimization is detrimental for developer velocity."
+      correct_example: "Premature optimization is detrimental to developer velocity."
+  register: formal
+  topic_tags:
+    - risk
+    - quality
+    - health-and-safety
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.lucid
+  headword: lucid
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈluː.sɪd/
+  audio_ref: null
+  definition_en: Characterized by exceptional clarity of thought, logical coherence, and ease of understanding; luminous and unclouded.
+  meaning_tr: son derece berrak, açık ve anlaşılır, duru
+  collocations:
+    - text: lucid explanation
+      tr: son derece berrak / açık izahat
+    - text: lucid style
+      tr: duru ve anlaşılır üslup
+    - text: lucid analysis
+      tr: berrak ve net analiz
+  examples:
+    - en: "The keynote speaker delivered a remarkably lucid explanation of zero-knowledge cryptography to an audience of developers."
+      tr: "Açılış konuşmacısı, geliştiricilerden oluşan bir kitleye sıfır bilgi kriptografisini son derece berrak ve anlaşılır bir açıklamayla aktardı."
+      context: Technical Keynote
+    - en: "Her lucid architectural proposal convinced skeptical stakeholders to invest in the data pipeline redesign."
+      tr: "Onun duru ve açık mimari teklifi, şüpheci paydaşları veri boru hattı yenilemesine yatırım yapmaya ikna etti."
+      context: Stakeholder Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Lucid" sözcüğü fonetik benzerliğinden ötürü "liquid" (sıvı) ile karıştırılmamalıdır;
+        zihinsel berraklık, açık ve net anlatım anlamına gelir.
+      incorrect_example: "The engine oil was lucid enough to pass through the filter."
+      correct_example: "The author provided a lucid breakdown of the distributed consensus algorithm."
+  register: formal
+  topic_tags:
+    - clarity
+    - communication
+    - presentation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.paramount
+  headword: paramount
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈpær.ə.maʊnt/
+  audio_ref: null
+  definition_en: Supreme in importance, influence, or authority; overriding and taking precedence over all secondary matters.
+  meaning_tr: her şeyden önemli, en üstün, fevkalade mühim
+  collocations:
+    - text: of paramount importance
+      tr: fevkalade / hayati öneme sahip
+    - text: paramount concern
+      tr: en başta gelen endişe / öncelik
+    - text: paramount priority
+      tr: en üst öncelik
+  examples:
+    - en: "In high-frequency automated payment processing, transactional data integrity is of paramount importance."
+      tr: "Yüksek frekanslı otomatik ödeme işlemlerinde, işlem verisi bütünlüğü fevkalade hayati öneme sahiptir."
+      context: Transaction Processing
+    - en: "Passenger physical safety remains the paramount concern of autonomous vehicle design teams worldwide."
+      tr: "Yolcu fiziksel güvenliği, dünya genelinde otonom araç tasarım ekiplerinin en başta gelen önceliği olmaya devam ediyor."
+      context: Automotive Safety
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Paramount" resmi İngilizcede sıklıkla "of paramount importance" kalıbıyla kullanılır;
+        yalnız başına nesnesiz kullanım yerine bu sabit yapı tercih edilmelidir.
+      incorrect_example: "Code review is paramountly important for production releases."
+      correct_example: "Code review is of paramount importance for production releases."
+  register: formal
+  topic_tags:
+    - priority
+    - governance
+    - excellence
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.fundamentally
+  headword: fundamentally
+  cefr_level: C1
+  part_of_speech: adverb
+  phonetic: /ˌfʌn.dəˈmen.təl.i/
+  audio_ref: null
+  definition_en: Concerning the core nature, foundation, or essential principles of something; from the very roots.
+  meaning_tr: esasen, kökünden, temelden
+  collocations:
+    - text: fundamentally different
+      tr: temelden / kökten farklı
+    - text: fundamentally alter
+      tr: kökten değiştirmek
+    - text: fundamentally sound
+      tr: temeli sağlam
+  examples:
+    - en: "Relational SQL and document-based NoSQL databases operate on fundamentally different data retrieval paradigms."
+      tr: "İlişkisel SQL ve belge tabanlı NoSQL veritabanları, kökten farklı veri alma paradigmaları üzerinde çalışır."
+      context: Database Paradigms
+    - en: "The widespread adoption of cloud computing fundamentally altered how enterprises allocate capital expenditure."
+      tr: "Bulut bilişimin yaygınlaşması, işletmelerin sermaye harcamalarını nasıl tahsis ettiğini kökünden değiştirdi."
+      context: Enterprise Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçe "temel olarak" ifadesi için resmi ve akademik yazışmalarda gündelik konuşma dili olan "basically"
+        yerine "fundamentally" veya "essentially" tercih edilmelidir.
+      incorrect_example: "These two cloud providers are basically different in their network topology."
+      correct_example: "These two cloud providers are fundamentally different in their network topology."
+  register: formal
+  topic_tags:
+    - analysis
+    - philosophy
+    - structural
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.iron-out
+  headword: iron out
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /ˌaɪən ˈaʊt/
+  audio_ref: null
+  definition_en: To settle, resolve, or eliminate minor difficulties, contractual ambiguities, or friction through calm discussion.
+  meaning_tr: pürüzleri gidermek, meseleleri tatlıya bağlamak, halletmek
+  collocations:
+    - text: iron out differences
+      tr: fikir ayrılıklarını / pürüzleri gidermek
+    - text: iron out the details
+      tr: ayrıntıları netleştirip pürüzleri halletmek
+    - text: iron out technical issues
+      tr: teknik pürüzleri gidermek
+  examples:
+    - en: "The commercial negotiating teams met over breakfast to iron out the remaining contractual liabilities before signing."
+      tr: "Ticari müzakere ekipleri, imzalamadan önce kalan sözleşme yükümlülüğü pürüzlerini gidermek üzere kahvaltıda bir araya geldi."
+      context: Contract Negotiations
+    - en: "During the final dry-run of the release, QA specialists and developers ironed out minor frontend rendering glitches."
+      tr: "Sürümün son provasında, kalite güvence uzmanları ve yazılımcılar küçük ön yüz çizim pürüzlerini giderdi."
+      context: Release Hardening
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Iron out" deyimsel bir ifadedir; kumaşı ütülemekten esinlenerek anlaşmadaki veya sistemdeki
+        "kırışıklıkları / pürüzleri düzeltmek" anlamında mecazi olarak kullanılır.
+      incorrect_example: "We had a meeting to make straight our team misunderstandings."
+      correct_example: "We had a meeting to iron out our team misunderstandings."
+  register: general
+  topic_tags:
+    - negotiation
+    - problem-solving
+    - diplomacy
+  related_ids: []
+  status: APPROVED
+  version: 1

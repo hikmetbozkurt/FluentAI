@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/relations.schema.json",
+  "title": "FluentAI Curriculum Relations & Taxonomy Schema",
+  "description": "Schema for curriculum knowledge graph edges, topic hierarchy, and prerequisite relations.",
+  "type": "object",
+  "required": ["topics", "relations"],
+  "properties": {
+    "topics": {
+      "type": "array",
+      "description": "Taxonomy of topics and themes across the curriculum",
+      "items": {
+        "type": "object",
+        "required": ["id", "name_en", "name_tr", "category", "target_cefr_levels"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^topic\\.[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Semantic topic ID, e.g. topic.executive-meetings"
+          },
+          "name_en": {
+            "type": "string",
+            "minLength": 2,
+            "description": "English topic name"
+          },
+          "name_tr": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Turkish topic name"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "workplace_and_business",
+              "technology_and_engineering",
+              "daily_and_social",
+              "academic_and_ielts",
+              "grammar_foundations",
+              "executive_communication"
+            ],
+            "description": "Broad category"
+          },
+          "parent_topic_id": {
+            "type": ["string", "null"],
+            "pattern": "^topic\\.[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Optional parent topic ID for hierarchy"
+          },
+          "target_cefr_levels": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": ["A2", "B1", "B2", "C1", "C2"]
+            },
+            "description": "CEFR levels where this topic is active"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "relations": {
+      "type": "array",
+      "description": "Explicit curriculum relations between learning items",
+      "items": {
+        "type": "object",
+        "required": ["source_id", "target_id", "relation_type"],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^(vocab|grammar|speaking|reading|listening|topic)\\.[a-z0-9_.-]+$",
+            "description": "Originating content item"
+          },
+          "target_id": {
+            "type": "string",
+            "pattern": "^(vocab|grammar|speaking|reading|listening|topic)\\.[a-z0-9_.-]+$",
+            "description": "Destination content item"
+          },
+          "relation_type": {
+            "type": "string",
+            "enum": [
+              "prerequisite_of",
+              "contrasted_with",
+              "collocates_with",
+              "reinforces",
+              "derived_from",
+              "belongs_to_topic"
+            ],
+            "description": "Semantic type of the pedagogical connection"
+          },
+          "description": {
+            "type": "string",
+            "description": "Optional rationale explaining the connection"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,414 @@
+- id: vocab.outcome
+  headword: outcome
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈaʊt.kʌm/
+  audio_ref: null
+  definition_en: The final result, consequence, or tangible impact produced by a process, project, or negotiation.
+  meaning_tr: netice, nihai sonuç, çıktı
+  collocations:
+    - text: successful outcome
+      tr: başarılı sonuç
+    - text: desired outcome
+      tr: hedeflenen / arzu edilen sonuç
+    - text: evaluate the outcome
+      tr: sonucu değerlendirmek
+  examples:
+    - en: "The steering committee met yesterday to review the financial and technical outcomes of the quarterly release."
+      tr: "Yönlendirme komitesi, üç aylık sürümün finansal ve teknik sonuçlarını değerlendirmek üzere dün toplandı."
+      context: Executive Review
+    - en: "Fostering psychological safety within the team led to a surprisingly positive outcome in developer retention."
+      tr: "Takım içinde psikolojik güven ortamı oluşturmak, yazılımcı bağlılığında şaşırtıcı derecede olumlu bir netice verdi."
+      context: Team Dynamics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Outcome" (sonuç, netice) ile "income" (gelir, kazanç) sözcükleri ses benzerliği nedeniyle karıştırılmamalıdır.
+      incorrect_example: "The company reported a high outcome on its annual financial balance sheet."
+      correct_example: "The company reported a high income on its annual financial balance sheet."
+  register: business
+  topic_tags:
+    - results
+    - business
+    - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.consequence
+  headword: consequence
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈkɒn.sɪ.kwəns/
+  audio_ref: null
+  definition_en: An effect or result produced by a specific choice, action, or failure to act, frequently involving negative implications.
+  meaning_tr: sonuç, semere (genellikle olumsuz veya mühim sonuç)
+  collocations:
+    - text: unintended consequence
+      tr: istenmeyen / öngörülemeyen sonuç
+    - text: serious consequence
+      tr: ciddi sonuç
+    - text: face the consequences
+      tr: sonuçlarına katlanmak
+  examples:
+    - en: "Skipping integration tests during rapid prototyping can have severe consequences for system stability later."
+      tr: "Hızlı prototip geliştirme sırasında entegrasyon testlerini atlamak, daha sonra sistem kararlılığı açısından ciddi sonuçlar doğurabilir."
+      context: Software Quality
+    - en: "One unintended consequence of the strict remote-work policy was an increase in asynchronous written documentation."
+      tr: "Sıkı uzaktan çalışma politikasının öngörülemeyen bir sonucu, eşzamansız yazılı dokümantasyonun artması oldu."
+      context: Organizational Policy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Sonuçlarına katlanmak" kalıbı İngilizcede "face the consequences" veya "accept the consequences" şeklinde ifade edilir;
+        "take the results" şeklinde çevrilmesi yanlıştır.
+      incorrect_example: "If the deployment fails, the team must take the results."
+      correct_example: "If the deployment fails, the team must face the consequences."
+  register: general
+  topic_tags:
+    - risk-management
+    - problem-solving
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.infrastructure
+  headword: infrastructure
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈɪn.frəˌstrʌk.tʃər/
+  audio_ref: null
+  definition_en: The underlying organizational, technical, and physical systems necessary for a company, product, or country to function.
+  meaning_tr: altyapı
+  collocations:
+    - text: cloud infrastructure
+      tr: bulut altyapısı
+    - text: critical infrastructure
+      tr: kritik altyapı
+    - text: infrastructure upgrade
+      tr: altyapı yükseltmesi
+  examples:
+    - en: "Modernizing our cloud infrastructure significantly decreased latency for international mobile users."
+      tr: "Bulut altyapımızı modernize etmek, uluslararası mobil kullanıcılar için gecikme sürelerini belirgin şekilde düşürdü."
+      context: Cloud Architecture
+    - en: "Significant capital investment in server infrastructure is required to support real-time voice streaming."
+      tr: "Gerçek zamanlı ses yayını desteği sağlamak için sunucu altyapısına önemli miktarda sermaye yatırımı yapılması gerekiyor."
+      context: Systems Engineering
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Infrastructure" genellikle sayılamayan (uncountable) bir isim olarak ele alınır.
+        Genel sistem kapasitesinden bahsederken "infrastructures" yerine "infrastructure" veya "infrastructure components" denir.
+      incorrect_example: "We need to scale our cloud infrastructures before Black Friday."
+      correct_example: "We need to scale our cloud infrastructure before Black Friday."
+  register: formal
+  topic_tags:
+    - technology
+    - cloud
+    - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.insight
+  headword: insight
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈɪn.saɪt/
+  audio_ref: null
+  definition_en: An accurate, profound, and intuitive comprehension of the true nature of a complex situation or dataset.
+  meaning_tr: içgörü, derin kavrayış
+  collocations:
+    - text: valuable insight
+      tr: değerli içgörü
+    - text: gain insight into
+      tr: hakkında içgörü edinmek
+    - text: actionable insight
+      tr: eyleme dönüştürülebilir içgörü
+  examples:
+    - en: "User analytics provided deep insight into why customers were abandoning their carts during checkout."
+      tr: "Kullanıcı analitiği, müşterilerin ödeme sırasında sepetlerini neden terk ettiklerine dair derin bir içgörü sağladı."
+      context: Product Analytics
+    - en: "The consultant offered valuable insights into restructuring the engineering organization for faster velocity."
+      tr: "Danışman, mühendislik organizasyonunu daha yüksek geliştirme hızı için yeniden yapılandırma konusunda değerli içgörüler sundu."
+      context: Management Consulting
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir konu hakkında içgörü kazanmak "gain insight into" yapısıyla kurulur; "insight about" veya "insight on" kullanımı yaygın bir edat hatasıdır.
+      incorrect_example: "Our audit provided actionable insights about the codebase."
+      correct_example: "Our audit provided actionable insights into the codebase."
+  register: general
+  topic_tags:
+    - analytics
+    - research
+    - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.coordinate
+  headword: coordinate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /kəʊˈɔː.dɪ.neɪt/
+  audio_ref: null
+  definition_en: To organize and synchronize the activities of different people, teams, or departments to work together harmoniously.
+  meaning_tr: koordine etmek, eşgüdüm sağlamak
+  collocations:
+    - text: coordinate efforts
+      tr: çabaları koordine etmek
+    - text: coordinate with
+      tr: ile eşgüdüm sağlamak
+    - text: closely coordinate
+      tr: yakından koordine etmek
+  examples:
+    - en: "The release manager coordinates with product managers, QA analysts, and infrastructure engineers before launch."
+      tr: "Sürüm yöneticisi, lansmandan önce ürün yöneticileri, kalite uzmanları ve altyapı mühendisleriyle koordinasyon sağlar."
+      context: Release Management
+    - en: "During the incident response, our security lead coordinated efforts across multiple regional engineering offices."
+      tr: "Olay müdahalesi sırasında güvenlik liderimiz, birden fazla bölgesel mühendislik ofisindeki çalışmaları koordine etti."
+      context: Incident Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir kişiyle veya ekiple koordinasyon kurarken "coordinate with" kullanılır; "coordinate to" veya "coordinate between"
+        yerine "coordinate with the design team" denir.
+      incorrect_example: "Please coordinate to the frontend lead before merging your pull request."
+      correct_example: "Please coordinate with the frontend lead before merging your pull request."
+  register: business
+  topic_tags:
+    - management
+    - teamwork
+    - cross-functional
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.reinforce
+  headword: reinforce
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˌriː.ɪnˈfɔːs/
+  audio_ref: null
+  definition_en: To strengthen, consolidate, or give additional support to an idea, argument, policy, or structure.
+  meaning_tr: pekiştirmek, güçlendirmek, desteklemek
+  collocations:
+    - text: reinforce the message
+      tr: mesajı pekiştirmek
+    - text: reinforce an argument
+      tr: bir argümanı güçlendirmek
+    - text: reinforce security
+      tr: güvenliği takviye etmek / güçlendirmek
+  examples:
+    - en: "Recent customer churn figures reinforce the urgent necessity of overhauling our billing user experience."
+      tr: "Son müşteri kaybı rakamları, faturalandırma kullanıcı deneyimimizi baştan aşağı yenileme gerekliliğini pekiştiriyor."
+      context: Product Strategy
+    - en: "The company handbook reinforces core values of transparency and code quality throughout onboarding."
+      tr: "Şirket el kitabı, oryantasyon süreci boyunca şeffaflık ve kod kalitesi temel değerlerini pekiştirir."
+      context: Culture Guidelines
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Fikirleri, mesajları veya güvenlik önlemlerini pekiştirmek için gündelik dildeki "make stronger" yerine,
+        profesyonel ve resmi dilde "reinforce" fiili tercih edilir.
+      incorrect_example: "These survey results make stronger our initial hypothesis."
+      correct_example: "These survey results reinforce our initial hypothesis."
+  register: general
+  topic_tags:
+    - communication
+    - persuasion
+    - strength
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.transform
+  headword: transform
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /trænsˈfɔːm/
+  audio_ref: null
+  definition_en: To undergo or cause a fundamental and dramatic change in form, nature, operation, or appearance.
+  meaning_tr: dönüştürmek, kökten değiştirmek
+  collocations:
+    - text: digital transformation
+      tr: dijital dönüşüm
+    - text: transform completely
+      tr: tamamen dönüştürmek
+    - text: transform into
+      tr: -e dönüştürmek
+  examples:
+    - en: "Adopting automated CI/CD pipelines transformed our deployment lifecycle from weeks to minutes."
+      tr: "Otomatik CI/CD boru hatlarını benimsemek, dağıtım döngümüzü haftalardan dakikalara dönüştürdü."
+      context: DevOps Transformation
+    - en: "Generative artificial intelligence has the power to transform customer support operations globally."
+      tr: "Üretken yapay zeka, müşteri destek operasyonlarını küresel çapta dönüştürme gücüne sahiptir."
+      context: Emerging Technology
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir şeyi başka bir şeye dönüştürürken "transform into" kullanılır; "transform to" kullanımı eksik veya hatalıdır.
+      incorrect_example: "The legacy application was transformed to a reactive microservice."
+      correct_example: "The legacy application was transformed into a reactive microservice."
+  register: business
+  topic_tags:
+    - innovation
+    - change-management
+    - digital
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.consistent
+  headword: consistent
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /kənˈsɪs.tənt/
+  audio_ref: null
+  definition_en: Acting, performing, or occurring in the same uniform manner over time without contradiction or irregularity.
+  meaning_tr: tutarlı, istikrarlı
+  collocations:
+    - text: consistent results
+      tr: tutarlı sonuçlar
+    - text: consistent performance
+      tr: istikrarlı performans
+    - text: consistent with
+      tr: ile tutarlı / uyumlu
+  examples:
+    - en: "The database benchmarks demonstrated consistent query performance even under high concurrent traffic."
+      tr: "Veritabanı karşılaştırma testleri, yüksek eşzamanlı trafik altında dahi tutarlı sorgu performansı sergiledi."
+      context: Performance Testing
+    - en: "Her strategic recommendations were entirely consistent with the five-year corporate expansion plan."
+      tr: "Onun stratejik önerileri beş yıllık kurumsal büyüme planıyla bütünüyle tutarlıydı."
+      context: Strategic Alignment
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir veri, ilke veya planla "uyumlu/tutarlı" olmak İngilizcede "consistent with" ile ifade edilir;
+        "consistent to" veya "consistent against" kalıpları yanlıştır.
+      incorrect_example: "The audit findings were consistent to previous security reports."
+      correct_example: "The audit findings were consistent with previous security reports."
+  register: general
+  topic_tags:
+    - quality
+    - reliability
+    - standards
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.effective
+  headword: effective
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ɪˈfek.tɪv/
+  audio_ref: null
+  definition_en: Successful in producing the intended result, purpose, or desired impression.
+  meaning_tr: etkili, sonuç veren, amaca uygun
+  collocations:
+    - text: highly effective
+      tr: son derece etkili
+    - text: effective communication
+      tr: etkili iletişim
+    - text: cost effective
+      tr: maliyet açısından etkili / verimli
+  examples:
+    - en: "Pair programming proved to be a highly effective method for rapidly onboarding new junior developers."
+      tr: "Eşli programlama (pair programming), yeni yazılımcıları hızla ekibe dahil etmek için son derece etkili bir yöntem olduğunu kanıtladı."
+      context: Engineering Practices
+    - en: "The revised incident management protocol provides an effective response mechanism for unexpected service outages."
+      tr: "Revize edilmiş olay yönetimi protokolü, beklenmedik hizmet kesintilerine karşı etkili bir müdahale mekanizması sunuyor."
+      context: Operations Protocol
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Effective" (etkili, doğru sonuca ulaştıran) ile "efficient" (verimli, asgari kaynak/zaman harcayan)
+        kavramları sıkça karıştırılır. Bir yöntem amaca ulaşıyorsa "effective", bunu az kaynakla yapıyorsa "efficient"tır.
+      incorrect_example: "The method reached the exact goal, so it was very efficient, even though it took twice as long."
+      correct_example: "The method reached the exact goal, so it was very effective, even though it took twice as long."
+  register: general
+  topic_tags:
+    - performance
+    - leadership
+    - productivity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.consequently
+  headword: consequently
+  cefr_level: B2
+  part_of_speech: adverb
+  phonetic: /ˈkɒn.sɪ.kwənt.li/
+  audio_ref: null
+  definition_en: As a direct and logical outcome of an aforementioned condition, decision, or event.
+  meaning_tr: sonuç olarak, bu nedenle, dolayısıyla
+  collocations:
+    - text: consequently lead to
+      tr: dolayısıyla yol açmak
+    - text: consequently decide
+      tr: bu nedenle karar vermek
+    - text: and consequently
+      tr: ve dolayısıyla
+  examples:
+    - en: "The third-party analytics provider suffered an extended outage; consequently, our dashboards displayed cached data."
+      tr: "Üçüncü taraf analitik sağlayıcısı uzun bir kesinti yaşadı; dolayısıyla panolarımız önbelleğe alınmış verileri gösterdi."
+      context: System Architecture Report
+    - en: "The product scope increased substantially, and consequently the steering committee approved an additional developer hire."
+      tr: "Ürün kapsamı önemli ölçüde arttı ve bu nedenle yönlendirme komitesi ek bir yazılımcı alımını onayladı."
+      context: Executive Steering
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        Resmi raporlarda ve teknik dökümanlarda gündelik konuşma dili olan "so" veya "that's why" yerine
+        "consequently", "therefore" veya "as a result" gibi bağlaçlar tercih edilmelidir.
+      incorrect_example: "The API rate limit was exceeded, that's why user requests failed."
+      correct_example: "The API rate limit was exceeded; consequently, user requests failed."
+  register: formal
+  topic_tags:
+    - reasoning
+    - discourse-markers
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.figure-out
+  headword: figure out
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /ˈfɪɡ.ər aʊt/
+  audio_ref: null
+  definition_en: To understand, solve, or discover the explanation for a problem or challenge through focused thought and analysis.
+  meaning_tr: çözmek, mantığını anlamak, halletmek
+  collocations:
+    - text: figure out how
+      tr: nasıl olduğunu anlamak / çözmek
+    - text: figure out the problem
+      tr: sorunu çözmek / anlamak
+    - text: figure out a way
+      tr: bir yolunu bulmak
+  examples:
+    - en: "It took the debugging team three days to figure out why the race condition only occurred in production environments."
+      tr: "Yarış durumunun (race condition) neden sadece üretim ortamlarında ortaya çıktığını çözmek hata ayıklama ekibinin üç gününü aldı."
+      context: Root Cause Analysis
+    - en: "We need to figure out an automated way to sanitize sensitive user data before generating test databases."
+      tr: "Test veritabanlarını oluşturmadan önce hassas kullanıcı verilerini arındırmanın otomatik bir yolunu bulmamız / çözmemiz gerekiyor."
+      context: Data Privacy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "çözmek" fiili için çoğunlukla "solve" kullanılır; ancak bir durumun iç yüzünü veya mantığını düşünerek
+        anlamak/çıkarmak bağlamında "figure out" çok daha doğal ve yaygındır.
+      incorrect_example: "I am trying to solve why this network request fails silently."
+      correct_example: "I am trying to figure out why this network request fails silently."
+  register: general
+  topic_tags:
+    - troubleshooting
+    - reasoning
+    - discovery
+  related_ids: []
+  status: APPROVED
+  version: 1

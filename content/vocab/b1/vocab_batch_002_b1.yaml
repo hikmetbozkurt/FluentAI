@@ -1,0 +1,1613 @@
+- id: vocab.symptom
+  headword: symptom
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈsɪmp.təm/
+  audio_ref: null
+  definition_en: A physical or mental sign indicating the presence of an illness or health disorder.
+  meaning_tr: belirti, semptom
+  collocations:
+  - text: common symptom
+    tr: yaygın belirti
+  - text: show symptoms
+    tr: belirti göstermek
+  - text: flu symptoms
+    tr: grip belirtileri
+  examples:
+  - en: Fever, fatigue, and a persistent dry cough are primary symptoms of the seasonal flu.
+    tr: Ateş, yorgunluk ve geçmeyen kuru öksürük mevsimsel gribin birincil belirtileridir.
+    context: Health Clinic
+  - en: If you experience any unusual symptoms after starting the medication, contact your doctor immediately.
+    tr: İlaca başladıktan sonra olağandışı herhangi bir belirti yaşarsanız derhal doktorunuzla iletişime geçin.
+    context: Medical Advice
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir hastalığın belirtisi derken 'symptom of [illness]' kalıbı kullanılır, 'symptom for' denmez.
+    incorrect_example: A headache is a symptom for dehydration.
+    correct_example: A headache is a symptom of dehydration.
+  register: general
+  topic_tags:
+  - health
+  - symptoms
+  - medicine
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.injury
+  headword: injury
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈɪn.dʒər.i/
+  audio_ref: null
+  definition_en: Physical harm or damage caused to a person's body by an accident, fall, or attack.
+  meaning_tr: yaralanma, sakatlık
+  collocations:
+  - text: serious injury
+    tr: ciddi yaralanma
+  - text: sports injury
+    tr: spor sakatlığı
+  - text: prevent injuries
+    tr: yaralanmaları önlemek
+  examples:
+  - en: Proper stretching exercises before heavy gym workouts help prevent muscle injuries.
+    tr: Ağır spor salonu antrenmanlarından önce uygun esneme hareketleri kas sakatlıklarını önlemeye yardımcı olur.
+    context: Fitness
+  - en: Fortunately, none of the car passengers sustained any permanent injuries in the collision.
+    tr: Neyse ki araçtaki yolcuların hiçbiri çarpışmada kalıcı bir yaralanma yaşamadı.
+    context: Emergency Safety
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Injury'' kaza sonucu oluşan bedensel zarardır; hastalıktan kaynaklanan rahatsızlıklar için ''illness''
+      veya ''disease'' kullanılır.'
+    incorrect_example: He has a cardiac injury from birth.
+    correct_example: He has a cardiac condition from birth, but suffered a knee injury in the marathon.
+  register: general
+  topic_tags:
+  - health
+  - accidents
+  - safety
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.recover
+  headword: recover
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /rɪˈkʌv.ər/
+  audio_ref: null
+  definition_en: To return to a normal state of health, strength, or energy after an illness or injury.
+  meaning_tr: iyileşmek, toparlanmak, sağlığına kavuşmak
+  collocations:
+  - text: recover from illness
+    tr: hastalıktan iyileşmek
+  - text: recover quickly
+    tr: hızla iyileşmek
+  - text: fully recover
+    tr: tamamen iyileşmek
+  examples:
+  - en: It took her three weeks to fully recover from the severe respiratory infection.
+    tr: Ağır solunum yolu enfeksiyonundan tamamen iyileşmesi üç haftasını aldı.
+    context: Healthcare
+  - en: Getting adequate sleep allows your muscles to recover after strenuous physical training.
+    tr: Yeterli uyku almak, ağır fiziksel antrenmandan sonra kaslarınızın toparlanmasını sağlar.
+    context: Sports Recovery
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir hastalıktan veya sakatlıktan iyileşirken daima 'recover from' edatı kullanılır.
+    incorrect_example: She recovered of the surgery within a week.
+    correct_example: She recovered from the surgery within a week.
+  register: general
+  topic_tags:
+  - health
+  - healing
+  - lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.prevent
+  headword: prevent
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /prɪˈvent/
+  audio_ref: null
+  definition_en: To stop something bad or undesirable from happening or stop someone from doing something.
+  meaning_tr: önlemek, engellemek
+  collocations:
+  - text: prevent disease
+    tr: hastalığı önlemek
+  - text: prevent from happening
+    tr: gerçekleşmesini engellemek
+  - text: preventive measures
+    tr: önleyici tedbirler
+  examples:
+  - en: Regular aerobic exercise and a balanced diet help prevent cardiovascular diseases.
+    tr: Düzenli aerobik egzersiz ve dengeli bir beslenme, kalp-damar hastalıklarını önlemeye yardımcı olur.
+    context: Preventive Medicine
+  - en: Ergonomic office chairs prevent workers from developing chronic lower back pain.
+    tr: Ergonomik ofis koltukları, çalışanların kronik bel ağrısı geliştirmesini önler.
+    context: Office Ergonomics
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Birinin bir şey yapmasını engellerken 'prevent someone from doing something' kalıbı kullanılır; 'prevent
+      someone to do' yanlıştır.
+    incorrect_example: The bad posture prevents him to work comfortably.
+    correct_example: The bad posture prevents him from working comfortably.
+  register: general
+  topic_tags:
+  - health
+  - safety
+  - prevention
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.painful
+  headword: painful
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈpeɪn.fəl/
+  audio_ref: null
+  definition_en: Causing physical pain, discomfort, or emotional distress.
+  meaning_tr: ağrılı, acı veren, sancılı
+  collocations:
+  - text: painful condition
+    tr: ağrılı durum
+  - text: painful process
+    tr: sancılı süreç
+  - text: extremely painful
+    tr: son derece ağrılı
+  examples:
+  - en: Sitting in the same rigid posture for eight hours can lead to painful neck stiffness.
+    tr: Sekiz saat boyunca aynı hareketsiz duruşta oturmak ağrılı boyun tutulmasına yol açabilir.
+    context: Ergonomics
+  - en: The physical therapy exercises were painful at first, but they restored full mobility to his arm.
+    tr: Fizik tedavi egzersizleri ilk başta acı vericiydi ancak koluna tam hareket kabiliyetini geri kazandırdı.
+    context: Rehabilitation
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Pain'' isimdir (ağrı/acı), ''painful'' ise sıfattır (ağrılı/sancılı). ''I have a painful'' denmez; ''I
+      have pain'' veya ''It is painful'' denir.'
+    incorrect_example: I have a big painful in my wrist.
+    correct_example: I have severe pain in my wrist; typing is very painful.
+  register: general
+  topic_tags:
+  - health
+  - symptoms
+  - body
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.keep-fit
+  headword: keep fit
+  cefr_level: B1
+  part_of_speech: phrase
+  phonetic: /kiːp fɪt/
+  audio_ref: null
+  definition_en: To maintain physical fitness and health through regular exercise and healthy eating.
+  meaning_tr: zinde kalmak, formda kalmak
+  collocations:
+  - text: exercise to keep fit
+    tr: formda kalmak için egzersiz yapmak
+  - text: try to keep fit
+    tr: zinde kalmaya çalışmak
+  - text: ways to keep fit
+    tr: formda kalmanın yolları
+  examples:
+  - en: Cycling to work twice a week is an effective and enjoyable way to keep fit.
+    tr: Haftada iki gün işe bisikletle gitmek, zinde kalmanın etkili ve keyifli bir yoludur.
+    context: Active Commuting
+  - en: Many IT companies provide gym memberships to help their remote engineers keep fit.
+    tr: Birçok bilişim şirketi, uzaktan çalışan mühendislerinin formda kalmasına yardımcı olmak için spor salonu üyeliği sağlar.
+    context: Corporate Wellbeing
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçedeki 'form tutmak / formda kalmak' kalıbı İngilizcede 'keep fit' veya 'stay in shape' ile karşılanır;
+      'protect my form' denmez.
+    incorrect_example: I swim every day to protect my form.
+    correct_example: I swim every day to keep fit and stay in shape.
+  register: general
+  topic_tags:
+  - health
+  - fitness
+  - lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.pollution
+  headword: pollution
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /pəˈluː.ʃən/
+  audio_ref: null
+  definition_en: The presence in or introduction into the environment of a substance that has harmful effects.
+  meaning_tr: kirlilik, çevre kirliliği
+  collocations:
+  - text: air pollution
+    tr: hava kirliliği
+  - text: water pollution
+    tr: su kirliliği
+  - text: reduce pollution
+    tr: kirliliği azaltmak
+  examples:
+  - en: Switching to electric buses has noticeably reduced air pollution in the metropolitan area.
+    tr: Elektrikli otobüslere geçiş, metropol bölgesindeki hava kirliliğini belirgin şekilde azalttı.
+    context: Urban Ecology
+  - en: Industrial factories must follow strict environmental regulations to control chemical pollution.
+    tr: Sanayi fabrikaları kimyasal kirliliği kontrol altına almak için katı çevre düzenlemelerine uymalıdır.
+    context: Environmental Policy
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Pollution'' sayılamayan isimdir (kirlilik); ''pollutant'' kirletici madde, ''pollute'' ise kirletmek
+      fiilidir. ''Many pollutions'' denmez.'
+    incorrect_example: There are many pollutions in big cities.
+    correct_example: There is severe pollution in big cities.
+  register: general
+  topic_tags:
+  - environment
+  - ecology
+  - sustainability
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.recycle
+  headword: recycle
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˌriːˈsaɪ.kəl/
+  audio_ref: null
+  definition_en: To convert waste materials into reusable objects to prevent waste of potentially useful materials.
+  meaning_tr: geri dönüştürmek
+  collocations:
+  - text: recycle paper and plastic
+    tr: kağıt ve plastiği geri dönüştürmek
+  - text: recycle household waste
+    tr: evsel atıkları geri dönüştürmek
+  - text: widely recycled
+    tr: yaygın olarak geri dönüştürülen
+  examples:
+  - en: Our corporate headquarters placed labeled bins on every floor to recycle paper and aluminium cans.
+    tr: Şirket merkezimiz kağıt ve alüminyum kutuları geri dönüştürmek için her kata etiketli kutular yerleştirdi.
+    context: Corporate Green Policy
+  - en: Municipalities should educate citizens on how to properly sort and recycle household waste.
+    tr: Belediyeler evsel atıkların nasıl uygun şekilde ayrıştırılıp geri dönüştürüleceği konusunda vatandaşları eğitmelidir.
+    context: Civic Responsibility
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: 'Türkçedeki ''geri dönüştürmek'' birleşik yapısı İngilizcede tek bir fiildir: ''recycle''. ''Turn back''
+      veya ''re-convert'' denmez.'
+    incorrect_example: We should make waste materials turn back again.
+    correct_example: We should recycle waste materials to protect natural resources.
+  register: general
+  topic_tags:
+  - environment
+  - recycling
+  - waste-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.solar
+  headword: solar
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈsəʊ.lər/
+  audio_ref: null
+  definition_en: Relating to or derived from the sun, especially as a source of energy.
+  meaning_tr: güneş, güneş enerjisiyle ilgili
+  collocations:
+  - text: solar energy
+    tr: güneş enerjisi
+  - text: solar panel
+    tr: güneş paneli
+  - text: solar power
+    tr: güneş enerjisi / gücü
+  examples:
+  - en: Installing solar panels on the warehouse roof significantly lowered our company's electricity expenses.
+    tr: Depo çatısına güneş panelleri kurmak şirketimizin elektrik masraflarını önemli ölçüde düşürdü.
+    context: Clean Energy
+  - en: Solar power is becoming one of the most reliable and affordable forms of renewable energy globally.
+    tr: Güneş enerjisi küresel olarak yenilenebilir enerjinin en güvenilir ve uygun maliyetli biçimlerinden biri haline geliyor.
+    context: Renewables
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Sun energy'' yerine teknik ve standart terminolojide daima ''solar energy'' veya ''solar power'' tamlaması
+      kullanılır.'
+    incorrect_example: Our office uses sun energy to heat water.
+    correct_example: Our office uses solar energy to heat water.
+  register: general
+  topic_tags:
+  - environment
+  - energy
+  - sustainability
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.certificate
+  headword: certificate
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /səˈtɪf.ɪ.kət/
+  audio_ref: null
+  definition_en: An official document proving that you have completed a course of study or achieved a qualification.
+  meaning_tr: sertifika, başarı belgesi
+  collocations:
+  - text: earn a certificate
+    tr: sertifika kazanmak
+  - text: training certificate
+    tr: eğitim sertifikası
+  - text: professional certificate
+    tr: mesleki sertifika
+  examples:
+  - en: Completing the data analytics boot camp earned her an internationally accredited certificate.
+    tr: Veri analitiği eğitim kampını tamamlamak ona uluslararası akredite bir sertifika kazandırdı.
+    context: Professional Upskilling
+  - en: Please attach a digital copy of your language certificate when submitting your application.
+    tr: Başvurunuzu gönderirken lütfen dil sertifikanızın dijital bir kopyasını ekleyin.
+    context: Job Application
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: İsim olarak 'certificate' telaffuzunda son hece /kət/ olarak okunur; fiil hali olan 'certify' ile karıştırılmamalıdır.
+    incorrect_example: I took my certificate of completion yesterday.
+    correct_example: I received my certificate of completion yesterday.
+  register: general
+  topic_tags:
+  - education
+  - qualifications
+  - credentials
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.revise
+  headword: revise
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /rɪˈvaɪz/
+  audio_ref: null
+  definition_en: To study again work that you have already learned in preparation for an exam; or to reconsider and amend.
+  meaning_tr: tekrar etmek (sınav için), gözden geçirip düzeltmek
+  collocations:
+  - text: revise for an exam
+    tr: sınava hazırlanmak / tekrar yapmak
+  - text: revise thoroughly
+    tr: kapsamlı bir şekilde tekrar etmek
+  - text: revise a draft
+    tr: taslağı gözden geçirip düzeltmek
+  examples:
+  - en: I need to dedicate this weekend to revising for my upcoming project management certification exam.
+    tr: Bu hafta sonunu yaklaşan proje yönetimi sertifika sınavıma tekrar çalışmaya ayırmam gerekiyor.
+    context: Exam Preparation
+  - en: The marketing team revised the presentation slides based on client feedback.
+    tr: Pazarlama ekibi sunum slaytlarını müşteri geri bildirimlerine göre gözden geçirip düzeltti.
+    context: Document Review
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: İngiliz İngilizcesinde 'revise for an exam' ders tekrarı yapmaktır; Amerikan İngilizcesinde bu anlamda 'review'
+      veya 'study' daha yaygındır.
+    incorrect_example: I revised the exam yesterday at school.
+    correct_example: I revised for the exam yesterday at home.
+  register: general
+  topic_tags:
+  - education
+  - study
+  - revision
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.experiment
+  headword: experiment
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪkˈsper.ɪ.mənt/
+  audio_ref: null
+  definition_en: A scientific test done in order to learn something or discover if something works or is true.
+  meaning_tr: deney
+  collocations:
+  - text: conduct an experiment
+    tr: deney yapmak / yürütmek
+  - text: scientific experiment
+    tr: bilimsel deney
+  - text: laboratory experiment
+    tr: laboratuvar deneyi
+  examples:
+  - en: Researchers conducted a controlled experiment to observe how the new alloy behaves under heat.
+    tr: Araştırmacılar yeni alaşımın ısı altında nasıl davrandığını gözlemlemek için kontrollü bir deney yürüttüler.
+    context: Scientific Research
+  - en: Our digital marketing team treats every new campaign as an experiment to test customer engagement.
+    tr: Dijital pazarlama ekibimiz her yeni kampanyayı müşteri etkileşimini test eden bir deney olarak ele alır.
+    context: Business Innovation
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Türkçede 'deney yapmak' denir; İngilizcede 'make an experiment' yerine 'conduct an experiment' veya 'carry
+      out an experiment' denmelidir.
+    incorrect_example: Scientists made an experiment on the new medicine.
+    correct_example: Scientists conducted an experiment on the new medicine.
+  register: general
+  topic_tags:
+  - science
+  - research
+  - testing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.discover
+  headword: discover
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /dɪˈskʌv.ər/
+  audio_ref: null
+  definition_en: To find information, a place, or an object, especially for the first time.
+  meaning_tr: keşfetmek, bulmak
+  collocations:
+  - text: discover a solution
+    tr: bir çözüm keşfetmek
+  - text: discover new facts
+    tr: yeni gerçekler keşfetmek
+  - text: discover by chance
+    tr: tesadüfen keşfetmek
+  examples:
+  - en: Astronomers discovered three new exoplanets orbiting a distant star in our galaxy.
+    tr: Gökbilimciler galaksimizdeki uzak bir yıldızın yörüngesinde dönen üç yeni ötegezegen keşfetti.
+    context: Astronomy
+  - en: During code review, the senior engineer discovered a critical security flaw in the payment gateway.
+    tr: Kod incelemesi sırasında kıdemli mühendis ödeme geçidinde kritik bir güvenlik açığı keşfetti.
+    context: Software Engineering
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Discover'' zaten var olan bir şeyi ilk kez bulmaktır; daha önce var olmayan bir aleti veya yöntemi icat
+      etmek için ''invent'' kullanılır.'
+    incorrect_example: Alexander Bell discovered the telephone.
+    correct_example: Alexander Bell invented the telephone; Marie Curie discovered radium.
+  register: general
+  topic_tags:
+  - science
+  - discovery
+  - research
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.destination
+  headword: destination
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˌdes.tɪˈneɪ.ʃən/
+  audio_ref: null
+  definition_en: The place to which someone or something is going or being sent.
+  meaning_tr: varış yeri, gidilecek yer, hedef rota
+  collocations:
+  - text: holiday destination
+    tr: tatil rotası
+  - text: reach your destination
+    tr: varış yerine ulaşmak
+  - text: popular destination
+    tr: popüler rota
+  examples:
+  - en: Istanbul has become one of the world's most popular travel destinations for international tourists.
+    tr: İstanbul uluslararası turistler için dünyanın en popüler seyahat rotalarından biri haline geldi.
+    context: Tourism
+  - en: After twelve hours on the road, the sales team finally reached their business destination.
+    tr: Yolda geçen on iki saatin ardından satış ekibi sonunda iş seyahati hedefine ulaştı.
+    context: Road Travel
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Varış noktasına ulaşmak için 'reach destination' (edatsız) veya 'arrive at the destination' kalıbı kullanılır;
+      'arrive to destination' denmez.
+    incorrect_example: We arrived to our destination late at night.
+    correct_example: We arrived at our destination late at night.
+  register: general
+  topic_tags:
+  - travel
+  - geography
+  - tourism
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.itinerary
+  headword: itinerary
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /aɪˈtɪn.ər.ər.i/
+  audio_ref: null
+  definition_en: A detailed plan or route of a journey, including dates, times, and destinations.
+  meaning_tr: seyahat planı, gezi programı
+  collocations:
+  - text: travel itinerary
+    tr: seyahat planı
+  - text: detailed itinerary
+    tr: ayrıntılı seyahat programı
+  - text: plan an itinerary
+    tr: gezi planı hazırlamak
+  examples:
+  - en: The corporate travel coordinator emailed our flight and hotel itinerary three days prior to departure.
+    tr: Kurumsal seyahat koordinatörü kalkıştan üç gün önce uçuş ve otel seyahat planımızı e-posta ile gönderdi.
+    context: Corporate Travel
+  - en: Our conference itinerary includes keynote speeches, practical workshops, and a networking dinner.
+    tr: Konferans programımız açılış konuşmalarını, uygulamalı atölyeleri ve bir tanışma yemeğini içeriyor.
+    context: Conference Schedule
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Itinerary'' kelimesi sadece gidilen yol değil, zaman çizelgesini de içeren ayrıntılı gezi programıdır.
+      Telaffuzuna (/aɪˈtɪn.ər.ər.i/) dikkat edilmelidir.'
+    incorrect_example: My travel program has many flights.
+    correct_example: My travel itinerary includes three domestic flights and two train journeys.
+  register: general
+  topic_tags:
+  - travel
+  - planning
+  - business-travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.commute-v
+  headword: commute
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /kəˈmjuːt/
+  audio_ref: null
+  definition_en: To travel regularly between one's place of residence and one's place of work.
+  meaning_tr: işe gidip gelmek (düzenli yolculuk yapmak)
+  collocations:
+  - text: commute by train
+    tr: trenle işe gidip gelmek
+  - text: commute to work
+    tr: işe gidip gelmek
+  - text: commute daily
+    tr: her gün işe gidip gelmek
+  examples:
+  - en: Thousands of tech professionals commute from suburban towns into central London every weekday morning.
+    tr: Binlerce teknoloji uzmanı her hafta içi sabahı banliyö kasabalarından Londra merkezine işe gidip geliyor.
+    context: Urban Transit
+  - en: She prefers commuting by metro because it avoids stressful morning highway traffic jams.
+    tr: Stresli sabah otoyol trafik sıkışıklığından kaçındığı için metroyla işe gidip gelmeyi tercih ediyor.
+    context: Daily Routine
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçede 'işe gidip gelmek' üç kelimelik bir ifadedir; İngilizcede bu düzenli seyahati 'commute' tek kelimeyle
+      karşılar.
+    incorrect_example: I go to work and come back to home by ferry every day.
+    correct_example: I commute to work by ferry every day.
+  register: general
+  topic_tags:
+  - travel
+  - commute
+  - work
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.explore
+  headword: explore
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ɪkˈsplɔːr/
+  audio_ref: null
+  definition_en: To travel through an unfamiliar area to learn about it, or to investigate a topic thoroughly.
+  meaning_tr: keşfetmek, gezmek, araştırmak
+  collocations:
+  - text: explore the city
+    tr: şehri keşfetmek / gezmek
+  - text: explore options
+    tr: seçenekleri araştırmak
+  - text: explore new opportunities
+    tr: yeni fırsatları araştırmak
+  examples:
+  - en: On our free Sunday afternoon, we walked around the historic quarter to explore local architecture.
+    tr: Boş pazar öğleden sonramızda yerel mimariyi keşfetmek için tarihi semtte yürüdük.
+    context: Sightseeing
+  - en: Our engineering department is currently exploring new artificial intelligence tools to improve code testing.
+    tr: Mühendislik departmanımız şu anda kod testlerini geliştirmek için yeni yapay zeka araçlarını araştırıyor.
+    context: Technology Evaluation
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Explore'' fiili doğrudan nesne alır: ''explore the city'', ''explore into the city'' denmez.'
+    incorrect_example: We took a walk to explore about the old town.
+    correct_example: We took a walk to explore the old town.
+  register: general
+  topic_tags:
+  - travel
+  - investigation
+  - discovery
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.check-in
+  headword: check in
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /tʃek ɪn/
+  audio_ref: null
+  definition_en: To register one's arrival at an airport counter, hotel reception, or corporate conference.
+  meaning_tr: giriş yapmak, kayıt yaptırmak
+  collocations:
+  - text: check in online
+    tr: internetten check-in yapmak
+  - text: check in at the hotel
+    tr: otele giriş yaptırmak
+  - text: check in baggage
+    tr: bagaj teslim etmek
+  examples:
+  - en: Airlines encourage passengers to check in online twenty-four hours before scheduled departure.
+    tr: Havayolları yolcuların planlanan kalkıştan yirmi dört saat önce internetten check-in yapmasını teşvik eder.
+    context: Airport Procedures
+  - en: We arrived in Berlin at noon, but the hotel staff informed us we could not check in until two o'clock.
+    tr: Berlin'e öğlen vardık ancak otel personeli saat ikiye kadar giriş yapamayacağımızı bildirdi.
+    context: Hotel Accommodation
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Otele veya havalimanına giriş yaparken 'check in at [place]' kullanılır; ayrılırken ise 'check out of the
+      hotel' denir.
+    incorrect_example: We checked in to the hotel counter directly.
+    correct_example: We checked in at the hotel counter directly.
+  register: general
+  topic_tags:
+  - travel
+  - hotels
+  - airports
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.pick-up
+  headword: pick up
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /pɪk ʌp/
+  audio_ref: null
+  definition_en: To collect someone in a car or vehicle, or to collect an item from a specified location.
+  meaning_tr: arabayla almak (birini), teslim almak (eşyayı)
+  collocations:
+  - text: pick someone up from airport
+    tr: birini havalimanından arabayla almak
+  - text: pick up luggage
+    tr: bagajı teslim almak
+  - text: pick up a parcel
+    tr: paketi teslim almak
+  examples:
+  - en: Our company driver will pick you up from the airport arrivals terminal tomorrow morning.
+    tr: Şirket şoförümüz yarın sabah sizi havalimanı gelen yolcu terminalinden arabayla alacak.
+    context: Airport Transfer
+  - en: Don't forget to pick up your conference badge at the registration desk before the opening session.
+    tr: Açılış oturumundan önce kayıt masasından konferans yakanızı almayı unutmayın.
+    context: Event Logistics
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: 'Birini bir yerden arabayla alırken nesne ortaya girer: ''pick you up from the station''. ''Pick up you''
+      denmez.'
+    incorrect_example: I will pick up you from the central bus stop.
+    correct_example: I will pick you up from the central bus stop.
+  register: general
+  topic_tags:
+  - travel
+  - transportation
+  - logistics
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.scenic
+  headword: scenic
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈsiː.nɪk/
+  audio_ref: null
+  definition_en: Providing or having beautiful natural views and landscapes.
+  meaning_tr: manzaralı, güzel manzaraya sahip
+  collocations:
+  - text: scenic route
+    tr: manzaralı rota
+  - text: scenic view
+    tr: manzaralı görüntü
+  - text: scenic beauty
+    tr: doğal manzara güzelliği
+  examples:
+  - en: Instead of taking the congested toll highway, we decided to drive along the scenic coastal route.
+    tr: Tıkalı ücretli otoyol yerine manzaralı sahil rotasından arabayla gitmeye karar verdik.
+    context: Road Trip
+  - en: The mountain railway offers breathtaking scenic views of the valleys below.
+    tr: Dağ demiryolu aşağıdaki vadilerin nefes kesici manzaralarını sunar.
+    context: Tourism
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Scenic'' doğal manzara ile ilgilidir; ''scene'' (sahne/olay yeri) ile kök bağı olsa da ''scenic'' tiyatro
+      sahnesi demek değildir.'
+    incorrect_example: The theater was very scenic tonight.
+    correct_example: The coastal drive was scenic and full of natural viewpoints.
+  register: general
+  topic_tags:
+  - travel
+  - nature
+  - landscapes
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.abroad
+  headword: abroad
+  cefr_level: B1
+  part_of_speech: adverb
+  phonetic: /əˈbrɔːd/
+  audio_ref: null
+  definition_en: In or to a foreign country or countries.
+  meaning_tr: yurt dışında, yurt dışına
+  collocations:
+  - text: travel abroad
+    tr: yurt dışına seyahat etmek
+  - text: live abroad
+    tr: yurt dışında yaşamak
+  - text: study abroad
+    tr: yurt dışında eğitim görmek
+  examples:
+  - en: Many university graduates aspire to work abroad to gain international career experience.
+    tr: Birçok üniversite mezunu uluslararası kariyer deneyimi kazanmak için yurt dışında çalışmayı hedefler.
+    context: Career Growth
+  - en: Before traveling abroad, verify that your passport is valid for at least six months.
+    tr: Yurt dışına seyahat etmeden önce pasaportunuzun en az altı ay geçerli olduğunu doğrulayın.
+    context: Travel Advisory
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Abroad'' zaten yön veya konum bildiren bir zarftır. Asla ''to abroad'' veya ''in abroad'' denmez: ''travel
+      abroad'', ''live abroad''.'
+    incorrect_example: Next summer I want to go to abroad for language school.
+    correct_example: Next summer I want to go abroad for language school.
+  register: general
+  topic_tags:
+  - travel
+  - international
+  - mobility
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.beverage
+  headword: beverage
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈbev.ər.ɪdʒ/
+  audio_ref: null
+  definition_en: A drink of any type, especially any drink other than plain water.
+  meaning_tr: içecek, meşrubat
+  collocations:
+  - text: hot beverage
+    tr: sıcak içecek
+  - text: alcoholic beverage
+    tr: alkollü içecek
+  - text: beverage menu
+    tr: içecek menüsü
+  examples:
+  - en: The flight attendants began serving hot and cold beverages shortly after takeoff.
+    tr: Uçuş görevlileri kalkıştan kısa bir süre sonra sıcak ve soğuk içecek servisine başladı.
+    context: In-flight Service
+  - en: Our company cafeteria offers complimentary herbal teas and healthy fruit beverages to staff.
+    tr: Şirket kafeteryamız personele ücretsiz bitki çayları ve sağlıklı meyve içecekleri sunar.
+    context: Office Cafeteria
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: '''Drink'' günlük dilde genel içecek için kullanılırken, ''beverage'' menülerde, havacılıkta ve perakendede
+      kullanılan daha resmi terimdir.'
+    incorrect_example: Can I have one water beverage please?
+    correct_example: Which beverage would you like with your lunch meal?
+  register: formal
+  topic_tags:
+  - food
+  - drinks
+  - dining
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.recipe
+  headword: recipe
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈres.ɪ.pi/
+  audio_ref: null
+  definition_en: A set of instructions telling you how to prepare and cook food, including a list of ingredients.
+  meaning_tr: yemek tarifi
+  collocations:
+  - text: follow a recipe
+    tr: tarife uymak
+  - text: traditional recipe
+    tr: geleneksel tarif
+  - text: recipe book
+    tr: yemek tarifi kitabı
+  examples:
+  - en: If you follow this simple Italian pasta recipe step by step, the sauce turns out delicious.
+    tr: Bu basit İtalyan makarna tarifini adım adım takip ederseniz sos çok lezzetli olur.
+    context: Cooking
+  - en: She learned the secret family soup recipe from her grandmother.
+    tr: Gizli aile çorbası tarifini büyükannesinden öğrendi.
+    context: Family Tradition
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Recipe'' yemek tarifidir; eczane reçetesi için ''prescription'', ödeme fişi için ise ''receipt'' kullanılır.
+      Telaffuzu /ˈres.ɪ.pi/ şeklindedir.'
+    incorrect_example: The doctor gave me a recipe for antibiotics.
+    correct_example: The doctor gave me a prescription for antibiotics.
+  register: general
+  topic_tags:
+  - food
+  - cooking
+  - cuisine
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.bakery
+  headword: bakery
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈbeɪ.kər.i/
+  audio_ref: null
+  definition_en: A shop or commercial establishment where bread, cakes, and pastries are baked and sold.
+  meaning_tr: fırın, pastane
+  collocations:
+  - text: local bakery
+    tr: yerel fırın
+  - text: fresh from the bakery
+    tr: fırından yeni çıkmış
+  - text: bakery products
+    tr: fırın / unlu mamul ürünleri
+  examples:
+  - en: Every morning on my way to the subway, I pick up fresh croissants from the corner bakery.
+    tr: Her sabah metroya giderken köşe fırınından taze kruvasanlar alırım.
+    context: Morning Routine
+  - en: Artisanal bakeries using sourdough techniques have become increasingly popular in residential districts.
+    tr: Ekşi maya teknikleri kullanan butik fırınlar yerleşim bölgelerinde giderek daha popüler hale geldi.
+    context: Urban Food
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Bake'' fırında pişirmek fiilidir; fırıncı kişiye ''baker'', dükkana ise ''bakery'' denir. Mutfaktaki
+      pişirme fırını ise ''oven'' olarak adlandırılır.'
+    incorrect_example: Put the chicken inside the bakery for forty minutes.
+    correct_example: Put the chicken inside the oven, and buy bread from the bakery.
+  register: general
+  topic_tags:
+  - food
+  - retail
+  - shopping
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.refund
+  headword: refund
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈriː.fʌnd/
+  audio_ref: null
+  definition_en: An amount of money returned to a customer who is not satisfied with goods or services.
+  meaning_tr: para iadesi
+  collocations:
+  - text: full refund
+    tr: tam para iadesi
+  - text: request a refund
+    tr: para iadesi talep etmek
+  - text: refund policy
+    tr: iade politikası
+  examples:
+  - en: Because the international flight was canceled due to technical issues, passengers received a full refund.
+    tr: Uluslararası uçuş teknik sorunlar nedeniyle iptal edildiğinden yolculara tam para iadesi yapıldı.
+    context: Consumer Rights
+  - en: The e-commerce store processed my refund within three business days of receiving the returned item.
+    tr: E-ticaret mağazası iade edilen ürünü teslim aldıktan sonraki üç iş günü içinde para iademi gerçekleştirdi.
+    context: Online Shopping
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: 'İsim olarak vurgu ilk hecededir: /ˈriː.fʌnd/ (''ask for a refund''). Fiil olarak ise vurgu ikinci heceye
+      kayabilir: /rɪˈfʌnd/ (''refund the money'').'
+    incorrect_example: They gave me back my pay.
+    correct_example: They issued a full refund to my bank account.
+  register: general
+  topic_tags:
+  - shopping
+  - finance
+  - customer-service
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.taste-v
+  headword: taste
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /teɪst/
+  audio_ref: null
+  definition_en: To put food or drink in your mouth to find out what flavor it has, or to have a particular flavor.
+  meaning_tr: tadına bakmak, tadı olmak
+  collocations:
+  - text: taste delicious
+    tr: tadı çok lezzetli olmak
+  - text: taste like
+    tr: tadı ... gibi olmak
+  - text: taste the soup
+    tr: çorbanın tadına bakmak
+  examples:
+  - en: Before serving the dish to restaurant guests, the head chef always tastes the sauce.
+    tr: Baş aşçı yemeği restoran misafirlerine sunmadan önce daima sosun tadına bakar.
+    context: Culinary
+  - en: This herbal tea tastes sweet even though it contains no added refined sugar.
+    tr: Bu bitki çayı ilave rafine şeker içermemesine rağmen tatlı bir tada sahip.
+    context: Healthy Eating
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: 'Duyu fiili olarak ''taste'' sıfatla bağlanır: ''It tastes delicious'' (asla ''It tastes deliciously'' denmez).
+      Tadına bakma eylemi ise nesne alır: ''Taste this''.'
+    incorrect_example: The coffee tastes very wonderfully this morning.
+    correct_example: The coffee tastes wonderful this morning.
+  register: general
+  topic_tags:
+  - food
+  - senses
+  - dining
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.afford
+  headword: afford
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /əˈfɔːd/
+  audio_ref: null
+  definition_en: To have enough money or time to be able to buy or do something.
+  meaning_tr: maddi gücü yetmek, parası yetmek
+  collocations:
+  - text: can afford to buy
+    tr: satın almaya gücü yetmek
+  - text: cannot afford it
+    tr: buna gücü yetmemek
+  - text: afford the rent
+    tr: kirayı karşılayabilmek
+  examples:
+  - en: With rising housing prices in major cities, many young professionals cannot afford to buy an apartment.
+    tr: Büyük şehirlerde yükselen konut fiyatlarıyla birlikte birçok genç profesyonel bir daire satın almaya güç yetiremiyor.
+    context: Personal Finance
+  - en: Our department cannot afford to delay the software release any longer.
+    tr: Departmanımız yazılım sürümünü daha fazla ertelemeyi göze alamaz.
+    context: Project Constraints
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Afford'' neredeyse her zaman ''can / cannot / could'' modal fiilleriyle kullanılır: ''I cannot afford'',
+      asla ''I don''t afford'' denmez.'
+    incorrect_example: I don't afford to travel to America this summer.
+    correct_example: I cannot afford to travel to America this summer.
+  register: general
+  topic_tags:
+  - shopping
+  - budgeting
+  - finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.organic
+  headword: organic
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ɔːˈɡæn.ɪk/
+  audio_ref: null
+  definition_en: Food produced without using artificial chemical fertilizers or pesticides.
+  meaning_tr: organik, doğal yöntemlerle üretilmiş
+  collocations:
+  - text: organic food
+    tr: organik gıda
+  - text: organic vegetables
+    tr: organik sebzeler
+  - text: certified organic
+    tr: sertifikalı organik
+  examples:
+  - en: Purchasing certified organic produce supports sustainable farming and avoids pesticide residues.
+    tr: Sertifikalı organik ürün satın almak sürdürülebilir tarımı destekler ve tarım ilacı kalıntılarından korur.
+    context: Healthy Shopping
+  - en: The supermarket chain expanded its organic dairy section to meet growing consumer demand.
+    tr: Süpermarket zinciri artan tüketici talebini karşılamak için organik süt ürünleri reyonunu genişletti.
+    context: Retail Trends
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Organic'' hem gıda için kimyasalsız üretim demektir hem de kurumsal dünyada ''organic growth'' (doğal/iç
+      kaynaklı büyüme) şeklinde mecazi kullanılır.'
+    incorrect_example: This tomato is natural chemically.
+    correct_example: This tomato is 100% certified organic.
+  register: general
+  topic_tags:
+  - food
+  - health
+  - sustainability
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.acquaintance
+  headword: acquaintance
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /əˈkweɪn.təns/
+  audio_ref: null
+  definition_en: A person whom you know slightly, but who is not a close friend.
+  meaning_tr: tanıdık, ahbap
+  collocations:
+  - text: casual acquaintance
+    tr: uzaktan tanıdık
+  - text: business acquaintance
+    tr: iş çevresinden tanıdık
+  - text: make someone's acquaintance
+    tr: biriyle tanışmak
+  examples:
+  - en: He is not a close personal friend, but rather a professional acquaintance from previous conferences.
+    tr: O yakın bir kişisel arkadaşım değil, daha ziyade önceki konferanslardan mesleki bir tanıdığım.
+    context: Professional Networking
+  - en: Attending industry meetups is a practical way to turn casual acquaintances into valuable collaborators.
+    tr: Sektörel buluşmalara katılmak, sıradan tanıdıkları değerli iş ortaklarına dönüştürmenin pratik bir yoludur.
+    context: Career Connections
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: İngilizcede herkes 'friend' değildir; sadece yüzeysel olarak tanınan kişiler için 'friend' değil, 'acquaintance'
+      terimi kullanılır.
+    incorrect_example: I met my friend yesterday; I don't know his surname.
+    correct_example: I met an acquaintance yesterday; we only know each other from work.
+  register: general
+  topic_tags:
+  - relationships
+  - networking
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.get-along-with
+  headword: get along with
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /ɡet əˈlɒŋ wɪð/
+  audio_ref: null
+  definition_en: To have a harmonious or friendly relationship with someone.
+  meaning_tr: biriyle iyi geçinmek, anlaşmak
+  collocations:
+  - text: get along with colleagues
+    tr: meslektaşlarla iyi geçinmek
+  - text: easy to get along with
+    tr: geçinmesi / anlaşması kolay
+  - text: not get along with
+    tr: biriyle anlaşamamak
+  examples:
+  - en: It is essential for cross-functional project success that software engineers get along with product designers.
+    tr: Çapraz fonksiyonlu proje başarısı için yazılım mühendislerinin ürün tasarımcılarıyla iyi geçinmesi şarttır.
+    context: Team Collaboration
+  - en: She is very empathetic and finds it easy to get along with clients from diverse cultural backgrounds.
+    tr: Çok empatik biridir ve farklı kültürel geçmişlere sahip müşterilerle iyi geçinmeyi kolay bulur.
+    context: Client Relations
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: 'Biriyle iyi geçinmek derken ''with'' edatı zorunludur: ''get along with someone''. İngiliz İngilizcesinde
+      ''get on with'' de eş anlamlıdır.'
+    incorrect_example: I get along good my manager.
+    correct_example: I get along very well with my manager.
+  register: general
+  topic_tags:
+  - relationships
+  - teamwork
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.trust-v
+  headword: trust
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /trʌst/
+  audio_ref: null
+  definition_en: To believe that someone is good, honest, and reliable, and will not harm or deceive you.
+  meaning_tr: güvenmek, itimat etmek
+  collocations:
+  - text: trust someone completely
+    tr: birine tamamen güvenmek
+  - text: hard to trust
+    tr: güvenmesi zor
+  - text: trust your judgment
+    tr: sağduyuna / kararına güvenmek
+  examples:
+  - en: Senior management trusts him to lead high-stakes negotiations with overseas suppliers.
+    tr: Üst yönetim yurtdışı tedarikçilerle yüksek riskli müzakereleri yürütmesi konusunda ona güvenir.
+    context: Leadership Trust
+  - en: Building mutual trust within a remote development team requires transparency and open communication.
+    tr: Uzaktan çalışan bir geliştirme ekibi içinde karşılıklı güven inşa etmek şeffaflık ve açık iletişim gerektirir.
+    context: Remote Team Culture
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: 'Birine güvenmek anlamında ''trust'' fiili doğrudan nesne alır: ''I trust you''. ''Trust to you'' veya ''trust
+      in you'' (daha çok inanç belirtir) yerine doğrudan nesne tercih edilir.'
+    incorrect_example: I trust to my colleague for this task.
+    correct_example: I trust my colleague with this task.
+  register: general
+  topic_tags:
+  - relationships
+  - ethics
+  - trust
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.supportive
+  headword: supportive
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /səˈpɔː.tɪv/
+  audio_ref: null
+  definition_en: Providing encouragement, sympathy, or practical emotional and professional help.
+  meaning_tr: destekleyici, destek veren, yardımcı olan
+  collocations:
+  - text: supportive manager
+    tr: destekleyici yönetici
+  - text: supportive environment
+    tr: destekleyici ortam
+  - text: very supportive
+    tr: son derece destekleyici
+  examples:
+  - en: Having a supportive mentor during your first year at a tech firm accelerates your learning curve.
+    tr: Bir teknoloji şirketindeki ilk yılınızda destekleyici bir mentora sahip olmak öğrenme sürecinizi hızlandırır.
+    context: Mentorship
+  - en: The entire engineering squad was extremely supportive when I had to deal with personal emergencies.
+    tr: Kişisel acil durumlarla ilgilenmek zorunda kaldığımda tüm mühendislik ekibi son derece destekleyiciydi.
+    context: Workplace Empathy
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Birine veya bir fikre destek olmak derken 'supportive of [person/idea]' kalıbı kullanılır, 'supportive to'
+      veya 'supportive with' denmez.
+    incorrect_example: My team was very supportive to my proposal.
+    correct_example: My team was very supportive of my proposal.
+  register: general
+  topic_tags:
+  - relationships
+  - teamwork
+  - empathy
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.volunteer
+  headword: volunteer
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˌvɒl.ənˈtɪər/
+  audio_ref: null
+  definition_en: A person who does work or offers help willingly without being paid for it.
+  meaning_tr: gönüllü
+  collocations:
+  - text: work as a volunteer
+    tr: gönüllü olarak çalışmak
+  - text: volunteer group
+    tr: gönüllü grubu
+  - text: community volunteer
+    tr: toplum gönüllüsü
+  examples:
+  - en: Dozens of company volunteers spent their Saturday planting trees in the national park.
+    tr: Onlarca şirket gönüllüsü cumartesi gününü milli parkta ağaç dikerek geçirdi.
+    context: Corporate Social Responsibility
+  - en: Disaster relief organizations rely heavily on trained volunteers during search and rescue operations.
+    tr: Afet yardım kuruluşları arama kurtarma operasyonları sırasında büyük ölçüde eğitimli gönüllülere güvenir.
+    context: Disaster Response
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Volunteer'' hem isim (gönüllü kişi) hem de fiildir (gönüllü olmak). Fiil olarak ''volunteer to do something''
+      kalıbında mastar fiil alır.'
+    incorrect_example: He volunteered for teach children coding.
+    correct_example: He volunteered to teach children coding on weekends.
+  register: general
+  topic_tags:
+  - society
+  - community
+  - volunteering
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.donate
+  headword: donate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /dəʊˈneɪt/
+  audio_ref: null
+  definition_en: To give money, food, clothes, or blood to an organization or charity to help people.
+  meaning_tr: bağışlamak, bağışta bulunmak
+  collocations:
+  - text: donate money to charity
+    tr: hayır kurumuna para bağışlamak
+  - text: donate blood
+    tr: kan bağışlamak
+  - text: generously donate
+    tr: cömertçe bağışlamak
+  examples:
+  - en: Every year our technology department donates refurbished laptops to local community schools.
+    tr: Her yıl teknoloji departmanımız yerel devlet okullarına yenilenmiş dizüstü bilgisayarlar bağışlar.
+    context: Community Support
+  - en: Employees were encouraged to donate blood during the Red Crescent mobile clinic drive.
+    tr: Çalışanlar Kızılay mobil klinik kampanyası sırasında kan bağışlamaya teşvik edildi.
+    context: Health Campaign
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir kuruma bağış yaparken 'donate something to [organization]' yapısı kullanılır; 'donate for' denmez.
+    incorrect_example: Our firm donated funds for the local hospital.
+    correct_example: Our firm donated funds to the local hospital.
+  register: general
+  topic_tags:
+  - society
+  - charity
+  - giving
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.public-adj
+  headword: public
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈpʌb.lɪk/
+  audio_ref: null
+  definition_en: Relating to or available to all people in a community, not private.
+  meaning_tr: halka açık, kamuya ait, toplumsal
+  collocations:
+  - text: public transport
+    tr: toplu taşıma
+  - text: public space
+    tr: kamusal alan
+  - text: public interest
+    tr: kamu yararı
+  examples:
+  - en: Investing in modern public transport reduces traffic congestion and urban carbon emissions.
+    tr: Modern toplu taşımaya yatırım yapmak trafik sıkışıklığını ve kentsel karbon salınımını azaltır.
+    context: Urban Planning
+  - en: City parks provide valuable public spaces where citizens of all ages can relax and socialize.
+    tr: Şehir parkları her yaştan vatandaşın dinlenip sosyalleşebileceği değerli kamusal alanlar sunar.
+    context: Community Wellbeing
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Public'' sıfat olarak halka açık veya kamuya ait demektir. ''Public transport'' toplu taşıma, ''public
+      relations'' halkla ilişkiler anlamındadır.'
+    incorrect_example: I took the collective bus to work.
+    correct_example: I took public transport to work.
+  register: general
+  topic_tags:
+  - society
+  - civic
+  - infrastructure
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.tradition
+  headword: tradition
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /trəˈdɪʃ.ən/
+  audio_ref: null
+  definition_en: A belief, principle, or way of acting that people in a society have continued for a long time.
+  meaning_tr: gelenek, adet
+  collocations:
+  - text: cultural tradition
+    tr: kültürel gelenek
+  - text: follow tradition
+    tr: geleneği sürdürmek / takip etmek
+  - text: rich tradition
+    tr: köklü / zengin gelenek
+  examples:
+  - en: Serving Turkish tea to houseguests is a warm tradition deeply rooted in local hospitality.
+    tr: Ev misafirlerine Türk çayı ikram etmek yerel misafirperverliğe derinden kök salmış sıcak bir gelenektir.
+    context: Cultural Customs
+  - en: Our tech startup has a tradition of gathering every Friday afternoon to share team achievements.
+    tr: Teknoloji girişimimizin her cuma öğleden sonra ekip başarılarını paylaşmak üzere toplanma geleneği vardır.
+    context: Company Culture
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Geleneksel olarak bir şey yapmak 'by tradition' kalıbıyla ifade edilir; 'with tradition' denmez.
+    incorrect_example: With tradition, families celebrate the festival together.
+    correct_example: By tradition, families celebrate the festival together.
+  register: general
+  topic_tags:
+  - culture
+  - heritage
+  - customs
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.exhibition
+  headword: exhibition
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˌek.sɪˈbɪʃ.ən/
+  audio_ref: null
+  definition_en: A public display of works of art, industrial items, or historical objects in an art gallery or museum.
+  meaning_tr: sergi, fuar
+  collocations:
+  - text: art exhibition
+    tr: sanat sergisi
+  - text: attend an exhibition
+    tr: sergiye / fuara katılmak
+  - text: host an exhibition
+    tr: sergiye ev sahipliği yapmak
+  examples:
+  - en: The modern art museum is currently hosting an exhibition of contemporary Mediterranean photography.
+    tr: Modern sanat müzesi şu anda çağdaş Akdeniz fotoğrafçılığı sergisine ev sahipliği yapıyor.
+    context: Art & Gallery
+  - en: Our software sales representatives traveled to Frankfurt to present our product at an international trade exhibition.
+    tr: Yazılım satış temsilcilerimiz ürünümüzü uluslararası bir ticaret fuarında sunmak için Frankfurt'a seyahat etti.
+    context: Trade Show
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir sergide olmak anlamında 'at the exhibition' kullanılır, 'in the exhibition' da kabul edilse de 'at'
+      daha yaygındır. Sergilenmekte ise 'on exhibition' denir.
+    incorrect_example: The paintings are in exhibition until next week.
+    correct_example: The paintings are on exhibition at the gallery until next week.
+  register: general
+  topic_tags:
+  - culture
+  - arts
+  - events
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.chore
+  headword: chore
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /tʃɔːr/
+  audio_ref: null
+  definition_en: A routine task, especially a household job such as cleaning, washing, or grocery shopping.
+  meaning_tr: ev işi, rutin angarya
+  collocations:
+  - text: household chores
+    tr: ev işleri
+  - text: daily chores
+    tr: günlük rutin işler
+  - text: share chores
+    tr: ev işlerini paylaşmak
+  examples:
+  - en: Couples who share household chores evenly tend to report lower stress levels at home.
+    tr: Ev işlerini eşit şekilde paylaşan çiftler evde daha düşük stres seviyeleri bildirir.
+    context: Domestic Life
+  - en: Doing manual data entry felt like a tedious chore before we automated the reporting process.
+    tr: Raporlama sürecini otomatikleştirmeden önce manuel veri girişi yapmak can sıkıcı bir angarya gibi hissettiriyordu.
+    context: Workplace Metaphor
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Ev işi yapmak için 'make chores' denmez; daima 'do chores' veya 'do household chores' kullanılır.
+    incorrect_example: On Sundays I make many chores at my apartment.
+    correct_example: On Sundays I do many household chores in my apartment.
+  register: general
+  topic_tags:
+  - daily-life
+  - household
+  - habits
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.appliance
+  headword: appliance
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /əˈplaɪ.əns/
+  audio_ref: null
+  definition_en: A piece of electrical equipment designed to perform a specific domestic task, such as a refrigerator or washing
+    machine.
+  meaning_tr: ev aleti, elektrikli ev cihazı
+  collocations:
+  - text: household appliance
+    tr: ev aleti
+  - text: kitchen appliance
+    tr: mutfak aleti
+  - text: energy-efficient appliance
+    tr: enerji tasarruflu cihaz
+  examples:
+  - en: Upgrading to energy-efficient kitchen appliances noticeably reduced our monthly utility bills.
+    tr: Enerji tasarruflu mutfak aletlerine geçmek aylık elektrik ve su faturalarımızı belirgin biçimde düşürdü.
+    context: Home Energy
+  - en: Modern smart appliances can be monitored and controlled remotely through a smartphone application.
+    tr: Modern akıllı ev aletleri bir akıllı telefon uygulaması aracılığıyla uzaktan izlenebilir ve kontrol edilebilir.
+    context: Smart Home
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Appliance'' özellikle buzdolabı, çamaşır makinesi gibi elektrikli ev aletleridir; telefon/bilgisayar
+      için ''device'', alet çantası aletleri için ''tool'' denir.'
+    incorrect_example: My smartphone is a very useful appliance.
+    correct_example: My smartphone is a useful device, while my dishwasher is a home appliance.
+  register: general
+  topic_tags:
+  - daily-life
+  - technology
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.errand
+  headword: errand
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈer.ənd/
+  audio_ref: null
+  definition_en: A short journey made in order to deliver or collect something, or to complete an everyday task.
+  meaning_tr: ayak işi, çarşı/dışarı işi
+  collocations:
+  - text: run errands
+    tr: dışarıdaki işleri halletmek
+  - text: daily errands
+    tr: günlük dışarı işleri
+  - text: personal errands
+    tr: kişisel işler
+  examples:
+  - en: I spent Saturday morning running errands around town, such as posting parcels and visiting the bank.
+    tr: Cumartesi sabahını kargo göndermek ve bankaya uğramak gibi şehirdeki ayak işlerini hallederek geçirdim.
+    context: Weekend Tasks
+  - en: During my lunch break, I managed to run a quick errand to the pharmacy near the office.
+    tr: Öğle aramda ofisin yanındaki eczaneye hızlı bir işimi halletmek için uğramayı başardım.
+    context: Workday Routine
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Dışarıdaki işleri halletmek için 'make errands' veya 'do errands' yerine daima 'run errands' deyimi kullanılır.
+    incorrect_example: I must make errands in the center today.
+    correct_example: I must run some errands in the center today.
+  register: general
+  topic_tags:
+  - daily-life
+  - tasks
+  - routine
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.tidy-up
+  headword: tidy up
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /ˈtaɪ.di ʌp/
+  audio_ref: null
+  definition_en: To make a room, desk, or space neat by putting things in their proper places.
+  meaning_tr: ortalığı toplamak, derleyip toparlamak
+  collocations:
+  - text: tidy up the room
+    tr: odayı toplamak
+  - text: tidy up before guests arrive
+    tr: misafirler gelmeden önce ortalığı toplamak
+  - text: quick tidy up
+    tr: hızlı bir toparlama
+  examples:
+  - en: Let's quickly tidy up the conference room before the client arrives for the quarterly review.
+    tr: Müşteri üç aylık değerlendirme için gelmeden önce toplantı odasını hızlıca toparlayalım.
+    context: Office Readiness
+  - en: Taking ten minutes every evening to tidy up the living room creates a peaceful morning atmosphere.
+    tr: Her akşam oturma odasını toplamak için on dakika ayırmak huzurlu bir sabah ortamı yaratır.
+    context: Evening Habit
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçedeki 'ortalığı toplamak' fiili İngilizcede 'collect the room' denmez; 'tidy up' veya 'pick up' phrasal
+      verb'ü kullanılır.
+    incorrect_example: I will collect the living room before dinner.
+    correct_example: I will tidy up the living room before dinner.
+  register: general
+  topic_tags:
+  - daily-life
+  - order
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.reschedule
+  headword: reschedule
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˌriːˈʃedʒ.uːl/
+  audio_ref: null
+  definition_en: To change the time or date of a planned event, appointment, or meeting.
+  meaning_tr: yeniden planlamak, tarihini/saatini değiştirmek
+  collocations:
+  - text: reschedule a meeting
+    tr: toplantıyı yeniden planlamak
+  - text: reschedule for next week
+    tr: gelecek haftaya ertelemek / yeniden planlamak
+  - text: need to reschedule
+    tr: tarihini değiştirmek zorunda olmak
+  examples:
+  - en: Due to an unexpected conflict in my schedule, I would like to reschedule our interview for Thursday.
+    tr: Takvimimdeki beklenmedik bir çakışma nedeniyle mülakatımızı perşembe gününe yeniden planlamak istiyorum.
+    context: Professional Scheduling
+  - en: The dental clinic called to reschedule my routine check-up appointment for next Tuesday afternoon.
+    tr: Diş kliniği rutin kontrol randevumu gelecek salı öğleden sonraya yeniden planlamak için aradı.
+    context: Appointments
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir toplantıyı ileri bir tarihe alırken 'reschedule for [date/time]' kalıbı kullanılır; 'reschedule to'
+      da yaygındır ancak 'reschedule at' denmez.
+    incorrect_example: Can we reschedule our sync at Friday?
+    correct_example: Can we reschedule our sync for Friday morning?
+  register: general
+  topic_tags:
+  - daily-life
+  - calendar
+  - meetings
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.regularly
+  headword: regularly
+  cefr_level: B1
+  part_of_speech: adverb
+  phonetic: /ˈreɡ.jə.lə.li/
+  audio_ref: null
+  definition_en: At repeated, equal, or habitual intervals of time; often and consistently.
+  meaning_tr: düzenli olarak, periyodik şekilde
+  collocations:
+  - text: exercise regularly
+    tr: düzenli egzersiz yapmak
+  - text: meet regularly
+    tr: düzenli toplanmak
+  - text: update regularly
+    tr: düzenli güncellemek
+  examples:
+  - en: Health professionals recommend exercising regularly to maintain cardiovascular endurance.
+    tr: Sağlık uzmanları kardiyovasküler dayanıklılığı korumak için düzenli egzersiz yapmayı tavsiye eder.
+    context: Healthy Lifestyle
+  - en: The development team meets regularly every morning for a fifteen-minute stand-up session.
+    tr: Geliştirme ekibi her sabah on beş dakikalık bir ayaküstü toplantı için düzenli olarak bir araya gelir.
+    context: Agile Team
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Regular'' sıfattır (''regular checkup''); fiili nitelemek için zarf olan ''regularly'' kullanılmalıdır.'
+    incorrect_example: You should backup your database regular.
+    correct_example: You should backup your database regularly.
+  register: general
+  topic_tags:
+  - daily-life
+  - habits
+  - frequency
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.device
+  headword: device
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /dɪˈvaɪs/
+  audio_ref: null
+  definition_en: An object, machine, or piece of electronic equipment that has been made for some special purpose.
+  meaning_tr: cihaz, aygıt
+  collocations:
+  - text: electronic device
+    tr: elektronik cihaz
+  - text: mobile device
+    tr: mobil cihaz
+  - text: smart device
+    tr: akıllı cihaz
+  examples:
+  - en: Ensure all electronic devices are switched to airplane mode before the aircraft takes off.
+    tr: Uçak havalanmadan önce tüm elektronik cihazların uçak moduna alındığından emin olun.
+    context: Aviation Safety
+  - en: Our modern responsive web platform works seamlessly across smartphones, tablets, and desktop devices.
+    tr: Modern duyarlı web platformumuz akıllı telefonlar, tabletler ve masaüstü cihazlarda sorunsuz çalışır.
+    context: Web Development
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Device'' isimdir (cihaz / /dɪˈvaɪs/); ''devise'' ise fiildir (tasarlamak, geliştirmek / /dɪˈvaɪz/). Yazılış
+      ve telaffuz farkına dikkat edilmelidir.'
+    incorrect_example: We need to device a new plan.
+    correct_example: We need to devise a new plan for this mobile device.
+  register: general
+  topic_tags:
+  - technology
+  - hardware
+  - computing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.troubleshoot
+  headword: troubleshoot
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈtrʌb.əl.ʃuːt/
+  audio_ref: null
+  definition_en: To analyze and solve serious problems or technical defects in a system, machine, or organization.
+  meaning_tr: sorun gidermek, arıza tespiti ve çözümü yapmak
+  collocations:
+  - text: troubleshoot an issue
+    tr: sorun gidermek
+  - text: troubleshoot network problems
+    tr: ağ problemlerini çözmek
+  - text: troubleshoot step-by-step
+    tr: adım adım sorun gidermek
+  examples:
+  - en: The technical support engineer spent two hours troubleshooting the server connectivity issue.
+    tr: Teknik destek mühendisi sunucu bağlantı sorununu gidermek için iki saat harcadı.
+    context: IT Support
+  - en: Our user manual contains a dedicated troubleshooting section to help clients solve common configuration errors.
+    tr: Kullanım kılavuzumuz, müşterilerin yaygın yapılandırma hatalarını çözmelerine yardımcı olmak için özel bir sorun giderme
+      bölümü içerir.
+    context: Product Documentation
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Troubleshoot'' fiili Türkçeye ''sorun çözmek'' veya ''arıza gidermek'' olarak çevrilir; kelime kelime
+      ''dert vurmak'' gibi algılanmamalıdır.'
+    incorrect_example: I will shoot the trouble on your computer.
+    correct_example: I will troubleshoot the connection problem on your computer.
+  register: business
+  topic_tags:
+  - problem-solving
+  - technical-support
+  - engineering
+  related_ids: []
+  status: APPROVED
+  version: 1

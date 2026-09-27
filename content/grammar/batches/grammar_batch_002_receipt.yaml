@@ -1,0 +1,67 @@
+batch_id: grammar_batch_002
+produced_at: '2026-09-26T23:14:58Z'
+total_lessons_added: 50
+cefr_distribution:
+  A2: 5
+  B1: 10
+  B2: 12
+  C1: 13
+  C2: 10
+produced_ids:
+  A2:
+  - grammar.a2.adverbs-of-frequency
+  - grammar.a2.past-time-expressions-ago-last-in
+  - grammar.a2.possessive-pronouns-and-determiners
+  - grammar.a2.question-formation-subject-object
+  - grammar.a2.there-is-there-are-quantifiers
+  B1:
+  - grammar.b1.past-perfect-simple
+  - grammar.b1.reported-questions-and-commands
+  - grammar.b1.passive-voice-continuous-perfect
+  - grammar.b1.modal-verbs-advice-criticism
+  - grammar.b1.clauses-of-purpose-so-that-in-order-to
+  - grammar.b1.clauses-of-result-so-such
+  - grammar.b1.future-time-clauses-when-as-soon-as
+  - grammar.b1.both-either-neither
+  - grammar.b1.too-enough-degrees
+  - grammar.b1.reflexive-pronouns-each-other
+  B2:
+  - grammar.b2.past-perfect-continuous
+  - grammar.b2.inversion-after-so-neither
+  - grammar.b2.clauses-of-concession-in-spite-of-despite
+  - grammar.b2.defining-vs-non-defining-relative-clauses
+  - grammar.b2.modal-verbs-necessity-past-neednt-have
+  - grammar.b2.verbs-with-two-objects-dative-shift
+  - grammar.b2.participle-adjectives-ed-vs-ing
+  - grammar.b2.would-for-past-habits-vs-used-to
+  - grammar.b2.quantifiers-all-whole-each-every
+  - grammar.b2.reported-speech-advanced-reporting-verbs
+  - grammar.b2.adjective-order-and-compound-adjectives
+  - grammar.b2.cleft-sentences-what-clauses-basics
+  C1:
+  - grammar.c1.subjunctive-in-formal-registers
+  - grammar.c1.inversion-with-prepositional-phrases
+  - grammar.c1.reduced-relative-clauses
+  - grammar.c1.verbless-and-prepositional-clauses
+  - grammar.c1.modal-verbs-remote-probability-conjectural
+  - grammar.c1.cohesion-through-parallelism
+  - grammar.c1.comparative-correlative-the-more-the-less
+  - grammar.c1.discourse-hedging-adverbials
+  - grammar.c1.it-clefts-for-contrastive-focus
+  - grammar.c1.subordinating-conjunctions-concession-condition
+  - grammar.c1.noun-complement-clauses-fact-belief
+  - grammar.c1.complex-passive-with-prepositional-verbs
+  - grammar.c1.substitute-words-do-so-such-so-neither
+  C2:
+  - grammar.c2.absolute-constructions
+  - grammar.c2.proleptic-and-anticipatory-it
+  - grammar.c2.anaphoric-and-cataphoric-reference
+  - grammar.c2.parenthetical-intercalation
+  - grammar.c2.correlative-subordination-and-inversion
+  - grammar.c2.marked-theme-and-rheme-reorganization
+  - grammar.c2.modal-past-in-subjunctive-hypotheticals
+  - grammar.c2.nominal-group-premodification-stacking
+  - grammar.c2.syntactic-blends-and-zeugma-in-rhetoric
+  - grammar.c2.adversative-and-reformulative-connectors
+status: APPROVED
+description: Multi-Domain Curriculum Expansion Batch 002 Grammar Tranche (+50 lessons)

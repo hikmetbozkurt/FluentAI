@@ -1,0 +1,2133 @@
+- id: vocab.laundry
+  headword: laundry
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈlɔːn.dri/
+  audio_ref: null
+  definition_en: Clothes, sheets, and other fabric items that are being washed, have been washed, or need washing.
+  meaning_tr: çamaşır, yıkanacak çamaşırlar
+  collocations:
+  - text: do the laundry
+    tr: çamaşır yıkamak
+  - text: laundry basket
+    tr: çamaşır sepeti
+  - text: clean laundry
+    tr: temiz çamaşırlar
+  examples:
+  - en: I usually do the laundry on Sunday mornings so my clothes are ready for work.
+    tr: İş kıyafetlerimin hazır olması için çamaşırları genellikle pazar sabahları yıkarım.
+    context: Household Routine
+  - en: Please put your dirty towels directly into the laundry basket in the bathroom.
+    tr: Lütfen kirli havlularınızı doğrudan banyodaki çamaşır sepetine koyun.
+    context: Home Instructions
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Laundry'' çamaşır veya çamaşırhane demektir; ''do laundry'' kalıbı ''çamaşır yıkamak'' anlamına gelir.
+      ''Make laundry'' denmez.'
+    incorrect_example: I must make laundry tonight.
+    correct_example: I must do the laundry tonight.
+  register: general
+  topic_tags:
+  - daily-life
+  - household
+  - chores
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fold-v
+  headword: fold
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /fəʊld/
+  audio_ref: null
+  definition_en: Bend something flexible over on itself so that one part covers another neatly.
+  meaning_tr: katlamak
+  collocations:
+  - text: fold clothes
+    tr: kıyafetleri katlamak
+  - text: fold a letter
+    tr: mektubu katlamak
+  - text: fold neatly
+    tr: düzgünce katlamak
+  examples:
+  - en: After taking the dry shirts from the line, she folded them and placed them in the wardrobe.
+    tr: Kuru gömlekleri ipten aldıktan sonra onları katladı ve gardıroba yerleştirdi.
+    context: Household Chores
+  - en: Fold the sheet of paper in half before putting it into the envelope.
+    tr: Zarfa koymadan önce kağıdı ortadan ikiye katlayın.
+    context: Daily Office Task
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Fold'' eylemi çarşaf, kıyafet veya kağıt gibi esnek nesneleri ikiye veya katlara ayırmak için kullanılır.
+      Sayısal ''katlamak'' (multiply) anlamında değildir.'
+    incorrect_example: We folded the company profits by three.
+    correct_example: The company tripled its profits, while the clerk folded the invoices.
+  register: general
+  topic_tags:
+  - daily-life
+  - actions
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.pillow
+  headword: pillow
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈpɪl.əʊ/
+  audio_ref: null
+  definition_en: A soft cushion used to support the head while sleeping or resting.
+  meaning_tr: yastık
+  collocations:
+  - text: pillow case
+    tr: yastık kılıfı
+  - text: soft pillow
+    tr: yumuşak yastık
+  - text: extra pillow
+    tr: ekstra yastık
+  examples:
+  - en: I requested an extra feather pillow from hotel room service for better sleep.
+    tr: Daha iyi bir uyku için otel oda servisinden ekstra bir kuş tüyü yastık rica ettim.
+    context: Hotel Accommodation
+  - en: She changed the pillow case every week to maintain hygiene.
+    tr: Hijyeni korumak için yastık kılıfını her hafta değiştirirdi.
+    context: Daily Home Hygiene
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Yatakta baş altına konulan uyku yastığına 'pillow', koltuk veya kanepe üzerindeki süs/otuma yastıklarına
+      ise 'cushion' denir.
+    incorrect_example: Put this decorative pillow on the sofa.
+    correct_example: Put this cushion on the sofa, and take the pillow to the bed.
+  register: general
+  topic_tags:
+  - daily-life
+  - bedroom
+  - furniture
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.blanket
+  headword: blanket
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈblæŋ.kɪt/
+  audio_ref: null
+  definition_en: A large piece of woolen or thick fabric used as a warm bed covering.
+  meaning_tr: battaniye
+  collocations:
+  - text: warm blanket
+    tr: sıcak battaniye
+  - text: wool blanket
+    tr: yün battaniye
+  - text: wrap in a blanket
+    tr: battaniyeye sarınmak
+  examples:
+  - en: On cold winter evenings, he liked sitting on the couch wrapped in a warm blanket.
+    tr: Soğuk kış akşamlarında sıcak bir battaniyeye sarınıp kanepede oturmayı severdi.
+    context: Home Relaxation
+  - en: The flight attendant handed a clean blanket to the passenger near the window.
+    tr: Uçuş görevlisi pencere kenarındaki yolcuya temiz bir battaniye uzattı.
+    context: Travel Comfort
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Blanket'' telaffuzunda ortadaki ''k'' sesi belirgindir (/ˈblæŋ.kɪt/); ''banket'' veya ''blank'' ile karıştırılmamalıdır.'
+    incorrect_example: I need a warm blank for the bed.
+    correct_example: I need a warm blanket for the bed.
+  register: general
+  topic_tags:
+  - daily-life
+  - bedroom
+  - comfort
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.sweep
+  headword: sweep
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /swiːp/
+  audio_ref: null
+  definition_en: Clean an area by brushing away dirt, dust, or litter using a broom.
+  meaning_tr: süpürmek
+  collocations:
+  - text: sweep the floor
+    tr: yeri süpürmek
+  - text: sweep the kitchen
+    tr: mutfağı süpürmek
+  - text: sweep up dirt
+    tr: pisliği süpürüp toplamak
+  examples:
+  - en: Every evening after dinner, David sweeps the kitchen floor with a broom.
+    tr: Her akşam yemekten sonra David süpürgeyle mutfak zeminini süpürür.
+    context: Evening Routine
+  - en: We need to sweep the entrance hall before our guests arrive this afternoon.
+    tr: Misafirlerimiz bu öğleden sonra gelmeden önce giriş holünü süpürmemiz gerekiyor.
+    context: Home Preparation
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Sweep'' düzensiz bir fiildir; geçmiş zaman ve üçüncü hali ''swept''tir (''sweeped'' denmez).'
+    incorrect_example: She sweeped the corridor yesterday.
+    correct_example: She swept the corridor yesterday.
+  register: general
+  topic_tags:
+  - daily-life
+  - cleaning
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.mop-v
+  headword: mop
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /mɒp/
+  audio_ref: null
+  definition_en: Clean, wash, or wipe a floor using a wet cloth or sponge attached to a stick.
+  meaning_tr: paspaslamak, paspas çekmek
+  collocations:
+  - text: mop the floor
+    tr: yeri paspaslamak
+  - text: mop up a spill
+    tr: dökülen sıvıyı paspasla silmek
+  - text: mop with soapy water
+    tr: sabunlu suyla paspaslamak
+  examples:
+  - en: After sweeping the dust away, she mopped the bathroom tiles thoroughly.
+    tr: Tozu süpürdükten sonra banyo karolarını iyice paspasladı.
+    context: House Cleaning
+  - en: Someone spilled tea in the meeting room, so we quickly mopped it up.
+    tr: Toplantı odasında birisi çay döktü, bu yüzden hemen paspasla sildik.
+    context: Office Incident
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: 'Geçmiş zaman eki aldığında son sessiz harf çift yazılır: ''mopped'' ve ''mopping'' (''moped'' moped motosiklet
+      demektir).'
+    incorrect_example: He moped the kitchen floor this morning.
+    correct_example: He mopped the kitchen floor this morning.
+  register: general
+  topic_tags:
+  - daily-life
+  - cleaning
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.dust-v
+  headword: dust
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /dʌst/
+  audio_ref: null
+  definition_en: Wipe the dust off furniture, shelves, or other surfaces with a soft cloth.
+  meaning_tr: tozunu almak
+  collocations:
+  - text: dust the shelves
+    tr: rafların tozunu almak
+  - text: dust the furniture
+    tr: mobilyaların tozunu almak
+  - text: dust with a cloth
+    tr: bezle toz almak
+  examples:
+  - en: Can you please dust the bookshelves in the living room while I vacuum?
+    tr: Ben elektrikli süpürgeyi çalıştırırken sen oturma odasındaki kitaplıkların tozunu alabilir misin?
+    context: Weekend Chores
+  - en: The computer monitor needs dusting because it sits near an open window.
+    tr: Açık pencerenin yanında durduğu için bilgisayar monitörünün tozu alınmalı.
+    context: Home Office
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Dust'' isim olarak ''toz'', fiil olarak ise ''tozunu almak'' (temizlemek) anlamına gelir. Türkçedeki
+      ''tozlanmak'' değil, temizleme eylemidir.'
+    incorrect_example: The shelf dusted because of the wind.
+    correct_example: The shelf became dusty, so I dusted it.
+  register: general
+  topic_tags:
+  - daily-life
+  - cleaning
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.drawer
+  headword: drawer
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /drɔː.ər/
+  audio_ref: null
+  definition_en: A box-shaped container that slides into and out of a piece of furniture such as a desk.
+  meaning_tr: çekmece
+  collocations:
+  - text: desk drawer
+    tr: çalışma masası çekmecesi
+  - text: top drawer
+    tr: en üst çekmece
+  - text: open a drawer
+    tr: çekmece açmak
+  examples:
+  - en: I keep the company credit card and key passes safely inside the top desk drawer.
+    tr: Şirket kredi kartını ve anahtar geçiş kartlarını çalışma masasının en üst çekmecesinde güvenle saklıyorum.
+    context: Office Setup
+  - en: She pulled open the kitchen drawer to find a sharp pair of scissors.
+    tr: Keskin bir makas bulmak için mutfak çekmecesini çekti.
+    context: Home Routine
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Drawer'' telaffuzuna (/drɔː.ər/) dikkat edilmelidir. ''Çizen kişi'' anlamına gelebilse de günlük yaşamda
+      neredeyse her zaman ''çekmece'' anlamında kullanılır.'
+    incorrect_example: Put the passport into the desk box.
+    correct_example: Put the passport into the desk drawer.
+  register: general
+  topic_tags:
+  - daily-life
+  - furniture
+  - storage
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.lock-v
+  headword: lock
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /lɒk/
+  audio_ref: null
+  definition_en: Fasten or secure a door, window, or container with a key or electronic mechanism.
+  meaning_tr: kilitlemek
+  collocations:
+  - text: lock the door
+    tr: kapıyı kilitlemek
+  - text: lock the car
+    tr: arabayı kilitlemek
+  - text: double lock
+    tr: çift kilitlemek
+  examples:
+  - en: Always remember to lock the front door securely when leaving the apartment.
+    tr: Apartmandan çıkarken daima ön kapıyı güvenli bir şekilde kilitlemeyi unutmayın.
+    context: Home Safety
+  - en: He locked his bicycle to the metal rack outside the train station.
+    tr: Bisikletini tren istasyonunun dışındaki metal korkuluğa kilitledi.
+    context: Daily Commute
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Close the door'' sadece kapıyı kapatmaktır; anahtarla kilitlemek için ''lock the door'' kullanılır. Birbirinin
+      yerine kullanılamazlar.'
+    incorrect_example: I closed the door with my key.
+    correct_example: I locked the door with my key.
+  register: general
+  topic_tags:
+  - daily-life
+  - security
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.unlock
+  headword: unlock
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ʌnˈlɒk/
+  audio_ref: null
+  definition_en: Open a lock on a door, device, or box using a key, passcode, or fingerprint.
+  meaning_tr: kilidini açmak
+  collocations:
+  - text: unlock the door
+    tr: kapının kilidini açmak
+  - text: unlock a phone
+    tr: telefonun kilidini açmak
+  - text: unlock with a key
+    tr: anahtarla kilidi açmak
+  examples:
+  - en: He quickly unlocked his smartphone using the facial recognition scanner.
+    tr: Yüz tanıma tarayıcısını kullanarak akıllı telefonunun kilidini hemen açtı.
+    context: Mobile Usage
+  - en: The manager arrived early to unlock the office building for the engineering team.
+    tr: Müdür, ofis binasının kilidini mühendislik ekibi için açmak üzere erken geldi.
+    context: Workplace Morning
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Un-'' ön eki eylemi tersine çevirir. ''Open the lock'' yerine doğrudan tek kelime ''unlock'' fiili kullanılır.'
+    incorrect_example: Can you open the lock of the gate?
+    correct_example: Can you unlock the gate?
+  register: general
+  topic_tags:
+  - daily-life
+  - actions
+  - technology
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.wipe
+  headword: wipe
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /waɪp/
+  audio_ref: null
+  definition_en: Clean or dry something by rubbing its surface with a cloth, napkin, or hand.
+  meaning_tr: silmek, bezle temizlemek
+  collocations:
+  - text: wipe the table
+    tr: masayı silmek
+  - text: wipe the glass
+    tr: camı silmek
+  - text: wipe clean
+    tr: tertemiz silmek
+  examples:
+  - en: Please wipe the dining table with a damp cloth after finishing your lunch.
+    tr: Öğle yemeğinizi bitirdikten sonra lütfen yemek masasını nemli bir bezle silin.
+    context: Kitchen Routine
+  - en: He wiped the raindrops off his glasses before entering the warm restaurant.
+    tr: Sıcak restorana girmeden önce gözlüğündeki yağmur damlalarını sildi.
+    context: Daily Action
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Masayı bezle silmek için 'erase' (yazıyı silgiyle silmek) değil, 'wipe' fiili kullanılır.
+    incorrect_example: Please erase the coffee table with a towel.
+    correct_example: Please wipe the coffee table with a towel.
+  register: general
+  topic_tags:
+  - daily-life
+  - cleaning
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.neat
+  headword: neat
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /niːt/
+  audio_ref: null
+  definition_en: Arranged well, tidy, clean, and in good order.
+  meaning_tr: düzenli, tertipli, derli toplu
+  collocations:
+  - text: neat desk
+    tr: düzenli çalışma masası
+  - text: neat handwriting
+    tr: okunaklı / düzgün el yazısı
+  - text: keep it neat
+    tr: derli toplu tutmak
+  examples:
+  - en: Her desk is always very neat, with cables and files carefully organized in boxes.
+    tr: Kablolar ve dosyalar kutularda özenle düzenlendiği için masası her zaman çok derli topludur.
+    context: Workplace Habits
+  - en: He wrote a neat summary of the notes on the office whiteboard.
+    tr: Ofis beyaz tahtasına notların derli toplu bir özetini yazdı.
+    context: Meeting Notes
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Neat'' Türkçedeki ''net'' (açık/belirgin) kelimesiyle aynı kökten değildir; eşyaların veya yerin ''derli
+      toplu, düzenli'' olduğunu belirtir.'
+    incorrect_example: The television screen is very neat and bright.
+    correct_example: The bedroom is very neat and clean.
+  register: general
+  topic_tags:
+  - daily-life
+  - organization
+  - description
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.departure
+  headword: departure
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /dɪˈpɑː.tʃər/
+  audio_ref: null
+  definition_en: The action of leaving, especially when starting a journey by plane, train, or bus.
+  meaning_tr: kalkış, hareket (uçak/tren)
+  collocations:
+  - text: departure time
+    tr: kalkış saati
+  - text: departure lounge
+    tr: gidiş salonu / bekleme salonu
+  - text: departure board
+    tr: kalkış panosu
+  examples:
+  - en: Passengers should check the digital departure board for any gate changes.
+    tr: Yolcular herhangi bir kapı değişikliği için dijital kalkış panosunu kontrol etmelidir.
+    context: Airport Announcement
+  - en: The scheduled departure of our morning flight to London is 08:30.
+    tr: Sabah Londra uçuşumuzun tarifeli kalkış saati 08:30'dur.
+    context: Flight Schedule
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Depart'' fiil halidir (''ayrılmak''); ''departure'' ise isim halidir (''kalkış/hareket''). Havaalanlarındaki
+      tabelalarda ''Departures'' (Giden Yolcu) yazar.'
+    incorrect_example: The train depart was delayed by twenty minutes.
+    correct_example: The train departure was delayed by twenty minutes.
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  - airport
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.arrival
+  headword: arrival
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /əˈraɪ.vəl/
+  audio_ref: null
+  definition_en: The act of reaching a destination or landing after a journey.
+  meaning_tr: varış, geliş (uçak/tren)
+  collocations:
+  - text: arrival time
+    tr: varış zamanı
+  - text: arrival hall
+    tr: gelen yolcu salonu
+  - text: expected arrival
+    tr: beklenen varış
+  examples:
+  - en: Our estimated arrival at Istanbul Airport is twenty minutes ahead of schedule.
+    tr: İstanbul Havalimanı'na tahmini varışımız tarifeden yirmi dakika erkendir.
+    context: Flight In-Air Update
+  - en: My family waited in the arrival hall holding a welcome sign.
+    tr: Ailem gelen yolcu salonunda hoş geldiniz yazılı bir pankart tutarak bekledi.
+    context: Airport Meeting
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Arrivals'' çoğul hali tabelalarda ''Gelen Yolcu'' anlamına gelir. ''Arrive'' fiildir (''varmak''), ''arrival''
+      isimdir (''varış'').'
+    incorrect_example: Follow the signs to the arrive hall.
+    correct_example: Follow the signs to the arrivals hall.
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  - airport
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.timetable
+  headword: timetable
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈtaɪmˌteɪ.bəl/
+  audio_ref: null
+  definition_en: A chart or list showing the scheduled times at which events, trains, or classes take place.
+  meaning_tr: sefer tarifesi, saat çizelgesi, ders programı
+  collocations:
+  - text: bus timetable
+    tr: otobüs sefer tarifesi
+  - text: train timetable
+    tr: tren saat çizelgesi
+  - text: check the timetable
+    tr: tarifeyi kontrol etmek
+  examples:
+  - en: You can download the suburban rail timetable directly from the transit website.
+    tr: Banliyö treni sefer tarifesini doğrudan toplu taşıma web sitesinden indirebilirsiniz.
+    context: Public Transit
+  - en: According to the weekly timetable, our first English lesson begins at nine o'clock.
+    tr: Haftalık ders programına göre ilk İngilizce dersimiz saat dokuzda başlıyor.
+    context: Course Schedule
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Amerikan İngilizcesinde genellikle 'schedule', İngiliz İngilizcesinde tren/otobüs ve okul saatleri için
+      'timetable' tercih edilir.
+    incorrect_example: Look at the time table for the bus.
+    correct_example: Look at the timetable for the bus.
+  register: general
+  topic_tags:
+  - travel
+  - transit
+  - schedule
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.ferry
+  headword: ferry
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈfer.i/
+  audio_ref: null
+  definition_en: A boat or ship that carries passengers and vehicles across a river, strait, or body of water.
+  meaning_tr: vapur, feribot
+  collocations:
+  - text: take a ferry
+    tr: vapura binmek
+  - text: ferry terminal
+    tr: vapur iskelesi / feribot terminali
+  - text: car ferry
+    tr: arabalı vapur
+  examples:
+  - en: Commuters take the public ferry every morning to cross from Kadıköy to Beşiktaş.
+    tr: İşe gidip gelenler Kadıköy'den Beşiktaş'a geçmek için her sabah şehir hatları vapuruna biner.
+    context: Istanbul Commute
+  - en: We bought our return ferry tickets online before traveling to the island.
+    tr: Adaya gitmeden önce gidiş-dönüş feribot biletlerimizi internetten aldık.
+    context: Island Travel
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Ferry'' hem küçük şehir hatları vapurlarını hem de arabalı büyük feribotları kapsar; ''ship'' (büyük
+      gemi) veya ''boat'' (küçük tekne) yerine tam türü belirtir.'
+    incorrect_example: We caught the sea bus ship to the port.
+    correct_example: We caught the ferry to the port.
+  register: general
+  topic_tags:
+  - travel
+  - transport
+  - sea
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.subway
+  headword: subway
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈsʌb.weɪ/
+  audio_ref: null
+  definition_en: An underground electric railway system used for passenger travel in an urban area.
+  meaning_tr: metro, yer altı tren hattı
+  collocations:
+  - text: subway station
+    tr: metro istasyonu
+  - text: subway line
+    tr: metro hattı
+  - text: take the subway
+    tr: metroya binmek
+  examples:
+  - en: Taking the subway is much faster than catching a taxi during evening rush hour.
+    tr: Akşam iş çıkışı saatlerinde metroya binmek taksiye binmekten çok daha hızlıdır.
+    context: City Navigation
+  - en: The nearest subway station is located just two blocks from our corporate office.
+    tr: En yakın metro istasyonu şirket ofisimizden sadece iki sokak ötede yer almaktadır.
+    context: Directions to Office
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: Amerikan İngilizcesinde 'subway', Londra'da 'the Tube' veya 'underground', Paris ve Türkiye'de ise genellikle
+      'metro' denir.
+    incorrect_example: I walked through the subway under the road.
+    correct_example: I took the subway to travel downtown.
+  register: general
+  topic_tags:
+  - travel
+  - urban
+  - transport
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.suitcase
+  headword: suitcase
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈsuːt.keɪs/
+  audio_ref: null
+  definition_en: A rectangular case with a handle, used for carrying clothes and belongings while traveling.
+  meaning_tr: bavul, valiz
+  collocations:
+  - text: pack a suitcase
+    tr: bavul hazırlamak
+  - text: heavy suitcase
+    tr: ağır bavul
+  - text: cabin suitcase
+    tr: kabin boy valiz
+  examples:
+  - en: Make sure your suitcase weighs less than twenty kilograms to avoid excess baggage fees.
+    tr: Ekstra bagaj ücreti ödememek için valizinizin yirmi kilodan hafif olduğundan emin olun.
+    context: Airport Check-in
+  - en: He rolled his suitcase through the hotel lobby toward the elevator.
+    tr: Bavulunu otel lobisinden asansöre doğru tekerlekleri üzerinde sürdü.
+    context: Hotel Arrival
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Suitcase'' sayılabilir bir isimdir (''two suitcases''); ancak ''luggage'' veya ''baggage'' sayılamaz
+      (''two pieces of luggage'' denir).'
+    incorrect_example: I have two luggages for my trip.
+    correct_example: I have two suitcases for my trip.
+  register: general
+  topic_tags:
+  - travel
+  - luggage
+  - journey
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.backpack
+  headword: backpack
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈbæk.pæk/
+  audio_ref: null
+  definition_en: A bag with straps that allow it to be carried on one's back, often used by students and hikers.
+  meaning_tr: sırt çantası
+  collocations:
+  - text: carry a backpack
+    tr: sırt çantası taşımak
+  - text: heavy backpack
+    tr: ağır sırt çantası
+  - text: laptop backpack
+    tr: dizüstü bilgisayar sırt çantası
+  examples:
+  - en: Most software developers carry their company laptop and charger in a durable backpack.
+    tr: Çoğu yazılımcı şirket dizüstü bilgisayarını ve şarj aletini dayanıklı bir sırt çantasında taşır.
+    context: Commute Gear
+  - en: He packed a bottle of water and a rain jacket into his backpack before the hike.
+    tr: Yürüyüşten önce sırt çantasına bir şişe su ve bir yağmurluk koydu.
+    context: Outdoor Activity
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: İngiliz İngilizcesinde bazen 'rucksack' denir; 'backpack' ise uluslararası ve Amerikan İngilizcesinde en
+      yaygın terimdir.
+    incorrect_example: I put my computer in my back bag.
+    correct_example: I put my computer in my backpack.
+  register: general
+  topic_tags:
+  - travel
+  - gear
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.land-v
+  headword: land
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /lænd/
+  audio_ref: null
+  definition_en: Come down through the air and settle on the ground or water, especially an aircraft.
+  meaning_tr: (uçak) iniş yapmak, yere inmek
+  collocations:
+  - text: land safely
+    tr: güvenle iniş yapmak
+  - text: land at the airport
+    tr: havaalanına inmek
+  - text: plane lands
+    tr: uçağın inmesi
+  examples:
+  - en: Our airplane landed smoothly at Heathrow Airport despite the heavy fog.
+    tr: Yoğun sise rağmen uçağımız Heathrow Havalimanı'na sorunsuzca iniş yaptı.
+    context: Flight Experience
+  - en: Please remain seated with your seatbelts fastened until the aircraft has landed.
+    tr: Lütfen uçak iniş yapana kadar emniyet kemerleriniz bağlı bir şekilde koltuğunuzda kalın.
+    context: Flight Safety
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Land'' isim olarak ''toprak/kara'', fiil olarak ise uçağın ''iniş yapması''dır. Kuşlar veya uçaklar için
+      ''inmek'' fiili ''land''dir.'
+    incorrect_example: The plane downloaded at the runway.
+    correct_example: The plane landed on the runway.
+  register: general
+  topic_tags:
+  - travel
+  - flight
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.unpack
+  headword: unpack
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ʌnˈpæk/
+  audio_ref: null
+  definition_en: Take things out of a suitcase, box, or bag after arriving at a destination.
+  meaning_tr: bavulu boşaltmak, eşyaları çıkarmak
+  collocations:
+  - text: unpack a suitcase
+    tr: valizi boşaltmak
+  - text: unpack boxes
+    tr: kolileri açıp boşaltmak
+  - text: unpack belongings
+    tr: özel eşyaları yerleştirmek
+  examples:
+  - en: As soon as we reached our hotel room, we unpacked our clothes and hung them in the closet.
+    tr: Otel odamıza varır varmaz kıyafetlerimizi bavuldan çıkarıp dolaba astık.
+    context: Hotel Arrival
+  - en: It took him an entire evening to unpack all the delivery boxes for his new apartment.
+    tr: Yeni dairesi için gelen tüm teslimat kolilerini açıp boşaltması bütün bir akşamını aldı.
+    context: Moving In
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Pack'' bavulu doldurmak veya paketlemektir; ''unpack'' ise eşyaları bavuldan çıkarmaktır.'
+    incorrect_example: I must empty my bag with all my shirts.
+    correct_example: I must unpack my bag and hang my shirts.
+  register: general
+  topic_tags:
+  - travel
+  - hotel
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.boarding-pass
+  headword: boarding pass
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈbɔː.dɪŋ ˌpɑːs/
+  audio_ref: null
+  definition_en: A printed or digital document given to a passenger that permits them to board an airplane.
+  meaning_tr: biniş kartı (uçak)
+  collocations:
+  - text: digital boarding pass
+    tr: dijital biniş kartı
+  - text: show your boarding pass
+    tr: biniş kartınızı göstermek
+  - text: print a boarding pass
+    tr: biniş kartı yazdırmak
+  examples:
+  - en: Please have your passport and boarding pass ready for inspection at the departure gate.
+    tr: Lütfen biniş kapısında kontrol için pasaportunuzu ve biniş kartınızı hazır bulundurun.
+    context: Airport Boarding
+  - en: I downloaded my mobile boarding pass to my smartphone after checking in online.
+    tr: İnternetten check-in yaptıktan sonra mobil biniş kartımı akıllı telefonuma indirdim.
+    context: Mobile Check-in
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Flight ticket'' (uçak bileti) satın alınan genel bilet belgesidir; uçağa fiilen binmeyi sağlayan barkodlu
+      belgeye ise ''boarding pass'' denir.'
+    incorrect_example: Show your flight ticket at the aircraft door.
+    correct_example: Show your boarding pass at the aircraft door.
+  register: general
+  topic_tags:
+  - travel
+  - airport
+  - flight
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.catch
+  headword: catch
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /kætʃ/
+  audio_ref: null
+  definition_en: Arrive in time to board a bus, train, ferry, or airplane.
+  meaning_tr: (otobüse, trene, uçağa) yetişmek, binmek
+  collocations:
+  - text: catch a bus
+    tr: otobüse yetişmek
+  - text: catch a flight
+    tr: uçağa yetişmek
+  - text: catch the train
+    tr: trene binmek / yetişmek
+  examples:
+  - en: We need to leave the office immediately if we want to catch the six o'clock ferry.
+    tr: Saat altı vapuruna yetişmek istiyorsak ofisten hemen çıkmamız gerekiyor.
+    context: Evening Transit
+  - en: He ran across the terminal concourse and managed to catch his connecting flight.
+    tr: Terminal salonunda koştu ve aktarmalı uçuşuna yetişmeyi başardı.
+    context: Flight Transfer
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Toplu taşımaya 'yetişmek' veya 'binmek' anlamında 'catch a bus/train' kullanılır. 'Arrive to the bus' denmez.
+    incorrect_example: I must reach the train on time.
+    correct_example: I must catch the train on time.
+  register: general
+  topic_tags:
+  - travel
+  - transit
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.miss-v
+  headword: miss
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /mɪs/
+  audio_ref: null
+  definition_en: Arrive too late for a bus, train, or flight and fail to travel on it.
+  meaning_tr: (uçağı, treni, otobüsü) kaçırmak
+  collocations:
+  - text: miss a flight
+    tr: uçuşu kaçırmak
+  - text: miss the train
+    tr: treni kaçırmak
+  - text: miss a connection
+    tr: aktarmayı kaçırmak
+  examples:
+  - en: Because of heavy traffic on the highway, they missed their morning flight to Frankfurt.
+    tr: Otoyoldaki yoğun trafik nedeniyle Frankfurt sabah uçuşlarını kaçırdılar.
+    context: Travel Delay
+  - en: If you don't hurry to the platform, you will miss the last express train home.
+    tr: Perona doğru acele etmezseniz eve giden son ekspres treni kaçıracaksınız.
+    context: Railway Station
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Miss'' hem ''özlemek'' (''I miss you'') hem de ulaşım aracını ''kaçırmak'' anlamına gelir. ''Lose a flight''
+      denmez, ''miss a flight'' denir.'
+    incorrect_example: I lost my plane because I woke up late.
+    correct_example: I missed my plane because I woke up late.
+  register: general
+  topic_tags:
+  - travel
+  - transit
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.groceries
+  headword: groceries
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈɡrəʊ.sər.iz/
+  audio_ref: null
+  definition_en: Food and other everyday domestic goods bought at a supermarket or food store.
+  meaning_tr: mutfak alışverişi, bakkaliye, market erzakları
+  collocations:
+  - text: buy groceries
+    tr: market alışverişi yapmak
+  - text: bag of groceries
+    tr: market poşeti
+  - text: grocery store
+    tr: bakkal / market
+  examples:
+  - en: We usually buy our weekly groceries online and have them delivered on Saturday morning.
+    tr: Haftalık mutfak alışverişimizi genellikle internetten yaparız ve cumartesi sabahı teslim ettiririz.
+    context: Household Shopping
+  - en: He carried three heavy bags of groceries up the stairs to his kitchen.
+    tr: Üç ağır market poşetini merdivenlerden mutfağına taşıdı.
+    context: Home Errand
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Groceries'' yiyecek ve ev ihtiyaç maddeleri anlamında çoğul olarak kullanılır. Tekil ''grocer'' bakkal
+      esnafını ifade eder.'
+    incorrect_example: I bought a grocery for the kitchen.
+    correct_example: I bought groceries for the kitchen.
+  register: general
+  topic_tags:
+  - food-shopping
+  - shopping
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.aisle
+  headword: aisle
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /aɪl/
+  audio_ref: null
+  definition_en: A passage between rows of shelves in a supermarket or between rows of seats in a plane or theater.
+  meaning_tr: (market/mağaza) reyon, koridor
+  collocations:
+  - text: aisle seat
+    tr: koridor tarafı koltuk
+  - text: in aisle four
+    tr: dördüncü reyonda
+  - text: walk down the aisle
+    tr: koridorda yürümek
+  examples:
+  - en: You can find organic olive oil and pasta in aisle three on the right.
+    tr: Organik zeytinyağı ve makarnayı sağdaki üçüncü reyonda bulabilirsiniz.
+    context: Supermarket Assistance
+  - en: On long-haul flights, I always prefer an aisle seat so I can stand up easily.
+    tr: Uzun uçuşlarda kolayca ayağa kalkabilmek için her zaman koridor tarafı koltuğu tercih ederim.
+    context: Flight Seat Selection
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Aisle'' kelimesindeki ''s'' harfi okunmaz; telaffuzu ''I''ll'' veya ''isle'' gibidir (/aɪl/).'
+    incorrect_example: Where is the ice cream ay-zul?
+    correct_example: Where is the ice cream aisle (/aɪl/)?
+  register: general
+  topic_tags:
+  - food-shopping
+  - supermarket
+  - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.cart
+  headword: cart
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /kɑːt/
+  audio_ref: null
+  definition_en: A metal wheeled basket used by shoppers for carrying large quantities of goods in a supermarket.
+  meaning_tr: alışveriş arabası (market)
+  collocations:
+  - text: shopping cart
+    tr: alışveriş arabası
+  - text: push a cart
+    tr: arabayı itmek
+  - text: fill the cart
+    tr: arabayı doldurmak
+  examples:
+  - en: You need to insert a coin to unlock a shopping cart at European supermarkets.
+    tr: Avrupa süpermarketlerinde bir alışveriş arabasının kilidini açmak için madeni para takmanız gerekir.
+    context: Supermarket Practicalities
+  - en: She pushed her cart through the fresh produce section to pick fresh apples.
+    tr: Taze elma seçmek için alışveriş arabasını manav reyonuna doğru itti.
+    context: Supermarket Shopping
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: Amerikan İngilizcesinde 'shopping cart', İngiliz İngilizcesinde ise 'shopping trolley' terimi kullanılır.
+    incorrect_example: Put the milk into the market car.
+    correct_example: Put the milk into the shopping cart.
+  register: general
+  topic_tags:
+  - food-shopping
+  - retail
+  - supermarket
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.basket
+  headword: basket
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈbɑː.skɪt/
+  audio_ref: null
+  definition_en: A handheld lightweight container used by shoppers for carrying a few items in a store.
+  meaning_tr: alışveriş sepeti, el sepeti
+  collocations:
+  - text: shopping basket
+    tr: alışveriş sepeti
+  - text: hand basket
+    tr: el sepeti
+  - text: carry a basket
+    tr: sepet taşımak
+  examples:
+  - en: Since I only needed milk and bread, I grabbed a small hand basket at the entrance.
+    tr: Sadece süt ve ekmeğe ihtiyacım olduğu için girişte küçük bir el sepeti aldım.
+    context: Quick Shopping
+  - en: Click on the shopping basket icon in the upper right corner to review your online order.
+    tr: Çevrim içi siparişinizi gözden geçirmek için sağ üst köşedeki alışveriş sepeti simgesine tıklayın.
+    context: E-Commerce
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Büyük tekerlekli araba için 'cart/trolley', elde taşınan sepet için ise 'basket' denir.
+    incorrect_example: I took a big wheeled basket for my monthly shopping.
+    correct_example: I took a cart for monthly shopping, but a basket for quick items.
+  register: general
+  topic_tags:
+  - food-shopping
+  - retail
+  - convenience
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.slice-v
+  headword: slice
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /slaɪs/
+  audio_ref: null
+  definition_en: Cut food or bread into thin, flat, and broad pieces using a knife.
+  meaning_tr: dilimlemek
+  collocations:
+  - text: slice bread
+    tr: ekmek dilimlemek
+  - text: slice thinly
+    tr: ince ince dilimlemek
+  - text: slice tomatoes
+    tr: domatesleri dilimlemek
+  examples:
+  - en: Please slice the sourdough bread thinly so we can toast it for breakfast.
+    tr: Kahvaltıda kızartabilmemiz için lütfen ekşi mayalı ekmeği ince dilimleyin.
+    context: Kitchen Preparation
+  - en: The chef sliced the cucumbers and placed them neatly across the fresh salad.
+    tr: Aşçı salatalıkları dilimledi ve taze salatanın üzerine düzgünce yerleştirdi.
+    context: Cooking
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Cut'' genel kesme eylemidir; ekmek veya meyveyi yaprak yaprak ''dilimlemek'' için özel olarak ''slice''
+      kullanılır.'
+    incorrect_example: Can you cut the bread into flat pieces?
+    correct_example: Can you slice the bread?
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.boil-v
+  headword: boil
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /bɔɪl/
+  audio_ref: null
+  definition_en: Heat a liquid until it bubbles and turns to steam, or cook food in bubbling hot water.
+  meaning_tr: kaynatmak, haşlamak
+  collocations:
+  - text: boil water
+    tr: su kaynatmak
+  - text: boil eggs
+    tr: yumurta haşlamak
+  - text: bring to a boil
+    tr: kaynama noktasına getirmek
+  examples:
+  - en: Boil two cups of water in the electric kettle before pouring it over the tea leaves.
+    tr: Çay yapraklarının üzerine dökmeden önce elektrikli su ısıtıcısında iki fincan su kaynatın.
+    context: Making Tea
+  - en: She boiled the pasta in salted water for exactly eight minutes.
+    tr: Makarnayı tuzlu suda tam sekiz dakika haşladı.
+    context: Cooking Pasta
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Boil'' hem sıvının kendisinin kaynaması hem de sebze/yumurtanın suda ''haşlanması'' için kullanılır.'
+    incorrect_example: I cooked the egg in water.
+    correct_example: I boiled the egg for six minutes.
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fry
+  headword: fry
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /fraɪ/
+  audio_ref: null
+  definition_en: Cook food in hot fat or oil, typically in a shallow pan on the stove.
+  meaning_tr: kızartmak, tavada pişirmek
+  collocations:
+  - text: fry in oil
+    tr: yağda kızartmak
+  - text: pan fry
+    tr: tavada kızartmak
+  - text: fried eggs
+    tr: tavada pişmiş yumurta
+  examples:
+  - en: He fried onions and garlic in olive oil before adding the minced beef.
+    tr: Kıymayı eklemeden önce soğan ve sarımsağı zeytinyağında kızarttı.
+    context: Cooking Dinner
+  - en: In many street food markets, vendors fry potatoes in deep boiling oil.
+    tr: Birçok sokak lezzetleri pazarında satıcılar patatesleri bol kızgın yağda kızartır.
+    context: Street Food
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: Geçmiş zamanı 'fried'dir ('y' harfi 'i'ye dönüşür). Fırında kızartmak 'roast', yağda kızartmak ise 'fry'dır.
+    incorrect_example: She fryed the potatoes in butter.
+    correct_example: She fried the potatoes in butter.
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.bake
+  headword: bake
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /beɪk/
+  audio_ref: null
+  definition_en: Cook food by dry heat without direct exposure to a flame, typically in an oven.
+  meaning_tr: fırında pişirmek (kek, ekmek vb.)
+  collocations:
+  - text: bake bread
+    tr: ekmek pişirmek
+  - text: bake a cake
+    tr: kek pişirmek
+  - text: freshly baked
+    tr: taze fırından çıkmış
+  examples:
+  - en: My grandmother bakes delicious homemade cookies every Sunday afternoon.
+    tr: Büyükannem her pazar öğleden sonra lezzetli ev yapımı kurabiyeler pişirir.
+    context: Family Tradition
+  - en: Bake the chicken in the preheated oven at two hundred degrees for forty minutes.
+    tr: Tavuğu önceden ısıtılmış fırında iki yüz derecede kırk dakika pişirin.
+    context: Recipe Instructions
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Ocakta genel pişirmek 'cook', fırında hamur işi pişirmek 'bake', fırında et/sebze kızartmak ise 'roast'
+      fiiliyle karşılanır.
+    incorrect_example: She cooked a birthday cake in the oven.
+    correct_example: She baked a birthday cake in the oven.
+  register: general
+  topic_tags:
+  - food-shopping
+  - cooking
+  - oven
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.on-sale
+  headword: on sale
+  cefr_level: A2
+  part_of_speech: phrase
+  phonetic: /ɒn ˈseɪl/
+  audio_ref: null
+  definition_en: Available for purchase at a price lower than the standard retail price.
+  meaning_tr: indirimde, indirimli fiyata satılan
+  collocations:
+  - text: items on sale
+    tr: indirimdeki ürünler
+  - text: currently on sale
+    tr: şu anda indirimde
+  - text: go on sale
+    tr: indirime girmek / satışa çıkmak
+  examples:
+  - en: Winter coats are currently on sale with a thirty percent discount at the department store.
+    tr: Büyük mağazada kışlık kabanlar şu anda yüzde otuz indirimle satıştadır.
+    context: Shopping Deals
+  - en: I waited until the wireless headphones went on sale before buying them.
+    tr: Satın almadan önce kablosuz kulaklıkların indirime girmesini bekledim.
+    context: Smart Shopping
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''For sale'' satılık (satışa sunulmuş) demektir; ''on sale'' ise özellikle indirimli fiyata satılan demektir.'
+    incorrect_example: This house is on sale for 500,000 dollars.
+    correct_example: This house is for sale, but these shoes are on sale at half price.
+  register: general
+  topic_tags:
+  - food-shopping
+  - shopping
+  - discounts
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fitting-room
+  headword: fitting room
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈfɪt.ɪŋ ˌruːm/
+  audio_ref: null
+  definition_en: A private cubicle in a clothing shop where customers can try on garments before buying.
+  meaning_tr: deneme kabini (kıyafet)
+  collocations:
+  - text: in the fitting room
+    tr: deneme kabininde
+  - text: fitting room area
+    tr: kabin alanı
+  - text: take to the fitting room
+    tr: deneme kabinine götürmek
+  examples:
+  - en: Excuse me, where is the fitting room? I would like to try on these trousers.
+    tr: Afedersiniz, deneme kabini nerede? Bu pantolonu denemek istiyorum.
+    context: Clothing Store
+  - en: The store policy allows customers to take up to four items into the fitting room.
+    tr: Mağaza kuralı müşterilerin deneme kabinine en fazla dört parça ürün almasına izin veriyor.
+    context: Store Guidelines
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: Bazı mağazalarda 'changing room' da denir; kıyafet denemek için en yaygın perakende terimi 'fitting room'dur.
+    incorrect_example: Where is the testing room for the shirt?
+    correct_example: Where is the fitting room for the shirt?
+  register: general
+  topic_tags:
+  - food-shopping
+  - retail
+  - clothing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.try-on
+  headword: try on
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /traɪ ˈɒn/
+  audio_ref: null
+  definition_en: Put on an item of clothing or shoes to verify whether it fits and looks attractive.
+  meaning_tr: (kıyafet, ayakkabı) denemek, üstünde görmek
+  collocations:
+  - text: try on a jacket
+    tr: ceket denemek
+  - text: try on shoes
+    tr: ayakkabı denemek
+  - text: try it on
+    tr: üstünde denemek
+  examples:
+  - en: You should definitely try on the navy suit before deciding to purchase it.
+    tr: Satın almaya karar vermeden önce lacivert takım elbiseyi kesinlikle denemelisin.
+    context: Retail Advice
+  - en: She tried on three different pairs of running shoes before finding the most comfortable one.
+    tr: En rahat olanı bulmadan önce üç farklı koşu ayakkabısı denedi.
+    context: Sports Store
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: 'Zamir kullanıldığında araya girer: ''try it on'' veya ''try them on'' denir (''try on it'' denmez).'
+    incorrect_example: I like this jacket, I will try on it.
+    correct_example: I like this jacket, I will try it on.
+  register: general
+  topic_tags:
+  - food-shopping
+  - clothing
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fit-v
+  headword: fit
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /fɪt/
+  audio_ref: null
+  definition_en: Be of the correct size and shape for a person, garment, or space.
+  meaning_tr: (beden olarak) uymak, tam gelmek, oturmak
+  collocations:
+  - text: fit well
+    tr: iyi oturmak / tam gelmek
+  - text: fit perfectly
+    tr: mükemmel uymak
+  - text: doesn't fit
+    tr: üstüne uymuyor / dar veya bol geliyor
+  examples:
+  - en: These leather shoes fit perfectly and feel very comfortable for daily walking.
+    tr: Bu deri ayakkabılar ayağıma tam uyuyor ve günlük yürüyüş için çok rahat hissettiriyor.
+    context: Shoe Shopping
+  - en: The medium shirt was too tight, so it did not fit him properly.
+    tr: M beden gömlek çok dardı, bu yüzden ona tam uymadı.
+    context: Fitting Clothes
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Fit'' beden/ölçü olarak uymaktır; tarz veya renk olarak yakışmak anlamında ise ''suit'' kullanılır (''It
+      fits you'' beden olarak uyuyor, ''It suits you'' sana yakışıyor).'
+    incorrect_example: This red dress fits your hair color.
+    correct_example: This dress fits your size, and the red color suits you.
+  register: general
+  topic_tags:
+  - food-shopping
+  - clothing
+  - size
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.sore-throat
+  headword: sore throat
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˌsɔː ˈθrəʊt/
+  audio_ref: null
+  definition_en: A painful or irritated feeling in the throat, typically caused by inflammation or a cold.
+  meaning_tr: boğaz ağrısı
+  collocations:
+  - text: have a sore throat
+    tr: boğazı ağrımak
+  - text: bad sore throat
+    tr: şiddetli boğaz ağrısı
+  - text: soothe a sore throat
+    tr: boğaz ağrısını hafifletmek
+  examples:
+  - en: He drank warm herbal tea with honey to soothe his painful sore throat.
+    tr: Ağrıyan boğazını yatıştırmak için ballı sıcak bitki çayı içti.
+    context: Home Remedy
+  - en: The doctor examined her sore throat and recommended resting for two days.
+    tr: Doktor boğaz ağrısını muayene etti ve iki gün dinlenmesini tavsiye etti.
+    context: Doctor Visit
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: '''Throat pain'' yerine İngilizcede doğal tıbbi ve günlük ifade ''sore throat'' kalıbıdır. ''I have throat
+      ache'' denmez.'
+    incorrect_example: I have throat ache since yesterday.
+    correct_example: I have had a sore throat since yesterday.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - illness
+  - symptoms
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.cough-v
+  headword: cough
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /kɒf/
+  audio_ref: null
+  definition_en: Expel air from the lungs suddenly with a sharp sound, often to clear the airway.
+  meaning_tr: öksürmek
+  collocations:
+  - text: cough loudly
+    tr: yüksek sesle öksürmek
+  - text: dry cough
+    tr: kuru öksürük
+  - text: cough into your elbow
+    tr: dirseğinin içine öksürmek
+  examples:
+  - en: Cover your mouth when you cough to prevent spreading germs to colleagues.
+    tr: İş arkadaşlarına mikrop yayılmasını önlemek için öksürdüğünde ağzını kapat.
+    context: Workplace Health
+  - en: He coughed throughout the night because the bedroom air was too dry.
+    tr: Yatak odasının havası çok kuru olduğu için gece boyunca öksürdü.
+    context: Nighttime Cold
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Cough'' kelimesi sonundaki ''gh'' harfleri ''f'' sesi olarak okunur: /kɒf/. ''Kov'' veya ''kog'' denmez.'
+    incorrect_example: He had a bad kowg all week.
+    correct_example: He had a bad cough (/kɒf/) all week.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - symptoms
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fever
+  headword: fever
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈfiː.vər/
+  audio_ref: null
+  definition_en: An abnormally high body temperature, usually occurring as a symptom of infection or illness.
+  meaning_tr: ateş (vücut ısısı yüksekliği)
+  collocations:
+  - text: high fever
+    tr: yüksek ateş
+  - text: have a fever
+    tr: ateşi olmak
+  - text: reduce a fever
+    tr: ateşi düşürmek
+  examples:
+  - en: The nurse used a digital thermometer and confirmed that the child had a high fever.
+    tr: Hemşire dijital termometre kullandı ve çocuğun yüksek ateşi olduğunu doğruladı.
+    context: Clinic Visit
+  - en: Drink plenty of water and rest in bed until your fever breaks completely.
+    tr: Ateşiniz tamamen düşene kadar bol su için ve yatakta dinlenin.
+    context: Medical Advice
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Vücut ısısı için 'fire' değil, 'fever' veya 'temperature' kullanılır ('He has a fever' ateşi var demektir).
+    incorrect_example: I have fire in my body today.
+    correct_example: I have a fever of thirty-eight degrees today.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - medical
+  - symptoms
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.dizzy
+  headword: dizzy
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈdɪz.i/
+  audio_ref: null
+  definition_en: Having a sensation of spinning around and temporarily losing one's balance.
+  meaning_tr: başı dönen, sersemlemiş
+  collocations:
+  - text: feel dizzy
+    tr: başı dönmek
+  - text: get dizzy
+    tr: başı dönmeye başlamak
+  - text: a bit dizzy
+    tr: biraz başı dönmüş
+  examples:
+  - en: If you stand up too quickly after sitting for hours, you might feel slightly dizzy.
+    tr: Saatlerce oturduktan sonra çok hızlı ayağa kalkarsanız hafifçe başınız dönebilir.
+    context: Physical Sensation
+  - en: She sat down on the bench because she felt dizzy in the hot sun.
+    tr: Kızgın güneş altında başı döndüğü için banka oturdu.
+    context: Outdoor Fatigue
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçedeki 'başım dönüyor' ifadesi İngilizcede 'My head is turning' denmez; 'I feel dizzy' şeklinde söylenir.
+    incorrect_example: My head is turning around.
+    correct_example: I feel dizzy and need to sit down.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - symptoms
+  - feelings
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.painkiller
+  headword: painkiller
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈpeɪnˌkɪl.ər/
+  audio_ref: null
+  definition_en: A medicine or drug taken to reduce or relieve physical pain.
+  meaning_tr: ağrı kesici (ilaç)
+  collocations:
+  - text: take a painkiller
+    tr: ağrı kesici almak
+  - text: strong painkiller
+    tr: güçlü ağrı kesici
+  - text: mild painkiller
+    tr: hafif ağrı kesici
+  examples:
+  - en: The dentist gave him a mild painkiller to take after the tooth extraction.
+    tr: Diş hekimi diş çekiminden sonra alması için ona hafif bir ağrı kesici verdi.
+    context: Dental Care
+  - en: I took a painkiller with a glass of water to treat my tension headache.
+    tr: Gerilim tipi baş ağrımı tedavi etmek için bir bardak suyla bir ağrı kesici aldım.
+    context: Daily Relief
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Pain'' (ağrı) ve ''killer'' (öldürücü) kelimelerinin birleşimidir; tek kelime olarak yazılır: ''painkiller''.'
+    incorrect_example: I need an ache stopper pill.
+    correct_example: I need a painkiller pill.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - medication
+  - pharmacy
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.bandage
+  headword: bandage
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈbæn.dɪdʒ/
+  audio_ref: null
+  definition_en: A strip of cloth or other material used to bind up or protect a wound or injury.
+  meaning_tr: sargı bezi, bandaj
+  collocations:
+  - text: elastic bandage
+    tr: elastik bandaj
+  - text: put on a bandage
+    tr: bandaj sarmak
+  - text: change the bandage
+    tr: sargıyı değiştirmek
+  examples:
+  - en: The paramedic wrapped a clean sterile bandage around the runner's twisted ankle.
+    tr: Sağlık görevlisi koşucunun burkulan ayak bileğinin etrafına temiz steril bir sargı bezi sardı.
+    context: First Aid
+  - en: You should change the bandage twice daily to keep the surgical cut dry and clean.
+    tr: Ameliyat kesiğini kuru ve temiz tutmak için sargıyı günde iki kez değiştirmelisiniz.
+    context: Post-Care Instructions
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Küçük sıyrıklar için yapıştırılan küçük yara bandına 'plaster' (İngiliz) veya 'Band-Aid' (Amerikan); sarılan
+      kumaş sargıya ise 'bandage' denir.
+    incorrect_example: Wrap a big plaster around your sprained knee.
+    correct_example: Wrap an elastic bandage around your sprained knee.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - first-aid
+  - medical
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.bleed
+  headword: bleed
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /bliːd/
+  audio_ref: null
+  definition_en: Lose blood from the vascular system, typically through a cut or injury in the skin.
+  meaning_tr: kanamak
+  collocations:
+  - text: bleed heavily
+    tr: yoğun kanamak
+  - text: start to bleed
+    tr: kanamaya başlamak
+  - text: stop bleeding
+    tr: kanamayı durdurmak
+  examples:
+  - en: Apply firm pressure with a clean cloth to stop the finger from bleeding.
+    tr: Parmağın kanamasını durdurmak için temiz bir bezle sıkıca baskı uygulayın.
+    context: Kitchen First Aid
+  - en: His knee bled after he fell off his bicycle onto the rough asphalt.
+    tr: Pürüzlü asfalta bisikletten düştükten sonra dizi kanadı.
+    context: Minor Accident
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Blood'' isim (''kan''), ''bleed'' ise fiildir (''kanamak''). Geçmiş zaman hali ''bled''dir (''bleeded''
+      denmez).'
+    incorrect_example: My finger is blooding a lot.
+    correct_example: My finger is bleeding a lot.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - injury
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.hurt-v
+  headword: hurt
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /hɜːt/
+  audio_ref: null
+  definition_en: Cause physical pain or injury to someone, or feel pain in a part of the body.
+  meaning_tr: acımak, ağrımak, incitmek
+  collocations:
+  - text: it hurts
+    tr: acıyor / ağrıyor
+  - text: hurt your back
+    tr: belini incitmek
+  - text: hurt badly
+    tr: kötü şekilde acımak
+  examples:
+  - en: Does your shoulder still hurt when you raise your arm above your head?
+    tr: Kolunuzu başınızın üstüne kaldırdığınızda omzunuz hala acıyor mu?
+    context: Medical Assessment
+  - en: Be careful when lifting that heavy printer so you don't hurt your lower back.
+    tr: Belinizi incitmemek için o ağır yazıcıyı kaldırırken dikkatli olun.
+    context: Office Ergonomics
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Hurt'' fiilinin üç hali de aynıdır: hurt - hurt - hurt (''hurted'' formu yoktur).'
+    incorrect_example: I hurted my leg during basketball yesterday.
+    correct_example: I hurt my leg during basketball yesterday.
+  register: general
+  topic_tags:
+  - health-lifestyle
+  - pain
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.classmate
+  headword: classmate
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈklɑːs.meɪt/
+  audio_ref: null
+  definition_en: A fellow member of the same class at a school, university, or language course.
+  meaning_tr: sınıf arkadaşı
+  collocations:
+  - text: former classmate
+    tr: eski sınıf arkadaşı
+  - text: help a classmate
+    tr: sınıf arkadaşına yardım etmek
+  - text: classmate project
+    tr: sınıf arkadaşıyla ortak proje
+  examples:
+  - en: During our evening English course, I practice conversation drills with my classmates.
+    tr: Akşam İngilizce kursumuz sırasında sınıf arkadaşlarımla konuşma alıştırmaları yapıyorum.
+    context: Language Class
+  - en: She met her best friend when they were university classmates studying engineering.
+    tr: En iyi arkadaşıyla üniversitede mühendislik okurken sınıf arkadaşı olduklarında tanıştı.
+    context: College Friends
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Birlikte okuyan arkadaş için 'class friend' değil, tek kelime 'classmate' kullanılır.
+    incorrect_example: I studied with my class friend last night.
+    correct_example: I studied with my classmate last night.
+  register: general
+  topic_tags:
+  - relationships
+  - school
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.roommate
+  headword: roommate
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈruːm.meɪt/
+  audio_ref: null
+  definition_en: A person with whom one shares an apartment, flat, or bedroom.
+  meaning_tr: oda arkadaşı, ev arkadaşı
+  collocations:
+  - text: college roommate
+    tr: üniversite ev/oda arkadaşı
+  - text: find a roommate
+    tr: ev arkadaşı bulmak
+  - text: roommate agreement
+    tr: ev arkadaşı anlaşması
+  examples:
+  - en: My roommate and I take turns cooking dinner and cleaning the kitchen each week.
+    tr: Ev arkadaşım ve ben her hafta sırayla akşam yemeği pişirir ve mutfağı temizleriz.
+    context: Shared Apartment
+  - en: He placed an advertisement online to search for a quiet and clean roommate.
+    tr: Sessiz ve temiz bir ev arkadaşı aramak için internete ilan verdi.
+    context: Housing Search
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: Amerikan İngilizcesinde evi paylaşan kişiye de 'roommate' denir; İngiliz İngilizcesinde daireyi paylaşan
+      için 'flatmate' tercih edilir.
+    incorrect_example: He is my room friend in the apartment.
+    correct_example: He is my roommate in the apartment.
+  register: general
+  topic_tags:
+  - relationships
+  - housing
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.relative
+  headword: relative
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈrel.ə.tɪv/
+  audio_ref: null
+  definition_en: A person connected to another by blood, adoption, or marriage; a family member.
+  meaning_tr: akraba, hısım
+  collocations:
+  - text: close relative
+    tr: yakın akraba
+  - text: distant relative
+    tr: uzak akraba
+  - text: visit relatives
+    tr: akrabaları ziyaret etmek
+  examples:
+  - en: During the religious holidays, we travel to our hometown to visit older relatives.
+    tr: Dini bayramlarda yaşlı akrabalarımızı ziyaret etmek için memleketimize seyahat ederiz.
+    context: Family Tradition
+  - en: Only immediate relatives were invited to attend the private wedding dinner.
+    tr: Özel düğün yemeğine sadece birinci derece yakın akrabalar davet edildi.
+    context: Family Gathering
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Relative'' sıfat olarak ''göreceli'' (''relative humidity''); isim olarak ise ''akraba'' demektir. İsim
+      anlamı günlük hayatta çok yaygındır.'
+    incorrect_example: I visited my family members and my relatives cousins.
+    correct_example: I visited my relatives, including several cousins.
+  register: general
+  topic_tags:
+  - relationships
+  - family
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.get-along
+  headword: get along
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /ɡet əˈlɒŋ/
+  audio_ref: null
+  definition_en: Have a friendly, harmonious, and pleasant relationship with someone.
+  meaning_tr: iyi anlaşmak, geçinmek
+  collocations:
+  - text: get along with someone
+    tr: biriyle iyi geçinmek
+  - text: get along well
+    tr: çok iyi anlaşmak
+  - text: hard to get along with
+    tr: geçinmesi zor
+  examples:
+  - en: She gets along very well with her new team members in the marketing division.
+    tr: Pazarlama bölümündeki yeni ekip arkadaşlarıyla çok iyi anlaşıyor.
+    context: Workplace Teamwork
+  - en: Do you get along with your next-door neighbors in the residential building?
+    tr: Apartmandaki yan komşularınızla iyi anlaşıyor musunuz?
+    context: Neighborhood Life
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Biriyle geçinmekten bahsederken 'get along with' kalıbı kullanılır ('with' edatı şarttır).
+    incorrect_example: I get along my boss very easily.
+    correct_example: I get along with my boss very easily.
+  register: general
+  topic_tags:
+  - relationships
+  - social
+  - interpersonal
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.hang-out
+  headword: hang out
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /hæŋ ˈaʊt/
+  audio_ref: null
+  definition_en: Spend time relaxing, chatting, or socializing informally with friends.
+  meaning_tr: takılmak, birlikte vakit geçirmek
+  collocations:
+  - text: hang out with friends
+    tr: arkadaşlarla takılmak
+  - text: hang out at a cafe
+    tr: kafede takılmak
+  - text: place to hang out
+    tr: takılacak yer
+  examples:
+  - en: On Friday evenings, we usually hang out at a local coffee shop after work.
+    tr: Cuma akşamları işten sonra genellikle mahalledeki bir kahve dükkanında takılırız.
+    context: Social Routine
+  - en: Do you want to hang out together in the park this Saturday afternoon?
+    tr: Bu cumartesi öğleden sonra parkta birlikte takılmak ister misin?
+    context: Friendly Invitation
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: '''Hang out'' gayriresmi ve samimi bir ifadedir; arkadaşlarla vakit geçirmek için ''spend time with'' yerine
+      sıkça tercih edilir.'
+    incorrect_example: The executives hung out to discuss the annual merger.
+    correct_example: The students hung out after class, while executives held a meeting.
+  register: informal
+  topic_tags:
+  - relationships
+  - leisure
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.close-friend
+  headword: close friend
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /kləʊs ˈfrend/
+  audio_ref: null
+  definition_en: A friend with whom one shares deep mutual trust, affection, and personal confidence.
+  meaning_tr: yakın arkadaş, can dostu
+  collocations:
+  - text: one of my close friends
+    tr: yakın arkadaşlarımdan biri
+  - text: become close friends
+    tr: yakın arkadaş olmak
+  - text: talk to a close friend
+    tr: yakın bir arkadaşla konuşmak
+  examples:
+  - en: Whenever I face a difficult career decision, I seek advice from my close friend Can.
+    tr: Kariyerimle ilgili zor bir kararla karşılaştığımda her zaman yakın arkadaşım Can'dan tavsiye alırım.
+    context: Personal Advice
+  - en: They became close friends after working side by side on a demanding software project.
+    tr: Zorlu bir yazılım projesinde yan yana çalıştıktan sonra yakın arkadaş oldular.
+    context: Workplace Friendship
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: 'Buradaki ''close'' sıfattır ve sonu /s/ ile okunur: /kləʊs/ (''kapatmak'' fiili ise /z/ ile okunur: /kləʊz/).'
+    incorrect_example: He is my near friend.
+    correct_example: He is my close friend (/kləʊs/).
+  register: general
+  topic_tags:
+  - relationships
+  - friendship
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.textbook
+  headword: textbook
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈtekst.bʊk/
+  audio_ref: null
+  definition_en: A book used as a standard source of information for studying a particular subject in school or college.
+  meaning_tr: ders kitabı
+  collocations:
+  - text: open the textbook
+    tr: ders kitabını açmak
+  - text: textbook exercise
+    tr: ders kitabı alıştırması
+  - text: college textbook
+    tr: üniversite ders kitabı
+  examples:
+  - en: Please open your English textbook to page forty-five and read the dialogue aloud.
+    tr: Lütfen İngilizce ders kitabınızın kırk beşinci sayfasını açın ve diyaloğu sesli okuyun.
+    context: Classroom Instruction
+  - en: He bought a second-hand economics textbook online to save money this semester.
+    tr: Bu dönem tasarruf etmek için internetten ikinci el bir ekonomi ders kitabı satın aldı.
+    context: College Studies
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Ders kitabı 'lesson book' değil; standart tek kelime 'textbook'tur.
+    incorrect_example: Bring your lesson book to school tomorrow.
+    correct_example: Bring your textbook to school tomorrow.
+  register: general
+  topic_tags:
+  - education
+  - study
+  - books
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.homework
+  headword: homework
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈhəʊm.wɜːk/
+  audio_ref: null
+  definition_en: Schoolwork or study exercises assigned by a teacher to be completed outside of the classroom.
+  meaning_tr: ev ödevi
+  collocations:
+  - text: do homework
+    tr: ödev yapmak
+  - text: hand in homework
+    tr: ödevi teslim etmek
+  - text: homework assignment
+    tr: ödev görevi
+  examples:
+  - en: I spend roughly thirty minutes every evening completing my English grammar homework.
+    tr: Her akşam İngilizce dil bilgisi ödevimi tamamlamak için yaklaşık otuz dakika harcarım.
+    context: Study Routine
+  - en: The teacher told the students to hand in their completed homework on Friday morning.
+    tr: Öğretmen öğrencilere tamamlanmış ödevlerini cuma sabahı teslim etmelerini söyledi.
+    context: Classroom Deadline
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Homework'' sayılamaz bir isimdir; çoğul eki almaz (''homeworks'' denmez) ve ''make homework'' değil ''do
+      homework'' denir.'
+    incorrect_example: I have three homeworks to make today.
+    correct_example: I have three homework assignments to do today.
+  register: general
+  topic_tags:
+  - education
+  - study
+  - learning
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.memorize
+  headword: memorize
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈmem.ə.raɪz/
+  audio_ref: null
+  definition_en: Learn something thoroughly so that you can remember it exactly from memory.
+  meaning_tr: ezberlemek
+  collocations:
+  - text: memorize words
+    tr: kelime ezberlemek
+  - text: memorize a phone number
+    tr: telefon numarasını ezberlemek
+  - text: try to memorize
+    tr: ezberlemeye çalışmak
+  examples:
+  - en: Instead of trying to memorize isolated words, practice using them in full sentences.
+    tr: Kelimeleri tek tek ezberlemeye çalışmak yerine onları tam cümleler içinde kullanma alıştırması yapın.
+    context: Language Learning Advice
+  - en: The actor had to memorize twelve pages of script before the theater rehearsal.
+    tr: Oyuncu tiyatro provasından önce on iki sayfalık metni ezberlemek zorundaydı.
+    context: Performance Preparation
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: Amerikan İngilizcesinde 'memorize', İngiliz İngilizcesinde ise 'memorise' olarak da yazılır. İkisi de doğrudur.
+    incorrect_example: I did memory of all the verbs.
+    correct_example: I memorized all the irregular verbs.
+  register: general
+  topic_tags:
+  - education
+  - memory
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.mark
+  headword: mark
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /mɑːk/
+  audio_ref: null
+  definition_en: A point, percentage, or grade given for a student's answer or performance in an examination.
+  meaning_tr: not, puan (sınav/ödev)
+  collocations:
+  - text: good mark
+    tr: iyi not
+  - text: high mark
+    tr: yüksek puan
+  - text: get a mark
+    tr: not almak
+  examples:
+  - en: She studied consistently for two weeks and received the top mark in the class.
+    tr: İki hafta boyunca düzenli çalıştı ve sınıftaki en yüksek notu aldı.
+    context: Exam Result
+  - en: The passing mark for the intermediate English placement test is seventy percent.
+    tr: Orta seviye İngilizce seviye tespit sınavının geçme notu yüzde yetmiştir.
+    context: Grading Policy
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: İngiliz İngilizcesinde sınav notuna genellikle 'mark', Amerikan İngilizcesinde ise 'grade' denir. 'Note'
+      müzik veya yazı notudur, okul notu değildir.
+    incorrect_example: I got a very good note in the English exam.
+    correct_example: I got a very good mark in the English exam.
+  register: general
+  topic_tags:
+  - education
+  - grades
+  - evaluation
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.screen
+  headword: screen
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /skriːn/
+  audio_ref: null
+  definition_en: The flat glass surface of a computer monitor, tablet, or phone where visual information is displayed.
+  meaning_tr: ekran
+  collocations:
+  - text: touch screen
+    tr: dokunmatik ekran
+  - text: computer screen
+    tr: bilgisayar ekranı
+  - text: screen time
+    tr: ekran süresi
+  examples:
+  - en: Looking at a bright smartphone screen before going to bed can disrupt your sleep.
+    tr: Yatmadan önce parlak bir akıllı telefon ekranına bakmak uykunuzu bölebilir.
+    context: Digital Health
+  - en: Software engineers often connect two external screens to their laptops for higher productivity.
+    tr: Yazılım mühendisleri daha yüksek üretkenlik için genellikle dizüstü bilgisayarlarına iki harici ekran bağlar.
+    context: Workstation Setup
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Screen'' doğrudan görüntü ekranıdır. ''Monitor'' tüm cihazı kapsarken, ''screen'' cam/görüntü yüzeyini
+      ifade eder.'
+    incorrect_example: My phone glass is broken.
+    correct_example: My phone screen is cracked.
+  register: general
+  topic_tags:
+  - technology
+  - hardware
+  - devices
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.cable
+  headword: cable
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈkeɪ.bəl/
+  audio_ref: null
+  definition_en: A thick wire or group of wires covered in plastic, used to carry electricity or electronic signals.
+  meaning_tr: kablo
+  collocations:
+  - text: charging cable
+    tr: şarj kablosu
+  - text: power cable
+    tr: güç kablosu
+  - text: connect a cable
+    tr: kablo bağlamak
+  examples:
+  - en: Do you have a spare USB cable I could borrow to charge my office tablet?
+    tr: Ofis tabletimi şarj etmek için ödünç alabileceğim yedek bir USB kablonuz var mı?
+    context: Office Request
+  - en: Keep all the computer cables neatly tied behind the desk to avoid a tangled mess.
+    tr: Karmaşayı önlemek için tüm bilgisayar kablolarını masanın arkasında düzgünce bağlı tutun.
+    context: Workspace Organization
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: İngilizce 'cable' telaffuzu /ˈkeɪ.bəl/ şeklindedir; 'kablo' yerine standart İngilizce sözcük kullanılır.
+    incorrect_example: Where is the battery wire for the phone?
+    correct_example: Where is the charging cable for the phone?
+  register: general
+  topic_tags:
+  - technology
+  - hardware
+  - accessories
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.voicemail
+  headword: voicemail
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈvɔɪs.meɪl/
+  audio_ref: null
+  definition_en: An electronic system that records and stores voice messages spoken by callers when the recipient is unavailable.
+  meaning_tr: sesli mesaj, telesekreter
+  collocations:
+  - text: leave a voicemail
+    tr: sesli mesaj bırakmak
+  - text: check your voicemail
+    tr: sesli mesajlarını kontrol etmek
+  - text: listen to a voicemail
+    tr: sesli mesaj dinlemek
+  examples:
+  - en: Since she did not answer her phone, the client left a brief voicemail explaining the urgent issue.
+    tr: Telefonuna cevap vermediği için müşteri acil sorunu açıklayan kısa bir sesli mesaj bıraktı.
+    context: Professional Communication
+  - en: I always check my business voicemail as soon as I arrive at my desk each morning.
+    tr: Her sabah masama varır varmaz mutlaka iş sesli mesajlarımı kontrol ederim.
+    context: Office Routine
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Voicemail'' tek kelime olarak yazılır. ''Voice message'' da denilebilir ancak sistemin ve kaydın adı
+      ''voicemail''dir.'
+    incorrect_example: I left a record on your phone.
+    correct_example: I left a voicemail on your phone.
+  register: general
+  topic_tags:
+  - communication
+  - phone
+  - business
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.ring-v
+  headword: ring
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rɪŋ/
+  audio_ref: null
+  definition_en: Make a clear, resonant sound, or call someone using a telephone.
+  meaning_tr: çalmak (telefon/zil), telefon etmek
+  collocations:
+  - text: phone rings
+    tr: telefonun çalması
+  - text: ring someone back
+    tr: birine geri telefon etmek
+  - text: ring the bell
+    tr: zili çalmak
+  examples:
+  - en: His mobile phone rang loudly right in the middle of the quarterly presentation.
+    tr: Üç aylık sunumun tam ortasında cep telefonu yüksek sesle çaldı.
+    context: Meeting Disruption
+  - en: I will ring the customer support team this afternoon to inquire about the delayed shipment.
+    tr: Geciken kargo hakkında bilgi almak için bu öğleden sonra müşteri destek ekibini arayacağım.
+    context: Customer Inquiry
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Ring'' fiilinin geçmiş zamanı ''rang'', üçüncü hali ''rung''dır: ring - rang - rung (''ringed'' denmez).'
+    incorrect_example: The telephone ringed five times before she picked it up.
+    correct_example: The telephone rang five times before she picked it up.
+  register: general
+  topic_tags:
+  - communication
+  - telephone
+  - actions
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.shift
+  headword: shift
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ʃɪft/
+  audio_ref: null
+  definition_en: A scheduled period of time worked by a group of workers who relieve another group.
+  meaning_tr: vardiya, çalışma saati dönemi
+  collocations:
+  - text: night shift
+    tr: gece vardiyası
+  - text: day shift
+    tr: gündüz vardiyası
+  - text: work in shifts
+    tr: vardiyalı çalışmak
+  examples:
+  - en: Hospital nurses and support staff often work twelve-hour shifts on weekends.
+    tr: Hastane hemşireleri ve destek personeli hafta sonları sık sık on iki saatlik vardiyalarda çalışır.
+    context: Hospital Work
+  - en: His shift ends at five o'clock in the afternoon, after which he heads home.
+    tr: Vardiyası öğleden sonra saat beşte sona eriyor, ardından eve gidiyor.
+    context: Daily Work Schedule
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Klavyedeki 'Shift' tuşunun yanı sıra iş hayatında 'vardiya' anlamında evrensel olarak kullanılır.
+    incorrect_example: My work turn is from eight to four.
+    correct_example: My work shift is from eight to four.
+  register: general
+  topic_tags:
+  - work-career
+  - schedule
+  - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.cash
+  headword: cash
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /kæʃ/
+  audio_ref: null
+  definition_en: Money in the physical form of coins or banknotes, rather than checks, credit cards, or digital transfers.
+  meaning_tr: nakit para
+  collocations:
+  - text: pay in cash
+    tr: nakit ödemek
+  - text: cash desk
+    tr: kasa / ödeme noktası
+  - text: extra cash
+    tr: fazladan nakit
+  examples:
+  - en: Some small local bakeries only accept payment in cash rather than credit cards.
+    tr: Bazı küçük yerel fırınlar kredi kartı yerine sadece nakit ödeme kabul eder.
+    context: Local Shopping
+  - en: He withdrew fifty euros in cash from the ATM before heading to the weekly market.
+    tr: Haftalık pazara gitmeden önce bankamatikten elli avro nakit para çekti.
+    context: Banking and Errands
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Pay by card'' (kartla ödemek) denirken, nakit ödemede ''pay in cash'' veya ''pay cash'' denir (''pay
+      with cash'' daha az doğaldır).'
+    incorrect_example: Can I pay by cash for this coffee?
+    correct_example: Can I pay in cash for this coffee?
+  register: general
+  topic_tags:
+  - business
+  - money
+  - payment
+  related_ids: []
+  status: APPROVED
+  version: 1

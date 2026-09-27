@@ -1,0 +1,1046 @@
+- id: vocab.leverage
+  headword: leverage
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈliː.vər.ɪdʒ/
+  audio_ref: null
+  definition_en: To use something that you already have, such as resources, knowledge, or relationships, to achieve maximum advantage or result.
+  meaning_tr: kaldıraç olarak kullanmak, en iyi şekilde yararlanmak/faydaya dönüştürmek
+  collocations:
+    - text: leverage resources
+      tr: kaynakları verimli kullanmak
+    - text: leverage competitive advantage
+      tr: rekabet avantajını avantaja çevirmek
+  examples:
+    - en: We can leverage our existing cloud infrastructure to launch the new microservices without additional cost.
+      tr: Yeni mikro servisleri ek bir maliyet olmadan devreye almak için mevcut bulut altyapımızdan yararlanabiliriz.
+      context: Software Architecture
+    - en: The product team leveraged user feedback from the beta phase to refine the onboarding flow.
+      tr: Ürün ekibi, ilk kayıt akışını iyileştirmek amacıyla beta aşamasındaki kullanıcı geri bildirimlerini faydaya dönüştürdü.
+      context: Product Management
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türk öğreniciler genellikle "faydalanmak" anlamında yalnızca "use" veya "take advantage of" fiillerini kullanır.
+        Beyaz yakalı iş İngilizcesinde mevcut bir gücü stratejik bir çarpan olarak kullanmak söz konusu olduğunda
+        "leverage" tercih edilir. "Take advantage of" olumsuz anlamda "suistimal etmek" olarak da anlaşılabileceğinden
+        kurumsal dilde "leverage" çok daha profesyonel bir tını taşır.
+      incorrect_example: We should use our advantage to win the tender.
+      correct_example: We should leverage our competitive advantage to win the tender.
+  register: business
+  topic_tags:
+    - business
+    - strategy
+    - technology
+  related_ids:
+    - vocab.optimize
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: vocab.align
+  headword: align
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /əˈlaɪn/
+  audio_ref: null
+  definition_en: To bring components, teams, or goals into agreement, coordination, or correct relative position.
+  meaning_tr: aynı çizgiye getirmek, uyumlandırmak, hemfikir kılmak
+  collocations:
+    - text: align priorities
+      tr: öncelikleri uyumlandırmak
+    - text: closely aligned
+      tr: yakından uyumlu
+  examples:
+    - en: We must align our technical roadmap with the company's annual revenue targets.
+      tr: Teknik yol haritamızı şirketin yıllık gelir hedefleriyle uyumlandırmalıyız.
+      context: Strategic Alignment
+    - en: The meeting helped align design and engineering expectations before implementation.
+      tr: Toplantı, geliştirme öncesinde tasarım ve mühendislik beklentilerini aynı çizgiye getirmeye yardımcı oldu.
+      context: Cross-Team Collaboration
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir şeyi başka bir şeyle uyumlandırmak için "align with" kalıbı kullanılır.
+      incorrect_example: We need to align our goals to the market.
+      correct_example: We need to align our goals with the market.
+  register: business
+  topic_tags:
+    - leadership
+    - strategy
+  related_ids:
+    - vocab.collaborate
+    - vocab.objective
+  status: APPROVED
+  version: 1
+
+- id: vocab.benchmark
+  headword: benchmark
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈbentʃ.mɑːk/
+  audio_ref: null
+  definition_en: A standard or point of reference against which things may be compared and assessed.
+  meaning_tr: kıyaslama ölçütü, mihenk taşı, referans noktası
+  collocations:
+    - text: industry benchmark
+      tr: sektör kıyaslama ölçütü
+    - text: performance benchmark
+      tr: performans kıyaslaması
+  examples:
+    - en: Our mobile application's startup time exceeds the industry benchmark by two hundred milliseconds.
+      tr: Mobil uygulamamızın açılış süresi, sektör kıyaslama ölçütünü iki yüz milisaniye aşmaktadır.
+      context: Performance Profiling
+    - en: The audit committee established clear benchmarks for database response latency.
+      tr: Denetim komitesi, veritabanı yanıt gecikmesi için net kıyaslama ölçütleri belirledi.
+      context: Technical Governance
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Benchmark" hem isim (ölçüt) hem de fiil (kıyaslamak) olarak kullanılır.
+        "Do a comparison" yerine iş İngilizcesinde "benchmark against competitors" kalıbı tercih edilir.
+      incorrect_example: We made a comparison test with others.
+      correct_example: We benchmarked our service against competitors.
+  register: business
+  topic_tags:
+    - performance
+    - strategy
+  related_ids:
+    - vocab.optimize
+    - vocab.discrepancy
+  status: APPROVED
+  version: 1
+
+- id: vocab.bottleneck
+  headword: bottleneck
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈbɒt.əl.nek/
+  audio_ref: null
+  definition_en: A point of congestion in a system or process that occurs when workloads arrive too quickly for the production step to handle.
+  meaning_tr: darboğaz, tıkanıklık noktası
+  collocations:
+    - text: identify bottlenecks
+      tr: darboğazları tespit etmek
+    - text: performance bottleneck
+      tr: performans darboğazı
+  examples:
+    - en: Profiling revealed that the JSON serialization step was the primary CPU bottleneck.
+      tr: Profil çıkarma analizi, JSON serileştirme adımının birincil işlemci darboğazı olduğunu ortaya koydu.
+      context: Performance Engineering
+    - en: Manual code signing in the release pipeline created an operational bottleneck.
+      tr: Dağıtım hattındaki manuel kod imzalama işlemi, operasyonel bir darboğaz oluşturdu.
+      context: DevOps
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Darboğazı ortadan kaldırmak için İngilizcede "eliminate/remove a bottleneck" veya
+        "resolve a bottleneck" kalıpları kullanılır.
+      incorrect_example: We must open the bottleneck.
+      correct_example: We must eliminate the bottleneck.
+  register: general
+  topic_tags:
+    - operations
+    - tech
+  related_ids:
+    - vocab.optimize
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: vocab.clarify
+  headword: clarify
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈklær.ɪ.faɪ/
+  audio_ref: null
+  definition_en: To make a statement, situation, or requirement clear and easier to understand.
+  meaning_tr: açıklığa kavuşturmak, netleştirmek, vuzuha erdirmek
+  collocations:
+    - text: clarify requirements
+      tr: gereksinimleri netleştirmek
+    - text: clarify a misunderstanding
+      tr: yanlış anlamayı açıklığa kavuşturmak
+  examples:
+    - en: Could you please clarify whether this feature is in scope for the upcoming release?
+      tr: Bu özelliğin yaklaşan sürüm kapsamında olup olmadığını lütfen netleştirebilir misiniz?
+      context: Sprint Refinement
+    - en: The product owner clarified the acceptance criteria during the backlog grooming session.
+      tr: Ürün sahibi, iş listesi arındırma oturumunda kabul kriterlerini açıklığa kavuşturdu.
+      context: Agile Meetings
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Türkçede "açıklamak" denildiğinde genellikle "explain" kullanılır. Ancak belirsiz bir konuyu
+        "netleştirmek/aydınlığa kavuşturmak" söz konusu olduğunda "clarify" çok daha isabetlidir.
+      incorrect_example: Can you explain if this is true?
+      correct_example: Can you clarify if this is true?
+  register: business
+  topic_tags:
+    - communication
+    - meetings
+  related_ids:
+    - vocab.brief
+    - vocab.scope
+  status: APPROVED
+  version: 1
+
+- id: vocab.compliance
+  headword: compliance
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /kəmˈplaɪ.əns/
+  audio_ref: null
+  definition_en: The state or act of adhering to official rules, regulations, specifications, or laws.
+  meaning_tr: mevzuata uyum, regülasyon uyumluluğu, kurallara riayet
+  collocations:
+    - text: regulatory compliance
+      tr: mevzuat uyumluluğu
+    - text: ensure compliance
+      tr: uyumluluğu güvenceye almak
+  examples:
+    - en: All database backup routines must maintain strict compliance with GDPR data residency requirements.
+      tr: Tüm veritabanı yedekleme rutinleri, GDPR veri ikameti gereksinimlerine katı bir uyum göstermelidir.
+      context: Data Privacy
+    - en: The compliance team reviewed our third-party SDK dependencies before production submission.
+      tr: Uyum ekibi, canlıya gönderim öncesinde üçüncü taraf SDK bağımlılıklarımızı inceledi.
+      context: App Store Compliance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Compliance with" kalıbında "with" kullanılır. Fiil formu "comply with"dir. "To" kullanılmaz.
+      incorrect_example: We ensure compliance to the new law.
+      correct_example: We ensure compliance with the new law.
+  register: formal
+  topic_tags:
+    - legal
+    - corporate
+  related_ids:
+    - vocab.framework
+    - vocab.scrutiny
+  status: APPROVED
+  version: 1
+
+- id: vocab.contingency
+  headword: contingency
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /kənˈtɪn.dʒən.si/
+  audio_ref: null
+  definition_en: A future event or circumstance which is possible but cannot be predicted with certainty; a provision for an unforeseen event.
+  meaning_tr: beklenmedik durum, olasılık, acil durum planı
+  collocations:
+    - text: contingency plan
+      tr: acil durum / B planı
+    - text: prepare for contingencies
+      tr: beklenmedik durumlara hazırlanmak
+  examples:
+    - en: We formulated a contingency plan in case the primary cloud provider suffers a regional outage.
+      tr: Birincil bulut sağlayıcısında bölgesel bir kesinti olması ihtimaline karşı bir acil durum planı hazırladık.
+      context: Disaster Recovery
+    - en: The project budget includes a ten percent contingency reserve for unexpected hardware price spikes.
+      tr: Proje bütçesi, donanım fiyatlarındaki beklenmedik artışlar için yüzde onluk bir acil durum ihtiyatı içerir.
+      context: Financial Risk
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Contingency" belirsiz bir gelecekteki acil durum olasılığıdır. Günlük dildeki "Plan B"
+        yerine profesyonel iş İngilizcesinde daima "contingency plan" ifadesi kullanılır.
+      incorrect_example: We prepared a Plan B for emergency.
+      correct_example: We prepared a contingency plan for emergencies.
+  register: business
+  topic_tags:
+    - planning
+    - risk
+  related_ids:
+    - vocab.mitigate
+    - vocab.feasibility
+  status: APPROVED
+  version: 1
+
+- id: vocab.cross-functional
+  headword: cross-functional
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ˌkrɒsˈfʌŋk.ʃən.əl/
+  audio_ref: null
+  definition_en: Composed of people from different departments and specializations working together toward a common goal.
+  meaning_tr: çapraz fonksiyonlu, departmanlar arası
+  collocations:
+    - text: cross-functional team
+      tr: çapraz fonksiyonlu ekip
+    - text: cross-functional collaboration
+      tr: departmanlar arası iş birliği
+  examples:
+    - en: The core squad is a cross-functional team comprising developers, UX designers, and QA specialists.
+      tr: Çekirdek ekip; geliştiriciler, kullanıcı deneyimi tasarımcıları ve kalite uzmanlarından oluşan çapraz fonksiyonlu bir takımdır.
+      context: Agile Organization
+    - en: Cross-functional alignment sessions ensure that product goals are communicated clearly across departments.
+      tr: Çapraz fonksiyonlu uyum oturumları, ürün hedeflerinin departmanlar arasında net bir şekilde iletilmesini sağlar.
+      context: Organizational Development
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Inter-departmental" kelimesi bürokratik bir ton taşırken, modern teknoloji ve ürün yönetimi
+        kültüründe çevik takımlar için "cross-functional team" terimi tercih edilir.
+      incorrect_example: We have an inter-discipline team.
+      correct_example: We have a cross-functional team.
+  register: business
+  topic_tags:
+    - agile
+    - team
+  related_ids:
+    - vocab.align
+    - vocab.collaborate
+  status: APPROVED
+  version: 1
+
+- id: vocab.discrepancy
+  headword: discrepancy
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /dɪˈskrep.ən.si/
+  audio_ref: null
+  definition_en: An unexpected difference or inconsistency between two things that should be the same.
+  meaning_tr: tutarsızlık, uyumsuzluk, çelişki, fark
+  collocations:
+    - text: notice a discrepancy
+      tr: bir tutarsızlık fark etmek
+    - text: significant discrepancy
+      tr: belirgin tutarsızlık
+  examples:
+    - en: The internal auditor identified a significant discrepancy between logged transactions and bank statements.
+      tr: İç denetçi, kayıt altına alınan işlemler ile banka ekstreleri arasında belirgin bir tutarsızlık tespit etti.
+      context: Financial Audit
+    - en: There is a discrepancy between the API documentation and the actual JSON response payload.
+      tr: API dokümantasyonu ile dönen gerçek JSON yanıt yükü arasında bir uyumsuzluk bulunmaktadır.
+      context: API Development
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Difference" genel bir farktır. "Discrepancy" ise aynı veya uyumlu olması gereken iki veri/kayıt
+        arasındaki şüpheli veya beklenmeyen tutarsızlıktır.
+      incorrect_example: There is a difference error between the invoices.
+      correct_example: There is a discrepancy between the invoices.
+  register: formal
+  topic_tags:
+    - audit
+    - tech
+  related_ids:
+    - vocab.benchmark
+    - vocab.scrutiny
+  status: APPROVED
+  version: 1
+
+- id: vocab.escalate
+  headword: escalate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈes.kə.leɪt/
+  audio_ref: null
+  definition_en: To increase rapidly in intensity, or to pass a problem or dispute to a higher authority for resolution.
+  meaning_tr: üst kademeye iletmek, tırmandırmak/tırmanmak
+  collocations:
+    - text: escalate an issue
+      tr: bir sorunu üst kademeye taşımak
+    - text: escalate to management
+      tr: yönetime intikal ettirmek
+  examples:
+    - en: If tier-two support cannot resolve the customer complaint, they must escalate the ticket to engineering.
+      tr: İkinci seviye destek müşteri şikayetini çözemezse, talep kaydını mühendislik ekibine iletmelidir.
+      context: Technical Support
+    - en: The dispute over API versioning escalated to the technical steering committee.
+      tr: API sürümleme konusundaki anlaşmazlık teknik yönlendirme komitesine kadar tırmandı.
+      context: Technical Governance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir meseleyi üst makama aktarırken "escalate to someone/higher authority" kullanılır.
+      incorrect_example: We will escalate this issue for the CTO.
+      correct_example: We will escalate this issue to the CTO.
+  register: business
+  topic_tags:
+    - management
+    - support
+  related_ids:
+    - vocab.resolve
+    - vocab.urgent
+  status: APPROVED
+  version: 1
+
+- id: vocab.feasibility
+  headword: feasibility
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˌfiː.zəˈbɪl.ə.ti/
+  audio_ref: null
+  definition_en: The state or degree of being easily or conveniently done; practical viability.
+  meaning_tr: yapılabilirlik, uygulanabilirlik, fizibilite
+  collocations:
+    - text: feasibility study
+      tr: fizibilite çalışması
+    - text: technical feasibility
+      tr: teknik uygulanabilirlik
+  examples:
+    - en: We conducted a technical feasibility study to evaluate on-device machine learning inference on tablets.
+      tr: Tabletlerde cihaz üstü makine öğrenimi çıkarımını değerlendirmek amacıyla teknik bir yapılabilirlik çalışması yürüttük.
+      context: R&D Evaluation
+    - en: The feasibility of migrating seventy microservices within a single quarter is questionable.
+      tr: Yetmiş mikro servisin tek bir çeyrekte taşınmasının uygulanabilirliği tartışmalıdır.
+      context: Project Estimation
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Feasibility" isim halidir ("feasibility study"). Sıfat hali "feasible"dır ("a feasible plan").
+        Türkçede "fizibilite" sıkça isim olarak kullanılır; İngilizce sıfat gerektiğinde "feasible" denmelidir.
+      incorrect_example: This approach is not feasibility.
+      correct_example: This approach is not feasible.
+  register: business
+  topic_tags:
+    - analysis
+    - strategy
+  related_ids:
+    - vocab.contingency
+    - vocab.viable
+  status: APPROVED
+  version: 1
+
+- id: vocab.framework
+  headword: framework
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈfreɪm.wɜːk/
+  audio_ref: null
+  definition_en: A basic structure underlying a system, concept, software application, or organization.
+  meaning_tr: çerçeve, çatı, kavramsal yapı
+  collocations:
+    - text: architectural framework
+      tr: mimari çerçeve
+    - text: regulatory framework
+      tr: yasal/düzenleyici çerçeve
+  examples:
+    - en: Our application uses Jetpack Compose as its modern declarative UI framework.
+      tr: Uygulamamız, modern bildirimsel kullanıcı arayüzü çatısı olarak Jetpack Compose kullanmaktadır.
+      context: Software Architecture
+    - en: The risk management framework outlines mandatory protocols for data encryption and auditing.
+      tr: Risk yönetim çerçevesi, veri şifreleme ve denetim için zorunlu protokolleri ana hatlarıyla belirler.
+      context: Enterprise Architecture
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Framework" hem yazılımda "çatı/kütüphane altyapısı" hem de kurumsal yönetimde "kural/süreç çerçevesi"
+        anlamında kullanılır.
+      incorrect_example: We built a new skeleton for the app.
+      correct_example: We adopted a new framework for the app.
+  register: general
+  topic_tags:
+    - architecture
+    - tech
+  related_ids:
+    - vocab.compliance
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: vocab.gap
+  headword: gap
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ɡæp/
+  audio_ref: null
+  definition_en: A break in continuity; a difference, disparity, or deficiency in knowledge, skills, or coverage.
+  meaning_tr: boşluk, açık, eksiklik, aralık
+  collocations:
+    - text: gap analysis
+      tr: açık/eksiklik analizi
+    - text: bridge the gap
+      tr: aradaki açığı kapatmak
+  examples:
+    - en: The competence assessment revealed a significant skills gap in real-time streaming technologies.
+      tr: Yetkinlik değerlendirmesi, gerçek zamanlı veri akışı teknolojilerinde belirgin bir beceri açığı ortaya koydu.
+      context: Talent Management
+    - en: Our immediate priority is to bridge the test coverage gap across our repository layers.
+      tr: Öncelikli hedefimiz, veri tabakalarımız genelindeki test kapsamı açığını kapatmaktır.
+      context: Code Quality
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Açığı kapatmak" kalıbı İngilizcede "bridge the gap" veya "close the gap" şeklindedir.
+        "Close the open" veya "shut the gap" kullanımı hatalıdır.
+      incorrect_example: We must shut the knowledge gap.
+      correct_example: We must bridge the knowledge gap.
+  register: general
+  topic_tags:
+    - analysis
+    - performance
+  related_ids:
+    - vocab.discrepancy
+    - vocab.bottleneck
+  status: APPROVED
+  version: 1
+
+- id: vocab.impact
+  headword: impact
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈɪm.pækt/
+  audio_ref: null
+  definition_en: The marked effect or influence that something has on a situation, person, or organization.
+  meaning_tr: etki, tesir; etkilemek
+  collocations:
+    - text: high impact
+      tr: yüksek etkili
+    - text: have an impact on
+      tr: üzerinde bir etkiye sahip olmak
+  examples:
+    - en: The reduction in mobile bundle size had a direct positive impact on user retention in emerging markets.
+      tr: Mobil paket boyutunun küçültülmesi, gelişmekte olan pazarlardaki kullanıcı bağlılığı üzerinde doğrudan olumlu bir etki yarattı.
+      context: Product Analytics
+    - en: Unplanned downtime impacts our customer satisfaction metrics and brand credibility.
+      tr: Planlanmamış kesintiler, müşteri memnuniyeti metriklerimizi ve marka güvenilirliğimizi etkiler.
+      context: SLA Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İsim olarak kullanıldığında "have an impact on something" (on edatı ile) kullanılır.
+        Fiil olarak kullanıldığında ise "on" EDATI ALMAZ ("This impacts our metrics", NOT "impacts on").
+      incorrect_example: This delay will impact on our launch date.
+      correct_example: This delay will impact our launch date.
+  register: business
+  topic_tags:
+    - strategy
+    - outcomes
+  related_ids:
+    - vocab.objective
+    - vocab.mitigate
+  status: APPROVED
+  version: 1
+
+- id: vocab.mitigate
+  headword: mitigate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈmɪt.ɪ.ɡeɪt/
+  audio_ref: null
+  definition_en: To make something bad, painful, or severe less severe, serious, or painful; to lessen risks.
+  meaning_tr: hafifletmek, azaltmak, riskleri minimize etmek
+  collocations:
+    - text: mitigate risk
+      tr: riski azaltmak
+    - text: mitigate impact
+      tr: etkiyi hafifletmek
+  examples:
+    - en: Implementing automated regression pipelines helps mitigate the risk of breaking critical legacy flows.
+      tr: Otomatik regresyon hatlarını uygulamak, kritik eski akışların bozulma riskini hafifletmeye yardımcı olur.
+      context: Risk Management
+    - en: The company established secondary server mirrors to mitigate potential distributed denial-of-service attacks.
+      tr: Şirket, olası dağıtık hizmet engelleme saldırılarını hafifletmek için ikincil sunucu yansımaları kurdu.
+      context: Cybersecurity
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türk öğreniciler riskleri azaltmak için genellikle "reduce the risk" kullanır. Kurumsal ve
+        yönetimsel bağlamda "mitigate the risk" çok daha prestijli ve beklenen beyaz yakalı kalıptır.
+      incorrect_example: We need to soft the risk.
+      correct_example: We need to mitigate the risk.
+  register: formal
+  topic_tags:
+    - risk
+    - operations
+  related_ids:
+    - vocab.contingency
+    - vocab.impact
+  status: APPROVED
+  version: 1
+
+- id: vocab.off-track
+  headword: off-track
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ˌɒfˈtræk/
+  audio_ref: null
+  definition_en: Continuing in a way that is not heading toward the intended goal, timeline, or outcome.
+  meaning_tr: rayından çıkmış, planlanan hedefin/takvimin gerisinde
+  collocations:
+    - text: go off-track
+      tr: rayından çıkmak, plandan sapmak
+    - text: get back on track
+      tr: tekrar rayına oturmak/toparlanmak
+  examples:
+    - en: The sprint went off-track when unexpected security vulnerabilities were discovered during code review.
+      tr: Kod incelemesi sırasında beklenmedik güvenlik açıkları keşfedildiğinde sprint plandan saptı.
+      context: Project Tracking
+    - en: Daily standup meetings help managers identify blocked engineers before milestones fall off-track.
+      tr: Günlük ayaküstü toplantılar, kilometre taşları hedeften sapmadan önce yöneticilerin engellenen mühendisleri tespit etmesine yardımcı olur.
+      context: Agile Tracking
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Zıt anlamlısı "on track"tir ("We are on track"). Plandan sapmayı ifade ederken "out of track" değil,
+        daima "off-track" kullanılır.
+      incorrect_example: The release is out of track.
+      correct_example: The release is off-track.
+  register: business
+  topic_tags:
+    - project
+    - timeline
+  related_ids:
+    - vocab.delay
+    - vocab.milestone
+  status: APPROVED
+  version: 1
+
+- id: vocab.optimize
+  headword: optimize
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈɒp.tɪ.maɪz/
+  audio_ref: null
+  definition_en: To make the best or most effective use of a situation, process, or system.
+  meaning_tr: eniyilemek, optimize etmek, en verimli hale getirmek
+  collocations:
+    - text: optimize performance
+      tr: performansı optimize etmek
+    - text: optimize resource allocation
+      tr: kaynak dağılımını optimize etmek
+  examples:
+    - en: The database administrator optimized the indexing strategy to handle higher query concurrency.
+      tr: Veritabanı yöneticisi, daha yüksek sorgu eşzamanlılığını karşılamak için indeksleme stratejisini optimize etti.
+      context: Database Tuning
+    - en: We are working to optimize battery consumption for long-running speech recognition sessions.
+      tr: Uzun süren konuşma tanıma oturumlarında pil tüketimini optimize etmek için çalışıyoruz.
+      context: Mobile Performance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Optimize" bir şeyi yalnızca "düzeltmek" (fix) değil, mevcut çalışan bir yapıyı "en üst düzey
+        verimliliğe ulaştırmak" anlamına gelir.
+      incorrect_example: We optimized the broken login screen.
+      correct_example: We fixed the broken login screen and optimized its loading time.
+  register: business
+  topic_tags:
+    - performance
+    - tech
+  related_ids:
+    - vocab.efficient
+    - vocab.leverage
+  status: APPROVED
+  version: 1
+
+- id: vocab.outsource
+  headword: outsource
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈaʊt.sɔːs/
+  audio_ref: null
+  definition_en: To obtain goods or services from an outside or foreign supplier, especially in place of an internal source.
+  meaning_tr: dış kaynak kullanmak, fason yaptırmak
+  collocations:
+    - text: outsource development
+      tr: geliştirmeyi dış kaynağa yaptırmak
+    - text: outsource customer service
+      tr: müşteri hizmetlerini dış kaynakla yürütmek
+  examples:
+    - en: Rather than building an in-house translation engine, the startup decided to outsource TTS services.
+      tr: Girişim, şirket içi bir çeviri motoru geliştirmek yerine metinden sese servislerini dış kaynaktan almaya karar verdi.
+      context: Tech Strategy
+    - en: Outsourcing routine customer support allowed the core team to focus entirely on core product engineering.
+      tr: Rutin müşteri desteğinin dış kaynağa verilmesi, çekirdek ekibin tamamen ana ürün mühendisliğine odaklanmasını sağladı.
+      context: Operations Strategy
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir işi bir firmaya dış kaynak olarak verirken "outsource something to someone" kullanılır.
+      incorrect_example: We outsourced development with an agency.
+      correct_example: We outsourced development to an agency.
+  register: business
+  topic_tags:
+    - operations
+    - vendor
+  related_ids:
+    - vocab.delegate
+    - vocab.leverage
+  status: APPROVED
+  version: 1
+
+- id: vocab.perspective
+  headword: perspective
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /pəˈspek.tɪv/
+  audio_ref: null
+  definition_en: A particular attitude toward or way of regarding something; a point of view.
+  meaning_tr: bakış açısı, perspektif, görüş
+  collocations:
+    - text: from my perspective
+      tr: benim bakış açımdan
+    - text: broader perspective
+      tr: daha geniş bir bakış açısı
+  examples:
+    - en: From an engineering perspective, migrating to Compose simplifies UI state management immensely.
+      tr: Mühendislik açısından bakıldığında, Compose'a geçiş arayüz durum yönetimini muazzam ölçüde basitleştirir.
+      context: Tech Strategy
+    - en: Inviting external UX auditors provided fresh perspectives on our tablet navigation design.
+      tr: Şirket dışı kullanıcı deneyimi denetçilerini davet etmek, tablet navigasyon tasarımımıza taze bakış açıları kazandırdı.
+      context: Design Critique
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Benim açımdan / bana göre" derken İngilizcede "from my perspective" kalıbı kullanılır.
+        "According to me" kullanımı hatalı ve gayri tabiidir ("according to" sadece üçüncü şahıslar veya raporlar için geçerlidir).
+      incorrect_example: According to me, we should rewrite this screen.
+      correct_example: From my perspective, we should rewrite this screen.
+  register: general
+  topic_tags:
+    - discussion
+    - meetings
+  related_ids:
+    - vocab.objective
+    - vocab.clarify
+  status: APPROVED
+  version: 1
+
+- id: vocab.roadmap
+  headword: roadmap
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈrəʊd.mæp/
+  audio_ref: null
+  definition_en: A detailed strategic plan or visual guide that maps out the future development of a product or organization.
+  meaning_tr: yol haritası, stratejik gelişim planı
+  collocations:
+    - text: product roadmap
+      tr: ürün yol haritası
+    - text: technical roadmap
+      tr: teknik yol haritası
+  examples:
+    - en: The VP of Product presented the multi-quarter roadmap during the executive all-hands meeting.
+      tr: Ürün Başkan Yardımcısı, yöneticilerin katıldığı şirket toplantısında çok çeyrekli yol haritasını sundu.
+      context: Company All-Hands
+    - en: Our mobile roadmap prioritizes offline-first functionality before cloud synchronization features.
+      tr: Mobil yol haritamız, bulut senkronizasyonu özelliklerinden önce çevrimdışı öncelikli işlevlere öncelik verir.
+      context: Product Strategy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Roadmap" kurumsal dünyada sadece somut bir harita değil, "ürün veya projenin zaman içindeki stratejik
+        gelişim planı" anlamına gelir.
+      incorrect_example: We looked at the road plan for this year.
+      correct_example: We reviewed the roadmap for this year.
+  register: business
+  topic_tags:
+    - product
+    - strategy
+  related_ids:
+    - vocab.milestone
+    - vocab.align
+  status: APPROVED
+  version: 1
+
+- id: vocab.scope
+  headword: scope
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /skəʊp/
+  audio_ref: null
+  definition_en: The extent of the area or subject matter that something deals with or to which it is relevant; the boundary of work in a project.
+  meaning_tr: kapsam, faaliyet alanı
+  collocations:
+    - text: project scope
+      tr: proje kapsamı
+    - text: out of scope
+      tr: kapsam dışı
+    - text: scope creep
+      tr: kontrolsüz kapsam genişlemesi
+  examples:
+    - en: Real-time speaking coach features are strictly out of scope for the foundation phase of our application.
+      tr: Gerçek zamanlı konuşma koçu özellikleri, uygulamamızın temel fazı için kesinlikle kapsam dışıdır.
+      context: Project Governance
+    - en: Uncontrolled scope creep caused the launch date to slip by four weeks.
+      tr: Kontrolsüz kapsam genişlemesi, lansman tarihinin dört hafta kaymasına neden oldu.
+      context: Agile Delivery
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Kapsam dahilinde" demek için "in scope", "kapsam dışında" demek için "out of scope" kullanılır.
+      incorrect_example: This task is outside the scope.
+      correct_example: This task is out of scope.
+  register: business
+  topic_tags:
+    - project
+    - delivery
+  related_ids:
+    - vocab.deliverable
+    - vocab.clarify
+  status: APPROVED
+  version: 1
+
+- id: vocab.streamline
+  headword: streamline
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈstriːm.laɪn/
+  audio_ref: null
+  definition_en: To make a system, process, or organization more efficient and effective by employing faster or simpler working methods.
+  meaning_tr: süreçleri sadeleştirmek, akıcılaştırmak, bürokrasiyi azaltmak
+  collocations:
+    - text: streamline processes
+      tr: süreçleri sadeleştirmek
+    - text: streamline operations
+      tr: operasyonları akıcı hale getirmek
+  examples:
+    - en: The new CI/CD pipeline streamlined the release approval process from two days to twenty minutes.
+      tr: Yeni CI/CD hattı, sürüm onay sürecini iki günden yirmi dakikaya indirerek sadeleştirdi.
+      context: DevOps Automation
+    - en: We are working to streamline customer onboarding by removing redundant identification forms.
+      tr: Gereksiz kimlik doğrulama formlarını kaldırarak müşteri kayıt sürecini sadeleştirmek için çalışıyoruz.
+      context: Growth Operations
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Sadeleştirmek" için genellikle "simplify" kullanılır. Ancak iş dünyasında bir süreci
+        "hem sadeleştirip hem de akıcı ve verimli hale getirmek" kastedildiğinde "streamline" vazgeçilmezdir.
+      incorrect_example: We simplified the pipeline to work faster.
+      correct_example: We streamlined the pipeline to improve deployment speed.
+  register: business
+  topic_tags:
+    - efficiency
+    - operations
+  related_ids:
+    - vocab.optimize
+    - vocab.bottleneck
+  status: APPROVED
+  version: 1
+
+- id: vocab.sustainable
+  headword: sustainable
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /səˈsteɪ.nə.bəl/
+  audio_ref: null
+  definition_en: Able to be maintained at a certain rate or level without exhausting resources or causing damage.
+  meaning_tr: sürdürülebilir, uzun vadeli devam ettirilebilir
+  collocations:
+    - text: sustainable growth
+      tr: sürdürülebilir büyüme
+    - text: sustainable business model
+      tr: sürdürülebilir iş modeli
+  examples:
+    - en: Rapid customer acquisition is pointless unless accompanied by sustainable retention metrics.
+      tr: Hızlı müşteri kazanımı, sürdürülebilir bağlılık metrikleriyle desteklenmedikçe anlamsızdır.
+      context: Growth Strategy
+    - en: Working eighty-hour weeks is not a sustainable development practice for engineering teams.
+      tr: Haftada seksen saat çalışmak, mühendislik ekipleri için sürdürülebilir bir geliştirme pratiği değildir.
+      context: Team Health
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Sustainable" hem çevre için hem de iş modelleri ve çalışma temposunun uzun vadeli
+        devam ettirilebilirliği için kullanılır.
+      incorrect_example: This pace is not maintain.
+      correct_example: This pace is not sustainable.
+  register: general
+  topic_tags:
+    - strategy
+    - business
+  related_ids:
+    - vocab.viable
+    - vocab.benchmark
+  status: APPROVED
+  version: 1
+
+- id: vocab.synergy
+  headword: synergy
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈsɪn.ə.dʒi/
+  audio_ref: null
+  definition_en: The interaction or cooperation of two or more organizations, substances, or agents to produce a combined effect greater than the sum of their separate effects.
+  meaning_tr: sinerji, ortak güç, birleşik kuvvet
+  collocations:
+    - text: create synergies
+      tr: sinerji yaratmak
+    - text: operational synergy
+      tr: operasyonel sinerji
+  examples:
+    - en: The merger created powerful synergies between our mobile payment system and their merchant network.
+      tr: Şirket birleşmesi, mobil ödeme sistemimiz ile onların üye iş yeri ağı arasında güçlü sinerjiler yarattı.
+      context: Corporate M&A
+    - en: Close collaboration between designers and frontend engineers generates natural design synergies.
+      tr: Tasarımcılar ile ön uç mühendisleri arasındaki yakın iş birliği, doğal tasarım sinerjileri üretir.
+      context: Team Dynamics
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Sinerji üretmek için İngilizcede "create synergies" veya "achieve synergy" kullanılır.
+      incorrect_example: We must do synergy between teams.
+      correct_example: We must create synergies between teams.
+  register: business
+  topic_tags:
+    - collaboration
+    - corporate
+  related_ids:
+    - vocab.collaborate
+    - vocab.leverage
+  status: APPROVED
+  version: 1
+
+- id: vocab.trade-off
+  headword: trade-off
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈtreɪd.ɒf/
+  audio_ref: null
+  definition_en: A balance achieved between two desirable but incompatible features; a compromise.
+  meaning_tr: ödünleşim, karşılıklı dengeleme, takas
+  collocations:
+    - text: necessary trade-off
+      tr: zorunlu ödünleşim
+    - text: weigh the trade-offs
+      tr: getirileri ve götürüleri tartmak
+  examples:
+    - en: In software architecture, there is always a trade-off between absolute consistency and high availability.
+      tr: Yazılım mimarisinde mutlak tutarlılık ile yüksek erişilebilirlik arasında daima bir ödünleşim vardır.
+      context: Distributed Systems
+    - en: Choosing local offline speech processing introduces a storage trade-off on mobile devices.
+      tr: Yerel çevrimdışı konuşma işlemeyi seçmek, mobil cihazlarda bir depolama ödünleşimi getirir.
+      context: Architectural Decision
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "bir şeyden feragat etmek / iki avantaj arasında seçim yapmak" durumunu tek kelimeyle
+        ifade etmek zordur. İngilizcede teknik ve stratejik kararlarda "trade-off" en kilit kavramdır.
+      incorrect_example: We made a balance compromise between speed and cost.
+      correct_example: We made a trade-off between speed and cost.
+  register: business
+  topic_tags:
+    - architecture
+    - decision-making
+  related_ids:
+    - vocab.perspective
+    - vocab.optimize
+  status: APPROVED
+  version: 1
+
+- id: vocab.enhance
+  headword: enhance
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ɪnˈhɑːns/
+  audio_ref: null
+  definition_en: To intensify, increase, or further improve the quality, value, or extent of something.
+  meaning_tr: geliştirmek, artırmak, niteliğini yükseltmek
+  collocations:
+    - text: enhance performance
+      tr: performansı artırmak
+    - text: enhance user experience
+      tr: kullanıcı deneyimini iyileştirmek
+    - text: enhance security
+      tr: güvenliği güçlendirmek
+  examples:
+    - en: Implementing automated caching mechanisms will enhance system responsiveness during peak traffic.
+      tr: Otomatik önbellekleme mekanizmalarının uygulanması, yoğun trafik sırasında sistemin yanıt hızını artıracaktır.
+      context: System Architecture
+    - en: Modern collaboration tools can enhance productivity, but they also require clear team boundaries.
+      tr: Modern iş birliği araçları üretkenliği artırabilir ancak aynı zamanda net ekip sınırları da gerektirir.
+      context: Digital Workplace
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçe "geliştirmek" eylemi için en sık "develop" veya "improve" tercih edilir. "Enhance", var olan niteliği,
+        değeri veya performansı bir üst seviyeye taşımak (zenginleştirmek / güçlendirmek) anlamına gelir. Sıfırdan bir ürün geliştirmek
+        için "enhance software" denmez ("develop software" denir); ancak mevcut yazılımı daha yetenekli ve hızlı kılmak için "enhance" idealdir.
+      incorrect_example: We need to develop the performance of the server.
+      correct_example: We need to enhance the performance of the server.
+  register: business
+  topic_tags:
+    - technology
+    - productivity
+    - optimization
+  related_ids:
+    - vocab.optimize
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: vocab.isolate
+  headword: isolate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈaɪ.sə.leɪt/
+  audio_ref: null
+  definition_en: To separate a person, component, or problem from others so that it stands alone.
+  meaning_tr: yalıtmak, izole etmek, ayrıştırmak, tek başına bırakmak
+  collocations:
+    - text: isolate the root cause
+      tr: temel kök nedeni ayrıştırmak / izole etmek
+    - text: socially isolate
+      tr: sosyal olarak yalnızlaştırmak / izole etmek
+    - text: isolate a bug
+      tr: bir yazılım hatasını izole etmek
+  examples:
+    - en: Diagnostic monitoring allowed our incident response engineers to isolate the database failure within minutes.
+      tr: Tanılama izlemesi, olay müdahale mühendislerimizin veritabanı arızasını dakikalar içinde izole etmesini sağladı.
+      context: Incident Management
+    - en: Sociologists warn that excessive dependence on virtual interactions can inadvertently isolate remote workers.
+      tr: Sosyologlar, sanal etkileşimlere aşırı bağımlılığın uzaktan çalışanları istemeden de olsa sosyal olarak yalnızlaştırabileceği konusunda uyarıyor.
+      context: Societal Impact
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Isolate" fiili bir şeyden veya birilerinden ayırmak anlamında kullanıldığında "from" edatını alır ("isolate X from Y").
+        Türkçe düşünerek "to" veya "with" kullanmak yaygın bir transfer hatasıdır. Ayrıca teknik dilde "problemi izole etmek"
+        ifadesi tam olarak "isolate the issue/cause" şeklinde ifade edilir.
+      incorrect_example: We must isolate the failing service with other modules.
+      correct_example: We must isolate the failing service from other modules.
+  register: academic
+  topic_tags:
+    - technology
+    - engineering
+    - society
+  related_ids:
+    - vocab.mitigate
+    - vocab.resolve
+  status: APPROVED
+  version: 1
+
+- id: vocab.significant
+  headword: significant
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /sɪɡˈnɪf.ɪ.kənt/
+  audio_ref: null
+  definition_en: Sufficiently great, noticeable, or important to have an effect or be worthy of attention.
+  meaning_tr: kayda değer, önemli, belirgin, anlamlı
+  collocations:
+    - text: significant impact
+      tr: kayda değer / önemli etki
+    - text: significant progress
+      tr: belirgin ilerleme
+    - text: statistically significant
+      tr: istatistiksel olarak anlamlı
+  examples:
+    - en: The introduction of microservices yielded a significant reduction in deployment latency.
+      tr: Mikro servislerin devreye alınması, dağıtım gecikmesinde kayda değer bir düşüş sağladı.
+      context: Technical Metrics
+    - en: While automation brings significant productivity gains, it also introduces operational complexity.
+      tr: Otomasyon önemli üretkenlik kazanımları getirse de aynı zamanda operasyonel karmaşıklık da doğurur.
+      context: Technology Strategy
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        Türk öğreniciler kurumsal ve akademik metinlerde "önemli" anlamında neredeyse daima "very important" ifadesini kullanırlar.
+        IELTS ve beyaz yaka iş dünyasında "very important" yerine "significant" veya "substantial" kullanmak dil zenginliğini ve resmi tonu belirgin şekilde yükseltir.
+      incorrect_example: The new framework had a very big and important effect on our speed.
+      correct_example: The new framework had a significant impact on our speed.
+  register: academic
+  topic_tags:
+    - analysis
+    - metrics
+    - technology
+  related_ids:
+    - vocab.impact
+    - vocab.optimize
+  status: APPROVED
+  version: 1
+

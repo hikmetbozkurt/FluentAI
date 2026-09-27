@@ -1,0 +1,104 @@
+- id: listening.b1.daily-standup
+  title: Morning Standup and Blocker Resolution
+  cefr_level: B1
+  category: engineering_meeting
+  scenario_context: A morning virtual standup meeting between an Android engineer and a scrum master discussing sprint deliverables,
+    backend API dependencies, and resolving pull request review bottlenecks.
+  speakers:
+  - id: selin
+    name: Selin
+    role: Android Software Engineer
+    accent: Turkish
+  - id: marcus
+    name: Marcus
+    role: Scrum Master
+    accent: British
+  audio_ref: audio/listening/b1_daily_standup.mp3
+  duration_seconds: 50
+  transcript_items:
+  - index: 1
+    speaker_id: marcus
+    start_ms: 0
+    end_ms: 8728
+    text_en: Good morning everyone. Let's begin our standup. Selin, how is the profile authentication flow progressing?
+    text_tr: Herkese günaydın. Standup toplantımıza başlayalım. Selin, profil kimlik doğrulama akışı nasıl ilerliyor?
+  - index: 2
+    speaker_id: selin
+    start_ms: 9128
+    end_ms: 16386
+    text_en: Morning Marcus. Yesterday I finalized the local Room database encryption and wired the view models.
+    text_tr: Günaydın Marcus. Dün yerel Room veritabanı şifrelemesini tamamladım ve view model bağlantılarını kurdum.
+  - index: 3
+    speaker_id: marcus
+    start_ms: 16786
+    end_ms: 22490
+    text_en: Excellent work. Do we have any blockers that might threaten our sprint deliverable?
+    text_tr: Harika çalışma. Sprint teslimatımızı tehlikeye atabilecek herhangi bir engelimiz (blocker) var mı?
+  - index: 4
+    speaker_id: selin
+    start_ms: 22890
+    end_ms: 34467
+    text_en: Yes, I am currently waiting for the backend team to deploy the new OAuth refresh endpoint. Without that, I cannot
+      run end-to-end integration tests before tomorrow's deadline.
+    text_tr: Evet, şu anda backend ekibinin yeni OAuth yenileme uç noktasını yayına almasını bekliyorum. O olmadan, yarınki
+      teslim tarihinden önce uçtan uca entegrasyon testlerini çalıştıramam.
+  - index: 5
+    speaker_id: marcus
+    start_ms: 34867
+    end_ms: 41685
+    text_en: Understood. I will collaborate with the backend lead right after this call to expedite that deployment.
+    text_tr: Anlaşıldı. Bu görüşmeden hemen sonra o yayını hızlandırmak için backend lideriyle iş birliği yapacağım.
+  - index: 6
+    speaker_id: selin
+    start_ms: 42085
+    end_ms: 48859
+    text_en: Perfect, thank you Marcus. Once it is deployed, I will wrap up the pull request.
+    text_tr: Mükemmel, teşekkürler Marcus. Yayına alındığında çekme isteğini (PR) toparlayıp kapatacağım.
+  key_vocabulary:
+  - word: deliverable
+    vocab_id: vocab.deliverable
+    context_note_tr: Sprint kapsamında teslim edilmesi taahhüt edilen somut ürün veya özellik.
+  - word: deadline
+    vocab_id: vocab.deadline
+    context_note_tr: İşin bitirilmesi gereken kesin son teslim tarihi.
+  - word: collaborate
+    vocab_id: vocab.collaborate
+    context_note_tr: Bir engeli aşmak için başka bir ekiple ortaklaşa çalışmak.
+  comprehension_questions:
+  - id: q_standup_01
+    question_en: What is the main blocker currently impeding Selin's progress?
+    question_tr_hint: Selin'in ilerlemesini engelleyen ana sorunu tespit ediniz.
+    options:
+    - A failing laptop operating system update
+    - Lack of design mockups from the UI team
+    - Waiting for the backend team to deploy the OAuth refresh endpoint
+    - Broken internet connection in the home office
+    correct_answer: Waiting for the backend team to deploy the OAuth refresh endpoint
+    explanation_en: Selin explicitly states that she is waiting for the backend team to deploy the OAuth refresh endpoint
+      in order to run integration tests before the deadline.
+    explanation_tr: Selin teslim tarihinden önce entegrasyon testlerini koşabilmek için backend ekibinin OAuth yenileme uç
+      noktasını yayına almasını beklediğini açıkça belirtmiştir.
+  - id: q_standup_02
+    question_en: What action does Marcus commit to taking immediately after the standup?
+    question_tr_hint: Marcus toplantı sonrasında hangi adımı atacağını taahhüt etmektedir?
+    options:
+    - Collaborating with the backend lead to expedite deployment
+    - Canceling the upcoming sprint retrospective
+    - Rewriting the Android database code himself
+    - Postponing the release by two months
+    correct_answer: Collaborating with the backend lead to expedite deployment
+    explanation_en: Marcus promises to collaborate with the backend lead directly after the call to expedite the endpoint
+      deployment.
+    explanation_tr: Marcus, uç nokta yayınını hızlandırmak için görüşmenin hemen ardından backend lideriyle iletişime geçip
+      iş birliği yapacağını söylemektedir.
+  topic_tags:
+  - agile
+  - standup
+  - engineering
+  - b1-intermediate
+  related_ids:
+  - vocab.deliverable
+  - vocab.deadline
+  - vocab.collaborate
+  status: APPROVED
+  version: 1

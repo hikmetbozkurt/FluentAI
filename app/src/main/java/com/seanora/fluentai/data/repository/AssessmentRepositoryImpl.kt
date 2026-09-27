@@ -1,0 +1,270 @@
+package com.seanora.fluentai.data.repository
+
+import com.seanora.fluentai.core.model.AssessmentDomain
+import com.seanora.fluentai.core.model.PlacementProbe
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
+import javax.inject.Inject
+import javax.inject.Singleton
+
+@Singleton
+class AssessmentRepositoryImpl @Inject constructor() : AssessmentRepository {
+
+    private val probes = listOf(
+        // Vocabulary
+        PlacementProbe(
+            id = "placement.vocab.a2.001",
+            domain = "vocabulary",
+            cefrLevel = "A2",
+            promptEn = "We need to finish this report before Friday because the client set a strict ______.",
+            options = listOf("receipt", "appointment", "deadline", "holiday"),
+            correctOptionIndex = 2,
+            explanationEn = "A 'deadline' is the latest time or date by which something should be completed.",
+            turkishNote = "Son teslim tarihi anlamında 'deadline' kullanılır.",
+            trapType = "workplace_basic"
+        ),
+        PlacementProbe(
+            id = "placement.vocab.b1.001",
+            domain = "vocabulary",
+            cefrLevel = "B1",
+            promptEn = "He is a very ______ engineer; you can always count on him to deliver quality work.",
+            options = listOf("hesitant", "reliable", "fluent", "curious"),
+            correctOptionIndex = 1,
+            explanationEn = "'Reliable' means consistently good in quality or performance; trustworthy.",
+            turkishNote = "Güvenilir, itimat edilir anlamında 'reliable' kullanılır.",
+            trapType = "collocation"
+        ),
+        PlacementProbe(
+            id = "placement.vocab.b2.001",
+            domain = "vocabulary",
+            cefrLevel = "B2",
+            promptEn = "Before we proceed with the project, the board asked us to conduct a ______ study to see if it is workable.",
+            options = listOf("fluctuation", "fragility", "friction", "feasibility"),
+            correctOptionIndex = 3,
+            explanationEn = "A 'feasibility study' investigates whether a project is practically and financially achievable.",
+            turkishNote = "Yapılabilirlik / fizibilite araştırması için 'feasibility study' kullanılır.",
+            trapType = "business_collocation"
+        ),
+        PlacementProbe(
+            id = "placement.vocab.c1.001",
+            domain = "vocabulary",
+            cefrLevel = "C1",
+            promptEn = "The auditor found several notable ______ between the reported quarterly figures and actual bank statements.",
+            options = listOf("discrepancies", "distractions", "decorations", "deliberations"),
+            correctOptionIndex = 0,
+            explanationEn = "A 'discrepancy' is an illogical or unexpected difference, especially between two sets of figures or accounts.",
+            turkishNote = "İki veri/hesap arasındaki tutarsızlık ve uyuşmazlık için 'discrepancy' kullanılır.",
+            trapType = "register_precision"
+        ),
+        PlacementProbe(
+            id = "placement.vocab.c2.001",
+            domain = "vocabulary",
+            cefrLevel = "C2",
+            promptEn = "His inspection of the security logs was purely ______; he barely glanced at the critical incident alerts.",
+            options = listOf("prolific", "perspicacious", "perfunctory", "poignant"),
+            correctOptionIndex = 2,
+            explanationEn = "'Perfunctory' describes an action carried out with minimal effort, care, or reflection.",
+            turkishNote = "Göstermelik, baştan savma yapılan eylemler için 'perfunctory' kullanılır.",
+            trapType = "advanced_nuance"
+        ),
+
+        // Grammar
+        PlacementProbe(
+            id = "placement.grammar.a2.001",
+            domain = "grammar",
+            cefrLevel = "A2",
+            promptEn = "Where ______ yesterday afternoon when the server went down?",
+            options = listOf("are you", "were you", "have you been", "you were"),
+            correctOptionIndex = 1,
+            explanationEn = "Past Simple question with 'be' in the past: 'Where were you yesterday?'",
+            turkishNote = "Dün için geçmiş zaman soru yapısı 'were you' gerektirir.",
+            trapType = "tense_form"
+        ),
+        PlacementProbe(
+            id = "placement.grammar.b1.001",
+            domain = "grammar",
+            cefrLevel = "B1",
+            promptEn = "I ______ at this tech company for three years, and I still enjoy the challenges.",
+            options = listOf("am working", "worked", "work", "have worked"),
+            correctOptionIndex = 3,
+            explanationEn = "Present Perfect connects an action starting in the past with ongoing relevance: 'for three years'.",
+            turkishNote = "Geçmişte başlayıp devam eden durumlar için Present Perfect (have worked) kullanılır. Türkçe düşünerek 'am working' denmemelidir.",
+            trapType = "aspect_confusion"
+        ),
+        PlacementProbe(
+            id = "placement.grammar.b2.001",
+            domain = "grammar",
+            cefrLevel = "B2",
+            promptEn = "If the product team ______ the redesign earlier, we wouldn't be facing this release delay today.",
+            options = listOf("had finished", "finished", "would finish", "have finished"),
+            correctOptionIndex = 0,
+            explanationEn = "Mixed conditional: Past condition ('If they had finished') having a present consequence ('we wouldn't be facing').",
+            turkishNote = "Geçmişteki şartın günümüzdeki sonucu için mixed conditional ('had finished') kullanılır.",
+            trapType = "mixed_conditionals"
+        ),
+        PlacementProbe(
+            id = "placement.grammar.c1.001",
+            domain = "grammar",
+            cefrLevel = "C1",
+            promptEn = "Rarely ______ such rapid market adoption for an enterprise SaaS product in its first quarter.",
+            options = listOf("we have witnessed", "we witnessed", "have we witnessed", "did we witnessed"),
+            correctOptionIndex = 2,
+            explanationEn = "Negative adverb 'Rarely' at the beginning of a clause triggers subject-auxiliary inversion.",
+            turkishNote = "Olumsuz zarflarla (Rarely, Seldom, Scarcely) başlayan cümlelerde devrik yapı (inversion) kullanılır.",
+            trapType = "negative_inversion"
+        ),
+        PlacementProbe(
+            id = "placement.grammar.c2.001",
+            domain = "grammar",
+            cefrLevel = "C2",
+            promptEn = "The executive committee insisted that the lead architect ______ present at the risk assessment summit.",
+            options = listOf("is", "be", "was", "would be"),
+            correctOptionIndex = 1,
+            explanationEn = "Mandative subjunctive after verbs of insistence/recommendation uses the bare base form ('be').",
+            turkishNote = "Resmi kurumsal dilde talep/şart bildiren fiillerden (insist, demand) sonra mandative subjunctive (yalın fiil 'be') kullanılır.",
+            trapType = "subjunctive_mood"
+        ),
+
+        // Reading
+        PlacementProbe(
+            id = "placement.reading.a2.001",
+            domain = "reading",
+            cefrLevel = "A2",
+            promptContext = "Notice: The cafeteria is closed for maintenance until 2:00 PM. Hot drinks are available in the 3rd floor lounge.",
+            promptEn = "According to the notice, what can employees get before 2:00 PM?",
+            options = listOf(
+                "A full lunch in the cafeteria",
+                "Maintenance supplies",
+                "Cold sandwiches",
+                "Hot drinks on the 3rd floor"
+            ),
+            correctOptionIndex = 3,
+            explanationEn = "The text directly states that hot drinks are available in the 3rd floor lounge while the cafeteria is closed.",
+            turkishNote = "Duyuruda açıkça 3. katta sıcak içeceklerin bulunduğu belirtilmektedir.",
+            trapType = "reading_detail"
+        ),
+        PlacementProbe(
+            id = "placement.reading.b1.001",
+            domain = "reading",
+            cefrLevel = "B1",
+            promptContext = "Sprint Update: Although the backend migration met all performance benchmarks, the mobile team was held up by legacy API integrations. As a result, end-to-end testing is deferred to Sprint 15.",
+            promptEn = "Why was end-to-end testing postponed?",
+            options = listOf(
+                "The mobile team faced legacy API delays",
+                "The backend migration failed benchmarks",
+                "The sprint was shortened by management",
+                "No mobile developers were available"
+            ),
+            correctOptionIndex = 0,
+            explanationEn = "The passage notes that the mobile team was delayed by legacy API integrations, resulting in the deferral.",
+            turkishNote = "Eski API entegrasyonu kaynaklı gecikme testin ötelenmesine yol açmıştır.",
+            trapType = "reading_cause_effect"
+        ),
+        PlacementProbe(
+            id = "placement.reading.b2.001",
+            domain = "reading",
+            cefrLevel = "B2",
+            promptContext = "Platform engineering teams often struggle with the paradox of developer autonomy. Granting total autonomy frequently generates fragmented tooling stacks, whereas imposing rigid standardizations stifles velocity. High-performing organizations reconcile this by offering 'paved roads'—curated, supported golden paths that teams voluntarily adopt.",
+            promptEn = "What is the primary function of a 'paved road' in this context?",
+            options = listOf(
+                "To mandate strict, unalterable programming languages across all squads",
+                "To provide a well-supported default path that balances freedom and standardization",
+                "To eliminate the need for dedicated platform engineering staff",
+                "To force squads into manual infrastructure provisioning"
+            ),
+            correctOptionIndex = 1,
+            explanationEn = "Paved roads are supported golden paths that squads voluntarily adopt, solving the autonomy vs standardization tension.",
+            turkishNote = "Metinde 'paved roads' teriminin özerklik ile standartlaşmayı dengeleyen destekli kılavuz yol olduğu açıklanmaktadır.",
+            trapType = "concept_inference"
+        ),
+        PlacementProbe(
+            id = "placement.reading.c1.001",
+            domain = "reading",
+            cefrLevel = "C1",
+            promptContext = "While proponents of rapid vertical integration praise immediate supply-chain resilience, they frequently underestimate the debilitating impact on capital agility. By tying substantial liquidity into upstream facilities, the enterprise renders itself vulnerable to technological obsolescence when disruptive modular competitors enter the periphery.",
+            promptEn = "The author's tone toward rapid vertical integration is best characterized as:",
+            options = listOf(
+                "Enthusiastically supportive of its supply-chain benefits",
+                "Ambivalent about both engineering and consumer benefits",
+                "Critical of its unexamined capital rigidity and vulnerability to disruption",
+                "Dismissive of technological innovation in modular markets"
+            ),
+            correctOptionIndex = 2,
+            explanationEn = "The author warns against the 'debilitating impact on capital agility' and vulnerability to disruptive competitors.",
+            turkishNote = "Yazar sermaye esnekliğinin kaybolması ve yıkıcı rakiplere karşı kırılganlık yaratması nedeniyle temkinli ve eleştireldir.",
+            trapType = "author_stance"
+        ),
+
+        // Listening
+        PlacementProbe(
+            id = "placement.listening.a2.001",
+            domain = "listening",
+            cefrLevel = "A2",
+            promptContext = "Speaker A: 'Can we reschedule our sync from 10:00 to 11:30?'\nSpeaker B: 'I have a client call at 11:30. How about 2:00 PM after lunch?'\nSpeaker A: 'Perfect, let's lock in 2:00 PM.'",
+            promptEn = "What time did the speakers agree to meet?",
+            options = listOf("10:00 AM", "2:00 PM", "11:30 AM", "1:00 PM"),
+            correctOptionIndex = 1,
+            explanationEn = "Both speakers agreed to 'lock in 2:00 PM after lunch'.",
+            turkishNote = "İki konuşmacı en son öğleden sonra 14:00'te uzlaşmıştır.",
+            trapType = "time_confirmation"
+        ),
+        PlacementProbe(
+            id = "placement.listening.b1.001",
+            domain = "listening",
+            cefrLevel = "B1",
+            promptContext = "Product Manager: 'Our onboarding completion rate dropped by 8% this week.'\nUX Lead: 'I inspected the funnel metrics; users are dropping off at the two-factor authentication step, not the tutorial.'",
+            promptEn = "What is the primary cause of the onboarding drop-off?",
+            options = listOf(
+                "The onboarding tutorial is too lengthy",
+                "Server downtime during registration",
+                "Misleading advertisement copy",
+                "Friction at the two-factor authentication step"
+            ),
+            correctOptionIndex = 3,
+            explanationEn = "The UX Lead specifically identifies drop-offs at the 2FA step.",
+            turkishNote = "Kullanıcıların iki aşamalı doğrulama (2FA) adımında takıldığı belirtilmektedir.",
+            trapType = "factual_comprehension"
+        ),
+        PlacementProbe(
+            id = "placement.listening.b2.001",
+            domain = "listening",
+            cefrLevel = "B2",
+            promptContext = "Engineering Director: 'I appreciate the ambition of rebuilding the search pipeline in Rust, but our enterprise contract SLA renewals are in six weeks. We cannot afford an untested rewrite right now.'\nTech Lead: 'Understood. We'll focus exclusively on optimizing the query cache within the existing codebase.'",
+            promptEn = "Why did the Engineering Director reject the Rust rewrite?",
+            options = listOf(
+                "The team lacks Rust programming expertise",
+                "The existing codebase has zero performance bottlenecks",
+                "SLA renewals are approaching and risk must be minimized",
+                "The client demanded an immediate front-end overhaul"
+            ),
+            correctOptionIndex = 2,
+            explanationEn = "The Director emphasizes that upcoming contract SLA renewals in six weeks preclude taking risks on untested rewrites.",
+            turkishNote = "Yönetici 6 hafta sonraki SLA yenilemeleri nedeniyle riski minimize etmek için yeniden yazımı reddetmiştir.",
+            trapType = "reasoning_inference"
+        ),
+        PlacementProbe(
+            id = "placement.listening.c1.001",
+            domain = "listening",
+            cefrLevel = "C1",
+            promptContext = "VP of Strategy: 'I wouldn't go so far as to call the European expansion a misstep, but our customer acquisition costs have certainly outstripped our conservative models by an order of magnitude.'\nFinance Director: 'Precisely. Unless unit economics normalize by Q3, capital allocation will need to be drastically reined in.'",
+            promptEn = "What is the VP of Strategy implying through the phrase 'I wouldn't go so far as to call it a misstep'?",
+            options = listOf(
+                "A diplomatic concession that the initiative is facing severe performance headwinds",
+                "An unqualified endorsement of the European expansion's profitability",
+                "A direct accusation that the finance team miscalculated unit costs",
+                "Complete indifference regarding customer acquisition costs"
+            ),
+            correctOptionIndex = 0,
+            explanationEn = "The VP uses polite corporate understatement ('I wouldn't go so far as...') to diplomatically acknowledge that CAC has severely exceeded projections.",
+            turkishNote = "Kurumsal diplomatik dilde understatement kullanımı: Bir başarısızlığı doğrudan kabul etmek yerine 'hatalı adım demek istemem ama maliyetler katlandı' diyerek ciddi sorunları ima etmektedir.",
+            trapType = "diplomatic_understatement"
+        )
+    )
+
+    override fun getPlacementProbes(): Flow<List<PlacementProbe>> = flowOf(probes)
+
+    override fun getProbesByDomain(domain: AssessmentDomain): Flow<List<PlacementProbe>> =
+        flowOf(probes.filter { it.domain.equals(domain.name, ignoreCase = true) })
+
+    override suspend fun getPlacementProbesSync(): List<PlacementProbe> = probes
+}

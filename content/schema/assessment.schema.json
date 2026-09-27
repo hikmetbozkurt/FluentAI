@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.internal/schemas/assessment.schema.json",
+  "title": "FluentAI Placement Assessment Schema",
+  "description": "Validates placement diagnostic probes across CEFR levels and skills.",
+  "type": "object",
+  "properties": {
+    "probes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^placement\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)*$"
+          },
+          "domain": {
+            "type": "string",
+            "enum": ["vocabulary", "grammar", "reading", "listening"]
+          },
+          "cefrLevel": {
+            "type": "string",
+            "enum": ["A2", "B1", "B2", "C1", "C2"]
+          },
+          "promptEn": {
+            "type": "string",
+            "minLength": 5
+          },
+          "options": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 6,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "correctOptionIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "explanationEn": {
+            "type": "string",
+            "minLength": 5
+          },
+          "turkishNote": {
+            "type": "string",
+            "minLength": 5
+          },
+          "promptContext": {
+            "type": "string"
+          },
+          "trapType": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "domain",
+          "cefrLevel",
+          "promptEn",
+          "options",
+          "correctOptionIndex",
+          "explanationEn",
+          "turkishNote"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["probes"],
+  "additionalProperties": false
+}

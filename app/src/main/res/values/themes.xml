@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.FluentAI" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@drawable/fluentai_splash_screen</item>
+        <item name="android:statusBarColor">@color/fluentai_brand_blush</item>
+        <item name="android:navigationBarColor">@color/fluentai_brand_blush</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

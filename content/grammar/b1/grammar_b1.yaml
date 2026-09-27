@@ -1,0 +1,274 @@
+- id: grammar.present-perfect-vs-past-simple
+  title: Present Perfect vs. Past Simple
+  cefr_level: B1
+  category: tenses_and_aspect
+  summary_en: Use Past Simple for completed actions at a definite finished past time. Use Present Perfect for actions connecting the past with the present moment or unfinished time frames.
+  summary_tr: Tamamlanmış ve geçmişte kalmış zamanlar için Past Simple; geçmişle şu an arasında bağ kuran veya bitmemiş zaman aralıkları için Present Perfect kullanılır.
+  explanation_en:
+    - title: "Core Contrast: Definite Past vs. Present Relevance"
+      content: >-
+        The fundamental difference between Past Simple and Present Perfect is not just about 'when' an action happened,
+        but whether the speaker views the time frame as closed or open. Past Simple anchors an event in a finished time period
+        (yesterday, in 2021, two days ago). Present Perfect connects a past action to the current situation (life experience,
+        recent actions with present results, or states continuing until now).
+      patterns:
+        - "Past Simple: Subject + Verb-2 (regular: -ed, irregular: went, saw, wrote)"
+        - "Present Perfect: Subject + have/has + Past Participle (V3)"
+    - title: Time Markers and Triggers
+      content: >-
+        Time markers serve as reliable structural signals. Words like 'yesterday', 'ago', 'last week', 'in 2019', 'when I was at university'
+        strictly demand Past Simple. In contrast, 'since', 'for', 'already', 'yet', 'just', 'ever', 'never', 'so far', and 'this week'
+        frequently trigger Present Perfect.
+      patterns:
+        - "Past Simple: yesterday, last year, ago, at that time, in 2020"
+        - "Present Perfect: since Monday, for five years, already, yet, recently"
+  explanation_tr: >-
+    Türkçede geçmiş zaman için temel olarak "-di'li geçmiş zaman" (gördüm, bitirdim) kullanılır.
+    Türkçe zaman yapısı olayın geçmişte tam olarak ne zaman bittiği ile şu anki etkisi arasındaki
+    farkı morfolojik olarak zorunlu kılmaz. Bu nedenle Türk öğreniciler "dün bitirdim" ile
+    "az önce bitirdim (şu an elimde)" durumlarının ikisinde de aynı eki kullanır.
+    İngilizcede ise eğer olay geçmişteki kapalı bir zaman diliminde gerçekleştiyse Past Simple,
+    olay şu an devam ediyorsa veya şu anki anı etkiliyorsa Present Perfect zorunludur.
+  rules:
+    - name: Finished Time Frame (Past Simple)
+      pattern: Subject + Verb-2 (finished time adverbial)
+      use_cases:
+        - Specific completed action in the past
+        - Sequence of past events in narrative
+        - Action at a closed time point
+      time_markers:
+        - yesterday
+        - last week
+        - in 2022
+        - two days ago
+        - when
+    - name: Connection to Present (Present Perfect)
+      pattern: Subject + have/has + Past Participle (V3)
+      use_cases:
+        - Experience in life up to now without specifying exact date
+        - Action in the past with a direct result in the present
+        - State starting in the past and continuing into the present
+      time_markers:
+        - since
+        - for
+        - already
+        - yet
+        - just
+        - so far
+        - recently
+  contrasts:
+    - structure_a: I lived in London for two years. (Past Simple)
+      structure_b: I have lived in London for two years. (Present Perfect)
+      difference_explanation_en: >-
+        In the first sentence, the speaker no longer lives in London; the two-year period is finished.
+        In the second sentence, the speaker moved to London two years ago and still lives there today.
+      difference_explanation_tr: >-
+        İlk cümlede kişi artık Londra'da yaşamamaktadır (dönem kapandı).
+        İkinci cümlede ise iki yıl önce taşınmış ve halen Londra'da yaşamaya devam etmektedir.
+    - structure_a: I lost my company keycard yesterday. (Past Simple)
+      structure_b: I have lost my company keycard. (Present Perfect)
+      difference_explanation_en: >-
+        The first emphasizes when the loss occurred. The second focuses on the present consequence:
+        the speaker cannot enter the building right now.
+      difference_explanation_tr: >-
+        İlk cümle kaybın ne zaman olduğunu belirtir. İkinci cümle ise şu anki sonucu vurgular:
+        kart şu an kayıp ve binaya girilemiyor.
+  turkish_traps:
+    - trap_type: tense_transfer
+      trap_title: Since/For ile Şimdiki Zaman Kullanımı
+      explanation_tr: >-
+        Türkçede "3 yıldır bu şirkette çalışıyorum" ifadesinde şimdiki zaman kipi (-iyor) kullanılır.
+        Türk öğreniciler bu yapıyı doğrudan "I am working in this company since 3 years" olarak çevirme eğilimindedir.
+        İngilizcede geçmişte başlayıp bugüne kadar devam eden eylemlerde Present Perfect veya Present Perfect Continuous zorunludur.
+        Ayrıca süre bildirirken "since" değil "for" kullanılır ("for 3 years").
+      incorrect_example: I am working at this firm since three years.
+      correct_example: I have been working at this firm for three years.
+    - trap_type: aspect_confusion
+      trap_title: Dün / Geçen Hafta gibi Kesin Zaman Belirteçleriyle Present Perfect Kullanımı
+      explanation_tr: >-
+        Türk öğreniciler bazen bir eylemin tamamlandığını vurgulamak için "yesterday" veya "last week"
+        ile birlikte "I have finished" deme yanılgısına düşerler. İngilizcede zaman kesin ve bitmişse
+        (yesterday, last month vb.) asla Present Perfect kullanılamaz; sadece Past Simple kullanılmalıdır.
+      incorrect_example: We have submitted the final report yesterday.
+      correct_example: We submitted the final report yesterday.
+  examples:
+    - en: The development team deployed three critical patches last night.
+      tr: Geliştirme ekibi dün gece üç kritik yama yayınladı.
+      rule_highlight: Finished Time Frame (Past Simple)
+      context: Software Engineering
+    - en: We have already reviewed the quarterly figures, and the results look promising.
+      tr: Üç aylık rakamları şimdiden inceledik ve sonuçlar umut verici görünüyor.
+      rule_highlight: Connection to Present (Present Perfect)
+      context: Financial Review
+    - en: She has worked in product management since 2018.
+      tr: 2018 yılından beri ürün yönetimi alanında çalışmaktadır.
+      rule_highlight: State continuing into the present
+      context: Professional Background
+  topic_tags:
+    - tenses
+    - aspect
+    - business-communication
+    - time-expressions
+  related_ids:
+    - vocab.schedule
+    - vocab.deliberation
+  status: APPROVED
+  version: 1
+
+- id: grammar.b1.used-to-vs-be-used-to
+  title: "Used to Do vs. Be Used to Doing"
+  cefr_level: B1
+  category: verb_patterns_and_infinitives
+  summary_en: Contrast past discontinued habits ('used to + infinitive') with familiarity and adaptation ('be/get used to + -ing').
+  summary_tr: Geçmişte yapılıp bırakılan eski alışkanlıklar ('used to + fiil') ile bir duruma alışkın olma ('be used to + -ing') arasındaki ayrım.
+  explanation_en:
+    - title: "Past Habit vs. Present Familiarity"
+      content: >-
+        'Used to + base verb' describes an action or state that happened repeatedly in the past but no longer occurs.
+        In contrast, 'be used to + noun / -ing' expresses that something is familiar, normal, and no longer strange.
+      patterns:
+        - "Past Habit: Subject + used to + Base Verb (V1)"
+        - "Habit Negative: Subject + didn't use to + Base Verb (V1)"
+        - "Familiarity: Subject + be + used to + Gerund (V-ing) / Noun"
+        - "Adaptation Process: Subject + get + used to + Gerund (V-ing) / Noun"
+    - title: "The Preposition Trap with Gerunds"
+      content: >-
+        In 'be used to doing', 'to' is a preposition, not part of an infinitive marker. Therefore, verbs following it must take '-ing'.
+      patterns:
+        - "Correct: I am used to working under pressure."
+        - "Incorrect: I am used to work under pressure."
+  explanation_tr: >-
+    Türk öğrenicilerin en yaygın tökezlediği konulardan biridir. Türkçede 'Eskiden yapardım' (-erdim) ile
+    'Yapmaya alışkınım' kavramları birbirine çok uzaktır. Ancak İngilizcede her ikisinde de 'used to' kelimeleri
+    geçtiği için yapısal karışıklık doğar. 'Be used to' kalıbındaki 'to' bir edattır; bu yüzden ardından mutlaka
+    -ing eki almış fiil veya isim gelmelidir.
+  rules:
+    - name: Discontinued Past Habit (Used to)
+      pattern: Subject + used to + Base Verb
+      use_cases:
+        - Past routines no longer practiced
+        - Former states (e.g. We used to have an on-premise server)
+      time_markers:
+        - in the past
+        - formerly
+        - five years ago
+    - name: Familiarity and Comfort (Be used to)
+      pattern: Subject + am/is/are used to + V-ing / Noun
+      use_cases:
+        - Professional routines you are comfortable with
+        - Enduring high-stress or fast-paced situations
+    - name: Gradual Adaptation (Get used to)
+      pattern: Subject + get used to + V-ing / Noun
+      use_cases:
+        - Adapting to a new framework, culture, or time zone
+  contrasts:
+    - structure_a: I used to manage the QA team.
+      structure_b: I am used to managing large international teams.
+      difference_explanation_en: >-
+        The first means the speaker managed QA in the past but does not do so anymore.
+        The second means managing international teams is an everyday familiar task for the speaker.
+      difference_explanation_tr: >-
+        İlk cümle geçmişte QA ekibini yönettiğini ama artık yönetmediğini belirtir.
+        İkinci cümle ise uluslararası ekipleri yönetmeye şu anda çok alışkın ve deneyimli olduğunu ifade eder.
+  turkish_traps:
+    - trap_type: aspect_confusion
+      trap_title: "Alışkın Olma Yapısında Fiile '-ing' Eklemeyi Unutma"
+      explanation_tr: >-
+        Türk öğreniciler 'Alışkınım' derken 'I am used to lead' veya 'I am used to work' şeklinde yalın fiil kullanırlar.
+        Buradaki 'to' yönelme edatıdır ve ardından isim ya da fiilimsi (gerund: working, leading) gelmek zorundadır.
+      incorrect_example: Our engineers are used to handle production incidents quickly.
+      correct_example: Our engineers are used to handling production incidents quickly.
+  examples:
+    - en: We used to release software updates once a quarter, but now we deploy continuously.
+      tr: Eskiden yazılım güncellemelerini çeyrekte bir yayınlardık, ancak şimdi sürekli canlıya alıyoruz.
+      rule_highlight: Discontinued Past Routine (used to release)
+      context: DevOps Modernization
+    - en: After five years in consulting, I am used to switching between client contexts daily.
+      tr: Danışmanlıkta geçen beş yılın ardından, günlük olarak müşteri bağlamları arasında geçiş yapmaya alışkınım.
+      rule_highlight: Established Familiarity (am used to switching)
+      context: Management Consulting
+  topic_tags:
+    - verb-patterns
+    - habits
+    - adaptation
+    - b1-intermediate
+  related_ids:
+    - vocab.schedule
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: grammar.b1.first-second-conditional
+  title: "First vs. Second Conditionals in Business Decisions"
+  cefr_level: B1
+  category: conditionals_and_hypotheticals
+  summary_en: Distinguish between realistic future prospects (Type 1) and hypothetical, contrary-to-fact scenarios (Type 2).
+  summary_tr: Gerçekçi gelecek senaryoları (Tip 1) ile varsayımsal veya mevcut duruma aykırı tahminler (Tip 2) arasındaki ayrım.
+  explanation_en:
+    - title: "Real Possibility vs. Hypothetical Thought Experiment"
+      content: >-
+        Type 1 Conditionals deal with realistic, probable events in the present or future.
+        Type 2 Conditionals explore theoretical, improbable, or imaginary situations and their hypothetical consequences.
+      patterns:
+        - "First Conditional: If + Present Simple, ... will / can / may + Base Verb"
+        - "Second Conditional: If + Past Simple, ... would / could / might + Base Verb"
+    - title: "Subjunctive 'Were' in Formal Business"
+      content: >-
+        In formal and professional English, 'were' is preferred over 'was' for all subjects in the second conditional
+        (If I were you, If the budget were higher).
+      patterns:
+        - "If I were in your position, I would renegotiate the SLA."
+  explanation_tr: >-
+    Türkçede 'eğer yaparsa' geniş zaman şartı ile 'eğer yapsaydı' geçmiş/varsayım şartı arasındaki ayrım
+    İngilizcede zaman kaydırmasıyla (backshifting) yapılır. En büyük Türk aktarım tuzağı, 'if' cümlesi içine
+    'will' veya 'would' yerleştirmektir (örneğin: 'If we will launch...' veya 'If I would be CEO...').
+    İngilizcede 'if' şart bağlacı doğrudan ana yardımcı fiilleri (will/would) kabul etmez.
+  rules:
+    - name: Realistic Future Condition (Type 1)
+      pattern: If + Subject + Present Simple, Subject + will + Base Verb
+      use_cases:
+        - Contract clauses and deliverables (If the client approves, we will begin)
+        - Project risks with realistic probability
+    - name: Hypothetical Current/Future Scenario (Type 2)
+      pattern: If + Subject + Past Simple, Subject + would + Base Verb
+      use_cases:
+        - Brainstorming unrealized innovations
+        - Giving diplomatic advice (If I were you, I would...)
+        - Negotiating aspirational terms
+  contrasts:
+    - structure_a: If we sign the vendor today, we will deploy next month.
+      structure_b: If we had a larger infrastructure budget, we would hire three DevOps architects.
+      difference_explanation_en: >-
+        The first is an active, realistic commercial possibility.
+        The second is hypothetical because the budget is currently fixed and limited.
+      difference_explanation_tr: >-
+        İlk senaryo gerçekleşme olasılığı yüksek olan ticari bir ihtimaldir.
+        İkinci senaryo ise mevcut bütçenin sınırlı olması nedeniyle varsayımsal bir temennidir.
+  turkish_traps:
+    - trap_type: conditional_overgeneralization
+      trap_title: "'If' Cümleciğinin İçine 'Will' veya 'Would' Koyma Hatası"
+      explanation_tr: >-
+        Türk öğreniciler 'Eğer onaylarlarsa' ifadesindeki gelecek zaman hissini aktarmak için 'If they will approve'
+        veya 'If we would have time' deme eğilimindedir. İngilizce kuralı kesindir: Koşul cümleciğinde (if tarafında)
+        will/would kullanılmaz; Present Simple veya Past Simple kullanılır.
+      incorrect_example: If the client will request extra features, we will update the scope of work.
+      correct_example: If the client requests extra features, we will update the scope of work.
+  examples:
+    - en: If the integration tests pass tonight, we will push the release to staging tomorrow morning.
+      tr: Entegrasyon testleri bu gece geçerse, yarın sabah sürümü hazırlık ortamına alacağız.
+      rule_highlight: Type 1 Realistic Action
+      context: Software Deployment
+    - en: If our runway were twelve months longer, we would expand into the European enterprise market immediately.
+      tr: Finansal nakit akış süremiz on iki ay daha uzun olsaydı, derhal Avrupa kurumsal pazarına açılırdık.
+      rule_highlight: Type 2 Hypothetical Reflection (were + would)
+      context: Venture Strategy
+  topic_tags:
+    - conditionals
+    - decision-making
+    - strategy
+    - b1-intermediate
+  related_ids:
+    - vocab.feasibility
+    - vocab.mitigate
+  status: APPROVED
+  version: 1

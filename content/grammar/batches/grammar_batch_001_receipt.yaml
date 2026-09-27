@@ -1,0 +1,54 @@
+batch_id: grammar_batch_001
+produced_at: '2026-09-26T09:00:00Z'
+total_lessons_added: 39
+cefr_distribution:
+  A2: 8
+  B1: 7
+  B2: 8
+  C1: 8
+  C2: 8
+produced_ids:
+  A2:
+  - grammar.a2.present-simple-vs-continuous
+  - grammar.a2.past-simple-regular-irregular
+  - grammar.a2.future-plans-will-going-to
+  - grammar.a2.comparatives-superlatives
+  - grammar.a2.countable-uncountable-quantifiers
+  - grammar.a2.basic-modals-ability-permission
+  - grammar.a2.defining-relative-clauses-basics
+  - grammar.a2.zero-conditional-general-truths
+  B1:
+  - grammar.b1.past-continuous-interrupted-actions
+  - grammar.b1.present-perfect-continuous-duration
+  - grammar.b1.future-arrangements-present-continuous
+  - grammar.b1.passive-voice-foundations
+  - grammar.b1.reported-speech-statements
+  - grammar.b1.modals-deduction-present
+  - grammar.b1.gerunds-after-prepositions-verbs
+  B2:
+  - grammar.b2.future-perfect-and-continuous
+  - grammar.b2.reporting-passives-impersonal
+  - grammar.b2.verbs-changing-meaning-gerund-infinitive
+  - grammar.b2.past-modal-deduction
+  - grammar.b2.non-defining-relative-clauses-prepositions
+  - grammar.b2.wishes-and-regrets-unreal-past
+  - grammar.b2.causative-make-let-have-get
+  - grammar.b2.discourse-markers-concession-contrast
+  C1:
+  - grammar.c1.limiting-inversion-only-scarcely
+  - grammar.c1.participle-clauses-concession-cause
+  - grammar.c1.pseudo-cleft-and-reverse-cleft
+  - grammar.c1.ellipsis-and-substitution
+  - grammar.c1.nominalization-academic-corporate
+  - grammar.c1.nuanced-modal-hedging-stance
+  - grammar.c1.mixed-conditionals-enduring-impact
+  - grammar.c1.topicalization-and-fronting
+  C2:
+  - grammar.c2.stylistic-and-locative-inversion
+  - grammar.c2.complex-discourse-ellipsis
+  - grammar.c2.dense-nominal-syntagms
+  - grammar.c2.aspectual-coercion-stative-nuances
+  - grammar.c2.epistemic-deontic-ambiguity-precision
+  - grammar.c2.concessive-conditional-inversion-without-if
+  - grammar.c2.diplomatic-attenuation-and-litotes
+  - grammar.c2.information-packaging-end-weight

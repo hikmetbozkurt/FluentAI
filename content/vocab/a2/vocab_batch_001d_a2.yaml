@@ -1,0 +1,227 @@
+- id: vocab.luggage
+  headword: luggage
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈlʌɡ.ɪdʒ/
+  audio_ref: null
+  definition_en: The bags, suitcases, and personal belongings packed for a journey or flight.
+  meaning_tr: bagaj, valiz, bavul
+  collocations:
+    - text: carry luggage
+      tr: bagaj taşımak
+    - text: hand luggage
+      tr: el bagajı
+    - text: luggage allowance
+      tr: bagaj hakkı
+    - text: lost luggage
+      tr: kayıp bagaj
+  examples:
+    - en: "Passengers can keep their hand luggage in the overhead locker during the flight."
+      tr: "Yolcular uçuş boyunca el bagajlarını baş üstü dolabında tutabilirler."
+      context: Air Travel
+    - en: "The hotel bellhop helped the arriving guests carry their heavy luggage upstairs."
+      tr: "Otel görevlisi gelen konukların ağır bagajlarını yukarı taşımasına yardım etti."
+      context: Hotel Hospitality
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Luggage" sayılamayan (uncountable) bir isimdir; çoğul eki ("luggages") almaz ve "a luggage" denmez. Tekil parça için "a piece of luggage" veya "a bag" denir.
+      incorrect_example: "I have two luggages to check in at the desk."
+      correct_example: "I have two pieces of luggage to check in at the desk."
+  register: general
+  topic_tags:
+    - travel
+    - luggage
+    - airport
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.menu
+  headword: menu
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈmen.juː/
+  audio_ref: null
+  definition_en: A printed or digital list showing the food, drinks, and prices available at a restaurant.
+  meaning_tr: menü, yemek listesi
+  collocations:
+    - text: look at the menu
+      tr: menüye bakmak
+    - text: lunch menu
+      tr: öğle yemeği menüsü
+    - text: ask for the menu
+      tr: menüyü istemek
+    - text: children's menu
+      tr: çocuk menüsü
+  examples:
+    - en: "Could we please see the dessert menu after finishing our main courses?"
+      tr: "Ana yemeklerimizi bitirdikten sonra tatlı menüsünü görebilir miyiz lütfen?"
+      context: Dining Out
+    - en: "The bistro features a seasonal lunch menu with fresh Mediterranean ingredients."
+      tr: "Bistro, taze Akdeniz malzemeleri içeren mevsimlik bir öğle menüsü sunar."
+      context: Restaurant
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "menü almak" bazen bir restoranda kombo yemek sipariş etmek anlamında kullanılır. İngilizcede "order a menu" değil, "order a meal" veya "set menu / combo" denir. "Menu" sadece fiziksel/dijital listenin kendisidir.
+      incorrect_example: "I want to eat, so I will order a menu."
+      correct_example: "I want to eat, so I will order a meal from the menu."
+  register: general
+  topic_tags:
+    - dining
+    - restaurant
+    - food
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.coworker
+  headword: coworker
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈkəʊˌwɜː.kər/
+  audio_ref: null
+  definition_en: A person with whom one works closely within an office, department, or company.
+  meaning_tr: iş arkadaşı, mesai arkadaşı
+  collocations:
+    - text: trusted coworker
+      tr: güvenilir iş arkadaşı
+    - text: chat with a coworker
+      tr: iş arkadaşıyla sohbet etmek
+    - text: new coworker
+      tr: yeni iş arkadaşı
+  examples:
+    - en: "My coworker helped me fix the broken build script before the daily standup."
+      tr: "İş arkadaşım, günlük ayaküstü toplantıdan önce bozulan derleme betiğini düzeltmeme yardım etti."
+      context: Office Collaboration
+    - en: "We organized a small welcome lunch for our new engineering coworker."
+      tr: "Yeni mühendis iş arkadaşımız için küçük bir hoş geldin öğle yemeği düzenledik."
+      context: Workplace Culture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Coworker" ve "colleague" iş arkadaşı demektir. Birlikte çalışılan kişi için "partner" derseniz çoğunlukla iş ortağı veya hayat arkadaşı anlaşılır.
+      incorrect_example: "I share my desk with my business partner at the office."
+      correct_example: "I share my desk with my coworker at the office."
+  register: general
+  topic_tags:
+    - work
+    - workplace
+    - relationships
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.receive
+  headword: receive
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rɪˈsiːv/
+  audio_ref: null
+  definition_en: To get or be given something that has been sent, offered, or transmitted.
+  meaning_tr: almak, teslim almak, (mesaj/ödeme) gelmek
+  collocations:
+    - text: receive an email
+      tr: e-posta almak
+    - text: receive feedback
+      tr: geri bildirim almak
+    - text: receive confirmation
+      tr: onay almak
+    - text: receive a payment
+      tr: ödeme almak
+  examples:
+    - en: "Did you receive the updated project briefing that I sent this morning?"
+      tr: "Bu sabah gönderdiğim güncellenmiş proje bilgilendirmesini aldınız mı?"
+      context: Daily Communication
+    - en: "The customer received an instant payment confirmation message on their smartphone."
+      tr: "Müşteri, akıllı telefonuna anlık bir ödeme onay mesajı aldı."
+      context: Digital Banking
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Receive" (almak/teslim almak) fiili, "take" (kendi isteğiyle tutmak/almak) fiilinden farklıdır. Biri size bir şey gönderdiğinde veya verdiğinde "receive" kullanılır.
+      incorrect_example: "I took an email from the client yesterday."
+      correct_example: "I received an email from the client yesterday."
+  register: general
+  topic_tags:
+    - communication
+    - correspondence
+    - notifications
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.crowded
+  headword: crowded
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈkraʊ.dɪd/
+  audio_ref: null
+  definition_en: Filled with a large number of people or things, leaving little empty space.
+  meaning_tr: kalabalık, tıklım tıklım
+  collocations:
+    - text: crowded street
+      tr: kalabalık cadde
+    - text: crowded train
+      tr: kalabalık tren
+    - text: very crowded
+      tr: çok kalabalık
+  examples:
+    - en: "The metro station is extremely crowded during the morning rush hour."
+      tr: "Metro istasyonu sabah işe gidiş saatlerinde son derece kalabalıktır."
+      context: Public Commute
+    - en: "We arrived early to find a quiet table before the cafeteria became crowded."
+      tr: "Kafeterya kalabalıklaşmadan önce sessiz bir masa bulmak için erken geldik."
+      context: Lunch Break
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Crowded" sıfatı ile kalabalık olduğunu belirtirken "with" edatı kullanılır: "crowded with tourists". "Crowded from" yanlıştır.
+      incorrect_example: "The airport terminal was crowded from passengers."
+      correct_example: "The airport terminal was crowded with passengers."
+  register: general
+  topic_tags:
+    - travel
+    - urban-life
+    - places
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.turn-off
+  headword: turn off
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /tɜːn ɒf/
+  audio_ref: null
+  definition_en: To stop the operation or electrical power of an appliance, machine, or device.
+  meaning_tr: kapatmak (cihaz, elektrik, ışık vb.)
+  collocations:
+    - text: turn off the computer
+      tr: bilgisayarı kapatmak
+    - text: turn off notifications
+      tr: bildirimleri kapatmak
+    - text: turn off the lights
+      tr: ışıkları kapatmak
+  examples:
+    - en: "Remember to turn off your computer monitors before leaving the office on Friday."
+      tr: "Cuma günü ofisten ayrılmadan önce bilgisayar monitörlerinizi kapatmayı unutmayın."
+      context: Office Protocol
+    - en: "You can turn off push notifications in the settings menu to save battery life."
+      tr: "Pil ömründen tasarruf etmek için ayarlar menüsünden anlık bildirimleri kapatabilirsiniz."
+      context: Mobile Settings
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede kapı kapatmakla elektrikli cihazı kapatmak aynı sözcükle ("kapatmak") ifade edilir. İngilizcede kapı veya pencere için "close/shut", elektrikli aletler için "turn off" (veya "switch off") kullanılır. "Close the computer/lights" yanlıştır.
+      incorrect_example: "Please close the lights when leaving the meeting room."
+      correct_example: "Please turn off the lights when leaving the meeting room."
+  register: general
+  topic_tags:
+    - technology
+    - daily-routines
+    - office-devices
+  related_ids: []
+  status: APPROVED
+  version: 1

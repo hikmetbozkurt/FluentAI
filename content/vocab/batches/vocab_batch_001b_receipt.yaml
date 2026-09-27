@@ -1,0 +1,66 @@
+batch_id: vocab_batch_001b
+source_manifest: vocab_batch_001_manifest
+produced_at: "2026-09-25T11:35:00Z"
+item_count: 50
+cefr_distribution:
+  A2: 6
+  B1: 9
+  B2: 11
+  C1: 13
+  C2: 11
+produced_ids:
+  A2:
+    - vocab.discount
+    - vocab.flight
+    - vocab.explain
+    - vocab.decide
+    - vocab.comfortable
+    - vocab.turn-on
+  B1:
+    - vocab.opportunity
+    - vocab.environment
+    - vocab.budget
+    - vocab.recommend
+    - vocab.encourage
+    - vocab.maintain
+    - vocab.reliable
+    - vocab.actually
+    - vocab.look-forward-to
+  B2:
+    - vocab.outcome
+    - vocab.consequence
+    - vocab.infrastructure
+    - vocab.insight
+    - vocab.coordinate
+    - vocab.reinforce
+    - vocab.transform
+    - vocab.consistent
+    - vocab.effective
+    - vocab.consequently
+    - vocab.figure-out
+  C1:
+    - vocab.rationale
+    - vocab.integration
+    - vocab.leeway
+    - vocab.demystify
+    - vocab.disseminate
+    - vocab.harness
+    - vocab.scrutinize
+    - vocab.ambivalent
+    - vocab.detrimental
+    - vocab.lucid
+    - vocab.paramount
+    - vocab.fundamentally
+    - vocab.iron-out
+  C2:
+    - vocab.acumen
+    - vocab.fallacy
+    - vocab.quandary
+    - vocab.corroborate
+    - vocab.dispel
+    - vocab.galvanize
+    - vocab.ephemeral
+    - vocab.impeccable
+    - vocab.salient
+    - vocab.conspicuously
+    - vocab.in-hindsight

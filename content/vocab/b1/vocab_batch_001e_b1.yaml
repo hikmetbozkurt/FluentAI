@@ -1,0 +1,344 @@
+- id: vocab.employer
+  headword: employer
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪmˈplɔɪ.ər/
+  audio_ref: null
+  definition_en: A person, business, or organization that pays people to work for them.
+  meaning_tr: işveren, kurum
+  collocations:
+    - text: prospective employer
+      tr: muhtemel işveren
+    - text: previous employer
+      tr: önceki işveren
+    - text: equal opportunity employer
+      tr: fırsat eşitliği sunan işveren
+    - text: employer branding
+      tr: işveren markası
+  examples:
+    - en: "Candidates should research the prospective employer thoroughly before attending the interview."
+      tr: "Adaylar mülakata katılmadan önce muhtemel işvereni etraflıca araştırmalıdır."
+      context: Job Interview Preparation
+    - en: "The tech startup established strong employer branding by offering remote work and learning stipends."
+      tr: "Teknoloji girişimi, uzaktan çalışma ve öğrenim desteği sunarak güçlü bir işveren markası oluşturdu."
+      context: Talent Acquisition
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Employer" (işveren/şirket) ile "employee" (çalışan/personel) sıkça karıştırılır. "-er" eki işi vereni ("boss/company"), "-ee" ise işi alanı ("staff/worker") gösterir.
+      incorrect_example: "The employer asked for a salary raise from his manager."
+      correct_example: "The employee requested a salary raise from his employer."
+  register: business
+  topic_tags:
+    - employment
+    - corporate
+    - hiring
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.permission
+  headword: permission
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /pəˈmɪʃ.ən/
+  audio_ref: null
+  definition_en: The official consent or formal authorization given by someone in authority to do something.
+  meaning_tr: izin, yetki, ruhsat
+  collocations:
+    - text: grant permission
+      tr: izin vermek / yetki tanımlamak
+    - text: ask for permission
+      tr: izin istemek
+    - text: without permission
+      tr: izinsiz olarak
+    - text: access permission
+      tr: erişim yetkisi / izni
+  examples:
+    - en: "Developers require special security permission to access production database clusters."
+      tr: "Geliştiricilerin canlı veritabanı kümelerine erişmek için özel güvenlik iznine ihtiyacı vardır."
+      context: DevOps Security
+    - en: "You must ask for permission from the team lead before working remotely outside your home country."
+      tr: "Kendi ülkeniz dışında uzaktan çalışmadan önce takım liderinden izin istemelisiniz."
+      context: Remote Work Policy
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Permission" soyut ve sayılamayan (uncountable) bir isimdir. "A permission" veya çoğul olarak "permissions" (yazılımdaki teknik erişim hakları hariç genel dilde) denmez; "ask for permission" veya "grant permission" kullanılır.
+      incorrect_example: "I took a permission from my manager to leave early."
+      correct_example: "I asked for permission from my manager to leave early."
+  register: general
+  topic_tags:
+    - authority
+    - workplace
+    - access-control
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.purpose
+  headword: purpose
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈpɜː.pəs/
+  audio_ref: null
+  definition_en: The reason for which something is done, created, or exists; an intended objective or goal.
+  meaning_tr: amaç, gaye, maksat
+  collocations:
+    - text: primary purpose
+      tr: temel amaç
+    - text: serve a purpose
+      tr: bir amaca hizmet etmek
+    - text: on purpose
+      tr: kasten / bilerek
+    - text: purpose of the meeting
+      tr: toplantının amacı
+  examples:
+    - en: "The primary purpose of the architecture sync is to align backend and frontend contracts."
+      tr: "Mimari senkronizasyonun temel amacı, arka uç ve ön uç sözleşmelerini hizalamaktır."
+      context: Engineering Alignment
+    - en: "Clear acceptance criteria help engineers understand the business purpose behind every user story."
+      tr: "Net kabul kriterleri, mühendislerin her kullanıcı hikâyesinin arkasındaki ticari amacı anlamalarına yardımcı olur."
+      context: Agile Discovery
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Bir amaç doğrultusunda" derken "for the purpose of" kullanılır; "kasten/bilerek" anlamına gelen kalıp ise "on purpose" ifadesidir ("by purpose" yanlıştır).
+      incorrect_example: "He broke the production server by purpose."
+      correct_example: "He did not break the production server on purpose; it was an accident."
+  register: general
+  topic_tags:
+    - goals
+    - intent
+    - planning
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.interrupt
+  headword: interrupt
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˌɪn.təˈrʌpt/
+  audio_ref: null
+  definition_en: To stop someone from speaking by saying something yourself, or to temporarily break the continuity of a process.
+  meaning_tr: sözünü kesmek, araya girmek; kesintiye uğratmak
+  collocations:
+    - text: sorry to interrupt
+      tr: kestiğim için kusura bakmayın
+    - text: interrupt a speaker
+      tr: konuşmacının sözünü kesmek
+    - text: constantly interrupt
+      tr: sürekli araya girmek
+  examples:
+    - en: "I am sorry to interrupt, but could you clarify the API authentication mechanism once more?"
+      tr: "Sözünüzü kestiğim için kusura bakmayın ancak API kimlik doğrulama mekanizmasını bir kez daha açıklayabilir misiniz?"
+      context: Technical Meeting
+    - en: "Frequent notifications interrupt deep work sessions and diminish developer focus."
+      tr: "Sık gelen bildirimler derin çalışma oturumlarını kesintiye uğratır ve yazılımcı odağını azaltır."
+      context: Productivity
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Interrupt" fiili doğrudan nesne alır: "interrupt someone" (birinin sözünü kesmek). Türkçedeki "-in sözünü kesmek" yapısından dolayı "interrupt to someone" demek yaygın bir hatadır.
+      incorrect_example: "Please do not interrupt to the presenter during the demo."
+      correct_example: "Please do not interrupt the presenter during the demo."
+  register: general
+  topic_tags:
+    - communication
+    - etiquette
+    - focus
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.require
+  headword: require
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /rɪˈkwaɪər/
+  audio_ref: null
+  definition_en: To need something for a particular purpose; or to demand something as mandatory under a rule or contract.
+  meaning_tr: gerektirmek, istemek, zorunlu kılmak
+  collocations:
+    - text: require attention
+      tr: dikkat gerektirmek
+    - text: strictly require
+      tr: kesinlikle gerektirmek / şart koşmak
+    - text: require permission
+      tr: izin gerektirmek
+  examples:
+    - en: "Deploying critical database migrations requires written approval from the platform lead."
+      tr: "Kritik veritabanı geçişlerini canlıya almak platform liderinden yazılı onay gerektirir."
+      context: DevOps Governance
+    - en: "Complex microservices require comprehensive end-to-end integration testing."
+      tr: "Karmaşık mikroservisler kapsamlı uçtan uca entegrasyon testleri gerektirir."
+      context: Quality Assurance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Require" (gerektirmek/zorunlu kılmak) resmi ve bağlayıcı bir zorunluluğu ifade eder. "Request" (rica etmek/talep etmek) veya "acquire" (edinmek/satın almak) ile karıştırılmamalıdır.
+      incorrect_example: "I required a coffee from the waiter politely."
+      correct_example: "I requested a coffee from the waiter politely."
+  register: formal
+  topic_tags:
+    - requirements
+    - regulations
+    - obligations
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.permanent
+  headword: permanent
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈpɜː.mə.nənt/
+  audio_ref: null
+  definition_en: Lasting or intended to last indefinitely without fundamental change; enduring and stable.
+  meaning_tr: kalıcı, daimi, sürekli
+  collocations:
+    - text: permanent solution
+      tr: kalıcı çözüm
+    - text: permanent contract
+      tr: kadrolu / daimi sözleşme
+    - text: permanent position
+      tr: kalıcı pozisyon
+    - text: permanent damage
+      tr: kalıcı hasar
+  examples:
+    - en: "The engineering team replaced the quick hotfix with a permanent architectural solution."
+      tr: "Mühendislik ekibi geçici acil düzeltmeyi kalıcı bir mimari çözümle değiştirdi."
+      context: Architecture Refinement
+    - en: "After a successful six-month trial period, she was offered a permanent full-time position."
+      tr: "Başarılı geçen altı aylık deneme süresinin ardından kendisine daimi tam zamanlı bir pozisyon teklif edildi."
+      context: HR Promotion
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Permanent" (kalıcı/daimi), saç permasıyla sınırlı değildir; süreçler, pozisyonlar ve çözümler için geçici olanın ("temporary") tam zıddıdır.
+      incorrect_example: "We need a temporary solution that will last forever."
+      correct_example: "We need a permanent solution that will resolve the issue once and for all."
+  register: general
+  topic_tags:
+    - duration
+    - solutions
+    - stability
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.successful
+  headword: successful
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /səkˈses.fəl/
+  audio_ref: null
+  definition_en: Achieving the desired results, goals, or financial and professional prosperity.
+  meaning_tr: başarılı, sonuç vermiş
+  collocations:
+    - text: highly successful
+      tr: son derece başarılı
+    - text: successful launch
+      tr: başarılı lansman
+    - text: successful outcome
+      tr: başarılı sonuç
+    - text: successful candidate
+      tr: başarılı aday
+  examples:
+    - en: "The product team celebrated a highly successful launch of the mobile subscription tier."
+      tr: "Ürün ekibi mobil abonelik katmanının son derece başarılı lansmanını kutladı."
+      context: Product Launch
+    - en: "The successful candidate will lead cross-functional cloud migration initiatives."
+      tr: "Başarılı aday, fonksiyonlar arası bulut geçişi girişimlerine liderlik edecektir."
+      context: Recruitment
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir alanda başarılı olmayı ifade ederken "successful in" veya "successful at" kullanılır; Türkçedeki "-e karşı" veya "-de" algısıyla "successful to" denmez.
+      incorrect_example: "Our startup is very successful to artificial intelligence."
+      correct_example: "Our startup is very successful in artificial intelligence applications."
+  register: general
+  topic_tags:
+    - achievement
+    - milestones
+    - performance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.probably
+  headword: probably
+  cefr_level: B1
+  part_of_speech: adverb
+  phonetic: /ˈprɒb.ə.bli/
+  audio_ref: null
+  definition_en: Almost certainly; with a very high likelihood or probability of truth or occurrence.
+  meaning_tr: muhtemelen, büyük olasılıkla
+  collocations:
+    - text: probably best
+      tr: muhtemelen en iyisi
+    - text: probably true
+      tr: muhtemelen doğru
+    - text: most probably
+      tr: büyük olasılıkla
+  examples:
+    - en: "The unexpected network timeout was probably caused by high traffic spikes during the flash sale."
+      tr: "Beklenmeyen ağ zaman aşımına muhtemelen flaş indirim sırasındaki yüksek trafik sıçramaları neden oldu."
+      context: Incident Analysis
+    - en: "It is probably best to run database migrations during off-peak weekend hours."
+      tr: "Veritabanı geçişlerini hafta sonu yoğun olmayan saatlerde çalıştırmak muhtemelen en iyisidir."
+      context: Release Scheduling
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Probably" (yüksek olasılıkla, %70-80 ihtimalle) ile "maybe/perhaps" (belki, %50 ihtimalle) kesinlik derecesi açısından farklıdır. Güçlü bir tahmin için "probably" seçilir.
+      incorrect_example: "It is problematically going to rain."
+      correct_example: "It will probably rain this afternoon, so take an umbrella."
+  register: general
+  topic_tags:
+    - probability
+    - estimation
+    - communication
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.set-up
+  headword: set up
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /set ʌp/
+  audio_ref: null
+  definition_en: To establish, configure, prepare, or arrange a meeting, system, equipment, or business entity.
+  meaning_tr: kurmak, ayarlamak, düzenlemek, yapılandırmak
+  collocations:
+    - text: set up a meeting
+      tr: toplantı ayarlamak
+    - text: set up an account
+      tr: hesap oluşturmak / açmak
+    - text: set up the environment
+      tr: ortamı yapılandırmak / kurmak
+    - text: set up a business
+      tr: işletme kurmak
+  examples:
+    - en: "The devops engineer wrote a script to set up local development environments in under five minutes."
+      tr: "DevOps mühendisi yerel geliştirme ortamlarını beş dakikadan kısa sürede kurmak için bir betik yazdı."
+      context: Developer Tooling
+    - en: "Let us set up a brief sync call tomorrow morning to align on the quarterly milestones."
+      tr: "Üç aylık hedefler konusunda hizalanmak için yarın sabah kısa bir senkronizasyon görüşmesi ayarlayalım."
+      context: Work Scheduling
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Set up" iki kelimeli bir fiildir ("set up the system"); ancak tek kelime veya tireli ("setup") yazıldığında isim veya sıfat olur ("a quick setup"). Fiil olarak kullanılırken ayrı yazılmalıdır.
+      incorrect_example: "I will setup the local database on my laptop."
+      correct_example: "I will set up the local database on my laptop."
+  register: general
+  topic_tags:
+    - configuration
+    - preparation
+    - scheduling
+  related_ids: []
+  status: APPROVED
+  version: 1

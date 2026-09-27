@@ -1,0 +1,231 @@
+- id: vocab.task
+  headword: task
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /tɑːsk/
+  audio_ref: null
+  definition_en: A specific piece of work or duty that needs to be completed, especially within a given period.
+  meaning_tr: görev, iş, vazife
+  collocations:
+    - text: complete a task
+      tr: görevi tamamlamak
+    - text: assign a task
+      tr: görev atamak
+    - text: daily task
+      tr: günlük iş / görev
+    - text: difficult task
+      tr: zorlu görev
+  examples:
+    - en: "The project manager assigned three urgent bug-fixing tasks to our sprint board."
+      tr: "Proje yöneticisi sprint panomuza üç acil hata düzeltme görevi atadı."
+      context: Agile Sprint
+    - en: "Prioritizing your daily tasks in the morning improves focus and productivity."
+      tr: "Sabahları günlük işlerinizi önceliklendirmek odaklanmayı ve üretkenliği artırır."
+      context: Daily Work Routine
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Task" sözcüğü taş veya taşımakla ilgili değildir; yapılması gereken münferit "iş veya görev" demektir. Bütün meslek için "job" veya "profession", o meslek içindeki tekil eylemler için "task" kullanılır.
+      incorrect_example: "My task is a software engineer."
+      correct_example: "My job is software engineering, and my current task is writing automated tests."
+  register: general
+  topic_tags:
+    - productivity
+    - work-management
+    - tasks
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.return-v
+  headword: return
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rɪˈtɜːn/
+  audio_ref: null
+  definition_en: To come back or go back to a place, state, or conversation; or to give something back.
+  meaning_tr: dönmek, geri dönmek; iade etmek
+  collocations:
+    - text: return home
+      tr: eve dönmek
+    - text: return to the office
+      tr: ofise dönmek
+    - text: return a call
+      tr: aramaya geri dönmek
+    - text: return an item
+      tr: bir ürünü iade etmek
+  examples:
+    - en: "Most employees return to their desks immediately after the lunch break."
+      tr: "Çoğu çalışan öğle arasından hemen sonra masalarına döner."
+      context: Office Routine
+    - en: "You can return defective electronics to the retail store within thirty days for a full refund."
+      tr: "Kusurlu elektronik eşyaları tam para iadesi için otuz gün içinde mağazaya iade edebilirsiniz."
+      context: Retail Shopping
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Return" zaten "geri dönmek" (come back) anlamına geldiği için arkasından tekrar "back" getirilmesi ("return back") gereksiz ve hatalıdır. Sadece "return to" kullanılır.
+      incorrect_example: "I will return back to Istanbul next Monday."
+      correct_example: "I will return to Istanbul next Monday."
+  register: general
+  topic_tags:
+    - movement
+    - daily-life
+    - travel
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.expensive
+  headword: expensive
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ɪkˈspen.sɪv/
+  audio_ref: null
+  definition_en: Costing a large amount of money; having a high price.
+  meaning_tr: pahalı, masraflı
+  collocations:
+    - text: very expensive
+      tr: çok pahalı
+    - text: expensive taste
+      tr: pahalı zevk
+    - text: too expensive
+      tr: çok pahalı / aşırı masraflı
+    - text: less expensive
+      tr: daha az masraflı
+  examples:
+    - en: "High-end developer laptops can be quite expensive, but they offer superior build performance."
+      tr: "Üst düzey geliştirici dizüstü bilgisayarları oldukça pahalı olabilir ancak üstün derleme performansı sunarlar."
+      context: Hardware Procurement
+    - en: "Eating dinner at airport restaurants is often much more expensive than in the city center."
+      tr: "Havalimanı restoranlarında akşam yemeği yemek genellikle şehir merkezindekinden çok daha pahalıdır."
+      context: Business Travel
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "fiyatı pahalı" denir; ancak İngilizcede "price" (fiyat) için "expensive" denmez, "high price" denir. "Expensive" olan şey ürün veya hizmetin kendisidir: "expensive laptop" veya "The price is high".
+      incorrect_example: "The price of this software is very expensive."
+      correct_example: "The price of this software is very high."
+  register: general
+  topic_tags:
+    - shopping
+    - pricing
+    - budgeting
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.delicious
+  headword: delicious
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /dɪˈlɪʃ.əs/
+  audio_ref: null
+  definition_en: Having a highly pleasing, enjoyable, and satisfying taste or smell.
+  meaning_tr: lezzetli, nefis, leziz
+  collocations:
+    - text: delicious food
+      tr: lezzetli yemek
+    - text: delicious meal
+      tr: nefis öğün
+    - text: absolutely delicious
+      tr: kesinlikle nefis
+    - text: smell delicious
+      tr: nefis kokmak
+  examples:
+    - en: "The company cafeteria served a delicious grilled salmon dish during the international food fair."
+      tr: "Şirket kafeteryası, uluslararası yemek fuarı sırasında nefis bir ızgara somon yemeği sundu."
+      context: Corporate Cafeteria
+    - en: "Freshly brewed Turkish coffee smells absolutely delicious in the morning."
+      tr: "Taze demlenmiş Türk kahvesi sabahları kesinlikle nefis kokar."
+      context: Daily Life
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Delicious" zaten "çok lezzetli" (extreme adjective) anlamına geldiği için derecelendirilirken "very delicious" yerine genellikle "really delicious" veya "absolutely delicious" kullanılır.
+      incorrect_example: "The soup was very delicious yesterday."
+      correct_example: "The soup was really delicious yesterday."
+  register: general
+  topic_tags:
+    - food
+    - dining
+    - taste
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.quickly
+  headword: quickly
+  cefr_level: A2
+  part_of_speech: adverb
+  phonetic: /ˈkwɪk.li/
+  audio_ref: null
+  definition_en: At a fast pace; with high speed or without unnecessary delay.
+  meaning_tr: hızlıca, çabucak, süratle
+  collocations:
+    - text: respond quickly
+      tr: hızlıca yanıt vermek
+    - text: adapt quickly
+      tr: çabucak uyum sağlamak
+    - text: learn quickly
+      tr: çabuk öğrenmek
+    - text: resolve quickly
+      tr: hızla çözüme kavuşturmak
+  examples:
+    - en: "Our customer support team aims to respond quickly to incoming client inquiries."
+      tr: "Müşteri destek ekibimiz gelen müşteri taleplerine hızlıca yanıt vermeyi hedefler."
+      context: Customer Support
+    - en: "The engineer quickly identified the syntax error and pushed a fix to GitHub."
+      tr: "Mühendis sözdizimi hatasını çabucak tespit etti ve GitHub'a bir düzeltme gönderdi."
+      context: Software Development
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Quick" bir sıfattır ve isimleri niteler ("a quick response"). Fiilleri niteleyen zarf hali ise "-ly" eki alan "quickly"dir ("respond quickly").
+      incorrect_example: "The server processed the transaction very quick."
+      correct_example: "The server processed the transaction very quickly."
+  register: general
+  topic_tags:
+    - speed
+    - actions
+    - efficiency
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.fill-in
+  headword: fill in
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /fɪl ɪn/
+  audio_ref: null
+  definition_en: To write necessary personal or professional information into the blank spaces of a form or document.
+  meaning_tr: doldurmak (form, anket vb.)
+  collocations:
+    - text: fill in a form
+      tr: form doldurmak
+    - text: fill in the blanks
+      tr: boşlukları doldurmak
+    - text: fill in details
+      tr: ayrıntıları doldurmak
+  examples:
+    - en: "Please fill in the onboarding registration form before attending your orientation session."
+      tr: "Lütfen oryantasyon oturumunuza katılmadan önce işe alım kayıt formunu doldurun."
+      context: HR Onboarding
+    - en: "New visitors must fill in their contact details at the reception security desk."
+      tr: "Yeni ziyaretçiler resepsiyon güvenlik masasında iletişim bilgilerini doldurmalıdır."
+      context: Office Security
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "bardağı doldurmak" ile "form doldurmak" aynı fiille ifade edilir. İngilizcede bardağı veya odayı doldurmak "fill" (veya "fill up"), bir belgeye bilgi yazıp doldurmak ise "fill in" (veya Amerikan İngilizcesinde "fill out") fiilidir.
+      incorrect_example: "Please fill the application form with a pen."
+      correct_example: "Please fill in the application form with a blue pen."
+  register: general
+  topic_tags:
+    - paperwork
+    - forms
+    - administration
+  related_ids: []
+  status: APPROVED
+  version: 1

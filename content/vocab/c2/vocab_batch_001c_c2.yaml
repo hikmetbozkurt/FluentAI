@@ -1,0 +1,416 @@
+- id: vocab.tenet
+  headword: tenet
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˈten.ɪt/
+  audio_ref: null
+  definition_en: A central principle, dogma, or core belief held to be true by a philosophy, religion, or professional discipline.
+  meaning_tr: temel ilke, öğreti, inanç esası
+  collocations:
+    - text: central tenet
+      tr: temel ilke
+    - text: core tenet
+      tr: çekirdek ilke
+    - text: foundational tenet
+      tr: kurucu ilke
+    - text: hold to the tenets
+      tr: ilkelere bağlı kalmak
+  examples:
+    - en: "A central tenet of modern software engineering is that architecture must evolve through automated feedback."
+      tr: "Modern yazılım mühendisliğinin temel bir ilkesi, mimarinin otomatik geri bildirim yoluyla evrilmesi gerektiğidir."
+      context: Software Philosophy
+    - en: "The research institute remains steadfastly committed to the foundational tenets of academic integrity."
+      tr: "Araştırma enstitüsü, akademik dürüstlüğün kurucu ilkelerine sarsılmaz bir bağlılık sürdürmektedir."
+      context: Academic Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Tenet" (/ˈten.ɪt/ - ilke) kelimesi "tenant" (/ˈten.ənt/ - kiracı) kelimesi ile yazılış ve telaffuz benzerliği nedeniyle karıştırılmamalıdır.
+      incorrect_example: "The tenet pays the rent at the end of each month."
+      correct_example: "The tenant pays the rent at the end of each month."
+  register: academic
+  topic_tags:
+    - philosophy
+    - principles
+    - ethics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.panacea
+  headword: panacea
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˌpæn.əˈsiː.ə/
+  audio_ref: null
+  definition_en: A supposed solution, cure, or remedy for all difficulties, structural problems, or diseases; a silver bullet.
+  meaning_tr: her derde deva, mucizevi çare, panase
+  collocations:
+    - text: not a panacea
+      tr: her derde deva değil
+    - text: panacea for all ills
+      tr: tüm sorunlara mucizevi çare
+    - text: universal panacea
+      tr: evrensel çare
+  examples:
+    - en: "Microservice architecture is advantageous in many contexts, but it is certainly no panacea for poor code design."
+      tr: "Mikroservis mimarisi pek çok bağlamda avantajlıdır ancak zayıf kod tasarımı için kesinlikle her derde deva bir çare değildir."
+      context: Architecture Critique
+    - en: "Technological innovation alone cannot be viewed as a panacea for deep structural economic inequalities."
+      tr: "Teknolojik yenilik tek başına derin yapısal ekonomik eşitsizlikler için bir mucizevi çare olarak görülemez."
+      context: Economic Policy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Panacea" entelektüel ve analitik metinlerde neredeyse her zaman olumsuz ("is no panacea", "not a panacea") bağlamlarda abartılı beklentileri eleştirmek için kullanılır.
+      incorrect_example: "We bought this new tool, and it worked as a panacea yesterday."
+      correct_example: "While the new tool is helpful, leadership acknowledged it is not a panacea for workflow bottlenecks."
+  register: formal
+  topic_tags:
+    - problem-solving
+    - solutions
+    - critical-thinking
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.equilibrium
+  headword: equilibrium
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ˌiː.kwɪˈlɪb.ri.əm/
+  audio_ref: null
+  definition_en: A state in which opposing forces, economic dynamics, or psychological influences are perfectly balanced.
+  meaning_tr: denge, muvazene
+  collocations:
+    - text: market equilibrium
+      tr: piyasa dengesi
+    - text: restore equilibrium
+      tr: dengeyi yeniden sağlamak
+    - text: delicate equilibrium
+      tr: hassas denge
+    - text: dynamic equilibrium
+      tr: dinamik denge
+  examples:
+    - en: "The central bank adjusted interest rates to restore macroeconomic equilibrium amid inflationary pressures."
+      tr: "Merkez bankası, enflasyonist baskılar ortamında makroekonomik dengeyi yeniden sağlamak için faiz oranlarını ayarladı."
+      context: Macroeconomics
+    - en: "A delicate equilibrium exists between aggressive feature delivery and technical debt management."
+      tr: "Hızlı özellik teslimatı ile teknik borç yönetimi arasında hassas bir denge bulunmaktadır."
+      context: Engineering Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Balance" günlük hayatta her türlü fiziksel ve genel denge için kullanılırken, "equilibrium" bilimsel, ekonomik ve kuramsal sistemlerin karşıt güçler arasındaki kararlı durumunu ifade eden yüksek düzeyli bir terimdir.
+      incorrect_example: "I lost my equilibrium while walking on the icy pavement."
+      correct_example: "I lost my balance while walking on the icy pavement."
+  register: academic
+  topic_tags:
+    - equilibrium
+    - systems
+    - science
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.antithesis
+  headword: antithesis
+  cefr_level: C2
+  part_of_speech: noun
+  phonetic: /ænˈtɪθ.ə.sɪs/
+  audio_ref: null
+  definition_en: A person or thing that is the direct, complete, or exact opposite of another; the polar contrast.
+  meaning_tr: antitez, taban tabana zıt olan şey, karşıtlık
+  collocations:
+    - text: exact antithesis
+      tr: tam antitezi / zıddı
+    - text: direct antithesis
+      tr: doğrudan antitez
+    - text: antithesis of
+      tr: -in zıddı
+  examples:
+    - en: "Rigid bureaucratic micromanagement is the direct antithesis of an empowering agile engineering culture."
+      tr: "Katı bürokratik mikro yönetim, yetkilendirici bir çevik mühendislik kültürünün doğrudan antitezidir."
+      context: Organizational Culture
+    - en: "His dogmatic and secretive approach was the complete antithesis of the collaborative philosophy we promote."
+      tr: "Onun dogmatik ve ketum yaklaşımı, teşvik ettiğimiz iş birliği felsefesinin tam zıddıydı."
+      context: Leadership Critique
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Antithesis" bir şeyin taban tabana zıddı olduğunu belirtirken her zaman "of" edatı ile kullanılır ("the antithesis of X").
+      incorrect_example: "This decision is the antithesis with our values."
+      correct_example: "This decision is the antithesis of our values."
+  register: academic
+  topic_tags:
+    - contrast
+    - analytical-thinking
+    - philosophy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.espouse
+  headword: espouse
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /ɪˈspaʊz/
+  audio_ref: null
+  definition_en: To adopt, embrace, advocate, or give one's public support to a cause, doctrine, or philosophy.
+  meaning_tr: benimsemek, hararetle savunmak, sahip çıkmak
+  collocations:
+    - text: espouse values
+      tr: değerleri benimsemek
+    - text: espouse a philosophy
+      tr: bir felsefeyi benimsemek
+    - text: publicly espouse
+      tr: kamuoyu önünde savunmak
+  examples:
+    - en: "The newly appointed executive espoused a culture of radical transparency and meritocracy."
+      tr: "Yeni atanan yönetici, radikal şeffaflık ve liyakat kültürünü benimsedi ve savundu."
+      context: Executive Leadership
+    - en: "It is hypocritical for an organization to publicly espouse sustainability while ignoring environmental audits."
+      tr: "Bir kuruluşun çevre denetimlerini görmezden gelirken kamuoyu önünde sürdürülebilirliği savunması ikiyüzlülüktür."
+      context: Corporate Ethics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Espouse" sözcüğü etimolojik olarak "spouse" (eş) ile bağlantılı olup tarihsel olarak evlenmek anlamına gelse de, çağdaş İngilizcede yalnızca bir fikri, ideolojiyi veya ilkeyi "benimsemek/savunmak" anlamında kullanılır.
+      incorrect_example: "They decided to espouse in a church next summer."
+      correct_example: "They decided to get married in a church next summer."
+  register: formal
+  topic_tags:
+    - advocacy
+    - values
+    - culture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.perpetuate
+  headword: perpetuate
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /pəˈpetʃ.u.eɪt/
+  audio_ref: null
+  definition_en: To cause an undesirable situation, misconception, bias, or system to continue indefinitely.
+  meaning_tr: sürdürmek, devam ettirmek, ebedileştirmek (çoğunlukla olumsuz durumlarda)
+  collocations:
+    - text: perpetuate myths
+      tr: mitleri / yanlış inanışları sürdürmek
+    - text: perpetuate stereotypes
+      tr: basmakalıp yargıları devam ettirmek
+    - text: perpetuate inequality
+      tr: eşitsizliği kalıcılaştırmak
+  examples:
+    - en: "Biased training datasets can inadvertently perpetuate historical discrimination in predictive machine learning models."
+      tr: "Yanlı eğitim veri setleri, öngörücü makine öğrenimi modellerinde tarihsel ayrımcılığı istemeden kalıcılaştırabilir."
+      context: AI Ethics
+    - en: "Opaque promotion criteria only serve to perpetuate systemic inequities across the enterprise."
+      tr: "Saydam olmayan terfi kriterleri, yalnızca kurum genelindeki sistemsel eşitsizlikleri sürdürmeye yarar."
+      context: Organizational Governance
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Perpetuate" genellikle istenmeyen bir durumu, miti veya adaletsizliği "kalıcı hale getirmek/sürdürmek" için kullanılır. Olumlu gelenekleri yaşatmak için "preserve" veya "maintain" tercih edilir.
+      incorrect_example: "We must perpetuate the wonderful traditions of our happy company."
+      correct_example: "We must preserve the wonderful traditions of our company."
+  register: academic
+  topic_tags:
+    - society
+    - bias
+    - critical-thinking
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.surmount
+  headword: surmount
+  cefr_level: C2
+  part_of_speech: verb
+  phonetic: /səˈmaʊnt/
+  audio_ref: null
+  definition_en: To successfully overcome, conquer, or triumph over a formidable obstacle, challenge, or crisis.
+  meaning_tr: üstesinden gelmek, aşmak, (güçlüğü) alt etmek
+  collocations:
+    - text: surmount obstacles
+      tr: engelleri aşmak
+    - text: surmount difficulties
+      tr: zorlukların üstesinden gelmek
+    - text: surmount challenges
+      tr: meydan okumaları alt etmek
+  examples:
+    - en: "Through rigorous engineering discipline, the aerospace team surmounted immense thermal dissipation challenges."
+      tr: "Sıkı mühendislik disiplini sayesinde havacılık ekibi, muazzam ısı dağıtımı zorluklarının üstesinden geldi."
+      context: Aerospace Engineering
+    - en: "To achieve sustainable market leadership, the enterprise had to surmount fierce geopolitical headwinds."
+      tr: "Sürdürülebilir pazar liderliğine ulaşmak için işletme, şiddetli jeopolitik engelleri aşmak zorundaydı."
+      context: Global Strategy
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Surmount" son derece yüksek bir edebi ve resmi register'a sahiptir. Günlük dilde "overcome" veya "get over" kullanılır; "surmount" büyük ve çetin badireleri aşmak için saklanmalıdır.
+      incorrect_example: "I surmounted my minor headache with an aspirin."
+      correct_example: "I got rid of my minor headache with an aspirin."
+  register: formal
+  topic_tags:
+    - perseverance
+    - achievement
+    - resilience
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.arduous
+  headword: arduous
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˈɑː.dʒu.əs/
+  audio_ref: null
+  definition_en: Involving or requiring strenuous effort, intense labor, and endurance; extremely taxing and arduous.
+  meaning_tr: çetin, meşakkatli, zahmetli
+  collocations:
+    - text: arduous task
+      tr: çetin / meşakkatli görev
+    - text: arduous journey
+      tr: zahmetli yolculuk
+    - text: arduous process
+      tr: meşakkatli süreç
+    - text: arduous negotiations
+      tr: çetin müzakereler
+  examples:
+    - en: "Migrating twenty petabytes of transactional history to the cloud proved to be an arduous and delicate operation."
+      tr: "Yirmi petabaytlık işlem geçmişini buluta taşımak, son derece meşakkatli ve hassas bir operasyon olduğunu kanıtladı."
+      context: Data Migration
+    - en: "After six months of arduous collective bargaining negotiations, union delegates reached a landmark accord."
+      tr: "Altı aylık çetin toplu iş sözleşmesi müzakerelerinin ardından sendika delegeleri tarihi bir mutabakata vardı."
+      context: Industrial Relations
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Arduous" sıfatı sadece zihinsel veya anlık bir zorluk değil, uzun süreli ter dökmeyi, fiziksel/zihinsel dayanıklılığı ve yıpratıcı çabayı anlatan durumlar için kullanılır ("arduous task/journey/process"). Basit bir soru için "arduous question" denmez, "difficult question" denir.
+      incorrect_example: "The teacher asked an arduous question in the five-minute quiz."
+      correct_example: "The teacher asked a difficult question in the five-minute quiz."
+  register: formal
+  topic_tags:
+    - perseverance
+    - effort
+    - challenges
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.judicious
+  headword: judicious
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /dʒuːˈdɪʃ.əs/
+  audio_ref: null
+  definition_en: Having, showing, or done with good judgment, discernment, wisdom, and sensible discretion.
+  meaning_tr: sağduyulu, basiretli, makul ve yerinde
+  collocations:
+    - text: judicious use
+      tr: basiretli / yerinde kullanım
+    - text: judicious decision
+      tr: sağduyulu karar
+    - text: judicious allocation
+      tr: akılcı tahsis
+    - text: judicious planning
+      tr: basiretli planlama
+  examples:
+    - en: "The CFO emphasized that judicious capital allocation was critical during macroeconomic volatility."
+      tr: "Mali işler direktörü, makroekonomik dalgalanma sırasında basiretli sermaye tahsisinin kritik olduğunu vurguladı."
+      context: Corporate Finance
+    - en: "Judicious deployment of automated testing dramatically reduces regression bugs without inflating build times."
+      tr: "Otomatik testlerin yerinde ve akılcı şekilde devreye alınması, derleme sürelerini şişirmeden regresyon hatalarını çarpıcı biçimde azaltır."
+      context: Engineering Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Judicious" (sağduyulu, basiretli, ihtiyatlı), "judicial" (adli, yargısal) kelimesiyle karıştırılmamalıdır. Yargı organlarına ait olan "judicial" iken; aklıselim ve yerinde davranışı ifade eden "judicious"tır.
+      incorrect_example: "The case was transferred to the judicious authorities in the capital."
+      correct_example: "The case was transferred to the judicial authorities in the capital."
+  register: formal
+  topic_tags:
+    - decision-making
+    - judgment
+    - prudence
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.nebulous
+  headword: nebulous
+  cefr_level: C2
+  part_of_speech: adjective
+  phonetic: /ˈneb.jə.ləs/
+  audio_ref: null
+  definition_en: Vague, hazy, indistinct, or ill-defined in form, meaning, or conceptual scope.
+  meaning_tr: muğlak, belirsiz, sisli, net olmayan
+  collocations:
+    - text: nebulous concept
+      tr: muğlak kavram
+    - text: nebulous goals
+      tr: belirsiz hedefler
+    - text: somewhat nebulous
+      tr: biraz muğlak
+    - text: nebulous explanation
+      tr: bulanık / sisli açıklama
+  examples:
+    - en: "The initial product specification remained too nebulous for the development squad to estimate delivery dates."
+      tr: "İlk ürün şartnamesi, geliştirme ekibinin teslimat tarihlerini tahmin edemeyeceği kadar muğlak kaldı."
+      context: Product Discovery
+    - en: "Philosophers often struggle with nebulous concepts of consciousness that elude precise empirical definition."
+      tr: "Filozoflar, genellikle kesin ampirik tanımlamalardan kaçan muğlak bilinç kavramlarıyla boğuşurlar."
+      context: Academic Philosophy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Nebulous" (muğlak, bulanık), astronomideki "nebula" (bulutsu) ile aynı kökten gelir ve zihinsel açıklıktan yoksun, sınırları belirsiz fikirleri eleştirmek için son derece şık bir C2 sıfattır.
+        incorrect_example: "The sky was full of nebulous clouds before the rain."
+        correct_example: "The product requirements were nebulous and lacked actionable acceptance criteria."
+  register: academic
+  topic_tags:
+    - clarity
+    - ambiguity
+    - conceptual-analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.by-and-large
+  headword: by and large
+  cefr_level: C2
+  part_of_speech: idiom
+  phonetic: /baɪ ənd lɑːdʒ/
+  audio_ref: null
+  definition_en: Considering everything on the whole; generally speaking and overall, despite minor exceptions.
+  meaning_tr: genel olarak, ana hatlarıyla, geneline bakıldığında
+  collocations:
+    - text: by and large successful
+      tr: genel hatlarıyla başarılı
+    - text: by and large true
+      tr: genel anlamda doğru
+    - text: by and large effective
+      tr: genelde etkili
+  examples:
+    - en: "By and large, the migration to micro-frontends improved deployment frequency across all domains."
+      tr: "Genel olarak bakıldığında, mikro ön uçlara geçiş tüm alanlarda dağıtım sıklığını artırdı."
+      context: Architectural Retrospective
+    - en: "While isolated friction points occurred, the executive summit was by and large a productive endeavor."
+      tr: "Münferit sürtüşme noktaları yaşansa da, üst düzey yönetici zirvesi genel hatlarıyla verimli bir girişim oldu."
+      context: Executive Debrief
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "By and large" deyimindeki "large" kelimesi boyutsal büyüklük ("büyükçe") anlamına gelmez; bir durumu geneliyle değerlendiren "on the whole" veya "generally speaking" anlamına gelen zarf öbeğidir.
+      incorrect_example: "He bought a by and large house with a swimming pool."
+      correct_example: "By and large, the new housing policy has benefited middle-income families."
+  register: general
+  topic_tags:
+    - discourse-markers
+    - generalization
+    - nuances
+  related_ids: []
+  status: APPROVED
+  version: 1

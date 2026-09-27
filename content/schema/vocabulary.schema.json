@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/vocabulary.schema.json",
+  "title": "FluentAI Vocabulary Item Schema",
+  "description": "Schema for offline-first CEFR-graded vocabulary content tailored for Turkish professional learners.",
+  "type": "object",
+  "required": [
+    "id",
+    "headword",
+    "cefr_level",
+    "part_of_speech",
+    "phonetic",
+    "definition_en",
+    "meaning_tr",
+    "examples",
+    "register",
+    "topic_tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^vocab\\.[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable semantic content identifier, e.g. vocab.deliberation or vocab.articulate-v"
+    },
+    "headword": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The lexical item or headword in English, e.g. deliberation"
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A2", "B1", "B2", "C1", "C2"],
+      "description": "CEFR level from A2 to C2"
+    },
+    "part_of_speech": {
+      "type": "string",
+      "enum": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb",
+        "phrasal_verb",
+        "idiom",
+        "collocation",
+        "phrase"
+      ],
+      "description": "Grammatical category of the lexical item"
+    },
+    "phonetic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "International Phonetic Alphabet (IPA) representation, e.g. /dɪˌlɪb.əˈreɪ.ʃən/"
+    },
+    "audio_ref": {
+      "type": ["string", "null"],
+      "description": "Relative path to pre-generated audio asset, e.g. audio/vocab/deliberation.mp3"
+    },
+    "definition_en": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Clear English-first definition calibrated to the target CEFR level"
+    },
+    "meaning_tr": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Turkish reveal translation/gloss, displayed on demand (ADR-009)"
+    },
+    "collocations": {
+      "type": "array",
+      "description": "High-frequency professional and natural English collocations",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Collocation phrase in English, e.g. after much deliberation"
+          },
+          "tr": {
+            "type": "string",
+            "description": "Optional Turkish translation of the collocation"
+          },
+          "note": {
+            "type": "string",
+            "description": "Optional usage note or context hint"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Contextual example sentences with Turkish translations",
+      "items": {
+        "type": "object",
+        "required": ["en", "tr"],
+        "properties": {
+          "en": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Natural English sentence showing the word in context"
+          },
+          "tr": {
+            "type": "string",
+            "minLength": 5,
+            "description": "Accurate Turkish translation of the example sentence"
+          },
+          "context": {
+            "type": "string",
+            "description": "Domain context, e.g. Executive Meeting, Technical Design, Negotiations"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "turkish_traps": {
+      "type": "array",
+      "description": "Specific transfer pitfalls, false friends, and preposition traps for Turkish speakers (ADR-010)",
+      "items": {
+        "type": "object",
+        "required": ["trap_type", "trap_note_tr"],
+        "properties": {
+          "trap_type": {
+            "type": "string",
+            "enum": [
+              "false_friend",
+              "preposition_confusion",
+              "literal_translation",
+              "collocation_error",
+              "register_mismatch",
+              "part_of_speech_confusion"
+            ],
+            "description": "Category of Turkish L1 negative transfer trap"
+          },
+          "trap_note_tr": {
+            "type": "string",
+            "minLength": 10,
+            "description": "Explanation in Turkish of the common error Turkish learners make and why"
+          },
+          "incorrect_example": {
+            "type": "string",
+            "description": "Example of the typical Turkish learner error"
+          },
+          "correct_example": {
+            "type": "string",
+            "description": "Correct English equivalent"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "register": {
+      "type": "string",
+      "enum": ["general", "formal", "informal", "business", "academic"],
+      "description": "Linguistic register and sociolinguistic tone"
+    },
+    "topic_tags": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Domain and thematic tags for curriculum navigation and Today's Practice orchestration",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "related_ids": {
+      "type": "array",
+      "description": "Semantic IDs of related vocabulary, grammar, or scenario content",
+      "items": {
+        "type": "string",
+        "pattern": "^(vocab|grammar|speaking|reading|listening)\\.[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "AI_REVIEWED",
+        "VALIDATED",
+        "APPROVED",
+        "PUBLISHED",
+        "DEPRECATED"
+      ],
+      "default": "APPROVED",
+      "description": "Curriculum editorial lifecycle state (AGENTS.md Rule 10)"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1,
+      "description": "Schema version of this content entry"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,93 @@
+- id: reading.b1.agile-sprint-rituals
+  title: Agile Sprint Rituals in Modern Engineering
+  cefr_level: B1
+  category: engineering_culture
+  summary_en: An overview of core Agile cadence, sprint planning, daily standups, and retrospective continuous improvement.
+  summary_tr: Modern mühendislik ekiplerinde sprint planlama, günlük ayaküstü toplantılar ve retrospektif döngüleri.
+  word_count: 190
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: The Cadence of Two-Week Sprints
+    content_en: In contemporary software organizations, engineering teams structure their workflow into time-boxed iterations
+      known as sprints. A sprint typically lasts two weeks, during which developers, product managers, and designers commit
+      to delivering a concrete set of product features. This predictable rhythm allows stakeholders to track progress transparently
+      without imposing excessive administrative overhead on technical contributors. Teams review each sprint deliverable to
+      ensure quality standards. Communicating early prevents missed deadline risks across the squad. Engineers collaborate
+      closely with product managers during refinement.
+    content_tr: Çağdaş yazılım şirketlerinde mühendislik ekipleri iş akışlarını sprint olarak bilinen zaman sınırlı döngülere
+      bölerler. Bir sprint genellikle iki hafta sürer ve bu süre boyunca yazılımcılar, ürün yöneticileri ve tasarımcılar somut
+      bir ürün özellikleri kümesini teslim etmeyi taahhüt ederler. Bu öngörülebilir ritim, paydaşların teknik çalışanlara
+      aşırı bürokratik yük bindirmeden ilerlemeyi şeffafça izlemesini sağlar. Ekipler, kalite standartlarını sağlamak için
+      her sprint teslimatını gözden geçirir. Erken iletişim kurmak, ekip genelinde kaçırılan teslim tarihi risklerini önler.
+      Mühendisler gereksinim belirleme sırasında ürün yöneticileriyle yakın işbirliği yapar.
+  - paragraph_index: 2
+    title: The Daily Standup and Blockers
+    content_en: 'Every morning, the team gathers for a concise fifteen-minute synchronization meeting called the daily standup.
+      Rather than giving long status reports, each engineer addresses three fundamental points: what was accomplished yesterday,
+      what is planned for today, and whether any architectural or cross-team impediments are blocking progress. By highlighting
+      blockers early, teams avoid hidden delays and maintain forward momentum throughout the sprint.'
+    content_tr: 'Her sabah ekip, günlük standup adı verilen on beş dakikalık kısa bir eşzamanlama toplantısı için toplanır.
+      Uzun durum raporları vermek yerine, her mühendis üç temel noktayı ele alır: dün ne tamamlandı, bugün ne planlanıyor
+      ve ilerlemeyi engelleyen herhangi bir mimari veya ekipler arası engel var mı. Engelleri erkenden ortaya koyarak ekipler
+      gizli gecikmelerin önüne geçer ve sprint boyunca ivmelerini korurlar.'
+  - paragraph_index: 3
+    title: The Retrospective for Continuous Improvement
+    content_en: At the conclusion of each iteration, the retrospective provides a dedicated psychological space where team
+      members reflect openly on operational friction. Discussions focus on process enhancements rather than personal blame.
+      Actionable improvements are agreed upon and integrated into the subsequent cycle, ensuring that engineering efficiency
+      continuously improves over time.
+    content_tr: Her döngünün sonunda retrospektif toplantısı, ekip üyelerinin operasyonel sürtünmeler üzerinde açıkça düşünebildiği
+      özel bir psikolojik ortam sağlar. Görüşmeler kişisel suçlamalar yerine süreç iyileştirmelerine odaklanır. Uygulanabilir
+      aksiyonlar belirlenip bir sonraki döngüye dahil edilir, böylece mühendislik verimliliği zaman içinde sürekli gelişir.
+  vocabulary_annotations:
+  - word: deliverable
+    vocab_id: vocab.deliverable
+    context_definition_en: A tangible product or feature promised to stakeholders at the end of a sprint.
+    context_meaning_tr: Teslim edilecek somut ürün veya çıktı.
+  - word: deadline
+    vocab_id: vocab.deadline
+    context_definition_en: The exact time limit by which a committed milestone must be achieved.
+    context_meaning_tr: Son teslim tarihi veya zaman sınırı.
+  - word: collaborate
+    vocab_id: vocab.collaborate
+    context_definition_en: To work joint-force across diverse disciplines toward a unified product goal.
+    context_meaning_tr: Ortak bir amaç doğrultusunda işbirliği yapmak.
+  comprehension_questions:
+  - id: q_agile_01
+    question_en: What is the primary purpose of the daily standup meeting according to the text?
+    question_tr_hint: Günlük standup toplantısının metindeki asıl amacını belirleyiniz.
+    options:
+    - To give exhaustive progress presentations to executive stakeholders
+    - To conduct detailed line-by-line peer code reviews
+    - To identify impediments early and synchronize daily commitments
+    - To assign financial bonuses based on individual performance
+    correct_answer: To identify impediments early and synchronize daily commitments
+    explanation_en: The passage explicitly notes that engineers gather for fifteen minutes to address what was done, what
+      is planned, and whether any blockers exist, enabling early problem resolution.
+    explanation_tr: Metinde mühendislerin dünü, bugünü ve ilerlemeyi engelleyen engelleri erkenden çözmek için 15 dakikalık
+      kısa eşzamanlama yaptıkları açıkça belirtilmiştir.
+  - id: q_agile_02
+    question_en: How does the retrospective foster continuous improvement?
+    question_tr_hint: Retrospektif toplantısının sürekli iyileşmeyi nasıl sağladığını bulunuz.
+    options:
+    - By focusing on process enhancements rather than personal blame
+    - By disciplining engineers who failed to complete their tasks
+    - By extending the sprint deadline until all bugs are resolved
+    - By replacing traditional software testing with client surveys
+    correct_answer: By focusing on process enhancements rather than personal blame
+    explanation_en: The third paragraph explains that retrospectives examine operational friction and agree upon actionable
+      process improvements without personal blame.
+    explanation_tr: Üçüncü paragrafta retrospektiflerin kişileri suçlamak yerine süreç aksaklıklarını inceleyerek somut adımlar
+      belirlediği vurgulanmıştır.
+  topic_tags:
+  - agile
+  - engineering-culture
+  - scrum
+  - teamwork
+  related_ids:
+  - vocab.deliverable
+  - vocab.deadline
+  - vocab.collaborate
+  status: APPROVED
+  version: 1

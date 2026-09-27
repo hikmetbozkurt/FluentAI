@@ -1,0 +1,2010 @@
+batch_id: vocab_batch_002
+description: FluentAI Vocabulary Expansion Batch 002 - Planning Manifest (A2-C2)
+item_count: 250
+cefr_distribution:
+  A2: 30
+  B1: 45
+  B2: 55
+  C1: 65
+  C2: 55
+items:
+- id: vocab.headache
+  headword: headache
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: a continuous pain in the head
+  reason_for_inclusion: Fundamental symptom and everyday health vocabulary for white-collar office fatigue.
+- id: vocab.medicine
+  headword: medicine
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: substance used for treating illness
+  reason_for_inclusion: Everyday health noun essential for medical consultations and travel pharmacy needs.
+- id: vocab.rest-v
+  headword: rest
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: to relax and recover strength
+  reason_for_inclusion: Core self-care and work-life balance action verb.
+- id: vocab.tired
+  headword: tired
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: needing sleep or rest
+  reason_for_inclusion: Universal state descriptor for daily lifestyle and post-work tiredness.
+- id: vocab.ticket
+  headword: ticket
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: pass for travel or entry
+  reason_for_inclusion: Indispensable mobility and transit noun for white-collar business travelers.
+- id: vocab.platform
+  headword: platform
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: raised area at train station
+  reason_for_inclusion: Essential rail travel noun; avoids confusion with digital software platform sense.
+- id: vocab.depart
+  headword: depart
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: to leave, especially on a journey
+  reason_for_inclusion: Standard transit verb for flight gates, train stations, and bus timetables.
+- id: vocab.pack
+  headword: pack
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: put items into bags for traveling
+  reason_for_inclusion: Core travel preparation action verb for business and holiday mobility.
+- id: vocab.board-v
+  headword: board
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: headword
+  sense: get onto an aircraft, ship, or train
+  reason_for_inclusion: Crucial transit verb heard in international airport and train station gate announcements.
+- id: vocab.on-time
+  headword: on time
+  part_of_speech: phrase
+  cefr_level: A2
+  topic: topic.travel
+  lexical_type: phrase
+  sense: at the scheduled time
+  reason_for_inclusion: High-frequency punctuality phrase for transit schedules and meeting arrivals.
+- id: vocab.grocery
+  headword: grocery
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: food and household goods from a store
+  reason_for_inclusion: Everyday retail noun essential for weekly household provisioning.
+- id: vocab.bill
+  headword: bill
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: statement of money owed for dining or service
+  reason_for_inclusion: Basic consumer transaction noun encountered in every restaurant and cafe visit.
+- id: vocab.order-v
+  headword: order
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: ask for food or goods to be supplied
+  reason_for_inclusion: Indispensable dining and e-commerce action verb.
+- id: vocab.pay-by-card
+  headword: pay by card
+  part_of_speech: phrase
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: phrase
+  sense: pay using a payment card
+  reason_for_inclusion: Daily commercial checkout phrase used universally across travel and retail.
+- id: vocab.cheap
+  headword: cheap
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: low in price
+  reason_for_inclusion: Basic price descriptor for food, shopping, and everyday consumer budgeting.
+- id: vocab.fresh
+  headword: fresh
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: recently produced or picked food
+  reason_for_inclusion: Essential culinary and grocery quality adjective.
+- id: vocab.neighbor
+  headword: neighbor
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: person living near someone
+  reason_for_inclusion: Key social environment noun for daily interactions outside work.
+- id: vocab.greet
+  headword: greet
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: welcome someone when meeting
+  reason_for_inclusion: Basic social interaction verb for morning workplace and hospitality settings.
+- id: vocab.polite
+  headword: polite
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: socially correct and considerate
+  reason_for_inclusion: Essential social behavior adjective for professional communication.
+- id: vocab.routine
+  headword: routine
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: usual series of activities done regularly
+  reason_for_inclusion: Foundational lifestyle noun describing workday and morning schedules.
+- id: vocab.alarm
+  headword: alarm
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: clock sound waking someone up
+  reason_for_inclusion: Everyday morning routine noun with critical phrasal collocation (go off).
+- id: vocab.clean-v
+  headword: clean
+  part_of_speech: verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: remove dirt or dust
+  reason_for_inclusion: Fundamental daily maintenance and chore action verb.
+- id: vocab.wake-up
+  headword: wake up
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: stop sleeping and become alert
+  reason_for_inclusion: Essential daily life phrasal verb forming the core of daily routines.
+- id: vocab.early-adv
+  headword: early
+  part_of_speech: adverb
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: before the expected time
+  reason_for_inclusion: Fundamental time adverb for schedules and appointments.
+- id: vocab.tidy-adj
+  headword: tidy
+  part_of_speech: adjective
+  cefr_level: A2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: neat and well arranged
+  reason_for_inclusion: Everyday orderliness adjective for desks, rooms, and personal organization.
+- id: vocab.exam
+  headword: exam
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: headword
+  sense: formal test of knowledge or ability
+  reason_for_inclusion: Essential educational and professional certification test noun with key collocation trap.
+- id: vocab.learn-by-heart
+  headword: learn by heart
+  part_of_speech: idiom
+  cefr_level: A2
+  topic: topic.education
+  lexical_type: idiom
+  sense: memorize completely
+  reason_for_inclusion: High-frequency learning idiom explaining memorization vs active practical usage.
+- id: vocab.charger
+  headword: charger
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.technology
+  lexical_type: headword
+  sense: device putting electricity into a battery
+  reason_for_inclusion: Universal daily tech hardware noun essential in office and travel scenarios.
+- id: vocab.call-back
+  headword: call back
+  part_of_speech: phrasal_verb
+  cefr_level: A2
+  topic: topic.communication
+  lexical_type: phrasal_verb
+  sense: phone someone again in return
+  reason_for_inclusion: Foundational telephone and office communication phrasal verb.
+- id: vocab.break-n
+  headword: break
+  part_of_speech: noun
+  cefr_level: A2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: short period of rest from work
+  reason_for_inclusion: Standard workplace noun with important light verb collocation (take a break).
+- id: vocab.symptom
+  headword: symptom
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: sign of illness or disorder
+  reason_for_inclusion: Foundational healthcare vocabulary for describing personal wellbeing and medical consultations.
+- id: vocab.injury
+  headword: injury
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: physical harm or damage to the body
+  reason_for_inclusion: Core physical wellbeing noun relevant to ergonomics, sports, and workplace safety.
+- id: vocab.recover
+  headword: recover
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: return to normal health after illness
+  reason_for_inclusion: Universal health recovery verb with vital prepositional mastery.
+- id: vocab.prevent
+  headword: prevent
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: stop something bad from happening
+  reason_for_inclusion: Key verb for preventive health, risk management, and wellness habits.
+- id: vocab.painful
+  headword: painful
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: causing physical pain or discomfort
+  reason_for_inclusion: Vital descriptor for physical ailments and discomfort.
+- id: vocab.keep-fit
+  headword: keep fit
+  part_of_speech: phrase
+  cefr_level: B1
+  topic: topic.health-lifestyle
+  lexical_type: phrase
+  sense: maintain physical fitness
+  reason_for_inclusion: Everyday lifestyle phrase for corporate wellness and athletic routines.
+- id: vocab.pollution
+  headword: pollution
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: harmful substances in the environment
+  reason_for_inclusion: Fundamental environmental noun central to sustainability discussions and IELTS writing.
+- id: vocab.recycle
+  headword: recycle
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: convert waste into reusable material
+  reason_for_inclusion: Primary environmental action verb for daily habits and green office practices.
+- id: vocab.solar
+  headword: solar
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.environment
+  lexical_type: headword
+  sense: relating to the sun or solar power
+  reason_for_inclusion: High-utility renewable energy adjective for sustainability and green technology contexts.
+- id: vocab.certificate
+  headword: certificate
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: official document verifying a qualification
+  reason_for_inclusion: Crucial credentials noun for career advancement and online learning milestones.
+- id: vocab.revise
+  headword: revise
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.education
+  lexical_type: headword
+  sense: study work already done in preparation for an exam
+  reason_for_inclusion: Standard academic study verb with cross-Atlantic usage distinction.
+- id: vocab.experiment
+  headword: experiment
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: scientific test to discover information
+  reason_for_inclusion: Indispensable scientific inquiry noun with a classic 'make vs do/conduct' collocation pitfall.
+- id: vocab.discover
+  headword: discover
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.science
+  lexical_type: headword
+  sense: find information or things for the first time
+  reason_for_inclusion: Fundamental research and problem-finding verb distinguishing discovery from invention.
+- id: vocab.destination
+  headword: destination
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: place where someone is going
+  reason_for_inclusion: Core tourism and business logistics noun for travel bookings and transit navigation.
+- id: vocab.itinerary
+  headword: itinerary
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: detailed plan of a journey
+  reason_for_inclusion: Indispensable professional travel management noun for flights and agendas.
+- id: vocab.commute-v
+  headword: commute
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: travel regularly between home and work
+  reason_for_inclusion: High-frequency urban mobility verb for white-collar daily transportation discussions.
+- id: vocab.explore
+  headword: explore
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: travel to learn about an area or examine an idea
+  reason_for_inclusion: Versatile verb spanning tourist exploration and business option analysis.
+- id: vocab.check-in
+  headword: check in
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: register arrival at hotel or airport
+  reason_for_inclusion: Universal hospitality and flight logistics phrasal verb.
+- id: vocab.pick-up
+  headword: pick up
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: collect someone in a vehicle or collect an item
+  reason_for_inclusion: Indispensable mobility phrasal verb for airport pickups and parcel collections.
+- id: vocab.scenic
+  headword: scenic
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: having beautiful natural views
+  reason_for_inclusion: Standard travel adjective for routes, train journeys, and viewpoints.
+- id: vocab.abroad
+  headword: abroad
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.travel
+  lexical_type: headword
+  sense: in or to foreign countries
+  reason_for_inclusion: Fundamental international mobility adverb with a critical zero-preposition trap.
+- id: vocab.beverage
+  headword: beverage
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: a drink other than plain water
+  reason_for_inclusion: Standard formal hospitality noun encountered on flight menus and conference programs.
+- id: vocab.recipe
+  headword: recipe
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: set of instructions for cooking food
+  reason_for_inclusion: Culinary noun with a classic false-friend confusion between recipe, receipt, and prescription.
+- id: vocab.bakery
+  headword: bakery
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: shop where bread and cakes are made and sold
+  reason_for_inclusion: Everyday retail store noun distinguishing the shop (bakery) from the appliance (oven).
+- id: vocab.refund
+  headword: refund
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: money returned to an unsatisfied customer
+  reason_for_inclusion: Indispensable commercial consumer right noun for online purchases and travel cancellations.
+- id: vocab.taste-v
+  headword: taste
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: put food in mouth or have a flavor
+  reason_for_inclusion: Key sensory dining verb demonstrating linking verb vs action verb grammar.
+- id: vocab.afford
+  headword: afford
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: have enough money or resources to do something
+  reason_for_inclusion: Everyday financial decision verb with strict modal verb collocation requirements.
+- id: vocab.organic
+  headword: organic
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: food produced without artificial chemicals
+  reason_for_inclusion: Key nutritional and retail quality descriptor.
+- id: vocab.acquaintance
+  headword: acquaintance
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: person known slightly but not a close friend
+  reason_for_inclusion: Crucial sociolinguistic noun distinguishing close friendship from professional network contacts.
+- id: vocab.get-along-with
+  headword: get along with
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: have a friendly relationship with someone
+  reason_for_inclusion: Indispensable interpersonal phrasal verb for team dynamics and workplace harmony.
+- id: vocab.trust-v
+  headword: trust
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: believe in someone's reliability and honesty
+  reason_for_inclusion: Core ethical and interpersonal verb in business and personal relationships.
+- id: vocab.supportive
+  headword: supportive
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: providing encouragement and emotional help
+  reason_for_inclusion: Crucial interpersonal descriptor for healthy work environments and leadership styles.
+- id: vocab.volunteer
+  headword: volunteer
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: person doing unpaid helpful work
+  reason_for_inclusion: Key civic and social responsibility noun for community engagement.
+- id: vocab.donate
+  headword: donate
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: give money or goods to help others
+  reason_for_inclusion: Essential verb for philanthropic, community, and corporate social responsibility activities.
+- id: vocab.public-adj
+  headword: public
+  part_of_speech: adjective
+  cefr_level: B1
+  topic: topic.society
+  lexical_type: headword
+  sense: available to everyone in the community
+  reason_for_inclusion: Central civic adjective for public transport, public health, and public policy.
+- id: vocab.tradition
+  headword: tradition
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: longstanding belief or custom
+  reason_for_inclusion: Key cultural heritage and corporate ritual noun.
+- id: vocab.exhibition
+  headword: exhibition
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.culture
+  lexical_type: headword
+  sense: public display of art or trade items
+  reason_for_inclusion: Essential cultural and commercial exhibition/trade fair noun.
+- id: vocab.chore
+  headword: chore
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: routine household task
+  reason_for_inclusion: Standard domestic task noun with key 'do vs make' collocation requirement.
+- id: vocab.appliance
+  headword: appliance
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: electrical domestic machine
+  reason_for_inclusion: Technical domestic noun distinguishing white goods from consumer electronics.
+- id: vocab.errand
+  headword: errand
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: short journey to accomplish a task
+  reason_for_inclusion: Everyday lifestyle noun paired with the classic idiom 'run errands'.
+- id: vocab.tidy-up
+  headword: tidy up
+  part_of_speech: phrasal_verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: phrasal_verb
+  sense: make an area neat by putting things in order
+  reason_for_inclusion: High-utility domestic and workplace phrasal verb.
+- id: vocab.reschedule
+  headword: reschedule
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: change the scheduled date or time of an event
+  reason_for_inclusion: Everyday calendar management verb essential for professional email coordination.
+- id: vocab.regularly
+  headword: regularly
+  part_of_speech: adverb
+  cefr_level: B1
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: with repeated consistency over time
+  reason_for_inclusion: High-frequency lifestyle and work adverb denoting consistency.
+- id: vocab.device
+  headword: device
+  part_of_speech: noun
+  cefr_level: B1
+  topic: topic.technology
+  lexical_type: headword
+  sense: piece of electronic equipment made for a purpose
+  reason_for_inclusion: Broad technological hardware noun distinguishing device (noun) from devise (verb).
+- id: vocab.troubleshoot
+  headword: troubleshoot
+  part_of_speech: verb
+  cefr_level: B1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: analyze and solve technical problems
+  reason_for_inclusion: Core white-collar IT and engineering problem-resolution verb.
+- id: vocab.diagnosis
+  headword: diagnosis
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: identification of illness by examination
+  reason_for_inclusion: Essential healthcare and diagnostic terminology with irregular Greek plural inflection.
+- id: vocab.rehabilitation
+  headword: rehabilitation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: restoring health or capability through therapy
+  reason_for_inclusion: Key medical recovery and physical therapy noun.
+- id: vocab.prescribe
+  headword: prescribe
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: authorize medication or specify action
+  reason_for_inclusion: Core clinical healthcare verb with critical prescription noun derivational ties.
+- id: vocab.alleviate
+  headword: alleviate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: make pain or difficulty less severe
+  reason_for_inclusion: High-utility B2 academic and healthcare verb for symptom relief and stress management.
+- id: vocab.chronic
+  headword: chronic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: persisting for a long time or constantly recurring
+  reason_for_inclusion: Standard healthcare adjective contrasting persistent chronic illness with acute conditions.
+- id: vocab.sedentary
+  headword: sedentary
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: spending much time seated and physically inactive
+  reason_for_inclusion: Pivotal public health and white-collar ergonomic descriptor frequent in IELTS essays.
+- id: vocab.cut-down-on
+  headword: cut down on
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.health-lifestyle
+  lexical_type: phrasal_verb
+  sense: reduce consumption of something
+  reason_for_inclusion: Essential lifestyle reduction phrasal verb used in dietary, health, and financial contexts.
+- id: vocab.biodiversity
+  headword: biodiversity
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: variety of plant and animal life in a habitat
+  reason_for_inclusion: High-priority IELTS environmental topic noun.
+- id: vocab.conservation
+  headword: conservation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: protection of natural resources and wildlife
+  reason_for_inclusion: Pivotal ecological protection noun with a classic orthographic false-friend pitfall.
+- id: vocab.contaminate
+  headword: contaminate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: make impure or poisonous by adding a harmful substance
+  reason_for_inclusion: Precision environmental verb essential for academic and industrial reporting.
+- id: vocab.renewable
+  headword: renewable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.environment
+  lexical_type: headword
+  sense: natural energy resource not depleted by use
+  reason_for_inclusion: Foundational green economy and sustainability adjective.
+- id: vocab.curriculum
+  headword: curriculum
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: subjects in a course of study
+  reason_for_inclusion: Indispensable academic and professional training syllabus noun.
+- id: vocab.scholarship
+  headword: scholarship
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: financial grant awarded to support education
+  reason_for_inclusion: Key higher education and academic mobility noun.
+- id: vocab.compulsory
+  headword: compulsory
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.education
+  lexical_type: headword
+  sense: required by law or authority
+  reason_for_inclusion: Formal institutional adjective for mandatory requirements.
+- id: vocab.hypothesis
+  headword: hypothesis
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: proposed explanation for investigation
+  reason_for_inclusion: Cornerstone scientific method noun with irregular Greek plural inflection.
+- id: vocab.empirical
+  headword: empirical
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.science
+  lexical_type: headword
+  sense: verifiable by observation rather than theory
+  reason_for_inclusion: Fundamental scientific adjective essential for evidence-based argumentation and academic papers.
+- id: vocab.hospitality
+  headword: hospitality
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: generous reception of guests or hotel industry
+  reason_for_inclusion: Core tourism and cultural interaction noun with a common 'hospital' false-friend trap.
+- id: vocab.excursion
+  headword: excursion
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: short leisure trip
+  reason_for_inclusion: Sophisticated travel noun for guided visits and organized outings.
+- id: vocab.stopover
+  headword: stopover
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: break in journey before continuing
+  reason_for_inclusion: Essential aviation travel noun for long-haul business transit planning.
+- id: vocab.customs
+  headword: customs
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: government border tax authority
+  reason_for_inclusion: Vital border control and logistics noun distinguishing customs (gümrük) from custom (adet).
+- id: vocab.navigate
+  headword: navigate
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: find one's way through an area or system
+  reason_for_inclusion: Versatile navigation verb bridging physical travel guidance and organizational problem-solving.
+- id: vocab.embark-on
+  headword: embark on
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: phrasal_verb
+  sense: start a major journey or venture
+  reason_for_inclusion: High-register travel and career beginning phrasal verb with fixed preposition.
+- id: vocab.breathtaking
+  headword: breathtaking
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: awe-inspiring in beauty or grandeur
+  reason_for_inclusion: High-impact descriptive adjective for travel impressions and presentations.
+- id: vocab.punctually
+  headword: punctually
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.travel
+  lexical_type: headword
+  sense: strictly at the scheduled time
+  reason_for_inclusion: Formal time adverb reflecting professional diligence and transport reliability.
+- id: vocab.cuisine
+  headword: cuisine
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: style of cooking characteristic of a region
+  reason_for_inclusion: Refined dining and culinary culture noun distinguishing kitchen (room) from cuisine (culinary art).
+- id: vocab.delicacy
+  headword: delicacy
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: rare or expensive pleasant food
+  reason_for_inclusion: Gastronomic noun for regional specialties and gourmet food conversations.
+- id: vocab.retailer
+  headword: retailer
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: business selling goods directly to the public
+  reason_for_inclusion: Key commercial commerce noun contrasting retailer with wholesaler.
+- id: vocab.sample-v
+  headword: sample
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: try a small amount of food or test a product
+  reason_for_inclusion: Nuanced tasting and product evaluation action verb.
+- id: vocab.consume
+  headword: consume
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: eat, drink, or use up resources
+  reason_for_inclusion: High-utility B2 verb for food consumption, energy expenditure, and resource economics.
+- id: vocab.perishable
+  headword: perishable
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: likely to decay quickly
+  reason_for_inclusion: Technical retail and logistics adjective for temperature-sensitive food and pharmaceuticals.
+- id: vocab.locally-sourced
+  headword: locally sourced
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.food-shopping
+  lexical_type: headword
+  sense: obtained from nearby producers
+  reason_for_inclusion: Modern culinary and sustainability compound adjective frequent in green marketing.
+- id: vocab.empathy
+  headword: empathy
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: ability to understand and share feelings of another
+  reason_for_inclusion: Core emotional intelligence noun distinguishing empathy from sympathy.
+- id: vocab.mentor
+  headword: mentor
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: experienced and trusted adviser
+  reason_for_inclusion: Foundational professional development and interpersonal guidance noun.
+- id: vocab.confide
+  headword: confide
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: share secrets trusting someone not to repeat them
+  reason_for_inclusion: Subtle interpersonal verb essential for deep trust and personal communication.
+- id: vocab.collaborative
+  headword: collaborative
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: headword
+  sense: involving two or more parties working together
+  reason_for_inclusion: Indispensable modern agile teamwork and professional synergy adjective.
+- id: vocab.drift-apart
+  headword: drift apart
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: gradually become less close over time
+  reason_for_inclusion: Nuanced interpersonal phrasal verb describing natural relationship evolution without conflict.
+- id: vocab.demographics
+  headword: demographics
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: statistical data relating to population groups
+  reason_for_inclusion: Standard socio-economic noun for market research and sociological essays.
+- id: vocab.civic
+  headword: civic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.society
+  lexical_type: headword
+  sense: relating to city or citizen duties
+  reason_for_inclusion: Key social studies and IELTS societal governance adjective.
+- id: vocab.heritage
+  headword: heritage
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: traditions and historical sites passed down through generations
+  reason_for_inclusion: Indispensable cultural preservation noun distinguishing heritage from personal inheritance.
+- id: vocab.artifact
+  headword: artifact
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: object made by human of historical interest
+  reason_for_inclusion: Key cultural and archaeological history noun.
+- id: vocab.contemporary
+  headword: contemporary
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.culture
+  lexical_type: headword
+  sense: belonging to the present time or modern era
+  reason_for_inclusion: Central cultural and academic descriptor contrasting contemporary art with historical works.
+- id: vocab.multitasking
+  headword: multitasking
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: performing multiple tasks simultaneously
+  reason_for_inclusion: Key modern workplace and daily focus noun analyzing productivity trade-offs.
+- id: vocab.downtime
+  headword: downtime
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: period of cessation of work or system inactivity
+  reason_for_inclusion: Dual-register noun bridging IT infrastructure maintenance and personal mental health rest.
+- id: vocab.juggle
+  headword: juggle
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: organize and handle several responsibilities simultaneously
+  reason_for_inclusion: High-frequency idiomatic verb describing the realistic daily balance of career and personal life.
+- id: vocab.unwind
+  headword: unwind
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: relax after hard work or tension
+  reason_for_inclusion: Sophisticated relaxation verb with irregular past inflection (unwound).
+- id: vocab.hectic
+  headword: hectic
+  part_of_speech: adjective
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: full of frantic activity and speed
+  reason_for_inclusion: High-level intensity adjective for busy schedules and fast-paced city routines.
+- id: vocab.spontaneously
+  headword: spontaneously
+  part_of_speech: adverb
+  cefr_level: B2
+  topic: topic.daily-life
+  lexical_type: headword
+  sense: without planning or premeditation
+  reason_for_inclusion: Expressive behavioral adverb contrasting strict planning with natural spontaneity.
+- id: vocab.automation
+  headword: automation
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.technology
+  lexical_type: headword
+  sense: use of software and machines to perform processes
+  reason_for_inclusion: Core enterprise technological trend noun describing operational efficiency.
+- id: vocab.setback
+  headword: setback
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: difficulty that delays progress
+  reason_for_inclusion: Indispensable professional project management noun for hurdles and obstacles.
+- id: vocab.rectify
+  headword: rectify
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: put right an error or defect
+  reason_for_inclusion: Formal error-correction verb preferred in corporate customer service and engineering remediation.
+- id: vocab.variable
+  headword: variable
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: element liable to change in an experiment
+  reason_for_inclusion: Foundational analytical and scientific computing noun.
+- id: vocab.convey
+  headword: convey
+  part_of_speech: verb
+  cefr_level: B2
+  topic: topic.communication
+  lexical_type: headword
+  sense: communicate an idea, feeling, or impression
+  reason_for_inclusion: High-utility communication verb for presentations, email tone, and diplomatic messages.
+- id: vocab.workload
+  headword: workload
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: amount of work expected to be done
+  reason_for_inclusion: Essential corporate capacity and resource planning noun.
+- id: vocab.profitability
+  headword: profitability
+  part_of_speech: noun
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: headword
+  sense: degree to which a business yields financial gain
+  reason_for_inclusion: Core financial performance metric noun in white-collar business reviews.
+- id: vocab.scale-up
+  headword: scale up
+  part_of_speech: phrasal_verb
+  cefr_level: B2
+  topic: topic.business
+  lexical_type: phrasal_verb
+  sense: increase size or production capacity proportionally
+  reason_for_inclusion: Pivotal corporate growth and cloud architecture phrasal verb.
+- id: vocab.longevity
+  headword: longevity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: long life or extended duration of service
+  reason_for_inclusion: High-register healthcare and career sustainability noun.
+- id: vocab.predisposition
+  headword: predisposition
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: tendency to suffer from a condition
+  reason_for_inclusion: Crucial academic biomedical and psychological noun.
+- id: vocab.debilitate
+  headword: debilitate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: make weak or infirm
+  reason_for_inclusion: High-register healthcare and analytical verb for severe physical or operational impairment.
+- id: vocab.aggravate
+  headword: aggravate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: make a condition or problem worse
+  reason_for_inclusion: Precision clinical and dispute-resolution verb contrasting with alleviate.
+- id: vocab.counteract
+  headword: counteract
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: act against to neutralize negative effects
+  reason_for_inclusion: Analytical action verb crossing biochemistry, medicine, and macroeconomics.
+- id: vocab.recuperate
+  headword: recuperate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: recover from illness or exhaustion through rest
+  reason_for_inclusion: High-register healthcare verb emphasizing restorative convalescence.
+- id: vocab.deleterious
+  headword: deleterious
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: causing harm or damage
+  reason_for_inclusion: Advanced academic synonym for harmful and detrimental.
+- id: vocab.holistic
+  headword: holistic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.health-lifestyle
+  lexical_type: headword
+  sense: treating the whole system or person rather than isolated parts
+  reason_for_inclusion: Key contemporary medical and strategic analysis descriptor.
+- id: vocab.depletion
+  headword: depletion
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: reduction in natural resources
+  reason_for_inclusion: Indispensable environmental and economic resource exhaustion noun.
+- id: vocab.afforestation
+  headword: afforestation
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: planting trees on previously unforested land
+  reason_for_inclusion: Precision forestry noun contrasting afforestation with reforestation.
+- id: vocab.degrade
+  headword: degrade
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: break down chemically or reduce quality
+  reason_for_inclusion: Foundational materials science and ecological decomposition verb.
+- id: vocab.curb-v
+  headword: curb
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: restrain or keep in check
+  reason_for_inclusion: High-impact policy and environmental verb frequent in academic reporting.
+- id: vocab.clean-up
+  headword: clean up
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: phrasal_verb
+  sense: remove pollution or hazardous substances from an area
+  reason_for_inclusion: Essential environmental action phrasal verb used in ecological remediation and governance contexts.
+- id: vocab.perilous
+  headword: perilous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: full of danger or risk
+  reason_for_inclusion: Elevated adjective for acute environmental threats and geopolitical risks.
+- id: vocab.ecologically
+  headword: ecologically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.environment
+  lexical_type: headword
+  sense: in an ecological manner
+  reason_for_inclusion: Key academic adverb for environmental evaluation and sustainability discourse.
+- id: vocab.pedagogy
+  headword: pedagogy
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: method and theory of teaching
+  reason_for_inclusion: Core educational science and EdTech instructional design noun.
+- id: vocab.literacy
+  headword: literacy
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: ability to read and write or domain competence
+  reason_for_inclusion: Pivotal educational metric noun spanning traditional and digital domains.
+- id: vocab.cultivate
+  headword: cultivate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: develop a skill, relationship, or quality
+  reason_for_inclusion: Nuanced development verb essential for academic mindset and professional relationship building.
+- id: vocab.assimilate
+  headword: assimilate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: absorb and understand information or integrate into society
+  reason_for_inclusion: Dual-meaning intellectual verb distinguishing cognitive absorption from sociological assimilation.
+- id: vocab.scholarly
+  headword: scholarly
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: relating to serious academic study
+  reason_for_inclusion: High-register academic adjective with a deceptive -ly suffix trap.
+- id: vocab.rigorously
+  headword: rigorously
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.education
+  lexical_type: headword
+  sense: in an extremely thorough and disciplined manner
+  reason_for_inclusion: Essential academic and software engineering quality assurance adverb.
+- id: vocab.breakthrough
+  headword: breakthrough
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: sudden and important discovery or advance
+  reason_for_inclusion: High-impact scientific and technological innovation noun.
+- id: vocab.specimen
+  headword: specimen
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: individual sample taken for scientific analysis
+  reason_for_inclusion: Precision scientific laboratory and museum specimen noun.
+- id: vocab.formulate
+  headword: formulate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: create or express systematically
+  reason_for_inclusion: High-register planning and scientific formulation verb.
+- id: vocab.refute
+  headword: refute
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: prove an argument or claim to be wrong with evidence
+  reason_for_inclusion: Cornerstone scientific argumentation verb distinguishing refutation from mere denial.
+- id: vocab.replicate
+  headword: replicate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: duplicate an experiment or result
+  reason_for_inclusion: Vital scientific replication and software bug reproduction verb.
+- id: vocab.reproducible
+  headword: reproducible
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: capable of being repeated with identical outcomes
+  reason_for_inclusion: Core scientific method and software engineering adjective.
+- id: vocab.empirically
+  headword: empirically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.science
+  lexical_type: headword
+  sense: by means of observation or experimentation
+  reason_for_inclusion: High-level scientific and analytical validation adverb.
+- id: vocab.rapport
+  headword: rapport
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: harmonious relationship and mutual understanding
+  reason_for_inclusion: Essential business relationship noun with a classic French silent letter and report false-friend trap.
+- id: vocab.reciprocity
+  headword: reciprocity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: practice of exchanging things for mutual benefit
+  reason_for_inclusion: High-level ethical, sociological, and diplomatic relationship noun.
+- id: vocab.alienate
+  headword: alienate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: cause someone to feel isolated or estranged
+  reason_for_inclusion: Sophisticated interpersonal and sociopolitical estrangement verb.
+- id: vocab.stand-by
+  headword: stand by
+  part_of_speech: phrasal_verb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: phrasal_verb
+  sense: support or remain loyal to someone through hardship
+  reason_for_inclusion: High-utility interpersonal phrasal verb denoting unwavering loyalty.
+- id: vocab.harmonious
+  headword: harmonious
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: free from conflict or forming a pleasing whole
+  reason_for_inclusion: Elevated adjective for conflict-free teamwork and diplomatic ties.
+- id: vocab.cordially
+  headword: cordially
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.relationships
+  lexical_type: headword
+  sense: in a warm and formally polite manner
+  reason_for_inclusion: High-register diplomatic and formal invitation adverb.
+- id: vocab.marginalization
+  headword: marginalization
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: treatment of a group as peripheral or insignificant
+  reason_for_inclusion: Vital sociological and human rights concept frequent in IELTS essays and policy briefs.
+- id: vocab.advocacy
+  headword: advocacy
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: public support for a cause or policy
+  reason_for_inclusion: Key civil society noun distinguishing advocacy from courtroom legal representation.
+- id: vocab.empower
+  headword: empower
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: give authority or power to someone
+  reason_for_inclusion: Central sociological, developmental, and leadership verb.
+- id: vocab.equitable
+  headword: equitable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: fair, just, and impartial
+  reason_for_inclusion: High-register ethical and social policy adjective contrasting equity with mere equality.
+- id: vocab.collectively
+  headword: collectively
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.society
+  lexical_type: headword
+  sense: as a whole group jointly
+  reason_for_inclusion: Core societal and governance adverb denoting shared responsibility.
+- id: vocab.pluralism
+  headword: pluralism
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: coexistence of diverse groups or principles in society
+  reason_for_inclusion: High-level cultural and political philosophy noun.
+- id: vocab.authenticity
+  headword: authenticity
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: quality of being genuine and original
+  reason_for_inclusion: Crucial art critique and brand communication noun.
+- id: vocab.evoke
+  headword: evoke
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: bring a feeling or memory to mind
+  reason_for_inclusion: High-register literary and artistic appraisal verb contrasting with provoke.
+- id: vocab.aesthetic
+  headword: aesthetic
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.culture
+  lexical_type: headword
+  sense: concerned with beauty or artistic appreciation
+  reason_for_inclusion: Indispensable design, architectural, and artistic criticism adjective.
+- id: vocab.vulnerability
+  headword: vulnerability
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: weakness in security that can be exploited
+  reason_for_inclusion: Essential cybersecurity and systems integrity noun.
+- id: vocab.scalability
+  headword: scalability
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: capacity of a system to handle growth smoothly
+  reason_for_inclusion: Cornerstone cloud computing and startup architecture metric noun.
+- id: vocab.encrypt
+  headword: encrypt
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: convert data into a secret code
+  reason_for_inclusion: Indispensable modern information security and privacy verb.
+- id: vocab.interoperable
+  headword: interoperable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.technology
+  lexical_type: headword
+  sense: able to exchange and make use of information across systems
+  reason_for_inclusion: Key enterprise software architecture and data exchange adjective.
+- id: vocab.countermeasure
+  headword: countermeasure
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: action taken to oppose or neutralize a threat
+  reason_for_inclusion: High-level risk response and crisis resolution noun.
+- id: vocab.unravel
+  headword: unravel
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: solve a complex problem or fall apart
+  reason_for_inclusion: Expressive problem-solving verb capturing intricate analytical breakthroughs.
+- id: vocab.astute
+  headword: astute
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: having or showing an ability to accurately assess situations and gain advantage
+  reason_for_inclusion: High-impact C1 executive intelligence and analytical decision-making adjective.
+- id: vocab.systematically
+  headword: systematically
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: according to an organized plan or method
+  reason_for_inclusion: Core analytical problem-solving adverb.
+- id: vocab.synthesis
+  headword: synthesis
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: combination of components into a unified whole
+  reason_for_inclusion: Pivotal higher-order cognitive and academic evaluation noun.
+- id: vocab.deduce
+  headword: deduce
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: arrive at a fact or conclusion by reasoning
+  reason_for_inclusion: Foundational formal deductive reasoning verb.
+- id: vocab.quantifiable
+  headword: quantifiable
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: able to be measured numerically
+  reason_for_inclusion: Indispensable data analytics and evidence-based decision adjective.
+- id: vocab.inherently
+  headword: inherently
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: in an essential or natural way
+  reason_for_inclusion: Essential academic and architectural characterization adverb.
+- id: vocab.eloquence
+  headword: eloquence
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: fluent or persuasive speaking or writing
+  reason_for_inclusion: High-register communication and rhetorical prowess noun.
+- id: vocab.assertive
+  headword: assertive
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: confident and forceful without being aggressive
+  reason_for_inclusion: Critical leadership and executive presence communication descriptor.
+- id: vocab.succinctly
+  headword: succinctly
+  part_of_speech: adverb
+  cefr_level: C1
+  topic: topic.communication
+  lexical_type: headword
+  sense: briefly and clearly expressed
+  reason_for_inclusion: High-value executive communication adverb for brevity and clarity.
+- id: vocab.attrition
+  headword: attrition
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: gradual reduction of a workforce
+  reason_for_inclusion: Vital human resources and organizational management metric noun.
+- id: vocab.spearhead
+  headword: spearhead
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: lead a movement, campaign, or project
+  reason_for_inclusion: High-impact resume and executive leadership action verb.
+- id: vocab.autonomous
+  headword: autonomous
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.work-career
+  lexical_type: headword
+  sense: having independence or self-governance
+  reason_for_inclusion: Foundational organizational structure and autonomous technology adjective.
+- id: vocab.solvency
+  headword: solvency
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: ability to pay long-term financial debts
+  reason_for_inclusion: Crucial corporate accounting and creditworthiness noun.
+- id: vocab.monopoly
+  headword: monopoly
+  part_of_speech: noun
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: exclusive control of trade in a commodity or service
+  reason_for_inclusion: Pivotal microeconomic and antitrust competition noun.
+- id: vocab.liquidate
+  headword: liquidate
+  part_of_speech: verb
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: convert assets into cash or wind up a company
+  reason_for_inclusion: Essential corporate bankruptcy, insolvency, and asset management verb.
+- id: vocab.fiscal
+  headword: fiscal
+  part_of_speech: adjective
+  cefr_level: C1
+  topic: topic.business
+  lexical_type: headword
+  sense: relating to government revenue, taxes, or financial years
+  reason_for_inclusion: Standard macroeconomic and corporate reporting financial adjective.
+- id: vocab.anthropogenic
+  headword: anthropogenic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: originating in human activity
+  reason_for_inclusion: Precision scientific and ecological climatology adjective.
+- id: vocab.biodegradability
+  headword: biodegradability
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: capability of materials to decompose naturally
+  reason_for_inclusion: Advanced ecological biochemistry and packaging innovation noun.
+- id: vocab.desalination
+  headword: desalination
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: process of removing salt from seawater
+  reason_for_inclusion: Crucial environmental engineering and resource sustainability noun.
+- id: vocab.remediation
+  headword: remediation
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: action of remedying environmental damage
+  reason_for_inclusion: Technical environmental restoration and chemical decontamination noun.
+- id: vocab.bioclimatic
+  headword: bioclimatic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: relating to climate interrelations or weather-responsive architecture
+  reason_for_inclusion: Advanced architectural ecology and sustainable design adjective.
+- id: vocab.unprecedentedly
+  headword: unprecedentedly
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.environment
+  lexical_type: headword
+  sense: in a way never known before
+  reason_for_inclusion: High-register degree adverb characterizing historic climate anomalies and technological leaps.
+- id: vocab.erudition
+  headword: erudition
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: profound knowledge and scholarship
+  reason_for_inclusion: Apex academic noun characterizing deep scholarship and intellectual mastery.
+- id: vocab.pedagogue
+  headword: pedagogue
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: teacher, often strict or pedantic
+  reason_for_inclusion: High-register instructional role noun highlighting pedagogical style contrasts.
+- id: vocab.disquisition
+  headword: disquisition
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: elaborate formal essay or treatise
+  reason_for_inclusion: Elevated academic treatise noun for rigorous scholarly compositions.
+- id: vocab.inculcate
+  headword: inculcate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: instill an idea or habit by persistent instruction
+  reason_for_inclusion: High-register pedagogy and cultural socialization verb.
+- id: vocab.didactically
+  headword: didactically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: in an instructional or preachy manner
+  reason_for_inclusion: Refined pedagogical criticism adverb capturing nuanced didactic tone.
+- id: vocab.interdisciplinary
+  headword: interdisciplinary
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: involving two or more academic fields
+  reason_for_inclusion: Pivotal modern university and industrial research descriptor.
+- id: vocab.polymath
+  headword: polymath
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.education
+  lexical_type: headword
+  sense: person of wide-ranging learning across domains
+  reason_for_inclusion: Prestigious intellectual noun honoring broad multi-domain mastery.
+- id: vocab.empiricism
+  headword: empiricism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: theory that all knowledge originates in sensory experience
+  reason_for_inclusion: Foundational epistemology and scientific methodology noun.
+- id: vocab.quantum-adj
+  headword: quantum
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: relating to quantum mechanics or sudden discrete leap
+  reason_for_inclusion: Pivotal modern physics and disruptive technological innovation adjective.
+- id: vocab.falsification
+  headword: falsification
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: disproving a theory or altering records fraudulently
+  reason_for_inclusion: Crucial Popperian philosophy of science and audit compliance noun.
+- id: vocab.postulate
+  headword: postulate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: suggest or assume something as a basis for reasoning
+  reason_for_inclusion: High-level theoretical physics and mathematical premise verb.
+- id: vocab.extrapolate
+  headword: extrapolate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: estimate by projecting known data into future
+  reason_for_inclusion: Pivotal statistical modeling and scientific forecasting verb.
+- id: vocab.epistemology
+  headword: epistemology
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: branch of philosophy concerning knowledge theory
+  reason_for_inclusion: Foundational branch of philosophy governing scientific validity.
+- id: vocab.tautological
+  headword: tautological
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.science
+  lexical_type: headword
+  sense: needlessly repetitive in meaning or true by definition
+  reason_for_inclusion: Formal logical fallacy and linguistic redundancy descriptor.
+- id: vocab.stratification
+  headword: stratification
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: arrangement into hierarchical social or geological layers
+  reason_for_inclusion: Foundational sociological and geological stratification noun.
+- id: vocab.hegemony
+  headword: hegemony
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: leadership or dominance by one group or nation
+  reason_for_inclusion: High-level political science, international relations, and sociological noun.
+- id: vocab.disenfranchise
+  headword: disenfranchise
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: deprive someone of rights especially voting
+  reason_for_inclusion: Cornerstone civil rights and constitutional jurisprudence verb.
+- id: vocab.egalitarianism
+  headword: egalitarianism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: doctrine that all people are equal and deserve equal rights
+  reason_for_inclusion: High-register political philosophy and organizational equality noun.
+- id: vocab.interdependence
+  headword: interdependence
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: mutual reliance on one another
+  reason_for_inclusion: Essential globalization, ecological system, and diplomatic interdependence noun.
+- id: vocab.grassroots-adj
+  headword: grassroots
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.society
+  lexical_type: headword
+  sense: originating from ordinary people at a local level
+  reason_for_inclusion: Pivotal political science and civic mobilization compound adjective.
+- id: vocab.juxtaposition
+  headword: juxtaposition
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: placing things side by side to highlight contrast
+  reason_for_inclusion: Cornerstone literary, architectural, and visual arts analytical noun.
+- id: vocab.iconography
+  headword: iconography
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: visual images and symbols in art
+  reason_for_inclusion: High-register art history and semiotics noun.
+- id: vocab.aestheticism
+  headword: aestheticism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: emphasis on aesthetic values over functional or moral ones
+  reason_for_inclusion: Sophisticated art philosophy and design theory movement noun.
+- id: vocab.vernacular-adj
+  headword: vernacular
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: native or regional language or architecture
+  reason_for_inclusion: Pivotal linguistic and architectural heritage adjective.
+- id: vocab.zeitgeist
+  headword: zeitgeist
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.culture
+  lexical_type: headword
+  sense: defining spirit of a historical period
+  reason_for_inclusion: Indispensable German philosophical loanword for cultural era analysis.
+- id: vocab.obsolescence
+  headword: obsolescence
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: process of becoming outdated or obsolete
+  reason_for_inclusion: Key tech industry, sustainability, and economic product-lifecycle noun.
+- id: vocab.interoperability
+  headword: interoperability
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: ability of computer systems to exchange and use information
+  reason_for_inclusion: Apex enterprise software architecture and systems engineering noun.
+- id: vocab.determinism
+  headword: determinism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: doctrine that all events are determined by preceding causes
+  reason_for_inclusion: Foundational computing systems and philosophical theory noun distinguishing determinism from determination.
+- id: vocab.cybernetic
+  headword: cybernetic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: relating to automatic communication and control systems
+  reason_for_inclusion: Root systems science and biological-machine feedback adjective.
+- id: vocab.telemetry
+  headword: telemetry
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.technology
+  lexical_type: headword
+  sense: automatic recording and transmission of remote data
+  reason_for_inclusion: Crucial modern observability, cloud metrics, and aerospace data noun.
+- id: vocab.quagmire
+  headword: quagmire
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: awkward, hazardous, or complex situation
+  reason_for_inclusion: High-register metaphoric problem noun for entrenched bureaucratic and architectural crises.
+- id: vocab.stalemate
+  headword: stalemate
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: deadlock where no progress can be made
+  reason_for_inclusion: Essential strategic negotiation and game-theory deadlock noun.
+- id: vocab.extricate
+  headword: extricate
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: free someone from an entanglement or constraint
+  reason_for_inclusion: Sophisticated action verb for strategic disentanglement and crisis recovery.
+- id: vocab.insurmountable
+  headword: insurmountable
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: too great to be overcome
+  reason_for_inclusion: High-register difficulty descriptor frequent in executive decision analyses.
+- id: vocab.impasse
+  headword: impasse
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.problem-solving
+  lexical_type: headword
+  sense: situation with no progress possible
+  reason_for_inclusion: Indispensable diplomatic and corporate deadlock noun.
+- id: vocab.dialectic
+  headword: dialectic
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: investigation of truth through logical debate
+  reason_for_inclusion: Cornerstone philosophical argumentation and thesis-antithesis method noun.
+- id: vocab.hermeneutics
+  headword: hermeneutics
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: theory and methodology of textual interpretation
+  reason_for_inclusion: Advanced humanities, legal theory, and philosophical methodology noun.
+- id: vocab.epistemic
+  headword: epistemic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: relating to knowledge and validation
+  reason_for_inclusion: High-register epistemology adjective crucial for cognitive and social analysis.
+- id: vocab.substantiation
+  headword: substantiation
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: provision of evidence to support the truth of a claim
+  reason_for_inclusion: Formal evidential validation noun vital for law, science, and compliance audits.
+- id: vocab.axiomatic
+  headword: axiomatic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.academic-analytical
+  lexical_type: headword
+  sense: self-evident or unquestionable
+  reason_for_inclusion: Formal mathematical and analytical certainty adjective.
+- id: vocab.circumlocution
+  headword: circumlocution
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: use of unnecessarily wordy and evasive language
+  reason_for_inclusion: High-register rhetorical critique noun characterizing evasive wordiness.
+- id: vocab.equivocation
+  headword: equivocation
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: use of ambiguous language to conceal truth
+  reason_for_inclusion: Sophisticated rhetorical deceit and legal precision noun.
+- id: vocab.articulacy
+  headword: articulacy
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: ability to express ideas fluently and clearly
+  reason_for_inclusion: Apex communication capability noun denoting pristine clarity of expression.
+- id: vocab.rhetorically
+  headword: rhetorically
+  part_of_speech: adverb
+  cefr_level: C2
+  topic: topic.communication
+  lexical_type: headword
+  sense: in terms of rhetoric or without expecting an answer
+  reason_for_inclusion: High-register persuasion and oratory adverb.
+- id: vocab.nepotism
+  headword: nepotism
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: favoring relatives or friends in job appointments
+  reason_for_inclusion: Vital professional ethics, compliance, and institutional governance noun.
+- id: vocab.bureaucratize
+  headword: bureaucratize
+  part_of_speech: verb
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: organize through rigid bureaucratic procedures
+  reason_for_inclusion: High-register management science and organizational pathology verb.
+- id: vocab.meritocratic
+  headword: meritocratic
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.work-career
+  lexical_type: headword
+  sense: rewarding or advancing based on demonstrated merit
+  reason_for_inclusion: Key professional talent management and social mobility adjective.
+- id: vocab.fiduciary
+  headword: fiduciary
+  part_of_speech: adjective
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: involving legal and financial trust obligations
+  reason_for_inclusion: Apex corporate governance, investment law, and board ethics adjective.
+- id: vocab.oligopoly
+  headword: oligopoly
+  part_of_speech: noun
+  cefr_level: C2
+  topic: topic.business
+  lexical_type: headword
+  sense: state of limited competition dominated by a few sellers
+  reason_for_inclusion: Pivotal microeconomic market structure and antitrust noun contrasting with monopoly.

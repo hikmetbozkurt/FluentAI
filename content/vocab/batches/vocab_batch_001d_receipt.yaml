@@ -1,0 +1,66 @@
+batch_id: vocab_batch_001d
+source_manifest: vocab_batch_001_manifest
+produced_at: "2026-09-25T12:10:00Z"
+item_count: 50
+cefr_distribution:
+  A2: 6
+  B1: 9
+  B2: 11
+  C1: 13
+  C2: 11
+produced_ids:
+  A2:
+    - vocab.luggage
+    - vocab.menu
+    - vocab.coworker
+    - vocab.receive
+    - vocab.crowded
+    - vocab.turn-off
+  B1:
+    - vocab.disadvantage
+    - vocab.employee
+    - vocab.salary
+    - vocab.improve
+    - vocab.participate
+    - vocab.temporary
+    - vocab.professional
+    - vocab.suitable
+    - vocab.give-up
+  B2:
+    - vocab.revenue
+    - vocab.assessment
+    - vocab.dimension
+    - vocab.expansion
+    - vocab.liability
+    - vocab.demonstrate
+    - vocab.accelerate
+    - vocab.initial
+    - vocab.substantial
+    - vocab.moreover
+    - vocab.follow-through
+  C1:
+    - vocab.accountability
+    - vocab.complexity
+    - vocab.trajectory
+    - vocab.divergence
+    - vocab.oversight
+    - vocab.curtail
+    - vocab.encompass
+    - vocab.orchestrate
+    - vocab.pioneer
+    - vocab.burgeoning
+    - vocab.imperceptible
+    - vocab.boil-down-to
+    - vocab.phase-in
+  C2:
+    - vocab.anecdote
+    - vocab.epitome
+    - vocab.impetus
+    - vocab.propensity
+    - vocab.embellish
+    - vocab.garner
+    - vocab.obfuscate
+    - vocab.exemplary
+    - vocab.precarious
+    - vocab.metaphorically
+    - vocab.set-in-stone

@@ -1,0 +1,218 @@
+- id: listening.b2.incident-triage
+  title: Production Database Outage Triage
+  cefr_level: B2
+  category: incident_response
+  scenario_context: An emergency incident response bridge between an SRE staff engineer and a principal backend lead triaging
+    a severe connection pool exhaustion causing API gateway timeouts.
+  speakers:
+  - id: kaan
+    name: Kaan
+    role: Staff Site Reliability Engineer
+    accent: Turkish
+  - id: rachel
+    name: Rachel
+    role: Principal Backend Lead
+    accent: American
+  audio_ref: audio/listening/b2_incident_triage.mp3
+  duration_seconds: 53
+  transcript_items:
+  - index: 1
+    speaker_id: kaan
+    start_ms: 0
+    end_ms: 8713
+    text_en: Rachel, we have an active P1 incident. The primary PostgreSQL cluster connection pool is completely exhausted.
+    text_tr: Rachel, aktif bir 1. öncelikli krizimiz (P1) var. Ana PostgreSQL kümesinin bağlantı havuzu tamamen tükendi.
+  - index: 2
+    speaker_id: rachel
+    start_ms: 9113
+    end_ms: 17766
+    text_en: I see the alerting dashboards now. Latency just breached four thousand milliseconds. What is causing the bottleneck?
+    text_tr: Uyarı panellerini şimdi görüyorum. Gecikme az önce dört bin milisaniyeyi aştı. Darboğaza ne sebep oluyor?
+  - index: 3
+    speaker_id: kaan
+    start_ms: 18166
+    end_ms: 27149
+    text_en: A batch analytics query launched without an index on customer foreign keys, triggering full table scans and holding
+      hundreds of connections open.
+    text_tr: Müşteri dış anahtarlarında dizin (index) olmadan başlatılan bir toplu analitik sorgusu, tüm tablo taramalarını
+      tetiklemiş ve yüzlerce bağlantıyı açık tutuyor.
+  - index: 4
+    speaker_id: rachel
+    start_ms: 27549
+    end_ms: 34872
+    text_en: We need to mitigate the customer impact immediately. Can we terminate that background worker process safely?
+    text_tr: Müşteri üzerindeki etkiyi derhal hafifletmeliyiz. O arka plan iş parçacığını güvenli bir şekilde sonlandırabilir
+      miyiz?
+  - index: 5
+    speaker_id: kaan
+    start_ms: 35272
+    end_ms: 44269
+    text_en: Yes. The trade-off is that analytics reports will be delayed by two hours, but customer checkout requests will
+      recover immediately.
+    text_tr: Evet. Bunun ödünleşimi analitik raporlarının iki saat gecikmesidir, ancak müşteri ödeme istekleri anında düzelecektir.
+  - index: 6
+    speaker_id: rachel
+    start_ms: 44669
+    end_ms: 51832
+    text_en: That is an acceptable trade-off. Kill the background batch job now and enable connection pool rate-limiting.
+    text_tr: Bu kabul edilebilir bir ödünleşim. Arka plan toplu işini hemen sonlandır ve bağlantı havuzu hız sınırlamasını
+      etkinleştir.
+  key_vocabulary:
+  - word: bottleneck
+    vocab_id: vocab.bottleneck
+    context_note_tr: Tüm sistemin hızını ve verimini düşüren tıkanıklık veya sınırlandırıcı faktör.
+  - word: mitigate
+    vocab_id: vocab.mitigate
+    context_note_tr: Bir krizin veya riskin olumsuz etkisini azaltmak, hafifletmek.
+  - word: trade-off
+    vocab_id: vocab.trade-off
+    context_note_tr: Bir fayda elde etmek için başka bir avantajdan vazgeçme dengesi, ödünleşim.
+  comprehension_questions:
+  - id: q_triage_01
+    question_en: What specifically caused the connection pool exhaustion in the primary database?
+    question_tr_hint: Veritabanı bağlantı havuzunun tükenmesine yol açan asıl nedeni belirleyiniz.
+    options:
+    - A physical power failure in the cloud datacenter
+    - An unindexed batch analytics query triggering full table scans
+    - A malicious ransomware attack on user accounts
+    - Accidental deletion of the production database tables
+    correct_answer: An unindexed batch analytics query triggering full table scans
+    explanation_en: Kaan explains that a batch analytics query without an index on foreign keys caused full table scans, holding
+      connections open and exhausting the pool.
+    explanation_tr: Kaan, müşteri dış anahtarlarında dizin bulunmayan bir analitik sorgusunun tüm tabloyu tarayarak bağlantıları
+      kilitlediğini belirtmektedir.
+  - id: q_triage_02
+    question_en: What trade-off did Rachel accept in order to restore customer checkout functionality?
+    question_tr_hint: Rachel'ın müşteri ödemelerini kurtarmak için kabul ettiği ödünleşimi seçiniz.
+    options:
+    - Losing all customer credit card numbers permanently
+    - Shutting down the company website for the entire weekend
+    - Delaying analytics reporting by two hours to free up connection capacity
+    - Firing the developer who wrote the query
+    correct_answer: Delaying analytics reporting by two hours to free up connection capacity
+    explanation_en: Rachel accepted the trade-off that internal analytics reports would be delayed by two hours so that the
+      checkout requests would immediately recover.
+    explanation_tr: Rachel, müşteri ödeme trafiğini hemen kurtarmak uğruna iç analitik raporlarının iki saat gecikmesini kabul
+      edilebilir bulmuştur.
+  topic_tags:
+  - incident-response
+  - devops
+  - site-reliability
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.bottleneck
+  - vocab.mitigate
+  - vocab.trade-off
+  status: APPROVED
+  version: 1
+- id: listening.b2.feature-prioritization
+  title: Quarterly Roadmap Trade-Offs
+  cefr_level: B2
+  category: product_discovery
+  scenario_context: A product roadmap alignment session between a senior product manager and an engineering manager discussing
+    the trade-off between paying down architectural technical debt versus shipping experimental growth features.
+  speakers:
+  - id: emre
+    name: Emre
+    role: Engineering Manager
+    accent: Turkish
+  - id: sophia
+    name: Sophia
+    role: Senior Product Manager
+    accent: British
+  audio_ref: audio/listening/b2_feature_prioritization.mp3
+  duration_seconds: 54
+  transcript_items:
+  - index: 1
+    speaker_id: sophia
+    start_ms: 0
+    end_ms: 7848
+    text_en: Emre, the growth team wants us to dedicate seventy percent of our Q3 engineering capacity to social referral
+      loops.
+    text_tr: Emre, büyüme ekibi Q3 mühendislik kapasitemizin yüzde yetmişini sosyal tavsiye döngülerine ayırmamızı istiyor.
+  - index: 2
+    speaker_id: emre
+    start_ms: 8248
+    end_ms: 18641
+    text_en: Sophia, our legacy caching layer is already breaking under peak load. If we do not refactor it, we cannot achieve
+      a sustainable release pace.
+    text_tr: Sophia, eski önbellekleme katmanımız yoğun yük altında şimdiden aksıyor. Onu yeniden düzenlemezsek, sürdürülebilir
+      bir sürüm temposuna ulaşamayız.
+  - index: 3
+    speaker_id: sophia
+    start_ms: 19041
+    end_ms: 27498
+    text_en: I understand your engineering concerns, but executive leadership is measuring our team primarily on daily active
+      user acquisition.
+    text_tr: Mühendislik endişelerini anlıyorum ancak üst yönetim ekibimizi öncelikli olarak günlük aktif kullanıcı kazanımı
+      üzerinden ölçüyor.
+  - index: 4
+    speaker_id: emre
+    start_ms: 27898
+    end_ms: 37501
+    text_en: 'We can leverage a balanced compromise: fifty percent for viral growth features, and fifty percent to migrate
+      the database to asynchronous event queues.'
+    text_tr: 'Dengeli bir uzlaşıdan yararlanabiliriz: Yüzde elli viral büyüme özellikleri için, yüzde elli ise veritabanını
+      asenkron olay kuyruklarına taşımak için.'
+  - index: 5
+    speaker_id: sophia
+    start_ms: 37901
+    end_ms: 45399
+    text_en: If we do that, will the platform handle the anticipated surge in concurrent users when marketing launches their
+      campaign?
+    text_tr: Bunu yaparsak, pazarlama ekibi kampanyayı başlattığında platform beklenen anlık eşzamanlı kullanıcı artışını
+      kaldırabilecek mi?
+  - index: 6
+    speaker_id: emre
+    start_ms: 45799
+    end_ms: 53342
+    text_en: Absolutely. The asynchronous architecture will absorb traffic spikes without degrading transaction latency.
+    text_tr: Kesinlikle. Asenkron mimari, işlem gecikmesini bozmadan trafik sıçramalarını absorbe edecektir.
+  key_vocabulary:
+  - word: sustainable
+    vocab_id: vocab.sustainable
+    context_note_tr: Uzun vadede kaynakları tüketmeden sürdürülebilir olan çalışma ve geliştirme temposu.
+  - word: leverage
+    vocab_id: vocab.leverage
+    context_note_tr: Mevcut bir fırsatı, aracı veya uzlaşıyı maksimum fayda elde etmek için kullanmak.
+  - word: trade-off
+    vocab_id: vocab.trade-off
+    context_note_tr: Büyüme özellikleri ile teknik borç arasındaki ödünleşim.
+  comprehension_questions:
+  - id: q_prioritize_01
+    question_en: Why does Emre argue against committing seventy percent of capacity solely to growth features?
+    question_tr_hint: Emre'nin kapasitenin %70'inin büyümeye ayrılmasına neden itiraz ettiğini bulunuz.
+    options:
+    - The legacy caching layer is breaking under load and requires refactoring for sustainability
+    - He wants the engineering team to take an extended holiday
+    - He does not believe social referrals ever generate revenue
+    - The mobile app code was completely lost in a disk failure
+    correct_answer: The legacy caching layer is breaking under load and requires refactoring for sustainability
+    explanation_en: Emre explains that the legacy caching layer is already breaking under peak load, and without refactoring,
+      the team cannot sustain their delivery pace.
+    explanation_tr: Emre, eski önbellekleme katmanının yoğun yükte aksadığını ve refactoring yapılmadan sürdürülebilir bir
+      geliştirme yapılamayacağını belirtmektedir.
+  - id: q_prioritize_02
+    question_en: What compromise distribution of capacity do Emre and Sophia agree to pursue?
+    question_tr_hint: Emre ve Sophia'nın üzerinde uzlaştığı kapasite dağılımını belirleyiniz.
+    options:
+    - 100% technical debt refactoring and 0% product features
+    - 90% marketing campaigns and 10% software updates
+    - 50% viral growth features and 50% asynchronous architecture migration
+    - Halting all development until Q4
+    correct_answer: 50% viral growth features and 50% asynchronous architecture migration
+    explanation_en: Emre proposes a balanced 50/50 split between viral growth features and migrating the database to asynchronous
+      event queues, which Sophia accepts.
+    explanation_tr: Emre %50 büyüme özellikleri ve %50 asenkron olay kuyruğu mimarisi göçü şeklinde dengeli bir dağılım önermiş
+      ve bu kabul görmüştür.
+  topic_tags:
+  - product-management
+  - prioritization
+  - technical-debt
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.sustainable
+  - vocab.leverage
+  - vocab.trade-off
+  status: APPROVED
+  version: 1

@@ -1,0 +1,1073 @@
+- id: vocab.headache
+  headword: headache
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈhedeɪk/
+  audio_ref: null
+  definition_en: A continuous pain in the head.
+  meaning_tr: baş ağrısı
+  collocations:
+  - text: have a headache
+    tr: başı ağrımak
+  - text: bad headache
+    tr: şiddetli baş ağrısı
+  - text: headache tablet
+    tr: baş ağrısı hapı
+  examples:
+  - en: I worked on the computer all day and now I have a bad headache.
+    tr: Bütün gün bilgisayarda çalıştım ve şimdi şiddetli bir baş ağrım var.
+    context: Office Work
+  - en: Drinking plenty of water often helps relieve a mild headache.
+    tr: Bol su içmek genellikle hafif bir baş ağrısını hafifletmeye yardımcı olur.
+    context: Daily Health
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçede 'başım ağrıyor' ifadesi sıklıkla 'my head is hurting' şeklinde çevrilir; ancak doğal İngilizcede
+      'I have a headache' kalıbı tercih edilir.
+    incorrect_example: My head is aching very much today.
+    correct_example: I have a terrible headache today.
+  register: general
+  topic_tags:
+  - health
+  - symptoms
+  - body
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.medicine
+  headword: medicine
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈmed.sən/
+  audio_ref: null
+  definition_en: A substance, especially a liquid or pill, used for treating illness or disease.
+  meaning_tr: ilaç
+  collocations:
+  - text: take medicine
+    tr: ilaç almak / içmek
+  - text: cough medicine
+    tr: öksürük ilacı
+  - text: prescribed medicine
+    tr: reçeteli ilaç
+  examples:
+  - en: You should take this medicine three times a day after meals.
+    tr: Bu ilacı günde üç kez yemeklerden sonra almalısınız.
+    context: Doctor Consultation
+  - en: I always carry travel medicine in my bag during international flights.
+    tr: Uluslararası uçuşlarda çantamda her zaman seyahat ilacı taşırım.
+    context: Travel Health
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Türkçede 'ilaç içmek' dendiği için öğrenciler 'drink medicine' deme eğilimindedir. Sıvı şuruplar dahil ilaç
+      için 'take medicine' fiili kullanılır.
+    incorrect_example: I must drink my medicine before sleeping.
+    correct_example: I must take my medicine before sleeping.
+  register: general
+  topic_tags:
+  - health
+  - treatment
+  - lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.rest-v
+  headword: rest
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rest/
+  audio_ref: null
+  definition_en: To stop working or doing physical activity in order to relax and recover strength.
+  meaning_tr: dinlenmek
+  collocations:
+  - text: rest for a while
+    tr: bir süre dinlenmek
+  - text: rest at home
+    tr: evde dinlenmek
+  - text: rest your eyes
+    tr: gözlerini dinlendirmek
+  examples:
+  - en: The doctor advised her to rest at home for two days.
+    tr: Doktor ona evde iki gün dinlenmesini tavsiye etti.
+    context: Medical Advice
+  - en: You need to rest your eyes after looking at screen monitors for hours.
+    tr: Saatlerce monitör ekranına baktıktan sonra gözlerinizi dinlendirmeniz gerekir.
+    context: Ergonomics
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Rest'' hem fiil (dinlenmek) hem isim (istirahat) olarak kullanılır. Fiil olarak ''rest'', isim kalıbı
+      olarak ''take a rest'' veya ''have a rest'' biçiminde tercih edilir.'
+    incorrect_example: I want to rest my body by sleeping late.
+    correct_example: I need to rest after such an intense work week.
+  register: general
+  topic_tags:
+  - health
+  - relaxation
+  - wellbeing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.tired
+  headword: tired
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈtaɪəd/
+  audio_ref: null
+  definition_en: Feeling that you want to sleep or rest after activity or lack of sleep.
+  meaning_tr: yorgun
+  collocations:
+  - text: feel tired
+    tr: yorgun hissetmek
+  - text: get tired
+    tr: yorulmak
+  - text: tired of waiting
+    tr: beklemekten yorulmuş / bıkmış
+  examples:
+  - en: Our team felt very tired after completing the software release late at night.
+    tr: Ekibimiz yazılım sürümünü gece geç saatte tamamladıktan sonra çok yorgun hissetti.
+    context: Project Deadline
+  - en: If you are too tired to drive, we can take a taxi home.
+    tr: Araba kullanamayacak kadar yorgunsan, eve taksiyle gidebiliriz.
+    context: Daily Commute
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir şeyden bıkmak/yorulmak anlamında 'tired from' fiziksel yorgunluğu, 'tired of' ise bezmişlik ve bıkkınlığı
+      ifade eder.
+    incorrect_example: I am tired from your constant complaints.
+    correct_example: I am tired of your constant complaints.
+  register: general
+  topic_tags:
+  - health
+  - states
+  - lifestyle
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.ticket
+  headword: ticket
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈtɪk.ɪt/
+  audio_ref: null
+  definition_en: A printed piece of paper or digital pass showing that you have paid for travel or admission.
+  meaning_tr: bilet
+  collocations:
+  - text: train ticket
+    tr: tren bileti
+  - text: book a ticket
+    tr: bilet ayırtmak / satın almak
+  - text: return ticket
+    tr: gidiş-dönüş bileti
+  examples:
+  - en: Please show your boarding ticket to the gate agent before entering the plane.
+    tr: Lütfen uçağa binmeden önce biniş biletinizi kapı görevlisine gösterin.
+    context: Airport Departure
+  - en: I booked an electronic ticket online for my business trip to Ankara.
+    tr: Ankara iş seyahatim için internetten elektronik bilet aldım.
+    context: Business Travel
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Bilet almak için genellikle 'buy a ticket' veya önceden rezervasyon için 'book / reserve a ticket' kullanılır.
+      'Take a ticket' sadece sıramatik fişi almak anlamında doğrudur.
+    incorrect_example: I took a flight ticket from the travel company website.
+    correct_example: I bought a flight ticket on the travel company website.
+  register: general
+  topic_tags:
+  - travel
+  - transportation
+  - bookings
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.platform
+  headword: platform
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈplæt.fɔːm/
+  audio_ref: null
+  definition_en: A flat raised area alongside a railway track where passengers get on and off trains.
+  meaning_tr: peron
+  collocations:
+  - text: train platform
+    tr: tren peronu
+  - text: platform number
+    tr: peron numarası
+  - text: wait on the platform
+    tr: peronda beklemek
+  examples:
+  - en: The express train to the international airport departs from platform 4.
+    tr: Uluslararası havalimanına giden ekspres tren 4 numaralı perondan kalkıyor.
+    context: Train Station
+  - en: Passengers should stand behind the yellow line on the platform for safety.
+    tr: Yolcular güvenlik için perondaki sarı çizginin arkasında durmalıdır.
+    context: Transit Safety
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Peronda bulunmak için 'on the platform' edatı kullanılır, 'in the platform' denmez.
+    incorrect_example: We waited for twenty minutes in platform five.
+    correct_example: We waited for twenty minutes on platform five.
+  register: general
+  topic_tags:
+  - travel
+  - trains
+  - transportation
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.depart
+  headword: depart
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /dɪˈpɑːt/
+  audio_ref: null
+  definition_en: To leave a place, especially when starting a journey.
+  meaning_tr: kalkmak, hareket etmek, ayrılmak
+  collocations:
+  - text: depart on time
+    tr: vaktinde hareket etmek
+  - text: depart from platform
+    tr: perondan hareket etmek
+  - text: scheduled to depart
+    tr: kalkışı planlanmış
+  examples:
+  - en: Our morning shuttle bus departs promptly at eight o'clock from the hotel lobby.
+    tr: Sabah servis otobüsümüz otel lobisinden tam saat sekizde hareket eder.
+    context: Hotel Logistics
+  - en: The flight will depart thirty minutes late because of foggy weather.
+    tr: Uçuş sisli hava nedeniyle otuz dakika geç kalkacak.
+    context: Flight Schedule
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bir yerden ayrılırken 'depart from [place]' kullanılır; bir yere doğru hareket ederken 'depart for [destination]'
+      kalıbı geçerlidir.
+    incorrect_example: The ferry departs to Kadıköy at noon.
+    correct_example: The ferry departs for Kadıköy at noon.
+  register: general
+  topic_tags:
+  - travel
+  - transportation
+  - departure
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.pack
+  headword: pack
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /pæk/
+  audio_ref: null
+  definition_en: To put clothes and belongings into bags or suitcases before traveling.
+  meaning_tr: bavul hazırlamak, paketlemek
+  collocations:
+  - text: pack a suitcase
+    tr: bavul hazırlamak
+  - text: pack light
+    tr: az eşya almak
+  - text: finish packing
+    tr: bavul hazırlamayı bitirmek
+  examples:
+  - en: I always try to pack light when going on a two-day business seminar.
+    tr: İki günlük bir iş seminerine giderken her zaman az eşya hazırlamaya çalışırım.
+    context: Business Trip
+  - en: Make sure you pack your laptop charger and passport tonight.
+    tr: Bu gece dizüstü bilgisayar şarj aletini ve pasaportunu çantana koyduğundan emin ol.
+    context: Travel Preparation
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Türkçede 'bavul toplamak/hazırlamak' ifadesi için 'prepare luggage' denmez; doğrudan 'pack a suitcase' veya
+      sadece 'pack' fiili kullanılır.
+    incorrect_example: I need to prepare my luggage before the flight.
+    correct_example: I need to pack my suitcase before the flight.
+  register: general
+  topic_tags:
+  - travel
+  - luggage
+  - preparation
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.board-v
+  headword: board
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /bɔːd/
+  audio_ref: null
+  definition_en: To get onto or allow people onto an aircraft, train, ship, or bus.
+  meaning_tr: uçağa/trene/gemiye binmek
+  collocations:
+  - text: board the plane
+    tr: uçağa binmek
+  - text: boarding pass
+    tr: biniş kartı
+  - text: ready to board
+    tr: binmeye hazır
+  examples:
+  - en: Passengers holding priority tickets may now board the aircraft.
+    tr: Öncelikli bileti olan yolcular artık uçağa binebilir.
+    context: Airport Announcement
+  - en: We boarded the overnight express train just five minutes before departure.
+    tr: Gece ekspres trenine kalkıştan sadece beş dakika önce bindik.
+    context: Rail Journey
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Board'' fiili bir edat almadan doğrudan nesnesini alır: ''board the plane'', asla ''board into the plane''
+      denmez.'
+    incorrect_example: We will board to the airplane in ten minutes.
+    correct_example: We will board the airplane in ten minutes.
+  register: general
+  topic_tags:
+  - travel
+  - airports
+  - transit
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.on-time
+  headword: on time
+  cefr_level: A2
+  part_of_speech: phrase
+  phonetic: /ɒn taɪm/
+  audio_ref: null
+  definition_en: At the correct or scheduled time; not late.
+  meaning_tr: zamanında, vaktinde
+  collocations:
+  - text: arrive on time
+    tr: vaktinde varmak
+  - text: depart on time
+    tr: vaktinde hareket etmek
+  - text: always on time
+    tr: her zaman dakik / vaktinde
+  examples:
+  - en: Fortunately, our connecting flight to London landed exactly on time.
+    tr: Neyse ki Londra aktarmalı uçuşumuz tam vaktinde iniş yaptı.
+    context: Air Travel
+  - en: It is critical for corporate clients that the morning shuttle arrives on time.
+    tr: Kurumsal müşteriler için sabah servisinin vaktinde varması kritik önem taşır.
+    context: Transit Reliability
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''On time'' planlanan saatte tam zamanında olmayı; ''in time'' ise bir şey için geç kalmayıp son anda yetişmeyi
+      ifade eder.'
+    incorrect_example: The train was in time according to the schedule.
+    correct_example: The train was on time according to the schedule.
+  register: general
+  topic_tags:
+  - travel
+  - punctuality
+  - time
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.grocery
+  headword: grocery
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈɡrəʊ.sər.i/
+  audio_ref: null
+  definition_en: Food and other household goods sold in a supermarket or grocery store.
+  meaning_tr: bakkaliye, market alışverişi / erzak
+  collocations:
+  - text: grocery shopping
+    tr: market alışverişi
+  - text: grocery list
+    tr: market listesi
+  - text: grocery store
+    tr: bakkal / market
+  examples:
+  - en: I usually do the weekly grocery shopping on Saturday mornings.
+    tr: Haftalık market alışverişini genellikle cumartesi sabahları yaparım.
+    context: Weekend Routine
+  - en: Ordering groceries through a mobile app saves busy professionals a lot of time.
+    tr: Mobil uygulama üzerinden market siparişi vermek yoğun çalışanlara çok zaman kazandırır.
+    context: Modern Shopping
+  turkish_traps:
+  - trap_type: literal_translation
+    trap_note_tr: Çoğul 'groceries' gıda ve temizlik malzemeleri gibi market erzaklarını, tekil 'grocery store' ise dükkanı
+      belirtir.
+    incorrect_example: I bought some markets for dinner.
+    correct_example: I bought some groceries for dinner.
+  register: general
+  topic_tags:
+  - shopping
+  - food
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.bill
+  headword: bill
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /bɪl/
+  audio_ref: null
+  definition_en: A written statement showing how much money you owe for food or services received.
+  meaning_tr: hesap, fatura
+  collocations:
+  - text: pay the bill
+    tr: hesabı / faturayı ödemek
+  - text: ask for the bill
+    tr: hesap istemek
+  - text: split the bill
+    tr: hesabı bölüşmek
+  examples:
+  - en: Could we please have the bill? We need to get back to the office.
+    tr: Hesabı alabilir miyiz lütfen? Ofise geri dönmemiz gerekiyor.
+    context: Restaurant Lunch
+  - en: The colleagues decided to split the restaurant bill evenly after the team celebration.
+    tr: İş arkadaşları ekip kutlamasından sonra restoran hesabını eşit bölüşmeye karar verdi.
+    context: Team Social
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Restoranda 'hesap' için İngiliz İngilizcesinde 'bill', Amerikan İngilizcesinde sıklıkla 'check' denir. Ticari
+      kurumsal fatura için ise 'invoice' kullanılır.
+    incorrect_example: Waiter, please bring the account for table four.
+    correct_example: Waiter, please bring the bill for table four.
+  register: general
+  topic_tags:
+  - shopping
+  - dining
+  - money
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.order-v
+  headword: order
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈɔː.dər/
+  audio_ref: null
+  definition_en: To ask for food, drink, or goods to be made, supplied, or delivered.
+  meaning_tr: sipariş etmek, sipariş vermek
+  collocations:
+  - text: order food
+    tr: yemek siparişi vermek
+  - text: ready to order
+    tr: sipariş vermeye hazır
+  - text: order online
+    tr: internetten sipariş vermek
+  examples:
+  - en: Are you ready to order, or would you like a few more minutes to look at the menu?
+    tr: Sipariş vermeye hazır mısınız, yoksa menüye bakmak için birkaç dakika daha ister misiniz?
+    context: Restaurant Dining
+  - en: We ordered office supplies online yesterday and they arrived this morning.
+    tr: Dün internetten ofis malzemeleri sipariş ettik ve bu sabah ulaştılar.
+    context: Office Procurement
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Order'' fiili doğrudan nesne alır: ''order food'', asla ''order for food'' denmez.'
+    incorrect_example: I will order for a coffee and a sandwich.
+    correct_example: I will order a coffee and a sandwich.
+  register: general
+  topic_tags:
+  - dining
+  - shopping
+  - commercial
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.pay-by-card
+  headword: pay by card
+  cefr_level: A2
+  part_of_speech: phrase
+  phonetic: /peɪ baɪ kɑːd/
+  audio_ref: null
+  definition_en: To settle a bill or purchase using a credit card or debit card.
+  meaning_tr: kartla ödemek
+  collocations:
+  - text: prefer to pay by card
+    tr: kartla ödemeyi tercih etmek
+  - text: can I pay by card
+    tr: kartla ödeyebilir miyim
+  - text: pay by card or cash
+    tr: kartla veya nakit ödemek
+  examples:
+  - en: I do not have any local currency; can I pay by card for this taxi ride?
+    tr: Hiç yerel nakit param yok; bu taksi ücretini kartla ödeyebilir miyim?
+    context: Airport Taxi
+  - en: Most retail stores in the city center allow customers to pay by card contactless.
+    tr: Şehir merkezindeki çoğu perakende mağazası müşterilerin temassız kartla ödemesine izin verir.
+    context: Retail Payment
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Kredi veya banka kartı ile ödeme yaparken 'pay by card' veya 'pay with card' denir; 'pay with cash' değil
+      'pay in cash' veya nakit için 'pay cash' kullanılır.
+    incorrect_example: Can I pay in card here?
+    correct_example: Can I pay by card here?
+  register: general
+  topic_tags:
+  - shopping
+  - payments
+  - money
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.cheap
+  headword: cheap
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /tʃiːp/
+  audio_ref: null
+  definition_en: Costing very little money; low in price.
+  meaning_tr: ucuz
+  collocations:
+  - text: cheap flight
+    tr: ucuz uçuş
+  - text: cheap meal
+    tr: ucuz yemek
+  - text: cheap and cheerful
+    tr: ucuz ve sevimli / idare eder
+  examples:
+  - en: Booking train tickets weeks in advance is much cheaper than buying them on the day.
+    tr: Tren biletlerini haftalar öncesinden ayırtmak, aynı gün almaktan çok daha ucuzdur.
+    context: Budget Travel
+  - en: There are several cheap and clean cafes near the office building for lunch.
+    tr: Ofis binasının yakınında öğle yemeği için birkaç ucuz ve temiz kafe var.
+    context: Daily Dining
+  turkish_traps:
+  - trap_type: register_mismatch
+    trap_note_tr: '''Cheap'' bazen kalitesiz veya adi çağrışımı yapabilir; profesyonel ve ticari dilde daha kibar bir ton
+      için ''affordable'' veya ''cost-effective'' tercih edilebilir.'
+    incorrect_example: Our company produces very cheap software solutions for clients.
+    correct_example: Our company produces very affordable software solutions for clients.
+  register: general
+  topic_tags:
+  - shopping
+  - pricing
+  - budget
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.fresh
+  headword: fresh
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /freʃ/
+  audio_ref: null
+  definition_en: Food that has been recently made or picked, not frozen, dried, or preserved.
+  meaning_tr: taze
+  collocations:
+  - text: fresh vegetables
+    tr: taze sebzeler
+  - text: fresh fruit
+    tr: taze meyve
+  - text: fresh bread
+    tr: taze ekmek
+  examples:
+  - en: The local neighborhood market sells fresh vegetables harvested this morning.
+    tr: Mahalledeki yerel pazar bu sabah toplanmış taze sebzeler satıyor.
+    context: Food Market
+  - en: Drinking fresh orange juice gives me energy before starting morning meetings.
+    tr: Taze portakal suyu içmek sabah toplantılarına başlamadan önce bana enerji verir.
+    context: Healthy Breakfast
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Fresh'' hem taze yiyecekler hem de ''fresh air'' (temiz hava) için kullanılır; fakat ''yeni mezun'' için
+      ''fresh graduate'' denirken dikkatli olunmalıdır.'
+    incorrect_example: I like breathing fresh food in the morning.
+    correct_example: I like eating fresh food and breathing fresh air in the morning.
+  register: general
+  topic_tags:
+  - food
+  - nutrition
+  - shopping
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.neighbor
+  headword: neighbor
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈneɪ.bər/
+  audio_ref: null
+  definition_en: A person living next door to or very near you.
+  meaning_tr: komşu
+  collocations:
+  - text: next-door neighbor
+    tr: kapı komşusu
+  - text: friendly neighbor
+    tr: samimi komşu
+  - text: talk to a neighbor
+    tr: komşuyla konuşmak
+  examples:
+  - en: Our next-door neighbor helped water our plants while we were on vacation.
+    tr: Biz tatildeyken kapı komşumuz bitkilerimizi sulamamıza yardım etti.
+    context: Neighborhood
+  - en: Having polite and considerate neighbors makes apartment living much easier.
+    tr: Kibar ve anlayışlı komşulara sahip olmak apartman yaşamını çok daha kolaylaştırır.
+    context: Community Living
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Amerikan İngilizcesinde 'neighbor', İngiliz İngilizcesinde 'neighbour' olarak yazılır. İkisi de doğrudur;
+      sistemik olarak tutarlı kullanılmalıdır.
+    incorrect_example: My close flat friend is very quiet.
+    correct_example: My next-door neighbor is very quiet.
+  register: general
+  topic_tags:
+  - relationships
+  - community
+  - social
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.greet
+  headword: greet
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ɡriːt/
+  audio_ref: null
+  definition_en: To welcome someone with words or polite actions when meeting them.
+  meaning_tr: selamlamak, karşılamak
+  collocations:
+  - text: greet someone warmly
+    tr: birini sıcak bir şekilde selamlamak
+  - text: greet clients
+    tr: müşterileri karşılamak
+  - text: greet with a smile
+    tr: gülümsemeyle selamlamak
+  examples:
+  - en: The receptionist greeted the international guests warmly at the entrance.
+    tr: Resepsiyon görevlisi uluslararası konukları girişte sıcak bir şekilde karşıladı.
+    context: Office Reception
+  - en: It is customary to greet your colleagues when entering the open office in the morning.
+    tr: Sabah açık ofise girerken iş arkadaşlarınızı selamlamak adettendir.
+    context: Workplace Etiquette
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: '''Greet'' fiili doğrudan nesne alır: ''greet someone'', ''greet to someone'' denmez.'
+    incorrect_example: He greeted to everybody in the meeting room.
+    correct_example: He greeted everybody in the meeting room.
+  register: general
+  topic_tags:
+  - relationships
+  - communication
+  - etiquette
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.polite
+  headword: polite
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /pəˈlaɪt/
+  audio_ref: null
+  definition_en: Behaving in a way that is socially correct and shows consideration for other people.
+  meaning_tr: kibar, nazik
+  collocations:
+  - text: polite manner
+    tr: kibar tavır
+  - text: polite request
+    tr: nazik rica
+  - text: always polite
+    tr: her zaman kibar
+  examples:
+  - en: Customer support agents must remain polite even when dealing with unhappy callers.
+    tr: Müşteri destek temsilcileri memnuniyetsiz arayanlarla ilgilenirken bile kibar kalmalıdır.
+    context: Customer Care
+  - en: Sending a polite thank-you email after an interview leaves a positive impression.
+    tr: Mülakattan sonra nazik bir teşekkür e-postası göndermek olumlu bir izlenim bırakır.
+    context: Job Interview
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Birine karşı nazik olmak anlamında 'polite to someone' denir, 'polite with' veya 'polite against' denmez.
+    incorrect_example: You should be polite against older team members.
+    correct_example: You should be polite to older team members.
+  register: general
+  topic_tags:
+  - relationships
+  - behavior
+  - manners
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.routine
+  headword: routine
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ruːˈtiːn/
+  audio_ref: null
+  definition_en: A usual or fixed series of things that you do regularly.
+  meaning_tr: rutin, alışılmış düzen
+  collocations:
+  - text: daily routine
+    tr: günlük rutin
+  - text: morning routine
+    tr: sabah rutini
+  - text: break the routine
+    tr: rutini bozmak / kırmak
+  examples:
+  - en: My morning routine consists of a quick jog, a shower, and a cup of black coffee.
+    tr: Sabah rutinim hızlı bir koşu, duş ve bir fincan sade kahveden oluşur.
+    context: Daily Habit
+  - en: Establishing a consistent work routine helps employees stay focused throughout the day.
+    tr: Düzenli bir çalışma rutini oluşturmak çalışanların gün boyunca odaklanmış kalmasına yardımcı olur.
+    context: Productivity
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Türkçede 'rutin' kelimesi bazen tekdüzelik veya sıkıcılık çağrıştırsa da, İngilizcede olumsuzluk içermez;
+      sağlıklı ve organize alışkanlıkları belirtir.
+    incorrect_example: My routine is bad because I repeat things.
+    correct_example: Having a healthy daily routine keeps my stress levels low.
+  register: general
+  topic_tags:
+  - daily-life
+  - habits
+  - productivity
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.alarm
+  headword: alarm
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /əˈlɑːm/
+  audio_ref: null
+  definition_en: A device or mobile clock that makes a sound to wake you up or alert you at a set time.
+  meaning_tr: çalar saat, alarm
+  collocations:
+  - text: set an alarm
+    tr: alarm kurmak
+  - text: alarm goes off
+    tr: alarmın çalması
+  - text: morning alarm
+    tr: sabah alarmı
+  examples:
+  - en: I set an alarm for six in the morning so I would not miss my flight.
+    tr: Uçuşumu kaçırmamak için sabah saat altıya alarm kurdum.
+    context: Travel Morning
+  - en: My phone alarm went off three times before I finally woke up.
+    tr: Sonunda uyanmadan önce telefonumun alarmı üç kez çaldı.
+    context: Daily Life
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Alarm çalması için İngilizcede 'the alarm rings' yerine çoğunlukla deyimsel olarak 'the alarm goes off'
+      kalıbı kullanılır.
+    incorrect_example: When the alarm opened, I got up.
+    correct_example: When my alarm went off, I got up immediately.
+  register: general
+  topic_tags:
+  - daily-life
+  - morning
+  - time
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.clean-v
+  headword: clean
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /kliːn/
+  audio_ref: null
+  definition_en: To remove dirt, dust, or unwanted marks from something.
+  meaning_tr: temizlemek
+  collocations:
+  - text: clean the house
+    tr: evi temizlemek
+  - text: clean your desk
+    tr: masanı temizlemek
+  - text: clean thoroughly
+    tr: iyice temizlemek
+  examples:
+  - en: I always clean my work desk on Friday afternoons before leaving the office.
+    tr: Cuma öğleden sonraları ofisten ayrılmadan önce daima çalışma masamı temizlerim.
+    context: Office Habit
+  - en: We cleaned the kitchen together after hosting dinner for our friends.
+    tr: Arkadaşlarımıza akşam yemeği verdikten sonra mutfağı birlikte temizledik.
+    context: Household Chore
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Clean'' hem sıfat (temiz) hem fiil (temizlemek) olarak kullanılır. ''Do cleaning'' yerine doğrudan ''clean''
+      fiili tercih edilir.'
+    incorrect_example: I did clean to my laptop keyboard.
+    correct_example: I cleaned my laptop keyboard carefully.
+  register: general
+  topic_tags:
+  - daily-life
+  - household
+  - cleanliness
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.wake-up
+  headword: wake up
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /weɪk ʌp/
+  audio_ref: null
+  definition_en: To stop sleeping and become conscious and alert.
+  meaning_tr: uyanmak, uyandırmak
+  collocations:
+  - text: wake up early
+    tr: erken uyanmak
+  - text: wake up on time
+    tr: vaktinde uyanmak
+  - text: wake someone up
+    tr: birini uyandırmak
+  examples:
+  - en: I normally wake up at seven o'clock on weekdays without needing an alarm.
+    tr: Hafta içi günlerinde normalde alarma ihtiyaç duymadan saat yedide uyanırım.
+    context: Morning Schedule
+  - en: Please wake me up at half past six tomorrow so I can catch my train.
+    tr: Trenime yetişebilmem için lütfen yarın beni altı buçukta uyandır.
+    context: Travel Morning
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: '''Wake up'' uyanıp bilincin açılmasıdır; ''get up'' ise yataktan fiziksel olarak kalkmaktır. İkisi birbiri
+      yerine geçmez.'
+    incorrect_example: I woke up at seven and immediately walked out of bed.
+    correct_example: I woke up at seven and got up ten minutes later.
+  register: general
+  topic_tags:
+  - daily-life
+  - morning
+  - sleep
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.early-adv
+  headword: early
+  cefr_level: A2
+  part_of_speech: adverb
+  phonetic: /ˈɜː.li/
+  audio_ref: null
+  definition_en: Near the beginning of a period of time, or before the customary or expected hour.
+  meaning_tr: erken, erkenden
+  collocations:
+  - text: arrive early
+    tr: erken varmak
+  - text: wake up early
+    tr: erkenden uyanmak
+  - text: leave early
+    tr: erken çıkmak / ayrılmak
+  examples:
+  - en: Arriving early for client presentations gives you time to test your audio equipment.
+    tr: Müşteri sunumlarına erken varmak, ses ekipmanınızı test etmeniz için size zaman tanır.
+    context: Business Meetings
+  - en: She left the office early yesterday afternoon to attend a family dinner.
+    tr: Dün öğleden sonra aile yemeğine katılmak için ofisten erken ayrıldı.
+    context: Work Schedule
+  turkish_traps:
+  - trap_type: part_of_speech_confusion
+    trap_note_tr: '''Early'' hem sıfattır (''early morning'') hem zarftır (''wake up early''). ''Earlily'' diye bir kelime
+      yoktur.'
+    incorrect_example: I arrived earlily at the meeting room.
+    correct_example: I arrived early at the meeting room.
+  register: general
+  topic_tags:
+  - daily-life
+  - time
+  - habits
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.tidy-adj
+  headword: tidy
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈtaɪ.di/
+  audio_ref: null
+  definition_en: Arranged neatly and with everything in its proper place.
+  meaning_tr: düzenli, derli toplu
+  collocations:
+  - text: tidy room
+    tr: derli toplu oda
+  - text: keep it tidy
+    tr: düzenli tutmak
+  - text: tidy desk
+    tr: düzenli çalışma masası
+  examples:
+  - en: Keeping a tidy desk helps minimize distractions when writing reports.
+    tr: Düzenli bir masa tutmak, rapor yazarken dikkat dağıtıcı unsurları en aza indirmeye yardımcı olur.
+    context: Office Organization
+  - en: Her apartment is always tidy and ready for unexpected guests.
+    tr: Onun dairesi her zaman derli toplu ve beklenmedik misafirler için hazırdır.
+    context: Home Living
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: '''Tidy'' düzenli/derli toplu demektir; ''clean'' (temiz) ile yakın anlamlı olsa da ''tidy'' eşyaların yerli
+      yerinde olmasını vurgular.'
+    incorrect_example: My room is very regular today.
+    correct_example: My room is very tidy today.
+  register: general
+  topic_tags:
+  - daily-life
+  - order
+  - home
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.exam
+  headword: exam
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ɪɡˈzæm/
+  audio_ref: null
+  definition_en: A formal test of a student's or professional's knowledge or skill in a subject.
+  meaning_tr: sınav
+  collocations:
+  - text: pass an exam
+    tr: sınavı geçmek
+  - text: fail an exam
+    tr: sınavda kalmak
+  - text: take an exam
+    tr: sınava girmek
+  examples:
+  - en: He studied for two weeks to pass his certification exam on cloud technologies.
+    tr: Bulut teknolojileri konusundaki sertifika sınavını geçmek için iki hafta çalıştı.
+    context: Professional Certification
+  - en: The final language exam will test reading, listening, and speaking abilities.
+    tr: Final dil sınavı okuma, dinleme ve konuşma becerilerini test edecek.
+    context: Language Assessment
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Türkçede 'sınava girmek' ifadesi için 'enter an exam' denmez; 'take an exam' veya 'sit an exam' kalıbı kullanılır.
+    incorrect_example: I will enter the English exam tomorrow morning.
+    correct_example: I will take the English exam tomorrow morning.
+  register: general
+  topic_tags:
+  - education
+  - testing
+  - qualifications
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.learn-by-heart
+  headword: learn by heart
+  cefr_level: A2
+  part_of_speech: idiom
+  phonetic: /lɜːn baɪ hɑːt/
+  audio_ref: null
+  definition_en: To memorize something completely so that you can repeat it from memory.
+  meaning_tr: ezberlemek, ezbere öğrenmek
+  collocations:
+  - text: learn words by heart
+    tr: kelimeleri ezbere öğrenmek
+  - text: learn rules by heart
+    tr: kuralları ezbere bilmek
+  - text: know it by heart
+    tr: ezbere bilmek
+  examples:
+  - en: In elementary school, children learn multiplication tables by heart.
+    tr: İlkokulda çocuklar çarpım tablosunu ezbere öğrenirler.
+    context: School Education
+  - en: Instead of just learning grammar rules by heart, practice speaking with them in real conversations.
+    tr: Dilbilgisi kurallarını sadece ezberlemek yerine, gerçek konuşmalarda pratik yapın.
+    context: Language Learning
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: Bu deyimde 'by heart' yapısı sabittir; 'learn with heart' veya 'learn from head' gibi yanlış çeviriler yapılmamalıdır.
+    incorrect_example: I learned the speech with my head.
+    correct_example: I learned the speech by heart.
+  register: general
+  topic_tags:
+  - education
+  - memory
+  - learning
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.charger
+  headword: charger
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈtʃɑː.dʒər/
+  audio_ref: null
+  definition_en: A device used for putting electricity into a battery, phone, or laptop.
+  meaning_tr: şarj aleti, şarj cihazı
+  collocations:
+  - text: phone charger
+    tr: telefon şarj aleti
+  - text: fast charger
+    tr: hızlı şarj cihazı
+  - text: borrow a charger
+    tr: şarj aleti ödünç almak
+  examples:
+  - en: I forgot my phone charger at the hotel; may I borrow yours for an hour?
+    tr: Telefon şarj aletimi otelde unuttum; sizinkini bir saatliğine ödünç alabilir miyim?
+    context: Office Request
+  - en: Always pack a universal laptop charger when traveling abroad for business.
+    tr: İş için yurtdışına seyahat ederken her zaman evrensel bir dizüstü şarj cihazı yanınıza alın.
+    context: Travel Tech
+  turkish_traps:
+  - trap_type: false_friend
+    trap_note_tr: Türkçede cihaz için bazen sadece 'şarj' denir; İngilizcede alet için 'charger', bataryanın doluluğu veya
+      eylem için 'charge' kullanılır.
+    incorrect_example: Where is my phone charge?
+    correct_example: Where is my phone charger?
+  register: general
+  topic_tags:
+  - technology
+  - devices
+  - gadgets
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.call-back
+  headword: call back
+  cefr_level: A2
+  part_of_speech: phrasal_verb
+  phonetic: /kɔːl bæk/
+  audio_ref: null
+  definition_en: To telephone someone again or return a phone call they previously made to you.
+  meaning_tr: geri aramak, tekrar aramak
+  collocations:
+  - text: call back later
+    tr: daha sonra geri aramak
+  - text: promise to call back
+    tr: geri arayacağına söz vermek
+  - text: call back immediately
+    tr: hemen geri aramak
+  examples:
+  - en: I am currently in an executive meeting; can I call you back in thirty minutes?
+    tr: Şu anda yönetim kurulu toplantısındayım; sizi otuz dakika içinde geri arayabilir miyim?
+    context: Phone Call
+  - en: The support technician promised to call back as soon as the system was restored.
+    tr: Destek teknisyeni sistem geri yüklendiğinde en kısa sürede geri arayacağına söz verdi.
+    context: Customer Service
+  turkish_traps:
+  - trap_type: preposition_confusion
+    trap_note_tr: 'Birini geri ararken zamir araya girer: ''call him back'', ''call you back''. ''Return to call'' kalıbı
+      doğal değildir.'
+    incorrect_example: I will return your call back soon.
+    correct_example: I will call you back soon.
+  register: general
+  topic_tags:
+  - communication
+  - phone
+  - business
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: vocab.break-n
+  headword: break
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /breɪk/
+  audio_ref: null
+  definition_en: A short period of rest or relaxation from work, study, or activity.
+  meaning_tr: mola, ara
+  collocations:
+  - text: take a break
+    tr: mola vermek
+  - text: lunch break
+    tr: öğle molası
+  - text: short break
+    tr: kısa bir mola
+  examples:
+  - en: Let's take a ten-minute coffee break before we start the second half of the workshop.
+    tr: Çalıştayın ikinci yarısına başlamadan önce on dakikalık bir kahve molası verelim.
+    context: Workshop
+  - en: Taking regular five-minute breaks helps software developers maintain concentration.
+    tr: Düzenli beş dakikalık molalar vermek yazılım geliştiricilerin konsantrasyonunu korumasına yardımcı olur.
+    context: Workplace Health
+  turkish_traps:
+  - trap_type: collocation_error
+    trap_note_tr: Türkçede 'mola vermek' ifadesi için 'give a break' denmez; 'take a break' veya 'have a break' kalıbı kullanılır.
+    incorrect_example: We should give a break now.
+    correct_example: We should take a break now.
+  register: general
+  topic_tags:
+  - work-career
+  - rest
+  - office
+  related_ids: []
+  status: APPROVED
+  version: 1

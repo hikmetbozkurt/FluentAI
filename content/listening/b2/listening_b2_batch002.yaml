@@ -1,0 +1,1705 @@
+- id: listening.b2.electric-vehicle-charging
+  title: Consulting an EV Home Charging Specialist
+  cefr_level: B2
+  category: product_discovery
+  scenario_context: Tarik consults an electrical infrastructure specialist, Fiona, regarding installing a Level 2 smart home
+    charger and optimizing time-of-use tariffs.
+  speakers:
+  - id: fiona
+    name: Fiona
+    role: Electrical Infrastructure Engineer
+    accent: British
+  - id: tarik
+    name: Tarik
+    role: EV Homeowner
+    accent: Turkish
+  audio_ref: audio/listening/b2_electric_vehicle_charging.mp3
+  duration_seconds: 76
+  transcript_items:
+  - index: 1
+    speaker_id: fiona
+    start_ms: 0
+    end_ms: 9053
+    text_en: Good morning Tarik. I reviewed your home panel photos. Your current consumer unit has a sixty-amp main service
+      fuse.
+    text_tr: Günaydın Tarık. Evinizin elektrik panosu fotoğraflarını inceledim. Mevcut sigorta kutunuzda altmış amperlik bir
+      ana servis sigortası var.
+  - index: 2
+    speaker_id: tarik
+    start_ms: 9453
+    end_ms: 18471
+    text_en: Thanks Fiona. Would that sixty-amp capacity support a standard seven-kilowatt Level 2 charging station alongside
+      heat pumps?
+    text_tr: Teşekkürler Fiona. Bu altmış amperlik kapasite, ısı pompalarının yanı sıra standart yedi kilovatlık bir Seviye
+      2 şarj istasyonunu destekler mi?
+  - index: 3
+    speaker_id: fiona
+    start_ms: 18871
+    end_ms: 29904
+    text_en: It is borderline during peak winter evenings. If your induction cooktop, heat pump, and EV charger run simultaneously,
+      you risk tripping the main breaker.
+    text_tr: Kış akşamları zirve saatlerde sınırda kalır. İndüksiyonlu ocağınız, ısı pompanız ve elektrikli araç şarj cihazınız
+      aynı anda çalışırsa ana şalteri attırma riskiyle karşılaşırsınız.
+  - index: 4
+    speaker_id: tarik
+    start_ms: 30304
+    end_ms: 37361
+    text_en: What solutions exist to prevent that without waiting months for the utility to upgrade the street cable to one
+      hundred amps?
+    text_tr: Elektrik dağıtım şirketinin sokak kablosunu yüz ampere yükseltmesini aylarca beklemeden bunu önleyecek hangi
+      çözümler var?
+  - index: 5
+    speaker_id: fiona
+    start_ms: 37761
+    end_ms: 48424
+    text_en: We can install a smart dynamic load-balancing charger. It clamps a current transformer sensor onto your main
+      incoming cable and modulates charging current in real time.
+    text_tr: Akıllı dinamik yük dengeleyici bir şarj cihazı kurabiliriz. Ana giriş kablonuza bir akım trafosu sensörü kelepçeler
+      ve şarj akımını gerçek zamanlı olarak ayarlar.
+  - index: 6
+    speaker_id: tarik
+    start_ms: 48824
+    end_ms: 55467
+    text_en: So when domestic household demand spikes, the charger automatically throttles down the charging rate?
+    text_tr: Yani evdeki elektrik talebi aniden yükseldiğinde şarj cihazı şarj hızını otomatik olarak kısıyor mu?
+  - index: 7
+    speaker_id: fiona
+    start_ms: 55867
+    end_ms: 67874
+    text_en: Exactly. Furthermore, it integrates with time-of-use tariffs, scheduling your charging window between midnight
+      and five in the morning when kilowatt rates drop by seventy percent.
+    text_tr: Kesinlikle. Dahası çok zamanlı tarifelerle entegre olarak şarj pencerenizi kilovatsaat tarifelerinin yüzde yetmiş
+      düştüğü gece yarısı ile sabah beş arasına planlar.
+  - index: 8
+    speaker_id: tarik
+    start_ms: 68274
+    end_ms: 75692
+    text_en: That dynamic load-balancing unit sounds like the ideal compromise. Let's proceed with that quotation.
+    text_tr: Bu dinamik yük dengeleme ünitesi ideal bir uzlaşma gibi görünüyor. Bu teklifle ilerleyelim.
+  comprehension_questions:
+  - id: q_listening_b2_electric-vehicle-charging_01
+    question_en: What capacity limitation does Fiona identify on Tarik's home electrical panel?
+    question_tr_hint: Fiona Tarık'ın ev elektrik panosunda hangi kapasite kısıtlamasını tespit ediyor?
+    options:
+    - A sixty-amp main service fuse that could trip during peak household demand.
+    - A completely severed copper ground cable.
+    - A dangerous high-voltage electrical fire hazard.
+    - Missing circuit breakers for all second-floor rooms.
+    correct_answer: A sixty-amp main service fuse that could trip during peak household demand.
+    explanation_en: Fiona notes his main service fuse is 60 amps, which could trip during simultaneous usage.
+    explanation_tr: Fiona ana sigortanın 60 amper olduğunu ve eşzamanlı kullanımda atabileceğini belirtir.
+  - id: q_listening_b2_electric-vehicle-charging_02
+    question_en: How does a dynamic load-balancing charger resolve the capacity bottleneck?
+    question_tr_hint: Dinamik yük dengeleyici bir şarj cihazı kapasite darboğazını nasıl çözer?
+    options:
+    - It turns off the household refrigerator whenever the car charges.
+    - It doubles the street grid voltage automatically.
+    - It converts alternating current into solar battery power.
+    - It monitors overall household current and throttles charging speed dynamically in real time.
+    correct_answer: It monitors overall household current and throttles charging speed dynamically in real time.
+    explanation_en: Fiona explains it monitors current and modulates charging in real time.
+    explanation_tr: Fiona akımı izleyip şarjı gerçek zamanlı ayarladığını açıklar.
+  - id: q_listening_b2_electric-vehicle-charging_03
+    question_en: What financial benefit does integration with time-of-use tariffs offer?
+    question_tr_hint: Çok zamanlı tarifelerle entegrasyon nasıl bir finansal fayda sağlar?
+    options:
+    - The power company provides free electricity on weekends.
+    - The car manufacturer pays for all household heating bills.
+    - It schedules charging between midnight and 5:00 AM when electricity rates drop by seventy percent.
+    - Government rebates cover the entire cost of the vehicle.
+    correct_answer: It schedules charging between midnight and 5:00 AM when electricity rates drop by seventy percent.
+    explanation_en: Fiona notes charging between midnight and 5:00 AM saves 70% on rates.
+    explanation_tr: Fiona gece yarısı ile 5:00 arasında şarjın tarifelerde %70 tasarruf sağladığını belirtir.
+  - id: q_listening_b2_electric-vehicle-charging_04
+    question_en: Why does Tarik prefer dynamic load balancing over upgrading the street cable?
+    question_tr_hint: Tarık sokak kablosunu yükseltmek yerine neden dinamik yük dengelemeyi tercih ediyor?
+    options:
+    - He is planning to move out of the country next week.
+    - Upgrading the street cable would require waiting months for the utility company.
+    - Dynamic chargers require no electrical permits whatsoever.
+    - Street cable upgrades are illegal under local building regulations.
+    correct_answer: Upgrading the street cable would require waiting months for the utility company.
+    explanation_en: Tarik mentions avoiding waiting months for the utility to upgrade the street cable.
+    explanation_tr: Tarık dağıtım şirketinin sokak kablosunu yükseltmesini aylarca beklemekten kaçınmak istediğini belirtir.
+  - id: q_listening_b2_electric-vehicle-charging_05
+    question_en: What decision does Tarik make at the end of the consultation?
+    question_tr_hint: Danışmanlığın sonunda Tarık nasıl bir karar alıyor?
+    options:
+    - Install a gas-powered generator in his backyard.
+    - Rely exclusively on public commercial fast chargers.
+    - Cancel the electric vehicle purchase entirely.
+    - Proceed with the quotation for the smart dynamic load-balancing charger.
+    correct_answer: Proceed with the quotation for the smart dynamic load-balancing charger.
+    explanation_en: Tarik approves moving forward with the dynamic load-balancing quotation.
+    explanation_tr: Tarık dinamik yük dengeleme teklifiyle ilerlemeyi onaylar.
+  topic_tags:
+  - daily-life
+  - ev
+  - sustainability
+  - energy
+  - technology
+- id: listening.b2.high-speed-rail-delay
+  title: Managing a Cross-Border Rail Disruption at Munich Central
+  cefr_level: B2
+  category: incident_response
+  scenario_context: Ceyda coordinates alternative connecting travel arrangements with train station controller Hans following
+    an overhead catenary wire failure.
+  speakers:
+  - id: hans
+    name: Hans
+    role: Station Operations Controller
+    accent: German
+  - id: ceyda
+    name: Ceyda
+    role: Business Traveler
+    accent: Turkish
+  audio_ref: audio/listening/b2_high_speed_rail_delay.mp3
+  duration_seconds: 74
+  transcript_items:
+  - index: 1
+    speaker_id: hans
+    start_ms: 0
+    end_ms: 6538
+    text_en: Guten Tag, Deutsche Bahn Customer Information. How may I direct your travel route?
+    text_tr: İyi günler, Deutsche Bahn Müşteri Danışma. Seyahat rotanızı nasıl yönlendirebilirim?
+  - index: 2
+    speaker_id: ceyda
+    start_ms: 6938
+    end_ms: 16021
+    text_en: Hello Hans. The information board just announced that the ICE train to Vienna has been canceled due to overhead
+      wire damage near Salzburg.
+    text_tr: Merhaba Hans. Bilgi panosu az önce Salzburg yakınlarındaki havai hat hasarı nedeniyle Viyana'ya giden ICE treninin
+      iptal edildiğini duyurdu.
+  - index: 3
+    speaker_id: hans
+    start_ms: 16421
+    end_ms: 25499
+    text_en: Unfortunately yes. High winds brought down a major catenary section, blocking both primary tracks through the
+      mountain corridor.
+    text_tr: Maalesef evet. Şiddetli rüzgar ana bir kataner hattını devirerek dağ koridorundaki her iki ana rayı da kapattı.
+  - index: 4
+    speaker_id: ceyda
+    start_ms: 25899
+    end_ms: 35197
+    text_en: I have an essential medical conference keynote presentation in Vienna tomorrow morning at nine o'clock. What
+      alternative transit options exist?
+    text_tr: Yarın sabah saat dokuzda Viyana'da önemli bir tıp konferansı açılış konuşmam var. Hangi alternatif ulaşım seçenekleri
+      mevcut?
+  - index: 5
+    speaker_id: hans
+    start_ms: 35597
+    end_ms: 45404
+    text_en: We are operating emergency diesel shuttle services around the damaged track section to Linz, connecting with
+      an Austrian RailJet directly to Vienna Hauptbahnhof.
+    text_tr: Hasarlı hat bölümünün etrafından Linz'e acil dizel servis trenleri çalıştırıyoruz, oradan doğrudan Viyana Hauptbahnhof'a
+      giden Avusturya RailJet'e bağlanıyor.
+  - index: 6
+    speaker_id: ceyda
+    start_ms: 45804
+    end_ms: 51277
+    text_en: How much additional journey time would that detour entail compared to the direct high-speed line?
+    text_tr: Bu aktarma doğrudan yüksek hızlı hatta kıyasla ne kadar ek yolculuk süresi gerektirir?
+  - index: 7
+    speaker_id: hans
+    start_ms: 51677
+    end_ms: 63174
+    text_en: It adds roughly eighty minutes, which puts your estimated arrival in Vienna at eleven thirty tonight. Your existing
+      first-class ticket is fully valid on all replacement services.
+    text_tr: Yaklaşık seksen dakika ekler, bu da Viyana'ya tahmini varışınızı bu gece saat on bir buçuğa denk getirir. Mevcut
+      birinci sınıf biletiniz tüm alternatif seferlerde tamamen geçerlidir.
+  - index: 8
+    speaker_id: ceyda
+    start_ms: 63574
+    end_ms: 72767
+    text_en: Eleven thirty tonight still gives me adequate rest before my morning presentation. Could you stamp my ticket
+      for the Austrian transfer conductor?
+    text_tr: Bu gece on bir buçuk yine de sabah sunumumdan önce yeterli dinlenme sağlar. Avusturyalı aktarma kondüktörü için
+      biletime kaşe basabilir misiniz?
+  comprehension_questions:
+  - id: q_listening_b2_high-speed-rail-delay_01
+    question_en: What infrastructure failure caused the cancellation of the ICE train to Vienna?
+    question_tr_hint: Viyana'ya giden ICE treninin iptal edilmesine hangi altyapı arızası neden oldu?
+    options:
+    - A national railroad strike by train drivers.
+    - Overhead catenary wires were downed by high winds near Salzburg.
+    - A widespread computer cyberattack shutting down ticketing.
+    - A massive locomotive engine explosion inside Munich station.
+    correct_answer: Overhead catenary wires were downed by high winds near Salzburg.
+    explanation_en: Hans explains high winds brought down a catenary section blocking tracks.
+    explanation_tr: Hans şiddetli rüzgarın kataner hattını devirerek rayları kapattığını açıklar.
+  - id: q_listening_b2_high-speed-rail-delay_02
+    question_en: Why is Ceyda's arrival in Vienna time-critical?
+    question_tr_hint: Ceyda'nın Viyana'ya varışı neden zaman açısından kritik?
+    options:
+    - She is delivering an essential medical conference keynote presentation tomorrow at 9:00 AM.
+    - She must catch an intercontinental cruise ship departure.
+    - She is attending a close family wedding ceremony at dawn.
+    - She is attending an international soccer championship match.
+    correct_answer: She is delivering an essential medical conference keynote presentation tomorrow at 9:00 AM.
+    explanation_en: Ceyda explains she has a keynote presentation tomorrow at 9:00 AM.
+    explanation_tr: Ceyda yarın sabah saat 9:00'da açılış konuşması olduğunu belirtir.
+  - id: q_listening_b2_high-speed-rail-delay_03
+    question_en: What replacement transit route does Hans recommend?
+    question_tr_hint: Hans hangi alternatif ulaşım güzergahını öneriyor?
+    options:
+    - A sixteen-hour commercial bus through Switzerland.
+    - Booking a domestic flight from Munich airport.
+    - An emergency diesel shuttle to Linz connecting with an Austrian RailJet to Vienna.
+    - Renting a luxury limousine to drive across the Alps.
+    correct_answer: An emergency diesel shuttle to Linz connecting with an Austrian RailJet to Vienna.
+    explanation_en: Hans explains emergency diesel shuttles connect to Linz for an Austrian RailJet.
+    explanation_tr: Hans acil dizel servislerin Avusturya RailJet için Linz'e bağlandığını açıklar.
+  - id: q_listening_b2_high-speed-rail-delay_04
+    question_en: How much additional transit time does the detour add?
+    question_tr_hint: Bu aktarma yolculuğa yaklaşık ne kadar ek süre ekliyor?
+    options:
+    - Roughly eighty minutes, arriving at 11:30 PM.
+    - Ten additional minutes.
+    - Two full calendar days.
+    - Over six hours of extra travel.
+    correct_answer: Roughly eighty minutes, arriving at 11:30 PM.
+    explanation_en: Hans notes it adds roughly 80 minutes, arriving at 11:30 PM.
+    explanation_tr: Hans yaklaşık 80 dakika eklediğini ve 23:30'da varacağını belirtir.
+  - id: q_listening_b2_high-speed-rail-delay_05
+    question_en: What status does Ceyda's ticket hold on the replacement train?
+    question_tr_hint: Ceyda'nın biletinin alternatif trendeki durumu nedir?
+    options:
+    - She is only allowed to board if space permits.
+    - Her first-class ticket is fully valid without any additional surcharge.
+    - She must purchase an entirely new ticket in cash.
+    - Her ticket is downgraded to economy freight seating.
+    correct_answer: Her first-class ticket is fully valid without any additional surcharge.
+    explanation_en: Hans confirms her existing first-class ticket is fully valid.
+    explanation_tr: Hans mevcut birinci sınıf biletinin tamamen geçerli olduğunu onaylar.
+  topic_tags:
+  - travel
+  - rail
+  - transit
+  - incident-management
+  - germany
+- id: listening.b2.preventative-health-screening
+  title: Interpreting Cardiovascular and Metabolic Biomarkers
+  cefr_level: B2
+  category: product_discovery
+  scenario_context: Kemal discusses his comprehensive annual executive health screening panel, focusing on lipid profiles
+    and glycemic control, with physician Dr. Aris.
+  speakers:
+  - id: dr_aris
+    name: Dr. Aris
+    role: Preventative Health Physician
+    accent: American
+  - id: kemal
+    name: Kemal
+    role: Executive Patient
+    accent: Turkish
+  audio_ref: audio/listening/b2_preventative_health_screening.mp3
+  duration_seconds: 83
+  transcript_items:
+  - index: 1
+    speaker_id: dr_aris
+    start_ms: 0
+    end_ms: 7563
+    text_en: Good afternoon Kemal. I have compiled the results from your comprehensive annual executive metabolic screening.
+    text_tr: Tünaydın Kemal. Kapsamlı yıllık yönetici metabolik taramanızın sonuçlarını derledim.
+  - index: 2
+    speaker_id: kemal
+    start_ms: 7963
+    end_ms: 17356
+    text_en: Thank you Dr. Aris. I have been feeling slightly fatigued during late afternoons. How do my lipid and glucose
+      panels look?
+    text_tr: Teşekkürler Dr. Aris. Öğleden sonraları kendimi biraz yorgun hissediyordum. Lipid ve glukoz panellerim nasıl
+      görünüyor?
+  - index: 3
+    speaker_id: dr_aris
+    start_ms: 17756
+    end_ms: 28509
+    text_en: Your fasting glucose is ninety-two, which is normal, but your hemoglobin A1c is five point seven percent, placing
+      you right at the pre-diabetes threshold.
+    text_tr: Açlık glukozunuz doksan iki, bu normal; ancak hemoglobin A1c'niz yüzde beş nokta yedi, bu da sizi tam prediyabet
+      eşiğine koyuyor.
+  - index: 4
+    speaker_id: kemal
+    start_ms: 28909
+    end_ms: 36412
+    text_en: That is concerning given my family history of Type 2 diabetes. What about my cardiovascular markers?
+    text_tr: Ailemdeki Tip 2 diyabet geçmişi göz önüne alındığında bu endişe verici. Peki ya kardiyovasküler belirteçlerim?
+  - index: 5
+    speaker_id: dr_aris
+    start_ms: 36812
+    end_ms: 47119
+    text_en: Your total cholesterol is slightly elevated, but the more critical marker is ApoB and small dense LDL particles,
+      which indicate atherogenic particle burden.
+    text_tr: Toplam kolesterolünüz biraz yüksek ancak daha kritik belirteç aterojenik parçacık yükünü gösteren ApoB ve küçük
+      yoğun LDL parçacıklarıdır.
+  - index: 6
+    speaker_id: kemal
+    start_ms: 47519
+    end_ms: 54822
+    text_en: Do I need to initiate prescription statin therapy immediately, or can we attempt lifestyle intervention first?
+    text_tr: Hemen reçeteli statin tedavisine başlamam gerekiyor mu, yoksa önce yaşam tarzı müdahalesini deneyebilir miyiz?
+  - index: 7
+    speaker_id: dr_aris
+    start_ms: 55222
+    end_ms: 64620
+    text_en: Given that your coronary artery calcium score is zero, we have a safe twelve-week window to trial structured
+      nutritional and exercise interventions.
+    text_tr: Koroner arter kalsiyum skorunuzun sıfır olduğu göz önüne alındığında yapılandırılmış beslenme ve egzersiz müdahalelerini
+      denemek için güvenli bir on iki haftalık penceremiz var.
+  - index: 8
+    speaker_id: kemal
+    start_ms: 65020
+    end_ms: 71023
+    text_en: What specific dietary modifications will yield the most impactful glycemic improvements?
+    text_tr: Hangi özel beslenme değişiklikleri en etkili glisemik iyileşmeleri sağlayacaktır?
+  - index: 9
+    speaker_id: dr_aris
+    start_ms: 71423
+    end_ms: 81971
+    text_en: Eliminate refined carbohydrates and ultra-processed seed oils, increase viscous soluble fiber to forty grams
+      daily, and incorporate zone-two aerobic training.
+    text_tr: Rafine karbonhidratları ve aşırı işlenmiş tohum yağlarını hayatınızdan çıkarın, yapışkan çözünür lifi günde kırk
+      grama çıkarın ve bölge-iki aerobik antrenmanını dahil edin.
+  comprehension_questions:
+  - id: q_listening_b2_preventative-health-screening_01
+    question_en: What specific biomarker indicates that Kemal is at the pre-diabetes threshold?
+    question_tr_hint: Kemal'in prediyabet eşiğinde olduğunu hangi belirteç göstermektedir?
+    options:
+    - Extremely low platelet density.
+    - Hemoglobin A1c of 5.7 percent.
+    - A fasting blood glucose of four hundred.
+    - An elevated white blood cell count.
+    correct_answer: Hemoglobin A1c of 5.7 percent.
+    explanation_en: Dr. Aris explains HbA1c is 5.7%, which sits right at the pre-diabetes threshold.
+    explanation_tr: Dr. Aris HbA1c'nin %5.7 olup prediyabet eşiğinde olduğunu açıklar.
+  - id: q_listening_b2_preventative-health-screening_02
+    question_en: Why does Dr. Aris emphasize ApoB and small dense LDL over total cholesterol?
+    question_tr_hint: Dr. Aris toplam kolesterol yerine neden ApoB ve küçük yoğun LDL'yi vurguluyor?
+    options:
+    - They reflect atherogenic particle burden and cardiovascular plaque risk more accurately.
+    - Small dense LDL indicates liver hepatitis.
+    - Total cholesterol tests are universally illegal.
+    - ApoB measures bone density in the legs.
+    correct_answer: They reflect atherogenic particle burden and cardiovascular plaque risk more accurately.
+    explanation_en: Dr. Aris notes ApoB indicates true atherogenic particle burden.
+    explanation_tr: Dr. Aris ApoB'nin gerçek aterojenik parçacık yükünü yansıttığını belirtir.
+  - id: q_listening_b2_preventative-health-screening_03
+    question_en: What crucial diagnostic test allows Kemal to trial lifestyle changes before medication?
+    question_tr_hint: Hangi kritik tanı testi Kemal'in ilaçtan önce yaşam tarzı değişikliklerini denemesine izin veriyor?
+    options:
+    - A coronary artery calcium (CAC) score of zero.
+    - A normal resting electrocardiogram.
+    - Normal psychological cognitive screening.
+    - A negative chest X-ray examination.
+    correct_answer: A coronary artery calcium (CAC) score of zero.
+    explanation_en: Dr. Aris points out his coronary artery calcium score is zero, allowing a 12-week trial.
+    explanation_tr: Dr. Aris koroner kalsiyum skorunun sıfır olduğunu ve 12 haftalık denemeye izin verdiğini belirtir.
+  - id: q_listening_b2_preventative-health-screening_04
+    question_en: How long is the structured trial window before re-testing biomarkers?
+    question_tr_hint: Belirteçlerin yeniden test edilmesinden önceki yapılandırılmış deneme penceresi ne kadardır?
+    options:
+    - Twelve weeks.
+    - Five years.
+    - One single week.
+    - Two days.
+    correct_answer: Twelve weeks.
+    explanation_en: Dr. Aris specifies a safe twelve-week window.
+    explanation_tr: Dr. Aris güvenli bir 12 haftalık pencere belirtir.
+  - id: q_listening_b2_preventative-health-screening_05
+    question_en: What dietary and training changes does Dr. Aris recommend?
+    question_tr_hint: Dr. Aris hangi beslenme ve antrenman değişikliklerini öneriyor?
+    options:
+    - Consuming sugar before every meal and sleeping four hours.
+    - Eliminating refined carbohydrates, increasing soluble fiber to 40g, and zone-two aerobic training.
+    - Drinking three liters of fruit juice every morning.
+    - Eating only red meat and avoiding all physical activity.
+    correct_answer: Eliminating refined carbohydrates, increasing soluble fiber to 40g, and zone-two aerobic training.
+    explanation_en: Dr. Aris recommends cutting refined carbs, hitting 40g fiber, and zone-two training.
+    explanation_tr: Dr. Aris rafine karbonhidratları kesmeyi, 40 gr lif almayı ve bölge-2 antrenmanı önerir.
+  topic_tags:
+  - health-lifestyle
+  - medicine
+  - biomarkers
+  - preventative-care
+- id: listening.b2.artisanal-coffee-sourcing
+  title: Negotiating Specialty Coffee Direct-Trade Contracts
+  cefr_level: B2
+  category: negotiation
+  scenario_context: Nilay negotiates direct-trade specialty green coffee procurement contracts with Colombian cooperative
+    export director Mateo, balancing bean quality against shipping volatility.
+  speakers:
+  - id: mateo
+    name: Mateo
+    role: Coffee Cooperative Export Director
+    accent: Spanish
+  - id: nilay
+    name: Nilay
+    role: Specialty Coffee Roaster
+    accent: Turkish
+  audio_ref: audio/listening/b2_artisanal_coffee_sourcing.mp3
+  duration_seconds: 88
+  transcript_items:
+  - index: 1
+    speaker_id: mateo
+    start_ms: 0
+    end_ms: 10463
+    text_en: Welcome to our cupping lab Nilay. You evaluated the anaerobic natural Geisha and washed Pink Bourbon lots this
+      morning. What were your cupping scores?
+    text_tr: Tadım laboratuvarımıza hoş geldin Nilay. Bu sabah anaerobik doğal Geisha ve yıkanmış Pink Bourbon partilerini
+      değerlendirdin. Tadım puanların neydi?
+  - index: 2
+    speaker_id: nilay
+    start_ms: 10863
+    end_ms: 22230
+    text_en: Hello Mateo. The Pink Bourbon lot was extraordinary. It scored an eighty-eight point five with distinct jasmine
+      florals, peach acidity, and clean silky mouthfeel.
+    text_tr: Merhaba Mateo. Pink Bourbon partisi olağanüstüydü. Belirgin yasemin çiçekleri, şeftali asiditesi ve temiz ipeksi
+      gövdesiyle seksen sekiz nokta beş puan aldı.
+  - index: 3
+    speaker_id: mateo
+    start_ms: 22630
+    end_ms: 35092
+    text_en: That lot represents our highest-altitude harvest at nineteen hundred meters in Huila. Because yield was limited
+      by unseasonal rains, we are pricing it at five dollars twenty per pound FOB.
+    text_tr: Bu parti Huila'da bin dokuz yüz metredeki en yüksek irtifa hasadımızı temsil ediyor. Mevsim dışı yağmurlar verimi
+      sınırladığından, FOB bazında libresi beş dolar yirmi sent olarak fiyatlandırıyoruz.
+  - index: 4
+    speaker_id: nilay
+    start_ms: 35492
+    end_ms: 46055
+    text_en: Five twenty is above our projected benchmark for specialty microlots. Could we negotiate four dollars eighty
+      if we contract for sixty GrainPro bags upfront?
+    text_tr: Beş yirmi, özel mikro partiler için öngördüğümüz kıstasın üzerinde. Peşin olarak altmış GrainPro çuval için sözleşme
+      yaparsak dört dolar seksene anlaşabilir miyiz?
+  - index: 5
+    speaker_id: mateo
+    start_ms: 46455
+    end_ms: 56117
+    text_en: If you commit to sixty bags, we can meet at five dollars flat, provided you cover the temperature-controlled
+      reefer container surcharge for maritime shipping.
+    text_tr: Altmış çuvala taahhüt verirseniz, deniz taşımacılığı için sıcaklık kontrollü reefer konteyner ek ücretini karşılamanız
+      şartıyla düz beş dolarda buluşabiliriz.
+  - index: 6
+    speaker_id: nilay
+    start_ms: 56517
+    end_ms: 65250
+    text_en: Preserving moisture stability through maritime transit is essential to prevent baggy cardboard defects. I accept
+      the reefer surcharge.
+    text_tr: Deniz taşımacılığı sırasında nem dengesini korumak çuval karton kusurlarını önlemek için esastır. Reefer ek ücretini
+      kabul ediyorum.
+  - index: 7
+    speaker_id: mateo
+    start_ms: 65650
+    end_ms: 76672
+    text_en: Excellent. We will mill the parchment and pack the green coffee in multi-layer hermetic GrainPro bags next week.
+      Export documentation will follow shortly.
+    text_tr: Mükemmel. Parşömeni ayıklayıp yeşil kahveyi gelecek hafta çok katmanlı hermetik GrainPro torbalarda paketleyeceğiz.
+      İhracat belgeleri kısa süre içinde takip edecek.
+  - index: 8
+    speaker_id: nilay
+    start_ms: 77072
+    end_ms: 87190
+    text_en: Thank you Mateo. This direct partnership guarantees exceptional quality for our roastery while ensuring sustainable
+      premium prices for your farming community.
+    text_tr: Teşekkürler Mateo. Bu doğrudan ortaklık kavurmahanemiz için olağanüstü kaliteyi garanti ederken çiftçi topluluğunuz
+      için sürdürülebilir prim fiyatları sağlar.
+  comprehension_questions:
+  - id: q_listening_b2_artisanal-coffee-sourcing_01
+    question_en: What sensory cupping score did Nilay award the washed Pink Bourbon lot?
+    question_tr_hint: Nilay yıkanmış Pink Bourbon partisine kaç tadım puanı verdi?
+    options:
+    - 70.0 points.
+    - 65.5 points.
+    - 88.5 points.
+    - 95.0 points.
+    correct_answer: 88.5 points.
+    explanation_en: Nilay states the Pink Bourbon scored 88.5 points.
+    explanation_tr: Nilay Pink Bourbon'un 88.5 puan aldığını belirtir.
+  - id: q_listening_b2_artisanal-coffee-sourcing_02
+    question_en: What environmental factor limited coffee yields at the Huila farm?
+    question_tr_hint: Huila çiftliğinde kahve verimini hangi çevresel faktör sınırladı?
+    options:
+    - A destructive insect infestation.
+    - A severe volcanic ash eruption.
+    - Unseasonal rains at high altitude.
+    - Extreme heatwave drought drying up rivers.
+    correct_answer: Unseasonal rains at high altitude.
+    explanation_en: Mateo explains yield was limited by unseasonal rains at 1,900 meters.
+    explanation_tr: Mateo 1900 metredeki mevsim dışı yağmurların verimi kısıtladığını açıklar.
+  - id: q_listening_b2_artisanal-coffee-sourcing_03
+    question_en: What compromised price per pound did the negotiators agree upon?
+    question_tr_hint: Müzakereciler libre başına hangi uzlaşılan fiyatta anlaştılar?
+    options:
+    - Three dollars fifty cents.
+    - Four dollars eighty cents.
+    - Five dollars twenty cents.
+    - Five dollars flat per pound.
+    correct_answer: Five dollars flat per pound.
+    explanation_en: Mateo proposes meeting at five dollars flat for 60 bags, which Nilay accepts.
+    explanation_tr: Mateo 60 çuval için düz 5 dolarda buluşmayı önerir ve Nilay kabul eder.
+  - id: q_listening_b2_artisanal-coffee-sourcing_04
+    question_en: Why does Nilay accept the temperature-controlled reefer container surcharge?
+    question_tr_hint: Nilay sıcaklık kontrollü reefer konteyner ek ücretini neden kabul ediyor?
+    options:
+    - Because regular dry containers are completely out of stock.
+    - To preserve moisture stability during maritime shipping and prevent defects.
+    - To speed up the ocean cargo ship transit by three weeks.
+    - Because maritime international law mandates reefer containers for all cargo.
+    correct_answer: To preserve moisture stability during maritime shipping and prevent defects.
+    explanation_en: Nilay notes moisture stability prevents baggy cardboard defects.
+    explanation_tr: Nilay nem dengesini korumanın çuval kusurlarını önlediğini belirtir.
+  - id: q_listening_b2_artisanal-coffee-sourcing_05
+    question_en: In what specialized packaging will the green coffee be shipped?
+    question_tr_hint: Yeşil kahve hangi özel ambalajda sevk edilecek?
+    options:
+    - Plastic water barrels.
+    - Open burlap cotton sacks without liners.
+    - Discarded wooden fruit crates.
+    - Multi-layer hermetic GrainPro bags.
+    correct_answer: Multi-layer hermetic GrainPro bags.
+    explanation_en: Mateo specifies packing in multi-layer hermetic GrainPro bags.
+    explanation_tr: Mateo çok katmanlı hermetik GrainPro torbalarda paketleneceğini belirtir.
+  topic_tags:
+  - food-shopping
+  - coffee
+  - trade
+  - sourcing
+  - negotiation
+- id: listening.b2.mentorship-career-pivot
+  title: Navigating a Career Pivot to Data Platform Engineering
+  cefr_level: B2
+  category: stakeholder_alignment
+  scenario_context: Onur consults his staff engineering mentor Elena on transitioning from legacy monolith backend development
+    to distributed data infrastructure engineering.
+  speakers:
+  - id: elena
+    name: Elena
+    role: Staff Engineering Mentor
+    accent: American
+  - id: onur
+    name: Onur
+    role: Senior Backend Developer
+    accent: Turkish
+  audio_ref: audio/listening/b2_mentorship_career_pivot.mp3
+  duration_seconds: 87
+  transcript_items:
+  - index: 1
+    speaker_id: elena
+    start_ms: 0
+    end_ms: 10188
+    text_en: Hi Onur. Thanks for booking this quarterly mentorship session. You mentioned in your prep notes that you are
+      contemplating a lateral career transition?
+    text_tr: Selam Onur. Bu üç aylık mentorluk seansını ayırttığın için teşekkürler. Hazırlık notlarında yatay bir kariyer
+      geçişi düşündüğünü belirtmiştin?
+  - index: 2
+    speaker_id: onur
+    start_ms: 10588
+    end_ms: 24645
+    text_en: Hi Elena. Yes, after five years building CRUD microservices and REST APIs, I feel my intellectual growth has
+      plateaued. I want to transition into distributed data platform engineering.
+    text_tr: Selam Elena. Evet, beş yıl CRUD mikroservisleri ve REST API'leri geliştirdikten sonra entelektüel gelişimimin
+      duraksadığını hissediyorum. Dağıtık veri platformu mühendisliğine geçmek istiyorum.
+  - index: 3
+    speaker_id: elena
+    start_ms: 25045
+    end_ms: 34817
+    text_en: That is an exceptionally high-leverage domain. What foundational architectural paradigms do you need to bridge
+      between standard backend and streaming systems?
+    text_tr: Bu son derece yüksek etkili bir alan. Standart arka uç ile akış sistemleri arasında hangi temel mimari paradigmalar
+      arasında köprü kurman gerekiyor?
+  - index: 4
+    speaker_id: onur
+    start_ms: 35217
+    end_ms: 46879
+    text_en: I understand relational SQL indexing well, but I need deep hands-on mastery of distributed event logs like Apache
+      Kafka, partition rebalancing, and stream processing with Flink.
+    text_tr: İlişkisel SQL indekslemeyi iyi anlıyorum ancak Apache Kafka gibi dağıtık olay günlükleri, bölüm yeniden dengeleme
+      ve Flink ile akış işleme konularında derin pratik uzmanlığa ihtiyacım var.
+  - index: 5
+    speaker_id: elena
+    start_ms: 47279
+    end_ms: 58556
+    text_en: Exactly. You must shift mental models from synchronous request-response guarantees to asynchronous eventual consistency,
+      watermarking, and backpressure handling.
+    text_tr: Kesinlikle. Zihinsel modellerini senkronize istek-yanıt güvencelerinden eşzamansız nihai tutarlılık, filigranlama
+      (watermarking) ve geri basınç yönetimine kaydırmalısın.
+  - index: 6
+    speaker_id: onur
+    start_ms: 58956
+    end_ms: 65214
+    text_en: How can I demonstrate credible competency internally without taking a demotion to a junior data role?
+    text_tr: Junior bir veri rolüne düşürülmeden şirket içinde güvenilir yetkinliği nasıl sergileyebilirim?
+  - index: 7
+    speaker_id: elena
+    start_ms: 65614
+    end_ms: 76977
+    text_en: Partner with our data platform squad on their current CDC migration. Volunteer to write the Kafka Connect sink
+      connectors that ingest our product databases into Snowflake.
+    text_tr: Mevcut CDC geçişlerinde veri platformu ekibimizle ortaklık kur. Ürün veritabanlarımızı Snowflake'e aktaran Kafka
+      Connect alıcı bağlayıcılarını yazmaya gönüllü ol.
+  - index: 8
+    speaker_id: onur
+    start_ms: 77377
+    end_ms: 86089
+    text_en: That gives me production-grade distributed systems experience directly tied to business value. I will reach out
+      to their tech lead today.
+    text_tr: Bu bana doğrudan ticari değerle bağlantılı üretim kalitesinde dağıtık sistemler deneyimi kazandırır. Bugün onların
+      teknik liderine ulaşacağım.
+  comprehension_questions:
+  - id: q_listening_b2_mentorship-career-pivot_01
+    question_en: Why does Onur want to transition away from traditional backend API development?
+    question_tr_hint: Onur geleneksel arka uç API geliştirmeden neden ayrılmak istiyor?
+    options:
+    - After five years of building CRUD APIs, he feels his intellectual growth has plateaued.
+    - He lost all interest in writing any computer software code.
+    - His manager ordered him to transfer immediately or face dismissal.
+    - His company announced bankruptcy and cancelled all salaries.
+    correct_answer: After five years of building CRUD APIs, he feels his intellectual growth has plateaued.
+    explanation_en: Onur states he feels his intellectual growth has plateaued after five years.
+    explanation_tr: Onur beş yılın ardından entelektüel gelişiminin duraksadığını hissettiğini belirtir.
+  - id: q_listening_b2_mentorship-career-pivot_02
+    question_en: What distributed systems concepts does Elena identify as critical for data engineering?
+    question_tr_hint: Elena veri mühendisliği için hangi dağıtık sistem kavramlarını kritik olarak tanımlıyor?
+    options:
+    - Manual paper filing and analog telephone switchboards.
+    - Fixing physical hardware power cords in the server closet.
+    - Eventual consistency, watermarking, and backpressure handling in event streams.
+    - Basic HTML web formatting and simple spreadsheet entry.
+    correct_answer: Eventual consistency, watermarking, and backpressure handling in event streams.
+    explanation_en: Elena emphasizes shifting mental models to eventual consistency, watermarking, and backpressure.
+    explanation_tr: Elena zihinsel modelleri nihai tutarlılık, filigranlama ve geri basınca kaydırmayı vurgular.
+  - id: q_listening_b2_mentorship-career-pivot_03
+    question_en: What concern does Onur express regarding his career transition?
+    question_tr_hint: Onur kariyer geçişiyle ilgili hangi endişeyi dile getiriyor?
+    options:
+    - He has forgotten all high school mathematics theorems.
+    - He is afraid of having to move to another country.
+    - He worries about taking a demotion to a junior role during the transition.
+    - He cannot understand English technical documentation.
+    correct_answer: He worries about taking a demotion to a junior role during the transition.
+    explanation_en: Onur asks how to demonstrate competency without taking a demotion to junior.
+    explanation_tr: Onur junior seviyesine düşürülmeden yetkinliği nasıl kanıtlayacağını sorar.
+  - id: q_listening_b2_mentorship-career-pivot_04
+    question_en: What strategic project does Elena recommend Onur volunteer for?
+    question_tr_hint: Elena Onur'un hangi stratejik projeye gönüllü olmasını öneriyor?
+    options:
+    - Writing Kafka Connect sink connectors for the data squad's CDC migration into Snowflake.
+    - Redesigning the company graphic logo in Photoshop.
+    - Answering incoming customer billing complaints.
+    - Organizing the annual holiday office party catering.
+    correct_answer: Writing Kafka Connect sink connectors for the data squad's CDC migration into Snowflake.
+    explanation_en: Elena suggests writing Kafka Connect sink connectors for the CDC migration.
+    explanation_tr: Elena CDC geçişi için Kafka Connect bağlayıcıları yazmasını önerir.
+  - id: q_listening_b2_mentorship-career-pivot_05
+    question_en: What next step does Onur decide to take immediately?
+    question_tr_hint: Onur hemen hangi sonraki adımı atmaya karar veriyor?
+    options:
+    - Reach out to the data platform squad's tech lead today.
+    - Enroll in a full-time four-year college degree.
+    - Submit his formal resignation to human resources.
+    - Delete all his existing software code repositories.
+    correct_answer: Reach out to the data platform squad's tech lead today.
+    explanation_en: Onur says he will reach out to their tech lead today.
+    explanation_tr: Onur bugün teknik lidere ulaşacağını söyler.
+  topic_tags:
+  - relationships
+  - career
+  - mentorship
+  - software-engineering
+  - data
+- id: listening.b2.postgraduate-thesis-proposal
+  title: Defending an Algorithmic Fairness Master's Thesis Proposal
+  cefr_level: B2
+  category: stakeholder_alignment
+  scenario_context: Seda defends her graduate research methodology on auditing demographic disparity in credit scoring machine
+    learning models before advisor Professor Wallace.
+  speakers:
+  - id: prof_wallace
+    name: Professor Wallace
+    role: Faculty Research Advisor
+    accent: British
+  - id: seda
+    name: Seda
+    role: Master's Candidate
+    accent: Turkish
+  audio_ref: audio/listening/b2_postgraduate_thesis_proposal.mp3
+  duration_seconds: 87
+  transcript_items:
+  - index: 1
+    speaker_id: prof_wallace
+    start_ms: 0
+    end_ms: 11717
+    text_en: Welcome Seda. I read your thesis prospectus on algorithmic fairness in automated credit underwriting. You propose
+      evaluating demographic parity against equalized odds.
+    text_tr: Hoş geldin Seda. Otomatik kredi değerlendirmesinde algoritmik adillik üzerine tez taslağını okudum. Demografik
+      eşitliği fırsat eşitliğine (equalized odds) karşı değerlendirmeyi öneriyorsun.
+  - index: 2
+    speaker_id: seda
+    start_ms: 12117
+    end_ms: 24449
+    text_en: Thank you Professor Wallace. Yes, demographic parity enforces equal acceptance rates across protected demographic
+      groups, regardless of underlying credit risk distributions.
+    text_tr: Teşekkürler Profesör Wallace. Evet, demografik eşitlik temel kredi riski dağılımlarına bakılmaksızın korunan
+      demografik gruplar genelinde eşit kabul oranlarını zorunlu kılar.
+  - index: 3
+    speaker_id: prof_wallace
+    start_ms: 24849
+    end_ms: 32602
+    text_en: And what mathematical trade-off arises when lenders attempt to enforce demographic parity simultaneously with
+      equalized odds?
+    text_tr: Peki kredi kuruluşları fırsat eşitliği ile eşzamanlı olarak demografik eşitliği uygulamaya çalıştığında hangi
+      matematiksel ödünleşim ortaya çıkar?
+  - index: 4
+    speaker_id: seda
+    start_ms: 33002
+    end_ms: 43899
+    text_en: Kleinberg's impossibility theorem demonstrates that unless base rates of default are identical across populations,
+      these two fairness criteria are mathematically incompatible.
+    text_tr: Kleinberg'in imkansızlık teoremi temerrüt taban oranları popülasyonlar genelinde özdeş olmadıkça bu iki adillik
+      kriterinin matematiksel olarak uyumsuz olduğunu göstermektedir.
+  - index: 5
+    speaker_id: prof_wallace
+    start_ms: 44299
+    end_ms: 55920
+    text_en: Precisely formulated. Now, how will your empirical methodology validate model fairness without access to protected
+      attributes like race or gender in commercial loan datasets?
+    text_tr: Kesinlikle doğru formüle edilmiş. Peki ticari kredi veri setlerinde ırk veya cinsiyet gibi korunan özelliklere
+      erişim olmadan ampirik metodolojiniz model adilliğini nasıl doğrulayacak?
+  - index: 6
+    speaker_id: seda
+    start_ms: 56320
+    end_ms: 67258
+    text_en: I will employ Bayesian Improved First Name Surname Geocoding (BIFSG) to infer probabilistic demographic distributions
+      while evaluating proxy variable leakage.
+    text_tr: Vekil değişken sızıntısını değerlendirirken olasılıksal demografik dağılımları çıkarmak için Bayesçi Geliştirilmiş
+      İsim Soyisim Coğrafi Kodlaması (BIFSG) kullanacağım.
+  - index: 7
+    speaker_id: prof_wallace
+    start_ms: 67658
+    end_ms: 77920
+    text_en: BIFSG introduces imputation noise. You must incorporate sensitivity analysis to quantify how imputation error
+      bounds impact your fairness metrics.
+    text_tr: BIFSG atama gürültüsü getirir. Atama hata sınırlarının adillik metriklerinizi nasıl etkilediğini ölçmek için
+      duyarlılık analizini dahil etmelisiniz.
+  - index: 8
+    speaker_id: seda
+    start_ms: 78320
+    end_ms: 86113
+    text_en: I will add a formal Monte Carlo perturbation chapter to measure the variance of fairness metrics under synthetic
+      imputation noise.
+    text_tr: Sentetik atama gürültüsü altında adillik metriklerinin varyansını ölçmek için resmi bir Monte Carlo pertürbasyon
+      bölümü ekleyeceğim.
+  comprehension_questions:
+  - id: q_listening_b2_postgraduate-thesis-proposal_01
+    question_en: What is the core subject of Seda's master's thesis proposal?
+    question_tr_hint: Seda'nın yüksek lisans tez önerisinin ana konusu nedir?
+    options:
+    - Developing biological vaccines against plant agricultural viruses.
+    - Designing high-speed quantum processors for space exploration.
+    - Algorithmic fairness criteria and demographic disparities in automated credit underwriting.
+    - The history of ancient Egyptian architectural excavation techniques.
+    correct_answer: Algorithmic fairness criteria and demographic disparities in automated credit underwriting.
+    explanation_en: Wallace notes the prospectus is on algorithmic fairness in automated credit underwriting.
+    explanation_tr: Wallace taslağın otomatik kredi değerlendirmesinde algoritmik adillik üzerine olduğunu belirtir.
+  - id: q_listening_b2_postgraduate-thesis-proposal_02
+    question_en: What mathematical principle does Seda cite regarding conflicting fairness definitions?
+    question_tr_hint: Seda çelişen adillik tanımlarıyla ilgili hangi matematiksel ilkeye atıfta bulunuyor?
+    options:
+    - Moore's law of microprocessor transistor scaling.
+    - Newton's universal law of gravitation.
+    - Pythagoras's geometric triangle theorem.
+    - Kleinberg's impossibility theorem proving demographic parity and equalized odds are incompatible.
+    correct_answer: Kleinberg's impossibility theorem proving demographic parity and equalized odds are incompatible.
+    explanation_en: Seda cites Kleinberg's theorem on incompatible fairness criteria when base rates differ.
+    explanation_tr: Seda taban oranlar farklıyken adillik kriterlerinin uyumsuzluğunu gösteren Kleinberg teoremini anar.
+  - id: q_listening_b2_postgraduate-thesis-proposal_03
+    question_en: How does Seda plan to handle the absence of protected demographic labels in commercial data?
+    question_tr_hint: Seda ticari verilerde korunan demografik etiketlerin bulunmamasını nasıl ele almayı planlıyor?
+    options:
+    - Guessing demographic attributes randomly with coin flips.
+    - Calling every credit applicant on their personal telephone.
+    - Using Bayesian Improved First Name Surname Geocoding (BIFSG) to infer probabilistic distributions.
+    - Ignoring fairness completely and assuming zero discrimination.
+    correct_answer: Using Bayesian Improved First Name Surname Geocoding (BIFSG) to infer probabilistic distributions.
+    explanation_en: Seda proposes using BIFSG to infer probabilistic demographics.
+    explanation_tr: Seda olasılıksal demografiyi çıkarmak için BIFSG kullanmayı önerir.
+  - id: q_listening_b2_postgraduate-thesis-proposal_04
+    question_en: What methodological limitation does Professor Wallace point out regarding BIFSG?
+    question_tr_hint: Profesör Wallace BIFSG hakkında hangi metodolojik sınırlamaya işaret ediyor?
+    options:
+    - It introduces imputation noise that requires sensitivity analysis.
+    - It is completely illegal under international copyright law.
+    - It only works on ancient dead languages.
+    - It requires supercomputers that do not exist on Earth.
+    correct_answer: It introduces imputation noise that requires sensitivity analysis.
+    explanation_en: Wallace notes BIFSG introduces imputation noise needing sensitivity analysis.
+    explanation_tr: Wallace BIFSG'nin duyarlılık analizi gerektiren atama gürültüsü getirdiğini belirtir.
+  - id: q_listening_b2_postgraduate-thesis-proposal_05
+    question_en: What analytical technique does Seda promise to add to quantify imputation variance?
+    question_tr_hint: Seda atama varyansını ölçmek için hangi analitik tekniği eklemeyi vaat ediyor?
+    options:
+    - A public survey on social media networks.
+    - A manual physical coin-toss tournament.
+    - A written essay describing personal opinions.
+    - A formal Monte Carlo perturbation analysis.
+    correct_answer: A formal Monte Carlo perturbation analysis.
+    explanation_en: Seda promises to add a formal Monte Carlo perturbation chapter.
+    explanation_tr: Seda resmi bir Monte Carlo pertürbasyon bölümü ekleyeceğini söyler.
+  topic_tags:
+  - education
+  - academic
+  - thesis
+  - machine-learning
+  - ethics
+- id: listening.b2.cross-cultural-client-pitch
+  title: Debriefing a Japanese Enterprise Client Presentation
+  cefr_level: B2
+  category: stakeholder_alignment
+  scenario_context: Berk and marketing partner Chloe debrief a high-stakes enterprise software sales pitch to a Tokyo conglomerate,
+    decoding subtle non-verbal cues and indirect consensus dynamics.
+  speakers:
+  - id: chloe
+    name: Chloe
+    role: Global Account Director
+    accent: American
+  - id: berk
+    name: Berk
+    role: Technical Sales Engineer
+    accent: Turkish
+  audio_ref: audio/listening/b2_cross_cultural_client_pitch.mp3
+  duration_seconds: 83
+  transcript_items:
+  - index: 1
+    speaker_id: chloe
+    start_ms: 0
+    end_ms: 10323
+    text_en: Great presentation Berk! The live microservice latency benchmark demo was flawless. How do you feel about the
+      executive committee's reaction?
+    text_tr: Harika sunumdu Berk! Canlı mikroservis gecikme kıyaslama demosu kusursuzdu. Yönetim kurulunun tepkisi hakkında
+      ne hissediyorsun?
+  - index: 2
+    speaker_id: berk
+    start_ms: 10723
+    end_ms: 22060
+    text_en: Thanks Chloe. The technical directors nodded continuously throughout our slides, but when I asked if they were
+      ready to sign the pilot agreement, the room fell completely silent.
+    text_tr: Teşekkürler Chloe. Teknik direktörler slaytlarımız boyunca sürekli başlarını salladılar ancak pilot sözleşmeyi
+      imzalamaya hazır olup olmadıklarını sorduğumda oda tamamen sessizliğe gömüldü.
+  - index: 3
+    speaker_id: chloe
+    start_ms: 22460
+    end_ms: 34952
+    text_en: Ah, that is a classic cross-cultural misinterpretation. In Japanese business culture, nodding indicates 'I hear
+      and understand you', not necessarily 'I agree with your proposal'.
+    text_tr: Ah, bu klasik bir kültürlerarası yanlış yorumlama. Japon iş kültüründe baş sallamak 'Sizi duyuyor ve anlıyorum'
+      anlamına gelir; ille de 'Teklifinize katılıyorum' demek değildir.
+  - index: 4
+    speaker_id: berk
+    start_ms: 35352
+    end_ms: 40791
+    text_en: Did I commit a faux pas by asking for an immediate commercial commitment at the end of the meeting?
+    text_tr: Toplantının sonunda hemen ticari bir taahhüt isteyerek bir pot mu kırdım?
+  - index: 5
+    speaker_id: chloe
+    start_ms: 41191
+    end_ms: 54318
+    text_en: A slight one. Enterprise procurement in Japan relies on 'ringisho'—a meticulous bottom-up consensus building
+      process. Asking executives to commit publicly on the spot causes loss of face.
+    text_tr: Ufak bir pot. Japonya'da kurumsal satın alma 'ringisho'ya—aşağıdan yukarıya titiz bir fikir birliği oluşturma
+      sürecine—dayanır. Yöneticilerden anında kamuya açık taahhüt istemek itibar kaybına neden olur.
+  - index: 6
+    speaker_id: berk
+    start_ms: 54718
+    end_ms: 63125
+    text_en: I understand now. The silence was not rejection; they needed internal space to deliberate without confrontational
+      pressure.
+    text_tr: Şimdi anlıyorum. Sessizlik ret değildi; çatışmacı baskı olmadan müzakere etmek için iç alana ihtiyaçları vardı.
+  - index: 7
+    speaker_id: chloe
+    start_ms: 63525
+    end_ms: 73188
+    text_en: Precisely. The managing director did mention that our technical compliance documentation was very thorough. That
+      is an encouraging signal.
+    text_tr: Kesinlikle. Genel müdür teknik uyumluluk belgelerimizin çok kapsamlı olduğunu belirtti. Bu cesaret verici bir
+      sinyal.
+  - index: 8
+    speaker_id: berk
+    start_ms: 73588
+    end_ms: 82241
+    text_en: I will send a polite, formal follow-up letter expressing gratitude for their hospitality and offering supplementary
+      architectural schematics.
+    text_tr: Misafirperverlikleri için minnettarlığımı ifade eden ve ek mimari şemalar sunan kibar, resmi bir takip mektubu
+      göndereceğim.
+  comprehension_questions:
+  - id: q_listening_b2_cross-cultural-client-pitch_01
+    question_en: How did Berk misinterpret the Japanese executives' nodding during the presentation?
+    question_tr_hint: Berk sunum sırasında Japon yöneticilerin baş sallamasını nasıl yanlış yorumladı?
+    options:
+    - He believed they were rejecting his software completely.
+    - He thought they were falling asleep from boredom.
+    - He assumed nodding meant agreement, whereas it only signaled attentive listening.
+    - He thought they did not speak any English.
+    correct_answer: He assumed nodding meant agreement, whereas it only signaled attentive listening.
+    explanation_en: Chloe explains nodding signifies comprehension and listening, not agreement.
+    explanation_tr: Chloe baş sallamanın onay değil anlama ve dinleme anlamına geldiğini açıklar.
+  - id: q_listening_b2_cross-cultural-client-pitch_02
+    question_en: Why was asking for an immediate contract signing considered a cultural misstep?
+    question_tr_hint: Hemen sözleşme imzalanmasını istemek neden kültürel bir hata olarak görüldü?
+    options:
+    - Foreign vendors are forbidden from entering corporate office towers.
+    - Contracts must always be carved into physical wooden tablets.
+    - Signatures are completely illegal under Japanese corporate law.
+    - Decisions rely on consensus building (ringisho), and public on-the-spot pressure causes loss of face.
+    correct_answer: Decisions rely on consensus building (ringisho), and public on-the-spot pressure causes loss of face.
+    explanation_en: Chloe explains decisions require bottom-up consensus and spot pressure causes loss of face.
+    explanation_tr: Chloe kararların konsensüs gerektirdiğini ve anlık baskının itibar kaybına yol açtığını açıklar.
+  - id: q_listening_b2_cross-cultural-client-pitch_03
+    question_en: What positive signal did the managing director communicate before departing?
+    question_tr_hint: Genel müdür ayrılmadan önce hangi olumlu sinyali verdi?
+    options:
+    - Commended the technical compliance documentation as being very thorough.
+    - Invited Berk to a private karaoke party that night.
+    - Handed over a cashier's check for one million dollars.
+    - Offered to buy the entire software startup company.
+    correct_answer: Commended the technical compliance documentation as being very thorough.
+    explanation_en: Chloe notes the managing director praised the thoroughness of technical documentation.
+    explanation_tr: Chloe genel müdürün teknik belgelerin kapsamlılığını övdüğünü belirtir.
+  - id: q_listening_b2_cross-cultural-client-pitch_04
+    question_en: What did the prolonged silence following Berk's closing question truly indicate?
+    question_tr_hint: Berk'in kapanış sorusunun ardından gelen uzun sessizlik gerçekte neyi gösteriyordu?
+    options:
+    - A need for internal deliberation space without confrontational sales pressure.
+    - The translation headphones ran out of battery power.
+    - A sudden medical emergency among the executives.
+    - An intentional insult intended to end the business relationship.
+    correct_answer: A need for internal deliberation space without confrontational sales pressure.
+    explanation_en: Berk realizes silence was not rejection, but need for deliberation space.
+    explanation_tr: Berk sessizliğin ret değil müzakere alanı ihtiyacı olduğunu fark eder.
+  - id: q_listening_b2_cross-cultural-client-pitch_05
+    question_en: What appropriate follow-up action does Berk propose?
+    question_tr_hint: Berk nasıl uygun bir takip eylemi öneriyor?
+    options:
+    - Call the managing director's home telephone repeatedly.
+    - Send a formal thank-you letter offering supplementary architectural schematics.
+    - Threaten to sell the technology to their biggest competitor.
+    - Show up unannounced at the client's corporate headquarters tomorrow.
+    correct_answer: Send a formal thank-you letter offering supplementary architectural schematics.
+    explanation_en: Berk decides to send a polite formal thank-you letter with supplementary schematics.
+    explanation_tr: Berk ek şemalar içeren kibar resmi bir teşekkür mektubu göndermeye karar verir.
+  topic_tags:
+  - communication
+  - cross-cultural
+  - sales
+  - japan
+  - negotiation
+- id: listening.b2.incident-postmortem-database
+  title: Conducting a Blameless Database Outage Postmortem
+  cefr_level: B2
+  category: incident_response
+  scenario_context: Engineering lead Ziya convenes a blameless post-incident review with site reliability engineer Maya to
+    analyze a major production database connection pool starvation outage.
+  speakers:
+  - id: maya
+    name: Maya
+    role: Site Reliability Engineer
+    accent: British
+  - id: ziya
+    name: Ziya
+    role: Principal Engineering Lead
+    accent: Turkish
+  audio_ref: audio/listening/b2_incident_postmortem_database.mp3
+  duration_seconds: 83
+  transcript_items:
+  - index: 1
+    speaker_id: ziya
+    start_ms: 0
+    end_ms: 10617
+    text_en: Welcome everyone to the incident postmortem for yesterday's Severity-1 outage. As always, this is a blameless
+      retrospective focused on systemic resilience.
+    text_tr: Dünkü 1. Seviye kesintinin olay sonrası incelemesine hoş geldiniz. Her zaman olduğu gibi bu sistemik dayanıklılığa
+      odaklanan suçlamasız bir retrospektiftir.
+  - index: 2
+    speaker_id: maya
+    start_ms: 11017
+    end_ms: 25734
+    text_en: Thanks Ziya. The outage began at fourteen twenty UTC when API gateway latency breached five seconds, followed
+      by fifty-four percent of checkout requests failing with HTTP 504 gateway timeouts.
+    text_tr: Teşekkürler Ziya. Kesinti UTC ile 14:20'de API ağ geçidi gecikmesinin beş saniyeyi aşmasıyla başladı, ardından
+      ödeme isteklerinin yüzde elli dördü HTTP 504 ağ geçidi zaman aşımıyla başarısız oldu.
+  - index: 3
+    speaker_id: ziya
+    start_ms: 26134
+    end_ms: 31162
+    text_en: What was the immediate mechanical root cause identified during incident mitigation?
+    text_tr: Olay giderme sırasında tespit edilen acil mekanik kök neden neydi?
+  - index: 4
+    speaker_id: maya
+    start_ms: 31562
+    end_ms: 42080
+    text_en: A scheduled background batch job initiated an unindexed analytical query across the order history table, triggering
+      a full table scan that held exclusive table locks.
+    text_tr: Zamanlanmış bir arka plan toplu işi sipariş geçmişi tablosunda indekslenmemiş bir analitik sorgu başlattı ve
+      özel tablo kilitleri tutan tam bir tablo taramasını tetikledi.
+  - index: 5
+    speaker_id: ziya
+    start_ms: 42480
+    end_ms: 48623
+    text_en: And that locked query starved the connection pool for incoming transactional customer checkout traffic?
+    text_tr: Ve kilitlenen bu sorgu gelen işlemsel müşteri ödeme trafiği için bağlantı havuzunu tüketti, öyle mi?
+  - index: 6
+    speaker_id: maya
+    start_ms: 49023
+    end_ms: 62920
+    text_en: Exactly. All two hundred connection pool threads became blocked waiting for lock acquisition. Because our connection
+      acquisition timeout was set to thirty seconds, client requests piled up exponentially.
+    text_tr: Kesinlikle. İki yüz bağlantı havuzu iş parçacığının tümü kilit alımını beklerken engellendi. Bağlantı edinme
+      zaman aşımımız otuz saniyeye ayarlandığından istemci istekleri katlanarak birikti.
+  - index: 7
+    speaker_id: ziya
+    start_ms: 63320
+    end_ms: 67918
+    text_en: What architectural safeguards are we implementing to prevent recurrence?
+    text_tr: Tekrarlanmasını önlemek için hangi mimari önlemleri uyguluyoruz?
+  - index: 8
+    speaker_id: maya
+    start_ms: 68318
+    end_ms: 82220
+    text_en: First, analytical reporting queries are strictly segregated to a read-only replica with query cancellation timeouts.
+      Second, we are reducing connection acquisition timeouts to two seconds with circuit breaking.
+    text_tr: İlk olarak analitik raporlama sorguları sorgu iptal zaman aşımlarına sahip salt okunur bir kopyaya kesin olarak
+      ayrılıyor. İkinci olarak devre kesici ile bağlantı edinme zaman aşımlarını iki saniyeye düşürüyoruz.
+  comprehension_questions:
+  - id: q_listening_b2_incident-postmortem-database_01
+    question_en: What is the primary cultural principle of Ziya's incident review meeting?
+    question_tr_hint: Ziya'nın olay inceleme toplantısının temel kültürel ilkesi nedir?
+    options:
+    - Calculating financial deductions from developer paychecks.
+    - Reporting software bugs to federal regulatory police.
+    - A blameless retrospective focused on systemic resilience rather than individual punishment.
+    - Identifying and firing the engineer who wrote the bad query.
+    correct_answer: A blameless retrospective focused on systemic resilience rather than individual punishment.
+    explanation_en: Ziya begins by stating it is a blameless retrospective focused on systemic resilience.
+    explanation_tr: Ziya bunun sistemik dayanıklılığa odaklanan suçlamasız bir retrospektif olduğunu belirtir.
+  - id: q_listening_b2_incident-postmortem-database_02
+    question_en: What error code did 54 percent of checkout requests return during the outage?
+    question_tr_hint: Kesinti sırasında ödeme isteklerinin yüzde 54'ü hangi hata kodunu döndürdü?
+    options:
+    - HTTP 504 gateway timeouts.
+    - HTTP 301 permanent redirect.
+    - HTTP 404 page not found.
+    - HTTP 200 successful OK.
+    correct_answer: HTTP 504 gateway timeouts.
+    explanation_en: Maya states 54% of requests failed with HTTP 504 gateway timeouts.
+    explanation_tr: Maya isteklerin %54'ünün HTTP 504 zaman aşımıyla başarısız olduğunu belirtir.
+  - id: q_listening_b2_incident-postmortem-database_03
+    question_en: What triggered the database table lock?
+    question_tr_hint: Veritabanı tablo kilidini ne tetikledi?
+    options:
+    - An unindexed analytical query initiated by a background batch job.
+    - An earthquake damaging the primary cloud data center.
+    - A computer virus encrypting all server files.
+    - A physical power cable severed by a backhoe operator.
+    correct_answer: An unindexed analytical query initiated by a background batch job.
+    explanation_en: Maya explains an unindexed query triggered a full table scan with exclusive locks.
+    explanation_tr: Maya indekslenmemiş bir sorgunun özel kilitli tam tablo taraması başlattığını açıklar.
+  - id: q_listening_b2_incident-postmortem-database_04
+    question_en: Why did client requests pile up exponentially in the connection pool?
+    question_tr_hint: Bağlantı havuzunda istemci istekleri neden katlanarak birikti?
+    options:
+    - The database was limited to only two simultaneous users.
+    - The cloud provider deliberately throttled network traffic.
+    - The connection acquisition timeout was set to an excessive thirty seconds.
+    - Customers clicked the submit button fifty times per second.
+    correct_answer: The connection acquisition timeout was set to an excessive thirty seconds.
+    explanation_en: Maya explains the timeout was 30 seconds, causing exponential queue accumulation.
+    explanation_tr: Maya zaman aşımının 30 saniye olmasının katlanarak birikmeye yol açtığını açıklar.
+  - id: q_listening_b2_incident-postmortem-database_05
+    question_en: What two architectural safeguards will Maya implement?
+    question_tr_hint: Maya hangi iki mimari önlemi uygulayacak?
+    options:
+    - Upgrading to an on-premise mainframe computer running magnetic tape.
+    - Closing the online checkout store during afternoon peak hours.
+    - Segregating analytical queries to read replicas and cutting acquisition timeouts to two seconds with circuit breaking.
+    - Deleting all historical customer orders and banning background jobs.
+    correct_answer: Segregating analytical queries to read replicas and cutting acquisition timeouts to two seconds with circuit
+      breaking.
+    explanation_en: Maya specifies read-only replica segregation and 2-second timeouts with circuit breaking.
+    explanation_tr: Maya salt okunur kopya ayrımı ve devre kesicili 2 saniyelik zaman aşımı belirtir.
+  topic_tags:
+  - communication
+  - incident-management
+  - engineering
+  - postmortem
+  - databases
+- id: listening.b2.performance-appraisal-promotion
+  title: Negotiating Promotion to Staff Software Engineer
+  cefr_level: B2
+  category: negotiation
+  scenario_context: Alper reviews his annual engineering impact metrics and strategic organizational leadership with VP of
+    Engineering Sandra, making the case for promotion to Staff level.
+  speakers:
+  - id: sandra
+    name: Sandra
+    role: VP of Engineering
+    accent: American
+  - id: alper
+    name: Alper
+    role: Senior Software Engineer
+    accent: Turkish
+  audio_ref: audio/listening/b2_performance_appraisal_promotion.mp3
+  duration_seconds: 95
+  transcript_items:
+  - index: 1
+    speaker_id: sandra
+    start_ms: 0
+    end_ms: 10837
+    text_en: Good morning Alper. Thank you for submitting your comprehensive self-evaluation packet. You are seeking promotion
+      from Senior Engineer to Staff Engineer.
+    text_tr: Günaydın Alper. Kapsamlı öz değerlendirme paketini sunduğun için teşekkürler. Kıdemli Mühendislikten Staff Mühendisliğe
+      terfi arıyorsun.
+  - index: 2
+    speaker_id: alper
+    start_ms: 11237
+    end_ms: 22295
+    text_en: Morning Sandra. Yes, over the past twelve months, I have deliberately transitioned from individual feature delivery
+      to organizational-level technical leadership.
+    text_tr: Günaydın Sandra. Evet, son on iki ayda bireysel özellik teslimatından kasıtlı olarak organizasyon düzeyinde teknik
+      liderliğe geçiş yaptım.
+  - index: 3
+    speaker_id: sandra
+    start_ms: 22695
+    end_ms: 32622
+    text_en: The promotion committee looks for demonstrated scope of influence across multiple squads. Walk me through your
+      work on the distributed event streaming architecture.
+    text_tr: Terfi komitesi birden fazla ekip genelinde kanıtlanmış etki kapsamı arar. Bana dağıtık olay akışı mimarisi üzerindeki
+      çalışmandan bahset.
+  - index: 4
+    speaker_id: alper
+    start_ms: 33022
+    end_ms: 44479
+    text_en: I authored the RFC for our multi-region event bus, mentored four engineers across three distinct product squads,
+      and established our company-wide asynchronous testing standards.
+    text_tr: Çok bölgeli olay veri yolumuz için RFC'yi kaleme aldım, üç farklı ürün ekibindeki dört mühendise mentorluk yaptım
+      ve şirket çapındaki eşzamansız test standartlarımızı oluşturdum.
+  - index: 5
+    speaker_id: sandra
+    start_ms: 44879
+    end_ms: 54412
+    text_en: The cross-squad mentorship is evident in your peer 360 reviews. What measurable business outcomes did the streaming
+      initiative unlock?
+    text_tr: Ekipler arası mentorluk 360 derece akran değerlendirmelerinde açıkça görülüyor. Akış girişimi hangi ölçülebilir
+      ticari sonuçların önünü açtı?
+  - index: 6
+    speaker_id: alper
+    start_ms: 54812
+    end_ms: 63884
+    text_en: It reduced our inter-service message latency by sixty percent and dropped cloud infrastructure operational expenses
+      by forty thousand dollars monthly.
+    text_tr: Servisler arası mesaj gecikmemizi yüzde altmış azalttı ve bulut altyapısı operasyonel giderlerini ayda kırk bin
+      dolar düşürdü.
+  - index: 7
+    speaker_id: sandra
+    start_ms: 64284
+    end_ms: 75201
+    text_en: Those metrics provide concrete executive justification. A Staff engineer must also demonstrate strategic technical
+      roadmapping aligned with executive business goals.
+    text_tr: Bu metrikler somut yönetici gerekçelendirmesi sağlıyor. Bir Staff mühendis ayrıca yönetici iş hedefleriyle uyumlu
+      stratejik teknik yol haritaları sergilemelidir.
+  - index: 8
+    speaker_id: alper
+    start_ms: 75601
+    end_ms: 85348
+    text_en: I have drafted a two-year zero-trust data governance roadmap that satisfies our upcoming SOC 2 Type II and GDPR
+      audit compliance requirements.
+    text_tr: Gelecek SOC 2 Tip II ve GDPR denetim uyumluluk gereksinimlerimizi karşılayan iki yıllık sıfır güven veri yönetişimi
+      yol haritası taslağı hazırladım.
+  - index: 9
+    speaker_id: sandra
+    start_ms: 85748
+    end_ms: 94146
+    text_en: Impressive foresight Alper. I will enthusiastically sponsor your dossier at next week's executive calibration
+      committee.
+    text_tr: Etkileyici bir öngörü Alper. Gelecek haftaki yönetici kalibrasyon komitesinde dosyanı coşkuyla destekleyeceğim.
+  comprehension_questions:
+  - id: q_listening_b2_performance-appraisal-promotion_01
+    question_en: What promotion level is Alper seeking in his appraisal?
+    question_tr_hint: Alper değerlendirmesinde hangi terfi seviyesini arıyor?
+    options:
+    - From Junior Developer to Mid-level Developer.
+    - From Intern to Full-time Associate.
+    - From Senior Software Engineer to Staff Software Engineer.
+    - From Engineering Manager to Chief Executive Officer.
+    correct_answer: From Senior Software Engineer to Staff Software Engineer.
+    explanation_en: Sandra notes Alper is seeking promotion from Senior to Staff Engineer.
+    explanation_tr: Sandra Alper'in Senior'dan Staff seviyesine terfi aradığını belirtir.
+  - id: q_listening_b2_performance-appraisal-promotion_02
+    question_en: What primary qualification does the promotion committee demand for Staff level?
+    question_tr_hint: Terfi komitesi Staff seviyesi için hangi temel niteliği talep ediyor?
+    options:
+    - Having a doctorate degree in theoretical mathematics.
+    - Demonstrated technical scope of influence across multiple engineering squads.
+    - Winning international programming speed contests.
+    - Working eighty hours per week in the office.
+    correct_answer: Demonstrated technical scope of influence across multiple engineering squads.
+    explanation_en: Sandra states the committee looks for demonstrated scope of influence across squads.
+    explanation_tr: Sandra komitenin ekipler arası kanıtlanmış etki kapsamı aradığını belirtir.
+  - id: q_listening_b2_performance-appraisal-promotion_03
+    question_en: What tangible financial saving did Alper's event streaming architecture deliver?
+    question_tr_hint: Alper'in olay akışı mimarisi ne kadar somut bir finansal tasarruf sağladı?
+    options:
+    - Saved five dollars on office printer paper.
+    - Generated one billion dollars in immediate stock value.
+    - Cut executive salaries by fifty percent.
+    - Reduced cloud infrastructure expenses by forty thousand dollars monthly.
+    correct_answer: Reduced cloud infrastructure expenses by forty thousand dollars monthly.
+    explanation_en: Alper mentions dropping cloud operational expenses by $40,000 monthly.
+    explanation_tr: Alper bulut operasyonel giderlerini ayda 40.000 dolar düşürdüğünü belirtir.
+  - id: q_listening_b2_performance-appraisal-promotion_04
+    question_en: What strategic roadmap has Alper drafted for the coming two years?
+    question_tr_hint: Alper önümüzdeki iki yıl için nasıl bir stratejik yol haritası taslağı hazırladı?
+    options:
+    - A scheme to rewrite the entire codebase in assembly language.
+    - A plan to replace all human software developers with AI bots.
+    - A two-year zero-trust data governance roadmap for SOC 2 and GDPR compliance.
+    - A proposal to close all international sales branch offices.
+    correct_answer: A two-year zero-trust data governance roadmap for SOC 2 and GDPR compliance.
+    explanation_en: Alper drafted a zero-trust data governance roadmap for SOC 2 and GDPR.
+    explanation_tr: Alper SOC 2 ve GDPR için sıfır güven veri yönetişimi yol haritası hazırladığını açıklar.
+  - id: q_listening_b2_performance-appraisal-promotion_05
+    question_en: What action does Sandra promise to take regarding Alper's promotion?
+    question_tr_hint: Sandra Alper'in terfisiyle ilgili hangi adımı atmaya söz veriyor?
+    options:
+    - Enthusiastically sponsor his dossier at next week's executive calibration committee.
+    - Reject his promotion request immediately.
+    - Order him to take a three-month unpaid leave of absence.
+    - Transfer him to the customer support call center.
+    correct_answer: Enthusiastically sponsor his dossier at next week's executive calibration committee.
+    explanation_en: Sandra promises to enthusiastically sponsor his dossier at the committee.
+    explanation_tr: Sandra gelecek haftaki komitede dosyasını coşkuyla destekleyeceğine söz verir.
+  topic_tags:
+  - work-career
+  - leadership
+  - promotion
+  - performance-review
+  - engineering
+- id: listening.b2.sprint-velocity-estimation
+  title: Refining User Story Estimation and Technical Debt in Sprint Planning
+  cefr_level: B2
+  category: engineering_meeting
+  scenario_context: Scrum master Gizem guides senior engineers Lucas and Tarik through evaluating technical story points and
+    unblocking legacy dependencies during sprint planning.
+  speakers:
+  - id: gizem
+    name: Gizem
+    role: Agile Delivery Coach
+    accent: Turkish
+  - id: lucas
+    name: Lucas
+    role: Senior Cloud Engineer
+    accent: American
+  audio_ref: audio/listening/b2_sprint_velocity_estimation.mp3
+  duration_seconds: 83
+  transcript_items:
+  - index: 1
+    speaker_id: gizem
+    start_ms: 0
+    end_ms: 11117
+    text_en: 'Alright team, let''s estimate Ticket 512: migrating our user notification pipeline to serverless event triggers.
+      What is our consensus estimate?'
+    text_tr: 'Pekala ekip, Bilet 512''yi tahmin edelim: kullanıcı bildirim hattımızın sunucusuz olay tetikleyicilerine taşınması.
+      Ortak tahminimiz nedir?'
+  - index: 2
+    speaker_id: lucas
+    start_ms: 11517
+    end_ms: 22085
+    text_en: I pointed this at an eight. While the Lambda function implementation is straightforward, our legacy message queue
+      lacks dead-letter queue handling for dropped payloads.
+    text_tr: Ben buna sekiz puan verdim. Lambda fonksiyonunun uygulanması basit olsa da eski mesaj kuyruğumuzda bırakılan
+      yükler için teslim edilemeyen mesaj (dead-letter) kuyruğu yönetimi yok.
+  - index: 3
+    speaker_id: gizem
+    start_ms: 22485
+    end_ms: 33212
+    text_en: An eight point story consumes nearly twenty percent of our historical forty-point sprint velocity. Can we decompose
+      this story into two vertical deliverable slices?
+    text_tr: Sekiz puanlık bir hikaye geçmiş kırk puanlık sprint hızımızın neredeyse yüzde yirmisini tüketiyor. Bu hikayeyi
+      dikey olarak teslim edilebilir iki dilime ayırabilir miyiz?
+  - index: 4
+    speaker_id: lucas
+    start_ms: 33612
+    end_ms: 47584
+    text_en: Yes. Story 512A could establish the dead-letter queue and retry infrastructure, which is a solid three points.
+      Story 512B would handle the actual Lambda migration for five points.
+    text_tr: Evet. Hikaye 512A sağlam bir üç puan olan dead-letter kuyruğunu ve yeniden deneme altyapısını kurabilir. Hikaye
+      512B ise beş puanla asıl Lambda geçişini halleder.
+  - index: 5
+    speaker_id: gizem
+    start_ms: 47984
+    end_ms: 59401
+    text_en: That makes testing and verification much safer. If 512A finishes mid-sprint, quality assurance can validate error
+      retries while you proceed with 512B.
+    text_tr: Bu test ve doğrulamayı çok daha güvenli hale getirir. 512A sprint ortasında biterse siz 512B ile ilerlerken kalite
+      güvence hata yeniden denemelerini doğrulayabilir.
+  - index: 6
+    speaker_id: lucas
+    start_ms: 59801
+    end_ms: 66395
+    text_en: Exactly. Furthermore, it prevents an all-or-nothing delivery risk at the sprint boundary.
+    text_tr: Kesinlikle. Dahası sprint sınırında ya hep ya hiç teslimat riskini de önler.
+  - index: 7
+    speaker_id: gizem
+    start_ms: 66795
+    end_ms: 72698
+    text_en: Are there any cross-squad architectural dependencies on the security team for IAM permissions?
+    text_tr: IAM izinleri konusunda güvenlik ekibine herhangi bir ekipler arası mimari bağımlılık var mı?
+  - index: 8
+    speaker_id: lucas
+    start_ms: 73098
+    end_ms: 82116
+    text_en: I already paired with security yesterday. They provisioned the least-privilege IAM roles in staging, so we are
+      completely unblocked.
+    text_tr: Dün güvenlikle zaten eşleştik. Hazırlık ortamında en az ayrıcalıklı IAM rollerini sağladılar, bu yüzden önümüz
+      tamamen açık.
+  comprehension_questions:
+  - id: q_listening_b2_sprint-velocity-estimation_01
+    question_en: Why did Lucas initially estimate Ticket 512 as an 8-point story?
+    question_tr_hint: Lucas başlangıçta Bilet 512'yi neden 8 puanlık bir hikaye olarak tahmin etti?
+    options:
+    - The legacy queue lacked dead-letter queue handling for dropped payloads.
+    - The cloud provider was shutting down server operations permanently.
+    - No engineers on the team knew how to write Python code.
+    - The entire codebase had to be translated into French.
+    correct_answer: The legacy queue lacked dead-letter queue handling for dropped payloads.
+    explanation_en: Lucas explains the legacy queue lacked dead-letter handling for dropped payloads.
+    explanation_tr: Lucas eski kuyrukta kayıp yükler için dead-letter yönetiminin eksik olduğunu açıklar.
+  - id: q_listening_b2_sprint-velocity-estimation_02
+    question_en: What is the team's historical sprint velocity?
+    question_tr_hint: Ekibin geçmiş sprint hızı ne kadardır?
+    options:
+    - Five hundred points.
+    - Ten points.
+    - One hundred points.
+    - Forty points.
+    correct_answer: Forty points.
+    explanation_en: Gizem notes an 8-point story consumes 20% of their 40-point sprint velocity.
+    explanation_tr: Gizem 8 puanlık hikayenin 40 puanlık hızın %20'sini tükettiğini belirtir.
+  - id: q_listening_b2_sprint-velocity-estimation_03
+    question_en: How does Lucas propose decomposing the ticket into deliverable slices?
+    question_tr_hint: Lucas bileti teslim edilebilir dilimlere nasıl ayırmayı öneriyor?
+    options:
+    - Canceling the story and ignoring cloud migration completely.
+    - Assigning the entire project to an offshore external agency.
+    - Story 512A (3 points) for queue retries, and 512B (5 points) for Lambda migration.
+    - Postponing all work until next fiscal calendar year.
+    correct_answer: Story 512A (3 points) for queue retries, and 512B (5 points) for Lambda migration.
+    explanation_en: Lucas divides it into 512A (3 points) and 512B (5 points).
+    explanation_tr: Lucas bunu 512A (3 puan) ve 512B (5 puan) olarak ikiye böler.
+  - id: q_listening_b2_sprint-velocity-estimation_04
+    question_en: What testing advantage does splitting the story provide according to Gizem?
+    question_tr_hint: Gizem'e göre hikayeyi bölmek nasıl bir test avantajı sağlar?
+    options:
+    - It eliminates the need for any software testing whatsoever.
+    - It allows developers to skip writing automated unit tests.
+    - It forces all testing to be completed by human end users.
+    - QA can validate error retries mid-sprint while developers implement the migration.
+    correct_answer: QA can validate error retries mid-sprint while developers implement the migration.
+    explanation_en: Gizem points out QA can validate retries while coding continues on 512B.
+    explanation_tr: Gizem 512B kodlanırken QA'in yeniden denemeleri doğrulayabileceğini belirtir.
+  - id: q_listening_b2_sprint-velocity-estimation_05
+    question_en: What status does the dependency on the security team hold?
+    question_tr_hint: Güvenlik ekibine olan bağımlılığın durumu nedir?
+    options:
+    - Completely unblocked; least-privilege IAM roles were provisioned in staging.
+    - Waiting three weeks for an executive board approval signature.
+    - The security lead resigned from the company yesterday.
+    - Completely blocked; the security team refused all access.
+    correct_answer: Completely unblocked; least-privilege IAM roles were provisioned in staging.
+    explanation_en: Lucas confirms security provisioned the roles in staging, so they are unblocked.
+    explanation_tr: Lucas güvenliğin rolleri sağladığını ve önlerinin tamamen açık olduğunu doğrular.
+  topic_tags:
+  - work-career
+  - agile
+  - scrum
+  - software-engineering
+  - planning
+- id: listening.b2.venture-capital-due-diligence
+  title: Defending SaaS Unit Economics During Series A Due Diligence
+  cefr_level: B2
+  category: negotiation
+  scenario_context: Startup founder Kaan defends customer acquisition costs, net revenue retention, and gross margins during
+    a rigorous due diligence interview with venture partner Victoria.
+  speakers:
+  - id: victoria
+    name: Victoria
+    role: Venture Capital Partner
+    accent: American
+  - id: kaan
+    name: Kaan
+    role: FinTech Startup Founder
+    accent: Turkish
+  audio_ref: audio/listening/b2_venture_capital_due_diligence.mp3
+  duration_seconds: 88
+  transcript_items:
+  - index: 1
+    speaker_id: victoria
+    start_ms: 0
+    end_ms: 10877
+    text_en: Welcome Kaan. Our investment committee was impressed by your four-million-dollar ARR traction. Today I want to
+      dissect your underlying unit economics.
+    text_tr: Hoş geldin Kaan. Yatırım komitemiz dört milyon dolarlık yıllık yinelenen gelir (ARR) ivmenizden etkilendi. Bugün
+      altta yatan birim ekonominizi derinlemesine incelemek istiyorum.
+  - index: 2
+    speaker_id: kaan
+    start_ms: 11277
+    end_ms: 19745
+    text_en: Glad to dive into the data, Victoria. Our metrics reflect capital-efficient, organic enterprise expansion.
+    text_tr: Verilere dalmaktan memnuniyet duyarım Victoria. Metriklerimiz sermaye açısından verimli, organik kurumsal genişlemeyi
+      yansıtıyor.
+  - index: 3
+    speaker_id: victoria
+    start_ms: 20145
+    end_ms: 30188
+    text_en: Looking at your customer acquisition cost, your blended CAC is twelve thousand dollars, but your CAC payback
+      period has widened from eight to fourteen months.
+    text_tr: Müşteri edinme maliyetinize (CAC) baktığımızda harmanlanmış CAC'niz on iki bin dolar ancak CAC geri ödeme süreniz
+      sekiz aydan on dört aya çıktı.
+  - index: 4
+    speaker_id: kaan
+    start_ms: 30588
+    end_ms: 42570
+    text_en: That lengthening payback is intentional. We shifted from selling twenty-seat mid-market tiers to closing six-figure
+      enterprise contracts, which entail ninety-day procurement cycles.
+    text_tr: Bu uzayan geri ödeme süresi kasıtlıdır. Yirmi koltuklu orta ölçekli kademeleri satmaktan doksan günlük satın
+      alma döngüleri içeren altı haneli kurumsal sözleşmeleri kapatmaya geçtik.
+  - index: 5
+    speaker_id: victoria
+    start_ms: 42970
+    end_ms: 54212
+    text_en: Enterprise moves increase enterprise value, provided Net Revenue Retention (NRR) holds up. What is your cohort
+      expansion rate after month twelve?
+    text_tr: Net Gelir Elde Tutma (NRR) oranı korunduğu sürece kurumsal hamleler işletme değerini artırır. On ikinci aydan
+      sonra kohort genişleme oranınız nedir?
+  - index: 6
+    speaker_id: kaan
+    start_ms: 54612
+    end_ms: 66149
+    text_en: Our enterprise cohort NRR is one hundred and twenty-eight percent. Customers who adopt our core billing API consistently
+      expand into our automated treasury management module.
+    text_tr: Kurumsal kohort NRR'miz yüzde yüz yirmi sekizdir. Temel faturalandırma API'mizi benimseyen müşteriler sürekli
+      olarak otomatik hazine yönetimi modülümüze genişliyor.
+  - index: 7
+    speaker_id: victoria
+    start_ms: 66549
+    end_ms: 76272
+    text_en: A 128 percent NRR is upper-quartile for B2B infrastructure software. What are your current subscription gross
+      margins?
+    text_tr: Yüzde 128'lik bir NRR B2B altyapı yazılımları için üst çeyrektir. Mevcut abonelik brüt karlarınız nedir?
+  - index: 8
+    speaker_id: kaan
+    start_ms: 76672
+    end_ms: 87504
+    text_en: We operate at seventy-six percent gross margin. As we optimize our multi-tenant cloud database partitioning next
+      quarter, we project reaching eighty-one percent.
+    text_tr: Yüzde yetmiş altı brüt kar marjı ile çalışıyoruz. Gelecek çeyrekte çok kiracılı bulut veritabanı bölümlememizi
+      optimize ettikçe yüzde seksen bire ulaşmayı öngörüyoruz.
+  comprehension_questions:
+  - id: q_listening_b2_venture-capital-due-diligence_01
+    question_en: What annual recurring revenue (ARR) traction did Kaan's company achieve?
+    question_tr_hint: Kaan'ın şirketi ne kadar yıllık yinelenen gelir (ARR) ivmesi elde etti?
+    options:
+    - One hundred thousand dollars.
+    - Fifty million dollars.
+    - Ten billion dollars.
+    - Four million dollars.
+    correct_answer: Four million dollars.
+    explanation_en: Victoria mentions their 4-million-dollar ARR traction.
+    explanation_tr: Victoria 4 milyon dolarlık ARR ivmelerinden bahseder.
+  - id: q_listening_b2_venture-capital-due-diligence_02
+    question_en: Why did the customer acquisition cost (CAC) payback period widen to 14 months?
+    question_tr_hint: Müşteri edinme maliyeti (CAC) geri ödeme süresi neden 14 aya uzadı?
+    options:
+    - Customers refused to pay their monthly invoices on time.
+    - The company shifted from mid-market sales to enterprise contracts with longer sales cycles.
+    - The company lost fifty percent of its sales team.
+    - The marketing budget was wasted on expensive television commercials.
+    correct_answer: The company shifted from mid-market sales to enterprise contracts with longer sales cycles.
+    explanation_en: Kaan explains the shift to 6-figure enterprise contracts with 90-day cycles.
+    explanation_tr: Kaan 90 günlük döngüleri olan 6 haneli kurumsal sözleşmelere geçişi açıklar.
+  - id: q_listening_b2_venture-capital-due-diligence_03
+    question_en: What is the company's enterprise Net Revenue Retention (NRR) rate?
+    question_tr_hint: Şirketin kurumsal Net Gelir Elde Tutma (NRR) oranı nedir?
+    options:
+    - 50 percent.
+    - 200 percent.
+    - 90 percent.
+    - 128 percent.
+    correct_answer: 128 percent.
+    explanation_en: Kaan confirms their enterprise cohort NRR is 128%.
+    explanation_tr: Kaan kurumsal kohort NRR'sinin %128 olduğunu onaylar.
+  - id: q_listening_b2_venture-capital-due-diligence_04
+    question_en: How do existing customers expand their annual spend according to Kaan?
+    question_tr_hint: Kaan'a göre mevcut müşteriler yıllık harcamalarını nasıl genişletiyor?
+    options:
+    - They purchase physical corporate merchandise and T-shirts.
+    - They hire the startup's engineers as private consultants.
+    - They are forced to pay penalty fees for late renewals.
+    - They expand from the core billing API into the automated treasury module.
+    correct_answer: They expand from the core billing API into the automated treasury module.
+    explanation_en: Kaan explains customers expand from the billing API into treasury management.
+    explanation_tr: Kaan müşterilerin faturalandırmadan hazine yönetimine genişlediğini açıklar.
+  - id: q_listening_b2_venture-capital-due-diligence_05
+    question_en: What target gross margin does Kaan project following database optimization?
+    question_tr_hint: Kaan veritabanı optimizasyonunun ardından hangi hedef brüt kar marjını öngörüyor?
+    options:
+    - 100 percent.
+    - 81 percent.
+    - 76 percent.
+    - 50 percent.
+    correct_answer: 81 percent.
+    explanation_en: Kaan projects reaching 81% from their current 76%.
+    explanation_tr: Kaan mevcut %76'dan %81'e ulaşmayı öngördüklerini belirtir.
+  topic_tags:
+  - business
+  - venture-capital
+  - finance
+  - saas
+  - startups
+- id: listening.b2.cloud-architecture-refactor
+  title: Architecting a Container Migration from Monolithic EC2
+  cefr_level: B2
+  category: engineering_meeting
+  scenario_context: Lead cloud architect Melis and systems engineer Patrick evaluate refactoring their monolithic virtual
+    machine infrastructure into containerized microservices managed on AWS EKS.
+  speakers:
+  - id: patrick
+    name: Patrick
+    role: Senior Cloud Infrastructure Engineer
+    accent: British
+  - id: melis
+    name: Melis
+    role: Lead Cloud Architect
+    accent: Turkish
+  audio_ref: audio/listening/b2_cloud_architecture_refactor.mp3
+  duration_seconds: 83
+  transcript_items:
+  - index: 1
+    speaker_id: patrick
+    start_ms: 0
+    end_ms: 12073
+    text_en: Morning Melis. I completed our load test analysis on the legacy monolithic EC2 cluster. During peak traffic,
+      autoscaling spin-up takes nearly eight minutes.
+    text_tr: Günaydın Melis. Eski monolitik EC2 kümesindeki yük testi analizimizi tamamladım. Yoğun trafik sırasında otomatik
+      ölçeklendirme başlatması neredeyse sekiz dakika sürüyor.
+  - index: 2
+    speaker_id: melis
+    start_ms: 12473
+    end_ms: 22405
+    text_en: Eight minutes is unacceptable when sudden marketing traffic surges occur. Cold-booting complete virtual machines
+      with full operating systems is far too heavy.
+    text_tr: Ani pazarlama trafiği dalgalanmaları meydana geldiğinde sekiz dakika kabul edilemez. Eksiksiz işletim sistemlerine
+      sahip sanal makineleri sıfırdan başlatmak çok ağır.
+  - index: 3
+    speaker_id: patrick
+    start_ms: 22805
+    end_ms: 34888
+    text_en: Exactly. If we decompose the monolith into lightweight Docker containers orchestrated on managed Kubernetes via
+      EKS, container pod spin-up takes less than twelve seconds.
+    text_tr: Kesinlikle. Monoliti EKS üzerinden yönetilen Kubernetes üzerinde düzenlenen hafif Docker konteynerlerine ayırırsak,
+      konteyner pod başlatması on iki saniyeden az sürer.
+  - index: 4
+    speaker_id: melis
+    start_ms: 35288
+    end_ms: 45400
+    text_en: That represents a massive improvement in autoscaling elasticity. How do we manage stateful database connections
+      across hundreds of ephemeral container pods?
+    text_tr: Bu otomatik ölçeklendirme esnekliğinde muazzam bir gelişmeyi temsil eder. Yüzlerce geçici konteyner pod'u genelinde
+      durum bilgisi içeren veritabanı bağlantılarını nasıl yöneteceğiz?
+  - index: 5
+    speaker_id: patrick
+    start_ms: 45800
+    end_ms: 58837
+    text_en: We should deploy AWS RDS Proxy between the Kubernetes pods and our Aurora database clusters. It pools and multiplexes
+      connections, insulating the database from connection storms.
+    text_tr: Kubernetes pod'ları ile Aurora veritabanı kümelerimiz arasına AWS RDS Proxy konuşlandırmalıyız. Bağlantıları
+      havuzlayıp çoğullayarak veritabanını bağlantı fırtınalarından yalıtır.
+  - index: 6
+    speaker_id: melis
+    start_ms: 59237
+    end_ms: 63890
+    text_en: What about observability across distributed container microservices?
+    text_tr: Peki dağıtık konteyner mikroservisleri genelinde gözlemlenebilirlik ne olacak?
+  - index: 7
+    speaker_id: patrick
+    start_ms: 64290
+    end_ms: 74212
+    text_en: We will instrument OpenTelemetry sidecar containers to collect distributed traces, exporting telemetry data into
+      our central Grafana and Jaeger dashboards.
+    text_tr: Dağıtık izleri toplamak için OpenTelemetry sidecar konteynerleri entegre edeceğiz ve telemetri verilerini merkezi
+      Grafana ve Jaeger panolarımıza aktaracağız.
+  - index: 8
+    speaker_id: melis
+    start_ms: 74612
+    end_ms: 82560
+    text_en: Outstanding architecture Patrick. Let's draft the migration proof-of-concept for the authentication service first.
+    text_tr: Mükemmel mimari Patrick. Önce kimlik doğrulama servisi için geçiş konsept kanıtı taslağını hazırlayalım.
+  comprehension_questions:
+  - id: q_listening_b2_cloud-architecture-refactor_01
+    question_en: What primary operational limitation does the monolithic EC2 cluster exhibit?
+    question_tr_hint: Monolitik EC2 kümesi hangi temel operasyonel sınırlamayı sergiliyor?
+    options:
+    - The cloud provider charges one million dollars per hour.
+    - The servers can only run on weekends.
+    - The virtual machines lose all stored data every midnight.
+    - Autoscaling cold-booting of virtual machines takes nearly eight minutes during traffic surges.
+    correct_answer: Autoscaling cold-booting of virtual machines takes nearly eight minutes during traffic surges.
+    explanation_en: Patrick explains autoscaling spin-up takes nearly eight minutes during peak traffic.
+    explanation_tr: Patrick yoğun trafikte otomatik ölçeklendirmenin neredeyse 8 dakika sürdüğünü açıklar.
+  - id: q_listening_b2_cloud-architecture-refactor_02
+    question_en: How fast does container pod spin-up take on managed Kubernetes (EKS)?
+    question_tr_hint: Yönetilen Kubernetes (EKS) üzerinde konteyner pod başlatması ne kadar sürer?
+    options:
+    - Three business days.
+    - Five minutes.
+    - One full hour.
+    - Less than twelve seconds.
+    correct_answer: Less than twelve seconds.
+    explanation_en: Patrick notes container pod spin-up takes less than twelve seconds.
+    explanation_tr: Patrick konteyner başlatmasının 12 saniyeden az sürdüğünü belirtir.
+  - id: q_listening_b2_cloud-architecture-refactor_03
+    question_en: What component will insulate the database from connection exhaustion storms?
+    question_tr_hint: Veritabanını bağlantı tükenmesi fırtınalarından hangi bileşen yalıtacak?
+    options:
+    - Disconnecting the database from the internet completely.
+    - AWS RDS Proxy pooling and multiplexing database connections.
+    - A physical analog circuit breaker in the server rack.
+    - A manual spreadsheet updated by on-call engineers.
+    correct_answer: AWS RDS Proxy pooling and multiplexing database connections.
+    explanation_en: Patrick suggests deploying AWS RDS Proxy to pool and multiplex connections.
+    explanation_tr: Patrick bağlantıları havuzlamak için AWS RDS Proxy konuşlandırmayı önerir.
+  - id: q_listening_b2_cloud-architecture-refactor_04
+    question_en: How will the engineering team achieve distributed observability across microservices?
+    question_tr_hint: Mühendislik ekibi mikroservisler genelinde dağıtık gözlemlenebilirliği nasıl sağlayacak?
+    options:
+    - OpenTelemetry sidecar containers exporting traces to Grafana and Jaeger.
+    - Asking users to report software bugs via postal letters.
+    - Printing log files onto physical rolls of thermal paper.
+    - Recording audio voice memos during code deployment.
+    correct_answer: OpenTelemetry sidecar containers exporting traces to Grafana and Jaeger.
+    explanation_en: Patrick explains OpenTelemetry sidecars will export traces to Grafana and Jaeger.
+    explanation_tr: Patrick OpenTelemetry'nin izleri Grafana ve Jaeger'a aktaracağını açıklar.
+  - id: q_listening_b2_cloud-architecture-refactor_05
+    question_en: Which service will serve as the initial migration proof-of-concept?
+    question_tr_hint: Hangi servis ilk geçiş konsept kanıtı olarak hizmet edecek?
+    options:
+    - The corporate marketing public blog.
+    - The entire global payment billing gateway.
+    - The authentication service.
+    - The legacy database storage engine.
+    correct_answer: The authentication service.
+    explanation_en: Melis suggests drafting the proof-of-concept for the authentication service first.
+    explanation_tr: Melis konsept kanıtı için önce kimlik doğrulama servisini taslaklaştırmayı önerir.
+  topic_tags:
+  - technology
+  - cloud
+  - kubernetes
+  - aws
+  - architecture

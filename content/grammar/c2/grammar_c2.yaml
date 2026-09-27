@@ -1,0 +1,154 @@
+- id: grammar.c2.cleft-sentences-emphasis
+  title: Cleft Sentences and Information Structuring
+  cefr_level: C2
+  category: cleft_sentences
+  summary_en: Harness it-clefts, wh-clefts, and reversed clefts to control information packaging, topic prominence, and strategic focus.
+  summary_tr: Bilgi ambalajlama ve stratejik odak oluşturma amacıyla it-cleft, wh-cleft ve ters cleft yapılarını ustalıkla kullanma.
+  explanation_en:
+    - title: "Anatomy of the Cleft: Splitting the Message for Maximum Impact"
+      content: >-
+        A cleft sentence (from the verb 'cleave', to divide) splits a single thought into two distinct clauses to place
+        unambiguous spotlight on a specific constituent—such as the actor, the root problem, the exact turning point, or the primary deliverable.
+      patterns:
+        - "It-Cleft: It + be + focused element + that / who + rest of sentence"
+        - "Wh-Cleft (Pseudo-cleft): What + subject + verb + be + focused element"
+        - "Reversed Wh-Cleft: Focused element + be + what + subject + verb"
+        - "All-Cleft (Exclusivity): All we require is + noun / infinitive"
+    - title: "Strategic Applications in Boardroom Communication"
+      content: >-
+        At C2 proficiency, clefts prevent misattribution and redirect attention in contentious high-stakes negotiations:
+        'It was not the marketing expenditure that triggered the deficit, but rather the inventory depreciation.'
+      patterns:
+        - "It was the lack of architectural decoupling that caused the cascade failure."
+        - "What leadership is essentially asking for is predictability, not speed."
+  explanation_tr: >-
+    Türkçede bilgi odağı ve vurgu, vurgulanmak istenen kelimenin sözdizimsel olarak yüklemin hemen öncesine çekilmesiyle
+    (veya ses tonlamasıyla) çok esnek bir şekilde sağlanır. İngilizcede ise kelime dizilişi (SVO) katı olduğundan,
+    aynı odağı kurmak için cümleyi ikiye bölen 'cleft' (yarıklı) yapılar kullanılır. Türk öğreniciler genellikle
+    düz cümle kurup sadece seslerini yükseltirler; ancak C2 düzeyinde kurumsal yazışmalarda 'It is our core IP that...',
+    'What concerns the board is...' yapıları vazgeçilmez bir etki aracıdır.
+  rules:
+    - name: It-Cleft (Pinpoint Focus)
+      pattern: It + is/was + Focused Constituent + that/who + Predicate
+      use_cases:
+        - Deflecting false blame or clarifying the true catalyst of an event
+        - Highlighting unique market differentiators
+    - name: Wh-Cleft (Thematic Foregrounding)
+      pattern: What + Clause + is/was + Climax / Solution
+      use_cases:
+        - Setting executive meeting agendas
+        - Framing the core conclusion of a strategic review
+    - name: All-Cleft (Minimization / Simplicity)
+      pattern: All + Subject + Verb + is/was + Base Verb / Noun
+      use_cases:
+        - Simplifying complex client demands into a clear single deliverable
+  contrasts:
+    - structure_a: The unexpected currency devaluation eroded our Q3 margins. (Standard linear statement)
+      structure_b: It was the unexpected currency devaluation that eroded our Q3 margins. (It-cleft strategic focus)
+      difference_explanation_en: >-
+        Sentence A simply reports the financial fact. Sentence B explicitly singles out currency volatility as the singular culprit.
+      difference_explanation_tr: >-
+        A cümlesi finansal bir durumu düz şekilde aktarır. B cümlesi ise asıl etkenin döviz dalgalanması olduğunu altını çizerek vurgular.
+  turkish_traps:
+    - trap_type: word_order_svo_vs_sov
+      trap_title: "Cleft Cümlelerinde 'That' Yerine Yanlış Zamir veya Düz Sözdizimi Kullanımı"
+      explanation_tr: >-
+        Türk öğreniciler 'What we need is...' yapısını kurarken 'Which we need' deme veya 'It is our team who/that...'
+        yerine düz cümle diziliminde kalarak vurguyu İngilizce metinde kaybetme eğilimindedirler.
+        Ayrıca it-cleft yapısında zaman daima ana cümlenin zamanıyla uyumlu 'is' veya 'was' ile kurulmalıdır.
+      incorrect_example: Which we really need to address at this board meeting is the talent retention problem.
+      correct_example: What we really need to address at this board meeting is the talent retention problem.
+  examples:
+    - en: It was the prompt intervention of our cybersecurity engineers that averted what could have been a catastrophic data breach.
+      tr: Felaket boyutunda bir veri sızıntısına yol açabilecek durumu engelleyen şey, siber güvenlik mühendislerimizin anında müdahalesiydi.
+      rule_highlight: It-Cleft (It was the prompt intervention... that averted...)
+      context: Crisis Management Briefing
+    - en: What distinguishingly separates our enterprise SaaS platform from legacy vendors is our zero-trust architecture.
+      tr: Kurumsal SaaS platformumuzu eski nesil tedarikçilerden belirgin biçimde ayıran şey, sıfır güven mimarimizdir.
+      rule_highlight: Wh-Cleft (What distinguishingly separates... is...)
+      context: Value Proposition Pitch
+  topic_tags:
+    - cleft-sentences
+    - information-structure
+    - strategic-emphasis
+    - c2-mastery
+  related_ids:
+    - vocab.substantiate
+    - vocab.leverage
+  status: APPROVED
+  version: 1
+
+- id: grammar.c2.subjunctive-and-formal-modals
+  title: Mandative Subjunctive and Diplomatic Hedging
+  cefr_level: C2
+  category: modals_and_semi_modals
+  summary_en: Apply the mandative subjunctive (uninflected base verbs) in corporate governance, statutory decrees, and executive hedging.
+  summary_tr: Kurumsal yönetim, yasal kararlar ve diplomatik önerilerde mandative subjunctive (yalın fiil çekimi) ve yumuşatma teknikleri kullanımı.
+  explanation_en:
+    - title: "The Classical Mandative Subjunctive"
+      content: >-
+        In high-register corporate bylaws, formal board motions, and legal mandates, certain verbs and adjectives
+        of urgency or demand (demand, insist, require, recommend, imperative, essential, vital) trigger the subjunctive mood.
+        In this mood, the verb in the 'that' clause remains in its bare base infinitive form, regardless of person or tense.
+      patterns:
+        - "Trigger Verb: Subject + insist / mandate / recommend + that + Subject + Base Verb (V1)"
+        - "Passive Subjunctive: Subject + demand + that + Subject + be + Past Participle (V3)"
+        - "Adjective Pattern: It is imperative / essential / vital + that + Subject + Base Verb (V1)"
+    - title: "Subjunctive with 'Be' and Third Person Singular"
+      content: >-
+        Unlike indicative grammar, the third person singular never takes an '-s' suffix, and the verb 'to be' remains 'be'
+        (not 'is', 'was', or 'are').
+      patterns:
+        - "Mandate: The committee resolved that the CEO be relieved of operational duties."
+        - "Urgency: It is crucial that each stakeholder remain fully aligned with the audit findings."
+  explanation_tr: >-
+    Modern Türkçede istek ve emir kipleri (-e/-a, -sin) ile ifade edilen bu resmiyet boyutu,
+    İngilizcede fiilin şahıs ve zaman eklerinden tamamen arındırılmasıyla (bare base verb) yapılır.
+    Türk öğreniciler üçüncü tekil şahısta (he/she/it) alışkanlıkla fiile '-s' takısı takar veya 'is/are' kullanır:
+    'It is vital that he attends the meeting' veya 'We insisted that the server is restarted'.
+    Oysa resmi C2 düzeyinde kural kesindir: Fiil 'attend' ve 'be restarted' şeklinde yalın kalmalıdır.
+  rules:
+    - name: Mandative Bare Verb Subjunctive
+      pattern: Verb/Adjective of Demand + that + Subject + Base Form (V1)
+      use_cases:
+        - Board resolutions and compliance mandates
+        - Formal diplomatic proposals in international arbitrations
+    - name: Passive Subjunctive
+      pattern: It is imperative that + Subject + be + Past Participle (V3)
+      use_cases:
+        - Directives requiring impersonal objective execution
+  contrasts:
+    - structure_a: It is crucial that the lead auditor is present tomorrow. (Informal British / Colloquial Indicative)
+      structure_b: It is crucial that the lead auditor be present tomorrow. (Formal C2 Mandative Subjunctive)
+      difference_explanation_en: >-
+        Sentence B follows classical formal governance protocol, utilizing the uninflected subjunctive 'be'.
+      difference_explanation_tr: >-
+        B cümlesi klasik üst düzey kurumsal yönetişim standardına uyarak yalın 'be' subjunctive formunu kullanır.
+  turkish_traps:
+    - trap_type: aspect_confusion
+      trap_title: "Subjunctive Cümlelerinde 3. Şahsa '-s' Takısı Ekleme Refleksi"
+      explanation_tr: >-
+        Türk öğreniciler 'It is imperative that the CFO attend...' yapısını görünce gramer yanlışı sanıp
+        'attends' diye düzeltme eğilimindedir. 'Imperative, demand, require' gibi zorunluluk bildiren yapılardan
+        sonraki 'that' cümleciğinde fiil asla '-s' takısı almaz; daima yalın kök halindedir.
+      incorrect_example: The auditor requested that the company discloses all off-balance-sheet liabilities.
+      correct_example: The auditor requested that the company disclose all off-balance-sheet liabilities.
+  examples:
+    - en: The compliance oversight committee recommended that the chief risk officer be granted unilateral veto power over leveraged acquisitions.
+      tr: Uyumluluk denetim komitesi, baş risk yöneticisine kaldıraçlı satın almalar üzerinde tek taraflı veto yetkisi verilmesini tavsiye etti.
+      rule_highlight: Passive Mandative Subjunctive (recommended that the officer be granted...)
+      context: Corporate Governance & Risk
+    - en: It is of paramount importance that every code contribution undergo automated fuzz testing prior to merging.
+      tr: Her kod katkısının birleştirmeden önce otomatik belirsizlik (fuzz) testinden geçmesi hayati önem taşımaktadır.
+      rule_highlight: Active Mandative Subjunctive (importance that contribution undergo...)
+      context: Secure Software Lifecycle
+  topic_tags:
+    - subjunctive
+    - formal-governance
+    - diplomatic-hedging
+    - c2-mastery
+  related_ids:
+    - vocab.substantiate
+    - vocab.deliberation
+  status: APPROVED
+  version: 1

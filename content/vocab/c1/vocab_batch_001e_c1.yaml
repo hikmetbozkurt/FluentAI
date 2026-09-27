@@ -1,0 +1,498 @@
+- id: vocab.acquisition
+  headword: acquisition
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌæk.wɪˈzɪʃ.ən/
+  audio_ref: null
+  definition_en: An asset, company, or capability bought or obtained; or the process of gaining knowledge or skills.
+  meaning_tr: devralma, satın alma, iktisap; edinim (dil/bilgi edinimi)
+  collocations:
+    - text: merger and acquisition
+      tr: birleşme ve devralma
+    - text: customer acquisition
+      tr: müşteri edinimi
+    - text: language acquisition
+      tr: dil edinimi
+    - text: strategic acquisition
+      tr: stratejik satın alma
+  examples:
+    - en: "The fintech firm expanded its product portfolio through the strategic acquisition of a payments startup."
+      tr: "Fintek firması bir ödeme girişimini stratejik olarak devralarak ürün portföyünü genişletti."
+      context: Corporate M&A
+    - en: "Language acquisition research emphasizes the vital role of consistent, comprehensible input in conversational fluency."
+      tr: "Dil edinimi araştırmaları, konuşma akıcılığında tutarlı ve anlaşılabilir girdinin hayati rolünü vurgular."
+      context: Applied Linguistics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Acquisition" hem ticari şirket satın almaları ("mergers and acquisitions") hem de bilişsel beceri veya dil kazanımı ("language acquisition") için kullanılan çok yönlü bir terimdir. Basit alışveriş ("buying groceries") için kullanılmaz.
+      incorrect_example: "I made an acquisition of bread and milk from the corner market."
+      correct_example: "The board approved the multi-million-dollar acquisition of the rival platform."
+  register: business
+  topic_tags:
+    - business
+    - mergers
+    - learning
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.deterioration
+  headword: deterioration
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /dɪˌtɪə.ri.əˈreɪ.ʃən/
+  audio_ref: null
+  definition_en: The process of becoming progressively worse in quality, condition, performance, or value over time.
+  meaning_tr: kötüleşme, bozulma, yıpranma
+  collocations:
+    - text: rapid deterioration
+      tr: hızlı kötüleşme / bozulma
+    - text: prevent deterioration
+      tr: bozulmayı önlemek
+    - text: signs of deterioration
+      tr: bozulma belirtileri
+    - text: gradual deterioration
+      tr: kademeli kötüleşme
+  examples:
+    - en: "Telemetry alerts detected a rapid deterioration in database query response times following the deployment."
+      tr: "Telemetri uyarıları, dağıtımın ardından veritabanı sorgu yanıt sürelerinde hızlı bir kötüleşme tespit etti."
+      context: System Observability
+    - en: "Without disciplined refactoring, continuous feature additions lead to the gradual deterioration of code maintainability."
+      tr: "Disiplinli yeniden düzenleme olmadan sürekli özellik eklemeleri, kodun sürdürülebilirliğinin kademeli olarak bozulmasına yol açar."
+      context: Software Craftsmanship
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir alandaki kötüleşmeyi ifade ederken "deterioration in" kullanılır: "deterioration in performance". "Deterioration on" veya "about" kullanımı hatalıdır.
+      incorrect_example: "We noticed a sudden deterioration on network speed."
+      correct_example: "We noticed a sudden deterioration in network speed."
+  register: academic
+  topic_tags:
+    - degradation
+    - quality
+    - systems
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.manifestation
+  headword: manifestation
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌmæn.ɪ.feˈsteɪ.ʃən/
+  audio_ref: null
+  definition_en: An event, action, symptom, or observable entity that clearly embodies and demonstrates an abstract theory or underlying problem.
+  meaning_tr: tezahür, somut gösterge, belirti
+  collocations:
+    - text: clear manifestation
+      tr: net bir tezahür
+    - text: physical manifestation
+      tr: fiziksel tezahür
+    - text: first manifestation
+      tr: ilk belirti / tezahür
+    - text: manifestation of
+      tr: -in tezahürü
+  examples:
+    - en: "Frequent deadlocks in the transaction manager were merely the surface manifestation of poor schema design."
+      tr: "İşlem yöneticisindeki sık kilitlenmeler, yalnızca zayıf şema tasarımının yüzeydeki tezahürüydü."
+      context: Database Engineering
+    - en: "High employee turnover is often an unmistakable manifestation of toxic workplace culture."
+      tr: "Yüksek personel devir hızı, genellikle toksik iş yeri kültürünün bariz bir tezahürüdür."
+      context: Organizational Analysis
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Manifestation" (tezahür/somut görünüm), gemi yük manifestosu ("cargo manifest") veya siyasi bildirge ("manifesto") ile karıştırılmamalıdır. Soyut bir durumun gözle görülür dışavurumudur.
+      incorrect_example: "The political party published their five-page manifestation."
+      correct_example: "The political party published their five-page manifesto."
+  register: academic
+  topic_tags:
+    - symptoms
+    - evidence
+    - observation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.volatility
+  headword: volatility
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌvɒl.əˈtɪl.ə.ti/
+  audio_ref: null
+  definition_en: Liability to change rapidly, erratically, and unpredictably, especially in price, market conditions, or system load.
+  meaning_tr: oynaklık, değişkenlik, istikrarsızlık
+  collocations:
+    - text: market volatility
+      tr: pazar oynaklığı
+    - text: high volatility
+      tr: yüksek oynaklık
+    - text: price volatility
+      tr: fiyat oynaklığı
+    - text: manage volatility
+      tr: oynaklığı yönetmek
+  examples:
+    - en: "Hedging financial instruments allows multinational technology firms to mitigate foreign exchange volatility."
+      tr: "Finansal korunma araçları, çok uluslu teknoloji firmalarının döviz kuru oynaklığını hafifletmelerine olanak tanır."
+      context: Corporate Treasury
+    - en: "Autoscaling cloud clusters are engineered to absorb sudden volatility in web request throughput."
+      tr: "Otomatik ölçeklenen bulut kümeleri, web istek debisindeki ani oynaklığı absorbe etmek üzere tasarlanmıştır."
+      context: Cloud Infrastructure
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Volatility" kimyada uçuculuk (buharlaşabilirlik) demekken; finans ve sistem mimarisinde fiyatların veya iş yüklerinin öngörülemez biçimde "hızla dalgalanması/oynaklığı" anlamında kullanılır.
+      incorrect_example: "The software had a high volatility because it evaporated from the disk."
+      correct_example: "The financial market experienced extreme volatility following the interest rate hike."
+  register: business
+  topic_tags:
+    - finance
+    - risk
+    - variability
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.convergence
+  headword: convergence
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /kənˈvɜː.dʒəns/
+  audio_ref: null
+  definition_en: The process or tendency of separate technologies, ideas, or standards to merge toward a common point or unified architecture.
+  meaning_tr: yakınsama, birleşme, tek bir noktada buluşma
+  collocations:
+    - text: technology convergence
+      tr: teknolojik yakınsama
+    - text: gradual convergence
+      tr: kademeli yakınsama
+    - text: point of convergence
+      tr: yakınsama noktası
+    - text: convergence between
+      tr: arasındaki yakınsama
+  examples:
+    - en: "We are witnessing the convergence of artificial intelligence and edge computing in modern mobile devices."
+      tr: "Modern mobil cihazlarda yapay zekâ ile uç bilişimin yakınsamasına tanık oluyoruz."
+      context: Technology Strategy
+    - en: "The architectural committee achieved consensus on the convergence of mobile and desktop frontend frameworks."
+      tr: "Mimari komite, mobil ve masaüstü ön uç çatılarının yakınsaması konusunda fikir birliğine vardı."
+      context: Software Governance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Convergence" (yakınsama/birleşme), sohbet etmek ("conversation") ile karıştırılmamalıdır; "divergence" (ıraksama/ayrışma) teriminin zıddıdır.
+      incorrect_example: "We had a long convergence about our product roadmap over lunch."
+      correct_example: "We had a long conversation about our product roadmap over lunch."
+  register: academic
+  topic_tags:
+    - technology
+    - integration
+    - evolution
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.instigate
+  headword: instigate
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈɪn.stɪ.ɡeɪt/
+  audio_ref: null
+  definition_en: To bring about or initiate an action, reform, formal inquiry, or organizational change.
+  meaning_tr: başlatmak, önayak olmak, harekete geçirmek; (kışkırtmak)
+  collocations:
+    - text: instigate an investigation
+      tr: soruşturma başlatmak
+    - text: instigate reforms
+      tr: reformları başlatmak
+    - text: instigate a comprehensive review
+      tr: kapsamlı bir inceleme başlatmak
+  examples:
+    - en: "The chief information security officer instigated an internal inquiry following the anomalous data transfer."
+      tr: "Bilgi güvenliği direktörü anormal veri aktarımının ardından dahili bir soruşturma başlattı."
+      context: Cybersecurity Governance
+    - en: "Leadership instigated sweeping organizational reforms to eliminate cross-departmental communication silos."
+      tr: "Liderlik ekibi, departmanlar arası iletişim silolarını ortadan kaldırmak için kapsamlı organizasyonel reformlar başlattı."
+      context: Organizational Change
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Instigate" günlük dilde isyan/kavga kışkırtmak anlamına gelebilir; ancak kurumsal ve hukuki dilde resmi bir soruşturmayı, denetimi veya reform sürecini "başlatmak/önayak olmak" anlamında saygın biçimde kullanılır.
+      incorrect_example: "He instigated his computer to boot faster."
+      correct_example: "The audit committee instigated a formal review of corporate expense reporting."
+  register: formal
+  topic_tags:
+    - initiative
+    - governance
+    - compliance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.diversify
+  headword: diversify
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /daɪˈvɜː.sɪ.faɪ/
+  audio_ref: null
+  definition_en: To enlarge or vary the range of products, investments, revenue streams, or technological skillsets.
+  meaning_tr: çeşitlendirmek, farklı alanlara yaymak
+  collocations:
+    - text: diversify revenue streams
+      tr: gelir akışlarını çeşitlendirmek
+    - text: diversify investments
+      tr: yatırımları çeşitlendirmek
+    - text: diversify product offerings
+      tr: ürün gamını çeşitlendirmek
+  examples:
+    - en: "To safeguard solvency against macroeconomic swings, the platform company worked to diversify its revenue streams."
+      tr: "Makroekonomik dalgalanmalara karşı ödeme gücünü korumak için platform şirketi gelir akışlarını çeşitlendirmeye çalıştı."
+      context: Financial Resilience
+    - en: "Software engineers should intentionally diversify their skillsets beyond single-vendor cloud ecosystems."
+      tr: "Yazılım mühendisleri, beceri setlerini tek tedarikçili bulut ekosistemlerinin ötesine kasıtlı olarak çeşitlendirmelidir."
+      context: Career Strategy
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Yeni alanlara çeşitlenmeyi ifade ederken "diversify into" kullanılır: "diversify into cloud services". "Diversify to" daha az yaygındır ve "diversify with" sadece araç belirtir.
+      incorrect_example: "The corporation wants to diversify about healthcare technologies."
+      correct_example: "The corporation wants to diversify into healthcare technologies."
+  register: business
+  topic_tags:
+    - strategy
+    - portfolio
+    - growth
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.exhaustive
+  headword: exhaustive
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ɪɡˈzɔː.stɪv/
+  audio_ref: null
+  definition_en: Including or considering all elements or aspects; extremely thorough and fully comprehensive.
+  meaning_tr: kapsamlı, eksiksiz, etraflı
+  collocations:
+    - text: exhaustive research
+      tr: kapsamlı araştırma
+    - text: exhaustive testing
+      tr: etraflı test / tüm olasılıkları sınama
+    - text: exhaustive list
+      tr: eksiksiz liste
+    - text: exhaustive analysis
+      tr: etraflı analiz
+  examples:
+    - en: "The quality assurance squad conducted an exhaustive suite of regression tests before certifying the release."
+      tr: "Kalite güvence ekibi sürümü onaylamadan önce kapsamlı bir regresyon test paketi yürüttü."
+      context: Release Certification
+    - en: "The whitepaper provides an exhaustive technical analysis of consensus algorithms in distributed ledgers."
+      tr: "Teknik rapor, dağıtık defterlerdeki uzlaşı algoritmalarının eksiksiz bir teknik analizini sunmaktadır."
+      context: Academic Whitepaper
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Exhaustive" (kapsamlı/eksiksiz) sıfatını "exhausted" (çok yorgun/tükenmiş) veya "exhausting" (yorucu) ile karıştırmayınız. Her detayı ele alan titiz çalışmalar için "exhaustive" kullanılır.
+      incorrect_example: "I worked fourteen hours today, so I am completely exhaustive."
+      correct_example: "I worked fourteen hours today, so I am completely exhausted after doing exhaustive research."
+  register: academic
+  topic_tags:
+    - thoroughness
+    - completeness
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.formidable
+  headword: formidable
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈfɔː.mɪ.də.bəl/
+  audio_ref: null
+  definition_en: Inspiring respect or wonder through being impressively large, powerful, intense, or capable; challenging.
+  meaning_tr: zorlu, çetin, heybetli, hafife alınamaz
+  collocations:
+    - text: formidable challenge
+      tr: zorlu meydan okuma
+    - text: formidable competitor
+      tr: dişli / hafife alınamaz rakip
+    - text: formidable task
+      tr: çetin görev
+    - text: formidable reputation
+      tr: saygı uyandıran itibar
+  examples:
+    - en: "Migrating twenty million live user accounts with zero downtime posed a formidable engineering challenge."
+      tr: "Yirmi milyon aktif kullanıcı hesabını sıfır kesintiyle taşımak zorlu ve çetin bir mühendislik meydan okuması oluşturdu."
+      context: System Migration
+    - en: "The incumbent tech giant remains a formidable competitor with vast research and development capital."
+      tr: "Mevcut teknoloji devi, geniş araştırma ve geliştirme sermayesiyle dişli bir rakip olmaya devam ediyor."
+      context: Market Competition
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Formidable" Fransızcada "harika/muhteşem" anlamına gelebilse de, İngilizcede korku, derin saygı ve çekince uyandıracak kadar "zorlu, dişli ve güçlü" anlamında kullanılır. Basit bir güzellik övgüsü değildir.
+      incorrect_example: "The dessert was very formidable, so I ate two portions."
+      correct_example: "The engineering team overcame a formidable challenge to meet the launch deadline."
+  register: formal
+  topic_tags:
+    - challenge
+    - power
+    - competition
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.pervasive
+  headword: pervasive
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /pəˈveɪ.sɪv/
+  audio_ref: null
+  definition_en: Spreading widely throughout an area, group of systems, culture, or society; omnipresent.
+  meaning_tr: her yana sinmiş, yaygın, nüfuz eden
+  collocations:
+    - text: pervasive influence
+      tr: her yana sinmiş etki
+    - text: pervasive technology
+      tr: yaygın teknoloji
+    - text: pervasive problem
+      tr: yaygın sorun
+    - text: increasingly pervasive
+      tr: giderek daha yaygınlaşan
+  examples:
+    - en: "Artificial intelligence has become a pervasive technology embedded across everyday enterprise workflows."
+      tr: "Yapay zekâ, günlük kurumsal iş akışlarına gömülü yaygın bir teknoloji haline geldi."
+      context: Industry Evolution
+    - en: "Security architects audited the codebase to identify pervasive configuration vulnerabilities."
+      tr: "Güvenlik mimarları, yaygın yapılandırma açıklarını tespit etmek için kod tabanını denetledi."
+      context: Application Security
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Pervasive" (her yana yayılmış/nüfuz etmiş), Türkçedeki "pervaz" veya "perva" (çekinme) kelimeleriyle ilgisizdir; Latincedeki "pervadere" (istila etmek/yayılmak) kökünden gelir.
+      incorrect_example: "He spoke with a pervasive attitude without caring for anyone."
+      correct_example: "Technical debt had a pervasive presence across the legacy codebase."
+  register: academic
+  topic_tags:
+    - ubiquity
+    - systems
+    - trends
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.predominantly
+  headword: predominantly
+  cefr_level: C1
+  part_of_speech: adverb
+  phonetic: /prɪˈdɒm.ɪ.nənt.li/
+  audio_ref: null
+  definition_en: For the most part; mainly, largely, or in greater proportion or degree.
+  meaning_tr: ağırlıklı olarak, çoğunlukla, başlıca
+  collocations:
+    - text: predominantly remote
+      tr: ağırlıklı olarak uzaktan
+    - text: used predominantly
+      tr: çoğunlukla kullanılan
+    - text: predominantly positive
+      tr: ağırlıklı olarak olumlu
+  examples:
+    - en: "The engineering organization operates as a predominantly remote workforce distributed across three time zones."
+      tr: "Mühendislik organizasyonu, üç zaman dilimine dağılmış ağırlıklı olarak uzaktan çalışan bir iş gücü olarak faaliyet gösterir."
+      context: Remote Work Culture
+    - en: "Early benchmark trials yielded predominantly positive throughput indicators."
+      tr: "İlk kıyaslama denemeleri ağırlıklı olarak olumlu veri debisi göstergeleri sağladı."
+      context: Benchmark Analysis
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Predominantly" akademik ve resmi metinlerde "mostly" veya "mainly" yerine kullanılan zarif bir zarftır. Baskın olan unsuru belirtir.
+      incorrect_example: "I eat predominantly apples in my breakfast."
+      correct_example: "Our backend infrastructure consists predominantly of asynchronous Kotlin microservices."
+  register: academic
+  topic_tags:
+    - proportion
+    - distribution
+    - generalization
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.substantially
+  headword: substantially
+  cefr_level: C1
+  part_of_speech: adverb
+  phonetic: /səbˈstæn.ʃəl.i/
+  audio_ref: null
+  definition_en: To a great, significant, or considerable degree; or in essential points of reality.
+  meaning_tr: önemli ölçüde, büyük oranda, esaslı biçimde
+  collocations:
+    - text: reduce substantially
+      tr: önemli ölçüde azaltmak
+    - text: increase substantially
+      tr: büyük oranda artmak
+    - text: differ substantially
+      tr: esaslı biçimde farklılık göstermek
+    - text: improve substantially
+      tr: kayda değer biçimde iyileşmek
+  examples:
+    - en: "Migrating from disk storage to distributed caching reduced database query latency substantially."
+      tr: "Disk depolamasından dağıtık önbelleğe geçiş, veritabanı sorgu gecikmesini önemli ölçüde azalttı."
+      context: Performance Optimization
+    - en: "The revised service level agreement differed substantially from earlier draft proposals."
+      tr: "Revize edilen hizmet seviyesi anlaşması önceki taslak önerilerden esaslı biçimde farklılık gösteriyordu."
+      context: Contract Review
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Substantially" (önemli ölçüde/büyük oranda), fiziksel maddesellikle ilgili değil; bir değişimin veya farkın büyüklüğünü vurgulayan biçimsel bir zarftır ("significantly" eşanlamlısı).
+      incorrect_example: "The cake is substantially sweet."
+      correct_example: "Cloud automation substantially reduced deployment overhead."
+  register: formal
+  topic_tags:
+    - magnitude
+    - scale
+    - degree
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.draw-on
+  headword: draw on
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /drɔː ɒn/
+  audio_ref: null
+  definition_en: To use something such as knowledge, experience, or available reserves as a resource to solve a problem.
+  meaning_tr: -den yararlanmak, istifade etmek, (deneyim/kaynağı) kullanmak
+  collocations:
+    - text: draw on experience
+      tr: deneyimden yararlanmak
+    - text: draw on resources
+      tr: kaynakları kullanmak / istifade etmek
+    - text: draw on expertise
+      tr: uzmanlıktan yararlanmak
+  examples:
+    - en: "Staff engineers draw on years of distributed systems experience during high-severity incident resolution."
+      tr: "Kıdemli uzman mühendisler yüksek ciddiyetli olayların çözümünde yılların dağıtık sistemler deneyiminden yararlanırlar."
+      context: Incident Management
+    - en: "The product discovery phase draws heavily on customer feedback gathered through qualitative interviews."
+      tr: "Ürün keşif aşaması nitel mülakatlar yoluyla toplanan müşteri geri bildirimlerinden büyük ölçüde istifade eder."
+      context: Product Design
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Draw on" resim çizmekle ("draw a picture") ilgili değildir; birikimden veya kaynaktan faydalanmak anlamında deyimsel bir fiildir. Mutlaka "on" (veya "upon") ile kullanılır.
+      incorrect_example: "He drew on a paper during the technical discussion."
+      correct_example: "The lead designer drew on classical typography principles to craft the user interface."
+  register: general
+  topic_tags:
+    - experience
+    - resources
+    - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1

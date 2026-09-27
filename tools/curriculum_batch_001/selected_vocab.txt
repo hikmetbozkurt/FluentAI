@@ -1,0 +1,50 @@
+vocab.ache-verb|ache|A2|ağrımak, sızlamak
+vocab.butter|butter|A2|tereyağı
+vocab.cough-v|cough|A2|öksürmek
+vocab.empty|empty|A2|boş, terkedilmiş gibi
+vocab.greet|greet|A2|selamlamak, karşılamak
+vocab.local-adj|local|A2|yerel, yöresel, mahalli
+vocab.passenger|passenger|A2|yolcu
+vocab.relative|relative|A2|akraba, hısım
+vocab.silent|silent|A2|sessiz, çıt çıkarmayan
+vocab.timetable|timetable|A2|sefer tarifesi, saat çizelgesi, ders programı
+vocab.a-pinch-of|a pinch of|B1|bir tutam, bir fiske
+vocab.campus|campus|B1|kampüs, yerleşke
+vocab.contribute|contribute|B1|katkıda bulunmak, katkı sağlamak
+vocab.eat-in|eat in|B1|evde yemek, (restoranda) oturup yemek
+vocab.guided-tour|guided|B1|rehberli, rehber eşliğinde yapılan
+vocab.lock-up|lock up|B1|kapıları kilitlemek, kilitleyip kapatmak
+vocab.pack-away|pack away|B1|kaldırmak, toplayıp yerine koymak
+vocab.radiator|radiator|B1|kalorifer peteği, radyatör
+vocab.sculpture|sculpture|B1|heykel
+vocab.supermarket-cart|supermarket cart|B1|market arabası, alışveriş arabası
+vocab.a-work-of-art|a work of art|B2|sanat eseri, bir şaheser
+vocab.caramelize|caramelize|B2|karamelize etmek, karamelleştirmek
+vocab.cost-an-arm-and-a-leg|cost an arm and a leg|B2|Ateş pahası olmak; bir servete mal olmak.
+vocab.educate|educate|B2|Eğitmek; yetiştirmek.
+vocab.framework|framework|B2|çerçeve, çatı, kavramsal yapı
+vocab.infuse|infuse|B2|demlemek, içine katmak, özünü geçirmek
+vocab.mutual-respect|mutual respect|B2|karşılıklı saygı
+vocab.prospectus|prospectus|B2|tanıtım kılavuzu, üniversite/okul broşürü
+vocab.sedentary|sedentary|B2|hareketsiz, masa başı, sedanter
+vocab.syrup|syrup|B2|şurup (öksürük şurubu vb.)
+vocab.account-for|account for|C1|açıklamak, izah etmek, oranını oluşturmak
+vocab.biotechnology|biotechnology|C1|Biyoteknoloji; biyolojik süreçlerin teknolojik kullanımı.
+vocab.competently|competently|C1|Yetkin bir şekilde; ehilce; başarıyla.
+vocab.deploy|deploy|C1|Canlıya almak; devreye sokmak; konuşlandırmak.
+vocab.encryption|encryption|C1|şifreleme, kriptolama
+vocab.imperative|imperative|C1|kaçınılmaz zorunluluk, elzem kural; zorunlu, mecburi
+vocab.microprocessor|microprocessor|C1|Mikroişlemci; entegre işlemci yongası.
+vocab.posit|posit|C1|öne sürmek, varsaymak, tez olarak ileri sürmek
+vocab.repurpose|repurpose|C1|farklı bir amaçla yeniden kullanmak, dönüştürerek değerlendirmek
+vocab.stylistically|stylistically|C1|Üslup bakımından; biçimsel olarak; tarz açısından.
+vocab.a-double-edged-sword|a double-edged sword|C2|iki ucu keskin bıçak, hem faydası hem zararı olan durum
+vocab.body-of-knowledge|body of knowledge|C2|bilgi birikimi; bir disipline ait kapsamlı ve yapılandırılmış bilgi bütünü
+vocab.degradable|degradable|C2|çözünebilir, kimyasal olarak parçalanabilir
+vocab.epistemology|epistemology|C2|epistemoloji, bilgi felsefesi
+vocab.hegemony|hegemony|C2|hegemonya, egemenlik, tahakküm
+vocab.ionize|ionize|C2|iyonlaştırmak, iyonize etmek
+vocab.oligopoly|oligopoly|C2|oligopol, birkaç firmanın hakim olduğu pazar yapısı
+vocab.propensity|propensity|C2|eğilim, meyil, yatkınlık
+vocab.shore-up|shore up|C2|destekleyip ayakta tutmak, takviye etmek, güçlendirmek
+vocab.teleological|teleological|C2|ereksel; amaçsal, teleolojik, bir amacın veya nihai sonun varlığına dayanan

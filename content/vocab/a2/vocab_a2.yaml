@@ -1,0 +1,749 @@
+- id: vocab.schedule
+  headword: schedule
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈʃedʒ.uːl/
+  audio_ref: null
+  definition_en: A plan of events or tasks with the times or dates at which they are intended to happen.
+  meaning_tr: program, çalışma takvimi, zaman çizelgesi
+  collocations:
+    - text: tight schedule
+      tr: yoğun program
+    - text: ahead of schedule
+      tr: planlanandan erken
+    - text: behind schedule
+      tr: planlanandan geç
+  examples:
+    - en: The sprint is currently on schedule, and we expect to release the update on Friday.
+      tr: Sprint şu anda takvime uygun ilerliyor ve güncellemeyi Cuma günü yayınlamayı bekliyoruz.
+      context: Agile Project Management
+    - en: I have a very tight schedule this afternoon due to back-to-back client calls.
+      tr: Peş peşe gelen müşteri görüşmeleri nedeniyle bu öğleden sonra oldukça sıkışık bir takvimim var.
+      context: Daily Office Routine
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Takvime uygun" derken İngilizcede "on schedule", "planlanandan önce" derken "ahead of schedule",
+        "planlanandan geç" derken "behind schedule" kalıpları kullanılır. "According to schedule" yerine
+        günlük iş dilinde "on schedule" çok daha yaygındır.
+      incorrect_example: The deployment is in schedule.
+      correct_example: The deployment is on schedule.
+  register: general
+  topic_tags:
+    - workplace
+    - time-management
+    - planning
+  related_ids:
+    - vocab.deadline
+    - vocab.delay
+  status: APPROVED
+  version: 1
+
+- id: vocab.appointment
+  headword: appointment
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /əˈpɔɪnt.mənt/
+  audio_ref: null
+  definition_en: A formal arrangement to meet someone at a particular time and place.
+  meaning_tr: randevu, resmi görüşme
+  collocations:
+    - text: schedule an appointment
+      tr: randevu ayarlamak
+    - text: cancel an appointment
+      tr: randevuyu iptal etmek
+    - text: confirm an appointment
+      tr: randevuyu teyit etmek
+  examples:
+    - en: I would like to schedule an appointment with the HR director for Thursday morning.
+      tr: Perşembe sabahı için İK direktörü ile bir randevu ayarlamak istiyorum.
+      context: Office Coordination
+    - en: Please confirm your appointment by replying to this calendar invite.
+      tr: Lütfen bu takvim davetine yanıt vererek randevunuzu teyit ediniz.
+      context: Client Relations
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "randevu almak" denildiği için "take an appointment" çevirisi sık yapılır.
+        Doğru İngilizce kalıp "make an appointment" veya "schedule an appointment" şeklindedir.
+      incorrect_example: I want to take an appointment with the doctor.
+      correct_example: I want to make an appointment with the doctor.
+  register: general
+  topic_tags:
+    - meetings
+    - workplace
+  related_ids:
+    - vocab.schedule
+    - vocab.cancel
+  status: APPROVED
+  version: 1
+
+- id: vocab.colleague
+  headword: colleague
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈkɒl.iːɡ/
+  audio_ref: null
+  definition_en: A person that you work with, especially in a professional or office environment.
+  meaning_tr: iş arkadaşı, meslektaş
+  collocations:
+    - text: senior colleague
+      tr: kıdemli iş arkadaşı
+    - text: close colleague
+      tr: yakın çalışma arkadaşı
+  examples:
+    - en: My colleague in Munich helped us resolve the deployment failure.
+      tr: Münih'teki iş arkadaşım yayına alma hatasını çözmemize yardımcı oldu.
+      context: Team Collaboration
+    - en: I will introduce you to our new colleagues during the team lunch.
+      tr: Ekip öğle yemeği sırasında sizi yeni iş arkadaşlarımızla tanıştıracağım.
+      context: Workplace Welcome
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Colleague" yalnızca profesyonel iş arkadaşı için kullanılır. Genel okul arkadaşı veya dost
+        için "friend" veya "classmate" tercih edilmelidir.
+      incorrect_example: My university colleagues and I went to the cinema.
+      correct_example: My university friends and I went to the cinema.
+  register: general
+  topic_tags:
+    - workplace
+    - team
+  related_ids:
+    - vocab.introduce
+    - vocab.department
+  status: APPROVED
+  version: 1
+
+- id: vocab.attend
+  headword: attend
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /əˈtend/
+  audio_ref: null
+  definition_en: To go to or be present at an event, meeting, course, or function.
+  meaning_tr: katılmak, iştirak etmek, hazır bulunmak
+  collocations:
+    - text: attend a meeting
+      tr: toplantıya katılmak
+    - text: attend a conference
+      tr: konferansa katılmak
+  examples:
+    - en: All department leads must attend the quarterly planning meeting tomorrow.
+      tr: Tüm departman liderleri yarınki üç aylık planlama toplantısına katılmalıdır.
+      context: Corporate Meetings
+    - en: I cannot attend the demo today because of a conflicting client call.
+      tr: Çakışan bir müşteri görüşmesi nedeniyle bugünkü demoya katılamıyorum.
+      context: Agile Rituals
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "toplantıya katılmak" (-e eki) dendiği için Türk öğreniciler "attend to the meeting"
+        demeye eğilimlidir. "Attend" fiili nesnesini doğrudan alır ("attend the meeting").
+        "Attend to" ise "ilgilenmek, bakım yapmak" anlamına gelir.
+      incorrect_example: I will attend to the conference tomorrow.
+      correct_example: I will attend the conference tomorrow.
+  register: business
+  topic_tags:
+    - meetings
+    - workplace
+  related_ids:
+    - vocab.appointment
+    - vocab.schedule
+  status: APPROVED
+  version: 1
+
+- id: vocab.cancel
+  headword: cancel
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈkæn.səl/
+  audio_ref: null
+  definition_en: To decide that an organized event, meeting, or agreement will not happen.
+  meaning_tr: iptal etmek
+  collocations:
+    - text: cancel a meeting
+      tr: toplantıyı iptal etmek
+    - text: cancel a subscription
+      tr: aboneliği iptal etmek
+  examples:
+    - en: We had to cancel the retrospective because three key engineers were sick.
+      tr: Üç kilit mühendis hasta olduğu için retrospektif toplantısını iptal etmek zorunda kaldık.
+      context: Team Coordination
+    - en: Please cancel my booking if the flight is delayed past midnight.
+      tr: Uçuş gece yarısından sonraya gecikirse lütfen rezervasyonumu iptal edin.
+      context: Business Travel
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Cancel" iptal etmek demektir. Ertelemek anlamında "postpone" veya "put off" kullanılmalıdır.
+      incorrect_example: We canceled the meeting to next Friday.
+      correct_example: We postponed the meeting until next Friday.
+  register: general
+  topic_tags:
+    - workplace
+    - coordination
+  related_ids:
+    - vocab.delay
+    - vocab.appointment
+  status: APPROVED
+  version: 1
+
+- id: vocab.confirm
+  headword: confirm
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /kənˈfɜːm/
+  audio_ref: null
+  definition_en: To state or show that something is definitely true, correct, or agreed upon.
+  meaning_tr: onaylamak, teyit etmek, doğrulamak
+  collocations:
+    - text: confirm receipt
+      tr: alındığını teyit etmek
+    - text: confirm a reservation
+      tr: rezervasyonu onaylamak
+  examples:
+    - en: Please confirm your attendance by end of day so we can arrange lunch.
+      tr: Öğle yemeğini organize edebilmemiz için lütfen gün sonuna kadar katılımınızı teyit edin.
+      context: Office Coordination
+    - en: The finance team confirmed that the payment was transferred successfully.
+      tr: Finans ekibi ödemenin başarıyla transfer edildiğini onayladı.
+      context: Accounting
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        İş e-postalarında "I got your mail" yerine resmi ve profesyonel olarak "I confirm receipt of your email"
+        veya "Kindly confirm your availability" kalıpları tercih edilir.
+      incorrect_example: Please ok my request.
+      correct_example: Please confirm my request.
+  register: business
+  topic_tags:
+    - communication
+    - email
+  related_ids:
+    - vocab.appointment
+    - vocab.request
+  status: APPROVED
+  version: 1
+
+- id: vocab.delay
+  headword: delay
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /dɪˈleɪ/
+  audio_ref: null
+  definition_en: To make something happen at a later time than originally planned.
+  meaning_tr: geciktirmek, ertelemek; gecikme
+  collocations:
+    - text: flight delay
+      tr: uçuş gecikmesi
+    - text: unexpected delay
+      tr: beklenmedik gecikme
+  examples:
+    - en: The software release was delayed due to an unexpected database migration bug.
+      tr: Yazılım sürümü, beklenmedik bir veritabanı geçiş hatası nedeniyle gecikti.
+      context: Software Engineering
+    - en: We apologize for the delay in answering your support ticket.
+      tr: Destek talebinizi yanıtlarken yaşanan gecikmeden dolayı özür dileriz.
+      context: Customer Support
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Delay" hem fiil (gecikmek/ertelemek) hem de isim (gecikme) olarak kullanılır.
+        Sıfat olarak ise "delayed" (gecikmiş) formu kullanılır ("The flight is delayed").
+      incorrect_example: The train is delay today.
+      correct_example: The train is delayed today.
+  register: general
+  topic_tags:
+    - project
+    - timeline
+  related_ids:
+    - vocab.schedule
+    - vocab.cancel
+  status: APPROVED
+  version: 1
+
+- id: vocab.department
+  headword: department
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /dɪˈpɑːt.mənt/
+  audio_ref: null
+  definition_en: One of the official divisions of a large organization, company, or university.
+  meaning_tr: departman, bölüm, birim
+  collocations:
+    - text: human resources department
+      tr: insan kaynakları departmanı
+    - text: finance department
+      tr: finans departmanı
+  examples:
+    - en: Which department is responsible for approving software license purchases?
+      tr: Yazılım lisansı satın alımlarını onaylamaktan hangi departman sorumludur?
+      context: Corporate Procurement
+    - en: Our engineering department expanded by twenty developers this quarter.
+      tr: Mühendislik departmanımız bu çeyrekte yirmi geliştiriciyle büyüdü.
+      context: Company Growth
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir departmanda çalışmak için İngilizcede "work in the ... department" kullanılır.
+      incorrect_example: I work at marketing department.
+      correct_example: I work in the marketing department.
+  register: general
+  topic_tags:
+    - organization
+    - workplace
+  related_ids:
+    - vocab.colleague
+    - vocab.manage
+  status: APPROVED
+  version: 1
+
+- id: vocab.equipment
+  headword: equipment
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ɪˈkwɪp.mənt/
+  audio_ref: null
+  definition_en: The set of tools, devices, or machines needed for a particular job or activity.
+  meaning_tr: ekipman, donanım, araç gereç
+  collocations:
+    - text: office equipment
+      tr: ofis ekipmanları
+    - text: IT equipment
+      tr: bilişim donanımı
+  examples:
+    - en: IT will deliver your new laptop and monitor equipment before Monday.
+      tr: Bilgi işlem departmanı yeni dizüstü bilgisayar ve monitör donanımınızı Pazartesi'den önce teslim edecektir.
+      context: Office Setup
+    - en: All safety equipment must be inspected before entering the server room.
+      tr: Sunucu odasına girmeden önce tüm güvenlik ekipmanları denetlenmelidir.
+      context: Facilities & Safety
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "ekipmanlar" çoğul olarak kullanılabilir, ancak İngilizcede "equipment"
+        sayılamaz (uncountable) bir isimdir. Asla "equipments" denmez. Tekil bir parça için
+        "a piece of equipment" denilmelidir.
+      incorrect_example: We ordered new computer equipments for the team.
+      correct_example: We ordered new computer equipment for the team.
+  register: general
+  topic_tags:
+    - office
+    - tech
+  related_ids:
+    - vocab.information
+    - vocab.department
+  status: APPROVED
+  version: 1
+
+- id: vocab.feedback
+  headword: feedback
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈfiːd.bæk/
+  audio_ref: null
+  definition_en: Information or opinions about a person's work or performance, used as a basis for improvement.
+  meaning_tr: geri bildirim, dönüt
+  collocations:
+    - text: constructive feedback
+      tr: yapıcı geri bildirim
+    - text: give feedback
+      tr: geri bildirim vermek
+    - text: receive feedback
+      tr: geri bildirim almak
+  examples:
+    - en: We value your feedback on the newly released mobile application interface.
+      tr: Yeni yayınlanan mobil uygulama arayüzü hakkındaki geri bildirimlerinize değer veriyoruz.
+      context: Product Feedback
+    - en: The manager provided constructive feedback during my annual review.
+      tr: Yöneticim yıllık değerlendirmem sırasında yapıcı geri bildirimlerde bulundu.
+      context: Performance Review
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Tıpkı equipment gibi "feedback" de sayılamaz (uncountable) bir isimdir. "Feedbacks" kullanımı
+        İngilizcede hatalıdır. "Geri bildirimler" demek için "some feedback" veya "pieces of feedback" denir.
+      incorrect_example: Thank you for your positive feedbacks.
+      correct_example: Thank you for your positive feedback.
+  register: business
+  topic_tags:
+    - communication
+    - performance
+  related_ids:
+    - vocab.information
+    - vocab.colleague
+  status: APPROVED
+  version: 1
+
+- id: vocab.information
+  headword: information
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˌɪn.fəˈmeɪ.ʃən/
+  audio_ref: null
+  definition_en: Facts or details provided or learned about something or someone.
+  meaning_tr: bilgi, malumat
+  collocations:
+    - text: detailed information
+      tr: ayrıntılı bilgi
+    - text: confidential information
+      tr: gizli bilgi
+  examples:
+    - en: For further information regarding company benefits, please contact human resources.
+      tr: Şirket yan haklarına ilişkin daha fazla bilgi için lütfen insan kaynakları ile iletişime geçiniz.
+      context: HR Policies
+    - en: Do not share confidential client information in public communication channels.
+      tr: Herkese açık iletişim kanallarında gizli müşteri bilgilerini paylaşmayınız.
+      context: Data Security
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçe "bilgiler" çoğul yapılırken İngilizcede "information" kesinlikle sayılamaz bir isimdir.
+        "Informations" formu kabul edilemez bir hatadır.
+      incorrect_example: Send me the project informations by email.
+      correct_example: Send me the project information by email.
+  register: general
+  topic_tags:
+    - communication
+    - workplace
+  related_ids:
+    - vocab.feedback
+    - vocab.equipment
+  status: APPROVED
+  version: 1
+
+- id: vocab.introduce
+  headword: introduce
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˌɪn.trəˈdʒuːs/
+  audio_ref: null
+  definition_en: To tell someone another person's name when they meet for the first time, or to present a new feature.
+  meaning_tr: tanıştırmak, tanıtmak, devreye sokmak
+  collocations:
+    - text: introduce yourself
+      tr: kendini tanıtmak
+    - text: introduce a new feature
+      tr: yeni bir özelliği tanıtmak/sunmak
+  examples:
+    - en: Let me introduce myself; I am the technical lead for the payments squad.
+      tr: Kendimi tanıtmama izin verin; ödeme ekibinin teknik lideriyim.
+      context: Team Introduction
+    - en: The product manager introduced the roadmap for the third quarter.
+      tr: Ürün yöneticisi üçüncü çeyrek için yol haritasını tanıttı.
+      context: All-Hands Meeting
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Birini başka birine tanıştırırken "introduce X to Y" kalıbı kullanılır. "Introduce with" kullanımı yanlıştır.
+      incorrect_example: Let me introduce you with my colleague.
+      correct_example: Let me introduce you to my colleague.
+  register: general
+  topic_tags:
+    - meetings
+    - networking
+  related_ids:
+    - vocab.colleague
+    - vocab.department
+  status: APPROVED
+  version: 1
+
+- id: vocab.invoice
+  headword: invoice
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˈɪn.vɔɪs/
+  audio_ref: null
+  definition_en: A document that lists products or services provided, along with the total cost and payment terms.
+  meaning_tr: fatura
+  collocations:
+    - text: send an invoice
+      tr: fatura göndermek
+    - text: pay an invoice
+      tr: faturayı ödemek
+    - text: overdue invoice
+      tr: vadesi geçmiş fatura
+  examples:
+    - en: We received your invoice today and will process the payment within thirty days.
+      tr: Faturanızı bugün aldık ve ödemeyi otuz gün içinde gerçekleştireceğiz.
+      context: Accounting
+    - en: Please include the purchase order number on the final invoice.
+      tr: Lütfen nihai faturaya satın alma sipariş numarasını ekleyiniz.
+      context: Invoicing
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Kurumsal iş İngilizcesinde ticari fatura için "invoice", mağaza/restoran fişi için "receipt",
+        elektrik/su gibi faturalar için "bill" kullanılır.
+      incorrect_example: The contractor gave us a receipt for the monthly consulting service.
+      correct_example: The contractor sent us an invoice for the monthly consulting service.
+  register: business
+  topic_tags:
+    - finance
+    - office
+  related_ids:
+    - vocab.confirm
+    - vocab.department
+  status: APPROVED
+  version: 1
+
+- id: vocab.manage
+  headword: manage
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈmæn.ɪdʒ/
+  audio_ref: null
+  definition_en: To be responsible for controlling or organizing someone or something, or to succeed in doing something.
+  meaning_tr: yönetmek, idare etmek, başarmak
+  collocations:
+    - text: manage a project
+      tr: bir projeyi yönetmek
+    - text: manage a team
+      tr: bir ekibi yönetmek
+    - text: manage to finish
+      tr: bitirmeyi başarmak
+  examples:
+    - en: She manages an international engineering team of twelve developers.
+      tr: On iki geliştiriciden oluşan uluslararası bir mühendislik ekibini yönetmektedir.
+      context: Management
+    - en: Despite the tight deadline, we managed to deploy the system without downtime.
+      tr: Sıkışık son teslim tarihine rağmen sistemi kesinti olmadan yayına almayı başardık.
+      context: Project Delivery
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Manage" fiilinden sonra "to + mastar" geldiğinde "bir şeyi güçlükle de olsa başarmak" anlamına gelir.
+        "Manage with" gibi gereksiz edat eklenmemelidir.
+      incorrect_example: We managed to deploying the app.
+      correct_example: We managed to deploy the app.
+  register: general
+  topic_tags:
+    - management
+    - leadership
+  related_ids:
+    - vocab.schedule
+    - vocab.colleague
+  status: APPROVED
+  version: 1
+
+- id: vocab.mention
+  headword: mention
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈmen.ʃən/
+  audio_ref: null
+  definition_en: To speak about or refer to something briefly without going into detail.
+  meaning_tr: bahsetmek, değinmek
+  collocations:
+    - text: briefly mention
+      tr: kısaca değinmek
+    - text: as mentioned earlier
+      tr: daha önce belirtildiği gibi
+  examples:
+    - en: The CTO mentioned that our team will adopt Kotlin for the new microservices.
+      tr: CTO, ekibimizin yeni mikro servisler için Kotlin'i benimseyeceğinden bahsetti.
+      context: Architecture Meeting
+    - en: As I mentioned in my previous email, the server maintenance starts at midnight.
+      tr: Önceki e-postamda belirttiğim gibi, sunucu bakımı gece yarısı başlıyor.
+      context: Tech Communication
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "bir konu hakkında bahsetmek" dendiği için Türk öğreniciler sıklıkla "mention about"
+        der. "Mention" doğrudan nesne alır, "about" ASLA kullanılmaz.
+      incorrect_example: He mentioned about the budget cut during the meeting.
+      correct_example: He mentioned the budget cut during the meeting.
+  register: general
+  topic_tags:
+    - communication
+    - meetings
+  related_ids:
+    - vocab.attend
+    - vocab.confirm
+  status: APPROVED
+  version: 1
+
+- id: vocab.organize
+  headword: organize
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ˈɔː.ɡən.aɪz/
+  audio_ref: null
+  definition_en: To make arrangements for something to happen, or to arrange things in a systematic order.
+  meaning_tr: düzenlemek, organize etmek, tertip etmek
+  collocations:
+    - text: organize a workshop
+      tr: çalıştay düzenlemek
+    - text: well organized
+      tr: iyi organize edilmiş
+  examples:
+    - en: The scrum master will organize a retrospective workshop next Tuesday.
+      tr: Scrum master, önümüzdeki Salı günü bir retrospektif çalıştayı düzenleyecek.
+      context: Agile Coaching
+    - en: Please organize the project documentation folder before the external audit.
+      tr: Lütfen dış denetimden önce proje dokümantasyon klasörünü düzenleyiniz.
+      context: Documentation
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        İngiliz İngilizcesinde "organise" (s ile), Amerikan İngilizcesinde "organize" (z ile) yazılır.
+        Her iki yazım da geçerlidir ancak metin genelinde tutarlılık korunmalıdır.
+      incorrect_example: We need to do an organization for the event.
+      correct_example: We need to organize the event.
+  register: general
+  topic_tags:
+    - planning
+    - workplace
+  related_ids:
+    - vocab.schedule
+    - vocab.appointment
+  status: APPROVED
+  version: 1
+
+- id: vocab.prepare
+  headword: prepare
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /prɪˈpeər/
+  audio_ref: null
+  definition_en: To make someone or something ready for what is going to happen.
+  meaning_tr: hazırlamak, hazırlanmak
+  collocations:
+    - text: prepare a presentation
+      tr: sunum hazırlamak
+    - text: prepare for a meeting
+      tr: toplantıya hazırlanmak
+  examples:
+    - en: I need two hours to prepare the slides for the executive steering committee.
+      tr: İcra yönlendirme komitesi için slaytları hazırlamak üzere iki saate ihtiyacım var.
+      context: Presentation Preparation
+    - en: The operations team is preparing for the scheduled cloud migration this weekend.
+      tr: Operasyon ekibi bu hafta sonu gerçekleşecek planlı bulut geçişine hazırlanıyor.
+      context: Cloud Operations
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir şeyi hazırlamak doğrudan nesne alır ("prepare the report").
+        Bir duruma/olaya hazırlanmak ise "prepare for" gerektirir ("prepare for the interview").
+      incorrect_example: I am preparing to the interview.
+      correct_example: I am preparing for the interview.
+  register: general
+  topic_tags:
+    - workplace
+    - tasks
+  related_ids:
+    - vocab.schedule
+    - vocab.organize
+  status: APPROVED
+  version: 1
+
+- id: vocab.remind
+  headword: remind
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rɪˈmaɪnd/
+  audio_ref: null
+  definition_en: To make someone remember something that they must do or something from the past.
+  meaning_tr: hatırlatmak
+  collocations:
+    - text: remind someone to do something
+      tr: birine bir şey yapmasını hatırlatmak
+    - text: remind someone of something
+      tr: birine bir şeyi hatırlatmak (anımsatmak)
+  examples:
+    - en: Please remind me to send the signed contract before 5 PM today.
+      tr: Lütfen bugün saat 17:00'den önce imzalı sözleşmeyi göndermemi bana hatırlatın.
+      context: Office Reminder
+    - en: The calendar app sends automated notifications to remind participants of upcoming calls.
+      tr: Takvim uygulaması, yaklaşan görüşmeleri katılımcılara hatırlatmak için otomatik bildirimler gönderir.
+      context: Productivity Tools
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Remember" kişinin kendi kendine hatırlamasıdır ("I remembered the password").
+        "Remind" ise başkasına hatırlatmaktır ("Please remind me"). Türk öğreniciler bu iki fiili sıkça karıştırır.
+      incorrect_example: Please remember me to submit the timesheet.
+      correct_example: Please remind me to submit the timesheet.
+  register: general
+  topic_tags:
+    - communication
+    - tasks
+  related_ids:
+    - vocab.confirm
+    - vocab.request
+  status: APPROVED
+  version: 1
+
+- id: vocab.request
+  headword: request
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /rɪˈkwest/
+  audio_ref: null
+  definition_en: To politely or officially ask for something to be given, done, or provided.
+  meaning_tr: talep etmek, rica etmek; talep, rica
+  collocations:
+    - text: submit a request
+      tr: talep iletmek
+    - text: request assistance
+      tr: yardım talep etmek
+  examples:
+    - en: You can request access to the production repository by creating an internal ticket.
+      tr: Dahili bir talep kaydı açarak canlı kod deposuna erişim talep edebilirsiniz.
+      context: IT Access Management
+    - en: The customer requested a full refund due to continuous service interruptions.
+      tr: Müşteri, sürekli yaşanan servis kesintileri nedeniyle ücretin tamamının iadesini talep etti.
+      context: Customer Care
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Fiil olarak "request" doğrudan nesne alır ("request permission"). "Request for" ancak isim
+        kullanımında geçerlidir ("a request for permission").
+      incorrect_example: We requested for a budget increase.
+      correct_example: We requested a budget increase.
+  register: general
+  topic_tags:
+    - email
+    - workplace
+  related_ids:
+    - vocab.confirm
+    - vocab.remind
+  status: APPROVED
+  version: 1
+
+- id: vocab.urgent
+  headword: urgent
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈɜː.dʒənt/
+  audio_ref: null
+  definition_en: Needing immediate attention, action, or decision.
+  meaning_tr: acil, ivedi
+  collocations:
+    - text: urgent matter
+      tr: acil mesele
+    - text: urgent request
+      tr: ivedi talep
+  examples:
+    - en: We have an urgent security patch that must be deployed to the production cluster tonight.
+      tr: Bu gece canlı sunucu kümesine uygulanması gereken acil bir güvenlik yamamız var.
+      context: Incident Management
+    - en: Please mark this email as urgent so the on-call engineer notices it immediately.
+      tr: Nöbetçi mühendisin derhal fark etmesi için lütfen bu e-postayı acil olarak işaretleyin.
+      context: Escalation
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Urgent" sıfattır ("an urgent task"). Zarf hali "urgently" (acilen), isim hali "urgency"dir (aciliyet).
+      incorrect_example: We need this information urgent.
+      correct_example: We need this information urgently.
+  register: general
+  topic_tags:
+    - priority
+    - communication
+  related_ids:
+    - vocab.delay
+    - vocab.request
+  status: APPROVED
+  version: 1

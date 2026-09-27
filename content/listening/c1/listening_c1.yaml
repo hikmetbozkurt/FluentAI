@@ -1,0 +1,113 @@
+- id: listening.c1.architecture-review
+  title: Event-Driven vs CQRS Architecture Review
+  cefr_level: C1
+  category: engineering_meeting
+  scenario_context: An architecture review board session in which a Chief Architect and an Enterprise Architect debate the
+    viability and operational complexity of introducing event sourcing across core financial transaction domains.
+  speakers:
+  - id: deniz
+    name: Deniz
+    role: Chief Architect
+    accent: Turkish
+  - id: vikram
+    name: Vikram
+    role: Enterprise Architect
+    accent: Indian
+  audio_ref: audio/listening/c1_architecture_review.mp3
+  duration_seconds: 56
+  transcript_items:
+  - index: 1
+    speaker_id: vikram
+    start_ms: 0
+    end_ms: 8043
+    text_en: Deniz, after thorough deliberation, the payments squad is proposing a full migration to event sourcing with CQRS
+      for the ledger subsystem.
+    text_tr: Deniz, etraflı bir müzakerenin ardından ödeme ekibi, ana muhasebe alt sistemi için CQRS ile olay kaynaklama (event
+      sourcing) mimarisine tam geçiş öneriyor.
+  - index: 2
+    speaker_id: deniz
+    start_ms: 8443
+    end_ms: 16640
+    text_en: An immutable audit trail is undeniably attractive for regulatory compliance, but this architectural pattern must
+      undergo rigorous scrutiny before we approve it.
+    text_tr: Değiştirilemez bir denetim izi mevzuata uyum açısından tartışmasız çekici, ancak onay vermeden önce bu mimari
+      kalıp titiz bir incelemeden geçmelidir.
+  - index: 3
+    speaker_id: vikram
+    start_ms: 17040
+    end_ms: 25173
+    text_en: Their primary argument is that separating read and write projections allows us to optimize query performance
+      independently for high-frequency trading dashboards.
+    text_tr: Temel argümanları, okuma ve yazma izdüşümlerini ayırmanın, yüksek frekanslı alım satım panoları için sorgu performansını
+      bağımsız optimize etmemize olanak tanımasıdır.
+  - index: 4
+    speaker_id: deniz
+    start_ms: 25573
+    end_ms: 37285
+    text_en: While technically sound, is it operationally viable? Eventual consistency introduces significant edge cases in
+      balance reconciliation, and replay debugging requires specialized team expertise.
+    text_tr: Teknik olarak mantıklı olsa da, operasyonel olarak uygulanabilir mi? Nihai tutarlılık (eventual consistency)
+      bakiye mutabakatında ciddi sınır durumlar doğurur ve yeniden oynatma hata ayıklaması uzman ekip yetkinliği gerektirir.
+  - index: 5
+    speaker_id: vikram
+    start_ms: 37685
+    end_ms: 47757
+    text_en: 'That is a valid concern. Perhaps we should mandate a phased pilot: implement event sourcing solely on the audit
+      log first, rather than rewiring the core settlement pipeline.'
+    text_tr: 'Bu haklı bir endişe. Belki de aşamalı bir pilot zorunlu kılmalıyız: Çekirdek takas hattını yeniden yazmak yerine,
+      olay kaynaklamayı önce yalnızca denetim günlüğünde uygulamalıyız.'
+  - index: 6
+    speaker_id: deniz
+    start_ms: 48157
+    end_ms: 54826
+    text_en: I fully concur with that incremental approach. Let us document these guardrails in the architectural decision
+      record.
+    text_tr: Bu aşamalı yaklaşıma tümüyle katılıyorum. Bu güvenceleri mimari karar kaydımızda (ADR) belgeleyelim.
+  key_vocabulary:
+  - word: deliberation
+    vocab_id: vocab.deliberation
+    context_note_tr: Mimari veya stratejik bir karar öncesinde yapılan etraflı ve derinlemesine değerlendirme.
+  - word: scrutiny
+    vocab_id: vocab.scrutiny
+    context_note_tr: Karmaşık bir sistem tasarımının titizlikle ve kılı kırk yararak incelenmesi.
+  - word: viable
+    vocab_id: vocab.viable
+    context_note_tr: Operasyonel ve pratik olarak uygulanabilir, sürdürülebilir çözüm.
+  comprehension_questions:
+  - id: q_arch_01
+    question_en: What operational challenge does Deniz raise regarding the adoption of event sourcing and CQRS?
+    question_tr_hint: Deniz'in olay kaynaklama ve CQRS benimsemesi hakkında dile getirdiği operasyonel güçlüğü bulunuz.
+    options:
+    - The programming language does not support object-oriented design
+    - The team refuses to use version control systems
+    - Cloud providers are outlawing database events
+    - Eventual consistency edge cases in balance reconciliation and complex replay debugging
+    correct_answer: Eventual consistency edge cases in balance reconciliation and complex replay debugging
+    explanation_en: Deniz emphasizes that eventual consistency creates significant balance reconciliation edge cases, and
+      replay debugging requires specialized skills.
+    explanation_tr: Deniz, nihai tutarlılığın bakiye mutabakatında zorlu sınır durumlar yarattığını ve yeniden oynatma ile
+      hata ayıklamanın ileri düzey uzmanlık gerektirdiğini vurgulamıştır.
+  - id: q_arch_02
+    question_en: What compromise approach does Vikram suggest to mitigate risk?
+    question_tr_hint: Vikram'ın riski azaltmak için önerdiği uzlaşmacı yaklaşımı tespit ediniz.
+    options:
+    - Reverting to monolithic flat files on disk
+    - A phased pilot implementing event sourcing solely on the audit log first
+    - Delegating all architectural decisions to junior interns
+    - Postponing the project until quantum computers are available
+    correct_answer: A phased pilot implementing event sourcing solely on the audit log first
+    explanation_en: Vikram proposes a phased pilot starting solely with the audit log rather than altering the core settlement
+      pipeline immediately.
+    explanation_tr: Vikram, çekirdek takas hattını hemen değiştirmek yerine önce sadece denetim günlüğü üzerinde aşamalı bir
+      pilot uygulama yapılmasını önermiştir.
+  topic_tags:
+  - software-architecture
+  - event-driven
+  - system-design
+  - c1-advanced
+  related_ids:
+  - vocab.deliberation
+  - vocab.scrutiny
+  - vocab.viable
+  status: APPROVED
+  version: 1

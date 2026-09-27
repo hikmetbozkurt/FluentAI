@@ -1,0 +1,298 @@
+- id: exercise.vocab.deliberation-01
+  target_content_id: vocab.deliberation
+  cefr_level: C1
+  skill_domain: vocabulary
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the correct word to complete the executive resolution:'
+  prompt_tr_hint: Yönetim kurulu kararını tamamlayan en uygun kurumsal kelimeyi seçiniz.
+  stem: After several hours of intense ___, the executive committee agreed to restructure the department.
+  options:
+  - hesitation
+  - deliberation
+  - interference
+  - coincidence
+  correct_answer: deliberation
+  explanation_en: '''Deliberation'' refers to deep, formal, and structured discussion or debate prior to an important decision.
+    In the context of an executive committee, ''intense deliberation'' is the standard high-register collocation.'
+  explanation_tr: '''Deliberation'', önemli bir karar öncesinde yapılan derin, resmi ve etraflı müzakere anlamına gelir. Yönetim
+    kurulu bağlamında ''intense deliberation'' kalıbı profesyonel İngilizcede en yaygın kullanımdır.'
+  distractor_explanations:
+    hesitation: '''Hesitation'' tereddüt demektir; resmi bir müzakere sürecini değil çekimserliği ifade eder.'
+    interference: '''Interference'' müdahale veya engelleme anlamına gelir; bu bağlama uymaz.'
+    coincidence: '''Coincidence'' tesadüf demektir; planlı bir toplantı sürecini açıklamaz.'
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.grammar.present-perfect-01
+  target_content_id: grammar.present-perfect-vs-past-simple
+  cefr_level: B1
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the verb form that correctly completes the project status statement:'
+  prompt_tr_hint: Zaman zarfına (yesterday) dikkat ederek doğru zaman kipini seçiniz.
+  stem: Our security team ___ the audit report yesterday afternoon.
+  options:
+  - has completed
+  - is completing
+  - completed
+  - had completed
+  correct_answer: completed
+  explanation_en: '''Yesterday afternoon'' is a finished past time marker. Finished time markers strictly require the Past
+    Simple (''completed''), not the Present Perfect (''has completed'').'
+  explanation_tr: '''Yesterday afternoon'' (dün öğleden sonra) tamamen bitmiş ve geçmişte kalmış bir zaman dilimidir. İngilizcede
+    kesin ve kapalı zaman belirteçleriyle asla Present Perfect kullanılamaz; sadece Past Simple (''completed'') kullanılır.'
+  distractor_explanations:
+    has completed: Present Perfect 'yesterday' gibi kapalı geçmiş zaman zarflarıyla kullanılamaz. Türk öğrenicilerin en sık
+      yaptığı aktarım hatasıdır.
+    is completing: Şimdiki zaman şu an gerçekleşen eylemler içindir; geçmişteki dünü ifade edemez.
+    had completed: Past Perfect yalnızca geçmişte başka bir olaydan önce gerçekleşmiş eylemleri kıyaslarken bir referans noktası
+      varsa kullanılır.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.a2-modals-01
+  target_content_id: grammar.a2.modal-verbs-necessity
+  cefr_level: A2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the modal that indicates the action is optional and not forbidden:'
+  prompt_tr_hint: Eylemin yasak değil, isteğe bağlı (zorunlu olmadığını) belirten doğru kalıbı seçiniz.
+  stem: Tomorrow is a company holiday, so you ___ check your emails.
+  options:
+  - mustn't
+  - should
+  - have to
+  - don't have to
+  correct_answer: don't have to
+  explanation_en: '''Don''t have to'' signifies that an action is not necessary (optional). ''Mustn''t'' means strictly forbidden.'
+  explanation_tr: '''Don''t have to'', zorunluluk olmadığını (isteğe bağlı olduğunu) belirtir. ''Mustn''t'' ise kesin bir
+    yasak bildirir.'
+  distractor_explanations:
+    mustn't: '''Mustn''t'' e-postaları kontrol etmenin yasak olduğunu belirtir; oysa burada sadece bir zorunluluk bulunmamaktadır.'
+    should: '''Should'' tavsiye bildirir ve cümlenin tatil bağlamındaki ''zorunlu değilsin'' anlamını karşılamaz.'
+    have to: '''Have to'' zorunluluk bildirir ve cümlenin anlamıyla çelişir.'
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.a2-prepositions-01
+  target_content_id: grammar.a2.prepositions-time-place
+  cefr_level: A2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the correct prepositions of time and day:'
+  prompt_tr_hint: Belirli gün ve tam saat bildiren edatları sırasıyla seçiniz.
+  stem: The client demo is scheduled ___ 3:00 PM ___ Thursday.
+  options:
+  - at / on
+  - in / at
+  - on / in
+  - at / in
+  correct_answer: at / on
+  explanation_en: Exact clock hours require 'at' (at 3:00 PM), while days of the week require 'on' (on Thursday).
+  explanation_tr: Kesin saatler 'at' edatı alır (at 3:00 PM); haftanın günleri ise 'on' edatı alır (on Thursday).
+  distractor_explanations:
+    in / at: Aylar veya yıllar için 'in' kullanılır; saatler için 'in' kullanılamaz.
+    on / in: Günler 'on' alır fakat saatler asla 'on' almaz.
+    at / in: Saat için 'at' doğrudur ancak haftanın günleri için 'in' kullanılamaz.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.b1-used-to-01
+  target_content_id: grammar.b1.used-to-vs-be-used-to
+  cefr_level: B1
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the verb form that expresses familiarity and established habit:'
+  prompt_tr_hint: Bir duruma alışkın olma ('be used to') yapısından sonra fiilin hangi formda geldiğine dikkat ediniz.
+  stem: As a product manager, I am used to ___ with engineering, sales, and design teams simultaneously.
+  options:
+  - collaborate
+  - collaborated
+  - collaborating
+  - have collaborated
+  correct_answer: collaborating
+  explanation_en: In 'be used to doing', 'to' functions as a preposition, requiring the gerund form of the verb ('collaborating').
+  explanation_tr: '''Be used to'' (alışkın olmak) kalıbındaki ''to'' bir edattır; ardından gelen fiil mutlaka -ing (gerund)
+    takısı almalıdır (''collaborating'').'
+  distractor_explanations:
+    collaborate: '''Used to + yalın fiil'' geçmişte bırakılmış alışkanlıklar içindir; ''be used to'' kalıbında fiil yalın
+      kalamaz.'
+    collaborated: Edattan sonra geçmiş zaman kipi gelmez.
+    have collaborated: Bu bağlamda 'to have collaborated' gereksiz ve dilbilgisel olarak hatalıdır.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.b1-conditional-01
+  target_content_id: grammar.b1.first-second-conditional
+  cefr_level: B1
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the correct verb form for the realistic condition clause:'
+  prompt_tr_hint: Koşul cümleciğinde ('if' tarafında) gelecek zaman için hangi kipin kullanıldığını hatırlayınız.
+  stem: If the vendor ___ the new contract by Friday, we will launch the pilot project next week.
+  options:
+  - will sign
+  - signs
+  - signed
+  - would sign
+  correct_answer: signs
+  explanation_en: In First Conditional sentences, the condition clause (if-clause) strictly uses the Present Simple ('signs'),
+    never 'will sign'.
+  explanation_tr: 'Tip 1 (First Conditional) yapısında ''if'' cümlesi içinde ''will'' kullanılmaz; geniş zaman (Present Simple:
+    ''signs'') kullanılır.'
+  distractor_explanations:
+    will sign: Türk öğrenicilerin en sık yaptığı aktarım hatası 'if' içine 'will' koymaktır. İngilizce sözdiziminde bu yanlıştır.
+    signed: '''Signed'' geçmiş zaman olup gerçekçi bir gelecek eylemini değil Tip 2 varsayımını ifade eder.'
+    would sign: Şart cümleciğinde 'would' kullanılmaz.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.b2-third-cond-01
+  target_content_id: grammar.b2.third-mixed-conditionals
+  cefr_level: B2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Complete the incident retrospective counterfactual sentence:'
+  prompt_tr_hint: Geçmişteki gerçekleşmemiş bir koşul için doğru Past Perfect yapısını seçiniz.
+  stem: If the DevOps team ___ the staging environment yesterday, they would have caught the regression before release.
+  options:
+  - would have tested
+  - tested
+  - have tested
+  - had tested
+  correct_answer: had tested
+  explanation_en: In Third Conditional sentences, the unfulfilled past condition takes 'had + Past Participle' ('had tested').
+  explanation_tr: Geçmişte gerçekleşmemiş bir durumu inceleyen Tip 3 şart cümlesinde 'if' kısmı 'had + V3' (Past Perfect)
+    alır.
+  distractor_explanations:
+    would have tested: '''Would have'' ana cümlede yer alır; ''if'' cümlesinin içine yerleştirilemez.'
+    tested: '''Tested'' (Past Simple) geçmişte olmuş tekil olayı anlatır; geçmişteki varsayımı kurmak için ''had tested''
+      gerekir.'
+    have tested: Present Perfect 'yesterday' ile veya Tip 3 şart yapısıyla kullanılamaz.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.b2-passive-01
+  target_content_id: grammar.b2.passive-voice-formal
+  cefr_level: B2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the correct causative form for external delegated services:'
+  prompt_tr_hint: Bir işi dışarıya yaptırma ('have something done') yapısında fiilin aldığı hali seçiniz.
+  stem: Our bank will have the core payment gateway ___ by an accredited cybersecurity firm next month.
+  options:
+  - audited
+  - audit
+  - auditing
+  - to audit
+  correct_answer: audited
+  explanation_en: The causative structure 'have + something + Past Participle' requires 'audited'.
+  explanation_tr: 'İşi üçüncü bir tarafa delege etme kalıbı olan ''have + nesne + V3'' yapısında fiil daima 3. halinde (past
+    participle: ''audited'') olmalıdır.'
+  distractor_explanations:
+    audit: Nesneden sonra yalın fiil kullanmak Türk öğrenicilerin en yaygın ettirgenlik hatasıdır.
+    auditing: Burada devam eden süreç sıfatı değil, tamamlanan eylem sıfatı (V3) gereklidir.
+    to audit: '''Have something'' yapısından sonra mastar (''to audit'') gelmez.'
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.c1-inversion-01
+  target_content_id: grammar.c1.inversion-negative-adverbials
+  cefr_level: C1
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the inverted word order that creates correct rhetorical emphasis:'
+  prompt_tr_hint: Olumsuz zarfla başlayan devrik cümlede yardımcı fiilin özneden önce geldiği seçeneği bulunuz.
+  stem: Under no circumstances ___ customer data be transferred to unsecured endpoints.
+  options:
+  - customer data should
+  - should
+  - we should
+  - must customer data to
+  correct_answer: should
+  explanation_en: 'Following the initial negative adverbial ''Under no circumstances'', question word order is mandatory:
+    modal auxiliary (''should'') + subject (''customer data'') + verb (''be'').'
+  explanation_tr: '''Under no circumstances'' gibi olumsuz bir zarf başa geldiğinde devrik yapı zorunludur: yardımcı fiil
+    (''should'') + özne (''customer data'') + fiil (''be'').'
+  distractor_explanations:
+    customer data should: Düz sözdizimi olumsuz zarftan sonra kullanılamaz; devrik yapılmalıdır.
+    we should: Cümlenin devamındaki 'be transferred' edilgen yapısıyla uyumsuzdur ve devriklik sağlanmamıştır.
+    must customer data to: Modal fiilden sonra 'to' kullanılmaz.
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.c1-participle-01
+  target_content_id: grammar.c1.participle-clauses
+  cefr_level: C1
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the participle clause that logically aligns with the sentence subject:'
+  prompt_tr_hint: Cümlenin öznesi olan 'the architecture team' ile eylemi yapanın aynı kişi/ekip olduğu doğru ortacı seçiniz.
+  stem: ___ the security audit, the architecture team immediately initiated the remediation process.
+  options:
+  - Completed
+  - To complete
+  - Being completed
+  - Having completed
+  correct_answer: Having completed
+  explanation_en: '''Having completed'' (Perfect Participle) correctly expresses that the architecture team finished the audit
+    before initiating remediation.'
+  explanation_tr: '''Having completed'' (Perfect Participle), mimari ekibin incelemeyi tamamladıktan sonra iyileştirme sürecine
+    geçtiğini doğru mantıksal özneyle ifade eder.'
+  distractor_explanations:
+    Completed: '''Completed'' edilgen bir anlam verir; mimari ekip tamamlanan değil tamamlayandır.'
+    To complete: '''To complete'' amaç bildirir (tamamlamak için), eylemin geçmişte bittiğini göstermez.'
+    Being completed: '''Being completed'' şu anda edilgen olarak tamamlanmakta olan süreci ifade eder.'
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.c2-cleft-01
+  target_content_id: grammar.c2.cleft-sentences-emphasis
+  cefr_level: C2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the pronoun that correctly initiates the pseudo-cleft focus clause:'
+  prompt_tr_hint: Vurgulanan unsuru öne çıkaran wh-cleft yapısının başlangıç zamirini seçiniz.
+  stem: ___ surprised the board of directors was not the revenue decline, but the velocity of competitor adoption.
+  options:
+  - Which
+  - That
+  - What
+  - It
+  correct_answer: What
+  explanation_en: Wh-cleft sentences use 'What' as a fused relative pronoun meaning 'the thing which / that which' to frame
+    the focus clause.
+  explanation_tr: Wh-cleft yapılarında 'yönetim kurulunu şaşırtan şey' anlamını veren birleşik ilgi zamiri 'What' kullanılır.
+  distractor_explanations:
+    Which: '''Which'' bir soru zamiri veya önceki ismi niteleyen ilgi zamiridir; cleft cümlesi başlatamaz.'
+    That: '''That'' bu konumda eksik özneyle cleft başlatamaz.'
+    It: '''It'' kullanılsaydı cümle ''It was the velocity that surprised...'' şeklinde it-cleft olmalıydı.'
+  difficulty: standard
+  status: APPROVED
+  version: 1
+- id: exercise.c2-subjunctive-01
+  target_content_id: grammar.c2.subjunctive-and-formal-modals
+  cefr_level: C2
+  skill_domain: grammar
+  exercise_type: multiple_choice
+  prompt_en: 'Choose the uninflected subjunctive verb form for the formal governance mandate:'
+  prompt_tr_hint: Resmi 'recommend that' yapısından sonra üçüncü tekil şahısta fiilin yalın (subjunctive) halini seçiniz.
+  stem: The governance committee recommended that the interim CFO ___ all financial contracts prior to execution.
+  options:
+  - review
+  - reviews
+  - reviewed
+  - will review
+  correct_answer: review
+  explanation_en: Verbs of recommendation and demand (recommend, insist, require) take the mandative subjunctive bare infinitive
+    ('review'), without '-s' or modal.
+  explanation_tr: '''Recommend that'' gibi resmi talep ve öneri yapılarında mandative subjunctive kuralı gereğince 3. tekil
+    şahıs takısı (-s) kullanılmaz; fiil yalın kalır (''review'').'
+  distractor_explanations:
+    reviews: Üçüncü tekil şahıs için '-s' takısı eklemek Türk öğrenicilerin en yaygın yanılgısıdır; mandative subjunctive
+      kuralına aykırıdır.
+    reviewed: Geçmiş zaman kipi subjunctive cümleciklerinde kullanılmaz.
+    will review: Mandative subjunctive 'that' cümleciği içinde 'will' kullanılmaz.
+  difficulty: standard
+  status: APPROVED
+  version: 1

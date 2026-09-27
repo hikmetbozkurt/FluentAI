@@ -1,0 +1,782 @@
+- id: vocab.deadline
+  headword: deadline
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈded.laɪn/
+  audio_ref: null
+  definition_en: A specific date or time by which a project, deliverable, or task must be completed.
+  meaning_tr: son teslim tarihi, termin, nihai süre
+  collocations:
+    - text: meet a deadline
+      tr: teslim tarihine yetişmek
+    - text: miss a deadline
+      tr: teslim tarihini kaçırmak
+    - text: tight deadline
+      tr: sıkışık son teslim tarihi
+  examples:
+    - en: We worked late into the evening to ensure we could meet the project deadline.
+      tr: Projenin son teslim tarihine yetişebilmek için akşam geç saatlere kadar çalıştık.
+      context: Project Delivery
+    - en: The client agreed to extend the deadline by two weeks to accommodate new requirements.
+      tr: Müşteri, yeni gereksinimleri karşılamak amacıyla teslim tarihini iki hafta uzatmayı kabul etti.
+      context: Client Management
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "deadline'a yetişmek" ifadesi için bazen yanlışlıkla "catch the deadline" denir.
+        İngilizcede profesyonel doğru fiil "meet the deadline"dir. Tarihi kaçırmak ise "lose the deadline" değil
+        "miss the deadline" şeklindedir.
+      incorrect_example: We must catch the project deadline.
+      correct_example: We must meet the project deadline.
+  register: business
+  topic_tags:
+    - workplace
+    - time-management
+    - planning
+  related_ids:
+    - vocab.schedule
+    - vocab.priority
+  status: APPROVED
+  version: 1
+
+- id: vocab.allocate
+  headword: allocate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈæl.ə.keɪt/
+  audio_ref: null
+  definition_en: To officially designate or set apart resources, budget, or time for a specific purpose.
+  meaning_tr: tahsis etmek, kaynak ayırmak, bölüştürmek
+  collocations:
+    - text: allocate budget
+      tr: bütçe tahsis etmek
+    - text: allocate resources
+      tr: kaynakları paylaştırmak
+  examples:
+    - en: The executive committee allocated additional budget for cloud security improvements.
+      tr: İcra komitesi, bulut güvenliği iyileştirmeleri için ek bütçe tahsis etti.
+      context: Budget Planning
+    - en: Project managers must allocate sufficient time for regression testing before production release.
+      tr: Proje yöneticileri, canlıya geçiş öncesinde regresyon testleri için yeterli zaman ayırmalıdır.
+      context: Release Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir şeyi bir amaca tahsis ederken "allocate X to/for Y" kalıbı kullanılır.
+      incorrect_example: We allocated budget with marketing.
+      correct_example: We allocated budget for marketing.
+  register: business
+  topic_tags:
+    - budget
+    - management
+  related_ids:
+    - vocab.delegate
+    - vocab.priority
+  status: APPROVED
+  version: 1
+
+- id: vocab.brief
+  headword: brief
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /briːf/
+  audio_ref: null
+  definition_en: To give someone detailed instructions, information, or context about a task or situation.
+  meaning_tr: kısa ve öz bilgi vermek, bilgilendirmek; kısa, öz
+  collocations:
+    - text: brief the team
+      tr: ekibi bilgilendirmek
+    - text: brief summary
+      tr: kısa özet
+  examples:
+    - en: The project manager will brief the engineers on the new client requirements this afternoon.
+      tr: Proje yöneticisi bu öğleden sonra yeni müşteri gereksinimleri hakkında mühendisleri bilgilendirecek.
+      context: Sprint Kickoff
+    - en: Please provide a brief update on the payment gateway integration.
+      tr: Lütfen ödeme geçidi entegrasyonu hakkında kısa bir bilgilendirme yapınız.
+      context: Status Check
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Birini bir konuda bilgilendirirken "brief someone on something" yapısı kullanılır.
+      incorrect_example: She briefed the team about the project.
+      correct_example: She briefed the team on the project.
+  register: business
+  topic_tags:
+    - communication
+    - meetings
+  related_ids:
+    - vocab.update
+    - vocab.feedback
+  status: APPROVED
+  version: 1
+
+- id: vocab.collaborate
+  headword: collaborate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /kəˈlæb.ə.reɪt/
+  audio_ref: null
+  definition_en: To work jointly with others or another department to create or produce something.
+  meaning_tr: iş birliği yapmak, birlikte çalışmak
+  collocations:
+    - text: collaborate closely
+      tr: yakın iş birliği içinde çalışmak
+    - text: collaborate with a team
+      tr: bir ekiple iş birliği yapmak
+  examples:
+    - en: Our mobile developers collaborate closely with backend engineers to define API contracts.
+      tr: Mobil geliştiricilerimiz, API sözleşmelerini belirlemek için arka uç mühendisleriyle yakın iş birliği içinde çalışır.
+      context: Software Development
+    - en: The marketing and sales teams collaborated on the quarterly product launch campaign.
+      tr: Pazarlama ve satış ekipleri, üç aylık ürün lansman kampanyasında iş birliği yaptı.
+      context: Cross-Departmental Work
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Kişiler/ekiplerle iş birliği için "collaborate with", bir proje üzerinde çalışmak için "collaborate on"
+        kalıbı kullanılır.
+      incorrect_example: We collaborated for the new design.
+      correct_example: We collaborated on the new design.
+  register: general
+  topic_tags:
+    - teamwork
+    - workplace
+  related_ids:
+    - vocab.colleague
+    - vocab.delegate
+  status: APPROVED
+  version: 1
+
+- id: vocab.complain
+  headword: complain
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /kəmˈpleɪn/
+  audio_ref: null
+  definition_en: To express dissatisfaction, annoyance, or unhappiness about something.
+  meaning_tr: şikayet etmek, yakınmak
+  collocations:
+    - text: complain about service
+      tr: hizmetten şikayet etmek
+    - text: customer complaint
+      tr: müşteri şikayeti
+  examples:
+    - en: Several enterprise users complained about performance degradation during peak hours.
+      tr: Birçok kurumsal kullanıcı, yoğun saatlerde yaşanan performans düşüşünden şikayet etti.
+      context: Incident Postmortem
+    - en: If you notice discrepancies in the invoice, complain to the billing department immediately.
+      tr: Faturada tutarsızlıklar fark ederseniz derhal faturalandırma departmanına şikayette bulunun.
+      context: Customer Service
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Complain" fiildir ("they complain"). İsim hali ise sonuna "t" eklenerek oluşturulur:
+        "complaint" ("they submitted a complaint"). Türk öğreniciler genellikle isim yerine fiil formunu kullanır.
+      incorrect_example: We received ten complains today.
+      correct_example: We received ten complaints today.
+  register: general
+  topic_tags:
+    - client
+    - service
+  related_ids:
+    - vocab.resolve
+    - vocab.feedback
+  status: APPROVED
+  version: 1
+
+- id: vocab.delegate
+  headword: delegate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈdel.ɪ.ɡeɪt/
+  audio_ref: null
+  definition_en: To entrust a task, responsibility, or authority to another person, typically a subordinate.
+  meaning_tr: yetki devretmek, görevlendirmek; delege
+  collocations:
+    - text: delegate tasks
+      tr: görevleri paylaştırmak/devretmek
+    - text: delegate authority
+      tr: yetki devretmek
+  examples:
+    - en: An effective engineering manager knows how to delegate routine operational tasks to team leads.
+      tr: Etkili bir mühendislik yöneticisi, rutin operasyonel görevleri ekip liderlerine nasıl devredeceğini bilir.
+      context: Leadership Skills
+    - en: Delegating responsibilities empowers junior developers to grow and take ownership.
+      tr: Sorumlulukları devretmek, genç geliştiricilerin yetkinleşmesini ve sahiplik üstlenmesini sağlar.
+      context: Team Development
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir görevi başkasına devrederken "delegate tasks to someone" kalıbı kullanılır.
+      incorrect_example: You should delegate work for your team.
+      correct_example: You should delegate work to your team.
+  register: business
+  topic_tags:
+    - leadership
+    - management
+  related_ids:
+    - vocab.manage
+    - vocab.allocate
+  status: APPROVED
+  version: 1
+
+- id: vocab.deliverable
+  headword: deliverable
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /dɪˈlɪv.ər.ə.bəl/
+  audio_ref: null
+  definition_en: A tangible or intangible good or service produced as a result of a project that is intended to be delivered to a client.
+  meaning_tr: teslim edilecek ürün/çıktı, teslimat kalemi
+  collocations:
+    - text: key deliverable
+      tr: kilit teslimat çıktısı
+    - text: project deliverable
+      tr: proje teslimatı
+  examples:
+    - en: The primary deliverable for this sprint is the redesigned checkout screen.
+      tr: Bu sprintin birincil teslimat çıktısı, yeniden tasarlanan ödeme ekranıdır.
+      context: Agile Sprint
+    - en: The consultancy submitted all contract deliverables on schedule.
+      tr: Danışmanlık firması sözleşmedeki tüm teslimat kalemlerini takvime uygun sundu.
+      context: Vendor Delivery
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        "Deliverable" sonundaki "-able" ekine rağmen iş dünyasında yaygın bir isim (noun) olarak
+        "teslim edilecek somut çıktı" anlamında kullanılır. Çoğulu "deliverables" şeklindedir.
+      incorrect_example: The delivered things are ready.
+      correct_example: The project deliverables are ready.
+  register: business
+  topic_tags:
+    - project
+    - agile
+  related_ids:
+    - vocab.deadline
+    - vocab.milestone
+  status: APPROVED
+  version: 1
+
+- id: vocab.efficient
+  headword: efficient
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ɪˈfɪʃ.ənt/
+  audio_ref: null
+  definition_en: Achieving maximum productivity with minimum wasted effort or expense.
+  meaning_tr: verimli, tasarruflu, randımanlı
+  collocations:
+    - text: efficient workflow
+      tr: verimli iş akışı
+    - text: cost efficient
+      tr: maliyet açısından verimli
+  examples:
+    - en: Refactoring the database query made the backend services significantly more efficient.
+      tr: Veritabanı sorgusunu yeniden düzenlemek, arka uç servislerini belirgin biçimde daha verimli kıldı.
+      context: Performance Optimization
+    - en: We need an efficient communication process to manage distributed remote teams.
+      tr: Dağıtık uzaktan ekipleri yönetmek için verimli bir iletişim sürecine ihtiyacımız var.
+      context: Remote Operations
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Efficient" ile "Effective" Türkçeye sıklıkla "etkili/verimli" olarak karışık çevrilir.
+        "Efficient", kaynakları ve zamanı israf etmeden iş yapmak (verimlilik);
+        "Effective" ise istenen sonuca veya amaca ulaşmaktır (etkililik).
+      incorrect_example: The vaccine is very efficient against the virus.
+      correct_example: The vaccine is very effective against the virus.
+  register: general
+  topic_tags:
+    - productivity
+    - performance
+  related_ids:
+    - vocab.optimize
+    - vocab.streamline
+  status: APPROVED
+  version: 1
+
+- id: vocab.estimate
+  headword: estimate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈes.tɪ.meɪt/
+  audio_ref: null
+  definition_en: To roughly calculate or judge the value, number, quantity, or time of something.
+  meaning_tr: tahmin etmek, kestirmek; tahmin, kestirim
+  collocations:
+    - text: estimate cost
+      tr: maliyet tahmini yapmak
+    - text: rough estimate
+      tr: kaba tahmin
+  examples:
+    - en: The tech lead estimated that migration to Android 15 will take approximately three weeks.
+      tr: Teknik lider, Android 15'e geçişin yaklaşık üç hafta süreceğini tahmin etti.
+      context: Technical Planning
+    - en: Can you provide a rough estimate of the infrastructure cost for the next fiscal year?
+      tr: Gelecek mali yıl için altyapı maliyetine dair kaba bir tahmin sunabilir misiniz?
+      context: Financial Forecasting
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Estimate" veriye veya tecrübeye dayalı hesaplı tahmindir. "Guess" ise dayanağı olmayan tahmindir.
+        İş dünyasında proje süresi tahmin edilirken "guess" değil daima "estimate" kullanılır.
+      incorrect_example: What is your guess for this user story?
+      correct_example: What is your estimate for this user story?
+  register: general
+  topic_tags:
+    - planning
+    - agile
+  related_ids:
+    - vocab.allocate
+    - vocab.deadline
+  status: APPROVED
+  version: 1
+
+- id: vocab.follow-up
+  headword: follow-up
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈfɒl.əʊ.ʌp/
+  audio_ref: null
+  definition_en: A continuation, repetition, or review of an earlier action, meeting, or communication.
+  meaning_tr: takip toplantısı/eylemi, devam niteliğinde işlem
+  collocations:
+    - text: follow-up meeting
+      tr: takip toplantısı
+    - text: follow-up email
+      tr: takip/hatırlatma e-postası
+  examples:
+    - en: I will send a follow-up email summarizing our agreed action items after this call.
+      tr: Bu görüşmeden sonra kararlaştırdığımız eylem maddelerini özetleyen bir takip e-postası göndereceğim.
+      context: Meeting Follow-up
+    - en: We scheduled a follow-up discussion for next Friday to review the prototype feedback.
+      tr: Prototip geri bildirimlerini incelemek üzere önümüzdeki Cuma günü için bir takip görüşmesi planladık.
+      context: Product Design
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        İsim veya sıfat olarak kullanıldığında tireli yazılır ("a follow-up meeting").
+        Fiil olarak kullanıldığında tiresiz yazılır ("I will follow up with you tomorrow").
+      incorrect_example: I will follow-up with the customer.
+      correct_example: I will follow up with the customer.
+  register: business
+  topic_tags:
+    - communication
+    - meetings
+  related_ids:
+    - vocab.brief
+    - vocab.confirm
+  status: APPROVED
+  version: 1
+
+- id: vocab.implement
+  headword: implement
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈɪm.plɪ.ment/
+  audio_ref: null
+  definition_en: To put a plan, decision, policy, or software feature into practical effect.
+  meaning_tr: uygulamaya koymak, hayata geçirmek, yazılımda kodlamak
+  collocations:
+    - text: implement a strategy
+      tr: stratejiyi hayata geçirmek
+    - text: implement a feature
+      tr: bir özelliği kodlamak/uygulamak
+  examples:
+    - en: The mobile team implemented biometric authentication using the Android BiometricPrompt API.
+      tr: Mobil ekip, Android BiometricPrompt API'sini kullanarak biyometrik kimlik doğrulamayı hayata geçirdi.
+      context: Feature Implementation
+    - en: Management decided to implement a hybrid remote-work policy starting in October.
+      tr: Yönetim, Ekim ayından itibaren hibrit bir uzaktan çalışma politikası uygulamaya karar verdi.
+      context: HR Policy
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türk öğreniciler planları hayata geçirmek için genellikle "apply" veya "make" kullanır.
+        Yazılımda kodlama ve kurumsal politikaları yürürlüğe koyma bağlamında "implement" standart ve doğru fiildir.
+      incorrect_example: We applied the new login logic in the app.
+      correct_example: We implemented the new login logic in the app.
+  register: business
+  topic_tags:
+    - tech
+    - strategy
+  related_ids:
+    - vocab.optimize
+    - vocab.deliverable
+  status: APPROVED
+  version: 1
+
+- id: vocab.initiative
+  headword: initiative
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪˈnɪʃ.ə.tɪv/
+  audio_ref: null
+  definition_en: An act or strategy intended to resolve a problem or improve a situation; the power or opportunity to act before others do.
+  meaning_tr: girişim, inisiyatif, yeni adım
+  collocations:
+    - text: take the initiative
+      tr: inisiyatif almak
+    - text: strategic initiative
+      tr: stratejik girişim
+  examples:
+    - en: Senior engineers are expected to take the initiative when identifying architectural debt.
+      tr: Kıdemli mühendislerin, mimari teknik borcu tespit ederken inisiyatif almaları beklenir.
+      context: Engineering Culture
+    - en: The company launched a new green energy initiative to reduce cloud datacenter emissions.
+      tr: Şirket, bulut veri merkezi emisyonlarını azaltmak için yeni bir yeşil enerji girişimi başlattı.
+      context: Corporate Social Responsibility
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "inisiyatif kullanmak" veya "inisiyatif almak" denir. İngilizcede sabit kalıp
+        "take the initiative"dir. "Use initiative" daha nadirdir ve "make initiative" hatalıdır.
+      incorrect_example: You should make initiative in difficult situations.
+      correct_example: You should take the initiative in difficult situations.
+  register: business
+  topic_tags:
+    - leadership
+    - corporate
+  related_ids:
+    - vocab.delegate
+    - vocab.objective
+  status: APPROVED
+  version: 1
+
+- id: vocab.milestone
+  headword: milestone
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈmaɪl.stəʊn/
+  audio_ref: null
+  definition_en: A significant stage or event in the development or progression of a project or career.
+  meaning_tr: kilometre taşı, dönüm noktası, kritik aşama
+  collocations:
+    - text: reach a milestone
+      tr: kilometre taşına ulaşmak
+    - text: major milestone
+      tr: büyük dönüm noktası
+  examples:
+    - en: Reaching one hundred thousand daily active users is a major milestone for our product team.
+      tr: Günlük yüz bin aktif kullanıcıya ulaşmak, ürün ekibimiz için büyük bir kilometre taşıdır.
+      context: Product Milestones
+    - en: We passed the second development milestone on schedule and under budget.
+      tr: İkinci geliştirme kilometre taşını takvime uygun ve bütçenin altında tamamladık.
+      context: Project Governance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Kilometre taşına ulaşmak için "reach a milestone" veya "achieve a milestone" kullanılır.
+      incorrect_example: We arrived to a milestone.
+      correct_example: We reached a milestone.
+  register: business
+  topic_tags:
+    - project
+    - roadmap
+  related_ids:
+    - vocab.deliverable
+    - vocab.deadline
+  status: APPROVED
+  version: 1
+
+- id: vocab.negotiate
+  headword: negotiate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /nəˈɡəʊ.ʃi.eɪt/
+  audio_ref: null
+  definition_en: To discuss something formally with others in order to reach an agreement.
+  meaning_tr: müzakere etmek, pazarlık yapmak, uzlaşma aramak
+  collocations:
+    - text: negotiate a contract
+      tr: sözleşme müzakeresi yapmak
+    - text: negotiate terms
+      tr: şartları müzakere etmek
+  examples:
+    - en: The procurement director successfully negotiated a fifteen percent discount on the cloud contract.
+      tr: Satın alma direktörü, bulut sözleşmesinde yüzde on beşlik bir indirimi başarıyla müzakere etti.
+      context: Vendor Negotiations
+    - en: Both parties are willing to negotiate flexible delivery dates for the remaining modules.
+      tr: Her iki taraf da kalan modüller için esnek teslimat tarihlerini müzakere etmeye isteklidir.
+      context: Contract Terms
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir şeyi müzakere etmek doğrudan nesne alır ("negotiate a deal"). Biriyle müzakere etmek
+        için "negotiate with someone" kalıbı kullanılır.
+      incorrect_example: We negotiated on the contract with the supplier.
+      correct_example: We negotiated the contract with the supplier.
+  register: business
+  topic_tags:
+    - business
+    - meetings
+  related_ids:
+    - vocab.deliberation
+    - vocab.consensus
+  status: APPROVED
+  version: 1
+
+- id: vocab.objective
+  headword: objective
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /əbˈdʒek.tɪv/
+  audio_ref: null
+  definition_en: A specific result that a person or organization aims to achieve within a timeframe.
+  meaning_tr: hedef, amaç; nesnel, tarafsız
+  collocations:
+    - text: key objective
+      tr: kilit hedef
+    - text: achieve an objective
+      tr: hedefe ulaşmak
+  examples:
+    - en: Our primary business objective this quarter is improving user retention by ten percent.
+      tr: Bu çeyrekteki birincil iş hedefimiz, kullanıcı bağlılığını yüzde on oranında artırmaktır.
+      context: OKR Setting
+    - en: The code review process must remain objective and focused on code quality rather than personal style.
+      tr: Kod inceleme süreci kişisel üsluptan ziyade kod kalitesine odaklanmalı ve nesnel kalmalıdır.
+      context: Engineering Culture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Objective" hem isim olarak "hedef/amaç", hem de sıfat olarak "tarafsız/nesnel" demektir.
+        Öznel demek için "subjective" kullanılır.
+      incorrect_example: We reached our object.
+      correct_example: We achieved our objective.
+  register: business
+  topic_tags:
+    - strategy
+    - management
+  related_ids:
+    - vocab.initiative
+    - vocab.milestone
+  status: APPROVED
+  version: 1
+
+- id: vocab.priority
+  headword: priority
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /praɪˈɒr.ə.ti/
+  audio_ref: null
+  definition_en: Something that is regarded as more important than other things and dealt with first.
+  meaning_tr: öncelik, öncelikli konu
+  collocations:
+    - text: top priority
+      tr: en yüksek öncelik
+    - text: set priorities
+      tr: öncelikleri belirlemek
+  examples:
+    - en: Customer data privacy and regulatory compliance are top priorities for our platform.
+      tr: Müşteri veri gizliliği ve mevzuata uyum, platformumuz için en yüksek önceliklerdir.
+      context: Corporate Strategy
+    - en: Product management reprioritized the backlog to address high-severity bugs first.
+      tr: Ürün yönetimi, öncelikle yüksek önem dereceli hataları ele almak için iş listesini yeniden önceliklendirdi.
+      context: Backlog Refinement
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Öncelik vermek" kalıbı İngilizcede "give priority to" veya fiil olarak "prioritize" şeklindedir.
+      incorrect_example: We should make priority to stability.
+      correct_example: We should give priority to stability.
+  register: general
+  topic_tags:
+    - planning
+    - time-management
+  related_ids:
+    - vocab.urgent
+    - vocab.deadline
+  status: APPROVED
+  version: 1
+
+- id: vocab.propose
+  headword: propose
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /prəˈpəʊz/
+  audio_ref: null
+  definition_en: To put forward an idea, plan, or suggestion for consideration and discussion by others.
+  meaning_tr: önermek, teklif etmek
+  collocations:
+    - text: propose a solution
+      tr: bir çözüm önermek
+    - text: propose changes
+      tr: değişiklikler teklif etmek
+  examples:
+    - en: The security architect proposed switching to token-based authentication with rotating keys.
+      tr: Güvenlik mimarı, dönen anahtarlarla belirteç tabanlı kimlik doğrulamaya geçilmesini önerdi.
+      context: Security Design
+    - en: We propose scheduling a brief sync meeting to resolve the blocking dependency.
+      tr: Engelleyici bağımlılığı çözmek için kısa bir eşzamanlama toplantısı planlamayı öneriyoruz.
+      context: Project Coordination
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Propose" sonrasında doğrudan bir fiil geldiğinde fiil "-ing" alır ("propose doing something").
+        Birine teklif götürürken "propose to someone" değil, nesne önce gelir: "propose a plan to the board".
+      incorrect_example: I propose to delay the launch.
+      correct_example: I propose delaying the launch.
+  register: business
+  topic_tags:
+    - meetings
+    - business
+  related_ids:
+    - vocab.brief
+    - vocab.resolve
+  status: APPROVED
+  version: 1
+
+- id: vocab.resolve
+  headword: resolve
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /rɪˈzɒlv/
+  audio_ref: null
+  definition_en: To settle or find a satisfactory solution to a problem, dispute, or conflict.
+  meaning_tr: çözüme kavuşturmak, gidermek, halletmek
+  collocations:
+    - text: resolve an issue
+      tr: bir sorunu çözmek
+    - text: resolve a conflict
+      tr: bir anlaşmazlığı gidermek
+  examples:
+    - en: The DevOps squad resolved the networking latency issue within twenty minutes.
+      tr: DevOps ekibi ağ gecikmesi sorununu yirmi dakika içinde çözüme kavuşturdu.
+      context: Incident Management
+    - en: Both founders held a private discussion to resolve their differing views on monetization.
+      tr: Her iki kurucu da gelir modeli hakkındaki farklı görüşlerini çözüme kavuşturmak için özel bir görüşme yaptı.
+      context: Leadership Dispute
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Resolve" ile "solve" benzerdir; ancak "solve" daha çok matematiksel veya teknik bir problemi
+        çözmektir ("solve a math problem"), "resolve" ise karmaşık bir durumu, uyuşmazlığı veya sistemik bir
+        sorunu uzlaştırarak ortadan kaldırmaktır ("resolve a conflict/issue").
+      incorrect_example: We dissolved the bug in the software.
+      correct_example: We resolved the bug in the software.
+  register: general
+  topic_tags:
+    - problem-solving
+    - operations
+  related_ids:
+    - vocab.complain
+    - vocab.propose
+  status: APPROVED
+  version: 1
+
+- id: vocab.stakeholder
+  headword: stakeholder
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈsteɪkˌhəʊl.dər/
+  audio_ref: null
+  definition_en: A person, group, or organization with a vested interest or concern in a company or project.
+  meaning_tr: paydaş, ilgili taraf
+  collocations:
+    - text: key stakeholder
+      tr: kilit paydaş
+    - text: stakeholder engagement
+      tr: paydaş katılımı
+  examples:
+    - en: We presented the redesigned system architecture to internal and external stakeholders.
+      tr: Yeniden tasarlanan sistem mimarisini şirket içi ve şirket dışı paydaşlara sunduk.
+      context: Architecture Review
+    - en: Clear documentation prevents misunderstandings between engineering teams and business stakeholders.
+      tr: Net dokümantasyon, mühendislik ekipleri ile iş paydaşları arasındaki yanlış anlamaları önler.
+      context: Technical Writing
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Shareholder" sadece şirketin hisse senedine sahip olan "hissedar"dır. "Stakeholder" ise projeyle veya
+        şirketle ilgisi olan çalışan, müşteri, yönetici gibi tüm "paydaş"ları kapsar.
+      incorrect_example: The developers are project shareholders.
+      correct_example: The developers are project stakeholders.
+  register: business
+  topic_tags:
+    - governance
+    - management
+  related_ids:
+    - vocab.colleague
+    - vocab.objective
+  status: APPROVED
+  version: 1
+
+- id: vocab.update
+  headword: update
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ʌpˈdeɪt/
+  audio_ref: null
+  definition_en: To give someone the most recent information, or to make something more modern or suitable.
+  meaning_tr: güncellemek, en son durumu bildirmek; güncelleme
+  collocations:
+    - text: status update
+      tr: durum güncellemesi
+    - text: keep someone updated
+      tr: birini sürekli bilgilendirmek
+  examples:
+    - en: Please keep me updated on the progress of the payment migration.
+      tr: Lütfen ödeme geçişinin ilerleyişi hakkında beni sürekli bilgilendirin.
+      context: Daily Collaboration
+    - en: The security team updated the SSL certificates across all production endpoints.
+      tr: Güvenlik ekibi, tüm canlı uç noktalardaki SSL sertifikalarını güncelledi.
+      context: Infrastructure Maintenance
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Beni gelişmelerden haberdar et" demek için İngilizcede yaygın kalıp "keep me updated"
+        veya "keep me posted"dır.
+      incorrect_example: Make me updated about the progress.
+      correct_example: Keep me updated on the progress.
+  register: general
+  topic_tags:
+    - communication
+    - status
+  related_ids:
+    - vocab.brief
+    - vocab.confirm
+  status: APPROVED
+  version: 1
+
+- id: vocab.deliver
+  headword: deliver
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /dɪˈlɪv.ər/
+  audio_ref: null
+  definition_en: To provide, hand over, or achieve promised results, services, or goods.
+  meaning_tr: teslim etmek, sunmak, (söz verilen sonucu) gerçekleştirmek
+  collocations:
+    - text: deliver results
+      tr: sonuç üretmek, başarı sağlamak
+    - text: deliver a presentation
+      tr: sunum yapmak
+    - text: deliver on time
+      tr: zamanında teslim etmek
+  examples:
+    - en: The development team worked overtime to deliver the critical payment feature on time.
+      tr: Geliştirme ekibi, kritik ödeme özelliğini zamanında teslim etmek için fazla mesai yaptı.
+      context: Software Delivery
+    - en: To win leadership trust, new product managers must deliver measurable results in their first quarter.
+      tr: Liderlik ekibinin güvenini kazanmak için yeni ürün yöneticileri ilk çeyreklerinde ölçülebilir sonuçlar ortaya koymalıdır.
+      context: Performance Review
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçedeki "sunum yapmak" kalıbı sıklıkla "make a presentation" şeklinde düşünülür. Profesyonel iş İngilizcesinde
+        "deliver a presentation" veya "give a presentation" çok daha yaygın ve doğaldır. Ayrıca kurumsal dilde "deliver",
+        sadece kargo teslim etmek değil, "deliver results" (sonuç üretmek) veya "deliver value" (değer sunmak) anlamında kullanılır.
+      incorrect_example: We need to make the project results to the board.
+      correct_example: We need to deliver the project results to the board.
+  register: business
+  topic_tags:
+    - workplace
+    - performance
+    - management
+  related_ids:
+    - vocab.deliverable
+    - vocab.deadline
+  status: APPROVED
+  version: 1
+

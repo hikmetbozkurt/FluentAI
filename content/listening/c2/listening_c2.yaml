@@ -1,0 +1,118 @@
+- id: listening.c2.executive-alignment
+  title: Executive Deliberation on Multi-Cloud Governance
+  cefr_level: C2
+  category: executive_briefing
+  scenario_context: A high-stakes C-level executive briefing between a Chief Technology Officer and a Chief Operating Officer
+    resolving strategic divergence between cloud vendor concentration risk and engineering delivery velocity.
+  speakers:
+  - id: yasemin
+    name: Yasemin
+    role: Chief Technology Officer
+    accent: Turkish
+  - id: alistair
+    name: Alistair
+    role: Chief Operating Officer
+    accent: British
+  audio_ref: audio/listening/c2_executive_alignment.mp3
+  duration_seconds: 59
+  transcript_items:
+  - index: 1
+    speaker_id: alistair
+    start_ms: 0
+    end_ms: 8787
+    text_en: Yasemin, the supervisory board is pressuring us to reach an executive consensus on multi-cloud redundancy to
+      satisfy impending European banking regulations.
+    text_tr: Yasemin, denetleme kurulu yaklaşan Avrupa bankacılık düzenlemelerini karşılamak adına çoklu bulut yedekliliği
+      konusunda yönetici uzlaşısına varmamız için bize baskı yapıyor.
+  - index: 2
+    speaker_id: yasemin
+    start_ms: 9187
+    end_ms: 18170
+    text_en: I appreciate the compliance mandate, Alistair, but framing this as a strict dichotomy between single-cloud lock-in
+      and active-active multi-cloud parity is flawed.
+    text_tr: Uyum zorunluluğunu anlıyorum Alistair, ancak bunu tek buluta bağımlılık ile aktif-aktif çoklu bulut eşliği arasında
+      katı bir ikilik (dichotomy) olarak çerçevelemek hatalıdır.
+  - index: 3
+    speaker_id: alistair
+    start_ms: 18570
+    end_ms: 27813
+    text_en: How so? The auditors insist that relying exclusively on one cloud hyperscaler exposes our core payment clearing
+      pipeline to catastrophic operational outages.
+    text_tr: Nasıl yani? Denetçiler yalnızca tek bir bulut devine bel bağlamanın çekirdek ödeme takas hattımızı felaket niteliğinde
+      operasyonel kesintilere açık bıraktığını savunuyor.
+  - index: 4
+    speaker_id: yasemin
+    start_ms: 28213
+    end_ms: 38760
+    text_en: Our incident postmortems substantiate that ninety-eight percent of service interruptions stem from internal configuration
+      drifts and application-layer anomalies, not cloud provider hardware collapses.
+    text_tr: Kriz sonrası incelemelerimiz, hizmet kesintilerinin yüzde doksan sekizinin bulut sağlayıcısının donanım çöküşünden
+      değil, iç yapılandırma kaymaları ve uygulama katmanı anomalilerinden kaynaklandığını somut delillerle kanıtlamaktadır.
+  - index: 5
+    speaker_id: alistair
+    start_ms: 39160
+    end_ms: 46403
+    text_en: So maintaining dual cloud infrastructure would introduce immense operational friction without proportionally
+      bolstering institutional resilience?
+    text_tr: Yani ikili bulut altyapısı sürdürmek, kurumsal dayanıklılığı orantılı şekilde artırmaksızın devasa bir operasyonel
+      sürtünme mi getirecektir?
+  - index: 6
+    speaker_id: yasemin
+    start_ms: 46803
+    end_ms: 58200
+    text_en: Precisely. True resilience lies in automated cold-standby disaster recovery protocols and cloud-agnostic containerized
+      workloads, rather than running perpetual multi-cloud active deployments.
+    text_tr: Kesinlikle. Gerçek dayanıklılık ve toparlanma gücü, sürekli çalışan aktif çoklu bulut sistemlerinde değil, otomatik
+      soğuk yedek olağanüstü durum protokollerinde ve buluttan bağımsız konteynerize edilmiş iş yüklerinde yatar.
+  key_vocabulary:
+  - word: consensus
+    vocab_id: vocab.consensus
+    context_note_tr: Yönetim ve denetleme kurulları genelinde varılması hedeflenen ortak kurumsal mutabakat.
+  - word: dichotomy
+    vocab_id: vocab.dichotomy
+    context_note_tr: İki zıt seçeneğin tek alternatifmiş gibi sunulduğu sahte ikilik.
+  - word: substantiate
+    vocab_id: vocab.substantiate
+    context_note_tr: Bir tezi veya iddiayı kriz sonrası olay kayıtları ve ampirik verilerle ispatlamak.
+  - word: resilience
+    vocab_id: vocab.resilience
+    context_note_tr: Sistemin şoklar karşısında hızla ve güvenilir şekilde toparlanabilme kapasitesi.
+  comprehension_questions:
+  - id: q_exec_01
+    question_en: According to Yasemin's data, what is the primary source of 98% of service interruptions?
+    question_tr_hint: Yasemin'in verilerine göre kesintilerin %98'inin asıl kaynağı nedir?
+    options:
+    - Cloud provider datacenter physical hardware collapses
+    - Internal configuration drifts and application-layer anomalies
+    - Intentional sabotage by competitor corporations
+    - Unpaid cloud subscription invoices
+    correct_answer: Internal configuration drifts and application-layer anomalies
+    explanation_en: Yasemin substantiates with incident postmortems that 98% of disruptions stem from internal configuration
+      drifts and application anomalies rather than cloud provider failures.
+    explanation_tr: Yasemin, kesintilerin %98'inin sağlayıcı çöküşünden değil, şirket içi yapılandırma sapmaları ve uygulama
+      anomalilerinden kaynaklandığını somut verilerle ortaya koymuştur.
+  - id: q_exec_02
+    question_en: What strategy does Yasemin advocate to achieve true institutional resilience?
+    question_tr_hint: Yasemin gerçek dayanıklılık elde etmek için hangi stratejiyi savunmaktadır?
+    options:
+    - Migrating all computing back to on-premise mainframe hardware
+    - Paying double fees to all cloud hyperscalers unconditionally
+    - Automated cold-standby disaster recovery protocols and cloud-agnostic containerized workloads
+    - Eliminating all software monitoring and alerts
+    correct_answer: Automated cold-standby disaster recovery protocols and cloud-agnostic containerized workloads
+    explanation_en: Yasemin argues that true resilience is achieved through automated cold-standby disaster recovery and containerized
+      workloads, avoiding the friction of active-active multi-cloud setups.
+    explanation_tr: Yasemin, gerçek dayanıklılığın aktif-aktif çoklu bulut yerine otomatik soğuk yedek olağanüstü durum kurtarma
+      ve buluttan bağımsız konteyner iş yükleriyle sağlanacağını savunmaktadır.
+  topic_tags:
+  - executive-leadership
+  - cloud-governance
+  - resilience
+  - c2-mastery
+  related_ids:
+  - vocab.consensus
+  - vocab.dichotomy
+  - vocab.substantiate
+  - vocab.resilience
+  status: APPROVED
+  version: 1

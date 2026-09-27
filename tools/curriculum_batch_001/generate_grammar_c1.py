@@ -1,0 +1,536 @@
+#!/usr/bin/env python3
+"""
+Grammar C1 Lessons Generator (8 new lessons, bringing C1 total to 10).
+"""
+
+C1_LESSONS = [
+    {
+        "id": "grammar.c1.limiting-inversion-only-scarcely",
+        "title": "Limiting Inversion: Only when, Scarcely... when, No sooner... than",
+        "cefr_level": "C1",
+        "category": "inversion_and_emphasis",
+        "summary_en": "Elevate formal rhetoric and dramatic pacing by fronting restrictive temporal adverbials, triggering auxiliary inversion in the main clause.",
+        "summary_tr": "Resmi ve editoryal anlatımda 'Only when', 'Scarcely... when' ve 'No sooner... than' gibi sınırlayıcı zaman zarfları başa geldiğinde ana cümlede devrik sözdizimi oluşturulur.",
+        "explanation_en": [
+            {
+                "title": "Restrictive Inversion Mechanics",
+                "content": "When a sentence opens with a restrictive temporal connector like 'Only after', 'Only when', 'Scarcely', or 'No sooner', question word order (Auxiliary + Subject + Verb) is mandatory in the main clause.",
+                "patterns": [
+                    "Scarcely + had + Subject + V3 + WHEN + Subject + Past Simple",
+                    "No sooner + had + Subject + V3 + THAN + Subject + Past Simple",
+                    "Only after + [Time/Clause] + DID / COULD + Subject + Base Verb"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Ancak kapsamlı testler yapıldıktan sonra sistem yayına alınabildi' cümlesi devrik değildir. İngilizcede 'Only after thorough testing' ifadesi başa geldiğinde devam eden ana cümle MUTLAKA devrik olmak zorundadır: '...could the system be deployed'. Düz cümle kurmak C1 seviyesinde stilistik bir yetersizlik sayılır.",
+        "rules": [
+            {
+                "name": "Correlative Restrictive Inversion",
+                "pattern": "No sooner had + Subject + V3 + than + Subject + Past Simple",
+                "use_cases": [
+                    "Describing rapid sequential incidents in executive crisis reports",
+                    "Highlighting immediate unintended consequences of technical actions"
+                ],
+                "time_markers": ["scarcely", "no sooner", "only after", "hardly"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "No sooner had we deployed the cluster update than traffic surged by four hundred percent.",
+                "structure_b": "As soon as we deployed the cluster update, traffic surged by four hundred percent.",
+                "difference_explanation_en": "Structure A uses formal inverted syntax with 'No sooner... than' for heightened rhetorical impact. Structure B is neutral narrative syntax.",
+                "difference_explanation_tr": "A cümlesi devrik yapıyla ('No sooner had we...') editoryal ve dramatik bir vurgu oluşturur. B cümlesi ise standart düz anlatımdır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "'Only after' Sonrası Düz Cümle Sözdizimi Kullanma",
+                "explanation_tr": "Türk öğreniciler 'Only after we resolved the bug, the system worked' diyerek devrik yapıyı unuturlar. Doğrusu 'Only after we resolved the bug did the system work' olmalıdır.",
+                "incorrect_example": "Only after the board approved the budget, the engineering squad began hiring.",
+                "correct_example": "Only after the board approved the budget did the engineering squad begin hiring."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Scarcely had the core database been upgraded when a catastrophic deadlock was detected across all worker nodes.",
+                "tr": "Çekirdek veritabanı yükseltilmişti ki tüm çalışan düğümlerde felaket boyutunda bir kilitlenme tespit edildi.",
+                "rule_highlight": "Scarcely had + Subject + V3 ... when",
+                "context": "Post-Mortem Analysis"
+            },
+            {
+                "en": "Only when the third-party security audit concluded did the executive committee authorize customer data federation.",
+                "tr": "Ancak üçüncü taraf güvenlik denetimi tamamlandıktan sonra yönetim komitesi müşteri verisi birleşimine izin verdi.",
+                "rule_highlight": "Only when + clause + did + Subject + Verb",
+                "context": "Enterprise Governance"
+            }
+        ],
+        "topic_tags": ["inversion", "limiting-adverbials", "advanced-rhetoric", "c1-advanced"],
+        "related_ids": ["vocab.disruption", "vocab.catalyst"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.participle-clauses-concession-cause",
+        "title": "Participle Clauses of Reason, Concession, and Condition (Having been, Given that)",
+        "cefr_level": "C1",
+        "category": "relative_and_participle_clauses",
+        "summary_en": "Condense complex analytical subordinate clauses into economical participle structures expressing causality, concession, or condition.",
+        "summary_tr": "Neden, ödün ve koşul bildiren yan cümleleri 'Having been', 'Given that' ve ortaç öbekleriyle sıkıştırarak yüksek seviyeli editoryal akıcılık sağlama.",
+        "explanation_en": [
+            {
+                "title": "Syntactic Economy and Cohesion",
+                "content": "Advanced prose avoids clumsy conjunction stacks (Because the team had been warned..., Although they were aware...). Instead, perfect participles ('Having been alerted to the risk...') and participial prepositions ('Given that...') streamline discourse.",
+                "patterns": [
+                    "Causal Perfect Passive: Having been + V3, Subject + Verb ...",
+                    "Concessive Participle: While acknowledging the trade-offs, Subject + Verb ...",
+                    "Conditional Participle: Handled with appropriate caution, the migration will succeed."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki zengin zarf-fiil yapıları (-erek/-arak, -dikten sonra, -mesine rağmen) İngilizcede en iyi participle (ortaç) cümleleriyle karşılanır. Ancak İngilizcede ortacın öznesi ile ana cümlenin öznesi MUTLAKA aynı olmak zorundadır. Aksi takdirde 'dangling participle' (asılı kalan mantık hatası) ortaya çıkar.",
+        "rules": [
+            {
+                "name": "Shared Subject Participial Economy",
+                "pattern": "[Having + V3 / Past Participle], Subject + Main Clause",
+                "use_cases": [
+                    "Authoring executive briefings on organizational changes",
+                    "Summarizing prerequisite technical steps in architectural whitepapers"
+                ],
+                "time_markers": ["having already completed", "prior to deployment"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "Because the architecture team had evaluated six cloud providers, they chose the Kubernetes solution.",
+                "structure_b": "Having evaluated six cloud providers, the architecture team chose the Kubernetes solution.",
+                "difference_explanation_en": "Structure A is repetitive and wordy. Structure B is concise, sophisticated C1 executive register.",
+                "difference_explanation_tr": "A cümlesi bağlaç tekrarı içeren hantal bir yapıdır. B cümlesi ise ortaç öbeğiyle akıcı, sıkılaştırılmış bir C1 profesyonel üslup sunar."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "Dangling Participle (Özne Uyuşmazlığı) Mantık Hatası",
+                "explanation_tr": "Türkçe düşünerek 'Having completed the code review, the pull request was merged' derseniz, kod incelemesini 'çekme isteği' (pull request) yapmış gibi görünür. Ortaç eylemini yapan kişi ana cümlenin öznesi olmalıdır: '...the lead engineer merged the pull request'.",
+                "incorrect_example": "Having detected the memory leak, the application was restarted by the engineer.",
+                "correct_example": "Having detected the memory leak, the engineer restarted the application."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Having been subjected to rigorous adversarial testing, the biometric authentication protocol was approved for production deployment.",
+                "tr": "Sıkı hasmane testlere tabi tutulmuş olan biyometrik kimlik doğrulama protokolü, canlı dağıtım için onaylandı.",
+                "rule_highlight": "Perfect Passive Participle (Having been subjected to)",
+                "context": "Security Whitepaper"
+            },
+            {
+                "en": "Conceding that the initial microservices split created operational friction, the CTO mandated centralized tracing.",
+                "tr": "İlk mikroservis ayrımının operasyonel sürtünme yarattığını kabul eden CTO, merkezi izlemeyi zorunlu kıldı.",
+                "rule_highlight": "Present Participle of Concession",
+                "context": "Executive Decision Memo"
+            }
+        ],
+        "topic_tags": ["participle-clauses", "cohesion", "syntactic-economy", "c1-advanced"],
+        "related_ids": ["vocab.inherent", "vocab.robust"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.pseudo-cleft-and-reverse-cleft",
+        "title": "Wh-Clefts, Reverse Clefts, and All-Clefts for Thematic Prominence",
+        "cefr_level": "C1",
+        "category": "cleft_sentences",
+        "summary_en": "Structure information focus dynamically using Wh-clefts ('What surprised the board was...'), Reverse Clefts ('...is what matters'), and All-clefts ('All we require is...').",
+        "summary_tr": "Bilgi odağını yönetmek ve kritik unsurları vurgulamak için Wh-cleft, Ters Cleft ('...is what matters') ve All-cleft ('Tek istediğimiz...') yapılarının kullanımı.",
+        "explanation_en": [
+            {
+                "title": "Information Partitioning and Prominence",
+                "content": "Pseudo-cleft sentences divide a single proposition into two parts: given information introduced by a relative wh-clause, and new/focal information highlighted after the copula 'be'.",
+                "patterns": [
+                    "Wh-Cleft: What + Clause + is/was + Focal Element",
+                    "Reverse Cleft: Focal Element + is/was + what / why + Clause",
+                    "All-Cleft (Limiting Focus): All + Subject + Verb + is/was + Focal Element"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede vurgu genellikle yüklemden hemen önceki kelimeye tonlama ile verilir ('Yönetim kurulu asıl maliyetleri eleştirdi'). İngilizcede ise kelime sırası daha katı olduğundan, vurguyu yönetmek için cümleyi ikiye bölen Cleft yapıları kullanılır: 'What the board criticized was the unexpected costs'.",
+        "rules": [
+            {
+                "name": "Thematic Prominence via Wh-Clause Splitting",
+                "pattern": "What + Subject + Verb + is/was + Noun Phrase / Infinitive Clause",
+                "use_cases": [
+                    "Focusing board attention on the single root cause of an outage",
+                    "Clarifying strategic intent in high-level executive speeches"
+                ],
+                "time_markers": ["ultimately", "fundamentally"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We simply need an immutable audit trail.",
+                "structure_b": "All we need is an immutable audit trail.",
+                "difference_explanation_en": "Structure A is a plain declarative. Structure B uses an All-cleft to minimize demands and emphasize the singular priority.",
+                "difference_explanation_tr": "A cümlesi sıradan bir bildirimdir. B cümlesi ise 'All we need...' ile gereksinimleri sadeleştirip tek bir önceliği odakta tutar."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Wh-cleft Cümlelerinde Tekil/Çoğul 'Be' Uyumu",
+                "explanation_tr": "Wh-cleft yapılarında 'What we need is...' kalıbı çoğul bir isim listesiyle devam ettiğinde bile çoğu zaman tekil 'is/was' alır veya odağın çoğulluğuna göre 'are' kullanılır. Türk öğreniciler özne eksikliğinden dolayı 'Which we need' gibi yanlış zamirler seçerler.",
+                "incorrect_example": "Which surprised the executive committee was the rapid customer adoption.",
+                "correct_example": "What surprised the executive committee was the rapid customer adoption."
+            }
+        ],
+        "examples": [
+            {
+                "en": "What compromised our container orchestration layer was not external malicious actors, but an errant deployment script.",
+                "tr": "Konteyner orkestrasyon katmanımızı tehlikeye atan şey harici kötü niyetli aktörler değil, hatalı bir dağıtım betiğiydi.",
+                "rule_highlight": "What-cleft with contrastive focal complement",
+                "context": "Root-Cause Briefing"
+            },
+            {
+                "en": "Algorithmic predictability across volatile markets is what enterprise liquidity providers demand most.",
+                "tr": "Kurumsal likidite sağlayıcılarının en çok talep ettiği şey, dalgalı piyasalarda algoritmik öngörülebilirliktir.",
+                "rule_highlight": "Reverse cleft (Focus + is what ...)",
+                "context": "Market Structure Analysis"
+            }
+        ],
+        "topic_tags": ["cleft-sentences", "pseudo-cleft", "information-structuring", "c1-advanced"],
+        "related_ids": ["vocab.inherent", "vocab.compelling"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.ellipsis-and-substitution",
+        "title": "Cohesive Ellipsis and Substitution in Analytical and Executive Prose",
+        "cefr_level": "C1",
+        "category": "discourse_markers_and_cohesion",
+        "summary_en": "Avoid lexical redundancy in professional discourse using substitution markers (so, neither, do so, that of) and grammatical ellipsis of recoverable elements.",
+        "summary_tr": "Metin içi kelime tekrarlarından kaçınmak için yerine koyma (substitution: 'do so', 'that of') ve bilinen unsurları eksiltme (ellipsis) tekniklerinin kullanımı.",
+        "explanation_en": [
+            {
+                "title": "Lexical Redundancy Elimination",
+                "content": "Sophisticated English replaces repeated verb phrases with 'do so' or auxiliary substitutes, and replaces repeated nouns in comparative structures with 'that of' / 'those of'.",
+                "patterns": [
+                    "Comparative Substitution: The latency of Redis is superior to THAT OF traditional relational databases.",
+                    "Verb Phrase Substitution: Management urged teams to refactor code, and many DID SO promptly.",
+                    "Clausal Substitution: Will the release succeed? The metrics suggest SO / I fear NOT."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Bizim sunucumuzun hızı rakibinkinden daha yüksek' derken 'rakibinki' (-ki ilgi eki) kullanılır. İngilizcede 'The speed of our server is faster than the competitor' demek hatalıdır (hız ile rakip kıyaslanamaz); mutlaka 'that of the competitor' denmelidir. Ayrıca 'do so' kalıbı kurumsal yazılarda fiil tekrarını önler.",
+        "rules": [
+            {
+                "name": "Comparative Substitution with That/Those Of",
+                "pattern": "Noun A + of X + is [comparative] + to that of / those of + Y",
+                "use_cases": [
+                    "Benchmarking technical throughput and system metrics against competitors",
+                    "Comparing departmental performance ratios in analytical reports"
+                ],
+                "time_markers": ["compared to", "in contrast to"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "Our cloud security model is more robust than our competitor.",
+                "structure_b": "Our cloud security model is more robust than that of our competitor.",
+                "difference_explanation_en": "Structure A makes a false comparison (comparing a model to a company). Structure B uses 'that of' to correctly compare models.",
+                "difference_explanation_tr": "A cümlesi bir güvenlik modelini bir şirketle kıyaslayarak mantık hatası yapar. B cümlesi 'that of' kullanarak iki şirketin modellerini doğru biçimde karşılaştırır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "Mantıksal Karşılaştırmada 'That of' Eksikliği",
+                "explanation_tr": "Türkçe düşünerek 'The revenue of company A is higher than company B' demek İngilizcede yanlış bir kıyaslamadır. Şirket ile gelir kıyaslanamaz; 'higher than that of company B' denmelidir.",
+                "incorrect_example": "The memory consumption of microservices is greater than monoliths.",
+                "correct_example": "The memory consumption of microservices is greater than that of monoliths."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Engineers were instructed to document internal API contracts, and those who failed to do so were reassigned.",
+                "tr": "Mühendislere dahili API sözleşmelerini belgelendirmeleri talimatı verildi ve bunu yapmayanlar başka görevlere atandı.",
+                "rule_highlight": "Substitution with do so",
+                "context": "Engineering Governance"
+            },
+            {
+                "en": "The fault tolerance of decentralized blockchains fundamentally exceeds that of centralized clearing houses.",
+                "tr": "Merkeziyetsiz blokzincirlerin hata toleransı, merkezi takas merkezlerininkini temelden aşmaktadır.",
+                "rule_highlight": "Comparative substitution with that of",
+                "context": "Fintech Architecture"
+            }
+        ],
+        "topic_tags": ["ellipsis", "substitution", "cohesion", "that-of", "c1-advanced"],
+        "related_ids": ["vocab.robust", "vocab.inherent"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.nominalization-academic-corporate",
+        "title": "Nominalization for Register Elevation and Impersonal Objectivity",
+        "cefr_level": "C1",
+        "category": "noun_phrases_and_articles",
+        "summary_en": "Transform verbal and adjectival expressions into formal nominal heads (actions -> abstract nouns) to achieve information density and high-register corporate objectivity.",
+        "summary_tr": "Eylemleri ve sıfatları soyut isim öbeklerine dönüştürerek (nominalization) metin yoğunluğu, nesnellik ve kurumsal ciddiyet sağlama.",
+        "explanation_en": [
+            {
+                "title": "Actions to Entities: Packaging Information",
+                "content": "Rather than narrating events chronologically with active verbs (Because users abandoned the checkout flow rapidly, revenue declined), executive prose packages the cause as a nominalized subject (The rapid abandonment of the checkout flow precipitated a decline in revenue).",
+                "patterns": [
+                    "Verbal: The system degraded because traffic surged unexpectedly.",
+                    "Nominalized: An unexpected surge in traffic precipitated system degradation.",
+                    "Suffixation Patterns: -tion (implement -> implementation), -ance (perform -> performance), -ity (vulnerable -> vulnerability)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede resmi ve akademik dilde eylemler sıklıkla isimleştirilir ('Sunucunun çökmesi durumunda' yerine 'Sunucu çöküşü halinde'). İngilizcede de C1 seviyesinde cümleleri 'we did this because they did that' şeklinde konuşma diliyle yazmak yerine, isimleştirilmiş öznelerle ('The integration of automated tooling facilitated...') ifade etmek profesyonel saygınlık kazandırır.",
+        "rules": [
+            {
+                "name": "High-Density Nominal Syntactic Packaging",
+                "pattern": "[Determiner + Adjective + Abstract Noun + of Phrase] + Verb + Noun Phrase",
+                "use_cases": [
+                    "Drafting formal board resolutions and quarterly investor updates",
+                    "Authoring architectural whitepapers and regulatory submissions"
+                ],
+                "time_markers": ["subsequent to", "prior to"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "When the team migrated the legacy database slowly, it delayed the product launch.",
+                "structure_b": "The protracted migration of the legacy database delayed product launch timelines.",
+                "difference_explanation_en": "Structure A relies on conversational clausal subordination. Structure B uses nominalization ('The protracted migration...') for dense executive prose.",
+                "difference_explanation_tr": "A cümlesi konuşma diline yakın yan cümleciklerle kurulmuştur. B cümlesi ise isimleştirme ile yoğun ve prestijli bir yönetici dili sunar."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "aspect_confusion",
+                "trap_title": "Aşırı Sözlü/Konuşma Diliyle Rapor Yazma Alışkanlığı",
+                "explanation_tr": "Türk mühendisler rapor yazarken sıklıkla 'We decided this because the server was slow' gibi ilkokul seviyesi yapılar kurarlar. Üst düzey iş İngilizcesinde 'The decision was prompted by server latency' gibi isimleştirilmiş ifadeler tercih edilir.",
+                "incorrect_example": "Because customers complained frequently, we had to redesign the onboarding interface.",
+                "correct_example": "Frequent customer complaints necessitated a comprehensive redesign of the onboarding interface."
+            }
+        ],
+        "examples": [
+            {
+                "en": "The rapid proliferation of unmanaged container images introduced severe compliance vulnerabilities across our cloud clusters.",
+                "tr": "Yönetilmeyen konteyner imajlarının hızlı yayılımı, bulut kümelerimiz genelinde ciddi uyumluluk açıkları yarattı.",
+                "rule_highlight": "Nominalized subject (The rapid proliferation of...)",
+                "context": "Cloud Security Report"
+            },
+            {
+                "en": "Rigorous enforcement of multi-factor authentication yielded an immediate reduction in credential stuffing incidents.",
+                "tr": "Çok faktörlü kimlik doğrulamanın sıkı biçimde uygulanması, kimlik bilgisi doldurma vakalarında anında bir düşüş sağladı.",
+                "rule_highlight": "Nominalization (Rigorous enforcement... yielded a reduction)",
+                "context": "Cybersecurity Metrics"
+            }
+        ],
+        "topic_tags": ["nominalization", "register-elevation", "academic-style", "c1-advanced"],
+        "related_ids": ["vocab.proliferation", "vocab.implication"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.nuanced-modal-hedging-stance",
+        "title": "Nuanced Modal Hedging: Epistemic Stance with 'Is bound to', 'Stands to', 'Would appear'",
+        "cefr_level": "C1",
+        "category": "modals_and_semi_modals",
+        "summary_en": "Calibrate diplomatic epistemic stance and prudent technical forecasts using semi-modal expressions (is bound to, stands to gain) and lexical hedges (would appear to indicate).",
+        "summary_tr": "Diplomatik ve teknik tahminlerde kesinlik payını ayarlamak ve aşırı iddialı konuşmaktan kaçınmak (hedging) için 'is bound to', 'stands to', 'would appear to' yapılarının kullanımı.",
+        "explanation_en": [
+            {
+                "title": "Prudent Epistemic Framing",
+                "content": "In senior leadership communications, unhedged absolute assertions ('This will fail', 'This proves that') are considered naive or reckless. C1 professionals soften stance using semi-modal expressions and tentative verbs.",
+                "patterns": [
+                    "Inevitable Outcome: Subject + is bound to + Base Verb (e.g., Latency is bound to increase)",
+                    "Potential Advantage/Disadvantage: Subject + stands to + gain / lose (e.g., We stand to lose market share)",
+                    "Tentative Perception: Subject + would appear / seem to + Verb (e.g., The telemetry would appear to confirm)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'görünüşe göre', 'kaçınılmaz olarak', 'kazanma ihtimali yüksek' anlamlarına gelen yapılar iş dünyasında sorumluluk sınırlarını çizmek için hayati önem taşır. İngilizcede 'This is a bug' demek yerine 'This would appear to be a synchronization issue' demek profesyonel ihtiyat (hedging) örneğidir.",
+        "rules": [
+            {
+                "name": "Calibrated Epistemic Stance",
+                "pattern": "Subject + [is bound to / stands to / would seem to] + Base Verb",
+                "use_cases": [
+                    "Formulating preliminary incident root-cause hypotheses before forensic completion",
+                    "Assessing strategic risk in mergers, acquisitions, or competitive maneuvers"
+                ],
+                "time_markers": ["in all likelihood", "tentatively", "inevitably"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "This migration will break legacy client integrations.",
+                "structure_b": "This migration is bound to create friction for legacy client integrations.",
+                "difference_explanation_en": "Structure A is blunt and aggressive. Structure B uses 'is bound to' to provide an authoritative yet measured projection.",
+                "difference_explanation_tr": "A cümlesi çiğ ve aşırı kesindir. B cümlesi ise 'is bound to' ile kaçınılmazlığı dengeli ve profesyonel bir üslupla ifade eder."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "aspect_confusion",
+                "trap_title": "Aşırı Kesin İddialarla Sorumluluk Yüklenme Hatası",
+                "explanation_tr": "Yabancı ortaklarla çalışırken 'The server crashed because the developer pushed bad code' demek kurumsal etiğe aykırıdır. 'The outage would appear to stem from an unvalidated commit' ifadesi hem teknik olarak savunulabilir hem de profesyoneldir.",
+                "incorrect_example": "The competitor will definitely fail in their new enterprise strategy.",
+                "correct_example": "The competitor is bound to encounter severe headwinds with their new enterprise strategy."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Organizations that delay cloud migration stand to lose substantial competitive agility over the next biennium.",
+                "tr": "Buluta geçişi erteleyen kuruluşlar, önümüzdeki iki yıllık dönemde ciddi rekabetçi çeviklik kaybetme riskiyle karşı karşıyadır.",
+                "rule_highlight": "Stands to lose (calibrated risk projection)",
+                "context": "Strategic Industry Briefing"
+            },
+            {
+                "en": "Preliminary telemetry would appear to suggest that the latency spike was caused by database connection starvation.",
+                "tr": "Ön telemetri verileri, gecikme sıçramasının veritabanı bağlantı yetersizliğinden kaynaklandığını düşündürmektedir.",
+                "rule_highlight": "Would appear to suggest (modal hedging)",
+                "context": "Incident Root Cause"
+            }
+        ],
+        "topic_tags": ["hedging", "epistemic-modality", "diplomatic-register", "c1-advanced"],
+        "related_ids": ["vocab.inherent", "vocab.compelling"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.mixed-conditionals-enduring-impact",
+        "title": "Advanced Mixed Conditionals: Past Hypotheticals with Present and Future Consequences",
+        "cefr_level": "C1",
+        "category": "conditionals_and_hypotheticals",
+        "summary_en": "Synthesize temporal frames in counterfactual reasoning: link unreal past decisions (had + V3) to enduring present states (would + bare verb) or future obligations.",
+        "summary_tr": "Farklı zaman dilimlerini harmanlayan karma koşul cümleleri: geçmişteki bir varsayımın (had + V3) bugünkü durum ('would + yalın fiil') üzerindeki kalıcı etkisi.",
+        "explanation_en": [
+            {
+                "title": "Cross-Temporal Counterfactual Logic",
+                "content": "Standard conditionals isolate past (Type 3) or present (Type 2). Mixed conditionals bridge across time: a counterfactual past decision impacts an ongoing present state, or a permanent trait dictates a past failure.",
+                "patterns": [
+                    "Past Condition -> Present Result: If + had + V3, Subject + would / could + Base Verb (NOW)",
+                    "Present Condition -> Past Result: If + Past Simple (enduring trait), Subject + would have + V3 (PAST)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede 'Geçen yıl o yazılımı alsaydık, şu anda bu sorunlarla uğraşmıyor olurduk' cümlesi geçmişteki bir kararın bugünkü sonucunu anlatır. İngilizcede bu durum 'If we had purchased... (past), we wouldn't be dealing... (present)' şeklinde karma koşul (Mixed Conditional) ile kurulur.",
+        "rules": [
+            {
+                "name": "Unreal Past with Present Impact",
+                "pattern": "If + Subject + had + V3, Subject + would + Base Verb + [now / today]",
+                "use_cases": [
+                    "Analyzing long-term strategic decisions during executive annual reviews",
+                    "Evaluating how past architectural pivots currently empower or constrain the engineering team"
+                ],
+                "time_markers": ["today", "currently", "at this moment"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "If we had invested in automated testing last year, we would have released the update yesterday.",
+                "structure_b": "If we had invested in automated testing last year, our codebase would be stable today.",
+                "difference_explanation_en": "Structure A is a pure Type 3 conditional (past condition, past result). Structure B is a Mixed Conditional (past condition, enduring present result).",
+                "difference_explanation_tr": "A cümlesi saf Tip 3 şart cümlesidir (geçmiş şart -> geçmiş sonuç). B cümlesi ise karma şart cümlesidir (geçmiş şart -> bugünkü kalıcı durum)."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "conditional_overgeneralization",
+                "trap_title": "Mixed Conditional Cümlelerde İkinci Tarafı Mekanik Olarak 'Would have V3' Yapma",
+                "explanation_tr": "Öğreniciler 'If had V3' gördüklerinde cümlenin sonundaki 'today / now' zaman belirtecini gözden kaçırıp otomatik olarak 'would have done' yaparlar. Sonuç şu ana aitse mutlaka 'would + yalın fiil' olmalıdır.",
+                "incorrect_example": "If the founders had sold the company last year, they would have been retired today.",
+                "correct_example": "If the founders had sold the company last year, they would be retired today."
+            }
+        ],
+        "examples": [
+            {
+                "en": "If the engineering squad had containerized the application two years ago, we would not be struggling with server fragmentation today.",
+                "tr": "Mühendislik ekibi uygulamayı iki yıl önce konteynerleştirmiş olsaydı, bugün sunucu parçalanmışlığıyla mücadele ediyor olmazdık.",
+                "rule_highlight": "Past condition (had containerized) with present result (would not be struggling today)",
+                "context": "Technical Debt Evaluation"
+            },
+            {
+                "en": "If the lead architect were not so meticulous by nature, our security infrastructure would have been breached months ago.",
+                "tr": "Baş mimar doğası gereği bu kadar titiz olmasaydı, güvenlik altyapımız aylar önce delinmiş olurdu.",
+                "rule_highlight": "Present enduring trait (were not) with past counterfactual result (would have been breached)",
+                "context": "Executive Retrospective"
+            }
+        ],
+        "topic_tags": ["conditionals", "mixed-conditionals", "counterfactual-reasoning", "c1-advanced"],
+        "related_ids": ["vocab.conundrum", "vocab.ramification"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.c1.topicalization-and-fronting",
+        "title": "Topicalization and Adverbial Fronting for Thematic Flow",
+        "cefr_level": "C1",
+        "category": "inversion_and_emphasis",
+        "summary_en": "Enhance text cohesion and thematic linkage by fronting objects, prepositional phrases, or participle complements without auxiliary inversion.",
+        "summary_tr": "Metin içi geçişleri ve tematik odağı güçlendirmek için nesneleri, edat öbeklerini veya sıfatları devrik yapmaksızın cümlenin başına alma (fronting/topicalization).",
+        "explanation_en": [
+            {
+                "title": "Information Flow and Thematic Fronting",
+                "content": "Unlike negative inversion (which forces auxiliary inversion), topicalization moves known information to the sentence head (Theme) to create a seamless link with the preceding sentence, keeping SVO order intact.",
+                "patterns": [
+                    "Object Fronting: This architectural risk we identified early; that vulnerability we overlooked completely.",
+                    "Prepositional Fronting: To the executive board, these metrics signaled immediate market penetration.",
+                    "Comparative Fronting: More significant than the hardware cost is the ongoing maintenance overhead."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede cümlenin ilk ögesi (tema) genellikle bilinen veya odağa alınmak istenen unsurdur. İngilizcede de C1 seviyesinde cümleleri sürekli 'Subject + Verb + Object' şeklinde monoton başlatmak yerine, önceki cümleye bağlanan unsuru başa almak ('These recommendations the committee accepted unanimously') metne editoryal bir olgunluk katar.",
+        "rules": [
+            {
+                "name": "Cohesive Thematic Fronting without Inversion",
+                "pattern": "[Fronted Object / Prepositional Theme], Subject + Verb + Rest",
+                "use_cases": [
+                    "Linking argumentative points in board memos and analytical whitepapers",
+                    "Contrasting two distinct corporate strategies across consecutive paragraphs"
+                ],
+                "time_markers": ["in this context", "to this end"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We resolved the critical authentication vulnerability within two hours.",
+                "structure_b": "The critical authentication vulnerability we resolved within two hours; the database bottleneck took three days.",
+                "difference_explanation_en": "Structure A is standard neutral syntax. Structure B fronts the object to create a sharp thematic contrast with the second clause.",
+                "difference_explanation_tr": "A cümlesi standart düz sözdizimidir. B cümlesi ise nesneyi öne alarak iki durum arasındaki zıtlığı güçlü bir biçimde vurgular."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Topicalization ile Negative Inversion Yapılarını Karıştırma",
+                "explanation_tr": "Öğreniciler cümlenin başına bir nesne veya edat öbeği geldiğinde otomatik olarak yardımcı fiili öne alıp devrik cümle yaparlar ('To this meeting did we invite...'). Olumsuz veya sınırlayıcı olmayan öne alımlarda devriklik yapılmaz; düz özne-yüklem sıralaması korunur.",
+                "incorrect_example": "This critical architecture choice did the CTO defend during the review.",
+                "correct_example": "This critical architecture choice the CTO defended during the review."
+            }
+        ],
+        "examples": [
+            {
+                "en": "That our competitor would pivot toward enterprise clients we had long anticipated; their pricing aggressiveness, however, came as an unexpected shock.",
+                "tr": "Rakibimizin kurumsal müşterilere yöneleceğini uzun süredir tahmin ediyorduk; ancak fiyatlandırmadaki agresiflikleri beklenmedik bir şok oldu.",
+                "rule_highlight": "Clausal object fronting for thematic contrast",
+                "context": "Competitive Intelligence"
+            },
+            {
+                "en": "More alarming than the transient revenue contraction was the steady erosion of our core developer talent.",
+                "tr": "Geçici gelir daralmasından daha endişe verici olan şey, çekirdek yazılımcı yeteneğimizin istikrarlı biçimde erimesiydi.",
+                "rule_highlight": "Adjectival comparative fronting",
+                "context": "Executive Retrospective"
+            }
+        ],
+        "topic_tags": ["topicalization", "fronting", "information-flow", "thematic-cohesion", "c1-advanced"],
+        "related_ids": ["vocab.compelling", "vocab.delineate"],
+        "status": "APPROVED",
+        "version": 1
+    }
+]
+
+print(f"Defined {len(C1_LESSONS)} C1 grammar lessons.")

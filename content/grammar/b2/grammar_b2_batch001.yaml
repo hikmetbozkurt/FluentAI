@@ -1,0 +1,609 @@
+- id: grammar.b2.future-perfect-and-continuous
+  title: 'Future Perfect and Future Continuous: Milestones and Ongoing Projections'
+  cefr_level: B2
+  category: tenses_and_aspect
+  summary_en: Use Future Perfect (will have + V3) to look back on a completed milestone
+    by a future point, and Future Continuous (will be + -ing) for actions ongoing
+    at a future moment.
+  summary_tr: Gelecekteki belirli bir ana kadar tamamlanmış olacak hedefler için Future
+    Perfect ('will have + V3'); gelecekte o anda devam ediyor olacak eylemler için
+    Future Continuous ('will be + -ing') kullanılır.
+  explanation_en:
+  - title: Milestone Completion vs. Ongoing Activity
+    content: Future Perfect looks back from a future deadline using 'by' or 'by the
+      time' (By Q4, we will have migrated all customer accounts). Future Continuous
+      describes an action in progress at a specific future hour (At 10:00 AM tomorrow,
+      our team will be deploying the release).
+    patterns:
+    - 'Future Perfect: Subject + will have + Past Participle (V3) + by [deadline]'
+    - 'Future Continuous: Subject + will be + Verb-ing + at [specific time]'
+  explanation_tr: Türkçede 'Gelecek aya kadar projeyi bitirmiş olacağız' ifadesi 'will
+    have finished' yapısını tam olarak karşılar. Türk profesyoneller sıklıkla 'By
+    next month we will finish' diyerek 'by' (kadar) zarfının gerektirdiği tamamlanmışlık
+    vurgusunu kaçırırlar. 'By' ile birlikte Future Perfect kullanmak kurumsal İngilizcede
+    profesyonel bir seviye göstergesidir.
+  rules:
+  - name: Project Milestones Completed by a Deadline
+    pattern: By + [Future Time], Subject + will have + Past Participle (V3)
+    use_cases:
+    - Presenting quarterly deliverables to executive stakeholders
+    - Committing to migration completion dates in client SLAs
+    time_markers:
+    - by the end of the year
+    - by next Friday
+    - by the time we launch
+  contrasts:
+  - structure_a: By Friday afternoon, we will have merged all pull requests.
+    structure_b: On Friday afternoon, we will be merging all pull requests.
+    difference_explanation_en: Structure A means the merging will be 100% finished
+      before Friday afternoon arrives. Structure B means the team will actively be
+      in the middle of merging during Friday afternoon.
+    difference_explanation_tr: A cümlesi cuma öğleden sonraya kadar birleştirme işinin
+      tamamen bitmiş olacağını belirtir. B cümlesi ise cuma öğleden sonra birleştirme
+      işleminin o anda yapılıyor olacağını anlatır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''By'' Zarfıyla Birlikte Düz Gelecek Zaman (Will) Kullanımı'
+    explanation_tr: '''By the end of this sprint, we will complete the tasks'' demek
+      yerine ''we will have completed'' denmelidir. ''By'' bir son tarih sınırı koyduğu
+      için Future Perfect gerektirir.'
+    incorrect_example: By 2026, the company will migrate all infrastructure to the
+      cloud.
+    correct_example: By 2026, the company will have migrated all infrastructure to
+      the cloud.
+  examples:
+  - en: By the end of the third quarter, our engineering squad will have deployed
+      the new payment engine across three continents.
+    tr: Üçüncü çeyreğin sonuna kadar, mühendislik ekibimiz yeni ödeme motorunu üç
+      kıtada devreye almış olacaktır.
+    rule_highlight: Future Perfect with By-deadline
+    context: Executive Roadmap
+  - en: This time next week, we will be presenting our microservices architecture
+      at the international tech symposium.
+    tr: Önümüzdeki hafta bu saatte, uluslararası teknoloji sempozyumunda mikroservis
+      mimarimizi sunuyor olacağız.
+    rule_highlight: Future Continuous for in-progress future action
+    context: Conference Participation
+  topic_tags:
+  - tenses
+  - future-perfect
+  - future-continuous
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.deadline
+  - vocab.deliverable
+  status: APPROVED
+  version: 1
+- id: grammar.b2.reporting-passives-impersonal
+  title: 'Impersonal Reporting Passives: It is said that / Subject is reported to
+    be'
+  cefr_level: B2
+  category: passive_and_causative
+  summary_en: Present objective, distanced reporting in analytical and technical writing
+    using structures like 'It is estimated that...' and 'The company is reported to
+    have...'.
+  summary_tr: Teknik ve analitik raporlarda kurumsal mesafe ve nesnellik sağlamak
+    için 'It is estimated that...' veya 'Subject is said to be / to have been' kalıpları
+    kullanılır.
+  explanation_en:
+  - title: Impersonal Reporting Structures
+    content: 'To maintain professional objectivity without citing personal opinions,
+      formal English uses two key constructions: Impersonal ''It + passive reporting
+      verb + that-clause'' and Personal ''Subject + passive reporting verb + to-infinitive''.'
+    patterns:
+    - 'Pattern 1: It + is/was [claimed/estimated/believed/reported] + that + clause'
+    - 'Pattern 2: Subject + is/was [said/believed/reported] + to + Base Verb (Present/Future)'
+    - 'Pattern 3: Subject + is/was [reported/known] + to have + V3 (Past Action)'
+  explanation_tr: 'Türkçede ''Şirketin iflas ettiği söyleniyor'' veya ''Sistemin çöktüğü
+    tahmin ediliyor'' gibi ifadeler İngilizcede iki şekilde kurulur: ''It is believed
+    that...'' ya da özneyi başa alarak ''The company is believed to have failed''.
+    İkinci yapı (Subject + is said to have V3) ileri seviye raporlamanın en karakteristik
+    yapısıdır.'
+  rules:
+  - name: Distanced Objective Reporting
+    pattern: Subject + is/are + [reported / estimated / said] + to have + V3
+    use_cases:
+    - Authoring market analysis and macroeconomic briefings
+    - Reporting security vulnerability incidents with legal detachment
+    time_markers:
+    - according to market data
+    - reportedly
+  contrasts:
+  - structure_a: It is reported that the competitor acquired the fintech startup.
+    structure_b: The competitor is reported to have acquired the fintech startup.
+    difference_explanation_en: Structure A uses the introductory 'It'. Structure B
+      elevates 'The competitor' to grammatical subject with a perfect infinitive ('to
+      have acquired').
+    difference_explanation_tr: A cümlesi sahte özne 'It' ile başlar. B cümlesi ise
+      asıl özneyi başa alarak 'to have acquired' ile daha akıcı ve editoryal bir stil
+      oluşturur.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: '''Is reported to have'' Kalıbında Mastar Zamanını Kaçırma'
+    explanation_tr: Özne başa alındığında geçmişteki bir olay anlatılıyorsa 'to acquire'
+      değil 'to have acquired' (Perfect Infinitive) kullanılmalıdır. Türk öğreniciler
+      genellikle zaman farkını yansıtmayıp düz mastar kullanırlar.
+    incorrect_example: The vulnerability is believed to exist since last year.
+    correct_example: The vulnerability is believed to have existed since last year.
+  examples:
+  - en: The artificial intelligence startup is reported to have raised forty million
+      dollars in Series A funding.
+    tr: Yapay zeka girişiminin Seri A yatırım turunda kırk milyon dolar topladığı
+      bildiriliyor.
+    rule_highlight: Reporting passive with perfect infinitive (is reported to have
+      raised)
+    context: Venture Capital Analysis
+  - en: It is widely anticipated that the central bank will adjust benchmark interest
+      rates in Q4.
+    tr: Merkez bankasının dördüncü çeyrekte gösterge faiz oranlarını ayarlayacağı
+      yaygın biçimde bekleniyor.
+    rule_highlight: Impersonal It-passive (It is widely anticipated that)
+    context: Economic Forecasting
+  topic_tags:
+  - passive-voice
+  - reporting-passives
+  - formal-register
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.anticipate
+  - vocab.implication
+  status: APPROVED
+  version: 1
+- id: grammar.b2.verbs-changing-meaning-gerund-infinitive
+  title: 'Gerund vs. Infinitive Meaning Shifts: Remember, Stop, Regret, Try'
+  cefr_level: B2
+  category: verb_patterns_and_infinitives
+  summary_en: Differentiate crucial verbs whose meaning drastically changes depending
+    on whether they are followed by a gerund (-ing) or an infinitive (to + verb).
+  summary_tr: '''Remember'', ''stop'', ''regret'', ''try'' gibi ardından gelen yapının
+    gerund (-ing) ya da infinitive (to + fiil) olmasına göre anlamı tamamen değişen
+    fiillerin kullanımı.'
+  explanation_en:
+  - title: The Temporal Distinction Behind Meaning Shifts
+    content: Typically, the gerund looks back to a completed past experience or existing
+      state, while the infinitive looks forward to a purpose or duty that must be
+      fulfilled.
+    patterns:
+    - Remember to do = Don't forget your upcoming duty (forward-looking)
+    - Remember doing = Recall a past memory/event (backward-looking)
+    - Stop to do = Pause an activity IN ORDER TO do something else (purpose)
+    - Stop doing = Cease and terminate the activity permanently or temporarily
+    - Try to do = Attempt something difficult requiring effort
+    - Try doing = Experiment with an alternative method to see if it works
+  explanation_tr: Türkçede 'Sigara içmeyi bıraktım' ile 'Sigara içmek için durdum'
+    tamamen farklıdır. İngilizcede bu fark 'stop smoking' (bırakmak) ile 'stop to
+    smoke' (içmek amacıyla durmak) ile kurulur. Benzer şekilde 'Remember to send the
+    email' (E-postayı göndermeyi unutma) ile 'I remember sending the email' (E-postayı
+    gönderdiğimi hatırlıyorum) arasındaki zıtlık iş yazışmalarında kritik önem taşır.
+  rules:
+  - name: Meaning Contrasts in Dual-Pattern Verbs
+    pattern: Verb + to-infinitive (duty/purpose) VS Verb + gerund (memory/cessation)
+    use_cases:
+    - Reminding colleagues about compliance duties vs. recalling deployment events
+    - Troubleshooting recommendations (try restarting vs. try to restart)
+    time_markers:
+    - before leaving
+    - yesterday
+    - in order to
+  contrasts:
+  - structure_a: Please remember to revoke the contractor's credentials tomorrow.
+    structure_b: I clearly remember revoking the contractor's credentials yesterday.
+    difference_explanation_en: Structure A is an instruction about a future obligation
+      (to revoke). Structure B is recalling a past event from memory (revoking).
+    difference_explanation_tr: A cümlesi gelecekte yapılması gereken bir görevi hatırlatır
+      ('to revoke'). B cümlesi ise geçmişte yapılmış olan bir eylemi anımsamayı ifade
+      eder ('revoking').
+  - structure_a: The team stopped deploying unverified pull requests.
+    structure_b: The team stopped to deploy the emergency security patch.
+    difference_explanation_en: Structure A means they ceased the practice altogether.
+      Structure B means they paused their current work in order to deploy the patch.
+    difference_explanation_tr: A cümlesi doğrulanmamış kodların dağıtımının tamamen
+      durdurulduğunu belirtir. B cümlesi ise güvenlik yamasını yayına almak amacıyla
+      işe ara verildiğini anlatır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''Stop to do'' ile ''Stop doing'' Yapılarını Karıştırma'
+    explanation_tr: İş ortamında 'We stopped to use that library' derseniz 'O kütüphaneyi
+      kullanmak amacıyla durduk' anlamına gelir. 'O kütüphaneyi kullanmayı bıraktık'
+      demek için mutlaka 'We stopped using that library' denmelidir.
+    incorrect_example: We stopped to use MongoDB because of consistency issues.
+    correct_example: We stopped using MongoDB because of consistency issues.
+  examples:
+  - en: If the payment service times out, try clearing your browser cookies and retry.
+    tr: Ödeme servisi zaman aşımına uğrarsa, tarayıcı çerezlerini temizlemeyi deneyin
+      ve tekrar test edin.
+    rule_highlight: Try doing (experiment with a solution)
+    context: Customer Support Guidance
+  - en: We deeply regret to inform you that the beta release has been postponed by
+      one week.
+    tr: Beta sürümünün bir hafta ertelendiğini bildirmekten derin üzüntü duyuyoruz.
+    rule_highlight: Regret to inform (formal announcement of bad news)
+    context: Corporate Announcement
+  topic_tags:
+  - gerund-infinitive
+  - meaning-shifts
+  - verb-complements
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.solution
+  - vocab.suggestion
+  status: APPROVED
+  version: 1
+- id: grammar.b2.past-modal-deduction
+  title: 'Past Modals of Deduction and Regret: Must have, Can''t have, Should have'
+  cefr_level: B2
+  category: modals_and_semi_modals
+  summary_en: Evaluate past events with logical certainty (must have + V3), past impossibility
+    (can't/couldn't have + V3), and past missed obligations/regrets (should have +
+    V3).
+  summary_tr: Geçmişe dönük mantıksal kesin çıkarım ('must have + V3'), geçmiş imkansızlık
+    ('can't have + V3') ve yapılmamış pişmanlıklar/ödevler ('should have + V3') yapıları.
+  explanation_en:
+  - title: Modal + Perfect Infinitive (have + V3)
+    content: To make deductions or express criticism about actions that occurred in
+      the past, combine modal auxiliaries with 'have + Past Participle (V3)'.
+    patterns:
+    - 'Positive Deduction (Past Certainty): Subject + must have + Past Participle
+      (V3)'
+    - 'Negative Deduction (Past Impossibility): Subject + can''t / couldn''t have
+      + Past Participle (V3)'
+    - 'Past Unfulfilled Obligation (Regret / Criticism): Subject + should have + Past
+      Participle (V3)'
+  explanation_tr: Türkçede 'Veritabanı çökmüş olmalı' (geçmiş kesin tahmin) ile 'Yedek
+    almalıydık ama almadık' (geçmiş pişmanlık) ifadeleri iş toplantılarında en sık
+    kullanılan yapılardır. İngilizcede 'must have fallen' kesin çıkarım iken, 'should
+    have backed up' yapılmamış bir görevi eleştirir.
+  rules:
+  - name: Past Deduction and Root-Cause Evaluation
+    pattern: Subject + [must have / can't have / should have] + Past Participle (V3)
+    use_cases:
+    - Conducting blameless post-mortem incident investigations
+    - Analyzing unexpected financial discrepancies from previous quarters
+    time_markers:
+    - in yesterday's deployment
+    - prior to the outage
+    - in retrospect
+  contrasts:
+  - structure_a: The developer must have deployed the wrong configuration file.
+    structure_b: The developer should have deployed the updated configuration file.
+    difference_explanation_en: 'Structure A is a deduction: evidence proves he almost
+      certainly did it. Structure B is a criticism: he ought to have done it, but
+      failed to do so.'
+    difference_explanation_tr: A cümlesi kanıta dayalı güçlü bir tahmindir ('yanlış
+      dosyayı yüklemiş olmalı'). B cümlesi ise yerine getirilmemiş bir görevi eleştirir
+      ('güncel dosyayı yüklemeliydi').
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: '''Should have'' ile ''Must have'' Yapılarını Birbirine Karıştırma'
+    explanation_tr: Türk öğreniciler sıklıkla 'They must have tested the software
+      before release' derken aslında 'Test etmeleri gerekirdi (ama etmediler)' demek
+      isterler. 'Must have tested' 'kesinlikle test etmişlerdir' anlamına gelir. 'Etmeliydiler'
+      demek için 'should have tested' şarttır.
+    incorrect_example: The engineers must have notified the manager about the outage,
+      but they forgot.
+    correct_example: The engineers should have notified the manager about the outage,
+      but they forgot.
+  examples:
+  - en: The query latency was under 2 milliseconds; the database must have cached
+      the entire result set.
+    tr: Sorgu gecikmesi 2 milisaniyenin altındaydı; veritabanı tüm sonuç kümesini
+      önbelleğe almış olmalı.
+    rule_highlight: Must have + V3 for past deduction
+    context: Performance Retrospective
+  - en: We should have conducted extensive stress testing prior to initiating the
+      multi-region migration.
+    tr: Çok bölgeli veri taşıma işlemine başlamadan önce kapsamlı stres testleri yapmalıydık.
+    rule_highlight: Should have + V3 for unfulfilled past obligation
+    context: Post-Mortem Review
+  topic_tags:
+  - modals
+  - past-modals
+  - deduction-regret
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.disruption
+  - vocab.solution
+  status: APPROVED
+  version: 1
+- id: grammar.b2.non-defining-relative-clauses-prepositions
+  title: Non-Defining Relative Clauses and Formal Prepositional Placement (in which,
+    to whom)
+  cefr_level: B2
+  category: relative_and_participle_clauses
+  summary_en: Add non-essential background context offset by commas using 'which'
+    or 'who' (never 'that'), and master formal preposition placement (e.g., 'in which',
+    'to whom').
+  summary_tr: Virgüllerle ayrılarak ek bilgi veren tanımlayıcı olmayan (non-defining)
+    ilgi cümleleri ve edatların öne alındığı resmi yapılar ('in which', 'with whom').
+  explanation_en:
+  - title: Non-Defining Clauses & The 'That' Prohibition
+    content: Non-defining clauses provide extra, non-essential information enclosed
+      in commas. In non-defining clauses, 'that' is strictly prohibited; you must
+      use 'which' for things and 'who' for people.
+    patterns:
+    - 'Non-defining with Which: Noun, which + Verb ..., Main Clause'
+    - 'Formal Preposition Fronting: Preposition + which / whom (e.g., the protocol
+      under which we operate)'
+  explanation_tr: İngilizcede virgüller arasında ek bilgi veren cümlelerde (non-defining)
+    ASLA 'that' kullanılamaz; sadece 'which' veya 'who' kullanılabilir. Ayrıca resmi
+    iş yazışmalarında edatı cümlenin sonuna atmak ('the framework we depend on') yerine
+    başa almak ('the framework on which we depend') prestijli bir anlatım sağlar.
+  rules:
+  - name: Formal Relative Preposition Fronting
+    pattern: Noun + , + Preposition + which / whom + Clause + , + Main Verb
+    use_cases:
+    - Drafting legal terms of service, compliance mandates, and contracts
+    - Describing complex corporate relationships and architectural frameworks
+    time_markers:
+    - currently
+    - formally
+  contrasts:
+  - structure_a: Our core API gateway, which handles twelve million requests daily,
+      is being migrated.
+    structure_b: Our core API gateway that handles twelve million requests daily is
+      being migrated.
+    difference_explanation_en: Structure A is non-defining (extra info between commas;
+      requires 'which'). Structure B is defining (specifies which gateway among many;
+      allows 'that').
+    difference_explanation_tr: A cümlesinde virgülden sonra 'which' zorunludur ('that'
+      kullanılamaz). B cümlesi ise tanımlayıcı olup 'that' kabul eder.
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: Virgülden Sonra 'That' Kullanma Hatası
+    explanation_tr: Türk çalışanlar sıklıkla virgülden sonra 'that' koyarak 'The legacy
+      server, that was bought in 2020, crashed' derler. Virgüllü ek bilgi cümlelerinde
+      'that' kesinlikle yanlıştır; 'which' kullanılmalıdır.
+    incorrect_example: The compliance audit, that was completed last month, identified
+      three risks.
+    correct_example: The compliance audit, which was completed last month, identified
+      three risks.
+  examples:
+  - en: Docker, which was initially released in 2013, revolutionized software deployment
+      across the industry.
+    tr: İlk olarak 2013'te piyasaya sürülen Docker, sektör genelinde yazılım dağıtımında
+      devrim yarattı.
+    rule_highlight: Non-defining clause with which and commas
+    context: Tech History
+  - en: We established a cross-functional governance council, to whom all architectural
+      exceptions must be submitted.
+    tr: Tüm mimari istisnaların sunulması gereken, fonksiyonlar arası bir yönetişim
+      konseyi kurduk.
+    rule_highlight: Formal preposition fronting with whom
+    context: Corporate Governance
+  topic_tags:
+  - relative-clauses
+  - non-defining
+  - preposition-fronting
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.framework
+  - vocab.crucial
+  status: APPROVED
+  version: 1
+- id: grammar.b2.wishes-and-regrets-unreal-past
+  title: 'Wishes, Regrets, and Unreal Past: Wish, If Only, and It''s Time'
+  cefr_level: B2
+  category: conditionals_and_hypotheticals
+  summary_en: Express hypothetical present desires with 'wish + Past Simple', past
+    regrets with 'wish + Past Perfect', and urgent necessity with 'It's time + Past
+    Simple'.
+  summary_tr: Şimdiki zamana dair gerçekleşmemiş dilekler için 'wish + Past Simple';
+    geçmiş pişmanlıklar için 'wish + Past Perfect'; acil yapılması gerekenler için
+    'It's time + Past Simple'.
+  explanation_en:
+  - title: The Hypothetical Past Shift
+    content: English shifts tenses one step into the past to signal unreality. When
+      wishing for an impossible present change, use Past Simple. When regretting a
+      past decision, use Past Perfect.
+    patterns:
+    - 'Present Wish: Subject + wish + (that) + Subject + Past Simple (e.g., I wish
+      we had more time)'
+    - 'Past Regret: Subject + wish + (that) + Subject + Past Perfect (e.g., I wish
+      we had refactored earlier)'
+    - 'Urgent Action: It''s (high) time + Subject + Past Simple (e.g., It''s time
+      we upgraded the database)'
+  explanation_tr: Türkçede 'Keşke daha çok bütçemiz olsa' (şimdi) ve 'Keşke o sunucuyu
+    kapatmasaydık' (geçmiş) dilek bildiren cümlelerdir. İngilizcede 'wish' fiilinden
+    sonra ASLA geniş zaman veya 'will' gelmez; gerçekdışılık bildirmek için zaman
+    kipi geçmişe çekilir. Ayrıca 'It's time we updated...' kalıbında fiilin geçmiş
+    zamanda olması Türk öğrenicileri çok şaşırtır.
+  rules:
+  - name: Hypothetical Subjunctive Wishes
+    pattern: Subject + wish + Subject + Past Perfect (for past regrets)
+    use_cases:
+    - Reflecting on architectural miscalculations during retrospectives
+    - Expressing urgency regarding overdue technical debt remediation
+    time_markers:
+    - in hindsight
+    - it's high time
+    - if only
+  contrasts:
+  - structure_a: I wish we had an automated failover system right now.
+    structure_b: I wish we had tested the failover system before the outage.
+    difference_explanation_en: Structure A is a present wish (uses Past Simple 'had').
+      Structure B is a past regret (uses Past Perfect 'had tested').
+    difference_explanation_tr: A cümlesi şu anki bir duruma dair dilektir ('had').
+      B cümlesi ise geçmişteki bir hataya dair pişmanlıktır ('had tested').
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: '''Wish'' ve ''It''s time'' Sonrası Şimdiki Zaman Kullanma Hatası'
+    explanation_tr: 'Türk öğreniciler ''Artık bu kodu yenileme vaktimiz geldi'' derken
+      ''It is time we update this code'' demeye eğilimlidir. ''It''s time'' kalıbı
+      kural olarak Past Simple gerektirir: ''It is time we updated this code''.'
+    incorrect_example: It is high time the management approves the infrastructure
+      budget.
+    correct_example: It is high time the management approved the infrastructure budget.
+  examples:
+  - en: I wish we had implemented centralized logging before expanding into European
+      markets.
+    tr: Avrupa pazarlarına açılmadan önce merkezi log yönetimini uygulamış olsaydık
+      keşke.
+    rule_highlight: Wish + Past Perfect for past regret
+    context: Engineering Retrospective
+  - en: It is high time the engineering leadership addressed our accumulating technical
+      debt.
+    tr: Mühendislik liderliğinin biriken teknik borcumuzu ele almasının vakti çoktan
+      geldi.
+    rule_highlight: It is high time + Past Simple
+    context: Strategic Alignment
+  topic_tags:
+  - wishes
+  - regrets
+  - unreal-past
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.solution
+  - vocab.conundrum
+  status: APPROVED
+  version: 1
+- id: grammar.b2.causative-make-let-have-get
+  title: 'Complex Causative Patterns: Have, Get, Make, and Let'
+  cefr_level: B2
+  category: passive_and_causative
+  summary_en: 'Direct and delegate actions effectively: use ''make someone do'' for
+    compulsion, ''let someone do'' for permission, ''have someone do'' for assignment,
+    and ''get someone to do'' for persuasion.'
+  summary_tr: 'Eylemleri delege etme ve yaptırma çatıları: zorlama için ''make'',
+    izin için ''let'', profesyonel görevlendirme için ''have'', ikna için ''get someone
+    to do''.'
+  explanation_en:
+  - title: Delegation and Authority Nuances
+    content: 'Causative verbs allow managers and engineers to express varying degrees
+      of authority: compulsion (make), authorization (let), delegation (have), and
+      persuasion (get).'
+    patterns:
+    - 'Make (Compulsion): Subject + make + Person + Bare Infinitive (no ''to'')'
+    - 'Let (Permission): Subject + let + Person + Bare Infinitive (no ''to'')'
+    - 'Have (Delegation): Subject + have + Person + Bare Infinitive (no ''to'')'
+    - 'Get (Persuasion): Subject + get + Person + TO-Infinitive (requires ''to'')'
+    - 'Passive Causative: Subject + have/get + Thing + Past Participle (V3)'
+  explanation_tr: 'Türkçede ettirgen çatı ''-dir / -t'' ekleriyle kurulur (''yaptırdım'',
+    ''incelettim''). İngilizcede ise kullanılan fiile göre sözdizimi değişir: ''have''
+    ve ''make'' fiillerinden sonra fiil yalın kalırken (''have him review''), ''get''
+    fiilinden sonra ''to'' kullanılır (''get him to review''). Bu ayrım iş yazışmalarında
+    en sık test edilen dilbilgisi kuralıdır.'
+  rules:
+  - name: Causative Active Complementation
+    pattern: have/make/let + Object + Bare Infinitive | get + Object + to-infinitive
+    use_cases:
+    - Delegating tickets and code review tasks to external vendors
+    - Authorizing junior developers to access production environments
+    time_markers:
+    - by tomorrow
+    - before the sprint ends
+  contrasts:
+  - structure_a: We had the external security auditor inspect our smart contracts.
+    structure_b: We got the external security auditor to inspect our smart contracts.
+    difference_explanation_en: Structure A uses 'have' (professional routine assignment,
+      bare infinitive 'inspect'). Structure B uses 'get' (persuasion, requires 'to
+      inspect').
+    difference_explanation_tr: 'A cümlesi ''have'' ile profesyonel görevlendirmeyi
+      belirtir (fiil yalındır: ''inspect''). B cümlesi ise ''get'' ile ikna sürecini
+      anlatır (''to inspect'' gerektirir).'
+  turkish_traps:
+  - trap_type: voice_and_causative_transfer
+    trap_title: '''Make'' ve ''Let'' Sonrasında ''To'' Ekleme Hatası'
+    explanation_tr: Türk öğreniciler sıklıkla 'Our manager made us to stay late' veya
+      'They let us to work remotely' derler. 'Make' ve 'let' kesinlikle 'to' almaz;
+      fiil doğrudan yalın kullanılır.
+    incorrect_example: The security policy lets developers to access internal clusters
+      directly.
+    correct_example: The security policy lets developers access internal clusters
+      directly.
+  examples:
+  - en: The technical director had the DevOps squad deploy the container updates overnight.
+    tr: Teknik direktör, DevOps ekibine konteyner güncellemelerini gece boyunca yayına
+      aldırdı.
+    rule_highlight: Have someone do something (delegation)
+    context: DevOps Operations
+  - en: After lengthy deliberations, the engineering lead got the board to approve
+      the cloud budget.
+    tr: Uzun müzakerelerin ardından mühendislik lideri yönetim kuruluna bulut bütçesini
+      onaylattı.
+    rule_highlight: Get someone to do something (persuasion)
+    context: Executive Buy-In
+  topic_tags:
+  - causatives
+  - make-let-have-get
+  - delegation
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.manage
+  - vocab.facilitate
+  status: APPROVED
+  version: 1
+- id: grammar.b2.discourse-markers-concession-contrast
+  title: 'Discourse Markers of Concession and Contrast: Although, Despite, Whereas,
+    Nonetheless'
+  cefr_level: B2
+  category: discourse_markers_and_cohesion
+  summary_en: Connect complex conflicting ideas with stylistic precision using subordinating
+    conjunctions (although, whereas) and prepositional phrases (despite, in spite
+    of).
+  summary_tr: Çelişen fikirleri bağlamak için yan cümle bağlaçları ('although', 'whereas')
+    ve isim öbeği alan edatların ('despite', 'in spite of') doğru sözdizimiyle kullanımı.
+  explanation_en:
+  - title: Conjunctions vs. Prepositional Connectors
+    content: A crucial structural divide exists between clause linkers (Although,
+      Even though, Whereas) which require a full Subject + Verb clause, and prepositional
+      linkers (Despite, In spite of) which strictly require a Noun Phrase or Gerund
+      (-ing).
+    patterns:
+    - 'Conjunction Clause: Although / Even though / Whereas + Subject + Verb'
+    - 'Prepositional Phrase: Despite / In spite of + Noun Phrase / Verb-ing'
+    - 'Adverbial Transition: Sentence. Nonetheless / However, + Sentence'
+  explanation_tr: Türkçede 'rağmen' edatı hem cümlelere hem isimlere eklenebilir ('Yağmur
+    yağmasına rağmen', 'Zorluklara rağmen'). İngilizcede 'Although' tam bir cümle
+    (Subject + Verb) gerektirirken, 'Despite' sadece isim veya -ing öbeği alır. 'Despite
+    the server was down' ifadesi KESİNLİKLE yanlıştır; 'Although the server was down'
+    veya 'Despite the downtime' denmelidir.
+  rules:
+  - name: Syntactic Complementation of Contrast Connectors
+    pattern: Although + Clause | Despite + [Noun Phrase / Verb-ing]
+    use_cases:
+    - Balancing feature trade-offs in technical evaluation memos
+    - Reporting quarterly financial results with both strengths and weaknesses
+    time_markers:
+    - nonetheless
+    - notwithstanding
+    - even though
+  contrasts:
+  - structure_a: Although our infrastructure costs increased, customer satisfaction
+      improved.
+    structure_b: Despite increasing infrastructure costs, customer satisfaction improved.
+    difference_explanation_en: Structure A uses 'Although' followed by a complete
+      clause (Subject + Verb). Structure B uses 'Despite' followed by a noun phrase.
+    difference_explanation_tr: A cümlesinde 'Although' tam bir cümle alır. B cümlesinde
+      ise 'Despite' bir isim tamlaması veya gerund alır.
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: '''Despite'' Sonrasında Tam Cümle Kullanma Hatası'
+    explanation_tr: Türk çalışanların en yaygın hatası 'Despite we faced many challenges'
+      demektir. 'Despite' bir edattır ve arkasından doğrudan özne-yüklem gelemez.
+      Ya 'Although we faced...' ya da 'Despite the fact that we faced...' denmelidir.
+    incorrect_example: Despite the team worked over the weekend, the release was delayed.
+    correct_example: Although the team worked over the weekend, the release was delayed.
+  examples:
+  - en: Despite severe network bandwidth constraints, the edge microservice maintained
+      sub-second response times.
+    tr: Ağır bant genişliği kısıtlamalarına rağmen, uç mikroservis bir saniyenin altında
+      yanıt sürelerini korudu.
+    rule_highlight: Despite + Noun Phrase
+    context: System Performance
+  - en: The legacy monolith was simple to maintain, whereas the new microservices
+      architecture demands rigorous automated telemetry.
+    tr: Eski monolitik yapının bakımı basitti; oysa yeni mikroservis mimarisi sıkı
+      bir otomatik telemetri gerektiriyor.
+    rule_highlight: Whereas for direct contrast
+    context: Architectural Trade-Offs
+  topic_tags:
+  - discourse-markers
+  - concession
+  - contrast
+  - although-despite
+  - b2-upper-intermediate
+  related_ids:
+  - vocab.alternative
+  - vocab.furthermore
+  status: APPROVED
+  version: 1

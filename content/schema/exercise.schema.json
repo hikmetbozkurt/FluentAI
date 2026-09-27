@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.seanora.com/schemas/exercise.schema.json",
+  "title": "FluentAI Practice Exercise Schema",
+  "description": "Schema for deterministic practice exercises tied to vocabulary, grammar, and reading/listening content.",
+  "type": "object",
+  "required": [
+    "id",
+    "target_content_id",
+    "cefr_level",
+    "skill_domain",
+    "exercise_type",
+    "prompt_en",
+    "stem",
+    "correct_answer",
+    "explanation_en",
+    "explanation_tr",
+    "difficulty"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^exercise\\.[a-z0-9_.-]+$",
+      "description": "Stable semantic content identifier, e.g. exercise.vocab.deliberation-01"
+    },
+    "target_content_id": {
+      "type": "string",
+      "pattern": "^(vocab|grammar|speaking|reading|listening)\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)?$",
+      "description": "Semantic ID of the vocabulary item or grammar lesson being practiced"
+    },
+    "cefr_level": {
+      "type": "string",
+      "enum": ["A2", "B1", "B2", "C1", "C2"],
+      "description": "CEFR difficulty level"
+    },
+    "skill_domain": {
+      "type": "string",
+      "enum": ["vocabulary", "grammar", "reading", "listening", "speaking"],
+      "description": "Primary learning domain"
+    },
+    "exercise_type": {
+      "type": "string",
+      "enum": [
+        "multiple_choice",
+        "fill_in_blank",
+        "error_correction",
+        "sentence_rewrite",
+        "collocation_match"
+      ],
+      "description": "Format of the exercise interaction"
+    },
+    "prompt_en": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Instruction for the learner in English"
+    },
+    "prompt_tr_hint": {
+      "type": "string",
+      "description": "Optional Turkish hint available on demand"
+    },
+    "stem": {
+      "type": "string",
+      "minLength": 5,
+      "description": "Question sentence or context with '___' indicating the blank"
+    },
+    "options": {
+      "type": "array",
+      "description": "Choices for multiple-choice or matching exercises (typically 3-4 options)",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "correct_answer": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The exact correct response string or matching answer"
+    },
+    "explanation_en": {
+      "type": "string",
+      "minLength": 10,
+      "description": "English feedback explaining why the answer is correct"
+    },
+    "explanation_tr": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Turkish feedback explaining grammatical or lexical logic and trap avoidance"
+    },
+    "distractor_explanations": {
+      "type": "object",
+      "description": "Explanation for why specific wrong answers are incorrect, keyed by the distractor option",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["foundation", "standard", "stretch"],
+      "description": "Relative difficulty within the CEFR band"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "AI_REVIEWED",
+        "VALIDATED",
+        "APPROVED",
+        "PUBLISHED",
+        "DEPRECATED"
+      ],
+      "default": "APPROVED",
+      "description": "Editorial lifecycle state"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

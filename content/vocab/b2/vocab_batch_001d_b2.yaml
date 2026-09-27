@@ -1,0 +1,417 @@
+- id: vocab.revenue
+  headword: revenue
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˈrev.ən.juː/
+  audio_ref: null
+  definition_en: Total income generated from the sale of goods or services associated with a company's primary operations.
+  meaning_tr: gelir, hasılat, ciro
+  collocations:
+    - text: generate revenue
+      tr: gelir üretmek
+    - text: annual revenue
+      tr: yıllık gelir
+    - text: recurring revenue
+      tr: yinelenen gelir
+    - text: revenue growth
+      tr: gelir artışı
+  examples:
+    - en: "The software company reported a forty percent increase in annual recurring revenue."
+      tr: "Yazılım şirketi yıllık yinelenen gelirde yüzde kırk artış bildirdi."
+      context: Financial Reporting
+    - en: "Diversifying monetization models helps stabilize corporate revenue during economic downturns."
+      tr: "Gelir modellerini çeşitlendirmek, ekonomik durgunluk dönemlerinde kurumsal geliri dengelemeye yardımcı olur."
+      context: Business Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Revenue" (hasılat/brüt gelir) ile "profit" (kâr) farklıdır. Revenue, giderler düşülmeden önceki toplam satış geliridir; kâr ise giderler çıktıktan sonra kalandır ("net profit").
+      incorrect_example: "Our revenue was high, so we had no expenses at all."
+      correct_example: "Although gross revenue increased, net profit remained flat due to expansion costs."
+  register: business
+  topic_tags:
+    - finance
+    - business
+    - economics
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.assessment
+  headword: assessment
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /əˈses.mənt/
+  audio_ref: null
+  definition_en: The structured evaluation or systematic appraisal of someone's ability, performance, or a project's risk.
+  meaning_tr: değerlendirme, ölçme, kıymet takdiri
+  collocations:
+    - text: risk assessment
+      tr: risk değerlendirmesi
+    - text: performance assessment
+      tr: performans değerlendirmesi
+    - text: initial assessment
+      tr: ilk değerlendirme
+    - text: comprehensive assessment
+      tr: kapsamlı değerlendirme
+  examples:
+    - en: "Before migrating legacy databases to the cloud, the infrastructure team conducted a thorough risk assessment."
+      tr: "Eski veritabanlarını buluta taşımadan önce, altyapı ekibi kapsamlı bir risk değerlendirmesi yürüttü."
+      context: Infrastructure Planning
+    - en: "Quarterly competency assessments help engineers identify areas for technical skill growth."
+      tr: "Üç aylık yetkinlik değerlendirmeleri, mühendislerin teknik beceri geliştirme alanlarını belirlemelerine yardımcı olur."
+      context: Professional Talent
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Değerlendirme yapmak" kalıbı İngilizcede "make an assessment" yerine daha doğal ve kurumsal olarak "conduct an assessment" veya "carry out an assessment" şeklinde ifade edilir.
+      incorrect_example: "The consultant made a security assessment yesterday."
+      correct_example: "The consultant conducted a security assessment yesterday."
+  register: formal
+  topic_tags:
+    - evaluation
+    - analysis
+    - risk-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.dimension
+  headword: dimension
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /daɪˈmen.ʃən/
+  audio_ref: null
+  definition_en: A measurable aspect, component, or perspective of a problem, situation, or geometrical entity.
+  meaning_tr: boyut, veçe, yön
+  collocations:
+    - text: new dimension
+      tr: yeni bir boyut
+    - text: critical dimension
+      tr: kritik boyut
+    - text: add a dimension
+      tr: boyut katmak
+  examples:
+    - en: "The integration of real-time telemetry added a critical new dimension to system monitoring."
+      tr: "Gerçek zamanlı telemetrinin entegrasyonu, sistem izleme sürecine kritik ve yeni bir boyut kattı."
+      context: Observability Architecture
+    - en: "When analyzing user churn, product teams must evaluate both behavioral and economic dimensions."
+      tr: "Kullanıcı kaybını analiz ederken, ürün ekipleri hem davranışsal hem de ekonomik boyutları değerlendirmelidir."
+      context: Product Analytics
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir konuya veya soruna boyut katmaktan bahsederken "add a dimension to" kullanılır; "add dimension with" yanlıştır.
+      incorrect_example: "AI brings a fascinating dimension with customer support."
+      correct_example: "AI brings a fascinating dimension to customer support."
+  register: academic
+  topic_tags:
+    - analysis
+    - perspective
+    - scope
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.expansion
+  headword: expansion
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ɪkˈspæn.ʃən/
+  audio_ref: null
+  definition_en: The act or process of increasing in scale, size, volume, or regional market coverage.
+  meaning_tr: genişleme, büyüme, yayılma
+  collocations:
+    - text: market expansion
+      tr: pazar genişlemesi
+    - text: rapid expansion
+      tr: hızlı büyüme / genişleme
+    - text: expansion plans
+      tr: büyüme planları
+    - text: regional expansion
+      tr: bölgesel büyüme
+  examples:
+    - en: "The startup secured venture backing to accelerate its international market expansion across Europe."
+      tr: "Girişim, Avrupa genelindeki uluslararası pazar genişlemesini hızlandırmak için risk sermayesi desteği sağladı."
+      context: Commercial Strategy
+    - en: "Rapid cloud infrastructure expansion requires strict automated provisioning to prevent cost overruns."
+      tr: "Hızlı bulut altyapısı genişlemesi, maliyet aşımlarını önlemek için sıkı otomatik provizyon gerektirir."
+      context: Cloud Operations
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Expansion" kapsam veya hacimce büyümektir. Para harcamak anlamındaki "expense / expenditure" (gider/masraf) ile karıştırılmamalıdır.
+      incorrect_example: "We checked our monthly expansion and found we spent too much money."
+      correct_example: "We checked our monthly expenses and found we spent too much money."
+  register: business
+  topic_tags:
+    - growth
+    - market-strategy
+    - scale
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.liability
+  headword: liability
+  cefr_level: B2
+  part_of_speech: noun
+  phonetic: /ˌlaɪ.əˈbɪl.ə.ti/
+  audio_ref: null
+  definition_en: The legal or financial responsibility for debts or damages; or someone/something that causes problems.
+  meaning_tr: yükümlülük, mali borç, hukuki sorumluluk; külfet
+  collocations:
+    - text: legal liability
+      tr: hukuki sorumluluk
+    - text: financial liability
+      tr: mali yükümlülük
+    - text: assets and liabilities
+      tr: varlıklar ve borçlar
+    - text: limit liability
+      tr: sorumluluğu sınırlandırmak
+  examples:
+    - en: "The contract includes an indemnity clause to limit civil liability in the event of platform downtime."
+      tr: "Sözleşme, platform kesintisi durumunda hukuki sorumluluğu sınırlandırmak için bir tazminat maddesi içerir."
+      context: Corporate Law
+    - en: "Unmaintained legacy microservices represent a severe operational liability for the enterprise."
+      tr: "Bakımı yapılmayan eski mikroservisler, işletme için ciddi bir operasyonel külfet teşkil eder."
+      context: Technical Debt
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Liability" muhasebede borç/yükümlülük (bilançodaki "pasifler"), hukukta ise "tazminat/sorumluluk" anlamına gelir. Günlük mecazi anlamda ise ayak bağı veya külfettir. Türkçedeki "liyakat" (merit/competence) ile hiçbir ilgisi yoktur.
+      incorrect_example: "He was promoted because of his high liability in coding."
+      correct_example: "He was promoted because of his high competence in coding."
+  register: formal
+  topic_tags:
+    - law
+    - finance
+    - risk
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.demonstrate
+  headword: demonstrate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /ˈdem.ən.streɪt/
+  audio_ref: null
+  definition_en: To clearly show, prove, or exhibit the existence, truth, or practical functioning of something.
+  meaning_tr: göstermek, kanıtlamak, uygulamalı sergilemek
+  collocations:
+    - text: demonstrate capability
+      tr: yeteneği kanıtlamak / göstermek
+    - text: demonstrate value
+      tr: değeri açıkça ortaya koymak
+    - text: clearly demonstrate
+      tr: açıkça göstermek
+  examples:
+    - en: "The benchmark results clearly demonstrate that asynchronous processing reduces request latency."
+      tr: "Kıyaslama sonuçları, asenkron işlemenin istek gecikmesini azalttığını açıkça göstermektedir."
+      context: Performance Benchmarking
+    - en: "During the client sprint demo, the team demonstrated the newly built biometric authentication flow."
+      tr: "Müşteri sprint demosunda ekip, yeni inşa edilen biyometrik kimlik doğrulama akışını uygulamalı olarak sergiledi."
+      context: Agile Demo
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Demonstrate" sokakta gösteri/protesto yapmak anlamına gelebildiği gibi, teknik ve akademik bağlamlarda bir teoriyi kanıtlamak veya bir özelliği "gözler önüne sermek/çalışırken göstermek" demektir.
+      incorrect_example: "The software protested the new algorithm."
+      correct_example: "The proof of concept demonstrated the viability of the new algorithm."
+  register: formal
+  topic_tags:
+    - proof
+    - evidence
+    - presentation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.accelerate
+  headword: accelerate
+  cefr_level: B2
+  part_of_speech: verb
+  phonetic: /əkˈsel.ə.reɪt/
+  audio_ref: null
+  definition_en: To increase the speed, rate, or velocity of progress, growth, or delivery.
+  meaning_tr: hızlandırmak, ivme kazandırmak
+  collocations:
+    - text: accelerate growth
+      tr: büyümeyi hızlandırmak
+    - text: accelerate delivery
+      tr: teslimatı hızlandırmak
+    - text: accelerate adoption
+      tr: benimsenmeyi hızlandırmak
+  examples:
+    - en: "Adopting automated CI/CD pipelines helped accelerate feature delivery across distributed engineering squads."
+      tr: "Otomatik CI/CD boru hatlarını benimsemek, dağıtık mühendislik ekiplerinde özellik teslimatını hızlandırmaya yardımcı oldu."
+      context: DevOps Transformation
+    - en: "Strategic acquisitions allowed the fintech venture to accelerate international expansion."
+      tr: "Stratejik satın almalar, fintek girişiminin uluslararası genişlemesini hızlandırmasını sağladı."
+      context: Corporate Strategy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        İş ve teknoloji süreçlerini hızlandırmak için kurumsal bağlamda "speed up" yerine "accelerate" veya "expedite" tercih edilir. "Speeden up" gibi uydurma türetimler yapılmamalıdır.
+      incorrect_example: "We must speeden up the development process."
+      correct_example: "We must accelerate the development process."
+
+  register: business
+  topic_tags:
+    - speed
+    - growth
+    - velocity
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.initial
+  headword: initial
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /ɪˈnɪʃ.əl/
+  audio_ref: null
+  definition_en: Existing, occurring, or produced at the very beginning of a sequence, phase, or process.
+  meaning_tr: ilk, başlangıçtaki
+  collocations:
+    - text: initial assessment
+      tr: ilk değerlendirme
+    - text: initial release
+      tr: ilk sürüm
+    - text: initial investment
+      tr: ilk yatırım
+    - text: initial reaction
+      tr: ilk tepki
+  examples:
+    - en: "The initial release of the mobile application focused strictly on core offline-first capabilities."
+      tr: "Mobil uygulamanın ilk sürümü kesin bir şekilde temel çevrimdışı öncelikli yeteneklere odaklandı."
+      context: Product Delivery
+    - en: "Despite promising initial results, the engineering committee decided to run a second validation trial."
+      tr: "Umut verici ilk sonuçlara rağmen, mühendislik komitesi ikinci bir doğrulama denemesi yapmaya karar verdi."
+      context: Technical Quality
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Initial" sıfat olarak "başlangıçtaki/ilk" demektir; isim olarak ise bir ismin "baş harfleri" (örneğin J.D.) anlamına gelir. "Initiative" (girişim) ile karıştırılmamalıdır.
+      incorrect_example: "He took an initial to solve the company crisis."
+      correct_example: "He took the initiative to solve the company crisis."
+  register: general
+  topic_tags:
+    - stages
+    - milestones
+    - beginnings
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.substantial
+  headword: substantial
+  cefr_level: B2
+  part_of_speech: adjective
+  phonetic: /səbˈstæn.ʃəl/
+  audio_ref: null
+  definition_en: Of considerable importance, size, volume, value, or real material worth.
+  meaning_tr: önemli, kayda değer, hatırı sayılır, esaslı
+  collocations:
+    - text: substantial increase
+      tr: kayda değer artış
+    - text: substantial progress
+      tr: önemli ilerleme
+    - text: substantial difference
+      tr: belirgin fark
+    - text: substantial amount
+      tr: hatırı sayılır miktar
+  examples:
+    - en: "The migration to serverless architecture resulted in substantial savings on monthly cloud compute bills."
+      tr: "Sunucusuz mimariye geçiş, aylık bulut işlem faturalarında kayda değer tasarruflar sağladı."
+      context: Cloud Optimization
+    - en: "Engineers made substantial progress toward stabilizing the distributed messaging cluster this sprint."
+      tr: "Mühendisler bu sprintte dağıtık mesajlaşma kümesini kararlı hale getirme yönünde önemli bir ilerleme kaydettiler."
+      context: Sprint Review
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Substantial" (kayda değer/önemli/büyük), Türkçedeki "madde" (substance) kökünden gelse de fiziksel maddesel olmaktan ziyade boyut veya derecenin büyüklüğünü belirtmek için kullanılır.
+      incorrect_example: "This table is made of substantial wood."
+      correct_example: "This table is made of solid wood, and it represents a substantial investment."
+  register: formal
+  topic_tags:
+    - scale
+    - magnitude
+    - significance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.moreover
+  headword: moreover
+  cefr_level: B2
+  part_of_speech: adverb
+  phonetic: /mɔːrˈəʊ.vər/
+  audio_ref: null
+  definition_en: In addition to what has already been said; furthermore (used to introduce a persuasive additional point).
+  meaning_tr: dahası, üstelik, ayrıca, bundan başka
+  collocations:
+    - text: moreover, it is essential
+      tr: dahası, zorunludur
+    - text: moreover, evidence suggests
+      tr: dahası, kanıtlar göstermektedir ki
+  examples:
+    - en: "The proposed database engine provides horizontal scalability; moreover, it offers built-in end-to-end encryption."
+      tr: "Önerilen veritabanı motoru yatay ölçeklenebilirlik sağlar; dahası, yerleşik uçtan uca şifreleme sunar."
+      context: Architecture Proposal
+    - en: "The new framework reduces bundle sizes significantly; moreover, it improves developer onboarding speed."
+      tr: "Yeni çatı paket boyutlarını önemli ölçüde azaltır; üstelik yeni yazılımcıların adapte olma hızını artırır."
+      context: Frontend Engineering
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Moreover" yüksek formaliteye sahip bir bağlaçtır ve genellikle önceden sunulan bir savı daha da güçlendiren ek bir kanıt getirmek için kullanılır. Günlük samimi konuşmada "also" veya "besides" tercih edilir.
+      incorrect_example: "I want an ice cream. Moreover, I want a cookie."
+      correct_example: "I would like an ice cream, and also a cookie."
+  register: formal
+  topic_tags:
+    - discourse-markers
+    - cohesion
+    - persuasion
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.follow-through
+  headword: follow through
+  cefr_level: B2
+  part_of_speech: phrasal_verb
+  phonetic: /ˈfɒl.əʊ θruː/
+  audio_ref: null
+  definition_en: To continue an undertaking, agreement, or initiative until it is fully completed and resolved.
+  meaning_tr: sonuna kadar götürmek, başladığı işi bitirmek, gereğini yapmak
+  collocations:
+    - text: follow through on commitments
+      tr: taahhütlerin arkasında durmak / sonuna kadar götürmek
+    - text: follow through with plans
+      tr: planları nihayete erdirmek
+    - text: failure to follow through
+      tr: işi sonuna kadar götürememe
+  examples:
+    - en: "Reliable team leaders always follow through on their commitments made during quarterly planning."
+      tr: "Güvenilir ekip liderleri, üç aylık planlamada verdikleri taahhütleri her zaman sonuna kadar yerine getirirler."
+      context: Executive Leadership
+    - en: "The committee approved the architectural proposal but questioned the vendor's capability to follow through."
+      tr: "Komite mimari öneriyi onayladı ancak tedarikçinin işi sonuna kadar götürme yetkinliğini sorguladı."
+      context: Vendor Evaluation
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Follow through" bir işi sonlandırmak ve sözünü tutmaktır. Genellikle "follow through on (a promise/commitment)" veya "follow through with (a plan)" şeklinde kullanılır. Sadece "follow" (takip etmek) ile karıştırılmamalıdır.
+      incorrect_example: "Please follow through me to the conference room."
+      correct_example: "Please follow me to the conference room."
+  register: general
+  topic_tags:
+    - execution
+    - accountability
+    - delivery
+  related_ids: []
+  status: APPROVED
+  version: 1

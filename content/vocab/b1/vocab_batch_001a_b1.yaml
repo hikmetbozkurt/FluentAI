@@ -1,0 +1,346 @@
+- id: vocab.solution
+  headword: solution
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /səˈluː.ʃən/
+  audio_ref: null
+  definition_en: A means of solving a problem, overcoming a difficulty, or handling a challenging situation.
+  meaning_tr: çözüm, çare, hal yolu
+  collocations:
+    - text: practical solution
+      tr: pratik çözüm
+    - text: find a solution
+      tr: çözüm bulmak
+    - text: proposed solution
+      tr: önerilen çözüm
+  examples:
+    - en: The product team worked late to find a viable solution to the database latency issue.
+      tr: Ürün ekibi, veritabanı gecikme sorununa uygulanabilir bir çözüm bulmak için geç saatlere kadar çalıştı.
+      context: Software Engineering
+    - en: Implementing automated testing proved to be an effective long-term solution for code quality.
+      tr: Otomatik testleri devreye almak, kod kalitesi için etkili ve uzun vadeli bir çözüm olduğunu kanıtladı.
+      context: Quality Assurance
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "bir şeye çözüm" denirken "-e/-a" yönelme hali kullanılır. İngilizcede "solution"
+        ismini izleyen edat "for" değil, hemen hemen her zaman "to"dur: "solution to the problem".
+      incorrect_example: We need an urgent solution for this customer dispute.
+      correct_example: We need an urgent solution to this customer dispute.
+  register: general
+  topic_tags:
+    - problem-solving
+    - technology
+    - engineering
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.relationship
+  headword: relationship
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /rɪˈleɪ.ʃən.ʃɪp/
+  audio_ref: null
+  definition_en: The way in which two or more people, groups, or organizations regard and behave toward each other.
+  meaning_tr: ilişki, bağ, münasebet
+  collocations:
+    - text: working relationship
+      tr: çalışma ilişkisi
+    - text: build a relationship
+      tr: ilişki kurmak / geliştirmek
+    - text: client relationship
+      tr: müşteri ilişkisi
+  examples:
+    - en: Building a strong working relationship with our offshore partners required transparent daily updates.
+      tr: Yurt dışındaki iş ortaklarımızla güçlü bir çalışma ilişkisi kurmak, şeffaf günlük güncellemeler gerektirdi.
+      context: Partner Relations
+    - en: Our key account manager focuses entirely on strengthening long-term client relationships.
+      tr: Müşteri ilişkileri yöneticimiz tamamen uzun vadeli müşteri ilişkilerini güçlendirmeye odaklanıyor.
+      context: Account Management
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Relationship" ile "relation" karıştırılabilir. "Relationship" daha çok kişiler, ekipler veya
+        kurumlar arasındaki karşılıklı duygusal/profesyonel bağı anlatır. "Relations" ise uluslararası veya
+        kamusal ilişkilerde çoğul kullanılır ("public relations", "international relations").
+      incorrect_example: We have good relations with our direct manager.
+      correct_example: We have a good working relationship with our direct manager.
+  register: general
+  topic_tags:
+    - relationships
+    - collaboration
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.suggestion
+  headword: suggestion
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /səˈdʒes.tʃən/
+  audio_ref: null
+  definition_en: An idea or plan put forward for consideration, discussion, or possible adoption.
+  meaning_tr: öneri, tavsiye, teklif
+  collocations:
+    - text: make a suggestion
+      tr: öneride bulunmak
+    - text: welcome suggestions
+      tr: önerileri memnuniyetle karşılamak
+    - text: constructive suggestion
+      tr: yapıcı öneri
+  examples:
+    - en: During the retrospective meeting, our frontend engineer made a helpful suggestion about caching.
+      tr: Retrospektif toplantısı sırasında frontend mühendisimiz önbelleğe alma konusunda faydalı bir öneride bulundu.
+      context: Agile Retrospective
+    - en: The department head is always open to constructive suggestions from junior team members.
+      tr: Bölüm başkanı, genç ekip üyelerinden gelen yapıcı önerilere her zaman açıktır.
+      context: Team Culture
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "öneri vermek" veya "öneri yapmak" derken İngilizcede "give a suggestion" yerine
+        doğal ve yaygın olan kalıp "make a suggestion"dır.
+      incorrect_example: May I give a suggestion about our cloud architecture?
+      correct_example: May I make a suggestion about our cloud architecture?
+  register: general
+  topic_tags:
+    - communication
+    - feedback
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.apologize
+  headword: apologize
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /əˈpɒl.ə.dʒaɪz/
+  audio_ref: null
+  definition_en: To express regret or remorse for something that one has done wrong or for causing an inconvenience.
+  meaning_tr: özür dilemek, kusura bakmamasını istemek
+  collocations:
+    - text: apologize for a delay
+      tr: gecikme için özür dilemek
+    - text: sincerely apologize
+      tr: içtenlikle özür dilemek
+    - text: apologize to someone
+      tr: birinden özür dilemek
+  examples:
+    - en: We sincerely apologize for the unexpected server downtime that occurred earlier this morning.
+      tr: Bu sabah erken saatlerde meydana gelen beklenmedik sunucu kesintisi için içtenlikle özür dileriz.
+      context: Incident Incident Communication
+    - en: The project lead apologized to the client for missing the preliminary sprint deadline.
+      tr: Proje lideri, ön sprint teslim tarihini kaçırdığı için müşteriden özür diledi.
+      context: Client Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "birinden özür dilemek" denir; İngilizcede ise kişi "to" ile bağlanır: "apologize to someone".
+        Neden belirtirken ise "for" kullanılır: "apologize for the mistake". "Apologize someone" yanlıştır.
+      incorrect_example: The customer support rep apologized the user for the error.
+      correct_example: The customer support rep apologized to the user for the error.
+  register: general
+  topic_tags:
+    - communication
+    - courtesy
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.convince
+  headword: convince
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /kənˈvɪns/
+  audio_ref: null
+  definition_en: To cause someone to believe firmly in the truth or validity of something by argument or evidence.
+  meaning_tr: ikna etmek, inandırmak
+  collocations:
+    - text: convince stakeholders
+      tr: paydaşları ikna etmek
+    - text: hard to convince
+      tr: ikna etmesi güç
+    - text: convince someone of something
+      tr: birini bir şeye ikna etmek
+  examples:
+    - en: The product designer presented user metrics to convince the leadership team to approve the redesign.
+      tr: Ürün tasarımcısı, liderlik ekibini yeniden tasarımı onaylamaya ikna etmek için kullanıcı metriklerini sundu.
+      context: Product Strategy
+    - en: It took several product demos to convince our enterprise client of our software security features.
+      tr: Kurumsal müşterimizi yazılımımızın güvenlik özelliklerine ikna etmek birkaç ürün demosu gerektirdi.
+      context: Enterprise Sales
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Convince" birinin bir fikre ya da gerçeğe *inanmasını* sağlamaktır ("convince someone that...").
+        Birini bir eylemi *yapmaya* ikna etmek veya razı etmek için ise genellikle "persuade" fiili kullanılır
+        ("persuade someone to take action").
+      incorrect_example: I convinced him to sign the employment contract immediately.
+      correct_example: I persuaded him to sign the employment contract immediately.
+  register: general
+  topic_tags:
+    - communication
+    - negotiation
+    - influence
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.handle
+  headword: handle
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ˈhæn.dəl/
+  audio_ref: null
+  definition_en: To manage, deal with, or take responsibility for a task, problem, or situation successfully.
+  meaning_tr: ele almak, yönetmek, başa çıkmak
+  collocations:
+    - text: handle a situation
+      tr: bir durumu yönetmek
+    - text: handle pressure
+      tr: baskıyla başa çıkmak
+    - text: handle inquiries
+      tr: gelen soruları/talepleri yanıtlamak
+  examples:
+    - en: Senior technical support engineers handle escalated customer tickets during peak traffic hours.
+      tr: Kıdemli teknik destek mühendisleri, yoğun trafik saatlerinde üst kademeye aktarılan müşteri taleplerini yönetir.
+      context: Technical Support
+    - en: She proved her leadership ability by handling the project crisis calmly and methodically.
+      tr: Proje krizini sakin ve sistemli bir şekilde ele alıp yöneterek liderlik yeteneğini kanıtladı.
+      context: Crisis Management
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Handle" geçişli (transitive) bir fiildir ve doğrudan nesne alır: "handle the issue".
+        Türkçe "ile başa çıkmak" mantığıyla "handle with the problem" demek yaygın bir hatadır.
+        "With" edatı "deal with" ile kullanılır, "handle" ile kullanılmaz.
+      incorrect_example: Our support team will handle with your request shortly.
+      correct_example: Our support team will handle your request shortly.
+  register: general
+  topic_tags:
+    - problem-solving
+    - management
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.flexible
+  headword: flexible
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈflek.sə.bəl/
+  audio_ref: null
+  definition_en: Able to adjust readily to different conditions, changing circumstances, or new requirements.
+  meaning_tr: esnek, uyum sağlayabilen, değişken
+  collocations:
+    - text: flexible working hours
+      tr: esnek çalışma saatleri
+    - text: flexible approach
+      tr: esnek yaklaşım
+    - text: highly flexible
+      tr: son derece esnek
+  examples:
+    - en: Our tech company offers flexible working arrangements, enabling developers to work remotely twice a week.
+      tr: Teknoloji şirketimiz esnek çalışma düzenlemeleri sunarak yazılımcıların haftada iki gün uzaktan çalışmasına imkan tanıyor.
+      context: Company Benefits
+    - en: We need a flexible architecture that can accommodate sudden spikes in e-commerce web traffic.
+      tr: E-ticaret web trafiğindeki ani artışlara uyum sağlayabilecek esnek bir mimariye ihtiyacımız var.
+      context: System Architecture
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Flexible", fiziksel esnekliğin yanı sıra iş hayatında "uyum sağlayabilen, değişime açık"
+        anlamında çok sık kullanılır. İnsanlar için "He is flexible" denildiğinde fiziksel değil,
+        koşullara kolay uyum sağlayan ve uzlaşmacı biri olduğu kastedilir.
+      incorrect_example: The manager is very elastic about meeting times.
+      correct_example: The manager is very flexible about meeting times.
+  register: general
+  topic_tags:
+    - workplace
+    - career
+    - adaptability
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.definitely
+  headword: definitely
+  cefr_level: B1
+  part_of_speech: adverb
+  phonetic: /ˈdef.ɪ.nət.li/
+  audio_ref: null
+  definition_en: Without any doubt; in a clear, decisive, and certain manner.
+  meaning_tr: kesinlikle, şüphesiz, muhakkak
+  collocations:
+    - text: definitely worth it
+      tr: kesinlikle değer
+    - text: will definitely attend
+      tr: kesinlikle katılacak
+    - text: definitely agree
+      tr: kesinlikle katılmak / aynı fikirde olmak
+  examples:
+    - en: I will definitely share the finalized presentation slides with everyone after today's call.
+      tr: Bugünkü görüşmenin ardından kesinleşen sunum slaytlarını bugünkü toplantıdan sonra kesinlikle herkesle paylaşacağım.
+      context: Meeting Wrap-up
+    - en: Upgrading our staging servers will definitely improve pipeline deployment speed.
+      tr: Hazırlık sunucularımızı yükseltmek, ardışık düzen dağıtım hızını kesinlikle artıracaktır.
+      context: DevOps Infrastructure
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Definitely" sözcüğü yazımında sıkça hata yapılır (genellikle "definately" olarak yanlış yazılır).
+        Ayrıca soru cümlelerinde "Yes, definitely!" şeklinde doğrudan onay vermek iş İngilizcesinde
+        oldukça profesyonel ve kendinden emin bir tondur.
+      incorrect_example: I will definately review your pull request tonight.
+      correct_example: I will definitely review your pull request tonight.
+  register: general
+  topic_tags:
+    - communication
+    - clarity
+    - discourse
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.deal-with
+  headword: deal with
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /diːl wɪð/
+  audio_ref: null
+  definition_en: To take necessary action in order to resolve a problem, handle a task, or manage a relationship.
+  meaning_tr: ilgilenmek, ele almak, üstesinden gelmek
+  collocations:
+    - text: deal with complaints
+      tr: şikayetlerle ilgilenmek
+    - text: deal with stress
+      tr: stresle başa çıkmak
+    - text: deal with issues
+      tr: sorunları çözmek / ele almak
+  examples:
+    - en: Customer success representatives have to deal with difficult inquiries calmly and politely.
+      tr: Müşteri başarı temsilcileri, zorlu talepleri sakin ve kibar bir şekilde ele almak zorundadır.
+      context: Customer Operations
+    - en: Our security operations center deals with dozens of potential security alerts every single day.
+      tr: Güvenlik operasyonları merkezimiz her gün onlarca potansiyel güvenlik uyarısıyla ilgilenir ve çözüme kavuşturur.
+      context: Cybersecurity
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Deal with" kalıbındaki "with" edatı zorunludur. Türkçedeki "bununla ilgilenmek" ifadesine paraleldir.
+        "I will deal this problem" denemez, "I will deal with this problem" denmelidir.
+      incorrect_example: Our team leader will deal this issue tomorrow morning.
+      correct_example: Our team leader will deal with this issue tomorrow morning.
+  register: general
+  topic_tags:
+    - problem-solving
+    - operations
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1

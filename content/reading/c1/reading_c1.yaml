@@ -1,0 +1,97 @@
+- id: reading.c1.platform-economics
+  title: Platform Economics and Two-Sided Network Effects
+  cefr_level: C1
+  category: business_strategy
+  summary_en: Strategic mechanics of digital platforms, cross-side network externalities, customer subsidization, and multi-homing
+    barriers.
+  summary_tr: Dijital platform ekonomisi, iki taraflı ağ etkileri, çapraz sübvansiyon stratejileri ve çoklu platform kullanım
+    engelleri.
+  word_count: 188
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: The Dynamics of Two-Sided Markets
+    content_en: Unlike traditional pipeline businesses that generate revenue through linear supply chains, modern technology
+      platforms orchestrate value exchange between two distinct user constituencies. In ride-hailing, cloud marketplaces,
+      or payment networks, the utility derived by one participant group directly correlates with the participation volume
+      on the complementary side. These cross-side network externalities create formidable competitive moats that resist conventional
+      market disruption. Platform market power attracts intense regulatory scrutiny from antitrust authorities. Multi-sided
+      platforms must achieve critical mass to remain commercially viable. Strategic deliberation is essential before adjusting
+      take-rate monetization fees.
+    content_tr: Doğrusal tedarik zincirleri üzerinden gelir üreten geleneksel boru hattı işletmelerinin aksine, modern teknoloji
+      platformları iki farklı kullanıcı grubu arasında değer alışverişini koordine eder. Araç çağırma, bulut pazaryerleri
+      veya ödeme ağlarında bir tarafın elde ettiği fayda, karşı taraftaki katılım hacmiyle doğrudan orantılıdır. Bu çapraz
+      ağ dışsallıkları, geleneksel pazar sarsıntılarına direnen güçlü rekabetçi hendekler oluşturur. Platform pazar gücü,
+      antitröst otoritelerinden yoğun yasal inceleme çeker. Çok taraflı platformlar ticari olarak yaşayabilir kalmak için
+      kritik kütleye ulaşmalıdır. Komisyon oranı para kazanma ücretlerini ayarlamadan önce stratejik müzakere şarttır.
+  - paragraph_index: 2
+    title: The Chicken-and-Egg Dilemma and Subsidization
+    content_en: 'The primary operational hurdle for any fledgling platform is resolving the cold-start problem: attracting
+      developers without users, or users without software. To catalyze adoption, platform operators employ asymmetric pricing
+      strategies, deliberately subsidizing the more price-sensitive side—often offering free developer SDKs or buyer discounts—while
+      monetizing the inelastic side once liquidity is established.'
+    content_tr: 'Yeni kurulan herhangi bir platformun önündeki birincil operasyonel engel soğuk başlangıç ikilemini çözmektir:
+      Kullanıcı olmadan geliştiriciyi, yazılım olmadan kullanıcıyı çekmek zordur. Katılımı hızlandırmak için platform operatörleri
+      asimetrik fiyatlandırma uygular; fiyata duyarlı tarafı sübvanse ederken (ücretsiz SDK veya indirimler sunarak), likidite
+      oluştuktan sonra fiyata daha az duyarlı olan tarafı monetize ederler.'
+  - paragraph_index: 3
+    title: Mitigating Multi-Homing Threats
+    content_en: However, the durability of a platform's economic rent is constantly threatened by multi-homing—the propensity
+      of users or service providers to affiliate with multiple competing platforms simultaneously. Platform architects counter
+      this vulnerability by instituting proprietary standards, data integration lock-in, and exclusive partnership agreements,
+      thereby raising the switching costs for participants.
+    content_tr: Bununla birlikte, bir platformun ekonomik rantının sürdürülebilirliği çoklu platform kullanımı (multi-homing)
+      tehdidiyle sürekli sınanır; yani kullanıcıların veya tedarikçilerin birden fazla rakip platformda aynı anda yer alma
+      eğilimi. Platform mimarları özel standartlar, veri entegrasyonu kilitlenmesi ve münhasır ortaklık anlaşmaları geliştirerek
+      katılımcıların geçiş maliyetlerini artırır ve bu zaafiyeti bertaraf ederler.
+  vocabulary_annotations:
+  - word: scrutiny
+    vocab_id: vocab.scrutiny
+    context_definition_en: Critical and thorough observation or examination, particularly by regulators or investors.
+    context_meaning_tr: Düzenleyici kurumlar veya yatırımcılar tarafından yapılan derinlemesine inceleme ve denetim.
+  - word: viable
+    vocab_id: vocab.viable
+    context_definition_en: Capable of working successfully; commercially feasible and sustainable.
+    context_meaning_tr: Ticari olarak uygulanabilir, sürdürülebilir ve yaşayabilir.
+  - word: deliberation
+    vocab_id: vocab.deliberation
+    context_definition_en: Long and careful consideration or discussion before arriving at a corporate decision.
+    context_meaning_tr: Stratejik bir karar öncesinde yapılan etraflı ve dikkatli müzakere.
+  comprehension_questions:
+  - id: q_plat_01
+    question_en: How do platform businesses differ fundamentally from linear pipeline businesses?
+    question_tr_hint: Platform işletmelerinin geleneksel işletmelerden temel farkını bulunuz.
+    options:
+    - They produce all physical goods in centralized corporate factories
+    - They avoid paying taxes in any international jurisdiction
+    - They do not rely on software or internet connectivity
+    - They orchestrate value exchange between two distinct, interdependent participant groups
+    correct_answer: They orchestrate value exchange between two distinct, interdependent participant groups
+    explanation_en: The opening paragraph contrasts pipeline supply chains with platforms that coordinate value exchange between
+      complementary participant groups (two-sided markets).
+    explanation_tr: İlk paragrafta platformların geleneksel doğrusal zincirlerden farklı olarak birbirine bağımlı iki farklı
+      grup arasındaki değer alışverişini koordine ettiği vurgulanmıştır.
+  - id: q_plat_02
+    question_en: What strategy is commonly employed to overcome the cold-start problem?
+    question_tr_hint: Soğuk başlangıç ikilemini çözmek için kullanılan stratejiyi belirleyiniz.
+    options:
+    - Forcing all users to pay high upfront subscription fees
+    - Subsidizing the price-sensitive side to achieve critical mass before monetizing the inelastic side
+    - Halting marketing efforts until competitor products fail
+    - Outsourcing entire product engineering to non-technical agencies
+    correct_answer: Subsidizing the price-sensitive side to achieve critical mass before monetizing the inelastic side
+    explanation_en: The second paragraph explains that operators employ asymmetric pricing, subsidizing the price-sensitive
+      constituency to generate liquidity before monetizing the other side.
+    explanation_tr: İkinci paragrafta operatörlerin fiyata duyarlı tarafı sübvanse ederek likidite oluşturduktan sonra diğer
+      taraf üzerinden gelir elde ettiği aktarılmıştır.
+  topic_tags:
+  - platform-economics
+  - strategy
+  - network-effects
+  - c1-advanced
+  related_ids:
+  - vocab.scrutiny
+  - vocab.viable
+  - vocab.deliberation
+  status: APPROVED
+  version: 1

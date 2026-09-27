@@ -1,0 +1,997 @@
+manifest_id: legacy_vocab_topic_backfill_manifest
+description: Reviewed topic-relation backfill planning manifest for the 107 legacy
+  vocabulary items lacking canonical belongs_to_topic relations.
+target_item_count: 107
+confidence_summary:
+  high: 107
+  medium: 0
+  low: 0
+items:
+- vocab_id: vocab.align
+  headword: align
+  cefr_level: B2
+  current_topic_tags:
+  - leadership
+  - strategy
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Core organizational and cross-team strategic alignment verb.
+- vocab_id: vocab.allocate
+  headword: allocate
+  cefr_level: B1
+  current_topic_tags:
+  - budget
+  - management
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Distribution of financial budget and corporate resources.
+- vocab_id: vocab.ambiguity
+  headword: ambiguity
+  cefr_level: C1
+  current_topic_tags:
+  - executive
+  - problem-solving
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Resolving uncertainty and clarifying requirements in decision making.
+- vocab_id: vocab.anomaly
+  headword: anomaly
+  cefr_level: C2
+  current_topic_tags:
+  - tech
+  - analysis
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Detecting statistical and observational deviations from normal behavior.
+- vocab_id: vocab.appointment
+  headword: appointment
+  cefr_level: A2
+  current_topic_tags:
+  - meetings
+  - workplace
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Office coordination, HR appointments, and workplace calendar management.
+- vocab_id: vocab.articulate-adj
+  headword: articulate
+  cefr_level: C1
+  current_topic_tags:
+  - communication
+  - leadership
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Fluency, clarity, and expressiveness in spoken/written communication.
+- vocab_id: vocab.attend
+  headword: attend
+  cefr_level: A2
+  current_topic_tags:
+  - meetings
+  - workplace
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Participating in workplace meetings, sessions, and professional events.
+- vocab_id: vocab.benchmark
+  headword: benchmark
+  cefr_level: B2
+  current_topic_tags:
+  - performance
+  - strategy
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Industry standard comparison and commercial performance baselines.
+- vocab_id: vocab.benchmark-v
+  headword: benchmark
+  cefr_level: C2
+  current_topic_tags:
+  - strategy
+  - tech
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Comparative performance evaluation against market standards and frameworks.
+- vocab_id: vocab.bottleneck
+  headword: bottleneck
+  cefr_level: B2
+  current_topic_tags:
+  - operations
+  - tech
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Diagnosing workflow congestion points and system throughput constraints.
+- vocab_id: vocab.brief
+  headword: brief
+  cefr_level: B1
+  current_topic_tags:
+  - communication
+  - meetings
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Providing concise instructions, updates, and context to colleagues.
+- vocab_id: vocab.cancel
+  headword: cancel
+  cefr_level: A2
+  current_topic_tags:
+  - workplace
+  - coordination
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Canceling sprint meetings (retrospectives) and workplace travel bookings.
+- vocab_id: vocab.clarify
+  headword: clarify
+  cefr_level: B2
+  current_topic_tags:
+  - communication
+  - meetings
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Seeking and providing clarity in professional dialogue and specifications.
+- vocab_id: vocab.coherent
+  headword: coherent
+  cefr_level: C1
+  current_topic_tags:
+  - strategy
+  - architecture
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Logical structure, internal consistency, and sound analytical cohesion.
+- vocab_id: vocab.collaborate
+  headword: collaborate
+  cefr_level: B1
+  current_topic_tags:
+  - teamwork
+  - workplace
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Cross-functional teamwork and cooperative workplace execution.
+- vocab_id: vocab.colleague
+  headword: colleague
+  cefr_level: A2
+  current_topic_tags:
+  - workplace
+  - team
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Direct workplace peer relationships and office teamwork.
+- vocab_id: vocab.complain
+  headword: complain
+  cefr_level: B1
+  current_topic_tags:
+  - client
+  - service
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Expressing grievances, feedback, and customer dissatisfaction.
+- vocab_id: vocab.compliance
+  headword: compliance
+  cefr_level: B2
+  current_topic_tags:
+  - legal
+  - corporate
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Adhering to regulatory standards, corporate policies, and legal frameworks.
+- vocab_id: vocab.comprehensive
+  headword: comprehensive
+  cefr_level: C1
+  current_topic_tags:
+  - analysis
+  - documentation
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: All-inclusive, exhaustive examination and analytical coverage.
+- vocab_id: vocab.concur
+  headword: concur
+  cefr_level: C1
+  current_topic_tags:
+  - meetings
+  - governance
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Formal agreement and consensus expression in professional discussions.
+- vocab_id: vocab.confirm
+  headword: confirm
+  cefr_level: A2
+  current_topic_tags:
+  - communication
+  - email
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Verifying details, scheduling confirmation, and written correspondence.
+- vocab_id: vocab.consensus
+  headword: consensus
+  cefr_level: C2
+  current_topic_tags:
+  - business
+  - leadership
+  - governance
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Organizational leadership alignment and collective team decision making.
+- vocab_id: vocab.contingency
+  headword: contingency
+  cefr_level: B2
+  current_topic_tags:
+  - planning
+  - risk
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Planning provisions for unexpected events, risk mitigation, and disaster
+    recovery.
+- vocab_id: vocab.cross-functional
+  headword: cross-functional
+  cefr_level: B2
+  current_topic_tags:
+  - agile
+  - team
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Interdisciplinary departmental collaboration and modern agile squads.
+- vocab_id: vocab.deadline
+  headword: deadline
+  cefr_level: B1
+  current_topic_tags:
+  - workplace
+  - time-management
+  - planning
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Time tracking, project delivery targets, and schedule commitments.
+- vocab_id: vocab.delay
+  headword: delay
+  cefr_level: A2
+  current_topic_tags:
+  - project
+  - timeline
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Project timeline slippage, software release postponement, and operational
+    delays.
+- vocab_id: vocab.delegate
+  headword: delegate
+  cefr_level: B1
+  current_topic_tags:
+  - leadership
+  - management
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Distributing task responsibility and managerial empowerment.
+- vocab_id: vocab.deliver
+  headword: deliver
+  cefr_level: B1
+  current_topic_tags:
+  - workplace
+  - performance
+  - management
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Fulfilling workplace commitments and delivering project outcomes.
+- vocab_id: vocab.deliverable
+  headword: deliverable
+  cefr_level: B1
+  current_topic_tags:
+  - project
+  - agile
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Specific project outputs, sprint artifacts, and client deliverables.
+- vocab_id: vocab.department
+  headword: department
+  cefr_level: A2
+  current_topic_tags:
+  - organization
+  - workplace
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Corporate organizational divisions and office structures.
+- vocab_id: vocab.dichotomy
+  headword: dichotomy
+  cefr_level: C2
+  current_topic_tags:
+  - rhetoric
+  - philosophy
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Conceptual polarity, theoretical contrast, and formal analytical categorization.
+- vocab_id: vocab.discourse
+  headword: discourse
+  cefr_level: C1
+  current_topic_tags:
+  - communication
+  - rhetoric
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Formal debate, dialogue conventions, and intellectual communication.
+- vocab_id: vocab.discrepancy
+  headword: discrepancy
+  cefr_level: B2
+  current_topic_tags:
+  - audit
+  - tech
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Identifying inconsistencies and discrepancies during audits and data
+    reconciliation.
+- vocab_id: vocab.discretion
+  headword: discretion
+  cefr_level: C1
+  current_topic_tags:
+  - governance
+  - leadership
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Executive autonomy, decision latitude, and professional prudence.
+- vocab_id: vocab.disparity
+  headword: disparity
+  cefr_level: C1
+  current_topic_tags:
+  - analysis
+  - audit
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Analytical comparison of unequal metrics, conditions, and distributions.
+- vocab_id: vocab.efficient
+  headword: efficient
+  cefr_level: B1
+  current_topic_tags:
+  - productivity
+  - performance
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Workplace productivity and minimizing waste in operations.
+- vocab_id: vocab.elucidate
+  headword: elucidate
+  cefr_level: C1
+  current_topic_tags:
+  - documentation
+  - tech
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Explaining complex technical or conceptual ideas clearly.
+- vocab_id: vocab.enhance
+  headword: enhance
+  cefr_level: B2
+  current_topic_tags:
+  - technology
+  - productivity
+  - optimization
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Software performance optimization, caching mechanisms, and system
+    responsiveness.
+- vocab_id: vocab.equipment
+  headword: equipment
+  cefr_level: A2
+  current_topic_tags:
+  - office
+  - tech
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Workplace and office physical tools, hardware, and apparatus.
+- vocab_id: vocab.equivocal
+  headword: equivocal
+  cefr_level: C2
+  current_topic_tags:
+  - diplomacy
+  - communication
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Ambiguous, guarded, or open-ended communicative expressions.
+- vocab_id: vocab.escalate
+  headword: escalate
+  cefr_level: B2
+  current_topic_tags:
+  - management
+  - support
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Operational dispute resolution and incident management workflows.
+- vocab_id: vocab.estimate
+  headword: estimate
+  cefr_level: B1
+  current_topic_tags:
+  - planning
+  - agile
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Sprint duration and resource estimation in project workflows.
+- vocab_id: vocab.exacerbate
+  headword: exacerbate
+  cefr_level: C2
+  current_topic_tags:
+  - risk
+  - management
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Aggravating operational crises and compounding system problems.
+- vocab_id: vocab.facet
+  headword: facet
+  cefr_level: C1
+  current_topic_tags:
+  - analysis
+  - strategy
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Analyzing multidimensional aspects and components of complex systems.
+- vocab_id: vocab.feasibility
+  headword: feasibility
+  cefr_level: B2
+  current_topic_tags:
+  - analysis
+  - strategy
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Commercial and technical viability assessment for new initiatives.
+- vocab_id: vocab.feedback
+  headword: feedback
+  cefr_level: A2
+  current_topic_tags:
+  - communication
+  - performance
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Interpersonal and customer feedback exchanged in professional contexts.
+- vocab_id: vocab.follow-up
+  headword: follow-up
+  cefr_level: B1
+  current_topic_tags:
+  - communication
+  - meetings
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Communicative review, status check-ins, and follow-up emails.
+- vocab_id: vocab.framework
+  headword: framework
+  cefr_level: B2
+  current_topic_tags:
+  - architecture
+  - tech
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Software frameworks and architectural platforms for application building.
+- vocab_id: vocab.gap
+  headword: gap
+  cefr_level: B2
+  current_topic_tags:
+  - analysis
+  - performance
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Deficiency identification and gap analysis across skills and metrics.
+- vocab_id: vocab.impact
+  headword: impact
+  cefr_level: B2
+  current_topic_tags:
+  - strategy
+  - outcomes
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Measuring commercial influence, strategic effect, and business outcomes.
+- vocab_id: vocab.imperative
+  headword: imperative
+  cefr_level: C1
+  current_topic_tags:
+  - executive
+  - strategy
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Strategic necessity and urgent commercial priorities in corporate
+    planning.
+- vocab_id: vocab.implement
+  headword: implement
+  cefr_level: B1
+  current_topic_tags:
+  - tech
+  - strategy
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Implementing software features, APIs, and engineering solutions.
+- vocab_id: vocab.implicit
+  headword: implicit
+  cefr_level: C2
+  current_topic_tags:
+  - communication
+  - rhetoric
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Unstated assumptions, subtext, and implied communicative meaning.
+- vocab_id: vocab.incentivize
+  headword: incentivize
+  cefr_level: C1
+  current_topic_tags:
+  - management
+  - hr
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: HR reward systems and employee performance motivation.
+- vocab_id: vocab.indispensable
+  headword: indispensable
+  cefr_level: C1
+  current_topic_tags:
+  - strategy
+  - leadership
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Analytical evaluation of vital necessity and essential tools.
+- vocab_id: vocab.information
+  headword: information
+  cefr_level: A2
+  current_topic_tags:
+  - communication
+  - workplace
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Sharing data, facts, and answering customer or office inquiries.
+- vocab_id: vocab.initiative
+  headword: initiative
+  cefr_level: B1
+  current_topic_tags:
+  - leadership
+  - corporate
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Workplace leadership, taking ownership, and launching new projects.
+- vocab_id: vocab.intrinsic
+  headword: intrinsic
+  cefr_level: C2
+  current_topic_tags:
+  - quality
+  - philosophy
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Inherent properties, underlying natures, and theoretical reasoning.
+- vocab_id: vocab.introduce
+  headword: introduce
+  cefr_level: A2
+  current_topic_tags:
+  - meetings
+  - networking
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Personal introductions, greetings, and networking dialogue.
+- vocab_id: vocab.invoice
+  headword: invoice
+  cefr_level: A2
+  current_topic_tags:
+  - finance
+  - office
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Commercial billing documents, supplier invoicing, and payments.
+- vocab_id: vocab.isolate
+  headword: isolate
+  cefr_level: B2
+  current_topic_tags:
+  - technology
+  - engineering
+  - society
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Diagnostic incident response telemetry and isolating technical system
+    failures.
+- vocab_id: vocab.juxtapose
+  headword: juxtapose
+  cefr_level: C2
+  current_topic_tags:
+  - analysis
+  - rhetoric
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Side-by-side structural comparison and analytical contrast.
+- vocab_id: vocab.leverage
+  headword: leverage
+  cefr_level: B2
+  current_topic_tags:
+  - business
+  - strategy
+  - technology
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Strategic asset utilization and leveraging capabilities for competitive
+    advantage.
+- vocab_id: vocab.lucrative
+  headword: lucrative
+  cefr_level: C1
+  current_topic_tags:
+  - finance
+  - business
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: High profitability and commercial financial returns.
+- vocab_id: vocab.manage
+  headword: manage
+  cefr_level: A2
+  current_topic_tags:
+  - management
+  - leadership
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Team management and workplace leadership duties.
+- vocab_id: vocab.mention
+  headword: mention
+  cefr_level: A2
+  current_topic_tags:
+  - communication
+  - meetings
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Conversational references, brief mentions, and verbal updates.
+- vocab_id: vocab.meticulous
+  headword: meticulous
+  cefr_level: C2
+  current_topic_tags:
+  - quality
+  - engineering
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Exacting rigor, thorough analytical precision, and deep audit focus.
+- vocab_id: vocab.milestone
+  headword: milestone
+  cefr_level: B1
+  current_topic_tags:
+  - project
+  - roadmap
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Key project progress targets, delivery phases, and roadmap stages.
+- vocab_id: vocab.mitigate
+  headword: mitigate
+  cefr_level: B2
+  current_topic_tags:
+  - risk
+  - operations
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Risk mitigation, crisis management, and minimizing system vulnerabilities.
+- vocab_id: vocab.negotiate
+  headword: negotiate
+  cefr_level: B1
+  current_topic_tags:
+  - business
+  - meetings
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Commercial bargaining, vendor contract discussions, and deal terms.
+- vocab_id: vocab.nuance
+  headword: nuance
+  cefr_level: C1
+  current_topic_tags:
+  - communication
+  - rhetoric
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Subtle expressive shades and distinctions in linguistic communication.
+- vocab_id: vocab.objective
+  headword: objective
+  cefr_level: B1
+  current_topic_tags:
+  - strategy
+  - management
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Organizational performance targets, goals, and professional OKRs.
+- vocab_id: vocab.off-track
+  headword: off-track
+  cefr_level: B2
+  current_topic_tags:
+  - project
+  - timeline
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Timeline slippage, schedule deviation, and delayed project velocity.
+- vocab_id: vocab.optimize
+  headword: optimize
+  cefr_level: B2
+  current_topic_tags:
+  - performance
+  - tech
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Software performance optimization, algorithmic tuning, and resource
+    efficiency.
+- vocab_id: vocab.organize
+  headword: organize
+  cefr_level: A2
+  current_topic_tags:
+  - planning
+  - workplace
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Workplace task organization, team coordination, and structured planning.
+- vocab_id: vocab.outsource
+  headword: outsource
+  cefr_level: B2
+  current_topic_tags:
+  - operations
+  - vendor
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Procuring services from third-party vendors and commercial contracting.
+- vocab_id: vocab.paradigm
+  headword: paradigm
+  cefr_level: C1
+  current_topic_tags:
+  - strategy
+  - innovation
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Theoretical frameworks, conceptual models, and paradigm transitions.
+- vocab_id: vocab.paradox
+  headword: paradox
+  cefr_level: C2
+  current_topic_tags:
+  - philosophy
+  - strategy
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Complex analytical contradictions, theoretical dilemmas, and philosophical
+    inquiry.
+- vocab_id: vocab.perspective
+  headword: perspective
+  cefr_level: B2
+  current_topic_tags:
+  - discussion
+  - meetings
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Sharing viewpoints, stances, and diverse perspectives in group discussions.
+- vocab_id: vocab.plausible
+  headword: plausible
+  cefr_level: C1
+  current_topic_tags:
+  - analysis
+  - reasoning
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Assessing the logical credibility and reasonableness of hypotheses.
+- vocab_id: vocab.pragmatic
+  headword: pragmatic
+  cefr_level: C1
+  current_topic_tags:
+  - leadership
+  - engineering
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Practical, realistic decision making that prioritizes functional solutions.
+- vocab_id: vocab.prepare
+  headword: prepare
+  cefr_level: A2
+  current_topic_tags:
+  - workplace
+  - tasks
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Preparing work plans, documents, and deliverables for operational
+    readiness.
+- vocab_id: vocab.priority
+  headword: priority
+  cefr_level: B1
+  current_topic_tags:
+  - planning
+  - time-management
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Establishing task sequencing, urgency, and backlog prioritization.
+- vocab_id: vocab.proactive
+  headword: proactive
+  cefr_level: C1
+  current_topic_tags:
+  - leadership
+  - mindset
+  proposed_topic_id: topic.work-career
+  confidence: high
+  short_reason: Taking initiative, forward-looking operational mindset, and preventive
+    action.
+- vocab_id: vocab.propose
+  headword: propose
+  cefr_level: B1
+  current_topic_tags:
+  - meetings
+  - business
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Presenting suggestions, solutions, and proposals in professional dialogue.
+- vocab_id: vocab.quintessential
+  headword: quintessential
+  cefr_level: C2
+  current_topic_tags:
+  - excellence
+  - rhetoric
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Exemplary representations, archetypes, and qualitative benchmarking.
+- vocab_id: vocab.reconcile
+  headword: reconcile
+  cefr_level: C1
+  current_topic_tags:
+  - negotiations
+  - finance
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Resolving conflicting architectural viewpoints and financial ledger
+    discrepancies.
+- vocab_id: vocab.redundancy
+  headword: redundancy
+  cefr_level: C1
+  current_topic_tags:
+  - architecture
+  - tech
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Engineering fault tolerance, high-availability clusters, and backup
+    systems.
+- vocab_id: vocab.remind
+  headword: remind
+  cefr_level: A2
+  current_topic_tags:
+  - communication
+  - tasks
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Interpersonal prompts, messaging reminders, and task prompts.
+- vocab_id: vocab.request
+  headword: request
+  cefr_level: A2
+  current_topic_tags:
+  - email
+  - workplace
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Formal requests in professional correspondence and ticketing systems.
+- vocab_id: vocab.resilience
+  headword: resilience
+  cefr_level: C2
+  current_topic_tags:
+  - leadership
+  - engineering
+  proposed_topic_id: topic.technology
+  confidence: high
+  short_reason: Infrastructure fault tolerance, chaos engineering, and system shock
+    recovery.
+- vocab_id: vocab.resolve
+  headword: resolve
+  cefr_level: B1
+  current_topic_tags:
+  - problem-solving
+  - operations
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Fixing defects, settling operational disputes, and resolving incidents.
+- vocab_id: vocab.roadmap
+  headword: roadmap
+  cefr_level: B2
+  current_topic_tags:
+  - product
+  - strategy
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Strategic multi-quarter product planning and corporate direction.
+- vocab_id: vocab.scope
+  headword: scope
+  cefr_level: B2
+  current_topic_tags:
+  - project
+  - delivery
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Project boundaries, scope definition, and delivery commitments.
+- vocab_id: vocab.scrutiny
+  headword: scrutiny
+  cefr_level: C1
+  current_topic_tags:
+  - audit
+  - legal
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Rigorous critical examination, regulatory audits, and forensic review.
+- vocab_id: vocab.significant
+  headword: significant
+  cefr_level: B2
+  current_topic_tags:
+  - analysis
+  - metrics
+  - technology
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Measurable importance, analytical weight, and statistical significance.
+- vocab_id: vocab.stakeholder
+  headword: stakeholder
+  cefr_level: B1
+  current_topic_tags:
+  - governance
+  - management
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Corporate governance, investor relations, and external vested interests.
+- vocab_id: vocab.streamline
+  headword: streamline
+  cefr_level: B2
+  current_topic_tags:
+  - efficiency
+  - operations
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Process optimization, eliminating procedural waste, and operational
+    efficiency.
+- vocab_id: vocab.substantiate
+  headword: substantiate
+  cefr_level: C2
+  current_topic_tags:
+  - legal
+  - audit
+  proposed_topic_id: topic.academic-analytical
+  confidence: high
+  short_reason: Evidentiary proof, factual verification, and analytical validation.
+- vocab_id: vocab.sustainable
+  headword: sustainable
+  cefr_level: B2
+  current_topic_tags:
+  - strategy
+  - business
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Long-term commercial retention metrics and sustainable development
+    practices.
+- vocab_id: vocab.synergy
+  headword: synergy
+  cefr_level: B2
+  current_topic_tags:
+  - collaboration
+  - corporate
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Commercial mergers, corporate partnerships, and joint value creation.
+- vocab_id: vocab.tentative
+  headword: tentative
+  cefr_level: C1
+  current_topic_tags:
+  - planning
+  - negotiations
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Diplomatic provisional agreements and cautious negotiation phrasing.
+- vocab_id: vocab.trade-off
+  headword: trade-off
+  cefr_level: B2
+  current_topic_tags:
+  - architecture
+  - decision-making
+  proposed_topic_id: topic.problem-solving
+  confidence: high
+  short_reason: Evaluating mutually exclusive compromises in architectural decision
+    making.
+- vocab_id: vocab.unequivocal
+  headword: unequivocal
+  cefr_level: C2
+  current_topic_tags:
+  - executive
+  - rhetoric
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Explicit, unambiguous statements and clear executive rhetoric.
+- vocab_id: vocab.update
+  headword: update
+  cefr_level: B1
+  current_topic_tags:
+  - communication
+  - status
+  proposed_topic_id: topic.communication
+  confidence: high
+  short_reason: Sharing status reports, email updates, and latest progress information.
+- vocab_id: vocab.urgent
+  headword: urgent
+  cefr_level: A2
+  current_topic_tags:
+  - priority
+  - communication
+  proposed_topic_id: topic.time-and-project-management
+  confidence: high
+  short_reason: Immediate turnaround priority, urgent incident patching, and time-critical
+    action.
+- vocab_id: vocab.viable
+  headword: viable
+  cefr_level: C1
+  current_topic_tags:
+  - business
+  - feasibility
+  proposed_topic_id: topic.business
+  confidence: high
+  short_reason: Commercial and operational viability for new product ventures.

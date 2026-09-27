@@ -1,0 +1,66 @@
+batch_id: vocab_batch_001c
+source_manifest: vocab_batch_001_manifest
+produced_at: "2026-09-25T11:45:00Z"
+item_count: 50
+cefr_distribution:
+  A2: 6
+  B1: 9
+  B2: 11
+  C1: 13
+  C2: 11
+produced_ids:
+  A2:
+    - vocab.reservation
+    - vocab.ingredient
+    - vocab.arrive
+    - vocab.invite
+    - vocab.prefer
+    - vocab.busy
+  B1:
+    - vocab.contract
+    - vocab.experience
+    - vocab.advantage
+    - vocab.achieve
+    - vocab.arrange
+    - vocab.essential
+    - vocab.accurate
+    - vocab.depend-on
+    - vocab.run-out-of
+  B2:
+    - vocab.strategy
+    - vocab.criterion
+    - vocab.trend
+    - vocab.generate
+    - vocab.evaluate
+    - vocab.postpone
+    - vocab.appropriate
+    - vocab.relevant
+    - vocab.competitive
+    - vocab.carry-out
+    - vocab.phase-out
+  C1:
+    - vocab.momentum
+    - vocab.precedent
+    - vocab.correlation
+    - vocab.proliferation
+    - vocab.synthesize
+    - vocab.elicit
+    - vocab.champion
+    - vocab.embark
+    - vocab.standardize
+    - vocab.inevitable
+    - vocab.stringent
+    - vocab.rule-out
+    - vocab.pave-the-way
+  C2:
+    - vocab.tenet
+    - vocab.panacea
+    - vocab.equilibrium
+    - vocab.antithesis
+    - vocab.espouse
+    - vocab.perpetuate
+    - vocab.surmount
+    - vocab.arduous
+    - vocab.judicious
+    - vocab.nebulous
+    - vocab.by-and-large

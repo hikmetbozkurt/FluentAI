@@ -1,0 +1,660 @@
+- id: grammar.b1.past-perfect-simple
+  title: 'Past Perfect Simple: Anteriority and Past Event Sequencing'
+  cefr_level: B1
+  category: tenses_and_aspect
+  summary_en: Use Past Perfect (had + V3) to clarify that an action occurred and concluded before another reference point
+    in the past.
+  summary_tr: Geçmişte başka bir olaydan daha önce gerçekleşip tamamlanmış eylemleri bildirmek için Past Perfect (had + V3)
+    kullanılır.
+  explanation_en:
+  - title: Chronological Sequencing in Past Narratives
+    content: When narrating past events, use Past Perfect for the earlier past action and Past Simple for the more recent
+      past action. It is often combined with time conjunctions such as 'by the time', 'before', 'after', and 'already'.
+    patterns:
+    - Subject + had + Past Participle (V3) (e.g., The team had already deployed the code)
+    - By the time + Past Simple clause, Subject + had + V3 clause
+  explanation_tr: 'Türkçede ''yapmıştı / gitmişti'' (-mişti) eki geçmişte daha önce olmuş olayı anlatır. İngilizcede ''had
+    + V3'' yapısı, geçmişteki iki olay arasındaki zaman sırasını belirginleştirir. Örneğin: ''Toplantı başladığında biz raporu
+    bitirmiştik'' -> ''When the meeting started, we had finished the report.'''
+  rules:
+  - name: Earlier Past Action Rule
+    pattern: had + Past Participle (V3)
+    use_cases:
+    - Clarifying the root cause that led to a subsequent past incident
+    - Explaining task completion prior to a deadline or milestone
+    time_markers:
+    - already
+    - before
+    - after
+    - by the time
+    - until then
+  contrasts:
+  - structure_a: When the client called, we sent the contract. (Simultaneous or consecutive)
+    structure_b: When the client called, we had sent the contract. (Sent beforehand)
+    difference_explanation_en: In A, sending happened in response to the call. In B, the contract was already dispatched before
+      the call arrived.
+    difference_explanation_tr: A'da arama sonrasında gönderilmiştir. B'de ise arama gerçekleşmeden önce sözleşme çoktan gönderilmiştir.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Past Simple Yerine Past Perfect Aşırı Kullanımı
+    explanation_tr: Geçmişte tek başına gerçekleşen olaylar için 'had done' kullanılmaz; Past Perfect mutlaka geçmişteki başka
+      bir referans noktası gerektirir.
+    incorrect_example: Yesterday I had attended three meetings.
+    correct_example: Yesterday I attended three meetings.
+  examples:
+  - en: By the time the database server restarted, the engineers had identified the memory leak.
+    tr: Veritabanı sunucusu yeniden başlayana kadar mühendisler bellek sızıntısını tespit etmişlerdi.
+    rule_highlight: had identified (earlier action)
+    context: Incident management
+  - en: She had already saved the configuration file before the power outage occurred.
+    tr: Elektrik kesintisi meydana gelmeden önce yapılandırma dosyasını zaten kaydetmişti.
+    rule_highlight: had already saved
+    context: Workplace IT
+  - en: We realized that our vendor had changed their API authentication without notifying us.
+    tr: Tedarikçimizin bize bildirmeden API kimlik doğrulamasını değiştirmiş olduğunu fark ettik.
+    rule_highlight: had changed
+    context: API integration
+  - en: Had you verified the deployment checklist before pushing to production?
+    tr: Canlıya almadan önce dağıtım kontrol listesini doğrulamış mıydınız?
+    rule_highlight: Had you verified (question form)
+    context: Release management
+  topic_tags:
+  - past_perfect
+  - tenses
+  - sequencing
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.reported-questions-and-commands
+  title: 'Reported Speech: Indirect Questions and Imperatives'
+  cefr_level: B1
+  category: reported_speech
+  summary_en: Reported questions take declarative word order without auxiliary inversion (ask if/whether/wh-), while commands
+    use reporting verb + to-infinitive.
+  summary_tr: Dolaylı sorularda düz cümle sırası kullanılır (ask if/whether/wh-), emir ve ricalarda ise 'tell/ask + to-infinitive'
+    kalıbı uygulanır.
+  explanation_en:
+  - title: Syntax of Reported Questions and Orders
+    content: 'In reported questions, do NOT use do/does/did or subject-verb inversion: ''He asked where I lived'', not ''where
+      did I live''. For Yes/No questions, connect with ''if'' or ''whether''. For commands, use ''tell/ask someone (not) to
+      do something''.'
+    patterns:
+    - 'Reported Wh-question: Subject + asked + Wh-word + Subject + Verb'
+    - 'Reported Yes/No: Subject + asked + if/whether + Subject + Verb'
+    - 'Reported command: Subject + told/asked + Object + (not) to + Base Verb'
+  explanation_tr: Türkçede aktarılan sorular 'bana nereye gittiğimi sordu' şeklinde isim-fiil ekiyle yapılır. İngilizcede
+    ise soru kelimesinden sonra düz cümle özne-yüklem sırası gelmelidir. En yaygın hata soru yardımcı fiilini korumaktır ('He
+    asked me where did I go' yanlıştır, 'where I went' doğrudur).
+  rules:
+  - name: Declarative Word Order in Reported Speech
+    pattern: Reporting Verb + Wh-word/if + Subject + Verb (declarative word order)
+    use_cases:
+    - Reporting interview inquiries and client requirements
+    - Summarizing instructions and operational directives from management
+    time_markers: []
+  contrasts:
+  - structure_a: '''Where is the log file?'' -> She asked where the log file was.'
+    structure_b: '''Is the service running?'' -> She asked if the service was running.'
+    difference_explanation_en: Wh-questions retain the question word. Yes/No questions require 'if' or 'whether'. Both adopt
+      normal declarative word order.
+    difference_explanation_tr: Wh- soruları soru kelimesini korur. Evet/Hayır soruları 'if' veya 'whether' alır. Her ikisi
+      de düz cümle sırasına geçer.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Dolaylı Soruda Soru Düzenini Sürdürme Hatası
+    explanation_tr: Dolaylı soruda yardımcı fiil başa gelmez. 'The manager asked when would the project finish' hatalıdır;
+      'when the project would finish' denmelidir.
+    incorrect_example: The client asked why did the payment fail.
+    correct_example: The client asked why the payment failed.
+  examples:
+  - en: The team lead asked whether we could deliver the prototype by Wednesday.
+    tr: Ekip lideri prototipi Çarşamba gününe kadar teslim edip edemeyeceğimizi sordu.
+    rule_highlight: asked whether we could deliver
+    context: Sprint sync
+  - en: The security officer told everyone not to share their VPN credentials.
+    tr: Güvenlik sorumlusu herkese VPN kimlik bilgilerini paylaşmamalarını söyledi.
+    rule_highlight: told everyone not to share
+    context: Corporate policy
+  - en: The auditor inquired where the backup archives were physically stored.
+    tr: Denetçi yedek arşivlerinin fiziksel olarak nerede saklandığını sordu.
+    rule_highlight: inquired where the archives were stored
+    context: Compliance audit
+  - en: Management asked us to document every architectural decision in writing.
+    tr: Yönetim bizden her mimari kararı yazılı olarak belgelememizi istedi.
+    rule_highlight: asked us to document
+    context: Process guidelines
+  topic_tags:
+  - reported_speech
+  - indirect_questions
+  - imperatives
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.passive-voice-continuous-perfect
+  title: Passive Voice in Continuous and Perfect Aspects
+  cefr_level: B1
+  category: passive_and_causative
+  summary_en: Form continuous passives with 'be + being + V3' and perfect passives with 'have/has + been + V3' to emphasize
+    process and completion.
+  summary_tr: Süregiden eylemlerde 'be + being + V3', tamamlanmış eylemlerde ise 'have/has + been + V3' kullanarak Edilgen
+    Çatı kurulur.
+  explanation_en:
+  - title: Aspectual Inflection in the Passive Voice
+    content: Continuous passive indicates an ongoing action performed on the subject ('The code is being reviewed right now').
+      Perfect passive indicates a completed action with present relevance ('The vulnerability has been patched').
+    patterns:
+    - 'Present Continuous Passive: am/is/are + being + Past Participle (V3)'
+    - 'Present Perfect Passive: have/has + been + Past Participle (V3)'
+    - 'Past Continuous Passive: was/were + being + Past Participle (V3)'
+  explanation_tr: Türkçede edilgen ek (-il / -in) hem şimdiki zamanda ('inceleniyor') hem geçmişte ('incelendi') köke eklenir.
+    İngilizcede ise süreç için 'is being checked', tamamlanma için 'has been checked' ayrımı yapılır. 'Being' ve 'been' sözcüklerini
+    karıştırmak çok yaygın bir hatadır.
+  rules:
+  - name: Aspectual Passive Formulas
+    pattern: 'Continuous: be + being + V3 | Perfect: have/has + been + V3'
+    use_cases:
+    - Stating system maintenance or incident investigation in progress
+    - Reporting deliverables and resolved tickets
+    time_markers:
+    - currently
+    - right now
+    - already
+    - recently
+    - yet
+  contrasts:
+  - structure_a: The new API gateway is being tested by the QA team.
+    structure_b: The new API gateway has been tested by the QA team.
+    difference_explanation_en: In A, testing is in progress right now. In B, testing is complete and the results are ready.
+    difference_explanation_tr: A'da test şu an devam etmektedir. B'de ise test tamamlanmıştır ve sonuçlar hazırdır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''Being'' ile ''Been'' Karışıklığı'
+    explanation_tr: Şu an devam eden edilgen eylemde 'is being done' yerine 'is been done' demek hatalıdır. 'Been' perfect
+      zamanlara, 'being' continuous zamanlara aittir.
+    incorrect_example: The server is been upgraded right now.
+    correct_example: The server is being upgraded right now.
+  examples:
+  - en: All production database backups are currently being encrypted.
+    tr: Tüm canlı veritabanı yedekleri şu anda şifrelenmektedir.
+    rule_highlight: are currently being encrypted
+    context: Data security
+  - en: Three critical security vulnerabilities have been resolved this sprint.
+    tr: Bu koşuda üç kritik güvenlik açığı giderildi.
+    rule_highlight: have been resolved
+    context: Sprint review
+  - en: The legacy billing system was being decommissioned when the audit began.
+    tr: Denetim başladığında eski faturalandırma sistemi devreden çıkarılmaktaydı.
+    rule_highlight: was being decommissioned
+    context: Systems migration
+  - en: Has the quarterly budget proposal been approved by the board yet?
+    tr: Üç aylık bütçe teklifi yönetim kurulu tarafından henüz onaylandı mı?
+    rule_highlight: Has ... been approved
+    context: Corporate governance
+  topic_tags:
+  - passive_voice
+  - continuous_passive
+  - perfect_passive
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.modal-verbs-advice-criticism
+  title: 'Modals of Advice and Criticism: Should, Ought to, and Had Better'
+  cefr_level: B1
+  category: modals_and_semi_modals
+  summary_en: Use 'should' and 'ought to' for general recommendations, and 'had better' for urgent advice with negative consequences
+    if ignored.
+  summary_tr: Genel öneriler için 'should' ve 'ought to', dikkate alınmadığında olumsuz sonuç doğuracak acil uyarılar için
+    'had better' kullanılır.
+  explanation_en:
+  - title: Nuances of Advice and Strong Warning
+    content: '''Should'' and ''ought to'' convey sensible advice (''You should back up your disk''). ''Had better'' expresses
+      strong urgency or warning where failure to comply invites risk or penalties (''You had better save your work before
+      the battery dies''). Note that ''had better'' refers to the present or future, never past time.'
+    patterns:
+    - Subject + should / ought to + Base Verb
+    - Subject + had better + Base Verb (warning with consequence)
+    - 'Negative: had better not + Base Verb'
+  explanation_tr: Türkçede '-meli/-malı' eki hem hafif tavsiyeleri hem de acil uyarıları karşılar. İngilizcede 'had better'
+    hafif bir tavsiye değil, 'yapsan iyi olur, yoksa kötü bir şey olacak' uyarısıdır. 'Had' sözcüğü geçmiş zaman hissi verse
+    de anlam şimdiki veya gelecek zamana aittir. Olumsuzu 'had not better' değil, 'had better not' şeklindedir.
+  rules:
+  - name: Advice vs. Urgency Ladder
+    pattern: should (standard advice) < ought to (moral/logical) < had better (urgent consequence)
+    use_cases:
+    - Advising peers on coding standards and architecture practices
+    - Issuing urgent operational warnings before critical deadlines
+    time_markers: []
+  contrasts:
+  - structure_a: You should check the log files before lunch.
+    structure_b: You had better check the log files right now or the queue will overflow.
+    difference_explanation_en: Structure A is an optional recommendation. Structure B is an urgent warning with an explicit
+      negative risk.
+    difference_explanation_tr: A yapısı isteğe bağlı bir öneridir. B yapısı ise açık bir olumsuz risk içeren acil bir uyarıdır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''Had Better'' Olumsuzunu Yanlış Kurma'
+    explanation_tr: '''Had better'' kalıbının olumsuzu ''hadn''t better'' değil, ''had better not'' şeklindedir.'
+    incorrect_example: You hadn't better deploy without peer review.
+    correct_example: You had better not deploy without peer review.
+  examples:
+  - en: Engineers should write comprehensive integration tests for edge cases.
+    tr: Mühendisler uç durumlar için kapsamlı entegrasyon testleri yazmalıdır.
+    rule_highlight: should write
+    context: Software best practices
+  - en: We had better renew our SSL certificate today before it expires at midnight.
+    tr: Gece yarısı süresi dolmadan önce SSL sertifikamızı bugün yenilesek iyi olur.
+    rule_highlight: had better renew (urgent warning)
+    context: DevOps urgency
+  - en: You ought to discuss your career progression goals with your engineering director.
+    tr: Kariyer gelişim hedeflerinizi mühendislik direktörünüzle görüşmelisiniz.
+    rule_highlight: ought to discuss
+    context: Professional development
+  - en: You had better not ignore that disk space warning on the primary database.
+    tr: Ana veritabanındaki disk alanı uyarısını görmezden gelmeseniz iyi edersiniz.
+    rule_highlight: had better not ignore
+    context: System operations
+  topic_tags:
+  - modals
+  - advice
+  - had_better
+  - should
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.clauses-of-purpose-so-that-in-order-to
+  title: 'Clauses of Purpose: In Order To, So As To, and So That'
+  cefr_level: B1
+  category: verb_patterns_and_infinitives
+  summary_en: Express purpose using 'to / in order to / so as to + infinitive' when subjects match, and 'so that + clause
+    (can/could)' when subjects differ.
+  summary_tr: Özneler aynı olduğunda 'to / in order to / so as to + fiil', özneler farklı olduğunda veya modal gerektiğinde
+    'so that + tam cümle' ile amaç bildirilir.
+  explanation_en:
+  - title: Infinitive Purpose vs. Finite Clause Purpose
+    content: Use 'to', 'in order to', or 'so as to' followed by a base verb when the subject performing the main action also
+      achieves the purpose. Use 'so that' followed by a subject and modal verb (can, could, will, would) when subjects differ
+      or to emphasize capability.
+    patterns:
+    - Subject + Verb + in order to / so as to + Base Verb
+    - Subject + Verb + in order not to / so as not to + Base Verb (negative)
+    - Subject + Verb + so that + Subject + can/could/will + Base Verb
+  explanation_tr: 'Türkçedeki ''amacıyla / -mek için'' yapısı ''for doing'' ile çevrilmemelidir (''I went there for buy a
+    car'' yanlıştır). İngilizcede eylem amacı ''in order to'' veya ''to'' ile ifade edilir. Özneler farklıysa ''so that''
+    kullanılır: ''Müşteri görsün diye raporu hazırladım'' -> ''I prepared the report so that the client could review it.'''
+  rules:
+  - name: Purpose Clause Construction
+    pattern: in order to / so as to + V1 VS so that + Subject + modal + V1
+    use_cases:
+    - Explaining the strategic or technical rationale behind decisions
+    - Writing clear task descriptions and pull request summaries
+    time_markers: []
+  contrasts:
+  - structure_a: We refactored the module in order to improve query performance.
+    structure_b: We refactored the module so that mobile users could load pages faster.
+    difference_explanation_en: In A, the engineers improve query performance directly (same subject). In B, mobile users benefit
+      from the engineers' refactoring (different subjects).
+    difference_explanation_tr: A'da mühendisler doğrudan performansı artırır (aynı özne). B'de ise mühendislerin çalışmasından
+      mobil kullanıcılar faydalanır (farklı özne).
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: Amaç Bildirirken 'For + Verb' Kullanma Hatası
+    explanation_tr: Bir eylemin amacını söylerken 'for to learn' veya 'for learning' değil, 'to learn' veya 'in order to learn'
+      denmelidir.
+    incorrect_example: We held a retrospective for discuss our workflow issues.
+    correct_example: We held a retrospective in order to discuss our workflow issues.
+  examples:
+  - en: We introduced caching in order to reduce load on the primary database.
+    tr: Ana veritabanı üzerindeki yükü azaltmak amacıyla önbelleğe alma mekanizmasını getirdik.
+    rule_highlight: in order to reduce
+    context: System architecture
+  - en: Please share your screen so that all participants can see the metrics.
+    tr: Lütfen ekranınızı tüm katılımcıların metrikleri görebilmesi için paylaşın.
+    rule_highlight: so that all participants can see
+    context: Remote meeting
+  - en: The team scheduled maintenance after midnight so as not to disrupt users.
+    tr: Ekip, kullanıcıları rahatsız etmemek adına bakımı gece yarısından sonraya planladı.
+    rule_highlight: so as not to disrupt (negative purpose)
+    context: Operations schedule
+  - en: I created a sandbox environment so that new hires could practice safely.
+    tr: Yeni işe başlayanların güvenle pratik yapabilmeleri için bir deneme ortamı oluşturdum.
+    rule_highlight: so that new hires could practice
+    context: Onboarding
+  topic_tags:
+  - purpose
+  - in_order_to
+  - so_that
+  - infinitives
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.clauses-of-result-so-such
+  title: 'Clauses of Result: So... That vs. Such... That'
+  cefr_level: B1
+  category: discourse_markers_and_cohesion
+  summary_en: Use 'so + adjective/adverb + that' and 'such + (a/an) + adjective + noun + that' to express high intensity leading
+    to a result.
+  summary_tr: Bir durumun aşırı yoğunluğunun doğurduğu sonucu belirtmek için 'so + sıfat/zarf + that' veya 'such + sıfat +
+    isim + that' ('o kadar ... ki') kullanılır.
+  explanation_en:
+  - title: Syntactic Distinction between 'So' and 'Such'
+    content: '''So'' modifies adjectives and adverbs directly (''The bug was so severe that we rolled back''). ''Such'' modifies
+      noun phrases, requiring ''a/an'' before singular countable nouns (''It was such a severe bug that we rolled back'').
+      In informal registers, ''that'' is sometimes omitted.'
+    patterns:
+    - so + adjective/adverb + that + result clause
+    - such + a/an + adjective + singular noun + that + result clause
+    - such + adjective + plural/uncountable noun + that + result clause
+  explanation_tr: Türkçedeki 'öylesine / o kadar ... ki' yapısını karşılar. Türk öğrenenler sıklıkla isim içeren tamlamaların
+    önüne yanlışlıkla 'so' koyarlar ('so a big problem' yanlıştır, 'such a big problem' doğrudur). Tek başına sıfat varsa
+    'so fast that', sıfat + isim varsa 'such a fast system that' kullanılır.
+  rules:
+  - name: Result Clause Intensity Match
+    pattern: so + Adj/Adv + that VS such + (a/an) + (Adj) + Noun + that
+    use_cases:
+    - Describing business performance, traffic spikes, or design impact
+    - Explaining the immediate consequences of technical defects
+    time_markers: []
+  contrasts:
+  - structure_a: The migration was so complex that it took three months.
+    structure_b: It was such a complex migration that it took three months.
+    difference_explanation_en: In A, 'so' modifies the predicate adjective 'complex'. In B, 'such' modifies the noun phrase
+      'a complex migration'. Both express identical outcome.
+    difference_explanation_tr: A'da 'so' tek başına sıfatı niteler. B'de ise 'such' isim tamlamasını niteler. Anlamları tamamen
+      aynıdır.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: '''So'' ile İsim Tamlaması Kullanma Hatası'
+    explanation_tr: İsim tamlamalarının başında 'so' kullanılmaz. 'It was so good meeting' değil, 'It was such a good meeting'
+      denmelidir.
+    incorrect_example: We encountered so a difficult challenge during migration.
+    correct_example: We encountered such a difficult challenge during migration.
+  examples:
+  - en: The query was so unoptimized that it caused the server CPU to reach 100%.
+    tr: Sorgu o kadar optimize edilmemişti ki sunucu işlemcisinin %100'e ulaşmasına neden oldu.
+    rule_highlight: so unoptimized that
+    context: Database incident
+  - en: They had such a tight deadline that overtime was unavoidable.
+    tr: O kadar sıkışık bir teslim tarihlerine sahiptiler ki fazla mesai kaçınılmazdı.
+    rule_highlight: such a tight deadline that
+    context: Project timeline
+  - en: The engineer explained the problem so clearly that everyone understood immediately.
+    tr: Mühendis sorunu o kadar net açıkladı ki herkes hemen anladı.
+    rule_highlight: so clearly that (with adverb)
+    context: Technical briefing
+  - en: We generated such high revenue this quarter that management approved team bonuses.
+    tr: Bu çeyrekte o kadar yüksek gelir elde ettik ki yönetim ekip ikramiyelerini onayladı.
+    rule_highlight: such high revenue that (uncountable noun)
+    context: Financial results
+  topic_tags:
+  - result_clauses
+  - so_that
+  - such_that
+  - intensifiers
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.future-time-clauses-when-as-soon-as
+  title: 'Future Time Clauses: When, As Soon As, Unless, and Until'
+  cefr_level: B1
+  category: conditionals_and_hypotheticals
+  summary_en: In time clauses referring to the future (introduced by when, as soon as, until, unless), use Present Simple
+    instead of 'will'.
+  summary_tr: Gelecek zamana gönderme yapan zaman ve koşul yan cümleciklerinde (when, as soon as, until vb.) 'will' yerine
+    Geniş Zaman (Present Simple) kullanılır.
+  explanation_en:
+  - title: Tense Restrictions in Subordinate Time Clauses
+    content: Even when referring to a future moment, the subordinate clause introduced by a time conjunction (when, as soon
+      as, before, after, until) or condition (unless) takes the Present Simple (or Present Perfect), while the main clause
+      takes 'will' or an imperative.
+    patterns:
+    - Time Conjunction + Subject + Present Simple, Subject + will + Base Verb
+    - Subject + will + Base Verb + Time Conjunction + Subject + Present Simple
+  explanation_tr: 'Türkçede ''Toplantı bittiğinde arayacağım'' cümlesindeki ''bittiğinde'' eki gelecek zamanı ima eder. Türk
+    öğrenciler bu mantıkla ''When the meeting will finish, I will call you'' şeklinde iki tarafa da ''will'' koyarlar. İngilizcede
+    zaman bağlacının bağlı olduğu cümlecikte ''will'' kullanılamaz; geniş zaman kullanılır: ''When the meeting finishes, I
+    will call you.'''
+  rules:
+  - name: Present Tense for Future Time Clause
+    pattern: when / as soon as / until / unless + Present Simple, Main Clause with will
+    use_cases:
+    - Describing automated deployment pipelines and trigger conditions
+    - Coordinating handoffs between teams upon task completion
+    time_markers:
+    - when
+    - as soon as
+    - until
+    - unless
+    - the moment
+  contrasts:
+  - structure_a: We will notify you as soon as the deployment finishes.
+    structure_b: We will notify you as soon as the deployment will finish. (INCORRECT)
+    difference_explanation_en: Subordinate clauses introduced by 'as soon as' prohibit future modal 'will'. Present Simple
+      'finishes' is grammatically mandatory.
+    difference_explanation_tr: '''As soon as'' ile başlayan yan cümlecikte ''will'' kullanılamaz; Present Simple ''finishes''
+      dilbilgisel bir zorunluluktur.'
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Zaman Cümleciğine 'Will' Ekleme Hatası
+    explanation_tr: '''When'' ve ''as soon as'' bağlaçlarından sonra ''will'' getirmek Türk öğrencilerin en sık yaptığı aktarım
+      hatasıdır.'
+    incorrect_example: I will send you the credentials when I will arrive at the office.
+    correct_example: I will send you the credentials when I arrive at the office.
+  examples:
+  - en: We will deploy the hotfix as soon as the continuous integration build passes.
+    tr: Sürekli entegrasyon derlemesi başarılı olur olmaz acil yamayı canlıya alacağız.
+    rule_highlight: as soon as the build passes (Present Simple)
+    context: CI/CD pipeline
+  - en: The system will keep retrying until it receives a valid response from the payment gateway.
+    tr: Sistem, ödeme ağ geçidinden geçerli bir yanıt alana kadar yeniden denemeye devam edecektir.
+    rule_highlight: until it receives (Present Simple)
+    context: Payment processing
+  - en: Unless you grant admin permissions, the automated script will fail.
+    tr: Yönetici izinlerini vermediğiniz sürece otomatik betik başarısız olacaktır.
+    rule_highlight: Unless you grant (Present Simple)
+    context: DevOps permissions
+  - en: Call me the moment you receive confirmation from the legal department.
+    tr: Hukuk departmanından onay aldığınız anda beni arayın.
+    rule_highlight: the moment you receive
+    context: Executive escalation
+  topic_tags:
+  - future_time_clauses
+  - when
+  - as_soon_as
+  - unless
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.both-either-neither
+  title: 'Correlative Conjunctions: Both, Either, and Neither'
+  cefr_level: B1
+  category: discourse_markers_and_cohesion
+  summary_en: Use 'Both... and' (plural verb), 'Either... or' (alternative), and 'Neither... nor' (negative agreement matching
+    the closest subject).
+  summary_tr: '''Both... and'' (her ikisi de), ''Either... or'' (ya o ya diğeri) ve ''Neither... nor'' (ne o ne diğeri) yapıları
+    ikili alternatif ve ortaklıkları bağlar.'
+  explanation_en:
+  - title: Syntax and Subject-Verb Agreement
+    content: '''Both X and Y'' always takes a plural verb (''Both the backend and frontend are ready''). With ''Either X or
+      Y'' and ''Neither X nor Y'', the verb agrees in number with the subject closest to it (''Neither the manager nor the
+      engineers were convinced'').'
+    patterns:
+    - Both + Subject 1 + and + Subject 2 + Plural Verb
+    - Either + Subject 1 + or + Subject 2 + Verb (agrees with Subject 2)
+    - Neither + Subject 1 + nor + Subject 2 + Verb (agrees with Subject 2)
+  explanation_tr: Türkçedeki 'hem... hem...', 'ya... ya da...' ve 'ne... ne de...' bağlaçlarını karşılar. 'Neither... nor'
+    yapısı kendi içinde zaten olumsuzluk içerdiğinden, yüklem olumlu biçimde kurulmalıdır ('Neither John nor Mary didn't come'
+    yanlıştır; 'Neither John nor Mary came' denmelidir).
+  rules:
+  - name: Correlative Agreement Rule
+    pattern: Both... and (plural) | Either... or / Neither... nor (proximity agreement)
+    use_cases:
+    - Weighing competing technology choices and trade-offs
+    - Outlining dual eligibility criteria or mutual exclusions
+    time_markers: []
+  contrasts:
+  - structure_a: Both the iOS and Android apps have been updated.
+    structure_b: Either the iOS or the Android app needs an immediate patch.
+    difference_explanation_en: Structure A applies collectively to both platforms. Structure B presents an alternative option
+      where one of the two applies.
+    difference_explanation_tr: A yapısı her iki platformu kapsar. B yapısı ise ikisinden birini alternatif olarak öne sürer.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''Neither... Nor'' ile Olumsuz Fiil Kullanma Hatası'
+    explanation_tr: '''Neither... nor'' zaten olumsuzluk taşıdığı için cümlenin fiili olumsuz yapılmaz. Çift olumsuzluk dilbilgisi
+      kuralına aykırıdır.'
+    incorrect_example: Neither the CTO nor the CEO didn't attend the press briefing.
+    correct_example: Neither the CTO nor the CEO attended the press briefing.
+  examples:
+  - en: Both the staging environment and the production cluster are fully operational.
+    tr: Hem hazırlık ortamı hem de canlı küme tamamen çalışır durumdadır.
+    rule_highlight: Both ... and ... are (plural verb)
+    context: Infrastructure status
+  - en: Either the product owner or the lead engineer must sign off on the release.
+    tr: Sürümü ya ürün sahibi ya da baş mühendis onaylamalıdır.
+    rule_highlight: Either ... or ... must sign off
+    context: Approval workflow
+  - en: Neither the database logs nor the application metrics showed any signs of compromise.
+    tr: Ne veritabanı kayıtları ne de uygulama metrikleri herhangi bir sızıntı belirtisi gösterdi.
+    rule_highlight: Neither ... nor ... showed (positive verb)
+    context: Security postmortem
+  - en: You can connect either via SSH key or through our corporate VPN.
+    tr: Ya SSH anahtarıyla ya da kurumsal VPN'imiz üzerinden bağlanabilirsiniz.
+    rule_highlight: either via ... or through ...
+    context: Network access
+  topic_tags:
+  - correlative_conjunctions
+  - both_and
+  - either_or
+  - neither_nor
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.too-enough-degrees
+  title: 'Degree Modifiers: Too vs. Enough with Adjectives, Adverbs, and Nouns'
+  cefr_level: B1
+  category: noun_phrases_and_articles
+  summary_en: '''Too'' precedes adjectives/adverbs to indicate excessive negative degree; ''enough'' follows adjectives/adverbs
+    but precedes nouns to indicate sufficiency.'
+  summary_tr: '''Too'' aşırı olumsuz derecelendirme için sıfat ve zarflardan önce; ''enough'' ise yeterlilik için sıfat/zarflardan
+    sonra, isimlerden önce gelir.'
+  explanation_en:
+  - title: Syntactic Position and Functional Polarity
+    content: '''Too'' means more than necessary or desirable, carrying a negative connotation (''The server latency is too
+      high to accept''). ''Enough'' indicates sufficiency. Place ''enough'' AFTER adjectives and adverbs (''fast enough''),
+      but BEFORE nouns (''enough disk space'').'
+    patterns:
+    - too + adjective/adverb (+ for someone) (+ to-infinitive)
+    - adjective/adverb + enough (+ for someone) (+ to-infinitive)
+    - enough + noun (+ to-infinitive)
+  explanation_tr: 'Türkçede ''yeterince'' kelimesi sıfattan önce de sonra da gelebilir (''yeterince hızlı'' / ''hızlı yeterince'').
+    İngilizcede ise kural kesindir: Sıfat veya zarftan sonra gelir (''fast enough'', asla ''enough fast'' denmez); fakat isimden
+    önce gelir (''enough memory'').'
+  rules:
+  - name: Degree Position Rules
+    pattern: too + Adj/Adv VS Adj/Adv + enough VS enough + Noun
+    use_cases:
+    - Evaluating hardware capacity, budget constraints, and project timelines
+    - Explaining why a proposed solution fails technical feasibility thresholds
+    time_markers: []
+  contrasts:
+  - structure_a: Our cloud compute is powerful enough to handle Black Friday traffic.
+    structure_b: Our cloud compute is too expensive to maintain indefinitely.
+    difference_explanation_en: Structure A indicates satisfactory capacity (positive sufficiency). Structure B indicates an
+      excessive negative drawback.
+    difference_explanation_tr: A yapısı yeterli kapasiteyi (olumlu yeterlilik) belirtir. B yapısı ise aşırı maliyet dezavantajını
+      (olumsuz fazlalık) ifade eder.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: '''Enough'' Sözcüğünü Sıfattan Önce Kullanma'
+    explanation_tr: Türkçe düşünerek 'enough fast' demek yaygın bir hatadır. Doğrusu 'fast enough' şeklindedir.
+    incorrect_example: The legacy code is not enough clean for release.
+    correct_example: The legacy code is not clean enough for release.
+  examples:
+  - en: The existing server hardware is not fast enough to process real-time transactions.
+    tr: Mevcut sunucu donanımı gerçek zamanlı işlemleri gerçekleştirebilecek kadar hızlı değildir.
+    rule_highlight: not fast enough (adjective + enough)
+    context: System benchmarking
+  - en: We do not have enough storage space on the backup partition.
+    tr: Yedekleme bölümünde yeterli depolama alanımız yok.
+    rule_highlight: enough storage space (enough + noun)
+    context: Storage operations
+  - en: The third-party analytics SDK was too heavy for our lightweight mobile client.
+    tr: Üçüncü taraf analiz SDK'sı hafif mobil istemcimiz için çok ağırdı.
+    rule_highlight: too heavy (too + adjective)
+    context: Mobile development
+  - en: Did your team have enough time to test the payment flow thoroughly?
+    tr: Ekibinizin ödeme akışını baştan sona test etmek için yeterli zamanı oldu mu?
+    rule_highlight: enough time (enough + noun)
+    context: QA sign-off
+  topic_tags:
+  - too
+  - enough
+  - degree_modifiers
+  - word_order
+  - b1_grammar
+  status: APPROVED
+  version: 1
+- id: grammar.b1.reflexive-pronouns-each-other
+  title: 'Reflexive Pronouns vs. Reciprocal Pronouns: Myself vs. Each Other'
+  cefr_level: B1
+  category: noun_phrases_and_articles
+  summary_en: Use reflexive pronouns (myself, yourself) when the subject and object are identical, and reciprocal pronouns
+    (each other) for mutual bilateral actions.
+  summary_tr: Özne ile nesne aynı kişi olduğunda dönüşlü zamirler (myself, himself vb.), karşılıklı eylemlerde ise işteş zamir
+    (each other) kullanılır.
+  explanation_en:
+  - title: Reflexive Action vs. Mutual Interaction
+    content: Reflexive pronouns (myself, yourself, himself, herself, itself, ourselves, yourselves, themselves) indicate that
+      the subject performs an action on itself ('The script restarts itself automatically'). In contrast, 'each other' and
+      'one another' indicate a two-way mutual relationship between participants ('The two microservices communicate with each
+      other').
+    patterns:
+    - Subject + Verb + Reflexive Pronoun (Subject = Object)
+    - Subject + Verb + each other (Mutual two-way interaction)
+  explanation_tr: Türkçede dönüşlülük eki (-in) ile işteşlik eki (-iş) farklıdır ('kendi kendine' vs 'birbiriyle'). İngilizcede
+    'The team members congratulated themselves' derseniz herkes kendi kendini tebrik etmiş olur; 'The team members congratulated
+    each other' derseniz birbirlerini tebrik etmiş olurlar. Bu anlam farkı iş bağlamında kritiktir.
+  rules:
+  - name: Reflexive vs. Reciprocal Function
+    pattern: 'Reflexive: Subject acts on Self | Reciprocal: Subject A and B act mutually on one another'
+    use_cases:
+    - Describing autonomous service recovery and automated restart routines
+    - Explaining cross-functional collaboration and inter-team communication
+    time_markers: []
+  contrasts:
+  - structure_a: The engineers introduced themselves at the kickoff meeting.
+    structure_b: The engineers helped each other resolve the deployment issue.
+    difference_explanation_en: In A, each engineer introduced his or her own person. In B, the engineers provided mutual cross-assistance.
+    difference_explanation_tr: A'da her mühendis kendi kendini tanıttı. B'de ise mühendisler birbirlerine karşılıklı yardım
+      ettiler.
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: '''Themselves'' ile ''Each Other'' Karışıklığı'
+    explanation_tr: Karşılıklı iletişimde 'We talk to ourselves every morning' demek 'Kendi kendimize konuşuruz' anlamına
+      gelir. 'We talk to each other' denmelidir.
+    incorrect_example: The design team and the engineering team respect themselves.
+    correct_example: The design team and the engineering team respect each other.
+  examples:
+  - en: The containerized service restarts itself automatically whenever a fatal crash occurs.
+    tr: Kapsayıcı hizmeti, ölümcül bir çökme meydana geldiğinde kendi kendini otomatik olarak yeniden başlatır.
+    rule_highlight: restarts itself (reflexive pronoun)
+    context: Container orchestration
+  - en: Product managers and tech leads should consult each other before changing quarterly goals.
+    tr: Ürün yöneticileri ve teknik liderler çeyrek hedeflerini değiştirmeden önce birbirlerine danışmalıdır.
+    rule_highlight: consult each other (reciprocal pronoun)
+    context: Team alignment
+  - en: I prepared myself thoroughly for the technical system design interview.
+    tr: Teknik sistem tasarımı mülakatına kendimi kapsamlı bir şekilde hazırladım.
+    rule_highlight: prepared myself (reflexive)
+    context: Career development
+  - en: The two microservices exchange authentication tokens with each other securely.
+    tr: İki mikro servis, kimlik doğrulama belirteçlerini birbirleriyle güvenli bir şekilde paylaşır.
+    rule_highlight: with each other (reciprocal)
+    context: Distributed systems
+  topic_tags:
+  - reflexive_pronouns
+  - reciprocal_pronouns
+  - each_other
+  - b1_grammar
+  status: APPROVED
+  version: 1

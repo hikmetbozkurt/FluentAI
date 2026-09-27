@@ -1,0 +1,336 @@
+- id: vocab.contract
+  headword: contract
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈkɒn.trækt/
+  audio_ref: null
+  definition_en: A formal, legally binding written agreement between two or more parties outlining rights and responsibilities.
+  meaning_tr: sözleşme, kontrat
+  collocations:
+    - text: sign a contract
+      tr: sözleşme imzalamak
+    - text: breach of contract
+      tr: sözleşme ihlali
+    - text: renew a contract
+      tr: sözleşmeyi yenilemek
+    - text: employment contract
+      tr: iş sözleşmesi
+  examples:
+    - en: "Both companies agreed on all terms before signing the three-year service contract."
+      tr: "Her iki şirket de üç yıllık hizmet sözleşmesini imzalamadan önce tüm şartlar üzerinde anlaştı."
+      context: Commercial Negotiation
+    - en: "The legal department reviewed the employment contract to ensure compliance with local labor law."
+      tr: "Hukuk departmanı, yerel iş kanununa uygunluğu sağlamak için iş sözleşmesini inceledi."
+      context: Corporate HR
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Sözleşme yapmak veya imzalamak anlamında Türkçedeki "kontrat yapmak" ifadesi İngilizceye "make a contract" olarak çevrilebilir ancak profesyonel dilde "sign a contract" veya "enter into a contract" çok daha yaygındır.
+      incorrect_example: "We will do a new contract with the supplier tomorrow."
+      correct_example: "We will sign a new contract with the supplier tomorrow."
+  register: business
+  topic_tags:
+    - business
+    - law
+    - agreements
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.experience
+  headword: experience
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪkˈspɪə.ri.əns/
+  audio_ref: null
+  definition_en: Practical knowledge, skill, or understanding gained through direct participation in events or professional work over time.
+  meaning_tr: deneyim, tecrübe
+  collocations:
+    - text: practical experience
+      tr: pratik deneyim
+    - text: lack of experience
+      tr: deneyim eksikliği
+    - text: work experience
+      tr: iş tecrübesi
+    - text: gain experience
+      tr: deneyim kazanmak
+  examples:
+    - en: "The candidate has five years of practical experience in cloud architecture."
+      tr: "Aday, bulut mimarisi alanında beş yıllık pratik deneyime sahiptir."
+      context: Technical Interview
+    - en: "Working on distributed systems gives junior engineers invaluable problem-solving experience."
+      tr: "Dağıtık sistemler üzerinde çalışmak, kıdemsiz mühendislere paha biçilmez bir problem çözme deneyimi kazandırır."
+      context: Professional Development
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        Mesleki tecrübe anlamındaki "experience" sayılamayan (uncountable) bir isimdir ve çoğul eki almaz. Yaşanan münferit olaylar veya maceralar kastedildiğinde sayılabilir ("experiences").
+      incorrect_example: "She has many experiences in software testing."
+      correct_example: "She has extensive experience in software testing."
+  register: general
+  topic_tags:
+    - career
+    - qualifications
+    - professional-skills
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.advantage
+  headword: advantage
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ədˈvɑːn.tɪdʒ/
+  audio_ref: null
+  definition_en: A condition, circumstance, or feature that puts someone in a favorable or superior position.
+  meaning_tr: avantaj, üstünlük, fayda
+  collocations:
+    - text: competitive advantage
+      tr: rekabet avantajı
+    - text: take advantage of
+      tr: -den yararlanmak / fırsatı değerlendirmek
+    - text: distinct advantage
+      tr: belirgin bir üstünlük
+  examples:
+    - en: "Early adoption of automated testing provides a competitive advantage in delivery speed."
+      tr: "Otomatik testlerin erkenden benimsenmesi, teslimat hızında bir rekabet avantajı sağlar."
+      context: Engineering Strategy
+    - en: "The new regional office has the advantage of being close to key logistics hubs."
+      tr: "Yeni bölge ofisi, önemli lojistik merkezlerine yakın olma avantajına sahiptir."
+      context: Business Expansion
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Bir şeyin avantajı" derken "advantage of" kullanılır; "bir fırsattan yararlanmak" deyimi ise "take advantage of" kalıbıdır. "Take advantage from" yanlıştır.
+      incorrect_example: "We should take advantage from the low exchange rate."
+      correct_example: "We should take advantage of the low exchange rate."
+  register: general
+  topic_tags:
+    - business
+    - strategy
+    - competition
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.achieve
+  headword: achieve
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /əˈtʃiːv/
+  audio_ref: null
+  definition_en: To successfully accomplish or reach a desired objective, milestone, or result through effort and skill.
+  meaning_tr: başarmak, elde etmek, hedefe ulaşmak
+  collocations:
+    - text: achieve a goal
+      tr: bir amaca ulaşmak
+    - text: achieve success
+      tr: başarı elde etmek
+    - text: achieve targets
+      tr: hedefleri tutturmak
+  examples:
+    - en: "The engineering squad achieved its performance targets two weeks ahead of schedule."
+      tr: "Mühendislik ekibi, performans hedeflerine planlanandan iki hafta önce ulaştı."
+      context: Agile Delivery
+    - en: "Continuous practice is necessary to achieve fluency in spoken English."
+      tr: "İngilizce konuşmada akıcılık elde etmek için sürekli pratik gereklidir."
+      context: Language Learning
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Hedeflere ulaşmak ve sonuç almak için "achieve" fiili kullanılır; ancak Türkçedeki "başarmak" her durumda "achieve" ile çevrilmez, bir sınavı geçmek için "pass", zor bir durumu halletmek için "manage" tercih edilir.
+      incorrect_example: "He achieved to pass the driving exam on his first try."
+      correct_example: "He managed to pass the driving exam on his first try."
+  register: general
+  topic_tags:
+    - career
+    - goals
+    - accomplishment
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.arrange
+  headword: arrange
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /əˈreɪndʒ/
+  audio_ref: null
+  definition_en: To plan, coordinate, or organize the details of a meeting, event, or schedule in advance.
+  meaning_tr: düzenlemek, ayarlamak, organize etmek
+  collocations:
+    - text: arrange a meeting
+      tr: toplantı ayarlamak
+    - text: arrange an interview
+      tr: mülakat ayarlamak
+    - text: arrange travel
+      tr: seyahat ayarlamak
+  examples:
+    - en: "The executive assistant will arrange an introductory call with the client tomorrow morning."
+      tr: "Yönetici asistanı, yarın sabah müşteriyle bir tanışma görüşmesi ayarlayacak."
+      context: Corporate Scheduling
+    - en: "We need to arrange transportation for the visiting engineering team from Stuttgart."
+      tr: "Stuttgart'tan gelen ziyaretçi mühendislik ekibi için ulaşım ayarlamamız gerekiyor."
+      context: Business Logistics
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Arrange" planlamak ve organize etmek demektir. Müzikteki aranjman kavramı dışında, Türkçedeki "aralamak" veya "ayrıştırmak" ile hiçbir alakası yoktur.
+      incorrect_example: "Please arrange the door so that fresh air can come in."
+      correct_example: "Please leave the door slightly open so that fresh air can come in."
+  register: general
+  topic_tags:
+    - work
+    - scheduling
+    - organization
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.essential
+  headword: essential
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ɪˈsen.ʃəl/
+  audio_ref: null
+  definition_en: Absolutely necessary, indispensable, or of fundamental importance to the success of something.
+  meaning_tr: zorunlu, vazgeçilmez, hayati, temel
+  collocations:
+    - text: essential requirement
+      tr: zorunlu gereksinim
+    - text: play an essential role
+      tr: hayati bir rol oynamak
+    - text: essential for success
+      tr: başarı için vazgeçilmez
+  examples:
+    - en: "Clear communication is essential when collaborating across distributed global teams."
+      tr: "Dağıtık küresel ekipler arasında iş birliği yaparken net iletişim hayati önem taşır."
+      context: Remote Work
+    - en: "Accurate logging is an essential requirement for debugging production microservices."
+      tr: "Doğru log kaydı, canlı mikroservislerdeki hataları ayıklamak için vazgeçilmez bir gereksinimdir."
+      context: System Architecture
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Essential" sıfatı bir amaç için gerekli olmayı belirtirken "to" veya "for" edatlarıyla kullanılır, "with" ile kullanılmaz.
+      incorrect_example: "Clean water is essential with human health."
+      correct_example: "Clean water is essential for human health."
+  register: general
+  topic_tags:
+    - problem-solving
+    - priorities
+    - requirements
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.accurate
+  headword: accurate
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈæk.jə.rət/
+  audio_ref: null
+  definition_en: Correct in all details; conforming exactly to truth or standard measurements without error.
+  meaning_tr: doğru, hatasız, kesin, dakik
+  collocations:
+    - text: accurate data
+      tr: doğru veri
+    - text: accurate representation
+      tr: gerçeğe uygun temsil
+    - text: highly accurate
+      tr: son derece doğru / kesin
+  examples:
+    - en: "Financial analysts require accurate transaction records to generate reliable quarterly forecasts."
+      tr: "Finans analistleri, güvenilir üç aylık tahminler oluşturmak için doğru işlem kayıtlarına ihtiyaç duyar."
+      context: Financial Analysis
+    - en: "The modern GPS receiver provides an accurate reading even in dense urban canyons."
+      tr: "Modern GPS alıcısı, yoğun şehir kanyonlarında bile hatasız bir konum ölçümü sağlar."
+      context: Navigation Tech
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Accurate" (doğru, kesin, hatasız), ahlaki doğruluk veya haklılık ("right/fair") demek değildir. Ölçüm, bilgi ve hesaplamalardaki teknik doğruluğu belirtir.
+      incorrect_example: "He is an accurate person who always helps poor people."
+      correct_example: "He is a righteous and generous person who always helps poor people."
+  register: general
+  topic_tags:
+    - data
+    - precision
+    - analysis
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.depend-on
+  headword: depend on
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /dɪˈpend ɒn/
+  audio_ref: null
+  definition_en: To be determined or conditioned by something; or to rely upon someone or something for necessary support.
+  meaning_tr: bağlı olmak; güvenmek, bel bağlamak
+  collocations:
+    - text: depend heavily on
+      tr: büyük ölçüde bağlı olmak
+    - text: depend on circumstances
+      tr: koşullara bağlı olmak
+    - text: depend on each other
+      tr: birbirine güvenmek / dayanmak
+  examples:
+    - en: "Project delivery timelines depend heavily on client feedback during the review phase."
+      tr: "Proje teslim süreleri, inceleme aşamasındaki müşteri geri bildirimlerine büyük ölçüde bağlıdır."
+      context: Project Management
+    - en: "Our mobile application depends on a stable backend API connection to sync user data."
+      tr: "Mobil uygulamamız, kullanıcı verilerini senkronize etmek için kararlı bir arka uç API bağlantısına dayanır."
+      context: Software Architecture
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Türkçede "bir şeye bağlı olmak" dendiği için "to" edatına yönelme yanlışı yapılır; fiil mutlaka "on" (veya daha resmi olarak "upon") ile kullanılır.
+      incorrect_example: "The final budget depends to the board's decision."
+      correct_example: "The final budget depends on the board's decision."
+  register: general
+  topic_tags:
+    - dependencies
+    - relationships
+    - reliance
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.run-out-of
+  headword: run out of
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /rʌn aʊt əv/
+  audio_ref: null
+  definition_en: To completely use up or exhaust the available supply of something, leaving none remaining.
+  meaning_tr: tüketmek, bitirmek; (bir şeyi) kalmamak
+  collocations:
+    - text: run out of time
+      tr: vakti tükenmek
+    - text: run out of patience
+      tr: sabrı taşmak / tükenmek
+    - text: run out of memory
+      tr: belleği tükenmek
+  examples:
+    - en: "The presentation was cut short because the keynote speaker ran out of time."
+      tr: "Ana konuşmacının vakti tükendiği için sunum yarıda kesildi."
+      context: Conference Presentation
+    - en: "The production server crashed after running out of available disk space."
+      tr: "Canlı sunucu, kullanılabilir disk alanı bittikten sonra çöktü."
+      context: DevOps Operations
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "Zamanımız bitti" denirken özne zaman olabilir; İngilizcede "run out of" kullanırken tüketen kişi özne olur ("We ran out of time") veya "Time is running out" denir. "Time ran out of us" denmez.
+      incorrect_example: "The coffee ran out of us this morning."
+      correct_example: "We ran out of coffee this morning."
+  register: general
+  topic_tags:
+    - resources
+    - daily-life
+    - limits
+  related_ids: []
+  status: APPROVED
+  version: 1

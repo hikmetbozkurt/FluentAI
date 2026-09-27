@@ -1,0 +1,496 @@
+- id: vocab.catalyst
+  headword: catalyst
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈkæt.əl.ɪst/
+  audio_ref: null
+  definition_en: A person, event, or condition that causes significant change or action to accelerate without being consumed itself.
+  meaning_tr: katalizör, tetikleyici güç, değişimi hızlandıran unsur
+  collocations:
+    - text: act as a catalyst
+      tr: katalizör görevi görmek
+    - text: catalyst for growth
+      tr: büyümenin tetikleyicisi
+    - text: primary catalyst
+      tr: başlıca katalizör
+  examples:
+    - en: The sudden transition to remote work acted as a major catalyst for corporate digital modernization.
+      tr: Uzaktan çalışmaya ani geçiş, kurumsal dijital modernleşme için büyük bir tetikleyici güç görevi gördü.
+      context: Digital Transformation
+    - en: Appointing an experienced Chief Information Security Officer was the catalyst that accelerated compliance reforms.
+      tr: Deneyimli bir Bilgi Güvenliği Başkanı atamak, uyumluluk reformlarını hızlandıran katalizör oldu.
+      context: Executive Leadership
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Catalyst" sözcüğü ardından neredeyse her zaman "for" edatını alır: "a catalyst for change".
+        Türkçe "değişimin katalizörü" tamlamasından yola çıkarak "catalyst of change" demek daha az doğaldır.
+      incorrect_example: This investment will be the catalyst of innovation.
+      correct_example: This investment will be the catalyst for innovation.
+  register: academic
+  topic_tags:
+    - academic-analytical
+    - innovation
+    - change-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.cohesion
+  headword: cohesion
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /kəʊˈhiː.ʒən/
+  audio_ref: null
+  definition_en: The state of forming a united, consistent, and logically integrated whole across parts or members.
+  meaning_tr: bütünlük, bağlılık, iç uyum
+  collocations:
+    - text: team cohesion
+      tr: ekip içi bağlılık / uyum
+    - text: maintain cohesion
+      tr: uyumu ve bütünlüğü korumak
+    - text: structural cohesion
+      tr: yapısal bütünlük
+  examples:
+    - en: Frequent team retrospectives and open code reviews significantly strengthened team cohesion across time zones.
+      tr: Sık yapılan ekip retrospektifleri ve açık kod incelemeleri, farklı saat dilimlerindeki ekip içi bağlılığı ciddi oranda güçlendirdi.
+      context: Distributed Team Management
+    - en: The software architect emphasized high cohesion within modules and loose coupling between services.
+      tr: Yazılım mimarı, modüller içerisinde yüksek iç uyumu (cohesion) ve servisler arasında gevşek bağlılığı vurguladı.
+      context: Software Architecture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Yazılım mühendisliğinde "cohesion" ile "coupling" zıt kavramlardır. "Cohesion" bir modülün kendi
+        içindeki parçalarının tek bir amaca ne kadar sıkı bağlı olduğunu gösterirken, "coupling" dış modüllere
+        olan bağımlılığı ifade eder.
+      incorrect_example: We need high coupling inside the authentication microservice.
+      correct_example: We need high cohesion inside the authentication microservice.
+  register: formal
+  topic_tags:
+    - relationships
+    - team-building
+    - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.implication
+  headword: implication
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌɪm.plɪˈkeɪ.ʃən/
+  audio_ref: null
+  definition_en: A conclusion that can be drawn from something although it is not explicitly stated, or an indirect consequence.
+  meaning_tr: çıkarım, dolaylı sonuç, ima
+  collocations:
+    - text: practical implications
+      tr: pratik sonuçlar/yansımalar
+    - text: policy implications
+      tr: politika düzeyindeki yansımalar
+    - text: far-reaching implications
+      tr: geniş kapsamlı/derin sonuçlar
+  examples:
+    - en: Before adopting the new cryptographic standard, engineers carefully examined the latency implications on mobile devices.
+      tr: Yeni kriptografik standardı benimsemeden önce mühendisler mobil cihazlar üzerindeki gecikme yansımalarını dikkatle inceledi.
+      context: Cryptographic Infrastructure
+    - en: Storing sensitive EU citizen telemetry has serious legal implications under current GDPR compliance laws.
+      tr: Hassas AB vatandaşı telemetrisini saklamak, mevcut GDPR uyumluluk yasaları kapsamında ciddi hukuki sonuçlar doğurur.
+      context: Legal Compliance
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Implication", Türkçedeki günlük "ima" sözcüğünden daha geniştir. İş ve akademik İngilizcede
+        çoğunlukla bir kararın gelecekte yaratacağı "dolaylı etki, sonuç ve yansıma" anlamında kullanılır
+        (çoğul: "implications").
+      incorrect_example: What is your personal implication behind this suggestion?
+      correct_example: What are the strategic implications of this suggestion?
+  register: academic
+  topic_tags:
+    - academic-analytical
+    - risk-management
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.disruption
+  headword: disruption
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /dɪsˈrʌp.ʃən/
+  audio_ref: null
+  definition_en: Disturbance or problems that interrupt an event, activity, process, or established industry ecosystem.
+  meaning_tr: aksama, kesinti, köklü sarsıntı/yıkım (inovasyon bağlamında)
+  collocations:
+    - text: market disruption
+      tr: pazar sarsıntısı / dönüşümü
+    - text: cause disruption
+      tr: aksamaya yol açmak
+    - text: minimize disruption
+      tr: kesintiyi en aza indirmek
+  examples:
+    - en: Generative AI models have caused unprecedented disruption across knowledge-work sectors and search engines.
+      tr: Üretken yapay zeka modelleri, bilgi işi sektörlerinde ve arama motorlarında benzeri görülmemiş bir dönüşüm ve sarsıntıya yol açtı.
+      context: Market Dynamics
+    - en: The database migration script was executed during off-peak hours to minimize operational disruption for online users.
+      tr: Veritabanı geçiş betiği, çevrimiçi kullanıcılar için operasyonel kesintiyi en aza indirmek amacıyla trafiğin düşük olduğu saatlerde çalıştırıldı.
+      context: DevOps Maintenance
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Disruption", iş dünyasında hem olumsuz bir "kesinti/aksaklık" ("service disruption"),
+        hem de yenilikçi bir teknolojinin sektörü kökten değiştirmesi ("disruptive innovation")
+        anlamında iki farklı tonda kullanılır.
+      incorrect_example: The power disruption was a great business innovation.
+      correct_example: The power outage caused an unwanted service disruption.
+  register: business
+  topic_tags:
+    - technology
+    - innovation
+    - operations
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.advocate
+  headword: advocate
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈæd.və.keɪt/
+  audio_ref: null
+  definition_en: To publicly recommend, support, or argue in favor of a specific policy, practice, or cause.
+  meaning_tr: savunmak, desteklemek, arkasında durmak
+  collocations:
+    - text: strongly advocate
+      tr: güçlü bir biçimde savunmak
+    - text: advocate for change
+      tr: değişim için savunuculuk yapmak
+    - text: advocate an approach
+      tr: bir yaklaşımı savunmak
+  examples:
+    - en: Senior technical staff strongly advocate automated contract testing to eliminate cross-team integration defects.
+      tr: Kıdemli teknik personel, ekipler arası entegrasyon hatalarını ortadan kaldırmak için otomatik sözleşme testlerini güçlü bir şekilde savunuyor.
+      context: Engineering Best Practices
+    - en: Environmental groups advocate adopting stricter carbon reporting mandates for cloud hyperscalers.
+      tr: Çevre örgütleri, bulut hiper ölçekleyicileri için daha katı karbon raporlama zorunluluklarının benimsenmesini savunuyor.
+      context: Sustainability Policy
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Advocate" bir yaklaşımı veya politikayı doğrudan nesne olarak alabilir: "advocate automated testing".
+        Bir grup veya dava adına konuşurken ise "advocate for users" şeklinde "for" edatı kullanılır.
+      incorrect_example: He advocates about open source software.
+      correct_example: He advocates open source software.
+  register: formal
+  topic_tags:
+    - communication
+    - leadership
+    - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.foster
+  headword: foster
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈfɒs.tər/
+  audio_ref: null
+  definition_en: To encourage the growth, development, or emergence of an idea, environment, or relationship over time.
+  meaning_tr: teşvik etmek, geliştirmek, beslemek (ortam/ilişki)
+  collocations:
+    - text: foster innovation
+      tr: inovasyonu teşvik etmek
+    - text: foster a culture
+      tr: bir kültürü geliştirmek/beslemek
+    - text: foster collaboration
+      tr: iş birliğini pekiştirmek
+  examples:
+    - en: Organizing quarterly internal hackathons helps foster a vibrant culture of engineering innovation.
+      tr: Üç ayda bir şirket içi hackathon'lar düzenlemek, canlı bir mühendislik inovasyonu kültürünü geliştirmeye yardımcı olur.
+      context: Engineering Culture
+    - en: An empathetic leadership style fosters psychological safety, empowering team members to voice risks early.
+      tr: Empatik bir liderlik tarzı psikolojik güven ortamını besleyerek ekip üyelerinin riskleri erkenden dile getirmesini sağlar.
+      context: Executive Leadership
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Foster" soyut kavramlarla (kültür, inovasyon, büyüme, ilişkiler) sıkça eşleşir.
+        Maddi nesneler için "foster" değil "build", "construct" veya "create" kullanılır.
+      incorrect_example: We need to foster a new database server.
+      correct_example: We need to set up a new database server.
+  register: formal
+  topic_tags:
+    - work-career
+    - leadership
+    - culture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.undermine
+  headword: undermine
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˌʌn.dəˈmaɪn/
+  audio_ref: null
+  definition_en: To erode or weaken the foundation, confidence, or effectiveness of something gradually and insidiously.
+  meaning_tr: baltalamak, sarsmak, zayıflatmak
+  collocations:
+    - text: undermine credibility
+      tr: güvenilirliği baltalamak
+    - text: undermine authority
+      tr: otoriteyi zayıflatmak
+    - text: undermine efforts
+      tr: çabaları boşa çıkarmak / sekteye uğratmak
+  examples:
+    - en: Frequent unannounced deadline changes undermine employee morale and damage leadership trust.
+      tr: Sık yapılan habersiz teslim tarihi değişiklikleri çalışan moralini baltalar ve liderliğe duyulan güveni zedeler.
+      context: Organizational Dynamics
+    - en: Bypassing established code review processes undermines the security posture of the entire product.
+      tr: Yerleşik kod inceleme süreçlerini baypas etmek, tüm ürünün güvenlik duruşunu zayıflatır ve baltalar.
+      context: Security Governance
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        "Undermine" sözcüğü birebir "altını oymak" anlamına gelse de iş ve akademik İngilizcede
+        çoğunlukla mecazi olarak güven, prestij, plan veya otoriteyi zayıflatmak anlamında kullanılır.
+      incorrect_example: The flood undermined the bridge completely.
+      correct_example: The continuous scandal undermined the executive's credibility completely.
+  register: formal
+  topic_tags:
+    - problem-solving
+    - risk-management
+    - leadership
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.compelling
+  headword: compelling
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /kəmˈpel.ɪŋ/
+  audio_ref: null
+  definition_en: Evoking intense interest, conviction, or agreement through strong logic, evidence, or emotional appeal.
+  meaning_tr: ikna edici, son derece güçlü, sürükleyici
+  collocations:
+    - text: compelling argument
+      tr: ikna edici/güçlü argüman
+    - text: compelling evidence
+      tr: somut/reddedilemez kanıt
+    - text: compelling reason
+      tr: geçerli ve güçlü bir neden
+  examples:
+    - en: The startup founders presented a compelling business case backed by verifiable customer retention metrics.
+      tr: Girişim kurucuları, doğrulanabilir müşteri elde tutma metrikleriyle desteklenen son derece ikna edici bir iş planı sundu.
+      context: Venture Financing
+    - en: Unless you have compelling evidence of unauthorized access, we cannot justify revoking all developer tokens.
+      tr: Yetkisiz erişime dair güçlü ve inandırıcı bir kanıtınız olmadıkça tüm geliştirici belirteçlerini iptal etmeyi haklı gösteremeyiz.
+      context: Access Management
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Compelling" sözcüğü "zorlamak" fiiliyle (compel) ilişkili olsa da sıfat olarak "zorunlu/zoraki" değil,
+        "insanı kendine hayran bırakan, karşı konulamaz derecede ikna edici" anlamındadır.
+      incorrect_example: Wearing safety helmets is compelling on construction sites.
+      correct_example: Wearing safety helmets is mandatory on construction sites.
+  register: formal
+  topic_tags:
+    - communication
+    - rhetoric
+    - presentation
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.inherent
+  headword: inherent
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ɪnˈhɪə.rənt/
+  audio_ref: null
+  definition_en: Existing as an inseparable, natural, permanent, or fundamental attribute of something.
+  meaning_tr: doğasında olan, ayrılmaz, içkin
+  collocations:
+    - text: inherent risk
+      tr: doğasında bulunan risk
+    - text: inherent complexity
+      tr: yapısından gelen karmaşıklık
+    - text: inherent limitation
+      tr: doğal sınırlılık
+  examples:
+    - en: Every distributed database architecture carries inherent network latency trade-offs that cannot be eliminated entirely.
+      tr: Her dağıtık veritabanı mimarisi, tamamen ortadan kaldırılamayan doğal ağ gecikmesi ödünleşimleri taşır.
+      context: Distributed Systems
+    - en: Volatility is an inherent characteristic of speculative foreign exchange markets.
+      tr: Oynaklık, spekülatif döviz piyasalarının doğasında bulunan temel bir niteliktir.
+      context: Financial Economics
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Inherent" sıfatı ardından "to" veya "in" edatları kullanılır: "risks inherent in/to the process".
+        Türkçe "ile birlikte gelen" mantığıyla "inherent with" demek yanlıştır.
+      incorrect_example: High latency is an issue inherent with distributed clusters.
+      correct_example: High latency is an issue inherent to distributed clusters.
+  register: academic
+  topic_tags:
+    - academic-analytical
+    - architecture
+    - risk-management
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.robust
+  headword: robust
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /rəʊˈbʌst/
+  audio_ref: null
+  definition_en: Able to withstand adverse conditions or stress; resilient, strong, and reliably built.
+  meaning_tr: sağlam, dayanıklı, aksaklıklara karşı dirençli
+  collocations:
+    - text: robust solution
+      tr: sağlam ve güvenilir çözüm
+    - text: robust architecture
+      tr: dayanıklı/güçlü mimari
+    - text: robust methodology
+      tr: güvenilir metodoloji
+  examples:
+    - en: Our payment gateway uses robust retry mechanisms with exponential backoff to handle transient network outages.
+      tr: Ödeme ağ geçidimiz, geçici ağ kesintilerini yönetmek için üstel geri çekilmeli sağlam yeniden deneme mekanizmaları kullanır.
+      context: Payment Engineering
+    - en: The pharmaceutical company conducted robust clinical trials before submitting the new medication for regulatory review.
+      tr: İlaç şirketi, yeni ilacı ruhsat onayı için sunmadan önce sağlam ve kapsamlı klinik deneyler yürüttü.
+      context: Clinical Research
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Robust" kelimesi teknik, finansal ve akademik çevrelerde sıklıkla "hatalara karşı dayanıklı,
+        kırılgan olmayan sistemler" için kullanılır. "Strong" sözcüğünün daha teknik ve prestijli alternatifidir.
+      incorrect_example: We need a muscle system that can never crash.
+      correct_example: We need a robust system that can handle crashes gracefully.
+  register: formal
+  topic_tags:
+    - technology
+    - reliability
+    - architecture
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.arguably
+  headword: arguably
+  cefr_level: C1
+  part_of_speech: adverb
+  phonetic: /ˈɑːɡ.ju.ə.bli/
+  audio_ref: null
+  definition_en: As can be shown or supported by persuasive arguments; used when stating a well-founded opinion.
+  meaning_tr: muhtemelen, iddia edilebileceği gibi, tartışmasız sayılabilecek şekilde
+  collocations:
+    - text: arguably the most important
+      tr: iddia edilebileceği gibi en önemlisi
+    - text: arguably the best
+      tr: muhtemelen en iyisi
+  examples:
+    - en: Python is arguably the most widely adopted programming language for modern artificial intelligence research.
+      tr: Python, modern yapay zeka araştırmaları için muhtemelen en yaygın benimsenen programlama dilidir.
+      context: Tech Industry Commentary
+    - en: Data protection has arguably become the primary compliance concern for global SaaS enterprises.
+      tr: Veri koruma, küresel SaaS kuruluşları için iddia edilebileceği gibi başlıca uyumluluk meselesi haline gelmiştir.
+      context: Compliance Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Arguably", "tartışmalı bir şekilde" demek DEĞİLDİR. Aksine, "eldeki kanıtlarla güçlü şekilde
+        savunulabilir ki..." anlamına gelir ve genellikle üstünlük bildiren sıfatlarla kullanılır
+        ("arguably the best"). "Tartışmalı" demek için "debatably" veya "controversially" kullanılır.
+      incorrect_example: It is arguably whether this proposal will pass the board vote.
+      correct_example: It is questionable whether this proposal will pass the board vote.
+  register: academic
+  topic_tags:
+    - communication
+    - discourse
+    - rhetoric
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.inadvertently
+  headword: inadvertently
+  cefr_level: C1
+  part_of_speech: adverb
+  phonetic: /ˌɪn.ədˈvɜː.tənt.li/
+  audio_ref: null
+  definition_en: Without intention, foresight, or deliberate awareness; purely by accident through oversight.
+  meaning_tr: istemeden, farkında olmadan, sehven
+  collocations:
+    - text: inadvertently delete
+      tr: sehven silmek
+    - text: inadvertently leak
+      tr: farkında olmadan sızdırmak
+    - text: inadvertently introduce a bug
+      tr: istemeden yazılım hatasına yol açmak
+  examples:
+    - en: A junior engineer inadvertently exposed an administrative API key in a public Git commit.
+      tr: Kıdemli olmayan bir mühendis, herkese açık bir Git commit'inde farkında olmadan bir yönetici API anahtarını paylaştı.
+      context: DevSecOps Post-Mortem
+    - en: The new caching rule inadvertently purged all user session tokens during peak shopping hours.
+      tr: Yeni önbellekleme kuralı, yoğun alışveriş saatlerinde tüm kullanıcı oturum belirteçlerini sehven temizledi.
+      context: Incident Report
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede resmi yazışmalarda "sehven" olarak ifade edilen durum İngilizcede tam olarak
+        "inadvertently" zarfı ile karşılanır. "Accidentally" günlük dilde uygundur; kurumsal raporlarda
+        "inadvertently" tercih edilir.
+      incorrect_example: We deleted the client backup with mistake.
+      correct_example: We inadvertently deleted the client backup.
+  register: formal
+  topic_tags:
+    - problem-solving
+    - incident-management
+    - post-mortem
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.stem-from
+  headword: stem from
+  cefr_level: C1
+  part_of_speech: phrasal_verb
+  phonetic: /stem frɒm/
+  audio_ref: null
+  definition_en: To originate in, arise from, or be directly caused by an underlying event, decision, or situation.
+  meaning_tr: -den kaynaklanmak, ileri gelmek, kökeni -e dayanmak
+  collocations:
+    - text: stem from a misunderstanding
+      tr: bir yanlış anlaşılmadan kaynaklanmak
+    - text: stem from lack of communication
+      tr: iletişim eksikliğinden kaynaklanmak
+    - text: stem from historical roots
+      tr: geçmişteki köklerden beslenmek
+  examples:
+    - en: Most of the operational bottlenecks in the billing service stem from legacy database schema constraints.
+      tr: Faturalandırma servisindeki operasyonel darboğazların çoğu, eski veritabanı şema kısıtlamalarından kaynaklanmaktadır.
+      context: Legacy Refactoring
+    - en: The trade dispute stems from differing interpretations of intellectual property licensing agreements.
+      tr: Ticaret anlaşmazlığı, fikri mülkiyet lisanslama anlaşmalarının farklı yorumlanmasından ileri gelmektedir.
+      context: Corporate Legal
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Stem from" kalıbında kullanılan edat zorunlu olarak "from"dur. "Stem" tek başına gövde/sap
+        anlamına gelirken, "stem from" sebep-sonuç ilişkisi kurar ("originates from" eşanlamlısı).
+      incorrect_example: The technical failure stems by an unexpected power surge.
+      correct_example: The technical failure stems from an unexpected power surge.
+  register: formal
+  topic_tags:
+    - academic-analytical
+    - cause-and-effect
+    - problem-solving
+  related_ids: []
+  status: APPROVED
+  version: 1

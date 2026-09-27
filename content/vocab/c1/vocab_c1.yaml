@@ -1,0 +1,919 @@
+- id: vocab.deliberation
+  headword: deliberation
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /dɪˌlɪb.əˈreɪ.ʃən/
+  audio_ref: null
+  definition_en: Long, careful, and serious discussion or consideration before making a critical decision.
+  meaning_tr: ayrıntılı müzakere, etraflıca düşünme, derin istişare
+  collocations:
+    - text: after much deliberation
+      tr: uzun müzakerelerin ardından
+    - text: board deliberation
+      tr: yönetim kurulu müzakeresi
+  examples:
+    - en: After hours of intense deliberation, the investment committee decided to acquire the technology startup.
+      tr: Saatler süren yoğun müzakerelerin ardından yatırım komitesi, teknoloji girişimini satın almaya karar verdi.
+      context: Executive Decision Making
+    - en: This strategic shift requires careful deliberation rather than a hasty reaction to market fluctuations.
+      tr: Bu stratejik değişim, piyasa dalgalanmalarına aceleci bir tepki vermek yerine titiz bir değerlendirme gerektirir.
+      context: Corporate Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        İngilizce "deliberate" sıfat olarak "kasıtlı/planlı" anlamına gelirken, "deliberation" ismi kurumsal
+        ve hukuki dilde "enine boyuna müzakere" anlamında kullanılır. Kasıt veya art niyet ile karıştırılmamalıdır.
+      incorrect_example: We noticed a deliberation in their system error.
+      correct_example: The error was caused deliberately, not by accident.
+  register: formal
+  topic_tags:
+    - governance
+    - leadership
+    - decision-making
+  related_ids:
+    - vocab.consensus
+    - vocab.scrutiny
+  status: APPROVED
+  version: 1
+
+- id: vocab.ambiguity
+  headword: ambiguity
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˌæm.bɪˈɡjuː.ə.ti/
+  audio_ref: null
+  definition_en: The quality of being open to more than one interpretation; inexactness or uncertainty of meaning.
+  meaning_tr: belirsizlik, muğlaklık, birden fazla anlama gelme durumu
+  collocations:
+    - text: tolerate ambiguity
+      tr: belirsizliği tolere etmek
+    - text: eliminate ambiguity
+      tr: muğlaklığı ortadan kaldırmak
+  examples:
+    - en: Effective executives must learn to navigate ambiguity when making decisions in volatile market environments.
+      tr: Etkili yöneticiler, değişken piyasa ortamlarında karar alırken belirsizliği yönetmeyi öğrenmelidir.
+      context: Executive Leadership
+    - en: The legal team revised the contract terms to eliminate any contractual ambiguity.
+      tr: Hukuk ekibi, sözleşmedeki herhangi bir muğlaklığı ortadan kaldırmak için sözleşme maddelerini revize etti.
+      context: Contract Drafting
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Uncertainty" genel bilinemezlik (ne olacağının bilinmemesi); "ambiguity" ise bir cümlenin, durumun
+        veya kuralın "farklı yorumlara açık ve bulanık" olmasıdır.
+      incorrect_example: The document had too much uncertainty in its rules.
+      correct_example: The document had too much ambiguity in its rules.
+  register: formal
+  topic_tags:
+    - executive
+    - problem-solving
+  related_ids:
+    - vocab.nuance
+    - vocab.clarify
+  status: APPROVED
+  version: 1
+
+- id: vocab.articulate-adj
+  headword: articulate
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ɑːˈtɪk.jə.lət/
+  audio_ref: null
+  definition_en: Having or showing the ability to speak fluently and coherently; expressing ideas clearly and effectively.
+  meaning_tr: düşüncelerini akıcı ve net ifade edebilen, meramını iyi anlatan
+  collocations:
+    - text: articulate speaker
+      tr: hitabeti güçlü/meramını iyi anlatan konuşmacı
+    - text: highly articulate
+      tr: son derece akıcı ve net
+  examples:
+    - en: The lead architect gave an articulate presentation explaining our event-driven migration strategy.
+      tr: Baş mimar, olaya dayalı geçiş stratejimizi açıklayan son derece net ve etkileyici bir sunum yaptı.
+      context: Technical Presentation
+    - en: She is exceptionally articulate when fielding challenging questions from board members.
+      tr: Yönetim kurulu üyelerinden gelen zorlayıcı soruları yanıtlarken son derece yetkin ve açıktır.
+      context: Executive Communication
+  turkish_traps:
+    - trap_type: part_of_speech_confusion
+      trap_note_tr: >-
+        Sıfat olduğunda son hece /lət/ olarak telaffuz edilir ("an articulate person").
+        Fiil olduğunda son hece /leɪt/ olarak okunur ("articulate your thoughts").
+      incorrect_example: He is very fluent articulate.
+      correct_example: He is an articulate communicator.
+  register: formal
+  topic_tags:
+    - communication
+    - leadership
+  related_ids:
+    - vocab.coherent
+    - vocab.discourse
+  status: APPROVED
+  version: 1
+
+- id: vocab.coherent
+  headword: coherent
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /kəʊˈhɪə.rənt/
+  audio_ref: null
+  definition_en: Logical, consistent, and well-structured, with parts that fit together harmoniously.
+  meaning_tr: tutarlı, mantıksal bütünlüğü olan, ahenkli
+  collocations:
+    - text: coherent strategy
+      tr: tutarlı strateji
+    - text: coherent narrative
+      tr: mantıksal bütünlüğü olan anlatı
+  examples:
+    - en: The product leadership presented a coherent vision connecting user needs directly to technology initiatives.
+      tr: Ürün liderliği, kullanıcı ihtiyaçlarını doğrudan teknoloji girişimlerine bağlayan tutarlı bir vizyon sundu.
+      context: Strategic Planning
+    - en: In distributed systems, our goal is to build a coherent data model across microservices.
+      tr: Dağıtık sistemlerde amacımız, mikro servisler genelinde tutarlı bir veri modeli oluşturmaktır.
+      context: Software Architecture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Consistent" zaman içinde değişmeyen, istikrarlı olan davranışı ifade eder.
+        "Coherent" ise parçaların birbiriyle mantıksal bir bütün oluşturmasıdır.
+      incorrect_example: His speech was very consistent and made sense.
+      correct_example: His speech was coherent and easy to follow.
+  register: formal
+  topic_tags:
+    - strategy
+    - architecture
+  related_ids:
+    - vocab.articulate-adj
+    - vocab.framework
+  status: APPROVED
+  version: 1
+
+- id: vocab.comprehensive
+  headword: comprehensive
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˌkɒm.prɪˈhen.sɪv/
+  audio_ref: null
+  definition_en: Complete, including all or nearly all elements or aspects of something.
+  meaning_tr: kapsamlı, etraflı, geniş çaplı
+  collocations:
+    - text: comprehensive review
+      tr: kapsamlı inceleme
+    - text: comprehensive documentation
+      tr: etraflı dokümantasyon
+  examples:
+    - en: The engineering team conducted a comprehensive audit of all cryptographic implementations.
+      tr: Mühendislik ekibi, tüm kriptografik uygulamaların kapsamlı bir denetimini gerçekleştirdi.
+      context: Security Audit
+    - en: We need a comprehensive onboarding program to accelerate developer productivity.
+      tr: Geliştirici üretkenliğini hızlandırmak için kapsamlı bir oryantasyon programına ihtiyacımız var.
+      context: HR Strategy
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Comprehensive" kelimesi "anlaşılabilir" demek DEĞİLDİR ("comprehend" kökünden gelse de).
+        Anlaşılabilir demek için "comprehensible" veya "understandable" kullanılır. "Comprehensive" daima
+        "kapsamlı/eksiksiz" anlamına gelir.
+      incorrect_example: The code explanation was comprehensive so everyone understood it.
+      correct_example: The code documentation was comprehensive, covering every edge case.
+  register: formal
+  topic_tags:
+    - analysis
+    - documentation
+  related_ids:
+    - vocab.scrutiny
+    - vocab.coherent
+  status: APPROVED
+  version: 1
+
+- id: vocab.concur
+  headword: concur
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /kənˈkɜːr/
+  audio_ref: null
+  definition_en: To be of the same opinion; to agree with a finding or perspective.
+  meaning_tr: aynı fikirde olmak, hemfikir olmak, mutabık kalmak
+  collocations:
+    - text: concur with a decision
+      tr: karara katılmak/hemfikir olmak
+    - text: generally concur
+      tr: genel olarak hemfikir olmak
+  examples:
+    - en: Both external cybersecurity auditors concurred with our assessment of the vulnerability severity.
+      tr: Her iki bağımsız siber güvenlik denetçisi de güvenlik açığının önem derecesine ilişkin değerlendirmemizle hemfikir oldu.
+      context: Security Audit
+    - en: I concur with the tech lead's recommendation to defer the database refactoring.
+      tr: Teknik liderin veritabanı düzenlemesini erteleme yönündeki tavsiyesine katılıyorum.
+      context: Executive Meeting
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir görüşe veya kişiye katılırken "concur with" kalıbı kullanılır.
+      incorrect_example: I concur to your opinion.
+      correct_example: I concur with your opinion.
+  register: formal
+  topic_tags:
+    - meetings
+    - governance
+  related_ids:
+    - vocab.consensus
+    - vocab.deliberation
+  status: APPROVED
+  version: 1
+
+- id: vocab.discourse
+  headword: discourse
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈdɪs.kɔːs/
+  audio_ref: null
+  definition_en: Written or spoken communication, debate, or formal discussion on a serious topic.
+  meaning_tr: söylem, kurumsal diyalog, akademik/resmi tartışma
+  collocations:
+    - text: public discourse
+      tr: kamusal söylem
+    - text: professional discourse
+      tr: mesleki söylem/diyalog
+  examples:
+    - en: Constructive technical discourse during code review elevates engineering standards across the company.
+      tr: Kod incelemeleri sırasındaki yapıcı teknik söylem, şirket genelindeki mühendislik standartlarını yükseltir.
+      context: Engineering Culture
+    - en: The debate over AI ethics has become a central topic in modern corporate discourse.
+      tr: Yapay zeka etiği tartışması, modern kurumsal söylemin merkezinde bir konu haline gelmiştir.
+      context: Corporate Governance
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Discourse" sıradan sohbet (chat) için değil, entelektüel, kurumsal veya akademik düzeydeki
+        yapılandırılmış diyaloglar için kullanılır.
+      incorrect_example: We had a nice discourse over coffee.
+      correct_example: We had a pleasant conversation over coffee.
+  register: academic
+  topic_tags:
+    - communication
+    - rhetoric
+  related_ids:
+    - vocab.articulate-adj
+    - vocab.deliberation
+  status: APPROVED
+  version: 1
+
+- id: vocab.discretion
+  headword: discretion
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /dɪˈskreʃ.ən/
+  audio_ref: null
+  definition_en: The freedom to decide what should be done in a particular situation; or the quality of behaving in a way that avoids causing offense or revealing private information.
+  meaning_tr: takdir yetkisi, basiret, sağduyulu gizlilik
+  collocations:
+    - text: at the discretion of
+      tr: ...'nın takdirinde/yetkisinde
+    - text: exercise discretion
+      tr: takdir yetkisini kullanmak
+  examples:
+    - en: Engineering managers have the discretion to approve remote work arrangements for their teams.
+      tr: Mühendislik yöneticileri, ekipleri için uzaktan çalışma düzenlemelerini onaylama takdir yetkisine sahiptir.
+      context: Management Discretion
+    - en: Handling sensitive salary data requires utmost professional discretion.
+      tr: Hassas maaş verilerini işlemek, azami mesleki basiret ve gizlilik gerektirir.
+      context: HR Confidentiality
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Takdir yetkisine bağlı" ifadesi İngilizcede "at the discretion of management" kalıbıyla söylenir.
+      incorrect_example: It depends on the appreciation of the manager.
+      correct_example: It is at the discretion of the manager.
+  register: formal
+  topic_tags:
+    - governance
+    - leadership
+  related_ids:
+    - vocab.deliberation
+    - vocab.concur
+  status: APPROVED
+  version: 1
+
+- id: vocab.disparity
+  headword: disparity
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /dɪˈspær.ə.ti/
+  audio_ref: null
+  definition_en: A noticeable and often unfair difference or inequality between people, resources, or systems.
+  meaning_tr: belirgin eşitsizlik, uçurum, uyumsuzluk
+  collocations:
+    - text: wide disparity
+      tr: derin uçurum/büyük eşitsizlik
+    - text: regional disparity
+      tr: bölgesel eşitsizlik
+  examples:
+    - en: The compensation audit highlighted an unacceptable disparity between entry-level and executive remuneration.
+      tr: Ücret denetimi, giriş seviyesi ile üst düzey yönetici maaşları arasındaki kabul edilemez uçurumu gözler önüne serdi.
+      context: Compensation Review
+    - en: There is a sharp disparity in server resource utilization between peak and off-peak hours.
+      tr: Yoğun ve sakin saatler arasında sunucu kaynak kullanımında keskin bir dengesizlik mevcuttur.
+      context: Infrastructure Monitoring
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Disparity" genellikle sistemik, yapısal ve arzu edilmeyen farklar/eşitsizlikler için kullanılır.
+      incorrect_example: There is an inequality of speed in the database.
+      correct_example: There is a disparity in response times between the two data centers.
+  register: formal
+  topic_tags:
+    - analysis
+    - audit
+  related_ids:
+    - vocab.discrepancy
+    - vocab.gap
+  status: APPROVED
+  version: 1
+
+- id: vocab.elucidate
+  headword: elucidate
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /iˈluː.sɪ.deɪt/
+  audio_ref: null
+  definition_en: To make something clear and explain it in detail, shedding intellectual light on a complex matter.
+  meaning_tr: izah etmek, aydınlatmak, ayrıntılı olarak açıklığa kavuşturmak
+  collocations:
+    - text: elucidate the mechanism
+      tr: mekanizmayı izah etmek
+    - text: help elucidate
+      tr: aydınlatmaya yardımcı olmak
+  examples:
+    - en: The whitepaper elucidates the cryptographic proofs underlying zero-knowledge authentication.
+      tr: Teknik rapor, sıfır bilgi kimlik doğrulamasının temelini oluşturan kriptografik kanıtları izah etmektedir.
+      context: Technical Whitepaper
+    - en: The staff engineer drew an architectural diagram to elucidate data flow across service boundaries.
+      tr: Kıdemli uzman mühendis, servis sınırları arasındaki veri akışını izah etmek için bir mimari şema çizdi.
+      context: Architecture Review
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        "Elucidate" yüksek düzeyde akademik ve teknik kurumsal bir tona sahiptir. Günlük konuşmada
+        "explain" kullanılırken, teknik raporlarda "elucidate" prestijlidir.
+      incorrect_example: Please elucidate me how to run the app.
+      correct_example: Please explain to me how to run the app.
+  register: academic
+  topic_tags:
+    - documentation
+    - tech
+  related_ids:
+    - vocab.clarify
+    - vocab.articulate-adj
+  status: APPROVED
+  version: 1
+
+- id: vocab.facet
+  headword: facet
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈfæs.ɪt/
+  audio_ref: null
+  definition_en: One particular side, aspect, or feature of something complex or multifaceted.
+  meaning_tr: yön, cephe, boyut, veche
+  collocations:
+    - text: every facet of
+      tr: ...'nın her boyutu
+    - text: multi-faceted problem
+      tr: çok boyutlu problem
+  examples:
+    - en: Modern tablet application design requires attention to every facet of user experience and performance.
+      tr: Modern tablet uygulama tasarımı, kullanıcı deneyiminin ve performansın her boyutuna dikkat edilmesini gerektirir.
+      context: UI/UX Principles
+    - en: Software reliability touches every facet of our infrastructure, from database replication to UI animations.
+      tr: Yazılım güvenilirliği, veritabanı çoğaltmasından kullanıcı arayüzü animasyonlarına kadar altyapımızın her cephesine temas eder.
+      context: Reliability Engineering
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "meselenin bu boyutu / cephesi" denirken İngilizcede "aspect" kadar "facet" de yaygın
+        ve zengin bir ifadedir.
+      incorrect_example: We must look at this side of the problem.
+      correct_example: We must examine this facet of the problem.
+  register: formal
+  topic_tags:
+    - analysis
+    - strategy
+  related_ids:
+    - vocab.perspective
+    - vocab.nuance
+  status: APPROVED
+  version: 1
+
+- id: vocab.imperative
+  headword: imperative
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ɪmˈper.ə.tɪv/
+  audio_ref: null
+  definition_en: An essential or urgent thing; a vital duty or necessity.
+  meaning_tr: kaçınılmaz zorunluluk, elzem kural; zorunlu, mecburi
+  collocations:
+    - text: strategic imperative
+      tr: stratejik zorunluluk
+    - text: moral imperative
+      tr: ahlaki zorunluluk
+  examples:
+    - en: Transitioning to zero-trust architecture is a strategic imperative for our enterprise security.
+      tr: Sıfır güven mimarisine geçiş, kurumsal güvenliğimiz için stratejik bir zorunluluktur.
+      context: Enterprise Strategy
+    - en: It is imperative that all patient healthcare records are encrypted both in transit and at rest.
+      tr: Tüm hasta sağlık kayıtlarının hem aktarım sırasında hem de beklemedeyken şifrelenmesi zorunludur.
+      context: Regulatory Healthcare
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Gramer derslerinde "emir kipi" olarak bilinen "imperative", kurumsal ve stratejik iş dilinde
+        "kaçınılmaz stratejik zorunluluk" ("a business imperative") anlamında kullanılır.
+      incorrect_example: Moving to cloud is an obligation.
+      correct_example: Moving to the cloud is a business imperative.
+  register: formal
+  topic_tags:
+    - executive
+    - strategy
+  related_ids:
+    - vocab.priority
+    - vocab.indispensable
+  status: APPROVED
+  version: 1
+
+- id: vocab.incentivize
+  headword: incentivize
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ɪnˈsen.tɪ.vaɪz/
+  audio_ref: null
+  definition_en: To motivate or encourage someone to do something by providing a reward or incentive.
+  meaning_tr: teşvik etmek, özendirmek, güdülemek
+  collocations:
+    - text: incentivize performance
+      tr: performansı teşvik etmek
+    - text: incentivize innovation
+      tr: yenilikçiliği özendirmek
+  examples:
+    - en: The bonus structure was redesigned to incentivize long-term code maintainability rather than quick patches.
+      tr: Prim yapısı, acele yamalardan ziyade uzun vadeli kod sürdürülebilirliğini teşvik edecek şekilde yeniden tasarlandı.
+      context: Compensation Strategy
+    - en: Cloud providers incentivize reserved capacity purchases by offering steep percentage discounts.
+      tr: Bulut sağlayıcıları, yüksek yüzdeli indirimler sunarak peşin ayrılmış kapasite satın alımlarını teşvik eder.
+      context: Cloud Economics
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Genel anlamda "cesaretlendirmek" için "encourage" kullanılır. Ancak maddi, terfi veya ödül yoluyla
+        "bir çıkar sağlayarak teşvik etmek" söz konusu olduğunda "incentivize" doğru terimdir.
+      incorrect_example: We encouraged employees with money bonuses.
+      correct_example: We incentivized employees with performance bonuses.
+  register: business
+  topic_tags:
+    - management
+    - hr
+  related_ids:
+    - vocab.initiative
+    - vocab.objective
+  status: APPROVED
+  version: 1
+
+- id: vocab.indispensable
+  headword: indispensable
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˌɪn.dɪˈspen.sə.bəl/
+  audio_ref: null
+  definition_en: Absolutely necessary, essential, or vital; impossible to do without.
+  meaning_tr: vazgeçilmez, elzem, onsuz olunamaz
+  collocations:
+    - text: indispensable member
+      tr: vazgeçilmez üye
+    - text: indispensable tool
+      tr: elzem araç
+  examples:
+    - en: Automated unit tests and static analysis linters are indispensable tools in modern software development.
+      tr: Otomatik birim testleri ve statik kod denetleyicileri, modern yazılım geliştirmede vazgeçilmez araçlardır.
+      context: Software Quality
+    - en: Her deep understanding of Turkish tax compliance made her an indispensable asset to the finance division.
+      tr: Türk vergi mevzuatına dair derin bilgisi, onu finans birimi için vazgeçilmez bir değer haline getirdi.
+      context: Talent Value
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Birisi veya bir şey için vazgeçilmez derken "indispensable to" veya "indispensable for" kullanılır.
+      incorrect_example: Testing is indispensable with software quality.
+      correct_example: Testing is indispensable to software quality.
+  register: formal
+  topic_tags:
+    - strategy
+    - leadership
+  related_ids:
+    - vocab.imperative
+    - vocab.viable
+  status: APPROVED
+  version: 1
+
+- id: vocab.lucrative
+  headword: lucrative
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈluː.krə.tɪv/
+  audio_ref: null
+  definition_en: Producing a great deal of profit; high-yielding financially.
+  meaning_tr: oldukça kârlı, çok kazançlı, rantabl
+  collocations:
+    - text: lucrative market
+      tr: kârlı pazar
+    - text: lucrative contract
+      tr: son derece kazançlı sözleşme
+  examples:
+    - en: B2B enterprise software subscriptions represent our company's most lucrative revenue stream.
+      tr: Kurumsal B2B yazılım abonelikleri, şirketimizin en kârlı gelir akışını temsil etmektedir.
+      context: Business Model
+    - en: The consultancy secured a lucrative multi-year contract to oversee the bank's digital transformation.
+      tr: Danışmanlık firması, bankanın dijital dönüşümünü denetlemek için çok yıllı ve oldukça kârlı bir sözleşme imzaladı.
+      context: Enterprise Sales
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Profitable" sadece kâr getiren herhangi bir durum için kullanılır. "Lucrative" ise
+        "çok yüksek kazanç ve zenginlik getiren" fırsatları vurgular.
+      incorrect_example: We opened a very profitable market.
+      correct_example: We expanded into a highly lucrative market.
+  register: business
+  topic_tags:
+    - finance
+    - business
+  related_ids:
+    - vocab.sustainable
+    - vocab.leverage
+  status: APPROVED
+  version: 1
+
+- id: vocab.nuance
+  headword: nuance
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈnjuː.ɑːns/
+  audio_ref: null
+  definition_en: A subtle difference in or shade of meaning, expression, sound, or tone.
+  meaning_tr: ince ayrım, nüans, hassas fark
+  collocations:
+    - text: subtle nuance
+      tr: ince nüans
+    - text: capture the nuances
+      tr: nüansları yakalamak
+  examples:
+    - en: Language models often miss cultural nuances when translating formal business correspondence.
+      tr: Yapay zeka dil modelleri, resmi iş yazışmalarını çevirirken genellikle kültürel nüansları gözden kaçırır.
+      context: AI Localization
+    - en: C1 and C2 proficiency requires an acute sensitivity to subtle nuances of register and tone.
+      tr: C1 ve C2 dil yetkinliği, üslup ve tonlamadaki ince nüanslara karşı derin bir duyarlılık gerektirir.
+      context: Language Mastery
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Türkçede "nüans" tek başına "küçük fark" demektir. "Küçük bir nüans farkı" demek Türkçede anlatım
+        bozukluğudur; İngilizcede ise "subtle nuance" kalıbı son derece yaygın ve doğaldır.
+      incorrect_example: There is a little nuance difference.
+      correct_example: There is a subtle nuance between these terms.
+  register: formal
+  topic_tags:
+    - communication
+    - rhetoric
+  related_ids:
+    - vocab.ambiguity
+    - vocab.facet
+  status: APPROVED
+  version: 1
+
+- id: vocab.paradigm
+  headword: paradigm
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈpær.ə.daɪm/
+  audio_ref: null
+  definition_en: A typical example or pattern of something; a distinct set of concepts, thought patterns, or standards.
+  meaning_tr: değerler dizisi, paradigma, düşünsel model
+  collocations:
+    - text: paradigm shift
+      tr: paradigma değişimi, köklü anlayış değişikliği
+    - text: programming paradigm
+      tr: programlama paradigması
+  examples:
+    - en: Moving from imperative Android Views to declarative Jetpack Compose represents a fundamental paradigm shift.
+      tr: Buyurgan Android View'lardan bildirimsel Jetpack Compose'a geçiş, temel bir paradigma değişimini temsil eder.
+      context: Software Engineering
+    - en: The remote-first working model created a new paradigm for cross-border talent acquisition.
+      tr: Uzaktan öncelikli çalışma modeli, sınırlar ötesi yetenek kazanımı için yeni bir paradigma oluşturdu.
+      context: Organizational Strategy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        En yaygın kurumsal ve teknik kalıp "paradigm shift"tir (anlayış/yaklaşım devrimi).
+      incorrect_example: We had a paradigm change in our architecture.
+      correct_example: We experienced a paradigm shift in our architecture.
+  register: formal
+  topic_tags:
+    - strategy
+    - innovation
+  related_ids:
+    - vocab.framework
+    - vocab.coherent
+  status: APPROVED
+  version: 1
+
+- id: vocab.plausible
+  headword: plausible
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈplɔː.zə.bəl/
+  audio_ref: null
+  definition_en: Seeming reasonable or probable; capable of being believed or accepted.
+  meaning_tr: makul, akla yatkın, inandırıcı
+  collocations:
+    - text: plausible explanation
+      tr: akla yatkın açıklama
+    - text: plausible scenario
+      tr: muhtemel senaryo
+  examples:
+    - en: The security team could find no plausible explanation for the sudden spike in unauthenticated traffic.
+      tr: Güvenlik ekibi, kimliği doğrulanmamış trafikteki ani artış için akla yatkın hiçbir açıklama bulamadı.
+      context: Incident Investigation
+    - en: Is it plausible that our backend database can sustain tenfold query throughput during Black Friday?
+      tr: Efsane Cuma sırasında arka uç veritabanımızın on kat sorgu hacmini kaldırabilmesi akla yatkın mıdır?
+      context: Load Testing
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Possible" (mümkün) ile "plausible" (akla yatkın/inandırıcı) farklıdır. Bir şey teorik olarak mümkün
+        olabilir ama mantıken inandırıcı (plausible) olmayabilir.
+      incorrect_example: This is a very logical possible theory.
+      correct_example: This is a plausible hypothesis.
+  register: formal
+  topic_tags:
+    - analysis
+    - reasoning
+  related_ids:
+    - vocab.viable
+    - vocab.feasibility
+  status: APPROVED
+  version: 1
+
+- id: vocab.pragmatic
+  headword: pragmatic
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /præɡˈmæt.ɪk/
+  audio_ref: null
+  definition_en: Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.
+  meaning_tr: faydacı, uygulamaya dönük, gerçekçi, pragmatik
+  collocations:
+    - text: pragmatic approach
+      tr: gerçekçi/pratik yaklaşım
+    - text: pragmatic decision
+      tr: pratik faydaya dayalı karar
+  examples:
+    - en: Rather than pursuing ideological architectural purity, the team made a pragmatic engineering choice.
+      tr: Ekip, ideolojik mimari kusursuzluk peşinde koşmak yerine pratik ve gerçekçi bir mühendislik tercihi yaptı.
+      context: Architecture Decision
+    - en: An experienced tech lead balances theoretical best practices with pragmatic timeline realities.
+      tr: Deneyimli bir teknik lider, teorik en iyi uygulamalar ile gerçekçi takvim koşullarını dengeler.
+      context: Tech Leadership
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        Türkçede "pragmatik" bazen olumsuz anlamda "kendi çıkarını gözeten/fırsatçı" olarak algılanabilir.
+        İngilizcede ise tamamen olumlu bir profesyonel vasıftır: "gerçekçi, teoriden ziyade işe yararlığa odaklanan".
+      incorrect_example: He is pragmatic, he only thinks of his profit.
+      correct_example: He takes a pragmatic approach to solving complex blockers.
+  register: formal
+  topic_tags:
+    - leadership
+    - engineering
+  related_ids:
+    - vocab.trade-off
+    - vocab.viable
+  status: APPROVED
+  version: 1
+
+- id: vocab.proactive
+  headword: proactive
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /prəʊˈæk.tɪv/
+  audio_ref: null
+  definition_en: Creating or controlling a situation rather than just responding to it after it has happened.
+  meaning_tr: ön alıcı, proaktif, inisiyatif alıp tedbir geliştiren
+  collocations:
+    - text: proactive approach
+      tr: ön alıcı yaklaşım
+    - text: proactive monitoring
+      tr: proaktif izleme
+  examples:
+    - en: Proactive performance monitoring alerted the on-call engineer before memory leaks impacted users.
+      tr: Proaktif performans izleme, bellek sızıntıları kullanıcıları etkilemeden önce nöbetçi mühendisi uyardı.
+      context: Observability
+    - en: Top companies take a proactive stance toward regulatory data privacy compliance.
+      tr: Lider şirketler, yasal veri gizliliği uyumluluğuna karşı ön alıcı bir tutum sergiler.
+      context: Compliance Culture
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Proactive" kelimesinin zıttı "reactive"dir (tepkisel). Türk öğreniciler "aktif" (active) ile
+        "proaktif" kavramlarını sıklıkla karıştırır; proaktif, sorun henüz doğmadan tedbir almaktır.
+      incorrect_example: We must be active before the error occurs.
+      correct_example: We must be proactive before errors impact users.
+  register: business
+  topic_tags:
+    - leadership
+    - mindset
+  related_ids:
+    - vocab.initiative
+    - vocab.mitigate
+  status: APPROVED
+  version: 1
+
+- id: vocab.reconcile
+  headword: reconcile
+  cefr_level: C1
+  part_of_speech: verb
+  phonetic: /ˈrek.ən.saɪl/
+  audio_ref: null
+  definition_en: To restore friendly relations between parties, or to find a way in which two conflicting facts or statements can coexist.
+  meaning_tr: uzlaştırmak, bağdaştırmak, mutabakat sağlamak (finansta mizan tutturmak)
+  collocations:
+    - text: reconcile differences
+      tr: farklılıkları uzlaştırmak
+    - text: reconcile accounts
+      tr: hesap mutabakatı yapmak
+  examples:
+    - en: The architecture board met to reconcile conflicting viewpoints between backend and mobile leads.
+      tr: Mimari kurulu, arka uç ve mobil liderler arasındaki çelişen bakış açılarını uzlaştırmak için toplandı.
+      context: Technical Governance
+    - en: The finance team spent two days reconciling credit card payment gateway transactions.
+      tr: Finans ekibi, kredi kartı ödeme geçidi işlemlerinin mutabakatını sağlamak için iki gün harcadı.
+      context: Financial Settlement
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki çelişkili durumu bağdaştırmak için "reconcile X with Y" kalıbı kullanılır.
+      incorrect_example: We must reconcile our roadmap to the budget.
+      correct_example: We must reconcile our roadmap with the budget.
+  register: formal
+  topic_tags:
+    - negotiations
+    - finance
+  related_ids:
+    - vocab.consensus
+    - vocab.discrepancy
+  status: APPROVED
+  version: 1
+
+- id: vocab.redundancy
+  headword: redundancy
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /rɪˈdʌn.dən.si/
+  audio_ref: null
+  definition_en: The state of being not or no longer needed or useful; in engineering, the inclusion of extra components to ensure reliability.
+  meaning_tr: gereksiz tekrarlama, fazlalık; mühendislikte yedeklilik/yedek altyapı
+  collocations:
+    - text: built-in redundancy
+      tr: dahili yedeklilik
+    - text: eliminate redundancy
+      tr: gereksiz fazlalıkları ayıklamak
+  examples:
+    - en: Our cloud infrastructure incorporates geographical redundancy to ensure zero downtime during regional disasters.
+      tr: Bulut altyapımız, bölgesel felaketler sırasında sıfır kesinti sağlamak için coğrafi yedeklilik barındırır.
+      context: Infrastructure Reliability
+    - en: Refactoring the repository layer eliminated redundant network mapping logic.
+      tr: Depo katmanının yeniden düzenlenmesi, gereksiz tekrarlanan ağ eşleme mantığını ortadan kaldırdı.
+      context: Clean Code
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Redundancy" İngiltere'de çalışan işten çıkarma ("make redundant") anlamında da kullanılırken,
+        yazılım ve sistem mimarisinde "yedekli çalışma altyapısı" anlamında kritik bir teknik terimdir.
+      incorrect_example: We added backup duplication to our server.
+      correct_example: We introduced system redundancy to prevent failures.
+  register: formal
+  topic_tags:
+    - architecture
+    - tech
+  related_ids:
+    - vocab.streamline
+    - vocab.framework
+  status: APPROVED
+  version: 1
+
+- id: vocab.scrutiny
+  headword: scrutiny
+  cefr_level: C1
+  part_of_speech: noun
+  phonetic: /ˈskruː.tɪ.ni/
+  audio_ref: null
+  definition_en: Critical observation, examination, or close inspection of something.
+  meaning_tr: titiz inceleme, mercek altına alma, derinlemesine tetkik
+  collocations:
+    - text: under close scrutiny
+      tr: yakın mercek altında
+    - text: withstand scrutiny
+      tr: denetimden/incelemeden başarıyla geçmek
+  examples:
+    - en: The company's data privacy policies came under intense scrutiny from European regulatory authorities.
+      tr: Şirketin veri gizliliği politikaları, Avrupalı düzenleyici kurumların yoğun incelemesine maruz kaldı.
+      context: Regulatory Scrutiny
+    - en: Our cryptographic encryption scheme withstood rigorous academic scrutiny without revealing weaknesses.
+      tr: Kriptografik şifreleme modelimiz, hiçbir zafiyet vermeksizin titiz akademik incelemeden başarıyla geçti.
+      context: Security Validation
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Mercek altında olmak" İngilizcede "under scrutiny" veya "under close scrutiny" kalıbıyla ifade edilir.
+      incorrect_example: The code is in scrutiny by the auditor.
+      correct_example: The code is under scrutiny by the auditor.
+  register: formal
+  topic_tags:
+    - audit
+    - legal
+  related_ids:
+    - vocab.compliance
+    - vocab.comprehensive
+  status: APPROVED
+  version: 1
+
+- id: vocab.tentative
+  headword: tentative
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈten.tə.tɪv/
+  audio_ref: null
+  definition_en: Not certain or fixed; provisional; done without confidence or hesitatingly.
+  meaning_tr: kesinleşmemiş, geçici, taslak niteliğinde, temkinli
+  collocations:
+    - text: tentative agreement
+      tr: ön mutabakat, kesinleşmemiş anlaşma
+    - text: tentative schedule
+      tr: taslak takvim
+  examples:
+    - en: Both engineering teams reached a tentative agreement on the GraphQL schema changes.
+      tr: Her iki mühendislik ekibi de GraphQL şema değişiklikleri konusunda kesinleşmemiş bir ön mutabakata vardı.
+      context: Technical Negotiations
+    - en: We have established a tentative launch date of November 15, subject to security audit approval.
+      tr: Güvenlik denetimi onayına bağlı olmak kaydıyla 15 Kasım olarak geçici bir lansman tarihi belirledik.
+      context: Release Management
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede "taslak / kesin olmayan" durumlar için genellikle "not definite" veya "draft" denir.
+        İş ve diplomasi İngilizcesinde bağlayıcı olmayan ön anlaşmalar ve takvimler için "tentative" standarttır.
+      incorrect_example: We have an undecided date for the launch.
+      correct_example: We have a tentative date for the launch.
+  register: business
+  topic_tags:
+    - planning
+    - negotiations
+  related_ids:
+    - vocab.schedule
+    - vocab.consensus
+  status: APPROVED
+  version: 1
+
+- id: vocab.viable
+  headword: viable
+  cefr_level: C1
+  part_of_speech: adjective
+  phonetic: /ˈvaɪ.ə.bəl/
+  audio_ref: null
+  definition_en: Capable of working successfully; feasible, sustainable, and capable of living or thriving.
+  meaning_tr: yaşayabilir, uygulanabilir, ticari/teknik olarak hayatta kalabilir
+  collocations:
+    - text: commercially viable
+      tr: ticari olarak uygulanabilir/kârlı
+    - text: viable alternative
+      tr: uygulanabilir alternatif
+  examples:
+    - en: On-device machine learning is now a viable approach for low-latency personal tablet applications.
+      tr: Cihaz üstü makine öğrenimi, düşük gecikmeli kişisel tablet uygulamaları için artık uygulanabilir bir yaklaşımdır.
+      context: Technical Evaluation
+    - en: Without steady recurring revenue, the startup's subscription model is no longer commercially viable.
+      tr: Düzenli tekrarlayan gelir olmadan, girişimin abonelik modeli artık ticari olarak sürdürülebilir değildir.
+      context: Business Viability
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Viable" yalnızca "yapılabilir" (possible) demek değildir; aynı zamanda "uzun vadede hayatta kalabilir,
+        sürdürülebilir ve başarılı olabilir" anlamını taşır.
+      incorrect_example: This is a possible living plan.
+      correct_example: This is a commercially viable plan.
+  register: formal
+  topic_tags:
+    - business
+    - feasibility
+  related_ids:
+    - vocab.feasibility
+    - vocab.sustainable
+  status: APPROVED
+  version: 1

@@ -1,0 +1,346 @@
+- id: vocab.disadvantage
+  headword: disadvantage
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˌdɪs.ədˈvɑːn.tɪdʒ/
+  audio_ref: null
+  definition_en: An unfavorable condition, circumstance, or feature that reduces the likelihood of success or progress.
+  meaning_tr: dezavantaj, sakınca, elverişsiz durum
+  collocations:
+    - text: major disadvantage
+      tr: büyük bir dezavantaj
+    - text: distinct disadvantage
+      tr: belirgin bir dezavantaj
+    - text: advantages and disadvantages
+      tr: avantajlar ve dezavantajlar
+    - text: at a disadvantage
+      tr: dezavantajlı durumda
+  examples:
+    - en: "The architectural committee carefully weighed the advantages and disadvantages of each cloud provider."
+      tr: "Mimari komite, her bir bulut sağlayıcısının avantajlarını ve dezavantajlarını dikkatle tarttı."
+      context: Technology Selection
+    - en: "Candidates without remote collaboration experience may find themselves at a distinct disadvantage."
+      tr: "Uzaktan iş birliği deneyimi olmayan adaylar kendilerini belirgin bir dezavantajlı durumda bulabilirler."
+      context: Career Recruitment
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Dezavantajlı durumda olmak" anlamında "in a disadvantage" değil, "at a disadvantage" edat öbeği kullanılır. Ayrıca bir şeyin dezavantajı için "disadvantage of" denir.
+      incorrect_example: "Our startup is in a disadvantage compared to multinational corporations."
+      correct_example: "Our startup is at a disadvantage compared to multinational corporations."
+  register: business
+  topic_tags:
+    - evaluation
+    - analysis
+    - comparison
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.employee
+  headword: employee
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ɪmˈplɔɪ.iː/
+  audio_ref: null
+  definition_en: A person who is hired to work for a company, business, or organization in return for wages or salary.
+  meaning_tr: çalışan, personel, işçi
+  collocations:
+    - text: full-time employee
+      tr: tam zamanlı çalışan
+    - text: employee satisfaction
+      tr: çalışan memnuniyeti
+    - text: new employee
+      tr: yeni çalışan
+    - text: employee turnover
+      tr: personel devir oranı
+  examples:
+    - en: "The technology firm offers flexible working hours to improve overall employee satisfaction."
+      tr: "Teknoloji firması, genel çalışan memnuniyetini artırmak için esnek çalışma saatleri sunmaktadır."
+      context: Corporate HR
+    - en: "Every new employee attends a comprehensive security training session during their first week."
+      tr: "Her yeni çalışan, ilk haftasında kapsamlı bir güvenlik eğitimine katılır."
+      context: Onboarding Protocol
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Employee" (çalışan/personel) ile "employer" (işveren/şirket) sıklıkla karıştırılır. "-ee" eki eyleme maruz kalanı (çalışan), "-er" eki eylemi yapanı (işveren) belirtir.
+      incorrect_example: "He owns the company, so he is a very rich employee."
+      correct_example: "He owns the company, so he is a very rich employer."
+  register: business
+  topic_tags:
+    - workplace
+    - employment
+    - staff
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.salary
+  headword: salary
+  cefr_level: B1
+  part_of_speech: noun
+  phonetic: /ˈsæl.ər.i/
+  audio_ref: null
+  definition_en: A fixed regular payment, typically paid on a monthly basis, made by an employer to an employee.
+  meaning_tr: maaş, aylık
+  collocations:
+    - text: annual salary
+      tr: yıllık maaş
+    - text: salary increase
+      tr: maaş zammı
+    - text: negotiate a salary
+      tr: maaş müzakeresi yapmak
+    - text: base salary
+      tr: taban maaş
+  examples:
+    - en: "Senior developers often negotiate their base salary before signing the final offer letter."
+      tr: "Kıdemli yazılımcılar genellikle nihai teklif mektubunu imzalamadan önce taban maaşlarını müzakere ederler."
+      context: Talent Recruitment
+    - en: "The company announced an across-the-board salary increase to offset rising living costs."
+      tr: "Şirket, artan yaşam maliyetlerini dengelemek amacıyla genel bir maaş artışı açıkladı."
+      context: Compensation Policy
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Salary" çoğunlukla beyaz yakalı çalışanların aylık/yıllık sabit maaşıdır. Saatlik veya haftalık emek karşılığı için "wage" kullanılır.
+      incorrect_example: "Construction workers receive their salary at the end of every hour."
+      correct_example: "Construction workers receive their wage based on hourly labor."
+  register: business
+  topic_tags:
+    - compensation
+    - remuneration
+    - employment
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.improve
+  headword: improve
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /ɪmˈpruːv/
+  audio_ref: null
+  definition_en: To make or become better in quality, performance, capability, or condition.
+  meaning_tr: geliştirmek, iyileştirmek, düzelmek
+  collocations:
+    - text: improve performance
+      tr: performansı iyileştirmek
+    - text: improve significantly
+      tr: önemli ölçüde gelişmek
+    - text: continuous effort to improve
+      tr: sürekli gelişme çabası
+    - text: room to improve
+      tr: gelişme alanı / payı
+  examples:
+    - en: "Refactoring the backend queries helped improve database response times significantly."
+      tr: "Arka uç sorgularını yeniden düzenlemek veritabanı yanıt sürelerini önemli ölçüde iyileştirmeye yardımcı oldu."
+      context: Backend Engineering
+    - en: "Practicing technical mock interviews allows candidates to improve their communication skills."
+      tr: "Teknik deneme mülakatları yapmak adayların iletişim becerilerini geliştirmelerine olanak tanır."
+      context: Professional Growth
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Improve" bir şeyin kalitesini yükseltmek veya kendini geliştirmektir. Yazılım veya donanım geliştirmek (sıfırdan üretmek) için "develop", ürün özelliklerini iyileştirmek için "improve" tercih edilir.
+      incorrect_example: "We improved a brand new operating system from scratch."
+      correct_example: "We developed a brand new operating system from scratch."
+  register: general
+  topic_tags:
+    - progress
+    - optimization
+    - skill-building
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.participate
+  headword: participate
+  cefr_level: B1
+  part_of_speech: verb
+  phonetic: /pɑːˈtɪs.ɪ.peɪt/
+  audio_ref: null
+  definition_en: To take part in or contribute actively to an activity, discussion, workshop, or event.
+  meaning_tr: katılmak, iştirak etmek
+  collocations:
+    - text: participate in discussions
+      tr: tartışmalara katılmak
+    - text: actively participate
+      tr: aktif olarak katılmak
+    - text: participate in a meeting
+      tr: toplantıya katılmak
+  examples:
+    - en: "All team members are encouraged to actively participate in the sprint retrospective."
+      tr: "Tüm ekip üyelerinin sprint değerlendirme toplantısına aktif olarak katılması teşvik edilir."
+      context: Agile Methodology
+    - en: "Over two hundred delegates participated in the annual software architecture summit."
+      tr: "Yıllık yazılım mimarisi zirvesine iki yüzden fazla delege katıldı."
+      context: Industry Conference
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Participate" fiili her zaman "in" edatıyla kullanılır ("participate in an event"). Türkçedeki "-e katılmak" yönelme ekinden dolayı "to" kullanmak yaygın bir hatadır.
+      incorrect_example: "I will participate to the technical workshop tomorrow."
+      correct_example: "I will participate in the technical workshop tomorrow."
+  register: formal
+  topic_tags:
+    - collaboration
+    - meetings
+    - engagement
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.temporary
+  headword: temporary
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈtem.prər.i/
+  audio_ref: null
+  definition_en: Lasting, used, or designed to continue for a limited period of time only; not permanent.
+  meaning_tr: geçici, süreli
+  collocations:
+    - text: temporary solution
+      tr: geçici çözüm
+    - text: temporary contract
+      tr: geçici sözleşme
+    - text: temporary workaround
+      tr: geçici geçici çözüm / telafi
+    - text: temporary staff
+      tr: geçici personel
+  examples:
+    - en: "The devops engineer deployed a temporary patch while the root cause was being investigated."
+      tr: "DevOps mühendisi kök neden araştırılırken geçici bir yama uyguladı."
+      context: Incident Triage
+    - en: "She accepted a temporary six-month contract before transitioning into a permanent role."
+      tr: "Kalıcı bir pozisyona geçmeden önce altı aylık geçici bir sözleşmeyi kabul etti."
+      context: Career Transition
+  turkish_traps:
+    - trap_type: false_friend
+      trap_note_tr: >-
+        "Temporary" sözcüğü müzik temposuyla veya hızla ilgili değildir; "geçici" (zamanla sınırlı) anlamına gelir. Karşıtı "permanent" sözcüğüdür.
+      incorrect_example: "He runs at a temporary speed every morning."
+      correct_example: "He runs at a steady pace every morning."
+  register: general
+  topic_tags:
+    - duration
+    - solutions
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.professional
+  headword: professional
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /prəˈfeʃ.ən.əl/
+  audio_ref: null
+  definition_en: Connected with a person's occupation; conforming to technical standards, business ethics, and competence.
+  meaning_tr: mesleki, profesyonel, uzmanlığa yakışır
+  collocations:
+    - text: professional development
+      tr: mesleki gelişim
+    - text: professional conduct
+      tr: profesyonel davranış / etik
+    - text: professional experience
+      tr: mesleki deneyim
+    - text: highly professional
+      tr: son derece profesyonel
+  examples:
+    - en: "The engineering lead praised the team for their calm and professional response to the outage."
+      tr: "Mühendislik lideri kesintiye verdikleri sakin ve profesyonel yanıttan ötürü ekibi övdü."
+      context: Incident Debrief
+    - en: "Attending technical conferences provides great opportunities for ongoing professional development."
+      tr: "Teknik konferanslara katılmak sürekli mesleki gelişim için harika fırsatlar sunar."
+      context: Career Development
+  turkish_traps:
+    - trap_type: register_mismatch
+      trap_note_tr: >-
+        Türkçede bazen spor veya amatör olmayan işler için "profesyonel" denir; ancak kurumsal İngilizcede "professional" dendiğinde sadece para karşılığı yapmak değil, yüksek iş ahlakı, özen ve yetkinlik standartlarına uymak vurgulanır.
+      incorrect_example: "He is professional because he takes money for drawing pictures."
+      correct_example: "He showed professional conduct by delivering high-quality work on time."
+  register: general
+  topic_tags:
+    - career
+    - ethics
+    - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.suitable
+  headword: suitable
+  cefr_level: B1
+  part_of_speech: adjective
+  phonetic: /ˈsuː.tə.bəl/
+  audio_ref: null
+  definition_en: Right, convenient, or appropriate for a particular person, purpose, or situation.
+  meaning_tr: uygun, elverişli, münasip
+  collocations:
+    - text: suitable candidate
+      tr: uygun aday
+    - text: suitable for the role
+      tr: role uygun
+    - text: highly suitable
+      tr: son derece uygun
+    - text: find a suitable time
+      tr: uygun bir zaman bulmak
+  examples:
+    - en: "The recruitment committee identified three suitable candidates for the principal architect position."
+      tr: "İşe alım komitesi baş mimar pozisyonu için üç uygun aday belirledi."
+      context: Talent Sourcing
+    - en: "Please check your calendar so we can find a suitable time for the design walkthrough."
+      tr: "Tasarım incelemesi için uygun bir zaman bulabilmemiz amacıyla lütfen takviminizi kontrol edin."
+      context: Meeting Coordination
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Suitable" sıfatı ile bir şeye veya birine uygun olmayı ifade ederken "for" kullanılır: "suitable for the job". "Suitable to" bazen fiillerle kullanılsa da isimlerle "with" kesinlikle kullanılmaz.
+      incorrect_example: "This framework is not suitable with our existing infrastructure."
+      correct_example: "This framework is not suitable for our existing infrastructure."
+  register: general
+  topic_tags:
+    - suitability
+    - evaluation
+    - recruitment
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.give-up
+  headword: give up
+  cefr_level: B1
+  part_of_speech: phrasal_verb
+  phonetic: /ɡɪv ʌp/
+  audio_ref: null
+  definition_en: To cease making an effort in the face of difficulties, or stop a habit, activity, or pursuit.
+  meaning_tr: vazgeçmek, pes etmek, bırakmak (alışkanlık vb.)
+  collocations:
+    - text: give up trying
+      tr: denemekten vazgeçmek
+    - text: never give up
+      tr: asla pes etmemek
+    - text: give up smoking
+      tr: sigarayı bırakmak
+  examples:
+    - en: "Despite encountering frustrating compiler errors, the junior engineer refused to give up."
+      tr: "Can sıkıcı derleyici hatalarıyla karşılaşmasına rağmen kıdemsiz mühendis pes etmeyi reddetti."
+      context: Engineering Problem Solving
+    - en: "Our product manager advised against giving up on the redesign initiative so early in the cycle."
+      tr: "Ürün yöneticimiz sürecin bu kadar erken bir aşamasında yeniden tasarım girişiminden vazgeçilmemesini tavsiye etti."
+      context: Agile Retrospective
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        "Give up" bir eylemden veya çabadan vazgeçmektir; ardından bir fiil gelecekse daima "-ing" ulaç biçiminde gelir ("give up trying"). "Give up to try" denmez.
+      incorrect_example: "He gave up to solve the network configuration problem."
+      correct_example: "He gave up trying to solve the network configuration problem."
+  register: general
+  topic_tags:
+    - persistence
+    - habits
+    - mindset
+  related_ids: []
+  status: APPROVED
+  version: 1

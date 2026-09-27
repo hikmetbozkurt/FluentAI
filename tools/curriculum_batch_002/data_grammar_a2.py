@@ -1,0 +1,434 @@
+#!/usr/bin/env python3
+"""
+Grammar Batch 002: A2 (5 lessons) and B1 (10 lessons) definitions and exercises.
+"""
+
+from typing import List, Dict, Any
+from mcq_shuffler import DeterministicMcqShuffler
+
+shuffler = DeterministicMcqShuffler(20260927)
+
+def make_exercise(
+    ex_id: str,
+    target_id: str,
+    cefr: str,
+    prompt_en: str,
+    prompt_tr: str,
+    stem: str,
+    correct: str,
+    distractors: List[str],
+    exp_en: str,
+    exp_tr: str,
+    distractor_exps: Dict[str, str],
+    difficulty: str = "standard",
+) -> Dict[str, Any]:
+    shuffled = shuffler.shuffle_question(ex_id, correct, distractors, distractor_exps)
+    return {
+        "id": ex_id,
+        "target_content_id": target_id,
+        "cefr_level": cefr,
+        "skill_domain": "grammar",
+        "exercise_type": "multiple_choice",
+        "prompt_en": prompt_en,
+        "prompt_tr_hint": prompt_tr,
+        "stem": stem,
+        "options": shuffled["options"],
+        "correct_answer": shuffled["correct_answer"],
+        "explanation_en": exp_en,
+        "explanation_tr": exp_tr,
+        "distractor_explanations": shuffled["distractor_explanations"],
+        "difficulty": difficulty,
+        "status": "APPROVED",
+        "version": 1,
+    }
+
+# ==============================================================================
+# A2 LESSONS (5)
+# ==============================================================================
+
+A2_LESSONS: List[Dict[str, Any]] = [
+    {
+        "id": "grammar.a2.adverbs-of-frequency",
+        "title": "Adverbs of Frequency: Word Order and Positioning",
+        "cefr_level": "A2",
+        "category": "tenses_and_aspect",
+        "summary_en": "Adverbs of frequency appear before normal action verbs but immediately after the verb 'to be' in affirmative sentences.",
+        "summary_tr": "Sıklık zarfları (always, usually, often vb.) normal eylem fiillerinden önce, fakat 'to be' (am/is/are) fiilinden hemen sonra gelir.",
+        "explanation_en": [
+            {
+                "title": "Position Relative to Action Verbs and 'To Be'",
+                "content": "Frequency adverbs state how often an action happens. With standard action verbs, place the adverb before the verb ('We always test our code'). With 'am/is/are', place the adverb after the verb ('She is always punctual').",
+                "patterns": [
+                    "Subject + Adverb + Action Verb (e.g., We usually begin at 9:00)",
+                    "Subject + am/is/are + Adverb (e.g., He is rarely late)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede sıklık zarfı cümlenin başında veya nesneden önce rahatça kullanılabilirken ('Her zaman ofise erken gelirim'), İngilizcede kural katıdır: Normal fiillerden önce ('I always come'), ancak 'am/is/are' fiilinden sonra ('I am always') yerleştirilmelidir.",
+        "rules": [
+            {
+                "name": "Frequency Adverb Mid-Position",
+                "pattern": "Subject + Adverb + Main Verb OR Subject + be + Adverb",
+                "use_cases": [
+                    "Describing workplace routines and regular schedules",
+                    "Stating operational consistency and recurring events"
+                ],
+                "time_markers": ["always", "usually", "often", "sometimes", "rarely", "never"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "She is always on time for team meetings.",
+                "structure_b": "She always attends team meetings on time.",
+                "difference_explanation_en": "Following 'to be', 'always' comes after 'is'. Preceding the action verb 'attends', 'always' comes before.",
+                "difference_explanation_tr": "'To be' fiilinden sonra 'always' gelir. Eylem fiili 'attends' öncesinde ise 'always' fiilden önce gelir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Zarfı 'Be' Fiilinden Önceye Koyma Yanılgısı",
+                "explanation_tr": "Türkçe düşünerek 'He always is tired' demek yanlıştır. Doğrusu 'He is always tired' olmalıdır.",
+                "incorrect_example": "Our manager always is available on Slack.",
+                "correct_example": "Our manager is always available on Slack."
+            }
+        ],
+        "examples": [
+            {
+                "en": "We always review the customer feedback before starting the sprint.",
+                "tr": "Koşuya başlamadan önce müşteri geri bildirimlerini her zaman inceleriz.",
+                "rule_highlight": "always review (before action verb)",
+                "context": "Agile planning"
+            },
+            {
+                "en": "The production server is usually very fast in the mornings.",
+                "tr": "Canlı sunucu sabahları genellikle çok hızlıdır.",
+                "rule_highlight": "is usually (after verb to be)",
+                "context": "System monitoring"
+            },
+            {
+                "en": "Junior developers rarely deploy code on Friday evenings.",
+                "tr": "Genç geliştiriciler Cuma akşamları nadiren kod dağıtımı yapar.",
+                "rule_highlight": "rarely deploy (before action verb)",
+                "context": "Deployment etiquette"
+            },
+            {
+                "en": "The support portal is never offline during business hours.",
+                "tr": "Destek portalı mesai saatleri içinde hiçbir zaman çevrimdışı kalmaz.",
+                "rule_highlight": "is never (after verb to be)",
+                "context": "Service availability"
+            }
+        ],
+        "topic_tags": ["adverbs", "word_order", "routines", "a2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.a2.past-time-expressions-ago-last-in",
+        "title": "Past Time Expressions: Ago, Last, Yesterday, and In",
+        "cefr_level": "A2",
+        "category": "tenses_and_aspect",
+        "summary_en": "Use 'ago' after a duration, 'last' without prepositions before time nouns, and 'in' before specific calendar years with Past Simple.",
+        "summary_tr": "Geçmiş Zamanda sürelerden sonra 'ago', önünde edat olmadan 'last', yıl ve aylardan önce ise 'in' kullanılır.",
+        "explanation_en": [
+            {
+                "title": "Definite Past Markers Placement",
+                "content": "'Ago' indicates a time distance measured backward from the present ('three days ago'). 'Last' introduces periods without an article or preposition ('last week', 'last month'). Use 'in' with specific years and calendar months ('in 2021', 'in July').",
+                "patterns": [
+                    "Duration + ago (e.g., two weeks ago)",
+                    "last + time word (e.g., last night, last quarter)",
+                    "in + year/month (e.g., in 2020, in September)"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçedeki 'iki gün önce' ifadesi İngilizcede 'two days ago' şeklinde söylenir; 'önce' kelimesi 'before' ile karıştırılıp 'before two days' denmemelidir. Ayrıca 'geçen hafta' ifadesi 'last week'tir; başına 'in' veya 'the' getirilmez.",
+        "rules": [
+            {
+                "name": "Definite Past Time Reference",
+                "pattern": "Subject + Past Simple Verb + ... + Time Adverbial (ago / last / yesterday / in)",
+                "use_cases": [
+                    "Reporting when a project or incident concluded",
+                    "Tracking historical milestones and previous releases"
+                ],
+                "time_markers": ["ago", "last week", "yesterday", "in 2022"]
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "We launched the product two months ago.",
+                "structure_b": "We launched the product before the conference.",
+                "difference_explanation_en": "'Ago' counts back from now. 'Before' introduces a specific event or date reference.",
+                "difference_explanation_tr": "'Ago' şimdiki zamandan geriye doğru ölçer. 'Before' ise belirli bir olaya göre önceliği belirtir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "preposition_trap",
+                "trap_title": "'Before' ile 'Ago' Karışıklığı",
+                "explanation_tr": "'Üç ay önce' derken 'before three months' değil, mutlaka 'three months ago' denmelidir.",
+                "incorrect_example": "The company hired the new CTO before four months.",
+                "correct_example": "The company hired the new CTO four months ago."
+            }
+        ],
+        "examples": [
+            {
+                "en": "We deployed the security patch three hours ago without any downtime.",
+                "tr": "Güvenlik yamasını üç saat önce hiçbir kesinti olmadan dağıttık.",
+                "rule_highlight": "three hours ago",
+                "context": "DevOps release"
+            },
+            {
+                "en": "The finance committee finalized the annual travel budget last Tuesday.",
+                "tr": "Finans komitesi yıllık seyahat bütçesini geçen Salı kesinleştirdi.",
+                "rule_highlight": "last Tuesday",
+                "context": "Corporate finance"
+            },
+            {
+                "en": "Our company opened its regional office in Berlin in 2019.",
+                "tr": "Şirketimiz Berlin'deki bölge ofisini 2019 yılında açtı.",
+                "rule_highlight": "in 2019",
+                "context": "Company history"
+            },
+            {
+                "en": "I received your detailed project proposal yesterday afternoon.",
+                "tr": "Ayrıntılı proje teklifinizi dün öğleden sonra aldım.",
+                "rule_highlight": "yesterday afternoon",
+                "context": "Professional correspondence"
+            }
+        ],
+        "topic_tags": ["past_simple", "time_expressions", "ago", "last", "a2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.a2.possessive-pronouns-and-determiners",
+        "title": "Possessive Determiners vs. Possessive Pronouns",
+        "cefr_level": "A2",
+        "category": "noun_phrases_and_articles",
+        "summary_en": "Possessive determiners (my, your, our) precede nouns, while possessive pronouns (mine, yours, ours) replace the noun entirely.",
+        "summary_tr": "İyelik sıfatları (my, your vb.) isimlerin önünde yer alırken, iyelik zamirleri (mine, yours vb.) ismin yerine tek başına geçer.",
+        "explanation_en": [
+            {
+                "title": "Adjectival Modifier vs. Standalone Pronoun",
+                "content": "Use determiners (my, your, his, her, its, our, their) directly before a noun. Use pronouns (mine, yours, his, hers, ours, theirs) when the noun is omitted to avoid repetition.",
+                "patterns": [
+                    "Determiner + Noun: This is my desk.",
+                    "Pronoun standalone: This desk is mine."
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede iyelik zamiri 'benimki / sizinki' tek bir kökten üretilir. İngilizcede 'my' ve 'mine' iki ayrı sözcüktür. 'Mine laptop' demek ciddi bir dilbilgisi hatasıdır; isim varsa 'my', isim yoksa 'mine' kullanılır.",
+        "rules": [
+            {
+                "name": "Possessive Syntax Distinction",
+                "pattern": "Determiner + Noun VS. Noun Phrase + be + Possessive Pronoun",
+                "use_cases": [
+                    "Clarifying ownership of equipment, files, and tasks",
+                    "Avoiding awkward noun repetition across spoken sentences"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "Is this your notebook?",
+                "structure_b": "Is this notebook yours?",
+                "difference_explanation_en": "'Your' modifies 'notebook'. 'Yours' stands alone as the predicate pronoun.",
+                "difference_explanation_tr": "'Your' ismi niteler. 'Yours' ise cümlenin yüklem zamiri olarak tek başına durur."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "İyelik Zamirini İsim Önüne Getirme",
+                "explanation_tr": "'Mine' sözcüğü tek başına kullanılır, önüne isim almaz. 'Mine phone' yerine 'My phone' denmelidir.",
+                "incorrect_example": "Please do not touch mine computer monitor.",
+                "correct_example": "Please do not touch my computer monitor."
+            }
+        ],
+        "examples": [
+            {
+                "en": "Our department submitted our report, but marketing hasn't submitted theirs.",
+                "tr": "Bizim departmanımız raporumuzu teslim etti, ancak pazarlama kendilerininkini henüz teslim etmedi.",
+                "rule_highlight": "our report (determiner), theirs (pronoun)",
+                "context": "Office workflow"
+            },
+            {
+                "en": "Excuse me, I think that presentation remote on the table is mine.",
+                "tr": "Affedersiniz, masadaki o sunum kumandasının benimki olduğunu düşünüyorum.",
+                "rule_highlight": "is mine (standalone pronoun)",
+                "context": "Conference room"
+            },
+            {
+                "en": "Every engineer must update their local branches before merging.",
+                "tr": "Her mühendis birleştirmeden önce kendi yerel dallarını güncellemelidir.",
+                "rule_highlight": "their branches (determiner)",
+                "context": "Git version control"
+            },
+            {
+                "en": "If you forgot your headset at home, you can borrow hers.",
+                "tr": "Kulaklığını evde unuttuysan onunkini ödünç alabilirsin.",
+                "rule_highlight": "your headset (determiner), hers (pronoun)",
+                "context": "Workplace equipment"
+            }
+        ],
+        "topic_tags": ["possessives", "pronouns", "determiners", "a2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.a2.question-formation-subject-object",
+        "title": "Question Formation: Subject vs. Object Questions",
+        "cefr_level": "A2",
+        "category": "verb_patterns_and_infinitives",
+        "summary_en": "Object questions require auxiliary inversion (Who did you see?), while subject questions keep normal declarative word order (Who saw you?).",
+        "summary_tr": "Nesne sorularında yardımcı fiil kullanılır (Who did you meet?), özne sorularında ise düz cümle sırası korunur (Who met you?).",
+        "explanation_en": [
+            {
+                "title": "The Role of Auxiliaries in Questions",
+                "content": "When asking about the object of an action, insert do/does/did before the subject. When asking about the subject performing the action, omit do/does/did and conjugate the main verb normally.",
+                "patterns": [
+                    "Object question: Wh-word + do/does/did + Subject + Base Verb?",
+                    "Subject question: Wh-word + Verb + Object?"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede soru kelimesi özne de olsa nesne de olsa fiil çekimi aynı kalır ('Kimi gördün?' / 'Kim seni gördü?'). İngilizcede ise nesne sorulduğunda 'did you see' denir; özne sorulduğunda ise 'did' kullanılmaz, doğrudan 'Who saw you?' denir. Özne sorularına 'did' koymak büyük bir hatadır.",
+        "rules": [
+            {
+                "name": "Subject/Object Inversion Split",
+                "pattern": "Wh-(Subject) + Past Verb + Object? VS Wh-(Object) + did + Subject + Base Verb?",
+                "use_cases": [
+                    "Inquiring about project ownership or responsibility",
+                    "Investigating system changes and bug introductions"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "Who opened the security ticket?",
+                "structure_b": "Who did you contact about the security ticket?",
+                "difference_explanation_en": "In A, 'who' performed the action. In B, 'you' performed the action, so auxiliary 'did' is required.",
+                "difference_explanation_tr": "A'da 'who' eylemi yapan öznedir. B'de eylemi yapan 'you'dur ve yardımcı fiil 'did' şarttır."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "word_order_svo_vs_sov",
+                "trap_title": "Özne Sorularına Gereksiz Yardımcı Fiil Ekleme",
+                "explanation_tr": "'Kim aradı?' derken 'Who did call?' değil, 'Who called?' denmelidir.",
+                "incorrect_example": "Who did invite the external consultant to the sprint review?",
+                "correct_example": "Who invited the external consultant to the sprint review?"
+            }
+        ],
+        "examples": [
+            {
+                "en": "Who authorized this emergency server reboot?",
+                "tr": "Bu acil sunucu yeniden başlatmasını kim yetkilendirdi?",
+                "rule_highlight": "Who authorized (subject question - no did)",
+                "context": "Incident management"
+            },
+            {
+                "en": "Which vendor did your team select for cloud hosting?",
+                "tr": "Ekibiniz bulut barındırma için hangi tedarikçiyi seçti?",
+                "rule_highlight": "did your team select (object question - with did)",
+                "context": "Procurement decision"
+            },
+            {
+                "en": "What happened during the client demo yesterday?",
+                "tr": "Dün müşteri tanıtımı sırasında ne oldu?",
+                "rule_highlight": "What happened (subject question - no did)",
+                "context": "Meeting follow-up"
+            },
+            {
+                "en": "What did the lead architect recommend for data storage?",
+                "tr": "Baş mimar veri depolama için ne önerdi?",
+                "rule_highlight": "did the architect recommend (object question)",
+                "context": "Architecture decision"
+            }
+        ],
+        "topic_tags": ["questions", "word_order", "subject_questions", "a2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    },
+    {
+        "id": "grammar.a2.there-is-there-are-quantifiers",
+        "title": "There is / There are vs. Have: Existential Expressions",
+        "cefr_level": "A2",
+        "category": "noun_phrases_and_articles",
+        "summary_en": "Use 'There is' (singular/uncountable) and 'There are' (plural) to declare existence, rather than translating Turkish 'var' with 'have'.",
+        "summary_tr": "Varlık ve mevcudiyet bildirmek için tekillerde 'There is', çoğullarda 'There are' kullanılır; Türkçe 'var' kelimesi 'have' olarak çevrilmez.",
+        "explanation_en": [
+            {
+                "title": "Declaring System and Workplace Existence",
+                "content": "'There is' and 'There are' declare that something exists in a physical location or digital system. Do not use 'Have' without a subject to state existence. Use 'any' in questions/negatives and 'some' in affirmative statements.",
+                "patterns": [
+                    "There is + a/an/some + Singular / Uncountable Noun",
+                    "There are + some/many + Plural Noun",
+                    "Is there / Are there + any + Noun?"
+                ]
+            }
+        ],
+        "explanation_tr": "Türkçede hem sahiplik hem de mevcudiyet için 'var' kullanılır ('Param var', 'Masada dosya var'). Bu nedenle Türk öğrenciler 'In the room have a whiteboard' şeklinde hatalı cümleler kurarlar. Bir yerde bir şeyin varlığı mutlaka 'There is' ya da 'There are' ile kurulmalıdır.",
+        "rules": [
+            {
+                "name": "Existential Presence Rule",
+                "pattern": "There + be (is/are/was/were) + Quantifier + Noun (+ Location/Context)",
+                "use_cases": [
+                    "Stating available conference rooms, licenses, or defects",
+                    "Checking inventory and resource availability"
+                ],
+                "time_markers": []
+            }
+        ],
+        "contrasts": [
+            {
+                "structure_a": "There are three vacant desks in this area.",
+                "structure_b": "We have three vacant desks in this area.",
+                "difference_explanation_en": "Structure A states the objective existence of desks. Structure B expresses possession with an explicit grammatical subject 'we'.",
+                "difference_explanation_tr": "A yapısı masaların nesnel mevcudiyetini belirtir. B yapısı ise 'we' öznesiyle sahiplik bildirir."
+            }
+        ],
+        "turkish_traps": [
+            {
+                "trap_type": "null_subject_transfer",
+                "trap_title": "'Var' İfadesini 'Have' ile Karıştırma",
+                "explanation_tr": "Özne olmadan 'In our office has a big screen' demek hatalıdır. 'There is a big screen in our office' denmelidir.",
+                "incorrect_example": "In our office has two quiet phone booths.",
+                "correct_example": "There are two quiet phone booths in our office."
+            }
+        ],
+        "examples": [
+            {
+                "en": "There is an urgent security update available for your operating system.",
+                "tr": "İşletim sisteminiz için mevcut olan acil bir güvenlik güncellemesi var.",
+                "rule_highlight": "There is an update (singular)",
+                "context": "IT notification"
+            },
+            {
+                "en": "Are there any unresolved comments on this merge request?",
+                "tr": "Bu birleştirme isteğinde çözümlenmemiş herhangi bir yorum var mı?",
+                "rule_highlight": "Are there any comments (plural question)",
+                "context": "Code review"
+            },
+            {
+                "en": "There are no critical bugs reported in the latest production release.",
+                "tr": "En son canlı yayında bildirilen hiçbir kritik hata yoktur.",
+                "rule_highlight": "There are no bugs (plural negative)",
+                "context": "Quality assurance"
+            },
+            {
+                "en": "There was some network latency during the morning video call.",
+                "tr": "Sabahki görüntülü görüşme sırasında biraz ağ gecikmesi vardı.",
+                "rule_highlight": "There was some latency (uncountable past)",
+                "context": "IT infrastructure"
+            }
+        ],
+        "topic_tags": ["existential", "there_is", "there_are", "quantifiers", "a2_grammar"],
+        "status": "APPROVED",
+        "version": 1
+    }
+]
+
+print("A2 Grammar lessons defined:", len(A2_LESSONS))

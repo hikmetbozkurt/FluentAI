@@ -1,0 +1,223 @@
+- id: vocab.reservation
+  headword: reservation
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ˌrez.əˈveɪ.ʃən/
+  audio_ref: null
+  definition_en: An arrangement in which something such as a seat, room, or table is kept or booked for a particular person.
+  meaning_tr: rezervasyon, yer ayırtma
+  collocations:
+    - text: make a reservation
+      tr: rezervasyon yaptırmak
+    - text: confirm a reservation
+      tr: rezervasyonu onaylamak
+    - text: cancel a reservation
+      tr: rezervasyonu iptal etmek
+    - text: hotel reservation
+      tr: otel rezervasyonu
+  examples:
+    - en: "I made a dinner reservation for four people at the downtown Italian restaurant."
+      tr: "Şehir merkezindeki İtalyan restoranında dört kişilik bir akşam yemeği rezervasyonu yaptırdım."
+      context: Dining
+    - en: "Please call the front desk to confirm your room reservation before arriving."
+      tr: "Lütfen otele varmadan önce oda rezervasyonunuzu onaylamak için resepsiyonu arayın."
+      context: Travel
+  turkish_traps:
+    - trap_type: collocation_error
+      trap_note_tr: >-
+        Türkçede "rezervasyon yapmak" deriz; İngilizcede bu eylem için "do a reservation" değil "make a reservation" veya "book" kullanılır.
+      incorrect_example: "I will do a reservation for our weekend trip."
+      correct_example: "I will make a reservation for our weekend trip."
+  register: general
+  topic_tags:
+    - travel
+    - booking
+    - hospitality
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.ingredient
+  headword: ingredient
+  cefr_level: A2
+  part_of_speech: noun
+  phonetic: /ɪnˈɡriː.di.ənt/
+  audio_ref: null
+  definition_en: One of the foods or substances that are combined together to make a particular dish or meal.
+  meaning_tr: malzeme, bileşen, içerik
+  collocations:
+    - text: fresh ingredients
+      tr: taze malzemeler
+    - text: key ingredient
+      tr: temel / ana malzeme
+    - text: list of ingredients
+      tr: içindekiler listesi
+  examples:
+    - en: "The chef uses only fresh organic ingredients to prepare the daily soup."
+      tr: "Şef, günlük çorbayı hazırlamak için yalnızca taze organik malzemeler kullanır."
+      context: Cooking
+    - en: "Always check the list of ingredients on the package if you have food allergies."
+      tr: "Gıda alerjiniz varsa paketin üzerindeki içindekiler listesini her zaman kontrol edin."
+      context: Food Shopping
+  turkish_traps:
+    - trap_type: literal_translation
+      trap_note_tr: >-
+        Türkçede yemek tarifleri için "malzeme" denir; İngilizcede donanım veya eşya için kullanılan "material" yerine yemek içerikleri için daima "ingredient" kullanılır.
+      incorrect_example: "We bought all the cooking materials from the supermarket."
+      correct_example: "We bought all the cooking ingredients from the supermarket."
+  register: general
+  topic_tags:
+    - food
+    - cooking
+    - shopping
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.arrive
+  headword: arrive
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /əˈraɪv/
+  audio_ref: null
+  definition_en: To reach a place or destination, especially at the end of a trip or journey.
+  meaning_tr: varmak, ulaşmak, gelmek
+  collocations:
+    - text: arrive on time
+      tr: vaktinde varmak
+    - text: arrive at the airport
+      tr: havalimanına varmak
+    - text: arrive in London
+      tr: Londra'ya varmak
+  examples:
+    - en: "Our flight arrived on time despite the heavy snowfall."
+      tr: "Yoğun kar yağışına rağmen uçuşumuz vaktinde vardı."
+      context: Airport Travel
+    - en: "What time will the international delegates arrive at the office?"
+      tr: "Uluslararası delegeler ofise saat kaçta varacak?"
+      context: Business Travel
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        "Arrive" fiili yönelme edatı olan "to" ile kullanılmaz. Binalar, duraklar ve havalimanları için "arrive at", şehirler ve ülkeler için "arrive in" kullanılır.
+      incorrect_example: "We arrived to the hotel late at night."
+      correct_example: "We arrived at the hotel late at night."
+  register: general
+  topic_tags:
+    - travel
+    - transportation
+    - arrival
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.invite
+  headword: invite
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /ɪnˈvaɪt/
+  audio_ref: null
+  definition_en: To ask someone politely and kindly to attend an event, meal, or special occasion.
+  meaning_tr: davet etmek, çağırmak
+  collocations:
+    - text: invite to dinner
+      tr: akşam yemeğine davet etmek
+    - text: invite someone over
+      tr: birini eve davet etmek
+    - text: cordially invite
+      tr: içtenlikle davet etmek
+  examples:
+    - en: "We decided to invite our new neighbors over for coffee this Sunday."
+      tr: "Bu pazar yeni komşularımızı kahve içmeye davet etmeye karar verdik."
+      context: Daily Life
+    - en: "The company invited all senior engineers to the annual strategy dinner."
+      tr: "Şirket tüm kıdemli mühendisleri yıllık strateji yemeğine davet etti."
+      context: Company Event
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir yere veya etkinliğe davet ederken "invite for" yerine "invite to" edatı kullanılır: "invite someone to a party/meeting".
+      incorrect_example: "She invited me for her wedding ceremony."
+      correct_example: "She invited me to her wedding ceremony."
+  register: general
+  topic_tags:
+    - relationships
+    - social-life
+    - hospitality
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.prefer
+  headword: prefer
+  cefr_level: A2
+  part_of_speech: verb
+  phonetic: /prɪˈfɜːr/
+  audio_ref: null
+  definition_en: To like or choose one thing, person, or activity more than another.
+  meaning_tr: tercih etmek, yeğlemek
+  collocations:
+    - text: prefer tea to coffee
+      tr: çayı kahveye tercih etmek
+    - text: prefer working remotely
+      tr: uzaktan çalışmayı tercih etmek
+    - text: would prefer
+      tr: tercih ederdim / yeğlerdim
+  examples:
+    - en: "Many developers prefer working in quiet environments to stay focused."
+      tr: "Birçok yazılımcı odaklanabilmek için sessiz ortamlarda çalışmayı tercih eder."
+      context: Work Routine
+    - en: "I prefer traveling by train because it is more comfortable than flying."
+      tr: "Uçmaktan daha konforlu olduğu için trenle seyahat etmeyi tercih ederim."
+      context: Daily Travel
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        İki seçenek arasında tercih yaparken Türkçedeki "-e göre" algısıyla "than" kullanılmaz; "prefer X to Y" yapısı kullanılır.
+      incorrect_example: "I prefer coffee than tea in the morning."
+      correct_example: "I prefer coffee to tea in the morning."
+  register: general
+  topic_tags:
+    - preferences
+    - daily-life
+    - habits
+  related_ids: []
+  status: APPROVED
+  version: 1
+
+- id: vocab.busy
+  headword: busy
+  cefr_level: A2
+  part_of_speech: adjective
+  phonetic: /ˈbɪz.i/
+  audio_ref: null
+  definition_en: Having a large amount of work or tasks to do; actively occupied.
+  meaning_tr: meşgul, yoğun, hareketli
+  collocations:
+    - text: busy schedule
+      tr: yoğun program
+    - text: busy day
+      tr: yoğun gün
+    - text: busy with work
+      tr: işle meşgul
+  examples:
+    - en: "The marketing director has an extremely busy schedule this week."
+      tr: "Pazarlama direktörünün bu hafta son derece yoğun bir programı var."
+      context: Office Life
+    - en: "The office was very busy before the quarterly product release."
+      tr: "Üç aylık ürün lansmanı öncesinde ofis çok yoğundu."
+      context: Work Routine
+  turkish_traps:
+    - trap_type: preposition_confusion
+      trap_note_tr: >-
+        Bir işle meşgul olmayı ifade ederken "busy about" değil, "busy with" veya doğrudan fiilin "-ing" hali (busy preparing) kullanılır.
+      incorrect_example: "He is busy about answering customer emails."
+      correct_example: "He is busy with answering customer emails."
+  register: general
+  topic_tags:
+    - daily-life
+    - work-routine
+    - time-management
+  related_ids: []
+  status: APPROVED
+  version: 1
