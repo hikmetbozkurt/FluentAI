@@ -6,6 +6,8 @@ FluentAI is a personal hobby project developed specifically for a friend. It is 
 
 FluentAI is designed primarily for Android tablets and supports English learning from CEFR A2 through C2. It brings together Vocabulary, Grammar, Reading, Listening, and AI-assisted Speaking practice in an IELTS-informed learning experience.
 
+![FluentAI Home screen](docs/images/home.png)
+
 ## Tech Stack
 
 - Kotlin and Jetpack Compose
