@@ -13,7 +13,7 @@ import com.seanora.fluentai.ai.live.SpeakingPersona
 import com.seanora.fluentai.ai.live.SpeakingSessionType
 import com.seanora.fluentai.core.audio.FakeAudioCaptureEngine
 import com.seanora.fluentai.core.audio.FakeStreamAudioPlaybackEngine
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.MasterySnapshot
 import com.seanora.fluentai.core.model.MistakeRecord
@@ -28,6 +28,7 @@ import com.seanora.fluentai.data.user.entity.SpeakingSessionRecordEntity
 import com.seanora.fluentai.domain.mastery.MasteryEngine
 import com.seanora.fluentai.domain.mastery.RecordLearningEvidenceUseCase
 import com.seanora.fluentai.domain.mistakes.MistakeEngine
+import com.seanora.fluentai.domain.speaking.LiveCorrectionMerger
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisUseCase
 import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 import kotlinx.coroutines.Dispatchers
@@ -59,7 +60,6 @@ class SpeakingViewModelTest {
         cefrLevel = "B2",
         systemPrompt = "Scrum master daily standup.",
         contextDescription = "Sprint status update.",
-        recommendedCorrectionMode = CorrectionMode.DRILL,
         voiceName = "Puck"
     )
 
@@ -70,7 +70,6 @@ class SpeakingViewModelTest {
         cefrLevel = "C1",
         systemPrompt = "Architect interview.",
         contextDescription = "System design defense.",
-        recommendedCorrectionMode = CorrectionMode.MOCK,
         voiceName = "Fenrir"
     )
 
@@ -136,7 +135,8 @@ class SpeakingViewModelTest {
             promptBuilder = promptBuilder,
             analysisClient = analysisClient,
             processSpeakingAnalysisUseCase = processAnalysisUseCase,
-            userLearningRepository = fakeUserRepo
+            userLearningRepository = fakeUserRepo,
+            liveCorrectionMerger = LiveCorrectionMerger()
         )
 
         return vm to fakeUserRepo
@@ -198,7 +198,6 @@ class SpeakingViewModelTest {
         assertEquals(VoiceUiState.IDLE, state.voiceState)
         assertEquals(2, state.availableScenarios.size)
         assertEquals("speaking.b2.meeting.standup", state.selectedScenario?.id)
-        assertEquals(CorrectionMode.DRILL, state.selectedMode)
     }
 
     @Test
@@ -233,7 +232,7 @@ class SpeakingViewModelTest {
     }
 
     @Test
-    fun selectCorrectionMode_updatesActiveMode() = runTest(testDispatcher) {
+    fun selectFreeTalkCorrectionLevel_updatesGaladrielLevel() = runTest(testDispatcher) {
         val captureEngine = FakeAudioCaptureEngine()
         val playbackEngine = FakeStreamAudioPlaybackEngine()
         val mockClient = MockLiveAiClient(dispatcher = testDispatcher)
@@ -248,11 +247,14 @@ class SpeakingViewModelTest {
         val (viewModel, _) = createTestViewModel(sessionManager)
         advanceUntilIdle()
 
-        viewModel.selectCorrectionMode(CorrectionMode.FLOW)
-        assertEquals(CorrectionMode.FLOW, viewModel.uiState.value.selectedMode)
+        assertEquals(CorrectionLevel.BALANCED, viewModel.uiState.value.freeTalkCorrectionLevel)
 
-        viewModel.selectCorrectionMode(CorrectionMode.MOCK)
-        assertEquals(CorrectionMode.MOCK, viewModel.uiState.value.selectedMode)
+        viewModel.selectFreeTalkCorrectionLevel(CorrectionLevel.LIGHT)
+        assertEquals(CorrectionLevel.LIGHT, viewModel.uiState.value.freeTalkCorrectionLevel)
+
+        viewModel.startGaladrielSession()
+        advanceUntilIdle()
+        assertEquals(CorrectionLevel.LIGHT, viewModel.uiState.value.activeLiveConfig?.correctionLevel)
     }
 
     @Test
@@ -271,13 +273,13 @@ class SpeakingViewModelTest {
         val (viewModel, _) = createTestViewModel(sessionManager)
         advanceUntilIdle()
 
-        viewModel.startSession(sampleScenario1, CorrectionMode.DRILL)
+        viewModel.startSession(sampleScenario1)
         advanceUntilIdle()
 
         val state = viewModel.uiState.value
         assertTrue(state.isSessionActive)
         assertEquals(sampleScenario1.id, state.selectedScenario?.id)
-        assertEquals(CorrectionMode.DRILL, state.selectedMode)
+        assertEquals(CorrectionLevel.THOROUGH, state.activeLiveConfig?.correctionLevel)
     }
 
     @Test
@@ -300,7 +302,7 @@ class SpeakingViewModelTest {
         assertEquals(null, state.activeLiveConfig?.scenarioId)
         assertEquals(SpeakingSessionType.FREE_TALK, state.activeLiveConfig?.sessionType)
         assertEquals(SpeakingPersona.GALADRIEL, state.activeLiveConfig?.persona)
-        assertEquals(CorrectionMode.FLOW, state.selectedMode)
+        assertEquals(CorrectionLevel.BALANCED, state.activeLiveConfig?.correctionLevel)
         assertEquals("Galadriel", sessionManager.currentScenario?.title)
     }
 
@@ -383,7 +385,7 @@ class SpeakingViewModelTest {
         val (viewModel, userRepo) = createTestViewModel(sessionManager)
         advanceUntilIdle()
 
-        viewModel.startSession(sampleScenario1, CorrectionMode.COACH)
+        viewModel.startSession(sampleScenario1)
         advanceUntilIdle()
 
         // Add user speech transcript

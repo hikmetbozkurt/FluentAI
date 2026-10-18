@@ -4,6 +4,7 @@ import com.seanora.fluentai.ai.live.auth.LiveCredential
 import com.seanora.fluentai.ai.live.auth.LiveCredentialProvider
 import com.seanora.fluentai.ai.live.auth.LiveEndpoint
 import com.seanora.fluentai.ai.live.protocol.LiveClientMessageFactory
+import com.seanora.fluentai.ai.live.protocol.LiveCoachingTools
 import com.seanora.fluentai.ai.live.protocol.LiveConnectionErrorMapper
 import com.seanora.fluentai.ai.live.protocol.LiveServerMessageParser
 import com.seanora.fluentai.ai.live.protocol.LiveServerSignal
@@ -50,6 +51,8 @@ class GeminiLiveWebSocketClient(
         const val DEFAULT_SETUP_TIMEOUT_MS = 15_000L
         private const val TAG = "GeminiLiveClient"
         private const val EVENT_BUFFER_CAPACITY = 512
+        private const val TOOL_RESULT_LOGGED = "logged"
+        private const val TOOL_RESULT_IGNORED = "ignored"
     }
 
     private val scope = CoroutineScope(SupervisorJob() + dispatcher)
@@ -195,6 +198,7 @@ class GeminiLiveWebSocketClient(
             is LiveServerSignal.GoAway -> onGoAway(signal)
             is LiveServerSignal.ResumptionUpdate -> onResumptionUpdate(signal)
             is LiveServerSignal.Usage -> emit(LiveSessionEvent.UsageUpdated(signal.usage))
+            is LiveServerSignal.ToolCall -> onToolCall(signal)
             is LiveServerSignal.Event -> forwardModelEvent(signal.event)
         }
     }
@@ -304,6 +308,15 @@ class GeminiLiveWebSocketClient(
         synchronized(lock) { releaseSocket(reason = message) }
         _connectionState.value = LiveConnectionState.FAILED
         emit(LiveSessionEvent.Error(message, isFatal = true))
+    }
+
+    private fun onToolCall(signal: LiveServerSignal.ToolCall) {
+        signal.calls.forEach { call ->
+            val correction = LiveCoachingTools.toCorrection(call)
+            correction?.let { emit(LiveSessionEvent.CorrectionLogged(it)) }
+            val result = if (correction != null) TOOL_RESULT_LOGGED else TOOL_RESULT_IGNORED
+            sendWhenReady(LiveClientMessageFactory.toolResponse(call.id, call.name, result).toString())
+        }
     }
 
     private fun emit(event: LiveSessionEvent) {

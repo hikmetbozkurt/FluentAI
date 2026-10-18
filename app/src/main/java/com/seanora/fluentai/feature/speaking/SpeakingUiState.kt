@@ -3,11 +3,13 @@ package com.seanora.fluentai.feature.speaking
 import com.seanora.fluentai.ai.live.LiveScenarioConfig
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.VoiceUiState
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
+import com.seanora.fluentai.core.model.LiveCorrection
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.SpeakingSessionAnalysis
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisResult
+import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 
 data class SpeakingUiState(
     val isSessionActive: Boolean = false,
@@ -15,11 +17,12 @@ data class SpeakingUiState(
     val activeLiveConfig: LiveScenarioConfig? = null,
     val selectedCategory: SpeakingCategory? = null,
     val selectedCefrLevel: String? = null,
-    val selectedMode: CorrectionMode = CorrectionMode.COACH,
+    val freeTalkCorrectionLevel: CorrectionLevel = SpeakingPromptBuilder.DEFAULT_FREE_TALK_CORRECTION_LEVEL,
     val availableScenarios: List<SpeakingScenario> = emptyList(),
     val voiceState: VoiceUiState = VoiceUiState.IDLE,
     val amplitude: Float = 0f,
     val transcript: List<TranscriptEntry> = emptyList(),
+    val liveCorrections: List<LiveCorrection> = emptyList(),
     val isMuted: Boolean = false,
     val errorMessage: String? = null,
     val isPermissionError: Boolean = false,

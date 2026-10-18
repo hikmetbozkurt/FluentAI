@@ -1,6 +1,5 @@
 package com.seanora.fluentai.domain.today
 
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.GrammarLesson
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.ListeningScenario
@@ -85,7 +84,6 @@ class TodayPlannerTest {
             cefrLevel = "C1",
             systemPrompt = "Architect defense.",
             contextDescription = "Distributed systems interview.",
-            recommendedCorrectionMode = CorrectionMode.MOCK,
             topicTags = listOf("technology", "architecture"),
             voiceName = "Fenrir"
         ),
@@ -96,7 +94,6 @@ class TodayPlannerTest {
             cefrLevel = "B2",
             systemPrompt = "Daily standup.",
             contextDescription = "Sprint retrospective.",
-            recommendedCorrectionMode = CorrectionMode.COACH,
             topicTags = listOf("business", "leadership"),
             voiceName = "Puck"
         )

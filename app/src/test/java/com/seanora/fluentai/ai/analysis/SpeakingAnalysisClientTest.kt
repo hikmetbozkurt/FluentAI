@@ -5,7 +5,6 @@ import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisPayload
 import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisResponseParser
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.SpeakingGrammarObservation
@@ -41,7 +40,7 @@ class SpeakingAnalysisClientTest {
             TranscriptEntry(id = "4", role = TranscriptRole.USER, text = "We have a big problem with database latency because of this.")
         )
 
-        val result = mockClient.analyzeSession(testScenario, CorrectionMode.COACH, transcript, 120)
+        val result = mockClient.analyzeSession(testScenario, transcript, 120)
         assertTrue(result.isSuccess)
 
         val analysis = result.getOrThrow()
@@ -81,7 +80,7 @@ class SpeakingAnalysisClientTest {
             TranscriptEntry(id = "1", role = TranscriptRole.USER, text = "I agree that we need to fix the bug.")
         )
 
-        val result = geminiClient.analyzeSession(testScenario, CorrectionMode.FLOW, transcript, 45)
+        val result = geminiClient.analyzeSession(testScenario, transcript, 45)
         assertTrue(result.isSuccess)
         val analysis = result.getOrThrow()
         assertNotNull(analysis.id)
@@ -101,8 +100,8 @@ class SpeakingAnalysisClientTest {
             TranscriptEntry(id = "3", role = TranscriptRole.USER, text = "Consequently, the team can validate each change before we expand the rollout.")
         )
 
-        val fragmentedAnalysis = mockClient.analyzeSession(testScenario, CorrectionMode.FLOW, fragmented, 45).getOrThrow()
-        val developedAnalysis = mockClient.analyzeSession(testScenario, CorrectionMode.FLOW, developed, 45).getOrThrow()
+        val fragmentedAnalysis = mockClient.analyzeSession(testScenario, fragmented, 45).getOrThrow()
+        val developedAnalysis = mockClient.analyzeSession(testScenario, developed, 45).getOrThrow()
 
         assertTrue(developedAnalysis.fluencyScore > fragmentedAnalysis.fluencyScore)
         assertTrue(developedAnalysis.vocabularyScore > fragmentedAnalysis.vocabularyScore)
@@ -113,7 +112,6 @@ class SpeakingAnalysisClientTest {
     fun offlineAnalysis_rejectsSessionWithoutLearnerSpeech() = runTest {
         val result = mockClient.analyzeSession(
             testScenario,
-            CorrectionMode.COACH,
             listOf(TranscriptEntry(id = "coach", role = TranscriptRole.COACH, text = "Hello, ready to begin?")),
             15
         )

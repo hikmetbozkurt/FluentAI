@@ -7,5 +7,6 @@ data class LiveSessionMetrics(
     val learnerTurns: Int = 0,
     val interruptions: Int = 0,
     val reconnects: Int = 0,
+    val corrections: Int = 0,
     val tokenUsage: LiveTokenUsage = LiveTokenUsage()
 )

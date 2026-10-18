@@ -17,6 +17,7 @@ import com.seanora.fluentai.data.repository.UserLearningRepository
 import com.seanora.fluentai.domain.mastery.MasteryEngine
 import com.seanora.fluentai.domain.mastery.RecordLearningEvidenceUseCase
 import com.seanora.fluentai.domain.mistakes.MistakeEngine
+import com.seanora.fluentai.domain.speaking.LiveCorrectionMerger
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisUseCase
 import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 import kotlinx.coroutines.flow.Flow
@@ -34,7 +35,8 @@ fun createSpeakingViewModel(sessionManager: LiveCoachSessionManager): SpeakingVi
             speakingSessionRepository = EmptySpeakingSessionRepository(),
             transactionRunner = ImmediateTransactionRunner
         ),
-        userLearningRepository = userRepository
+        userLearningRepository = userRepository,
+        liveCorrectionMerger = LiveCorrectionMerger()
     )
 }
 

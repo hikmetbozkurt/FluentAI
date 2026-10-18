@@ -22,7 +22,6 @@ import com.seanora.fluentai.core.model.TranscriptItem
 import com.seanora.fluentai.core.model.TurkishTrap
 import com.seanora.fluentai.core.model.VocabItem
 import com.seanora.fluentai.core.model.VocabularyAnnotation
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.data.content.entity.ContentRelationEntity
@@ -175,7 +174,6 @@ fun SpeakingScenarioEntity.toDomain(): SpeakingScenario {
         targetVocabIds = safeDecodeList(targetVocabIdsJson),
         targetGrammarIds = safeDecodeList(targetGrammarIdsJson),
         suggestedStarterPhrases = safeDecodeList(suggestedStarterPhrasesJson),
-        recommendedCorrectionMode = runCatching { CorrectionMode.valueOf(recommendedCorrectionMode) }.getOrDefault(CorrectionMode.COACH),
         voiceName = voiceName,
         topicTags = safeDecodeList(topicTagsJson),
         status = status,

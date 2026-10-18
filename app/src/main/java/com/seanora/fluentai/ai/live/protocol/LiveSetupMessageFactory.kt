@@ -30,6 +30,7 @@ class LiveSetupMessageFactory(private val modelName: String) {
                     put("parts", JsonArray(listOf(buildJsonObject { put("text", config.systemPrompt) })))
                 }
             }
+            if (config.coachingToolsEnabled) put("tools", LiveCoachingTools.declarations())
             putJsonObject("inputAudioTranscription") {}
             putJsonObject("outputAudioTranscription") {}
             putJsonObject("sessionResumption") {
@@ -62,6 +63,23 @@ object LiveClientMessageFactory {
     fun audioStreamEnd(): JsonObject = buildJsonObject {
         putJsonObject("realtimeInput") {
             put("audioStreamEnd", true)
+        }
+    }
+
+    fun toolResponse(callId: String, functionName: String, result: String): JsonObject = buildJsonObject {
+        putJsonObject("toolResponse") {
+            put(
+                "functionResponses",
+                JsonArray(
+                    listOf(
+                        buildJsonObject {
+                            put("id", callId)
+                            put("name", functionName)
+                            putJsonObject("response") { put("result", result) }
+                        }
+                    )
+                )
+            )
         }
     }
 

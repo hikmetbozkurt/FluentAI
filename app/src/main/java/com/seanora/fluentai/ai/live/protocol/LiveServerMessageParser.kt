@@ -3,6 +3,7 @@ package com.seanora.fluentai.ai.live.protocol
 import com.seanora.fluentai.ai.live.LiveSessionEvent
 import com.seanora.fluentai.ai.live.LiveTokenUsage
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.JsonObject
@@ -38,6 +39,11 @@ class LiveServerMessageParser {
 
         root.objectField("goAway")?.let { goAway ->
             signals += LiveServerSignal.GoAway(parseDurationMs(goAway.stringField("timeLeft")))
+            return signals
+        }
+
+        root.objectField("toolCall")?.let { toolCall ->
+            parseFunctionCalls(toolCall).takeIf { it.isNotEmpty() }?.let { signals += LiveServerSignal.ToolCall(it) }
             return signals
         }
 
@@ -90,6 +96,20 @@ class LiveServerMessageParser {
 
         return signals
     }
+
+    private fun parseFunctionCalls(toolCall: JsonObject): List<LiveFunctionCall> =
+        (toolCall["functionCalls"] as? JsonArray).orEmpty().mapNotNull { element ->
+            val call = element as? JsonObject ?: return@mapNotNull null
+            val name = call.stringField("name") ?: return@mapNotNull null
+            LiveFunctionCall(
+                id = call.stringField("id").orEmpty(),
+                name = name,
+                args = call.objectField("args")
+                    ?.mapNotNull { (key, value) -> (value as? JsonPrimitive)?.takeIf { it !is JsonNull }?.let { key to it.content } }
+                    ?.toMap()
+                    .orEmpty()
+            )
+        }
 
     private fun parseError(error: JsonElement): LiveServerSignal.ServerError = when (error) {
         is JsonObject -> LiveServerSignal.ServerError(

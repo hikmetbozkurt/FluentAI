@@ -4,6 +4,7 @@ import com.seanora.fluentai.core.audio.AudioCaptureEngine
 import com.seanora.fluentai.core.audio.StreamAudioPlaybackEngine
 import com.seanora.fluentai.core.common.di.DefaultDispatcher
 import com.seanora.fluentai.core.common.logging.AppLog
+import com.seanora.fluentai.core.model.LiveCorrection
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
@@ -25,7 +26,7 @@ class LiveCoachSessionManager @Inject constructor(
 ) {
     companion object {
         private const val TAG = "LiveCoachSession"
-        const val STARTUP_INSTRUCTION = "Begin the speaking session now. Greet the learner naturally according to the active scenario and immediately start the conversation with an appropriate question or prompt."
+        const val STARTUP_INSTRUCTION = "Begin the speaking session now. Greet the learner briefly, remind them in one sentence that you will correct their English as you talk, and start the conversation with an appropriate question. From now on follow your coaching protocol on every learner turn."
         private const val STARTUP_INSTRUCTION_MARKER = "Begin the speaking session now"
     }
 
@@ -46,6 +47,9 @@ class LiveCoachSessionManager @Inject constructor(
     private val _errorMessage = MutableStateFlow<String?>(null)
     val errorMessage: StateFlow<String?> = _errorMessage.asStateFlow()
 
+    private val _corrections = MutableStateFlow<List<LiveCorrection>>(emptyList())
+    val corrections: StateFlow<List<LiveCorrection>> = _corrections.asStateFlow()
+
     private val _metrics = MutableStateFlow(LiveSessionMetrics())
     val metrics: StateFlow<LiveSessionMetrics> = _metrics.asStateFlow()
 
@@ -62,6 +66,7 @@ class LiveCoachSessionManager @Inject constructor(
             runtime.reset()
             transcriptBuffer.clear()
             _transcript.value = emptyList()
+            _corrections.value = emptyList()
             _errorMessage.value = null
             _metrics.value = LiveSessionMetrics(startedAtMs = System.currentTimeMillis())
             _voiceState.value = VoiceUiState.CONNECTING
@@ -142,6 +147,16 @@ class LiveCoachSessionManager @Inject constructor(
                 publishVoiceState()
             }
         }
+    }
+
+    private fun recordCorrection(correction: LiveCorrection) {
+        val isDuplicate = _corrections.value.any {
+            it.learnerSaid.equals(correction.learnerSaid, ignoreCase = true) &&
+                it.correction.equals(correction.correction, ignoreCase = true)
+        }
+        if (isDuplicate) return
+        _corrections.update { it + correction }
+        _metrics.update { it.copy(corrections = it.corrections + 1) }
     }
 
     private suspend fun runSession(config: LiveScenarioConfig) {
@@ -272,6 +287,7 @@ class LiveCoachSessionManager @Inject constructor(
             }
             is LiveSessionEvent.TranscriptDelta -> onTranscriptDelta(event)
             is LiveSessionEvent.UsageUpdated -> _metrics.update { it.copy(tokenUsage = event.usage) }
+            is LiveSessionEvent.CorrectionLogged -> recordCorrection(event.correction)
             is LiveSessionEvent.InteractionStatus, LiveSessionEvent.SessionResumptionUpdate -> Unit
             is LiveSessionEvent.Error -> if (event.isFatal) {
                 runtime.error = event.message

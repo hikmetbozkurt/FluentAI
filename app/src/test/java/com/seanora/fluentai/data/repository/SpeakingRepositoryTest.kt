@@ -1,6 +1,5 @@
 package com.seanora.fluentai.data.repository
 
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.data.content.dao.SpeakingDao
 import com.seanora.fluentai.data.content.entity.SpeakingScenarioEntity
@@ -92,7 +91,6 @@ class SpeakingRepositoryTest {
         assertEquals("Agile Standup & Blockers", first.title)
         assertEquals(SpeakingCategory.MEETING, first.category)
         assertEquals("B2", first.cefrLevel)
-        assertEquals(CorrectionMode.DRILL, first.recommendedCorrectionMode)
         assertEquals(listOf("vocab.bottleneck", "vocab.escalate"), first.targetVocabIds)
         assertEquals(listOf("grammar.present-perfect-vs-past-simple"), first.targetGrammarIds)
     }
@@ -112,7 +110,6 @@ class SpeakingRepositoryTest {
         val c1Scenarios = repository.getScenariosByLevel("C1").first()
         assertEquals(1, c1Scenarios.size)
         assertEquals("speaking.c1.jobinterview.system-design", c1Scenarios.first().id)
-        assertEquals(CorrectionMode.MOCK, c1Scenarios.first().recommendedCorrectionMode)
     }
 
     @Test

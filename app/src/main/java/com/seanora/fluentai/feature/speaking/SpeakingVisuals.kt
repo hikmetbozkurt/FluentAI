@@ -1,6 +1,5 @@
 package com.seanora.fluentai.feature.speaking
 
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 
 internal val SpeakingCategory.emoji: String
@@ -13,12 +12,4 @@ internal val SpeakingCategory.emoji: String
         SpeakingCategory.IELTS -> "🎓"
         SpeakingCategory.VOCAB_DRILL -> "📚"
         SpeakingCategory.GRAMMAR_DRILL -> "🧩"
-    }
-
-internal val CorrectionMode.emoji: String
-    get() = when (this) {
-        CorrectionMode.FLOW -> "🌊"
-        CorrectionMode.COACH -> "🧑‍🏫"
-        CorrectionMode.DRILL -> "🎯"
-        CorrectionMode.MOCK -> "🎤"
     }

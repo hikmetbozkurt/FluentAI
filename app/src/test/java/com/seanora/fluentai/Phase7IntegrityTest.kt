@@ -1,6 +1,5 @@
 package com.seanora.fluentai
 
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.GrammarLesson
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.ListeningScenario
@@ -121,7 +120,6 @@ class Phase7IntegrityTest {
             cefrLevel = "C1",
             systemPrompt = "You are interviewing a principal architect.",
             contextDescription = "Defending high throughput architecture.",
-            recommendedCorrectionMode = CorrectionMode.MOCK,
             topicTags = listOf("technology", "leadership"),
         )
     )

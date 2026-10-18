@@ -1,6 +1,7 @@
 package com.seanora.fluentai.ai.live
 
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
+import com.seanora.fluentai.core.model.LiveCorrection
 
 enum class VoiceUiState {
     IDLE,
@@ -63,10 +64,11 @@ data class LiveScenarioConfig(
     val voiceName: String = "Aoede",
     val sampleRateHz: Int = 24000,
     val cefrTarget: String = "B2",
-    val correctionMode: CorrectionMode = CorrectionMode.COACH,
+    val correctionLevel: CorrectionLevel = CorrectionLevel.THOROUGH,
     val sessionType: SpeakingSessionType = SpeakingSessionType.SCENARIO,
     val persona: SpeakingPersona? = null,
-    val memoryContext: String? = null
+    val memoryContext: String? = null,
+    val coachingToolsEnabled: Boolean = true
 )
 
 sealed interface LiveSessionEvent {
@@ -88,6 +90,7 @@ sealed interface LiveSessionEvent {
     data class InteractionStatus(val status: String) : LiveSessionEvent
     data object SessionResumptionUpdate : LiveSessionEvent
     data class Reconnecting(val attempt: Int) : LiveSessionEvent
+    data class CorrectionLogged(val correction: LiveCorrection) : LiveSessionEvent
     data class UsageUpdated(val usage: LiveTokenUsage) : LiveSessionEvent
     data class Error(val message: String, val isFatal: Boolean = false) : LiveSessionEvent
     data class Disconnected(val reason: String) : LiveSessionEvent

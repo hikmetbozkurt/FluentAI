@@ -9,5 +9,6 @@ sealed interface LiveServerSignal {
     data class GoAway(val timeLeftMs: Long?) : LiveServerSignal
     data class ResumptionUpdate(val handle: String?, val resumable: Boolean) : LiveServerSignal
     data class Usage(val usage: LiveTokenUsage) : LiveServerSignal
+    data class ToolCall(val calls: List<LiveFunctionCall>) : LiveServerSignal
     data class Event(val event: LiveSessionEvent) : LiveServerSignal
 }

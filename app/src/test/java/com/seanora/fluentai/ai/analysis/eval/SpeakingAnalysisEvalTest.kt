@@ -6,7 +6,6 @@ import com.seanora.fluentai.ai.analysis.gemini.SpeakingAnalysisPromptBuilder
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.core.model.AnalysisSource
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.SpeakingSessionAnalysis
@@ -48,7 +47,7 @@ class SpeakingAnalysisEvalTest {
         )
 
         val outcomes = loadGoldenCases().map { case ->
-            val analysis = client.analyzeSession(scenario, CorrectionMode.COACH, transcriptFor(case), durationSeconds = 30).getOrThrow()
+            val analysis = client.analyzeSession(scenario, transcriptFor(case), durationSeconds = 30).getOrThrow()
             check(analysis.source == AnalysisSource.AI_MODEL) { "Case ${case.id} fell back to the offline analyzer" }
             evaluate(case, analysis)
         }

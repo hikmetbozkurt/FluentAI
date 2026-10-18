@@ -102,7 +102,8 @@ import com.seanora.fluentai.core.designsystem.theme.FluentColors
 import com.seanora.fluentai.core.designsystem.theme.FluentTheme
 import com.seanora.fluentai.core.designsystem.theme.LocalFluentColors
 import com.seanora.fluentai.core.model.AnalysisSource
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
+import com.seanora.fluentai.core.model.LiveCorrection
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingGrammarObservation
 import com.seanora.fluentai.core.model.SpeakingScenario
@@ -123,7 +124,6 @@ fun SpeakingScreen(
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
     var pendingScenario by remember { mutableStateOf<SpeakingScenario?>(null) }
-    var pendingMode by remember { mutableStateOf<CorrectionMode?>(null) }
     var pendingGaladrielStart by remember { mutableStateOf(false) }
 
     LaunchedEffect(initialContentId) {
@@ -162,17 +162,15 @@ fun SpeakingScreen(
         contract = ActivityResultContracts.RequestPermission()
     ) { isGranted ->
         val scenarioToStart = pendingScenario
-        val modeToStart = pendingMode
         val shouldStartGaladriel = pendingGaladrielStart
         pendingScenario = null
-        pendingMode = null
         pendingGaladrielStart = false
 
         if (isGranted) {
             prefs.edit().putBoolean("mic_permission_requested_before", true).apply()
             viewModel.clearPermissionError()
             if (scenarioToStart != null) {
-                viewModel.startSession(scenarioToStart, modeToStart)
+                viewModel.startSession(scenarioToStart)
             } else if (shouldStartGaladriel) {
                 viewModel.startGaladrielSession()
             }
@@ -191,7 +189,7 @@ fun SpeakingScreen(
         }
     }
 
-    val handleStartSession: (SpeakingScenario, CorrectionMode) -> Unit = { scenario, mode ->
+    val handleStartSession: (SpeakingScenario) -> Unit = { scenario ->
         val hasPermission = ContextCompat.checkSelfPermission(
             context,
             Manifest.permission.RECORD_AUDIO
@@ -200,11 +198,10 @@ fun SpeakingScreen(
         if (hasPermission) {
             prefs.edit().putBoolean("mic_permission_requested_before", true).apply()
             viewModel.clearPermissionError()
-            viewModel.startSession(scenario, mode)
+            viewModel.startSession(scenario)
         } else {
             if (pendingScenario == null) {
                 pendingScenario = scenario
-                pendingMode = mode
                 permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
             }
         }
@@ -239,7 +236,7 @@ fun SpeakingScreen(
         onSelectScenario = { viewModel.selectScenario(it) },
         onSelectCategory = { viewModel.selectCategory(it) },
         onSelectCefrLevel = { viewModel.selectCefrLevel(it) },
-        onSelectMode = { viewModel.selectCorrectionMode(it) },
+        onSelectFreeTalkLevel = { viewModel.selectFreeTalkCorrectionLevel(it) },
         onDismissReport = { viewModel.dismissReport() },
         onDismissError = { viewModel.dismissError() },
         modifier = modifier
@@ -249,7 +246,7 @@ fun SpeakingScreen(
 @Composable
 fun SpeakingScreenContent(
     uiState: SpeakingUiState,
-    onStartSession: (SpeakingScenario, CorrectionMode) -> Unit,
+    onStartSession: (SpeakingScenario) -> Unit,
     onStartGaladriel: () -> Unit,
     showGaladrielStart: Boolean,
     onOpenGaladriel: () -> Unit,
@@ -260,7 +257,7 @@ fun SpeakingScreenContent(
     onSelectScenario: (SpeakingScenario) -> Unit,
     onSelectCategory: (SpeakingCategory?) -> Unit,
     onSelectCefrLevel: (String?) -> Unit,
-    onSelectMode: (CorrectionMode) -> Unit,
+    onSelectFreeTalkLevel: (CorrectionLevel) -> Unit,
     onDismissReport: () -> Unit,
     onDismissError: () -> Unit,
     modifier: Modifier = Modifier
@@ -275,7 +272,7 @@ fun SpeakingScreenContent(
                             onStartGaladriel()
                         } else {
                             uiState.selectedScenario?.let { scenario ->
-                                onStartSession(scenario, uiState.selectedMode)
+                                onStartSession(scenario)
                             }
                         }
                     },
@@ -296,6 +293,8 @@ fun SpeakingScreenContent(
             showGaladrielStart -> {
                 GaladrielFreeTalkStartView(
                     errorMessage = uiState.errorMessage,
+                    selectedLevel = uiState.freeTalkCorrectionLevel,
+                    onSelectLevel = onSelectFreeTalkLevel,
                     onStartConversation = onStartGaladriel,
                     onNavigateBack = onNavigateBack,
                     onDismissError = onDismissError,
@@ -309,7 +308,6 @@ fun SpeakingScreenContent(
                     onSelectScenario = onSelectScenario,
                     onSelectCategory = onSelectCategory,
                     onSelectCefrLevel = onSelectCefrLevel,
-                    onSelectMode = onSelectMode,
                     onOpenGaladriel = onOpenGaladriel,
                     onDismissError = onDismissError,
                     modifier = modifier
@@ -322,11 +320,10 @@ fun SpeakingScreenContent(
 @Composable
 private fun SpeakingScenarioCatalogView(
     uiState: SpeakingUiState,
-    onStartSession: (SpeakingScenario, CorrectionMode) -> Unit,
+    onStartSession: (SpeakingScenario) -> Unit,
     onSelectScenario: (SpeakingScenario) -> Unit,
     onSelectCategory: (SpeakingCategory?) -> Unit,
     onSelectCefrLevel: (String?) -> Unit,
-    onSelectMode: (CorrectionMode) -> Unit,
     onOpenGaladriel: () -> Unit,
     onDismissError: () -> Unit,
     modifier: Modifier = Modifier
@@ -395,25 +392,16 @@ private fun SpeakingScenarioCatalogView(
 
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)) {
             FluentSectionTitle(
-                title = "Correction Mode",
-                emoji = "🎚️",
-                subtitle = "How strictly the coach corrects you while you talk",
+                title = "Coach Mode",
+                emoji = "🧑‍🏫",
+                subtitle = "Every session corrects and improves your English, whatever the topic",
                 accent = LearningModule.SPEAKING.accent
             )
             Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .horizontalScroll(rememberScrollState()),
+                modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)
             ) {
-                CorrectionMode.entries.forEach { mode ->
-                    val isSelected = (mode == uiState.selectedMode)
-                    ModeCard(
-                        mode = mode,
-                        isSelected = isSelected,
-                        onClick = { onSelectMode(mode) }
-                    )
-                }
+                CoachModeCard(modifier = Modifier.weight(1f))
                 GaladrielPresetCard(onClick = onOpenGaladriel)
             }
         }
@@ -477,8 +465,7 @@ private fun SpeakingScenarioCatalogView(
             uiState.filteredScenarios.forEach { scenario ->
                 ScenarioCard(
                     scenario = scenario,
-                    selectedMode = uiState.selectedMode,
-                    onStart = { onStartSession(scenario, uiState.selectedMode) }
+                    onStart = { onStartSession(scenario) }
                 )
             }
         }
@@ -559,49 +546,68 @@ private fun SpeakButton(
 }
 
 @Composable
-private fun ModeCard(
-    mode: CorrectionMode,
-    isSelected: Boolean,
-    onClick: () -> Unit
-) {
-    val borderColor = if (isSelected) DashboardColors.PrimaryPink else DashboardColors.BorderSoft
-    val bgColor = if (isSelected) DashboardColors.SurfacePink else DashboardColors.Surface
-
+private fun CoachModeCard(modifier: Modifier = Modifier) {
     Box(
-        modifier = Modifier
-            .width(160.dp)
+        modifier = modifier
             .clip(FluentTheme.shapes.card)
-            .background(bgColor)
-            .border(width = if (isSelected) 2.dp else 1.dp, color = borderColor, shape = FluentTheme.shapes.card)
-            .clickable(onClick = onClick)
+            .background(DashboardColors.SurfacePink)
+            .border(width = 2.dp, color = DashboardColors.PrimaryPink, shape = FluentTheme.shapes.card)
             .padding(FluentTheme.spacing.cardInternal)
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = "${mode.emoji} ${mode.displayName}",
-                    style = FluentTheme.typography.titleMedium,
-                    color = if (isSelected) DashboardColors.PrimaryPinkDark else DashboardColors.TextPrimary
-                )
-                if (isSelected) {
-                    Box(
-                        modifier = Modifier
-                            .size(8.dp)
-                            .clip(CircleShape)
-                            .background(DashboardColors.PrimaryPink)
-                    )
-                }
-            }
             Text(
-                text = mode.shortDescription,
+                text = "🧑‍🏫 Coach",
+                style = FluentTheme.typography.titleMedium,
+                color = DashboardColors.PrimaryPinkDark
+            )
+            Text(
+                text = "✏️ Corrects your mistakes out loud as you speak",
+                style = FluentTheme.typography.labelSmall,
+                color = DashboardColors.TextSecondary
+            )
+            Text(
+                text = "🔁 Asks you to repeat the fixed sentence",
+                style = FluentTheme.typography.labelSmall,
+                color = DashboardColors.TextSecondary
+            )
+            Text(
+                text = "🚀 Suggests a better word when you get it right",
                 style = FluentTheme.typography.labelSmall,
                 color = DashboardColors.TextSecondary
             )
         }
+    }
+}
+
+@Composable
+private fun CorrectionLevelChip(
+    level: CorrectionLevel,
+    isSelected: Boolean,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    val borderColor = if (isSelected) DashboardColors.PrimaryPink else DashboardColors.BorderSoft
+    val bgColor = if (isSelected) DashboardColors.SurfacePink else DashboardColors.Surface
+
+    Column(
+        modifier = modifier
+            .clip(FluentTheme.shapes.card)
+            .background(bgColor)
+            .border(width = if (isSelected) 2.dp else 1.dp, color = borderColor, shape = FluentTheme.shapes.card)
+            .clickable(onClick = onClick)
+            .padding(FluentTheme.spacing.sm),
+        verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)
+    ) {
+        Text(
+            text = "${level.emoji} ${level.displayName}",
+            style = FluentTheme.typography.titleSmall,
+            color = if (isSelected) DashboardColors.PrimaryPinkDark else DashboardColors.TextPrimary
+        )
+        Text(
+            text = level.shortDescription,
+            style = FluentTheme.typography.labelSmall,
+            color = DashboardColors.TextSecondary
+        )
     }
 }
 
@@ -639,6 +645,8 @@ private fun GaladrielPresetCard(onClick: () -> Unit) {
 @Composable
 private fun GaladrielFreeTalkStartView(
     errorMessage: String?,
+    selectedLevel: CorrectionLevel,
+    onSelectLevel: (CorrectionLevel) -> Unit,
     onStartConversation: () -> Unit,
     onNavigateBack: () -> Unit,
     onDismissError: () -> Unit,
@@ -665,10 +673,29 @@ private fun GaladrielFreeTalkStartView(
                     verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.md)
                 ) {
                     Text(
-                        text = "A relaxed English conversation with your AI friend.",
+                        text = "A relaxed English conversation with your AI friend, who also corrects your mistakes.",
                         style = FluentTheme.typography.bodyLarge,
                         color = DashboardColors.TextSecondary
                     )
+                    Text(
+                        text = "🎚️ Correction level",
+                        style = FluentTheme.typography.titleSmall,
+                        color = DashboardColors.TextPrimary,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)
+                    ) {
+                        CorrectionLevel.entries.forEach { level ->
+                            CorrectionLevelChip(
+                                level = level,
+                                isSelected = level == selectedLevel,
+                                onClick = { onSelectLevel(level) },
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
                     if (!errorMessage.isNullOrBlank()) {
                         Text(
                             text = errorMessage,
@@ -722,7 +749,6 @@ private fun FilterPill(
 @Composable
 private fun ScenarioCard(
     scenario: SpeakingScenario,
-    selectedMode: CorrectionMode,
     onStart: () -> Unit
 ) {
     val level = parseCefrLevel(scenario.cefrLevel)
@@ -753,7 +779,7 @@ private fun ScenarioCard(
                 }
 
                 Text(
-                    text = "Recommended: ${scenario.recommendedCorrectionMode.emoji} ${scenario.recommendedCorrectionMode.displayName}",
+                    text = "🧑‍🏫 Live corrections",
                     style = FluentTheme.typography.labelSmall,
                     color = DashboardColors.TextSecondary
                 )
@@ -784,7 +810,7 @@ private fun ScenarioCard(
                 horizontalArrangement = Arrangement.End
             ) {
                 SpeakButton(
-                    text = "🎙️ Start Session (${selectedMode.displayName})",
+                    text = "🎙️ Start Coaching Session",
                     primary = true,
                     onClick = onStart
                 )
@@ -1231,8 +1257,15 @@ private fun ActiveSpeakingSessionView(
                 scenarioTitle = scenarioTitle,
                 cefrLevel = cefrLevel,
                 category = category,
-                mode = uiState.selectedMode
+                correctionLevel = uiState.activeLiveConfig?.correctionLevel
             )
+
+            if (uiState.liveCorrections.isNotEmpty()) {
+                LiveCorrectionsPanel(
+                    corrections = uiState.liveCorrections,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
 
             LiveVoicePanel(
                 voiceState = uiState.voiceState,
@@ -1260,6 +1293,51 @@ private fun ActiveSpeakingSessionView(
                     .fillMaxWidth()
                     .weight(transcriptWeight)
             )
+        }
+    }
+}
+
+@Composable
+private fun LiveCorrectionsPanel(
+    corrections: List<LiveCorrection>,
+    modifier: Modifier = Modifier
+) {
+    val latest = corrections.last()
+    LightSpeakSurface(modifier = modifier) {
+        Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "✏️ Quick fix · ${latest.category.emoji} ${latest.category.displayName}",
+                    style = FluentTheme.typography.labelLarge,
+                    color = DashboardColors.PrimaryPinkDark
+                )
+                Text(
+                    text = "${corrections.size} ${if (corrections.size == 1) "fix" else "fixes"}",
+                    style = FluentTheme.typography.labelSmall,
+                    color = DashboardColors.TextSecondary
+                )
+            }
+            Text(
+                text = "❌ ${latest.learnerSaid}",
+                style = FluentTheme.typography.bodyMedium,
+                color = DashboardColors.TextSecondary
+            )
+            Text(
+                text = "✅ ${latest.correction}",
+                style = FluentTheme.typography.bodyLarge,
+                color = DashboardColors.TextPrimary
+            )
+            if (latest.explanation.isNotBlank()) {
+                Text(
+                    text = "💡 ${latest.explanation}",
+                    style = FluentTheme.typography.bodySmall,
+                    color = DashboardColors.TextSecondary
+                )
+            }
         }
     }
 }
@@ -1396,7 +1474,7 @@ private fun SessionInfoHeader(
     scenarioTitle: String,
     cefrLevel: String,
     category: String?,
-    mode: CorrectionMode
+    correctionLevel: CorrectionLevel?
 ) {
     val level = parseCefrLevel(cefrLevel)
     Row(
@@ -1434,11 +1512,13 @@ private fun SessionInfoHeader(
                         )
                     }
                 }
-                Text(
-                    text = mode.displayName,
-                    style = FluentTheme.typography.labelMedium,
-                    color = DashboardColors.TextSecondary
-                )
+                correctionLevel?.let { level ->
+                    Text(
+                        text = "🧑‍🏫 Coach · ${level.emoji} ${level.displayName}",
+                        style = FluentTheme.typography.labelMedium,
+                        color = DashboardColors.TextSecondary
+                    )
+                }
             }
         }
     }

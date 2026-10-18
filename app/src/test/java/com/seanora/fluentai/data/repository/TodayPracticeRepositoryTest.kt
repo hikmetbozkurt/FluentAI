@@ -1,6 +1,5 @@
 package com.seanora.fluentai.data.repository
 
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.DailyMetrics
 import com.seanora.fluentai.core.model.GrammarLesson
 import com.seanora.fluentai.core.model.LearningEvidence
@@ -427,7 +426,6 @@ private class FakeSpeakingRepository : SpeakingRepository {
             cefrLevel = "B2",
             systemPrompt = "Act as tech lead",
             contextDescription = "Discuss architecture",
-            recommendedCorrectionMode = CorrectionMode.COACH,
         )
     )
     override fun getAllScenarios(): Flow<List<SpeakingScenario>> = flowOf(scenarios)

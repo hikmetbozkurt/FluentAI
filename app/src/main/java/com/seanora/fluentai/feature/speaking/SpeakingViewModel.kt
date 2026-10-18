@@ -9,13 +9,14 @@ import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.ai.live.VoiceUiState
 import com.seanora.fluentai.ai.live.SpeakingPersona
 import com.seanora.fluentai.ai.live.SpeakingSessionType
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
 import com.seanora.fluentai.core.model.MistakeRecord
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.UserProfile
 import com.seanora.fluentai.data.repository.SpeakingRepository
 import com.seanora.fluentai.data.repository.UserLearningRepository
+import com.seanora.fluentai.domain.speaking.LiveCorrectionMerger
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisUseCase
 import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -35,7 +36,8 @@ class SpeakingViewModel @Inject constructor(
     private val promptBuilder: SpeakingPromptBuilder,
     private val analysisClient: SpeakingAnalysisClient,
     private val processSpeakingAnalysisUseCase: ProcessSpeakingAnalysisUseCase,
-    private val userLearningRepository: UserLearningRepository
+    private val userLearningRepository: UserLearningRepository,
+    private val liveCorrectionMerger: LiveCorrectionMerger
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(SpeakingUiState())
@@ -64,11 +66,7 @@ class SpeakingViewModel @Inject constructor(
                             ?.let { id -> scenarios.firstOrNull { it.id == id } }
                             ?: current.selectedScenario
                             ?: scenarios.firstOrNull()
-                        current.copy(
-                            availableScenarios = scenarios,
-                            selectedScenario = selected,
-                            selectedMode = selected?.recommendedCorrectionMode ?: current.selectedMode
-                        )
+                        current.copy(availableScenarios = scenarios, selectedScenario = selected)
                     }
                 }
         }
@@ -106,6 +104,12 @@ class SpeakingViewModel @Inject constructor(
         }
 
         viewModelScope.launch {
+            sessionManager.corrections.collect { corrections ->
+                _uiState.update { it.copy(liveCorrections = corrections) }
+            }
+        }
+
+        viewModelScope.launch {
             sessionManager.activeAmplitude.collect { amplitude ->
                 _uiState.update { it.copy(amplitude = amplitude) }
             }
@@ -132,12 +136,7 @@ class SpeakingViewModel @Inject constructor(
     }
 
     fun selectScenario(scenario: SpeakingScenario) {
-        _uiState.update {
-            it.copy(
-                selectedScenario = scenario,
-                selectedMode = scenario.recommendedCorrectionMode
-            )
-        }
+        _uiState.update { it.copy(selectedScenario = scenario) }
     }
 
     fun selectScenarioById(contentId: String) {
@@ -147,11 +146,11 @@ class SpeakingViewModel @Inject constructor(
             ?.let(::selectScenario)
     }
 
-    fun selectCorrectionMode(mode: CorrectionMode) {
-        _uiState.update { it.copy(selectedMode = mode) }
+    fun selectFreeTalkCorrectionLevel(level: CorrectionLevel) {
+        _uiState.update { it.copy(freeTalkCorrectionLevel = level) }
     }
 
-    fun startSession(scenario: SpeakingScenario? = null, mode: CorrectionMode? = null) {
+    fun startSession(scenario: SpeakingScenario? = null) {
         if (_uiState.value.isSessionActive || _uiState.value.voiceState == VoiceUiState.CONNECTING) {
             return
         }
@@ -162,10 +161,8 @@ class SpeakingViewModel @Inject constructor(
             return
         }
 
-        val targetMode = mode ?: _uiState.value.selectedMode
         val liveConfig = promptBuilder.createLiveConfig(
             scenario = targetScenario,
-            mode = targetMode,
             profile = cachedUserProfile,
             recentMistakes = cachedRecentMistakes
         )
@@ -175,7 +172,6 @@ class SpeakingViewModel @Inject constructor(
         _uiState.update {
             it.copy(
                 selectedScenario = targetScenario,
-                selectedMode = targetMode,
                 activeLiveConfig = liveConfig,
                 voiceState = VoiceUiState.CONNECTING,
                 isSessionActive = true,
@@ -217,14 +213,10 @@ class SpeakingViewModel @Inject constructor(
         val config = promptBuilder.createGaladrielLiveConfig(
             profile = cachedUserProfile,
             recentMistakes = cachedRecentMistakes,
-            memoryContext = null
+            memoryContext = null,
+            correctionLevel = _uiState.value.freeTalkCorrectionLevel
         )
-        _uiState.update {
-            it.copy(
-                selectedScenario = null,
-                selectedMode = CorrectionMode.FLOW
-            )
-        }
+        _uiState.update { it.copy(selectedScenario = null) }
         startSession(config)
     }
 
@@ -232,6 +224,7 @@ class SpeakingViewModel @Inject constructor(
         val durationSeconds = max(5, ((System.currentTimeMillis() - sessionStartTimeMs) / 1000).toInt())
         sessionManager.endSession()
         val currentTranscript = sessionManager.transcript.value
+        val liveCorrections = sessionManager.corrections.value
 
         val activeConfig = _uiState.value.activeLiveConfig
         val scenario = activeConfig
@@ -241,7 +234,6 @@ class SpeakingViewModel @Inject constructor(
             }
             ?.let { promptBuilder.createGaladrielAnalysisDescriptor(it.cefrTarget) }
             ?: _uiState.value.selectedScenario
-        val mode = activeConfig?.correctionMode ?: _uiState.value.selectedMode
         val hasLearnerSpeech = currentTranscript.any {
             it.role == TranscriptRole.USER && it.text.isNotBlank()
         }
@@ -258,12 +250,12 @@ class SpeakingViewModel @Inject constructor(
         if (hasLearnerSpeech && scenario != null) {
             viewModelScope.launch {
                 val outcome = runCatching {
-                    val analysis = analysisClient.analyzeSession(
+                    val modelAnalysis = analysisClient.analyzeSession(
                         scenario = scenario,
-                        mode = mode,
                         transcript = currentTranscript,
                         durationSeconds = durationSeconds
                     ).getOrThrow()
+                    val analysis = liveCorrectionMerger.merge(modelAnalysis, liveCorrections)
                     analysis to processSpeakingAnalysisUseCase(analysis)
                 }
                 _uiState.update { current ->

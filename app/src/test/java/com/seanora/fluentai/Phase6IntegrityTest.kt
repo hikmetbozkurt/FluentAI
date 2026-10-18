@@ -10,7 +10,7 @@ import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.ai.live.VoiceUiState
 import com.seanora.fluentai.core.audio.FakeAudioCaptureEngine
 import com.seanora.fluentai.core.audio.FakeStreamAudioPlaybackEngine
-import com.seanora.fluentai.core.model.CorrectionMode
+import com.seanora.fluentai.core.model.CorrectionLevel
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.MasterySnapshot
 import com.seanora.fluentai.core.model.MistakeRecord
@@ -32,6 +32,7 @@ import com.seanora.fluentai.domain.mastery.MasteryEngine
 import com.seanora.fluentai.domain.mastery.RecordLearningEvidenceUseCase
 import com.seanora.fluentai.domain.mistakes.MistakeEngine
 import com.seanora.fluentai.domain.review.ReviewScheduler
+import com.seanora.fluentai.domain.speaking.LiveCorrectionMerger
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisUseCase
 import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 import com.seanora.fluentai.feature.speaking.SpeakingViewModel
@@ -173,7 +174,6 @@ class Phase6IntegrityTest {
             cefrLevel = "B2",
             systemPrompt = "Act as the Scrum Master in a daily engineering standup.",
             contextDescription = "Sprint retrospective and daily standup blockers.",
-            recommendedCorrectionMode = CorrectionMode.COACH,
             targetGrammarIds = listOf("grammar.b2.conditionals.second", "grammar.b2.present-perfect-vs-past-simple"),
             targetVocabIds = listOf("vocab.b2.bottleneck", "vocab.b2.scalability"),
             suggestedStarterPhrases = listOf("Today I worked on...", "A major blocker is..."),
@@ -186,7 +186,6 @@ class Phase6IntegrityTest {
             cefrLevel = "C1",
             systemPrompt = "Act as the Principal Staff Engineer interviewing the candidate.",
             contextDescription = "High-stakes technical interview on distributed systems.",
-            recommendedCorrectionMode = CorrectionMode.MOCK,
             targetGrammarIds = listOf("grammar.c1.inversion", "grammar.c1.cleft-sentences"),
             targetVocabIds = listOf("vocab.c1.concurrency", "vocab.c1.resilience"),
             suggestedStarterPhrases = listOf("In our distributed topology..."),
@@ -199,7 +198,6 @@ class Phase6IntegrityTest {
             cefrLevel = "B1",
             systemPrompt = "Act as the Engineering Director conducting the annual compensation review.",
             contextDescription = "Annual 1-on-1 performance and compensation conversation.",
-            recommendedCorrectionMode = CorrectionMode.FLOW,
             targetGrammarIds = listOf("grammar.b1.modal-verbs"),
             targetVocabIds = listOf("vocab.b1.compensation"),
             suggestedStarterPhrases = listOf("I would like to discuss my compensation..."),
@@ -212,7 +210,6 @@ class Phase6IntegrityTest {
             cefrLevel = "B2",
             systemPrompt = "Challenge the user with hypothetical scenarios requiring conditional structures.",
             contextDescription = "Intensive grammar drill.",
-            recommendedCorrectionMode = CorrectionMode.DRILL,
             targetGrammarIds = listOf("grammar.b2.conditionals.third"),
             targetVocabIds = emptyList(),
             suggestedStarterPhrases = listOf("If we had scaled earlier..."),
@@ -280,7 +277,7 @@ class Phase6IntegrityTest {
     }
 
     @Test
-    fun criterion1_allEightSpeakingCategoriesAndFourCorrectionModesExist() {
+    fun criterion1_allEightSpeakingCategoriesAndThreeCorrectionLevelsExist() {
         val categories = SpeakingCategory.values()
         assertEquals(8, categories.size)
         val expectedCategories = setOf(
@@ -289,14 +286,11 @@ class Phase6IntegrityTest {
         )
         assertEquals(expectedCategories, categories.map { it.name }.toSet())
 
-        val modes = CorrectionMode.values()
-        assertEquals(4, modes.size)
-        val expectedModes = setOf("FLOW", "COACH", "DRILL", "MOCK")
-        assertEquals(expectedModes, modes.map { it.name }.toSet())
+        assertEquals(setOf("LIGHT", "BALANCED", "THOROUGH"), CorrectionLevel.entries.map { it.name }.toSet())
     }
 
     @Test
-    fun criterion2_promptBuilderIntegratesTargetCurriculumCorrectionModesAndTurkishTraps() {
+    fun criterion2_promptBuilderIntegratesTargetCurriculumCoachingProtocolAndTurkishTraps() {
         val scenario = sampleScenarios.first()
         val userProfile = UserProfile(
             targetCefrLevel = "C1",
@@ -317,36 +311,16 @@ class Phase6IntegrityTest {
             )
         )
 
-        // 1. COACH mode prompt check
         val coachConfig = promptBuilder.createLiveConfig(
             scenario = scenario,
-            mode = CorrectionMode.COACH,
             profile = userProfile,
             recentMistakes = activeMistakes
         )
-        assertTrue(coachConfig.systemPrompt.contains("Active Correction Mode: Coach"))
-        assertTrue(coachConfig.systemPrompt.contains("grammar.b2.conditionals.second"))
+        assertEquals(CorrectionLevel.THOROUGH, coachConfig.correctionLevel)
+        assertTrue(coachConfig.systemPrompt.contains("Coaching protocol"))
+        assertTrue(coachConfig.systemPrompt.contains("Quick fix:"))
+        assertTrue(coachConfig.systemPrompt.contains("conditionals second"))
         assertTrue(coachConfig.systemPrompt.contains("since-for-confusion"))
-
-        // 2. MOCK mode prompt check
-        val mockConfig = promptBuilder.createLiveConfig(
-            scenario = scenario,
-            mode = CorrectionMode.MOCK,
-            profile = userProfile,
-            recentMistakes = emptyList()
-        )
-        assertTrue(mockConfig.systemPrompt.contains("Active Correction Mode: Mock"))
-        assertTrue(mockConfig.systemPrompt.contains("break character", ignoreCase = true))
-
-        // 3. DRILL mode prompt check
-        val drillConfig = promptBuilder.createLiveConfig(
-            scenario = scenario,
-            mode = CorrectionMode.DRILL,
-            profile = userProfile,
-            recentMistakes = emptyList()
-        )
-        assertTrue(drillConfig.systemPrompt.contains("Active Correction Mode: Drill"))
-        assertTrue(drillConfig.systemPrompt.contains("prompt them to restate"))
     }
 
     @Test
@@ -359,7 +333,6 @@ class Phase6IntegrityTest {
 
         val result = analysisClient.analyzeSession(
             scenario = scenario,
-            mode = CorrectionMode.COACH,
             transcript = transcript,
             durationSeconds = 120
         )
@@ -507,7 +480,8 @@ class Phase6IntegrityTest {
             promptBuilder = promptBuilder,
             analysisClient = analysisClient,
             processSpeakingAnalysisUseCase = processSpeakingAnalysisUseCase,
-            userLearningRepository = userLearningRepo
+            userLearningRepository = userLearningRepo,
+            liveCorrectionMerger = LiveCorrectionMerger()
         )
 
         advanceUntilIdle()
@@ -519,13 +493,11 @@ class Phase6IntegrityTest {
         assertFalse(initialState.isReportVisible)
         assertEquals(4, initialState.availableScenarios.size)
 
-        // 2. Select Scenario & Mode
+        // 2. Select Scenario
         val targetScenario = sampleScenarios[1] // System Design Interview
         viewModel.selectScenario(targetScenario)
-        viewModel.selectCorrectionMode(CorrectionMode.MOCK)
 
         assertEquals(targetScenario.id, viewModel.uiState.value.selectedScenario?.id)
-        assertEquals(CorrectionMode.MOCK, viewModel.uiState.value.selectedMode)
 
         // 3. Start Session
         viewModel.startSession()

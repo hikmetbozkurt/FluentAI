@@ -2,7 +2,6 @@ package com.seanora.fluentai.ai.analysis
 
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.NaturalAlternative
 import com.seanora.fluentai.core.model.SpeakingGrammarObservation
 import com.seanora.fluentai.core.model.SpeakingScenario
@@ -20,7 +19,6 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
 
     override suspend fun analyzeSession(
         scenario: SpeakingScenario,
-        mode: CorrectionMode,
         transcript: List<TranscriptEntry>,
         durationSeconds: Int
     ): Result<SpeakingSessionAnalysis> {
@@ -128,7 +126,6 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
             turnsCount = userEntries.size,
             overallFeedback = buildOverallFeedback(
                 scenario = scenario,
-                mode = mode,
                 mistakeCount = grammarObservations.size,
                 turnsCount = userEntries.size,
                 wordCount = wordCount
@@ -289,14 +286,13 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
 
     private fun buildOverallFeedback(
         scenario: SpeakingScenario,
-        mode: CorrectionMode,
         mistakeCount: Int,
         turnsCount: Int,
         wordCount: Int
     ): String {
         return when {
             turnsCount < 2 -> "You contributed one learner turn with $wordCount words in ${scenario.title}. Continue the conversation longer to support a more representative analysis."
-            mistakeCount == 0 -> "Across $turnsCount learner turns and $wordCount words in ${scenario.title}, no supported Turkish-transfer pattern was detected. Your responses stayed communicatively clear in ${mode.displayName} mode."
+            mistakeCount == 0 -> "Across $turnsCount learner turns and $wordCount words in ${scenario.title}, no supported Turkish-transfer pattern was detected. Your responses stayed communicatively clear."
             mistakeCount <= 2 -> "Across $turnsCount learner turns and $wordCount words in ${scenario.title}, your message remained clear while ${mistakeCount} supported language pattern${if (mistakeCount == 1) " was" else "s were"} identified for review."
             else -> "Across $turnsCount learner turns and $wordCount words in ${scenario.title}, the transcript shows $mistakeCount recurring language patterns worth targeting in the next practice."
         }

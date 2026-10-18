@@ -3,6 +3,8 @@ package com.seanora.fluentai.ai.live
 import com.seanora.fluentai.core.audio.AudioChunk
 import com.seanora.fluentai.core.audio.FakeAudioCaptureEngine
 import com.seanora.fluentai.core.audio.FakeStreamAudioPlaybackEngine
+import com.seanora.fluentai.core.model.CorrectionCategory
+import com.seanora.fluentai.core.model.LiveCorrection
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -410,4 +412,38 @@ class LiveCoachSessionManagerTest {
         title = "Test",
         systemPrompt = "Coach"
     )
+
+    @Test
+    fun correctionLogged_isCollectedOnceAndCounted() = runTest {
+        val testDispatcher = StandardTestDispatcher(testScheduler)
+        val mockClient = MockLiveAiClient(dispatcher = testDispatcher).apply { speechDelayMs = 0L }
+        val manager = LiveCoachSessionManager(
+            audioCaptureEngine = FakeAudioCaptureEngine(),
+            playbackEngine = FakeStreamAudioPlaybackEngine(),
+            liveAiClient = mockClient,
+            dispatcher = testDispatcher
+        )
+        manager.startSession(LiveScenarioConfig(scenarioId = "s1", title = "Standup", systemPrompt = "Coach"))
+        advanceUntilIdle()
+
+        val correction = LiveCorrection(
+            id = "call-1",
+            learnerSaid = "since two years",
+            correction = "for two years",
+            explanation = "Use for with durations",
+            category = CorrectionCategory.GRAMMAR
+        )
+        mockClient.emitEvent(LiveSessionEvent.CorrectionLogged(correction))
+        mockClient.emitEvent(LiveSessionEvent.CorrectionLogged(correction.copy(id = "call-2")))
+        advanceUntilIdle()
+
+        assertEquals(listOf(correction), manager.corrections.value)
+        assertEquals(1, manager.metrics.value.corrections)
+
+        manager.endSession()
+        manager.startSession(LiveScenarioConfig(scenarioId = "s2", title = "Next", systemPrompt = "Coach"))
+        advanceUntilIdle()
+
+        assertTrue(manager.corrections.value.isEmpty())
+    }
 }

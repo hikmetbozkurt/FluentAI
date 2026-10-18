@@ -10,7 +10,6 @@ import com.seanora.fluentai.ai.analysis.gemini.toDomain
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.core.common.logging.AppLog
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.SpeakingSessionAnalysis
 import kotlinx.coroutines.CancellationException
@@ -50,17 +49,16 @@ class GeminiSpeakingAnalysisClient(
 
     override suspend fun analyzeSession(
         scenario: SpeakingScenario,
-        mode: CorrectionMode,
         transcript: List<TranscriptEntry>,
         durationSeconds: Int
     ): Result<SpeakingSessionAnalysis> {
         val apiKey = apiKeyProvider().trim()
         val learnerTurns = transcript.count { it.role == TranscriptRole.USER && it.text.isNotBlank() }
         if (apiKey.isBlank() || learnerTurns == 0) {
-            return fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
+            return fallbackClient.analyzeSession(scenario, transcript, durationSeconds)
         }
 
-        val prompt = promptBuilder.build(scenario, mode, transcript, durationSeconds)
+        val prompt = promptBuilder.build(scenario, transcript, durationSeconds)
         val request = Request.Builder()
             .url("$BASE_URL/$modelName:generateContent")
             .header(API_KEY_HEADER, apiKey)
@@ -71,7 +69,7 @@ class GeminiSpeakingAnalysisClient(
         val payload = responseBody?.let(responseParser::parse)
         if (payload == null) {
             AppLog.w(TAG) { "Online analysis unavailable; using offline analyzer" }
-            return fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
+            return fallbackClient.analyzeSession(scenario, transcript, durationSeconds)
         }
 
         val metadata = AnalysisSessionMetadata(

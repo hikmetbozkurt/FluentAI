@@ -2,13 +2,12 @@ package com.seanora.fluentai.ai.analysis.gemini
 
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
-import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingScenario
 
 class SpeakingAnalysisPromptBuilder {
 
     companion object {
-        const val PROMPT_VERSION = "speaking-analysis-v2"
+        const val PROMPT_VERSION = "speaking-analysis-v3"
 
         private val RULES = listOf(
             "Evaluate only LEARNER lines. COACH lines are context.",
@@ -23,7 +22,6 @@ class SpeakingAnalysisPromptBuilder {
 
     fun build(
         scenario: SpeakingScenario,
-        mode: CorrectionMode,
         transcript: List<TranscriptEntry>,
         durationSeconds: Int
     ): String {
@@ -32,7 +30,7 @@ class SpeakingAnalysisPromptBuilder {
             appendLine("You are an expert English assessor reviewing a spoken practice session between a Turkish professional learner and an AI coach.")
             appendLine()
             appendLine("Scenario: \"${scenario.title}\" (${scenario.category.displayName}, CEFR ${scenario.cefrLevel})")
-            appendLine("Correction mode: ${mode.displayName}")
+            appendLine("The coach corrected the learner during the session; focus on what still needs work.")
             appendLine("Session duration: $durationSeconds seconds")
             appendLine("Allowed grammar target ids: ${scenario.targetGrammarIds.joinToString(", ").ifBlank { "none" }}")
             appendLine("Allowed vocabulary target ids: ${scenario.targetVocabIds.joinToString(", ").ifBlank { "none" }}")
