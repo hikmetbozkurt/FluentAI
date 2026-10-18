@@ -13,6 +13,8 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -32,9 +34,12 @@ fun FluentBackButton(
     label: String = "Back",
     accent: Color = DashboardColors.PrimaryPinkDark
 ) {
+    val interactionSource = remember { MutableInteractionSource() }
     Surface(
         onClick = onClick,
+        interactionSource = interactionSource,
         modifier = modifier
+            .pressScale(interactionSource, pressedScale = 0.94f)
             .defaultMinSize(minHeight = 48.dp)
             .semantics {
                 role = Role.Button

@@ -56,6 +56,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.seanora.fluentai.core.designsystem.kit.FluentAnswerVerdict
 import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.app.navigation.ReadingSessionMode
@@ -400,7 +401,7 @@ private fun QuestionOption(label: String, text: String, selected: Boolean, submi
 private fun QuestionFeedback(question: ReadingComprehensionQuestion, userAnswer: String, correct: Boolean) {
     Surface(color = if (correct) Color(0xFFE4F5EC) else Color(0xFFFFE8EE), shape = RoundedCornerShape(14.dp), border = BorderStroke(1.dp, if (correct) Color(0xFF2E7D57) else Color(0xFFB33A5B))) {
         Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-            Text(if (correct) "Correct" else "Not quite", fontWeight = FontWeight.Bold, color = FluentTheme.colors.textPrimary)
+            FluentAnswerVerdict(correct = correct)
             if (!correct) {
                 Text("Your answer: $userAnswer", color = FluentTheme.colors.textSecondary)
                 Text("Correct answer: ${question.correctAnswer}", color = FluentTheme.colors.textPrimary, fontWeight = FontWeight.SemiBold)

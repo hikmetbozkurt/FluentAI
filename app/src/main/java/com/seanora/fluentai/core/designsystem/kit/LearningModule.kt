@@ -40,4 +40,16 @@ enum class LearningModule(
     val heroBrush: Brush get() = Brush.linearGradient(listOf(container, highlight.copy(alpha = 0.55f)))
 
     val accentBrush: Brush get() = Brush.horizontalGradient(listOf(accent, accent.copy(alpha = 0.78f)))
+
+    companion object {
+        fun forDomain(domain: String): LearningModule = when (domain.lowercase()) {
+            "vocabulary" -> VOCABULARY
+            "grammar" -> GRAMMAR
+            "reading" -> READING
+            "listening" -> LISTENING
+            "speaking" -> SPEAKING
+            "review" -> REVIEW
+            else -> PROGRESS
+        }
+    }
 }

@@ -32,6 +32,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.seanora.fluentai.core.designsystem.kit.entranceReveal
 
 @Composable
 fun DashboardPageHeader(
@@ -57,7 +58,9 @@ fun DashboardCard(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Card(
-        modifier = modifier.border(1.5.dp, DashboardColors.BorderSoft, RoundedCornerShape(DashboardDimensions.CardRadius)),
+        modifier = modifier
+            .entranceReveal()
+            .border(1.5.dp, DashboardColors.BorderSoft, RoundedCornerShape(DashboardDimensions.CardRadius)),
         shape = RoundedCornerShape(DashboardDimensions.CardRadius),
         colors = CardDefaults.cardColors(containerColor = background),
         elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),

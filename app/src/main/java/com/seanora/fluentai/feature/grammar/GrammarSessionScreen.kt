@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentAnswerVerdict
 import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.app.navigation.GrammarSessionMode
 import com.seanora.fluentai.app.navigation.GrammarSessionSection
@@ -274,7 +275,7 @@ private fun ErrorSpotterPractice(state: GrammarFeatureUiState, viewModel: Gramma
 @Composable
 private fun Feedback(correct: Boolean, correctAnswer: String, explanation: String) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        Text(if (correct) "Correct" else "Not quite", fontWeight = FontWeight.Bold, color = DashboardColors.PrimaryPinkDark)
+        FluentAnswerVerdict(correct = correct)
         if (!correct) Text("Correct answer: $correctAnswer", color = DashboardColors.TextPrimary)
         if (explanation.isNotBlank()) Text(explanation, color = DashboardColors.TextSecondary)
     }

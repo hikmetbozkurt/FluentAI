@@ -48,6 +48,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentAnswerVerdict
 import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.core.designsystem.kit.FluentCompactHeader
 import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
@@ -486,7 +487,7 @@ private fun QuestionSurface(
             val correct = selectedOption?.trim() == question.correctAnswer.trim()
             Surface(color = if (correct) Color(0xFFE8F5EE) else Color(0xFFFFF0F4), shape = RoundedCornerShape(14.dp)) {
                 Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    Text(if (correct) "Correct" else "Not quite", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+                    FluentAnswerVerdict(correct = correct)
                     if (!correct) {
                         Text("Your answer: ${selectedOption.orEmpty()}", style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
                         Text("Correct answer: ${question.correctAnswer}", style = DashboardTypography.Body, color = DashboardColors.TextPrimary)
@@ -617,7 +618,7 @@ private fun DictationPane(state: ListeningUiState, viewModel: ListeningViewModel
                     minLines = 3,
                 )
                 state.dictationResult?.let { result ->
-                    Text(if (result.isCorrect) "Correct" else "Not quite", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+                    FluentAnswerVerdict(correct = result.isCorrect)
                     Text("Your text: ${state.dictationAnswer}", style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
                     Text("Reference: ${item.textEn}", style = DashboardTypography.Body, color = DashboardColors.TextPrimary)
                     if (!result.isCorrect) {

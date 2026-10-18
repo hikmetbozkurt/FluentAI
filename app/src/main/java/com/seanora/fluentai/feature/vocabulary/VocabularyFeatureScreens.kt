@@ -40,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentAnswerVerdict
 import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.app.navigation.VocabularySessionMode
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
@@ -203,7 +204,7 @@ private fun StandardPractice(state: VocabularyFeatureUiState, viewModel: Vocabul
                     OutlinedButton(onClick = { viewModel.selectPracticeAnswer(option) }, enabled = !state.submittedPracticeAnswer, modifier = Modifier.fillMaxWidth()) { Text(if (state.selectedPracticeAnswer == option) "• $option" else option, color = DashboardColors.TextPrimary) }
                 }
                 if (state.submittedPracticeAnswer) {
-                    Text(if (state.lastPracticeCorrect == true) "Correct" else "Not quite", fontWeight = FontWeight.Bold, color = DashboardColors.PrimaryPinkDark)
+                    FluentAnswerVerdict(correct = state.lastPracticeCorrect == true)
                     if (state.lastPracticeCorrect != true) Text("Correct answer: ${question.correctAnswer}", color = DashboardColors.TextPrimary)
                     Button(onClick = viewModel::nextPracticeQuestion) { Text("Next") }
                 } else Button(onClick = viewModel::submitPracticeAnswer, enabled = state.selectedPracticeAnswer != null) { Text("Check answer") }

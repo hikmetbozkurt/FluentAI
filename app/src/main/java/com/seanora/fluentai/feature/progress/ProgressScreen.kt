@@ -24,6 +24,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.seanora.fluentai.core.designsystem.kit.ConfettiBurst
+import com.seanora.fluentai.core.designsystem.kit.FluentProgressRing
+import com.seanora.fluentai.domain.progress.Achievement
 import com.seanora.fluentai.core.designsystem.kit.FluentEmptyState
 import com.seanora.fluentai.core.designsystem.kit.FluentSurfaceCard
 import com.seanora.fluentai.core.designsystem.kit.IconTile
@@ -70,6 +73,10 @@ fun ProgressScreenContent(
                 subtitle = "See how your English skills are developing over time.",
             )
             uiState.dashboardData?.let { SummaryGrid(it, columns) }
+
+            if (uiState.achievements.isNotEmpty()) {
+                AchievementsSection(uiState.achievements, columns)
+            }
 
             FluentSectionTitle(
                 title = "Skill Progress",
@@ -145,20 +152,19 @@ private fun SummaryCard(metric: SummaryMetric, modifier: Modifier = Modifier) {
 
 @Composable
 private fun SkillCard(skill: SkillProficiency, selected: Boolean, onClick: () -> Unit, modifier: Modifier = Modifier) {
-    DashboardCard(modifier.clickable(onClick = onClick), if (selected) DashboardColors.SurfacePink else DashboardColors.Surface) {
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Text(skill.displayName, color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle)
-                Text("${skill.cefrLevel} level", color = DashboardColors.PrimaryPinkDark, style = DashboardTypography.Caption.copy(fontWeight = FontWeight.SemiBold))
+    val identity = LearningModule.forDomain(skill.domain)
+    FluentSurfaceCard(modifier = modifier, accent = identity.accent, emphasized = selected, onClick = onClick) {
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+            FluentProgressRing(
+                progress = skill.masteryPercentage / 100f,
+                module = identity,
+                caption = "mastery",
+            )
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text("${identity.emoji} ${skill.displayName}", color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle)
+                Text("${skill.cefrLevel} level", color = identity.accent, style = DashboardTypography.Caption.copy(fontWeight = FontWeight.SemiBold))
             }
-            Text("${skill.masteryPercentage}%", color = DashboardColors.PrimaryPinkDark, style = DashboardTypography.PageTitle)
         }
-        LinearProgressIndicator(
-            progress = { (skill.masteryPercentage / 100f).coerceIn(0f, 1f) },
-            modifier = Modifier.fillMaxWidth().height(8.dp).clip(CircleShape),
-            color = DashboardColors.PrimaryPink,
-            trackColor = DashboardColors.ProgressTrack,
-        )
         Text(
             "${skill.itemsMastered} mastered · ${skill.itemsLearning} practicing · ${(skill.accuracyRate * 100).roundToInt()}% accuracy",
             color = DashboardColors.TextSecondary,
@@ -182,6 +188,28 @@ private fun EvidenceRow(evidence: LearningEvidence) {
             Text(if (evidence.isCorrect) "Practice completed" else "Added to your review", color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
         }
         Text(formattedTime, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
+    }
+}
+
+@Composable
+private fun AchievementsSection(achievements: List<Achievement>, columns: Int) {
+    val unlocked = achievements.count { it.isUnlocked }
+    Box(Modifier.fillMaxWidth()) {
+        Column(verticalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
+            FluentSectionTitle(
+                title = "Achievements",
+                emoji = "🏅",
+                subtitle = "$unlocked of ${achievements.size} unlocked",
+                accent = LearningModule.REVIEW.accent,
+            )
+            achievements.chunked(columns * 2).forEach { row ->
+                Row(Modifier.fillMaxWidth().height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
+                    row.forEach { AchievementBadge(it, Modifier.weight(1f).fillMaxHeight()) }
+                    repeat(columns * 2 - row.size) { Spacer(Modifier.weight(1f)) }
+                }
+            }
+        }
+        ConfettiBurst(trigger = unlocked.takeIf { it > 0 }, modifier = Modifier.matchParentSize())
     }
 }
 

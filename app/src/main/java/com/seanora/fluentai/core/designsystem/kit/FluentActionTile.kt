@@ -34,10 +34,11 @@ fun FluentActionTile(
     emoji: String = module.emoji,
     icon: ImageVector = module.icon,
     actionLabel: String? = null,
-    emphasized: Boolean = false
+    emphasized: Boolean = false,
+    revealDelayMillis: Int = staggerDelay(1)
 ) {
     FluentSurfaceCard(
-        modifier = modifier,
+        modifier = modifier.entranceReveal(revealDelayMillis),
         accent = module.accent.takeIf { emphasized },
         emphasized = emphasized,
         onClick = onClick,

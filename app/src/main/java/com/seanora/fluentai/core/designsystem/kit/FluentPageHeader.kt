@@ -1,6 +1,19 @@
 package com.seanora.fluentai.core.designsystem.kit
 
+import androidx.compose.animation.core.FastOutSlowInEasing
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.widthIn
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -34,9 +47,10 @@ fun FluentPageHeader(
     eyebrow: String? = null,
     onBack: (() -> Unit)? = null,
     backLabel: String = "Back",
+    illustration: Painter? = null,
     trailing: (@Composable RowScope.() -> Unit)? = null
 ) {
-    Column(modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+    Column(modifier.fillMaxWidth().entranceReveal(), verticalArrangement = Arrangement.spacedBy(14.dp)) {
         if (onBack != null || trailing != null) {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 if (onBack != null) FluentBackButton(onClick = onBack, label = backLabel, accent = module.accent)
@@ -75,11 +89,38 @@ fun FluentPageHeader(
                             Text(it, color = DashboardColors.TextSecondary, style = DashboardTypography.Subtitle)
                         }
                     }
-                    Text(module.emoji, fontSize = 64.sp, modifier = Modifier.padding(start = 12.dp))
+                    if (illustration != null) {
+                        Image(
+                            painter = illustration,
+                            contentDescription = null,
+                            contentScale = ContentScale.Fit,
+                            modifier = Modifier.padding(start = 12.dp).height(132.dp).widthIn(max = 340.dp)
+                        )
+                    } else {
+                        FloatingEmoji(module.emoji)
+                    }
                 }
             }
         }
     }
+}
+
+@Composable
+private fun FloatingEmoji(emoji: String) {
+    val transition = rememberInfiniteTransition(label = "floatingEmoji")
+    val offset by transition.animateFloat(
+        initialValue = -4f,
+        targetValue = 4f,
+        animationSpec = infiniteRepeatable(tween(1_800, easing = FastOutSlowInEasing), RepeatMode.Reverse),
+        label = "floatingEmojiOffset"
+    )
+    Text(
+        emoji,
+        fontSize = 64.sp,
+        modifier = Modifier
+            .padding(start = 12.dp)
+            .graphicsLayer { translationY = offset.dp.toPx() }
+    )
 }
 
 @Composable

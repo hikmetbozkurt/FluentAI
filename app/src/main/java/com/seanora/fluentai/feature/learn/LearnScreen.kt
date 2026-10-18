@@ -1,5 +1,7 @@
 package com.seanora.fluentai.feature.learn
 
+import androidx.compose.ui.res.painterResource
+import com.seanora.fluentai.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -129,6 +131,7 @@ private fun LearnLanding(modifier: Modifier, onOpenModule: (String) -> Unit) {
                 title = "Learn",
                 module = LearningModule.LEARN,
                 eyebrow = "Offline curriculum · A2 → C2",
+                illustration = painterResource(R.drawable.continue_learning_background),
                 subtitle = "Choose a skill area and continue through your offline curriculum.",
             )
             FluentSectionTitle(

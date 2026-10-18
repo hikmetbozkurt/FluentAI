@@ -1,5 +1,7 @@
 package com.seanora.fluentai.feature.reading
 
+import androidx.compose.ui.res.painterResource
+import com.seanora.fluentai.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
@@ -88,6 +90,7 @@ private fun ReadingHomeContent(
                 title = "Reading",
                 module = LearningModule.READING,
                 eyebrow = "Learn · Reading",
+                illustration = painterResource(R.drawable.continue_learning_background),
                 subtitle = "Build academic reading comprehension through real texts.",
                 onBack = onNavigateBack,
                 backLabel = "Learn",

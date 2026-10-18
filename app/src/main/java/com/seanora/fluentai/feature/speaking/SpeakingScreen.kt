@@ -1,5 +1,8 @@
 package com.seanora.fluentai.feature.speaking
 
+import androidx.compose.ui.res.painterResource
+import com.seanora.fluentai.core.designsystem.kit.ConfettiBurst
+import com.seanora.fluentai.R
 import android.Manifest
 import android.app.Activity
 import android.content.ContextWrapper
@@ -264,7 +267,7 @@ fun SpeakingScreenContent(
 ) {
     CompositionLocalProvider(LocalFluentColors provides LingoPinkFluentColors) {
         when {
-            uiState.isReportVisible -> {
+            uiState.isReportVisible -> Box(modifier.fillMaxSize()) {
                 SpeakingPostSessionReportView(
                     uiState = uiState,
                     onPracticeAgain = {
@@ -277,8 +280,9 @@ fun SpeakingScreenContent(
                         }
                     },
                     onDismiss = onDismissReport,
-                    modifier = modifier
+                    modifier = Modifier.fillMaxSize()
                 )
+                ConfettiBurst(trigger = uiState.postSessionAnalysis?.id, modifier = Modifier.matchParentSize())
             }
             uiState.isSessionActive -> {
                 ActiveSpeakingSessionView(
@@ -339,6 +343,7 @@ private fun SpeakingScenarioCatalogView(
             title = "Live Speaking Coach",
             module = LearningModule.SPEAKING,
             eyebrow = "Real-time AI conversation",
+            illustration = painterResource(R.drawable.speaking_practice),
             subtitle = "Targeted spoken English scenarios with real-time coaching, L1 trap defense, and structured feedback."
         )
 

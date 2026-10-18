@@ -4,6 +4,7 @@ import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.data.repository.UserLearningRepository
+import com.seanora.fluentai.domain.progress.AchievementEvaluator
 import com.seanora.fluentai.domain.progress.ProgressEngine
 import com.seanora.fluentai.domain.progress.SkillProficiency
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -19,7 +20,8 @@ import javax.inject.Inject
 @HiltViewModel
 class ProgressViewModel @Inject constructor(
     private val userLearningRepository: UserLearningRepository,
-    private val progressEngine: ProgressEngine
+    private val progressEngine: ProgressEngine,
+    private val achievementEvaluator: AchievementEvaluator = AchievementEvaluator()
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(ProgressUiState())
@@ -52,6 +54,7 @@ class ProgressViewModel @Inject constructor(
                     current.copy(
                         isLoading = false,
                         dashboardData = dashboard,
+                        achievements = achievementEvaluator.evaluate(dashboard),
                         recentEvidence = evidences,
                         userProfile = profile
                     )
