@@ -17,7 +17,7 @@ class AchievementEvaluatorTest {
                 cefrLevel = "B1",
                 masteryPercentage = 40,
                 confidence = 0.5f,
-                itemsMastered = 6,
+                itemsMastered = if (index < practicedSkills) 6 else 0,
                 itemsLearning = 2,
                 totalAttempts = if (index < practicedSkills) 4 else 0,
                 accuracyRate = accuracy
