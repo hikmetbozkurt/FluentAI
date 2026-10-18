@@ -56,6 +56,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.app.navigation.ReadingSessionMode
 import com.seanora.fluentai.core.designsystem.components.ButtonVariant
 import com.seanora.fluentai.core.designsystem.components.DetailSectionSelector
@@ -430,8 +432,8 @@ private fun ReviewSection(state: ReadingSessionUiState, viewModel: ReadingSessio
 
 @Composable
 private fun ReadingHeader(title: String, subtitle: String, onBack: () -> Unit, compact: Boolean = false) {
-    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, subtitle, tint = FluentTheme.colors.accentSecondary) }
+    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+        FluentBackButton(onClick = onBack, label = "Back", accent = LearningModule.READING.accent)
         if (!compact) Column {
             Text(title, style = FluentTheme.typography.titleLarge, color = FluentTheme.colors.textPrimary, fontWeight = FontWeight.Bold)
             Text(subtitle, style = FluentTheme.typography.bodySmall, color = FluentTheme.colors.textSecondary)

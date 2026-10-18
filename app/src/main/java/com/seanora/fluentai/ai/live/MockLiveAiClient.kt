@@ -1,8 +1,8 @@
 package com.seanora.fluentai.ai.live
 
+import com.seanora.fluentai.core.common.di.DefaultDispatcher
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.delay
@@ -17,20 +17,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
-/**
- * Deterministic offline mock implementation of LiveAiClient.
- * Provides simulated bidirectional voice dialogues, turn-taking, and instant barge-in support.
- */
 @Singleton
-class MockLiveAiClient @Inject constructor() : LiveAiClient {
+class MockLiveAiClient @Inject constructor(
+    @DefaultDispatcher dispatcher: CoroutineDispatcher
+) : LiveAiClient {
 
-    private var dispatcher: CoroutineDispatcher = Dispatchers.Default
-    private var scope = CoroutineScope(SupervisorJob() + dispatcher)
-
-    constructor(dispatcher: CoroutineDispatcher) : this() {
-        this.dispatcher = dispatcher
-        this.scope = CoroutineScope(SupervisorJob() + dispatcher)
-    }
+    private val scope = CoroutineScope(SupervisorJob() + dispatcher)
 
     private var activeSpeechJob: Job? = null
     private var currentConfig: LiveScenarioConfig? = null
@@ -71,7 +63,6 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
         _connectionState.value = LiveConnectionState.CONNECTED
         _sessionEvents.tryEmit(LiveSessionEvent.Connected("mock-session-${System.currentTimeMillis()}"))
 
-        // Launch initial welcome turn
         val greeting = when {
             config.persona == SpeakingPersona.GALADRIEL ->
                 "Hi, I'm Galadriel. It's lovely to talk with you—how has your day been?"
@@ -87,10 +78,9 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
         return Result.success(Unit)
     }
 
-    override suspend fun sendAudioChunk(pcmData: ByteArray) {
-        // In mock mode, we receive user mic audio frames.
-        // If coach is speaking when audio is received, caller can trigger barge-in.
-    }
+    override suspend fun sendAudioChunk(pcmData: ByteArray) = Unit
+
+    override suspend fun sendAudioStreamEnd() = Unit
 
     override suspend fun sendTextMessage(text: String) {
         if (_connectionState.value != LiveConnectionState.CONNECTED) return
@@ -106,7 +96,6 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
             )
         }
 
-        // Generate context-aware mock reply
         val response = when {
             isStartup -> {
                 when {
@@ -129,7 +118,7 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
         speakCoachResponse(response)
     }
 
-    override suspend fun sendBargeInInterrupt() {
+    override suspend fun interruptModelTurn() {
         activeSpeechJob?.cancel()
         activeSpeechJob = null
         _sessionEvents.tryEmit(LiveSessionEvent.InterruptedByBargeIn)
@@ -145,7 +134,6 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
     private fun speakCoachResponse(text: String) {
         activeSpeechJob?.cancel()
         activeSpeechJob = scope.launch {
-            // Emulate streaming transcript words
             val words = text.split(" ")
             val accumulated = StringBuilder()
 
@@ -163,7 +151,6 @@ class MockLiveAiClient @Inject constructor() : LiveAiClient {
                     )
                 )
 
-                // Emulate synthesized PCM chunk (synthetic tone / speech frame)
                 val mockPcm = ByteArray(960) { index -> (index % 127).toByte() }
                 _sessionEvents.tryEmit(LiveSessionEvent.AudioOutputChunk(mockPcm))
 

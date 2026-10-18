@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.vocabulary
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.core.model.VocabItem
@@ -69,7 +70,7 @@ class VocabularyViewModel @Inject constructor(
             errorMessage = null
         )
     }.catch { throwable ->
-        android.util.Log.e("VocabularyViewModel", "Failed to load vocabulary", throwable)
+        AppLog.e("VocabularyViewModel", throwable) { "Failed to load vocabulary" }
         emit(
             VocabularyUiState(
                 isLoading = false,

@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.grammar
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.core.model.Exercise
@@ -79,7 +80,7 @@ class GrammarViewModel @Inject constructor(
             )
         }
     }.catch { throwable ->
-        android.util.Log.e("GrammarViewModel", "Failed to load grammar lessons", throwable)
+        AppLog.e("GrammarViewModel", throwable) { "Failed to load grammar lessons" }
         emit(
             GrammarUiState(
                 isLoading = false,

@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.progress
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.data.repository.UserLearningRepository
@@ -56,7 +57,7 @@ class ProgressViewModel @Inject constructor(
                     )
                 }
             }.catch { e ->
-                android.util.Log.e("ProgressViewModel", "Failed to load progress data", e)
+                AppLog.e("ProgressViewModel", e) { "Failed to load progress data" }
                 _uiState.update { it.copy(isLoading = false) }
             }.collect {}
         }

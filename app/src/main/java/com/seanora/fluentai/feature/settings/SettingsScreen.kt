@@ -18,6 +18,8 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
 import com.seanora.fluentai.core.designsystem.dashboard.*
 
 @Composable
@@ -30,7 +32,12 @@ fun SettingsScreen(modifier: Modifier = Modifier, viewModel: SettingsViewModel =
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(DashboardSpacing.xl),
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
         ) {
-            DashboardPageHeader("Settings", "Review the learning preferences currently saved for your profile.")
+            FluentPageHeader(
+                title = "Settings",
+                module = LearningModule.SETTINGS,
+                eyebrow = "Preferences",
+                subtitle = "Review the learning preferences currently saved for your profile.",
+            )
             if (twoColumns) {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md), verticalAlignment = Alignment.Top) {
                     PreferenceCard(

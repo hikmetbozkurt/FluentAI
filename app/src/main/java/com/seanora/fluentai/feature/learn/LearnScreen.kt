@@ -23,6 +23,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.seanora.fluentai.core.designsystem.components.FluentButton
 import com.seanora.fluentai.core.designsystem.dashboard.*
+import com.seanora.fluentai.core.designsystem.kit.DecorativeBackdrop
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.FluentSurfaceCard
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
+import com.seanora.fluentai.core.designsystem.kit.ModuleIconTile
+import androidx.compose.material.icons.automirrored.rounded.ArrowForward
+import androidx.compose.ui.unit.sp
 import com.seanora.fluentai.app.navigation.GrammarSessionMode
 import com.seanora.fluentai.app.navigation.GrammarSessionSection
 import com.seanora.fluentai.feature.grammar.GrammarLibraryScreen
@@ -108,20 +116,34 @@ private fun LearnLanding(modifier: Modifier, onOpenModule: (String) -> Unit) {
     ) {
         val columns = when { maxWidth >= 1200.dp -> 4; maxWidth >= 700.dp -> 2; else -> 1 }
         val modules = listOf(
-            LearnModule("vocabulary", "Vocabulary", "Build useful words and expressions for everyday and professional English.", Icons.Rounded.MenuBook, DashboardColors.SurfacePink),
-            LearnModule("grammar", "Grammar", "Understand patterns and use English structures with confidence.", Icons.Rounded.Description, DashboardColors.PurplePastel),
-            LearnModule("reading", "Reading", "Practice comprehension with structured articles and vocabulary support.", Icons.Rounded.AutoStories, DashboardColors.PeachPastel),
-            LearnModule("listening", "Listening", "Train comprehension with dialogues, transcripts, and questions.", Icons.Rounded.Headphones, DashboardColors.MintPastel),
+            LearnModule("vocabulary", "Vocabulary", "Build useful words and expressions for everyday and professional English.", "Word of the day · Flash cards", LearningModule.VOCABULARY),
+            LearnModule("grammar", "Grammar", "Understand patterns and use English structures with confidence.", "Rules · Turkish traps", LearningModule.GRAMMAR),
+            LearnModule("reading", "Reading", "Practice comprehension with structured articles and vocabulary support.", "Articles · Comprehension", LearningModule.READING),
+            LearnModule("listening", "Listening", "Train comprehension with dialogues, transcripts, and questions.", "Dialogues · Dictation", LearningModule.LISTENING),
         )
         Column(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(DashboardSpacing.xl),
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
         ) {
-            DashboardPageHeader("Learn", "Choose a skill area and continue through your offline curriculum.")
+            FluentPageHeader(
+                title = "Learn",
+                module = LearningModule.LEARN,
+                eyebrow = "Offline curriculum · A2 → C2",
+                subtitle = "Choose a skill area and continue through your offline curriculum.",
+            )
+            FluentSectionTitle(
+                title = "Skill areas",
+                emoji = "🧭",
+                subtitle = "Every module works without internet",
+                accent = LearningModule.LEARN.accent,
+            )
             modules.chunked(columns).forEach { rowItems ->
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md), verticalAlignment = Alignment.Top) {
+                Row(
+                    Modifier.fillMaxWidth().height(IntrinsicSize.Min),
+                    horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md),
+                ) {
                     rowItems.forEach { module ->
-                        ModuleCard(module, { onOpenModule(module.id) }, Modifier.weight(1f))
+                        ModuleCard(module, { onOpenModule(module.id) }, Modifier.weight(1f).fillMaxHeight())
                     }
                     repeat(columns - rowItems.size) { Spacer(Modifier.weight(1f)) }
                 }
@@ -132,15 +154,26 @@ private fun LearnLanding(modifier: Modifier, onOpenModule: (String) -> Unit) {
 
 @Composable
 private fun ModuleCard(module: LearnModule, onClick: () -> Unit, modifier: Modifier = Modifier) {
-    DashboardCard(modifier.clickable(onClick = onClick)) {
-        Box(Modifier.size(52.dp).background(module.tint, CircleShape), contentAlignment = Alignment.Center) {
-            Icon(module.icon, null, tint = DashboardColors.PrimaryPinkDark, modifier = Modifier.size(28.dp))
+    FluentSurfaceCard(modifier = modifier, onClick = onClick, contentPadding = PaddingValues(0.dp), contentSpacing = 0.dp) {
+        Box(
+            Modifier
+                .fillMaxWidth()
+                .height(112.dp)
+                .background(module.identity.heroBrush),
+        ) {
+            DecorativeBackdrop(accent = module.identity.accent, modifier = Modifier.matchParentSize())
+            ModuleIconTile(module = module.identity, size = 56.dp, modifier = Modifier.align(Alignment.CenterStart).padding(start = 20.dp))
+            Text(module.identity.emoji, fontSize = 52.sp, modifier = Modifier.align(Alignment.CenterEnd).padding(end = 20.dp))
         }
-        Text(module.title, color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle)
-        Text(module.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text("Open ${module.title}", color = DashboardColors.PrimaryPinkDark, style = DashboardTypography.Button, modifier = Modifier.weight(1f))
-            Icon(Icons.Rounded.ArrowForward, null, tint = DashboardColors.PrimaryPinkDark)
+        Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text(module.title, color = DashboardColors.TextPrimary, style = DashboardTypography.SectionTitle)
+            Text(module.highlights, color = module.identity.accent, style = DashboardTypography.Caption)
+            Text(module.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
+            Spacer(Modifier.height(4.dp))
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("Open ${module.title}", color = module.identity.accent, style = DashboardTypography.Button, modifier = Modifier.weight(1f))
+                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = module.identity.accent)
+            }
         }
     }
 }
@@ -163,6 +196,6 @@ private data class LearnModule(
     val id: String,
     val title: String,
     val description: String,
-    val icon: ImageVector,
-    val tint: Color,
+    val highlights: String,
+    val identity: LearningModule,
 )

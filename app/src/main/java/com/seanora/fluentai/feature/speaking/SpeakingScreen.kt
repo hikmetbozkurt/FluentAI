@@ -75,6 +75,12 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.compose.ui.unit.sp
+import com.seanora.fluentai.core.designsystem.dashboard.LingoPinkFluentColors
+import com.seanora.fluentai.core.designsystem.dashboard.DashboardTypography
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.ai.live.VoiceUiState
@@ -92,6 +98,7 @@ import com.seanora.fluentai.core.designsystem.dashboard.DashboardDimensions
 import com.seanora.fluentai.core.designsystem.theme.FluentColors
 import com.seanora.fluentai.core.designsystem.theme.FluentTheme
 import com.seanora.fluentai.core.designsystem.theme.LocalFluentColors
+import com.seanora.fluentai.core.model.AnalysisSource
 import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingGrammarObservation
@@ -129,6 +136,9 @@ fun SpeakingScreen(
 
     DisposableEffect(lifecycleOwner) {
         val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_STOP) {
+                viewModel.onScreenHidden()
+            }
             if (event == Lifecycle.Event.ON_RESUME) {
                 val hasPermission = ContextCompat.checkSelfPermission(
                     context,
@@ -252,23 +262,7 @@ fun SpeakingScreenContent(
     onDismissError: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val lightColors = FluentColors(
-        surfaceBase = DashboardColors.BackgroundPrimary,
-        surfaceCard = DashboardColors.Surface,
-        surfaceElevated = DashboardColors.SurfacePink,
-        surfaceBorder = DashboardColors.BorderSoft,
-        surfaceHighlight = DashboardColors.PrimaryPinkLight,
-        accentPrimary = DashboardColors.PrimaryPink,
-        accentSecondary = DashboardColors.PrimaryPinkDark,
-        accentGlow = DashboardColors.PrimaryPink.copy(alpha = 0.18f),
-        accentGradient = Brush.horizontalGradient(
-            listOf(DashboardColors.PrimaryPink, DashboardColors.PrimaryPinkDark)
-        ),
-        textPrimary = DashboardColors.TextPrimary,
-        textSecondary = DashboardColors.TextSecondary,
-        textMuted = DashboardColors.TextSecondary.copy(alpha = 0.78f)
-    )
-    CompositionLocalProvider(LocalFluentColors provides lightColors) {
+    CompositionLocalProvider(LocalFluentColors provides LingoPinkFluentColors) {
         when {
             uiState.isReportVisible -> {
                 SpeakingPostSessionReportView(
@@ -321,9 +315,6 @@ fun SpeakingScreenContent(
     }
 }
 
-/**
- * Catalog browser for Speaking Scenarios across 8 categories with correction mode selector.
- */
 @Composable
 private fun SpeakingScenarioCatalogView(
     uiState: SpeakingUiState,
@@ -344,12 +335,13 @@ private fun SpeakingScenarioCatalogView(
             .padding(FluentTheme.spacing.screenHorizontal),
         verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sectionSpacing),
     ) {
-        LightSectionHeader(
+        FluentPageHeader(
             title = "Live Speaking Coach",
+            module = LearningModule.SPEAKING,
+            eyebrow = "Real-time AI conversation",
             subtitle = "Targeted spoken English scenarios with real-time coaching, L1 trap defense, and structured feedback."
         )
 
-        // Error Banner
         if (uiState.errorMessage != null) {
             val context = LocalContext.current
             val isPermanentlyDenied = uiState.isPermissionError && uiState.errorMessage.contains("Settings", ignoreCase = true)
@@ -361,7 +353,7 @@ private fun SpeakingScenarioCatalogView(
                     verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)
                 ) {
                     Text(
-                        text = if (isPermanentlyDenied) "Microphone Access Blocked" else "Live Session Notice",
+                        text = if (isPermanentlyDenied) "🎙️🚫 Microphone Access Blocked" else "⚠️ Live Session Notice",
                         style = FluentTheme.typography.titleMedium,
                         color = FluentTheme.colors.error
                     )
@@ -396,12 +388,12 @@ private fun SpeakingScenarioCatalogView(
             }
         }
 
-        // Correction Mode Selector Section
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)) {
-            Text(
-                text = "Correction Mode",
-                style = FluentTheme.typography.titleMedium,
-                color = DashboardColors.TextPrimary
+            FluentSectionTitle(
+                title = "Correction Mode",
+                emoji = "🎚️",
+                subtitle = "How strictly the coach corrects you while you talk",
+                accent = LearningModule.SPEAKING.accent
             )
             Row(
                 modifier = Modifier
@@ -421,12 +413,12 @@ private fun SpeakingScenarioCatalogView(
             }
         }
 
-        // Category Filter Chips
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)) {
-            Text(
-                text = "Category Filter",
-                style = FluentTheme.typography.titleMedium,
-                color = DashboardColors.TextPrimary
+            FluentSectionTitle(
+                title = "Category Filter",
+                emoji = "🗂️",
+                subtitle = "Pick the kind of conversation you want",
+                accent = LearningModule.SPEAKING.accent
             )
             Row(
                 modifier = Modifier
@@ -435,13 +427,13 @@ private fun SpeakingScenarioCatalogView(
                 horizontalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)
             ) {
                 FilterPill(
-                    label = "All Scenarios",
+                    label = "✨ All Scenarios",
                     isSelected = (uiState.selectedCategory == null),
                     onClick = { onSelectCategory(null) }
                 )
                 SpeakingCategory.entries.forEach { cat ->
                     FilterPill(
-                        label = cat.displayName,
+                        label = "${cat.emoji} ${cat.displayName}",
                         isSelected = (uiState.selectedCategory == cat),
                         onClick = { onSelectCategory(cat) }
                     )
@@ -449,7 +441,6 @@ private fun SpeakingScenarioCatalogView(
             }
         }
 
-        // CEFR Level Filter Chips
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -470,10 +461,11 @@ private fun SpeakingScenarioCatalogView(
             }
         }
 
-        // Scenarios List
-        LightSectionHeader(
+        FluentSectionTitle(
             title = "Curriculum Scenarios (${uiState.filteredScenarios.size})",
-            subtitle = "Select a scenario to start real-time conversation."
+            emoji = "🎬",
+            subtitle = "Select a scenario to start real-time conversation.",
+            accent = LearningModule.SPEAKING.accent
         )
 
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.md)) {
@@ -493,13 +485,13 @@ private fun LightSectionHeader(title: String, subtitle: String? = null) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Text(
             text = title,
-            style = FluentTheme.typography.titleLarge,
+            style = DashboardTypography.PageTitle,
             color = DashboardColors.TextPrimary
         )
         if (subtitle != null) {
             Text(
                 text = subtitle,
-                style = FluentTheme.typography.bodyMedium,
+                style = DashboardTypography.Subtitle,
                 color = DashboardColors.TextSecondary
             )
         }
@@ -517,7 +509,7 @@ private fun LightSpeakSurface(
         modifier = modifier
             .clip(shape)
             .background(background)
-            .border(1.dp, DashboardColors.BorderSoft, shape)
+            .border(1.5.dp, DashboardColors.BorderSoft, shape)
             .padding(FluentTheme.spacing.cardInternal)
     ) {
         content()
@@ -586,7 +578,7 @@ private fun ModeCard(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = mode.displayName,
+                    text = "${mode.emoji} ${mode.displayName}",
                     style = FluentTheme.typography.titleMedium,
                     color = if (isSelected) DashboardColors.PrimaryPinkDark else DashboardColors.TextPrimary
                 )
@@ -621,7 +613,7 @@ private fun GaladrielPresetCard(onClick: () -> Unit) {
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)) {
             Text(
-                text = "Galadriel",
+                text = "🧝‍♀️ Galadriel",
                 style = FluentTheme.typography.titleMedium,
                 color = DashboardColors.TextPrimary
             )
@@ -659,7 +651,8 @@ private fun GaladrielFreeTalkStartView(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.lg)
         ) {
-            LightSectionHeader(title = "Galadriel", subtitle = "Free Talk")
+            Text("🧝‍♀️", fontSize = 72.sp)
+            LightSectionHeader(title = "Galadriel", subtitle = "Free Talk · your English-speaking friend")
             LightSpeakSurface(modifier = Modifier.fillMaxWidth()) {
                 Column(
                     modifier = Modifier.fillMaxWidth(),
@@ -747,7 +740,7 @@ private fun ScenarioCard(
                             .padding(horizontal = 8.dp, vertical = 2.dp)
                     ) {
                         Text(
-                            text = scenario.category.displayName,
+                            text = "${scenario.category.emoji} ${scenario.category.displayName}",
                             style = FluentTheme.typography.labelSmall,
                             color = DashboardColors.PrimaryPinkDark
                         )
@@ -755,7 +748,7 @@ private fun ScenarioCard(
                 }
 
                 Text(
-                    text = "Recommended: ${scenario.recommendedCorrectionMode.displayName}",
+                    text = "Recommended: ${scenario.recommendedCorrectionMode.emoji} ${scenario.recommendedCorrectionMode.displayName}",
                     style = FluentTheme.typography.labelSmall,
                     color = DashboardColors.TextSecondary
                 )
@@ -775,7 +768,7 @@ private fun ScenarioCard(
 
             if (scenario.suggestedStarterPhrases.isNotEmpty()) {
                 Text(
-                    text = "Starter: \"${scenario.suggestedStarterPhrases.first()}\"",
+                    text = "💡 Starter: \"${scenario.suggestedStarterPhrases.first()}\"",
                     style = FluentTheme.typography.bodySmall,
                     color = DashboardColors.TextSecondary
                 )
@@ -786,7 +779,7 @@ private fun ScenarioCard(
                 horizontalArrangement = Arrangement.End
             ) {
                 SpeakButton(
-                    text = "Start Session (${selectedMode.displayName})",
+                    text = "🎙️ Start Session (${selectedMode.displayName})",
                     primary = true,
                     onClick = onStart
                 )
@@ -795,9 +788,6 @@ private fun ScenarioCard(
     }
 }
 
-/**
- * Post-Session Analysis Report View per Phase 6 requirements.
- */
 @Composable
 private fun SpeakingPostSessionReportView(
     uiState: SpeakingUiState,
@@ -878,7 +868,6 @@ private fun SpeakingPostSessionReportView(
             .padding(FluentTheme.spacing.screenHorizontal),
         verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.md)
     ) {
-        // Report Header
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
@@ -886,20 +875,24 @@ private fun SpeakingPostSessionReportView(
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)) {
                 Text(
-                    text = "Speaking Session Analysis",
-                    style = FluentTheme.typography.headlineMedium,
+                    text = "📝 Speaking Session Analysis",
+                    style = DashboardTypography.PageTitle,
                     color = FluentTheme.colors.textPrimary
                 )
                 Text(
-                    text = "${analysis.scenarioTitle} • ${analysis.durationSeconds}s • ${analysis.turnsCount} turns",
-                    style = FluentTheme.typography.bodyMedium,
+                    text = "${analysis.scenarioTitle} • ⏱️ ${analysis.durationSeconds}s • 🗣️ ${analysis.turnsCount} turns",
+                    style = DashboardTypography.Subtitle,
                     color = FluentTheme.colors.textSecondary
+                )
+                Text(
+                    text = analysis.source.badgeLabel(),
+                    style = DashboardTypography.Caption,
+                    color = LearningModule.SPEAKING.accent
                 )
             }
             LevelBadge(level = parseCefrLevel(analysis.estimatedTurnCefr))
         }
 
-        // Scores Overview Card
         FluentCard(
             modifier = Modifier.fillMaxWidth(),
             variant = CardVariant.AccentOutlined
@@ -934,7 +927,6 @@ private fun SpeakingPostSessionReportView(
                 .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.md)
         ) {
-            // Strengths Section
             if (analysis.strengths.isNotEmpty()) {
             FluentCard(
                 modifier = Modifier.fillMaxWidth(),
@@ -959,7 +951,6 @@ private fun SpeakingPostSessionReportView(
             }
             }
 
-        // Grammar Observations & L1 Traps Section
             if (analysis.grammarObservations.isNotEmpty()) {
             SectionHeader(
                 title = "Grammar & Turkish L1 Traps (${analysis.grammarObservations.size})",
@@ -970,7 +961,6 @@ private fun SpeakingPostSessionReportView(
             }
             }
 
-        // Vocabulary Observations & Upgrades
             if (analysis.vocabularyObservations.isNotEmpty()) {
             SectionHeader(
                 title = "Executive Vocabulary Upgrades (${analysis.vocabularyObservations.size})",
@@ -981,7 +971,6 @@ private fun SpeakingPostSessionReportView(
             }
             }
 
-        // Natural Reformulations
             if (analysis.naturalAlternatives.isNotEmpty()) {
             SectionHeader(
                 title = "Natural Alternatives",
@@ -1013,7 +1002,6 @@ private fun SpeakingPostSessionReportView(
             }
             }
 
-        // Suggested Practice Section
             if (analysis.suggestedPractice.isNotEmpty()) {
             SectionHeader(
                 title = "Suggested Next Practice",
@@ -1059,7 +1047,6 @@ private fun SpeakingPostSessionReportView(
             }
         }
 
-        // Bottom Actions
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -1788,4 +1775,9 @@ private fun parseCefrLevel(levelStr: String): CefrLevel {
     } catch (_: Exception) {
         CefrLevel.B2
     }
+}
+
+private fun AnalysisSource.badgeLabel(): String = when (this) {
+    AnalysisSource.AI_MODEL -> "🤖 Analyzed by Gemini"
+    AnalysisSource.OFFLINE_RULES -> "🧮 Offline rule-based analysis"
 }

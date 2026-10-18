@@ -1,5 +1,7 @@
 package com.seanora.fluentai.feature.speaking
 
+import com.seanora.fluentai.core.common.transaction.ImmediateTransactionRunner
+import com.seanora.fluentai.data.repository.SpeakingSessionRepositoryImpl
 import com.seanora.fluentai.ai.analysis.MockSpeakingAnalysisClient
 import com.seanora.fluentai.ai.live.LiveCoachSessionManager
 import com.seanora.fluentai.ai.live.LiveScenarioConfig
@@ -122,7 +124,11 @@ class SpeakingViewModelTest {
         val masteryEngine = MasteryEngine()
         val mistakeEngine = MistakeEngine()
         val recordUseCase = RecordLearningEvidenceUseCase(fakeUserRepo, masteryEngine, mistakeEngine)
-        val processAnalysisUseCase = ProcessSpeakingAnalysisUseCase(recordUseCase, fakeSpeakingSessionDao)
+        val processAnalysisUseCase = ProcessSpeakingAnalysisUseCase(
+            recordUseCase,
+            SpeakingSessionRepositoryImpl(fakeSpeakingSessionDao),
+            ImmediateTransactionRunner
+        )
 
         val vm = SpeakingViewModel(
             sessionManager = sessionManager,

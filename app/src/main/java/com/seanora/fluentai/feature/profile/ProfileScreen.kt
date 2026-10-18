@@ -35,6 +35,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
 import com.seanora.fluentai.core.designsystem.components.ButtonVariant
 import com.seanora.fluentai.core.designsystem.components.FluentButton
 import com.seanora.fluentai.core.designsystem.dashboard.*
@@ -207,7 +210,12 @@ private fun ProfileContent(viewModel: ProfileViewModel) {
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(DashboardSpacing.xl),
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
         ) {
-            DashboardPageHeader("Learning Profile", "Your goals and skill-level estimates in one place.")
+            FluentPageHeader(
+                title = "Learning Profile",
+                module = LearningModule.PROFILE,
+                eyebrow = "You",
+                subtitle = "Your goals and skill-level estimates in one place.",
+            )
 
             DashboardCard(Modifier.fillMaxWidth()) {
                 Row(
@@ -266,10 +274,10 @@ private fun ProfileContent(viewModel: ProfileViewModel) {
             }
 
             ResponsiveMetrics(summary, columns)
-            DashboardHeader(Icons.Rounded.ShowChart, "Skill Levels", "Each skill is estimated independently")
+            FluentSectionTitle(title = "Skill Levels", emoji = "🎯", subtitle = "Each skill is estimated independently", accent = LearningModule.PROFILE.accent)
             ResponsiveMetrics(skills, columns)
             DashboardCard(Modifier.fillMaxWidth()) {
-                DashboardHeader(Icons.Rounded.FavoriteBorder, "Learning Interests", "Topics used to personalize practice")
+                FluentSectionTitle(title = "Learning Interests", emoji = "💡", subtitle = "Topics used to personalize practice", accent = LearningModule.PROFILE.accent)
                 Text(
                     profile?.learningInterests?.joinToString()?.ifBlank { "No interests selected" } ?: "No interests selected",
                     color = DashboardColors.TextPrimary,

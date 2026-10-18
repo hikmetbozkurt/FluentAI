@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.reading
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.core.model.LearningEvidence
@@ -78,7 +79,7 @@ class ReadingViewModel @Inject constructor(
             errorMessage = null
         )
     }.catch { throwable ->
-        android.util.Log.e("ReadingViewModel", "Failed to load reading articles", throwable)
+        AppLog.e("ReadingViewModel", throwable) { "Failed to load reading articles" }
         emit(
             ReadingUiState(
                 isLoading = false,

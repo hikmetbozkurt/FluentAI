@@ -37,7 +37,7 @@ class MockLiveAiClientTest {
     }
 
     @Test
-    fun sendBargeInInterrupt_emitsInterruptedEvent() = runTest {
+    fun interruptModelTurn_emitsInterruptedEvent() = runTest {
         val testDispatcher = StandardTestDispatcher(testScheduler)
         val client = MockLiveAiClient(dispatcher = testDispatcher).apply {
             speechDelayMs = 1000L // slow speech so we can interrupt
@@ -50,7 +50,7 @@ class MockLiveAiClientTest {
         )
 
         client.connect(config)
-        client.sendBargeInInterrupt()
+        client.interruptModelTurn()
 
         advanceUntilIdle()
         // Client should have handled interruption without error

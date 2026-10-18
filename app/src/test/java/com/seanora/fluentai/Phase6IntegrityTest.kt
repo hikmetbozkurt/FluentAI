@@ -1,5 +1,7 @@
 package com.seanora.fluentai
 
+import com.seanora.fluentai.core.common.transaction.ImmediateTransactionRunner
+import com.seanora.fluentai.data.repository.SpeakingSessionRepositoryImpl
 import com.seanora.fluentai.ai.analysis.MockSpeakingAnalysisClient
 import com.seanora.fluentai.ai.live.LiveCoachSessionManager
 import com.seanora.fluentai.ai.live.MockLiveAiClient
@@ -265,7 +267,8 @@ class Phase6IntegrityTest {
         )
         processSpeakingAnalysisUseCase = ProcessSpeakingAnalysisUseCase(
             recordLearningEvidenceUseCase = recordLearningEvidenceUseCase,
-            speakingSessionDao = speakingSessionDao
+            speakingSessionRepository = SpeakingSessionRepositoryImpl(speakingSessionDao),
+            transactionRunner = ImmediateTransactionRunner
         )
         promptBuilder = SpeakingPromptBuilder()
         analysisClient = MockSpeakingAnalysisClient()

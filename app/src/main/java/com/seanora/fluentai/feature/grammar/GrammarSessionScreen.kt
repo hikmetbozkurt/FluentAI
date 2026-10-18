@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.app.navigation.GrammarSessionMode
 import com.seanora.fluentai.app.navigation.GrammarSessionSection
 import com.seanora.fluentai.core.designsystem.components.DetailSectionSelector
@@ -81,8 +82,8 @@ fun GrammarSessionScreen(
 
     Surface(modifier.fillMaxSize(), color = DashboardColors.BackgroundPrimary, contentColor = DashboardColors.TextPrimary) {
     Column(Modifier.fillMaxSize().padding(horizontal = 30.dp, vertical = 22.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back") }
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+            FluentBackButton(onClick = onNavigateBack, label = "Back")
             Column(Modifier.weight(1f)) {
                 Text(lesson?.let { "${it.cefrLevel} · ${it.category.humanize()}" } ?: "Grammar", color = DashboardColors.PrimaryPinkDark)
                 Text(lesson?.title ?: if (lessonState.isLoading) "Loading lesson…" else "Lesson unavailable", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)

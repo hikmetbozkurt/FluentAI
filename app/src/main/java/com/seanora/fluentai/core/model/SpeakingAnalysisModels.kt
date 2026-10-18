@@ -2,11 +2,6 @@ package com.seanora.fluentai.core.model
 
 import kotlinx.serialization.Serializable
 
-/**
- * Structured post-session analysis produced after a live speaking conversation.
- * Per Phase 6 requirements: strengths, grammar observations, vocabulary observations,
- * natural alternatives, and suggested practice.
- */
 @Serializable
 data class SpeakingSessionAnalysis(
     val id: String,
@@ -18,16 +13,24 @@ data class SpeakingSessionAnalysis(
     val turnsCount: Int,
     val overallFeedback: String,
     val estimatedTurnCefr: String,
-    val fluencyScore: Float, // 0.0 to 1.0
-    val vocabularyScore: Float, // 0.0 to 1.0
-    val grammarScore: Float, // 0.0 to 1.0
-    val coherenceScore: Float, // 0.0 to 1.0
+    val fluencyScore: Float,
+    val vocabularyScore: Float,
+    val grammarScore: Float,
+    val coherenceScore: Float,
     val strengths: List<String> = emptyList(),
     val grammarObservations: List<SpeakingGrammarObservation> = emptyList(),
     val vocabularyObservations: List<SpeakingVocabObservation> = emptyList(),
     val naturalAlternatives: List<NaturalAlternative> = emptyList(),
-    val suggestedPractice: List<SuggestedPracticeItem> = emptyList()
+    val suggestedPractice: List<SuggestedPracticeItem> = emptyList(),
+    val source: AnalysisSource = AnalysisSource.OFFLINE_RULES,
+    val promptVersion: String? = null
 )
+
+@Serializable
+enum class AnalysisSource {
+    AI_MODEL,
+    OFFLINE_RULES
+}
 
 @Serializable
 data class SpeakingGrammarObservation(
@@ -62,6 +65,6 @@ data class NaturalAlternative(
 data class SuggestedPracticeItem(
     val title: String,
     val description: String,
-    val domain: String, // "grammar", "vocabulary", "review", "speaking"
+    val domain: String,
     val contentId: String? = null
 )

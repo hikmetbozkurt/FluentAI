@@ -166,8 +166,9 @@ class Phase1IntegrityTest {
             vm.uiState.collect()
         }
         testScheduler.advanceUntilIdle()
+        vm.selectItem(vm.uiState.value.items.first())
+        testScheduler.advanceUntilIdle()
 
-        // 1. Initial view: Turkish meaning must NOT be revealed (ADR-009)
         val initial = vm.uiState.value
         assertEquals("consensus", initial.selectedItem?.headword)
         assertFalse("Turkish meaning must be hidden initially to reinforce English immersion", initial.isTurkishRevealed)
@@ -184,6 +185,8 @@ class Phase1IntegrityTest {
         backgroundScope.launch(UnconfinedTestDispatcher(testScheduler)) {
             vm.uiState.collect()
         }
+        testScheduler.advanceUntilIdle()
+        vm.selectLesson(vm.uiState.value.lessons.first())
         testScheduler.advanceUntilIdle()
 
         val initial = vm.uiState.value

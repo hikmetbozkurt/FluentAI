@@ -18,9 +18,12 @@ object DashboardColors {
     val PrimaryPink = Color(0xFFEC4C92)
     val PrimaryPinkDark = Color(0xFFC92F76)
     val PrimaryPinkLight = Color(0xFFF9A8CB)
-    val TextPrimary = Color(0xFF352A32)
-    val TextSecondary = Color(0xFF756871)
-    val BorderSoft = Color(0xFFF3DCE6)
+    val TextPrimary = Color(0xFF2A1F27)
+    val TextSecondary = Color(0xFF65555F)
+    val TextMuted = Color(0xFF8C7C86)
+    val BorderSoft = Color(0xFFEDD2DE)
+    val BorderStrong = Color(0xFFE0B3C7)
+    val CardShadow = Color(0x339C2A5E)
     val ProgressTrack = Color(0xFFF6DEE8)
     val PurplePastel = Color(0xFFF0E8FF)
     val PeachPastel = Color(0xFFFFEBDD)
@@ -47,18 +50,20 @@ val LingoPinkFluentColors = FluentColors(
     textMuted = DashboardColors.TextSecondary.copy(alpha = 0.78f),
 )
 
-/** Keeps custom Fluent tokens and Material component colors on the same light palette. */
 @Composable
 fun LingoPinkTheme(content: @Composable () -> Unit) {
     FluentTheme(colors = LingoPinkFluentColors, content = content)
 }
 
 object DashboardTypography {
-    val Display = TextStyle(fontSize = 28.sp, lineHeight = 34.sp, fontWeight = FontWeight.Bold)
-    val PageTitle = TextStyle(fontSize = 22.sp, lineHeight = 28.sp, fontWeight = FontWeight.Bold)
+    val Display = TextStyle(fontSize = 32.sp, lineHeight = 38.sp, fontWeight = FontWeight.ExtraBold, letterSpacing = (-0.5).sp)
+    val PageTitle = TextStyle(fontSize = 24.sp, lineHeight = 30.sp, fontWeight = FontWeight.ExtraBold)
+    val Eyebrow = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.2.sp)
+    val Subtitle = TextStyle(fontSize = 15.sp, lineHeight = 22.sp, fontWeight = FontWeight.Medium)
+    val SectionTitle = TextStyle(fontSize = 19.sp, lineHeight = 24.sp, fontWeight = FontWeight.ExtraBold)
     val CardTitle = TextStyle(fontSize = 17.sp, lineHeight = 22.sp, fontWeight = FontWeight.Bold)
-    val Body = TextStyle(fontSize = 13.sp, lineHeight = 19.sp)
-    val Caption = TextStyle(fontSize = 11.sp, lineHeight = 15.sp)
+    val Body = TextStyle(fontSize = 14.sp, lineHeight = 20.sp)
+    val Caption = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Medium)
     val Button = TextStyle(fontSize = 14.sp, lineHeight = 18.sp, fontWeight = FontWeight.SemiBold)
     val Numeric = TextStyle(fontSize = 36.sp, lineHeight = 40.sp, fontWeight = FontWeight.Bold)
 }

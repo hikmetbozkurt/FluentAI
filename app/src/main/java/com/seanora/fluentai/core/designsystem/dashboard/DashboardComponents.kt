@@ -44,7 +44,7 @@ fun DashboardPageHeader(
         verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
     ) {
         Text(title, color = DashboardColors.TextPrimary, style = DashboardTypography.Display)
-        Text(subtitle, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
+        Text(subtitle, color = DashboardColors.TextSecondary, style = DashboardTypography.Subtitle)
     }
 }
 
@@ -57,10 +57,10 @@ fun DashboardCard(
     content: @Composable ColumnScope.() -> Unit,
 ) {
     Card(
-        modifier = modifier.border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(DashboardDimensions.CardRadius)),
+        modifier = modifier.border(1.5.dp, DashboardColors.BorderSoft, RoundedCornerShape(DashboardDimensions.CardRadius)),
         shape = RoundedCornerShape(DashboardDimensions.CardRadius),
         colors = CardDefaults.cardColors(containerColor = background),
-        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
     ) {
         Column(
             modifier = Modifier.padding(contentPadding),
@@ -81,43 +81,48 @@ fun DashboardHeader(
     Row(modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
         Box(
             modifier = Modifier
-                .size(24.dp)
-                .clip(CircleShape)
-                .background(DashboardColors.PrimaryPinkLight.copy(alpha = 0.22f)),
+                .size(36.dp)
+                .clip(RoundedCornerShape(12.dp))
+                .background(DashboardColors.PrimaryPinkLight.copy(alpha = 0.28f)),
             contentAlignment = Alignment.Center,
         ) {
             Icon(
                 icon,
                 contentDescription = null,
-                tint = DashboardColors.PrimaryPink,
-                modifier = Modifier.size(14.dp),
+                tint = DashboardColors.PrimaryPinkDark,
+                modifier = Modifier.size(20.dp),
             )
         }
-        Column(Modifier.weight(1f).padding(start = 8.dp)) {
+        Column(Modifier.weight(1f).padding(start = 12.dp)) {
             Text(
                 title,
                 color = DashboardColors.TextPrimary,
-                fontSize = 13.sp,
-                fontWeight = FontWeight.Bold,
-                lineHeight = 17.sp,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.ExtraBold,
+                lineHeight = 20.sp,
             )
             if (subtitle != null) {
                 Text(
                     subtitle,
                     color = DashboardColors.TextSecondary,
-                    fontSize = 10.sp,
-                    maxLines = 1,
+                    fontSize = 12.5.sp,
+                    lineHeight = 16.sp,
+                    maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
                 )
             }
         }
         if (action != null) {
             Text(
-                action,
+                "$action →",
                 color = DashboardColors.PrimaryPinkDark,
-                fontSize = 10.sp,
-                fontWeight = FontWeight.SemiBold,
-                modifier = if (onActionClick != null) Modifier.clickable(onClick = onActionClick) else Modifier,
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier
+                    .clip(RoundedCornerShape(50))
+                    .background(DashboardColors.SurfacePink)
+                    .then(if (onActionClick != null) Modifier.clickable(onClick = onActionClick) else Modifier)
+                    .padding(horizontal = 10.dp, vertical = 6.dp),
             )
         }
     }

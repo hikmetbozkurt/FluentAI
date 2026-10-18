@@ -1,6 +1,8 @@
 package com.seanora.fluentai.feature.reading
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -34,6 +36,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.seanora.fluentai.core.designsystem.kit.FluentActionTile
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.app.navigation.ReadingSessionMode
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardCard
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
@@ -72,18 +78,20 @@ private fun ReadingHomeContent(
             return@Box
         }
         Column(
-            modifier = Modifier.fillMaxSize().padding(DashboardDimensions.PagePadding),
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(DashboardDimensions.PagePadding),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                IconButton(onClick = onNavigateBack) {
-                    Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Learn", tint = DashboardColors.PrimaryPinkDark)
-                }
-                Column(Modifier.weight(1f)) {
-                    Text("Reading", style = FluentTheme.typography.headlineLarge, color = DashboardColors.TextPrimary, fontWeight = FontWeight.Bold)
-                    Text("Build academic reading comprehension through real texts.", style = FluentTheme.typography.bodyMedium, color = DashboardColors.TextSecondary)
-                }
-            }
+            FluentPageHeader(
+                title = "Reading",
+                module = LearningModule.READING,
+                eyebrow = "Learn · Reading",
+                subtitle = "Build academic reading comprehension through real texts.",
+                onBack = onNavigateBack,
+                backLabel = "Learn",
+            )
             if (primary != null) {
                 PrimaryReadingCard(
                     label = if (state.continueArticle != null) "Continue Reading" else "Recommended Reading",
@@ -91,9 +99,14 @@ private fun ReadingHomeContent(
                     onClick = { onOpenArticle(primary.id, ReadingSessionMode.STANDARD) },
                 )
             } else {
-                CompactEntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Find your next article", "Browse the Reading Library", onClick = onOpenLibrary)
+                CompactEntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Find your next article", "Browse the Reading Library", onClick = onOpenLibrary, emoji = "🔎")
             }
-            Text("Today’s Reading", style = FluentTheme.typography.titleMedium, color = DashboardColors.TextPrimary, fontWeight = FontWeight.SemiBold)
+            FluentSectionTitle(
+                title = "Today’s Reading",
+                emoji = "📅",
+                subtitle = "A fresh article picked for your level",
+                accent = LearningModule.READING.accent,
+            )
             state.dailyArticle?.let { article ->
                 CompactEntryCard(
                     Icons.Rounded.AutoStories,
@@ -103,7 +116,7 @@ private fun ReadingHomeContent(
                 )
             }
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                CompactEntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Browse Articles", "Explore the complete Reading Library", onClick = onOpenLibrary, modifier = Modifier.weight(1f))
+                CompactEntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Browse Articles", "Explore the complete Reading Library", onClick = onOpenLibrary, modifier = Modifier.weight(1f), emoji = "🗂️")
                 val skillItem = state.currentSkillItem
                 CompactEntryCard(
                     Icons.AutoMirrored.Rounded.FactCheck,
@@ -111,6 +124,7 @@ private fun ReadingHomeContent(
                     if (skillItem == null) "No tagged skill practice is available" else "Comprehension in article context",
                     onClick = { if (skillItem != null) showSkills = !showSkills },
                     modifier = Modifier.weight(1f),
+                    emoji = "🏋️",
                 )
             }
             if (showSkills) {
@@ -131,10 +145,10 @@ private fun ReadingHomeContent(
                     "Recommended review",
                     weak.article.title,
                     onClick = { onOpenArticle(weak.article.id, ReadingSessionMode.STANDARD) },
-                    background = DashboardColors.SurfacePink,
+                    emoji = "🎯",
+                    emphasized = true,
                 )
             }
-            Spacer(Modifier.weight(1f))
         }
     }
 }
@@ -142,7 +156,7 @@ private fun ReadingHomeContent(
 @Composable
 private fun PrimaryReadingCard(label: String, article: ReadingArticle, onClick: () -> Unit) {
     DashboardCard(Modifier.fillMaxWidth().height(196.dp).clickable(onClick = onClick), background = DashboardColors.PrimaryPink) {
-        Text(label, style = FluentTheme.typography.labelLarge, color = Color.White.copy(alpha = .88f))
+        Text("📖  $label", style = FluentTheme.typography.labelLarge, color = Color.White.copy(alpha = .92f))
         Text(article.title, style = FluentTheme.typography.headlineLarge, color = Color.White, fontWeight = FontWeight.Bold)
         Text(article.summaryEn, style = FluentTheme.typography.bodyMedium, color = Color.White.copy(alpha = .88f), maxLines = 2)
         Spacer(Modifier.weight(1f))
@@ -163,18 +177,19 @@ private fun CompactEntryCard(
     description: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    background: Color = DashboardColors.Surface,
+    emoji: String = LearningModule.READING.emoji,
+    emphasized: Boolean = false,
 ) {
-    DashboardCard(modifier.clickable(onClick = onClick), background = background) {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            Icon(icon, null, tint = DashboardColors.PrimaryPinkDark)
-            Column(Modifier.weight(1f)) {
-                Text(title, style = FluentTheme.typography.titleSmall, color = DashboardColors.TextPrimary, fontWeight = FontWeight.SemiBold)
-                Text(description, style = FluentTheme.typography.bodySmall, color = DashboardColors.TextSecondary, maxLines = 2)
-            }
-            Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = DashboardColors.PrimaryPinkDark)
-        }
-    }
+    FluentActionTile(
+        title = title,
+        detail = description,
+        module = LearningModule.READING,
+        icon = icon,
+        emoji = emoji,
+        emphasized = emphasized,
+        onClick = onClick,
+        modifier = modifier.fillMaxWidth(),
+    )
 }
 
 private fun articleMeta(article: ReadingArticle) =

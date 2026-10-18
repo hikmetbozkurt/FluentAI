@@ -48,6 +48,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
+import com.seanora.fluentai.core.designsystem.kit.FluentCompactHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.app.navigation.ListeningSessionMode
 import com.seanora.fluentai.core.designsystem.components.ButtonVariant
 import com.seanora.fluentai.core.designsystem.components.FluentButton
@@ -240,15 +243,12 @@ fun ListeningSessionScreen(
 
 @Composable
 private fun SessionHeader(scenario: ListeningScenario, onNavigateBack: () -> Unit) {
-    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        IconButton(onClick = onNavigateBack) {
-            Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back", tint = DashboardColors.PrimaryPinkDark)
-        }
-        Column(Modifier.weight(1f)) {
-            Text(scenario.title, style = DashboardTypography.PageTitle, color = DashboardColors.TextPrimary)
-            Text(scenario.metadataLine(), style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
-        }
-    }
+    FluentCompactHeader(
+        title = scenario.title,
+        module = LearningModule.LISTENING,
+        subtitle = scenario.metadataLine(),
+        onBack = onNavigateBack,
+    )
 }
 
 @Composable
@@ -716,12 +716,7 @@ private fun LibraryRecordingRow(scenario: ListeningScenario, onClick: () -> Unit
 
 @Composable
 private fun ListeningPageHeader(title: String, subtitle: String, onBack: () -> Unit) {
-    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        IconButton(onClick = onBack) {
-            Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back", tint = DashboardColors.PrimaryPinkDark)
-        }
-        DashboardPageHeader(title, subtitle, Modifier.weight(1f))
-    }
+    FluentCompactHeader(title = title, module = LearningModule.LISTENING, subtitle = subtitle, onBack = onBack)
 }
 
 @Composable

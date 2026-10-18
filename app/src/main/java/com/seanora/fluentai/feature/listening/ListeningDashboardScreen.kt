@@ -41,6 +41,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentActionTile
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.app.navigation.ListeningSessionMode
 import com.seanora.fluentai.core.designsystem.components.ButtonVariant
 import com.seanora.fluentai.core.designsystem.components.FluentButton
@@ -82,16 +86,14 @@ fun ListeningDashboardScreen(
             .padding(DashboardDimensions.PagePadding),
         verticalArrangement = Arrangement.spacedBy(DashboardSpacing.lg),
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) {
-                Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Learn", tint = DashboardColors.PrimaryPinkDark)
-            }
-            DashboardPageHeader(
-                title = "Listening",
-                subtitle = "Train your ear for natural academic and professional English.",
-                modifier = Modifier.weight(1f),
-            )
-        }
+        FluentPageHeader(
+            title = "Listening",
+            module = LearningModule.LISTENING,
+            eyebrow = "Learn · Listening",
+            subtitle = "Train your ear for natural academic and professional English.",
+            onBack = onNavigateBack,
+            backLabel = "Learn",
+        )
 
         if (state.isLoading) {
             Box(Modifier.fillMaxWidth().padding(48.dp), contentAlignment = Alignment.Center) {
@@ -166,7 +168,7 @@ fun ListeningDashboardScreen(
                     horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md),
                 ) {
                     Column(Modifier.weight(1f)) {
-                        Text("Needs attention", style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
+                        Text("🎯 Needs attention", style = DashboardTypography.Caption, color = LearningModule.LISTENING.accent)
                         Text(
                             weak.scenario.category.toDisplayLabel(),
                             style = DashboardTypography.CardTitle,
@@ -231,7 +233,7 @@ private fun EditorialRecommendation(
     onClick: () -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(DashboardSpacing.sm)) {
-        Text(title, style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+        FluentSectionTitle(title = title, emoji = "📅", accent = LearningModule.LISTENING.accent)
         Surface(
             color = Color.White,
             shape = RoundedCornerShape(18.dp),
@@ -263,26 +265,14 @@ private fun UtilityAction(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Surface(
-        color = Color.White,
-        shape = RoundedCornerShape(16.dp),
-        modifier = modifier.fillMaxWidth().border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(16.dp)).clickable(onClick = onClick),
-    ) {
-        Row(
-            Modifier.padding(DashboardSpacing.lg),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md),
-        ) {
-            Box(
-                Modifier.size(44.dp).background(DashboardColors.SurfacePink, CircleShape),
-                contentAlignment = Alignment.Center,
-            ) { icon() }
-            Column(Modifier.weight(1f)) {
-                Text(title, style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
-                Text(supporting, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
-            }
-        }
-    }
+    FluentActionTile(
+        title = title,
+        detail = supporting,
+        module = LearningModule.LISTENING,
+        emoji = if (title.startsWith("Browse")) "🗂️" else "🏋️",
+        onClick = onClick,
+        modifier = modifier.fillMaxWidth(),
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)

@@ -1,6 +1,8 @@
 package com.seanora.fluentai.feature.vocabulary
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -28,6 +30,10 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
+import com.seanora.fluentai.core.designsystem.kit.FluentActionTile
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 import com.seanora.fluentai.core.model.VocabularyFeatureState
 
 @Composable
@@ -42,16 +48,25 @@ fun VocabularyDashboardScreen(
     viewModel: VocabularyFeatureViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
-    Column(modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary).padding(32.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Learn", tint = DashboardColors.PrimaryPinkDark) }
-            Column {
-                Text("Vocabulary", fontSize = 32.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text("Build a precise, useful English vocabulary.", color = DashboardColors.TextSecondary)
-            }
-        }
+    Column(
+        modifier
+            .fillMaxSize()
+            .background(DashboardColors.BackgroundPrimary)
+            .verticalScroll(rememberScrollState())
+            .padding(32.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        FluentPageHeader(
+            title = "Vocabulary",
+            module = LearningModule.VOCABULARY,
+            eyebrow = "Learn · Vocabulary",
+            subtitle = "Build a precise, useful English vocabulary.",
+            onBack = onNavigateBack,
+            backLabel = "Learn",
+        )
         state.featureState.resumeDestination?.let {
             VocabularyHomeCard(
+                "⏯️",
                 "Continue Learning",
                 state.featureState.resumeContextLabel(),
                 "Continue",
@@ -61,6 +76,7 @@ fun VocabularyDashboardScreen(
         }
         state.dailyWord?.let { word ->
             VocabularyHomeCard(
+                "🌟",
                 "Word of Day · ${word.headword}",
                 "${word.cefrLevel} · ${word.partOfSpeech}\n${word.definitionEn}",
                 "Explore word",
@@ -68,23 +84,29 @@ fun VocabularyDashboardScreen(
             )
         }
         VocabularyHomeCard(
+            "🧠",
             "Smart Practice",
             "Continue with a focused activity selected from your real review and learning state.",
             "Start practice",
             emphasized = true,
             onClick = onSmartPractice,
         )
-        Text("Explore", fontSize = 18.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+        FluentSectionTitle(
+            title = "Explore",
+            emoji = "🧭",
+            subtitle = "Browse every word or dive into a topic",
+            accent = LearningModule.VOCABULARY.accent,
+        )
         BoxWithConstraints(Modifier.fillMaxWidth()) {
             if (maxWidth < 620.dp) {
                 Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    ExploreAction("Vocabulary Library", "Browse all ${state.allItems.size} words", onOpenLibrary, Modifier.fillMaxWidth())
-                    ExploreAction("Collections", "Explore ${state.collections.size} real topics", onOpenCollections, Modifier.fillMaxWidth())
+                    ExploreAction("🗂️", "Vocabulary Library", "Browse all ${state.allItems.size} words", onOpenLibrary, Modifier.fillMaxWidth())
+                    ExploreAction("🏷️", "Collections", "Explore ${state.collections.size} real topics", onOpenCollections, Modifier.fillMaxWidth())
                 }
             } else {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-                    ExploreAction("Vocabulary Library", "Browse all ${state.allItems.size} words", onOpenLibrary, Modifier.weight(1f))
-                    ExploreAction("Collections", "Explore ${state.collections.size} real topics", onOpenCollections, Modifier.weight(1f))
+                    ExploreAction("🗂️", "Vocabulary Library", "Browse all ${state.allItems.size} words", onOpenLibrary, Modifier.weight(1f))
+                    ExploreAction("🏷️", "Collections", "Explore ${state.collections.size} real topics", onOpenCollections, Modifier.weight(1f))
                 }
             }
         }
@@ -92,29 +114,29 @@ fun VocabularyDashboardScreen(
 }
 
 @Composable
-private fun VocabularyHomeCard(title: String, detail: String, action: String, emphasized: Boolean = false, onClick: () -> Unit) {
-    Surface(Modifier.fillMaxWidth().clickable(onClick = onClick), shape = RoundedCornerShape(20.dp), color = if (emphasized) DashboardColors.SurfacePink else Color.White) {
-        Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-                Text(title, fontSize = if (emphasized) 21.sp else 18.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text(detail, color = DashboardColors.TextSecondary, maxLines = 2)
-            }
-            Text("$action →", fontWeight = FontWeight.Bold, color = DashboardColors.PrimaryPinkDark)
-        }
-    }
+private fun VocabularyHomeCard(emoji: String, title: String, detail: String, action: String, emphasized: Boolean = false, onClick: () -> Unit) {
+    FluentActionTile(
+        title = title,
+        detail = detail,
+        module = LearningModule.VOCABULARY,
+        emoji = emoji,
+        actionLabel = action,
+        emphasized = emphasized,
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+    )
 }
 
 @Composable
-private fun ExploreAction(title: String, detail: String, onClick: () -> Unit, modifier: Modifier) {
-    Surface(modifier.clickable(onClick = onClick), shape = RoundedCornerShape(16.dp), color = Color.White) {
-        Row(Modifier.padding(17.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Text(title, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text(detail, fontSize = 13.sp, color = DashboardColors.TextSecondary)
-            }
-            Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = DashboardColors.PrimaryPinkDark)
-        }
-    }
+private fun ExploreAction(emoji: String, title: String, detail: String, onClick: () -> Unit, modifier: Modifier) {
+    FluentActionTile(
+        title = title,
+        detail = detail,
+        module = LearningModule.VOCABULARY,
+        emoji = emoji,
+        onClick = onClick,
+        modifier = modifier,
+    )
 }
 
 private fun VocabularyFeatureState.resumeContextLabel(): String = when (resumeDestination) {

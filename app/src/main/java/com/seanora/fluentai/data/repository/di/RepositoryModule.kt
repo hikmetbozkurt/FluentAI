@@ -89,4 +89,16 @@ abstract class RepositoryModule {
     abstract fun bindSearchRepository(
         impl: com.seanora.fluentai.data.repository.SearchRepositoryImpl
     ): com.seanora.fluentai.data.repository.SearchRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindSpeakingSessionRepository(
+        impl: com.seanora.fluentai.data.repository.SpeakingSessionRepositoryImpl
+    ): com.seanora.fluentai.data.repository.SpeakingSessionRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindTransactionRunner(
+        impl: com.seanora.fluentai.data.user.RoomUserTransactionRunner
+    ): com.seanora.fluentai.core.common.transaction.TransactionRunner
 }

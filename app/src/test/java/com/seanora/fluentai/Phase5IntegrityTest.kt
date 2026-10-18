@@ -66,7 +66,7 @@ class Phase5IntegrityTest {
             dispatcher = testDispatcher
         )
 
-        val viewModel = SpeakingViewModel(sessionManager)
+        val viewModel = com.seanora.fluentai.feature.speaking.createSpeakingViewModel(sessionManager)
 
         // 1. Initial State: IDLE and inactive
         val initialState = viewModel.uiState.value

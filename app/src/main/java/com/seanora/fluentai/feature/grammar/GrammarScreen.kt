@@ -48,6 +48,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
 import com.seanora.fluentai.core.model.GrammarLesson
 
@@ -70,10 +71,10 @@ fun GrammarLibraryScreen(
     val visibleLessons = state.lessons.filter { category == null || it.category == category }
 
     Column(modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary).padding(28.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Grammar") }
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+            FluentBackButton(onClick = onNavigateBack, label = "Grammar")
             Column(Modifier.weight(1f)) {
-                Text("Grammar Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+                Text("🧩 Grammar Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                 Text("${visibleLessons.size} lessons", color = DashboardColors.TextSecondary)
             }
             OutlinedButton(onClick = { showCompare = true }) {

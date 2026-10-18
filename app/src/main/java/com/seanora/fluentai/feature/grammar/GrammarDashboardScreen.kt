@@ -1,6 +1,8 @@
 package com.seanora.fluentai.feature.grammar
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -44,6 +46,10 @@ import com.seanora.fluentai.app.navigation.GrammarDestination
 import com.seanora.fluentai.app.navigation.GrammarSurface
 import com.seanora.fluentai.app.navigation.resolveGrammarLegacyEntry
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
+import com.seanora.fluentai.core.designsystem.kit.FluentActionTile
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
 
 @Composable
 fun GrammarDashboardScreen(
@@ -61,21 +67,25 @@ fun GrammarDashboardScreen(
     var showPracticeChooser by remember { mutableStateOf(false) }
 
     Column(
-        modifier = modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary).padding(32.dp),
+        modifier = modifier
+            .fillMaxSize()
+            .background(DashboardColors.BackgroundPrimary)
+            .verticalScroll(rememberScrollState())
+            .padding(32.dp),
         verticalArrangement = Arrangement.spacedBy(18.dp),
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) {
-                Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Learn", tint = DashboardColors.PrimaryPinkDark)
-            }
-            Column {
-                Text("Grammar", fontSize = 32.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text("Build accurate, natural English structures.", color = DashboardColors.TextSecondary)
-            }
-        }
+        FluentPageHeader(
+            title = "Grammar",
+            module = LearningModule.GRAMMAR,
+            eyebrow = "Learn · Grammar",
+            subtitle = "Build accurate, natural English structures.",
+            onBack = onNavigateBack,
+            backLabel = "Learn",
+        )
 
         continueLesson?.let { lesson ->
             ActionSurface(
+                emoji = "⏯️",
                 title = "Continue Grammar",
                 detail = "${lesson.title}\n${lesson.cefrLevel} · ${lesson.category.humanize()}",
                 action = "Continue",
@@ -86,6 +96,7 @@ fun GrammarDashboardScreen(
 
         quickLesson?.let { lesson ->
             ActionSurface(
+                emoji = "⚡",
                 title = "Quick Grammar",
                 detail = "${lesson.title} · ${lesson.cefrLevel}\nReview one useful rule in a few minutes.",
                 action = "Start",
@@ -94,8 +105,9 @@ fun GrammarDashboardScreen(
         }
 
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            UtilityAction("Browse Grammar", "Explore all ${state.lessons.size} lessons", onOpenLibrary, Modifier.weight(1f))
+            UtilityAction("🗂️", "Browse Grammar", "Explore all ${state.lessons.size} lessons", onOpenLibrary, Modifier.weight(1f))
             UtilityAction(
+                "🏋️",
                 "Practice Grammar",
                 "Start recommended practice",
                 { showPracticeChooser = true },
@@ -105,8 +117,14 @@ fun GrammarDashboardScreen(
 
         weakSpot?.let { spot ->
             Spacer(Modifier.height(2.dp))
-            Text("Needs attention", fontWeight = FontWeight.SemiBold, color = DashboardColors.TextPrimary)
+            FluentSectionTitle(
+                title = "Needs attention",
+                emoji = "🎯",
+                subtitle = "A structure that keeps tripping you up",
+                accent = LearningModule.GRAMMAR.accent,
+            )
             ActionSurface(
+                emoji = "🎯",
                 title = spot.lesson.title,
                 detail = listOfNotNull(
                     spot.lesson.cefrLevel,
@@ -257,39 +275,35 @@ fun GrammarLegacyEntryScreen(
 
 @Composable
 private fun ActionSurface(
+    emoji: String,
     title: String,
     detail: String,
     action: String,
     emphasized: Boolean = false,
     onClick: () -> Unit,
 ) {
-    Surface(
-        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick),
-        shape = RoundedCornerShape(22.dp),
-        color = if (emphasized) DashboardColors.SurfacePink else Color.White,
-        tonalElevation = if (emphasized) 2.dp else 0.dp,
-    ) {
-        Row(Modifier.padding(22.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                Text(title, fontSize = if (emphasized) 22.sp else 18.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text(detail, color = DashboardColors.TextSecondary)
-            }
-            Text("$action →", fontWeight = FontWeight.Bold, color = DashboardColors.PrimaryPinkDark)
-        }
-    }
+    FluentActionTile(
+        title = title,
+        detail = detail,
+        module = LearningModule.GRAMMAR,
+        emoji = emoji,
+        actionLabel = action,
+        emphasized = emphasized,
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+    )
 }
 
 @Composable
-private fun UtilityAction(title: String, detail: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
-    Surface(modifier.clickable(onClick = onClick), shape = RoundedCornerShape(18.dp), color = Color.White) {
-        Row(Modifier.padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) {
-                Text(title, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-                Text(detail, fontSize = 13.sp, color = DashboardColors.TextSecondary)
-            }
-            Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = DashboardColors.PrimaryPinkDark)
-        }
-    }
+private fun UtilityAction(emoji: String, title: String, detail: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    FluentActionTile(
+        title = title,
+        detail = detail,
+        module = LearningModule.GRAMMAR,
+        emoji = emoji,
+        onClick = onClick,
+        modifier = modifier,
+    )
 }
 
 internal fun String.humanize(): String = replace('_', ' ').split(' ').joinToString(" ") { word ->

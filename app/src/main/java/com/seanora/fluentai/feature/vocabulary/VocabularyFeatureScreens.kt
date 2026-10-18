@@ -40,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.app.navigation.VocabularySessionMode
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
 import com.seanora.fluentai.core.model.VocabItem
@@ -63,10 +64,10 @@ fun VocabularyCollectionsScreen(
         }
     }
     Column(modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary).padding(28.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Vocabulary") }
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+            FluentBackButton(onClick = onNavigateBack, label = "Vocabulary")
             Column(Modifier.weight(1f)) {
-                Text(state.selectedCollection?.name ?: "Collections", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+                Text(state.selectedCollection?.name?.let { "🏷️ $it" } ?: "🏷️ Collections", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                 Text(state.selectedCollection?.let { "${state.collectionWords.size} words" } ?: "Explore real curriculum topics.", color = DashboardColors.TextSecondary)
             }
             state.selectedCollection?.let { collection -> Button(onClick = { onPracticeCollection(collection.topicId) }) { Text("Practice collection") } }
@@ -137,10 +138,10 @@ fun VocabularyPracticeSessionScreen(
         BoxWithConstraints(Modifier.fillMaxWidth()) {
             val compact = maxWidth < 650.dp
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Vocabulary") }
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                    FluentBackButton(onClick = onNavigateBack, label = "Vocabulary")
                     Column(Modifier.weight(1f)) {
-                        Text("Smart Practice", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+                        Text("🧠 Smart Practice", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                         Text(if (state.isFlashPractice) "Flash Cards" else state.practiceSession?.mode?.title ?: "Preparing a focused session", color = DashboardColors.TextSecondary)
                     }
                     if (!compact) PracticeTypePicker(pickerOpen, { pickerOpen = it }, scopeIds, availableModes, viewModel)

@@ -1,5 +1,7 @@
 package com.seanora.fluentai.domain.speaking
 
+import com.seanora.fluentai.core.common.transaction.ImmediateTransactionRunner
+import com.seanora.fluentai.data.repository.SpeakingSessionRepositoryImpl
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.MasterySnapshot
 import com.seanora.fluentai.core.model.MasteryStatus
@@ -98,7 +100,8 @@ class ProcessSpeakingAnalysisUseCaseTest {
 
     private val useCase = ProcessSpeakingAnalysisUseCase(
         recordLearningEvidenceUseCase = recordEvidenceUseCase,
-        speakingSessionDao = fakeSpeakingSessionDao
+        speakingSessionRepository = SpeakingSessionRepositoryImpl(fakeSpeakingSessionDao),
+        transactionRunner = ImmediateTransactionRunner
     )
 
     @Test

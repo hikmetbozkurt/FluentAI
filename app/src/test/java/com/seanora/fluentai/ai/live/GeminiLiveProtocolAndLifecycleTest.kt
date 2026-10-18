@@ -1,5 +1,7 @@
 package com.seanora.fluentai.ai.live
 
+import com.seanora.fluentai.ai.live.auth.LiveCredential
+import com.seanora.fluentai.ai.live.auth.StaticLiveCredentialProvider
 import com.seanora.fluentai.core.audio.FakeAudioCaptureEngine
 import com.seanora.fluentai.core.audio.FakeStreamAudioPlaybackEngine
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -103,7 +105,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -133,7 +135,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -194,7 +196,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -225,7 +227,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -259,7 +261,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -294,7 +296,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -324,7 +326,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -355,7 +357,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -388,7 +390,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -429,7 +431,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -459,7 +461,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -488,7 +490,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -515,7 +517,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -554,7 +556,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -611,7 +613,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -650,7 +652,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -712,7 +714,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -746,7 +748,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -780,7 +782,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -815,7 +817,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -848,7 +850,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -877,7 +879,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -906,7 +908,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -945,7 +947,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )
@@ -976,7 +978,7 @@ class GeminiLiveProtocolAndLifecycleTest {
         val factory = TestWebSocketFactory()
         val client = GeminiLiveWebSocketClient(
             dispatcher = testDispatcher,
-            apiKeyProvider = { "test-api-key" },
+            credentialProvider = StaticLiveCredentialProvider(LiveCredential.ApiKey("test-api-key")),
             webSocketFactory = factory,
             setupTimeoutMs = 1000L
         )

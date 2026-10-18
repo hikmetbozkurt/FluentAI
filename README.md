@@ -17,6 +17,22 @@ FluentAI is designed primarily for Android tablets and supports English learning
 - OkHttp WebSocket integration for Gemini Live-compatible speaking practice
 - Kotlin Coroutines and kotlinx.serialization
 
+## Architecture
+
+See [docs/architecture.md](docs/architecture.md) for layers, the live speaking pipeline and the analysis flow. Accepted decisions are in [DECISIONS.md](DECISIONS.md).
+
+Highlights:
+
+- Gemini Live over WebSocket with session resumption, context compression, automatic reconnect and barge-in handling.
+- Structured post-session analysis with a JSON schema, retries, output validation and an offline fallback.
+- AI observations become learning evidence that a deterministic mastery engine evaluates.
+- A golden-set evaluation test that measures recall and precision of the analysis prompt.
+
+## Known limitations
+
+- Personal builds read the Gemini key from a local `.env`. A distributable build needs a backend that issues ephemeral tokens (ADR-017).
+- Pronunciation is not scored numerically (ADR-013).
+
 ## Development Note
 
 Runtime AI features that use Gemini require credentials to be configured locally. Local environment files and secrets are intentionally excluded from version control; `.env.example` documents the required variable without containing a real credential.

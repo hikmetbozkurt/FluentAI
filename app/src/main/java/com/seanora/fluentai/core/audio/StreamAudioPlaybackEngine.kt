@@ -3,10 +3,10 @@ package com.seanora.fluentai.core.audio
 import android.media.AudioAttributes
 import android.media.AudioFormat
 import android.media.AudioTrack
-import android.util.Log
+import com.seanora.fluentai.core.common.di.IoDispatcher
+import com.seanora.fluentai.core.common.logging.AppLog
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.channels.Channel
@@ -41,7 +41,6 @@ interface StreamAudioPlaybackEngine {
     fun release()
 }
 
-/** Coalesces ordered PCM fragments before the single AudioTrack writer consumes them. */
 internal class PcmPlaybackBuffer(
     private val prebufferBytes: Int,
     private val minimumWriteBytes: Int
@@ -105,7 +104,9 @@ private sealed interface PlaybackCommand {
 }
 
 @Singleton
-class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlaybackEngine {
+class AndroidStreamAudioPlaybackEngine @Inject constructor(
+    @IoDispatcher dispatcher: CoroutineDispatcher
+) : StreamAudioPlaybackEngine {
 
     companion object {
         private const val TAG = "StreamAudioPlayback"
@@ -118,23 +119,15 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
         private const val DRAIN_POLL_MS = 10L
     }
 
-    private var ioDispatcher: CoroutineDispatcher = Dispatchers.IO
-    private var sampleRateHz: Int = DEFAULT_SAMPLE_RATE_HZ
-    private var scope = CoroutineScope(SupervisorJob() + ioDispatcher)
-
-    constructor(dispatcher: CoroutineDispatcher, sampleRate: Int = DEFAULT_SAMPLE_RATE_HZ) : this() {
-        ioDispatcher = dispatcher
-        sampleRateHz = sampleRate
-        scope = CoroutineScope(SupervisorJob() + dispatcher)
-        pcmBuffer = createPcmBuffer()
-    }
+    private val sampleRateHz: Int = DEFAULT_SAMPLE_RATE_HZ
+    private val scope = CoroutineScope(SupervisorJob() + dispatcher)
 
     private val trackLock = Any()
     private val playbackEpoch = AtomicLong(0L)
     private var playbackJob: Job? = null
     private var audioTrack: AudioTrack? = null
     private val commandQueue = Channel<PlaybackCommand>(Channel.UNLIMITED)
-    private var pcmBuffer = createPcmBuffer()
+    private val pcmBuffer = createPcmBuffer()
     private var totalFramesWritten: Long = 0L
 
     private val _isPlaying = MutableStateFlow(false)
@@ -145,7 +138,6 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
     override val amplitudeFlow: StateFlow<Float> = _amplitudeFlow.asStateFlow()
 
     init {
-        initAudioTrack()
         startPlaybackLoop()
     }
 
@@ -182,7 +174,7 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
                 }
 
                 if (track == null || track.state != AudioTrack.STATE_INITIALIZED) {
-                    Log.w(TAG, "AudioTrack voice route unavailable; falling back to media route")
+                    AppLog.w(TAG) { "AudioTrack voice route unavailable; falling back to media route" }
                     track?.release()
                     track = AudioTrack.Builder()
                         .setAudioAttributes(
@@ -199,12 +191,12 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
 
                 audioTrack = track
                 if (track.state == AudioTrack.STATE_INITIALIZED) {
-                    Log.i(TAG, "AudioTrack initialized at ${sampleRateHz}Hz mono PCM16, buffer=$bufferSize")
+                    AppLog.i(TAG) { "AudioTrack initialized at ${sampleRateHz}Hz mono PCM16, buffer=$bufferSize" }
                 } else {
-                    Log.e(TAG, "AudioTrack failed to initialize")
+                    AppLog.e(TAG) { "AudioTrack failed to initialize" }
                 }
             } catch (e: Exception) {
-                Log.e(TAG, "Failed to initialize AudioTrack", e)
+                AppLog.e(TAG, e) { "Failed to initialize AudioTrack" }
             }
         }
     }
@@ -219,7 +211,7 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
                     is PlaybackCommand.Audio -> {
                         if (trackDrainedMidTurn()) {
                             pcmBuffer.restartPrebuffering()
-                            Log.d(TAG, "Playback starved mid-turn; rebuilding the 80ms jitter buffer")
+                            AppLog.d(TAG) { "Playback starved mid-turn; rebuilding the 80ms jitter buffer" }
                         }
                         pcmBuffer.offer(command.pcmData).forEach(::writeBufferedPcm)
                     }
@@ -259,11 +251,11 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
                 if (written == chunk.size) {
                     totalFramesWritten += written / BYTES_PER_SAMPLE
                 } else {
-                    Log.e(TAG, "AudioTrack write incomplete: wrote=$written requested=${chunk.size}")
+                    AppLog.e(TAG) { "AudioTrack write incomplete: wrote=$written requested=${chunk.size}" }
                 }
             }
         } catch (e: Exception) {
-            Log.w(TAG, "AudioTrack write failed", e)
+            AppLog.w(TAG, e) { "AudioTrack write failed" }
         }
     }
 
@@ -285,7 +277,7 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
             _isPlaying.value = false
             _playbackState.value = PlaybackLifecycleState.IDLE
             _amplitudeFlow.value = 0f
-            Log.i(TAG, "Gemini audio playback finished/drained")
+            AppLog.i(TAG) { "Gemini audio playback finished/drained" }
         }
     }
 
@@ -314,14 +306,14 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
                     flush()
                 }
             } catch (e: Exception) {
-                Log.w(TAG, "Error flushing AudioTrack", e)
+                AppLog.w(TAG, e) { "Error flushing AudioTrack" }
             }
             totalFramesWritten = 0L
         }
         _isPlaying.value = false
         _playbackState.value = PlaybackLifecycleState.FLUSHED
         _amplitudeFlow.value = 0f
-        Log.i(TAG, "Gemini audio playback queue flushed")
+        AppLog.i(TAG) { "Gemini audio playback queue flushed" }
     }
 
     override fun release() {
@@ -333,7 +325,7 @@ class AndroidStreamAudioPlaybackEngine @Inject constructor() : StreamAudioPlayba
             try {
                 audioTrack?.release()
             } catch (e: Exception) {
-                Log.w(TAG, "Error releasing AudioTrack", e)
+                AppLog.w(TAG, e) { "Error releasing AudioTrack" }
             }
             audioTrack = null
         }

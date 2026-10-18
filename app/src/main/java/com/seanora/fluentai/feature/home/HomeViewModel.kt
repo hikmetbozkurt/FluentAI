@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.home
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.feature.home.data.HomeRepository
@@ -29,7 +30,7 @@ class HomeViewModel @Inject constructor(
     val uiState: StateFlow<HomeUiState> = repository.getTodayPlan()
         .map<TodayPlan, HomeUiState> { HomeUiState.Success(it) }
         .catch { e ->
-            android.util.Log.e("HomeViewModel", "Failed to load Today's Plan", e)
+            AppLog.e("HomeViewModel", e) { "Failed to load Today's Plan" }
             emit(HomeUiState.Error("Content could not be loaded. Please try again."))
         }
         .stateIn(

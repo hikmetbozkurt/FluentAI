@@ -302,3 +302,60 @@ Large A2–C2 curriculum expansion occurs only after the core architecture is st
 
 Satisfies AGENTS.md Section 4 (AI Usage Rules), Section 5 (Offline-First Rule), Section 9 (Learning Evidence Rule), and Phase 6 Exit Criteria by making speaking sessions an integrated learning domain that feeds the unified learning state.
 
+
+---
+
+## ADR-017 — Personal builds use a local API key behind a credential abstraction
+
+**Status:** Accepted
+**Date:** 2026-10-18
+
+### Decision
+
+The Live client authenticates through `LiveCredentialProvider`. Personal tablet builds use `StaticLiveCredentialProvider` with the key from the untracked `.env`. `LiveCredential.EphemeralToken` and `LiveEndpoint` already support the `BidiGenerateContentConstrained?access_token=` endpoint.
+
+### Why
+
+The app runs on one personal device, so a backend adds cost without benefit today. A key inside an APK is extractable, so distribution must not reuse this path.
+
+### Consequences
+
+A distributable build adds a token-minting backend (single-use, short-lived ephemeral tokens with `liveConnectConstraints`) and swaps only the credential provider binding.
+
+---
+
+## ADR-018 — Live session resilience is owned by the transport client
+
+**Status:** Accepted
+**Date:** 2026-10-18
+
+### Decision
+
+`GeminiLiveWebSocketClient` enables `sessionResumption` and `contextWindowCompression`, stores resumable handles, reconnects on `goAway` or abnormal close with `LiveReconnectPolicy`, maps close codes to user-facing errors, and discards model output after a learner interruption until the next turn boundary.
+
+### Why
+
+Connections end after about 10 minutes and audio sessions after 15 minutes without compression. Protocol recovery belongs to the provider adapter, not to UI or session orchestration.
+
+### Consequences
+
+`LiveCoachSessionManager` only reacts to `Reconnecting`, `Connected` and `Error` events and exposes `VoiceUiState.RECONNECTING`.
+
+---
+
+## ADR-019 — Shared UI kit with per-module visual identity
+
+**Status:** Accepted
+**Date:** 2026-10-18
+
+### Decision
+
+Screens use `core/designsystem/kit`: `LearningModule` (emoji, icon, accent and container colors per domain), `FluentPageHeader`, `FluentCompactHeader`, `FluentBackButton`, `FluentSurfaceCard`, `FluentActionTile`, `FluentSectionTitle`, `FluentEmptyState`, `FluentStatPill` and `DecorativeBackdrop`.
+
+### Why
+
+Titles and subtitles lacked hierarchy, cards blended into the background and back navigation was an unlabeled icon. One kit keeps every module consistent without per-screen styling.
+
+### Consequences
+
+New screens start from the kit. Visual content is drawn in Compose (gradients, shapes, icons, emoji) so it stays offline and scales without extra image assets.

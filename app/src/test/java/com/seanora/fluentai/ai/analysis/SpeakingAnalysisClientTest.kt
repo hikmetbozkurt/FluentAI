@@ -1,11 +1,16 @@
 package com.seanora.fluentai.ai.analysis
 
+import com.seanora.fluentai.ai.analysis.gemini.AnalysisObservationSanitizer
+import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisPayload
+import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisResponseParser
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
 import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
+import com.seanora.fluentai.core.model.SpeakingGrammarObservation
 import kotlinx.coroutines.test.runTest
+import okhttp3.OkHttpClient
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue
@@ -68,6 +73,7 @@ class SpeakingAnalysisClientTest {
     fun geminiClient_fallsBackToMockWhenApiKeyIsBlank() = runTest {
         val geminiClient = GeminiSpeakingAnalysisClient(
             fallbackClient = mockClient,
+            okHttpClient = OkHttpClient(),
             apiKeyProvider = { "" }
         )
 
@@ -116,11 +122,8 @@ class SpeakingAnalysisClientTest {
     }
 
     @Test
-    fun geminiClient_parseGeminiResponse_parsesJsonAndStripsMarkdownFences() {
-        val geminiClient = GeminiSpeakingAnalysisClient(
-            fallbackClient = mockClient,
-            apiKeyProvider = { "dummy-key" }
-        )
+    fun responseParser_parsesJsonAndStripsMarkdownFences() {
+        val parser = GeminiAnalysisResponseParser()
 
         val rawApiResponse = """
             {
@@ -138,19 +141,16 @@ class SpeakingAnalysisClientTest {
             }
         """.trimIndent()
 
-        val parsed = geminiClient.parseGeminiResponse(rawApiResponse)
+        val parsed = parser.parse(rawApiResponse)
         assertNotNull(parsed)
-        assertEquals("analysis-123", parsed!!.id)
-        assertEquals("speaking.b2.meeting.standup", parsed.scenarioId)
+        assertEquals("Good job on speaking clearly.", parsed!!.overallFeedback)
+        assertEquals("B2", parsed.estimatedTurnCefr)
         assertEquals(0.85f, parsed.fluencyScore, 0.01f)
     }
 
     @Test
-    fun geminiClient_parseGeminiResponse_returnsNullOnInvalidJson() {
-        val geminiClient = GeminiSpeakingAnalysisClient(
-            fallbackClient = mockClient,
-            apiKeyProvider = { "dummy-key" }
-        )
+    fun responseParser_returnsNullOnInvalidJson() {
+        val parser = GeminiAnalysisResponseParser()
 
         val invalidApiResponse = """
             {
@@ -168,7 +168,48 @@ class SpeakingAnalysisClientTest {
             }
         """.trimIndent()
 
-        val parsed = geminiClient.parseGeminiResponse(invalidApiResponse)
+        val parsed = parser.parse(invalidApiResponse)
         org.junit.Assert.assertNull(parsed)
+    }
+
+    @Test
+    fun sanitizer_dropsTargetIdsOutsideScenarioAndClampsScores() {
+        val payload = GeminiAnalysisPayload(
+            overallFeedback = "ok",
+            estimatedTurnCefr = "B2",
+            fluencyScore = 1.4f,
+            vocabularyScore = -0.2f,
+            grammarScore = 0.5f,
+            coherenceScore = 0.5f,
+            grammarObservations = listOf(
+                SpeakingGrammarObservation(
+                    id = "g1",
+                    userUtterance = "since two years",
+                    errorSnippet = "since",
+                    correctedSnippet = "for",
+                    explanation = "Duration uses for.",
+                    targetGrammarId = "grammar.invented-by-model",
+                    trapType = "Tense Duration!"
+                ),
+                SpeakingGrammarObservation(
+                    id = "g2",
+                    userUtterance = "I have went",
+                    errorSnippet = "have went",
+                    correctedSnippet = "have gone",
+                    explanation = "Past participle.",
+                    targetGrammarId = "grammar.present-perfect-vs-past-simple",
+                    trapType = "past_participle"
+                )
+            )
+        )
+
+        val sanitized = AnalysisObservationSanitizer().sanitize(payload, testScenario)
+
+        assertEquals(1f, sanitized.fluencyScore, 0.0f)
+        assertEquals(0f, sanitized.vocabularyScore, 0.0f)
+        org.junit.Assert.assertNull(sanitized.grammarObservations[0].targetGrammarId)
+        org.junit.Assert.assertNull(sanitized.grammarObservations[0].trapType)
+        assertEquals("grammar.present-perfect-vs-past-simple", sanitized.grammarObservations[1].targetGrammarId)
+        assertEquals("past_participle", sanitized.grammarObservations[1].trapType)
     }
 }

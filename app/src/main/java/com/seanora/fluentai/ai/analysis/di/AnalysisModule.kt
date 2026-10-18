@@ -1,9 +1,9 @@
 package com.seanora.fluentai.ai.analysis.di
 
-import com.seanora.fluentai.BuildConfig
 import com.seanora.fluentai.ai.analysis.GeminiSpeakingAnalysisClient
 import com.seanora.fluentai.ai.analysis.MockSpeakingAnalysisClient
 import com.seanora.fluentai.ai.analysis.SpeakingAnalysisClient
+import com.seanora.fluentai.ai.config.AiRuntimeConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,15 +18,17 @@ object AnalysisModule {
     @Provides
     @Singleton
     fun provideSpeakingAnalysisClient(
-        mockClient: MockSpeakingAnalysisClient
-    ): SpeakingAnalysisClient {
-        return if (BuildConfig.GEMINI_API_KEY.isNotBlank()) {
-            GeminiSpeakingAnalysisClient(
-                fallbackClient = mockClient,
-                apiKeyProvider = { BuildConfig.GEMINI_API_KEY }
-            )
-        } else {
-            mockClient
-        }
+        config: AiRuntimeConfig,
+        okHttpClient: OkHttpClient,
+        offlineClient: MockSpeakingAnalysisClient
+    ): SpeakingAnalysisClient = if (config.isOnlineAiEnabled) {
+        GeminiSpeakingAnalysisClient(
+            fallbackClient = offlineClient,
+            okHttpClient = okHttpClient,
+            apiKeyProvider = { config.geminiApiKey },
+            modelName = config.analysisModel
+        )
+    } else {
+        offlineClient
     }
 }

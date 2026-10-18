@@ -1,54 +1,51 @@
 package com.seanora.fluentai.ai.analysis
 
-import android.util.Log
+import com.seanora.fluentai.ai.analysis.gemini.AnalysisObservationSanitizer
+import com.seanora.fluentai.ai.analysis.gemini.AnalysisSessionMetadata
+import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisRequestFactory
+import com.seanora.fluentai.ai.analysis.gemini.GeminiAnalysisResponseParser
+import com.seanora.fluentai.ai.analysis.gemini.HttpRetryPolicy
+import com.seanora.fluentai.ai.analysis.gemini.SpeakingAnalysisPromptBuilder
+import com.seanora.fluentai.ai.analysis.gemini.toDomain
 import com.seanora.fluentai.ai.live.TranscriptEntry
 import com.seanora.fluentai.ai.live.TranscriptRole
+import com.seanora.fluentai.core.common.logging.AppLog
 import com.seanora.fluentai.core.model.CorrectionMode
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.SpeakingSessionAnalysis
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.buildJsonObject
-import kotlinx.serialization.json.put
-import kotlinx.serialization.json.putJsonArray
-import kotlinx.serialization.json.putJsonObject
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.suspendCancellableCoroutine
+import okhttp3.Call
+import okhttp3.Callback
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
-import java.util.concurrent.TimeUnit
-import javax.inject.Inject
-import javax.inject.Singleton
+import okhttp3.Response
+import java.io.IOException
+import java.util.UUID
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
 
-/**
- * Gemini Flash-compatible implementation of SpeakingAnalysisClient per AGENTS.md Section 4.
- * Uses Gemini 2.5 Flash for post-session structured language evaluation with graceful
- * deterministic offline fallback (Section 5).
- */
-@Singleton
-class GeminiSpeakingAnalysisClient @Inject constructor(
-    private val fallbackClient: MockSpeakingAnalysisClient,
-    private val okHttpClient: OkHttpClient = defaultClient,
-    private val apiKeyProvider: () -> String
+class GeminiSpeakingAnalysisClient(
+    private val fallbackClient: SpeakingAnalysisClient,
+    private val okHttpClient: OkHttpClient,
+    private val apiKeyProvider: () -> String,
+    private val modelName: String = DEFAULT_MODEL,
+    private val retryPolicy: HttpRetryPolicy = HttpRetryPolicy(),
+    private val promptBuilder: SpeakingAnalysisPromptBuilder = SpeakingAnalysisPromptBuilder(),
+    private val requestFactory: GeminiAnalysisRequestFactory = GeminiAnalysisRequestFactory(),
+    private val responseParser: GeminiAnalysisResponseParser = GeminiAnalysisResponseParser(),
+    private val sanitizer: AnalysisObservationSanitizer = AnalysisObservationSanitizer()
 ) : SpeakingAnalysisClient {
 
     companion object {
+        const val DEFAULT_MODEL = "gemini-2.5-flash"
         private const val TAG = "GeminiSpeakingAnalysis"
-        private const val GEMINI_FLASH_MODEL = "gemini-2.5-flash"
         private const val BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models"
-
-        val defaultClient: OkHttpClient by lazy {
-            OkHttpClient.Builder()
-                .connectTimeout(15, TimeUnit.SECONDS)
-                .readTimeout(30, TimeUnit.SECONDS)
-                .build()
-        }
-
-        private val json = Json {
-            ignoreUnknownKeys = true
-            isLenient = true
-        }
+        private const val API_KEY_HEADER = "x-goog-api-key"
+        private val JSON_MEDIA_TYPE = "application/json".toMediaType()
     }
 
     override suspend fun analyzeSession(
@@ -58,192 +55,73 @@ class GeminiSpeakingAnalysisClient @Inject constructor(
         durationSeconds: Int
     ): Result<SpeakingSessionAnalysis> {
         val apiKey = apiKeyProvider().trim()
-        if (apiKey.isBlank()) {
-            Log.d(TAG, "Gemini API key blank, using offline deterministic analyzer")
+        val learnerTurns = transcript.count { it.role == TranscriptRole.USER && it.text.isNotBlank() }
+        if (apiKey.isBlank() || learnerTurns == 0) {
             return fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
         }
 
-        val userEntries = transcript.filter { it.role == TranscriptRole.USER }
-        if (userEntries.isEmpty()) {
+        val prompt = promptBuilder.build(scenario, mode, transcript, durationSeconds)
+        val request = Request.Builder()
+            .url("$BASE_URL/$modelName:generateContent")
+            .header(API_KEY_HEADER, apiKey)
+            .post(requestFactory.create(prompt).toRequestBody(JSON_MEDIA_TYPE))
+            .build()
+
+        val responseBody = executeWithRetry(request)
+        val payload = responseBody?.let(responseParser::parse)
+        if (payload == null) {
+            AppLog.w(TAG) { "Online analysis unavailable; using offline analyzer" }
             return fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
         }
 
-        return withContext(Dispatchers.IO) {
-            try {
-                val prompt = buildAnalysisPrompt(scenario, mode, transcript, durationSeconds)
-                val requestBody = buildRequestBody(prompt)
+        val metadata = AnalysisSessionMetadata(
+            analysisId = UUID.randomUUID().toString(),
+            sessionId = "session_${System.currentTimeMillis()}",
+            scenarioId = scenario.id,
+            scenarioTitle = scenario.title,
+            timestampMs = System.currentTimeMillis(),
+            durationSeconds = durationSeconds,
+            learnerTurns = learnerTurns,
+            promptVersion = SpeakingAnalysisPromptBuilder.PROMPT_VERSION
+        )
+        return Result.success(sanitizer.sanitize(payload, scenario).toDomain(metadata))
+    }
 
-                val request = Request.Builder()
-                    .url("$BASE_URL/$GEMINI_FLASH_MODEL:generateContent?key=$apiKey")
-                    .post(requestBody.toRequestBody("application/json".toMediaType()))
-                    .build()
-
-                val response = okHttpClient.newCall(request).execute()
-                if (!response.isSuccessful) {
-                    Log.w(TAG, "Gemini analysis HTTP failed: code=${response.code}, falling back to offline analyzer")
-                    return@withContext fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
+    private suspend fun executeWithRetry(request: Request): String? {
+        for (attempt in 1..retryPolicy.maxAttempts) {
+            val outcome = runCatching { okHttpClient.newCall(request).await().use { it.code to it.body.string() } }
+                .onFailure { if (it is CancellationException) throw it }
+            val (code, body) = outcome.getOrElse { error ->
+                AppLog.w(TAG, error) { "Analysis request failed (attempt $attempt)" }
+                if (attempt < retryPolicy.maxAttempts) delay(retryPolicy.delayBeforeRetry(attempt))
+                null to null
+            }
+            when {
+                code == null -> continue
+                code in 200..299 -> return body
+                retryPolicy.shouldRetry(code) && attempt < retryPolicy.maxAttempts -> {
+                    AppLog.w(TAG) { "Analysis HTTP $code, retrying (attempt $attempt)" }
+                    delay(retryPolicy.delayBeforeRetry(attempt))
                 }
-
-                val responseJson = response.body.string()
-                if (responseJson.isNullOrBlank()) {
-                    return@withContext fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
+                else -> {
+                    AppLog.w(TAG) { "Analysis HTTP $code, giving up" }
+                    return null
                 }
-
-                val parsed = parseGeminiResponse(responseJson)
-                if (parsed != null) {
-                    Result.success(
-                        parsed.copy(
-                            scenarioId = scenario.id,
-                            scenarioTitle = scenario.title,
-                            durationSeconds = durationSeconds,
-                            turnsCount = userEntries.size
-                        )
-                    )
-                } else {
-                    Log.w(TAG, "Failed to parse structured JSON from Gemini, using offline fallback")
-                    fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
-                }
-            } catch (e: Exception) {
-                Log.w(TAG, "Exception during Gemini analysis: ${e.message}, using offline fallback")
-                fallbackClient.analyzeSession(scenario, mode, transcript, durationSeconds)
             }
         }
+        return null
     }
 
-    private fun buildAnalysisPrompt(
-        scenario: SpeakingScenario,
-        mode: CorrectionMode,
-        transcript: List<TranscriptEntry>,
-        durationSeconds: Int
-    ): String {
-        val dialogueText = transcript.joinToString("\n") { "[${it.role}]: ${it.text}" }
-
-        return """
-You are an expert English language assessor analyzing a spoken dialogue between a Turkish white-collar professional and an AI Coach.
-Scenario: "${scenario.title}" (${scenario.category.displayName} - CEFR ${scenario.cefrLevel})
-Correction Mode: ${mode.displayName}
-Session Duration: $durationSeconds seconds
-
-Target Vocabulary to inspect: ${scenario.targetVocabIds.joinToString(", ")}
-Target Grammar to inspect: ${scenario.targetGrammarIds.joinToString(", ")}
-
-Dialogue Transcript:
-$dialogueText
-
-Evaluate the USER's spoken English performance strictly according to CEFR standards and Turkish learner transfer habits.
-Ground every score and observation in the supplied USER turns. Do not reuse the example values below or invent utterances, errors, strengths, or metrics. When the transcript has limited evidence, score conservatively and state that limitation in the feedback.
-Produce a single valid JSON object with the following exact schema:
-{
-  "id": "${java.util.UUID.randomUUID()}",
-  "sessionId": "session_${System.currentTimeMillis()}",
-  "scenarioId": "${scenario.id}",
-  "scenarioTitle": "${scenario.title}",
-  "timestamp": ${System.currentTimeMillis()},
-  "durationSeconds": $durationSeconds,
-  "turnsCount": ${transcript.count { it.role == TranscriptRole.USER }},
-  "overallFeedback": "Concise paragraph summarizing user performance and communicative effectiveness.",
-  "estimatedTurnCefr": "B2",
-  "fluencyScore": 0.0,
-  "vocabularyScore": 0.0,
-  "grammarScore": 0.0,
-  "coherenceScore": 0.0,
-  "strengths": [
-    "Specific positive observation 1",
-    "Specific positive observation 2"
-  ],
-  "grammarObservations": [
-    {
-      "id": "g1",
-      "userUtterance": "Exact utterance user said",
-      "errorSnippet": "Specific error substring",
-      "correctedSnippet": "Correct English phrasing",
-      "explanation": "Why this error occurred (noting Turkish L1 interference if applicable)",
-      "targetGrammarId": null,
-      "trapType": "tense_duration"
-    }
-  ],
-  "vocabularyObservations": [
-    {
-      "id": "v1",
-      "usedWord": "Word user used",
-      "suggestedBetterWord": "More executive or idiomatic collocation",
-      "explanation": "Why the upgrade elevates their register",
-      "targetVocabId": null,
-      "register": "executive"
-    }
-  ],
-  "naturalAlternatives": [
-    {
-      "originalUtterance": "User sentence",
-      "naturalAlternative": "How a native executive speaker would state this naturally",
-      "explanation": "Contextual nuance",
-      "register": "business_casual"
-    }
-  ],
-  "suggestedPractice": [
-    {
-      "title": "Practice topic",
-      "description": "Short drill recommendation",
-      "domain": "grammar",
-      "contentId": null
-    }
-  ]
-}
-
-Only return the raw JSON object. Do not wrap in markdown or backticks.
-""".trimIndent()
-    }
-
-    private fun buildRequestBody(prompt: String): String {
-        val root = buildJsonObject {
-            putJsonArray("contents") {
-                add(
-                    buildJsonObject {
-                        putJsonArray("parts") {
-                            add(
-                                buildJsonObject {
-                                    put("text", prompt)
-                                }
-                            )
-                        }
-                    }
-                )
-            }
-            putJsonObject("generationConfig") {
-                put("responseMimeType", "application/json")
-                put("temperature", 0.3)
-            }
-        }
-        return root.toString()
-    }
-
-    internal fun parseGeminiResponse(responseJson: String): SpeakingSessionAnalysis? {
-        return try {
-            val root = json.parseToJsonElement(responseJson) as? kotlinx.serialization.json.JsonObject
-            val candidates = root?.get("candidates") as? kotlinx.serialization.json.JsonArray
-            val firstCandidate = candidates?.firstOrNull() as? kotlinx.serialization.json.JsonObject
-            val content = firstCandidate?.get("content") as? kotlinx.serialization.json.JsonObject
-            val parts = content?.get("parts") as? kotlinx.serialization.json.JsonArray
-            val textElement = (parts?.firstOrNull() as? kotlinx.serialization.json.JsonObject)?.get("text")
-            val rawText = when (textElement) {
-                is kotlinx.serialization.json.JsonPrimitive -> textElement.content
-                else -> textElement?.toString()
+    private suspend fun Call.await(): Response = suspendCancellableCoroutine { continuation ->
+        continuation.invokeOnCancellation { cancel() }
+        enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                if (continuation.isActive) continuation.resumeWithException(e)
             }
 
-            if (!rawText.isNullOrBlank()) {
-                val cleanText = rawText
-                    .trim()
-                    .removePrefix("```json")
-                    .removePrefix("```")
-                    .removeSuffix("```")
-                    .trim()
-                json.decodeFromString<SpeakingSessionAnalysis>(cleanText)
-            } else {
-                null
+            override fun onResponse(call: Call, response: Response) {
+                if (continuation.isActive) continuation.resume(response) else response.close()
             }
-        } catch (e: Exception) {
-            Log.w(TAG, "Error deserializing Gemini analysis response: ${e.message}")
-            null
-        }
+        })
     }
 }

@@ -50,6 +50,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.seanora.fluentai.core.designsystem.kit.FluentBackButton
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
 import com.seanora.fluentai.core.model.VocabItem
 
@@ -70,10 +71,10 @@ fun VocabularyLibraryScreen(
         if (topicId == null) state.items else state.items.filter { it.id in topicIds }
     }
     Column(modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary).padding(28.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back to Vocabulary") }
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+            FluentBackButton(onClick = onNavigateBack, label = "Vocabulary")
             Column {
-                Text("Vocabulary Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+                Text("📚 Vocabulary Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                 Text("${visible.size} words", color = DashboardColors.TextSecondary)
             }
         }
@@ -150,8 +151,8 @@ fun VocabularyWordDetailScreen(
             BoxWithConstraints(Modifier.fillMaxWidth()) {
                 val compact = maxWidth < 760.dp
                 Column {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        IconButton(onClick = onNavigateBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, "Back") }
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
+                        FluentBackButton(onClick = onNavigateBack, label = "Back")
                         Column(Modifier.weight(1f)) {
                             Text(word?.headword ?: if (state.isLoading) "Loading…" else "Word unavailable", fontSize = 34.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                             word?.let {

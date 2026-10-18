@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.listening
 
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.core.audio.AudioPlaybackEngine
@@ -86,7 +87,7 @@ class ListeningViewModel @Inject constructor(
     ) { library, session, playback ->
         session.toUiState(library, playback)
     }.catch { throwable ->
-        android.util.Log.e("ListeningViewModel", "Failed to load listening content", throwable)
+        AppLog.e("ListeningViewModel", throwable) { "Failed to load listening content" }
         emit(ListeningUiState(errorMessage = "Content could not be loaded. Please try again."))
     }.stateIn(
         scope = viewModelScope,

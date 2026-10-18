@@ -1,6 +1,6 @@
 package com.seanora.fluentai.app.navigation
 
-import android.util.Log
+import com.seanora.fluentai.core.common.logging.AppLog
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.seanora.fluentai.core.model.SearchResultItem
@@ -67,7 +67,7 @@ class HeaderViewModel @Inject constructor(
                 val results = searchRepository.searchContent(trimmed)
                 _searchResults.value = results
             } catch (e: Exception) {
-                Log.e("HeaderViewModel", "Search failed for query '$trimmed'", e)
+                AppLog.e("HeaderViewModel", e) { "Search failed" }
                 _searchError.value = "Content could not be loaded. Please try again."
             } finally {
                 _isSearching.value = false

@@ -1,0 +1,12 @@
+[
+  {"id": "tense-duration", "utterance": "I am working in this company since two years.", "expectedErrors": ["since two years"]},
+  {"id": "missing-preposition-graduate", "utterance": "I graduated university in 2019 and joined a startup.", "expectedErrors": ["graduated university"]},
+  {"id": "redundant-preposition", "utterance": "Yesterday we discussed about the release deadline with the product team.", "expectedErrors": ["discussed about"]},
+  {"id": "present-perfect-with-past-time", "utterance": "I have finished the quarterly report yesterday.", "expectedErrors": ["have finished"]},
+  {"id": "explain-me", "utterance": "Can you explain me the deployment process again?", "expectedErrors": ["explain me"]},
+  {"id": "be-agree", "utterance": "I am agree with your proposal about the new sprint plan.", "expectedErrors": ["am agree"]},
+  {"id": "collocation-make-interview", "utterance": "Tomorrow we will make an interview with the backend candidate.", "expectedErrors": ["make an interview"]},
+  {"id": "subject-verb-agreement", "utterance": "There is many problems in the current release.", "expectedErrors": ["is many"]},
+  {"id": "listen-music", "utterance": "I usually listen music while I am writing code.", "expectedErrors": ["listen music"]},
+  {"id": "clean-baseline", "utterance": "I have been working here for two years, and I really enjoy collaborating with the team.", "expectedErrors": []}
+]

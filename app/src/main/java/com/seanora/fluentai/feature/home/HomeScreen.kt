@@ -108,17 +108,15 @@ private fun Dashboard(
     onProgress: () -> Unit,
 ) {
     BoxWithConstraints(Modifier.fillMaxSize()) {
-        val isConstrainedHeight = maxHeight < 560.dp
         val scrollState = rememberScrollState()
 
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .then(if (isConstrainedHeight) Modifier.verticalScroll(scrollState) else Modifier)
+                .verticalScroll(scrollState)
                 .padding(horizontal = DashboardSpacing.md, vertical = DashboardSpacing.xs),
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
         ) {
-            // Row 1: Welcome back + Current Level
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -130,7 +128,6 @@ private fun Dashboard(
                 CurrentLevelCard(plan, onProgress, Modifier.weight(1f).fillMaxHeight())
             }
 
-            // Row 2: Continue Learning + Daily Practice + Speaking Practice
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -143,13 +140,11 @@ private fun Dashboard(
                 SpeakingPracticeCard(onSpeak, Modifier.weight(1f).fillMaxHeight())
             }
 
-            // Row 3: Today's Focus only (Full width)
             FocusCard(
                 plan = plan,
                 onActivity = onActivity,
             )
 
-            // Row 4: Progress Overview + Recent Activity
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -164,9 +159,6 @@ private fun Dashboard(
     }
 }
 
-// ==========================================
-// ROW 1: Welcome back & Current Level
-// ==========================================
 
 @Composable
 private fun WelcomeCard(plan: TodayPlan, modifier: Modifier = Modifier) = Card(
@@ -313,9 +305,6 @@ private fun CurrentLevelCard(plan: TodayPlan, onDetails: () -> Unit, modifier: M
     }
 }
 
-// ==========================================
-// ROW 2: Continue Learning, Daily Practice & Speaking Practice
-// ==========================================
 
 @Composable
 private fun ContinueLearningCard(
@@ -531,9 +520,6 @@ private fun SpeakingPracticeCard(onSpeak: () -> Unit, modifier: Modifier = Modif
     )
 }
 
-// ==========================================
-// ROW 3: Today's Focus only (Full Width)
-// ==========================================
 
 @Composable
 private fun FocusCard(
@@ -620,9 +606,6 @@ private fun SkillFocusTile(
     }
 }
 
-// ==========================================
-// ROW 4: Progress Overview & Recent Activity
-// ==========================================
 
 @Composable
 private fun ProgressCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modifier = Modifier) = DashboardCard(
@@ -764,9 +747,6 @@ private fun RecentActivityCard(plan: TodayPlan, onDetails: () -> Unit, modifier:
     }
 }
 
-// ==========================================
-// Helpers
-// ==========================================
 
 private fun levelName(level: String): String = when (level.uppercase()) {
     "A2" -> "Elementary"

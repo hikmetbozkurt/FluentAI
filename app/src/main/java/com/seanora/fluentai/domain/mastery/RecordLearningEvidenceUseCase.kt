@@ -1,5 +1,7 @@
 package com.seanora.fluentai.domain.mastery
 
+import com.seanora.fluentai.core.common.transaction.ImmediateTransactionRunner
+import com.seanora.fluentai.core.common.transaction.TransactionRunner
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.MasterySnapshot
 import com.seanora.fluentai.data.repository.UserLearningRepository
@@ -11,7 +13,8 @@ import javax.inject.Singleton
 class RecordLearningEvidenceUseCase @Inject constructor(
     private val userLearningRepository: UserLearningRepository,
     private val masteryEngine: MasteryEngine,
-    private val mistakeEngine: MistakeEngine
+    private val mistakeEngine: MistakeEngine,
+    private val transactionRunner: TransactionRunner = ImmediateTransactionRunner
 ) {
 
     suspend operator fun invoke(
@@ -20,23 +23,18 @@ class RecordLearningEvidenceUseCase @Inject constructor(
         errorDescription: String? = null,
         userAnswer: String? = null,
         correctAnswer: String? = null
-    ): MasterySnapshot {
-        // 1. Persist raw learning evidence into user database
+    ): MasterySnapshot = transactionRunner.runInTransaction {
         userLearningRepository.recordEvidence(evidence)
 
-        // 2. Fetch current mastery snapshot
         val previousSnapshot = userLearningRepository.getMasterySnapshotSync(evidence.contentId)
 
-        // 3. Compute deterministic next mastery snapshot
         val updatedSnapshot = masteryEngine.computeNextSnapshot(previousSnapshot, evidence)
         userLearningRepository.saveMasterySnapshot(updatedSnapshot)
 
-        // 4. Compute and update spaced repetition schedule
         val previousSchedule = userLearningRepository.getReviewScheduleSync(evidence.contentId)
         val updatedSchedule = masteryEngine.computeNextReviewSchedule(previousSchedule, evidence)
         userLearningRepository.saveReviewSchedule(updatedSchedule)
 
-        // 5. Update mistake lifecycle if relevant (ADR-010 & Section 9)
         if (trapType != null) {
             val existingMistake = userLearningRepository.findMistake(evidence.contentId, trapType)
             if (!evidence.isCorrect) {
@@ -59,6 +57,6 @@ class RecordLearningEvidenceUseCase @Inject constructor(
             }
         }
 
-        return updatedSnapshot
+        updatedSnapshot
     }
 }

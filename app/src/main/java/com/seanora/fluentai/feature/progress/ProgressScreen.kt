@@ -24,6 +24,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
+import com.seanora.fluentai.core.designsystem.kit.FluentEmptyState
+import com.seanora.fluentai.core.designsystem.kit.FluentSurfaceCard
+import com.seanora.fluentai.core.designsystem.kit.IconTile
+import com.seanora.fluentai.core.designsystem.kit.LearningModule
+import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
+import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
 import com.seanora.fluentai.core.designsystem.dashboard.*
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.domain.progress.ProgressDashboardData
@@ -57,10 +63,20 @@ fun ProgressScreenContent(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(DashboardSpacing.xl),
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
         ) {
-            DashboardPageHeader("Your Progress", "See how your English skills are developing over time.")
+            FluentPageHeader(
+                title = "Your Progress",
+                module = LearningModule.PROGRESS,
+                eyebrow = "Skill-by-skill tracking",
+                subtitle = "See how your English skills are developing over time.",
+            )
             uiState.dashboardData?.let { SummaryGrid(it, columns) }
 
-            DashboardHeader(Icons.Rounded.ShowChart, "Skill Progress", "Your level is tracked separately for each skill")
+            FluentSectionTitle(
+                title = "Skill Progress",
+                emoji = "📊",
+                subtitle = "Your level is tracked separately for each skill",
+                accent = LearningModule.PROGRESS.accent,
+            )
             val skills = uiState.dashboardData?.skills.orEmpty().filter {
                 it.domain.lowercase() in setOf("vocabulary", "grammar", "reading", "listening", "speaking")
             }
@@ -79,7 +95,12 @@ fun ProgressScreenContent(
                 }
             }
 
-            DashboardHeader(Icons.Rounded.History, "Recent Learning", "Your latest practice activity")
+            FluentSectionTitle(
+                title = "Recent Learning",
+                emoji = "🕒",
+                subtitle = "Your latest practice activity",
+                accent = LearningModule.PROGRESS.accent,
+            )
             if (uiState.recentEvidence.isEmpty()) EmptyProgressCard("Complete an activity to start your learning history.")
             else DashboardCard(Modifier.fillMaxWidth()) {
                 uiState.recentEvidence.take(10).forEach { EvidenceRow(it) }
@@ -91,10 +112,10 @@ fun ProgressScreenContent(
 @Composable
 private fun SummaryGrid(dashboard: ProgressDashboardData, columns: Int) {
     val metrics = listOf(
-        SummaryMetric("Current Level", dashboard.overallEstimatedCefr, "Your overall estimate", Icons.Rounded.EmojiEvents),
-        SummaryMetric("Learning Streak", "${dashboard.streak.currentStreakDays} days", "Keep your routine going", Icons.Rounded.LocalFireDepartment),
-        SummaryMetric("Skills Practiced", "${dashboard.skills.count { it.totalAttempts > 0 }}", "Across your learning areas", Icons.Rounded.AutoStories),
-        SummaryMetric("Reviews Due", "${dashboard.reviewsDueCount}", "Ready when you are", Icons.Rounded.EventRepeat),
+        SummaryMetric("🏆", "Current Level", dashboard.overallEstimatedCefr, "Your overall estimate", Icons.Rounded.EmojiEvents, LearningModule.REVIEW),
+        SummaryMetric("🔥", "Learning Streak", "${dashboard.streak.currentStreakDays} days", "Keep your routine going", Icons.Rounded.LocalFireDepartment, LearningModule.READING),
+        SummaryMetric("🧠", "Skills Practiced", "${dashboard.skills.count { it.totalAttempts > 0 }}", "Across your learning areas", Icons.Rounded.AutoStories, LearningModule.GRAMMAR),
+        SummaryMetric("🔁", "Reviews Due", "${dashboard.reviewsDueCount}", "Ready when you are", Icons.Rounded.EventRepeat, LearningModule.LISTENING),
     )
     metrics.chunked(columns.coerceAtLeast(1)).forEach { row ->
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
@@ -106,10 +127,18 @@ private fun SummaryGrid(dashboard: ProgressDashboardData, columns: Int) {
 
 @Composable
 private fun SummaryCard(metric: SummaryMetric, modifier: Modifier = Modifier) {
-    DashboardCard(modifier) {
-        Icon(metric.icon, null, tint = DashboardColors.PrimaryPink)
-        Text(metric.label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
-        Text(metric.value, color = DashboardColors.TextPrimary, style = DashboardTypography.PageTitle)
+    FluentSurfaceCard(modifier = modifier, accent = metric.identity.accent) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            IconTile(
+                icon = metric.icon,
+                accent = metric.identity.accent,
+                container = metric.identity.container,
+                size = 44.dp,
+                badgeEmoji = metric.emoji,
+            )
+            Text(metric.label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
+        }
+        Text(metric.value, color = DashboardColors.TextPrimary, style = DashboardTypography.Display)
         Text(metric.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
     }
 }
@@ -157,9 +186,12 @@ private fun EvidenceRow(evidence: LearningEvidence) {
 }
 
 @Composable
-private fun EmptyProgressCard(message: String) = DashboardCard(Modifier.fillMaxWidth()) {
-    Text(message, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
-}
+private fun EmptyProgressCard(message: String) = FluentEmptyState(
+    emoji = "🌱",
+    title = "Nothing here yet",
+    message = message,
+    module = LearningModule.PROGRESS,
+)
 
 private fun activityLabel(evidence: LearningEvidence): String = when {
     evidence.activityType.contains("placement", true) -> "Placement Assessment"
@@ -181,4 +213,11 @@ private fun evidenceIcon(domain: String): ImageVector = when (domain.lowercase()
     else -> Icons.Rounded.CheckCircle
 }
 
-private data class SummaryMetric(val label: String, val value: String, val description: String, val icon: ImageVector)
+private data class SummaryMetric(
+    val emoji: String,
+    val label: String,
+    val value: String,
+    val description: String,
+    val icon: ImageVector,
+    val identity: LearningModule,
+)

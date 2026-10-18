@@ -10,29 +10,19 @@ import com.seanora.fluentai.ai.live.VoiceUiState
 import com.seanora.fluentai.ai.live.SpeakingPersona
 import com.seanora.fluentai.ai.live.SpeakingSessionType
 import com.seanora.fluentai.core.model.CorrectionMode
-import com.seanora.fluentai.core.model.LearningEvidence
-import com.seanora.fluentai.core.model.MasterySnapshot
 import com.seanora.fluentai.core.model.MistakeRecord
-import com.seanora.fluentai.core.model.ReviewSchedule
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.UserProfile
 import com.seanora.fluentai.data.repository.SpeakingRepository
 import com.seanora.fluentai.data.repository.UserLearningRepository
-import com.seanora.fluentai.data.user.dao.SpeakingSessionDao
-import com.seanora.fluentai.data.user.entity.SpeakingSessionRecordEntity
-import com.seanora.fluentai.domain.mastery.MasteryEngine
-import com.seanora.fluentai.domain.mastery.RecordLearningEvidenceUseCase
-import com.seanora.fluentai.domain.mistakes.MistakeEngine
 import com.seanora.fluentai.domain.speaking.ProcessSpeakingAnalysisUseCase
 import com.seanora.fluentai.domain.speaking.SpeakingPromptBuilder
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -47,22 +37,6 @@ class SpeakingViewModel @Inject constructor(
     private val processSpeakingAnalysisUseCase: ProcessSpeakingAnalysisUseCase,
     private val userLearningRepository: UserLearningRepository
 ) : ViewModel() {
-
-    constructor(sessionManager: LiveCoachSessionManager) : this(
-        sessionManager = sessionManager,
-        speakingRepository = EmptySpeakingRepository(),
-        promptBuilder = SpeakingPromptBuilder(),
-        analysisClient = com.seanora.fluentai.ai.analysis.MockSpeakingAnalysisClient(),
-        processSpeakingAnalysisUseCase = ProcessSpeakingAnalysisUseCase(
-            RecordLearningEvidenceUseCase(
-                EmptyUserLearningRepository(),
-                MasteryEngine(),
-                MistakeEngine()
-            ),
-            EmptySpeakingSessionDao()
-        ),
-        userLearningRepository = EmptyUserLearningRepository()
-    )
 
     private val _uiState = MutableStateFlow(SpeakingUiState())
     val uiState: StateFlow<SpeakingUiState> = _uiState.asStateFlow()
@@ -81,8 +55,7 @@ class SpeakingViewModel @Inject constructor(
     private fun loadScenarios() {
         viewModelScope.launch {
             speakingRepository.getAllScenarios()
-                .catch { e ->
-                    android.util.Log.e("SpeakingViewModel", "Failed to load speaking scenarios", e)
+                .catch {
                     _uiState.update { it.copy(errorMessage = "Content could not be loaded. Please try again.") }
                 }
                 .collect { scenarios ->
@@ -284,30 +257,24 @@ class SpeakingViewModel @Inject constructor(
 
         if (hasLearnerSpeech && scenario != null) {
             viewModelScope.launch {
-                val analysisResult = analysisClient.analyzeSession(
-                    scenario = scenario,
-                    mode = mode,
-                    transcript = currentTranscript,
-                    durationSeconds = durationSeconds
-                )
-
-                if (analysisResult.isSuccess) {
-                    val analysis = analysisResult.getOrThrow()
-                    val processedResult = processSpeakingAnalysisUseCase(analysis)
-                    _uiState.update {
-                        it.copy(
-                            isAnalyzing = false,
-                            postSessionAnalysis = analysis,
-                            analysisResult = processedResult
-                        )
-                    }
-                } else {
-                    _uiState.update {
-                        it.copy(
-                            isAnalyzing = false,
-                            errorMessage = "Analysis error: ${analysisResult.exceptionOrNull()?.message}"
-                        )
-                    }
+                val outcome = runCatching {
+                    val analysis = analysisClient.analyzeSession(
+                        scenario = scenario,
+                        mode = mode,
+                        transcript = currentTranscript,
+                        durationSeconds = durationSeconds
+                    ).getOrThrow()
+                    analysis to processSpeakingAnalysisUseCase(analysis)
+                }
+                _uiState.update { current ->
+                    outcome.fold(
+                        onSuccess = { (analysis, processed) ->
+                            current.copy(isAnalyzing = false, postSessionAnalysis = analysis, analysisResult = processed)
+                        },
+                        onFailure = { error ->
+                            current.copy(isAnalyzing = false, errorMessage = "Analysis error: ${error.message}")
+                        }
+                    )
                 }
             }
         } else {
@@ -347,7 +314,7 @@ class SpeakingViewModel @Inject constructor(
     }
 
     fun interruptCoach() {
-        sessionManager.interruptCoach("User tapped interrupt")
+        sessionManager.interruptCoach()
     }
 
     fun togglePause() {
@@ -367,45 +334,17 @@ class SpeakingViewModel @Inject constructor(
     fun sendTextMessage(text: String) {
         sessionManager.sendTextMessage(text)
     }
-}
 
-private class EmptySpeakingRepository : SpeakingRepository {
-    override fun getAllScenarios(): Flow<List<SpeakingScenario>> = flowOf(emptyList())
-    override fun getScenariosByLevel(level: String): Flow<List<SpeakingScenario>> = flowOf(emptyList())
-    override fun getScenariosByCategory(category: SpeakingCategory): Flow<List<SpeakingScenario>> = flowOf(emptyList())
-    override fun getScenarioById(id: String): Flow<SpeakingScenario?> = flowOf(null)
-    override suspend fun getScenarioByIdSync(id: String): SpeakingScenario? = null
-    override fun searchScenarios(query: String): Flow<List<SpeakingScenario>> = flowOf(emptyList())
-    override suspend fun getScenarioCount(): Int = 0
-}
+    fun onScreenHidden() {
+        if (_uiState.value.isSessionActive && _uiState.value.voiceState != VoiceUiState.PAUSED) {
+            sessionManager.pauseSession()
+        }
+    }
 
-private class EmptySpeakingSessionDao : SpeakingSessionDao {
-    override fun getAllSessions(): Flow<List<SpeakingSessionRecordEntity>> = flowOf(emptyList())
-    override fun getRecentSessions(limit: Int): Flow<List<SpeakingSessionRecordEntity>> = flowOf(emptyList())
-    override fun getSessionById(id: String): Flow<SpeakingSessionRecordEntity?> = flowOf(null)
-    override suspend fun getSessionByIdSync(id: String): SpeakingSessionRecordEntity? = null
-    override fun getSessionsForScenario(scenarioId: String): Flow<List<SpeakingSessionRecordEntity>> = flowOf(emptyList())
-    override suspend fun getSessionCount(): Int = 0
-    override suspend fun insertSession(session: SpeakingSessionRecordEntity) {}
-}
-
-private class EmptyUserLearningRepository : UserLearningRepository {
-    override suspend fun recordEvidence(evidence: LearningEvidence): Long = 0L
-    override fun getEvidenceForContent(contentId: String): Flow<List<LearningEvidence>> = flowOf(emptyList())
-    override fun getRecentEvidence(limit: Int): Flow<List<LearningEvidence>> = flowOf(emptyList())
-    override fun getMasterySnapshot(contentId: String): Flow<MasterySnapshot?> = flowOf(null)
-    override suspend fun getMasterySnapshotSync(contentId: String): MasterySnapshot? = null
-    override fun getAllMasterySnapshots(): Flow<List<MasterySnapshot>> = flowOf(emptyList())
-    override suspend fun saveMasterySnapshot(snapshot: MasterySnapshot) {}
-    override fun getActiveMistakes(): Flow<List<MistakeRecord>> = flowOf(emptyList())
-    override fun getAllMistakes(): Flow<List<MistakeRecord>> = flowOf(emptyList())
-    override suspend fun findMistake(contentId: String, trapType: String): MistakeRecord? = null
-    override suspend fun saveMistake(mistake: MistakeRecord): Long = 0L
-    override fun getDueReviews(currentTimestamp: Long): Flow<List<ReviewSchedule>> = flowOf(emptyList())
-    override fun getReviewSchedule(contentId: String): Flow<ReviewSchedule?> = flowOf(null)
-    override suspend fun getReviewScheduleSync(contentId: String): ReviewSchedule? = null
-    override suspend fun saveReviewSchedule(schedule: ReviewSchedule) {}
-    override fun getUserProfile(id: String): Flow<UserProfile?> = flowOf(null)
-    override suspend fun getUserProfileSync(id: String): UserProfile? = null
-    override suspend fun saveUserProfile(profile: UserProfile) {}
+    override fun onCleared() {
+        if (sessionManager.voiceState.value !in VoiceUiState.restartableStates) {
+            sessionManager.endSession()
+        }
+        super.onCleared()
+    }
 }

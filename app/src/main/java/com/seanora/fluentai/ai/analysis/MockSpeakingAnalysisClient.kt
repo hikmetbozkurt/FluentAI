@@ -15,11 +15,6 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.math.min
 
-/**
- * Deterministic, offline-first speaking evaluator and linguistic analyzer.
- * Satisfies AGENTS.md Section 5 (Offline-First Rule) by providing rich language analysis
- * of user speech without requiring cloud network connectivity.
- */
 @Singleton
 class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient {
 
@@ -40,16 +35,12 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
         val naturalAlternatives = mutableListOf<NaturalAlternative>()
         val strengths = mutableListOf<String>()
 
-        // 1. Detect Turkish L1 transfer patterns (ADR-010)
         detectTurkishTraps(userEntries, grammarObservations)
 
-        // 2. Vocabulary upgrades
         detectVocabUpgrades(userEntries, vocabObservations)
 
-        // 3. Natural reformulation alternatives
         generateNaturalAlternatives(userEntries, scenario, naturalAlternatives)
 
-        // 4. Strengths identification
         if (userEntries.isNotEmpty()) {
             strengths.add("Maintained active turn-taking with ${userEntries.size} spoken conversational contributions.")
             if (userText.split("\\s+".toRegex()).size > 40) {
@@ -64,7 +55,6 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
             }
         }
 
-        // 5. Suggested next practice items linked to curriculum
         val suggestedPractice = mutableListOf<SuggestedPracticeItem>()
         if (scenario.targetGrammarIds.isNotEmpty()) {
             val primaryGrammar = scenario.targetGrammarIds.first()
@@ -99,8 +89,6 @@ class MockSpeakingAnalysisClient @Inject constructor() : SpeakingAnalysisClient 
             )
         }
 
-        // 6. Deterministic transcript-derived scoring. These values measure observable text
-        // characteristics only; they do not claim acoustic pronunciation accuracy.
         val words = userText.lowercase()
             .split(Regex("[^a-z']+"))
             .filter { it.isNotBlank() }
