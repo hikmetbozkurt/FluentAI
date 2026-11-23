@@ -89,36 +89,36 @@ private fun ReadingHomeContent(
                 .padding(horizontal = horizontalPadding, vertical = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
-            Column(Modifier.widthIn(max = 1200.dp).fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(28.dp)) {
+            Column(Modifier.widthIn(max = 1200.dp).fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(24.dp)) {
                 ReadingBackButton(label = "Learn", onClick = onNavigateBack)
                 ReadingHero(expanded = expanded)
 
                 val primaryCard: @Composable (Modifier) -> Unit = { cardModifier ->
                     if (primary != null) {
                         PrimaryReadingCard(
-                            label = if (state.continueArticle != null) "Continue Reading" else "Recommended Reading",
+                            label = if (state.continueArticle != null) "Continue reading" else "Recommended reading",
                             article = primary,
                             stacked = !expanded,
                             onClick = { onOpenArticle(primary.id, ReadingSessionMode.STANDARD) },
                             modifier = cardModifier,
                         )
                     } else {
-                        EntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Find your next article", "Browse the Reading Library", onClick = onOpenLibrary, modifier = cardModifier)
+                        EntryCard(Icons.AutoMirrored.Rounded.MenuBook, "Find your next article", "Browse the reading library", onClick = onOpenLibrary, modifier = cardModifier)
                     }
                 }
                 val sideColumn: @Composable (Modifier) -> Unit = { columnModifier ->
-                    Column(columnModifier, verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                    Column(columnModifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
                         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                            Text("Today’s Reading", style = ReadingType.Heading, color = ReadingPalette.Ink)
+                            Text("Today’s reading", style = ReadingType.Heading, color = ReadingPalette.Ink)
                             Text("A fresh article picked for your level", style = ReadingType.Meta, color = ReadingPalette.InkSecondary)
                         }
                         state.dailyArticle?.let { article ->
                             ArticleRowCard(article, onClick = { onOpenArticle(article.id, ReadingSessionMode.STANDARD) })
                         }
-                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                             EntryCard(
                                 Icons.AutoMirrored.Rounded.MenuBook,
-                                "Browse Articles",
+                                "Browse articles",
                                 if (savedIds.isNotEmpty()) "${state.articles.size} articles · ${savedIds.size} saved" else "Explore all ${state.articles.size} articles",
                                 onClick = onOpenLibrary,
                                 modifier = Modifier.weight(1f),
@@ -126,8 +126,8 @@ private fun ReadingHomeContent(
                             val skillItem = state.currentSkillItem
                             EntryCard(
                                 Icons.AutoMirrored.Rounded.FactCheck,
-                                "Practice a Skill",
-                                if (skillItem == null) "No tagged skill practice is available" else "Comprehension in article context",
+                                "Practice a skill",
+                                if (skillItem == null) "No tagged skill practice available" else "Comprehension in article context",
                                 onClick = { if (skillItem != null) showSkills = !showSkills },
                                 modifier = Modifier.weight(1f),
                             )
@@ -135,8 +135,8 @@ private fun ReadingHomeContent(
                         if (onOpenLiveFeed != null) {
                             EntryCard(
                                 Icons.Rounded.Public,
-                                "Discover Live Articles",
-                                "Fresh real-world journalism from The Conversation & The Guardian (auto-cached offline)",
+                                "Discover live articles",
+                                "Fresh journalism from The Conversation and The Guardian, cached offline",
                                 onClick = onOpenLiveFeed,
                             )
                         }
@@ -165,7 +165,7 @@ private fun ReadingHomeContent(
                 }
 
                 if (expanded) {
-                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(28.dp)) {
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(24.dp)) {
                         primaryCard(Modifier.weight(1.15f))
                         sideColumn(Modifier.weight(1f))
                     }
@@ -185,7 +185,7 @@ private fun ReadingHero(expanded: Boolean) {
             ReadingEyebrow("Learn · Reading")
             Text("Reading", style = ReadingType.Display, color = ReadingPalette.Ink)
             Text(
-                "Build academic reading comprehension through real texts.",
+                "Build academic reading comprehension through real texts",
                 style = FluentTheme.typography.bodyLarge,
                 color = ReadingPalette.InkSecondary,
             )
@@ -196,14 +196,14 @@ private fun ReadingHero(expanded: Boolean) {
             titleBlock(Modifier.weight(1f))
             ReadingIllustrationImage(
                 ReadingIllustration.HERO,
-                modifier = Modifier.weight(1.2f).height(220.dp).clip(RoundedCornerShape(24.dp)),
+                modifier = Modifier.weight(1.2f).height(220.dp).clip(RoundedCornerShape(16.dp)),
             )
         }
     } else {
         Column(verticalArrangement = Arrangement.spacedBy(20.dp)) {
             ReadingIllustrationImage(
                 ReadingIllustration.HERO,
-                modifier = Modifier.fillMaxWidth().height(180.dp).clip(RoundedCornerShape(24.dp)),
+                modifier = Modifier.fillMaxWidth().height(180.dp).clip(RoundedCornerShape(16.dp)),
             )
             titleBlock(Modifier.fillMaxWidth())
         }
@@ -219,9 +219,9 @@ private fun PrimaryReadingCard(
     modifier: Modifier = Modifier,
 ) {
     ReadingCard(modifier = modifier, onClick = onClick, onClickLabel = "$label: ${article.title}") {
-        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(18.dp)) {
+        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
             ReadingCoverImage(article.id, Modifier.fillMaxWidth().aspectRatio(if (stacked) 2f else 3f / 2f))
-            Column(Modifier.padding(horizontal = 8.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Column(Modifier.padding(horizontal = 8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 ReadingEyebrow(label)
                 Text(article.title, style = ReadingType.Title, color = ReadingPalette.Ink)
                 Text(
@@ -238,9 +238,9 @@ private fun PrimaryReadingCard(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(article.fullMeta(), style = ReadingType.Meta, color = ReadingPalette.InkMuted, modifier = Modifier.weight(1f))
-                Surface(shape = RoundedCornerShape(50), color = ReadingPalette.Ink) {
+                Surface(shape = RoundedCornerShape(12.dp), color = ReadingPalette.Ink) {
                     Row(
-                        Modifier.padding(horizontal = 20.dp, vertical = 12.dp),
+                        Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
                     ) {
@@ -258,11 +258,11 @@ private fun ArticleRowCard(article: ReadingArticle, onClick: () -> Unit) {
     ReadingCard(modifier = Modifier.fillMaxWidth(), onClick = onClick, onClickLabel = article.title) {
         Row(Modifier.padding(12.dp), horizontalArrangement = Arrangement.spacedBy(16.dp), verticalAlignment = Alignment.CenterVertically) {
             ReadingCoverImage(article.id, Modifier.width(112.dp).aspectRatio(1f))
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(article.title, style = ReadingType.CardTitle, color = ReadingPalette.Ink, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 Text(article.fullMeta(), style = ReadingType.Meta, color = ReadingPalette.InkMuted)
             }
-            Icon(Icons.AutoMirrored.Rounded.ArrowForward, contentDescription = null, tint = ReadingPalette.Ink)
+            Icon(Icons.AutoMirrored.Rounded.ArrowForward, contentDescription = null, tint = ReadingPalette.InkMuted)
         }
     }
 }
@@ -282,14 +282,14 @@ private fun EntryCard(
         onClickLabel = "$title. $description",
         color = if (emphasized) ReadingPalette.Clay else ReadingPalette.Card,
     ) {
-        Row(Modifier.padding(18.dp), horizontalArrangement = Arrangement.spacedBy(14.dp), verticalAlignment = Alignment.CenterVertically) {
+        Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
             Box(
-                Modifier.size(44.dp).clip(RoundedCornerShape(12.dp)).background(if (emphasized) ReadingPalette.Card else ReadingPalette.Elevated),
+                Modifier.size(40.dp).clip(RoundedCornerShape(10.dp)).background(if (emphasized) ReadingPalette.Card else ReadingPalette.Elevated),
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(icon, contentDescription = null, tint = if (emphasized) ReadingPalette.Terracotta else ReadingPalette.Ink, modifier = Modifier.size(22.dp))
+                Icon(icon, contentDescription = null, tint = if (emphasized) ReadingPalette.Terracotta else ReadingPalette.Ink, modifier = Modifier.size(20.dp))
             }
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(title, style = FluentTheme.typography.titleMedium, color = ReadingPalette.Ink, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 Text(description, style = FluentTheme.typography.bodySmall, color = ReadingPalette.InkSecondary, maxLines = 2, overflow = TextOverflow.Ellipsis)
             }

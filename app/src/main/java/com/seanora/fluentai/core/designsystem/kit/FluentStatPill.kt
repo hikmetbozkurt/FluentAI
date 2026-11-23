@@ -27,20 +27,24 @@ fun FluentStatPill(
 ) {
     Surface(
         modifier = modifier,
-        shape = RoundedCornerShape(18.dp),
+        shape = RoundedCornerShape(12.dp),
         color = module.container,
-        border = BorderStroke(1.dp, module.accent.copy(alpha = 0.25f))
+        border = BorderStroke(1.dp, module.accent.copy(alpha = 0.22f))
     ) {
-        Row(
-            modifier = Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(10.dp)
+        Column(
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+            verticalArrangement = Arrangement.spacedBy(2.dp)
         ) {
-            Text(emoji, fontSize = 22.sp)
-            Column {
-                Text(value, color = DashboardColors.TextPrimary, fontSize = 18.sp, fontWeight = FontWeight.ExtraBold)
-                Text(label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
-            }
+            Text(
+                value,
+                color = DashboardColors.TextPrimary,
+                style = DashboardTypography.CardTitle.copy(
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    fontFeatureSettings = "tnum"
+                )
+            )
+            Text(label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
         }
     }
 }

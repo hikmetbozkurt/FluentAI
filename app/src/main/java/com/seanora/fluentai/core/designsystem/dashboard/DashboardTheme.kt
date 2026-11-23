@@ -56,16 +56,16 @@ fun LingoPinkTheme(content: @Composable () -> Unit) {
 }
 
 object DashboardTypography {
-    val Display = TextStyle(fontSize = 32.sp, lineHeight = 38.sp, fontWeight = FontWeight.ExtraBold, letterSpacing = (-0.5).sp)
-    val PageTitle = TextStyle(fontSize = 24.sp, lineHeight = 30.sp, fontWeight = FontWeight.ExtraBold)
-    val Eyebrow = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Bold, letterSpacing = 1.2.sp)
-    val Subtitle = TextStyle(fontSize = 15.sp, lineHeight = 22.sp, fontWeight = FontWeight.Medium)
-    val SectionTitle = TextStyle(fontSize = 19.sp, lineHeight = 24.sp, fontWeight = FontWeight.ExtraBold)
-    val CardTitle = TextStyle(fontSize = 17.sp, lineHeight = 22.sp, fontWeight = FontWeight.Bold)
+    val Display = TextStyle(fontSize = 30.sp, lineHeight = 36.sp, fontWeight = FontWeight.SemiBold, letterSpacing = (-0.4).sp)
+    val PageTitle = TextStyle(fontSize = 24.sp, lineHeight = 30.sp, fontWeight = FontWeight.SemiBold, letterSpacing = (-0.3).sp)
+    val Eyebrow = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Medium)
+    val Subtitle = TextStyle(fontSize = 15.sp, lineHeight = 22.sp, fontWeight = FontWeight.Normal)
+    val SectionTitle = TextStyle(fontSize = 18.sp, lineHeight = 24.sp, fontWeight = FontWeight.SemiBold)
+    val CardTitle = TextStyle(fontSize = 16.sp, lineHeight = 22.sp, fontWeight = FontWeight.SemiBold)
     val Body = TextStyle(fontSize = 14.sp, lineHeight = 20.sp)
     val Caption = TextStyle(fontSize = 12.sp, lineHeight = 16.sp, fontWeight = FontWeight.Medium)
     val Button = TextStyle(fontSize = 14.sp, lineHeight = 18.sp, fontWeight = FontWeight.SemiBold)
-    val Numeric = TextStyle(fontSize = 36.sp, lineHeight = 40.sp, fontWeight = FontWeight.Bold)
+    val Numeric = TextStyle(fontSize = 32.sp, lineHeight = 36.sp, fontWeight = FontWeight.SemiBold, fontFeatureSettings = "tnum")
 }
 
 object DashboardSpacing {
@@ -80,16 +80,16 @@ object DashboardSpacing {
 
 object DashboardDimensions {
     val CardRadius = 16.dp
-    val ButtonRadius = 14.dp
+    val ButtonRadius = 12.dp
     val CardPadding = 20.dp
     val ControlHeight = 52.dp
     val PagePadding = 24.dp
     val GridGap = 16.dp
     val LearningCardHeight = 108.dp
     val LearningContinueCardHeight = 96.dp
-    val LearningCardHorizontalPadding = 14.dp
-    val LearningCardVerticalPadding = 10.dp
-    val LearningCardContentSpacing = 6.dp
+    val LearningCardHorizontalPadding = 16.dp
+    val LearningCardVerticalPadding = 12.dp
+    val LearningCardContentSpacing = 8.dp
     val LearningIconContainerSize = 40.dp
     val LearningIconSize = 22.dp
 }

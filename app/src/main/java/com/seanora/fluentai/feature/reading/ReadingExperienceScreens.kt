@@ -159,7 +159,7 @@ fun ReadingLibraryScreen(
                         ReadingBackButton(label = "Back", onClick = onNavigateBack)
                         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             Text(
-                                if (savedOnly) "Saved Reading" else "Reading Library",
+                                if (savedOnly) "Saved reading" else "Reading library",
                                 style = ReadingType.Display,
                                 color = tokens.ink,
                             )
@@ -242,7 +242,7 @@ private fun LibrarySearchField(query: String, onQueryChange: (String) -> Unit) {
             unfocusedPlaceholderColor = tokens.inkMuted,
             cursorColor = tokens.terracotta,
         ),
-        shape = RoundedCornerShape(50),
+        shape = RoundedCornerShape(12.dp),
     )
 }
 
@@ -327,7 +327,7 @@ private fun LibraryArticleCard(
                 ReadingCoverImage(article.id, Modifier.fillMaxWidth().aspectRatio(3f / 2f))
                 if (isCompleted) {
                     Surface(
-                        shape = RoundedCornerShape(50),
+                        shape = RoundedCornerShape(12.dp),
                         color = tokens.sage,
                         modifier = Modifier.align(Alignment.TopStart).padding(10.dp),
                     ) {
@@ -535,7 +535,7 @@ private fun SessionTopBar(
     val bookmarkButton: @Composable () -> Unit = {
         Surface(
             onClick = onToggleSave,
-            shape = RoundedCornerShape(50),
+            shape = RoundedCornerShape(12.dp),
             color = tokens.card,
             border = BorderStroke(1.dp, tokens.border),
         ) {
@@ -732,7 +732,7 @@ private fun ArticleSection(
                 }
 
                 Text(
-                    "Tap any highlighted key term — or any word in the text — for instant lookup and pronunciation.",
+                    "Tap any highlighted term or word in the text for lookup and pronunciation",
                     style = ReadingType.Meta,
                     color = tokens.inkMuted,
                     modifier = Modifier.padding(top = 8.dp),
@@ -887,7 +887,7 @@ private fun ReaderComfortToolbar(
                     val active = style == surfaceStyle
                     Surface(
                         onClick = { onSelectStyle(style) },
-                        shape = RoundedCornerShape(50),
+                        shape = RoundedCornerShape(12.dp),
                         color = if (active) tokens.ink else tokens.elevated,
                     ) {
                         Text(
@@ -923,7 +923,7 @@ private fun ReaderComfortToolbar(
             // Read Aloud Toggle
             Surface(
                 onClick = onToggleReadAloud,
-                shape = RoundedCornerShape(50),
+                shape = RoundedCornerShape(12.dp),
                 color = if (isSpeakingArticle) tokens.terracotta else tokens.elevated,
             ) {
                 Row(
@@ -1119,7 +1119,7 @@ private fun WordLookupDetail(
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             Surface(
                 onClick = { tts.speak(displayTitle, TtsAccent.US) },
-                shape = RoundedCornerShape(50),
+                shape = RoundedCornerShape(12.dp),
                 color = tokens.elevated,
             ) {
                 Row(Modifier.padding(horizontal = 12.dp, vertical = 7.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
@@ -1129,7 +1129,7 @@ private fun WordLookupDetail(
             }
             Surface(
                 onClick = { tts.speak(displayTitle, TtsAccent.UK) },
-                shape = RoundedCornerShape(50),
+                shape = RoundedCornerShape(12.dp),
                 color = tokens.elevated,
             ) {
                 Row(Modifier.padding(horizontal = 12.dp, vertical = 7.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {

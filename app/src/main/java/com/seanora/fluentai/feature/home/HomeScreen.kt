@@ -114,14 +114,14 @@ private fun Dashboard(
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(scrollState)
-                .padding(horizontal = DashboardSpacing.md, vertical = DashboardSpacing.xs),
-            verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
+                .padding(horizontal = DashboardSpacing.md, vertical = DashboardSpacing.sm),
+            verticalArrangement = Arrangement.spacedBy(DashboardSpacing.sm),
         ) {
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(IntrinsicSize.Min),
-                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
+                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.sm),
                 verticalAlignment = Alignment.Top,
             ) {
                 WelcomeCard(plan, Modifier.weight(1.65f).fillMaxHeight())
@@ -132,7 +132,7 @@ private fun Dashboard(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(IntrinsicSize.Min),
-                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
+                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.sm),
                 verticalAlignment = Alignment.Top,
             ) {
                 ContinueLearningCard(plan, onResume, onLearn, Modifier.weight(1f).fillMaxHeight())
@@ -149,7 +149,7 @@ private fun Dashboard(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(IntrinsicSize.Min),
-                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.xs),
+                horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.sm),
                 verticalAlignment = Alignment.Top,
             ) {
                 ProgressCard(plan, onProgress, Modifier.weight(1.22f).fillMaxHeight())
@@ -169,7 +169,7 @@ private fun WelcomeCard(plan: TodayPlan, modifier: Modifier = Modifier) = Card(
     ),
     shape = RoundedCornerShape(DashboardDimensions.CardRadius),
     colors = CardDefaults.cardColors(containerColor = DashboardColors.SurfacePink),
-    elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
+    elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
 ) {
     Box(modifier = Modifier.fillMaxSize()) {
         Image(
@@ -185,30 +185,30 @@ private fun WelcomeCard(plan: TodayPlan, modifier: Modifier = Modifier) = Card(
         Column(
             modifier = Modifier
                 .fillMaxWidth(0.64f)
-                .padding(horizontal = 14.dp, vertical = 10.dp),
-            verticalArrangement = Arrangement.spacedBy(3.dp),
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             val name = plan.displayName?.trim()?.ifBlank { null }
-            val greeting = if (name != null) "Welcome back, $name 👋" else "Welcome back 👋"
+            val headline = if (name != null) "Today's practice, $name" else "Today's practice"
             Text(
-                text = greeting,
+                text = headline,
                 fontSize = 18.sp,
-                fontWeight = FontWeight.Bold,
+                lineHeight = 24.sp,
+                fontWeight = FontWeight.SemiBold,
                 color = DashboardColors.TextPrimary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
             Text(
-                text = "Ready to practice today?",
+                text = "${plan.currentLevel.label} · Target ${plan.targetLevel.label}",
                 fontSize = 13.sp,
-                fontWeight = FontWeight.SemiBold,
+                fontWeight = FontWeight.Medium,
                 color = DashboardColors.PrimaryPinkDark,
             )
             Text(
-                text = "“Better English. A brighter you.” 💖",
-                fontSize = 11.sp,
-                fontStyle = FontStyle.Italic,
-                color = DashboardColors.PrimaryPinkDark.copy(alpha = 0.85f),
+                text = "${plan.dailyMetrics.practiceMinutesToday} of ${plan.dailyGoalMinutes} min today",
+                style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
+                color = DashboardColors.TextSecondary,
             )
         }
     }
@@ -217,12 +217,12 @@ private fun WelcomeCard(plan: TodayPlan, modifier: Modifier = Modifier) = Card(
 @Composable
 private fun CurrentLevelCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modifier = Modifier) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.Rounded.EmojiEvents,
-        title = "Current Level",
+        title = "Current level",
         action = "View details →",
         onActionClick = onDetails,
     )
@@ -240,7 +240,7 @@ private fun CurrentLevelCard(plan: TodayPlan, onDetails: () -> Unit, modifier: M
             Box(
                 modifier = Modifier
                     .size(36.dp)
-                    .clip(RoundedCornerShape(9.dp))
+                    .clip(RoundedCornerShape(8.dp))
                     .background(Color(0xFFFFF0D4)),
                 contentAlignment = Alignment.Center,
             ) {
@@ -248,21 +248,21 @@ private fun CurrentLevelCard(plan: TodayPlan, onDetails: () -> Unit, modifier: M
                     Icons.Rounded.EmojiEvents,
                     contentDescription = null,
                     tint = Color(0xFFE5A100),
-                    modifier = Modifier.size(19.dp),
+                    modifier = Modifier.size(18.dp),
                 )
             }
             Column(Modifier.padding(start = 8.dp)) {
                 Text(
                     plan.currentLevel.label,
                     fontSize = 20.sp,
-                    fontWeight = FontWeight.Bold,
+                    fontWeight = FontWeight.SemiBold,
                     color = DashboardColors.TextPrimary,
-                    lineHeight = 22.sp,
+                    lineHeight = 24.sp,
                 )
                 Text(
                     levelName(plan.currentLevel.label),
                     color = DashboardColors.TextSecondary,
-                    fontSize = 10.sp,
+                    fontSize = 11.sp,
                 )
             }
         }
@@ -270,36 +270,33 @@ private fun CurrentLevelCard(plan: TodayPlan, onDetails: () -> Unit, modifier: M
         Spacer(Modifier.weight(1f))
 
         // Progress bar and percentage
-        Column(horizontalAlignment = Alignment.End) {
+        Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
-                    "Overall Progress ",
-                    fontSize = 10.sp,
+                    "Overall progress ",
+                    fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
                 )
                 Text(
                     percentText,
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold,
+                    style = DashboardTypography.CardTitle.copy(fontFeatureSettings = "tnum"),
                     color = DashboardColors.TextPrimary,
                 )
             }
-            Spacer(Modifier.height(3.dp))
             LinearProgressIndicator(
                 progress = { progress / 100f },
                 modifier = Modifier
-                    .width(88.dp)
-                    .height(5.dp)
+                    .width(96.dp)
+                    .height(6.dp)
                     .clip(CircleShape)
                     .clickable(onClick = onDetails),
                 color = DashboardColors.PrimaryPink,
                 trackColor = DashboardColors.ProgressTrack,
             )
-            Spacer(Modifier.height(2.dp))
             Text(
-                "${100 - progress}% to reach ${plan.targetLevel.label}",
+                "${100 - progress}% to ${plan.targetLevel.label}",
+                style = DashboardTypography.Caption.copy(fontSize = 11.sp, fontFeatureSettings = "tnum"),
                 color = DashboardColors.TextSecondary,
-                fontSize = 8.5.sp,
             )
         }
     }
@@ -314,12 +311,12 @@ private fun ContinueLearningCard(
     modifier: Modifier = Modifier,
 ) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.AutoMirrored.Rounded.MenuBook,
-        title = "Continue Learning",
+        title = "Continue learning",
         subtitle = "Pick up where you left off",
     )
 
@@ -334,40 +331,40 @@ private fun ContinueLearningCard(
             contentDescription = null,
             contentScale = ContentScale.Fit,
             modifier = Modifier
-                .width(68.dp)
-                .height(62.dp),
+                .width(64.dp)
+                .height(60.dp),
         )
 
         Column(
             modifier = Modifier
                 .weight(1f)
                 .padding(start = 8.dp),
-            verticalArrangement = Arrangement.spacedBy(1.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             Box(
                 modifier = Modifier
-                    .clip(RoundedCornerShape(4.dp))
+                    .clip(RoundedCornerShape(6.dp))
                     .background(Color(0xFFFFE5F0))
-                    .padding(horizontal = 5.dp, vertical = 1.dp),
+                    .padding(horizontal = 8.dp, vertical = 2.dp),
             ) {
                 Text(
                     "Last lesson",
-                    fontSize = 8.sp,
-                    fontWeight = FontWeight.Bold,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Medium,
                     color = DashboardColors.PrimaryPinkDark,
                 )
             }
             Text(
                 text = item?.title ?: "No resumable activity yet",
-                fontSize = 11.sp,
-                fontWeight = FontWeight.Bold,
+                fontSize = 13.sp,
+                fontWeight = FontWeight.SemiBold,
                 color = DashboardColors.TextPrimary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
             Text(
-                text = item?.domain ?: "Choose a lesson from Learn to begin.",
-                fontSize = 9.sp,
+                text = item?.domain ?: "Choose a lesson from Learn to begin",
+                fontSize = 11.sp,
                 color = DashboardColors.TextSecondary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
@@ -376,27 +373,27 @@ private fun ContinueLearningCard(
     }
 
     DashboardPrimaryButton(
-        text = "Continue Learning →",
+        text = "Continue learning →",
         icon = Icons.Rounded.PlayArrow,
         onClick = { if (item != null) onResume(item) else onLearn() },
         modifier = Modifier.fillMaxWidth(),
-        minHeight = 32.dp,
+        minHeight = 36.dp,
     )
 }
 
 @Composable
 private fun DailyPracticeCard(plan: TodayPlan, modifier: Modifier = Modifier) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     val minutes = plan.dailyMetrics.practiceMinutesToday
     val goal = plan.dailyGoalMinutes.coerceAtLeast(1)
 
     DashboardHeader(
         icon = Icons.Rounded.CalendarToday,
-        title = "Daily Practice",
-        subtitle = "Today's goal: $goal minutes",
+        title = "Daily practice",
+        subtitle = "Goal: $goal minutes",
     )
 
     Row(
@@ -408,24 +405,22 @@ private fun DailyPracticeCard(plan: TodayPlan, modifier: Modifier = Modifier) = 
         Box(contentAlignment = Alignment.Center) {
             CircularProgressIndicator(
                 progress = { (minutes.toFloat() / goal).coerceIn(0f, 1f) },
-                modifier = Modifier.size(46.dp),
+                modifier = Modifier.size(52.dp),
                 color = DashboardColors.PrimaryPink,
                 trackColor = DashboardColors.ProgressTrack,
-                strokeWidth = 4.5.dp,
+                strokeWidth = 4.dp,
             )
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
                     "$minutes",
-                    fontSize = 13.sp,
-                    fontWeight = FontWeight.Bold,
+                    style = DashboardTypography.CardTitle.copy(fontSize = 14.sp, lineHeight = 16.sp, fontFeatureSettings = "tnum"),
                     color = DashboardColors.TextPrimary,
-                    lineHeight = 15.sp,
                 )
                 Text(
                     "min",
-                    fontSize = 7.5.sp,
+                    fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
-                    lineHeight = 9.sp,
+                    lineHeight = 12.sp,
                 )
             }
         }
@@ -436,58 +431,56 @@ private fun DailyPracticeCard(plan: TodayPlan, modifier: Modifier = Modifier) = 
                 Icons.Rounded.LocalFireDepartment,
                 contentDescription = null,
                 tint = Color(0xFFFF5722),
-                modifier = Modifier.size(24.dp),
+                modifier = Modifier.size(22.dp),
             )
             Column(Modifier.padding(start = 4.dp)) {
                 Text(
                     "${plan.dailyMetrics.streakDays}",
-                    fontSize = 16.sp,
-                    fontWeight = FontWeight.Bold,
+                    style = DashboardTypography.CardTitle.copy(fontFeatureSettings = "tnum"),
                     color = DashboardColors.TextPrimary,
-                    lineHeight = 18.sp,
                 )
                 Text(
                     "day streak",
-                    fontSize = 9.sp,
+                    fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
                 )
             }
         }
     }
 
-    // Goal motivation banner
+    // Goal status bar
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .clip(RoundedCornerShape(8.dp))
             .background(Color(0xFFFFF0F5))
-            .padding(horizontal = 8.dp, vertical = 4.dp),
+            .padding(horizontal = 8.dp, vertical = 6.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Icon(
                 Icons.Rounded.TrackChanges,
                 contentDescription = null,
                 tint = DashboardColors.PrimaryPink,
-                modifier = Modifier.size(14.dp),
+                modifier = Modifier.size(16.dp),
             )
-            Column(Modifier.padding(start = 5.dp)) {
+            Column(Modifier.padding(start = 8.dp)) {
                 Text(
                     when {
-                        minutes >= goal -> "Goal complete!"
-                        minutes == 0 -> "Ready to start?"
-                        else -> "You're doing great!"
+                        minutes >= goal -> "Goal reached"
+                        minutes == 0 -> "Not started"
+                        else -> "In progress"
                     },
-                    fontSize = 9.sp,
-                    fontWeight = FontWeight.Bold,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.SemiBold,
                     color = DashboardColors.PrimaryPinkDark,
                 )
                 Text(
                     when {
-                        minutes >= goal -> "Today's goal is complete."
-                        minutes == 0 -> "$goal minutes to reach today's goal."
-                        else -> "${goal - minutes} minutes to complete today's goal."
+                        minutes >= goal -> "Today's goal is complete"
+                        minutes == 0 -> "$goal min remaining today"
+                        else -> "${goal - minutes} min remaining today"
                     },
-                    fontSize = 8.sp,
+                    style = DashboardTypography.Caption.copy(fontSize = 11.sp, fontFeatureSettings = "tnum"),
                     color = DashboardColors.TextSecondary,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
@@ -500,13 +493,13 @@ private fun DailyPracticeCard(plan: TodayPlan, modifier: Modifier = Modifier) = 
 @Composable
 private fun SpeakingPracticeCard(onSpeak: () -> Unit, modifier: Modifier = Modifier) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.Rounded.Mic,
-        title = "Speaking Practice",
-        subtitle = "Have a natural conversation with AI",
+        title = "Speaking practice",
+        subtitle = "Natural conversation with AI",
     )
 
     Image(
@@ -520,11 +513,11 @@ private fun SpeakingPracticeCard(onSpeak: () -> Unit, modifier: Modifier = Modif
     )
 
     DashboardPrimaryButton(
-        text = "Start Conversation →",
+        text = "Start conversation →",
         icon = Icons.Rounded.Mic,
         onClick = onSpeak,
         modifier = Modifier.fillMaxWidth(),
-        minHeight = 32.dp,
+        minHeight = 36.dp,
     )
 }
 
@@ -535,13 +528,13 @@ private fun FocusCard(
     onActivity: (TodayPlanItem) -> Unit,
 ) = DashboardCard(
     modifier = Modifier.fillMaxWidth(),
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.Rounded.TrackChanges,
-        title = "Today's Focus",
-        subtitle = "Practice key skills for faster progress.",
+        title = "Today's focus",
+        subtitle = "Practice key skills for steady progress",
     )
 
     val nextPlanItem = plan.focusItems.firstOrNull()
@@ -549,39 +542,39 @@ private fun FocusCard(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .clip(RoundedCornerShape(10.dp))
+                .clip(RoundedCornerShape(12.dp))
                 .background(DashboardColors.BackgroundSecondary)
-                .border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(10.dp))
+                .border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(12.dp))
                 .clickable { onActivity(nextPlanItem) }
                 .padding(horizontal = 12.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             Box(
                 modifier = Modifier
                     .clip(RoundedCornerShape(6.dp))
                     .background(DashboardColors.PrimaryPink)
-                    .padding(horizontal = 7.dp, vertical = 3.dp),
+                    .padding(horizontal = 8.dp, vertical = 4.dp),
             ) {
                 Text(
-                    "UP NEXT",
-                    fontSize = 8.5.sp,
-                    fontWeight = FontWeight.Bold,
+                    "Up next",
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.SemiBold,
                     color = Color.White,
                 )
             }
-            Column(Modifier.weight(1f)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                 Text(
                     text = nextPlanItem.title,
-                    fontSize = 11.5.sp,
-                    fontWeight = FontWeight.Bold,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.SemiBold,
                     color = DashboardColors.TextPrimary,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                 )
                 Text(
                     text = "${nextPlanItem.domain.replaceFirstChar { it.uppercase() }} · ${nextPlanItem.estimatedMinutes} min · ${nextPlanItem.explanation}",
-                    fontSize = 9.5.sp,
+                    fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
@@ -589,8 +582,8 @@ private fun FocusCard(
             }
             Text(
                 text = "Start →",
-                fontSize = 10.5.sp,
-                fontWeight = FontWeight.Bold,
+                fontSize = 12.sp,
+                fontWeight = FontWeight.SemiBold,
                 color = DashboardColors.PrimaryPinkDark,
             )
         }
@@ -651,13 +644,13 @@ private fun SkillFocusTile(
                 icon,
                 contentDescription = null,
                 tint = iconTint,
-                modifier = Modifier.size(46.dp),
+                modifier = Modifier.size(34.dp),
             )
-            Spacer(Modifier.height(3.dp))
+            Spacer(Modifier.height(4.dp))
             Text(
                 title,
-                fontSize = 10.5.sp,
-                fontWeight = FontWeight.SemiBold,
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Medium,
                 color = DashboardColors.TextPrimary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
@@ -670,13 +663,13 @@ private fun SkillFocusTile(
 @Composable
 private fun ProgressCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modifier = Modifier) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.AutoMirrored.Rounded.ShowChart,
-        title = "Progress Overview",
-        subtitle = "Your skill development at a glance.",
+        title = "Progress overview",
+        subtitle = "Skill development at a glance",
         action = "See details →",
         onActionClick = onDetails,
     )
@@ -706,22 +699,25 @@ private fun ProgressCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modif
                 Box(contentAlignment = Alignment.Center) {
                     CircularProgressIndicator(
                         progress = { progressFloat },
-                        modifier = Modifier.size(38.dp),
+                        modifier = Modifier.size(44.dp),
                         color = color,
                         trackColor = DashboardColors.ProgressTrack,
-                        strokeWidth = 3.8.dp,
+                        strokeWidth = 4.dp,
                     )
                     Text(
                         txt,
-                        fontSize = 9.5.sp,
-                        fontWeight = FontWeight.Bold,
+                        style = DashboardTypography.Caption.copy(
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            fontFeatureSettings = "tnum",
+                        ),
                         color = DashboardColors.TextPrimary,
                     )
                 }
-                Spacer(Modifier.height(3.dp))
+                Spacer(Modifier.height(4.dp))
                 Text(
                     name,
-                    fontSize = 9.sp,
+                    fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
@@ -734,13 +730,13 @@ private fun ProgressCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modif
 @Composable
 private fun RecentActivityCard(plan: TodayPlan, onDetails: () -> Unit, modifier: Modifier = Modifier) = DashboardCard(
     modifier = modifier,
-    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 10.dp),
-    contentSpacing = 6.dp,
+    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
+    contentSpacing = 8.dp,
 ) {
     DashboardHeader(
         icon = Icons.Rounded.Schedule,
-        title = "Recent Activity",
-        subtitle = "Your latest learning activity.",
+        title = "Recent activity",
+        subtitle = "Latest learning activity",
         action = "See all →",
         onActionClick = onDetails,
     )
@@ -753,13 +749,13 @@ private fun RecentActivityCard(plan: TodayPlan, onDetails: () -> Unit, modifier:
             contentAlignment = Alignment.CenterStart,
         ) {
             Text(
-                "Complete an activity to start your history.",
-                fontSize = 10.5.sp,
+                "Complete an activity to start your history",
+                fontSize = 12.sp,
                 color = DashboardColors.TextSecondary,
             )
         }
     } else {
-        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             plan.recentActivities.take(3).forEach { item ->
                 Row(
                     modifier = Modifier
@@ -776,19 +772,19 @@ private fun RecentActivityCard(plan: TodayPlan, onDetails: () -> Unit, modifier:
                         icon,
                         contentDescription = null,
                         tint = DashboardColors.PrimaryPink,
-                        modifier = Modifier.size(13.dp),
+                        modifier = Modifier.size(16.dp),
                     )
                     Text(
                         text = item.title,
-                        fontSize = 10.sp,
-                        fontWeight = FontWeight.SemiBold,
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Medium,
                         color = DashboardColors.TextPrimary,
-                        modifier = Modifier.padding(start = 5.dp),
+                        modifier = Modifier.padding(start = 8.dp),
                         maxLines = 1,
                     )
                     Text(
                         text = item.description,
-                        fontSize = 9.sp,
+                        fontSize = 11.sp,
                         color = DashboardColors.TextSecondary,
                         modifier = Modifier
                             .weight(1f)
@@ -798,7 +794,7 @@ private fun RecentActivityCard(plan: TodayPlan, onDetails: () -> Unit, modifier:
                     )
                     Text(
                         text = formatRelativeTime(item.timestamp),
-                        fontSize = 8.5.sp,
+                        fontSize = 11.sp,
                         color = DashboardColors.TextSecondary,
                     )
                 }

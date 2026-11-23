@@ -103,7 +103,7 @@ fun VocabularyCollectionsScreen(
         modifier
             .fillMaxSize()
             .background(DashboardColors.BackgroundPrimary)
-            .padding(horizontal = 28.dp, vertical = 22.dp),
+            .padding(horizontal = 24.dp, vertical = 20.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(16.dp)) {
@@ -115,17 +115,16 @@ fun VocabularyCollectionsScreen(
                 label = if (state.selectedCollection != null && initialTopicId == null) "Collections" else "Vocabulary",
                 accent = LearningModule.VOCABULARY.accent,
             )
-            Column(Modifier.weight(1f)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                 Text(
                     state.selectedCollection?.name ?: "Collections",
-                    fontSize = 26.sp,
-                    fontWeight = FontWeight.ExtraBold,
+                    style = DashboardTypography.PageTitle,
                     color = DashboardColors.TextPrimary,
                 )
                 Text(
                     state.selectedCollection?.let { "${state.collectionWords.size} curated words" }
-                        ?: "${state.collections.size} thematic vocabulary packs",
-                    style = DashboardTypography.Caption,
+                        ?: "${state.collections.size} thematic packs",
+                    style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
                     color = DashboardColors.TextSecondary,
                 )
             }
@@ -137,7 +136,7 @@ fun VocabularyCollectionsScreen(
                 ) {
                     Icon(Icons.Rounded.PlayArrow, null, Modifier.size(18.dp))
                     Spacer(Modifier.size(4.dp))
-                    Text("Practice Pack")
+                    Text("Practice pack")
                 }
             }
         }
@@ -146,42 +145,30 @@ fun VocabularyCollectionsScreen(
         if (selected == null) {
             LazyVerticalGrid(
                 columns = GridCells.Adaptive(minSize = 260.dp),
-                horizontalArrangement = Arrangement.spacedBy(14.dp),
-                verticalArrangement = Arrangement.spacedBy(14.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
                 contentPadding = PaddingValues(bottom = 24.dp),
                 modifier = Modifier.weight(1f),
             ) {
                 items(state.collections, key = { it.topicId }) { collection ->
                     Surface(
                         onClick = { viewModel.selectCollection(collection) },
-                        shape = RoundedCornerShape(20.dp),
+                        shape = RoundedCornerShape(16.dp),
                         color = Color.White,
                         border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                     ) {
-                        Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                             Row(
                                 Modifier.fillMaxWidth(),
                                 verticalAlignment = Alignment.CenterVertically,
                                 horizontalArrangement = Arrangement.SpaceBetween,
                             ) {
-                                Box(
-                                    Modifier
-                                        .size(42.dp)
-                                        .clip(RoundedCornerShape(12.dp))
-                                        .background(LearningModule.VOCABULARY.container),
-                                    contentAlignment = Alignment.Center,
-                                ) {
-                                    Icon(Icons.Rounded.Category, null, tint = LearningModule.VOCABULARY.accent, modifier = Modifier.size(22.dp))
-                                }
-                                Surface(shape = RoundedCornerShape(50), color = DashboardColors.BackgroundSecondary) {
-                                    Text(
-                                        "${collection.wordCount} words",
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.SemiBold,
-                                        color = DashboardColors.PrimaryPinkDark,
-                                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
-                                    )
-                                }
+                                Text(
+                                    "${collection.wordCount} words",
+                                    style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
+                                    color = DashboardColors.PrimaryPinkDark,
+                                )
+                                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = DashboardColors.TextMuted, modifier = Modifier.size(16.dp))
                             }
                             Text(
                                 collection.name,
@@ -190,14 +177,6 @@ fun VocabularyCollectionsScreen(
                                 maxLines = 2,
                                 overflow = TextOverflow.Ellipsis,
                             )
-                            Row(
-                                Modifier.fillMaxWidth(),
-                                verticalAlignment = Alignment.CenterVertically,
-                                horizontalArrangement = Arrangement.SpaceBetween,
-                            ) {
-                                Text("Explore topic", fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = LearningModule.VOCABULARY.accent)
-                                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = LearningModule.VOCABULARY.accent, modifier = Modifier.size(18.dp))
-                            }
                         }
                     }
                 }
@@ -266,8 +245,8 @@ fun VocabularyPracticeSessionScreen(
         modifier
             .fillMaxSize()
             .background(DashboardColors.BackgroundPrimary)
-            .padding(horizontal = 28.dp, vertical = 22.dp),
-        verticalArrangement = Arrangement.spacedBy(18.dp),
+            .padding(horizontal = 24.dp, vertical = 20.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         BoxWithConstraints(Modifier.widthIn(max = 960.dp).fillMaxWidth()) {
@@ -275,11 +254,10 @@ fun VocabularyPracticeSessionScreen(
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(16.dp)) {
                     FluentBackButton(onClick = onNavigateBack, label = "Vocabulary", accent = LearningModule.VOCABULARY.accent)
-                    Column(Modifier.weight(1f)) {
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                         Text(
-                            if (state.isFlashPractice) "Flash Card Studio" else state.practiceSession?.mode?.title ?: "Smart Practice",
-                            fontSize = 26.sp,
-                            fontWeight = FontWeight.ExtraBold,
+                            if (state.isFlashPractice) "Flash cards" else state.practiceSession?.mode?.title ?: "Smart practice",
+                            style = DashboardTypography.PageTitle,
                             color = DashboardColors.TextPrimary,
                         )
                         Text(
@@ -368,28 +346,27 @@ private fun StandardPractice(
             val accuracy = (state.practiceCorrectCount * 100) / total
             Surface(
                 modifier = Modifier.widthIn(max = 640.dp).fillMaxWidth(),
-                shape = RoundedCornerShape(24.dp),
+                shape = RoundedCornerShape(16.dp),
                 color = Color.White,
                 border = BorderStroke(1.dp, DashboardColors.BorderSoft),
             ) {
                 Column(
-                    Modifier.padding(28.dp).verticalScroll(rememberScrollState()),
+                    Modifier.padding(24.dp).verticalScroll(rememberScrollState()),
                     verticalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
-                    Text("Session Complete", fontSize = 26.sp, fontWeight = FontWeight.ExtraBold, color = DashboardColors.TextPrimary)
+                    Text("Session complete", style = DashboardTypography.PageTitle, color = DashboardColors.TextPrimary)
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-                        Surface(shape = RoundedCornerShape(14.dp), color = DashboardColors.SurfacePink) {
+                        Surface(shape = RoundedCornerShape(12.dp), color = DashboardColors.SurfacePink) {
                             Text(
                                 "$accuracy% accuracy",
-                                fontSize = 18.sp,
-                                fontWeight = FontWeight.Bold,
+                                style = DashboardTypography.CardTitle.copy(fontFeatureSettings = "tnum"),
                                 color = DashboardColors.PrimaryPinkDark,
-                                modifier = Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
+                                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                             )
                         }
                         Text(
                             "${state.practiceCorrectCount} / $total correct · ${state.practiceIncorrectIds.size} to revisit",
-                            style = DashboardTypography.Body,
+                            style = DashboardTypography.Body.copy(fontFeatureSettings = "tnum"),
                             color = DashboardColors.TextSecondary,
                         )
                     }
@@ -406,7 +383,7 @@ private fun StandardPractice(
                                     ) {
                                         Text(
                                             word.headword,
-                                            fontWeight = FontWeight.SemiBold,
+                                            fontWeight = FontWeight.Medium,
                                             color = DashboardColors.PrimaryPinkDark,
                                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
                                         )
@@ -415,13 +392,13 @@ private fun StandardPractice(
                             }
                         }
                     }
-                    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         if (state.practiceIncorrectIds.isNotEmpty()) {
                             OutlinedButton(
                                 onClick = { viewModel.startSmartPractice(state.practiceIncorrectIds) },
                                 shape = RoundedCornerShape(12.dp),
                             ) {
-                                Text("Review Mistakes", color = DashboardColors.TextPrimary)
+                                Text("Review mistakes", color = DashboardColors.TextPrimary)
                             }
                         }
                         Button(
@@ -443,7 +420,7 @@ private fun StandardPractice(
                     .widthIn(max = 720.dp)
                     .fillMaxWidth()
                     .verticalScroll(rememberScrollState()),
-                verticalArrangement = Arrangement.spacedBy(14.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 Row(
                     Modifier.fillMaxWidth(),
@@ -452,12 +429,12 @@ private fun StandardPractice(
                 ) {
                     Text(
                         "Question ${state.practiceIndex + 1} of $total",
-                        style = DashboardTypography.Caption,
+                        style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
                         color = DashboardColors.TextSecondary,
                     )
                     state.practiceSecondsRemaining?.let { secs ->
                         Surface(
-                            shape = RoundedCornerShape(50),
+                            shape = RoundedCornerShape(8.dp),
                             color = if (secs <= 5) Color(0xFFFEE4E2) else DashboardColors.SurfacePink,
                         ) {
                             Row(
@@ -466,7 +443,11 @@ private fun StandardPractice(
                                 horizontalArrangement = Arrangement.spacedBy(4.dp),
                             ) {
                                 Icon(Icons.Rounded.Timer, null, tint = DashboardColors.PrimaryPinkDark, modifier = Modifier.size(14.dp))
-                                Text("${secs}s", fontWeight = FontWeight.Bold, fontSize = 13.sp, color = DashboardColors.PrimaryPinkDark)
+                                Text(
+                                    "${secs}s",
+                                    style = DashboardTypography.Caption.copy(fontWeight = FontWeight.SemiBold, fontFeatureSettings = "tnum"),
+                                    color = DashboardColors.PrimaryPinkDark,
+                                )
                             }
                         }
                     }
@@ -481,17 +462,17 @@ private fun StandardPractice(
                 // Question Prompt Card
                 Surface(
                     modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(20.dp),
+                    shape = RoundedCornerShape(16.dp),
                     color = Color.White,
                     border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                 ) {
                     Text(
                         question.prompt,
-                        fontSize = 21.sp,
-                        lineHeight = 30.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 20.sp,
+                        lineHeight = 28.sp,
+                        fontWeight = FontWeight.SemiBold,
                         color = DashboardColors.TextPrimary,
-                        modifier = Modifier.padding(22.dp),
+                        modifier = Modifier.padding(20.dp),
                     )
                 }
 
@@ -517,9 +498,9 @@ private fun StandardPractice(
                         onClick = { if (!state.submittedPracticeAnswer) viewModel.selectPracticeAnswer(option) },
                         enabled = !state.submittedPracticeAnswer,
                         modifier = Modifier.fillMaxWidth(),
-                        shape = RoundedCornerShape(16.dp),
+                        shape = RoundedCornerShape(12.dp),
                         color = container,
-                        border = BorderStroke(if (isSelected || isCorrectOption || isWrongSelection) 2.dp else 1.dp, border),
+                        border = BorderStroke(if (isSelected || isCorrectOption || isWrongSelection) 1.5.dp else 1.dp, border),
                     ) {
                         Row(
                             Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
@@ -528,14 +509,14 @@ private fun StandardPractice(
                         ) {
                             Box(
                                 Modifier
-                                    .size(30.dp)
-                                    .clip(CircleShape)
+                                    .size(28.dp)
+                                    .clip(RoundedCornerShape(8.dp))
                                     .background(if (isSelected) LearningModule.VOCABULARY.accent else DashboardColors.BackgroundSecondary),
                                 contentAlignment = Alignment.Center,
                             ) {
                                 Text(
                                     label,
-                                    fontWeight = FontWeight.Bold,
+                                    fontWeight = FontWeight.SemiBold,
                                     fontSize = 13.sp,
                                     color = if (isSelected) Color.White else DashboardColors.TextPrimary,
                                 )
@@ -543,7 +524,7 @@ private fun StandardPractice(
                             Text(
                                 option,
                                 modifier = Modifier.weight(1f),
-                                fontSize = 16.sp,
+                                fontSize = 15.sp,
                                 color = DashboardColors.TextPrimary,
                             )
                             if (isCorrectOption) Icon(Icons.Rounded.CheckCircle, "Correct", tint = DashboardColors.PlantGreen)
@@ -562,9 +543,9 @@ private fun StandardPractice(
                         ) {
                             Text(
                                 "Correct answer: ${question.correctAnswer}",
-                                fontWeight = FontWeight.SemiBold,
+                                fontWeight = FontWeight.Medium,
                                 color = DashboardColors.TextPrimary,
-                                modifier = Modifier.fillMaxWidth().padding(14.dp),
+                                modifier = Modifier.fillMaxWidth().padding(16.dp),
                             )
                         }
                     }
@@ -574,7 +555,7 @@ private fun StandardPractice(
                         colors = ButtonDefaults.buttonColors(containerColor = LearningModule.VOCABULARY.accent),
                         modifier = Modifier.align(Alignment.End),
                     ) {
-                        Text(if (state.practiceIndex == total - 1) "See Results" else "Next Question")
+                        Text(if (state.practiceIndex == total - 1) "See results" else "Next question")
                     }
                 } else {
                     Button(
@@ -584,7 +565,7 @@ private fun StandardPractice(
                         colors = ButtonDefaults.buttonColors(containerColor = LearningModule.VOCABULARY.accent),
                         modifier = Modifier.align(Alignment.End),
                     ) {
-                        Text("Check Answer")
+                        Text("Check answer")
                     }
                 }
             }
@@ -616,18 +597,18 @@ private fun FlashPractice(
         }
         state.isFlashComplete || card == null -> Surface(
             modifier = Modifier.widthIn(max = 560.dp).fillMaxWidth(),
-            shape = RoundedCornerShape(24.dp),
+            shape = RoundedCornerShape(16.dp),
             color = Color.White,
             border = BorderStroke(1.dp, DashboardColors.BorderSoft),
         ) {
             Column(
-                Modifier.padding(28.dp),
+                Modifier.padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(12.dp),
             ) {
-                Icon(Icons.Rounded.CheckCircle, null, tint = DashboardColors.PlantGreen, modifier = Modifier.size(48.dp))
-                Text("Flash Card Review Complete", fontSize = 24.sp, fontWeight = FontWeight.ExtraBold, color = DashboardColors.TextPrimary)
-                Text("${state.flashCards.size} words reviewed and scheduled.", color = DashboardColors.TextSecondary)
+                Icon(Icons.Rounded.CheckCircle, null, tint = DashboardColors.PlantGreen, modifier = Modifier.size(40.dp))
+                Text("Flash card review complete", style = DashboardTypography.PageTitle, color = DashboardColors.TextPrimary)
+                Text("${state.flashCards.size} words reviewed and scheduled", color = DashboardColors.TextSecondary)
                 Button(
                     onClick = onFinish,
                     shape = RoundedCornerShape(12.dp),
@@ -649,8 +630,16 @@ private fun FlashPractice(
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-                    Text("Card ${state.flashIndex + 1} of $total", style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
-                    Text("${(progress * 100).toInt()}%", style = DashboardTypography.Caption, color = LearningModule.VOCABULARY.accent)
+                    Text(
+                        "Card ${state.flashIndex + 1} of $total",
+                        style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
+                        color = DashboardColors.TextSecondary,
+                    )
+                    Text(
+                        "${(progress * 100).toInt()}%",
+                        style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
+                        color = LearningModule.VOCABULARY.accent,
+                    )
                 }
                 LinearProgressIndicator(
                     progress = { progress },
@@ -659,41 +648,42 @@ private fun FlashPractice(
                     trackColor = DashboardColors.ProgressTrack,
                 )
 
-                // Elevated Flashcard Surface
+                // Flashcard Surface
                 Surface(
                     onClick = { if (!state.isFlashRevealed) viewModel.revealFlashCard() },
                     modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(26.dp),
+                    shape = RoundedCornerShape(16.dp),
                     color = Color.White,
-                    border = BorderStroke(1.5.dp, if (state.isFlashRevealed) LearningModule.VOCABULARY.accent.copy(alpha = 0.4f) else DashboardColors.BorderSoft),
-                    shadowElevation = 4.dp,
+                    border = BorderStroke(1.dp, if (state.isFlashRevealed) LearningModule.VOCABULARY.accent.copy(alpha = 0.45f) else DashboardColors.BorderSoft),
+                    shadowElevation = 0.dp,
                 ) {
                     Column(
-                        Modifier.fillMaxWidth().padding(28.dp),
+                        Modifier.fillMaxWidth().padding(24.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.spacedBy(14.dp),
+                        verticalArrangement = Arrangement.spacedBy(12.dp),
                     ) {
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                             LevelBadge(levelString = card.cefrLevel, size = BadgeSize.Compact)
-                            Surface(shape = RoundedCornerShape(50), color = DashboardColors.BackgroundSecondary) {
+                            Surface(shape = RoundedCornerShape(8.dp), color = DashboardColors.BackgroundSecondary) {
                                 Text(
                                     card.partOfSpeech.replace('_', ' '),
                                     style = DashboardTypography.Caption,
                                     color = DashboardColors.TextSecondary,
-                                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
+                                    modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
                                 )
                             }
                         }
 
                         Text(
                             card.headword,
-                            fontSize = 38.sp,
-                            fontWeight = FontWeight.ExtraBold,
+                            fontSize = 34.sp,
+                            lineHeight = 40.sp,
+                            fontWeight = FontWeight.SemiBold,
                             color = DashboardColors.TextPrimary,
                             textAlign = TextAlign.Center,
                         )
                         if (card.phonetic.isNotBlank()) {
-                            Text(card.phonetic, fontSize = 16.sp, color = DashboardColors.TextSecondary)
+                            Text(card.phonetic, fontSize = 15.sp, color = DashboardColors.TextSecondary)
                         }
 
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -702,37 +692,37 @@ private fun FlashPractice(
                         }
 
                         if (!state.isFlashRevealed) {
-                            Spacer(Modifier.height(10.dp))
+                            Spacer(Modifier.height(8.dp))
                             Text(
-                                "Try to recall the English meaning, then tap to flip",
+                                "Recall the English meaning, then tap to flip",
                                 style = DashboardTypography.Caption,
                                 color = DashboardColors.TextMuted,
                             )
                             Button(
                                 onClick = viewModel::revealFlashCard,
-                                shape = RoundedCornerShape(14.dp),
+                                shape = RoundedCornerShape(12.dp),
                                 colors = ButtonDefaults.buttonColors(containerColor = LearningModule.VOCABULARY.accent),
-                                contentPadding = PaddingValues(horizontal = 28.dp, vertical = 12.dp),
+                                contentPadding = PaddingValues(horizontal = 24.dp, vertical = 12.dp),
                             ) {
-                                Text("Show Answer")
+                                Text("Show answer")
                             }
                         } else {
                             Box(Modifier.fillMaxWidth().height(1.dp).background(DashboardColors.BorderSoft))
                             Text(
                                 card.definitionEn,
-                                fontSize = 20.sp,
-                                lineHeight = 29.sp,
+                                fontSize = 19.sp,
+                                lineHeight = 28.sp,
                                 color = DashboardColors.TextPrimary,
                                 textAlign = TextAlign.Center,
                             )
                             card.examples.firstOrNull()?.let { ex ->
                                 Surface(
-                                    shape = RoundedCornerShape(14.dp),
+                                    shape = RoundedCornerShape(12.dp),
                                     color = DashboardColors.BackgroundPrimary,
                                     border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                                 ) {
                                     Row(
-                                        Modifier.fillMaxWidth().padding(14.dp),
+                                        Modifier.fillMaxWidth().padding(12.dp),
                                         verticalAlignment = Alignment.CenterVertically,
                                         horizontalArrangement = Arrangement.spacedBy(8.dp),
                                     ) {
@@ -744,10 +734,10 @@ private fun FlashPractice(
                                 }
                             }
                             if (card.collocations.isNotEmpty()) {
-                                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                                     card.collocations.take(4).forEach { c ->
                                         Surface(shape = RoundedCornerShape(8.dp), color = DashboardColors.BackgroundSecondary) {
-                                            Text(c.text, fontSize = 12.sp, color = DashboardColors.TextPrimary, modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp))
+                                            Text(c.text, fontSize = 12.sp, color = DashboardColors.TextPrimary, modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp))
                                         }
                                     }
                                 }
@@ -757,9 +747,9 @@ private fun FlashPractice(
                                     Surface(shape = RoundedCornerShape(10.dp), color = DashboardColors.SurfacePink.copy(alpha = 0.55f)) {
                                         Text(
                                             "TR · ${card.meaningTr}",
-                                            fontWeight = FontWeight.SemiBold,
+                                            fontWeight = FontWeight.Medium,
                                             color = DashboardColors.TextPrimary,
-                                            modifier = Modifier.padding(horizontal = 14.dp, vertical = 8.dp),
+                                            modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
                                         )
                                     }
                                 } else {

@@ -38,24 +38,27 @@ fun FluentActionTile(
     revealDelayMillis: Int = staggerDelay(1)
 ) {
     FluentSurfaceCard(
-        modifier = modifier.entranceReveal(revealDelayMillis),
+        modifier = modifier,
         accent = module.accent.takeIf { emphasized },
         emphasized = emphasized,
         onClick = onClick,
-        contentPadding = PaddingValues(horizontal = 18.dp, vertical = 16.dp)
+        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 16.dp)
     ) {
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-            IconTile(icon = icon, accent = module.accent, container = module.container, size = 48.dp, badgeEmoji = null)
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            IconTile(icon = icon, accent = module.accent, container = module.container, size = 44.dp, badgeEmoji = null)
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(title, color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 Text(detail, color = DashboardColors.TextSecondary, style = DashboardTypography.Body, maxLines = 2, overflow = TextOverflow.Ellipsis)
             }
             if (actionLabel != null) {
-                Text(actionLabel, color = module.accent, fontSize = 14.sp, fontWeight = FontWeight.Bold)
+                Text(actionLabel, color = module.accent, fontSize = 14.sp, fontWeight = FontWeight.Medium)
             }
-            Box(Modifier.size(36.dp).background(module.container, CircleShape), contentAlignment = Alignment.Center) {
-                Icon(Icons.AutoMirrored.Rounded.ArrowForward, contentDescription = null, tint = module.accent, modifier = Modifier.size(20.dp))
-            }
+            Icon(
+                Icons.AutoMirrored.Rounded.ArrowForward,
+                contentDescription = null,
+                tint = DashboardColors.TextMuted,
+                modifier = Modifier.size(18.dp)
+            )
         }
     }
 }

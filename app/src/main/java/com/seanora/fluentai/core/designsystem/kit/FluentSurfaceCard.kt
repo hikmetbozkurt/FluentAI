@@ -32,20 +32,20 @@ fun FluentSurfaceCard(
     emphasized: Boolean = false,
     onClick: (() -> Unit)? = null,
     contentPadding: PaddingValues = PaddingValues(20.dp),
-    contentSpacing: Dp = 10.dp,
+    contentSpacing: Dp = 12.dp,
     content: @Composable ColumnScope.() -> Unit
 ) {
-    val shape = RoundedCornerShape(22.dp)
+    val shape = RoundedCornerShape(16.dp)
     val borderColor = when {
-        emphasized && accent != null -> accent.copy(alpha = 0.55f)
+        emphasized && accent != null -> accent.copy(alpha = 0.45f)
         else -> DashboardColors.BorderSoft
     }
     // Keep the card opaque: a translucent Surface lets its own elevation shadow show through as a grey block.
-    val background = if (emphasized && accent != null) accent.copy(alpha = 0.07f).compositeOver(DashboardColors.Surface) else DashboardColors.Surface
+    val background = if (emphasized && accent != null) accent.copy(alpha = 0.05f).compositeOver(DashboardColors.Surface) else DashboardColors.Surface
     val body: @Composable () -> Unit = {
         Row(Modifier.height(IntrinsicSize.Min)) {
             if (accent != null) {
-                Box(Modifier.width(6.dp).fillMaxHeight().background(accent))
+                Box(Modifier.width(3.dp).fillMaxHeight().background(accent))
             }
             Column(
                 modifier = Modifier.weight(1f).padding(contentPadding),
@@ -62,8 +62,8 @@ fun FluentSurfaceCard(
             interactionSource = interactionSource,
             shape = shape,
             color = background,
-            border = BorderStroke(1.5.dp, borderColor),
-            shadowElevation = if (emphasized) 6.dp else 3.dp,
+            border = BorderStroke(1.dp, borderColor),
+            shadowElevation = if (emphasized) 2.dp else 0.dp,
             content = body
         )
     } else {
@@ -71,8 +71,8 @@ fun FluentSurfaceCard(
             modifier = modifier,
             shape = shape,
             color = background,
-            border = BorderStroke(1.5.dp, borderColor),
-            shadowElevation = if (emphasized) 6.dp else 3.dp,
+            border = BorderStroke(1.dp, borderColor),
+            shadowElevation = if (emphasized) 2.dp else 0.dp,
             content = body
         )
     }

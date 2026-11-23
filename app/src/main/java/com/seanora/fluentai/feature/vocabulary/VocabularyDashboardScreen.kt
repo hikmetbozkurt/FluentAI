@@ -97,7 +97,7 @@ fun VocabularyDashboardScreen(
             return@BoxWithConstraints
         }
         val wide = maxWidth >= 840.dp
-        val horizontalPadding = if (maxWidth >= 600.dp) 32.dp else 18.dp
+        val horizontalPadding = if (maxWidth >= 600.dp) 32.dp else 16.dp
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -113,7 +113,7 @@ fun VocabularyDashboardScreen(
                     title = "Vocabulary",
                     module = LearningModule.VOCABULARY,
                     eyebrow = "Learn · Vocabulary",
-                    subtitle = "Build a precise, active English vocabulary with spaced repetition and pronunciation.",
+                    subtitle = "Spaced repetition, context examples, and pronunciation",
                     onBack = onNavigateBack,
                     backLabel = "Learn",
                 )
@@ -130,7 +130,7 @@ fun VocabularyDashboardScreen(
                 // Continue card if available
                 state.featureState.resumeDestination?.let {
                     FluentActionTile(
-                        title = "Continue Learning",
+                        title = "Continue learning",
                         detail = state.featureState.resumeContextLabel(),
                         module = LearningModule.VOCABULARY,
                         icon = Icons.Rounded.PlayArrow,
@@ -145,7 +145,7 @@ fun VocabularyDashboardScreen(
                 if (wide) {
                     Row(
                         Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(18.dp),
+                        horizontalArrangement = Arrangement.spacedBy(16.dp),
                         verticalAlignment = Alignment.Top,
                     ) {
                         state.dailyWord?.let { word ->
@@ -189,16 +189,16 @@ fun VocabularyDashboardScreen(
                 }
 
                 FluentSectionTitle(
-                    title = "Explore Curriculum",
-                    subtitle = "Browse the full dictionary or drill by curated topic",
+                    title = "Explore curriculum",
+                    subtitle = "Browse the full dictionary or drill by topic",
                     accent = LearningModule.VOCABULARY.accent,
                 )
 
                 if (wide) {
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
                         FluentActionTile(
-                            title = "Vocabulary Library",
-                            detail = "Search, filter by CEFR & mastery across ${state.allItems.size} words",
+                            title = "Vocabulary library",
+                            detail = "Search and filter by CEFR and mastery across ${state.allItems.size} words",
                             module = LearningModule.VOCABULARY,
                             icon = Icons.AutoMirrored.Rounded.MenuBook,
                             actionLabel = "Browse",
@@ -218,8 +218,8 @@ fun VocabularyDashboardScreen(
                 } else {
                     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                         FluentActionTile(
-                            title = "Vocabulary Library",
-                            detail = "Search & filter ${state.allItems.size} words",
+                            title = "Vocabulary library",
+                            detail = "Search and filter ${state.allItems.size} words",
                             module = LearningModule.VOCABULARY,
                             icon = Icons.AutoMirrored.Rounded.MenuBook,
                             onClick = onOpenLibrary,
@@ -249,23 +249,23 @@ private fun VocabularyStatsStrip(
     wide: Boolean,
 ) {
     val stats = listOf(
-        Triple("Total Words", "$totalWords", Icons.AutoMirrored.Rounded.MenuBook to LearningModule.VOCABULARY.accent),
-        Triple("Mastered", "$masteredCount", Icons.Rounded.CheckCircle to DashboardColors.PlantGreen),
-        Triple("In Progress", "$learningCount", Icons.Rounded.Style to LearningModule.GRAMMAR.accent),
-        Triple("Due Review", "$dueCount", Icons.Rounded.Replay to if (dueCount > 0) DashboardColors.Warning else DashboardColors.TextSecondary),
+        Triple("Total words", "$totalWords", DashboardColors.TextPrimary),
+        Triple("Mastered", "$masteredCount", DashboardColors.PlantGreen),
+        Triple("In progress", "$learningCount", DashboardColors.TextPrimary),
+        Triple("Due review", "$dueCount", if (dueCount > 0) DashboardColors.Warning else DashboardColors.TextPrimary),
     )
     if (wide) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-            stats.forEach { (label, value, iconAndTint) ->
-                StatMiniCard(label, value, iconAndTint.first, iconAndTint.second, Modifier.weight(1f))
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            stats.forEach { (label, value, valueColor) ->
+                StatMiniCard(label, value, valueColor, Modifier.weight(1f))
             }
         }
     } else {
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             stats.chunked(2).forEach { pair ->
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                    pair.forEach { (label, value, iconAndTint) ->
-                        StatMiniCard(label, value, iconAndTint.first, iconAndTint.second, Modifier.weight(1f))
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    pair.forEach { (label, value, valueColor) ->
+                        StatMiniCard(label, value, valueColor, Modifier.weight(1f))
                     }
                 }
             }
@@ -277,34 +277,29 @@ private fun VocabularyStatsStrip(
 private fun StatMiniCard(
     label: String,
     value: String,
-    icon: ImageVector,
-    accent: Color,
+    valueColor: Color,
     modifier: Modifier = Modifier,
 ) {
     Surface(
         modifier = modifier,
-        shape = RoundedCornerShape(18.dp),
-        color = Color.White,
+        shape = RoundedCornerShape(12.dp),
+        color = DashboardColors.Surface,
         border = BorderStroke(1.dp, DashboardColors.BorderSoft),
     ) {
-        Row(
-            modifier = Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        Column(
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(RoundedCornerShape(12.dp))
-                    .background(accent.copy(alpha = 0.12f)),
-                contentAlignment = Alignment.Center,
-            ) {
-                Icon(icon, contentDescription = null, tint = accent, modifier = Modifier.size(20.dp))
-            }
-            Column {
-                Text(value, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold, color = DashboardColors.TextPrimary)
-                Text(label, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
-            }
+            Text(label, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
+            Text(
+                value,
+                style = DashboardTypography.PageTitle.copy(
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    fontFeatureSettings = "tnum",
+                ),
+                color = valueColor,
+            )
         }
     }
 }
@@ -324,7 +319,7 @@ private fun WordOfTheDayHeroCard(
     FluentSurfaceCard(
         modifier = modifier,
         accent = LearningModule.VOCABULARY.accent,
-        contentPadding = PaddingValues(22.dp),
+        contentPadding = PaddingValues(20.dp),
         contentSpacing = 12.dp,
     ) {
         Row(
@@ -333,18 +328,18 @@ private fun WordOfTheDayHeroCard(
             horizontalArrangement = Arrangement.SpaceBetween,
         ) {
             Text(
-                "WORD OF THE DAY",
+                "Word of the day",
                 style = DashboardTypography.Eyebrow,
                 color = LearningModule.VOCABULARY.accent,
             )
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                 LevelBadge(levelString = word.cefrLevel, size = BadgeSize.Compact)
-                Surface(shape = RoundedCornerShape(50), color = DashboardColors.BackgroundSecondary) {
+                Surface(shape = RoundedCornerShape(8.dp), color = DashboardColors.BackgroundSecondary) {
                     Text(
                         word.partOfSpeech.replace('_', ' '),
                         style = DashboardTypography.Caption,
                         color = DashboardColors.TextSecondary,
-                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
+                        modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
                     )
                 }
             }
@@ -355,11 +350,12 @@ private fun WordOfTheDayHeroCard(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            Column(Modifier.weight(1f)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(
                     word.headword,
-                    fontSize = 30.sp,
-                    fontWeight = FontWeight.ExtraBold,
+                    fontSize = 28.sp,
+                    lineHeight = 34.sp,
+                    fontWeight = FontWeight.SemiBold,
                     color = DashboardColors.TextPrimary,
                 )
                 if (word.phonetic.isNotBlank()) {
@@ -372,8 +368,8 @@ private fun WordOfTheDayHeroCard(
 
         Text(
             word.definitionEn,
-            fontSize = 16.sp,
-            lineHeight = 24.sp,
+            fontSize = 15.sp,
+            lineHeight = 22.sp,
             color = DashboardColors.TextPrimary,
         )
 
@@ -401,7 +397,7 @@ private fun WordOfTheDayHeroCard(
             ) {
                 Text(
                     "TR · ${word.meaningTr}",
-                    style = DashboardTypography.Body.copy(fontWeight = FontWeight.SemiBold),
+                    style = DashboardTypography.Body.copy(fontWeight = FontWeight.Medium),
                     color = DashboardColors.TextPrimary,
                     modifier = Modifier.fillMaxWidth().padding(12.dp),
                 )
@@ -418,8 +414,8 @@ private fun WordOfTheDayHeroCard(
                 colors = ButtonDefaults.buttonColors(containerColor = LearningModule.VOCABULARY.accent),
                 shape = RoundedCornerShape(12.dp),
             ) {
-                Text("Explore Word")
-                Spacer(Modifier.size(6.dp))
+                Text("Explore word")
+                Spacer(Modifier.size(8.dp))
                 Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, Modifier.size(16.dp))
             }
             OutlinedButton(
@@ -432,9 +428,9 @@ private fun WordOfTheDayHeroCard(
                     tint = if (isScheduledForReview) DashboardColors.PlantGreen else DashboardColors.PrimaryPinkDark,
                     modifier = Modifier.size(18.dp),
                 )
-                Spacer(Modifier.size(6.dp))
+                Spacer(Modifier.size(8.dp))
                 Text(
-                    if (isScheduledForReview) "In Review" else "Add to Review",
+                    if (isScheduledForReview) "In review" else "Add to review",
                     color = DashboardColors.TextPrimary,
                 )
             }
@@ -459,56 +455,45 @@ private fun PracticeQuickColumn(
     onSmartPractice: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(14.dp)) {
+    Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
         FluentSurfaceCard(
             modifier = Modifier.fillMaxWidth(),
             accent = LearningModule.VOCABULARY.accent,
             emphasized = true,
             onClick = onSmartPractice,
             contentPadding = PaddingValues(20.dp),
-            contentSpacing = 10.dp,
+            contentSpacing = 12.dp,
         ) {
             Row(
                 Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceBetween,
             ) {
-                Box(
-                    Modifier
-                        .size(44.dp)
-                        .clip(RoundedCornerShape(14.dp))
-                        .background(LearningModule.VOCABULARY.container),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Icon(Icons.Rounded.Psychology, null, tint = LearningModule.VOCABULARY.accent, modifier = Modifier.size(24.dp))
-                }
+                Text("Smart practice", style = DashboardTypography.SectionTitle, color = DashboardColors.TextPrimary)
                 if (dueCount > 0) {
-                    Surface(shape = RoundedCornerShape(50), color = DashboardColors.PrimaryPink) {
+                    Surface(shape = RoundedCornerShape(8.dp), color = DashboardColors.PrimaryPink) {
                         Text(
                             "$dueCount due",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
+                            style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
                             color = Color.White,
-                            modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
+                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
                         )
                     }
                 }
             }
-            Text("Smart Practice & Flash Cards", style = DashboardTypography.SectionTitle, color = DashboardColors.TextPrimary)
             Text(
                 if (dueCount > 0) {
-                    "Review $dueCount due card${if (dueCount == 1) "" else "s"} or switch to Match, Context, Collocation & Speed drills."
+                    "Review $dueCount due card${if (dueCount == 1) "" else "s"} or switch between match, context, collocation, and speed drills"
                 } else {
-                    "Launch a focused drill from $flashCardCount prioritized words across 6 practice modes."
+                    "Start a focused drill from $flashCardCount prioritized words across 6 practice modes"
                 },
                 style = DashboardTypography.Body,
                 color = DashboardColors.TextSecondary,
             )
-            Spacer(Modifier.height(2.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Start Session", color = LearningModule.VOCABULARY.accent, style = DashboardTypography.Button)
-                Spacer(Modifier.size(6.dp))
-                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = LearningModule.VOCABULARY.accent, modifier = Modifier.size(18.dp))
+                Text("Start session", color = LearningModule.VOCABULARY.accent, style = DashboardTypography.Button)
+                Spacer(Modifier.size(8.dp))
+                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = LearningModule.VOCABULARY.accent, modifier = Modifier.size(16.dp))
             }
         }
     }
@@ -523,12 +508,12 @@ internal fun PronunciationPillButton(
     Surface(
         onClick = onClick,
         modifier = modifier,
-        shape = CircleShape,
+        shape = RoundedCornerShape(8.dp),
         color = DashboardColors.SurfacePink,
         border = BorderStroke(1.dp, DashboardColors.BorderSoft),
     ) {
         Row(
-            modifier = Modifier.padding(horizontal = 11.dp, vertical = 7.dp),
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(4.dp),
         ) {
@@ -538,7 +523,7 @@ internal fun PronunciationPillButton(
                 tint = DashboardColors.PrimaryPinkDark,
                 modifier = Modifier.size(16.dp),
             )
-            Text(label, fontSize = 12.sp, fontWeight = FontWeight.Bold, color = DashboardColors.PrimaryPinkDark)
+            Text(label, fontSize = 12.sp, fontWeight = FontWeight.Medium, color = DashboardColors.PrimaryPinkDark)
         }
     }
 }

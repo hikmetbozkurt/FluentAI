@@ -38,15 +38,15 @@ internal object ReadingBreakpoints {
     val WideReader: Dp = 1000.dp
 }
 
-internal val ReadingCardShape = RoundedCornerShape(20.dp)
-internal val ReadingImageShape = RoundedCornerShape(16.dp)
+internal val ReadingCardShape = RoundedCornerShape(16.dp)
+internal val ReadingImageShape = RoundedCornerShape(12.dp)
 
 @Composable
 internal fun ReadingBackButton(label: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
     val tokens = LocalReadingTokens.current
     Surface(
         onClick = onClick,
-        shape = RoundedCornerShape(50),
+        shape = RoundedCornerShape(12.dp),
         color = tokens.card,
         border = BorderStroke(1.dp, tokens.border),
         modifier = modifier
@@ -57,7 +57,7 @@ internal fun ReadingBackButton(label: String, onClick: () -> Unit, modifier: Mod
             },
     ) {
         Row(
-            Modifier.padding(start = 12.dp, end = 18.dp, top = 12.dp, bottom = 12.dp),
+            Modifier.padding(start = 12.dp, end = 16.dp, top = 12.dp, bottom = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
@@ -67,10 +67,10 @@ internal fun ReadingBackButton(label: String, onClick: () -> Unit, modifier: Mod
     }
 }
 
-/** Small uppercase label above a title. */
+/** Small sentence-case label above a title. */
 @Composable
 internal fun ReadingEyebrow(text: String, modifier: Modifier = Modifier, color: androidx.compose.ui.graphics.Color = LocalReadingTokens.current.terracotta) {
-    Text(text.uppercase(), style = ReadingType.Eyebrow, color = color, modifier = modifier)
+    Text(text, style = ReadingType.Eyebrow, color = color, modifier = modifier)
 }
 
 /** Plain card surface used across Reading. */

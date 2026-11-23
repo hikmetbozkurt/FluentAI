@@ -145,7 +145,7 @@ fun VocabularyLibraryScreen(
             .background(DashboardColors.BackgroundPrimary),
     ) {
         val twoPane = maxWidth >= 880.dp
-        val horizontalPadding = if (maxWidth >= 600.dp) 28.dp else 16.dp
+        val horizontalPadding = if (maxWidth >= 600.dp) 24.dp else 16.dp
 
         Column(Modifier.fillMaxSize().padding(horizontal = horizontalPadding, vertical = 20.dp)) {
             // Top bar
@@ -155,26 +155,30 @@ fun VocabularyLibraryScreen(
                 horizontalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 FluentBackButton(onClick = onNavigateBack, label = "Vocabulary", accent = LearningModule.VOCABULARY.accent)
-                Column(Modifier.weight(1f)) {
-                    Text("Vocabulary Library", fontSize = 26.sp, fontWeight = FontWeight.ExtraBold, color = DashboardColors.TextPrimary)
-                    Text("${visible.size} of ${state.items.size} words", style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
+                Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                    Text("Vocabulary library", style = DashboardTypography.PageTitle, color = DashboardColors.TextPrimary)
+                    Text(
+                        "${visible.size} of ${state.items.size} words",
+                        style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
+                        color = DashboardColors.TextSecondary,
+                    )
                 }
             }
 
-            Spacer(Modifier.height(14.dp))
+            Spacer(Modifier.height(16.dp))
 
             // Search + Topic filter row
             Row(
                 Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(10.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 VocabularySearchField(state.searchQuery, viewModel::updateSearchQuery, Modifier.weight(1f))
                 Box {
                     OutlinedButton(
                         onClick = { topicMenu = true },
-                        shape = RoundedCornerShape(14.dp),
-                        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 14.dp),
+                        shape = RoundedCornerShape(12.dp),
+                        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 14.dp),
                     ) {
                         Text(
                             featureState.collections.firstOrNull { it.topicId == topicId }?.name ?: "All topics",
@@ -199,18 +203,18 @@ fun VocabularyLibraryScreen(
                 }
             }
 
-            Spacer(Modifier.height(10.dp))
+            Spacer(Modifier.height(12.dp))
 
             // CEFR & Mastery filters
             FlowRow(
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
                 verticalArrangement = Arrangement.spacedBy(8.dp),
-                modifier = Modifier.fillMaxWidth().padding(bottom = 14.dp),
+                modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp),
             ) {
                 listOf<String?>(null, "A2", "B1", "B2", "C1", "C2").forEach { level ->
                     val selected = state.selectedLevel == level
                     FilterPill(
-                        label = level ?: "All Levels",
+                        label = level ?: "All levels",
                         selected = selected,
                         accent = LearningModule.VOCABULARY.accent,
                         onClick = { viewModel.selectLevel(level) },
@@ -237,17 +241,17 @@ fun VocabularyLibraryScreen(
             if (visible.isEmpty()) {
                 Box(Modifier.weight(1f).fillMaxWidth(), contentAlignment = Alignment.Center) {
                     Surface(
-                        shape = RoundedCornerShape(20.dp),
+                        shape = RoundedCornerShape(16.dp),
                         color = Color.White,
                         border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                     ) {
                         Column(
-                            Modifier.padding(28.dp),
+                            Modifier.padding(24.dp),
                             horizontalAlignment = Alignment.CenterHorizontally,
                             verticalArrangement = Arrangement.spacedBy(8.dp),
                         ) {
                             Text("No words match your filters", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
-                            Text("Try clearing your search or switching CEFR/mastery filters.", style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
+                            Text("Clear your search or adjust the CEFR and mastery filters", style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
                         }
                     }
                 }
@@ -257,7 +261,7 @@ fun VocabularyLibraryScreen(
             if (twoPane) {
                 Row(
                     Modifier.weight(1f).fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(18.dp),
+                    horizontalArrangement = Arrangement.spacedBy(16.dp),
                 ) {
                     // Left Master List
                     LazyColumn(
@@ -291,7 +295,7 @@ fun VocabularyLibraryScreen(
                                 tts = tts,
                                 onAddToReview = { featureViewModel.addWordToReview(word.id) },
                                 onPracticeWord = { onOpenWord(word.id) },
-                                practiceButtonLabel = "Open Full View",
+                                practiceButtonLabel = "Open full view",
                                 onComplete = null,
                                 modifier = Modifier.fillMaxSize(),
                             )
@@ -332,15 +336,15 @@ private fun FilterPill(
 ) {
     Surface(
         onClick = onClick,
-        shape = RoundedCornerShape(50),
+        shape = RoundedCornerShape(10.dp),
         color = if (selected) accent else Color.White,
         border = BorderStroke(1.dp, if (selected) accent else DashboardColors.BorderSoft),
     ) {
         Text(
             label,
-            modifier = Modifier.padding(horizontal = 14.dp, vertical = 7.dp),
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
             fontSize = 13.sp,
-            fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
+            fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Medium,
             color = if (selected) Color.White else DashboardColors.TextPrimary,
         )
     }
@@ -358,25 +362,25 @@ private fun VocabularyLibraryRow(
     Surface(
         onClick = onClick,
         modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(16.dp),
+        shape = RoundedCornerShape(12.dp),
         color = if (selected) DashboardColors.SurfacePink.copy(alpha = 0.6f) else Color.White,
         border = BorderStroke(
-            width = if (selected) 1.5.dp else 1.dp,
+            width = 1.dp,
             color = if (selected) LearningModule.VOCABULARY.accent else DashboardColors.BorderSoft,
         ),
     ) {
         Row(
-            Modifier.padding(horizontal = 16.dp, vertical = 13.dp),
+            Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             MasteryDot(mastery = mastery, isDue = isDue)
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text(
                         word.headword,
                         fontSize = 16.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontWeight = FontWeight.SemiBold,
                         color = DashboardColors.TextPrimary,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
@@ -396,7 +400,7 @@ private fun VocabularyLibraryRow(
                     Icons.AutoMirrored.Rounded.VolumeUp,
                     contentDescription = "Pronounce ${word.headword}",
                     tint = DashboardColors.PrimaryPinkDark,
-                    modifier = Modifier.size(19.dp),
+                    modifier = Modifier.size(18.dp),
                 )
             }
             if (!selected) {
@@ -514,16 +518,16 @@ internal fun VocabularyWordDetailCardLayout(
 
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(14.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         // 1. Hero Word Card
         Surface(
             modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(22.dp),
+            shape = RoundedCornerShape(16.dp),
             color = Color.White,
             border = BorderStroke(1.dp, DashboardColors.BorderSoft),
         ) {
-            Column(Modifier.padding(22.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+            Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 FlowRow(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -544,13 +548,14 @@ internal fun VocabularyWordDetailCardLayout(
                 Row(
                     Modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
                 ) {
-                    Column(Modifier.weight(1f)) {
+                    Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                         Text(
                             word.headword,
-                            fontSize = 34.sp,
-                            fontWeight = FontWeight.ExtraBold,
+                            fontSize = 32.sp,
+                            lineHeight = 38.sp,
+                            fontWeight = FontWeight.SemiBold,
                             color = DashboardColors.TextPrimary,
                         )
                         if (word.phonetic.isNotBlank()) {
@@ -564,13 +569,13 @@ internal fun VocabularyWordDetailCardLayout(
                 // English Definition right inside the hero for instant single-glance comprehension
                 Text(
                     word.definitionEn,
-                    fontSize = 19.sp,
-                    lineHeight = 28.sp,
+                    fontSize = 18.sp,
+                    lineHeight = 26.sp,
                     color = DashboardColors.TextPrimary,
                 )
 
                 FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(12.dp),
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     Button(
@@ -589,9 +594,9 @@ internal fun VocabularyWordDetailCardLayout(
                             tint = if (isScheduledForReview) DashboardColors.PlantGreen else DashboardColors.PrimaryPinkDark,
                             modifier = Modifier.size(18.dp),
                         )
-                        Spacer(Modifier.size(6.dp))
+                        Spacer(Modifier.size(8.dp))
                         Text(
-                            if (isScheduledForReview) "In Review" else "Add to Review",
+                            if (isScheduledForReview) "In review" else "Add to review",
                             color = DashboardColors.TextPrimary,
                         )
                     }
@@ -609,16 +614,16 @@ internal fun VocabularyWordDetailCardLayout(
             Surface(
                 onClick = { showTurkishInline = !showTurkishInline },
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(18.dp),
+                shape = RoundedCornerShape(16.dp),
                 color = if (showTurkishInline) DashboardColors.SurfacePink.copy(alpha = 0.55f) else Color.White,
                 border = BorderStroke(1.dp, if (showTurkishInline) DashboardColors.PrimaryPinkLight else DashboardColors.BorderSoft),
             ) {
-                Column(Modifier.padding(18.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Rounded.Translate, null, tint = DashboardColors.PrimaryPinkDark, modifier = Modifier.size(20.dp))
-                        Spacer(Modifier.size(10.dp))
+                        Spacer(Modifier.size(12.dp))
                         Text(
-                            if (showTurkishInline) "Turkish Meaning & Traps" else "Reveal Turkish Help",
+                            if (showTurkishInline) "Turkish meaning and traps" else "Reveal Turkish help",
                             style = DashboardTypography.CardTitle,
                             color = DashboardColors.TextPrimary,
                             modifier = Modifier.weight(1f),
@@ -630,12 +635,12 @@ internal fun VocabularyWordDetailCardLayout(
                         )
                     }
                     AnimatedVisibility(visible = showTurkishInline) {
-                        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                             if (word.meaningTr.isNotBlank()) {
                                 Text(
                                     word.meaningTr,
-                                    fontSize = 17.sp,
-                                    fontWeight = FontWeight.SemiBold,
+                                    fontSize = 16.sp,
+                                    fontWeight = FontWeight.Medium,
                                     color = DashboardColors.TextPrimary,
                                 )
                             }
@@ -646,18 +651,18 @@ internal fun VocabularyWordDetailCardLayout(
                                     border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                                 ) {
                                     Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                             Icon(Icons.Rounded.WarningAmber, null, tint = DashboardColors.Warning, modifier = Modifier.size(16.dp))
                                             Text(
                                                 trap.trapType.replace('_', ' ').replaceFirstChar { it.uppercase() },
-                                                fontWeight = FontWeight.Bold,
+                                                fontWeight = FontWeight.SemiBold,
                                                 fontSize = 13.sp,
                                                 color = DashboardColors.TextPrimary,
                                             )
                                         }
                                         Text(trap.trapNoteTr, style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
                                         trap.incorrectExample?.let { Text("✗  $it", fontSize = 13.sp, color = Color(0xFFB42318)) }
-                                        trap.correctExample?.let { Text("✓  $it", fontSize = 13.sp, fontWeight = FontWeight.SemiBold, color = DashboardColors.PlantGreen) }
+                                        trap.correctExample?.let { Text("✓  $it", fontSize = 13.sp, fontWeight = FontWeight.Medium, color = DashboardColors.PlantGreen) }
                                     }
                                 }
                             }
@@ -671,19 +676,19 @@ internal fun VocabularyWordDetailCardLayout(
         if (word.examples.isNotEmpty()) {
             Surface(
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(20.dp),
+                shape = RoundedCornerShape(16.dp),
                 color = Color.White,
                 border = BorderStroke(1.dp, DashboardColors.BorderSoft),
             ) {
                 Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                    Text("Examples in Context", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+                    Text("Examples in context", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
                     word.examples.forEach { example ->
                         Row(
                             Modifier.fillMaxWidth(),
                             verticalAlignment = Alignment.Top,
-                            horizontalArrangement = Arrangement.spacedBy(10.dp),
+                            horizontalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
-                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
+                            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                                 VocabularyExampleText(example.en, word.headword)
                                 example.context?.takeIf { it.isNotBlank() }?.let {
                                     Text(it, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
@@ -691,7 +696,7 @@ internal fun VocabularyWordDetailCardLayout(
                             }
                             IconButton(
                                 onClick = { tts.speak(example.en) },
-                                modifier = Modifier.size(34.dp),
+                                modifier = Modifier.size(36.dp),
                             ) {
                                 Icon(
                                     Icons.AutoMirrored.Rounded.VolumeUp,
@@ -710,13 +715,13 @@ internal fun VocabularyWordDetailCardLayout(
         if (word.collocations.isNotEmpty() || word.topicTags.isNotEmpty()) {
             Surface(
                 modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(20.dp),
+                shape = RoundedCornerShape(16.dp),
                 color = Color.White,
                 border = BorderStroke(1.dp, DashboardColors.BorderSoft),
             ) {
                 Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                     if (word.collocations.isNotEmpty()) {
-                        Text("Common Collocations", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+                        Text("Common collocations", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
                         FlowRow(
                             horizontalArrangement = Arrangement.spacedBy(8.dp),
                             verticalArrangement = Arrangement.spacedBy(8.dp),
@@ -742,8 +747,8 @@ internal fun VocabularyWordDetailCardLayout(
                     if (word.topicTags.isNotEmpty()) {
                         Text("Topics", style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
                         FlowRow(
-                            horizontalArrangement = Arrangement.spacedBy(6.dp),
-                            verticalArrangement = Arrangement.spacedBy(6.dp),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp),
+                            verticalArrangement = Arrangement.spacedBy(8.dp),
                         ) {
                             word.topicTags.forEach { tag ->
                                 MetaChip(tag.replace('-', ' ').replace('_', ' '))
@@ -761,15 +766,15 @@ internal fun VocabularyWordDetailCardLayout(
 @Composable
 private fun MetaChip(text: String, accent: Color = DashboardColors.TextSecondary) {
     Surface(
-        shape = RoundedCornerShape(50),
+        shape = RoundedCornerShape(8.dp),
         color = accent.copy(alpha = 0.10f),
     ) {
         Text(
             text,
             fontSize = 12.sp,
-            fontWeight = FontWeight.SemiBold,
+            fontWeight = FontWeight.Medium,
             color = accent,
-            modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
+            modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),
         )
     }
 }

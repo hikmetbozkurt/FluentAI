@@ -18,10 +18,10 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
 
 object FluentMotion {
-    const val ENTRANCE_DURATION_MS = 420
-    const val STAGGER_STEP_MS = 70
-    const val PRESSED_SCALE = 0.97f
-    val ENTRANCE_OFFSET = 24.dp
+    const val ENTRANCE_DURATION_MS = 180
+    const val STAGGER_STEP_MS = 24
+    const val PRESSED_SCALE = 0.985f
+    val ENTRANCE_OFFSET = 8.dp
 }
 
 fun Modifier.pressScale(
@@ -31,7 +31,7 @@ fun Modifier.pressScale(
     val pressed by interactionSource.collectIsPressedAsState()
     val scale by animateFloatAsState(
         targetValue = if (pressed) pressedScale else 1f,
-        animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy, stiffness = Spring.StiffnessMedium),
+        animationSpec = spring(dampingRatio = Spring.DampingRatioNoBouncy, stiffness = Spring.StiffnessHigh),
         label = "pressScale"
     )
     graphicsLayer {

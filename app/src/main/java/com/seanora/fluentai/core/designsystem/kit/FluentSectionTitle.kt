@@ -34,35 +34,26 @@ fun FluentSectionTitle(
     onAction: (() -> Unit)? = null
 ) {
     Row(modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        Row(
+        Column(
             modifier = Modifier.weight(1f),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(10.dp)
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
-            Box(
-                modifier = Modifier
-                    .padding(end = 2.dp)
-                    .size(width = 4.dp, height = 22.dp)
-                    .background(accent, RoundedCornerShape(50))
+            Text(
+                title,
+                color = DashboardColors.TextPrimary,
+                style = DashboardTypography.SectionTitle,
+                modifier = Modifier.semantics { heading() }
             )
-            Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text(
-                    title,
-                    color = DashboardColors.TextPrimary,
-                    style = DashboardTypography.SectionTitle,
-                    modifier = Modifier.semantics { heading() }
-                )
-                subtitle?.let { Text(it, color = DashboardColors.TextSecondary, style = DashboardTypography.Body) }
-            }
+            subtitle?.let { Text(it, color = DashboardColors.TextSecondary, style = DashboardTypography.Body) }
         }
         if (actionLabel != null && onAction != null) {
-            Surface(onClick = onAction, shape = RoundedCornerShape(50), color = accent.copy(alpha = 0.1f)) {
+            Surface(onClick = onAction, shape = RoundedCornerShape(10.dp), color = accent.copy(alpha = 0.08f)) {
                 Text(
-                    "$actionLabel  →",
+                    "$actionLabel →",
                     color = accent,
                     fontSize = 13.sp,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(horizontal = 14.dp, vertical = 8.dp)
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp)
                 )
             }
         }
