@@ -25,9 +25,9 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
             "vocab_items": 3359,
             "grammar_lessons": 100,
             "exercises": 3062,
-            "reading_articles": 100,
+            "reading_articles": 108,
             "listening_scenarios": 100,
-            "speaking_scenarios": 16,
+            "speaking_scenarios": 18,
             "topics": 20,
             "content_relations": 3361,
         }
@@ -115,7 +115,7 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
                     self.assertIn(question["correct_answer"], options, f"Invalid answer for {content_id}:{question['id']}")
                     total_questions += 1
 
-        self.assertEqual(total_questions, 4032)
+        self.assertEqual(total_questions, 4056)
 
     def test_every_listening_audio_ref_resolves_to_one_packaged_mp3(self):
         cursor = self.connection.cursor()

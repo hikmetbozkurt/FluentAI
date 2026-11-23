@@ -107,7 +107,7 @@ private fun Dashboard(
     onLearn: () -> Unit,
     onProgress: () -> Unit,
 ) {
-    BoxWithConstraints(Modifier.fillMaxSize()) {
+    Box(Modifier.fillMaxSize()) {
         val scrollState = rememberScrollState()
 
         Column(
