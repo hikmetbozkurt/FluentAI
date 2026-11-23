@@ -1,0 +1,1000 @@
+- id: reading.b2.open-conv-what-was-the-first-animal-that-ever-lived-on-ear
+  title: What was the first animal that ever lived on Earth?
+  cefr_level: B2
+  category: technology
+  summary_en: 'Nobody knows for sure what the first animal was, but likely it was small, soft and ocean-dwelling
+    – like this comb jelly, but simpler. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''What was the first animal that ever lived on Earth?'' başlıklı akademik/güncel makale (Kaynak:
+    The Conversation, CC BY-ND).'
+  word_count: 215
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    content_en: Nobody knows for sure what the first animal was, but likely it was small, soft and ocean-dwelling
+      – like this comb jelly, but simpler. Rob Atherton/iStock via Getty Images Plus
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 1. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: Curious Kids is a series for children of all ages. If you have a question you’d like an expert to
+      answer, send it to CuriousKidsUS@theconversation.com.
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 2. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: What was the first animal on Earth? – Keira, age 10, Eugene, Oregon, and Julian, age 7, South Bend,
+      Indiana
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 3. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: Imagine climbing into a time machine and setting the dial for when the very first animal was alive.
+      You would need to travel really, really far back in time.
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 4. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: You would blow past the dinosaurs, which showed up about 230 million years ago. Keep going and you’d
+      pass coil-shelled ammonites that swam in the oceans starting 450 million years ago, and then trilobites, armored
+      animals that scuttled across the seafloor more than 520 million years ago. Further still, around 558 million
+      years ago, you would meet Dickinsonia, a tiny, flat, ribbed oval only a few millimeters thick that looks more
+      like a squashed pancake than any animal you know.
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 5. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: We are biologists who study single-celled life called protists. How complex life such as human beings
+      showed up in the first place is one of the major questions in our field.
+    content_tr: Bu paragraf 'What was the first animal that ever lived on Earth?' makalesinin 6. bölümünü sunar
+      (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: travel
+    vocab_id: vocab.travel-verb
+    context_definition_en: To make a journey, typically of some length, or visit distant destinations.
+    context_meaning_tr: seyahat etmek, yolculuk yapmak, gezmek
+  - word: study
+    vocab_id: vocab.study-verb
+    context_definition_en: To devote time and attention to acquiring knowledge on an academic subject.
+    context_meaning_tr: ders çalışmak, öğrenim görmek
+  comprehension_questions:
+  - id: reading.b2.open-conv-what-was-the-first-animal-that-ever-lived-on-ear.q1
+    question_en: What is the primary focus introduced at the beginning of "What was the first animal that ever lived
+      on Earth?"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - Nobody knows for sure what the first animal was, but likely it was small, soft and ocean-dwelling – like this
+      comb jelly, but simpler.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: Nobody knows for sure what the first animal was, but likely it was small, soft and ocean-dwelling
+      – like this comb jelly, but simpler.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "Nobody knows for sure what the first
+      animal was, but likely it was small, soft and ocean-dwelling – like this comb jelly, but simpler."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-what-was-the-first-animal-that-ever-lived-on-ear.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - We are biologists who study single-celled life called protists.
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: We are biologists who study single-celled life called protists.
+    explanation_en: 'Later in the passage, the text explicitly states: "We are biologists who study single-celled
+      life called protists."'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-what-was-the-first-animal-that-ever-lived-on-ear.q3
+    question_en: In the context of this article, what does "travel" mean?
+    question_tr_hint: '''travel'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - To make a journey, typically of some length, or visit distant destinations.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: To make a journey, typically of some length, or visit distant destinations.
+    explanation_en: 'In this passage, "travel" means: To make a journey, typically of some length, or visit distant
+      destinations.'
+    explanation_tr: Bu bağlamda 'travel' kelimesi 'seyahat etmek, yolculuk yapmak, gezmek' anlamına gelir.
+  topic_tags:
+  - technology
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.travel-verb
+  - vocab.study-verb
+  status: APPROVED
+  version: 1
+- id: reading.b1.open-conv-a-fungus-that-can-survive-in-chernobyl-could-hel
+  title: A fungus that can survive in Chernobyl could help create materials that trap and break down nerve agents
+    and pesticides
+  cefr_level: B1
+  category: technology
+  summary_en: 'Scientists are researching fungi to develop specialized protective equipment for workers exposed
+    to pesticides. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''A fungus that can survive in Chernobyl could help create materials that trap and break down nerve
+    agents and pesticides'' başlıklı akademik/güncel makale (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 294
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    content_en: Scientists are researching fungi to develop specialized protective equipment for workers exposed
+      to pesticides. Vithun Khamsong/Moment via Getty Images
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 1. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: Deep inside the Chernobyl exclusion zone, where radiation levels have remained unsafe for people
+      for the past 40 years, black molds climb the walls of the damaged former nuclear plant in Ukraine. They’re
+      entirely undeterred by the radiation – in fact, some fungi even grow toward it.
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 2. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: The same type of species, Cladosporium sphaerospermum, has grown on the International Space Station,
+      about 250 miles (400 kilometers) above the surface of the Earth, in an experiment to test its resistance to
+      radiation. Scientists found that it appeared to block a small amount of incoming radiation, and part of why
+      comes down to a pigment called melanin.
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 3. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: I used to think of melanin the way most people do – as a pigment that gives skin, hair and eyes
+      their color. That changed early in my Ph.D. research when I read a 2019 study from the materials science lab
+      I was joining that described how to make a fungal form of melanin in the lab. I was surprised by where this
+      pigment shows up in nature, including in fungi growing at Chernobyl.
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 4. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: Melanin comprises a family of pigments. The melanin in human skin, called eumelanin, is built from
+      nitrogen-containing building blocks. The melanin in many fungi, called allomelanin, is built from a different,
+      nitrogen-free building block. That difference in structure gives it some unusual properties.
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 5. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: Scientists think allomelanin is a large part of why these fungi can live in such places. Over the
+      course of my doctoral research, I learned that melanin does much more than add color. It holds onto metals,
+      absorbs ultraviolet light, converts light into heat and helps produce the colors of some bird feathers.
+    content_tr: Bu paragraf 'A fungus that can survive in Chernobyl could help create materials that trap and break
+      down nerve agents and pesticides' makalesinin 6. bölümünü sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: equipment
+    vocab_id: vocab.equipment
+    context_definition_en: The set of tools, devices, or machines needed for a particular job or activity.
+    context_meaning_tr: ekipman, donanım, araç gereç
+  - word: radiation
+    vocab_id: vocab.radiation
+    context_definition_en: The emission of energy as electromagnetic waves or moving subatomic particles.
+    context_meaning_tr: ışıma, radyasyon
+  - word: plant
+    vocab_id: vocab.plant-v
+    context_definition_en: To put a seed, bulb, or sapling into the soil so that it will grow into a tree or plant.
+    context_meaning_tr: dikmek, ekmek (fidan, tohum)
+  - word: experiment
+    vocab_id: vocab.experiment
+    context_definition_en: A scientific test done in order to learn something or discover if something works or
+      is true.
+    context_meaning_tr: deney
+  - word: early
+    vocab_id: vocab.early-adv
+    context_definition_en: Near the beginning of a period of time, or before the customary or expected hour.
+    context_meaning_tr: erken, erkenden
+  - word: study
+    vocab_id: vocab.study-verb
+    context_definition_en: To devote time and attention to acquiring knowledge on an academic subject.
+    context_meaning_tr: ders çalışmak, öğrenim görmek
+  - word: doctoral
+    vocab_id: vocab.doctoral
+    context_definition_en: Relating to or suitable for the award of a doctorate, the highest university academic
+      degree.
+    context_meaning_tr: doktora düzeyinde, doktoraya ait
+  - word: ultraviolet
+    vocab_id: vocab.ultraviolet
+    context_definition_en: Having an electromagnetic wavelength shorter than visible violet light but longer than
+      X-rays.
+    context_meaning_tr: morötesi, ultraviyole
+  comprehension_questions:
+  - id: reading.b1.open-conv-a-fungus-that-can-survive-in-chernobyl-could-hel.q1
+    question_en: What is the primary focus introduced at the beginning of "A fungus that can survive in Chernobyl
+      could help create materials that trap and break down nerve agents and pesticides"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - Scientists are researching fungi to develop specialized protective equipment for workers exposed to pesticides.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: Scientists are researching fungi to develop specialized protective equipment for workers exposed
+      to pesticides.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "Scientists are researching fungi
+      to develop specialized protective equipment for workers exposed to pesticides."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b1.open-conv-a-fungus-that-can-survive-in-chernobyl-could-hel.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - Scientists think allomelanin is a large part of why these fungi can live in such places.
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: Scientists think allomelanin is a large part of why these fungi can live in such places.
+    explanation_en: 'Later in the passage, the text explicitly states: "Scientists think allomelanin is a large
+      part of why these fungi can live in such places."'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b1.open-conv-a-fungus-that-can-survive-in-chernobyl-could-hel.q3
+    question_en: In the context of this article, what does "equipment" mean?
+    question_tr_hint: '''equipment'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - The set of tools, devices, or machines needed for a particular job or activity.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: The set of tools, devices, or machines needed for a particular job or activity.
+    explanation_en: 'In this passage, "equipment" means: The set of tools, devices, or machines needed for a particular
+      job or activity.'
+    explanation_tr: Bu bağlamda 'equipment' kelimesi 'ekipman, donanım, araç gereç' anlamına gelir.
+  topic_tags:
+  - technology
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.equipment
+  - vocab.radiation
+  - vocab.plant-v
+  - vocab.experiment
+  - vocab.early-adv
+  status: APPROVED
+  version: 1
+- id: reading.b2.open-conv-nvidia-isn-t-the-first-company-to-dump-a-misbeha
+  title: Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the interest of corporate
+    boards to act
+  cefr_level: B2
+  category: technology
+  summary_en: 'Nvidia''s board is now coming under more scrutiny for its own oversight after it ousted its CEO,
+    Jensen Huang. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the interest of
+    corporate boards to act'' başlıklı akademik/güncel makale (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 258
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    content_en: Nvidia's board is now coming under more scrutiny for its own oversight after it ousted its CEO,
+      Jensen Huang. Joel Saget/AFP via Getty Images
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 1. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: 'The story may sound familiar: The CEO of one of the largest and most powerful tech companies resigns
+      over sexual misconduct allegations. The move causes the company’s stock to drop by more than 10%, wiping out
+      billions in value. It also raises scrutiny of the company’s board of directors and whether it made the right
+      decisions ahead of the crisis.'
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 2. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: This could easily describe the turmoil facing Nvidia after the ouster of its CEO, Jensen Huang.
+      But it actually transpired over 15 years ago at Hewlett Packard, under CEO Mark Hurd.
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 3. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: Jensen Huang is just the latest in a long line of CEOs who lost their jobs over personal misconduct.
+      And as with HP, scrutiny is shifting from his behavior to his board – and the decisions that led to his exit.
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 4. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: Prominent industry leaders are questioning the board’s decision to oust him. They include Peter
+      Steinberger of OpenAI, Anduril Industries co-founder Palmer Luckey, Elon Musk, Replit CEO Amjad Masad, Epic
+      Games CEO Tim Sweeney and Y Combinator CEO Garry Tan. Meanwhile, an internal petition allegedly signed by
+      more than 1,600 Nvidia employees has also called for Jensen Huang’s reinstatement.
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 5. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: As a scholar of management who has researched corporate misconduct, I believe the board made the
+      right call. After collecting instances of CEO personal misconduct dating back to 1995, I have repeatedly found
+      that doing nothing, as a board, is worse than doing something.
+    content_tr: Bu paragraf 'Nvidia isn’t the first company to dump a misbehaving CEO – history shows it’s in the
+      interest of corporate boards to act' makalesinin 6. bölümünü sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: board
+    vocab_id: vocab.board-v
+    context_definition_en: To get onto or allow people onto an aircraft, train, ship, or bus.
+    context_meaning_tr: uçağa/trene/gemiye binmek
+  - word: scrutiny
+    vocab_id: vocab.scrutiny
+    context_definition_en: Critical observation, examination, or close inspection of something.
+    context_meaning_tr: titiz inceleme, mercek altına alma, derinlemesine tetkik
+  - word: oversight
+    vocab_id: vocab.oversight
+    context_definition_en: Regulatory supervision and governance; or an unintentional mistake resulting from failure
+      to notice something.
+    context_meaning_tr: 'gözetim, denetim; (diğer anlamı: gözden kaçırma, sehven yapılan hata)'
+  - word: actually
+    vocab_id: vocab.actually
+    context_definition_en: In fact, in reality, or used to clarify an unexpected truth or gently correct an assumption.
+    context_meaning_tr: aslında, doğrusu, gerçekten
+  - word: petition
+    vocab_id: vocab.petition
+    context_definition_en: To make a formal written request, typically signed by many citizens, appealing to authority.
+    context_meaning_tr: Dilekçe vermek; resmi talepte bulunmak; imza toplayarak başvurmak.
+  - word: corporate
+    vocab_id: vocab.corporate
+    context_definition_en: Relating to a large corporation or enterprise, or to collective business management.
+    context_meaning_tr: Kurumsal; şirket yönetimine ait.
+  comprehension_questions:
+  - id: reading.b2.open-conv-nvidia-isn-t-the-first-company-to-dump-a-misbeha.q1
+    question_en: What is the primary focus introduced at the beginning of "Nvidia isn’t the first company to dump
+      a misbehaving CEO – history shows it’s in the interest of corporate boards to act"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - Nvidia's board is now coming under more scrutiny for its own oversight after it ousted its CEO, Jensen Huang.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: Nvidia's board is now coming under more scrutiny for its own oversight after it ousted its CEO,
+      Jensen Huang.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "Nvidia''s board is now coming under
+      more scrutiny for its own oversight after it ousted its CEO, Jensen Huang."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-nvidia-isn-t-the-first-company-to-dump-a-misbeha.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - As a scholar of management who has researched corporate misconduct, I believe the board made the right call.
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: As a scholar of management who has researched corporate misconduct, I believe the board made
+      the right call.
+    explanation_en: 'Later in the passage, the text explicitly states: "As a scholar of management who has researched
+      corporate misconduct, I believe the board made the right call."'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-nvidia-isn-t-the-first-company-to-dump-a-misbeha.q3
+    question_en: In the context of this article, what does "board" mean?
+    question_tr_hint: '''board'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - To get onto or allow people onto an aircraft, train, ship, or bus.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: To get onto or allow people onto an aircraft, train, ship, or bus.
+    explanation_en: 'In this passage, "board" means: To get onto or allow people onto an aircraft, train, ship,
+      or bus.'
+    explanation_tr: Bu bağlamda 'board' kelimesi 'uçağa/trene/gemiye binmek' anlamına gelir.
+  topic_tags:
+  - technology
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.board-v
+  - vocab.scrutiny
+  - vocab.oversight
+  - vocab.actually
+  - vocab.petition
+  status: APPROVED
+  version: 1
+- id: reading.b2.open-conv-ai-helps-uncover-critical-flaw-in-ubiquitous-int
+  title: AI helps uncover critical flaw in ubiquitous internet software
+  cefr_level: B2
+  category: technology
+  summary_en: 'You probably don''t know it, but you''ve likely already used Java software today. (Source: The Conversation,
+    CC BY-ND)'
+  summary_tr: '''AI helps uncover critical flaw in ubiquitous internet software'' başlıklı akademik/güncel makale
+    (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 274
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    content_en: You probably don't know it, but you've likely already used Java software today. Thomas Fuller/SOPA
+      Images/LightRocket via Getty Images
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 1. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: If you checked your bank balance, booked a flight or ordered groceries online today, there is a
+      good chance your request was handled by a computer program written in Java.
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 2. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: For nearly three decades, the Java programming language has been one of the quiet workhorses of
+      the internet. While most people rarely interact with it directly on their phones or laptops, it sits at the
+      heart of most large, behind-the-scenes server applications that power modern business, finance and government.
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 3. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: That ubiquity is why a new critical security alert from the U.S. Cybersecurity and Infrastructure
+      Security Agency drew the attention of technology teams worldwide. Security researchers uncovered a severe
+      flaw, dubbed Java4Shell, in a core Java component. If left unpatched, the bug could allow an attacker to trick
+      a vulnerable server into executing malicious code.
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 4. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: 'As a cybersecurity researcher who studies how large-scale software systems fail and how to defend
+      them, I see this discovery as both a standard call to action for system administrators and another milestone
+      in a broader shift: Artificial intelligence is rapidly changing how hidden flaws in critical software are
+      discovered.'
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 5. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: Normally, software must be tailored to the specific computer hardware and operating system it runs
+      on. Java solved that headache with a clever piece of software called the Java Virtual Machine. It is essentially
+      a program that runs other programs. Software developers write their Java application once, and the Java Virtual
+      Machine provides a uniform foundation on top of a server’s operating system, running that application regardless
+      of the underlying machine.
+    content_tr: Bu paragraf 'AI helps uncover critical flaw in ubiquitous internet software' makalesinin 6. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: probably
+    vocab_id: vocab.probably
+    context_definition_en: Almost certainly; with a very high likelihood or probability of truth or occurrence.
+    context_meaning_tr: muhtemelen, büyük olasılıkla
+  - word: software
+    vocab_id: vocab.software
+    context_definition_en: The programs and other operating information used by a computer or electronic device.
+    context_meaning_tr: yazılım
+  - word: flight
+    vocab_id: vocab.flight
+    context_definition_en: A scheduled journey made by an aircraft traveling through the air.
+    context_meaning_tr: uçuş, uçak seferi
+  - word: groceries
+    vocab_id: vocab.groceries
+    context_definition_en: Food and other everyday domestic goods bought at a supermarket or food store.
+    context_meaning_tr: mutfak alışverişi, bakkaliye, market erzakları
+  - word: request
+    vocab_id: vocab.request
+    context_definition_en: To politely or officially ask for something to be given, done, or provided.
+    context_meaning_tr: talep etmek, rica etmek; talep, rica
+  - word: quiet
+    vocab_id: vocab.quiet-adj
+    context_definition_en: Making very little or no sound; free from noise and disturbance.
+    context_meaning_tr: sessiz, sakin
+  - word: Cybersecurity
+    vocab_id: vocab.cybersecurity
+    context_definition_en: The state or practice of defending computers, servers, mobile devices, and networks from
+      malicious digital attacks.
+    context_meaning_tr: Siber güvenlik.
+  - word: Infrastructure
+    vocab_id: vocab.infrastructure
+    context_definition_en: The underlying organizational, technical, and physical systems necessary for a company,
+      product, or country to function.
+    context_meaning_tr: altyapı
+  comprehension_questions:
+  - id: reading.b2.open-conv-ai-helps-uncover-critical-flaw-in-ubiquitous-int.q1
+    question_en: What is the primary focus introduced at the beginning of "AI helps uncover critical flaw in ubiquitous
+      internet software"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - You probably don't know it, but you've likely already used Java software today.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: You probably don't know it, but you've likely already used Java software today.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "You probably don''t know it, but
+      you''ve likely already used Java software today."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-ai-helps-uncover-critical-flaw-in-ubiquitous-int.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - Normally, software must be tailored to the specific computer hardware and operating system it runs on.
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: Normally, software must be tailored to the specific computer hardware and operating system it
+      runs on.
+    explanation_en: 'Later in the passage, the text explicitly states: "Normally, software must be tailored to the
+      specific computer hardware and operating system it runs on."'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-ai-helps-uncover-critical-flaw-in-ubiquitous-int.q3
+    question_en: In the context of this article, what does "probably" mean?
+    question_tr_hint: '''probably'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - Almost certainly; with a very high likelihood or probability of truth or occurrence.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: Almost certainly; with a very high likelihood or probability of truth or occurrence.
+    explanation_en: 'In this passage, "probably" means: Almost certainly; with a very high likelihood or probability
+      of truth or occurrence.'
+    explanation_tr: Bu bağlamda 'probably' kelimesi 'muhtemelen, büyük olasılıkla' anlamına gelir.
+  topic_tags:
+  - technology
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.probably
+  - vocab.software
+  - vocab.flight
+  - vocab.groceries
+  - vocab.request
+  status: APPROVED
+  version: 1
+- id: reading.c1.open-conv-as-us-farms-consolidate-small-town-america-has-b
+  title: As US farms consolidate, small-town America has been losing out
+  cefr_level: C1
+  category: business_strategy
+  summary_en: 'The farmer-poet Wendell Berry once described a dystopian world where society is singularly directed
+    toward “the objective” – a relentless drive for industrial extraction that leads to the destruction of nature
+    and communities. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''As US farms consolidate, small-town America has been losing out'' başlıklı akademik/güncel makale
+    (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 194
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    content_en: The farmer-poet Wendell Berry once described a dystopian world where society is singularly directed
+      toward “the objective” – a relentless drive for industrial extraction that leads to the destruction of nature
+      and communities.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 1. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: The idea captured Berry’s concerns about the industrialization of agriculture and the expansion
+      of natural resource extraction that became prominent across rural America in the latter decades of the 20th
+      century.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 2. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: Over nine decades, Berry watched how agribusinesses’ and farm owners’ pursuit of productive efficiency
+      and maximum profits led to machines and synthetic chemicals replacing human farm labor, and the replacement
+      of diversified farms with monocropping and concentrated animal-feeding operations. Across the U.S., he saw
+      small farms disappear, often consolidated into vast corporate businesses with absent owners.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 3. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: What gets lost in this pursuit of production and profit, he noted, are community, human dignity
+      and flourishing, natural beauty and ecological well-being.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 4. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: People are the heart of rural towns, like Waubeka, Wis. Farm consolidation has shrunk many of America’s
+      rural towns since the mid 1900s.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 5. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: As agriculture researchers and rural sociologists, we, like Berry, have seen how the industrialization
+      of agriculture has changed the face of rural America and hollowed out its communities.
+    content_tr: Bu paragraf 'As US farms consolidate, small-town America has been losing out' makalesinin 6. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: objective
+    vocab_id: vocab.objective
+    context_definition_en: A specific result that a person or organization aims to achieve within a timeframe.
+    context_meaning_tr: hedef, amaç; nesnel, tarafsız
+  - word: drive
+    vocab_id: vocab.drive-verb
+    context_definition_en: To operate and control the direction and speed of a motor vehicle.
+    context_meaning_tr: araba sürmek, araba kullanmak
+  - word: expansion
+    vocab_id: vocab.expansion
+    context_definition_en: The act or process of increasing in scale, size, volume, or regional market coverage.
+    context_meaning_tr: genişleme, büyüme, yayılma
+  - word: productive
+    vocab_id: vocab.productive
+    context_definition_en: Achieving or producing a significant amount of useful, high-quality results.
+    context_meaning_tr: üretken, verimli
+  - word: synthetic
+    vocab_id: vocab.synthetic
+    context_definition_en: Made by chemical synthesis especially to imitate a natural product; artificial.
+    context_meaning_tr: sentetik, yapay
+  - word: diversified
+    vocab_id: vocab.diversified
+    context_definition_en: Enlarged in scope or variety, especially having investments across multiple industries
+      to lower risk.
+    context_meaning_tr: Çeşitlendirilmiş; farklı alanlara yayılmış.
+  - word: corporate
+    vocab_id: vocab.corporate
+    context_definition_en: Relating to a large corporation or enterprise, or to collective business management.
+    context_meaning_tr: Kurumsal; şirket yönetimine ait.
+  - word: profit
+    vocab_id: vocab.profit-n
+    context_definition_en: A financial gain, especially the difference between the amount earned and the amount
+      spent in buying, operating, or producing something.
+    context_meaning_tr: kar, kazanç (mali)
+  comprehension_questions:
+  - id: reading.c1.open-conv-as-us-farms-consolidate-small-town-america-has-b.q1
+    question_en: What is the primary focus introduced at the beginning of "As US farms consolidate, small-town America
+      has been losing out"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - The farmer-poet Wendell Berry once described a dystopian world where society is singularly directed toward
+      “the objective” – a relentless drive for industrial extraction that leads
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: The farmer-poet Wendell Berry once described a dystopian world where society is singularly directed
+      toward “the objective” – a relentless drive for industrial extraction that leads
+    explanation_en: 'The opening paragraph directly introduces this core idea: "The farmer-poet Wendell Berry once
+      described a dystopian world where society is singularly directed toward “the objective” – a relentless drive
+      for industrial extraction that leads"'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.c1.open-conv-as-us-farms-consolidate-small-town-america-has-b.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - As agriculture researchers and rural sociologists, we, like Berry, have seen how the industrialization of
+      agriculture has changed the face of rural America and hollowed out its com
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: As agriculture researchers and rural sociologists, we, like Berry, have seen how the industrialization
+      of agriculture has changed the face of rural America and hollowed out its com
+    explanation_en: 'Later in the passage, the text explicitly states: "As agriculture researchers and rural sociologists,
+      we, like Berry, have seen how the industrialization of agriculture has changed the face of rural America and
+      hollowed out its com"'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.c1.open-conv-as-us-farms-consolidate-small-town-america-has-b.q3
+    question_en: In the context of this article, what does "objective" mean?
+    question_tr_hint: '''objective'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - A specific result that a person or organization aims to achieve within a timeframe.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: A specific result that a person or organization aims to achieve within a timeframe.
+    explanation_en: 'In this passage, "objective" means: A specific result that a person or organization aims to
+      achieve within a timeframe.'
+    explanation_tr: Bu bağlamda 'objective' kelimesi 'hedef, amaç; nesnel, tarafsız' anlamına gelir.
+  topic_tags:
+  - business_strategy
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.objective
+  - vocab.drive-verb
+  - vocab.expansion
+  - vocab.productive
+  - vocab.synthetic
+  status: APPROVED
+  version: 1
+- id: reading.b2.open-conv-how-to-protect-your-retirement-savings-if-the-ai
+  title: How to protect your retirement savings if the AI boom fizzles
+  cefr_level: B2
+  category: business_strategy
+  summary_en: 'Tech stocks are on a bumpy ride, weighed down by the slump in Nvidia''s shares. (Source: The Conversation,
+    CC BY-ND)'
+  summary_tr: '''How to protect your retirement savings if the AI boom fizzles'' başlıklı akademik/güncel makale
+    (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 189
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    content_en: Tech stocks are on a bumpy ride, weighed down by the slump in Nvidia's shares. Liu Yanan/Xinhua
+      via Getty Images
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 1. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: After stock markets, including the tech-heavy NASDAQ, got pummeled on Nov. 20, 2026, many Americans
+      are asking themselves whether the huge bet on artificial intelligence is heading south.
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 2. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: This question has profound implications for retirement savings, given how much these investment
+      accounts are tied to stocks.
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 3. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: The NASDAQ has plunged about 18% since early October and has lost more than US$4 trillion since
+      Nov. 16. The broad-based S&P also took a beating and has now shed all its gains for the year.
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 4. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: As a finance professor and certified financial planner, I can’t tell you whether the bubble has
+      truly burst for good. But I can explain how the default model that most 401(k) plans use works, where it protects
+      you, and what you might consider changing.
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 5. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: 'Whether AI stocks recover or not, the steps that protect a retirement account are the same: Know
+      what you own, keep the mix of assets in balance, and hold enough in savings and low-risk funds to cover the
+      years when you’ll need it.'
+    content_tr: Bu paragraf 'How to protect your retirement savings if the AI boom fizzles' makalesinin 6. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: early
+    vocab_id: vocab.early-adv
+    context_definition_en: Near the beginning of a period of time, or before the customary or expected hour.
+    context_meaning_tr: erken, erkenden
+  - word: explain
+    vocab_id: vocab.explain
+    context_definition_en: To make something clear or easy to comprehend by describing it in detail.
+    context_meaning_tr: açıklamak, izah etmek
+  - word: recover
+    vocab_id: vocab.recover
+    context_definition_en: To return to a normal state of health, strength, or energy after an illness or injury.
+    context_meaning_tr: iyileşmek, toparlanmak, sağlığına kavuşmak
+  - word: protect
+    vocab_id: vocab.protect
+    context_definition_en: To keep an ecosystem, wildlife species, or natural resource safe from harm or destruction.
+    context_meaning_tr: korumak (çevreyi/doğayı)
+  comprehension_questions:
+  - id: reading.b2.open-conv-how-to-protect-your-retirement-savings-if-the-ai.q1
+    question_en: What is the primary focus introduced at the beginning of "How to protect your retirement savings
+      if the AI boom fizzles"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - Tech stocks are on a bumpy ride, weighed down by the slump in Nvidia's shares.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: Tech stocks are on a bumpy ride, weighed down by the slump in Nvidia's shares.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "Tech stocks are on a bumpy ride,
+      weighed down by the slump in Nvidia''s shares."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-how-to-protect-your-retirement-savings-if-the-ai.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - 'Whether AI stocks recover or not, the steps that protect a retirement account are the same: Know what you
+      own, keep the mix of assets in balance, and hold enough in savings and low'
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: 'Whether AI stocks recover or not, the steps that protect a retirement account are the same:
+      Know what you own, keep the mix of assets in balance, and hold enough in savings and low'
+    explanation_en: 'Later in the passage, the text explicitly states: "Whether AI stocks recover or not, the steps
+      that protect a retirement account are the same: Know what you own, keep the mix of assets in balance, and
+      hold enough in savings and low"'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-how-to-protect-your-retirement-savings-if-the-ai.q3
+    question_en: In the context of this article, what does "early" mean?
+    question_tr_hint: '''early'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - Near the beginning of a period of time, or before the customary or expected hour.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: Near the beginning of a period of time, or before the customary or expected hour.
+    explanation_en: 'In this passage, "early" means: Near the beginning of a period of time, or before the customary
+      or expected hour.'
+    explanation_tr: Bu bağlamda 'early' kelimesi 'erken, erkenden' anlamına gelir.
+  topic_tags:
+  - business_strategy
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.early-adv
+  - vocab.explain
+  - vocab.recover
+  - vocab.protect
+  status: APPROVED
+  version: 1
+- id: reading.b2.open-conv-whether-it-s-sister-or-your-own-sister-the-burde
+  title: Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents puts on women is no
+    joke
+  cefr_level: B2
+  category: business_strategy
+  summary_en: 'A ''Saturday Night Live'' parody commercial delivered a sobering message to America about a widespread
+    problem. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents puts on women
+    is no joke'' başlıklı akademik/güncel makale (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 180
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    content_en: A 'Saturday Night Live' parody commercial delivered a sobering message to America about a widespread
+      problem. Alican Lazutti/iStock via Getty Images Plus
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 1. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: “Sister,” the “Saturday Night Live” sketch about daughters who take care of their aging parents,
+      hit home for a lot of people.
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 2. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: The make-believe ad features several men who say they love their father but don’t want to interrupt
+      their own lives to help him or deal with his chronic health conditions. So they’ve turned to a handy service,
+      which costs nothing, by texting “Dad fell” to their sister.
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 3. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: “Years of internalized sexism warps Sister’s brain into thinking caretaking is her responsibility,
+      and somehow not yours,” a man in a doctor-evoking white coat explains.
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 4. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: One reason “Sister,” which stars Jane Wickline as an exhausted caregiver and John Mulaney as her
+      smug brother, packed such a big punch is that more of us find ourselves in her shoes.
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 5. bölümünü sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: My sister was one of 43.5 million Americans providing care to a loved one at the time. That number
+      has since risen to 63 million – about 1 in 4 adults.
+    content_tr: Bu paragraf 'Whether it’s ‘Sister’ or your own sister, the burden that caring for aging parents
+      puts on women is no joke' makalesinin 6. bölümünü sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: parody
+    vocab_id: vocab.parody
+    context_definition_en: To produce a deliberately humorously exaggerated imitation of a writer, artist, genre,
+      or work.
+    context_meaning_tr: parodisini yapmak, alaycı taklidini yapmak
+  - word: commercial
+    vocab_id: vocab.commercial-biz
+    context_definition_en: Concerned with or engaged in commerce, trade, business transactions, or making a financial
+      profit.
+    context_meaning_tr: ticari, kâr amaçlı
+  - word: interrupt
+    vocab_id: vocab.interrupt
+    context_definition_en: To stop someone from speaking by saying something yourself, or to temporarily break the
+      continuity of a process.
+    context_meaning_tr: sözünü kesmek, araya girmek; kesintiye uğratmak
+  - word: chronic
+    vocab_id: vocab.chronic
+    context_definition_en: An illness or medical condition persisting for a long time or constantly recurring.
+    context_meaning_tr: kronik, süreğen, müzmin
+  - word: handy
+    vocab_id: vocab.handy
+    context_definition_en: Convenient to handle or use; located nearby; clever with one's hands.
+    context_meaning_tr: kullanışlı, pratik, el altında
+  - word: exhausted
+    vocab_id: vocab.exhausted
+    context_definition_en: Completely drained of physical or mental energy; extremely tired.
+    context_meaning_tr: tükenmiş, bitkin, aşırı yorgun
+  comprehension_questions:
+  - id: reading.b2.open-conv-whether-it-s-sister-or-your-own-sister-the-burde.q1
+    question_en: What is the primary focus introduced at the beginning of "Whether it’s ‘Sister’ or your own sister,
+      the burden that caring for aging parents puts on women is no joke"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - A 'Saturday Night Live' parody commercial delivered a sobering message to America about a widespread problem.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: A 'Saturday Night Live' parody commercial delivered a sobering message to America about a widespread
+      problem.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "A ''Saturday Night Live'' parody
+      commercial delivered a sobering message to America about a widespread problem."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-whether-it-s-sister-or-your-own-sister-the-burde.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - My sister was one of 43.5 million Americans providing care to a loved one at the time.
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: My sister was one of 43.5 million Americans providing care to a loved one at the time.
+    explanation_en: 'Later in the passage, the text explicitly states: "My sister was one of 43.5 million Americans
+      providing care to a loved one at the time."'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-whether-it-s-sister-or-your-own-sister-the-burde.q3
+    question_en: In the context of this article, what does "parody" mean?
+    question_tr_hint: '''parody'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - To produce a deliberately humorously exaggerated imitation of a writer, artist, genre, or work.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: To produce a deliberately humorously exaggerated imitation of a writer, artist, genre, or work.
+    explanation_en: 'In this passage, "parody" means: To produce a deliberately humorously exaggerated imitation
+      of a writer, artist, genre, or work.'
+    explanation_tr: Bu bağlamda 'parody' kelimesi 'parodisini yapmak, alaycı taklidini yapmak' anlamına gelir.
+  topic_tags:
+  - business_strategy
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.parody
+  - vocab.commercial-biz
+  - vocab.interrupt
+  - vocab.chronic
+  - vocab.handy
+  status: APPROVED
+  version: 1
+- id: reading.b2.open-conv-snl-sister-sketch-nails-the-failures-of-us-healt
+  title: ‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy
+  cefr_level: B2
+  category: business_strategy
+  summary_en: 'A “Saturday Night Live” sketch that introduced a fictional elder care service simply called “Sister”
+    has gone viral. (Source: The Conversation, CC BY-ND)'
+  summary_tr: '''‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy'' başlıklı akademik/güncel makale
+    (Kaynak: The Conversation, CC BY-ND).'
+  word_count: 212
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    content_en: 'A “Saturday Night Live” sketch that introduced a fictional elder care service simply called “Sister”
+      has gone viral. The premise was simple: Why pay for professional care for an aging parent when a daughter
+      can do it for free?'
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 1. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 2
+    content_en: The clip, which first aired on Nov. 15, 2026, struck a nerve because this kind of arrangement is
+      familiar and burdensome for millions of American families.
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 2. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 3
+    content_en: According to a 2025 report from AARP and the National Alliance for Caregiving, 63 million Americans
+      provide ongoing care to a family member or friend, an increase of nearly 50% over the past decade. About 61%
+      of these caregivers are women.
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 3. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 4
+    content_en: As researchers who study aging, long-term care and financial security, we’ve found that those who
+      become caregivers initially have better health and financial status than noncaregivers. But they then experience
+      relatively worse health and financial decline over time compared with their noncaregiving counterparts.
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 4. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 5
+    content_en: While societal gender expectations help explain why daughters often assume the bulk of caregiving
+      responsibilities, government policies have also determined how much care families must provide.
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 5. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  - paragraph_index: 6
+    content_en: One of the most consequential features of America’s long-term care system is that Medicare, the
+      federal health insurance program covering most adults 65 and older, generally does not pay for ongoing care
+      and assistance with everyday activities.
+    content_tr: Bu paragraf '‘SNL’ ‘Sister’ sketch nails the failures of US healthcare policy' makalesinin 6. bölümünü
+      sunar (The Conversation, CC BY-ND).
+  vocabulary_annotations:
+  - word: fictional
+    vocab_id: vocab.fictional
+    context_definition_en: Invented, imaginary, or found only in stories and fiction rather than in real life.
+    context_meaning_tr: kurgusal, hayali
+  - word: premise
+    vocab_id: vocab.premise
+    context_definition_en: A previous statement or theoretical proposition from which another conclusion is inferred.
+    context_meaning_tr: öncül, hareket noktası, temel dayanak
+  - word: professional
+    vocab_id: vocab.professional
+    context_definition_en: Connected with a person's occupation; conforming to technical standards, business ethics,
+      and competence.
+    context_meaning_tr: mesleki, profesyonel, uzmanlığa yakışır
+  - word: study
+    vocab_id: vocab.study-verb
+    context_definition_en: To devote time and attention to acquiring knowledge on an academic subject.
+    context_meaning_tr: ders çalışmak, öğrenim görmek
+  - word: experience
+    vocab_id: vocab.experience
+    context_definition_en: Practical knowledge, skill, or understanding gained through direct participation in events
+      or professional work over time.
+    context_meaning_tr: deneyim, tecrübe
+  - word: societal
+    vocab_id: vocab.societal
+    context_definition_en: Relating to society or social relations in a broad, overarching macro-level sense.
+    context_meaning_tr: toplumsal, cemiyete ait
+  - word: explain
+    vocab_id: vocab.explain
+    context_definition_en: To make something clear or easy to comprehend by describing it in detail.
+    context_meaning_tr: açıklamak, izah etmek
+  comprehension_questions:
+  - id: reading.b2.open-conv-snl-sister-sketch-nails-the-failures-of-us-healt.q1
+    question_en: What is the primary focus introduced at the beginning of "‘SNL’ ‘Sister’ sketch nails the failures
+      of US healthcare policy"?
+    question_tr_hint: Makalenin giriş paragrafında tanıtılan ana konuya odaklanın.
+    options:
+    - A “Saturday Night Live” sketch that introduced a fictional elder care service simply called “Sister” has gone
+      viral.
+    - A historical biography unrelated to modern concepts or practices.
+    - A step-by-step recipe for preparing traditional meals.
+    - A fictional dialogue between two travelers on a train.
+    correct_answer: A “Saturday Night Live” sketch that introduced a fictional elder care service simply called
+      “Sister” has gone viral.
+    explanation_en: 'The opening paragraph directly introduces this core idea: "A “Saturday Night Live” sketch that
+      introduced a fictional elder care service simply called “Sister” has gone viral."'
+    explanation_tr: Giriş paragrafı makalenin temel konusunu doğrudan bu ifade ile ortaya koyar.
+  - id: reading.b2.open-conv-snl-sister-sketch-nails-the-failures-of-us-healt.q2
+    question_en: Which statement accurately reflects a key point developed later in the article?
+    question_tr_hint: Sonraki paragraflarda vurgulanan ana fikri bulun.
+    options:
+    - The article argues that the topic has no practical relevance today.
+    - One of the most consequential features of America’s long-term care system is that Medicare, the federal health
+      insurance program covering most adults 65 and older, generally does n
+    - The author concludes that all research on this subject was abandoned.
+    - The passage states that the issue only existed in the nineteenth century.
+    correct_answer: One of the most consequential features of America’s long-term care system is that Medicare,
+      the federal health insurance program covering most adults 65 and older, generally does n
+    explanation_en: 'Later in the passage, the text explicitly states: "One of the most consequential features of
+      America’s long-term care system is that Medicare, the federal health insurance program covering most adults
+      65 and older, generally does n"'
+    explanation_tr: Makalenin ilerleyen bölümünde bu bilgi doğrudan yer almaktadır.
+  - id: reading.b2.open-conv-snl-sister-sketch-nails-the-failures-of-us-healt.q3
+    question_en: In the context of this article, what does "fictional" mean?
+    question_tr_hint: '''fictional'' kelimesinin metindeki anlamına dikkat edin.'
+    options:
+    - Invented, imaginary, or found only in stories and fiction rather than in real life.
+    - A temporary weather pattern lasting less than an hour.
+    - A musical instrument traditionally played in orchestras.
+    - A type of physical currency no longer in circulation.
+    correct_answer: Invented, imaginary, or found only in stories and fiction rather than in real life.
+    explanation_en: 'In this passage, "fictional" means: Invented, imaginary, or found only in stories and fiction
+      rather than in real life.'
+    explanation_tr: Bu bağlamda 'fictional' kelimesi 'kurgusal, hayali' anlamına gelir.
+  topic_tags:
+  - business_strategy
+  - open_source
+  - the_conversation
+  related_ids:
+  - vocab.fictional
+  - vocab.premise
+  - vocab.professional
+  - vocab.study-verb
+  - vocab.experience
+  status: APPROVED
+  version: 1
