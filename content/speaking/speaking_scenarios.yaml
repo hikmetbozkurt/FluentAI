@@ -406,3 +406,52 @@
     - decision_making
   status: APPROVED
   version: 1
+
+- id: speaking.c2.meeting.executive-strategy-tradeoffs
+  title: "Executive Boardroom: Strategic Trade-offs & Risk"
+  category: MEETING
+  cefr_level: C2
+  system_prompt: "You are a sharp, diplomatic Chief Operating Officer in an executive strategy review. Challenge the learner to defend a major capital allocation decision with nuance, hedging, and precision. Probe for second-order consequences, regulatory risks, and opportunity costs without sounding hostile."
+  context_description: "High-register executive discussion focusing on diplomatic hedging, nuanced concession, and precise reformulation under pressure."
+  target_vocab_ids:
+    - vocab.mitigate
+    - vocab.contingency
+    - vocab.viable
+  target_grammar_ids:
+    - grammar.b2.third-mixed-conditionals
+  suggested_starter_phrases:
+    - "While I appreciate the short-term upside, we ought to weigh the downstream operational risk."
+    - "To put it more precisely, our margin of error narrows considerably if demand softens in Q3."
+    - "Granted, the upfront investment is substantial; nevertheless, deferring modernization carries a steeper hidden cost."
+  recommended_correction_mode: COACH
+  voice_name: Aoede
+  topic_tags:
+    - executive_communication
+    - strategy
+    - nuance
+  status: APPROVED
+  version: 1
+
+- id: speaking.c2.ielts.abstract-policy-debate
+  title: "IELTS / C2 Debate: AI Governance & Public Trust"
+  category: IELTS
+  cefr_level: C2
+  system_prompt: "You are a senior IELTS Band 9 / C2 speaking examiner conducting an in-depth discussion on technology governance, public accountability, and long-term societal shifts. Ask probing follow-up questions that require abstract reasoning, subtle qualification, and idiomatic precision."
+  context_description: "Sustained C2-level abstract argumentation emphasizing register control, discourse markers, and nuanced counterarguments."
+  target_vocab_ids:
+    - vocab.mitigate
+    - vocab.viable
+  target_grammar_ids:
+    - grammar.b2.third-mixed-conditionals
+  suggested_starter_phrases:
+    - "It would be an oversimplification to frame innovation and regulation as mutually exclusive."
+    - "What strikes me as particularly telling is how quickly public expectations outpace institutional safeguards."
+    - "Looking at the issue through a broader lens, transparency alone rarely guarantees genuine accountability."
+  recommended_correction_mode: MOCK
+  voice_name: Puck
+  topic_tags:
+    - ielts
+    - policy
+    - argumentation
+  status: APPROVED
+  version: 1

@@ -1219,6 +1219,12 @@ private fun ActiveSpeakingSessionView(
     modifier: Modifier = Modifier
 ) {
     var transcriptSize by remember { mutableStateOf(initialTranscriptPanelSize()) }
+    var showHintsDrawer by remember { mutableStateOf(false) }
+    val starterPhrases = uiState.selectedScenario?.suggestedStarterPhrases.orEmpty()
+    val targetVocabHints = uiState.selectedScenario?.targetVocabIds.orEmpty().map {
+        it.substringAfterLast('.').replace('-', ' ')
+    }
+    val hasHints = starterPhrases.isNotEmpty() || targetVocabHints.isNotEmpty()
     Box(
         modifier = modifier
             .fillMaxSize()
@@ -1259,6 +1265,47 @@ private fun ActiveSpeakingSessionView(
                 category = category,
                 correctionLevel = uiState.activeLiveConfig?.correctionLevel
             )
+
+            if (hasHints) {
+                LightSpeakSurface(modifier = Modifier.fillMaxWidth()) {
+                    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { showHintsDrawer = !showHintsDrawer },
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = if (showHintsDrawer) "Hide Speaking Hints" else "Need a phrase? Tap for Speaking Hints (${starterPhrases.size})",
+                                style = FluentTheme.typography.labelLarge,
+                                color = DashboardColors.PrimaryPinkDark
+                            )
+                            Text(
+                                text = if (showHintsDrawer) "Collapse" else "Show",
+                                style = FluentTheme.typography.labelSmall,
+                                color = DashboardColors.TextSecondary
+                            )
+                        }
+                        if (showHintsDrawer) {
+                            starterPhrases.take(3).forEach { phrase ->
+                                Text(
+                                    text = "• “$phrase”",
+                                    style = FluentTheme.typography.bodyMedium,
+                                    color = DashboardColors.TextPrimary
+                                )
+                            }
+                            if (targetVocabHints.isNotEmpty()) {
+                                Text(
+                                    text = "Target vocabulary: ${targetVocabHints.joinToString(" · ")}",
+                                    style = FluentTheme.typography.bodySmall,
+                                    color = DashboardColors.TextSecondary
+                                )
+                            }
+                        }
+                    }
+                }
+            }
 
             if (uiState.liveCorrections.isNotEmpty()) {
                 LiveCorrectionsPanel(
