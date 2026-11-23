@@ -18,7 +18,7 @@ object AiConfigModule {
     @Singleton
     fun provideAiRuntimeConfig(): AiRuntimeConfig = AiRuntimeConfig(
         geminiApiKey = BuildConfig.GEMINI_API_KEY,
-        liveModel = GeminiLiveWebSocketClient.DEFAULT_MODEL,
-        analysisModel = GeminiSpeakingAnalysisClient.DEFAULT_MODEL
+        liveModel = BuildConfig.GEMINI_LIVE_MODEL.ifBlank { GeminiLiveWebSocketClient.DEFAULT_MODEL },
+        analysisModel = BuildConfig.GEMINI_ANALYSIS_MODEL.ifBlank { GeminiSpeakingAnalysisClient.DEFAULT_MODEL }
     )
 }

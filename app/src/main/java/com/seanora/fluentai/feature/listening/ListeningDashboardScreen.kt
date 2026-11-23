@@ -168,7 +168,7 @@ fun ListeningDashboardScreen(
                     horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md),
                 ) {
                     Column(Modifier.weight(1f)) {
-                        Text("🎯 Needs attention", style = DashboardTypography.Caption, color = LearningModule.LISTENING.accent)
+                        Text("Needs attention", style = DashboardTypography.Caption, color = LearningModule.LISTENING.accent)
                         Text(
                             weak.scenario.category.toDisplayLabel(),
                             style = DashboardTypography.CardTitle,

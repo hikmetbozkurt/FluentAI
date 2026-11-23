@@ -152,9 +152,9 @@ fun ListeningLibraryScreen(
                         label = { Text(state.selectedCategory?.toDisplayLabel() ?: "Topic") },
                         trailingIcon = { Icon(Icons.Rounded.KeyboardArrowDown, null, Modifier.size(18.dp)) },
                     )
-                    DropdownMenu(expanded = categoryMenuOpen, onDismissRequest = { categoryMenuOpen = false }) {
+                    DropdownMenu(expanded = categoryMenuOpen, onDismissRequest = { categoryMenuOpen = false }, containerColor = Color.White) {
                         DropdownMenuItem(
-                            text = { Text("All topics") },
+                            text = { Text("All topics", color = DashboardColors.TextPrimary) },
                             onClick = { viewModel.selectCategory(null); categoryMenuOpen = false },
                         )
                         state.availableCategories.forEach { category ->

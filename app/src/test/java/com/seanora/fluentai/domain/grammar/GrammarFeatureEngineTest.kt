@@ -34,7 +34,9 @@ class GrammarFeatureEngineTest {
         assertEquals(1, questions.size)
         val question = questions.single()
         assertEquals("I've already sent the report.", question.correctSentence)
+        assertEquals("Raporu zaten gönderdim.", question.promptTr)
         assertFalse(question.scrambledTokens == question.correctTokens)
+        assertEquals(question.correctTokens.sorted(), question.scrambledTokens.sorted())
         assertTrue(engine.evaluateSentence(question, question.correctTokens))
         assertFalse(engine.evaluateSentence(question, question.scrambledTokens))
     }
@@ -48,15 +50,28 @@ class GrammarFeatureEngineTest {
             incorrectExample = "She working today.",
             correctExample = "She is working today.",
         )
+        val second = GrammarTrap(
+            trapType = "preposition",
+            trapTitle = "Discuss without about",
+            explanationTr = "Discuss fiili about almaz.",
+            incorrectExample = "We discussed about the plan.",
+            correctExample = "We discussed the plan.",
+        )
         val incomplete = complete.copy(incorrectExample = "")
 
         val questions = engine.buildErrorSpotters(
-            listOf(lesson(traps = listOf(complete, incomplete))),
+            listOf(lesson(traps = listOf(complete, second, incomplete))),
         )
 
-        assertEquals(1, questions.size)
-        assertEquals("She working today.", questions.single().incorrectSentence)
-        assertEquals("She is working today.", questions.single().correctSentence)
+        assertEquals(2, questions.size)
+        assertEquals("She working today.", questions[0].incorrectSentence)
+        assertEquals("She is working today.", questions[0].correctSentence)
+        assertEquals(
+            setOf("She working today.", "She is working today."),
+            questions[0].orderedOptions.toSet(),
+        )
+        // Deterministic ordering varies across distinct IDs rather than always putting incorrect first
+        assertTrue(questions.any { it.orderedOptions.first() == it.correctSentence } || questions.any { it.orderedOptions.first() == it.incorrectSentence })
     }
 
     @Test

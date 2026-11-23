@@ -472,13 +472,21 @@ private fun DailyPracticeCard(plan: TodayPlan, modifier: Modifier = Modifier) = 
             )
             Column(Modifier.padding(start = 5.dp)) {
                 Text(
-                    "You're doing great!",
+                    when {
+                        minutes >= goal -> "Goal complete!"
+                        minutes == 0 -> "Ready to start?"
+                        else -> "You're doing great!"
+                    },
                     fontSize = 9.sp,
                     fontWeight = FontWeight.Bold,
                     color = DashboardColors.PrimaryPinkDark,
                 )
                 Text(
-                    if (minutes >= goal) "Today's goal is complete." else "${goal - minutes} minutes to complete today's goal.",
+                    when {
+                        minutes >= goal -> "Today's goal is complete."
+                        minutes == 0 -> "$goal minutes to reach today's goal."
+                        else -> "${goal - minutes} minutes to complete today's goal."
+                    },
                     fontSize = 8.sp,
                     color = DashboardColors.TextSecondary,
                     maxLines = 1,
@@ -535,6 +543,58 @@ private fun FocusCard(
         title = "Today's Focus",
         subtitle = "Practice key skills for faster progress.",
     )
+
+    val nextPlanItem = plan.focusItems.firstOrNull()
+    if (nextPlanItem != null) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(10.dp))
+                .background(DashboardColors.BackgroundSecondary)
+                .border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(10.dp))
+                .clickable { onActivity(nextPlanItem) }
+                .padding(horizontal = 12.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Box(
+                modifier = Modifier
+                    .clip(RoundedCornerShape(6.dp))
+                    .background(DashboardColors.PrimaryPink)
+                    .padding(horizontal = 7.dp, vertical = 3.dp),
+            ) {
+                Text(
+                    "UP NEXT",
+                    fontSize = 8.5.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White,
+                )
+            }
+            Column(Modifier.weight(1f)) {
+                Text(
+                    text = nextPlanItem.title,
+                    fontSize = 11.5.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = DashboardColors.TextPrimary,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+                Text(
+                    text = "${nextPlanItem.domain.replaceFirstChar { it.uppercase() }} · ${nextPlanItem.estimatedMinutes} min · ${nextPlanItem.explanation}",
+                    fontSize = 9.5.sp,
+                    color = DashboardColors.TextSecondary,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+            Text(
+                text = "Start →",
+                fontSize = 10.5.sp,
+                fontWeight = FontWeight.Bold,
+                color = DashboardColors.PrimaryPinkDark,
+            )
+        }
+    }
 
     BoxWithConstraints(Modifier.fillMaxWidth()) {
         val columns = focusColumnCountForWidth(maxWidth.value)

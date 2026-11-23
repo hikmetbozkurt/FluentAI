@@ -7,6 +7,7 @@ import com.seanora.fluentai.core.model.MasteryStatus
 import com.seanora.fluentai.core.model.MistakeRecord
 import com.seanora.fluentai.core.model.MistakeStage
 import com.seanora.fluentai.core.model.ReviewSchedule
+import kotlin.random.Random
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -18,6 +19,7 @@ data class SentenceBuilderQuestion(
     val correctTokens: List<String>,
     val scrambledTokens: List<String>,
     val explanation: String,
+    val promptTr: String? = null,
 )
 
 data class ErrorSpotterQuestion(
@@ -29,6 +31,7 @@ data class ErrorSpotterQuestion(
     val incorrectSentence: String,
     val correctSentence: String,
     val explanation: String,
+    val orderedOptions: List<String> = listOf(incorrectSentence, correctSentence),
 )
 
 data class GrammarWeakSpot(
@@ -47,8 +50,7 @@ class GrammarFeatureEngine @Inject constructor() {
                 val sentence = example.en.trim()
                 val tokens = tokenize(sentence)
                 if (tokens.size !in 4..24 || tokens.distinct().size < 3) return@mapIndexedNotNull null
-                val shift = positiveHash("${lesson.id}:$index") % (tokens.size - 1) + 1
-                val scrambled = tokens.drop(shift) + tokens.take(shift)
+                val scrambled = deterministicShuffle(tokens, "${lesson.id}:$index")
                 if (scrambled == tokens) return@mapIndexedNotNull null
                 SentenceBuilderQuestion(
                     id = "${lesson.id}:example:$index",
@@ -58,6 +60,7 @@ class GrammarFeatureEngine @Inject constructor() {
                     correctTokens = tokens,
                     scrambledTokens = scrambled,
                     explanation = lesson.summaryEn,
+                    promptTr = example.tr.trim().takeIf { it.isNotBlank() },
                 )
             }
         }
@@ -71,8 +74,14 @@ class GrammarFeatureEngine @Inject constructor() {
                 val incorrect = trap.incorrectExample.trim()
                 val correct = trap.correctExample.trim()
                 if (incorrect.isBlank() || correct.isBlank() || incorrect == correct) return@mapIndexedNotNull null
+                val id = "${lesson.id}:trap:$index"
+                val options = if (positiveHash(id) % 2 == 0) {
+                    listOf(correct, incorrect)
+                } else {
+                    listOf(incorrect, correct)
+                }
                 ErrorSpotterQuestion(
-                    id = "${lesson.id}:trap:$index",
+                    id = id,
                     lessonId = lesson.id,
                     lessonTitle = lesson.title,
                     trapType = trap.trapType,
@@ -80,6 +89,7 @@ class GrammarFeatureEngine @Inject constructor() {
                     incorrectSentence = incorrect,
                     correctSentence = correct,
                     explanation = trap.explanationTr,
+                    orderedOptions = options,
                 )
             }
         }
@@ -144,6 +154,15 @@ class GrammarFeatureEngine @Inject constructor() {
 
     private fun tokenize(sentence: String): List<String> =
         TOKEN_REGEX.findAll(sentence).map { it.value }.toList()
+
+    private fun deterministicShuffle(tokens: List<String>, seedKey: String): List<String> {
+        val baseSeed = positiveHash(seedKey).toLong()
+        for (attempt in 0 until 6) {
+            val candidate = tokens.shuffled(Random(baseSeed + attempt * 31L))
+            if (candidate != tokens) return candidate
+        }
+        return tokens.reversed()
+    }
 
     private fun positiveHash(value: String): Int = value.hashCode() and Int.MAX_VALUE
 

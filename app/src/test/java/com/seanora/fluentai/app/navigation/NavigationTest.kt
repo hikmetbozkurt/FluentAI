@@ -97,6 +97,16 @@ class NavigationTest {
     }
 
     @Test
+    fun distractionFreeReadingRoute_hidesShellOnlyDuringReadingSessions() {
+        assertTrue(com.seanora.fluentai.app.isDistractionFreeReadingRoute(READING_SESSION_ROUTE))
+        assertTrue(com.seanora.fluentai.app.isDistractionFreeReadingRoute(READING_LIBRARY_CONTENT_ROUTE))
+        assertTrue(com.seanora.fluentai.app.isDistractionFreeReadingRoute("learn/{domain}/{contentId}?planId={planId}&itemId={itemId}", "reading"))
+        assertFalse(com.seanora.fluentai.app.isDistractionFreeReadingRoute(READING_DASHBOARD_ROUTE))
+        assertFalse(com.seanora.fluentai.app.isDistractionFreeReadingRoute(ReadingDestination.LIBRARY.route))
+        assertFalse(com.seanora.fluentai.app.isDistractionFreeReadingRoute("learn/{domain}/{contentId}", "vocabulary"))
+    }
+
+    @Test
     fun sidebarSelection_doesNotMislabelReviewOrUnknownRoutesAsHome() {
         assertEquals(TopLevelDestination.HOME, TopLevelDestination.fromRouteOrNull("home"))
         assertEquals(TopLevelDestination.LEARN, TopLevelDestination.fromRouteOrNull("learn/grammar/item"))

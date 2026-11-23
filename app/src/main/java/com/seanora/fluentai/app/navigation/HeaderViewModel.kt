@@ -33,6 +33,14 @@ class HeaderViewModel @Inject constructor(
     val selectedAvatarKey: StateFlow<String?> = userPreferencesRepository.selectedAvatarKey
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
+    val dueReviewsCount: StateFlow<Int> = userLearningRepository.getDueReviews(System.currentTimeMillis())
+        .map { it.size }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
+
+    val activeMistakesCount: StateFlow<Int> = userLearningRepository.getActiveMistakes()
+        .map { it.size }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), 0)
+
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 

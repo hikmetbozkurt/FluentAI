@@ -20,37 +20,64 @@ import com.seanora.fluentai.app.navigation.FluentAiNavRail
 import com.seanora.fluentai.app.navigation.FluentAiAppHeader
 import com.seanora.fluentai.app.navigation.TopLevelDestination
 import com.seanora.fluentai.app.navigation.ONBOARDING_ROUTE
+import com.seanora.fluentai.app.navigation.READING_DASHBOARD_ROUTE
+import com.seanora.fluentai.app.navigation.READING_LIBRARY_CONTENT_ROUTE
+import com.seanora.fluentai.app.navigation.READING_LIVE_ARTICLE_ROUTE
+import com.seanora.fluentai.app.navigation.READING_SESSION_ROUTE
 import com.seanora.fluentai.app.navigation.topLevelNavigationPolicy
 import androidx.compose.ui.unit.dp
-import com.seanora.fluentai.core.designsystem.theme.FluentTheme
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
+import com.seanora.fluentai.core.designsystem.dashboard.LingoPinkTheme
+import com.seanora.fluentai.feature.reading.ReadingPalette
+
+internal fun isDistractionFreeReadingRoute(route: String?, domainArg: String? = null): Boolean {
+    if (route == null) return false
+    if (route == READING_SESSION_ROUTE || route == READING_LIBRARY_CONTENT_ROUTE || route == READING_LIVE_ARTICLE_ROUTE) return true
+    if (route.startsWith("$READING_DASHBOARD_ROUTE/session/") || route.startsWith("$READING_DASHBOARD_ROUTE/live-article/")) return true
+    if (route.startsWith("learn/{domain}/") && domainArg.equals("reading", ignoreCase = true)) return true
+    return false
+}
+
+internal fun isReadingRoute(route: String?, domainArg: String? = null): Boolean {
+    if (route == null) return false
+    return isDistractionFreeReadingRoute(route, domainArg) ||
+        route.startsWith(READING_DASHBOARD_ROUTE)
+}
 
 @Composable
 fun FluentAiApp(
     startupViewModel: AppStartupViewModel = hiltViewModel()
 ) {
-    FluentTheme {
+    LingoPinkTheme {
         val startupState by startupViewModel.state.collectAsStateWithLifecycle()
         val readyState = startupState as? AppStartupState.Ready
         if (readyState == null) {
             Surface(
                 modifier = Modifier.fillMaxSize(),
-                color = FluentTheme.colors.surfaceBase,
+                color = DashboardColors.BackgroundPrimary,
             ) {}
-            return@FluentTheme
+            return@LingoPinkTheme
         }
 
         val navController = rememberNavController()
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
+        val domainArg = navBackStackEntry?.arguments?.getString("domain")
         val selectedDestination = TopLevelDestination.fromRouteOrNull(currentRoute)
-        val showNavigation = currentRoute != ONBOARDING_ROUTE && (currentRoute != null || readyState.startDestination != ONBOARDING_ROUTE)
+        val isOnboarding = currentRoute == ONBOARDING_ROUTE || (currentRoute == null && readyState.startDestination == ONBOARDING_ROUTE)
+        val isDistractionFreeReading = isDistractionFreeReadingRoute(currentRoute, domainArg)
+        val showNavigation = !isOnboarding && !isDistractionFreeReading
+        val surfaceColor = if (isReadingRoute(currentRoute, domainArg)) {
+            ReadingPalette.Paper
+        } else {
+            DashboardColors.BackgroundPrimary
+        }
 
         Surface(
             modifier = Modifier
                 .fillMaxSize()
                 .safeDrawingPadding(),
-            color = if (showNavigation) DashboardColors.BackgroundPrimary else FluentTheme.colors.surfaceBase,
+            color = surfaceColor,
         ) {
             BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
                 val compactNavigation = maxWidth < 900.dp

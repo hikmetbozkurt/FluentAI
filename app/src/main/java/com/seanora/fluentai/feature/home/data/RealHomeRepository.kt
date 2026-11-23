@@ -157,7 +157,7 @@ class RealHomeRepository @Inject constructor(
                 weakAreas = mistakes.take(3).map { mistake ->
                     WeakAreaItem(
                         id = mistake.contentId,
-                        title = mistake.contentId.substringAfterLast('.').replace('-', ' ').replaceFirstChar { it.uppercase() },
+                        title = formatSemanticTitle(mistake.contentId),
                         description = mistake.errorDescription,
                     )
                 },
@@ -274,9 +274,7 @@ class RealHomeRepository @Inject constructor(
         return HomeResumeItem(kind, "Grammar", semanticTitle(contentId), state.updatedAt, contentId)
     }
 
-    private fun semanticTitle(contentId: String): String = contentId.substringAfterLast('.')
-        .replace('-', ' ')
-        .replaceFirstChar { it.uppercase() }
+    private fun semanticTitle(contentId: String): String = formatSemanticTitle(contentId)
 
     private fun cefr(value: String): CefrLevel =
         CefrLevel.entries.find { it.name.equals(value, ignoreCase = true) } ?: CefrLevel.B1
@@ -287,4 +285,28 @@ class RealHomeRepository @Inject constructor(
         val profile: UserProfile?,
         val snapshots: List<MasterySnapshot>,
     )
+}
+
+internal fun formatSemanticTitle(contentId: String): String {
+    val segments = contentId.split('.').filter { it.isNotBlank() }
+    if (segments.isEmpty()) return contentId
+    val cefrCodes = setOf("a1", "a2", "b1", "b2", "c1", "c2")
+    val domainPrefixes = setOf(
+        "vocab", "vocabulary", "grammar", "reading", "listening",
+        "speaking", "exercise", "assessment", "topic", "review"
+    )
+    val meaningful = segments
+        .dropWhile { it.lowercase() in domainPrefixes }
+        .dropWhile { it.lowercase() in cefrCodes }
+        .filterNot { it.all(Char::isDigit) }
+    val raw = meaningful.lastOrNull()
+        ?: segments.lastOrNull { !it.all(Char::isDigit) }
+        ?: segments.last()
+    val stripped = raw.replace(Regex("[-_]\\d+$"), "").ifBlank { raw }
+    return stripped
+        .replace('-', ' ')
+        .replace('_', ' ')
+        .split(' ')
+        .filter { it.isNotBlank() }
+        .joinToString(" ") { word -> word.replaceFirstChar { it.uppercase() } }
 }

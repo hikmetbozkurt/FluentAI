@@ -45,7 +45,7 @@ fun FluentActionTile(
         contentPadding = PaddingValues(horizontal = 18.dp, vertical = 16.dp)
     ) {
         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-            IconTile(icon = icon, accent = module.accent, container = module.container, size = 48.dp, badgeEmoji = emoji)
+            IconTile(icon = icon, accent = module.accent, container = module.container, size = 48.dp, badgeEmoji = null)
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(3.dp)) {
                 Text(title, color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 Text(detail, color = DashboardColors.TextSecondary, style = DashboardTypography.Body, maxLines = 2, overflow = TextOverflow.Ellipsis)

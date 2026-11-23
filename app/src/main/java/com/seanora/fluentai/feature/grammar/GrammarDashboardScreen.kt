@@ -189,10 +189,11 @@ private fun GrammarPracticeChooser(
                     DropdownMenu(
                         expanded = menuExpanded,
                         onDismissRequest = { menuExpanded = false },
+                        containerColor = Color.White,
                     ) {
                         lessons.forEach { lesson ->
                             DropdownMenuItem(
-                                text = { Text("${lesson.title} · ${lesson.cefrLevel}") },
+                                text = { Text("${lesson.title} · ${lesson.cefrLevel}", color = DashboardColors.TextPrimary) },
                                 onClick = {
                                     selectedId = lesson.id
                                     menuExpanded = false

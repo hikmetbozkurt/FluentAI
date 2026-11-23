@@ -74,7 +74,7 @@ fun GrammarLibraryScreen(
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(18.dp)) {
             FluentBackButton(onClick = onNavigateBack, label = "Grammar")
             Column(Modifier.weight(1f)) {
-                Text("🧩 Grammar Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
+                Text("Grammar Library", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
                 Text("${visibleLessons.size} lessons", color = DashboardColors.TextSecondary)
             }
             OutlinedButton(onClick = { showCompare = true }) {
@@ -102,10 +102,10 @@ fun GrammarLibraryScreen(
                 OutlinedButton(onClick = { categoryMenu = true }) {
                     Text(category?.humanize() ?: "All topics", color = DashboardColors.TextPrimary)
                 }
-                DropdownMenu(expanded = categoryMenu, onDismissRequest = { categoryMenu = false }) {
-                    DropdownMenuItem(text = { Text("All topics") }, onClick = { category = null; categoryMenu = false })
+                DropdownMenu(expanded = categoryMenu, onDismissRequest = { categoryMenu = false }, containerColor = Color.White) {
+                    DropdownMenuItem(text = { Text("All topics", color = DashboardColors.TextPrimary) }, onClick = { category = null; categoryMenu = false })
                     categories.forEach { value ->
-                        DropdownMenuItem(text = { Text(value.humanize()) }, onClick = { category = value; categoryMenu = false })
+                        DropdownMenuItem(text = { Text(value.humanize(), color = DashboardColors.TextPrimary) }, onClick = { category = value; categoryMenu = false })
                     }
                 }
             }

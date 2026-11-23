@@ -206,8 +206,8 @@ private fun PracticeSection(
         if (available.isEmpty()) Text("No compatible practice is available for this lesson yet.", color = DashboardColors.TextPrimary) else {
             Box {
                 TextButton(onClick = { menu = true }) { Text("Change practice type · ${type?.label}", color = DashboardColors.PrimaryPinkDark) }
-                DropdownMenu(menu, { menu = false }) {
-                    available.forEach { item -> DropdownMenuItem(text = { Text(item.label) }, onClick = { type = item; menu = false }) }
+                DropdownMenu(menu, { menu = false }, containerColor = Color.White) {
+                    available.forEach { item -> DropdownMenuItem(text = { Text(item.label, color = DashboardColors.TextPrimary) }, onClick = { type = item; menu = false }) }
                 }
             }
             when (type) {
@@ -241,14 +241,44 @@ private fun QuickCheck(exercises: List<Exercise>, viewModel: GrammarFeatureViewM
 private fun SentenceBuilderPractice(state: GrammarFeatureUiState, viewModel: GrammarFeatureViewModel, onResult: (Boolean) -> Unit) {
     val question = state.currentSentence ?: return
     Text(question.lessonTitle, color = DashboardColors.TextSecondary)
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
-        state.builtTokens.forEachIndexed { index, token -> Surface(Modifier.clickable { viewModel.removeSentenceToken(index) }, shape = RoundedCornerShape(8.dp), color = DashboardColors.SurfacePink) { Text(token, Modifier.padding(10.dp), color = DashboardColors.TextPrimary) } }
+    question.promptTr?.let { turkishPrompt ->
+        Surface(shape = RoundedCornerShape(12.dp), color = Color.White) {
+            Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text("Build this sentence in English", fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = DashboardColors.PrimaryPinkDark)
+                Text(turkishPrompt, fontSize = 16.sp, fontWeight = FontWeight.Medium, color = DashboardColors.TextPrimary)
+            }
+        }
+    }
+    Surface(shape = RoundedCornerShape(12.dp), color = DashboardColors.SurfacePink.copy(alpha = 0.35f)) {
+        Box(Modifier.fillMaxWidth().padding(12.dp)) {
+            if (state.builtTokens.isEmpty()) {
+                Text("Tap words below in the correct order…", color = DashboardColors.TextSecondary)
+            } else {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                    state.builtTokens.forEachIndexed { index, token ->
+                        Surface(
+                            Modifier.clickable(enabled = !state.sentenceSubmitted) { viewModel.removeSentenceToken(index) },
+                            shape = RoundedCornerShape(8.dp),
+                            color = DashboardColors.SurfacePink,
+                        ) { Text(token, Modifier.padding(horizontal = 12.dp, vertical = 8.dp), fontWeight = FontWeight.Medium, color = DashboardColors.TextPrimary) }
+                    }
+                }
+            }
+        }
     }
     FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
-        question.scrambledTokens.forEach { token -> OutlinedButton(onClick = { viewModel.addSentenceToken(token) }) { Text(token, color = DashboardColors.TextPrimary) } }
+        question.scrambledTokens.forEachIndexed { idx, token ->
+            val used = idx in state.builtTokenIndices
+            OutlinedButton(
+                onClick = { viewModel.addSentenceTokenAt(idx) },
+                enabled = !used && !state.sentenceSubmitted,
+            ) {
+                Text(token, color = if (used) DashboardColors.TextMuted else DashboardColors.TextPrimary)
+            }
+        }
     }
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        OutlinedButton(onClick = viewModel::clearSentence) { Text("Clear", color = DashboardColors.TextPrimary) }
+        OutlinedButton(onClick = viewModel::clearSentence, enabled = state.builtTokens.isNotEmpty() && !state.sentenceSubmitted) { Text("Clear", color = DashboardColors.TextPrimary) }
         Button(
             onClick = { viewModel.submitSentence()?.let(onResult) },
             enabled = state.builtTokens.isNotEmpty() && !state.sentenceSubmitted,
@@ -261,14 +291,29 @@ private fun SentenceBuilderPractice(state: GrammarFeatureUiState, viewModel: Gra
 @Composable
 private fun ErrorSpotterPractice(state: GrammarFeatureUiState, viewModel: GrammarFeatureViewModel, onResult: (Boolean) -> Unit) {
     val question = state.currentError ?: return
-    listOf(question.incorrectSentence, question.correctSentence).forEach { answer ->
-        OutlinedButton(onClick = { viewModel.selectErrorAnswer(answer) }, modifier = Modifier.fillMaxWidth()) { Text(answer, color = DashboardColors.TextPrimary) }
+    Text("Select the grammatically correct sentence:", fontWeight = FontWeight.SemiBold, color = DashboardColors.TextPrimary)
+    question.orderedOptions.forEach { answer ->
+        val selected = state.errorSelection == answer
+        OutlinedButton(
+            onClick = { viewModel.selectErrorAnswer(answer) },
+            enabled = !state.errorSubmitted,
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Text(
+                if (selected) "• $answer" else answer,
+                fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
+                color = if (selected) DashboardColors.PrimaryPinkDark else DashboardColors.TextPrimary,
+            )
+        }
     }
     Button(
         onClick = { viewModel.submitErrorAnswer()?.let(onResult) },
         enabled = state.errorSelection != null && !state.errorSubmitted,
     ) { Text("Check") }
-    state.errorCorrect?.let { Feedback(it, question.correctSentence, question.explanation) }
+    state.errorCorrect?.let { correct ->
+        val detail = listOf(question.trapTitle, question.explanation).filter { it.isNotBlank() }.joinToString(" — ")
+        Feedback(correct, question.correctSentence, detail)
+    }
     if (state.errorSubmitted) OutlinedButton(onClick = viewModel::nextError) { Text("Next example", color = DashboardColors.TextPrimary) }
 }
 

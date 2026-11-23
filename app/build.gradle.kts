@@ -19,17 +19,26 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         val envFile = rootProject.file(".env")
-        val geminiApiKey = if (envFile.exists()) {
+        val envValues = if (envFile.exists()) {
             envFile.readLines()
-                .firstOrNull { it.trim().startsWith("GEMINI_API_KEY=") }
-                ?.substringAfter("GEMINI_API_KEY=")
-                ?.trim()
-                ?.removeSurrounding("\"")
-                ?: ""
+                .map { it.trim() }
+                .filter { it.isNotEmpty() && !it.startsWith("#") && '=' in it }
+                .associate { line ->
+                    val key = line.substringBefore('=').trim()
+                    val value = line.substringAfter('=').trim().removeSurrounding("\"")
+                    key to value
+                }
         } else {
-            ""
+            emptyMap()
         }
+        val geminiApiKey = envValues["GEMINI_API_KEY"].orEmpty()
+        val geminiLiveModel = envValues["GEMINI_LIVE_MODEL"].orEmpty()
+        val geminiAnalysisModel = envValues["GEMINI_ANALYSIS_MODEL"].orEmpty()
+        val guardianApiKey = envValues["GUARDIAN_API_KEY"].orEmpty()
         buildConfigField("String", "GEMINI_API_KEY", "\"$geminiApiKey\"")
+        buildConfigField("String", "GEMINI_LIVE_MODEL", "\"$geminiLiveModel\"")
+        buildConfigField("String", "GEMINI_ANALYSIS_MODEL", "\"$geminiAnalysisModel\"")
+        buildConfigField("String", "GUARDIAN_API_KEY", "\"$guardianApiKey\"")
     }
 
     buildTypes {

@@ -159,6 +159,14 @@ class RealHomeRepositoryTest {
     }
 
     @Test
+    fun `formatSemanticTitle strips numeric suffixes and domain prefixes cleanly`() {
+        assertEquals("Meeting", formatSemanticTitle("listening.b2.work.meeting.001"))
+        assertEquals("Daily Standup", formatSemanticTitle("listening.b1.daily-standup-001"))
+        assertEquals("Reliable", formatSemanticTitle("vocab.reliable"))
+        assertEquals("Present Perfect Continuous", formatSemanticTitle("grammar.present-perfect-continuous"))
+    }
+
+    @Test
     fun `refreshPlan delegates to todayPracticeRepository`() = runTest {
         repository.refreshPlan()
         assertTrue(fakeTodayRepo.refreshCalled)

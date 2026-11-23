@@ -30,6 +30,7 @@ data class GrammarFeatureUiState(
     val sentenceQuestions: List<SentenceBuilderQuestion> = emptyList(),
     val sentenceIndex: Int = 0,
     val builtTokens: List<String> = emptyList(),
+    val builtTokenIndices: List<Int> = emptyList(),
     val sentenceSubmitted: Boolean = false,
     val sentenceCorrect: Boolean? = null,
     val errorQuestions: List<ErrorSpotterQuestion> = emptyList(),
@@ -136,6 +137,7 @@ class GrammarFeatureViewModel @Inject constructor(
                 activeLessonId = id,
                 sentenceIndex = sentenceIndex,
                 builtTokens = emptyList(),
+                builtTokenIndices = emptyList(),
                 sentenceSubmitted = false,
                 sentenceCorrect = null,
                 errorIndex = errorIndex,
@@ -177,20 +179,41 @@ class GrammarFeatureViewModel @Inject constructor(
     fun addSentenceToken(token: String) {
         val question = _uiState.value.currentSentence ?: return
         if (_uiState.value.sentenceSubmitted) return
-        val usedCount = _uiState.value.builtTokens.count { it == token }
-        val availableCount = question.scrambledTokens.count { it == token }
-        if (usedCount < availableCount) _uiState.update { it.copy(builtTokens = it.builtTokens + token) }
+        val usedIndices = _uiState.value.builtTokenIndices.toSet()
+        val matchingIndex = question.scrambledTokens.indices.firstOrNull { idx ->
+            idx !in usedIndices && question.scrambledTokens[idx] == token
+        } ?: return
+        addSentenceTokenAt(matchingIndex)
+    }
+
+    fun addSentenceTokenAt(scrambledIndex: Int) {
+        val question = _uiState.value.currentSentence ?: return
+        if (_uiState.value.sentenceSubmitted) return
+        val token = question.scrambledTokens.getOrNull(scrambledIndex) ?: return
+        if (scrambledIndex in _uiState.value.builtTokenIndices) return
+        _uiState.update {
+            it.copy(
+                builtTokens = it.builtTokens + token,
+                builtTokenIndices = it.builtTokenIndices + scrambledIndex,
+            )
+        }
         saveResume(GrammarResumeDestination.SENTENCE_BUILDER, question.lessonId)
     }
 
     fun removeSentenceToken(index: Int) {
         if (_uiState.value.sentenceSubmitted) return
-        _uiState.update { state -> state.copy(builtTokens = state.builtTokens.filterIndexed { i, _ -> i != index }) }
+        _uiState.update { state ->
+            state.copy(
+                builtTokens = state.builtTokens.filterIndexed { i, _ -> i != index },
+                builtTokenIndices = state.builtTokenIndices.filterIndexed { i, _ -> i != index },
+            )
+        }
     }
 
     fun clearSentence() = _uiState.update {
         it.copy(
             builtTokens = emptyList(),
+            builtTokenIndices = emptyList(),
             sentenceSubmitted = false,
             sentenceCorrect = null,
         )
@@ -227,6 +250,7 @@ class GrammarFeatureViewModel @Inject constructor(
             it.copy(
                 sentenceIndex = nextIndex,
                 builtTokens = emptyList(),
+                builtTokenIndices = emptyList(),
                 sentenceSubmitted = false,
                 sentenceCorrect = null,
             )

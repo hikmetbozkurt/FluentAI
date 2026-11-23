@@ -23,7 +23,7 @@ fun ModuleIconTile(
     module: LearningModule,
     modifier: Modifier = Modifier,
     size: Dp = 52.dp,
-    showEmojiBadge: Boolean = true
+    showEmojiBadge: Boolean = false
 ) {
     IconTile(
         icon = module.icon,

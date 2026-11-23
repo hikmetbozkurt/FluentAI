@@ -55,12 +55,15 @@ fun FluentAiAppHeader(
 ) {
     val displayName by viewModel.displayName.collectAsStateWithLifecycle()
     val selectedAvatarKey by viewModel.selectedAvatarKey.collectAsStateWithLifecycle()
+    val dueReviewsCount by viewModel.dueReviewsCount.collectAsStateWithLifecycle()
+    val activeMistakesCount by viewModel.activeMistakesCount.collectAsStateWithLifecycle()
     val searchQuery by viewModel.searchQuery.collectAsStateWithLifecycle()
     val searchResults by viewModel.searchResults.collectAsStateWithLifecycle()
     val isSearching by viewModel.isSearching.collectAsStateWithLifecycle()
     val searchError by viewModel.searchError.collectAsStateWithLifecycle()
 
     var profileMenuExpanded by remember { mutableStateOf(false) }
+    var notificationsExpanded by remember { mutableStateOf(false) }
 
     Row(
         modifier = modifier
@@ -208,16 +211,89 @@ fun FluentAiAppHeader(
 
         Spacer(Modifier.weight(if (compact) .05f else .35f))
 
-        // Notifications icon area (preserved visually, notifications out of scope)
-        Box(
-            Modifier.size(46.dp).clip(CircleShape).background(DashboardColors.Surface),
-            contentAlignment = Alignment.Center,
-        ) {
-            Icon(Icons.Rounded.NotificationsNone, "Notifications", tint = DashboardColors.TextPrimary)
+        // Notifications / Study alerts popover
+        val totalAlerts = dueReviewsCount + activeMistakesCount
+        Box {
             Box(
-                Modifier.size(8.dp).clip(CircleShape).background(DashboardColors.PrimaryPink)
-                    .align(Alignment.TopEnd).offset((-8).dp, 8.dp),
-            )
+                Modifier
+                    .size(46.dp)
+                    .clip(CircleShape)
+                    .background(DashboardColors.Surface)
+                    .clickable { notificationsExpanded = true },
+                contentAlignment = Alignment.Center,
+            ) {
+                Icon(Icons.Rounded.NotificationsNone, "Study alerts", tint = DashboardColors.TextPrimary)
+                if (totalAlerts > 0) {
+                    Box(
+                        Modifier
+                            .size(8.dp)
+                            .clip(CircleShape)
+                            .background(DashboardColors.PrimaryPink)
+                            .align(Alignment.TopEnd)
+                            .offset((-8).dp, 8.dp),
+                    )
+                }
+            }
+            DropdownMenu(
+                expanded = notificationsExpanded,
+                onDismissRequest = { notificationsExpanded = false },
+                containerColor = DashboardColors.Surface,
+                modifier = Modifier
+                    .border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(12.dp)),
+            ) {
+                if (totalAlerts == 0) {
+                    DropdownMenuItem(
+                        text = {
+                            Text(
+                                "All caught up — no pending reviews.",
+                                color = DashboardColors.TextSecondary,
+                                style = DashboardTypography.Body,
+                            )
+                        },
+                        leadingIcon = {
+                            Icon(Icons.Rounded.CheckCircleOutline, null, tint = DashboardColors.PlantGreen)
+                        },
+                        onClick = { notificationsExpanded = false },
+                    )
+                } else {
+                    if (dueReviewsCount > 0) {
+                        DropdownMenuItem(
+                            text = {
+                                Text(
+                                    "$dueReviewsCount due review${if (dueReviewsCount == 1) "" else "s"} ready",
+                                    color = DashboardColors.TextPrimary,
+                                    style = DashboardTypography.Body,
+                                )
+                            },
+                            leadingIcon = {
+                                Icon(Icons.Rounded.Replay, null, tint = DashboardColors.PrimaryPink)
+                            },
+                            onClick = {
+                                notificationsExpanded = false
+                                onNavigateToContent(REVIEW_HUB_ROUTE)
+                            },
+                        )
+                    }
+                    if (activeMistakesCount > 0) {
+                        DropdownMenuItem(
+                            text = {
+                                Text(
+                                    "$activeMistakesCount active mistake${if (activeMistakesCount == 1) "" else "s"} to reinforce",
+                                    color = DashboardColors.TextPrimary,
+                                    style = DashboardTypography.Body,
+                                )
+                            },
+                            leadingIcon = {
+                                Icon(Icons.Rounded.TrackChanges, null, tint = DashboardColors.Warning)
+                            },
+                            onClick = {
+                                notificationsExpanded = false
+                                onNavigateToContent(REVIEW_HUB_ROUTE)
+                            },
+                        )
+                    }
+                }
+            }
         }
 
         // Avatar, Display Name and Dropdown Area

@@ -20,6 +20,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.compositeOver
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
@@ -39,7 +40,8 @@ fun FluentSurfaceCard(
         emphasized && accent != null -> accent.copy(alpha = 0.55f)
         else -> DashboardColors.BorderSoft
     }
-    val background = if (emphasized && accent != null) accent.copy(alpha = 0.07f) else DashboardColors.Surface
+    // Keep the card opaque: a translucent Surface lets its own elevation shadow show through as a grey block.
+    val background = if (emphasized && accent != null) accent.copy(alpha = 0.07f).compositeOver(DashboardColors.Surface) else DashboardColors.Surface
     val body: @Composable () -> Unit = {
         Row(Modifier.height(IntrinsicSize.Min)) {
             if (accent != null) {

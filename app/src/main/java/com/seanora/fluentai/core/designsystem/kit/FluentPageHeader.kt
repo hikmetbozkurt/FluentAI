@@ -97,7 +97,7 @@ fun FluentPageHeader(
                             modifier = Modifier.padding(start = 12.dp).height(132.dp).widthIn(max = 340.dp)
                         )
                     } else {
-                        FloatingEmoji(module.emoji)
+                        FloatingModuleEmblem(module)
                     }
                 }
             }
@@ -106,21 +106,29 @@ fun FluentPageHeader(
 }
 
 @Composable
-private fun FloatingEmoji(emoji: String) {
-    val transition = rememberInfiniteTransition(label = "floatingEmoji")
+private fun FloatingModuleEmblem(module: LearningModule) {
+    val transition = rememberInfiniteTransition(label = "floatingEmblem")
     val offset by transition.animateFloat(
-        initialValue = -4f,
-        targetValue = 4f,
-        animationSpec = infiniteRepeatable(tween(1_800, easing = FastOutSlowInEasing), RepeatMode.Reverse),
-        label = "floatingEmojiOffset"
+        initialValue = -3f,
+        targetValue = 3f,
+        animationSpec = infiniteRepeatable(tween(2_200, easing = FastOutSlowInEasing), RepeatMode.Reverse),
+        label = "floatingEmblemOffset"
     )
-    Text(
-        emoji,
-        fontSize = 64.sp,
+    androidx.compose.foundation.layout.Box(
         modifier = Modifier
             .padding(start = 12.dp)
             .graphicsLayer { translationY = offset.dp.toPx() }
-    )
+            .background(module.accent.copy(alpha = 0.10f), RoundedCornerShape(22.dp))
+            .padding(16.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        androidx.compose.material3.Icon(
+            imageVector = module.icon,
+            contentDescription = null,
+            tint = module.accent.copy(alpha = 0.45f),
+            modifier = Modifier.height(44.dp).width(44.dp)
+        )
+    }
 }
 
 @Composable

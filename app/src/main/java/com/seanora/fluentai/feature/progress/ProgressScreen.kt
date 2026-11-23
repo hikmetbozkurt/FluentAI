@@ -141,7 +141,7 @@ private fun SummaryCard(metric: SummaryMetric, modifier: Modifier = Modifier) {
                 accent = metric.identity.accent,
                 container = metric.identity.container,
                 size = 44.dp,
-                badgeEmoji = metric.emoji,
+                badgeEmoji = null,
             )
             Text(metric.label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
         }
