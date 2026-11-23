@@ -37,6 +37,7 @@ Phase 7 — Today's Practice
 | P7-003 | DONE | ANTIGRAVITY | Implement TodayPracticeRepository bridging content & user state | data/repository/, domain/today/ | Repository, flow observation, completion updates, daily metrics |
 | P7-004 | IN_PROGRESS | ANTIGRAVITY | Upgrade Home UI & ViewModel with real Today's Practice loop | feature/home/ | Real TodayPlan integration, guidance CTA, module navigation, Explore preservation |
 | P7-005 | TODO | ANTIGRAVITY | Phase 7 Comprehensive Verification & Exit Pass | tests/ | Unit tests, Room tests, reproducibility & explainability exit pass |
+| UI-R01 | REVIEW | CLAUDE | Reading UI refresh: tablet layouts, illustrations, paper palette (ADR-020) | feature/reading/, assets/reading/ | UI only; content, ViewModels and navigation unchanged. Needs Gradle build + tablet check |
 
 ---
 

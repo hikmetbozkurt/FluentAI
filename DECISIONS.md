@@ -359,3 +359,27 @@ Titles and subtitles lacked hierarchy, cards blended into the background and bac
 ### Consequences
 
 New screens start from the kit. Visual content is drawn in Compose (gradients, shapes, icons, emoji) so it stays offline and scales without extra image assets.
+
+---
+
+## ADR-020 — Reading uses bundled illustrations and a quiet paper palette
+
+**Status:** Accepted
+**Date:** 2026-10-19
+
+### Decision
+
+The Reading module (`feature/reading`) uses its own `ReadingTheme`: warm paper background, navy ink, terracotta accent and a serif reading face (system `FontFamily.Serif`). It shows flat editorial illustrations bundled in `assets/reading/` (one WebP cover per article, plus hero, complete, empty and error images), resolved through `reading-images.manifest.json` with `cover-default.webp` as fallback. Reading screens no longer use emoji decoration.
+
+This narrows ADR-019 for Reading only: other modules keep the shared kit look and Compose-drawn visuals.
+
+### Why
+
+The user asked for a simpler, quieter Reading experience with real illustrations on Android tablets. AGENTS.md already states that Reading should remain visually quiet.
+
+### Consequences
+
+- Images are local assets, so Reading stays offline.
+- A new article without a cover still renders with `cover-default.webp`; adding a cover means adding a file and a manifest entry.
+- Reading UI shows English only; Turkish fields stay in content data but are not displayed.
+- Shared design-system components are reused unchanged; Reading supplies colors through `FluentTheme(colors = …)`.

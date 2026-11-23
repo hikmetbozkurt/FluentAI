@@ -46,12 +46,18 @@ data class VocabularyFeatureUiState(
     val practiceIncorrectIds: Set<String> = emptySet(),
     val practiceSecondsRemaining: Int? = null,
     val practiceQuestionStartedAt: Long = 0L,
+    val masteryByContentId: Map<String, MasterySnapshot> = emptyMap(),
+    val dueReviewIds: Set<String> = emptySet(),
+    val scheduledReviewIds: Set<String> = emptySet(),
     val errorMessage: String? = null,
 ) {
     val currentFlashCard: VocabItem? get() = flashCards.getOrNull(flashIndex)
     val currentPracticeQuestion: VocabularyPracticeQuestion? get() = practiceSession?.questions?.getOrNull(practiceIndex)
     val isFlashComplete: Boolean get() = flashCards.isNotEmpty() && flashIndex >= flashCards.size
     val isPracticeComplete: Boolean get() = practiceSession?.questions?.isNotEmpty() == true && practiceIndex >= practiceSession.questions.size
+    val masteredCount: Int get() = masteryByContentId.values.count { it.status == MasteryStatus.MASTERED || it.status == MasteryStatus.MAINTAINING }
+    val learningCount: Int get() = masteryByContentId.values.count { it.status == MasteryStatus.LEARNING || it.status == MasteryStatus.PRACTICED }
+    val dueCount: Int get() = dueReviewIds.size
 }
 
 @HiltViewModel
@@ -90,6 +96,12 @@ class VocabularyFeatureViewModel @Inject constructor(
                 val effectiveState = featureStateRepository.getState()
                 val due = userLearningRepository.getDueReviews(System.currentTimeMillis()).first()
                 val mastery = userLearningRepository.getAllMasterySnapshots().first()
+                val vocabMastery = mastery
+                    .filter { it.domain.equals("vocabulary", ignoreCase = true) }
+                    .associateBy { it.contentId }
+                val vocabDueIds = due
+                    .filter { it.domain.equals("vocabulary", ignoreCase = true) }
+                    .mapTo(hashSetOf()) { it.contentId }
                 val cards = flashCardSelector.selectFlashCards(items, due, mastery, System.currentTimeMillis())
                 VocabularyFeatureUiState(
                     isLoading = false,
@@ -98,6 +110,9 @@ class VocabularyFeatureViewModel @Inject constructor(
                     collections = vocabularyRepository.getCollectionSummaries(),
                     flashCards = cards,
                     allItems = items,
+                    masteryByContentId = vocabMastery,
+                    dueReviewIds = vocabDueIds,
+                    scheduledReviewIds = vocabDueIds,
                 )
             }.onSuccess { _uiState.value = it }
                 .onFailure { _uiState.value = VocabularyFeatureUiState(isLoading = false, errorMessage = "Vocabulary could not be loaded.") }
@@ -111,14 +126,27 @@ class VocabularyFeatureViewModel @Inject constructor(
 
     fun addDailyWordToReview() {
         val word = _uiState.value.dailyWord ?: return
+        addWordToReview(word.id, VocabularyResumeDestination.WORD_OF_DAY)
+    }
+
+    fun addWordToReview(
+        wordId: String,
+        resumeDestination: VocabularyResumeDestination = VocabularyResumeDestination.LIBRARY,
+    ) {
         viewModelScope.launch {
-            val existing = userLearningRepository.getReviewScheduleSync(word.id)
+            val existing = userLearningRepository.getReviewScheduleSync(wordId)
             if (existing == null) {
                 userLearningRepository.saveReviewSchedule(
-                    ReviewSchedule(word.id, "vocabulary", System.currentTimeMillis(), 1f)
+                    ReviewSchedule(wordId, "vocabulary", System.currentTimeMillis(), 1f)
                 )
             }
-            saveResumeNow(VocabularyResumeDestination.WORD_OF_DAY, word.id)
+            _uiState.update {
+                it.copy(
+                    dueReviewIds = it.dueReviewIds + wordId,
+                    scheduledReviewIds = it.scheduledReviewIds + wordId,
+                )
+            }
+            saveResumeNow(resumeDestination, wordId)
         }
     }
 
