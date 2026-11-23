@@ -20,8 +20,14 @@ const val VOCABULARY_COLLECTIONS_ROUTE = "$VOCABULARY_DASHBOARD_ROUTE/collection
 const val GRAMMAR_DASHBOARD_ROUTE = "learn/grammar-dashboard"
 const val GRAMMAR_LIBRARY_ROUTE = "$GRAMMAR_DASHBOARD_ROUTE/library"
 const val READING_DASHBOARD_ROUTE = "learn/reading-dashboard"
+const val READING_LIVE_FEED_ROUTE = "$READING_DASHBOARD_ROUTE/live-feed"
+const val READING_LIVE_ARTICLE_ID_ARG = "liveArticleId"
+val READING_LIVE_ARTICLE_ROUTE = "$READING_DASHBOARD_ROUTE/live-article/{$READING_LIVE_ARTICLE_ID_ARG}"
 const val LISTENING_DASHBOARD_ROUTE = "learn/listening-dashboard"
 const val GALADRIEL_FREE_TALK_ROUTE = "speak/galadriel-free-talk"
+const val REVIEW_HUB_ROUTE = "review"
+
+fun readingLiveArticleRoute(articleId: String) = "$READING_DASHBOARD_ROUTE/live-article/$articleId"
 
 enum class VocabularyDestination(
     val routeSegment: String,

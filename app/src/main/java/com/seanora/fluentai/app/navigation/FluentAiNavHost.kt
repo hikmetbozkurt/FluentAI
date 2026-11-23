@@ -18,9 +18,12 @@ import com.seanora.fluentai.feature.listening.ListeningLibraryScreen
 import com.seanora.fluentai.feature.listening.ListeningSessionScreen
 import com.seanora.fluentai.feature.progress.ProgressScreen
 import com.seanora.fluentai.feature.profile.ProfileScreen
+import com.seanora.fluentai.feature.reading.LiveReadingArticleScreen
+import com.seanora.fluentai.feature.reading.LiveReadingFeedScreen
 import com.seanora.fluentai.feature.reading.ReadingDashboardScreen
 import com.seanora.fluentai.feature.reading.ReadingLibraryScreen
 import com.seanora.fluentai.feature.reading.ReadingSessionScreen
+import com.seanora.fluentai.feature.review.ReviewScreen
 import com.seanora.fluentai.feature.settings.SettingsScreen
 import com.seanora.fluentai.feature.speaking.SpeakingScreen
 import com.seanora.fluentai.feature.vocabulary.VocabularyCollectionsScreen
@@ -87,6 +90,11 @@ fun FluentAiNavHost(
                 },
                 onNavigateToListeningDashboard = {
                     navController.navigate(LISTENING_DASHBOARD_ROUTE) {
+                        launchSingleTop = true
+                    }
+                },
+                onNavigateToReview = {
+                    navController.navigate(REVIEW_HUB_ROUTE) {
                         launchSingleTop = true
                     }
                 },
@@ -249,6 +257,19 @@ fun FluentAiNavHost(
                 onNavigateBack = { navController.popBackStack() },
                 onOpenArticle = { id, mode -> navController.navigate(readingSessionRoute(id, mode)) },
                 onOpenLibrary = { navController.navigate(ReadingDestination.LIBRARY.route) },
+                onOpenLiveFeed = { navController.navigate(READING_LIVE_FEED_ROUTE) },
+            )
+        }
+        composable(READING_LIVE_FEED_ROUTE) {
+            LiveReadingFeedScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onOpenLiveArticle = { id -> navController.navigate(readingLiveArticleRoute(id)) },
+            )
+        }
+        composable(READING_LIVE_ARTICLE_ROUTE) { entry ->
+            LiveReadingArticleScreen(
+                articleId = entry.arguments?.getString(READING_LIVE_ARTICLE_ID_ARG).orEmpty(),
+                onNavigateBack = { navController.popBackStack() },
             )
         }
         composable(ReadingDestination.CONTINUE.route) {
@@ -301,10 +322,10 @@ fun FluentAiNavHost(
             )
         }
         composable(ReadingDestination.SAVED_READING.route) {
-            ReadingDashboardScreen(
+            ReadingLibraryScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onOpenArticle = { id, mode -> navController.navigate(readingSessionRoute(id, mode)) },
-                onOpenLibrary = { navController.navigate(ReadingDestination.LIBRARY.route) },
+                onOpenArticle = { navController.navigate(readingSessionRoute(it)) },
+                initialSavedOnly = true,
             )
         }
         composable(ReadingDestination.WEAK_SPOTS.route) {
@@ -476,6 +497,27 @@ fun FluentAiNavHost(
         }
         composable(TopLevelDestination.PROGRESS.route) {
             ProgressScreen()
+        }
+        composable(REVIEW_HUB_ROUTE) {
+            ReviewScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onOpenReviewItem = { domain, contentId ->
+                    val route = when (domain.lowercase()) {
+                        "vocabulary" -> vocabularyWordRoute(contentId)
+                        "grammar" -> grammarSessionRoute(contentId)
+                        "reading" -> readingSessionRoute(contentId)
+                        "listening" -> listeningSessionRoute(contentId)
+                        "speaking" -> "speak/$contentId"
+                        else -> TopLevelDestination.LEARN.route
+                    }
+                    navController.navigate(route) { launchSingleTop = true }
+                },
+                onStartVocabFlashCards = {
+                    navController.navigate(vocabularyPracticeSessionRoute(VocabularySessionMode.FLASH_CARDS)) {
+                        launchSingleTop = true
+                    }
+                },
+            )
         }
         composable(TopLevelDestination.PROFILE.route) {
             ProfileScreen()

@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.seanora.fluentai.core.designsystem.components.FluentButton
 import com.seanora.fluentai.core.designsystem.dashboard.*
 import com.seanora.fluentai.core.designsystem.kit.DecorativeBackdrop
+import com.seanora.fluentai.core.designsystem.kit.FluentActionTile
 import com.seanora.fluentai.core.designsystem.kit.FluentPageHeader
 import com.seanora.fluentai.core.designsystem.kit.FluentSectionTitle
 import com.seanora.fluentai.core.designsystem.kit.FluentSurfaceCard
@@ -53,6 +54,7 @@ fun LearnScreen(
     onNavigateToGrammarDashboard: (() -> Unit)? = null,
     onNavigateToReadingDashboard: (() -> Unit)? = null,
     onNavigateToListeningDashboard: (() -> Unit)? = null,
+    onNavigateToReview: (() -> Unit)? = null,
 ) {
     var activeModule by rememberSaveable { mutableStateOf(initialModule) }
     val moduleBack = onNavigateBack ?: { activeModule = null }
@@ -95,7 +97,7 @@ fun LearnScreen(
         "listening" -> AssignedModuleContainer(onAssignedActivityCompleted, modifier) {
             ListeningScreen(onNavigateBack = moduleBack, initialContentId = initialContentId, modifier = Modifier.fillMaxSize())
         }
-        else -> LearnLanding(modifier) { module ->
+        else -> LearnLanding(modifier, onNavigateToReview) { module ->
             if (module == "vocabulary" && onNavigateToVocabularyDashboard != null) {
                 onNavigateToVocabularyDashboard()
             } else if (module == "grammar" && onNavigateToGrammarDashboard != null) {
@@ -112,7 +114,7 @@ fun LearnScreen(
 }
 
 @Composable
-private fun LearnLanding(modifier: Modifier, onOpenModule: (String) -> Unit) {
+private fun LearnLanding(modifier: Modifier, onNavigateToReview: (() -> Unit)?, onOpenModule: (String) -> Unit) {
     BoxWithConstraints(
         modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary),
     ) {
@@ -151,6 +153,17 @@ private fun LearnLanding(modifier: Modifier, onOpenModule: (String) -> Unit) {
                     repeat(columns - rowItems.size) { Spacer(Modifier.weight(1f)) }
                 }
             }
+            if (onNavigateToReview != null) {
+                FluentActionTile(
+                    title = "Smart Review & Mistake Bank",
+                    detail = "Clear due spaced-repetition cards and fix recurring Turkish transfer traps.",
+                    module = LearningModule.REVIEW,
+                    actionLabel = "Open Review",
+                    emphasized = true,
+                    onClick = onNavigateToReview,
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
         }
     }
 }
@@ -166,7 +179,12 @@ private fun ModuleCard(module: LearnModule, onClick: () -> Unit, modifier: Modif
         ) {
             DecorativeBackdrop(accent = module.identity.accent, modifier = Modifier.matchParentSize())
             ModuleIconTile(module = module.identity, size = 56.dp, modifier = Modifier.align(Alignment.CenterStart).padding(start = 20.dp))
-            Text(module.identity.emoji, fontSize = 52.sp, modifier = Modifier.align(Alignment.CenterEnd).padding(end = 20.dp))
+            Icon(
+                imageVector = module.identity.icon,
+                contentDescription = null,
+                tint = module.identity.accent.copy(alpha = 0.16f),
+                modifier = Modifier.align(Alignment.CenterEnd).padding(end = 20.dp).size(68.dp)
+            )
         }
         Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text(module.title, color = DashboardColors.TextPrimary, style = DashboardTypography.SectionTitle)
