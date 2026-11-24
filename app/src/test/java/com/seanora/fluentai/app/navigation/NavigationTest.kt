@@ -205,6 +205,28 @@ class NavigationTest {
         assertTrue(todayActivityRoute(reading).startsWith("learn/reading/reading.b2.tech.001"))
         assertTrue(todayActivityRoute(grammar).startsWith("learn/grammar/grammar.present-perfect"))
         assertTrue(todayActivityRoute(listening).startsWith("learn/listening/listening.b2.work.meeting-001"))
+
+        val speaking = review.copy(
+            id = "item.speaking",
+            contentId = "speaking.c1.interview.arch",
+            domain = "speaking",
+            itemType = TodayItemType.SPEAKING_SESSION,
+        )
+        assertEquals(
+            "speak/speaking.c1.interview.arch?planId=plan&itemId=item.speaking",
+            todayActivityRoute(speaking),
+        )
+    }
+
+    @Test
+    fun homeModuleRoute_mapsEachDomainToCanonicalExploreDestination() {
+        assertEquals(VOCABULARY_DASHBOARD_ROUTE, homeModuleRoute("vocabulary"))
+        assertEquals(GRAMMAR_DASHBOARD_ROUTE, homeModuleRoute("grammar"))
+        assertEquals(READING_DASHBOARD_ROUTE, homeModuleRoute("reading"))
+        assertEquals(LISTENING_DASHBOARD_ROUTE, homeModuleRoute("listening"))
+        assertEquals(TopLevelDestination.SPEAK.route, homeModuleRoute("speaking"))
+        assertEquals(TopLevelDestination.SPEAK.route, homeModuleRoute("pronunciation"))
+        assertEquals(TopLevelDestination.LEARN.route, homeModuleRoute("unknown"))
     }
 
     @Test

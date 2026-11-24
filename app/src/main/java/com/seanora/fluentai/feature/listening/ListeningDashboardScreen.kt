@@ -90,7 +90,7 @@ fun ListeningDashboardScreen(
             title = "Listening",
             module = LearningModule.LISTENING,
             eyebrow = "Learn · Listening",
-            subtitle = "Train your ear for natural academic and professional English.",
+            subtitle = "Train your ear for natural academic and professional English",
             onBack = onNavigateBack,
             backLabel = "Learn",
         )
@@ -104,7 +104,7 @@ fun ListeningDashboardScreen(
 
         state.continueScenario?.let { scenario ->
             ListeningHero(
-                eyebrow = "Continue Listening",
+                eyebrow = "Continue listening",
                 scenario = scenario,
                 action = "Continue",
                 onClick = { onOpenSession(scenario.id, ListeningSessionMode.STANDARD) },
@@ -113,7 +113,7 @@ fun ListeningDashboardScreen(
 
         state.dailyScenario?.let { scenario ->
             EditorialRecommendation(
-                title = "Today's Listening",
+                title = "Today's listening",
                 scenario = scenario,
                 action = "Start",
                 onClick = { onOpenSession(scenario.id, ListeningSessionMode.STANDARD) },
@@ -124,13 +124,13 @@ fun ListeningDashboardScreen(
             if (maxWidth < 620.dp) {
                 Column(verticalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
                     UtilityAction(
-                        title = "Browse Listening",
+                        title = "Browse listening",
                         supporting = "Explore all recordings",
                         icon = { Icon(Icons.Rounded.LibraryMusic, null) },
                         onClick = onOpenLibrary,
                     )
                     UtilityAction(
-                        title = "Practice Listening",
+                        title = "Practice listening",
                         supporting = "Comprehension or dictation",
                         icon = { Icon(Icons.Rounded.Tune, null) },
                         onClick = { showPractice = true },
@@ -139,14 +139,14 @@ fun ListeningDashboardScreen(
             } else {
                 Row(horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
                     UtilityAction(
-                        title = "Browse Listening",
+                        title = "Browse listening",
                         supporting = "Explore all recordings",
                         icon = { Icon(Icons.Rounded.LibraryMusic, null) },
                         onClick = onOpenLibrary,
                         modifier = Modifier.weight(1f),
                     )
                     UtilityAction(
-                        title = "Practice Listening",
+                        title = "Practice listening",
                         supporting = "Comprehension or dictation",
                         icon = { Icon(Icons.Rounded.Tune, null) },
                         onClick = { showPractice = true },
@@ -159,8 +159,8 @@ fun ListeningDashboardScreen(
         state.weakSpots.firstOrNull()?.let { weak ->
             Surface(
                 color = Color.White,
-                shape = RoundedCornerShape(18.dp),
-                modifier = Modifier.fillMaxWidth().border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(18.dp)),
+                shape = RoundedCornerShape(16.dp),
+                modifier = Modifier.fillMaxWidth().border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(16.dp)),
             ) {
                 Row(
                     modifier = Modifier.padding(DashboardSpacing.lg),

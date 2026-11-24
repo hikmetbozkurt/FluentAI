@@ -75,6 +75,48 @@ kotlin {
     }
 }
 
+val offlineDictionaryAsset = layout.projectDirectory.file("src/main/assets/dictionary.db").asFile
+val contentDbAsset = layout.projectDirectory.file("src/main/assets/content.db").asFile
+val dictionaryIngestScript = rootProject.layout.projectDirectory.file("tools/ingest/ingest_dictionary_db.py").asFile
+
+tasks.register<Exec>("ensureOfflineDictionaryDb") {
+    group = "fluentai"
+    description = "Ensures app/src/main/assets/dictionary.db exists (seeds offline from content.db when missing)."
+    onlyIf { !offlineDictionaryAsset.exists() || offlineDictionaryAsset.length() == 0L }
+    val pythonCmd = if (System.getProperty("os.name").lowercase().contains("win")) "python" else "python3"
+    workingDir = rootProject.projectDir
+    commandLine(
+        pythonCmd,
+        dictionaryIngestScript.absolutePath,
+        "--offline-seed",
+        "--output",
+        offlineDictionaryAsset.absolutePath,
+        "--content-db",
+        contentDbAsset.absolutePath,
+    )
+}
+
+tasks.register<Exec>("buildFullOfflineDictionaryDb") {
+    group = "fluentai"
+    description = "Downloads open-license Wordset + CEFR-J + IPA datasets and builds the full 107k-entry dictionary.db."
+    val pythonCmd = if (System.getProperty("os.name").lowercase().contains("win")) "python" else "python3"
+    workingDir = rootProject.projectDir
+    commandLine(
+        pythonCmd,
+        dictionaryIngestScript.absolutePath,
+        "--output",
+        offlineDictionaryAsset.absolutePath,
+        "--content-db",
+        contentDbAsset.absolutePath,
+    )
+}
+
+tasks.configureEach {
+    if (name == "mergeDebugAssets" || name == "mergeReleaseAssets") {
+        dependsOn("ensureOfflineDictionaryDb")
+    }
+}
+
 dependencies {
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)

@@ -58,6 +58,9 @@ object ContentDatabaseModule {
     fun provideSpeakingDao(database: ContentDatabase): com.seanora.fluentai.data.content.dao.SpeakingDao = database.speakingDao()
 
     @Provides
+    fun provideChunkDao(database: ContentDatabase): com.seanora.fluentai.data.content.dao.ChunkDao = database.chunkDao()
+
+    @Provides
     fun provideTopicDao(database: ContentDatabase): TopicDao = database.topicDao()
 
     @Provides

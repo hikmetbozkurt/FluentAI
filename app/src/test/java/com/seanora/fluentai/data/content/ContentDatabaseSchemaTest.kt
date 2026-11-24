@@ -20,7 +20,7 @@ class ContentDatabaseSchemaTest {
         val method = ContentDatabase_Impl::class.java.getDeclaredMethod("createOpenDelegate")
         method.isAccessible = true
         val openDelegate = method.invoke(db) as androidx.room.RoomOpenDelegate
-        assertEquals("ContentDatabase version in RoomOpenDelegate must be 4", 4, openDelegate.version)
+        assertEquals("ContentDatabase version in RoomOpenDelegate must be 5", 5, openDelegate.version)
         assertNotNull("Identity hash must be generated", openDelegate.identityHash)
 
         // Capture SQL statements Room executes to ensure the missing indexes are part of Room's schema
@@ -52,6 +52,8 @@ class ContentDatabaseSchemaTest {
         assertTrue("Room must create idx_reading_category", allSql.contains("idx_reading_category"))
         assertTrue("Room must create idx_listening_category", allSql.contains("idx_listening_category"))
         assertTrue("Room must create idx_speaking_category", allSql.contains("idx_speaking_category"))
+        assertTrue("Room must create idx_chunks_cefr", allSql.contains("idx_chunks_cefr"))
+        assertTrue("Room must create idx_chunks_category", allSql.contains("idx_chunks_category"))
         assertTrue("Room must create idx_relations_unique", allSql.contains("idx_relations_unique"))
     }
 
@@ -98,7 +100,7 @@ class ContentDatabaseSchemaTest {
 
             // Bytes 60..63 store user_version as a 32-bit big-endian integer
             val userVersion = ByteBuffer.wrap(headerBytes, 60, 4).int
-            assertEquals("SQLite PRAGMA user_version in content.db asset must be 4", 4, userVersion)
+            assertEquals("SQLite PRAGMA user_version in content.db asset must be 5", 5, userVersion)
         }
     }
 }

@@ -67,10 +67,10 @@ fun ProgressScreenContent(
             verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
         ) {
             FluentPageHeader(
-                title = "Your Progress",
+                title = "Your progress",
                 module = LearningModule.PROGRESS,
                 eyebrow = "Skill-by-skill tracking",
-                subtitle = "See how your English skills are developing over time.",
+                subtitle = "See how your English skills develop over time",
             )
             uiState.dashboardData?.let { SummaryGrid(it, columns) }
 
@@ -79,15 +79,14 @@ fun ProgressScreenContent(
             }
 
             FluentSectionTitle(
-                title = "Skill Progress",
-                emoji = "📊",
+                title = "Skill progress",
                 subtitle = "Your level is tracked separately for each skill",
                 accent = LearningModule.PROGRESS.accent,
             )
             val skills = uiState.dashboardData?.skills.orEmpty().filter {
                 it.domain.lowercase() in setOf("vocabulary", "grammar", "reading", "listening", "speaking")
             }
-            if (skills.isEmpty()) EmptyProgressCard("Complete learning activities to begin tracking your skills.")
+            if (skills.isEmpty()) EmptyProgressCard("Complete learning activities to begin tracking your skills")
             else skills.chunked(columns).forEach { row ->
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md), verticalAlignment = Alignment.Top) {
                     row.forEach { skill ->
@@ -103,12 +102,11 @@ fun ProgressScreenContent(
             }
 
             FluentSectionTitle(
-                title = "Recent Learning",
-                emoji = "🕒",
+                title = "Recent learning",
                 subtitle = "Your latest practice activity",
                 accent = LearningModule.PROGRESS.accent,
             )
-            if (uiState.recentEvidence.isEmpty()) EmptyProgressCard("Complete an activity to start your learning history.")
+            if (uiState.recentEvidence.isEmpty()) EmptyProgressCard("Complete an activity to start your learning history")
             else DashboardCard(Modifier.fillMaxWidth()) {
                 uiState.recentEvidence.take(10).forEach { EvidenceRow(it) }
             }
@@ -119,10 +117,10 @@ fun ProgressScreenContent(
 @Composable
 private fun SummaryGrid(dashboard: ProgressDashboardData, columns: Int) {
     val metrics = listOf(
-        SummaryMetric("🏆", "Current Level", dashboard.overallEstimatedCefr, "Your overall estimate", Icons.Rounded.EmojiEvents, LearningModule.REVIEW),
-        SummaryMetric("🔥", "Learning Streak", "${dashboard.streak.currentStreakDays} days", "Keep your routine going", Icons.Rounded.LocalFireDepartment, LearningModule.READING),
-        SummaryMetric("🧠", "Skills Practiced", "${dashboard.skills.count { it.totalAttempts > 0 }}", "Across your learning areas", Icons.Rounded.AutoStories, LearningModule.GRAMMAR),
-        SummaryMetric("🔁", "Reviews Due", "${dashboard.reviewsDueCount}", "Ready when you are", Icons.Rounded.EventRepeat, LearningModule.LISTENING),
+        SummaryMetric("", "Current level", dashboard.overallEstimatedCefr, "Overall estimate", Icons.Rounded.EmojiEvents, LearningModule.REVIEW),
+        SummaryMetric("", "Learning streak", "${dashboard.streak.currentStreakDays} days", "Daily practice streak", Icons.Rounded.LocalFireDepartment, LearningModule.READING),
+        SummaryMetric("", "Skills practiced", "${dashboard.skills.count { it.totalAttempts > 0 }}", "Across your learning areas", Icons.Rounded.AutoStories, LearningModule.GRAMMAR),
+        SummaryMetric("", "Reviews due", "${dashboard.reviewsDueCount}", "Ready for spaced repetition", Icons.Rounded.EventRepeat, LearningModule.LISTENING),
     )
     metrics.chunked(columns.coerceAtLeast(1)).forEach { row ->
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(DashboardSpacing.md)) {
@@ -134,18 +132,13 @@ private fun SummaryGrid(dashboard: ProgressDashboardData, columns: Int) {
 
 @Composable
 private fun SummaryCard(metric: SummaryMetric, modifier: Modifier = Modifier) {
-    FluentSurfaceCard(modifier = modifier, accent = metric.identity.accent) {
-        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            IconTile(
-                icon = metric.icon,
-                accent = metric.identity.accent,
-                container = metric.identity.container,
-                size = 44.dp,
-                badgeEmoji = null,
-            )
-            Text(metric.label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
-        }
-        Text(metric.value, color = DashboardColors.TextPrimary, style = DashboardTypography.Display)
+    FluentSurfaceCard(modifier = modifier, contentPadding = PaddingValues(16.dp), contentSpacing = 4.dp) {
+        Text(metric.label, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
+        Text(
+            metric.value,
+            color = DashboardColors.TextPrimary,
+            style = DashboardTypography.Display.copy(fontFeatureSettings = "tnum"),
+        )
         Text(metric.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Caption)
     }
 }
@@ -160,15 +153,15 @@ private fun SkillCard(skill: SkillProficiency, selected: Boolean, onClick: () ->
                 module = identity,
                 caption = "mastery",
             )
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text("${identity.emoji} ${skill.displayName}", color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle)
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(skill.displayName, color = DashboardColors.TextPrimary, style = DashboardTypography.CardTitle)
                 Text("${skill.cefrLevel} level", color = identity.accent, style = DashboardTypography.Caption.copy(fontWeight = FontWeight.SemiBold))
             }
         }
         Text(
             "${skill.itemsMastered} mastered · ${skill.itemsLearning} practicing · ${(skill.accuracyRate * 100).roundToInt()}% accuracy",
             color = DashboardColors.TextSecondary,
-            style = DashboardTypography.Caption,
+            style = DashboardTypography.Caption.copy(fontFeatureSettings = "tnum"),
             maxLines = 2,
             overflow = TextOverflow.Ellipsis,
         )

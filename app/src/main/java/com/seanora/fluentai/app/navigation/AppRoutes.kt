@@ -24,10 +24,19 @@ const val READING_LIVE_FEED_ROUTE = "$READING_DASHBOARD_ROUTE/live-feed"
 const val READING_LIVE_ARTICLE_ID_ARG = "liveArticleId"
 val READING_LIVE_ARTICLE_ROUTE = "$READING_DASHBOARD_ROUTE/live-article/{$READING_LIVE_ARTICLE_ID_ARG}"
 const val LISTENING_DASHBOARD_ROUTE = "learn/listening-dashboard"
+const val CHUNKS_DASHBOARD_ROUTE = "learn/chunks-dashboard"
+const val CHUNKS_DETAIL_ID_ARG = "chunkId"
+const val CHUNKS_DRILL_MODE_ARG = "chunkDrillMode"
+const val CHUNKS_FOCUS_ID_ARG = "chunkFocusId"
+val CHUNKS_DETAIL_ROUTE = "$CHUNKS_DASHBOARD_ROUTE/detail/{$CHUNKS_DETAIL_ID_ARG}"
+val CHUNKS_PRACTICE_ROUTE = "$CHUNKS_DASHBOARD_ROUTE/practice?mode={$CHUNKS_DRILL_MODE_ARG}&focusId={$CHUNKS_FOCUS_ID_ARG}"
 const val GALADRIEL_FREE_TALK_ROUTE = "speak/galadriel-free-talk"
 const val REVIEW_HUB_ROUTE = "review"
 
 fun readingLiveArticleRoute(articleId: String) = "$READING_DASHBOARD_ROUTE/live-article/$articleId"
+fun chunkDetailRoute(chunkId: String) = "$CHUNKS_DASHBOARD_ROUTE/detail/$chunkId"
+fun chunkPracticeRoute(mode: String = "MIXED", focusChunkId: String? = null) =
+    "$CHUNKS_DASHBOARD_ROUTE/practice?mode=$mode&focusId=${focusChunkId.orEmpty()}"
 
 enum class VocabularyDestination(
     val routeSegment: String,
@@ -501,4 +510,13 @@ fun todayActivityRoute(item: TodayPlanItem): String {
         else ->
             "learn/${item.domain}/${item.contentId}?$completion"
     }
+}
+
+fun homeModuleRoute(domain: String): String = when (domain.lowercase()) {
+    "vocabulary" -> VOCABULARY_DASHBOARD_ROUTE
+    "grammar" -> GRAMMAR_DASHBOARD_ROUTE
+    "reading" -> READING_DASHBOARD_ROUTE
+    "listening" -> LISTENING_DASHBOARD_ROUTE
+    "speaking", "pronunciation" -> TopLevelDestination.SPEAK.route
+    else -> TopLevelDestination.LEARN.route
 }

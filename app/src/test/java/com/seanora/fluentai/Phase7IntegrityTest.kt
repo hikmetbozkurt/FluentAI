@@ -1,6 +1,8 @@
 package com.seanora.fluentai
 
+import com.seanora.fluentai.core.model.GrammarFeatureState
 import com.seanora.fluentai.core.model.GrammarLesson
+import com.seanora.fluentai.core.model.GrammarResumeDestination
 import com.seanora.fluentai.core.model.LearningEvidence
 import com.seanora.fluentai.core.model.ListeningScenario
 import com.seanora.fluentai.core.model.MasterySnapshot
@@ -12,11 +14,35 @@ import com.seanora.fluentai.core.model.ReviewSchedule
 import com.seanora.fluentai.core.model.SpeakingCategory
 import com.seanora.fluentai.core.model.SpeakingScenario
 import com.seanora.fluentai.core.model.TodayItemType
+import com.seanora.fluentai.core.model.TodayPracticePlan
 import com.seanora.fluentai.core.model.UserProfile
 import com.seanora.fluentai.core.model.VocabItem
+import com.seanora.fluentai.core.model.VocabularyFeatureState
+import com.seanora.fluentai.core.model.VocabularyPracticeMode
+import com.seanora.fluentai.core.model.VocabularyResumeDestination
+import com.seanora.fluentai.data.repository.GrammarFeatureStateRepository
+import com.seanora.fluentai.data.repository.GrammarRepository
+import com.seanora.fluentai.data.repository.ListeningRepository
+import com.seanora.fluentai.data.repository.ReadingRepository
+import com.seanora.fluentai.data.repository.SpeakingRepository
+import com.seanora.fluentai.data.repository.TodayPracticeRepositoryImpl
+import com.seanora.fluentai.data.repository.UserLearningRepository
+import com.seanora.fluentai.data.repository.VocabularyFeatureStateRepository
+import com.seanora.fluentai.data.repository.VocabularyRepository
 import com.seanora.fluentai.data.repository.currentDateString
+import com.seanora.fluentai.domain.mastery.MasteryEngine
+import com.seanora.fluentai.domain.mastery.RecordLearningEvidenceUseCase
+import com.seanora.fluentai.domain.mistakes.MistakeEngine
+import com.seanora.fluentai.domain.progress.ProgressEngine
 import com.seanora.fluentai.domain.today.TodayPlanner
 import com.seanora.fluentai.domain.today.TodayPlannerInput
+import com.seanora.fluentai.feature.home.data.RealHomeRepository
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
@@ -304,5 +330,184 @@ class Phase7IntegrityTest {
         assertTrue("Plan should be marked completed when all items done", completedPlan.isCompleted)
         assertEquals(1f, completedPlan.progressPercent, 0.001f)
         assertEquals(null, completedPlan.nextUncompletedItem)
+    }
+
+    @Test
+    fun exitCriteria_reproducibilityHoldsRegardlessOfReviewInputOrdering() {
+        val reviewA = ReviewSchedule("vocab.consensus", "vocabulary", nextReviewDueTimestamp = 1000L, intervalDays = 2f, repetitionNumber = 1)
+        val reviewB = ReviewSchedule("vocab.resilient", "vocabulary", nextReviewDueTimestamp = 1000L, intervalDays = 3f, repetitionNumber = 2)
+
+        val planAB = planner.createPlan(
+            TodayPlannerInput(
+                userProfile = testUser,
+                dueReviews = listOf(reviewA, reviewB),
+                availableVocab = vocabPool,
+                availableGrammar = grammarPool,
+                targetDate = "2026-09-25",
+            )
+        )
+        val planBA = planner.createPlan(
+            TodayPlannerInput(
+                userProfile = testUser,
+                dueReviews = listOf(reviewB, reviewA),
+                availableVocab = vocabPool,
+                availableGrammar = grammarPool,
+                targetDate = "2026-09-25",
+            )
+        )
+
+        assertEquals(planAB.items.map { it.contentId }, planBA.items.map { it.contentId })
+        assertEquals(planAB.rationale, planBA.rationale)
+    }
+
+    @Test
+    fun exitCriteria_offlineMinimalContentFallsBackSafelyWithoutAI() {
+        val plan = planner.createPlan(
+            TodayPlannerInput(
+                userProfile = testUser.copy(dailyGoalMinutes = 10),
+                availableVocab = listOf(vocabPool.first()),
+                targetDate = "2026-09-25",
+            )
+        )
+
+        assertTrue("Fallback plan must contain at least one local activity", plan.items.isNotEmpty())
+        assertEquals("vocab.resilient", plan.items.first().contentId)
+        assertTrue(plan.rationale.isNotBlank())
+    }
+
+    @Test
+    fun exitCriteria_endToEndTodayLoopUpdatesHomeMetricsEvidenceAndCompletion() = runTest {
+        val today = currentDateString()
+        val userRepo = InMemoryPhase7UserRepo(testUser.copy(lastActiveDate = "2026-01-01"))
+        val todayRepo = TodayPracticeRepositoryImpl(
+            todayPlanner = planner,
+            userLearningRepository = userRepo,
+            vocabularyRepository = object : VocabularyRepository {
+                override fun getAllVocab() = flowOf(vocabPool)
+                override fun getVocabByLevel(level: String) = flowOf(vocabPool)
+                override fun getVocabById(id: String) = flowOf(vocabPool.find { it.id == id })
+                override fun searchVocab(query: String) = flowOf(vocabPool)
+                override suspend fun getVocabCount() = vocabPool.size
+            },
+            grammarRepository = object : GrammarRepository {
+                override fun getAllLessons() = flowOf(grammarPool)
+                override fun getLessonsByLevel(level: String) = flowOf(grammarPool)
+                override fun getLessonsByCategory(category: String) = flowOf(grammarPool)
+                override fun getLessonById(id: String) = flowOf(grammarPool.find { it.id == id })
+                override fun searchLessons(query: String) = flowOf(grammarPool)
+                override fun getExercisesForLesson(lessonId: String) = flowOf(emptyList<com.seanora.fluentai.core.model.Exercise>())
+                override suspend fun getLessonCount() = grammarPool.size
+            },
+            readingRepository = object : ReadingRepository {
+                override fun getAllArticles() = flowOf(readingPool)
+                override fun getArticlesByLevel(level: String) = flowOf(readingPool)
+                override fun getArticleById(id: String) = flowOf(readingPool.find { it.id == id })
+                override fun getArticlesByCategory(category: String) = flowOf(readingPool)
+                override fun searchArticles(query: String) = flowOf(readingPool)
+                override suspend fun getArticleCount() = readingPool.size
+            },
+            listeningRepository = object : ListeningRepository {
+                override fun getAllScenarios() = flowOf(listeningPool)
+                override fun getScenariosByLevel(level: String) = flowOf(listeningPool)
+                override fun getScenarioById(id: String) = flowOf(listeningPool.find { it.id == id })
+                override fun getScenariosByCategory(category: String) = flowOf(listeningPool)
+                override fun searchScenarios(query: String) = flowOf(listeningPool)
+                override suspend fun getScenarioCount() = listeningPool.size
+            },
+            speakingRepository = object : SpeakingRepository {
+                override fun getAllScenarios() = flowOf(speakingPool)
+                override fun getScenariosByLevel(level: String) = flowOf(speakingPool)
+                override fun getScenariosByCategory(category: SpeakingCategory) = flowOf(speakingPool)
+                override fun getScenarioById(id: String) = flowOf(speakingPool.find { it.id == id })
+                override suspend fun getScenarioByIdSync(id: String) = speakingPool.find { it.id == id }
+                override fun searchScenarios(query: String) = flowOf(speakingPool)
+                override suspend fun getScenarioCount() = speakingPool.size
+            },
+            recordLearningEvidence = RecordLearningEvidenceUseCase(userRepo, MasteryEngine(), MistakeEngine()),
+        )
+        val homeRepo = RealHomeRepository(
+            todayPracticeRepository = todayRepo,
+            userLearningRepository = userRepo,
+            vocabularyStateRepository = object : VocabularyFeatureStateRepository {
+                override fun observeState() = flowOf(VocabularyFeatureState())
+                override suspend fun getState() = VocabularyFeatureState()
+                override suspend fun saveDailyWord(date: String, contentId: String) = Unit
+                override suspend fun saveResume(destination: VocabularyResumeDestination, contentId: String?, contextId: String?, practiceMode: VocabularyPracticeMode?) = Unit
+            },
+            grammarStateRepository = object : GrammarFeatureStateRepository {
+                override fun observeState() = flowOf(GrammarFeatureState())
+                override suspend fun getState() = GrammarFeatureState()
+                override suspend fun saveResume(destination: GrammarResumeDestination, contentId: String, secondaryContentId: String?) = Unit
+            },
+            progressEngine = ProgressEngine(),
+        )
+
+        val initialHome = homeRepo.getTodayPlan().first()
+        val plan = requireNotNull(initialHome.practicePlan)
+        assertEquals(today, plan.date)
+        assertTrue(initialHome.focusItems.isNotEmpty())
+        assertEquals(0, initialHome.dailyMetrics.practiceMinutesToday)
+
+        // Complete every item in Today's Practice
+        plan.items.forEach { item ->
+            homeRepo.markItemCompleted(plan.id, item.id)
+        }
+
+        val completedHome = homeRepo.getTodayPlan().first()
+        assertEquals("complete", completedHome.heroPractice.id)
+        assertEquals("Daily Practice Complete", completedHome.heroPractice.title)
+        assertTrue(completedHome.focusItems.isEmpty())
+        assertEquals(plan.totalMinutes, completedHome.dailyMetrics.practiceMinutesToday)
+        assertTrue("Non-review completions must persist LearningEvidence", userRepo.evidences.isNotEmpty())
+        assertEquals(today, userRepo.getUserProfileSync()?.lastActiveDate)
+    }
+}
+
+private class InMemoryPhase7UserRepo(initialProfile: UserProfile) : UserLearningRepository {
+    private val profileFlow = MutableStateFlow<UserProfile?>(initialProfile)
+    private val plans = mutableMapOf<String, TodayPracticePlan>()
+    private val planFlows = mutableMapOf<String, MutableStateFlow<TodayPracticePlan?>>()
+    val evidences = mutableListOf<LearningEvidence>()
+
+    override suspend fun recordEvidence(evidence: LearningEvidence): Long {
+        evidences += evidence
+        return evidences.size.toLong()
+    }
+    override fun getEvidenceForContent(contentId: String) = flowOf(evidences.filter { it.contentId == contentId })
+    override fun getRecentEvidence(limit: Int) = flowOf(evidences.takeLast(limit))
+    override fun getMasterySnapshot(contentId: String) = flowOf<MasterySnapshot?>(null)
+    override suspend fun getMasterySnapshotSync(contentId: String): MasterySnapshot? = null
+    override fun getAllMasterySnapshots() = flowOf(emptyList<MasterySnapshot>())
+    override suspend fun saveMasterySnapshot(snapshot: MasterySnapshot) = Unit
+    override fun getActiveMistakes() = flowOf(emptyList<MistakeRecord>())
+    override fun getAllMistakes() = flowOf(emptyList<MistakeRecord>())
+    override suspend fun findMistake(contentId: String, trapType: String): MistakeRecord? = null
+    override suspend fun saveMistake(mistake: MistakeRecord): Long = 1L
+    override fun getDueReviews(currentTimestamp: Long) = flowOf(emptyList<ReviewSchedule>())
+    override fun getReviewSchedule(contentId: String) = flowOf<ReviewSchedule?>(null)
+    override suspend fun getReviewScheduleSync(contentId: String): ReviewSchedule? = null
+    override suspend fun saveReviewSchedule(schedule: ReviewSchedule) = Unit
+    override fun getUserProfile(id: String): Flow<UserProfile?> = profileFlow.asStateFlow()
+    override suspend fun getUserProfileSync(id: String): UserProfile? = profileFlow.value
+    override suspend fun saveUserProfile(profile: UserProfile) { profileFlow.value = profile }
+    override fun getTodayPlan(date: String): Flow<TodayPracticePlan?> =
+        planFlows.getOrPut(date) { MutableStateFlow(plans[date]) }
+    override suspend fun getTodayPlanSync(date: String): TodayPracticePlan? = plans[date]
+    override suspend fun getTodayPlanByIdSync(planId: String): TodayPracticePlan? =
+        plans.values.firstOrNull { it.id == planId }
+    override suspend fun saveTodayPlan(plan: TodayPracticePlan) {
+        plans[plan.date] = plan
+        planFlows.getOrPut(plan.date) { MutableStateFlow(null) }.value = plan
+    }
+    override suspend fun markTodayPlanItemCompleted(planId: String, itemId: String) {
+        plans.values.firstOrNull { it.id == planId }?.let { existing ->
+            val updated = existing.copy(
+                items = existing.items.map {
+                    if (it.id == itemId) it.copy(isCompleted = true, completedAt = 5000L) else it
+                }
+            )
+            plans[existing.date] = updated
+            planFlows[existing.date]?.value = updated
+        }
     }
 }

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://fluentai.local/schema/chunk.schema.json",
+  "title": "FluentAI Lexical Chunk & Sentence Pattern",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "chunk_en",
+    "pattern_template",
+    "cefr_level",
+    "category",
+    "intent_tr",
+    "meaning_en",
+    "turkish_trap",
+    "blueprint_slots",
+    "slot_variations",
+    "status",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^chunk\\.[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)+$"
+    },
+    "chunk_en": { "type": "string", "minLength": 2 },
+    "pattern_template": { "type": "string", "minLength": 2 },
+    "cefr_level": { "type": "string", "enum": ["A2", "B1", "B2", "C1", "C2"] },
+    "category": {
+      "type": "string",
+      "enum": [
+        "SENTENCE_STARTER",
+        "ACTION_COLLOCATION",
+        "CONVERSATION_BRIDGE",
+        "IELTS_ACADEMIC_FRAME"
+      ]
+    },
+    "intent_tr": { "type": "string", "minLength": 3 },
+    "meaning_en": { "type": "string", "minLength": 3 },
+    "turkish_trap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["incorrect_en", "correct_en", "explanation_tr", "trap_type"],
+      "properties": {
+        "incorrect_en": { "type": "string", "minLength": 2 },
+        "correct_en": { "type": "string", "minLength": 2 },
+        "explanation_tr": { "type": "string", "minLength": 5 },
+        "trap_type": { "type": "string", "minLength": 2 }
+      }
+    },
+    "blueprint_slots": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "label", "text_en", "text_tr"],
+        "properties": {
+          "role": { "type": "string", "enum": ["SUBJECT", "VERB_BRIDGE", "OBJECT", "TIME_PLACE"] },
+          "label": { "type": "string", "minLength": 1 },
+          "text_en": { "type": "string", "minLength": 1 },
+          "text_tr": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "slot_variations": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slot_en", "full_sentence_en", "full_sentence_tr"],
+        "properties": {
+          "slot_en": { "type": "string", "minLength": 2 },
+          "full_sentence_en": { "type": "string", "minLength": 5 },
+          "full_sentence_tr": { "type": "string", "minLength": 5 }
+        }
+      }
+    },
+    "related_vocab_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "related_grammar_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "topic_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "status": {
+      "type": "string",
+      "enum": ["DRAFT", "AI_REVIEWED", "VALIDATED", "APPROVED", "PUBLISHED", "DEPRECATED"]
+    },
+    "version": { "type": "integer", "minimum": 1 }
+  }
+}

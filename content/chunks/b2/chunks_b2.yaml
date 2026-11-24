@@ -1,0 +1,293 @@
+- id: chunk.b2.ielts.one-major-advantage
+  chunk_en: "One major advantage of X is that..."
+  pattern_template: "One major advantage of + [Noun/Verb-ing] + is that + [Clause]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Bir konunun en büyük avantajını yapısal biçimde sunmak"
+  meaning_en: "High-scoring IELTS and executive frame for introducing a primary benefit."
+  turkish_trap:
+    incorrect_en: "One advantage of remote work that it saves time."
+    correct_en: "One major advantage of remote work is that it saves time."
+    explanation_tr: "Türkçede 'dır' eki düşebildiği için İngilizcede 'is' bağlantı fiili sık unutulur; '... is that ...' yapısı eksiksiz kurulmalıdır."
+    trap_type: missing_copula
+  blueprint_slots:
+    - { role: SUBJECT, label: "Frame", text_en: "One major advantage of hybrid work", text_tr: "Hibrit çalışmanın en büyük avantajlarından biri" }
+    - { role: VERB_BRIDGE, label: "Link", text_en: "is that", text_tr: "şudur ki" }
+    - { role: OBJECT, label: "Benefit", text_en: "employees save hours of commuting", text_tr: "çalışanlar saatlerce yoldan tasarruf eder" }
+  slot_variations:
+    - { slot_en: "hybrid work", full_sentence_en: "One major advantage of hybrid work is that employees save hours of commuting.", full_sentence_tr: "Hibrit çalışmanın büyük bir avantajı, çalışanların saatlerce yoldan tasarruf etmesidir." }
+    - { slot_en: "public transit", full_sentence_en: "One major advantage of public transit is that it reduces urban emissions.", full_sentence_tr: "Toplu taşımanın büyük bir avantajı, kentsel emisyonları azaltmasıdır." }
+    - { slot_en: "automated testing", full_sentence_en: "One major advantage of automated testing is that bugs are caught early.", full_sentence_tr: "Otomatik testin büyük bir avantajı, hataların erken yakalanmasıdır." }
+  topic_tags: [ielts, presentations]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.ielts.from-my-perspective
+  chunk_en: "From my perspective,..."
+  pattern_template: "From my perspective, + [Subject] + [Verb]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Benim bakış açıma göre..."
+  meaning_en: "A measured, professional alternative to overusing 'I think'."
+  turkish_trap:
+    incorrect_en: "According to me, this policy is effective."
+    correct_en: "From my perspective, this policy is effective."
+    explanation_tr: "İngilizcede kendi fikrin için 'According to me' kullanılmaz; 'From my perspective,' veya 'In my view,' denir."
+    trap_type: literal_translation
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Stance", text_en: "From my perspective,", text_tr: "Benim bakış açıma göre," }
+    - { role: SUBJECT, label: "Topic", text_en: "preventive maintenance", text_tr: "önleyici bakım" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "is far cheaper than", text_tr: "çok daha ucuzdur" }
+    - { role: OBJECT, label: "Comparison", text_en: "emergency repairs", text_tr: "acil onarımlardan" }
+  slot_variations:
+    - { slot_en: "preventive maintenance", full_sentence_en: "From my perspective, preventive maintenance is far cheaper than emergency repairs.", full_sentence_tr: "Benim bakış açıma göre önleyici bakım acil onarımlardan çok daha ucuzdur." }
+    - { slot_en: "clear onboarding", full_sentence_en: "From my perspective, clear onboarding improves retention immediately.", full_sentence_tr: "Benim bakış açıma göre net bir oryantasyon çalışan bağlılığını hemen artırır." }
+    - { slot_en: "lifelong learning", full_sentence_en: "From my perspective, lifelong learning is essential in every field.", full_sentence_tr: "Benim bakış açıma göre yaşam boyu öğrenme her alanda zorunludur." }
+  topic_tags: [ielts, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.ielts.this-leads-to
+  chunk_en: "This leads to..."
+  pattern_template: "This leads to + [Noun / Verb-ing]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Bir durumun sonucunu bağlamak ('Bu da ... sonucuna yol açar')"
+  meaning_en: "Connects a cause in the previous sentence to a clear consequence."
+  turkish_trap:
+    incorrect_en: "This leads that people feel stressed."
+    correct_en: "This leads to higher stress levels."
+    explanation_tr: "'Lead to' arkasından 'that + cümle' değil isim veya '-ing' grubu alır."
+    trap_type: clause_structure
+  blueprint_slots:
+    - { role: SUBJECT, label: "Cause ref", text_en: "This", text_tr: "Bu durum" }
+    - { role: VERB_BRIDGE, label: "Link", text_en: "inevitably leads to", text_tr: "kaçınılmaz olarak yol açar" }
+    - { role: OBJECT, label: "Result", text_en: "faster decision-making", text_tr: "daha hızlı karar almaya" }
+  slot_variations:
+    - { slot_en: "faster decision-making", full_sentence_en: "This inevitably leads to faster decision-making across teams.", full_sentence_tr: "Bu da ekipler genelinde daha hızlı karar almaya yol açar." }
+    - { slot_en: "lower energy bills", full_sentence_en: "Better insulation leads to significantly lower energy bills.", full_sentence_tr: "Daha iyi yalıtım, enerji faturalarının belirgin biçimde düşmesine yol açar." }
+    - { slot_en: "employee burnout", full_sentence_en: "Constant overtime often leads to employee burnout.", full_sentence_tr: "Sürekli fazla mesai sıkça çalışan tükenmişliğine yol açar." }
+  topic_tags: [ielts, writing, speaking]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.bridge.while-i-understand
+  chunk_en: "While I understand..., I think..."
+  pattern_template: "While I understand + [Point A], + [Subject] + believe/think + [Point B]"
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Karşı tarafı onaylayıp kibarca farklı fikir sunmak"
+  meaning_en: "Diplomatic disagreement frame for negotiations, reviews, and IELTS Part 3."
+  turkish_trap:
+    incorrect_en: "Although I understand your concern, but we must act."
+    correct_en: "While I understand your concern, we must act now."
+    explanation_tr: "Türkçede 'rağmen ... ama' birlikte kullanılabilse de İngilizcede 'While/Although' ile 'but' aynı cümlede birlikte kullanılmaz."
+    trap_type: double_conjunction
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Concession", text_en: "While I understand the budget concern,", text_tr: "Bütçe endişesini anlasam da," }
+    - { role: SUBJECT, label: "Who", text_en: "we", text_tr: "biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "cannot delay", text_tr: "erteleyemeyiz" }
+    - { role: OBJECT, label: "What", text_en: "the security upgrade", text_tr: "güvenlik güncellemesini" }
+  slot_variations:
+    - { slot_en: "the budget concern", full_sentence_en: "While I understand the budget concern, we cannot delay the security upgrade.", full_sentence_tr: "Bütçe endişesini anlasam da güvenlik güncellemesini erteleyemeyiz." }
+    - { slot_en: "why speed matters", full_sentence_en: "While I understand why speed matters, accuracy comes first.", full_sentence_tr: "Hızın neden önemli olduğunu anlasam da doğruluk önce gelir." }
+    - { slot_en: "your point on scope", full_sentence_en: "While I understand your point on scope, users expect this feature.", full_sentence_tr: "Kapsam konusundaki noktanı anlasam da kullanıcılar bu özelliği bekliyor." }
+  topic_tags: [negotiations, meetings, ielts]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.ielts.it-is-worth-noting
+  chunk_en: "It is worth noting that..."
+  pattern_template: "It is worth noting that + [Clause]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Önemli bir ayrıntıyı vurgulamak ('Şunu belirtmekte fayda var ki...')"
+  meaning_en: "Highlights a subtle nuance or exception in analytical speech and reports."
+  turkish_trap:
+    incorrect_en: "It is worth to note that costs vary."
+    correct_en: "It is worth noting that costs vary."
+    explanation_tr: "'Be worth' yapısından sonra 'to + fiil' değil her zaman '-ing' gelir: 'worth noting', 'worth considering'."
+    trap_type: gerund_infinitive
+  blueprint_slots:
+    - { role: SUBJECT, label: "Frame", text_en: "It is worth noting", text_tr: "Belirtmekte fayda var" }
+    - { role: VERB_BRIDGE, label: "Link", text_en: "that", text_tr: "ki" }
+    - { role: OBJECT, label: "Detail", text_en: "the survey only covered urban areas", text_tr: "anket yalnızca kentsel bölgeleri kapsadı" }
+  slot_variations:
+    - { slot_en: "the survey only covered urban areas", full_sentence_en: "It is worth noting that the survey only covered urban areas.", full_sentence_tr: "Anketin yalnızca kentsel bölgeleri kapsadığını belirtmekte fayda var." }
+    - { slot_en: "prices exclude tax", full_sentence_en: "It is worth noting that these prices exclude local tax.", full_sentence_tr: "Bu fiyatlara yerel verginin dahil olmadığını belirtmekte fayda var." }
+    - { slot_en: "early results are encouraging", full_sentence_en: "It is worth noting that early pilot results are encouraging.", full_sentence_tr: "İlk pilot sonuçlarının umut verici olduğunu belirtmekte fayda var." }
+  topic_tags: [ielts, presentations]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.collocation.play-a-crucial-role
+  chunk_en: "play a crucial role in..."
+  pattern_template: "[Subject] + play(s) a crucial role in + [Noun / Verb-ing]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Bir konuda kritik bir rol oynamak"
+  meaning_en: "Describes a decisive factor behind an outcome."
+  turkish_trap:
+    incorrect_en: "Education makes an important role in society."
+    correct_en: "Education plays a crucial role in shaping society."
+    explanation_tr: "Türkçede 'rol oynamak' birebir 'play a role' karşılığına sahiptir; 'make a role' kullanılmaz."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Factor", text_en: "Clear communication", text_tr: "Açık iletişim" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "plays a crucial role in", text_tr: "kritik bir rol oynar" }
+    - { role: OBJECT, label: "Outcome", text_en: "building client trust", text_tr: "müşteri güveni oluşturmada" }
+  slot_variations:
+    - { slot_en: "building client trust", full_sentence_en: "Clear communication plays a crucial role in building client trust.", full_sentence_tr: "Açık iletişim müşteri güveni oluşturmada kritik bir rol oynar." }
+    - { slot_en: "preventing burnout", full_sentence_en: "Healthy boundaries play a crucial role in preventing burnout.", full_sentence_tr: "Sağlıklı sınırlar tükenmişliği önlemede kritik bir rol oynar." }
+    - { slot_en: "reducing urban traffic", full_sentence_en: "Reliable rail networks play a crucial role in reducing urban traffic.", full_sentence_tr: "Güvenilir raylı sistemler şehir trafiğini azaltmada kritik bir rol oynar." }
+  topic_tags: [ielts, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.bridge.when-it-comes-to
+  chunk_en: "When it comes to..."
+  pattern_template: "When it comes to + [Noun / Verb-ing], + [Clause]"
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Konu ... olunca / ... söz konusu olduğunda"
+  meaning_en: "Focuses the conversation on one specific aspect of a broader topic."
+  turkish_trap:
+    incorrect_en: "When it comes to choose a tool, speed wins."
+    correct_en: "When it comes to choosing a tool, speed wins."
+    explanation_tr: "Bu kalıptaki 'to' edattır; ardından yalın fiil değil isim veya '-ing' takılı fiil gelir."
+    trap_type: gerund_infinitive
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Topic focus", text_en: "When it comes to hiring,", text_tr: "İşe alım söz konusu olduğunda," }
+    - { role: SUBJECT, label: "What", text_en: "practical problem-solving", text_tr: "pratik problem çözme" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "matters most", text_tr: "en çok önem taşır" }
+  slot_variations:
+    - { slot_en: "hiring", full_sentence_en: "When it comes to hiring, practical problem-solving matters most.", full_sentence_tr: "İşe alım söz konusu olduğunda pratik problem çözme en çok önem taşır." }
+    - { slot_en: "choosing a cloud provider", full_sentence_en: "When it comes to choosing a cloud provider, reliability is key.", full_sentence_tr: "Bulut sağlayıcı seçerken güvenilirlik belirleyicidir." }
+    - { slot_en: "learning vocabulary", full_sentence_en: "When it comes to learning vocabulary, context beats rote lists.", full_sentence_tr: "Kelime öğrenirken bağlam, ezber listelerinden daha etkilidir." }
+  topic_tags: [conversation, ielts, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.collocation.strike-a-balance
+  chunk_en: "strike a balance between..."
+  pattern_template: "[Subject] + need to + strike a balance between + [A] + and + [B]"
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: "İki şey arasında sağlıklı bir denge kurmak"
+  meaning_en: "To find a sensible compromise between two competing priorities."
+  turkish_trap:
+    incorrect_en: "We must do a balance between cost and quality."
+    correct_en: "We must strike a balance between cost and quality."
+    explanation_tr: "Türkçede 'denge kurmak' ifadesi İngilizcede 'do a balance' değil 'strike a balance' veya 'find a balance' şeklinde kullanılır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "Managers", text_tr: "Yöneticiler" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "need to strike a balance", text_tr: "denge kurmalıdır" }
+    - { role: OBJECT, label: "Between", text_en: "between autonomy and oversight", text_tr: "özerklik ile denetim arasında" }
+  slot_variations:
+    - { slot_en: "autonomy and oversight", full_sentence_en: "Managers need to strike a balance between autonomy and oversight.", full_sentence_tr: "Yöneticiler özerklik ile denetim arasında bir denge kurmalıdır." }
+    - { slot_en: "speed and quality", full_sentence_en: "Engineering teams must strike a balance between speed and quality.", full_sentence_tr: "Mühendislik ekipleri hız ile kalite arasında denge kurmalıdır." }
+    - { slot_en: "work and personal rest", full_sentence_en: "It takes discipline to strike a balance between work and personal rest.", full_sentence_tr: "İş ile kişisel dinlenme arasında denge kurmak disiplin gerektirir." }
+  topic_tags: [workplace, ielts]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.frame.had-better-vs-should
+  chunk_en: "In light of..."
+  pattern_template: "In light of + [New Fact], + [Subject] + [Action]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "... ışığında / ... göz önüne alındığında"
+  meaning_en: "Explains a decision based on new evidence or recent developments."
+  turkish_trap:
+    incorrect_en: "Under the light of recent data, we revised the plan."
+    correct_en: "In light of recent data, we revised the plan."
+    explanation_tr: "İngilizcede doğru edat 'under' değil 'in'dir: 'In light of [yeni gelişme]'."
+    trap_type: preposition_transfer
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Context", text_en: "In light of recent feedback,", text_tr: "Son geri bildirimler ışığında," }
+    - { role: SUBJECT, label: "Who", text_en: "we", text_tr: "biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "have simplified", text_tr: "sadeleştirdik" }
+    - { role: OBJECT, label: "What", text_en: "the onboarding flow", text_tr: "başlangıç akışını" }
+  slot_variations:
+    - { slot_en: "recent feedback", full_sentence_en: "In light of recent feedback, we have simplified the onboarding flow.", full_sentence_tr: "Son geri bildirimler ışığında başlangıç akışını sadeleştirdik." }
+    - { slot_en: "rising energy costs", full_sentence_en: "In light of rising energy costs, firms are auditing office usage.", full_sentence_tr: "Artan enerji maliyetleri ışığında şirketler ofis kullanımını denetliyor." }
+    - { slot_en: "the new regulations", full_sentence_en: "In light of the new regulations, our legal team updated the terms.", full_sentence_tr: "Yeni düzenlemeler ışığında hukuk ekibimiz koşulları güncelledi." }
+  topic_tags: [workplace, presentations]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.bridge.that-being-said
+  chunk_en: "That being said,..."
+  pattern_template: "That being said, + [Contrasting Point]"
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Bununla birlikte / yine de..."
+  meaning_en: "Smoothly introduces a caveat or balanced counterpoint after acknowledging a fact."
+  turkish_trap:
+    incorrect_en: "With that saying, we should stay cautious."
+    correct_en: "That being said, we should stay cautious."
+    explanation_tr: "Bu kalıp edilgen yapıyla kurulur ('That being said,'); 'saying' ile aktif kullanılmaz."
+    trap_type: participle_form
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Bridge", text_en: "That being said,", text_tr: "Bununla birlikte," }
+    - { role: SUBJECT, label: "Who", text_en: "we", text_tr: "biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "still need", text_tr: "hâlâ ihtiyacımız var" }
+    - { role: OBJECT, label: "What", text_en: "a backup plan", text_tr: "bir yedek plana" }
+  slot_variations:
+    - { slot_en: "a backup plan", full_sentence_en: "That being said, we still need a backup plan for launch day.", full_sentence_tr: "Bununla birlikte, lansman günü için hâlâ bir yedek plana ihtiyacımız var." }
+    - { slot_en: "not every role fits remote work", full_sentence_en: "That being said, not every role fits fully remote work.", full_sentence_tr: "Bununla birlikte, her rol tamamen uzaktan çalışmaya uygun değildir." }
+    - { slot_en: "the prototype looks promising", full_sentence_en: "That being said, the prototype looks genuinely promising.", full_sentence_tr: "Bununla birlikte, prototip gerçekten umut verici görünüyor." }
+  topic_tags: [meetings, ielts]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.collocation.address-the-issue
+  chunk_en: "address the issue"
+  pattern_template: "[Subject] + need to / will + address + the issue + [of Topic]"
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir sorunu ele almak / çözüme kavuşturmak"
+  meaning_en: "To deal with a problem directly and constructively."
+  turkish_trap:
+    incorrect_en: "We must handle with this issue immediately."
+    correct_en: "We must address this issue immediately."
+    explanation_tr: "'Handle' ve 'address' fiilleri 'with' edatı almaz; doğrudan nesne ile kullanılır ('address the issue' / 'deal with the issue')."
+    trap_type: extra_preposition
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "The team", text_tr: "Ekip" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "addressed", text_tr: "ele alıp çözdü" }
+    - { role: OBJECT, label: "What", text_en: "the latency issue", text_tr: "gecikme sorununu" }
+    - { role: TIME_PLACE, label: "When", text_en: "within two hours", text_tr: "iki saat içinde" }
+  slot_variations:
+    - { slot_en: "the latency issue", full_sentence_en: "The team addressed the latency issue within two hours.", full_sentence_tr: "Ekip gecikme sorununu iki saat içinde ele alıp çözdü." }
+    - { slot_en: "customer complaints", full_sentence_en: "We need a faster process to address customer complaints.", full_sentence_tr: "Müşteri şikayetlerini ele almak için daha hızlı bir sürece ihtiyacımız var." }
+    - { slot_en: "the root cause", full_sentence_en: "Short-term fixes rarely address the root cause.", full_sentence_tr: "Kısa vadeli yamalar nadiren kök nedeni çözer." }
+  topic_tags: [workplace, problem-solving]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b2.ielts.by-contrast
+  chunk_en: "By contrast,..."
+  pattern_template: "By contrast, + [Subject] + [Verb]"
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Buna karşılık / aksine..."
+  meaning_en: "Highlights a clear difference between two groups, trends, or approaches."
+  turkish_trap:
+    incorrect_en: "On the contrast, rural areas saw steady growth."
+    correct_en: "By contrast, rural areas saw steady growth."
+    explanation_tr: "'On the other hand' ile karışarak 'On the contrast' yazılması sık görülür; doğru kalıp 'By contrast,' veya 'In contrast,' şeklindedir."
+    trap_type: preposition_transfer
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Contrast", text_en: "By contrast,", text_tr: "Buna karşılık," }
+    - { role: SUBJECT, label: "Who", text_en: "smaller studios", text_tr: "daha küçük stüdyolar" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "adopted", text_tr: "benimsedi" }
+    - { role: OBJECT, label: "What", text_en: "flexible schedules much faster", text_tr: "esnek programları çok daha hızlı" }
+  slot_variations:
+    - { slot_en: "smaller studios adopted flexible schedules", full_sentence_en: "By contrast, smaller studios adopted flexible schedules much faster.", full_sentence_tr: "Buna karşılık, daha küçük stüdyolar esnek programları çok daha hızlı benimsedi." }
+    - { slot_en: "the second option costs less", full_sentence_en: "By contrast, the second option costs half as much to maintain.", full_sentence_tr: "Buna karşılık, ikinci seçeneğin bakım maliyeti yarı yarıya daha düşüktür." }
+    - { slot_en: "active recall builds retention", full_sentence_en: "Passive rereading fades quickly; by contrast, active recall builds lasting retention.", full_sentence_tr: "Pasif tekrar çabuk silinir; buna karşılık aktif hatırlama kalıcı öğrenme sağlar." }
+  topic_tags: [ielts, writing]
+  status: PUBLISHED
+  version: 1

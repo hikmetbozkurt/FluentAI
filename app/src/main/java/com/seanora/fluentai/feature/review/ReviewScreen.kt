@@ -80,7 +80,7 @@ fun ReviewScreen(
         }
 
         val wide = maxWidth >= 820.dp
-        val horizontalPadding = if (maxWidth >= 600.dp) 32.dp else 18.dp
+        val horizontalPadding = if (maxWidth >= 600.dp) 32.dp else 16.dp
 
         Column(
             modifier = Modifier
@@ -94,10 +94,10 @@ fun ReviewScreen(
                 verticalArrangement = Arrangement.spacedBy(20.dp),
             ) {
                 FluentPageHeader(
-                    title = "Smart Review & Mistake Bank",
+                    title = "Smart review and mistake bank",
                     module = LearningModule.REVIEW,
-                    eyebrow = "Spaced Repetition · L1 Trap Resolution",
-                    subtitle = "Clear due reviews and turn recurring mistakes into permanent mastery.",
+                    eyebrow = "Spaced repetition · L1 trap resolution",
+                    subtitle = "Clear due reviews and turn recurring mistakes into lasting mastery",
                     onBack = onNavigateBack,
                     backLabel = "Back",
                 )
@@ -113,7 +113,7 @@ fun ReviewScreen(
                 // Tab Switcher
                 Row(
                     Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     ReviewTab.entries.forEach { tab ->
                         val selected = state.selectedTab == tab
@@ -124,16 +124,15 @@ fun ReviewScreen(
                         }
                         Surface(
                             onClick = { viewModel.selectTab(tab) },
-                            shape = RoundedCornerShape(14.dp),
+                            shape = RoundedCornerShape(12.dp),
                             color = if (selected) LearningModule.REVIEW.accent else Color.White,
                             border = BorderStroke(1.dp, if (selected) LearningModule.REVIEW.accent else DashboardColors.BorderSoft),
                         ) {
                             Text(
                                 "${tab.label}$countSuffix",
-                                fontWeight = FontWeight.Bold,
-                                fontSize = 14.sp,
+                                style = DashboardTypography.Button.copy(fontFeatureSettings = "tnum"),
                                 color = if (selected) Color.White else DashboardColors.TextPrimary,
-                                modifier = Modifier.padding(horizontal = 18.dp, vertical = 11.dp),
+                                modifier = Modifier.padding(horizontal = 16.dp, vertical = 10.dp),
                             )
                         }
                     }
@@ -174,23 +173,23 @@ private fun ReviewHealthStrip(
     wide: Boolean,
 ) {
     val cards = listOf(
-        Triple("Due Reviews", "$dueCount", Icons.Rounded.Replay to LearningModule.REVIEW.accent),
-        Triple("Active Mistakes", "$activeMistakes", Icons.Rounded.TrackChanges to DashboardColors.Warning),
-        Triple("Recurring Traps", "$recurringMistakes", Icons.Rounded.ErrorOutline to Color(0xFFD92D20)),
-        Triple("Resolved", "$resolvedMistakes", Icons.Rounded.Verified to DashboardColors.PlantGreen),
+        Triple("Due reviews", "$dueCount", DashboardColors.TextPrimary),
+        Triple("Active mistakes", "$activeMistakes", if (activeMistakes > 0) DashboardColors.Warning else DashboardColors.TextPrimary),
+        Triple("Recurring traps", "$recurringMistakes", if (recurringMistakes > 0) Color(0xFFD92D20) else DashboardColors.TextPrimary),
+        Triple("Resolved", "$resolvedMistakes", DashboardColors.PlantGreen),
     )
     if (wide) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
-            cards.forEach { (label, value, iconPair) ->
-                ReviewStatCard(label, value, iconPair.first, iconPair.second, Modifier.weight(1f))
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            cards.forEach { (label, value, valueColor) ->
+                ReviewStatCard(label, value, valueColor, Modifier.weight(1f))
             }
         }
     } else {
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             cards.chunked(2).forEach { pair ->
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                    pair.forEach { (label, value, iconPair) ->
-                        ReviewStatCard(label, value, iconPair.first, iconPair.second, Modifier.weight(1f))
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    pair.forEach { (label, value, valueColor) ->
+                        ReviewStatCard(label, value, valueColor, Modifier.weight(1f))
                     }
                 }
             }
@@ -202,31 +201,25 @@ private fun ReviewHealthStrip(
 private fun ReviewStatCard(
     label: String,
     value: String,
-    icon: ImageVector,
-    accent: Color,
+    valueColor: Color,
     modifier: Modifier = Modifier,
 ) {
     Surface(
         modifier = modifier,
-        shape = RoundedCornerShape(18.dp),
+        shape = RoundedCornerShape(12.dp),
         color = Color.White,
         border = BorderStroke(1.dp, DashboardColors.BorderSoft),
     ) {
-        Row(
-            Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        Column(
+            Modifier.padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            Box(
-                Modifier.size(40.dp).clip(RoundedCornerShape(12.dp)).background(accent.copy(alpha = 0.12f)),
-                contentAlignment = Alignment.Center,
-            ) {
-                Icon(icon, null, tint = accent, modifier = Modifier.size(20.dp))
-            }
-            Column {
-                Text(value, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold, color = DashboardColors.TextPrimary)
-                Text(label, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
-            }
+            Text(label, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
+            Text(
+                value,
+                style = DashboardTypography.PageTitle.copy(fontSize = 24.sp, fontFeatureSettings = "tnum"),
+                color = valueColor,
+            )
         }
     }
 }
@@ -239,8 +232,8 @@ private fun DueReviewsSection(
 ) {
     if (items.isEmpty()) {
         ReviewEmptyCard(
-            title = "All caught up on reviews!",
-            subtitle = "You have no overdue spaced-repetition cards right now. Practice Vocabulary, Reading, Grammar, or Speaking to build new review items.",
+            title = "All caught up on reviews",
+            subtitle = "No overdue spaced-repetition cards right now. Practice Vocabulary, Chunks, Reading, Grammar, or Speaking to build new review items",
         )
         return
     }

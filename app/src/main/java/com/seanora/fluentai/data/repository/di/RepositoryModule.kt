@@ -80,6 +80,12 @@ abstract class RepositoryModule {
 
     @Binds
     @Singleton
+    abstract fun bindChunkRepository(
+        impl: com.seanora.fluentai.data.repository.ChunkRepositoryImpl
+    ): com.seanora.fluentai.data.repository.ChunkRepository
+
+    @Binds
+    @Singleton
     abstract fun bindTodayPracticeRepository(
         impl: com.seanora.fluentai.data.repository.TodayPracticeRepositoryImpl
     ): com.seanora.fluentai.data.repository.TodayPracticeRepository

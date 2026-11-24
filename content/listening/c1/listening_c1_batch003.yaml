@@ -1,0 +1,720 @@
+- id: listening.c1.nordic-market-entry-briefing
+  title: Executive Assessment of Nordic Expansion
+  cefr_level: C1
+  category: executive_briefing
+  scenario_context: Strategy director Zeynep briefs VP of International Growth Henrik on localization costs, partner banks,
+    and compliance gating for entering Sweden and Denmark.
+  speakers:
+  - id: zeynep
+    name: Zeynep
+    role: Director of Corporate Strategy
+    accent: Turkish
+  - id: henrik
+    name: Henrik
+    role: VP of International Growth
+    accent: British
+  audio_ref: audio/listening/c1_nordic_market_entry_briefing.mp3
+  duration_seconds: 67
+  transcript_items:
+  - index: 1
+    speaker_id: henrik
+    start_ms: 0
+    end_ms: 6318
+    text_en: Good morning, Zeynep. Walk me through our Nordic market readiness before Friday's investment review.
+    text_tr: Günaydın Zeynep. Cuma günkü yatırım incelemesinden önce İskandinav pazarı hazırlığımızı özetler misin?
+  - index: 2
+    speaker_id: zeynep
+    start_ms: 6718
+    end_ms: 18406
+    text_en: Morning, Henrik. Our inbound pipeline looks misleadingly attractive—forty Stockholm mid-market firms clicked
+      trial links last quarter, yet only three converted without local instant bank identity login.
+    text_tr: Günaydın Henrik. Gelen talep hattımız yanıltıcı derecede cazip görünüyor; geçen çeyrek kırk Stockholm şirketi
+      deneme bağlantısına tıkladı, ancak yerel anlık banka kimlik doğrulaması olmadan yalnızca üçü müşteriye dönüştü.
+  - index: 3
+    speaker_id: henrik
+    start_ms: 18806
+    end_ms: 25249
+    text_en: Aha—so launching raw English software alone produces vanity traffic without clearing Nordic onboarding trust
+      barriers?
+    text_tr: Anladım—yani tek başına İngilizce yazılım sunmak yerel güven eşiklerini aşmadan yalnızca gösteriş trafiği üretiyor,
+      öyle mi?
+  - index: 4
+    speaker_id: zeynep
+    start_ms: 25649
+    end_ms: 35052
+    text_en: Precisely. Integrating BankID workflows alongside dual Swedish-kronor invoicing demands roughly ten engineering
+      weeks plus one cleared regional banking partner.
+    text_tr: Kesinlikle. BankID akışlarını İsveç kronu faturalandırmasıyla entegre etmek yaklaşık on mühendislik haftası ve
+      onaylı bir bölgesel banka ortağı gerektiriyor.
+  - index: 5
+    speaker_id: henrik
+    start_ms: 35452
+    end_ms: 40740
+    text_en: Should we open Sweden and Denmark concurrently to spread marketing overhead across both geographies?
+    text_tr: Pazarlama genel giderlerini iki coğrafyaya yaymak için İsveç ve Danimarka'yı eşzamanlı mı açmalıyız?
+  - index: 6
+    speaker_id: zeynep
+    start_ms: 41140
+    end_ms: 52752
+    text_en: Entering both simultaneously fragments scarce regulatory compliance bandwidth. Sequencing Stockholm first lets
+      us amortize our initial partner contract before layering Danish NemID integration in Q4.
+    text_tr: İkisine aynı anda girmek kıt uyumluluk mühendisliği kapasitemizi böler. Önce Stockholm'ü sıraya koymak ilk ortaklık
+      sözleşmemizi amorti etmemizi ve dördüncü çeyrekte Danimarka entegrasyonunu üzerine eklememizi sağlar.
+  - index: 7
+    speaker_id: henrik
+    start_ms: 53152
+    end_ms: 60145
+    text_en: Prudent discipline. What customer acquisition payback window does a Sweden-first launch yield under conservative
+      pricing?
+    text_tr: İhtiyatlı bir yaklaşım. Muhafazakar fiyatlandırma altında yalnızca İsveç odaklı başlangıç kaç aylık geri ödeme
+      süresi veriyor?
+  - index: 8
+    speaker_id: zeynep
+    start_ms: 60545
+    end_ms: 66683
+    text_en: Around eleven months once local support staff ramp, comfortably inside our fourteen-month corporate ceiling.
+    text_tr: Yerel destek kadrosu oturduğunda yaklaşık on bir ay; on dört aylık kurumsal tavanımızın rahatlıkla altında.
+  key_vocabulary:
+  - word: localization
+    context_note_tr: ürünü yerel dil ve ödeme normlarına uyarlama
+  - word: acquisition
+    context_note_tr: müşteri edinim maliyeti
+  - word: sequenced
+    context_note_tr: aşamalı sıraya konmuş açılım
+  comprehension_questions:
+  - id: q_listening_c1_nordic-market-entry-briefing_01
+    question_en: Why did thirty-seven of forty Stockholm trial inquiries fail to convert last quarter?
+    options:
+    - Lack of regional instant BankID login blocked onboarding trust
+    - Danish regulators prohibited mid-market trials in winter
+    - Marketing staff missed Friday invoice close deadlines
+    - English interface fonts rendered incorrectly on tablets
+    correct_answer: Lack of regional instant BankID login blocked onboarding trust
+    explanation_en: Zeynep reports 40 clicks converted to only 3 without trusted local BankID authentication.
+    explanation_tr: Zeynep yerel BankID kimlik doğrulaması olmadan kırk adaydan yalnızca üçünün dönüştüğünü belirtir.
+  - id: q_listening_c1_nordic-market-entry-briefing_02
+    question_en: How much engineering effort does initial Swedish payment/identity setup require?
+    options:
+    - One weekend with zero partner approval
+    - Three days using existing British payroll settings
+    - Fourteen months across five compliance teams
+    - Roughly ten weeks alongside clearing a local partner bank
+    correct_answer: Roughly ten weeks alongside clearing a local partner bank
+    explanation_en: She estimates ten engineering weeks plus one cleared regional banking partner.
+    explanation_tr: Yaklaşık on mühendislik haftası ve onaylı bir bölgesel banka ortağı gerektiği söylenir.
+  - id: q_listening_c1_nordic-market-entry-briefing_03
+    question_en: Why does Zeynep oppose launching Sweden and Denmark at the exact same time?
+    options:
+    - Danish firms show zero interest in workflow software
+    - Simultaneous launch dilutes limited compliance engineering capacity
+    - Marketing overhead rises strictly inside single markets
+    - Swedish Kronor cannot transfer electronically between cities
+    correct_answer: Simultaneous launch dilutes limited compliance engineering capacity
+    explanation_en: Zeynep warns concurrent entry fragments scarce regulatory compliance bandwidth.
+    explanation_tr: Zeynep eşzamanlı girişin kıt uyumluluk mühendisliği kapasitesini böleceğini savunur.
+  - id: q_listening_c1_nordic-market-entry-briefing_04
+    question_en: When is Danish expansion slated to follow under Zeynep's sequenced plan?
+    options:
+    - In the fourth quarter after Stockholm launches smoothly
+    - Ahead of Swedish Kronor billing setup
+    - Immediately next Wednesday morning
+    - Only after two full fiscal years
+    correct_answer: In the fourth quarter after Stockholm launches smoothly
+    explanation_en: She proposes layering Danish integration in Q4 once Stockholm matures.
+    explanation_tr: Dördüncü çeyrekte Danimarka entegrasyonunun Stockholm üzerine ekleneceği belirtilir.
+  - id: q_listening_c1_nordic-market-entry-briefing_05
+    question_en: What customer acquisition payback period is forecast for the Sweden-first sequence?
+    options:
+    - Approximately eleven months, under the fourteen-month limit
+    - Over forty weeks beyond corporate thresholds
+    - Only three months prior to localization
+    - Twenty-four months depending on spot currency rates
+    correct_answer: Approximately eleven months, under the fourteen-month limit
+    explanation_en: Zeynep forecasts an 11-month payback, comfortably beneath their 14-month ceiling.
+    explanation_tr: Zeynep on bir aylık geri ödeme süresinin on dört aylık tavanın altında kaldığını belirtir.
+  topic_tags:
+  - expansion
+  - nordics
+  - executive-briefing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c1.enterprise-audit-log-discovery
+  title: Scoping Enterprise Compliance Audit Exports
+  cefr_level: C1
+  category: product_discovery
+  scenario_context: Principal product manager Nadia interviews Chief Information Security Officer Emre at a banking prospect
+    regarding tamper-evident audit streams.
+  speakers:
+  - id: nadia
+    name: Nadia
+    role: Principal Product Manager
+    accent: American
+  - id: emre_ciso
+    name: Emre
+    role: Enterprise CISO
+    accent: Turkish
+  audio_ref: audio/listening/c1_enterprise_audit_log_discovery.mp3
+  duration_seconds: 64
+  transcript_items:
+  - index: 1
+    speaker_id: nadia
+    start_ms: 0
+    end_ms: 8313
+    text_en: Thank you for walking us through your security procurement checklist, Emre. What blocks our current audit export
+      page during banking audits?
+    text_tr: Güvenlik satın alma kontrol listenizi bizimle paylaştığınız için teşekkürler Emre. Mevcut denetim dışa aktarma
+      sayfamız banka denetimlerinde nerede takılıyor?
+  - index: 2
+    speaker_id: emre_ciso
+    start_ms: 8713
+    end_ms: 16651
+    text_en: Honestly, Nadia, forcing auditors to log into a web panel and click monthly CSV downloads breaks our continuous
+      monitoring pipeline.
+    text_tr: Açıkçası Nadia, denetçileri bir web paneline girip aylık CSV indirmeye zorlamak kesintisiz izleme hattımızı bozuyor.
+  - index: 3
+    speaker_id: nadia
+    start_ms: 17051
+    end_ms: 22524
+    text_en: Meaning your SOC team expects automated webhook streaming straight into your central SIEM storage?
+    text_tr: Yani güvenlik operasyon merkeziniz doğrudan merkezi SIEM deponuza akan otomatik olay yayını mı bekliyor?
+  - index: 4
+    speaker_id: emre_ciso
+    start_ms: 22924
+    end_ms: 30272
+    text_en: Automated ingestion every sixty seconds—plus cryptographic hash chaining proving no administrator altered permission
+      entries retroactively.
+    text_tr: Her altmış saniyede otomatik akış—artı hiçbir yöneticinin yetki kayıtlarını geriye dönük değiştirmediğini kanıtlayan
+      kriptografik özet zinciri.
+  - index: 5
+    speaker_id: nadia
+    start_ms: 30672
+    end_ms: 38755
+    text_en: Fair requirement. Beyond actor user ID and timestamp, which context fields matter most during external regulatory
+      inquiries?
+    text_tr: Yerinde bir gereksinim. İşlemi yapan kullanıcı kimliği ve zaman damgası dışında harici düzenleyici soruşturmalarda
+      hangi bağlam alanları en kritik?
+  - index: 6
+    speaker_id: emre_ciso
+    start_ms: 39155
+    end_ms: 48687
+    text_en: Before-and-after resource values, client source IP, device hardware posture, and explicit correlation IDs linking
+      API tokens to human approvers.
+    text_tr: Değişiklik öncesi ve sonrası kaynak değerleri, istemci kaynak IP'si, cihaz donanım durumu ve API belirteçlerini
+      insan onaylayıcıya bağlayan korelasyon kimlikleri.
+  - index: 7
+    speaker_id: nadia
+    start_ms: 49087
+    end_ms: 55345
+    text_en: What retention window satisfies central-bank compliance if our SIEM webhook destination drops briefly for maintenance?
+    text_tr: SIEM alıcı uç noktanız bakım nedeniyle kısa süre kesilirse hangi elde tutma penceresi merkez bankası uyumunu
+      karşılar?
+  - index: 8
+    speaker_id: emre_ciso
+    start_ms: 55745
+    end_ms: 62813
+    text_en: Immutable seventy-two-hour server replay buffers with dead-letter retry guarantees—solve that cleanly and legal
+      approves signing next quarter.
+    text_tr: Sonraki tekrar deneme garantili yetmiş iki saatlik değiştirilemez sunucu yeniden oynatma tamponları; bunu temiz
+      çözerseniz hukuk gelecek çeyrek imzayı onaylar.
+  key_vocabulary:
+  - word: immutable
+    context_note_tr: sonradan değiştirilemeyen, mühürlü kayıt
+  - word: ingestion
+    context_note_tr: merkezi SIEM sistemine olay alımı
+  - word: cryptographic
+    context_note_tr: kriptografik doğrulama zinciri
+  comprehension_questions:
+  - id: q_listening_c1_enterprise-audit-log-discovery_01
+    question_en: Why does manual CSV downloading fail Emre's banking compliance requirements?
+    options:
+    - CSV columns omit employee email addresses completely
+    - Web portals charge extra fees per export file
+    - Banking regulators prohibit tabular reports altogether
+    - Auditors require automated continuous streaming into SIEM storage
+    correct_answer: Auditors require automated continuous streaming into SIEM storage
+    explanation_en: Emre notes manual portal clicks break continuous automated SOC monitoring.
+    explanation_tr: Emre manuel web indirmelerinin kesintisiz SIEM izleme akışını bozduğunu söyler.
+  - id: q_listening_c1_enterprise-audit-log-discovery_02
+    question_en: How does Emre verify administrators cannot tamper quietly with past audit logs?
+    options:
+    - Cryptographic hash chaining across immutable audit records
+    - Sending summary alerts via SMS messages
+    - Printing weekly logs into locked paper binders
+    - Restricting dashboard viewing strictly to Nadia
+    correct_answer: Cryptographic hash chaining across immutable audit records
+    explanation_en: He specifically asks for cryptographic hash chaining proving records remain unaltered.
+    explanation_tr: Kayıtların değiştirilmediğini kanıtlayan kriptografik özet zinciri talep edilir.
+  - id: q_listening_c1_enterprise-audit-log-discovery_03
+    question_en: Which metadata pair helps trace automated actions back to accountable staff?
+    options:
+    - Quarterly software billing forecasts
+    - Correlation IDs binding API tokens to explicit human approvers
+    - Customer home postal codes and coffee room Wi-Fi bars
+    - Hardware screen font sizes and margins
+    correct_answer: Correlation IDs binding API tokens to explicit human approvers
+    explanation_en: Emre lists correlation IDs linking API tokens cleanly to human approvers alongside before/after diffs.
+    explanation_tr: Emre API belirteçlerini insan onaylayıcılara bağlayan korelasyon kimliklerini vurgular.
+  - id: q_listening_c1_enterprise-audit-log-discovery_04
+    question_en: How long must audit events remain replayable if a bank's SIEM receiver disconnects?
+    options:
+    - Strictly sixty seconds before purging
+    - Only during Friday afternoon maintenance
+    - For at least seventy-two hours on immutable buffers
+    - Zero replay—dropped frames stay lost
+    correct_answer: For at least seventy-two hours on immutable buffers
+    explanation_en: Emre demands immutable 72-hour server replay buffers with dead-letter retries.
+    explanation_tr: Emre yetmiş iki saatlik değiştirilemez sunucu tekrar oynatma tamponu ister.
+  - id: q_listening_c1_enterprise-audit-log-discovery_05
+    question_en: What commercial impact hinges on building this immutable streaming replay?
+    options:
+    - Canceling the Stockholm market expansion plan
+    - Switching bank infrastructure off encrypted storage
+    - Legal clearance to sign the banking contract next quarter
+    - Eliminating annual penetration tests permanently
+    correct_answer: Legal clearance to sign the banking contract next quarter
+    explanation_en: Emre states solving replay guarantees unlocks legal approval to sign next quarter.
+    explanation_tr: Emre bu koşulun gelecek çeyrekte sözleşme imza onayını açacağını belirtir.
+  topic_tags:
+  - security
+  - compliance
+  - audit-logs
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c1.marketing-analytics-scope-alignment
+  title: Aligning Attribution Metrics Before Holiday Launch
+  cefr_level: C1
+  category: stakeholder_alignment
+  scenario_context: Data science lead Sarp and growth VP Megan resolve conflicting campaign attribution definitions before
+    Q4 budget freezes.
+  speakers:
+  - id: megan
+    name: Megan
+    role: VP of Growth Marketing
+    accent: American
+  - id: sarp
+    name: Sarp
+    role: Lead Analytics Scientist
+    accent: Turkish
+  audio_ref: audio/listening/c1_marketing_analytics_scope_alignment.mp3
+  duration_seconds: 66
+  transcript_items:
+  - index: 1
+    speaker_id: megan
+    start_ms: 0
+    end_ms: 8793
+    text_en: Sarp, finance paused our Q4 podcast sponsorship boost because marketing's dashboard claims three-to-one return
+      while warehouse cohort data looks flat.
+    text_tr: Sarp, pazarlama panosu bire üç getiri gösterirken veri ambarı kohort verisi yatay kaldığı için finans dördüncü
+      çeyrek podcast sponsorluk artışımızı durdurdu.
+  - index: 2
+    speaker_id: sarp
+    start_ms: 9193
+    end_ms: 17731
+    text_en: I traced that gap yesterday, Megan. Ad platforms count every checkout occurring within thirty days after someone
+      merely scrolled past a banner.
+    text_tr: Dün o farkın izini sürdüm Megan. Reklam platformları, birisinin yalnızca bir afişin yanından kaydırıp geçtiği
+      her ödemeyi otuz gün boyunca kendine yazıyor.
+  - index: 3
+    speaker_id: megan
+    start_ms: 18131
+    end_ms: 24444
+    text_en: Wait—so view-through attribution gives paid social credit for returning subscribers who already planned to renew
+      organically?
+    text_tr: Bir dakika—yani görüntüleme bazlı atfetme, zaten organik olarak yenileme yapacak mevcut abonelere bile ücretli
+      reklam başarısı mı yazıyor?
+  - index: 4
+    speaker_id: sarp
+    start_ms: 24844
+    end_ms: 32926
+    text_en: Exactly. Forty percent of 'attributed' conversions overlapped direct brand search queries that would have converted
+      anyway without marginal ad spend.
+    text_tr: Kesinlikle. Atfedilen dönüşümlerin yüzde kırkı, ek reklam harcaması olmasa da zaten gelecek doğrudan marka aramalarıyla
+      çakışmış.
+  - index: 5
+    speaker_id: megan
+    start_ms: 33326
+    end_ms: 40829
+    text_en: Ouch. Yet stripping all upper-funnel brand podcasts down to zero on last-click metrics swings too harshly the
+      opposite way!
+    text_tr: Can sıkıcı. Ama son tıklama metrikleriyle tüm üst huni marka podcastlerini sıfıra indirmek de tam tersi yönde
+      aşırı sert bir savrulma olur!
+  - index: 6
+    speaker_id: sarp
+    start_ms: 41229
+    end_ms: 50437
+    text_en: Agreed. Rather than debating heuristic click rules endlessly, let us run clean geographic holdout tests across
+      six matched metro pairs during October.
+    text_tr: Katılıyorum. Sonsuz tıklama kuralları tartışmak yerine Ekim boyunca eşleştirilmiş altı şehir çiftinde temiz coğrafi
+      kontrol grubu testleri yapalım.
+  - index: 7
+    speaker_id: megan
+    start_ms: 50837
+    end_ms: 57425
+    text_en: Measuring true incremental lift between exposed and muted cities gives finance hard causal proof before November
+      peaks arrive.
+    text_tr: Kampanyaya maruz kalan ve sessiz bırakılan şehirler arasındaki gerçek net artışı ölçmek Kasım zirvelerinden önce
+      finansa sağlam nedensel kanıt sunar.
+  - index: 8
+    speaker_id: sarp
+    start_ms: 57825
+    end_ms: 65568
+    text_en: Precisely. Marketing selects test cities Monday morning, and I will wire the pre-registered readout notebook
+      for biweekly review.
+    text_tr: Tam olarak öyle. Pazarlama pazartesi sabahı test şehirlerini seçsin; ben de iki haftalık inceleme için ön kayıtlı
+      analiz defterini bağlayacağım.
+  key_vocabulary:
+  - word: attribution
+    context_note_tr: satış dönüşümünü pazarlama kanallarına atfetme
+  - word: incremental
+    context_note_tr: kampanyanın yarattığı gerçek net ek etki
+  - word: cannibalize
+    context_note_tr: zaten gelecek organik satışın payını yutmak
+  comprehension_questions:
+  - id: q_listening_c1_marketing-analytics-scope-alignment_01
+    question_en: Why did finance freeze marketing's Q4 podcast budget increase?
+    options:
+    - Organic customers demanded cash discounts before November
+    - Data analytics notebooks deleted thirty-day revenue totals
+    - Podcast hosts stopped airing sponsored commercial reads
+    - Ad platform ROI claims conflicted sharply with flat warehouse cohort data
+    correct_answer: Ad platform ROI claims conflicted sharply with flat warehouse cohort data
+    explanation_en: Megan explains marketing dashboards showed 3:1 ROI while core warehouse cohorts stayed flat.
+    explanation_tr: Megan reklam panolarındaki bire üç getirinin veri ambarı kohort verisiyle çeliştiğini belirtir.
+  - id: q_listening_c1_marketing-analytics-scope-alignment_02
+    question_en: Why were social ad dashboards overstating actual conversion performance?
+    options:
+    - Retail stores accidentally uploaded offline cash receipts
+    - Trackers counted negative sales as positive bookings
+    - View-through models credited banners for users who arrived via direct search
+    - Employees tested checkout carts forty times monthly
+    correct_answer: View-through models credited banners for users who arrived via direct search
+    explanation_en: Sarp found 40% of ad-credited conversions overlapped inevitable direct brand searches.
+    explanation_tr: Sarp atfedilen dönüşümlerin yüzde kırkının zaten gelecek doğrudan marka aramalarıyla çakıştığını açıklar.
+  - id: q_listening_c1_marketing-analytics-scope-alignment_03
+    question_en: Why does Megan reject using strict 'last-click' models instead?
+    options:
+    - Last-click ignores genuine awareness created earlier by brand podcasts
+    - Paid search clicks disappear completely in Q4
+    - Warehouse engineers forbid SQL joins after October
+    - Last-click software crashes under mobile traffic
+    correct_answer: Last-click ignores genuine awareness created earlier by brand podcasts
+    explanation_en: Megan warns last-click undervalues upper-funnel awareness from brand channels unfairly.
+    explanation_tr: Megan son tıklamanın üst huni marka kanallarının katkısını haksızca sıfırladığını savunur.
+  - id: q_listening_c1_marketing-analytics-scope-alignment_04
+    question_en: How do Sarp and Megan agree to prove real incremental campaign lift?
+    options:
+    - Asking new shoppers verbally how they discovered ads
+    - Counting everyone who scrolls past banners within ninety days
+    - Running matched geographic holdout experiments across six city pairs
+    - Halting all Q4 spending until financial close ends
+    correct_answer: Running matched geographic holdout experiments across six city pairs
+    explanation_en: Sarp proposes matched geographic holdout tests across six city pairs in October.
+    explanation_tr: Sarp Ekim'de eşleştirilmiş altı şehir çiftinde coğrafi kontrol grubu (holdout) testi önerir.
+  - id: q_listening_c1_marketing-analytics-scope-alignment_05
+    question_en: Why is scheduling the experiment in October strategically vital?
+    options:
+    - Ad platforms reduce October click prices by forty percent
+    - Pre-registered notebooks only compile once per autumn
+    - Causal evidence lands cleanly ahead of major November peak spending
+    - Biweekly finance calls pause throughout November
+    correct_answer: Causal evidence lands cleanly ahead of major November peak spending
+    explanation_en: Megan confirms causal lift results arrive before peak November holiday traffic.
+    explanation_tr: Megan nedensel kanıtların Kasım ayı yoğun sezonu öncesinde elde edileceğini vurgular.
+  topic_tags:
+  - attribution
+  - analytics
+  - stakeholders
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c1.regional-distributor-exclusivity-terms
+  title: Negotiating Tiered Distributor Performance Clauses
+  cefr_level: C1
+  category: negotiation
+  scenario_context: Commercial director Kaan negotiates regional hardware distribution exclusivity against minimum quarterly
+    quota protections with buyer director Astrid.
+  speakers:
+  - id: astrid
+    name: Astrid
+    role: Distributor Purchasing Director
+    accent: British
+  - id: kaan
+    name: Kaan
+    role: Commercial Director
+    accent: Turkish
+  audio_ref: audio/listening/c1_regional_distributor_exclusivity_terms.mp3
+  duration_seconds: 72
+  transcript_items:
+  - index: 1
+    speaker_id: astrid
+    start_ms: 0
+    end_ms: 9092
+    text_en: Kaan, expanding field engineers across Bavaria costs significant capital upfront, so our board cannot launch
+      without strict twelve-month regional exclusivity.
+    text_tr: Kaan, Bavyera genelinde saha mühendisi kadrosu kurmak baştan ciddi sermaye gerektiriyor; bu yüzden yönetim kurulumuz
+      on iki aylık kesin bölgesel münhasırlık olmadan başlayamaz.
+  - index: 2
+    speaker_id: kaan
+    start_ms: 9492
+    end_ms: 18405
+    text_en: I respect your training outlay, Astrid. Our concern with blanket exclusivity is getting locked out of strategic
+      hospitals if distributor volume stalls.
+    text_tr: Eğitim yatırımınıza saygı duyuyorum Astrid. Genel münhasırlıktaki çekincemiz, dağıtıcı hacmi duraksarsa stratejik
+      hastanelerin dışında kalmak.
+  - index: 3
+    speaker_id: astrid
+    start_ms: 18805
+    end_ms: 25963
+    text_en: Understandable protection. How can we pair territorial assurance for our investments with measurable downside
+      accountability?
+    text_tr: Anlaşılabilir bir koruma. Yatırımlarımız için bölgesel güvenceyi ölçülebilir sorumlulukla nasıl eşleştirebiliriz?
+  - index: 4
+    speaker_id: kaan
+    start_ms: 26363
+    end_ms: 34005
+    text_en: Grant full regional exclusivity for two quarters outright during onboarding, shifting to milestone-conditioned
+      renewal for quarters three and four.
+    text_tr: Kurulum sürecinde ilk iki çeyrek için tam münhasırlık verelim; üçüncü ve dördüncü çeyreklerde yenilemeyi hedeflere
+      bağlayalım.
+  - index: 5
+    speaker_id: astrid
+    start_ms: 34405
+    end_ms: 42763
+    text_en: Provided threshold quotas recognize seasonal summer shutdowns realistically—for example eighty-five percent of
+      base projections rather than aggressive stretch plans.
+    text_tr: Tabii eşik kotalar yaz durgunluklarını gerçekçi gözetirse; örneğin agresif zorlayıcı hedefler yerine baz projeksiyonun
+      yüzde seksen beşi gibi.
+  - index: 6
+    speaker_id: kaan
+    start_ms: 43163
+    end_ms: 55245
+    text_en: Deal—hitting eighty-five percent over rolling two-quarter periods keeps exclusive territory locked cleanly. If
+      two consecutive quarters miss, status reverts gracefully to non-exclusive preferred partner without termination.
+    text_tr: Anlaştık—ardışık iki çeyrekte yüzde seksen beşi tutturmak münhasırlığı korur. İki çeyrek üst üste altında kalınırsa
+      sözleşme feshedilmeden statü münhasır olmayan tercihli ortağa döner.
+  - index: 7
+    speaker_id: astrid
+    start_ms: 55645
+    end_ms: 63597
+    text_en: Non-punitive reversion solves board anxiety far better than harsh abrupt cancellations. What about spare diagnostic
+      units held locally?
+    text_tr: Cezasız yetki dönüşümü sert iptallerden çok daha iyi. Peki yerelde tutulan yedek tanı üniteleri ne olacak?
+  - index: 8
+    speaker_id: kaan
+    start_ms: 63997
+    end_ms: 71390
+    text_en: Consignment demo stock stays invoiced only upon final hospital placement—let counsel fold both clauses into schedule
+      B this afternoon.
+    text_tr: Konsinye demo stok yalnızca nihai hastane kurulumunda faturalanır; hukukçular bugün öğleden sonra iki maddeyi
+      de Ek B'ye işlesin.
+  key_vocabulary:
+  - word: exclusivity
+    context_note_tr: bölgesel tek yetkili satıcı ayrıcalığı
+  - word: quota
+    context_note_tr: asgari dönemlik satış hedefi
+  - word: revert
+    context_note_tr: hedef tutmazsa yetkinin genel kapsama dönmesi
+  comprehension_questions:
+  - id: q_listening_c1_regional-distributor-exclusivity-terms_01
+    question_en: Why does Astrid insist on twelve months of exclusivity across Bavaria?
+    options:
+    - Quarterly summer shutdowns stop all factory shipments
+    - Hospital purchasing boards refuse buying direct software licenses
+    - Hiring and training regional field engineers demands heavy upfront investment
+    - Competition laws ban preferred distributor agreements
+    correct_answer: Hiring and training regional field engineers demands heavy upfront investment
+    explanation_en: Astrid notes building field engineering capacity upfront requires territorial protection.
+    explanation_tr: Astrid saha mühendisliği yatırımı için bölgesel koruma gerektiğini ifade eder.
+  - id: q_listening_c1_regional-distributor-exclusivity-terms_02
+    question_en: What risk makes Kaan cautious about granting unconditional annual exclusivity?
+    options:
+    - Being blocked from hospitals if local distributor volume underperforms
+    - Hospitals refusing consignment diagnostic equipment
+    - Shortage of summer engineering contractors
+    - Rising consignment shipping prices across Europe
+    correct_answer: Being blocked from hospitals if local distributor volume underperforms
+    explanation_en: Kaan worries unconditional exclusivity traps them out of key hospitals if sales stall.
+    explanation_tr: Kaan satış duraksarsa kilit hastanelere erişimlerinin kapanmasından endişe eder.
+  - id: q_listening_c1_regional-distributor-exclusivity-terms_03
+    question_en: How do they calibrate quota targets to accommodate realistic seasonal dips?
+    options:
+    - Halving hospital hardware prices in August
+    - Setting strict aggressive targets monthly during winter only
+    - Canceling contracts automatically after one weak week
+    - Requiring 85% of base projections evaluated across rolling two-quarter windows
+    correct_answer: Requiring 85% of base projections evaluated across rolling two-quarter windows
+    explanation_en: They settle on 85% of realistic base projections smoothed across rolling two-quarter checks.
+    explanation_tr: Gerçekçi baz tahminin yüzde seksen beşi ve iki çeyreklik kayan değerlendirme üzerinde uzlaşılır.
+  - id: q_listening_c1_regional-distributor-exclusivity-terms_04
+    question_en: What occurs if Astrid's team misses the quota threshold for two quarters straight?
+    options:
+    - Immediate harsh termination plus penalty invoices
+    - Loss of regional hospital billing permissions permanently
+    - Automatic renewal of blanket territorial exclusivity
+    - They smoothly remain an active non-exclusive preferred partner
+    correct_answer: They smoothly remain an active non-exclusive preferred partner
+    explanation_en: Status reverts non-punitively to non-exclusive preferred partner rather than contract cancellation.
+    explanation_tr: Sözleşme feshedilmeden statü münhasır olmayan tercihli ortağa yumuşak geçiş yapar.
+  - id: q_listening_c1_regional-distributor-exclusivity-terms_05
+    question_en: When will Kaan's company invoice local consignment demo stock?
+    options:
+    - At the start of Q3 regardless of hospital orders
+    - Twelve months before Bavaria hires engineers
+    - Only after units achieve final placement inside hospitals
+    - Upon delivery to Astrid's regional depot door
+    correct_answer: Only after units achieve final placement inside hospitals
+    explanation_en: Kaan agrees demo consignment stock bills strictly upon final hospital placement.
+    explanation_tr: Konsinye stokun yalnızca nihai hastane yerleştirmesi yapıldığında faturalanacağı kararlaştırılır.
+  topic_tags:
+  - distribution
+  - exclusivity
+  - contracts
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c1.event-bus-schema-migration-review
+  title: Debating Zero-Downtime Event Schema Evolution
+  cefr_level: C1
+  category: engineering_meeting
+  scenario_context: Principal architect Yusuf and data platform lead Chloe plan splitting flat billing payloads into nested
+    multi-currency objects safely across twenty Kafka consumers.
+  speakers:
+  - id: yusuf
+    name: Yusuf
+    role: Principal Systems Architect
+    accent: Turkish
+  - id: chloe
+    name: Chloe
+    role: Data Platform Lead
+    accent: American
+  audio_ref: audio/listening/c1_event_bus_schema_migration_review.mp3
+  duration_seconds: 68
+  transcript_items:
+  - index: 1
+    speaker_id: yusuf
+    start_ms: 0
+    end_ms: 9868
+    text_en: Chloe, thanks for reviewing our invoice-settled event RFC. Representing foreign currency properly means deprecating
+      flat integer 'amount_cents' fields cleanly.
+    text_tr: Chloe, fatura tahsilat olayı RFC'mizi incelediğin için teşekkürler. Döviz kurlarını doğru modellemek için düz
+      tam sayı 'amount_cents' alanını temiz biçimde kullanımdan kaldırmamız gerekiyor.
+  - index: 2
+    speaker_id: chloe
+    start_ms: 10268
+    end_ms: 18016
+    text_en: I agree structurally, Yusuf, though twenty downstream microservices and our nightly warehouse loader subscribe
+      directly to that topic.
+    text_tr: Yapısal olarak katılıyorum Yusuf, ancak yirmi alt mikroservis ve gece veri ambarı yükleyicimiz doğrudan bu konuya
+      abone.
+  - index: 3
+    speaker_id: yusuf
+    start_ms: 18416
+    end_ms: 26394
+    text_en: Right—an instant hard schema break would poison half our data warehouse tables by dawn. How do we stage a zero-downtime
+      transition cleanly?
+    text_tr: Doğru—ani sert bir şema değişikliği şafakta veri ambarı tablolarımızın yarısını zehirler. Kesintisiz geçişi nasıl
+      aşamalandırırız?
+  - index: 4
+    speaker_id: chloe
+    start_ms: 26794
+    end_ms: 37316
+    text_en: 'Strictly expand-and-contract: step one keeps legacy ''amount_cents'' intact while appending an optional nested
+      ''settlement_money'' object marked backward-compatible in our schema registry.'
+    text_tr: 'Kesinlikle genişlet-ve-daralt: ilk adımda eski ''amount_cents'' alanı korunurken şema kaydında geriye uyumlu
+      olarak isteğe bağlı iç içe ''settlement_money'' nesnesi eklenir.'
+  - index: 5
+    speaker_id: yusuf
+    start_ms: 37716
+    end_ms: 42279
+    text_en: Should producers dual-write both fields identically across a thirty-day soak window?
+    text_tr: Üreticiler otuz günlük geçiş penceresi boyunca her iki alanı da birebir çift yazmalı mı?
+  - index: 6
+    speaker_id: chloe
+    start_ms: 42679
+    end_ms: 51092
+    text_en: Crucially yes, paired with deterministic unit verification ensuring integer amounts never diverge from nested
+      minor-unit values during currency conversions.
+    text_tr: Kesinlikle evet; kur çevrimlerinde tam sayı tutarların yeni nesnedeki alt birim değeriyle asla sapmamasını doğrulayan
+      deterministik testlerle birlikte.
+  - index: 7
+    speaker_id: yusuf
+    start_ms: 51492
+    end_ms: 56425
+    text_en: And how will we prevent silent stragglers before turning legacy field emission off permanently?
+    text_tr: Peki eski alan yayımını kalıcı kapatmadan önce sessizce geride kalan tüketicileri nasıl yakalayacağız?
+  - index: 8
+    speaker_id: chloe
+    start_ms: 56825
+    end_ms: 67467
+    text_en: Telemetry headers expose each consumer group's schema version in Grafana. Once v1 parser reads hit zero across
+      fourteen consecutive days, we drop the obsolete property safely.
+    text_tr: Telemetri başlıkları her tüketici grubunun şema sürümünü Grafana'da gösterir. Eski v1 okuyucuları art arda on
+      dört gün sıfırlandığında eski alanı güvenle düşürürüz.
+  key_vocabulary:
+  - word: backward
+    context_note_tr: eski tüketicilerin yeni olayı bozmadan okuyabilmesi
+  - word: dual-write
+    context_note_tr: geçiş boyunca hem eski hem yeni alanı yayınlama
+  - word: idempotent
+    context_note_tr: tekrar işlendiğinde yan etki yaratmayan
+  comprehension_questions:
+  - id: q_listening_c1_event-bus-schema-migration-review_01
+    question_en: Why is Yusuf retiring the flat integer 'amount_cents' event property?
+    options:
+    - Twenty microservices stopped reading warehouse schedules
+    - Grafana dashboards failed to plot decimal exchange rates
+    - To support structured multi-currency money amounts cleanly
+    - Kafka brokers rejected integer payloads over ten digits
+    correct_answer: To support structured multi-currency money amounts cleanly
+    explanation_en: Yusuf explains foreign currency modeling requires replacing flat integer fields with nested money objects.
+    explanation_tr: Yusuf çoklu para birimi yapısını doğru modellemek için düz tam sayı alanından çıkılması gerektiğini açıklar.
+  - id: q_listening_c1_event-bus-schema-migration-review_02
+    question_en: What risk prohibits swapping directly to the new event format overnight?
+    options:
+    - Twenty downstream consumers and warehouse loaders would fail immediately
+    - Schema registries reject optional nested objects
+    - Producer servers would halt network switches forever
+    - Banking customers cannot inspect settled invoices
+    correct_answer: Twenty downstream consumers and warehouse loaders would fail immediately
+    explanation_en: Chloe warns 20 microservices plus the warehouse loader read the topic and would crash cleanly without
+      transition.
+    explanation_tr: Chloe yirmi servisin ve veri ambarının ani şema kırılımında bozulacağını belirtir.
+  - id: q_listening_c1_event-bus-schema-migration-review_03
+    question_en: What does Chloe's 'expand-and-contract' strategy publish during transition?
+    options:
+    - Only encrypted payloads until schema logs clear
+    - Both the preserved legacy field and the optional nested object together
+    - Two separate duplicate Kafka clusters forever
+    - Null placeholders in place of foreign currency fields
+    correct_answer: Both the preserved legacy field and the optional nested object together
+    explanation_en: Producers dual-write old 'amount_cents' alongside optional backward-compatible 'settlement_money'.
+    explanation_tr: Genişlet-ve-daralt yaklaşımı eski alanla birlikte yeni iç içe nesneyi eşzamanlı yazar.
+  - id: q_listening_c1_event-bus-schema-migration-review_04
+    question_en: How do engineers verify dual-written fields do not drift apart in rounding?
+    options:
+    - Sampling monthly invoice PDFs visually by analysts
+    - Disabling foreign-currency trades during maintenance
+    - Pausing Kafka partitions every thirty days
+    - Deterministic tests asserting exact parity on currency conversions
+    correct_answer: Deterministic tests asserting exact parity on currency conversions
+    explanation_en: Chloe emphasizes deterministic checks proving flat and minor-unit amounts match strictly.
+    explanation_tr: Chloe deterministik doğrulama testleriyle çift yazılan tutarların sapmamasının sağlandığını belirtir.
+  - id: q_listening_c1_event-bus-schema-migration-review_05
+    question_en: What gate decides when legacy field emission can finally shut off?
+    options:
+    - Arbitrary expiration exactly thirty hours after merge
+    - Approvals purely from two frontend engineers
+    - Sending one advisory announcement inside Grafana
+    - Fourteen straight days showing zero v1 reader telemetry
+    correct_answer: Fourteen straight days showing zero v1 reader telemetry
+    explanation_en: Telemetry confirms 14 consecutive days of zero v1 parser reads before removing the field.
+    explanation_tr: Grafana telemetrisinde art arda on dört gün sıfır v1 okuması görülünce eski alan kaldırılır.
+  topic_tags:
+  - kafka
+  - schema-evolution
+  - zero-downtime
+  related_ids: []
+  status: APPROVED
+  version: 1

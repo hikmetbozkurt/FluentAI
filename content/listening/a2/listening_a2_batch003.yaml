@@ -1,0 +1,654 @@
+- id: listening.a2.daily-team-budget-update
+  title: Weekly Department Budget Update
+  cefr_level: A2
+  category: executive_briefing
+  scenario_context: Team lead Maya gives junior coordinator Kerem a short update on monthly travel and software spending before
+    Friday afternoon.
+  speakers:
+  - id: maya
+    name: Maya
+    role: Operations Lead
+    accent: British
+  - id: kerem
+    name: Kerem
+    role: Team Coordinator
+    accent: Turkish
+  audio_ref: audio/listening/a2_daily_team_budget_update.mp3
+  duration_seconds: 63
+  transcript_items:
+  - index: 1
+    speaker_id: maya
+    start_ms: 0
+    end_ms: 7388
+    text_en: Good morning, Kerem. Do you have five minutes to check our March department budget together?
+    text_tr: Günaydın Kerem. Mart ayı departman bütçemizi birlikte kontrol etmek için beş dakikan var mı?
+  - index: 2
+    speaker_id: kerem
+    start_ms: 7788
+    end_ms: 15697
+    text_en: Yes, of course, Maya. I updated all hotel and train receipts yesterday afternoon.
+    text_tr: Evet, elbette Maya. Tüm otel ve tren fişlerini dün öğleden sonra güncelledim.
+  - index: 3
+    speaker_id: maya
+    start_ms: 16097
+    end_ms: 23815
+    text_en: Thank you. Travel costs look much calmer this month, about fifteen percent below our limit.
+    text_tr: Teşekkürler. Seyahat masrafları bu ay çok daha sakin görünüyor, limitimizin yaklaşık yüzde on beş altında.
+  - index: 4
+    speaker_id: kerem
+    start_ms: 24215
+    end_ms: 32543
+    text_en: That is great news. However, our video call software renewed early with two extra guest licenses.
+    text_tr: Bu harika haber. Ancak görüntülü görüşme yazılımımız iki fazladan misafir lisansıyla erken yenilendi.
+  - index: 5
+    speaker_id: maya
+    start_ms: 32943
+    end_ms: 39602
+    text_en: Did any department ask for those extra seats, or were they left over from January training?
+    text_tr: Herhangi bir departman o ek koltukları istedi mi, yoksa Ocak eğitiminden mi kalmış?
+  - index: 6
+    speaker_id: kerem
+    start_ms: 40002
+    end_ms: 47200
+    text_en: They were temporary workshop accounts from January. I already canceled them for next month.
+    text_tr: Ocak ayından kalan geçici atölye hesaplarıymış. Gelecek ay için onları zaten iptal ettim.
+  - index: 7
+    speaker_id: maya
+    start_ms: 47600
+    end_ms: 55073
+    text_en: Smart catch. Also, let us delay ordering the two spare monitors until April second.
+    text_tr: İyi yakalamışsın. Ayrıca iki yedek monitör siparişini iki Nisan'a kadar erteleyelim.
+  - index: 8
+    speaker_id: kerem
+    start_ms: 55473
+    end_ms: 62672
+    text_en: Understood. I will save that note on the calendar and send finance our clean Friday summary.
+    text_tr: Anlaşıldı. Bu notu takvime kaydedip finans ekibine temiz cuma özetimizi göndereceğim.
+  key_vocabulary:
+  - word: budget
+    context_note_tr: aylık harcama planı, bütçe
+  - word: receipts
+    context_note_tr: harcama fişleri ve makbuzlar
+  - word: delay
+    context_note_tr: gecikme, erteleme
+  comprehension_questions:
+  - id: q_listening_a2_daily-team-budget-update_01
+    question_en: How does March travel spending compare to the department limit?
+    options:
+    - Frozen completely until next January
+    - Twenty percent higher than planned
+    - Missing every train and hotel receipt
+    - About fifteen percent under budget
+    correct_answer: About fifteen percent under budget
+    explanation_en: Maya confirms travel costs are calm and about fifteen percent below their limit.
+    explanation_tr: Maya seyahat giderlerinin limitlerinin yaklaşık yüzde on beş altında olduğunu belirtir.
+  - id: q_listening_a2_daily-team-budget-update_02
+    question_en: Why did the video software bill look higher this month?
+    options:
+    - February bills were delayed by bank holidays
+    - The software company doubled prices for Kerem
+    - New hires accidentally ordered ten extra cameras
+    - Two temporary January training licenses remained active
+    correct_answer: Two temporary January training licenses remained active
+    explanation_en: Kerem explains two temporary January workshop accounts stayed on the renewal.
+    explanation_tr: Kerem Ocak atölyesinden kalan iki geçici hesabın yenilemede açık kaldığını açıklar.
+  - id: q_listening_a2_daily-team-budget-update_03
+    question_en: What has Kerem already done about the unused guest licenses?
+    options:
+    - Transferred them to the regional sales office
+    - Asked guests to pay back the balance
+    - Upgraded the whole office to an enterprise contract
+    - Canceled them starting next month
+    correct_answer: Canceled them starting next month
+    explanation_en: Kerem says he already canceled the temporary accounts for next month.
+    explanation_tr: Kerem geçici hesapları gelecek ay için şimdiden iptal ettiğini söyler.
+  - id: q_listening_a2_daily-team-budget-update_04
+    question_en: What equipment order are Maya and Kerem postponing until April second?
+    options:
+    - Train tickets for Maya
+    - Five ergonomic office chairs
+    - Two spare monitors
+    - New wireless routers
+    correct_answer: Two spare monitors
+    explanation_en: Maya asks Kerem to delay ordering two spare monitors until April second.
+    explanation_tr: Maya iki yedek monitör siparişini iki Nisan'a ertelemelerini ister.
+  - id: q_listening_a2_daily-team-budget-update_05
+    question_en: Who will receive the updated budget summary?
+    options:
+    - January workshop guests
+    - Building security staff
+    - The finance team
+    - The video software vendor
+    correct_answer: The finance team
+    explanation_en: Kerem promises to send finance their clean Friday summary.
+    explanation_tr: Kerem temiz cuma özetini finans ekibine göndereceğini söyler.
+  topic_tags:
+  - budget
+  - briefing
+  - office
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.a2.asking-client-about-reports
+  title: Asking a Client About Report Filters
+  cefr_level: A2
+  category: product_discovery
+  scenario_context: Product specialist Liam calls store manager Ece to learn how she exports weekly inventory figures.
+  speakers:
+  - id: liam
+    name: Liam
+    role: Product Specialist
+    accent: American
+  - id: ece
+    name: Ece
+    role: Retail Manager
+    accent: Turkish
+  audio_ref: audio/listening/a2_asking_client_about_reports.mp3
+  duration_seconds: 55
+  transcript_items:
+  - index: 1
+    speaker_id: liam
+    start_ms: 0
+    end_ms: 7573
+    text_en: Hi Ece, thanks for talking with us today. Which screen do you open first every Monday morning?
+    text_tr: Merhaba Ece, bugün bizimle konuştuğun için teşekkürler. Her pazartesi sabahı ilk hangi ekranı açıyorsun?
+  - index: 2
+    speaker_id: ece
+    start_ms: 7973
+    end_ms: 14537
+    text_en: Hi Liam. I always open the weekly stock report before opening the shop doors.
+    text_tr: Merhaba Liam. Mağaza kapılarını açmadan önce her zaman haftalık stok raporunu açarım.
+  - index: 3
+    speaker_id: liam
+    start_ms: 14937
+    end_ms: 19136
+    text_en: What feels slow or difficult when you use that page right now?
+    text_tr: Şu an o sayfayı kullanırken ne yavaş veya zor hissettiriyor?
+  - index: 4
+    speaker_id: ece
+    start_ms: 19536
+    end_ms: 27094
+    text_en: 'Every Monday I must pick three filters manually: warehouse city, product size, and unpaid orders.'
+    text_tr: 'Her pazartesi üç filtreyi elle seçmek zorundayım: depo şehri, ürün bedeni ve ödenmemiş siparişler.'
+  - index: 5
+    speaker_id: liam
+    start_ms: 27494
+    end_ms: 33218
+    text_en: Got it. How long does picking those same filters usually take you?
+    text_tr: Anladım. Bu aynı filtreleri seçmek genelde ne kadar zamanını alıyor?
+  - index: 6
+    speaker_id: ece
+    start_ms: 33618
+    end_ms: 39957
+    text_en: About ten minutes, and then I export the table to check damaged boxes in our back room.
+    text_tr: Yaklaşık on dakika, ardından arka odadaki hasarlı kutuları kontrol etmek için tabloyu dışa aktarıyorum.
+  - index: 7
+    speaker_id: liam
+    start_ms: 40357
+    end_ms: 46205
+    text_en: If you could save one favorite filter view under a single button, would that save time?
+    text_tr: Favori filtre görünümünü tek bir düğmenin altına kaydedebilsen bu zaman kazandırır mıydı?
+  - index: 8
+    speaker_id: ece
+    start_ms: 46605
+    end_ms: 54009
+    text_en: Yes, definitely! Clicking one saved button would save me half an hour every single week.
+    text_tr: Evet, kesinlikle! Kayıtlı tek bir düğmeye tıklamak bana her hafta yarım saat kazandırırdı.
+  key_vocabulary:
+  - word: filter
+    context_note_tr: veriyi süzmeye yarayan filtre
+  - word: weekly
+    context_note_tr: haftalık düzenli işlem
+  - word: export
+    context_note_tr: dosyayı dışa aktarma
+  comprehension_questions:
+  - id: q_listening_a2_asking-client-about-reports_01
+    question_en: When does Ece open the weekly stock report?
+    options:
+    - Late Friday night after locking the back room
+    - Once every three months for tax audits
+    - Only when customers return damaged coats
+    - Every Monday morning before opening the shop
+    correct_answer: Every Monday morning before opening the shop
+    explanation_en: Ece checks the weekly stock report first every Monday morning before opening.
+    explanation_tr: Ece her pazartesi sabahı mağazayı açmadan önce stok raporuna baktığını söyler.
+  - id: q_listening_a2_asking-client-about-reports_02
+    question_en: How many manual filters does Ece set on every visit?
+    options:
+    - Only one filter
+    - Three filters
+    - Twelve filters
+    - Zero filters
+    correct_answer: Three filters
+    explanation_en: She selects warehouse city, product size, and unpaid orders—three filters manually.
+    explanation_tr: Depo şehri, ürün bedeni ve ödenmemiş siparişler olmak üzere üç filtre seçtiğini anlatır.
+  - id: q_listening_a2_asking-client-about-reports_03
+    question_en: Why does Ece export the report table afterward?
+    options:
+    - To send invoices to international banks
+    - To check damaged boxes in the stockroom
+    - To delete unpaid orders automatically
+    - To design marketing banners for mobile
+    correct_answer: To check damaged boxes in the stockroom
+    explanation_en: Ece exports the table to check damaged boxes in the back room.
+    explanation_tr: Arka odadaki hasarlı kutuları kontrol etmek için dışa aktarım yaptığını söyler.
+  - id: q_listening_a2_asking-client-about-reports_04
+    question_en: What solution does Liam suggest testing?
+    options:
+    - Hiring another shop manager for Mondays
+    - Sending paper tables by post weekly
+    - Saving a favorite filter view under one button
+    - Removing product sizes from stock screens
+    correct_answer: Saving a favorite filter view under one button
+    explanation_en: Liam asks whether saving a favorite filter view as a single button would help.
+    explanation_tr: Liam favori filtre görünümünü tek bir düğmede saklamayı sorar.
+  - id: q_listening_a2_asking-client-about-reports_05
+    question_en: How much weekly time does Ece estimate a saved button would return?
+    options:
+    - About half an hour each week
+    - Three hours per hour
+    - Two full business days
+    - Ten seconds per month
+    correct_answer: About half an hour each week
+    explanation_en: Ece says one saved button would save her half an hour every single week.
+    explanation_tr: Ece tek kayıtlı düğmenin her hafta yarım saat kazandıracağını ifade eder.
+  topic_tags:
+  - product-discovery
+  - ux-research
+  - reporting
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.a2.fixing-office-wifi-outage
+  title: Reporting an Office Wi-Fi Drop
+  cefr_level: A2
+  category: incident_response
+  scenario_context: Support analyst Cem calls office IT technician Nora after laptops on the third floor disconnect suddenly.
+  speakers:
+  - id: cem
+    name: Cem
+    role: Customer Support Analyst
+    accent: Turkish
+  - id: nora
+    name: Nora
+    role: IT Helpdesk Technician
+    accent: British
+  audio_ref: audio/listening/a2_fixing_office_wifi_outage.mp3
+  duration_seconds: 57
+  transcript_items:
+  - index: 1
+    speaker_id: cem
+    start_ms: 0
+    end_ms: 7713
+    text_en: Hi Nora, this is Cem from the third-floor support room. Our Wi-Fi just went down completely.
+    text_tr: Merhaba Nora, ben üçüncü kat destek odasından Cem. Kablosuz internetimiz az önce tamamen kesildi.
+  - index: 2
+    speaker_id: nora
+    start_ms: 8113
+    end_ms: 15802
+    text_en: Thanks for calling fast, Cem. Is the problem affecting laptops on the second floor too?
+    text_tr: Hızlı aradığın için teşekkürler Cem. Sorun ikinci kattaki dizüstü bilgisayarları da etkiliyor mu?
+  - index: 3
+    speaker_id: cem
+    start_ms: 16202
+    end_ms: 22420
+    text_en: No, I checked with Sarah downstairs and her team still has green bars and normal calls.
+    text_tr: Hayır, aşağıdaki Sarah'ya sordum, ekibinde hâlâ tam çekim ve normal görüşmeler var.
+  - index: 4
+    speaker_id: nora
+    start_ms: 22820
+    end_ms: 29493
+    text_en: Okay, that narrows it down cleanly to the third-floor network switch inside the printer closet.
+    text_tr: Tamam, bu durumu temiz biçimde yazıcı dolabındaki üçüncü kat ağ anahtarına daraltıyor.
+  - index: 5
+    speaker_id: cem
+    start_ms: 29893
+    end_ms: 34707
+    text_en: I can stand right beside that closet if you need me to check the lights.
+    text_tr: Işıkları kontrol etmemi istersen tam dolabın yanında durabilirim.
+  - index: 6
+    speaker_id: nora
+    start_ms: 35107
+    end_ms: 40986
+    text_en: Great. Do you see a flashing orange light next to power port one?
+    text_tr: Harika. Bir numaralı güç girişinin yanında yanıp sönen turuncu bir ışık görüyor musun?
+  - index: 7
+    speaker_id: cem
+    start_ms: 41386
+    end_ms: 48424
+    text_en: Wait a second... Actually the power plug is slightly loose because a supply box bumped it.
+    text_tr: Bir saniye... Aslında bir malzeme kutusu çarptığı için güç fişi hafifçe gevşemiş.
+  - index: 8
+    speaker_id: nora
+    start_ms: 48824
+    end_ms: 55823
+    text_en: Push that plug firmly back in, wait thirty seconds for the reboot, and Wi-Fi should return.
+    text_tr: O fişi sıkıca yerine it, yeniden başlatma için otuz saniye bekle; internet geri gelecektir.
+  key_vocabulary:
+  - word: disconnect
+    context_note_tr: bağlantının kesilmesi
+  - word: switch
+    context_note_tr: ağ yönlendirme cihazı
+  - word: reboot
+    context_note_tr: cihazı yeniden başlatmak
+  comprehension_questions:
+  - id: q_listening_a2_fixing-office-wifi-outage_01
+    question_en: Which office area lost wireless internet?
+    options:
+    - Both the second and third floors
+    - Only Sarah's downstairs room
+    - Only the third floor
+    - The entire office street
+    correct_answer: Only the third floor
+    explanation_en: Cem checks with Sarah downstairs and confirms only the third-floor support room disconnected.
+    explanation_tr: Cem alt kattaki Sarah'nın sorun yaşamadığını, kesintinin yalnızca üçüncü katta olduğunu belirtir.
+  - id: q_listening_a2_fixing-office-wifi-outage_02
+    question_en: Where is the third-floor network switch located?
+    options:
+    - Inside the printer closet
+    - Under Cem's meeting table
+    - Outside on the building balcony
+    - Near the front security reception
+    correct_answer: Inside the printer closet
+    explanation_en: Nora identifies the switch inside the third-floor printer closet.
+    explanation_tr: Nora ağ anahtarının üçüncü kat yazıcı dolabının içinde olduğunu söyler.
+  - id: q_listening_a2_fixing-office-wifi-outage_03
+    question_en: What actually caused the outage?
+    options:
+    - Too many guests joined video calls
+    - An overnight software update crashed
+    - Someone cut the green ceiling cable
+    - A supply box bumped the power plug loose
+    correct_answer: A supply box bumped the power plug loose
+    explanation_en: Cem notices the power plug came loose because a supply box bumped it.
+    explanation_tr: Cem bir malzeme kutusunun çarpmasıyla güç fişinin gevşediğini fark eder.
+  - id: q_listening_a2_fixing-office-wifi-outage_04
+    question_en: How long should Cem wait after pushing the plug in?
+    options:
+    - Until Friday morning maintenance
+    - Half an hour before opening any laptop
+    - Fifteen minutes until Nora walks upstairs
+    - Thirty seconds for the device reboot
+    correct_answer: Thirty seconds for the device reboot
+    explanation_en: Nora tells Cem to wait thirty seconds for the switch to reboot.
+    explanation_tr: Nora yeniden başlatma için otuz saniye beklemesini söyler.
+  - id: q_listening_a2_fixing-office-wifi-outage_05
+    question_en: How did Nora pinpoint the problem without leaving her desk?
+    options:
+    - By asking whether another floor still worked properly
+    - By restarting every employee laptop remotely
+    - By replacing the printer cable over email
+    - By calling external internet engineers immediately
+    correct_answer: By asking whether another floor still worked properly
+    explanation_en: Confirming the second floor worked isolated the issue strictly to the third-floor switch.
+    explanation_tr: İkinci katın sorunsuz çalıştığını doğrulayarak sorunu üçüncü kat anahtarına daralttı.
+  topic_tags:
+  - it-support
+  - wifi
+  - troubleshooting
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.a2.ordering-annual-stationery-discount
+  title: Requesting a Bulk Stationery Discount
+  cefr_level: A2
+  category: negotiation
+  scenario_context: Office manager Defne speaks with stationery supplier David about lowering unit prices on an annual paper
+    and notebook order.
+  speakers:
+  - id: defne
+    name: Defne
+    role: Office Manager
+    accent: Turkish
+  - id: david
+    name: David
+    role: Account Representative
+    accent: American
+  audio_ref: audio/listening/a2_ordering_annual_stationery_discount.mp3
+  duration_seconds: 57
+  transcript_items:
+  - index: 1
+    speaker_id: defne
+    start_ms: 0
+    end_ms: 6683
+    text_en: Hello David, thank you for sending the quote for our notebooks, pens, and printer paper.
+    text_tr: Merhaba David, defterlerimiz, kalemlerimiz ve yazıcı kağıtlarımız için teklifi gönderdiğin teşekkürler.
+  - index: 2
+    speaker_id: david
+    start_ms: 7083
+    end_ms: 14177
+    text_en: You are welcome, Defne. Do those standard catalog numbers fit your office plan?
+    text_tr: Rica ederim Defne. Bu standart katalog rakamları ofis planınıza uyuyor mu?
+  - index: 3
+    speaker_id: defne
+    start_ms: 14577
+    end_ms: 20735
+    text_en: We like the paper quality, yet we are ordering for all four floors together this year.
+    text_tr: Kağıt kalitesini beğendik ama bu yıl dört katın tamamı için birlikte sipariş veriyoruz.
+  - index: 4
+    speaker_id: david
+    start_ms: 21135
+    end_ms: 27654
+    text_en: Oh, combining four floors into one big pallet is much easier for our warehouse to pack.
+    text_tr: Aa, dört katı tek büyük palette birleştirmek depomuzun paketlemesi için çok daha kolay.
+  - index: 5
+    speaker_id: defne
+    start_ms: 28054
+    end_ms: 33638
+    text_en: Could you offer a ten percent bulk discount and free Tuesday delivery if we commit now?
+    text_tr: Şimdi onaylarsak yüzde on toplu alım indirimi ve ücretsiz salı teslimatı sunabilir misiniz?
+  - index: 6
+    speaker_id: david
+    start_ms: 34038
+    end_ms: 41351
+    text_en: I cannot go all the way to ten percent on paper, though I can give eight percent off everything plus free shipping.
+    text_tr: Kağıtta yüzde ona kadar çıkamam ama her şeyde yüzde sekiz indirim ve ücretsiz kargo verebilirim.
+  - index: 7
+    speaker_id: defne
+    start_ms: 41751
+    end_ms: 48794
+    text_en: Eight percent with free shipping works nicely for our quarterly budget. When will boxes arrive?
+    text_tr: Ücretsiz kargo ile yüzde sekiz üç aylık bütçemize güzel uyuyor. Kutular ne zaman ulaşır?
+  - index: 8
+    speaker_id: david
+    start_ms: 49194
+    end_ms: 56128
+    text_en: Next Tuesday morning at nine sharp. Send the signed form today and I will lock that rate.
+    text_tr: Gelecek salı sabahı tam dokuzda. İmzalı formu bugün gönderin, fiyatı kilitleyeyim.
+  key_vocabulary:
+  - word: discount
+    context_note_tr: toplu alım indirimi
+  - word: quote
+    context_note_tr: fiyat teklifi
+  - word: delivery
+    context_note_tr: teslimat ücreti ve süreci
+  comprehension_questions:
+  - id: q_listening_a2_ordering-annual-stationery-discount_01
+    question_en: Why does Defne expect a lower price than the standard catalog quote?
+    options:
+    - Competitors gave away free printer paper
+    - Her office is ordering together for all four floors at once
+    - She wants lower-grade thin recycled paper
+    - The notebooks arrived late last Tuesday
+    correct_answer: Her office is ordering together for all four floors at once
+    explanation_en: Defne explains they are combining supplies for all four floors into one bulk order.
+    explanation_tr: Defne bu yıl dört katın tamamı için toplu sipariş verdiklerini açıklar.
+  - id: q_listening_a2_ordering-annual-stationery-discount_02
+    question_en: Why does David appreciate packing one combined order?
+    options:
+    - Pens weigh less than shipping cartons
+    - Packing one big pallet is much simpler for his warehouse
+    - Tuesdays have no traffic near the office
+    - Quarterly forms eliminate invoice writing
+    correct_answer: Packing one big pallet is much simpler for his warehouse
+    explanation_en: David notes combining four floors onto one large pallet is much easier to pack.
+    explanation_tr: David dört katı tek büyük palette toplamanın depo için çok daha kolay olduğunu belirtir.
+  - id: q_listening_a2_ordering-annual-stationery-discount_03
+    question_en: What exact discount does David agree to offer?
+    options:
+    - Eight percent off everything plus free delivery
+    - Ten percent off notebooks only
+    - Fifteen percent off next year's order
+    - Free pens without any shipping discount
+    correct_answer: Eight percent off everything plus free delivery
+    explanation_en: David compromises at eight percent off the whole order plus free shipping.
+    explanation_tr: David her şeyde yüzde sekiz indirim ve ücretsiz kargo ile anlaşır.
+  - id: q_listening_a2_ordering-annual-stationery-discount_04
+    question_en: When will the stationery shipment arrive?
+    options:
+    - Friday afternoon before five
+    - Tomorrow morning at eight
+    - Next Tuesday morning at nine
+    - Next month after quarterly close
+    correct_answer: Next Tuesday morning at nine
+    explanation_en: David confirms delivery next Tuesday morning at nine sharp.
+    explanation_tr: David teslimatın gelecek salı sabah tam dokuzda geleceğini söyler.
+  - id: q_listening_a2_ordering-annual-stationery-discount_05
+    question_en: What must Defne do today to secure the agreed price?
+    options:
+    - Send back the signed order form
+    - Cancel printer paper from the pallet
+    - Visit David's warehouse personally
+    - Pay two extra delivery drivers in cash
+    correct_answer: Send back the signed order form
+    explanation_en: David asks Defne to send the signed form today so he can lock the rate.
+    explanation_tr: David fiyatı sabitlemek için bugün imzalı formu göndermesini ister.
+  topic_tags:
+  - negotiation
+  - procurement
+  - supplies
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.a2.planning-website-banner-change
+  title: Updating the Homepage Notice Together
+  cefr_level: A2
+  category: stakeholder_alignment
+  scenario_context: Support lead Burak and web designer Hannah align on wording and placement for an upcoming holiday hours
+    banner.
+  speakers:
+  - id: burak
+    name: Burak
+    role: Customer Support Lead
+    accent: Turkish
+  - id: hannah
+    name: Hannah
+    role: Web Designer
+    accent: British
+  audio_ref: audio/listening/a2_planning_website_banner_change.mp3
+  duration_seconds: 58
+  transcript_items:
+  - index: 1
+    speaker_id: burak
+    start_ms: 0
+    end_ms: 8268
+    text_en: Hi Hannah, our phone line closes for the national holiday next Thursday. Can we add a notice online?
+    text_tr: Merhaba Hannah, telefon hattımız gelecek perşembe resmi tatil nedeniyle kapalı olacak. Siteye bir duyuru ekleyebilir
+      miyiz?
+  - index: 2
+    speaker_id: hannah
+    start_ms: 8668
+    end_ms: 16007
+    text_en: Sure, Burak. I can place a soft cream banner across the top of the homepage today.
+    text_tr: Elbette Burak. Bugün ana sayfanın üst kısmına yumuşak krem rengi bir duyuru şeridi koyabilirim.
+  - index: 3
+    speaker_id: burak
+    start_ms: 16407
+    end_ms: 23195
+    text_en: Great! Should we list all five regional office phone numbers right inside that box?
+    text_tr: Harika! Beş bölge ofisinin tüm telefon numaralarını o kutunun içine yazmalı mıyız?
+  - index: 4
+    speaker_id: hannah
+    start_ms: 23595
+    end_ms: 31349
+    text_en: That would look too crowded on smaller phones. Let us keep the sentence short and add a clean link instead.
+    text_tr: Küçük telefonlarda çok kalabalık görünür. Bunun yerine cümleyi kısa tutalım ve temiz bir bağlantı ekleyelim.
+  - index: 5
+    speaker_id: burak
+    start_ms: 31749
+    end_ms: 38187
+    text_en: You are right. Clicking through to the support hours page keeps the homepage tidy.
+    text_tr: Haklısın. Destek saatleri sayfasına bağlantı vermek ana sayfayı düzenli tutar.
+  - index: 6
+    speaker_id: hannah
+    start_ms: 38587
+    end_ms: 44666
+    text_en: When should the banner disappear automatically so customers do not see old holiday dates?
+    text_tr: Müşterilerin eski tatil tarihlerini görmemesi için duyuru otomatik olarak ne zaman kalkmalı?
+  - index: 7
+    speaker_id: burak
+    start_ms: 45066
+    end_ms: 50460
+    text_en: Friday morning at eight, right when our support team logs back online.
+    text_tr: Cuma sabahı sekizde, tam destek ekibimiz tekrar çevrimiçi olduğunda.
+  - index: 8
+    speaker_id: hannah
+    start_ms: 50860
+    end_ms: 57343
+    text_en: Scheduled! I will send you a test screenshot in ten minutes for final approval.
+    text_tr: Planlandı! Son onay için on dakika içinde sana bir test ekran görüntüsü göndereceğim.
+  key_vocabulary:
+  - word: banner
+    context_note_tr: sayfa üstündeki duyuru şeridi
+  - word: crowded
+    context_note_tr: kalabalık ve sıkışık tasarım
+  - word: link
+    context_note_tr: tıklanabilir bağlantı adresi
+  comprehension_questions:
+  - id: q_listening_a2_planning-website-banner-change_01
+    question_en: Why does Burak request a homepage banner?
+    options:
+    - The company website is shutting down permanently
+    - Hannah redesigned the logo colors this morning
+    - Five offices are moving to another city
+    - Customer phone support closes for next Thursday's holiday
+    correct_answer: Customer phone support closes for next Thursday's holiday
+    explanation_en: Burak notes the phone line closes for a national holiday next Thursday.
+    explanation_tr: Burak gelecek perşembe resmi tatil nedeniyle telefon desteğinin kapalı olacağını açıklar.
+  - id: q_listening_a2_planning-website-banner-change_02
+    question_en: Why does Hannah reject putting all five phone numbers inside the banner?
+    options:
+    - Regional offices changed numbers yesterday
+    - Burak forgot three office area codes
+    - Cream banners cannot hold digital digits
+    - Too much text would look crowded on mobile screens
+    correct_answer: Too much text would look crowded on mobile screens
+    explanation_en: Hannah warns five numbers look overcrowded on smaller phones and suggests a clean link instead.
+    explanation_tr: Hannah küçük ekranlarda kalabalık görüneceğini söyleyip bağlantı eklemeyi önerir.
+  - id: q_listening_a2_planning-website-banner-change_03
+    question_en: Where will the banner link take customers who want full details?
+    options:
+    - To an offline contact form
+    - To the company career listings
+    - To the support hours page
+    - To an external holiday calendar
+    correct_answer: To the support hours page
+    explanation_en: Burak agrees clicking through to the support hours page keeps the homepage tidy.
+    explanation_tr: Burak destek saatleri sayfasına giden bağlantının ana sayfayı temiz tuttuğunu onaylar.
+  - id: q_listening_a2_planning-website-banner-change_04
+    question_en: When is the banner scheduled to disappear automatically?
+    options:
+    - Thursday midnight before Friday
+    - Monday afternoon next week
+    - Friday morning at eight
+    - Ten minutes after testing
+    correct_answer: Friday morning at eight
+    explanation_en: Burak chooses Friday morning at eight when support agents return online.
+    explanation_tr: Burak destek ekibinin geri döndüğü cuma sabahı sekizde kalkmasını ister.
+  - id: q_listening_a2_planning-website-banner-change_05
+    question_en: What will Hannah send Burak in ten minutes?
+    options:
+    - Five updated office phone lines
+    - A test screenshot for final review
+    - Printed flyers for Thursday guests
+    - A report on support ticket numbers
+    correct_answer: A test screenshot for final review
+    explanation_en: Hannah promises to share a test screenshot in ten minutes for final approval.
+    explanation_tr: Hannah son onay için on dakika içinde test ekran görüntüsü göndereceğini söyler.
+  topic_tags:
+  - stakeholders
+  - design
+  - customer-support
+  related_ids: []
+  status: APPROVED
+  version: 1

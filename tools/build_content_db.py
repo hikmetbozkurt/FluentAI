@@ -25,7 +25,7 @@ try:
 except ImportError:
     from validate_content import ContentValidator
 
-DATABASE_SCHEMA_VERSION = 4
+DATABASE_SCHEMA_VERSION = 5
 
 CREATE_TABLES_SQL = """
 -- 1. Vocabulary Items Table
@@ -169,6 +169,25 @@ CREATE TABLE IF NOT EXISTS content_metadata (
     value TEXT NOT NULL
 );
 
+-- 10. Lexical Chunks & Sentence Patterns Table
+CREATE TABLE IF NOT EXISTS chunks (
+    id TEXT PRIMARY KEY NOT NULL,
+    chunk_en TEXT NOT NULL,
+    pattern_template TEXT NOT NULL,
+    cefr_level TEXT NOT NULL,
+    category TEXT NOT NULL,
+    intent_tr TEXT NOT NULL,
+    meaning_en TEXT NOT NULL,
+    turkish_trap_json TEXT NOT NULL,
+    blueprint_slots_json TEXT NOT NULL,
+    slot_variations_json TEXT NOT NULL,
+    related_vocab_ids_json TEXT NOT NULL,
+    related_grammar_ids_json TEXT NOT NULL,
+    topic_tags_json TEXT NOT NULL,
+    status TEXT NOT NULL,
+    version INTEGER NOT NULL DEFAULT 1
+);
+
 -- Performance Indexes
 CREATE INDEX IF NOT EXISTS idx_vocab_cefr ON vocab_items(cefr_level);
 CREATE INDEX IF NOT EXISTS idx_vocab_headword ON vocab_items(headword);
@@ -182,6 +201,8 @@ CREATE INDEX IF NOT EXISTS idx_listening_cefr ON listening_scenarios(cefr_level)
 CREATE INDEX IF NOT EXISTS idx_listening_category ON listening_scenarios(category);
 CREATE INDEX IF NOT EXISTS idx_speaking_cefr ON speaking_scenarios(cefr_level);
 CREATE INDEX IF NOT EXISTS idx_speaking_category ON speaking_scenarios(category);
+CREATE INDEX IF NOT EXISTS idx_chunks_cefr ON chunks(cefr_level);
+CREATE INDEX IF NOT EXISTS idx_chunks_category ON chunks(category);
 CREATE INDEX IF NOT EXISTS idx_relations_source ON content_relations(source_id);
 CREATE INDEX IF NOT EXISTS idx_relations_target ON content_relations(target_id);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_relations_unique ON content_relations(source_id, target_id, relation_type);
@@ -458,6 +479,42 @@ class ContentDatabaseBuilder:
                 )
                 speaking_inserted += 1
 
+            # Insert Lexical Chunks (sorted by id)
+            chunks_inserted = 0
+            for item in sorted(validator.chunk_items.values(), key=lambda x: x["id"]):
+                status = item.get("status", "APPROVED")
+                if status not in eligible_states:
+                    continue
+
+                cursor.execute(
+                    """
+                    INSERT INTO chunks (
+                        id, chunk_en, pattern_template, cefr_level, category,
+                        intent_tr, meaning_en, turkish_trap_json, blueprint_slots_json,
+                        slot_variations_json, related_vocab_ids_json, related_grammar_ids_json,
+                        topic_tags_json, status, version
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        item["id"],
+                        item["chunk_en"],
+                        item["pattern_template"],
+                        item["cefr_level"],
+                        item["category"],
+                        item["intent_tr"],
+                        item["meaning_en"],
+                        json.dumps(item["turkish_trap"], ensure_ascii=False),
+                        json.dumps(item["blueprint_slots"], ensure_ascii=False),
+                        json.dumps(item["slot_variations"], ensure_ascii=False),
+                        json.dumps(item.get("related_vocab_ids", []), ensure_ascii=False),
+                        json.dumps(item.get("related_grammar_ids", []), ensure_ascii=False),
+                        json.dumps(item.get("topic_tags", []), ensure_ascii=False),
+                        status,
+                        item.get("version", 1),
+                    ),
+                )
+                chunks_inserted += 1
+
             # Insert Topics (sorted by id)
             topics_inserted = 0
             for topic in sorted(validator.topic_items.values(), key=lambda x: x["id"]):
@@ -507,6 +564,7 @@ class ContentDatabaseBuilder:
                 ("reading_count", str(reading_inserted)),
                 ("listening_count", str(listening_inserted)),
                 ("speaking_count", str(speaking_inserted)),
+                ("chunks_count", str(chunks_inserted)),
                 ("topics_count", str(topics_inserted)),
                 ("relations_count", str(relations_inserted)),
             ]
@@ -534,6 +592,7 @@ class ContentDatabaseBuilder:
             print(f"  Reading articles:    {reading_inserted}")
             print(f"  Listening scenarios: {listening_inserted}")
             print(f"  Speaking scenarios:  {speaking_inserted}")
+            print(f"  Lexical chunks:      {chunks_inserted}")
             print(f"  Topics:              {topics_inserted}")
             print(f"  Relations:           {relations_inserted}")
             print("  Integrity:           OK (passed PRAGMA integrity_check)")

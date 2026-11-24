@@ -1,0 +1,636 @@
+- id: reading.b1.quarterly-department-budget
+  title: How Teams Plan a Quarterly Operating Budget
+  cefr_level: B1
+  category: finance_and_economics
+  summary_en: A clear walkthrough of fixed costs, variable growth expenses, and contingency buffers inside a quarterly department
+    budget.
+  summary_tr: Üç aylık bir departman bütçesinde sabit giderler, değişken büyüme harcamaları ve ihtiyat paylarının nasıl planlandığını
+    anlatan net bir rehber.
+  word_count: 274
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Separating Fixed Commitments From Flexible Spend
+    content_en: When managers draft a quarterly budget, the first rule is separating committed expenses from discretionary
+      requests. Fixed obligations—such as core cloud hosting, contracted vendor retainers, and full-time payroll—will occur
+      regardless of how fast new projects launch. Discretionary items, like external workshops, travel to industry conferences,
+      or experimental software trials, can be scaled up or postponed depending on revenue performance. Listing baseline commitments
+      first prevents teams from accidentally promising money that is already spoken for.
+    content_tr: Yöneticiler üç aylık bir bütçe taslağı hazırlarken ilk kural, taahhüt edilmiş giderleri isteğe bağlı taleplerden
+      ayırmaktır. Çekirdek bulut barındırma, sözleşmeli tedarikçi ücretleri ve tam zamanlı maaş bordrosu gibi sabit yükümlülükler
+      yeni projeler ne kadar hızlı başlarsa başlasın gerçekleşecektir. Dış eğitim atölyeleri, sektör konferansı seyahatleri
+      veya deneysel yazılım denemeleri gibi esnek kalemler ise gelir performansına göre artırılabilir veya ertelenebilir.
+      Temel yükümlülükleri önce listelemek ekiplerin halihazırda bağlanmış parayı yanlışlıkla vaat etmesini önler.
+  - paragraph_index: 2
+    title: Linking Forecast Spend to Operational Volume
+    content_en: Unlike static rent bills, several operational costs fluctuate alongside customer activity. Payment processing
+      fees, customer support tooling, and data bandwidth grow smoothly as more users adopt the product. Rather than guessing
+      a random dollar figure for next quarter, strong budget owners tie these estimates directly to projected unit drivers—such
+      as expected active accounts or monthly support tickets. Connecting forecasts to clear volume assumptions makes budget
+      discussions constructive when finance partners review the sheet.
+    content_tr: Sabit kira faturalarının aksine, çeşitli operasyonel maliyetler müşteri etkinliğiyle birlikte dalgalanır.
+      Ödeme işlem ücretleri, müşteri destek araçları ve veri bant genişliği daha fazla kullanıcı ürünü benimsedikçe düzenli
+      şekilde artar. Gelecek çeyrek için rastgele bir tutar tahmin etmek yerine güçlü bütçe sahipleri bu tahminleri beklenen
+      aktif hesaplar veya aylık destek talepleri gibi öngörülen birim etkenlere bağlar. Tahminleri net hacim varsayımlarına
+      dayandırmak finans ortakları tabloyu incelerken bütçe görüşmelerini yapıcı kılar.
+  - paragraph_index: 3
+    title: Reserving a Realistic Contingency Buffer
+    content_en: No quarter unfolds strictly according to the spreadsheet created in week one. Hardware fails unexpectedly,
+      regulatory filings require urgent legal review, or currency swings alter foreign supplier invoices. Leaving zero cushion
+      forces managers to cut valuable training mid-quarter whenever surprises arise. Keeping a modest contingency reserve
+      of five to eight percent provides calm flexibility without encouraging wasteful spending, provided drawdowns require
+      clear written justification.
+    content_tr: Hiçbir çeyrek, birinci haftada hazırlanan elektronik tabloya birebir uygun şekilde ilerlemez. Donanım beklenmedik
+      şekilde arızalanır, yasal bildirimler acil hukuk incelemesi gerektirir veya kur dalgalanmaları yabancı tedarikçi faturalarını
+      değiştirir. Sıfır tampon bırakmak, sürprizler çıktığında yöneticileri çeyrek ortasında değerli eğitimleri kesmeye zorlar.
+      Yüzde beş ila sekizlik mütevazı bir ihtiyat rezervi tutmak, harcama çekişlerinin net yazılı gerekçe gerektirmesi şartıyla
+      savurganlığı teşvik etmeden sakin bir esneklik sağlar.
+  - paragraph_index: 4
+    title: Running Monthly Variance Check-Ins
+    content_en: Once the quarter begins, treating the budget as a forgotten archive file wastes the planning effort. A brief
+      thirty-minute variance check after each monthly close reveals where actual spend drifted above or below expectations.
+      Sometimes underspending signals a stalled hiring plan or delayed product launch rather than genuine savings. Addressing
+      both overruns and delays early keeps department leaders aligned with company cash priorities.
+    content_tr: Çeyrek başladığında bütçeyi unutulmuş bir arşiv dosyası gibi görmek tüm planlama emeğini boşa çıkarır. Her
+      aylık kapanıştan sonra yapılan otuz dakikalık kısa bir sapma kontrolü, gerçekleşen harcamanın nerede beklentilerin üzerine
+      çıktığını veya altında kaldığını gösterir. Bazen düşük harcama gerçek bir tasarruftan ziyade duraksamış bir işe alım
+      planına veya gecikmiş bir ürün lansmanına işaret eder. Hem bütçe aşımlarını hem gecikmeleri erken ele almak departman
+      liderlerini şirket nakit öncelikleriyle uyumlu tutar.
+  vocabulary_annotations:
+  - word: discretionary
+    context_definition_en: optional spending that can be adjusted or delayed
+    context_meaning_tr: isteğe bağlı, esnek
+  - word: fluctuate
+    context_definition_en: to rise and fall irregularly according to demand
+    context_meaning_tr: dalgalanmak
+  - word: contingency
+    context_definition_en: funds set aside specifically for unexpected events
+    context_meaning_tr: beklenmedik durum payı, ihtiyat
+  - word: variance
+    context_definition_en: the measured gap between planned budget and actual spend
+    context_meaning_tr: bütçe sapması
+  comprehension_questions:
+  - id: q_reading_b1_quarterly-department-budget_01
+    question_en: Why should committed fixed costs appear first when building a budget?
+    options:
+    - To prevent promising funds that are already obligated
+    - To increase spending on conference travel
+    - To eliminate all full-time payroll items
+    - To stop vendors from issuing monthly invoices
+    correct_answer: To prevent promising funds that are already obligated
+    explanation_en: Paragraph 1 explains listing baseline commitments first stops teams from promising already-committed funds.
+    explanation_tr: 1. paragraf temel yükümlülükleri önce listelemenin halihazırda bağlı parayı vaat etmeyi önlediğini anlatır.
+  - id: q_reading_b1_quarterly-department-budget_02
+    question_en: How do skilled budget owners estimate variable operational costs?
+    options:
+    - By linking estimates to projected unit metrics like active accounts
+    - By multiplying random weekly totals by four
+    - By ignoring growth in support ticket volume
+    - By copying exact rent figures from five years ago
+    correct_answer: By linking estimates to projected unit metrics like active accounts
+    explanation_en: Paragraph 2 says estimates should tie directly to unit drivers such as active accounts or tickets.
+    explanation_tr: 2. paragraf tahminlerin aktif hesaplar veya destek talepleri gibi birim etkenlere bağlanması gerektiğini
+      belirtir.
+  - id: q_reading_b1_quarterly-department-budget_03
+    question_en: What condition keeps a contingency reserve from inviting careless spending?
+    options:
+    - Spending any leftover reserve on holiday parties
+    - Hiding the reserve from finance teams
+    - Requiring written justification whenever funds are drawn
+    - Setting the buffer above fifty percent
+    correct_answer: Requiring written justification whenever funds are drawn
+    explanation_en: Paragraph 3 notes a 5–8% reserve works well when drawdowns require clear written justification.
+    explanation_tr: 3. paragraf çekişlerin açık yazılı gerekçe gerektirmesi durumunda yüzde 5-8 rezervin verimli çalıştığını
+      belirtir.
+  - id: q_reading_b1_quarterly-department-budget_04
+    question_en: What can spending noticeably below budget actually indicate?
+    options:
+    - Delayed hiring or postponed project milestones
+    - Automatic currency appreciation
+    - Complete elimination of cloud infrastructure
+    - Guaranteed permanent cost efficiency
+    correct_answer: Delayed hiring or postponed project milestones
+    explanation_en: Paragraph 4 points out underspending often reflects stalled hiring or delayed launches rather than true
+      savings.
+    explanation_tr: 4. paragraf düşük harcamanın gerçek tasarruf yerine duraksayan işe alım veya geciken lansmana işaret edebileceğini
+      söyler.
+  - id: q_reading_b1_quarterly-department-budget_05
+    question_en: How long should monthly variance check-ins typically take?
+    options:
+    - Only ten seconds via chat
+    - Three full business days per team
+    - Around thirty minutes after monthly close
+    - Once every two fiscal years
+    correct_answer: Around thirty minutes after monthly close
+    explanation_en: Paragraph 4 explicitly mentions a brief thirty-minute variance check after each monthly close.
+    explanation_tr: 4. paragraf her aylık kapanıştan sonra otuz dakikalık kısa bir sapma kontrolünden bahseder.
+  topic_tags:
+  - budgeting
+  - planning
+  - corporate-finance
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b1.blameless-postmortem-habits
+  title: Why Blameless Postmortems Build Stronger Systems
+  cefr_level: B1
+  category: engineering_culture
+  summary_en: How focusing incident reviews on system safeguards rather than individual faults encourages honest reporting
+    and prevents repeat outages.
+  summary_tr: Olay incelemelerini bireysel suçlama yerine sistem güvencelerine odaklamanın dürüst bildirimi nasıl teşvik ettiğini
+    ve tekrar eden kesintileri nasıl önlediğini anlatır.
+  word_count: 245
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: When Fear Hides Operational Truth
+    content_en: Every software organization eventually faces an outage where checkout buttons freeze or mobile log-ins fail
+      during busy hours. If leadership immediately demands to know who ran the wrong command, engineers naturally grow defensive
+      and share only minimal facts. Critical context about missing alerts, confusing scripts, or rushed deadlines stays buried
+      out of self-protection. Without honest details, the exact same mistake remains trapped inside the system waiting for
+      another stressed teammate.
+    content_tr: Her yazılım kuruluşu eninde sonunda yoğun saatlerde ödeme düğmelerinin donduğu veya mobil oturumların kapandığı
+      bir kesintiyle karşılaşır. Yönetim hemen yanlış komutu kimin çalıştırdığını öğrenmek isterse, mühendisler doğal olarak
+      savunmaya geçer ve yalnızca en asgari bilgileri paylaşır. Eksik alarmlar, kafa karıştırıcı betikler veya sıkışık teslim
+      tarihleri hakkındaki kritik bağlam kendini koruma dürtüsüyle gizli kalır. Dürüst ayrıntılar olmadan aynı hata, başka
+      bir stresli ekip arkadaşını bekleyerek sistemin içinde gizlenmeye devam eder.
+  - paragraph_index: 2
+    title: Assuming Good Intent and Inspecting Safeguards
+    content_en: 'A blameless postmortem begins with a straightforward premise: the engineer on call acted rationally with
+      the information and tools available at that moment. Rather than asking why one person clicked deploy, the group traces
+      why a single manual click could delete production configuration without warning. Shifting curiosity toward missing safety
+      checks turns awkward blame sessions into practical engineering investigations.'
+    content_tr: 'Suçlamasız bir olay sonrası değerlendirme yalın bir ön kabulle başlar: nöbetteki mühendis o an elindeki bilgi
+      ve araçlarla mantıklı şekilde hareket etmiştir. Ekip tek bir kişinin neden dağıtım düğmesine bastığını sormak yerine,
+      tek bir manuel tıklamanın uyarı vermeden canlı yapılandırmayı nasıl silebildiğini inceler. Merakı eksik güvenlik kontrollerine
+      yönlendirmek gergin suçlama oturumlarını pratik mühendislik araştırmalarına dönüştürür.'
+  - paragraph_index: 3
+    title: Capturing Timeline Facts While Fresh
+    content_en: Strong review documents record an objective timeline before memories fade. Authors gather alert timestamps,
+      graph screenshots, customer impact numbers, and the exact recovery actions that restored normal traffic. Distinguishing
+      what the team knew at ten past four from what became clear an hour later helps reviewers spot slow diagnostic tools.
+      Clear metrics also keep emotional exaggerations out of technical summaries.
+    content_tr: Güçlü değerlendirme belgeleri, anılar solmadan nesnel bir zaman çizelgesi kaydeder. Yazarlar alarm zaman damgalarını,
+      grafik ekran görüntülerini, müşteri etki sayılarını ve normal trafiği geri getiren kesin kurtarma adımlarını toplar.
+      Saat dörtü on geçe bilinenlerle bir saat sonra netleşenleri ayırmak inceleyicilerin yavaş tanı araçlarını fark etmesine
+      yardımcı olur. Net metrikler ayrıca teknik özetleri duygusal abartılardan uzak tutar.
+  - paragraph_index: 4
+    title: Finishing Concrete Follow-Up Tasks
+    content_en: Even the fairest analysis accomplishes nothing if action items vanish into an unmonitored backlog. Teams keep
+      follow-up lists concise—usually two to four high-value fixes assigned clear owners and completion targets. Adding automated
+      pre-flight checks or clearer confirmation prompts closes the gap permanently. When teams celebrate resolved risks publicly,
+      reporting early near-misses becomes part of daily pride.
+    content_tr: Eylem maddeleri izlenmeyen bir iş listesinde kaybolursa en adil analiz bile hiçbir şey başaramaz. Ekipler
+      takip listelerini öz tutar; genellikle net sorumlulara ve bitiş hedeflerine atanmış iki ila dört yüksek değerli düzeltme
+      seçer. Otomatik ön kontroller veya daha net onay uyarıları eklemek açığı kalıcı olarak kapatır. Ekipler çözülen riskleri
+      açıkça kutladığında, erken ucuz atlatılan durumları bildirmek günlük gururun parçası haline gelir.
+  vocabulary_annotations:
+  - word: outage
+    context_definition_en: a period when a digital service stops working for users
+    context_meaning_tr: hizmet kesintisi
+  - word: defensive
+    context_definition_en: acting protective rather than open when mistakes happen
+    context_meaning_tr: savunmacı
+  - word: premise
+    context_definition_en: a founding assumption guiding how a review is run
+    context_meaning_tr: temel varsayım, öncül
+  - word: timeline
+    context_definition_en: a chronological record of events and timestamps
+    context_meaning_tr: zaman çizelgesi
+  comprehension_questions:
+  - id: q_reading_b1_blameless-postmortem-habits_01
+    question_en: What risk arises when managers hunt for someone to blame after an outage?
+    options:
+    - Code deployments stop forever across teams
+    - Engineers hide context and underlying tool flaws persist
+    - Customers receive automatic refunds instantly
+    - Monitoring graphs load twice as fast
+    correct_answer: Engineers hide context and underlying tool flaws persist
+    explanation_en: Paragraph 1 explains that fear makes staff defensive, leaving missing alerts or flawed scripts unresolved.
+    explanation_tr: 1. paragraf korkunun çalışanları savunmaya ittiğini ve eksik alarmlarla hatalı betiklerin çözümsüz kaldığını
+      açıklar.
+  - id: q_reading_b1_blameless-postmortem-habits_02
+    question_en: What core assumption guides a blameless postmortem?
+    options:
+    - Every outage happens solely due to laziness
+    - Human operators should never touch computers
+    - On-call engineers made reasonable choices with what they saw then
+    - Production scripts never contain dangerous defaults
+    correct_answer: On-call engineers made reasonable choices with what they saw then
+    explanation_en: Paragraph 2 defines the premise that engineers acted rationally given the tools and facts available at
+      that time.
+    explanation_tr: 2. paragraf mühendislerin o anki araç ve bilgilerle rasyonel davrandığı ön kabulünü tanımlar.
+  - id: q_reading_b1_blameless-postmortem-habits_03
+    question_en: Why distinguish what responders knew early versus an hour later?
+    options:
+    - To erase server logs before legal review
+    - To assign blame evenly across departments
+    - To expose slow alerts or unclear diagnostic dashboards
+    - To calculate overtime bonuses for chat moderators
+    correct_answer: To expose slow alerts or unclear diagnostic dashboards
+    explanation_en: Paragraph 3 says comparing earlier vs later knowledge helps spot slow diagnostic tools.
+    explanation_tr: 3. paragraf erken ve geç bilinenleri karşılaştırmanın yavaş tanı araçlarını ortaya çıkarmaya yaradığını
+      belirtir.
+  - id: q_reading_b1_blameless-postmortem-habits_04
+    question_en: How many follow-up fixes does Paragraph 4 recommend focusing on?
+    options:
+    - Zero tasks unless revenue drops sharply
+    - Fifty minor formatting changes at once
+    - Only non-technical office seating tweaks
+    - Two to four high-impact fixes with clear owners
+    correct_answer: Two to four high-impact fixes with clear owners
+    explanation_en: Paragraph 4 advises concise lists of two to four high-value fixes with explicit owners.
+    explanation_tr: 4. paragraf net sorumlulara sahip iki ila dört yüksek değerli düzeltmeden oluşan öz listeleri önerir.
+  - id: q_reading_b1_blameless-postmortem-habits_05
+    question_en: What cultural shift occurs when fixed risks are celebrated openly?
+    options:
+    - On-call rotations no longer need dashboards
+    - Junior staff stop attending architecture calls
+    - Engineers feel safe reporting close calls before real failures
+    - Teams cancel all automated pre-flight checks
+    correct_answer: Engineers feel safe reporting close calls before real failures
+    explanation_en: Paragraph 4 explains celebrating solved risks encourages early reporting of near-misses.
+    explanation_tr: 4. paragraf çözülen riskleri kutlamanın erken ucuz atlatılan vakaların bildirilmesini teşvik ettiğini
+      belirtir.
+  topic_tags:
+  - reliability
+  - postmortems
+  - engineering-culture
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b1.delegating-first-projects
+  title: Learning to Delegate Routine Project Tasks
+  cefr_level: B1
+  category: leadership_and_management
+  summary_en: Why new team leads must shift from doing every familiar task themselves to defining outcomes and trusting teammates.
+  summary_tr: Yeni ekip liderlerinin neden her tanıdık işi kendileri yapmayı bırakıp net hedefler tanımlamaya ve ekibe güvenmeye
+    geçmesi gerektiğini açıklar.
+  word_count: 229
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: The Trap of Doing Everything Yourself
+    content_en: Newly promoted team leads often earned their roles by solving tough problems faster than anyone else. When
+      pressure rises, however, holding onto every familiar report or vendor email becomes a hidden bottleneck. Completing
+      tasks personally feels efficient for an afternoon, yet the whole team stalls waiting for one overloaded calendar. Letting
+      go of routine ownership creates breathing room for higher-impact planning.
+    content_tr: Yeni terfi eden ekip liderleri genellikle zor sorunları herkesten hızlı çözerek bu rolleri kazanmıştır. Ancak
+      baskı arttığında her tanıdık raporu veya tedarikçi e-postasını elinde tutmak gizli bir darboğaza dönüşür. İşleri bizzat
+      tamamlamak bir öğleden sonra için verimli hissettirir, fakat tüm ekip tek bir aşırı yüklü takvimi beklerken duraklar.
+      Rutin sahipliği devretmek yüksek etkili planlama için nefes alanı yaratır.
+  - paragraph_index: 2
+    title: Handing Over Context Instead of Step-by-Step Orders
+    content_en: Good delegation means transferring real understanding, not merely offloading unpleasant chores. Explain why
+      the deliverable matters to customers, share helpful past templates, and define clear quality criteria before anyone
+      starts. Resist the urge to dictate every tiny font choice or meeting phrasing unless compliance strictly requires it.
+      Defining clear boundaries leaves colleagues genuine room to think creatively.
+    content_tr: İyi yetki devri yalnızca sevimsiz angaryaları aktarmak değil, gerçek anlayışı devretmek anlamına gelir. Teslimatın
+      müşteriler için neden önemli olduğunu açıklayın, yararlı geçmiş şablonları paylaşın ve kimse başlamadan önce net kalite
+      ölçütlerini tanımlayın. Uyumluluk kesinlikle gerektirmedikçe her küçük yazı tipi seçimini veya toplantı cümlesini dikte
+      etme dürtüsüne direnin. Net sınırlar çizmek meslektaşlara yaratıcı düşünmeleri için gerçek alan bırakır.
+  - paragraph_index: 3
+    title: Scheduling Calm Midpoint Checkpoints
+    content_en: Stepping back does not mean disappearing until the final deadline arrives. Agree upfront on a brief midpoint
+      check—for example, reviewing an early outline two days before delivery. This rhythm lets new owners ask questions safely
+      without feeling watched hourly by a nervous boss. Spotting wrong assumptions halfway avoids awkward late-night rescues
+      and preserves both confidence and quality.
+    content_tr: Geri çekilmek, son teslim tarihi gelene kadar ortadan kaybolmak demek değildir. En baştan kısa bir ara kontrol
+      noktası üzerinde anlaşın; örneğin teslimattan iki gün önce erken bir taslağı inceleyin. Bu ritim yeni sorumluların gergin
+      bir yönetici tarafından saat başı izleniyormuş gibi hissetmeden güvenle soru sormasını sağlar. Yanlış varsayımları yarı
+      yolda fark etmek son gece kurtarma telaşını önler ve hem özgüveni hem kaliteyi korur.
+  - paragraph_index: 4
+    title: Accepting Different Paths to Solid Results
+    content_en: Perhaps the hardest shift is accepting that a teammate's solution may look different from yours yet still
+      succeed cleanly. Minor stylistic preferences should never trigger complete rewrites that crush a colleague's motivation.
+      Giving public credit when delegated projects succeed accelerates skill growth across the entire department and builds
+      the next generation of confident leads.
+    content_tr: Belki de en zor değişim, bir ekip arkadaşının çözümünün sizinkinden farklı görünse bile başarıyla sonuçlanabileceğini
+      kabul etmektir. Küçük üslup tercihleri asla bir meslektaşın motivasyonunu kıran baştan yazımlara yol açmamalıdır. Devredilen
+      projeler başarılı olduğunda açıkça takdir sunmak tüm departmanda beceri gelişimini hızlandırır ve gelecek özgüvenli
+      lider kuşağını yetiştirir.
+  vocabulary_annotations:
+  - word: bottleneck
+    context_definition_en: a single point that slows down work for an entire group
+    context_meaning_tr: darboğaz
+  - word: delegation
+    context_definition_en: assigning responsibility and authority for a task to someone else
+    context_meaning_tr: yetki devri
+  - word: deliverable
+    context_definition_en: a concrete project output expected by stakeholders or customers
+    context_meaning_tr: teslimat çıktısı
+  - word: credit
+    context_definition_en: public recognition given for someone's successful contribution
+    context_meaning_tr: takdir, övgü
+  comprehension_questions:
+  - id: q_reading_b1_delegating-first-projects_01
+    question_en: Why do newly promoted leads often struggle to share routine tasks?
+    options:
+    - Doing tasks themselves feels faster in the short term
+    - Teammates are forbidden from reading emails
+    - Company software blocks multiple user logins
+    - Projects never involve strict deadlines
+    correct_answer: Doing tasks themselves feels faster in the short term
+    explanation_en: Paragraph 1 observes that completing familiar work personally feels efficient briefly, even while creating
+      a bottleneck.
+    explanation_tr: 1. paragraf tanıdık işleri bizzat yapmanın kısa vadede verimli hissettirdiğini ancak darboğaz yarattığını
+      açıklar.
+  - id: q_reading_b1_delegating-first-projects_02
+    question_en: What distinguishes genuine delegation from dumping chores?
+    options:
+    - Keeping past templates hidden so staff improvise
+    - Assigning tasks without explaining deadlines
+    - Explaining customer impact and clear success criteria upfront
+    - Choosing every font and exact wording yourself
+    correct_answer: Explaining customer impact and clear success criteria upfront
+    explanation_en: Paragraph 2 emphasizes explaining why the work matters, sharing templates, and defining quality criteria.
+    explanation_tr: 2. paragraf işin neden önemli olduğunu açıklamayı, şablonları paylaşmayı ve kalite ölçütlerini tanımlamayı
+      vurgular.
+  - id: q_reading_b1_delegating-first-projects_03
+    question_en: How do agreed midpoint checkpoints support teammate confidence?
+    options:
+    - They surface questions early without constant micromanagement
+    - They cancel final quality checks completely
+    - They move deadlines backward automatically
+    - They prove employees need hourly supervision
+    correct_answer: They surface questions early without constant micromanagement
+    explanation_en: Paragraph 3 explains midpoint checks catch misunderstandings early without feeling watched every hour.
+    explanation_tr: 3. paragraf ara kontrollerin saatlik denetim hissi vermeden yanlış varsayımları erken yakaladığını anlatır.
+  - id: q_reading_b1_delegating-first-projects_04
+    question_en: Why should leads avoid rewriting a teammate's work over tiny style differences?
+    options:
+    - Unnecessary rewrites discourage ownership and motivation
+    - Rewriting prevents anyone from receiving credit
+    - Style changes break server spreadsheets
+    - Customers always prefer disorganized reports
+    correct_answer: Unnecessary rewrites discourage ownership and motivation
+    explanation_en: Paragraph 4 warns that minor stylistic rewrites crush colleague motivation.
+    explanation_tr: 4. paragraf küçük üslup nedenleriyle yapılan baştan yazımların çalışma motivasyonunu kırdığını uyarır.
+  - id: q_reading_b1_delegating-first-projects_05
+    question_en: What long-term benefit comes from publicly crediting successful teammates?
+    options:
+    - It transfers payroll authority to customers
+    - It builds department skills and prepares future leaders
+    - It lowers quarterly cloud hosting expenses
+    - It removes the need for onboarding notes
+    correct_answer: It builds department skills and prepares future leaders
+    explanation_en: Paragraph 4 concludes that public credit accelerates skill growth and develops future leads.
+    explanation_tr: 4. paragraf açık takdirin beceri gelişimini hızlandırdığını ve gelecekteki liderleri yetiştirdiğini belirtir.
+  topic_tags:
+  - delegation
+  - leadership
+  - coaching
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b1.pricing-tiers-for-b2b-tools
+  title: How Software Companies Design Tiered Pricing
+  cefr_level: B1
+  category: business_strategy
+  summary_en: How B2B software vendors structure starter, growth, and enterprise plans around buyer needs rather than arbitrary
+    feature limits.
+  summary_tr: Kurumsal yazılım şirketlerinin başlangıç, büyüme ve kurumsal paketleri keyfi kısıtlar yerine müşteri ihtiyaçlarına
+    göre nasıl kurguladığını anlatır.
+  word_count: 241
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Matching Value to Customer Size
+    content_en: Selling one flat price to every business rarely works well in commercial software. A five-person design agency
+      cannot afford the same contract as a bank employing three thousand analysts, yet charging everyone ten dollars leaves
+      crucial enterprise support unfunded. Most vendors therefore organize offers into three distinct tiers—often Starter,
+      Growth, and Enterprise. Each tier aims to reflect the actual business value different buyers gain.
+    content_tr: Ticari yazılımda her işletmeye tek bir sabit fiyat uygulamak nadiren iyi sonuç verir. Beş kişilik bir tasarım
+      ajansı üç bin analist çalıştıran bir bankayla aynı sözleşmeyi karşılayamaz, ancak herkesten on dolar almak kritik kurumsal
+      desteği finansmansız bırakır. Bu nedenle çoğu üretici teklifleri genellikle Başlangıç, Büyüme ve Kurumsal olmak üzere
+      üç ayrı katmanda düzenler. Her katman farklı alıcıların elde ettiği gerçek iş değerini yansıtmayı hedefler.
+  - paragraph_index: 2
+    title: Choosing a Natural Usage Metric
+    content_en: Behind the package names sits a pricing metric—the unit that scales as a customer grows. Seat-based pricing
+      charges per active employee, whereas usage pricing meters monthly invoices processed, gigabytes stored, or automated
+      messages delivered. Selecting the wrong unit frustrates customers when inviting read-only colleagues triggers expensive
+      upgrades. When the billing metric aligns naturally with customer success, upgrades feel earned rather than punitive.
+    content_tr: Paket adlarının arkasında, müşteri büyüdükçe ölçeklenen birim olan bir fiyatlandırma metriği yer alır. Koltuk
+      bazlı fiyatlandırma aktif çalışan başına ücretlendirirken, kullanım bazlı fiyatlandırma işlenen aylık faturaları, depolanan
+      gigabaytları veya gönderilen otomatik mesajları ölçer. Yanlış birim seçmek, salt okunur meslektaşları davet etmenin
+      bile pahalı yükseltmeleri tetiklediği durumlarda müşterileri kızdırır. Faturalandırma metriği müşteri başarısıyla doğal
+      olarak örtüştüğünde üst pakete geçiş cezalandırıcı değil hak edilmiş hissedilir.
+  - paragraph_index: 3
+    title: Keeping Security Essentials Unblocked
+    content_en: 'Historically, some software vendors placed basic security tools like single sign-on exclusively inside top-priced
+      contracts. Security buyers increasingly reject paying steep surcharges merely to protect employee logins safely. Forward-looking
+      companies instead reserve enterprise tiers for genuine scale requirements: dedicated compliance logs, custom data residency,
+      multi-region backups, and guaranteed response times. Separating basic safety from advanced governance earns stronger
+      long-term goodwill.'
+    content_tr: 'Geçmişte bazı yazılım satıcıları tek oturum açma gibi temel güvenlik araçlarını yalnızca en pahalı sözleşmelerin
+      içine koyuyordu. Güvenlik alıcıları artık yalnızca çalışan girişlerini korumak için yüksek ek ücretler ödemeyi giderek
+      daha fazla reddediyor. İleri görüşlü şirketler ise kurumsal katmanları gerçek ölçek gereksinimlerine ayırır: özel uyumluluk
+      günlükleri, özel veri yerleşimi, çok bölgeli yedeklemeler ve garantili yanıt süreleri. Temel güvenliği gelişmiş yönetişimden
+      ayırmak uzun vadede daha güçlü bir güven kazanır.'
+  - paragraph_index: 4
+    title: Making Package Comparisons Effortless
+    content_en: Even clever pricing fails if buyers require a spreadsheet just to calculate next month's bill. Cluttered comparison
+      grids filled with forty obscure checkboxes push impatient prospects away before they start a trial. Highlighting four
+      meaningful differences per tier and explaining upgrade paths clearly shortens sales cycles and builds trust right from
+      the public pricing page.
+    content_tr: Alıcılar gelecek ayın faturasını hesaplamak için bile elektronik tabloya ihtiyaç duyarsa en akıllı fiyatlandırma
+      dahi başarısız olur. Kırk belirsiz onay kutusuyla doldurulmuş karmaşık karşılaştırma tabloları sabırsız adayları daha
+      deneme başlatmadan uzaklaştırır. Katman başına dört anlamlı farkı öne çıkarmak ve yükseltme yollarını net açıklamak
+      satış döngülerini kısaltır ve daha herkese açık fiyat sayfasından güven inşa eder.
+  vocabulary_annotations:
+  - word: tier
+    context_definition_en: a packaged pricing level designed for a specific customer segment
+    context_meaning_tr: fiyat katmanı, paket seviyesi
+  - word: punitive
+    context_definition_en: feeling like an unfair penalty rather than fair value
+    context_meaning_tr: cezalandırıcı
+  - word: governance
+    context_definition_en: formal oversight rules ensuring security and regulatory compliance
+    context_meaning_tr: yönetişim
+  - word: prospect
+    context_definition_en: a potential business customer considering purchasing a product
+    context_meaning_tr: potansiyel müşteri
+  comprehension_questions:
+  - id: q_reading_b1_pricing-tiers-for-b2b-tools_01
+    question_en: Why do B2B software firms rarely rely on a single flat price for everyone?
+    options:
+    - Five-person agencies require custom multi-region backups
+    - Small studios and huge enterprises receive vastly different business value
+    - Enterprise clients prefer paper invoices over software
+    - Government laws prohibit charging ten dollars monthly
+    correct_answer: Small studios and huge enterprises receive vastly different business value
+    explanation_en: Paragraph 1 contrasts small agencies with large banks, showing different buyers gain different scale value.
+    explanation_tr: 1. paragraf küçük ajanslarla büyük bankaları karşılaştırarak farklı ölçeklerde farklı değer oluştuğunu
+      gösterir.
+  - id: q_reading_b1_pricing-tiers-for-b2b-tools_02
+    question_en: When does a per-seat pricing metric backfire on customer sentiment?
+    options:
+    - When the software offers a transparent discount
+    - When invoices are processed automatically
+    - When adding occasional read-only viewers triggers steep fees
+    - When storage capacity increases for free
+    correct_answer: When adding occasional read-only viewers triggers steep fees
+    explanation_en: Paragraph 2 warns that charging full rates to invite read-only teammates frustrates buyers.
+    explanation_tr: 2. paragraf salt okunur kullanıcı eklemenin pahalı yükseltmelere yol açmasının müşterileri bunalttığını
+      anlatır.
+  - id: q_reading_b1_pricing-tiers-for-b2b-tools_03
+    question_en: Which capabilities rightly belong inside Enterprise contracts?
+    options:
+    - Audit logs, data residency controls, and response guarantees
+    - Basic password changes and login encryption
+    - Changing interface dark mode preferences
+    - Hiding public documentation from Starter users
+    correct_answer: Audit logs, data residency controls, and response guarantees
+    explanation_en: Paragraph 3 points to compliance logs, data residency, multi-region backups, and SLAs as genuine enterprise
+      value.
+    explanation_tr: 3. paragraf uyumluluk günlükleri, veri yerleşimi ve yanıt garantilerini kurumsal değer olarak sıralar.
+  - id: q_reading_b1_pricing-tiers-for-b2b-tools_04
+    question_en: How do overly crowded comparison tables hurt sales conversions?
+    options:
+    - Too many obscure checkboxes overwhelm and drive away prospects
+    - Buyers prefer hidden prices via phone calls only
+    - Visual tables increase server hosting costs
+    - Short grids fail to show currency symbols
+    correct_answer: Too many obscure checkboxes overwhelm and drive away prospects
+    explanation_en: Paragraph 4 states cluttered tables with forty checkboxes push impatient buyers away before trialing.
+    explanation_tr: 4. paragraf kırk onay kutulu karmaşık tabloların adayları daha deneme aşamasından önce uzaklaştırdığını
+      belirtir.
+  - id: q_reading_b1_pricing-tiers-for-b2b-tools_05
+    question_en: What number of clear differences per tier makes comparison effective?
+    options:
+    - At least forty technical items
+    - One vague tagline without limits
+    - Zero visible bullet points
+    - Around four meaningful distinctions
+    correct_answer: Around four meaningful distinctions
+    explanation_en: Paragraph 4 recommends highlighting four meaningful differences per tier.
+    explanation_tr: 4. paragraf katman başına dört anlamlı farkın vurgulanmasını önerir.
+  topic_tags:
+  - pricing
+  - b2b-saas
+  - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b1.practical-two-factor-security
+  title: Making Hardware Keys Routine Across Remote Offices
+  cefr_level: B1
+  category: technology
+  summary_en: Why companies are moving beyond SMS verification codes toward phishing-resistant hardware security keys for
+    distributed staff.
+  summary_tr: Şirketlerin dağıtık ekipler için neden SMS doğrulama kodlarının ötesine geçip kimlik avına dirençli donanım
+    güvenlik anahtarlarına yöneldiğini anlatır.
+  word_count: 267
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Why Six-Digit Text Codes Fall Short
+    content_en: For years, receiving a six-digit text code after typing a password felt like strong protection for work email
+      and cloud dashboards. Unfortunately, skilled attackers now send convincing fake login pages that capture both the password
+      and the temporary code in real time. Once a tired employee enters those numbers on a lookalike web address, attackers
+      immediately slip inside internal systems. Mobile SIM transfers create another weak spot outside company control.
+    content_tr: Yıllar boyunca şifre girdikten sonra altı haneli bir SMS kodu almak iş e-postaları ve bulut panoları için
+      güçlü bir koruma gibi hissedildi. Ne yazık ki deneyimli saldırganlar artık hem şifreyi hem geçici kodu gerçek zamanlı
+      yakalayan inandırıcı sahte giriş sayfaları gönderiyor. Yorgun bir çalışan bu rakamları benzer bir web adresine girdiğinde
+      saldırganlar anında iç sistemlere sızıyor. Mobil hat devirleri de şirket kontrolü dışında ayrı bir zayıf nokta oluşturuyor.
+  - paragraph_index: 2
+    title: How Cryptographic Hardware Keys Defeat Lookalike Sites
+    content_en: Physical security keys solve this trap through simple browser cryptography. When an employee plugs in or taps
+      a small USB key, the key verifies the exact domain name of the login page before signing anything. Even if a fake page
+      imitates corporate colors and logos flawlessly, its hidden web address fails to match, so the hardware key refuses to
+      unlock access. Security stops depending entirely on human eyes catching subtle typos at seven in the morning.
+    content_tr: Fiziksel güvenlik anahtarları bu tuzağı basit tarayıcı kriptografisiyle çözer. Bir çalışan küçük bir USB anahtarı
+      taktığında veya yaklaştırdığında, anahtar bir imza üretmeden önce giriş sayfasının tam alan adını doğrular. Sahte bir
+      sayfa kurumsal renkleri ve logoları kusursuz taklit etse bile gizli web adresi eşleşmez ve donanım anahtarı erişimi
+      açmayı reddeder. Güvenlik artık sabah yedide insan gözünün küçük yazım hatalarını yakalamasına tamamen bağlı kalmaz.
+  - paragraph_index: 3
+    title: Shipping Spare Keys During Onboarding
+    content_en: Transitioning a distributed team fails if people get locked out whenever a laptop adapter breaks or a keychain
+      vanishes in transit. Practical IT groups therefore mail two keys—a primary everyday token plus a backup kept safely
+      at home—inside each new hire's welcome box. Paired with clear five-minute setup guides and helpful live drop-in clinics,
+      adoption rises smoothly without endless helpdesk tickets.
+    content_tr: 'Bir dizüstü bilgisayar adaptörü bozulduğunda veya anahtarlık yolda kaybolduğunda çalışanlar sistem dışı kalırsa
+      dağıtık bir ekibi geçirmek başarısız olur. Bu nedenle pratik BT ekipleri her yeni çalışanın hoş geldin kutusunun içine
+      iki anahtar gönderir: biri günlük ana anahtar, diğeri evde güvenle saklanan yedek. Net beş dakikalık kurulum rehberleri
+      ve canlı destek saatleriyle destek talepleri birikmeden benimseme sorunsuz artar.'
+  - paragraph_index: 4
+    title: Testing Recovery Flows Before Enforcement
+    content_en: Before switching strict enforcement on for every engineer, security leads test backup sign-in procedures thoroughly
+      with a small pilot group. Knowing how an operations analyst regains access within ten minutes after losing a bag prevents
+      panic during live incidents. Strong security never succeeds through annoying rules alone; it wins by making the safest
+      path the fastest click of the day.
+    content_tr: Her mühendis için zorunlu uygulamayı açmadan önce güvenlik liderleri küçük bir pilot grupla yedek giriş prosedürlerini
+      kapsamlı şekilde test eder. Bir operasyon analistinin çantasını kaybettikten sonra on dakika içinde erişimini nasıl
+      geri alacağını bilmek canlı olaylar sırasındaki paniği önler. Güçlü güvenlik yalnızca can sıkıcı kurallarla değil, en
+      güvenli yolu günün en hızlı tıklaması haline getirerek başarılı olur.
+  vocabulary_annotations:
+  - word: lookalike
+    context_definition_en: a deceptive web page mimicking a real service to steal logins
+    context_meaning_tr: taklit, sahte benzer
+  - word: cryptography
+    context_definition_en: mathematical verification securing digital keys and messages
+    context_meaning_tr: kriptografi, şifreleme bilimi
+  - word: adoption
+    context_definition_en: the rate at which teams start using a new tool consistently
+    context_meaning_tr: benimsenme
+  - word: pilot
+    context_definition_en: a small initial trial run before full company rollout
+    context_meaning_tr: pilot uygulama
+  comprehension_questions:
+  - id: q_reading_b1_practical-two-factor-security_01
+    question_en: Why are fake login sites still able to bypass SMS verification codes?
+    options:
+    - Corporate email servers block six-digit numbers
+    - SMS messages never arrive outside office buildings
+    - Users type both their password and code into the attacker's site
+    - Hardware keys broadcast passwords publicly
+    correct_answer: Users type both their password and code into the attacker's site
+    explanation_en: Paragraph 1 explains that convincing fake pages capture both the password and the live SMS code.
+    explanation_tr: 1. paragraf inandırıcı sahte sayfaların hem şifreyi hem anlık SMS kodunu yakaladığını açıklar.
+  - id: q_reading_b1_practical-two-factor-security_02
+    question_en: How does a hardware key protect a tired user from a lookalike address?
+    options:
+    - It checks the true web domain and blocks mismatched sites
+    - It prints out paper receipts for each login
+    - It replaces all passwords with phone calls
+    - It deletes browser bookmarks automatically
+    correct_answer: It checks the true web domain and blocks mismatched sites
+    explanation_en: Paragraph 2 says the key verifies the exact domain name and refuses to sign on mismatched lookalikes.
+    explanation_tr: 2. paragraf anahtarın gerçek alan adını doğruladığını ve eşleşmeyen sitelerde çalışmayı reddettiğini anlatır.
+  - id: q_reading_b1_practical-two-factor-security_03
+    question_en: Why do IT teams include two security keys in welcome boxes?
+    options:
+    - Teammates are expected to lend spare keys to guests
+    - Laptops require two USB tokens plugged in simultaneously
+    - One key only works in the morning and one at night
+    - So a backup key prevents lockouts if the daily key is lost
+    correct_answer: So a backup key prevents lockouts if the daily key is lost
+    explanation_en: Paragraph 3 mentions shipping a primary everyday key plus a backup kept safely at home.
+    explanation_tr: 3. paragraf günlük kullanım için bir ana anahtar ve evde saklanan bir yedek gönderildiğini belirtir.
+  - id: q_reading_b1_practical-two-factor-security_04
+    question_en: What does Paragraph 4 recommend doing before enforcing keys across all staff?
+    options:
+    - Switching back to plain text emails temporarily
+    - Testing recovery procedures with a small pilot group
+    - Deleting all backup administrator accounts
+    - Blocking access for anyone traveling abroad
+    correct_answer: Testing recovery procedures with a small pilot group
+    explanation_en: Paragraph 4 advises testing backup sign-in flows thoroughly with a small pilot group first.
+    explanation_tr: 4. paragraf zorunlu geçişten önce küçük bir pilot grupla kurtarma akışlarının test edilmesini önerir.
+  - id: q_reading_b1_practical-two-factor-security_05
+    question_en: What makes workplace security practices stick reliably over time?
+    options:
+    - Banning remote work across all departments
+    - Removing helpdesk clinics once tools ship
+    - Making the secure option quick and convenient for daily users
+    - Adding strict monthly password length fines
+    correct_answer: Making the secure option quick and convenient for daily users
+    explanation_en: Paragraph 4 states security wins by making the safest path the fastest click of the day.
+    explanation_tr: 4. paragraf güvenliğin en güvenli yolu günün en hızlı tıklaması kılarak kazandığını ifade eder.
+  topic_tags:
+  - security
+  - authentication
+  - remote-work
+  related_ids: []
+  status: APPROVED
+  version: 1

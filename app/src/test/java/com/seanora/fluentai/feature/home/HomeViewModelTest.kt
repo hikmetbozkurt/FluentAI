@@ -90,4 +90,28 @@ class HomeViewModelTest {
         assertTrue("Expected HomeUiState.Error but was $state", state is HomeUiState.Error)
         assertEquals("Content could not be loaded. Please try again.", (state as HomeUiState.Error).message)
     }
+
+    @Test
+    fun homeViewModel_delegatesMarkItemCompletedAndRefreshPlan() = runTest(testDispatcher) {
+        var completedArgs: Pair<String, String>? = null
+        var refreshCount = 0
+        val delegate = MockHomeRepository()
+        val recordingRepo = object : com.seanora.fluentai.feature.home.data.HomeRepository {
+            override fun getTodayPlan() = delegate.getTodayPlan()
+            override suspend fun markItemCompleted(planId: String, itemId: String) {
+                completedArgs = planId to itemId
+            }
+            override suspend fun refreshPlan() {
+                refreshCount++
+            }
+        }
+        val viewModel = HomeViewModel(recordingRepo)
+
+        viewModel.markItemCompleted("today_plan_2026-11-24", "item_42")
+        viewModel.refreshPlan()
+        testDispatcher.scheduler.advanceUntilIdle()
+
+        assertEquals("today_plan_2026-11-24" to "item_42", completedArgs)
+        assertEquals(1, refreshCount)
+    }
 }

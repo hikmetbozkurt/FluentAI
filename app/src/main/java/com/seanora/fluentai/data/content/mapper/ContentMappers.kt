@@ -1,6 +1,12 @@
 package com.seanora.fluentai.data.content.mapper
 
+import com.seanora.fluentai.core.model.BlueprintSlot
+import com.seanora.fluentai.core.model.ChunkCategory
+import com.seanora.fluentai.core.model.ChunkSlotVariation
+import com.seanora.fluentai.core.model.ChunkTurkishTrap
 import com.seanora.fluentai.core.model.Collocation
+import com.seanora.fluentai.core.model.LexicalChunk
+import com.seanora.fluentai.data.content.entity.ChunkEntity
 import com.seanora.fluentai.core.model.ContentRelation
 import com.seanora.fluentai.core.model.ContextExample
 import com.seanora.fluentai.core.model.Exercise
@@ -197,4 +203,34 @@ private inline fun <reified K, reified V> safeDecodeMap(jsonString: String?): Ma
     } catch (_: Exception) {
         emptyMap()
     }
+}
+
+fun ChunkEntity.toDomain(): LexicalChunk {
+    val trap = try {
+        json.decodeFromString<ChunkTurkishTrap>(turkishTrapJson)
+    } catch (_: Exception) {
+        ChunkTurkishTrap(
+            incorrectEn = "",
+            correctEn = chunkEn,
+            explanationTr = intentTr,
+            trapType = "general",
+        )
+    }
+    return LexicalChunk(
+        id = id,
+        chunkEn = chunkEn,
+        patternTemplate = patternTemplate,
+        cefrLevel = cefrLevel,
+        category = ChunkCategory.fromWire(category),
+        intentTr = intentTr,
+        meaningEn = meaningEn,
+        turkishTrap = trap,
+        blueprintSlots = safeDecodeList<BlueprintSlot>(blueprintSlotsJson),
+        slotVariations = safeDecodeList<ChunkSlotVariation>(slotVariationsJson),
+        relatedVocabIds = safeDecodeList(relatedVocabIdsJson),
+        relatedGrammarIds = safeDecodeList(relatedGrammarIdsJson),
+        topicTags = safeDecodeList(topicTagsJson),
+        status = status,
+        version = version,
+    )
 }

@@ -1,0 +1,639 @@
+- id: grammar.b2.have-get-something-done-service
+  title: 'Delegated Service Causatives: Have / Get Something Done'
+  cefr_level: B2
+  category: passive_and_causative
+  summary_en: Use 'have/get + Object + Past Participle (V3)' when commissioning an
+    external service or suffering an external action rather than performing it yourself.
+  summary_tr: İşi bizzat yapmayıp başkasına veya bir uzmana yaptırdığınızı anlatırken
+    etken fiil yerine 'have/get + Nesne + V3' ettirgen yapısını kullanın.
+  explanation_en:
+  - title: Commissioning External Specialists vs. Personal Execution
+    content: Saying 'I translated the contract' implies you personally did the work.
+      Saying 'We had the contract certified by outside counsel' clearly places the
+      noun object directly between 'have/get' and the past participle.
+    patterns:
+    - have / get + Object + Past Participle (V3)
+    - have someone do something (agent focus) vs. have something done (outcome focus)
+  explanation_tr: Türkçede 'Sözleşmeyi tercüme ettirdim' ile 'Sözleşmeyi tercüme ettim'
+    arasındaki fark İngilizcede yalnızca nesneyi ortaya alıp V3 kullanarak kurulur.
+    'We updated the audit' kendi yaptığınız, 'We had the audit verified' uzmanına
+    yaptırdığınız anlamındadır.
+  rules:
+  - name: Service Causative Word Order
+    pattern: Subject + have/get (any tense) + Object + V3 (+ by Agent)
+    use_cases:
+    - Reporting outsourced audits, repairs, medical checks, and legal reviews
+    time_markers:
+    - before signing
+    - last quarter
+  contrasts:
+  - structure_a: We audited the pricing ledger.
+    structure_b: We had the pricing ledger audited independently.
+    difference_explanation_en: Active voice claims internal execution; causative 'had...
+      audited' specifies delegated third-party review.
+    difference_explanation_tr: Etken çatı işi içeride yaptığınızı, 'had... audited'
+      ise bağımsız uzmana denetlettiğinizi belirtir.
+  turkish_traps:
+  - trap_type: voice_and_causative_transfer
+    trap_title: Nesne ile Geçmiş Ortaç (V3) Sırasını Karıştırmak veya Etken Bırakmak
+    explanation_tr: '''Raporu imzalattım'' anlamını ''*I signed the report to someone''
+      ya da ''*I had certified the lease'' şeklinde kurmak yanlıştır; nesne ''have/get''
+      ile ''V3'' arasına girer.'
+    incorrect_example: We had notarized the power of attorney before the Ankara trip.
+    correct_example: We had the power of attorney notarized before the Ankara trip.
+  examples:
+  - en: Let us get the offline APK tested on three mid-range Android tablets first.
+    tr: Önce çevrimdışı APK'yı üç orta segment Android tablette test ettirelim.
+    rule_highlight: get the offline APK tested
+    context: release QA
+  - en: She is having the compliance addendum translated prior to Friday's call.
+    tr: Cuma günkü görüşmeden önce uyumluluk ek protokolünü tercüme ettiriyor.
+    rule_highlight: is having the compliance addendum translated
+    context: legal coordination
+  topic_tags:
+  - causative
+  - legal
+  - operations
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.future-in-the-past-was-going-to
+  title: 'Future in the Past: Unfulfilled Plans and Past Projections'
+  cefr_level: B2
+  category: tenses_and_aspect
+  summary_en: Shift future intentions back using 'was/were going to', 'would', and
+    'was supposed to' when explaining changed timelines or past expectations.
+  summary_tr: Geçmişte planlanmış ancak gerçekleşmemiş veya sonradan değişmiş hedefleri
+    aktarırken 'was/were going to', 'would' ve 'was supposed to' yapılarını kullanın.
+  explanation_en:
+  - title: Backshifting Future Commitments Accurately
+    content: Direct 'will' and 'is going to' describe today's outlook. Once reporting
+      yesterday's canceled plan or an expectation held last week, shift to 'was going
+      to' (prior intention) or 'was supposed to' (missed expectation/obligation).
+    patterns:
+    - was/were going to + Base Verb (+ but...)
+    - was/were supposed to + Base Verb (expected obligation not kept)
+  explanation_tr: Türkçede '-ecektik ama...' yapısı geçmişte planlanan ancak yapılmayan
+    işleri anlatır. İngilizcede bunun birebir karşılığı '*we will ship but...' değil
+    'we were going to ship, but...' kalıbıdır.
+  rules:
+  - name: Revised Plans ('Was Going To')
+    pattern: Subject + was/were going to + V1 (+ pivot clause)
+    use_cases:
+    - Explaining delayed releases and shifting project priorities professionally
+    time_markers:
+    - originally
+    - last Monday
+    - until the blocker appeared
+  contrasts:
+  - structure_a: We were going to launch on Thursday.
+    structure_b: The partner was supposed to send credentials by noon.
+    difference_explanation_en: '''Was going to'' expresses internal intent; ''was
+      supposed to'' highlights an unfulfilled duty or schedule.'
+    difference_explanation_tr: '''Was going to'' kendi niyetimizi, ''was supposed
+      to'' ise beklenen/gereken sorumluluğu anlatır.'
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Geçmişteki Gelecek Planlarında 'Will' Kullanmak
+    explanation_tr: '''Geçen hafta yayınlayacaktık'' anlamında ''*I thought we will
+      launch last week'' demek zaman uyumunu bozar; ana fiil geçmişse ''would'' veya
+      ''were going to'' seçilmelidir.'
+    incorrect_example: Finance expected that cloud spending will drop last quarter.
+    correct_example: Finance expected that cloud spending would drop last quarter.
+  examples:
+  - en: We were going to archive older audio files, yet regional demand pushed expansion
+      instead.
+    tr: Eski ses dosyalarını arşivleyecektik ancak bölgesel talep bunun yerine genişlemeyi
+      tetikledi.
+    rule_highlight: were going to archive
+    context: project retrospective
+  - en: None of us realized the customs clearance would take four extra business days.
+    tr: Hiçbirimiz gümrük işlemlerinin dört iş günü daha süreceğini fark etmemişti.
+    rule_highlight: would take
+    context: operations review
+  topic_tags:
+  - tenses
+  - planning
+  - reporting
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.if-only-wish-vs-hope
+  title: Realistic Hope vs. Counterfactual Wish & If Only
+  cefr_level: B2
+  category: conditionals_and_hypotheticals
+  summary_en: Keep achievable future outcomes with 'hope + Present/Will', while reserving
+    'wish / if only + Past / Past Perfect / Would' for counterfactual regrets and
+    complaints.
+  summary_tr: Gerçekleşebilir dileklerde 'hope' + düz zaman kullanırken, gerçeğe aykırı
+    şimdiki durumlar veya geçmiş pişmanlıklar için 'wish / if only' + zaman kaydırması
+    uygulayın.
+  explanation_en:
+  - title: Achievable Future vs. Counterfactual Unreal Past
+    content: '''Hope'' handles genuine possibilities (''I hope telemetry holds steady'').
+      ''Wish'' signals an unreal/unlikely situation: Past Simple for present regret
+      (''I wish we had more time''), Past Perfect for past mistakes (''If only we
+      had checked sooner''), and ''wish + would'' for wishing another actor would
+      change behavior.'
+    patterns:
+    - hope + Subject + Present / will / can
+    - wish + Subject + Past Simple / had + V3 / would + V1
+  explanation_tr: Türkçede 'Umarım gelir' ile 'Keşke burada olsaydı' yapıları günlük
+    konuşmada 'wish' ile karıştırılıp '*I wish it passes tomorrow' gibi kurulabiliyor.
+    Geleceğe dönük makul umutlarda yalnızca 'hope' kullanılır.
+  rules:
+  - name: Present 'Hope' vs. Counterfactual 'Wish'
+    pattern: hope + Present/Future | wish + Past Simple (now) / had V3 (past)
+    use_cases:
+    - Distinguishing optimistic sign-offs from polite diplomatic regret
+    time_markers:
+    - hopefully
+    - if only
+    - back in Q2
+  contrasts:
+  - structure_a: I hope the client approves the revised terms.
+    structure_b: I wish the client didn't insist on bespoke billing.
+    difference_explanation_en: '''Hope'' expresses a realistic future outcome; ''wish
+      + didn''t'' laments a stubborn present fact.'
+    difference_explanation_tr: '''Hope'' olası bir beklentiyi, ''wish + didn''t''
+      ise şu an değişmesi zor bir durumu üzüntüyle bildirir.'
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Olası Gelecek Dileklerinde 'Hope' Yerine '*I Wish + Will' Kurmak
+    explanation_tr: '''İnşallah / Umarım yarın onaylanır'' derken ''*I wish it will
+      be approved'' yanlıştır. Gelecekteki umutlarda ''I hope it is approved / will
+      be approved'' kullanılmalıdır.'
+    incorrect_example: We wish the regulatory board will publish clarity by Friday.
+    correct_example: We hope the regulatory board publishes clarity by Friday.
+  examples:
+  - en: I hope this clearer schedule settles the invoicing backlog this week.
+    tr: Umarım bu daha net takvim bu hafta faturalama birikmesini çözer.
+    rule_highlight: hope this clearer schedule settles
+    context: client update
+  - en: I wish suppliers would stop sending unindexed PDF tables instead of CSV.
+    tr: Keşke tedarikçiler CSV yerine dizinsiz PDF tablolar göndermeyi bıraksa.
+    rule_highlight: wish suppliers would stop
+    context: operations complaint
+  topic_tags:
+  - conditionals
+  - diplomacy
+  - emails
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.had-better-vs-should-would-rather
+  title: Urgent 'Had Better' vs. General 'Should' vs. Preference 'Would Rather'
+  cefr_level: B2
+  category: modals_and_semi_modals
+  summary_en: Separate urgent consequence warnings ('had better'), neutral counsel
+    ('should'), and two-subject polite preferences ('would rather someone did').
+  summary_tr: Somut risk uyarısı ('had better'), genel tavsiye ('should') ve başka
+    birinden beklenti tercihi ('would rather + Past Simple') kalıplarını karıştırmayın.
+  explanation_en:
+  - title: Why 'Had Better' Never Signals Polite Hospitality
+    content: Contrary to learner intuition, 'You had better check...' sounds urgent
+      or slightly menacing—implying bad consequences if skipped—so never use it casually
+      to offer coffee! Use 'would rather' for preferences; when preferring what someone
+      else does, 'would rather' triggers Past Simple subjunctive.
+    patterns:
+    - had better (+ not) + V1 (NO 'to'—urgent risk advice)
+    - would rather + Subject + Past Simple (present/future preference for another
+      agent)
+  explanation_tr: Türkçede 'Yapsan iyi olur' kibar bir öneri de olabilir; ancak İngilizcede
+    'You'd better...' uyarı/tehdit tınısı taşır. Ayrıca 'tercih ederim ki o yapsın'
+    anlamında 'would rather + he/they + V2' (geçmiş kip) kullanılır.
+  rules:
+  - name: Same-Subject vs. Different-Subject 'Would Rather'
+    pattern: would rather + V1 (same subject) | would rather + Object/Subj + V2 (other
+      agent)
+    use_cases:
+    - Declining requests tactfully and flagging high-stakes operational risks
+    time_markers:
+    - before deployment
+    - this afternoon
+  contrasts:
+  - structure_a: You should review optional styling later.
+    structure_b: We had better verify backups before running the wipe script.
+    difference_explanation_en: '''Should'' offers balanced advice; ''had better''
+      warns of real damage if ignored.'
+    difference_explanation_tr: '''Should'' genel öneri verirken ''had better'' yapılmazsa
+      doğacak somut zarara karşı uyarır.'
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: '''Had Better'' Sonrası ''To'' Koymak ve Farklı Öznede Geniş Zaman
+      Kullanmak'
+    explanation_tr: '''*You had better to test'' ve ''*I would rather you send it
+      today'' hatalıdır; ilki ''to'' almaz, ikincisi ise başka özne olduğu için ''sent''
+      ister.'
+    incorrect_example: We had better to wait, and I would rather finance reviews the
+      invoice now.
+    correct_example: We had better wait, and I would rather finance reviewed the invoice
+      now.
+  examples:
+  - en: I would rather we resolved the schema mismatch offline before alerting beta
+      testers.
+    tr: Beta testçilerine haber vermeden önce şema uyuşmazlığını çevrimdışında çözmemizi
+      tercih ederim.
+    rule_highlight: would rather we resolved
+    context: release planning
+  - en: We had better not push unvalidated CSV exports right before the holiday weekend.
+    tr: Tatil hafta sonundan hemen önce doğrulanmamış CSV dışa aktarımları göndermesek
+      iyi olur.
+    rule_highlight: had better not push
+    context: operations warning
+  topic_tags:
+  - modals
+  - negotiation
+  - register
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.participle-vs-relative-modifiers
+  title: Active '-ing' vs. Passive '-ed' Noun Modifiers in Technical Writing
+  cefr_level: B2
+  category: relative_and_participle_clauses
+  summary_en: Choose present participles ('tickets blocking release') when the noun
+    performs the action and past participles ('builds audited yesterday') when acted
+    upon.
+  summary_tr: İsimden sonra gelen kısaltılmış sıfat cümleciklerinde nitelediği isim
+    etken ise '-ing', edilgen ise '-ed/V3' seçerek teknik özetleri sıkılaştırın.
+  explanation_en:
+  - title: Compressing 'Which/That' Relatives Without Voice Errors
+    content: Executive writing condenses 'bugs that affect offline startup' into 'bugs
+      affecting offline startup', and 'entries that were curated locally' into 'entries
+      curated locally'. Watch out for transitive vs. intransitive logic!
+    patterns:
+    - Noun + V-ing... (= which/that actively performs verb)
+    - Noun + V3... (= which/that is acted on passively)
+  explanation_tr: Türkçede '-en' (yapan) ile '-ilen' (yapılan) ekleri ortaça kaynaştığı
+    için öğrenciler bazen edilgen isimde '*the files containing in the folder' gibi
+    '-ing' hatası yapar; doğrusu 'contained' olmalıdır.
+  rules:
+  - name: Voice Check on Post-Nominal Participles
+    pattern: Doer Noun + V-ing | Receiver Noun + V3
+    use_cases:
+    - Condensing issue trackers, contracts, and executive bullet lists
+    time_markers:
+    - submitted yesterday
+    - pending sign-off
+  contrasts:
+  - structure_a: The clause limiting vendor liability sits on page four.
+    structure_b: The clause limited by counsel yesterday sits on page four.
+    difference_explanation_en: '''Limiting'' = the clause enforces a limit; ''limited''
+      = counsel constrained the clause.'
+    difference_explanation_tr: '''Limiting'' maddenin kendisinin sınırladığını; ''limited''
+      ise hukuk ekibi tarafından sınırlandığını anlatır.'
+  turkish_traps:
+  - trap_type: voice_and_causative_transfer
+    trap_title: Edilgen İsim Nitelemesinde Yanlışlıkla '-ing' Kullanmak
+    explanation_tr: '''Belgede yer alan veriler'' veya ''denetimden geçen dosyalar''
+      ifadelerinde pasif anlam olduğu halde ''*data containing in the sheet'' yazmak
+      yaygındır.'
+    incorrect_example: Please verify all rows generating by the afternoon script before
+      merge.
+    correct_example: Please verify all rows generated by the afternoon script before
+      merge.
+  examples:
+  - en: Every scenario packaged in the offline SQLite archive passes schema validation.
+    tr: Çevrimdışı SQLite arşivinde paketlenen her senaryo şema doğrulamasından geçer.
+    rule_highlight: packaged in the offline SQLite archive
+    context: build engineering
+  - en: Users experiencing intermittent cellular drops still finish daily vocabulary
+      reviews.
+    tr: Aralıklı hücresel kesinti yaşayan kullanıcılar günlük kelime tekrarlarını
+      yine de tamamlar.
+    rule_highlight: experiencing intermittent cellular drops
+    context: product telemetry
+  topic_tags:
+  - participles
+  - engineering
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.gradable-vs-extreme-adjectives
+  title: Degree Modifiers with Gradable vs. Extreme Adjectives
+  cefr_level: B2
+  category: noun_phrases_and_articles
+  summary_en: Pair ordinary gradable adjectives ('useful', 'expensive') with 'very
+    / fairly / extremely', and non-gradable extreme adjectives ('vital', 'exhaustive',
+    'identical') with 'absolutely / utterly / virtually'.
+  summary_tr: Derecelendirilebilen sıfatları ('useful, slow') 'very / extremely' ile,
+    uç/mutlak sıfatları ('essential, exhausted, impossible') ise 'absolutely / completely'
+    zarflarıyla eşleştirin.
+  explanation_en:
+  - title: Precision in Executive Emphasis
+    content: Calling a security fix 'very critical' or 'very unique' breaks natural
+      collocation because extreme/absolute adjectives already sit at the limit. Reserve
+      'very/extremely' for scalar traits and 'absolutely/entirely' for absolute traits;
+      'really' works flexibly in both.
+    patterns:
+    - very / quite / slightly + Gradable Adjective ('very reliable')
+    - absolutely / completely / virtually + Non-Gradable ('absolutely essential')
+  explanation_tr: Türkçede 'çok eşsiz', 'çok kritik' veya 'çok imkânsız' deyişleri
+    kulağa doğal gelse de İngilizcede mutlak sıfatlarla '*very impossible / very exhausted'
+    eşdizimlilik hatası verir.
+  rules:
+  - name: Scalar vs. Limit Adverb Pairing
+    pattern: very + [good/slow/costly] | absolutely + [excellent/vital/identical]
+    use_cases:
+    - Writing calibrated executive reviews without overstated filler
+    time_markers:
+    - consistently
+    - across regions
+  contrasts:
+  - structure_a: Offline search is very responsive.
+    structure_b: Deterministic validation is absolutely vital.
+    difference_explanation_en: '''Responsive'' sits on a scale (''very''); ''vital''
+      sits at an absolute ceiling (''absolutely'').'
+    difference_explanation_tr: '''Responsive'' dereceli sıfattır (''very''); ''vital''
+      mutlak eşik sıfatıdır (''absolutely'').'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: Mutlak veya Uç Sıfatların Önüne 'Very' Getirmek
+    explanation_tr: '''Çok harika'' veya ''çok kusursuz'' çevirisiyle ''*very excellent
+      / *very impossible'' yazmak C1/B2 değerlendirmelerinde puan düşüren eşdizim
+      hatasıdır.'
+    incorrect_example: Leaving plaintext keys in APK assets would be a very disastrous
+      breach.
+    correct_example: Leaving plaintext keys in APK assets would be an utterly disastrous
+      breach.
+  examples:
+  - en: The two database builds were virtually identical down to every SHA-256 checksum
+      byte.
+    tr: İki veritabanı derlemesi her SHA-256 sağlama baytına kadar neredeyse birebir
+      aynıydı.
+    rule_highlight: virtually identical
+    context: determinism verification
+  - en: Negotiators found legal pricing terms fairly balanced despite earlier skepticism.
+    tr: Müzakereciler önceki şüphelere rağmen hukuki fiyat şartlarını oldukça dengeli
+      buldu.
+    rule_highlight: fairly balanced
+    context: contract review
+  topic_tags:
+  - adjectives
+  - writing
+  - register
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.preposition-stranding-vs-formal-fronting
+  title: Preposition Stranding in Speech vs. Preposition Fronting in Formal Prose
+  cefr_level: B2
+  category: prepositions_and_particles
+  summary_en: Keep prepositions naturally at the end of spoken questions/clauses ('the
+    client we met with'), while fronting them with 'whom/which' in formal legal and
+    executive writing ('the terms to which we agreed').
+  summary_tr: Günlük konuşmada edatları cümle sonunda bırakırken ('whom/that' atıp
+    'we spoke with' diyerek), resmi yazıda edatı 'which/whom' önüne alarak düzeyi
+    yükseltin.
+  explanation_en:
+  - title: Register Control Without Duplicating Prepositions
+    content: Both 'the firm that we work with' (everyday) and 'the firm with which
+      we work' (formal) are correct—provided the preposition appears ONCE, and never
+      after 'that' ('*with that we work' is forbidden).
+    patterns:
+    - 'Conversational: Noun + (that/who) + Subject + Verb + Preposition'
+    - 'Formal: Noun + Preposition + which / whom + Subject + Verb'
+  explanation_tr: Türkçe ilgi tümceciklerinde edat önde gelir veya anlam fiile gömülür;
+    bu yüzden İngilizcede bazen edat iki kez konur ('*with which we met with') veya
+    'that' önüne taşınır ('*with that'). Edat tek yerde kalmalıdır.
+  rules:
+  - name: No Preposition Before 'That' or 'Who'
+    pattern: Preposition + which / whom (NEVER Preposition + that / who)
+    use_cases:
+    - Adapting between spoken meeting updates and signed contract clauses
+    time_markers:
+    - currently
+    - under this agreement
+  contrasts:
+  - structure_a: The vendor we contracted with passed inspection.
+    structure_b: The vendor with whom we contracted passed inspection.
+    difference_explanation_en: 'Identical logic: stranding sounds natural orally;
+      fronting before ''whom'' raises formal authority.'
+    difference_explanation_tr: 'Aynı anlam: sonda kalan ''with'' konuşmada doğal,
+      ''with whom'' ise resmi metinde saygın durur.'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: Edatı 'That' Önüne Almak veya Cümle İçinde Tekrarlamak
+    explanation_tr: '''Bahsettiğimiz konu'' için ''*the issue about that we spoke''
+      ya da ''*the issue about which we talked about'' kurmak en yaygın edat kaydırma
+      hatalarıdır.'
+    incorrect_example: This is the audit threshold for which compliance depends on.
+    correct_example: This is the audit threshold on which compliance depends.
+  examples:
+  - en: The methodology upon which this deterministic validator rests is simple and
+      transparent.
+    tr: Bu deterministik doğrulayıcının dayandığı metodoloji sade ve şeffaftır.
+    rule_highlight: upon which this deterministic validator rests
+    context: architecture spec
+  - en: Who is the regional specialist I should check in with before filing expenses?
+    tr: Harcamaları girmeden önce teyit almam gereken bölge uzmanı kim?
+    rule_highlight: check in with
+    context: workplace chat
+  topic_tags:
+  - prepositions
+  - register
+  - legal
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.passive-reporting-need-doing-suppose
+  title: 'Passive Maintenance and Scheduled Obligations: Need Doing / Be Supposed
+    To'
+  cefr_level: B2
+  category: passive_and_causative
+  summary_en: Express maintenance needs cleanly using 'needs + V-ing' (or 'needs to
+    be + V3') and distinguish intended rules ('be supposed to') from binding mandates
+    ('be to').
+  summary_tr: Bakım ve düzeltme ihtiyaçlarında aktif görünüşlü pasif anlam taşıyan
+    'needs fixing / updating' yapısını ve planlanan beklentilerde 'be supposed to'
+    kalıbını doğru kullanın.
+  explanation_en:
+  - title: Active Form, Passive Meaning
+    content: When a system or file requires repair without naming who will repair
+      it, English allows 'The test suite needs updating' alongside 'The test suite
+      needs to be updated'. Meanwhile, 'is supposed to' contrasts expected policy
+      against messy reality.
+    patterns:
+    - Inanimate Subject + needs / requires + V-ing (= needs to be V3)
+    - Subject + is/was supposed to + V1 (expected duty, often bent or missed)
+  explanation_tr: Türkçede 'Dosyanın güncellenmesi gerekiyor' edilgen görünür; öğrenciler
+    bunu görünce '*The file needs to update' (sanki dosya kendi kendine güncelleyecekmiş
+    gibi) yazar. Ya 'needs updating' ya da 'needs to be updated' kullanın.
+  rules:
+  - name: Repair & Maintenance Constructions
+    pattern: Object + needs + V-ing == Object + needs to be + V3
+    use_cases:
+    - Writing QA bug triage notes and facility maintenance tickets
+    time_markers:
+    - before merge
+    - weekly
+  contrasts:
+  - structure_a: The onboarding flow needs revising.
+    structure_b: We were supposed to freeze schema edits at noon.
+    difference_explanation_en: '''Needs revising'' equals ''needs to be revised'';
+      ''was supposed to'' flags an expected schedule checkpoint.'
+    difference_explanation_tr: '''Needs revising'' edilgen bakım gereksinimini; ''was
+      supposed to'' ise uyulması beklenen kuralı anlatır.'
+  turkish_traps:
+  - trap_type: voice_and_causative_transfer
+    trap_title: Cansız Nesneyle 'Needs To Update' Kurmak
+    explanation_tr: Cansız bir nesnenin ('test', 'belge', 'yazıcı') kendi kendine
+      eylem yapacağı sanısını veren '*needs to fix' hatasına düşmeyin; pasif veya
+      '-ing' seçin.
+    incorrect_example: That hardcoded row count in the test suite needs to update.
+    correct_example: That hardcoded row count in the test suite needs updating.
+  examples:
+  - en: Three outdated localization strings in settings still need reviewing.
+    tr: Ayarlardaki üç eski yerelleştirme metninin hâlâ gözden geçirilmesi gerekiyor.
+    rule_highlight: still need reviewing
+    context: bug triage
+  - en: Temporary sandbox keys are supposed to expire automatically after each test
+      run.
+    tr: Geçici deneme anahtarlarının her test çalıştırmasından sonra otomatik sona
+      ermesi gerekir.
+    rule_highlight: are supposed to expire
+    context: security policy
+  topic_tags:
+  - passive
+  - engineering
+  - operations
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.contrast-on-contrary-vs-other-hand
+  title: 'Sharpening Contrast Linkers: On the Other Hand vs. On the Contrary vs. In
+    Contrast'
+  cefr_level: B2
+  category: discourse_markers_and_cohesion
+  summary_en: Use 'on the other hand' for balancing two true sides, 'on the contrary'
+    solely to reject a false claim outright, and 'in contrast' to compare two entities.
+  summary_tr: '''On the other hand'' iki geçerli yönü dengelerken, ''on the contrary''
+    önceki yanlış yargıyı tamamen çürütmek için kullanılır; ''in contrast'' iki özneyi
+    karşılaştırır.'
+  explanation_en:
+  - title: Do Not Confuse Balancing with Rebuttal
+    content: Calling 'on the contrary' a synonym for 'on the other hand' reverses
+      your intended logic. If you say 'Cloud APIs scale easily. On the contrary, they
+      cost money,' you sound as if scaling isn't true! Use 'On the other hand' (or
+      'However') when adding a trade-off to a still-valid point.
+    patterns:
+    - Claim A (valid). On the other hand / Conversely, Trade-off B (also valid).
+    - Negative/Misguided Claim. On the contrary, Opposite Truth!
+  explanation_tr: Türkçedeki 'aksine' ile 'öte yandan' İngilizcede sıklıkla 'on the
+    contrary' altında birleştirilir. Oysa 'on the contrary' bir iddiayı yalanlayıp
+    tam tersini savunur; dengeleyici karşılaştırma için 'on the other hand' seçilir.
+  rules:
+  - name: Rebuttal vs. Trade-Off Balancing
+    pattern: Denied assumption + On the contrary + Correction | Pros + On the other
+      hand + Cons
+    use_cases:
+    - Structuring persuasive strategy memos and analytical essays accurately
+    time_markers:
+    - however
+    - in contrast
+  contrasts:
+  - structure_a: Local SQLite stays fast; on the other hand, initial packaging takes
+      discipline.
+    structure_b: Offline packaging did not slow builds; on the contrary, tests ran
+      faster.
+    difference_explanation_en: Example A weighs pros vs. cons; Example B denies 'slowed
+      builds' completely.
+    difference_explanation_tr: A örneği artı-eksiyi tartar; B örneği önceki olumsuz
+      iddiayı tamamen yalanlar.
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: İki Doğru Seçeneği Karşılaştırırken 'On the Contrary' Kullanmak
+    explanation_tr: '''Çevrimdışı mod güvenli; aksine güncelleme paket gerektirir''
+      derken ''on the contrary'' seçmek önceki cümleyi inkâr etmiş gibi mantık hatası
+      oluşturur.'
+    incorrect_example: Voice coaching boosts engagement; on the contrary, reading
+      mode stays quiet.
+    correct_example: Voice coaching is dynamic; in contrast, reading mode stays intentionally
+      quiet.
+  examples:
+  - en: Local caching removes network lag; on the other hand, bundle validation needs
+      strict discipline.
+    tr: Yerel önbellekleme ağ gecikmesini ortadan kaldırır; öte yandan paket doğrulaması
+      sıkı disiplin ister.
+    rule_highlight: on the other hand
+    context: architecture review
+  - en: Adding Turkish trap notes did not slow learners down; on the contrary, mastery
+      rose faster.
+    tr: Türkçe tuzak notları eklemek öğrencileri yavaşlatmadı; tam aksine ustalık
+      daha hızlı yükseldi.
+    rule_highlight: on the contrary
+    context: research readout
+  topic_tags:
+  - discourse_markers
+  - writing
+  - logic
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b2.negative-scope-hardly-none-not-all
+  title: 'Negative Scope Precision: None vs. Not All, Hardly, and Barely'
+  cefr_level: B2
+  category: inversion_and_emphasis
+  summary_en: Prevent logical distortions by distinguishing partial negation ('not
+    all entries need') from total negation ('no entries need'), and pairing 'hardly/scarcely'
+    with positive verbs.
+  summary_tr: '''Hepsi ... değil'' (kısmi olumsuzluk) ile ''hiçbiri ...'' (tam olumsuzluk)
+    arasındaki kapsam farkını ayırın ve ''hardly/barely'' zarflarıyla çift olumsuzluk
+    kurmayın.'
+  explanation_en:
+  - title: Why 'All ... Are Not' Creates Ambiguity
+    content: 'Because English ''All employees didn''t sign'' can sound ambiguous,
+      place ''not'' clearly upfront (''Not all employees signed'' = partial) vs. ''None
+      of the employees signed'' (= zero). Equally, ''hardly'' and ''barely'' already
+      contain negation, so pair them with positive verbs: ''We could hardly hear'',
+      never ''*couldn''t hardly hear''.'
+    patterns:
+    - 'Partial: Not all / Not every + Noun + Verb'
+    - 'Total: None of + the/Plural Noun + Verb (positive)'
+    - Positive Auxiliary + hardly / barely / scarcely
+  explanation_tr: Türkçede 'Hepsi geçmedi' çoğunlukla 'bazıları kaldı' demekken İngilizce
+    birebir çevirisi '*All didn't pass' kafa karıştırır. Kısmi durum için 'Not all...'
+    veya 'Some didn't...', sıfır için 'None of them...' deyin.
+  rules:
+  - name: Broad Negatives Take Positive Verbs
+    pattern: Subject + modal/verb (positive) + hardly / barely / seldom + Complement
+    use_cases:
+    - Writing unambiguous legal disclaimers and executive audit summaries
+    time_markers:
+    - scarcely
+    - seldom
+    - barely
+  contrasts:
+  - structure_a: Not all new entries require audio clips.
+    structure_b: None of the temp scripts remain after cleanup.
+    difference_explanation_en: '''Not all'' leaves a subset needing audio; ''None
+      of'' reduces the count strictly to zero.'
+    difference_explanation_tr: '''Not all'' bazılarını kapsam dışı bırakır; ''None
+      of'' ise sayıyı kesin olarak sıfıra indirir.'
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: '''Hardly / Barely'' İle Olumsuz Yardımcı Fiili Birleştirmek'
+    explanation_tr: '''Neredeyse hiç anlamadım'' anlamında ''*I didn''t barely understand''
+      yazmak çift olumsuzluk hatasıdır; ''I barely understood'' tek olumsuzluğu sağlar.'
+    incorrect_example: Because of line noise, we couldn't hardly hear the client's
+      final figure.
+    correct_example: Because of line noise, we could hardly hear the client's final
+      figure.
+  examples:
+  - en: Not all regional branches run the same payroll cutoff schedule.
+    tr: Tüm bölge şubeleri aynı bordro kesim takvimini uygulamaz.
+    rule_highlight: Not all regional branches
+    context: policy writing
+  - en: There was scarcely any latency difference between local and cached queries.
+    tr: Yerel ile önbellekli sorgular arasında neredeyse hiç gecikme farkı yoktu.
+    rule_highlight: was scarcely any latency difference
+    context: benchmark report
+  topic_tags:
+  - negation
+  - logic
+  - legal
+  related_ids: []
+  status: APPROVED
+  version: 1

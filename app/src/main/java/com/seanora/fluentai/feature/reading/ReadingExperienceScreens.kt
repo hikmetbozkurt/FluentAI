@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -196,11 +197,31 @@ fun ReadingLibraryScreen(
                         }
                     }
                     visible.isEmpty() -> item(span = { GridItemSpan(maxLineSpan) }) {
+                        val hasFilters = state.selectedLevel != null ||
+                            state.searchQuery.isNotBlank() ||
+                            category != null ||
+                            length != null ||
+                            savedOnly
                         Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
                             ReadingStateMessage(
                                 ReadingIllustration.EMPTY,
                                 if (savedOnly) "No saved articles yet. Tap the bookmark icon on any article to save it here."
                                 else "No articles match these filters.",
+                                action = if (hasFilters) {
+                                    {
+                                        FluentButton(
+                                            text = "Clear filters",
+                                            variant = ButtonVariant.Outlined,
+                                            onClick = {
+                                                viewModel.selectLevel(null)
+                                                viewModel.updateSearchQuery("")
+                                                category = null
+                                                length = null
+                                                savedOnly = false
+                                            },
+                                        )
+                                    }
+                                } else null,
                             )
                         }
                     }
@@ -227,6 +248,13 @@ private fun LibrarySearchField(query: String, onQueryChange: (String) -> Unit) {
         onValueChange = onQueryChange,
         placeholder = { Text("Search articles...") },
         leadingIcon = { Icon(Icons.Rounded.Search, contentDescription = null) },
+        trailingIcon = if (query.isNotEmpty()) {
+            {
+                IconButton(onClick = { onQueryChange("") }) {
+                    Icon(Icons.Rounded.Close, contentDescription = "Clear search")
+                }
+            }
+        } else null,
         singleLine = true,
         modifier = Modifier.widthIn(max = 640.dp).fillMaxWidth(),
         colors = OutlinedTextFieldDefaults.colors(
@@ -238,6 +266,8 @@ private fun LibrarySearchField(query: String, onQueryChange: (String) -> Unit) {
             unfocusedBorderColor = tokens.border,
             focusedLeadingIconColor = tokens.ink,
             unfocusedLeadingIconColor = tokens.inkSecondary,
+            focusedTrailingIconColor = tokens.ink,
+            unfocusedTrailingIconColor = tokens.inkSecondary,
             focusedPlaceholderColor = tokens.inkMuted,
             unfocusedPlaceholderColor = tokens.inkMuted,
             cursorColor = tokens.terracotta,
@@ -336,30 +366,47 @@ private fun LibraryArticleCard(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(4.dp),
                         ) {
-                            Icon(Icons.Rounded.CheckCircle, null, tint = Color.White, modifier = Modifier.size(14.dp))
-                            Text("Read", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color.White)
+                            Icon(Icons.Rounded.CheckCircle, null, tint = tokens.onSuccess, modifier = Modifier.size(14.dp))
+                            Text("Read", fontSize = 11.sp, fontWeight = FontWeight.Bold, color = tokens.onSuccess)
                         }
                     }
                 }
                 Surface(
                     onClick = onToggleSave,
                     shape = CircleShape,
-                    color = tokens.card.copy(alpha = 0.92f),
+                    color = tokens.card.copy(alpha = 0.94f),
                     border = BorderStroke(1.dp, tokens.border),
-                    modifier = Modifier.align(Alignment.TopEnd).padding(8.dp).size(36.dp),
+                    modifier = Modifier.align(Alignment.TopEnd).padding(6.dp).size(48.dp),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(
                             if (isSaved) Icons.Rounded.Bookmark else Icons.Rounded.BookmarkBorder,
                             contentDescription = if (isSaved) "Remove bookmark" else "Save article",
                             tint = if (isSaved) tokens.terracotta else tokens.inkSecondary,
-                            modifier = Modifier.size(18.dp),
+                            modifier = Modifier.size(20.dp),
                         )
                     }
                 }
             }
             Column(Modifier.padding(horizontal = 6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                ReadingEyebrow(article.levelAndTopic())
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Surface(
+                        shape = RoundedCornerShape(8.dp),
+                        color = tokens.sand,
+                    ) {
+                        Text(
+                            article.cefrLevel,
+                            style = ReadingType.Eyebrow,
+                            fontWeight = FontWeight.Bold,
+                            color = tokens.ink,
+                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
+                        )
+                    }
+                    ReadingEyebrow(article.category.readingDisplayName())
+                }
                 Text(article.title, style = ReadingType.CardTitle, color = tokens.ink, maxLines = 2, overflow = TextOverflow.Ellipsis)
                 Text(
                     article.summaryEn,
@@ -512,7 +559,7 @@ private fun ReadingSessionContent(
                             onSaveWordToReview = onSaveWordToReview,
                             wide = wide,
                         )
-                        ReadingSessionSection.QUESTIONS -> QuestionsSection(state, viewModel)
+                        ReadingSessionSection.QUESTIONS -> QuestionsSection(state, viewModel, wide = wide)
                         ReadingSessionSection.REVIEW -> ReviewSection(state, viewModel, onFinish)
                     }
                 }
@@ -538,6 +585,7 @@ private fun SessionTopBar(
             shape = RoundedCornerShape(12.dp),
             color = tokens.card,
             border = BorderStroke(1.dp, tokens.border),
+            modifier = Modifier.defaultMinSize(minHeight = 44.dp),
         ) {
             Row(
                 Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
@@ -609,7 +657,7 @@ private fun SectionStepper(current: ReadingSessionSection, onSection: (ReadingSe
                         fontWeight = FontWeight.Bold,
                         color = when {
                             selected -> tokens.ink
-                            done -> Color.White
+                            done -> tokens.onSuccess
                             else -> tokens.inkSecondary
                         },
                     )
@@ -676,7 +724,16 @@ private fun ArticleSection(
                     .verticalScroll(scrollState)
                     .padding(bottom = 40.dp),
             ) {
-                // Reader Comfort Controls Bar
+                val remainingMinutes = ((1f - scrollProgress) * article.estimatedReadingMinutes)
+                    .toInt()
+                    .coerceAtLeast(if (scrollProgress >= 0.98f) 0 else 1)
+                val toolbarProgressLabel = if (state.mode == ReadingSessionMode.GUIDED) {
+                    "Paragraph ${state.guidedParagraphIndex + 1} / ${article.paragraphs.size.coerceAtLeast(1)}"
+                } else {
+                    "${(scrollProgress * 100).toInt()}% · ~$remainingMinutes min left"
+                }
+
+                // Shared Reader Comfort Controls Bar
                 ReaderComfortToolbar(
                     surfaceStyle = surfaceStyle,
                     fontSizeSp = fontSizeSp,
@@ -692,6 +749,9 @@ private fun ArticleSection(
                             tts.speak(fullText, TtsAccent.US, speechRate = 0.92f, tag = "article:${article.id}")
                         }
                     },
+                    readingMode = state.mode,
+                    onSelectMode = viewModel::setMode,
+                    progressLabel = toolbarProgressLabel,
                 )
                 Spacer(Modifier.height(18.dp))
 
@@ -765,7 +825,7 @@ private fun ArticleSection(
                                 if (isSpeakingPara) tts.stop()
                                 else tts.speak(paragraph.contentEn, TtsAccent.US, speechRate = 0.92f, tag = paraTag)
                             },
-                            modifier = Modifier.size(36.dp),
+                            modifier = Modifier.size(44.dp),
                         ) {
                             Icon(
                                 if (isSpeakingPara) Icons.Rounded.Stop else Icons.AutoMirrored.Rounded.VolumeUp,
@@ -854,97 +914,6 @@ private fun ArticleSection(
                 onClose = { selectedLookup = null; onClearDictionaryWord() },
                 modifier = Modifier.padding(start = 28.dp, end = 28.dp, bottom = 36.dp),
             )
-        }
-    }
-}
-
-@OptIn(ExperimentalLayoutApi::class)
-@Composable
-private fun ReaderComfortToolbar(
-    surfaceStyle: ReadingSurfaceStyle,
-    fontSizeSp: Float,
-    isSpeakingArticle: Boolean,
-    onSelectStyle: (ReadingSurfaceStyle) -> Unit,
-    onDecreaseFont: () -> Unit,
-    onIncreaseFont: () -> Unit,
-    onToggleReadAloud: () -> Unit,
-) {
-    val tokens = LocalReadingTokens.current
-    Surface(
-        modifier = Modifier.fillMaxWidth(),
-        shape = RoundedCornerShape(16.dp),
-        color = tokens.card,
-        border = BorderStroke(1.dp, tokens.border),
-    ) {
-        FlowRow(
-            modifier = Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
-            horizontalArrangement = Arrangement.spacedBy(10.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp),
-        ) {
-            // Surface Theme Switcher
-            Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                ReadingSurfaceStyle.entries.forEach { style ->
-                    val active = style == surfaceStyle
-                    Surface(
-                        onClick = { onSelectStyle(style) },
-                        shape = RoundedCornerShape(12.dp),
-                        color = if (active) tokens.ink else tokens.elevated,
-                    ) {
-                        Text(
-                            style.label,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = if (active) tokens.card else tokens.inkSecondary,
-                            modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
-                        )
-                    }
-                }
-            }
-
-            // Font Size Controls
-            Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
-                Surface(
-                    onClick = onDecreaseFont,
-                    shape = CircleShape,
-                    color = tokens.elevated,
-                ) {
-                    Text("A−", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = tokens.ink, modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp))
-                }
-                Text("${fontSizeSp.toInt()}sp", fontSize = 12.sp, color = tokens.inkSecondary, modifier = Modifier.padding(horizontal = 4.dp))
-                Surface(
-                    onClick = onIncreaseFont,
-                    shape = CircleShape,
-                    color = tokens.elevated,
-                ) {
-                    Text("A+", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = tokens.ink, modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp))
-                }
-            }
-
-            // Read Aloud Toggle
-            Surface(
-                onClick = onToggleReadAloud,
-                shape = RoundedCornerShape(12.dp),
-                color = if (isSpeakingArticle) tokens.terracotta else tokens.elevated,
-            ) {
-                Row(
-                    Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                    horizontalArrangement = Arrangement.spacedBy(5.dp),
-                ) {
-                    Icon(
-                        if (isSpeakingArticle) Icons.Rounded.Stop else Icons.AutoMirrored.Rounded.VolumeUp,
-                        contentDescription = null,
-                        tint = if (isSpeakingArticle) Color.White else tokens.ink,
-                        modifier = Modifier.size(16.dp),
-                    )
-                    Text(
-                        if (isSpeakingArticle) "Stop Audio" else "Listen",
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.SemiBold,
-                        color = if (isSpeakingArticle) Color.White else tokens.ink,
-                    )
-                }
-            }
         }
     }
 }
@@ -1287,7 +1256,11 @@ private fun VocabularySection(
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun QuestionsSection(state: ReadingSessionUiState, viewModel: ReadingSessionViewModel) {
+private fun QuestionsSection(
+    state: ReadingSessionUiState,
+    viewModel: ReadingSessionViewModel,
+    wide: Boolean,
+) {
     val tokens = LocalReadingTokens.current
     val article = state.article ?: return
     val question = state.currentQuestion
@@ -1297,45 +1270,96 @@ private fun QuestionsSection(state: ReadingSessionUiState, viewModel: ReadingSes
     }
     val submitted = question.id in state.submittedQuestionIds
     val total = article.comprehensionQuestions.size
-    Column(
-        Modifier.widthIn(max = 720.dp).fillMaxWidth().verticalScroll(rememberScrollState()).padding(top = 8.dp, bottom = 40.dp),
-        verticalArrangement = Arrangement.spacedBy(14.dp),
-    ) {
-        Text("Comprehension", style = ReadingType.Title, color = tokens.ink)
-        Text("Question ${state.questionIndex + 1} of $total", style = ReadingType.Meta, color = tokens.inkSecondary)
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-            repeat(total) { i ->
-                Box(
-                    Modifier.weight(1f).height(4.dp).clip(RoundedCornerShape(2.dp))
-                        .background(if (i <= state.questionIndex) tokens.terracotta else tokens.border),
+    var showReferencePane by rememberSaveable(article.id) { mutableStateOf(true) }
+
+    val questionColumn: @Composable (Modifier) -> Unit = { colModifier ->
+        Column(
+            colModifier.verticalScroll(rememberScrollState()).padding(top = 8.dp, bottom = 40.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp),
+        ) {
+            Row(
+                Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text("Comprehension", style = ReadingType.Title, color = tokens.ink)
+                    Text("Question ${state.questionIndex + 1} of $total", style = ReadingType.Meta, color = tokens.inkSecondary)
+                }
+                if (wide) {
+                    FluentButton(
+                        text = if (showReferencePane) "Hide article" else "Show article",
+                        variant = ButtonVariant.Outlined,
+                        onClick = { showReferencePane = !showReferencePane },
+                    )
+                }
+            }
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                repeat(total) { i ->
+                    Box(
+                        Modifier.weight(1f).height(4.dp).clip(RoundedCornerShape(2.dp))
+                            .background(if (i <= state.questionIndex) tokens.terracotta else tokens.border),
+                    )
+                }
+            }
+            Text(question.questionEn, style = ReadingType.Heading, color = tokens.ink, modifier = Modifier.padding(top = 12.dp, bottom = 4.dp))
+            question.options.forEachIndexed { index, option ->
+                QuestionOption(
+                    label = ('A'.code + index).toChar().toString(),
+                    text = option,
+                    selected = state.selectedAnswers[question.id] == option,
+                    submitted = submitted,
+                    correct = option == question.correctAnswer,
+                    onClick = { viewModel.selectAnswer(question.id, option) },
                 )
             }
-        }
-        Text(question.questionEn, style = ReadingType.Heading, color = tokens.ink, modifier = Modifier.padding(top = 12.dp, bottom = 4.dp))
-        question.options.forEachIndexed { index, option ->
-            QuestionOption(
-                label = ('A'.code + index).toChar().toString(),
-                text = option,
-                selected = state.selectedAnswers[question.id] == option,
-                submitted = submitted,
-                correct = option == question.correctAnswer,
-                onClick = { viewModel.selectAnswer(question.id, option) },
-            )
-        }
-        if (submitted) QuestionFeedback(question, state.selectedAnswers[question.id].orEmpty(), state.answerCorrectness[question.id] == true)
-        Row(Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
-            FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.weight(1f)) {
-                FluentButton(text = "View article", onClick = { viewModel.selectSection(ReadingSessionSection.ARTICLE) }, variant = ButtonVariant.Outlined)
-                if (state.questionIndex > 0) FluentButton(text = "Previous question", onClick = viewModel::previousQuestion, variant = ButtonVariant.Outlined)
-            }
-            if (!submitted) {
-                FluentButton(text = "Check answer", onClick = viewModel::checkAnswer, enabled = state.selectedAnswers[question.id] != null)
-            } else if (state.questionIndex == article.comprehensionQuestions.lastIndex) {
-                FluentButton(text = "Review Session", onClick = { viewModel.selectSection(ReadingSessionSection.REVIEW) })
-            } else {
-                FluentButton(text = "Next", onClick = viewModel::nextQuestion)
+            if (submitted) QuestionFeedback(question, state.selectedAnswers[question.id].orEmpty(), state.answerCorrectness[question.id] == true)
+            Row(Modifier.fillMaxWidth().padding(top = 8.dp), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.weight(1f)) {
+                    if (!wide || !showReferencePane) {
+                        FluentButton(text = "View article", onClick = { viewModel.selectSection(ReadingSessionSection.ARTICLE) }, variant = ButtonVariant.Outlined)
+                    }
+                    if (state.questionIndex > 0) FluentButton(text = "Previous question", onClick = viewModel::previousQuestion, variant = ButtonVariant.Outlined)
+                }
+                if (!submitted) {
+                    FluentButton(text = "Check answer", onClick = viewModel::checkAnswer, enabled = state.selectedAnswers[question.id] != null)
+                } else if (state.questionIndex == article.comprehensionQuestions.lastIndex) {
+                    FluentButton(text = "Review Session", onClick = { viewModel.selectSection(ReadingSessionSection.REVIEW) })
+                } else {
+                    FluentButton(text = "Next", onClick = viewModel::nextQuestion)
+                }
             }
         }
+    }
+
+    if (wide && showReferencePane) {
+        Row(
+            Modifier.widthIn(max = 1200.dp).fillMaxSize(),
+            horizontalArrangement = Arrangement.spacedBy(24.dp),
+        ) {
+            ReadingCard(
+                modifier = Modifier.weight(0.92f).fillMaxSize().padding(top = 8.dp, bottom = 28.dp),
+            ) {
+                Column(
+                    Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(24.dp),
+                    verticalArrangement = Arrangement.spacedBy(14.dp),
+                ) {
+                    ReadingEyebrow("Article Reference · ${article.cefrLevel}")
+                    Text(article.title, style = ReadingType.Heading, color = tokens.ink)
+                    Box(Modifier.fillMaxWidth().height(1.dp).background(tokens.border))
+                    article.paragraphs.forEachIndexed { idx, para ->
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            val paraLabel = para.title?.takeIf { it.isNotBlank() }?.let { "${idx + 1}. $it" } ?: "Paragraph ${idx + 1}"
+                            ReadingEyebrow(paraLabel, color = tokens.inkSecondary)
+                            Text(para.contentEn, style = ReadingType.bodyForSize(17f), color = tokens.ink)
+                        }
+                    }
+                }
+            }
+            questionColumn(Modifier.weight(1.08f).fillMaxSize())
+        }
+    } else {
+        questionColumn(Modifier.widthIn(max = 720.dp).fillMaxWidth())
     }
 }
 
@@ -1443,6 +1467,71 @@ private fun ReviewSection(state: ReadingSessionUiState, viewModel: ReadingSessio
                     style = ReadingType.Meta,
                     color = tokens.inkSecondary,
                 )
+            }
+        }
+        if (article.comprehensionQuestions.isNotEmpty()) {
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                ReadingEyebrow("Question breakdown", color = tokens.inkSecondary)
+                article.comprehensionQuestions.forEachIndexed { index, q ->
+                    val isSubmitted = q.id in state.submittedQuestionIds
+                    val isCorrect = state.answerCorrectness[q.id] == true
+                    val statusLabel = when {
+                        !isSubmitted -> "Unanswered"
+                        isCorrect -> "Correct"
+                        else -> "Revisit"
+                    }
+                    ReadingCard(
+                        modifier = Modifier.fillMaxWidth(),
+                        onClick = {
+                            viewModel.selectQuestion(index)
+                            viewModel.selectSection(ReadingSessionSection.QUESTIONS)
+                        },
+                        onClickLabel = "Question ${index + 1}: $statusLabel. ${q.questionEn}",
+                    ) {
+                        Row(
+                            Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 14.dp),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(12.dp),
+                        ) {
+                            Text(
+                                "Q${index + 1}",
+                                style = ReadingType.Meta,
+                                fontWeight = FontWeight.Bold,
+                                color = tokens.inkSecondary,
+                            )
+                            Text(
+                                q.questionEn,
+                                style = FluentTheme.typography.bodyMedium,
+                                color = tokens.ink,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis,
+                                modifier = Modifier.weight(1f),
+                            )
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(4.dp),
+                            ) {
+                                if (isSubmitted) {
+                                    Icon(
+                                        if (isCorrect) Icons.Rounded.CheckCircle else Icons.Rounded.Cancel,
+                                        contentDescription = null,
+                                        tint = if (isCorrect) tokens.sage else tokens.error,
+                                        modifier = Modifier.size(16.dp),
+                                    )
+                                }
+                                Text(
+                                    statusLabel,
+                                    style = ReadingType.Meta,
+                                    color = when {
+                                        !isSubmitted -> tokens.inkMuted
+                                        isCorrect -> tokens.sage
+                                        else -> tokens.error
+                                    },
+                                )
+                            }
+                        }
+                    }
+                }
             }
         }
         FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {

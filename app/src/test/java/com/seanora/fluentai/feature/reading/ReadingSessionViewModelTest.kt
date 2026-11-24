@@ -86,6 +86,22 @@ class ReadingSessionViewModelTest {
         assertEquals(ARTICLE.id, viewModel.uiState.value.article?.id)
     }
 
+    @Test
+    fun setModeAndSelectQuestionUpdateSessionCleanly() = runTest {
+        val viewModel = sessionViewModel()
+        viewModel.openArticle(ARTICLE.id, ReadingSessionMode.STANDARD)
+        advanceUntilIdle()
+
+        viewModel.setMode(ReadingSessionMode.GUIDED)
+        assertEquals(ReadingSessionMode.GUIDED, viewModel.uiState.value.mode)
+
+        viewModel.selectQuestion(99)
+        assertEquals(0, viewModel.uiState.value.questionIndex)
+
+        viewModel.selectQuestion(-4)
+        assertEquals(0, viewModel.uiState.value.questionIndex)
+    }
+
     private fun sessionViewModel(users: SessionUserRepository = SessionUserRepository()) =
         ReadingSessionViewModel(
             readingRepository = SessionReadingRepository(),

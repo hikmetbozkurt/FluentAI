@@ -1,0 +1,1417 @@
+- id: chunk.c2.bridge.be-that-as-it-may
+  chunk_en: Be that as it may,...
+  pattern_template: Be that as it may, + [Unaltered Obligation / Conclusion]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Önceki argüman geçerli olsa bile asıl sorumluluğun/kararın değişmediğini zarif bir subjunctive kalıpla söylemek
+  meaning_en: Formal optative-concessive bridge signaling dignified pivoting.
+  turkish_trap:
+    incorrect_en: Is that as it may, we still must comply.
+    correct_en: Be that as it may, our contractual deadline remains unchanged.
+    explanation_tr: Kalıp çekimsiz subjunctive 'Be' ile başlar; 'Is' veya 'May it be' şeklinde değiştirilmez.
+    trap_type: subjunctive_distortion
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Pivot
+    text_en: Be that as it may,
+    text_tr: Durum böyle olsa da,
+  - role: SUBJECT
+    label: Subject
+    text_en: the regulatory deadline
+    text_tr: yasal son tarih
+  - role: VERB_BRIDGE
+    label: State
+    text_en: remains
+    text_tr: kalmaktadır
+  - role: OBJECT
+    label: Status
+    text_en: non-negotiable.
+    text_tr: pazarlık dışı.
+  slot_variations:
+  - slot_en: regulatory deadline
+    full_sentence_en: Be that as it may, the regulatory deadline remains non-negotiable.
+    full_sentence_tr: Durum öyle olsa da yasal son tarih pazarlık dışı kalmaktadır.
+  - slot_en: legacy constraints
+    full_sentence_en: Be that as it may, customers still judge the product by its present reliability.
+    full_sentence_tr: Geçmiş kısıtlar ne olursa olsun müşteriler ürünü bugünkü güvenilirliğiyle değerlendirir.
+  - slot_en: limited headcount
+    full_sentence_en: Be that as it may, we cannot compromise on encryption audits.
+    full_sentence_tr: Koşullar ne olursa olsun şifreleme denetimlerinden ödün veremeyiz.
+  topic_tags:
+  - formal_register
+  - diplomacy
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.that-is-not-to-say
+  chunk_en: That is not to say that...
+  pattern_template: That is not to say (that) + [Nuanced Caveat Preventing Misreading]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Söylenenlerin yanlış veya aşırı uç bir anlama çekilmesini peşinen önlemek
+  meaning_en: Precision rhetorical guard against straw-man interpretations.
+  turkish_trap:
+    incorrect_en: That is not saying that speed doesn't matter.
+    correct_en: That is not to say that execution speed is unimportant.
+    explanation_tr: Düzeltici akademik kalıp 'is not to say that' biçimindedir; 'is not saying' aynı resmi ağırlığı vermez.
+    trap_type: register_mismatch
+  blueprint_slots:
+  - role: SUBJECT
+    label: Guard
+    text_en: That is not to say that
+    text_tr: Bu şu anlama gelmez ki
+  - role: VERB_BRIDGE
+    label: Nuance
+    text_en: live AI coaching lacks
+    text_tr: canlı yapay zeka koçluğu yoksundur
+  - role: OBJECT
+    label: Value
+    text_en: transformative pedagogical value.
+    text_tr: dönüştürücü pedagojik değerden.
+  slot_variations:
+  - slot_en: pedagogical value
+    full_sentence_en: That is not to say that live AI lacks pedagogical value; rather, it works best as a targeted layer.
+    full_sentence_tr: Bu, canlı yapay zekanın pedagojik değerden yoksun olduğu anlamına gelmez; aksine hedefli bir katman
+      olarak en iyi sonucu verir.
+  - slot_en: aesthetic polish
+    full_sentence_en: That is not to say that visual craft is trivial; calm clarity supports focus.
+    full_sentence_tr: Bu, görsel işçiliğin önemsiz olduğu anlamına gelmez; sakin netlik odaklanmayı destekler.
+  - slot_en: short-term metrics
+    full_sentence_en: That is not to say quarterly targets can be ignored.
+    full_sentence_tr: Bu, çeyrek hedeflerinin göz ardı edilebileceği anlamına gelmez.
+  topic_tags:
+  - precision
+  - academic
+  - diplomacy
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.not-least-because
+  chunk_en: not least because...
+  pattern_template: '[Main Clause], + not least because + [Decisive Underlying Reason]'
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Bir dizi neden arasında özellikle en ağır basanını incelikli biçimde vurgulamak
+  meaning_en: Litotes-based causal intensifier prized in British/executive prose.
+  turkish_trap:
+    incorrect_en: We kept the database local, not the least because cost.
+    correct_en: We kept core lessons local, not least because commuting learners lose signal.
+    explanation_tr: Standart akademik kalıp 'not least because + tam cümle'dir ('the' ve eksiltili isim grubu hatalıdır).
+    trap_type: article_and_clause
+  blueprint_slots:
+  - role: SUBJECT
+    label: Decision
+    text_en: Deterministic scoring matters,
+    text_tr: Deterministik puanlama önemlidir,
+  - role: VERB_BRIDGE
+    label: Litotes
+    text_en: not least because
+    text_tr: özellikle de şu nedenle ki
+  - role: OBJECT
+    label: Reason
+    text_en: learners deserve explainable progress.
+    text_tr: öğrenenler açıklanabilir ilerlemeyi hak eder.
+  slot_variations:
+  - slot_en: explainable progress
+    full_sentence_en: Deterministic scoring matters, not least because learners deserve explainable progress.
+    full_sentence_tr: Deterministik puanlama önemlidir; özellikle de öğrenenler açıklanabilir bir ilerlemeyi hak ettiği için.
+  - slot_en: quiet reading
+    full_sentence_en: The reading surface stays restrained, not least because visual noise fatigues the eye.
+    full_sentence_tr: Okuma yüzeyi sade kalır; özellikle görsel gürültü gözü yorduğu için.
+  - slot_en: contractual certainty
+    full_sentence_en: Explicit schemas pay off, not least because they prevent silent regressions.
+    full_sentence_tr: Açık şemalar karşılığını verir; özellikle sessiz gerilemeleri önledikleri için.
+  topic_tags:
+  - diplomacy
+  - ielts
+  - academic
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.albeit
+  chunk_en: '..., albeit [adj/adv/prep]...'
+  pattern_template: '[Main Clause], + albeit + [Adjective / Adverb / Prepositional Phrase]'
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Tek bir kelime veya kısa öbekle zarif bir kısıt/şerh düşmek ('... olsa da')
+  meaning_en: Compact C2 concessive particle condensing an entire 'although it is' clause.
+  turkish_trap:
+    incorrect_en: Growth resumed, albeit it was slower than projected.
+    correct_en: Growth resumed, albeit at a markedly slower pace.
+    explanation_tr: '''Albeit'' arkasından çekimli tam cümle almaz; sadece sıfat, zarf veya edat öbeği alır.'
+    trap_type: clause_structure
+  blueprint_slots:
+  - role: SUBJECT
+    label: Progress
+    text_en: Fluency returned,
+    text_tr: Akıcılık geri döndü,
+  - role: VERB_BRIDGE
+    label: Particle
+    text_en: albeit
+    text_tr: gerçi / her ne kadar
+  - role: OBJECT
+    label: Qualifier
+    text_en: in modest daily increments.
+    text_tr: mütevazı günlük artışlarla olsa da.
+  slot_variations:
+  - slot_en: modest increments
+    full_sentence_en: Fluency improved steadily, albeit in modest daily increments.
+    full_sentence_tr: Akıcılık mütevazı günlük artışlarla da olsa istikrarlı biçimde gelişti.
+  - slot_en: at higher cost
+    full_sentence_en: The vendor delivered on time, albeit at a slightly higher unit cost.
+    full_sentence_tr: Tedarikçi biraz daha yüksek birim maliyetle de olsa zamanında teslim etti.
+  - slot_en: imperfectly
+    full_sentence_en: Early prototypes validate the core loop, albeit imperfectly.
+    full_sentence_tr: İlk prototipler kusurlu da olsa temel döngüyü doğrular.
+  topic_tags:
+  - academic
+  - precision
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.much-as-i-admire
+  chunk_en: Much as [subject + verb], ...
+  pattern_template: Much as + [Subject + Verb], + [Contrasting Main Clause]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Bir fikri veya çabayı ne kadar takdir etse de katılamadığını zarifçe ifade etmek
+  meaning_en: Fronted concessive construction conveying gracious disagreement.
+  turkish_trap:
+    incorrect_en: Much as I admire the idea, but we lack capacity.
+    correct_en: Much as I admire the ambition, we cannot fund two parallel tracks.
+    explanation_tr: Önde 'Much as' varken ikinci cümle başında 'but' kullanılmaz.
+    trap_type: double_conjunction
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Concession
+    text_en: Much as I appreciate the craft,
+    text_tr: İşçiliği ne kadar takdir etsem de,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Decision
+    text_en: must keep
+    text_tr: tutmalıyız
+  - role: OBJECT
+    label: Scope
+    text_en: the UI visually quiet.
+    text_tr: arayüzü görsel olarak sakin.
+  slot_variations:
+  - slot_en: visually quiet UI
+    full_sentence_en: Much as I admire expressive visuals, reading screens must stay visually quiet.
+    full_sentence_tr: İfadeli görselleri ne kadar beğensem de okuma ekranları görsel olarak sakin kalmalıdır.
+  - slot_en: ambitious roadmap
+    full_sentence_en: Much as we welcome ambitious ideas, stability takes precedence this quarter.
+    full_sentence_tr: İddialı fikirleri ne kadar hoş karşılasak da bu çeyrekte kararlılık önceliklidir.
+  - slot_en: frequent travel
+    full_sentence_en: Much as she enjoys international conferences, constant flights take a toll.
+    full_sentence_tr: Uluslararası konferanslardan ne kadar keyif alsa da sürekli uçuşlar yıpratıcı oluyor.
+  topic_tags:
+  - diplomacy
+  - leadership
+  - grammar_in_use
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.not-so-much-x-as-y
+  chunk_en: not so much [X] as [Y]
+  pattern_template: '[Subject + Verb] + not so much + [X] + as + [More Accurate Y]'
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Yaygın bir teşhisi düzeltip asıl gerçeği incelikle yeniden tanımlamak ('X'ten ziyade Y')
+  meaning_en: Rhetorical precision structure for reframing causes and motives.
+  turkish_trap:
+    incorrect_en: The obstacle isn't so much budget than alignment.
+    correct_en: The obstacle is not so much technical complexity as unclear ownership.
+    explanation_tr: '''Not so much X'' kalıbının ikinci ayağı ''than'' değil her zaman ''as''tir.'
+    trap_type: correlative_conjunction
+  blueprint_slots:
+  - role: SUBJECT
+    label: Issue
+    text_en: The bottleneck is
+    text_tr: Darboğaz
+  - role: VERB_BRIDGE
+    label: Reframe
+    text_en: not so much lack of data as
+    text_tr: veri eksikliğinden ziyade
+  - role: OBJECT
+    label: True cause
+    text_en: lack of prioritization.
+    text_tr: önceliklendirme eksikliğidir.
+  slot_variations:
+  - slot_en: lack of prioritization
+    full_sentence_en: The bottleneck is not so much lack of data as lack of prioritization.
+    full_sentence_tr: Darboğaz veri eksikliğinden ziyade önceliklendirme eksikliğidir.
+  - slot_en: retention vs vocabulary
+    full_sentence_en: Fluency is not so much memorizing rare words as mastering high-value chunks.
+    full_sentence_tr: Akıcılık nadir kelimeler ezberlemekten ziyade yüksek değerli kalıplara hakim olmaktır.
+  - slot_en: fear vs ambiguity
+    full_sentence_en: Hesitation stemmed not so much from disagreement as from ambiguous terms.
+    full_sentence_tr: Tereddüt anlaşmazlıktan ziyade muğlak ifadelerden kaynaklanıyordu.
+  topic_tags:
+  - reformulation
+  - precision
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.lest-we-forget
+  chunk_en: lest [subject + (should) + base verb]
+  pattern_template: '[Precaution] + lest + [Subject] + [Base Verb]'
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: İstenmeyen bir sonucun doğmaması için uyarı veya önlem bildirmek ('... olmasın diye')
+  meaning_en: Formal negative-purpose conjunction taking mandative subjunctive.
+  turkish_trap:
+    incorrect_en: Document every decision lest we don't repeat past errors.
+    correct_en: Document every rationale lest future teams repeat the same migration mistake.
+    explanation_tr: '''Lest'' zaten olumsuzluk içerdiği için içine ayrıca ''not/don''t'' konmaz ve fiil yalın kalır.'
+    trap_type: double_negation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Action
+    text_en: Keep tests deterministic
+    text_tr: Testleri deterministik tutun
+  - role: VERB_BRIDGE
+    label: Risk guard
+    text_en: lest subtle regressions
+    text_tr: ince gerilemeler olmasın diye
+  - role: OBJECT
+    label: Outcome
+    text_en: slip past review.
+    text_tr: incelemeden kaçıp.
+  slot_variations:
+  - slot_en: slip past review
+    full_sentence_en: Enforce strict build checks lest subtle regressions slip past review.
+    full_sentence_tr: İnce gerilemeler gözden kaçmasın diye sıkı derleme kontrolleri uygulayın.
+  - slot_en: erode trust
+    full_sentence_en: Avoid inflated scores lest learners lose trust in progress metrics.
+    full_sentence_tr: Öğrenenler ilerleme metriklerine güvenini kaybetmesin diye şişirilmiş puanlardan kaçının.
+  - slot_en: overburden the team
+    full_sentence_en: Sequence expansion in small batches lest QA standards erode.
+    full_sentence_tr: Kalite standartları aşınmasın diye genişlemeyi küçük partilerle sıralayın.
+  topic_tags:
+  - formal_register
+  - governance
+  - grammar_in_use
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.in-the-same-vein
+  chunk_en: In a similar vein,...
+  pattern_template: In a similar vein, + [Parallel Insight / Example]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Önceki noktayla aynı ruhu/ilkeyi taşıyan paralel bir örneğe geçmek
+  meaning_en: Elegant cohesive discourse marker replacing repetitive 'Similarly'.
+  turkish_trap:
+    incorrect_en: On a similar vein, reading avoids noisy alerts.
+    correct_en: In a similar vein, spaced review prioritizes long-overdue concepts.
+    explanation_tr: Edat her zaman 'In'dir ('In a similar vein' veya 'In the same vein').
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Link
+    text_en: In a similar vein,
+    text_tr: Benzer bir çizgide,
+  - role: SUBJECT
+    label: Subject
+    text_en: grammar drills
+    text_tr: dilbilgisi alıştırmaları
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: surface
+    text_tr: hedef alır
+  - role: OBJECT
+    label: Target
+    text_en: recurring L1 interference patterns.
+    text_tr: tekrarlanan ana dil aktarım kalıplarını.
+  slot_variations:
+  - slot_en: L1 interference
+    full_sentence_en: In a similar vein, grammar drills surface recurring L1 transfer patterns.
+    full_sentence_tr: Benzer bir çizgide, dilbilgisi alıştırmaları tekrarlanan ana dil aktarım kalıplarını hedef alır.
+  - slot_en: city planning
+    full_sentence_en: In a similar vein, shaded pedestrian corridors improve local retail footfall.
+    full_sentence_tr: Benzer doğrultuda, gölgeli yaya koridorları yerel esnaf trafiğini artırır.
+  - slot_en: contract clarity
+    full_sentence_en: In a similar vein, plain-language appendices prevent onboarding confusion.
+    full_sentence_tr: Aynı doğrultuda, sade dilli ekler başlangıçtaki kafa karışıklığını önler.
+  topic_tags:
+  - academic
+  - writing
+  - presentations
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.suffice-it-to-say
+  chunk_en: Suffice it to say (that)...
+  pattern_template: Suffice it to say (that) + [Concise Bottom Line]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Uzun detaylara girmeden tek cümlede özü vermenin yeterli olduğunu söylemek
+  meaning_en: High-style rhetorical formula summarizing lengthy evidence decisively.
+  turkish_trap:
+    incorrect_en: Suffice to say that the pilot exceeded targets.
+    correct_en: Suffice it to say that the offline rollout cut support tickets by half.
+    explanation_tr: 'Tam resmi kalıpta ''it'' nesnesi korunur: ''Suffice it to say that...''.'
+    trap_type: missing_object_pronoun
+  blueprint_slots:
+  - role: SUBJECT
+    label: Formula
+    text_en: Suffice it to say that
+    text_tr: Şunu söylemek yeterli ki
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: manual spreadsheets could not scale
+    text_tr: manuel tablolar ölçeklenemedi
+  - role: OBJECT
+    label: Scope
+    text_en: past five hundred records.
+    text_tr: beş yüz kaydın ötesine.
+  slot_variations:
+  - slot_en: five hundred records
+    full_sentence_en: Suffice it to say that manual spreadsheets could not scale past five hundred records.
+    full_sentence_tr: Manuel tabloların beş yüz kaydın ötesine ölçeklenemediğini söylemek yeterli.
+  - slot_en: tight negotiations
+    full_sentence_en: Suffice it to say that both legal teams examined every clause word for word.
+    full_sentence_tr: İki hukuk ekibinin de her maddeyi kelime kelime incelediğini söylemek yeterli.
+  - slot_en: user enthusiasm
+    full_sentence_en: Suffice it to say that the calmer tablet layout won immediate praise.
+    full_sentence_tr: Daha sakin tablet yerleşiminin anında övgü topladığını belirtmek yeterli.
+  topic_tags:
+  - formal_register
+  - speaking
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.far-be-it-from-me-to
+  chunk_en: Far be it from me to...
+  pattern_template: Far be it from me to + [Verb], + but + [Pointed Observation]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Karşı tarafın alanına haddini aşmadan çok keskin ama kibar bir eleştiri getirmek
+  meaning_en: Diplomatic attenuation opener expressing tactful deference before critique.
+  turkish_trap:
+    incorrect_en: Far is it from me to question legal counsel.
+    correct_en: Far be it from me to second-guess legal counsel, yet this clause seems ambiguous.
+    explanation_tr: 'Subjunctive kalıp değişmez: ''Far be it from me to...''.'
+    trap_type: subjunctive_distortion
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Deference
+    text_en: Far be it from me to
+    text_tr: Haddim olmayarak / Ne haddime
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: dictate design details,
+    text_tr: tasarım detaylarına karışmak,
+  - role: OBJECT
+    label: Critique
+    text_en: yet contrast looks low in dark mode.
+    text_tr: ama karanlık modda kontrast düşük görünüyor.
+  slot_variations:
+  - slot_en: contrast in dark mode
+    full_sentence_en: Far be it from me to dictate design details, yet contrast looks low in dark mode.
+    full_sentence_tr: Tasarım detaylarına karışmak istemem ama karanlık modda kontrast düşük görünüyor.
+  - slot_en: question financial models
+    full_sentence_en: Far be it from me to question your forecast, yet the churn rate looks optimistic.
+    full_sentence_tr: Tahmininizi sorgulamak haddime değil ama kayıp oranı iyimser görünüyor.
+  - slot_en: rush the review
+    full_sentence_en: Far be it from me to rush the audit, though Friday is our contractual cutoff.
+    full_sentence_tr: Denetimi aceleye getirmek istemem ama Cuma sözleşme gereği son günümüz.
+  topic_tags:
+  - diplomacy
+  - leadership
+  - formal_register
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.were-we-to
+  chunk_en: Were [subject] to..., ...
+  pattern_template: Were + [Subject] + to + [Base Verb], + [Subject] + would/could + [Base Verb]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Resmi strateji toplantısında hipotetik bir senaryoyu devrik 2. koşul cümlesiyle incelemek
+  meaning_en: High-register inverted second conditional for strategic scenario analysis.
+  turkish_trap:
+    incorrect_en: Were we adopt that model, costs would triple.
+    correct_en: Were we to adopt a cloud-only architecture, latency would become unpredictable.
+    explanation_tr: Devrik kalıpta 'to + yalın fiil' zorunludur ('Were we to adopt').
+    trap_type: conditional_overgeneralization
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Scenario
+    text_en: Were we to decouple
+    text_tr: Eğer ayıracak olsaydık
+  - role: OBJECT
+    label: Module
+    text_en: content updates from app releases,
+    text_tr: içerik güncellemelerini uygulama sürümlerinden,
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: fixes would ship faster.
+    text_tr: düzeltmeler daha hızlı çıkardı.
+  slot_variations:
+  - slot_en: content updates
+    full_sentence_en: Were we to decouple content builds, curriculum fixes could be verified independently.
+    full_sentence_tr: İçerik derlemelerini ayırsaydık müfredat düzeltmeleri bağımsız doğrulanabilirdi.
+  - slot_en: eliminate free access
+    full_sentence_en: Were the home screen to restrict Explore access, learner autonomy would suffer.
+    full_sentence_tr: Ana ekran serbest keşfi kısıtlasaydı öğrenen özerkliği zarar görürdü.
+  - slot_en: double the cohort
+    full_sentence_en: Were demand to double overnight, existing servers would throttle requests.
+    full_sentence_tr: Talep bir gecede iki katına çıksaydı mevcut sunucular istekleri kısıtlardı.
+  topic_tags:
+  - strategy
+  - grammar_in_use
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.what-is-more-telling
+  chunk_en: More tellingly still,...
+  pattern_template: More tellingly (still), + [Revealing Escalating Fact]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Önceki kanıttan bile daha çarpıcı ve açığa çıkarıcı ikinci bulguyu sunmak
+  meaning_en: Evaluative adverbial escalating from initial data to decisive proof.
+  turkish_trap:
+    incorrect_en: More telling, zero users completed step three.
+    correct_en: More tellingly still, repeat sessions rose even without reminders.
+    explanation_tr: Cümle belirteci olarak zarf biçimi 'tellingly' gereklidir.
+    trap_type: adverb_vs_adjective
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Escalation
+    text_en: More tellingly still,
+    text_tr: Daha da açıklayıcı olanı,
+  - role: SUBJECT
+    label: Metric
+    text_en: advanced learners
+    text_tr: ileri düzey öğrenenler
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: revisited
+    text_tr: tekrar açtı
+  - role: OBJECT
+    label: Target
+    text_en: their mistake bank unprompted.
+    text_tr: hata bankalarını uyarı olmadan.
+  slot_variations:
+  - slot_en: mistake bank
+    full_sentence_en: More tellingly still, learners revisited their mistake bank unprompted.
+    full_sentence_tr: Daha da anlamlısı, öğrenenler hata bankalarını uyarı almadan tekrar açtı.
+  - slot_en: offline retention
+    full_sentence_en: More tellingly still, completion rates held steady during flights.
+    full_sentence_tr: Daha da çarpıcısı, uçuşlar sırasında tamamlama oranları sabit kaldı.
+  - slot_en: enterprise renewals
+    full_sentence_en: More tellingly, multi-seat accounts expanded without outbound sales.
+    full_sentence_tr: Daha da açıklayıcı olan, çoklu hesapların dış satış olmadan büyümesiydi.
+  topic_tags:
+  - analysis
+  - presentations
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.all-but
+  chunk_en: all but [verb/adjective]
+  pattern_template: '[Subject] + be/have + all but + [Adjective / Past Participle]'
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Bir sonucun 'neredeyse tamamen' gerçekleştiğini yüksek üslupla belirtmek
+  meaning_en: Idiomatic C2 modifier meaning 'virtually / nearly completely' (not 'everything except').
+  turkish_trap:
+    incorrect_en: The errors were all but except eliminated. (redundant 'except')
+    correct_en: Silent schema drift has been all but eliminated by automated tests.
+    explanation_tr: '''All but + sıfat/fiil'' burada ''neredeyse tamamen'' demektir; içine ''except'' eklenmez.'
+    trap_type: idiom_misreading
+  blueprint_slots:
+  - role: SUBJECT
+    label: Issue
+    text_en: Duplicate records
+    text_tr: Mükerrer kayıtlar
+  - role: VERB_BRIDGE
+    label: State
+    text_en: have been all but
+    text_tr: neredeyse tamamen
+  - role: OBJECT
+    label: Outcome
+    text_en: eliminated by unique indexes.
+    text_tr: tekil dizinlerle ortadan kaldırıldı.
+  slot_variations:
+  - slot_en: eliminated
+    full_sentence_en: Duplicate records have been all but eliminated by unique database indexes.
+    full_sentence_tr: Mükerrer kayıtlar tekil veritabanı dizinleriyle neredeyse tamamen ortadan kaldırıldı.
+  - slot_en: impossible
+    full_sentence_en: Without source schemas, maintaining thousands of items becomes all but impossible.
+    full_sentence_tr: Kaynak şemalar olmadan binlerce öğeyi sürdürmek neredeyse imkansızlaşır.
+  - slot_en: forgotten
+    full_sentence_en: Once automated sync landed, manual exports were all but forgotten.
+    full_sentence_tr: Otomatik eşitleme geldiğinde manuel dışa aktarımlar neredeyse tamamen unutuldu.
+  topic_tags:
+  - precision
+  - academic
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.far-from-being
+  chunk_en: Far from [verb]-ing / being..., ...
+  pattern_template: Far from + [Verb-ing / Adjective], + [Subject + Contrasting Reality]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Yaygın bir önyargının aksine tam tersi gerçeğin geçerli olduğunu güçlü biçimde vurgulamak
+  meaning_en: Emphatic fronted negation contrasting myth with reality.
+  turkish_trap:
+    incorrect_en: Far from to slow us down, tests accelerated delivery.
+    correct_en: Far from slowing us down, strict tests accelerated every release.
+    explanation_tr: '''From'' edatı sonrasında fiil her zaman ''-ing'' biçiminde gelir.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Contrast
+    text_en: Far from being rigid,
+    text_tr: Katı olmak bir yana,
+  - role: SUBJECT
+    label: System
+    text_en: clear guardrails
+    text_tr: net koruma sınırları
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: enable
+    text_tr: mümkün kılar
+  - role: OBJECT
+    label: Gain
+    text_en: faster, safer iteration.
+    text_tr: daha hızlı ve güvenli yinelemeyi.
+  slot_variations:
+  - slot_en: faster iteration
+    full_sentence_en: Far from being rigid, clear guardrails enable faster, safer iteration.
+    full_sentence_tr: Katı olmak şöyle dursun, net sınırlar daha hızlı ve güvenli yinelemeyi mümkün kılar.
+  - slot_en: narrowing fluency
+    full_sentence_en: Far from limiting expression, lexical chunks unlock natural spontaneity.
+    full_sentence_tr: İfadeyi kısıtlamak bir yana, kalıplaşmış ifadeler doğal akıcılığın kilidini açar.
+  - slot_en: settled
+    full_sentence_en: Far from being settled, the debate over AI copyright is intensifying.
+    full_sentence_tr: Kapanmış olmak bir yana, yapay zeka telif tartışması giderek yoğunlaşıyor.
+  topic_tags:
+  - persuasion
+  - ielts
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.tread-a-fine-line
+  chunk_en: tread a fine line between...
+  pattern_template: '[Subject] + tread a fine line between + [A] + and + [B]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: İki zıt uç arasında çok hassas ve ustalık gerektiren bir denge yürütmek
+  meaning_en: Nuanced C2 idiom for delicate leadership, UX, or diplomatic balancing.
+  turkish_trap:
+    incorrect_en: Coaches walk thin line among helpfulness and interruption.
+    correct_en: Live coaches tread a fine line between helpfulness and over-correction.
+    explanation_tr: Kalıp 'a fine line between A and B' şeklinde kurulur ('among' ve eksik artikel hatadır).
+    trap_type: preposition_and_article
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Feedback prompts
+    text_tr: Geri bildirim yönergeleri
+  - role: VERB_BRIDGE
+    label: Balance
+    text_en: tread a fine line between
+    text_tr: arasındaki ince çizgide yürür
+  - role: OBJECT
+    label: Extremes
+    text_en: constructive rigor and discouragement.
+    text_tr: yapıcı titizlik ile heves kırma.
+  slot_variations:
+  - slot_en: rigor and discouragement
+    full_sentence_en: Coaches tread a fine line between constructive rigor and discouraging interruption.
+    full_sentence_tr: Koçlar yapıcı titizlik ile heves kıran müdahale arasındaki ince çizgide yürür.
+  - slot_en: candor and tact
+    full_sentence_en: Executive briefings tread a fine line between bluntness and diplomatic tact.
+    full_sentence_tr: Yönetici brifingleri patavatsızlık ile diplomatik incelik arasındaki ince çizgide gider.
+  - slot_en: density and calm
+    full_sentence_en: Tablet dashboards tread a fine line between information density and visual calm.
+    full_sentence_tr: Tablet panoları bilgi yoğunluğu ile görsel dinginlik arasında ince bir denge kurar.
+  topic_tags:
+  - diplomacy
+  - design
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.fly-in-the-face-of
+  chunk_en: fly in the face of...
+  pattern_template: '[Claim/Action] + fly in the face of + [Evidence / Logic / Precedent]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir kararın eldeki tüm kanıtlara ve sağduyuya tamamen ters düştüğünü vurgulamak
+  meaning_en: Forceful C2 idiom expressing stark contradiction with established facts.
+  turkish_trap:
+    incorrect_en: Skipping review flies against the face of memory science.
+    correct_en: Skipping spaced review flies in the face of memory science.
+    explanation_tr: Deyim sabit olarak 'fly in the face of' edatlarıyla kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Action
+    text_en: Assigning arbitrary mastery scores
+    text_tr: Keyfi ustalık puanı atamak
+  - role: VERB_BRIDGE
+    label: Clash
+    text_en: flies in the face of
+    text_tr: tamamen ters düşer
+  - role: OBJECT
+    label: Standard
+    text_en: evidence-based assessment.
+    text_tr: kanıta dayalı değerlendirmeyle.
+  slot_variations:
+  - slot_en: evidence-based assessment
+    full_sentence_en: Assigning arbitrary AI percentages flies in the face of evidence-based assessment.
+    full_sentence_tr: Keyfi yapay zeka yüzdeleri atamak kanıta dayalı değerlendirmeyle taban tabana çelişir.
+  - slot_en: decades of data
+    full_sentence_en: Ignoring induced demand flies in the face of decades of transport research.
+    full_sentence_tr: Tetiklenen talebi göz ardı etmek onlarca yıllık ulaşım araştırmalarına ters düşer.
+  - slot_en: fiscal prudence
+    full_sentence_en: Unhedged currency borrowing flew in the face of basic financial prudence.
+    full_sentence_tr: Korunmasız döviz borçlanması temel mali ihtiyatla çelişiyordu.
+  topic_tags:
+  - critical_thinking
+  - ielts
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.obviate-the-need-for
+  chunk_en: obviate the need for...
+  pattern_template: '[Solution] + obviate the need for + [Workaround / Cost]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir çözümün başka bir zahmetli adımı tamamen gereksiz hale getirdiğini söylemek
+  meaning_en: High-register verb meaning 'render unnecessary before it even arises'.
+  turkish_trap:
+    incorrect_en: Local caching obviates the need of polling.
+    correct_en: Local database storage obviates the need for repeated network polling.
+    explanation_tr: '''The need'' ismi her zaman ''for'' edatı ister (''the need for'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Solution
+    text_en: Prepackaged SQLite content
+    text_tr: Önceden paketlenmiş SQLite içerik
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: obviates the need for
+    text_tr: ihtiyacını ortadan kaldırır
+  - role: OBJECT
+    label: Cost
+    text_en: initial sync downloads.
+    text_tr: ilk kurulumda ağdan indirme.
+  slot_variations:
+  - slot_en: initial sync downloads
+    full_sentence_en: Prepackaged SQLite assets obviate the need for initial sync downloads.
+    full_sentence_tr: Önceden paketlenmiş SQLite varlıkları ilk kurulum indirmelerine olan ihtiyacı ortadan kaldırır.
+  - slot_en: manual reconciliation
+    full_sentence_en: Single-source validation obviates the need for manual reconciliation later.
+    full_sentence_tr: Tek kaynaklı doğrulama, sonradan manuel mutabakat ihtiyacını ortadan kaldırır.
+  - slot_en: emergency meetings
+    full_sentence_en: Clear escalation owners obviate the need for ad-hoc crisis meetings.
+    full_sentence_tr: Net eskalasyon sahipleri plansız kriz toplantılarına olan ihtiyacı ortadan kaldırır.
+  topic_tags:
+  - architecture
+  - formal_register
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.predicate-on
+  chunk_en: be predicated on...
+  pattern_template: '[Strategy/Model] + be predicated on + [Foundational Premise]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir stratejinin temel olarak hangi ön kabul üzerine inşa edildiğini resmi tonda belirtmek
+  meaning_en: C2 equivalent of 'be founded upon / depend fundamentally on'.
+  turkish_trap:
+    incorrect_en: Our retention strategy is predicated over trust.
+    correct_en: Our architecture is predicated on deterministic local mastery.
+    explanation_tr: Kalıp her zaman 'predicated on' (veya 'upon') edatıyla kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: System
+    text_en: The learning model
+    text_tr: Öğrenme modeli
+  - role: VERB_BRIDGE
+    label: Basis
+    text_en: is predicated on
+    text_tr: temeline dayanmaktadır
+  - role: OBJECT
+    label: Premise
+    text_en: observable learner evidence.
+    text_tr: gözlemlenebilir öğrenen kanıtları.
+  slot_variations:
+  - slot_en: learner evidence
+    full_sentence_en: The learning model is predicated on observable learner evidence.
+    full_sentence_tr: Öğrenme modeli gözlemlenebilir öğrenen kanıtları temeline dayanır.
+  - slot_en: low interest rates
+    full_sentence_en: The previous business model was predicated on near-zero borrowing costs.
+    full_sentence_tr: Önceki iş modeli sıfıra yakın borçlanma maliyetleri varsayımı üzerine kuruluydu.
+  - slot_en: voluntary compliance
+    full_sentence_en: Self-regulation is rarely effective when predicated solely on voluntary goodwill.
+    full_sentence_tr: Öz düzenleme yalnızca gönüllü iyi niyete dayandırıldığında nadiren etkili olur.
+  topic_tags:
+  - academic
+  - strategy
+  - formal_register
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.skirt-around
+  chunk_en: skirt around [the issue]
+  pattern_template: '[Subject] + skirt around + [Sensitive Topic / Core Objection]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Asıl hassas meseleye doğrudan değinmekten kaçınıp etrafından dolaşmak
+  meaning_en: Incisive C2 phrasal verb for exposing evasive rhetoric in meetings.
+  turkish_trap:
+    incorrect_en: Let's not walk around of the pricing gap.
+    correct_en: Let's not skirt around the underlying architectural trade-off.
+    explanation_tr: '''Skirt around'' tek başına nesneye bağlanır; ''of'' almaz.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: The report
+    text_tr: Rapor
+  - role: VERB_BRIDGE
+    label: Avoidance
+    text_en: skirted around
+    text_tr: etrafından dolaştı
+  - role: OBJECT
+    label: Core
+    text_en: the core staffing shortfall.
+    text_tr: temel kadro açığının.
+  slot_variations:
+  - slot_en: staffing shortfall
+    full_sentence_en: The quarterly review skirted around the core staffing shortfall.
+    full_sentence_tr: Çeyrek değerlendirmesi temel kadro açığının etrafından dolaştı.
+  - slot_en: pricing friction
+    full_sentence_en: Let's not skirt around the enterprise pricing objection.
+    full_sentence_tr: Kurumsal fiyatlandırma itirazının etrafından dolaşmayalım, doğrudan ele alalım.
+  - slot_en: tough choices
+    full_sentence_en: Successful retrospectives don't skirt around uncomfortable root causes.
+    full_sentence_tr: Başarılı retrospektifler rahatsız edici kök nedenlerden kaçınmaz.
+  topic_tags:
+  - critical_thinking
+  - meetings
+  - journalism
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.milestones-underscore-corroborate
+  chunk_en: corroborate [the hypothesis/findings]
+  pattern_template: '[Independent Evidence] + corroborate + [Initial Claim / Data]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Farklı bir veri kaynağının ilk bulguyu bağımsız olarak doğruladığını ifade etmek
+  meaning_en: Precision academic/legal verb stronger than 'support' or 'agree with'.
+  turkish_trap:
+    incorrect_en: Field logs corroborated with our lab benchmark.
+    correct_en: Field telemetry corroborated our earlier laboratory benchmarks.
+    explanation_tr: '''Corroborate'' geçişli fiildir; arkasından ''with'' edatı almaz.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Source
+    text_en: User interviews
+    text_tr: Kullanıcı görüşmeleri
+  - role: VERB_BRIDGE
+    label: Verify
+    text_en: corroborated
+    text_tr: doğruladı
+  - role: OBJECT
+    label: Data
+    text_en: the telemetry drop-off pattern.
+    text_tr: telemetrideki düşüş örüntüsünü.
+  slot_variations:
+  - slot_en: telemetry drop-off
+    full_sentence_en: Qualitative interviews corroborated the drop-off visible in telemetry.
+    full_sentence_tr: Nitel görüşmeler telemetride görülen düşüşü doğruladı.
+  - slot_en: longitudinal studies
+    full_sentence_en: Longitudinal studies corroborate the value of multi-skill calibration.
+    full_sentence_tr: Uzunlamasına çalışmalar çoklu beceri kalibrasyonunun değerini teyit etmektedir.
+  - slot_en: audit trail
+    full_sentence_en: Server access logs corroborated the vendor's incident timeline.
+    full_sentence_tr: Sunucu erişim kayıtları tedarikçinin olay zaman çizelgesini doğruladı.
+  topic_tags:
+  - research
+  - law
+  - academic
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.milestones-ameliorate-curtail
+  chunk_en: curtail [costs/risk/scope]
+  pattern_template: '[Measure] + curtail + [Excessive Spending / Risk / Scope]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Aşırı harcama, risk veya kapsamı bilinçli olarak kısıtlayıp kesmek
+  meaning_en: Formal C2 verb for deliberate reduction or restraint.
+  turkish_trap:
+    incorrect_en: We curtailed down unnecessary cloud spending.
+    correct_en: Local caching sharply curtailed redundant API expenses.
+    explanation_tr: '''Curtail'' tek başına ''kısmak/kesmek'' anlamını taşır; ''down'' edatı eklenmez.'
+    trap_type: redundant_particle
+  blueprint_slots:
+  - role: SUBJECT
+    label: Measure
+    text_en: Strict schema checks
+    text_tr: Sıkı şema kontrolleri
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: curtailed
+    text_tr: büyük ölçüde kesti / azalttı
+  - role: OBJECT
+    label: Target
+    text_en: post-release rework.
+    text_tr: sürüm sonrası yeniden işi.
+  slot_variations:
+  - slot_en: rework
+    full_sentence_en: Strict build-time validation curtailed post-release rework.
+    full_sentence_tr: Sıkı derleme zamanı doğrulaması sürüm sonrası yeniden işi önemli ölçüde azalttı.
+  - slot_en: runtime costs
+    full_sentence_en: Pre-generating listening audio curtailed recurring synthesis costs.
+    full_sentence_tr: Dinleme seslerini önceden üretmek tekrar eden sentez maliyetlerini kıstı.
+  - slot_en: emissions
+    full_sentence_en: Electrification pledges mean little unless they curtail fossil fuel subsidies.
+    full_sentence_tr: Elektrifikasyon taahhütleri fosil yakıt sübvansiyonlarını kısmadıkça pek anlam taşımaz.
+  topic_tags:
+  - finance
+  - business
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.milestones-bridge-disparate
+  chunk_en: harmonize / reconcile disparate [data/standards]
+  pattern_template: '[System] + harmonize disparate + [Systems / Standards / Views]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Birbirinden kopuk ve farklı kaynakları tek tutarlı standartta birleştirmek
+  meaning_en: Executive architectural collocation for integrating fragmented parts.
+  turkish_trap:
+    incorrect_en: The hub harmonized between separate modules.
+    correct_en: The design kit harmonized disparate screens into one calm visual system.
+    explanation_tr: '''Harmonize'' geçişli fiildir; araya ''between'' konmaz.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Engine
+    text_en: The mastery model
+    text_tr: Ustalık modeli
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: harmonizes disparate
+    text_tr: uyumlu birleştirir farklı
+  - role: OBJECT
+    label: Inputs
+    text_en: signals from voice and reading.
+    text_tr: konuşma ve okuma sinyallerini.
+  slot_variations:
+  - slot_en: voice and reading
+    full_sentence_en: One evidence schema harmonizes disparate signals from speaking, reading, and drills.
+    full_sentence_tr: Tek bir kanıt şeması konuşma, okuma ve alıştırmalardan gelen farklı sinyalleri uyumlu hale getirir.
+  - slot_en: regional rules
+    full_sentence_en: Regulators sought to harmonize disparate reporting standards across borders.
+    full_sentence_tr: Düzenleyiciler sınırlar ötesindeki farklı raporlama standartlarını uyumlulaştırmaya çalıştı.
+  - slot_en: vendor formats
+    full_sentence_en: An adapter layer harmonizes disparate provider payloads behind one domain contract.
+    full_sentence_tr: Bir adaptör katmanı farklı sağlayıcı verilerini tek alan sözleşmesi altında uyumlu kılar.
+  topic_tags:
+  - architecture
+  - governance
+  - formal_register
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.ielts.so-acute-was-inversion
+  chunk_en: So [adj] was [X] that...
+  pattern_template: So + [Adjective] + was/were + [Noun] + that + [Result Clause]
+  cefr_level: C2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Bir sorunun veya etkinin şiddetini C2 devrik yapıyla çarpıcı biçimde anlatmak
+  meaning_en: Stylistic evaluative inversion elevating narrative impact.
+  turkish_trap:
+    incorrect_en: So severe the outage was that queues backed up.
+    correct_en: So acute was the latency spike that users switched to offline mode.
+    explanation_tr: '''So + sıfat'' başa geldiğinde fiil mutlaka özneden önce gelir (''So acute was the spike'').'
+    trap_type: inversion_missing
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Inverted
+    text_en: So compelling was
+    text_tr: O kadar ikna ediciydi ki
+  - role: SUBJECT
+    label: Subject
+    text_en: the offline prototype
+    text_tr: çevrimdışı prototip
+  - role: OBJECT
+    label: Result
+    text_en: that stakeholders approved Phase 2 immediately.
+    text_tr: paydaşlar 2. fazı hemen onayladı.
+  slot_variations:
+  - slot_en: offline prototype
+    full_sentence_en: So compelling was the offline prototype that stakeholders approved expansion immediately.
+    full_sentence_tr: Çevrimdışı prototip o kadar ikna ediciydi ki paydaşlar genişlemeyi hemen onayladı.
+  - slot_en: congestion
+    full_sentence_en: So acute was urban congestion that rail ridership surged within weeks.
+    full_sentence_tr: Şehir trafiği öylesine yoğundu ki raylı sistem kullanımı haftalar içinde sıçradı.
+  - slot_en: contrast gap
+    full_sentence_en: So subtle was the spacing fix that readers only noticed calmer focus.
+    full_sentence_tr: Boşluk düzeltmesi o kadar inceydi ki okuyucular yalnızca daha sakin bir odak hissetti.
+  topic_tags:
+  - grammar_in_use
+  - ielts
+  - rhetoric
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.ielts.with-a-view-to
+  chunk_en: with a view to [verb]-ing...
+  pattern_template: '[Action] + with a view to + [Verb-ing / Noun]'
+  cefr_level: C2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Uzun vadeli stratejik niyetle hareket edildiğini resmi tonda ifade etmek ('... amacıyla')
+  meaning_en: Formal purpose prepositional phrase requiring a gerund.
+  turkish_trap:
+    incorrect_en: We built clean APIs with a view to scale later.
+    correct_en: We kept the schema modular with a view to expanding A2–C2 coverage.
+    explanation_tr: '''With a view to'' kalıbındaki ''to'' edattır; mutlaka ''-ing'' (gerund) alır, yalın fiil almaz.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Action
+    text_en: We validated the core loop
+    text_tr: Temel döngüyü doğruladık
+  - role: VERB_BRIDGE
+    label: Purpose
+    text_en: with a view to
+    text_tr: amacıyla / hedefiyle
+  - role: OBJECT
+    label: Goal
+    text_en: scaling curriculum safely.
+    text_tr: müfredatı güvenle ölçeklemek.
+  slot_variations:
+  - slot_en: scaling safely
+    full_sentence_en: We validated the core schema first with a view to scaling curriculum safely.
+    full_sentence_tr: Müfredatı güvenle büyütmek amacıyla önce temel şemayı doğruladık.
+  - slot_en: cutting turnover
+    full_sentence_en: HR redesigned mentorship tracks with a view to reducing early attrition.
+    full_sentence_tr: İK, erken ayrılmaları azaltmak amacıyla mentorluk hatlarını yeniden tasarladı.
+  - slot_en: achieving parity
+    full_sentence_en: Engineers refactored the storage layer with a view to halving query times.
+    full_sentence_tr: Mühendisler sorgu sürelerini yarıya indirmek amacıyla depolama katmanını yeniledi.
+  topic_tags:
+  - formal_register
+  - ielts
+  - strategy
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.ielts.pursuant-to
+  chunk_en: pursuant to...
+  pattern_template: Pursuant to + [Policy / Agreement / Article], + [Formal Clause]
+  cefr_level: C2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Resmi karar, politika veya sözleşme maddesi uyarınca işlem yapıldığını belirtmek
+  meaning_en: Statutory and corporate-governance preposition meaning 'in accordance with'.
+  turkish_trap:
+    incorrect_en: Pursuant of section 4, keys are rotated monthly.
+    correct_en: Pursuant to our privacy charter, personal tokens remain untracked.
+    explanation_tr: 'Edat ''of'' değil ''to''dur: ''Pursuant to''.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Authority
+    text_en: Pursuant to section 16,
+    text_tr: 16. bölüm uyarınca,
+  - role: SUBJECT
+    label: Items
+    text_en: production credentials
+    text_tr: canlı ortam kimlik bilgileri
+  - role: VERB_BRIDGE
+    label: Rule
+    text_en: are excluded from
+    text_tr: hariç tutulur
+  - role: OBJECT
+    label: Target
+    text_en: version control.
+    text_tr: sürüm kontrolünden.
+  slot_variations:
+  - slot_en: version control
+    full_sentence_en: Pursuant to our security policy, local API keys are excluded from version control.
+    full_sentence_tr: Güvenlik politikamız uyarınca yerel API anahtarları sürüm kontrolünden hariç tutulur.
+  - slot_en: audit guidelines
+    full_sentence_en: Pursuant to regulatory guidelines, retention logs are encrypted at rest.
+    full_sentence_tr: Düzenleyici ilkeler uyarınca saklama kayıtları beklerken şifrelenir.
+  - slot_en: board resolution
+    full_sentence_en: Pursuant to Tuesday's resolution, Phase 8 batches proceed incrementally.
+    full_sentence_tr: Salı günkü karar uyarınca Faz 8 partileri kademeli olarak ilerler.
+  topic_tags:
+  - law
+  - governance
+  - formal_register
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.ielts.should-the-need-arise
+  chunk_en: Should [subject] + [base verb], ...
+  pattern_template: Should + [Subject] + [Base Verb], + [Contingency Clause]
+  cefr_level: C2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Olası bir acil durum veya ihtimali şık ve resmi devrik 1. koşul cümlesiyle planlamak
+  meaning_en: Formal inverted first conditional projecting executive preparedness.
+  turkish_trap:
+    incorrect_en: Should the network fails, fallback runs locally.
+    correct_en: Should connectivity drop mid-lesson, local drills continue uninterrupted.
+    explanation_tr: '''Should'' başta olduğunda özne tekil bile olsa ana fiil ''-s'' almaz (yalın kalır).'
+    trap_type: subject_verb_agreement
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Contingency
+    text_en: Should live AI fail,
+    text_tr: Canlı yapay zeka erişilemez olursa,
+  - role: SUBJECT
+    label: Fallback
+    text_en: the deterministic analyzer
+    text_tr: deterministik çözümleyici
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: preserves
+    text_tr: korur
+  - role: OBJECT
+    label: Value
+    text_en: a seamless post-session report.
+    text_tr: kesintisiz oturum sonrası raporu.
+  slot_variations:
+  - slot_en: post-session report
+    full_sentence_en: Should connectivity drop, the local analyzer still delivers a structured report.
+    full_sentence_tr: Bağlantı kesilirse yerel çözümleyici yine de yapılandırılmış rapor sunar.
+  - slot_en: the need arise
+    full_sentence_en: Should the need arise, we can revert the asset bundle in minutes.
+    full_sentence_tr: Gerekirse varlık paketini dakikalar içinde geri alabiliriz.
+  - slot_en: volumes surge
+    full_sentence_en: Should concurrent demand surge, read replicas absorb the overflow.
+    full_sentence_tr: Eş zamanlı talep artarsa okuma kopyaları fazlalığı karşılar.
+  topic_tags:
+  - grammar_in_use
+  - governance
+  - formal_register
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.ielts.in-tandem-with
+  chunk_en: operate in tandem with...
+  pattern_template: '[System A] + operate/work in tandem with + [System B]'
+  cefr_level: C2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: İki mekanizmanın birbirini tamamlayarak uyum içinde çalıştığını anlatmak
+  meaning_en: Refined C2 collocation for coordinated dual systems.
+  turkish_trap:
+    incorrect_en: Today Planner works tandem to Explore mode.
+    correct_en: Daily guidance operates in tandem with free module exploration.
+    explanation_tr: Kalıp 'in tandem with' edatlarını ister.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: System A
+    text_en: Spaced repetition
+    text_tr: Aralıklı tekrar
+  - role: VERB_BRIDGE
+    label: Sync
+    text_en: works in tandem with
+    text_tr: uyum içinde çalışır
+  - role: OBJECT
+    label: System B
+    text_en: the personal mistake bank.
+    text_tr: kişisel hata bankasıyla.
+  slot_variations:
+  - slot_en: mistake bank
+    full_sentence_en: Spaced repetition works in tandem with the personal mistake bank.
+    full_sentence_tr: Aralıklı tekrar kişisel hata bankasıyla uyum içinde çalışır.
+  - slot_en: local scoring
+    full_sentence_en: AI feedback operates in tandem with deterministic mastery tracking.
+    full_sentence_tr: Yapay zeka geri bildirimi deterministik ustalık takibiyle eşgüdümlü çalışır.
+  - slot_en: public transit
+    full_sentence_en: Bike-share corridors succeed when planned in tandem with metro hubs.
+    full_sentence_tr: Bisiklet paylaşım koridorları metro duraklarıyla eşgüdümlü planlandığında başarılı olur.
+  topic_tags:
+  - architecture
+  - ielts
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.to-stretch-the-analogy-paradoxically
+  chunk_en: Paradoxically,...
+  pattern_template: Paradoxically, + [Counter-Intuitive Truth]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: İlk bakışta çelişkili görünen ancak derinlemesine doğru olan bir sonucu sunmak
+  meaning_en: Analytical framing adverb signaling counter-intuitive insight.
+  turkish_trap:
+    incorrect_en: Paradoxical, fewer alerts caught more real outages.
+    correct_en: Paradoxically, narrowing the curriculum batch raised editorial consistency.
+    explanation_tr: Cümle başı belirteç olarak zarf biçimi 'Paradoxically,' kullanılır.
+    trap_type: adverb_vs_adjective
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Frame
+    text_en: Paradoxically,
+    text_tr: Çelişkili görünse de,
+  - role: SUBJECT
+    label: Factor
+    text_en: stricter constraints
+    text_tr: daha sıkı kısıtlar
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: often unlock
+    text_tr: çoğu zaman açar
+  - role: OBJECT
+    label: Result
+    text_en: greater creative clarity.
+    text_tr: daha yüksek yaratıcı netliğin önünü.
+  slot_variations:
+  - slot_en: creative clarity
+    full_sentence_en: Paradoxically, tighter constraints often yield cleaner, calmer product design.
+    full_sentence_tr: Paradoksal olarak daha sıkı kısıtlar çoğu zaman daha sade ve sakin ürün tasarımı üretir.
+  - slot_en: alert fatigue
+    full_sentence_en: Paradoxically, silencing low-value warnings reduced missed critical alerts.
+    full_sentence_tr: Çelişkili biçimde düşük değerli uyarıları susturmak kaçırılan kritik uyarıları azalttı.
+  - slot_en: short sessions
+    full_sentence_en: Paradoxically, capping daily sessions at twenty minutes improved six-month retention.
+    full_sentence_tr: Günlük oturumları yirmi dakikayla sınırlamak altı aylık bağlılığı artırdı.
+  topic_tags:
+  - analysis
+  - ielts
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.by-way-of-illustration
+  chunk_en: By way of illustration,...
+  pattern_template: By way of illustration, + [Concrete Case / Example]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Soyut bir tezi hemen somut ve şık bir vaka örneğiyle açıklamak
+  meaning_en: Formal rhetorical transition introducing an illuminating example.
+  turkish_trap:
+    incorrect_en: By way of an illustration, look at Table 2.
+    correct_en: By way of illustration, consider how a single Turkish trap spans grammar and speaking.
+    explanation_tr: Deyim artikelsiz 'By way of illustration,' biçimindedir.
+    trap_type: article_error
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Bridge
+    text_en: By way of illustration,
+    text_tr: Örneklemek gerekirse,
+  - role: VERB_BRIDGE
+    label: Prompt
+    text_en: consider how
+    text_tr: şunu düşünün nasıl
+  - role: OBJECT
+    label: Case
+    text_en: the since/for trap recurs across modules.
+    text_tr: '''since/for'' tuzağının modüller boyunca tekrarlandığını.'
+  slot_variations:
+  - slot_en: the since/for trap
+    full_sentence_en: By way of illustration, consider how a single preposition trap surfaces across drills and speaking.
+    full_sentence_tr: Örneklemek gerekirse, tek bir edat tuzağının alıştırma ve konuşmalarda nasıl tekrarlandığını düşünün.
+  - slot_en: modular assets
+    full_sentence_en: By way of illustration, separating Reading covers into a manifest kept code clean.
+    full_sentence_tr: Örnek olarak Okuma kapaklarını bir manifestoya ayırmak kodu temiz tuttu.
+  - slot_en: city transit
+    full_sentence_en: By way of illustration, Vienna's annual pass transformed commuter behavior.
+    full_sentence_tr: Somut örnek olarak Viyana'nın yıllık ulaşım kartı yolcu davranışını dönüştürdü.
+  topic_tags:
+  - academic
+  - presentations
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.bridge.to-put-a-finer-point-on-it
+  chunk_en: To put a finer point on it,...
+  pattern_template: To put a finer point on it, + [Bluntly Precise Restatements]
+  cefr_level: C2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Kibar bir ifadenin hemen ardından asıl keskin ve net gerçeği söylemek ('Daha açık konuşmak gerekirse...')
+  meaning_en: Idiomatic C2 reformulation marker sharpening an understated point.
+  turkish_trap:
+    incorrect_en: To put a fine point to it, the model fails offline.
+    correct_en: To put a finer point on it, any cloud-only study tool breaks during travel.
+    explanation_tr: 'Deyimde karşılaştırmalı sıfat ''finer'' ve ''on'' edatı kullanılır: ''put a finer point on it''.'
+    trap_type: idiom_distortion
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Sharpen
+    text_en: To put a finer point on it,
+    text_tr: Daha keskin ifade etmek gerekirse,
+  - role: SUBJECT
+    label: Fact
+    text_en: unvalidated content
+    text_tr: doğrulanmamış içerik
+  - role: VERB_BRIDGE
+    label: State
+    text_en: is
+    text_tr: demektir
+  - role: OBJECT
+    label: Impact
+    text_en: accumulated technical debt.
+    text_tr: birikmiş teknik borç.
+  slot_variations:
+  - slot_en: technical debt
+    full_sentence_en: To put a finer point on it, unvalidated bulk content is simply deferred rework.
+    full_sentence_tr: Daha açık söylemek gerekirse doğrulanmamış yığın içerik yalnızca ertelenmiş yeniden iştir.
+  - slot_en: margin erosion
+    full_sentence_en: To put a finer point on it, unpriced support hours are eroding contract margins.
+    full_sentence_tr: Daha net ifade edersek fiyatlanmayan destek saatleri sözleşme karlılığını eritiyor.
+  - slot_en: trust deficit
+    full_sentence_en: To put a finer point on it, learners quit when progress scores feel arbitrary.
+    full_sentence_tr: Daha açık konuşmak gerekirse ilerleme puanları keyfi hissettirdiğinde öğrenenler bırakır.
+  topic_tags:
+  - reformulation
+  - diplomacy
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.starter.in-the-final-analysis
+  chunk_en: In the final analysis,...
+  pattern_template: In the final analysis, + [Distilled Strategic Conclusion]
+  cefr_level: C2
+  category: SENTENCE_STARTER
+  intent_tr: Tüm tartışmaların sonunda en kalıcı ve özlü yargıyı ortaya koymak ('Nihai tahlilde...')
+  meaning_en: Elevated C2 closing marker distilling complex trade-offs.
+  turkish_trap:
+    incorrect_en: At the final analysis, retention decides success.
+    correct_en: In the final analysis, daily usefulness determines whether an app endures.
+    explanation_tr: 'Edat her zaman ''In''dir: ''In the final analysis,''.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Conclusion
+    text_en: In the final analysis,
+    text_tr: Nihai tahlilde,
+  - role: SUBJECT
+    label: Core
+    text_en: pedagogical discipline
+    text_tr: pedagojik disiplin
+  - role: VERB_BRIDGE
+    label: Matters
+    text_en: outlasts
+    text_tr: daha uzun ömürlüdür
+  - role: OBJECT
+    label: Fad
+    text_en: transient AI gimmicks.
+    text_tr: geçici yapay zeka gösterişlerinden.
+  slot_variations:
+  - slot_en: pedagogical discipline
+    full_sentence_en: In the final analysis, sound pedagogy outlasts transient interface trends.
+    full_sentence_tr: Nihai tahlilde sağlam pedagoji geçici arayüz trendlerinden daha uzun ömürlüdür.
+  - slot_en: execution quality
+    full_sentence_en: In the final analysis, disciplined execution matters more than bold slide decks.
+    full_sentence_tr: Son tahlilde disiplinli uygulama iddialı sunumlardan daha çok önem taşır.
+  - slot_en: public trust
+    full_sentence_en: In the final analysis, institutional credibility rests on transparent accountability.
+    full_sentence_tr: Son tahlilde kurumsal güvenilirlik şeffaf hesap verebilirliğe dayanır.
+  topic_tags:
+  - ielts
+  - leadership
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.c2.collocation.reconcile-disparate-give-short-shrift-to
+  chunk_en: give short shrift to...
+  pattern_template: '[Subject] + give short shrift to + [Important Consideration]'
+  cefr_level: C2
+  category: ACTION_COLLOCATION
+  intent_tr: Aslında büyük önem taşıyan bir konuya haksız yere çok az ilgi/süre ayırmak
+  meaning_en: Incisive C2 idiom criticizing dismissive or hasty treatment.
+  turkish_trap:
+    incorrect_en: The audit gave a short shrift on accessibility.
+    correct_en: Previous releases gave short shrift to screen-reader accessibility.
+    explanation_tr: 'Deyim artikelsiz ve ''to'' edatıyla kullanılır: ''give short shrift to''.'
+    trap_type: preposition_and_article
+  blueprint_slots:
+  - role: SUBJECT
+    label: Subject
+    text_en: Generic courses
+    text_tr: Genel kurslar
+  - role: VERB_BRIDGE
+    label: Critique
+    text_en: often give short shrift to
+    text_tr: çoğu zaman yeterince eğilmez
+  - role: OBJECT
+    label: Gap
+    text_en: first-language transfer traps.
+    text_tr: ana dil aktarım tuzaklarına.
+  slot_variations:
+  - slot_en: L1 transfer traps
+    full_sentence_en: Generic language apps often give short shrift to Turkish-specific transfer traps.
+    full_sentence_tr: Genel dil uygulamaları çoğu zaman Türkçe kaynaklı aktarım tuzaklarına yeterince eğilmez.
+  - slot_en: edge-case testing
+    full_sentence_en: Rushed sprints inevitably give short shrift to edge-case testing.
+    full_sentence_tr: Aceleye gelen sprintler ister istemez uç durum testlerini geçiştirir.
+  - slot_en: preventive care
+    full_sentence_en: Short-term budgets frequently give short shrift to preventive maintenance.
+    full_sentence_tr: Kısa vadeli bütçeler çoğu zaman önleyici bakıma hak ettiği yeri vermez.
+  topic_tags:
+  - critical_thinking
+  - journalism
+  - academic
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1

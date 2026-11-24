@@ -337,11 +337,11 @@ private fun SpeakingScenarioCatalogView(
         verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sectionSpacing),
     ) {
         FluentPageHeader(
-            title = "Live Speaking Coach",
+            title = "Live speaking coach",
             module = LearningModule.SPEAKING,
             eyebrow = "Real-time AI conversation",
             illustration = painterResource(R.drawable.speaking_practice),
-            subtitle = "Targeted spoken English scenarios with real-time coaching, L1 trap defense, and structured feedback."
+            subtitle = "Targeted spoken English scenarios with real-time coaching, L1 trap defense, and structured feedback"
         )
 
         if (uiState.errorMessage != null) {
@@ -355,7 +355,7 @@ private fun SpeakingScenarioCatalogView(
                     verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)
                 ) {
                     Text(
-                        text = if (isPermanentlyDenied) "🎙️🚫 Microphone Access Blocked" else "⚠️ Live Session Notice",
+                        text = if (isPermanentlyDenied) "Microphone access blocked" else "Live session notice",
                         style = FluentTheme.typography.titleMedium,
                         color = FluentTheme.colors.error
                     )
@@ -370,7 +370,7 @@ private fun SpeakingScenarioCatalogView(
                     ) {
                         if (isPermanentlyDenied) {
                             SpeakButton(
-                                text = "Open Settings",
+                                text = "Open settings",
                                 primary = true,
                                 onClick = {
                                     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
@@ -392,8 +392,7 @@ private fun SpeakingScenarioCatalogView(
 
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)) {
             FluentSectionTitle(
-                title = "Coach Mode",
-                emoji = "🧑‍🏫",
+                title = "Coach mode",
                 subtitle = "Every session corrects and improves your English, whatever the topic",
                 accent = LearningModule.SPEAKING.accent
             )
@@ -408,8 +407,7 @@ private fun SpeakingScenarioCatalogView(
 
         Column(verticalArrangement = Arrangement.spacedBy(FluentTheme.spacing.sm)) {
             FluentSectionTitle(
-                title = "Category Filter",
-                emoji = "🗂️",
+                title = "Category filter",
                 subtitle = "Pick the kind of conversation you want",
                 accent = LearningModule.SPEAKING.accent
             )
@@ -420,13 +418,13 @@ private fun SpeakingScenarioCatalogView(
                 horizontalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)
             ) {
                 FilterPill(
-                    label = "✨ All Scenarios",
+                    label = "All scenarios",
                     isSelected = (uiState.selectedCategory == null),
                     onClick = { onSelectCategory(null) }
                 )
                 SpeakingCategory.entries.forEach { cat ->
                     FilterPill(
-                        label = "${cat.emoji} ${cat.displayName}",
+                        label = cat.displayName,
                         isSelected = (uiState.selectedCategory == cat),
                         onClick = { onSelectCategory(cat) }
                     )
@@ -441,7 +439,7 @@ private fun SpeakingScenarioCatalogView(
             horizontalArrangement = Arrangement.spacedBy(FluentTheme.spacing.xs)
         ) {
             FilterPill(
-                label = "All Levels",
+                label = "All levels",
                 isSelected = (uiState.selectedCefrLevel == null),
                 onClick = { onSelectCefrLevel(null) }
             )
@@ -455,9 +453,8 @@ private fun SpeakingScenarioCatalogView(
         }
 
         FluentSectionTitle(
-            title = "Curriculum Scenarios (${uiState.filteredScenarios.size})",
-            emoji = "🎬",
-            subtitle = "Select a scenario to start real-time conversation.",
+            title = "Curriculum scenarios (${uiState.filteredScenarios.size})",
+            subtitle = "Select a scenario to start real-time conversation",
             accent = LearningModule.SPEAKING.accent
         )
 

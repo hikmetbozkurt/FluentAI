@@ -54,6 +54,7 @@ fun LearnScreen(
     onNavigateToGrammarDashboard: (() -> Unit)? = null,
     onNavigateToReadingDashboard: (() -> Unit)? = null,
     onNavigateToListeningDashboard: (() -> Unit)? = null,
+    onNavigateToChunksDashboard: (() -> Unit)? = null,
     onNavigateToReview: (() -> Unit)? = null,
 ) {
     var activeModule by rememberSaveable { mutableStateOf(initialModule) }
@@ -102,6 +103,8 @@ fun LearnScreen(
                 onNavigateToVocabularyDashboard()
             } else if (module == "grammar" && onNavigateToGrammarDashboard != null) {
                 onNavigateToGrammarDashboard()
+            } else if (module == "chunks" && onNavigateToChunksDashboard != null) {
+                onNavigateToChunksDashboard()
             } else if (module == "reading" && onNavigateToReadingDashboard != null) {
                 onNavigateToReadingDashboard()
             } else if (module == "listening" && onNavigateToListeningDashboard != null) {
@@ -118,28 +121,28 @@ private fun LearnLanding(modifier: Modifier, onNavigateToReview: (() -> Unit)?, 
     BoxWithConstraints(
         modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary),
     ) {
-        val columns = when { maxWidth >= 1200.dp -> 4; maxWidth >= 700.dp -> 2; else -> 1 }
+        val columns = when { maxWidth >= 1100.dp -> 3; maxWidth >= 680.dp -> 2; else -> 1 }
         val modules = listOf(
-            LearnModule("vocabulary", "Vocabulary", "Build useful words and expressions for everyday and professional English.", "Word of the day · Flash cards", LearningModule.VOCABULARY),
-            LearnModule("grammar", "Grammar", "Understand patterns and use English structures with confidence.", "Rules · Turkish traps", LearningModule.GRAMMAR),
-            LearnModule("reading", "Reading", "Practice comprehension with structured articles and vocabulary support.", "Articles · Comprehension", LearningModule.READING),
-            LearnModule("listening", "Listening", "Train comprehension with dialogues, transcripts, and questions.", "Dialogues · Dictation", LearningModule.LISTENING),
+            LearnModule("vocabulary", "Vocabulary", "Everyday and workplace words with spaced repetition and pronunciation", "Word of the day · Flash cards", LearningModule.VOCABULARY),
+            LearnModule("chunks", "Chunks and patterns", "Ready-to-use sentence starters, collocations, and SVO blueprints", "Turkish traps · SVO builder", LearningModule.CHUNKS),
+            LearnModule("grammar", "Grammar", "Clear structures, Turkish transfer traps, and sentence practice", "Rules · Sentence builder", LearningModule.GRAMMAR),
+            LearnModule("reading", "Reading", "Structured articles with instant lookup and comprehension checks", "Articles · Live feed", LearningModule.READING),
+            LearnModule("listening", "Listening", "Work and daily dialogues with transcripts and dictation drills", "Dialogues · Dictation", LearningModule.LISTENING),
         )
         Column(
             Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(DashboardSpacing.xl),
-            verticalArrangement = Arrangement.spacedBy(DashboardSpacing.xl),
+            verticalArrangement = Arrangement.spacedBy(DashboardSpacing.lg),
         ) {
             FluentPageHeader(
                 title = "Learn",
                 module = LearningModule.LEARN,
-                eyebrow = "Offline curriculum · A2 → C2",
+                eyebrow = "Offline curriculum · A2 to C2",
                 illustration = painterResource(R.drawable.continue_learning_background),
-                subtitle = "Choose a skill area and continue through your offline curriculum.",
+                subtitle = "Choose a skill area and continue through your offline curriculum",
             )
             FluentSectionTitle(
                 title = "Skill areas",
-                emoji = "🧭",
-                subtitle = "Every module works without internet",
+                subtitle = "Every core module works offline",
                 accent = LearningModule.LEARN.accent,
             )
             modules.chunked(columns).forEach { rowItems ->
@@ -155,10 +158,10 @@ private fun LearnLanding(modifier: Modifier, onNavigateToReview: (() -> Unit)?, 
             }
             if (onNavigateToReview != null) {
                 FluentActionTile(
-                    title = "Smart Review & Mistake Bank",
-                    detail = "Clear due spaced-repetition cards and fix recurring Turkish transfer traps.",
+                    title = "Smart review and mistake bank",
+                    detail = "Clear due spaced-repetition cards and fix recurring Turkish transfer traps",
                     module = LearningModule.REVIEW,
-                    actionLabel = "Open Review",
+                    actionLabel = "Open review",
                     emphasized = true,
                     onClick = onNavigateToReview,
                     modifier = Modifier.fillMaxWidth(),
@@ -170,32 +173,31 @@ private fun LearnLanding(modifier: Modifier, onNavigateToReview: (() -> Unit)?, 
 
 @Composable
 private fun ModuleCard(module: LearnModule, onClick: () -> Unit, modifier: Modifier = Modifier) {
-    FluentSurfaceCard(modifier = modifier, onClick = onClick, contentPadding = PaddingValues(0.dp), contentSpacing = 0.dp) {
-        Box(
-            Modifier
-                .fillMaxWidth()
-                .height(112.dp)
-                .background(module.identity.heroBrush),
+    FluentSurfaceCard(
+        modifier = modifier,
+        accent = module.identity.accent,
+        onClick = onClick,
+        contentPadding = PaddingValues(20.dp),
+        contentSpacing = 12.dp,
+    ) {
+        Row(
+            Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
         ) {
-            DecorativeBackdrop(accent = module.identity.accent, modifier = Modifier.matchParentSize())
-            ModuleIconTile(module = module.identity, size = 56.dp, modifier = Modifier.align(Alignment.CenterStart).padding(start = 20.dp))
+            ModuleIconTile(module = module.identity, size = 44.dp, showEmojiBadge = false)
             Icon(
-                imageVector = module.identity.icon,
+                Icons.AutoMirrored.Rounded.ArrowForward,
                 contentDescription = null,
-                tint = module.identity.accent.copy(alpha = 0.16f),
-                modifier = Modifier.align(Alignment.CenterEnd).padding(end = 20.dp).size(68.dp)
+                tint = DashboardColors.TextMuted,
+                modifier = Modifier.size(18.dp),
             )
         }
-        Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Text(module.title, color = DashboardColors.TextPrimary, style = DashboardTypography.SectionTitle)
             Text(module.highlights, color = module.identity.accent, style = DashboardTypography.Caption)
-            Text(module.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
-            Spacer(Modifier.height(4.dp))
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Open ${module.title}", color = module.identity.accent, style = DashboardTypography.Button, modifier = Modifier.weight(1f))
-                Icon(Icons.AutoMirrored.Rounded.ArrowForward, null, tint = module.identity.accent)
-            }
         }
+        Text(module.description, color = DashboardColors.TextSecondary, style = DashboardTypography.Body)
     }
 }
 

@@ -64,6 +64,11 @@ fun FluentAiNavHost(
                         launchSingleTop = true
                     }
                 },
+                onNavigateToModule = { domain ->
+                    navController.navigate(homeModuleRoute(domain)) {
+                        launchSingleTop = true
+                    }
+                },
                 onNavigateToProgress = {
                     navController.navigate(TopLevelDestination.PROGRESS.route) {
                         launchSingleTop = true
@@ -93,11 +98,42 @@ fun FluentAiNavHost(
                         launchSingleTop = true
                     }
                 },
+                onNavigateToChunksDashboard = {
+                    navController.navigate(CHUNKS_DASHBOARD_ROUTE) {
+                        launchSingleTop = true
+                    }
+                },
                 onNavigateToReview = {
                     navController.navigate(REVIEW_HUB_ROUTE) {
                         launchSingleTop = true
                     }
                 },
+            )
+        }
+        composable(CHUNKS_DASHBOARD_ROUTE) {
+            com.seanora.fluentai.feature.chunks.ChunksDashboardScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onOpenChunk = { navController.navigate(chunkDetailRoute(it)) },
+                onStartDrill = { mode -> navController.navigate(chunkPracticeRoute(mode.name)) },
+            )
+        }
+        composable(CHUNKS_DETAIL_ROUTE) { entry ->
+            com.seanora.fluentai.feature.chunks.ChunkDetailScreen(
+                chunkId = entry.arguments?.getString(CHUNKS_DETAIL_ID_ARG).orEmpty(),
+                onNavigateBack = { navController.popBackStack() },
+                onPracticeChunk = { id -> navController.navigate(chunkPracticeRoute("MIXED", id)) },
+            )
+        }
+        composable(CHUNKS_PRACTICE_ROUTE) { entry ->
+            val rawMode = entry.arguments?.getString(CHUNKS_DRILL_MODE_ARG)
+            val mode = com.seanora.fluentai.core.model.ChunkDrillMode.entries
+                .firstOrNull { it.name.equals(rawMode, ignoreCase = true) }
+                ?: com.seanora.fluentai.core.model.ChunkDrillMode.MIXED
+            val focusId = entry.arguments?.getString(CHUNKS_FOCUS_ID_ARG)?.takeIf { it.isNotBlank() }
+            com.seanora.fluentai.feature.chunks.ChunkPracticeSessionScreen(
+                mode = mode,
+                focusChunkId = focusId,
+                onNavigateBack = { navController.popBackStack() },
             )
         }
         composable(VOCABULARY_DASHBOARD_ROUTE) {

@@ -18,18 +18,19 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
 
     def test_packaged_database_is_verified_expanded_schema_v4(self):
         cursor = self.connection.cursor()
-        self.assertEqual(cursor.execute("PRAGMA user_version").fetchone()[0], 4)
+        self.assertEqual(cursor.execute("PRAGMA user_version").fetchone()[0], 5)
         self.assertEqual(cursor.execute("PRAGMA integrity_check").fetchone()[0], "ok")
 
         expected_counts = {
-            "vocab_items": 3359,
-            "grammar_lessons": 100,
-            "exercises": 3062,
-            "reading_articles": 108,
-            "listening_scenarios": 100,
+            "vocab_items": 5590,
+            "grammar_lessons": 150,
+            "exercises": 3492,
+            "reading_articles": 133,
+            "listening_scenarios": 125,
             "speaking_scenarios": 18,
+            "chunks": 252,
             "topics": 20,
-            "content_relations": 3361,
+            "content_relations": 5592,
         }
         for table, expected in expected_counts.items():
             actual = cursor.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
@@ -40,7 +41,7 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
                 "SELECT cefr_level, COUNT(*) FROM grammar_lessons GROUP BY cefr_level"
             ).fetchall()
         )
-        self.assertEqual(grammar_by_level, {"A2": 15, "B1": 20, "B2": 22, "C1": 23, "C2": 20})
+        self.assertEqual(grammar_by_level, {"A2": 21, "B1": 28, "B2": 32, "C1": 37, "C2": 32})
 
     def test_expanded_queries_and_semantic_links_cover_current_corpus(self):
         cursor = self.connection.cursor()
@@ -54,13 +55,13 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
             cursor.execute(
                 "SELECT COUNT(DISTINCT target_content_id) FROM exercises WHERE skill_domain = 'grammar'"
             ).fetchone()[0],
-            100,
+            150,
         )
         self.assertEqual(
             cursor.execute(
                 "SELECT COUNT(*) FROM exercises WHERE target_content_id IN (SELECT id FROM grammar_lessons)"
             ).fetchone()[0],
-            2011,
+            2161,
         )
         self.assertEqual(
             cursor.execute(
@@ -69,7 +70,7 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
                    JOIN topics t ON t.id = r.target_id
                    WHERE r.relation_type = 'belongs_to_topic'"""
             ).fetchone()[0],
-            3359,
+            5590,
         )
         self.assertEqual(
             cursor.execute(
@@ -115,13 +116,13 @@ class TestPackagedCurriculumIntegration(unittest.TestCase):
                     self.assertIn(question["correct_answer"], options, f"Invalid answer for {content_id}:{question['id']}")
                     total_questions += 1
 
-        self.assertEqual(total_questions, 4056)
+        self.assertEqual(total_questions, 4736)
 
     def test_every_listening_audio_ref_resolves_to_one_packaged_mp3(self):
         cursor = self.connection.cursor()
         audio_refs = [row[0] for row in cursor.execute("SELECT audio_ref FROM listening_scenarios")]
-        self.assertEqual(len(audio_refs), 100)
-        self.assertEqual(len(set(audio_refs)), 100)
+        self.assertEqual(len(audio_refs), 125)
+        self.assertEqual(len(set(audio_refs)), 125)
 
         resolved = set()
         for audio_ref in audio_refs:

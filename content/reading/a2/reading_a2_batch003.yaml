@@ -1,0 +1,603 @@
+- id: reading.a2.monthly-expense-tracking
+  title: Keeping a Clear Monthly Expense Log at Work
+  cefr_level: A2
+  category: finance_and_economics
+  summary_en: A practical guide explaining how keeping a simple monthly expense log helps small teams avoid unexpected cash
+    shortages.
+  summary_tr: Basit bir aylık gider kaydı tutmanın küçük ekiplerin beklenmedik nakit sıkıntılarından kaçınmasına nasıl yardımcı
+    olduğunu anlatan pratik bir rehber.
+  word_count: 243
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Why Every Receipt Counts
+    content_en: Many small offices start each month with a clear budget plan, yet money still seems to disappear quickly.
+      Small purchases like train tickets, stationery, and client lunches look harmless on their own. When nobody writes them
+      down right away, the total bill becomes a surprise at the end of the month. Keeping a simple shared log turns vague
+      guesses into clear numbers.
+    content_tr: Birçok küçük ofis her aya net bir bütçe planıyla başlar, ancak para yine de hızla tükeniyor gibi görünür.
+      Tren biletleri, kırtasiye malzemeleri ve müşteri öğle yemekleri gibi küçük harcamalar tek başına zararsız görünür. Kimse
+      bunları hemen not almadığında, toplam fatura ay sonunda sürpriz olur. Basit bir ortak kayıt tutmak belirsiz tahminleri
+      net sayılara dönüştürür.
+  - paragraph_index: 2
+    title: Setting Up Simple Categories
+    content_en: A useful expense sheet does not need complicated formulas. Four or five clear categories, such as travel,
+      meals, office supplies, and software tools, work well for most teams. Every entry only needs the date, the amount, and
+      a short note explaining the purpose. When team members choose from the same short list, comparing one month to the next
+      stays quick and fair.
+    content_tr: Faydalı bir gider tablosunun karmaşık formüllere ihtiyacı yoktur. Seyahat, yemek, ofis malzemeleri ve yazılım
+      araçları gibi dört veya beş net kategori çoğu ekip için iyi çalışır. Her kayıt yalnızca tarih, tutar ve amacı açıklayan
+      kısa bir not gerektirir. Ekip üyeleri aynı kısa listeden seçim yaptığında, bir ayı diğeriyle karşılaştırmak hızlı ve
+      adil kalır.
+  - paragraph_index: 3
+    title: Checking Numbers Every Friday
+    content_en: Waiting until the last Friday of the month to update receipts creates unnecessary stress and lost paper slips.
+      Instead, spending ten minutes every Friday afternoon keeps the record fresh and accurate. Team leads can spot rising
+      delivery fees or unused room bookings before they grow into larger problems. Early visibility makes polite cost adjustments
+      much easier for everyone involved.
+    content_tr: Fişleri güncellemek için ayın son cumasına kadar beklemek gereksiz stres yaratır ve kağıt fişlerin kaybolmasına
+      yol açar. Bunun yerine her cuma öğleden sonra on dakika ayırmak kaydı taze ve doğru tutar. Ekip liderleri artan teslimat
+      ücretlerini veya kullanılmayan oda rezervasyonlarını daha büyük sorunlara dönüşmeden fark edebilir. Erken görünürlük,
+      ilgili herkes için nazik maliyet düzenlemelerini çok daha kolay hale getirir.
+  - paragraph_index: 4
+    title: Turning Data Into Better Habits
+    content_en: Over three or four months, the expense log reveals clear spending patterns across the whole office. Maybe
+      the team pays too much for rush shipping because supplies are ordered too late. With reliable figures in front of them,
+      managers can plan bulk orders earlier and save money without cutting quality. Good habits grow naturally when everyone
+      sees the same facts.
+    content_tr: Üç veya dört ay içinde gider kaydı tüm ofisteki net harcama örüntülerini ortaya çıkarır. Belki ekip, malzemeler
+      çok geç sipariş edildiği için hızlı kargoya fazla ödeme yapıyordur. Önlerinde güvenilir rakamlar olduğunda yöneticiler
+      toplu siparişleri daha erken planlayabilir ve kaliteden ödün vermeden tasarruf edebilir. Herkes aynı gerçekleri gördüğünde
+      iyi alışkanlıklar kendiliğinden gelişir.
+  vocabulary_annotations:
+  - word: receipt
+    context_definition_en: a written record confirming payment was made
+    context_meaning_tr: makbuz, fiş
+  - word: budget
+    context_definition_en: a plan showing how available money will be spent
+    context_meaning_tr: bütçe
+  - word: accurate
+    context_definition_en: exact and free from mistakes
+    context_meaning_tr: doğru, hatasız
+  - word: pattern
+    context_definition_en: a repeated way in which events or spending happen
+    context_meaning_tr: örüntü, düzen
+  comprehension_questions:
+  - id: q_reading_a2_monthly-expense-tracking_01
+    question_en: Why do small office purchases often surprise teams at month end?
+    options:
+    - Spreadsheets always calculate formulas incorrectly
+    - Managers forbid employees from buying stationery
+    - Banks charge hidden fees on train tickets
+    - They are rarely recorded right after spending
+    correct_answer: They are rarely recorded right after spending
+    explanation_en: Paragraph 1 explains that small purchases add up unexpectedly when nobody writes them down immediately.
+    explanation_tr: 1. paragraf, küçük harcamalar hemen not alınmadığında ay sonunda beklenmedik biçimde biriktiğini açıklar.
+  - id: q_reading_a2_monthly-expense-tracking_02
+    question_en: How many categories does the writer recommend for a simple log?
+    options:
+    - At least twenty detailed codes
+    - Twelve separate spreadsheets per person
+    - Four or five clear categories
+    - Only one combined category
+    correct_answer: Four or five clear categories
+    explanation_en: Paragraph 2 says four or five clear categories work well for most teams.
+    explanation_tr: 2. paragraf çoğu ekip için dört veya beş net kategorinin yeterli olduğunu söyler.
+  - id: q_reading_a2_monthly-expense-tracking_03
+    question_en: What routine does Paragraph 3 suggest to prevent lost paper slips?
+    options:
+    - Replacing all receipts with handwritten guesses
+    - Waiting until the annual tax audit
+    - Updating the log for ten minutes every Friday afternoon
+    - Canceling all Friday team meetings permanently
+    correct_answer: Updating the log for ten minutes every Friday afternoon
+    explanation_en: Paragraph 3 recommends spending ten minutes every Friday afternoon keeping the record current.
+    explanation_tr: 3. paragraf kaydı güncel tutmak için her cuma öğleden sonra on dakika ayırmayı önerir.
+  - id: q_reading_a2_monthly-expense-tracking_04
+    question_en: What concrete problem can three months of expense data expose?
+    options:
+    - Suppliers raising rent on the office building
+    - Internet speeds dropping during afternoon calls
+    - High rush shipping fees caused by late supply orders
+    - Employees refusing to take paid holidays
+    correct_answer: High rush shipping fees caused by late supply orders
+    explanation_en: Paragraph 4 uses rush shipping fees from ordering supplies too late as an example pattern.
+    explanation_tr: 4. paragraf, malzemelerin geç sipariş edilmesinden doğan yüksek hızlı kargo ücretlerini örnek olarak verir.
+  - id: q_reading_a2_monthly-expense-tracking_05
+    question_en: What is the main benefit of seeing accurate spending numbers together?
+    options:
+    - Staff no longer need approval for travel
+    - Software vendors automatically cut prices in half
+    - Every small office becomes tax exempt
+    - Managers can trim waste early without lowering quality
+    correct_answer: Managers can trim waste early without lowering quality
+    explanation_en: Paragraph 4 highlights planning earlier bulk orders to save money without cutting quality.
+    explanation_tr: 4. paragraf, kaliteden ödün vermeden tasarruf etmek için daha erken toplu sipariş planlamasını vurgular.
+  topic_tags:
+  - finance
+  - budgeting
+  - small-teams
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.a2.code-review-basics-for-juniors
+  title: How Small Code Reviews Help New Developers Grow
+  cefr_level: A2
+  category: engineering_culture
+  summary_en: Why keeping pull requests focused and friendly speeds up feedback and helps junior engineers learn faster.
+  summary_tr: Değişiklik isteklerini odaklı ve yapıcı tutmanın geri bildirimi nasıl hızlandırdığını ve yeni geliştiricilerin
+    öğrenmesini nasıl desteklediğini anlatır.
+  word_count: 231
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Smaller Changes Get Better Feedback
+    content_en: New software developers often feel nervous before sharing their first code change with teammates. When a single
+      update changes thirty files at once, busy reviewers struggle to follow the logic. Keeping each change small and focused
+      on one task makes the review faster and less stressful. Senior colleagues can spot small bugs easily and explain clearer
+      solutions in plain language.
+    content_tr: Yeni yazılım geliştiricileri ilk kod değişikliklerini ekip arkadaşlarıyla paylaşmadan önce sık sık heyecan
+      hisseder. Tek bir güncelleme aynı anda otuz dosyayı değiştirdiğinde, yoğun inceleyiciler mantığı takip etmekte zorlanır.
+      Her değişikliği küçük ve tek bir göreve odaklı tutmak incelemeyi hızlandırır ve stresi azaltır. Kıdemli meslektaşlar
+      küçük hataları kolayca fark edebilir ve sade bir dille daha net çözümler açıklayabilir.
+  - paragraph_index: 2
+    title: Explaining Why in the Note
+    content_en: Before sending a request for review, writing a short description saves everyone time. Mention what problem
+      you solved, how you tested it, and whether any screen layout changed. Reviewers do not need to guess your goal by reading
+      every line alone. A brief screenshot or test output also gives teammates confidence that the update already works locally.
+    content_tr: İnceleme talebi göndermeden önce kısa bir açıklama yazmak herkese zaman kazandırır. Hangi sorunu çözdüğünüzü,
+      nasıl test ettiğinizi ve herhangi bir ekran düzeninin değişip değişmediğini belirtin. İnceleyicilerin yalnızca her satırı
+      okuyarak amacınızı tahmin etmesi gerekmez. Kısa bir ekran görüntüsü veya test çıktısı da ekip arkadaşlarına güncellemenin
+      yerelde zaten çalıştığına dair güven verir.
+  - paragraph_index: 3
+    title: Separating Ideas From Personal Value
+    content_en: Receiving ten comments on a review can feel discouraging on your first week. Remember that comments target
+      the code structure, not your talent or effort. Friendly teams ask open questions like whether a helper function might
+      be simpler, rather than giving harsh orders. Over time, reading comments on other people's work also teaches you useful
+      habits before you write your next feature.
+    content_tr: İlk haftanızda bir incelemede on yorum almak moral bozucu gelebilir. Yorumların sizin yeteneğinizi veya çabanızı
+      değil, kod yapısını hedeflediğini unutmayın. Dostane ekipler sert emirler vermek yerine bir yardımcı işlevin daha sade
+      olup olamayacağı gibi açık sorular sorar. Zamanla başkalarının işlerindeki yorumları okumak da bir sonraki özelliğinizi
+      yazmadan önce size faydalı alışkanlıklar öğretir.
+  - paragraph_index: 4
+    title: Following Up With Curiosity
+    content_en: When a suggestion is unclear, replying with a polite follow-up question helps both sides learn. Ask why one
+      pattern handles edge cases safer than another, or request a five-minute screen share if text feels slow. Thanking reviewers
+      after fixing issues builds trust across the team and turns daily checks into steady training.
+    content_tr: Bir öneri net olmadığında nazik bir takip sorusuyla yanıt vermek her iki tarafın da öğrenmesine yardımcı olur.
+      Bir yöntemin uç durumları diğerinden neden daha güvenli ele aldığını sorun veya yazışmak yavaş gelirse beş dakikalık
+      ekran paylaşımı isteyin. Sorunları düzelttikten sonra inceleyicilere teşekkür etmek ekip içinde güven inşa eder ve günlük
+      kontrolleri düzenli bir eğitime dönüştürür.
+  vocabulary_annotations:
+  - word: review
+    context_definition_en: a careful check of someone else's work before approval
+    context_meaning_tr: kod incelemesi
+  - word: description
+    context_definition_en: a written summary explaining what a change does
+    context_meaning_tr: açıklama
+  - word: structure
+    context_definition_en: the way parts of code are arranged together
+    context_meaning_tr: yapı
+  - word: trust
+    context_definition_en: belief that teammates act reliably and fairly
+    context_meaning_tr: güven
+  comprehension_questions:
+  - id: q_reading_a2_code-review-basics-for-juniors_01
+    question_en: Why should junior engineers keep code updates small?
+    options:
+    - Reviewers refuse to open more than two folders
+    - Small updates never require running any tests
+    - Large updates are blocked by every computer
+    - Small updates are faster for teammates to understand and check
+    correct_answer: Small updates are faster for teammates to understand and check
+    explanation_en: Paragraph 1 explains that changing thirty files makes logic hard to follow, whereas focused updates speed
+      up review.
+    explanation_tr: 1. paragraf otuz dosyayı değiştirmenin mantığı zorlaştırdığını, odaklı güncellemelerin incelemeyi hızlandırdığını
+      belirtir.
+  - id: q_reading_a2_code-review-basics-for-juniors_02
+    question_en: What helpful details belong in the review note?
+    options:
+    - Private passwords used on local servers
+    - Personal vacation plans for next year
+    - The entire salary history of the engineering team
+    - What problem was solved and how the change was tested
+    correct_answer: What problem was solved and how the change was tested
+    explanation_en: Paragraph 2 advises noting the problem solved, test steps, and UI layout updates.
+    explanation_tr: 2. paragraf çözülen sorunun, test adımlarının ve arayüz değişikliklerinin yazılmasını önerir.
+  - id: q_reading_a2_code-review-basics-for-juniors_03
+    question_en: What healthy attitude should developers keep toward review comments?
+    options:
+    - Every comment must be argued against immediately
+    - Only senior staff receive feedback on code
+    - Comments improve the code rather than judge the author
+    - Many comments mean a programmer should resign
+    correct_answer: Comments improve the code rather than judge the author
+    explanation_en: Paragraph 3 notes that comments target code structure, not personal talent or effort.
+    explanation_tr: 3. paragraf yorumların kişisel yeteneği değil kod yapısını hedeflediğini vurgular.
+  - id: q_reading_a2_code-review-basics-for-juniors_04
+    question_en: What is a smart step when a written comment is hard to understand?
+    options:
+    - Ask a polite follow-up or request a brief screen share
+    - Wait a full month before replying
+    - Merge the code without reading the comment
+    - Delete the branch and rewrite the app alone
+    correct_answer: Ask a polite follow-up or request a brief screen share
+    explanation_en: Paragraph 4 recommends asking why a pattern works better or requesting a five-minute screen share.
+    explanation_tr: 4. paragraf açıklayıcı soru sormayı veya beş dakikalık ekran paylaşımı istemeyi önerir.
+  - id: q_reading_a2_code-review-basics-for-juniors_05
+    question_en: Besides fixing your own update, how else can you learn from code reviews?
+    options:
+    - By turning off team notifications every week
+    - By reading feedback written on other teammates' updates
+    - By copying code without checking behavior
+    - By hiding test failures in separate files
+    correct_answer: By reading feedback written on other teammates' updates
+    explanation_en: Paragraph 3 states that reading comments on other people's work teaches useful habits.
+    explanation_tr: 3. paragraf başkalarının işlerindeki yorumları okumanın faydalı alışkanlıklar öğrettiğini belirtir.
+  topic_tags:
+  - code-review
+  - onboarding
+  - software-engineering
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.a2.running-a-fair-team-shift
+  title: Sharing Weekend and Holiday Shifts Fairly
+  cefr_level: A2
+  category: leadership_and_management
+  summary_en: How clear rotation calendars, advance notice, and fair swaps prevent burnout on customer support teams.
+  summary_tr: Açık nöbet takvimlerinin, erken bildirimin ve adil değişimlerin destek ekiplerinde tükenmişliği nasıl önlediğini
+    açıklar.
+  word_count: 231
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Why Unclear Schedules Cause Resentment
+    content_en: Customer support teams and operations desks often need coverage during weekends and public holidays. When
+      managers assign extra shifts at the last minute, employees struggle to plan family visits or rest properly. If the same
+      reliable people always say yes while others avoid weekend work, quiet resentment builds quickly. Clear rules protect
+      both service quality and team morale.
+    content_tr: Müşteri destek ekipleri ve operasyon masaları sıklıkla hafta sonları ve resmi tatillerde nöbet gerektirir.
+      Yöneticiler ek vardiyaları son dakikada atadığında çalışanlar aile ziyaretlerini planlamakta veya doğru düzgün dinlenmekte
+      zorlanır. Aynı güvenilir kişiler hep evet derken diğerleri hafta sonu işinden kaçınırsa sessiz bir kırgınlık hızla büyür.
+      Net kurallar hem hizmet kalitesini hem ekip moralini korur.
+  - paragraph_index: 2
+    title: Publishing Rotations Weeks Ahead
+    content_en: The fairest solution is a visible rotation calendar shared at least six weeks in advance. Everyone sees who
+      covers upcoming Saturday mornings and holiday evenings before making travel plans. Rotating duties alphabetically or
+      by balanced points ensures that holiday work does not land on the same person twice in a row. Transparency removes guesswork
+      and reduces complaints immediately.
+    content_tr: En adil çözüm, en az altı hafta önceden paylaşılan görünür bir nöbet takvimidir. Herkes seyahat planı yapmadan
+      önce yaklaşan cumartesi sabahlarını ve tatil akşamlarını kimin üstlendiğini görür. Görevleri alfabetik olarak veya dengeli
+      puanlarla döndürmek tatil mesaisinin art arda aynı kişiye denk gelmemesini sağlar. Şeffaflık tahmini ortadan kaldırır
+      ve şikayetleri hemen azaltır.
+  - paragraph_index: 3
+    title: Making Shift Swaps Easy
+    content_en: Even the best calendar cannot predict every family dinner or minor illness. Giving staff a simple chat channel
+      to trade shifts with approved teammates adds helpful flexibility. Once two colleagues agree on a swap, they update the
+      shared sheet and notify their team lead with one short message. People feel trusted when schedules bend around real
+      life.
+    content_tr: En iyi takvim bile her aile yemeğini veya küçük rahatsızlığı önceden bilemez. Çalışanlara onaylı ekip arkadaşlarıyla
+      vardiya takas edebilecekleri basit bir sohbet kanalı sunmak yararlı esneklik katar. İki meslektaş bir takas üzerinde
+      anlaştığında ortak tabloyu günceller ve ekip liderine kısa bir mesajla haber verir. Programlar gerçek hayata göre esneyebildiğinde
+      insanlar kendilerine güvenildiğini hisseder.
+  - paragraph_index: 4
+    title: Protecting Recovery Days
+    content_en: Working a weekend shift should always be paired with protected time off during the regular week. Managers
+      must make sure staff actually take their recovery day instead of letting unused leave pile up. Offering quiet handoff
+      checklists at shift end also prevents stress for the next colleague arriving online. Fair scheduling shows practical
+      respect for every employee's time.
+    content_tr: Hafta sonu vardiyası çalışmak her zaman normal hafta içinde korunan izin günüyle dengelenmelidir. Yöneticiler
+      kullanılmayan izinlerin birikmesine izin vermek yerine çalışanların dinlenme günlerini gerçekten kullanmasını sağlamalıdır.
+      Vardiya sonunda sade devir kontrol listeleri sunmak da çevrimiçi olacak bir sonraki meslektaşın stresini önler. Adil
+      planlama herkesin zamanına duyulan somut saygıyı gösterir.
+  vocabulary_annotations:
+  - word: coverage
+    context_definition_en: staff availability to handle work during specific hours
+    context_meaning_tr: nöbet / vardiya kapsayıcılığı
+  - word: rotation
+    context_definition_en: a planned order in which people share a duty
+    context_meaning_tr: dönüşüm, sıra
+  - word: flexibility
+    context_definition_en: ability to adapt plans easily when needs change
+    context_meaning_tr: esneklik
+  - word: recovery
+    context_definition_en: rest needed to regain energy after demanding work
+    context_meaning_tr: toparlanma, dinlenme
+  comprehension_questions:
+  - id: q_reading_a2_running-a-fair-team-shift_01
+    question_en: What happens when the same reliable staff take every weekend shift?
+    options:
+    - Public holidays are removed from the calendar
+    - All employees move to a four-day week automatically
+    - Customer support tickets disappear completely
+    - Silent frustration grows and hurts team morale
+    correct_answer: Silent frustration grows and hurts team morale
+    explanation_en: Paragraph 1 states that unfair coverage leads to quiet resentment and damages team morale.
+    explanation_tr: 1. paragraf adaletsiz dağılımın sessiz kırgınlık yaratıp ekip moraline zarar verdiğini belirtir.
+  - id: q_reading_a2_running-a-fair-team-shift_02
+    question_en: How far ahead should managers share the shift rotation calendar?
+    options:
+    - Only after the public holiday ends
+    - Two hours before Saturday morning
+    - Once every three years
+    - At least six weeks in advance
+    correct_answer: At least six weeks in advance
+    explanation_en: Paragraph 2 recommends sharing the visible calendar at least six weeks in advance.
+    explanation_tr: 2. paragraf görünür takvimin en az altı hafta önceden paylaşılmasını önerir.
+  - id: q_reading_a2_running-a-fair-team-shift_03
+    question_en: How should teammates handle a shift swap once both agree?
+    options:
+    - Keep the swap secret until Monday morning
+    - Ask every customer to vote on the change
+    - Cancel the entire weekend support desk
+    - Update the shared schedule and message the team lead
+    correct_answer: Update the shared schedule and message the team lead
+    explanation_en: Paragraph 3 explains that teammates update the shared sheet and notify their team lead.
+    explanation_tr: 3. paragraf ekip arkadaşlarının ortak tabloyu güncelleyip ekip liderine kısa mesaj göndermesini anlatır.
+  - id: q_reading_a2_running-a-fair-team-shift_04
+    question_en: Why should weekend workers receive a protected recovery day?
+    options:
+    - So they actually rest instead of building up fatigue
+    - To avoid paying regular weekday internet bills
+    - To replace handoff checklists permanently
+    - So offices can close early every Tuesday
+    correct_answer: So they actually rest instead of building up fatigue
+    explanation_en: Paragraph 4 stresses ensuring staff actually take their recovery day during the week.
+    explanation_tr: 4. paragraf çalışanların hafta içinde dinlenme günlerini gerçekten kullanmalarının önemini vurgular.
+  - id: q_reading_a2_running-a-fair-team-shift_05
+    question_en: What helps the next colleague starting their shift feel less stressed?
+    options:
+    - Changing work rules without telling anyone
+    - A clear handoff checklist left at shift end
+    - Leaving inbox messages unread until Monday
+    - Turning off the shared team calendar
+    correct_answer: A clear handoff checklist left at shift end
+    explanation_en: Paragraph 4 notes that quiet handoff checklists prevent stress for the next colleague.
+    explanation_tr: 4. paragraf vardiya sonundaki net devir listelerinin bir sonraki iş arkadaşının stresini azalttığını söyler.
+  topic_tags:
+  - management
+  - scheduling
+  - fairness
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.a2.clear-meeting-notes-guide
+  title: Writing Short Meeting Notes Everyone Reads
+  cefr_level: A2
+  category: workplace_communication
+  summary_en: How focusing meeting summaries on decisions, owners, and deadlines saves busy teams hours of follow-up confusion.
+  summary_tr: Toplantı notlarını kararlar, sorumlular ve teslim tarihleri üzerine kurmanın yoğun ekiplerde kafa karışıklığını
+    nasıl azalttığını anlatır.
+  word_count: 220
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Why Long Transcripts Fail
+    content_en: After a long team call, people rarely want to read three pages of every sentence someone said. Huge blocks
+      of plain text get ignored in busy inboxes within minutes. When nobody reads the notes, colleagues still message each
+      other later asking what the group decided. Good notes capture outcomes quickly so absent teammates catch up in sixty
+      seconds.
+    content_tr: Uzun bir ekip görüşmesinden sonra insanlar nadiren herkesin söylediği her cümleyi içeren üç sayfalık metinleri
+      okumak ister. Büyük düz metin blokları yoğun gelen kutularında dakikalar içinde görmezden gelinir. Kimse notları okumadığında
+      iş arkadaşları sonradan grubun neye karar verdiğini sormak için tekrar mesaj atar. İyi notlar sonuçları hızlıca yakalar,
+      böylece katılamayanlar altmış saniyede konuya hakim olur.
+  - paragraph_index: 2
+    title: Decisions, Owners, and Dates
+    content_en: Effective notes follow a predictable three-part structure every single time. First, list key decisions reached
+      during the call in bullet points. Second, write action items showing clearly who owns each task and when it is due.
+      Third, add any open questions that still need answers next week. Highlighting names makes responsibilities obvious right
+      away.
+    content_tr: Etkili notlar her seferinde öngörülebilir üç bölümlü bir yapıyı izler. İlk olarak görüşmede alınan temel kararları
+      madde madde yazın. İkinci olarak her görevin sorumlusunu ve teslim tarihini açıkça gösteren eylem maddelerini ekleyin.
+      Üçüncü olarak gelecek hafta hâlâ yanıt bekleyen açık soruları belirtin. İsimleri vurgulamak sorumlulukları hemen netleştirir.
+  - paragraph_index: 3
+    title: Sharing Within Two Hours
+    content_en: Sending meeting notes while memories are fresh prevents tiny misunderstandings from growing. Share the summary
+      in the team channel within two hours after the call finishes. If anyone disagrees with a written decision, they can
+      correct it that same afternoon instead of working in the wrong direction all week. Speed matters far more than perfect
+      decoration.
+    content_tr: Hafızalar tazeyken toplantı notlarını göndermek küçük yanlış anlaşılmaların büyümesini engeller. Özeti görüşme
+      bittikten sonraki iki saat içinde ekip kanalında paylaşın. Birisi yazılı bir karara katılmazsa, bütün hafta yanlış yönde
+      çalışmak yerine aynı öğleden sonra düzeltebilir. Hız, kusursuz biçimlendirmeden çok daha önemlidir.
+  - paragraph_index: 4
+    title: Keeping a Searchable Archive
+    content_en: Finally, store all weekly summaries inside one shared folder using clear dates in the file names. Six weeks
+      later, anyone can search a keyword like pricing or server move and find why a choice was made. Over time, clean notes
+      replace unnecessary repeat meetings and help new hires understand team history effortlessly.
+    content_tr: Son olarak tüm haftalık özetleri dosya adlarında net tarihler kullanarak tek bir ortak klasörde saklayın.
+      Altı hafta sonra herkes fiyatlandırma veya sunucu taşıma gibi bir anahtar kelime arayıp bir seçimin neden yapıldığını
+      bulabilir. Zamanla temiz notlar gereksiz tekrar toplantılarının yerini alır ve yeni başlayanların ekip geçmişini zahmetsizce
+      anlamasına yardımcı olur.
+  vocabulary_annotations:
+  - word: outcome
+    context_definition_en: the final result or decision after a discussion
+    context_meaning_tr: sonuç, çıktı
+  - word: bullet
+    context_definition_en: a short list line marked with a dot for fast reading
+    context_meaning_tr: madde işareti
+  - word: misunderstanding
+    context_definition_en: confusion when people think different things were agreed
+    context_meaning_tr: yanlış anlaşılma
+  - word: absent
+    context_definition_en: teammates who could not attend the call live
+    context_meaning_tr: toplantıda bulunmayan
+  comprehension_questions:
+  - id: q_reading_a2_clear-meeting-notes-guide_01
+    question_en: Why do three-page word-for-word meeting transcripts fail teams?
+    options:
+    - Busy colleagues skip long text blocks and miss key decisions
+    - Only managers are legally allowed to read notes
+    - Short notes take four hours longer to type
+    - Email programs delete files longer than one sentence
+    correct_answer: Busy colleagues skip long text blocks and miss key decisions
+    explanation_en: Paragraph 1 says huge blocks of plain text get ignored so nobody knows what was agreed.
+    explanation_tr: 1. paragraf büyük düz metin bloklarının görmezden gelindiğini ve alınan kararların kaçırıldığını söyler.
+  - id: q_reading_a2_clear-meeting-notes-guide_02
+    question_en: What must every action item include?
+    options:
+    - A full financial statement for the quarter
+    - Three pages of chat transcripts
+    - Clear ownership and a specific due date
+    - Names of everyone who skipped the call
+    correct_answer: Clear ownership and a specific due date
+    explanation_en: Paragraph 2 says action items must show who owns each task and when it is due.
+    explanation_tr: 2. paragraf eylem maddelerinin görevin sorumlusunu ve teslim tarihini açıkça göstermesi gerektiğini belirtir.
+  - id: q_reading_a2_clear-meeting-notes-guide_03
+    question_en: When should notes ideally be posted in the team channel?
+    options:
+    - Within two hours after the call finishes
+    - Right before the next monthly review
+    - Only when a mistake has already happened
+    - Exactly five days after the deadline passes
+    correct_answer: Within two hours after the call finishes
+    explanation_en: Paragraph 3 advises posting notes within two hours while memories are still fresh.
+    explanation_tr: 3. paragraf hafızalar tazeyken görüşme bitiminden sonraki iki saat içinde paylaşılmasını önerir.
+  - id: q_reading_a2_clear-meeting-notes-guide_04
+    question_en: How does naming archived note files with dates help later?
+    options:
+    - It deletes old projects automatically
+    - It locks all folders from new hires
+    - It replaces all software licenses on laptops
+    - Teammates can quickly search past decisions months later
+    correct_answer: Teammates can quickly search past decisions months later
+    explanation_en: Paragraph 4 notes that a searchable dated folder helps staff check why past choices were made.
+    explanation_tr: 4. paragraf tarihli ve aranabilir klasörün geçmiş kararların nedenini bulmayı kolaylaştırdığını anlatır.
+  - id: q_reading_a2_clear-meeting-notes-guide_05
+    question_en: How long should it take an absent teammate to read good notes?
+    options:
+    - Over an hour with a dictionary
+    - Around sixty seconds
+    - At least half a workday
+    - Twenty minutes of scrolling
+    correct_answer: Around sixty seconds
+    explanation_en: Paragraph 1 states absent teammates should be able to catch up in sixty seconds.
+    explanation_tr: 1. paragraf katılamayan ekip arkadaşlarının altmış saniyede konuya hakim olabilmesi gerektiğini belirtir.
+  topic_tags:
+  - meetings
+  - writing
+  - productivity
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.a2.understanding-subscription-costs
+  title: Reviewing Team Software Subscriptions Safely
+  cefr_level: A2
+  category: finance_and_economics
+  summary_en: How auditing recurring cloud tool charges every quarter cuts wasted licenses without disrupting daily work.
+  summary_tr: Yinelenen bulut yazılım aboneliklerini her çeyrekte gözden geçirmenin günlük işi aksatmadan israfı nasıl azalttığını
+    anlatır.
+  word_count: 224
+  estimated_reading_minutes: 1
+  paragraphs:
+  - paragraph_index: 1
+    title: Silent Costs Add Up
+    content_en: Modern teams rely on cloud tools for chat, design files, task tracking, and video calls. Signing up with a
+      company credit card takes two minutes, so managers easily forget old accounts. An unused fifteen-dollar seat seems tiny
+      on Monday morning, yet thirty forgotten seats cost thousands every year. Checking subscriptions regularly keeps small
+      fees under control.
+    content_tr: Modern ekipler sohbet, tasarım dosyaları, görev takibi ve görüntülü görüşmeler için bulut araçlarına güvenir.
+      Şirket kredi kartıyla kayıt olmak iki dakika sürer, bu yüzden yöneticiler eski hesapları kolayca unutabilir. Kullanılmayan
+      on beş dolarlık bir lisans pazartesi sabahı küçük görünür, ancak otuz unutulmuş lisans her yıl binlerce dolara mal olur.
+      Abonelikleri düzenli kontrol etmek küçük ücretleri kontrol altında tutar.
+  - paragraph_index: 2
+    title: Building a Simple Tool List
+    content_en: Start by listing every paid app on one shared page alongside the person who manages it. Write down the monthly
+      cost, renewal date, and how many active seats the team uses. Often two separate departments pay for different tools
+      that do the exact same job, such as duplicate survey or whiteboard apps. Combining onto one approved tool simplifies
+      both bills and training.
+    content_tr: İşe her ücretli uygulamayı, yöneticisiyle birlikte tek bir ortak sayfada listeleyerek başlayın. Aylık maliyeti,
+      yenileme tarihini ve ekibin kaç aktif kullanıcı koltuğu kullandığını yazın. Genellikle iki ayrı departman anket veya
+      beyaz tahta uygulamaları gibi aynı işi yapan farklı araçlara ödeme yapar. Tek bir onaylı araçta birleşmek hem faturaları
+      hem eğitimi basitleştirir.
+  - paragraph_index: 3
+    title: Checking Before Automatic Renewal
+    content_en: Many annual software plans renew automatically unless canceled thirty days before the renewal date. Setting
+      a calendar reminder six weeks ahead gives teams plenty of room to decide calmly. Before removing any seat, message the
+      assigned user first so nobody loses access during an urgent client project. Polite checks avoid painful surprises on
+      Monday deadlines.
+    content_tr: Birçok yıllık yazılım planı, yenileme tarihinden otuz gün önce iptal edilmedikçe otomatik olarak yenilenir.
+      Altı hafta önceden bir takvim hatırlatıcısı koymak ekiplere sakince karar vermeleri için geniş zaman bırakır. Herhangi
+      bir lisansı kaldırmadan önce atanan kullanıcıya mesaj atın ki kimse acil bir müşteri projesi sırasında erişimini kaybetmesin.
+      Nazik kontroller pazartesi teslimlerinde tatsız sürprizleri önler.
+  - paragraph_index: 4
+    title: Reinvesting Saved Budget Wisely
+    content_en: Cleaning up forgotten seats is not only about spending less money. Money saved from unused cloud tools can
+      fund staff training courses, ergonomic chairs, or faster test laptops. When teams treat subscription checks as a normal
+      quarterly habit, finances stay lean and every tool on the list truly earns its keep.
+    content_tr: Unutulmuş lisansları temizlemek yalnızca daha az para harcamakla ilgili değildir. Kullanılmayan bulut araçlarından
+      artan para çalışan eğitim kurslarını, ergonomik sandalyeleri veya daha hızlı test dizüstü bilgisayarlarını finanse edebilir.
+      Ekipler abonelik kontrollerini normal bir üç aylık alışkanlık haline getirdiğinde bütçe sade kalır ve listedeki her
+      araç gerçekten karşılığını verir.
+  vocabulary_annotations:
+  - word: subscription
+    context_definition_en: a recurring payment plan for ongoing software use
+    context_meaning_tr: abonelik
+  - word: duplicate
+    context_definition_en: an unnecessary second tool doing the same work
+    context_meaning_tr: mükerrer, ikilenen
+  - word: renewal
+    context_definition_en: the date when a contract automatically starts another cycle
+    context_meaning_tr: yenileme
+  - word: quarterly
+    context_definition_en: happening once every three months
+    context_meaning_tr: üç aylık
+  comprehension_questions:
+  - id: q_reading_a2_understanding-subscription-costs_01
+    question_en: Why do forgotten cloud subscriptions become expensive over a year?
+    options:
+    - Vendors double prices every Friday afternoon
+    - Design files only work with thirty licenses
+    - Many small unused seats add up into large annual charges
+    - Teams delete all company credit cards monthly
+    correct_answer: Many small unused seats add up into large annual charges
+    explanation_en: Paragraph 1 points out that dozens of small unused seats accumulate into thousands annually.
+    explanation_tr: 1. paragraf kullanılmayan onlarca küçük lisansın yılda binlerce dolara biriktiğini belirtir.
+  - id: q_reading_a2_understanding-subscription-costs_02
+    question_en: What waste does listing tools across departments often uncover?
+    options:
+    - Travel budgets being used on ergonomic chairs
+    - Employees sharing too few laptops at work
+    - Managers writing long meeting transcripts
+    - Different teams paying for two apps that do the same task
+    correct_answer: Different teams paying for two apps that do the same task
+    explanation_en: Paragraph 2 notes that separate departments often pay for duplicate survey or whiteboard apps.
+    explanation_tr: 2. paragraf ayrı departmanların aynı işi yapan mükerrer uygulamalara ödeme yapabildiğini anlatır.
+  - id: q_reading_a2_understanding-subscription-costs_03
+    question_en: Why set a calendar reminder six weeks before annual renewal?
+    options:
+    - Software companies close during winter months
+    - Many plans require cancellation thirty days in advance
+    - Managers need six weeks to sign a paper check
+    - Banks only refund money after six months
+    correct_answer: Many plans require cancellation thirty days in advance
+    explanation_en: Paragraph 3 explains that annual contracts often auto-renew unless canceled thirty days early.
+    explanation_tr: 3. paragraf yıllık planların otuz gün önceden iptal edilmezse otomatik yenilendiğini açıklar.
+  - id: q_reading_a2_understanding-subscription-costs_04
+    question_en: What step protects ongoing work before removing an inactive license?
+    options:
+    - Deleting their workspace without notice
+    - Messaging the assigned user first to confirm
+    - Waiting until the credit card expires
+    - Blocking all video calls for a week
+    correct_answer: Messaging the assigned user first to confirm
+    explanation_en: Paragraph 3 instructs asking the assigned user first so urgent projects are not interrupted.
+    explanation_tr: 3. paragraf acil projelerin aksamaması için önce ilgili kullanıcıya sorulmasını söyler.
+  - id: q_reading_a2_understanding-subscription-costs_05
+    question_en: How can teams benefit from savings found in software audits?
+    options:
+    - By funding training, ergonomic gear, or faster equipment
+    - By keeping balances idle in closed accounts
+    - By stopping quarterly finance meetings
+    - By removing every collaboration tool permanently
+    correct_answer: By funding training, ergonomic gear, or faster equipment
+    explanation_en: Paragraph 4 gives training courses, ergonomic chairs, and faster laptops as reinvestment examples.
+    explanation_tr: 4. paragraf tasarrufun eğitim, ergonomik koltuk veya daha hızlı dizüstü bilgisayarlara aktarılabileceğini
+      belirtir.
+  topic_tags:
+  - saas
+  - finance
+  - cost-control
+  related_ids: []
+  status: APPROVED
+  version: 1

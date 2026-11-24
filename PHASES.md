@@ -16,7 +16,7 @@ This file contains sequencing and phase boundaries.
 
 ## Current status
 
-**Current Phase: Phase 7 — Today's Practice**
+**Current Phase: Phase 8 — Curriculum Expansion**
 
 Update this line only when the user explicitly decides to advance phases or when a task explicitly authorizes the transition.
 

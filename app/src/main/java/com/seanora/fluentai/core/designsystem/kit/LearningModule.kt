@@ -4,6 +4,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.MenuBook
 import androidx.compose.material.icons.automirrored.rounded.TrendingUp
 import androidx.compose.material.icons.rounded.AutoStories
+import androidx.compose.material.icons.rounded.Extension
 import androidx.compose.material.icons.rounded.Headphones
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Person
@@ -28,6 +29,7 @@ enum class LearningModule(
     LEARN("🎓", Icons.Rounded.School, Color(0xFFD9467F), Color(0xFFFFE6F0), Color(0xFFFFC2DA)),
     VOCABULARY("📚", Icons.AutoMirrored.Rounded.MenuBook, Color(0xFFE23E86), Color(0xFFFFE3EF), Color(0xFFFFB3D2)),
     GRAMMAR("🧩", Icons.Rounded.Spellcheck, Color(0xFF7A55E8), Color(0xFFEFE8FF), Color(0xFFCDBBFF)),
+    CHUNKS("🧱", Icons.Rounded.Extension, Color(0xFFB83A7A), Color(0xFFFFE6F2), Color(0xFFFFBEDE)),
     READING("📖", Icons.Rounded.AutoStories, Color(0xFFE56A2C), Color(0xFFFFEBDD), Color(0xFFFFC9A6)),
     LISTENING("🎧", Icons.Rounded.Headphones, Color(0xFF1F9D68), Color(0xFFE2F6EC), Color(0xFFA9E5C8)),
     SPEAKING("🎙️", Icons.Rounded.RecordVoiceOver, Color(0xFF2F74E0), Color(0xFFE6F0FF), Color(0xFFB3CEFF)),
@@ -45,6 +47,7 @@ enum class LearningModule(
         fun forDomain(domain: String): LearningModule = when (domain.lowercase()) {
             "vocabulary" -> VOCABULARY
             "grammar" -> GRAMMAR
+            "chunks" -> CHUNKS
             "reading" -> READING
             "listening" -> LISTENING
             "speaking" -> SPEAKING

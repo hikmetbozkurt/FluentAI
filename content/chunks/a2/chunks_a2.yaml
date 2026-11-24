@@ -1,0 +1,293 @@
+- id: chunk.a2.frame.trying-to
+  chunk_en: "I'm trying to..."
+  pattern_template: "[Subject] + am/is/are trying to + [Base Verb]"
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: "Bir şey yapmaya çalıştığını söylemek"
+  meaning_en: "Used to say you are making an effort to do something right now or around this time."
+  turkish_trap:
+    incorrect_en: "I try to finish this report now."
+    correct_en: "I'm trying to finish this report now."
+    explanation_tr: "Türkçede şimdiki zaman için doğrudan 'çalışıyorum' deriz; İngilizcede şu an süren çaba için 'am/is/are trying to + fiil' kalıbı kullanılır."
+    trap_type: tense_selection
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "'m trying to finish", text_tr: "bitirmeye çalışıyorum" }
+    - { role: OBJECT, label: "What", text_en: "this report", text_tr: "bu raporu" }
+    - { role: TIME_PLACE, label: "When", text_en: "before lunch", text_tr: "öğleden önce" }
+  slot_variations:
+    - { slot_en: "finish this report", full_sentence_en: "I'm trying to finish this report before lunch.", full_sentence_tr: "Öğleden önce bu raporu bitirmeye çalışıyorum." }
+    - { slot_en: "improve my speaking", full_sentence_en: "I'm trying to improve my speaking every morning.", full_sentence_tr: "Her sabah konuşmamı geliştirmeye çalışıyorum." }
+    - { slot_en: "find a quiet room", full_sentence_en: "I'm trying to find a quiet room for the call.", full_sentence_tr: "Görüşme için sessiz bir oda bulmaya çalışıyorum." }
+  topic_tags: [daily-life, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.make-a-decision
+  chunk_en: "make a decision"
+  pattern_template: "[Subject] + need to / will + make a decision + [about Topic]"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir konuda karar vermek"
+  meaning_en: "To choose one option after thinking about the possibilities."
+  turkish_trap:
+    incorrect_en: "We need to give a decision today."
+    correct_en: "We need to make a decision today."
+    explanation_tr: "Türkçede 'karar vermek' dediğimiz için 'give' fiiline kaymak çok yaygındır; İngilizcede doğru eşdizim her zaman 'make a decision'dır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "need to make a decision", text_tr: "karar vermemiz gerekiyor" }
+    - { role: OBJECT, label: "About", text_en: "about the budget", text_tr: "bütçe hakkında" }
+    - { role: TIME_PLACE, label: "When", text_en: "today", text_tr: "bugün" }
+  slot_variations:
+    - { slot_en: "about the budget", full_sentence_en: "We need to make a decision about the budget today.", full_sentence_tr: "Bugün bütçe hakkında bir karar vermemiz gerekiyor." }
+    - { slot_en: "before Friday", full_sentence_en: "The team will make a decision before Friday.", full_sentence_tr: "Ekip cumadan önce bir karar verecek." }
+    - { slot_en: "on the new vendor", full_sentence_en: "Can we make a decision on the new vendor soon?", full_sentence_tr: "Yeni tedarikçi konusunda yakında karar verebilir miyiz?" }
+  topic_tags: [workplace, meetings]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.have-a-meeting
+  chunk_en: "have a meeting"
+  pattern_template: "[Subject] + have / are having + a meeting + [with Who] + [at Time]"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Toplantı yapmak"
+  meaning_en: "To gather with colleagues or clients to discuss work."
+  turkish_trap:
+    incorrect_en: "We will make a meeting at three."
+    correct_en: "We're going to have a meeting at three."
+    explanation_tr: "Türkçedeki 'toplantı yapmak' ifadesi 'make' ile çevrilmez; İngilizcede 'have a meeting' veya 'hold a meeting' kullanılır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "have a meeting", text_tr: "toplantı yapıyoruz" }
+    - { role: OBJECT, label: "With who", text_en: "with the design team", text_tr: "tasarım ekibiyle" }
+    - { role: TIME_PLACE, label: "When", text_en: "at 3 p.m.", text_tr: "saat 3'te" }
+  slot_variations:
+    - { slot_en: "with the design team", full_sentence_en: "We have a meeting with the design team at 3 p.m.", full_sentence_tr: "Saat 3'te tasarım ekibiyle toplantımız var." }
+    - { slot_en: "about the launch", full_sentence_en: "Let's have a quick meeting about the launch.", full_sentence_tr: "Lansman hakkında hızlı bir toplantı yapalım." }
+    - { slot_en: "every Monday morning", full_sentence_en: "Our department has a meeting every Monday morning.", full_sentence_tr: "Departmanımız her pazartesi sabahı toplantı yapar." }
+  topic_tags: [workplace, meetings]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.frame.do-you-want-me-to
+  chunk_en: "Do you want me to...?"
+  pattern_template: "Do you want me to + [Base Verb] + [Object]?"
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: "Birine yardım teklif etmek ('... yapmamı ister misin?')"
+  meaning_en: "A polite, natural way to offer help in daily or workplace conversations."
+  turkish_trap:
+    incorrect_en: "Do you want that I send the file?"
+    correct_en: "Do you want me to send the file?"
+    explanation_tr: "Türkçede 'göndermemi ister misin' yapısı 'that I...' olarak çevrilmemelidir; İngilizcede 'want + kişi + to + fiil' kullanılır."
+    trap_type: clause_structure
+  blueprint_slots:
+    - { role: VERB_BRIDGE, label: "Offer frame", text_en: "Do you want me to send", text_tr: "Göndermemi ister misin" }
+    - { role: OBJECT, label: "What", text_en: "the updated slides", text_tr: "güncel sunumu" }
+    - { role: TIME_PLACE, label: "When", text_en: "right now?", text_tr: "hemen şimdi?" }
+  slot_variations:
+    - { slot_en: "send the updated slides", full_sentence_en: "Do you want me to send the updated slides right now?", full_sentence_tr: "Güncel sunumu hemen şimdi göndermemi ister misin?" }
+    - { slot_en: "book a meeting room", full_sentence_en: "Do you want me to book a meeting room for tomorrow?", full_sentence_tr: "Yarın için bir toplantı odası ayırtmamı ister misin?" }
+    - { slot_en: "take notes", full_sentence_en: "Do you want me to take notes during the call?", full_sentence_tr: "Görüşme sırasında not almamı ister misin?" }
+  topic_tags: [workplace, daily-life]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.frame.it-takes-time-to
+  chunk_en: "It takes [time] to..."
+  pattern_template: "It takes + [Time] + to + [Base Verb]"
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: "Bir işin ne kadar sürdüğünü söylemek"
+  meaning_en: "Used to describe how much time an activity requires."
+  turkish_trap:
+    incorrect_en: "Going to the office takes 40 minutes for me."
+    correct_en: "It takes me 40 minutes to get to the office."
+    explanation_tr: "Türkçede eylemi özne yaparız; İngilizcede süre belirtirken cümleye 'It takes (me) [süre] to [fiil]' ile başlamak çok daha doğaldır."
+    trap_type: word_order
+  blueprint_slots:
+    - { role: SUBJECT, label: "Dummy subject", text_en: "It", text_tr: "(Özne)" }
+    - { role: VERB_BRIDGE, label: "Duration bridge", text_en: "takes me 40 minutes to get", text_tr: "40 dakikamı alıyor gitmek" }
+    - { role: TIME_PLACE, label: "Where", text_en: "to the office", text_tr: "ofise" }
+  slot_variations:
+    - { slot_en: "40 minutes to get to the office", full_sentence_en: "It takes me 40 minutes to get to the office.", full_sentence_tr: "Ofise gitmem 40 dakikamı alıyor." }
+    - { slot_en: "ten minutes to review the draft", full_sentence_en: "It takes ten minutes to review the draft.", full_sentence_tr: "Taslağı gözden geçirmek on dakika sürüyor." }
+    - { slot_en: "a few days to hear back", full_sentence_en: "It usually takes a few days to hear back from them.", full_sentence_tr: "Onlardan dönüş almak genellikle birkaç gün sürer." }
+  topic_tags: [daily-life, commuting]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.i-agree-with
+  chunk_en: "I agree with..."
+  pattern_template: "I + agree with + [Person / Point]"
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Birine veya bir fikre katıldığını söylemek"
+  meaning_en: "Used to express that you share the same opinion."
+  turkish_trap:
+    incorrect_en: "I am agree with your idea."
+    correct_en: "I agree with your idea."
+    explanation_tr: "'Agree' bir sıfat değil fiildir; önüne 'am/is/are' getirilmez. Doğrudan 'I agree' veya 'I completely agree' denir."
+    trap_type: be_verb_overuse
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "completely agree with", text_tr: "tamamen katılıyorum" }
+    - { role: OBJECT, label: "What", text_en: "your suggestion", text_tr: "senin önerine" }
+  slot_variations:
+    - { slot_en: "your suggestion", full_sentence_en: "I completely agree with your suggestion.", full_sentence_tr: "Önerine tamamen katılıyorum." }
+    - { slot_en: "that point", full_sentence_en: "I agree with that point, especially on timing.", full_sentence_tr: "Özellikle zamanlama konusunda o noktaya katılıyorum." }
+    - { slot_en: "the client's feedback", full_sentence_en: "I agree with the client's feedback on the layout.", full_sentence_tr: "Müşterinin tasarım hakkındaki geri bildirimine katılıyorum." }
+  topic_tags: [meetings, conversation]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.make-an-appointment
+  chunk_en: "make an appointment"
+  pattern_template: "[Subject] + would like to / need to + make an appointment + [for Time]"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Randevu almak"
+  meaning_en: "To arrange a specific time to meet a doctor, service provider, or professional."
+  turkish_trap:
+    incorrect_en: "I want to take an appointment for Tuesday."
+    correct_en: "I'd like to make an appointment for Tuesday."
+    explanation_tr: "Türkçede 'randevu almak' dediğimiz için 'take' fiili sık karıştırılır; İngilizcede 'make an appointment' veya 'book an appointment' kullanılır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "'d like to make an appointment", text_tr: "randevu almak istiyorum" }
+    - { role: TIME_PLACE, label: "When", text_en: "for Tuesday morning", text_tr: "salı sabahı için" }
+  slot_variations:
+    - { slot_en: "for Tuesday morning", full_sentence_en: "I'd like to make an appointment for Tuesday morning.", full_sentence_tr: "Salı sabahı için randevu almak istiyorum." }
+    - { slot_en: "with Dr. Kaya", full_sentence_en: "Can I make an appointment with Dr. Kaya next week?", full_sentence_tr: "Gelecek hafta Dr. Kaya ile randevu alabilir miyim?" }
+    - { slot_en: "at the bank branch", full_sentence_en: "You need to make an appointment at the bank branch online.", full_sentence_tr: "Banka şubesi için çevrimiçi randevu almanız gerekiyor." }
+  topic_tags: [daily-life, services]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.frame.could-you-please
+  chunk_en: "Could you please...?"
+  pattern_template: "Could you please + [Base Verb] + [Object]?"
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: "Nazikçe bir ricada bulunmak"
+  meaning_en: "A polite request frame for emails, calls, and everyday interactions."
+  turkish_trap:
+    incorrect_en: "Can you send me the invoice, please? (too direct in formal email)"
+    correct_en: "Could you please send me the invoice?"
+    explanation_tr: "İş ortamında 'Could you please + yalın fiil' kalıbı 'Can you'dan daha profesyonel ve naziktir."
+    trap_type: register_politeness
+  blueprint_slots:
+    - { role: VERB_BRIDGE, label: "Polite frame", text_en: "Could you please share", text_tr: "Paylaşabilir misiniz" }
+    - { role: OBJECT, label: "What", text_en: "the meeting link", text_tr: "toplantı bağlantısını" }
+    - { role: TIME_PLACE, label: "When", text_en: "before noon?", text_tr: "öğleden önce?" }
+  slot_variations:
+    - { slot_en: "share the meeting link", full_sentence_en: "Could you please share the meeting link before noon?", full_sentence_tr: "Toplantı bağlantısını öğleden önce paylaşabilir misiniz?" }
+    - { slot_en: "confirm your attendance", full_sentence_en: "Could you please confirm your attendance by email?", full_sentence_tr: "Katılımınızı e-posta ile onaylayabilir misiniz?" }
+    - { slot_en: "speak a little slower", full_sentence_en: "Could you please speak a little slower?", full_sentence_tr: "Biraz daha yavaş konuşabilir misiniz?" }
+  topic_tags: [workplace, polite-requests]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.listen-to
+  chunk_en: "listen to..."
+  pattern_template: "[Subject] + listen(s) to + [Audio / Person]"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Birini veya bir şeyi dinlemek"
+  meaning_en: "To pay attention to someone speaking or to audio."
+  turkish_trap:
+    incorrect_en: "I listen podcasts on the way to work."
+    correct_en: "I listen to podcasts on the way to work."
+    explanation_tr: "Türkçede 'podcast dinliyorum' belirtme eki alır ama İngilizcede 'listen' fiili nesne aldığında mutlaka 'to' edatı ister."
+    trap_type: preposition_omission
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "listen to", text_tr: "dinliyorum" }
+    - { role: OBJECT, label: "What", text_en: "English podcasts", text_tr: "İngilizce podcast'ler" }
+    - { role: TIME_PLACE, label: "Where", text_en: "on the train", text_tr: "trende" }
+  slot_variations:
+    - { slot_en: "English podcasts", full_sentence_en: "I listen to English podcasts on the train.", full_sentence_tr: "Trende İngilizce podcast'ler dinliyorum." }
+    - { slot_en: "the customer's concerns", full_sentence_en: "We should listen to the customer's concerns carefully.", full_sentence_tr: "Müşterinin endişelerini dikkatle dinlemeliyiz." }
+    - { slot_en: "the recording again", full_sentence_en: "Let's listen to the recording again.", full_sentence_tr: "Kaydı tekrar dinleyelim." }
+  topic_tags: [daily-life, learning]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.frame.looking-forward-to
+  chunk_en: "I'm looking forward to..."
+  pattern_template: "I'm looking forward to + [Verb-ing / Noun]"
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Bir şeyi dört gözle beklemek (e-posta / sohbet kapanışı)"
+  meaning_en: "Used to express polite enthusiasm about a future event or reply."
+  turkish_trap:
+    incorrect_en: "I'm looking forward to meet you."
+    correct_en: "I'm looking forward to meeting you."
+    explanation_tr: "Buradaki 'to' mastar değil edattır; bu yüzden arkasından her zaman '-ing' takılı fiil veya isim gelir."
+    trap_type: gerund_infinitive
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "'m looking forward to meeting", text_tr: "tanışmayı dört gözle bekliyorum" }
+    - { role: OBJECT, label: "Who", text_en: "the whole team", text_tr: "tüm ekiple" }
+    - { role: TIME_PLACE, label: "When", text_en: "next week", text_tr: "gelecek hafta" }
+  slot_variations:
+    - { slot_en: "meeting the whole team", full_sentence_en: "I'm looking forward to meeting the whole team next week.", full_sentence_tr: "Gelecek hafta tüm ekiple tanışmayı dört gözle bekliyorum." }
+    - { slot_en: "hearing from you", full_sentence_en: "I'm looking forward to hearing from you soon.", full_sentence_tr: "Yakında sizden haber almayı bekliyorum." }
+    - { slot_en: "our workshop", full_sentence_en: "I'm looking forward to our workshop on Thursday.", full_sentence_tr: "Perşembe günkü atölyemizi dört gözle bekliyorum." }
+  topic_tags: [workplace, emails]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.pay-attention-to
+  chunk_en: "pay attention to..."
+  pattern_template: "[Subject] + need to / should + pay attention to + [Detail]"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir şeye dikkat etmek"
+  meaning_en: "To watch, listen to, or think about something carefully."
+  turkish_trap:
+    incorrect_en: "You should give attention to the deadline."
+    correct_en: "You should pay attention to the deadline."
+    explanation_tr: "Türkçede 'dikkatini vermek' ifadesi İngilizceye 'give attention' değil 'pay attention to' olarak geçer."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "need to pay attention to", text_tr: "dikkat etmemiz gerekiyor" }
+    - { role: OBJECT, label: "What", text_en: "the small details", text_tr: "küçük detaylara" }
+  slot_variations:
+    - { slot_en: "the small details", full_sentence_en: "We need to pay attention to the small details.", full_sentence_tr: "Küçük detaylara dikkat etmemiz gerekiyor." }
+    - { slot_en: "the client's timeline", full_sentence_en: "Please pay attention to the client's timeline.", full_sentence_tr: "Lütfen müşterinin zaman çizelgesine dikkat edin." }
+    - { slot_en: "word stress", full_sentence_en: "Pay attention to word stress when you speak.", full_sentence_tr: "Konuşurken kelime vurgusuna dikkat et." }
+  topic_tags: [workplace, learning]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.a2.collocation.discuss-topic
+  chunk_en: "discuss [topic]"
+  pattern_template: "[Subject] + will / need to + discuss + [Topic] (no 'about')"
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir konuyu görüşmek / tartışmak"
+  meaning_en: "To talk about a subject in order to reach a decision or share ideas."
+  turkish_trap:
+    incorrect_en: "Let's discuss about the new plan."
+    correct_en: "Let's discuss the new plan."
+    explanation_tr: "Türkçede 'plan hakkında konuşalım' dediğimiz için 'discuss about' sık yapılan bir hatadır; 'discuss' doğrudan nesne alır, 'about' kullanılmaz."
+    trap_type: extra_preposition
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "Let's", text_tr: "Hadi" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "discuss", text_tr: "görüşelim" }
+    - { role: OBJECT, label: "What", text_en: "the project timeline", text_tr: "proje takvimini" }
+    - { role: TIME_PLACE, label: "When", text_en: "after lunch", text_tr: "öğleden sonra" }
+  slot_variations:
+    - { slot_en: "the project timeline", full_sentence_en: "Let's discuss the project timeline after lunch.", full_sentence_tr: "Öğleden sonra proje takvimini görüşelim." }
+    - { slot_en: "your travel plans", full_sentence_en: "We can discuss your travel plans tomorrow.", full_sentence_tr: "Seyahat planlarını yarın görüşebiliriz." }
+    - { slot_en: "the main risks", full_sentence_en: "The team discussed the main risks in detail.", full_sentence_tr: "Ekip temel riskleri ayrıntılı olarak tartıştı." }
+  topic_tags: [workplace, meetings]
+  status: PUBLISHED
+  version: 1

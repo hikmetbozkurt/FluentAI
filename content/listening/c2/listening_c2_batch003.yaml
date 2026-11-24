@@ -1,0 +1,743 @@
+- id: listening.c2.liquidity-stress-committee-brief
+  title: Board Risk Committee Liquidity Stress Review
+  cefr_level: C2
+  category: executive_briefing
+  scenario_context: Group Treasurer Murat presents quarterly tail-risk liquidity scenarios, deposit concentration ratios,
+    and undrawn facility triggers to Board Chairwoman Victoria.
+  speakers:
+  - id: victoria
+    name: Victoria
+    role: Risk Committee Chair
+    accent: British
+  - id: murat
+    name: Murat
+    role: Group Treasurer
+    accent: Turkish
+  audio_ref: audio/listening/c2_liquidity_stress_committee_brief.mp3
+  duration_seconds: 78
+  transcript_items:
+  - index: 1
+    speaker_id: victoria
+    start_ms: 0
+    end_ms: 8977
+    text_en: Murat, headline group cash sits cleanly above ninety million, yet committee directors want to interrogate underlying
+      availability under severe systemic stress.
+    text_tr: Murat, grup manşet nakdi doksan milyonun üzerinde rahat görünüyor; ancak risk komitesi üyeleri ciddi sistemik
+      stres altında gerçek erişilebilirliği sorgulamak istiyor.
+  - index: 2
+    speaker_id: murat
+    start_ms: 9377
+    end_ms: 19910
+    text_en: Rightly so, Victoria. Roughly nineteen million inside foreign clearing subsidiaries remains legally ring-fenced
+      for operational settlement and cannot sweep upward within forty-eight hours.
+    text_tr: Çok haklısınız Victoria. Yabancı takas iştiraklerindeki yaklaşık on dokuz milyon dolar yasal olarak operasyonel
+      takas için çember içinde tutuluyor ve kırk sekiz saatte yukarı çekilemiyor.
+  - index: 3
+    speaker_id: victoria
+    start_ms: 20310
+    end_ms: 29977
+    text_en: Precisely why consolidated balances can flatter headquarters liquidity. Furthermore, how concentrated are remaining
+      unrestricted reserves across counterparty banks?
+    text_tr: Tam da bu yüzden konsolide bakiyeler merkez likiditesini olduğundan parlak gösterebilir. Kalan serbest rezervler
+      karşı taraf bankalar arasında ne kadar yoğunlaşmış durumda?
+  - index: 4
+    speaker_id: murat
+    start_ms: 30377
+    end_ms: 39719
+    text_en: Until February, sixty-two percent rested with two regional lenders; we have already rebalanced across four sovereign
+      money-market sleeves plus T-bill custodianship.
+    text_tr: Şubat'a kadar yüzde altmış ikisi iki bölgesel bankada duruyordu; şimdiden dört devlet para piyasası dilimine
+      ve doğrudan hazine bonosu saklama hesabına dağıttık.
+  - index: 5
+    speaker_id: victoria
+    start_ms: 40119
+    end_ms: 50012
+    text_en: Wise diversification. Suppose export receivables slip thirty days simultaneously alongside an unexpected raw-copper
+      price spike—when do revolving credit covenants bite?
+    text_tr: Yerinde bir çeşitlendirme. İhracat alacaklarının otuz gün sarktığı ve aynı anda hammadde bakır fiyatının sıçradığı
+      bir senaryoda kredi sözleşmesi eşikleri (covenant) ne zaman sıkışır?
+  - index: 6
+    speaker_id: murat
+    start_ms: 50412
+    end_ms: 58870
+    text_en: At thirty-five million drawn, our senior leverage ceiling leaves minimal headroom before breaching the quarterly
+      interest-coverage ratio, triggering repricing.
+    text_tr: Otuz beş milyon çekildiğinde kıdemli kaldıraç tavanımız üç aylık faiz karşılama oranını ihlal edip yeniden fiyatlamayı
+      tetiklemeden hemen önce çok dar bir boşluk bırakıyor.
+  - index: 7
+    speaker_id: victoria
+    start_ms: 59270
+    end_ms: 66693
+    text_en: Then our board playbook must pre-stage mitigating levers before drawdowns approach twenty-five million, not after
+      rating inquiries commence.
+    text_tr: O halde yönetim kurulu eylem planımız kredi çekimi yirmi beş milyona yaklaşmadan önce hafifletici kaldıraçları
+      devreye almalı, kredi notu sorgulamaları başladıktan sonra değil.
+  - index: 8
+    speaker_id: murat
+    start_ms: 67093
+    end_ms: 76765
+    text_en: Agreed. Automated weekly treasury dashboards now flag a yellow governance trigger at twenty-two million, giving
+      us six-month operational runway without covenant impairment.
+    text_tr: Mutabıkız. Otomatik haftalık hazine panolarımız artık yirmi iki milyonda sarı yönetişim uyarısı veriyor; bu da
+      bize sözleşme ihlali olmadan altı aylık manevra alanı sağlıyor.
+  key_vocabulary:
+  - word: encumbered
+    context_note_tr: teminat altına bağlı olduğu için serbest kullanılamayan
+  - word: covenant
+    context_note_tr: kredi sözleşmesinde borçlu için bağlayıcı finansal eşik
+  - word: runway
+    context_note_tr: stres altında likiditenin yeteceği süre
+  comprehension_questions:
+  - id: q_listening_c2_liquidity-stress-committee-brief_01
+    question_en: Why does the $90M headline cash balance overstate parent headquarters flexibility?
+    options:
+    - T-bill custody requires three years before liquidating assets
+    - Exports settled strictly in illiquid local equipment
+    - Counterparty banks deduct forty percent fees upon wire sweeps
+    - Roughly $19M sits legally trapped in foreign clearing units short-term
+    correct_answer: Roughly $19M sits legally trapped in foreign clearing units short-term
+    explanation_en: Murat clarifies ~$19M in foreign subsidiaries is ring-fenced and cannot sweep upward within 48 hours.
+    explanation_tr: Murat yabancı iştiraklerdeki yaklaşık on dokuz milyonun yasal olarak kilitli olduğunu ve hızla aktarılamayacağını
+      belirtir.
+  - id: q_listening_c2_liquidity-stress-committee-brief_02
+    question_en: How did Murat recently reduce banking counterparty concentration?
+    options:
+    - Converted working cash completely into raw copper futures
+    - Shifted surplus cash from two regional banks into four sovereign funds and T-bills
+    - Consolidated every reserve inside one domestic branch
+    - Stopped collecting export receivables across subsidiaries
+    correct_answer: Shifted surplus cash from two regional banks into four sovereign funds and T-bills
+    explanation_en: Murat rebalanced away from two regional banks (62%) into sovereign money-market sleeves and T-bills.
+    explanation_tr: Rezervlerin iki bölgesel bankadan dört devlet para piyasası fonuna ve hazine bonosu saklamasına dağıtıldığı
+      anlatılır.
+  - id: q_listening_c2_liquidity-stress-committee-brief_03
+    question_en: What adverse outcome strikes if revolving credit draws exceed $35M in stress?
+    options:
+    - Interest-coverage covenant breaches force adverse loan repricing
+    - Committee chairs dissolve automated weekly dashboards
+    - Government treasuries confiscate remaining foreign subsidiary equity
+    - Raw-copper shipments double automatically at ports
+    correct_answer: Interest-coverage covenant breaches force adverse loan repricing
+    explanation_en: Murat notes $35M drawn risks breaching quarterly interest coverage and triggering repricing.
+    explanation_tr: Otuz beş milyon çekildiğinde faiz karşılama oranının ihlal edilip kredi maliyetinin artacağı belirtilir.
+  - id: q_listening_c2_liquidity-stress-committee-brief_04
+    question_en: Why does Victoria demand governance triggers at much lower draw levels?
+    options:
+    - T-bills expire cleanly every twenty-four hours
+    - Automated dashboards cannot read metrics above thirty million
+    - Proactive cost adjustments must occur well before formal credit warnings
+    - Regional banks forbid holding less than twenty-five million in checking
+    correct_answer: Proactive cost adjustments must occur well before formal credit warnings
+    explanation_en: Victoria insists staging mitigation before $25M rather than reacting after rating scrutiny starts.
+    explanation_tr: Victoria kredi derecelendirme baskısı başlamadan önce erken harekete geçilmesini ister.
+  - id: q_listening_c2_liquidity-stress-committee-brief_05
+    question_en: At what threshold does Murat's updated weekly alert sound a yellow warning?
+    options:
+    - Twenty-two million drawn
+    - Sixty-two percent reserve ratio
+    - Ninety million consolidated cash
+    - Thirty-five million breached limit
+    correct_answer: Twenty-two million drawn
+    explanation_en: Murat sets the automated governance trigger at $22M to safeguard a six-month unencumbered runway.
+    explanation_tr: Murat haftalık yönetişim uyarısının yirmi iki milyonda devreye girdiğini söyler.
+  topic_tags:
+  - treasury
+  - stress-testing
+  - governance
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c2.capital-reallocation-board-memo
+  title: Repositioning Capital Toward High-Margin Workflows
+  cefr_level: C2
+  category: executive_briefing
+  scenario_context: CEO Alison and Finance Chief Baris debate sunsetting a plateaued legacy hardware bundle to fund high-retention
+    workflow automation.
+  speakers:
+  - id: alison
+    name: Alison
+    role: Chief Executive Officer
+    accent: American
+  - id: baris
+    name: Baris
+    role: Chief Financial Officer
+    accent: Turkish
+  audio_ref: audio/listening/c2_capital_reallocation_board_memo.mp3
+  duration_seconds: 80
+  transcript_items:
+  - index: 1
+    speaker_id: alison
+    start_ms: 0
+    end_ms: 8828
+    text_en: Baris, our board deck shows revenue stalling around four percent quarterly while engineering still burns forty
+      percent of R&D sustaining legacy scanner boxes.
+    text_tr: Barış, yönetim kurulu dosyamız gelir büyümesinin yüzde dört civarında yataylaştığını, oysa Ar-Ge bütçesinin hâlâ
+      yüzde kırkının eski tarayıcı cihazlara harcandığını gösteriyor.
+  - index: 2
+    speaker_id: baris
+    start_ms: 9228
+    end_ms: 18550
+    text_en: Right—and when we strip capitalized support payroll out properly, legacy hardware yields barely thirty-one percent
+      gross margin against seventy-eight percent on our workflow cloud.
+    text_tr: Doğru—üstelik destek bordrosunu doğru düştüğümüzde eski donanım yalnızca yüzde otuz bir brüt kâr marjı üretirken
+      iş akışı bulutumuz yüzde yetmiş sekiz kazandırıyor.
+  - index: 3
+    speaker_id: alison
+    start_ms: 18950
+    end_ms: 27468
+    text_en: Yet sales directors push back fiercely whenever we hint at sunsetting hardware, arguing clients only trust software
+      bundled onto familiar physical terminals.
+    text_tr: Ama ne zaman donanımı sonlandırmayı ima etsek satış direktörleri müşterilerin yazılıma yalnızca tanıdık fiziksel
+      terminallerle paketlenince güvendiğini savunup direniyor.
+  - index: 4
+    speaker_id: baris
+    start_ms: 27868
+    end_ms: 38925
+    text_en: 'Actually, I audited renewal cohorts yesterday: sixty-four percent of new logos bypassed our proprietary device
+      completely, installing the workflow client cleanly on consumer Android tablets.'
+    text_tr: 'Aslında dün yenileme kohortlarını denetledim: yeni müşterilerin yüzde altmış dördü tescilli cihazımızı tamamen
+      pas geçip yazılımı standart Android tabletlerine kurmuş.'
+  - index: 5
+    speaker_id: alison
+    start_ms: 39325
+    end_ms: 48902
+    text_en: That shatters the bundling myth completely! Still, forcing abrupt hardware discontinuation risks triggering breach
+      claims inside five legacy logistics hospitals.
+    text_tr: Bu paketleme efsanesini tamamen çürütüyor! Yine de donanımı aniden kesmek beş eski lojistik hastanesinde sözleşme
+      ihlali iddiasına yol açabilir.
+  - index: 6
+    speaker_id: baris
+    start_ms: 49302
+    end_ms: 62083
+    text_en: 'Agreed—we execute a graceful three-year end-of-support horizon: end new manufacturing this quarter, retain spare
+      repair pools through twenty-twenty-eight, and redirect half of saved R&D straight toward enterprise workflow integrations.'
+    text_tr: 'Mutabıkız—üç yıllık zarif bir destek sonu takvimi uygularız: yeni üretimi bu çeyrek durdurup 2028 sonuna kadar
+      yedek onarım stoku tutarız, kurtarılan Ar-Ge''nin yarısını doğrudan kurumsal iş akışı entegrasyonlarına aktarırız.'
+  - index: 7
+    speaker_id: alison
+    start_ms: 62483
+    end_ms: 70781
+    text_en: And align sales commissions cleanly so representatives earn double accelerators converting legacy accounts toward
+      pure software rather than shipping low-margin crates.
+    text_tr: Satış primlerini de temsilcilerin düşük marjlı kutu satmak yerine eski hesapları saf yazılıma geçirirken çift
+      hızlandırıcı kazanacağı şekilde hizalayalım.
+  - index: 8
+    speaker_id: baris
+    start_ms: 71181
+    end_ms: 79668
+    text_en: Brilliant alignment. Reallocating twelve million annually lifts operating margin six points within six quarters
+      without shrinking gross customer retention.
+    text_tr: Kusursuz hizalama. Yılda on iki milyon doları yeniden dağıtmak müşteri kaybını artırmadan altı çeyrekte faaliyet
+      marjını altı puan yükseltir.
+  key_vocabulary:
+  - word: cannibalization
+    context_note_tr: yeni ürünün eski gelir akışını aşındırması
+  - word: gross-margin
+    context_note_tr: satış maliyeti düşüldükten sonraki brüt kârlılık
+  - word: graceful
+    context_note_tr: mevcut müşteriyi mağdur etmeyen kademeli kapanış
+  comprehension_questions:
+  - id: q_listening_c2_capital-reallocation-board-memo_01
+    question_en: What sharp margin contrast does Baris highlight between legacy boxes and workflow cloud?
+    options:
+    - Equal margins once R&D capitalization shifts upward
+    - Thirty-one percent gross margin on hardware versus seventy-eight percent on software
+    - Forty percent on hardware and four percent on logistics clouds
+    - Negative margins exclusively on Android tablet builds
+    correct_answer: Thirty-one percent gross margin on hardware versus seventy-eight percent on software
+    explanation_en: Baris contrasts 31% hardware gross margin against 78% software margin.
+    explanation_tr: Barış donanımdaki yüzde otuz birlik brüt marj ile buluttaki yüzde yetmiş sekizlik marjı karşılaştırır.
+  - id: q_listening_c2_capital-reallocation-board-memo_02
+    question_en: How does recent buyer data disprove sales directors' defense of bundling hardware?
+    options:
+    - Double sales commissions lowered hardware manufacturing bills
+    - 64% of new clients already run the software on standard Android tablets
+    - All five logistics hospitals returned Android tablets last month
+    - Enterprise clients prefer paper logs over physical scanners
+    correct_answer: 64% of new clients already run the software on standard Android tablets
+    explanation_en: Baris's audit reveals 64% of new buyers install the app directly on consumer Android tablets.
+    explanation_tr: Yeni müşterilerin yüzde altmış dördünün yazılımı zaten standart Android tabletlerde çalıştırdığı ortaya
+      çıkar.
+  - id: q_listening_c2_capital-reallocation-board-memo_03
+    question_en: Why avoid immediately shutting down legacy hardware support overnight?
+    options:
+    - Hardware crates hold seventy-eight percent operating margins
+    - Android engineers refuse supporting consumer tablets
+    - Manufacturing spares require ten years of regulatory testing
+    - Abrupt cancellation would violate contracts at five existing institutional sites
+    correct_answer: Abrupt cancellation would violate contracts at five existing institutional sites
+    explanation_en: Alison warns abrupt discontinuation triggers breach disputes across five legacy hospitals.
+    explanation_tr: Alison ani kesintinin beş eski kurumda sözleşme ihlali riskini doğuracağını uyarır.
+  - id: q_listening_c2_capital-reallocation-board-memo_04
+    question_en: What sales incentive overhaul ensures reps embrace software migration?
+    options:
+    - Freezing sales salaries throughout the three-year sunset
+    - Subsidizing hardware crates at zero customer cost
+    - Requiring representatives to repair broken scanner boxes
+    - Doubling commission accelerators for converting clients to software-only plans
+    correct_answer: Doubling commission accelerators for converting clients to software-only plans
+    explanation_en: Alison aligns commissions to double accelerators on pure software migrations.
+    explanation_tr: Alison saf yazılıma geçiş yaptıran temsilcilere çift prim hızlandırıcısı verilmesini önerir.
+  - id: q_listening_c2_capital-reallocation-board-memo_05
+    question_en: What financial outcome does Baris project over the next six quarters?
+    options:
+    - Spending forty percent more on factory repair pools
+    - Sixty-four percent shrinkage in quarterly gross sales
+    - Zero change until twenty-twenty-eight close
+    - Reallocating $12M annually expands operating margin by six points
+    correct_answer: Reallocating $12M annually expands operating margin by six points
+    explanation_en: Baris projects saving/reallocating $12M lifts operating margin six points within six quarters.
+    explanation_tr: Barış yıllık 12 milyonun yeniden yönlendirilmesinin altı çeyrekte faaliyet marjını altı puan artıracağını
+      öngörür.
+  topic_tags:
+  - capital-allocation
+  - portfolio
+  - strategy
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c2.clinical-triage-copilot-discovery
+  title: Evaluating Explainability Inside Clinical Triage Software
+  cefr_level: C2
+  category: product_discovery
+  scenario_context: AI product strategist Melis conducts an observational study with emergency nurse practitioner Dr. Grant
+    regarding algorithmic bias, alert fatigue, and provenance UI.
+  speakers:
+  - id: melis
+    name: Melis
+    role: Clinical AI Product Lead
+    accent: Turkish
+  - id: grant
+    name: Dr. Grant
+    role: Emergency Nurse Practitioner
+    accent: British
+  audio_ref: audio/listening/c2_clinical_triage_copilot_discovery.mp3
+  duration_seconds: 75
+  transcript_items:
+  - index: 1
+    speaker_id: melis
+    start_ms: 0
+    end_ms: 9822
+    text_en: Dr. Grant, audit telemetry shows triage nurses overriding eighty-eight percent of our sepsis priority flags during
+      peak Friday shifts—can you diagnose why clinicians tune them out?
+    text_tr: Dr. Grant, denetim telemetrisi yoğun cuma nöbetlerinde triyaj hemşirelerinin sepsis öncelik uyarılarımızın yüzde
+      seksen sekizini geçersiz kıldığını gösteriyor—klinisyenlerin bunları neden görmezden geldiğini açıklayabilir misiniz?
+  - index: 2
+    speaker_id: grant
+    start_ms: 10222
+    end_ms: 19415
+    text_en: 'Frankly, Melis, presenting an opaque purple ''High Risk: 74%'' badge with zero rationale slows a chaotic intake
+      bay instead of helping.'
+    text_tr: 'Açıkçası Melis, hiçbir gerekçe sunmayan şeffaf olmayan mor bir ''Yüksek Risk: %74'' rozeti kaotik bir acil kabul
+      alanını hızlandırmak yerine yavaşlatıyor.'
+  - index: 3
+    speaker_id: melis
+    start_ms: 19815
+    end_ms: 25888
+    text_en: So opaque numeric probability feels like another unverified alarm demanding manual chart re-verification?
+    text_tr: Yani açıklaması olmayan sayısal olasılık yalnızca hasta dosyasını baştan elle doğrulamayı gerektiren bir başka
+      şüpheli alarm gibi mi hissettiriyor?
+  - index: 4
+    speaker_id: grant
+    start_ms: 26288
+    end_ms: 36591
+    text_en: Precisely. Nurses don't need abstract model percentages—they need instantaneous data provenance showing whether
+      mild fever combined with elevated lactate over ninety minutes triggered the alert.
+    text_tr: Kesinlikle. Hemşirelerin soyut model yüzdelerine ihtiyacı yok; uyarının doksan dakika içindeki hafif ateş ile
+      yükselen laktat değerinin birleşiminden mi çıktığını anında gösteren veri kökenine ihtiyaçları var.
+  - index: 5
+    speaker_id: melis
+    start_ms: 36991
+    end_ms: 46088
+    text_en: 'That aligns closely with clinical accountability: showing the two contributing vitals and timestamp deltas inline
+      beside a quiet neutral border rather than blinking sirens.'
+    text_tr: 'Bu klinik hesap verebilirlikle birebir örtüşüyor: yanıp sönen sirenler yerine katkıda bulunan iki yaşamsal bulguyu
+      ve zaman değişim farkını sade bir çerçevede yan yana göstermek.'
+  - index: 6
+    speaker_id: grant
+    start_ms: 46488
+    end_ms: 54676
+    text_en: Equally crucial—stop flagging routine dehydrated runners identically alongside elderly immunocompromised arrivals
+      simply because heart rates crossed ninety.
+    text_tr: Aynı derecede hayati bir nokta daha—kalp atışı doksanı geçti diye susuz kalmış genç maratoncuları bağışıklığı
+      baskılanmış yaşlı hastalarla aynı şekilde işaretlemeyi bırakın.
+  - index: 7
+    speaker_id: melis
+    start_ms: 55076
+    end_ms: 66483
+    text_en: 'Agreed. Tuning subgroup threshold calibration alongside a lightweight ''Clinical context: dehydration'' one-tap
+      override captures clean feedback for quarterly safety governance without delaying intake.'
+    text_tr: 'Katılıyorum. Alt grup eşik kalibrasyonunu tek dokunuşlu ''Klinik bağlam: dehidrasyon'' geçersiz kılma seçeneğiyle
+      birleştirmek, hasta kabulünü geciktirmeden üç aylık güvenlik yönetişimi için temiz geri bildirim toplar.'
+  - index: 8
+    speaker_id: grant
+    start_ms: 66883
+    end_ms: 73861
+    text_en: Make provenance explicit and respect clinical judgment, and override fatigue collapses sharply within the very
+      first triage week.
+    text_tr: Veri kökenini açık kılıp klinik yargıya saygı duyduğunuzda uyarı yorgunluğu daha ilk triyaj haftasında keskin
+      biçimde düşer.
+  key_vocabulary:
+  - word: provenance
+    context_note_tr: uyarının hangi somut laboratuvar verisine dayandığı
+  - word: calibration
+    context_note_tr: sistemin aşırı veya eksik uyarı vermeden ayarlanması
+  - word: override
+    context_note_tr: klinisyenin öneriyi bilinçli biçimde geçersiz kılması
+  comprehension_questions:
+  - id: q_listening_c2_clinical-triage-copilot-discovery_01
+    question_en: Why do Friday triage nurses ignore nearly ninety percent of AI risk flags?
+    options:
+    - Lab lactate results remain legally confidential for ninety minutes
+    - Opaque percentage badges omit concrete clinical evidence and force chart checks
+    - Emergency bays lack tablet wireless connectivity
+    - Staff deliberately disable notification audio on desktops
+    correct_answer: Opaque percentage badges omit concrete clinical evidence and force chart checks
+    explanation_en: Dr. Grant explains an unexplained '74%' badge forces chaotic intake staff to re-read whole charts.
+    explanation_tr: Dr. Grant gerekçesiz yüzdelik rozetin hemşireleri tüm dosyayı baştan kontrol etmeye zorladığını belirtir.
+  - id: q_listening_c2_clinical-triage-copilot-discovery_02
+    question_en: What UI redesign replaces blinking alerts and bare model percentages?
+    options:
+    - Hiding sepsis criteria permanently from junior nurses
+    - Showing specific vital-sign deltas and timestamps inline cleanly
+    - Making warning banners twice as large in bright purple
+    - Sending summary PDF emails only after midnight
+    correct_answer: Showing specific vital-sign deltas and timestamps inline cleanly
+    explanation_en: Melis and Dr. Grant design inline display of contributing vitals and time deltas.
+    explanation_tr: Uyarıyı tetikleyen yaşamsal bulguların ve zaman farklarının satır içinde açıkça gösterilmesi seçilir.
+  - id: q_listening_c2_clinical-triage-copilot-discovery_03
+    question_en: What calibration flaw currently generates excessive false alarms?
+    options:
+    - Immune status is hidden inside handwritten patient charts
+    - Identical thresholds flag benign dehydrated runners alongside high-risk patients
+    - Algorithm weights completely omit heart-rate readings
+    - Tablet clocks drift backward every Friday evening
+    correct_answer: Identical thresholds flag benign dehydrated runners alongside high-risk patients
+    explanation_en: Dr. Grant faults uncalibrated threshold alerts equating dehydrated athletes with immunocompromised seniors.
+    explanation_tr: Susuz kalmış koşucularla yüksek riskli yaşlı hastaların aynı kalp hızı eşiğiyle işaretlendiği eleştirilir.
+  - id: q_listening_c2_clinical-triage-copilot-discovery_04
+    question_en: How does Melis plan to gather training feedback without slowing emergency intake?
+    options:
+    - Providing lightweight one-tap override reason chips like 'dehydration'
+    - Booking post-shift interviews every Saturday morning
+    - Requiring five-paragraph written essays on every override
+    - Pausing patient triage whenever scores fall under seventy percent
+    correct_answer: Providing lightweight one-tap override reason chips like 'dehydration'
+    explanation_en: A lightweight one-tap context override feeds safety governance cleanly without workflow delay.
+    explanation_tr: Hasta kabulünü yavaşlatmadan tek dokunuşlu gerekçe seçeneğiyle geri bildirim toplanır.
+  - id: q_listening_c2_clinical-triage-copilot-discovery_05
+    question_en: What behavioral shift does Dr. Grant expect once provenance becomes explicit?
+    options:
+    - Eighty-eight percent increase in ambulance wait times
+    - Total elimination of nurse triage supervision
+    - Mandatory paper checklists replacing tablet records
+    - Rapid decline in alert dismissal within the opening week
+    correct_answer: Rapid decline in alert dismissal within the opening week
+    explanation_en: Dr. Grant predicts override fatigue will drop sharply in week one when evidence provenance is clear.
+    explanation_tr: Dr. Grant veri kökeni şeffaflaştığında uyarı yorgunluğunun ilk haftadan itibaren hızla düşeceğini öngörür.
+  topic_tags:
+  - healthtech
+  - explainability
+  - ai-ux
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c2.cross-border-clearing-failover-drill
+  title: Orchestrating Cross-Border Settlement Failover
+  cefr_level: C2
+  category: incident_response
+  scenario_context: Incident Commander Emre and Core Banking Lead Grace execute a live cross-region settlement failover while
+    guarding strictly against split-brain duplicate wires.
+  speakers:
+  - id: emre_ic
+    name: Emre
+    role: Incident Commander
+    accent: Turkish
+  - id: grace
+    name: Grace
+    role: Core Settlement Architect
+    accent: British
+  audio_ref: audio/listening/c2_cross_border_clearing_failover_drill.mp3
+  duration_seconds: 82
+  transcript_items:
+  - index: 1
+    speaker_id: emre_ic
+    start_ms: 0
+    end_ms: 9478
+    text_en: Grace, Frankfurt's primary clearing quorum just lost sixty percent packet stability across SWIFT gateways—are
+      we clear to promote Zurich to authoritative ledger write status?
+    text_tr: Grace, Frankfurt ana takas kümesi SWIFT ağ geçitlerinde yüzde altmış paket istikrarını kaybetti—Zürih'i yetkili
+      defter yazma konumuna yükseltmeye hazır mıyız?
+  - index: 2
+    speaker_id: grace
+    start_ms: 9878
+    end_ms: 21989
+    text_en: Hold sixty seconds, Emre! Before promoting Zurich, we must guarantee absolute quorum fencing against stalled
+      Frankfurt nodes so two regions never authorize duplicate cross-border wires simultaneously.
+    text_tr: Altmış saniye bekle Emre! Zürih'i yükseltmeden önce, duraklamış Frankfurt düğümlerine karşı mutlak çitleme (fencing)
+      kilidini doğrulamalıyız ki iki bölge aynı anda mükerrer sınır ötesi havale onaylamasın.
+  - index: 3
+    speaker_id: emre_ic
+    start_ms: 22389
+    end_ms: 32152
+    text_en: Copy that. Read-only monitoring still sees three Frankfurt workers holding expired lease locks—initiating hardware
+      power-fence revocation and revoking their signing tokens now.
+    text_tr: Anlaşıldı. Salt okunur izleme hâlâ süresi dolmuş kira kilitleri tutan üç Frankfurt çalışanı görüyor—donanım güç
+      kilidini kesip imzalama belirteçlerini şimdi iptal ediyorum.
+  - index: 4
+    speaker_id: grace
+    start_ms: 32552
+    end_ms: 43694
+    text_en: Telemetry confirms Frankfurt lease tokens invalidated cleanly and SWIFT egress queues drained zero residual packets.
+      Promoting Zurich master write mode—verifying monotonic ledger sequence hashes.
+    text_tr: Telemetri Frankfurt belirteçlerinin tamamen geçersiz kılındığını ve SWIFT çıkış kuyruklarının sıfır artık paketle
+      boşaldığını doğruluyor. Zürih ana yazma modunu yükseltiyorum—monotonik defter sıra özetlerini doğruluyorum.
+  - index: 5
+    speaker_id: emre_ic
+    start_ms: 44094
+    end_ms: 48638
+    text_en: What about twelve client transfers caught mid-flight during the four-second lease gap?
+    text_tr: Peki dört saniyelik kilit boşluğu sırasında yarı yolda yakalanan on iki müşteri transferi ne durumda?
+  - index: 6
+    speaker_id: grace
+    start_ms: 49038
+    end_ms: 61664
+    text_en: Client gateways enforce strict SHA-256 idempotency keys across regional endpoints. Zurich's reconciliation loop
+      replays those twelve hashes harmlessly—eleven never committed, one settled prior and skips clean.
+    text_tr: İstemci geçitleri bölgesel uç noktalar arasında katı SHA-256 eşsiz işlem anahtarları uyguluyor. Zürih'in mutabakat
+      döngüsü o on iki özeti zararsızca tekrar kontrol ediyor—on biri işlenmemiş, biri önceden tamamlanmış ve temizce atlanıyor.
+  - index: 7
+    speaker_id: emre_ic
+    start_ms: 62064
+    end_ms: 71567
+    text_en: Confirming synthetic end-to-end euro clearing check passed in two hundred eighty milliseconds out of Zurich.
+      Keeping customer status banner green with note on minor four-second blip.
+    text_tr: Zürih üzerinden sentetik uçtan uca avro takas kontrolünün iki yüz seksen milisaniyede geçtiğini teyit ediyorum.
+      Müşteri durum panosunu küçük dört saniyelik dalgalanma notuyla yeşil tutuyoruz.
+  - index: 8
+    speaker_id: grace
+    start_ms: 71967
+    end_ms: 81209
+    text_en: Outstanding discipline. Once Frankfurt network carriers stabilize, remember we remain strictly locked on Zurich
+      until postmortem completes tomorrow morning.
+    text_tr: Kusursuz disiplin. Frankfurt ağ taşıyıcıları istikrara kavuştuğunda bile, yarın sabah olay sonrası değerlendirme
+      bitene kadar Zürih üzerinde kilitli kaldığımızı unutmayın.
+  key_vocabulary:
+  - word: fencing
+    context_note_tr: bölünmüş beyin yazmalarını kesen kesin erişim kilidi
+  - word: split-brain
+    context_note_tr: iki bölgenin aynı anda aktif sanılıp çift işlem yazması
+  - word: idempotency
+    context_note_tr: aynı havale anahtarının yalnızca bir kez geçmesini sağlama
+  comprehension_questions:
+  - id: q_listening_c2_cross-border-clearing-failover-drill_01
+    question_en: Why does Grace pause Emre for sixty seconds before promoting Zurich's database?
+    options:
+    - To prevent split-brain duplicate wire authorizations across two active masters
+    - Client portals forbid logging packet instability publicly
+    - Zurich servers require manual software installation beforehand
+    - SWIFT gateways close for four-second scheduled maintenance
+    correct_answer: To prevent split-brain duplicate wire authorizations across two active masters
+    explanation_en: Grace insists on quorum fencing first so two regions can never concurrently authorize duplicate transfers.
+    explanation_tr: Grace iki bölgenin aynı anda çift havale onaylamasını önlemek için önce çitleme kilidinin tamamlanmasını
+      ister.
+  - id: q_listening_c2_cross-border-clearing-failover-drill_02
+    question_en: How does Emre ensure stalled Frankfurt nodes cannot write stale settlement records?
+    options:
+    - Emailing German network operators during peak hours
+    - Dropping monitoring telemetry down to zero percent
+    - Revoking signing lease tokens and triggering hard power fencing
+    - Increasing client timeout periods by sixty seconds
+    correct_answer: Revoking signing lease tokens and triggering hard power fencing
+    explanation_en: Emre executes hardware power fencing and revokes signing tokens held by stalled Frankfurt workers.
+    explanation_tr: Emre donanım güç çitlemesi başlatır ve Frankfurt çalışanlarının imzalama belirteçlerini iptal eder.
+  - id: q_listening_c2_cross-border-clearing-failover-drill_03
+    question_en: What guaranteed those twelve mid-flight customer transfers neither vanished nor doubled?
+    options:
+    - Idempotency keys allowed safe replay checking prior ledger commitment
+    - Zurich paused client gateways permanently during failover
+    - Support clerks manually called twelve recipient banks later
+    - SWIFT automatically refunded every transaction over four seconds
+    correct_answer: Idempotency keys allowed safe replay checking prior ledger commitment
+    explanation_en: Grace explains SHA-256 idempotency keys let reconciliation safely skip the one committed wire and complete
+      the rest.
+    explanation_tr: Grace SHA-256 eşsiz anahtarlarının mutabakat döngüsünde çift ödemeyi önlediğini anlatır.
+  - id: q_listening_c2_cross-border-clearing-failover-drill_04
+    question_en: How long did post-failover synthetic euro clearing checks take from Zurich?
+    options:
+    - Sixty seconds
+    - Four full seconds
+    - Two hundred eighty milliseconds
+    - Two days after maintenance
+    correct_answer: Two hundred eighty milliseconds
+    explanation_en: Emre confirms the end-to-end synthetic check passed cleanly in 280ms.
+    explanation_tr: Emre sentetik kontrolün 280 milisaniyede geçtiğini teyit eder.
+  - id: q_listening_c2_cross-border-clearing-failover-drill_05
+    question_en: What rule governs failing back toward Frankfurt once its network recovers?
+    options:
+    - Fail back automatically within sixty milliseconds of packet recovery
+    - Run active writes in both cities simultaneously overnight
+    - Keep traffic on Zurich until tomorrow morning's postmortem finishes
+    - Decommission Zurich servers right after green status appears
+    correct_answer: Keep traffic on Zurich until tomorrow morning's postmortem finishes
+    explanation_en: Grace cautions remaining on Zurich until postmortem review completes prevents ping-pong churn.
+    explanation_tr: Grace olay sonrası inceleme tamamlanana dek trafiğin Zürih'te kilitli kalması gerektiğini hatırlatır.
+  topic_tags:
+  - disaster-recovery
+  - fintech
+  - failover
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.c2.multi-unit-platform-charter-alignment
+  title: Reconciling Subsidiary Engineering Budgets Under One Charter
+  cefr_level: C2
+  category: stakeholder_alignment
+  scenario_context: Platform VP Serkan and Subsidiary CTO Claire resolve political tension between group standardization efficiency
+    and acquired regional unit speed.
+  speakers:
+  - id: claire_cto
+    name: Claire
+    role: Subsidiary CTO
+    accent: British
+  - id: serkan
+    name: Serkan
+    role: VP of Group Platform
+    accent: Turkish
+  audio_ref: audio/listening/c2_multi_unit_platform_charter_alignment.mp3
+  duration_seconds: 85
+  transcript_items:
+  - index: 1
+    speaker_id: claire_cto
+    start_ms: 0
+    end_ms: 10172
+    text_en: Serkan, following our acquisition by group headquarters, my regional engineering leads fear our autonomous checkout
+      roadmap is about to vanish inside slow central infrastructure tickets.
+    text_tr: Serkan, grubumuzca satın alınmamızın ardından bölgesel mühendislik liderlerim özerk ödeme yol haritamızın yavaş
+      merkezi altyapı taleplerinin içinde erimesinden endişeleniyor.
+  - index: 2
+    speaker_id: serkan
+    start_ms: 10572
+    end_ms: 20580
+    text_en: Valid fear, Claire—we have seen heavy central mandates strangle post-merger agility before. Tell me which platform
+      mandates feel genuinely obstructive versus helpful right now.
+    text_tr: Çok haklı bir korku Claire—birleşme sonrası katı merkezi dayatmaların çevikliği boğduğuna daha önce tanık olduk.
+      Şu an hangi platform kararlarının gerçekten engelleyici, hangilerinin yararlı hissettirdiğini söyle lütfen.
+  - index: 3
+    speaker_id: claire_cto
+    start_ms: 20980
+    end_ms: 34721
+    text_en: Honestly, consolidating enterprise SSO identity and automated security vulnerability scanning saves us two scarce
+      headcounts immediately. Where friction explodes is forcing our custom payment orchestrator onto headquarters' slower
+      legacy pipeline.
+    text_tr: Açıkçası kurumsal SSO kimlik doğrulamayı ve otomatik güvenlik açık taramasını birleştirmek bize hemen iki kıt
+      mühendis kadrosu kazandırıyor. Sürtünmenin patladığı yer, özel ödeme düzenleyicimizi merkezin daha yavaş eski hattına
+      zorlamak.
+  - index: 4
+    speaker_id: serkan
+    start_ms: 35121
+    end_ms: 48333
+    text_en: Fair distinction. Group charter policy only requires non-negotiable alignment across security perimeter controls,
+      telemetry logging schemas, and disaster-recovery verification—never dictating application runtime frameworks.
+    text_tr: Adil bir ayrım. Grup tüzüğü yalnızca güvenlik sınırı kontrolleri, telemetri günlükleme şemaları ve felaket kurtarma
+      doğrulaması arasında tavizsiz uyum ister; uygulama çalışma zamanı çatısını dikte etmez.
+  - index: 5
+    speaker_id: claire_cto
+    start_ms: 48733
+    end_ms: 57540
+    text_en: And what about internal platform chargebacks? My division already worries flat headcount allocation fees will
+      bloat without proportional usage transparency.
+    text_tr: Peki şirket içi platform maliyet paylaşımı (chargeback) ne olacak? Birimim zaten orantılı kullanım şeffaflığı
+      olmadan kişi başı sabit kesintilerin şişmesinden endişe ediyor.
+  - index: 6
+    speaker_id: serkan
+    start_ms: 57940
+    end_ms: 66753
+    text_en: Subsidiaries consume shared modules strictly on metered telemetry usage alongside a two-quarter integration grace
+      waiver while duplicated identity tools wind down.
+    text_tr: İştirakler ortak modülleri yalnızca ölçülmüş telemetri kullanımına göre öder; ayrıca mükerrer kimlik araçları
+      kapatılırken iki çeyreklik uyum muafiyeti uygulanır.
+  - index: 7
+    speaker_id: claire_cto
+    start_ms: 67153
+    end_ms: 74111
+    text_en: One final safeguard—suppose urgent merchant compliance forces a forty-eight-hour workaround violating standard
+      API templates?
+    text_tr: Son bir güvence daha—acil bir üye işyeri uyumluluk kuralı standart API şablonunu aşan kırk sekiz saatlik acil
+      bir geçici çözüm gerektirirse ne olur?
+  - index: 8
+    speaker_id: serkan
+    start_ms: 74511
+    end_ms: 84158
+    text_en: Every subsidiary retains an explicit architectural escape-hatch logged with a thirty-day sunset target. Accountability
+      without red tape—let us co-sign the joint charter Friday.
+    text_tr: Her iştirak otuz günlük kapanış hedefiyle kaydedilen açık bir mimari çıkış kapısı (escape-hatch) yetkisini korur.
+      Bürokrasi olmadan hesap verebilirlik—cuma günü ortak tüzüğü birlikte imzalayalım.
+  key_vocabulary:
+  - word: subsidiary
+    context_note_tr: gruba bağlı özerk alt şirket birimi
+  - word: chargeback
+    context_note_tr: ortak altyapı maliyetinin birimlere faturalanması
+  - word: escape-hatch
+    context_note_tr: yerel ürün ekibine geçici istisna sağlayan kural
+  comprehension_questions:
+  - id: q_listening_c2_multi-unit-platform-charter-alignment_01
+    question_en: Which shared group services does Subsidiary CTO Claire enthusiastically welcome?
+    options:
+    - Replacing regional checkout teams with external contractors
+    - Flat per-headcount allocation fees regardless of cloud volume
+    - Mandating headquarters' slow legacy payment deployment pipeline
+    - Unified enterprise SSO authentication and automated vulnerability scanning
+    correct_answer: Unified enterprise SSO authentication and automated vulnerability scanning
+    explanation_en: Claire welcomes shared SSO identity and automated security scanning for freeing two scarce headcounts.
+    explanation_tr: Claire kurumsal SSO ve güvenlik taramalarının iki kıt mühendis kadrosu kazandırdığını memnuniyetle kabul
+      eder.
+  - id: q_listening_c2_multi-unit-platform-charter-alignment_02
+    question_en: According to Serkan, where must group infrastructure standardization stay non-negotiable?
+    options:
+    - Regional checkout roadmaps and merchant hiring priorities
+    - Forbidding custom orchestrators indefinitely post-acquisition
+    - Security perimeter rules, logging telemetry formats, and recovery audits
+    - Programming language choices and internal UI font families
+    correct_answer: Security perimeter rules, logging telemetry formats, and recovery audits
+    explanation_en: Serkan limits strict standardization to security perimeter, telemetry schemas, and disaster-recovery verification.
+    explanation_tr: Serkan katı standartların yalnızca güvenlik sınırı, telemetri şeması ve felaket kurtarma testleriyle sınırlı
+      olduğunu açıklar.
+  - id: q_listening_c2_multi-unit-platform-charter-alignment_03
+    question_en: How does Serkan keep internal platform chargebacks transparent during transition?
+    options:
+    - Charging flat headcount taxes regardless of actual compute
+    - Eliminating group budget tracking across regional units
+    - Halting subsidiary checkout launches until SSO completes
+    - Metering actual telemetry usage plus granting a two-quarter duplicate-tool waiver
+    correct_answer: Metering actual telemetry usage plus granting a two-quarter duplicate-tool waiver
+    explanation_en: Subsidiaries pay strictly by metered usage with a two-quarter waiver during legacy tool sunsetting.
+    explanation_tr: Gerçek ölçülen kullanım esas alınır ve mükerrer araçlar kapanana kadar iki çeyreklik geçiş muafiyeti tanınır.
+  - id: q_listening_c2_multi-unit-platform-charter-alignment_04
+    question_en: How can Claire's team deliver an emergency 48-hour merchant compliance patch safely?
+    options:
+    - Shutting down regional payment switches overnight
+    - Ignoring security logging schemas permanently
+    - Invoking an explicit escape-hatch paired with a thirty-day cleanup date
+    - Waiting two quarters for headquarters charter amendments
+    correct_answer: Invoking an explicit escape-hatch paired with a thirty-day cleanup date
+    explanation_en: Serkan notes every subsidiary keeps an explicit escape-hatch logged with a 30-day sunset commitment.
+    explanation_tr: Her iştirakin otuz günlük sonlanma tarihine bağlı açık bir mimari istisna çıkış kapısına sahip olduğu
+      belirtilir.
+  - id: q_listening_c2_multi-unit-platform-charter-alignment_05
+    question_en: What headline balance best captures the charter Serkan and Claire agree to sign?
+    options:
+    - Total subsidiary independence from corporate security governance
+    - Centralized control over every subsidiary product sprint
+    - Accountability across security boundaries without bureaucratic bottlenecks
+    - Indefinite coexistence of duplicate identity infrastructures
+    correct_answer: Accountability across security boundaries without bureaucratic bottlenecks
+    explanation_en: Serkan summarizes the charter cleanly as 'accountability without red tape.'
+    explanation_tr: Serkan ortak tüzüğü 'bürokrasi olmadan hesap verebilirlik' olarak özetler.
+  topic_tags:
+  - m-and-a
+  - platform-governance
+  - alignment
+  related_ids: []
+  status: APPROVED
+  version: 1

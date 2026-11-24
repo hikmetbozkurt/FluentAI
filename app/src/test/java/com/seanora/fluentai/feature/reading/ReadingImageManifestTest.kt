@@ -39,4 +39,37 @@ class ReadingImageManifestTest {
         val missing = referenced.filterNot { File(dir, it).isFile }
         assertTrue("Missing reading images: $missing", missing.isEmpty())
     }
+
+    @Test
+    fun `every YAML reading article has an explicit bundled cover`() {
+        val dir = listOf("src/main/assets/reading", "app/src/main/assets/reading").map(::File).firstOrNull { it.isDirectory }
+            ?: return
+        val contentRoot = listOf("content/reading", "../content/reading").map(::File).firstOrNull { it.isDirectory }
+            ?: return
+        val manifest = ReadingImageManifest.parse(File(dir, "reading-images.manifest.json").readText())
+        val idPattern = Regex("""^-\s+id:\s*(reading\.\S+)$""")
+        val articleIds = contentRoot
+            .walkTopDown()
+            .filter { it.isFile && it.extension == "yaml" }
+            .flatMap { file ->
+                file.readLines().mapNotNull { line -> idPattern.find(line)?.groupValues?.get(1) }.asSequence()
+            }
+            .toList()
+        assertTrue("Expected >= 133 YAML reading articles", articleIds.size >= 133)
+        val missingCovers = articleIds.filter { it !in manifest.covers }
+        assertTrue("Reading articles missing manifest covers: $missingCovers", missingCovers.isEmpty())
+    }
+
+    @Test
+    fun `all reading surface styles keep distinct ink and surface colors`() {
+        ReadingSurfaceStyle.entries.forEach { style ->
+            val tokens = style.tokens()
+            assertTrue("$style paper and ink must differ", tokens.paper != tokens.ink)
+            assertTrue("$style card and ink must differ", tokens.card != tokens.ink)
+            assertTrue("$style clay and ink must differ", tokens.clay != tokens.ink)
+            assertTrue("$style terracotta and onAccent must differ", tokens.terracotta != tokens.onAccent)
+            assertTrue("$style sage and onSuccess must differ", tokens.sage != tokens.onSuccess)
+            assertTrue("$style onAccent and ink should contrast cleanly on DARK", style != ReadingSurfaceStyle.DARK || tokens.onAccent == tokens.paper)
+        }
+    }
 }

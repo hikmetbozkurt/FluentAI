@@ -1,0 +1,668 @@
+- id: listening.b1.monthly-sales-summary-brief
+  title: Monthly Regional Sales Summary Call
+  cefr_level: B1
+  category: executive_briefing
+  scenario_context: Regional manager Selin briefs VP of Commercial Operations Claire on April performance across small business
+    and mid-market accounts.
+  speakers:
+  - id: claire
+    name: Claire
+    role: VP of Commercial Operations
+    accent: British
+  - id: selin
+    name: Selin
+    role: Regional Sales Manager
+    accent: Turkish
+  audio_ref: audio/listening/b1_monthly_sales_summary_brief.mp3
+  duration_seconds: 59
+  transcript_items:
+  - index: 1
+    speaker_id: claire
+    start_ms: 0
+    end_ms: 6903
+    text_en: Morning, Selin. Let us walk through April numbers before Friday's board packet goes out.
+    text_tr: Günaydın Selin. Cuma günkü yönetim kurulu dosyası çıkmadan önce Nisan rakamlarının üzerinden geçelim.
+  - index: 2
+    speaker_id: selin
+    start_ms: 7303
+    end_ms: 15927
+    text_en: Sure, Claire. Overall bookings closed four percent above plan, led by strong renewals in logistics accounts.
+    text_tr: Elbette Claire. Toplam satışlar lojistik hesaplarındaki güçlü yenilemelerin öncülüğünde planın yüzde dört üzerinde
+      kapandı.
+  - index: 3
+    speaker_id: claire
+    start_ms: 16327
+    end_ms: 22650
+    text_en: That is reassuring. How did new customer expansion perform compared with last quarter?
+    text_tr: Bu güven verici. Yeni müşteri kazanımı geçen çeyreğe kıyasla nasıl performans gösterdi?
+  - index: 4
+    speaker_id: selin
+    start_ms: 23050
+    end_ms: 30688
+    text_en: Mid-market deals grew nicely by eleven percent, though smaller retail signups softened slightly after tax season.
+    text_tr: Orta ölçekli anlaşmalar yüzde on bir oranında güzel büyüdü; ancak vergi döneminin ardından küçük perakende kayıtları
+      biraz yavaşladı.
+  - index: 5
+    speaker_id: claire
+    start_ms: 31088
+    end_ms: 35851
+    text_en: Did any delayed deals slip out of April purely due to slow legal reviews?
+    text_tr: Nisan ayından yalnızca yavaş hukuk incelemeleri yüzünden sarkan anlaşmalar oldu mu?
+  - index: 6
+    speaker_id: selin
+    start_ms: 36251
+    end_ms: 45259
+    text_en: Yes, three signed contracts worth forty thousand annual revenue slipped to next Monday because procurement waited
+      on compliance attachments.
+    text_tr: Evet, yıllık kırk bin değerindeki üç anlaşma, satın alma uyumluluk eklerini beklediği için gelecek pazartesiye
+      sarktı.
+  - index: 7
+    speaker_id: claire
+    start_ms: 45659
+    end_ms: 51927
+    text_en: Let us standardize those compliance PDFs inside sales templates so onboarding speeds up in May.
+    text_tr: Mayıs ayında başlangıç sürecinin hızlanması için bu uyumluluk PDF'lerini satış şablonlarının içine standartlaştıralım.
+  - index: 8
+    speaker_id: selin
+    start_ms: 52327
+    end_ms: 58571
+    text_en: Agreed. Marketing and legal already promised a shared packet by Wednesday afternoon.
+    text_tr: Katılıyorum. Pazarlama ve hukuk şimdiden çarşamba öğleden sonraya kadar ortak bir dosya sözü verdi.
+  key_vocabulary:
+  - word: pipeline
+    context_note_tr: bekleyen satış fırsatları hattı
+  - word: renewal
+    context_note_tr: sözleşme yenileme
+  - word: onboarding
+    context_note_tr: müşteri başlangıç uyum süreci
+  comprehension_questions:
+  - id: q_listening_b1_monthly-sales-summary-brief_01
+    question_en: How did total April bookings finish relative to target?
+    options:
+    - Eleven percent below plan
+    - Flat against March budgets
+    - Forty percent delayed until June
+    - Four percent above plan
+    correct_answer: Four percent above plan
+    explanation_en: Selin states overall bookings closed four percent above plan thanks to logistics renewals.
+    explanation_tr: Selin toplam satışların planın yüzde dört üzerinde kapandığını belirtir.
+  - id: q_listening_b1_monthly-sales-summary-brief_02
+    question_en: Which customer segment softened slightly after tax season?
+    options:
+    - Board-level enterprise contracts
+    - Smaller retail signups
+    - Regional logistics renewals
+    - Mid-market engineering accounts
+    correct_answer: Smaller retail signups
+    explanation_en: Selin notes small retail signups softened slightly while mid-market grew eleven percent.
+    explanation_tr: Selin küçük perakende kayıtlarının vergi sonrası biraz yavaşladığını söyler.
+  - id: q_listening_b1_monthly-sales-summary-brief_03
+    question_en: Why did three deals slip into the following week?
+    options:
+    - Sales representatives forgot calendar invites
+    - Buyers waited on missing compliance attachments
+    - Legal rejected software security keys
+    - Pricing discounts expired on Thursday
+    correct_answer: Buyers waited on missing compliance attachments
+    explanation_en: Procurement waited on compliance attachments for those three delayed deals.
+    explanation_tr: Satın alma departmanlarının uyumluluk ek belgelerini beklediği açıklanır.
+  - id: q_listening_b1_monthly-sales-summary-brief_04
+    question_en: What operational improvement does Claire propose for May?
+    options:
+    - Bundling compliance PDFs directly into standard sales templates
+    - Moving all board meetings to Mondays
+    - Charging compliance fees separately
+    - Dropping small retail customers completely
+    correct_answer: Bundling compliance PDFs directly into standard sales templates
+    explanation_en: Claire suggests standardizing the compliance PDFs inside sales templates to prevent future delays.
+    explanation_tr: Claire uyumluluk belgelerinin satış şablonlarına standart olarak yerleştirilmesini önerir.
+  - id: q_listening_b1_monthly-sales-summary-brief_05
+    question_en: When will marketing and legal deliver the shared compliance packet?
+    options:
+    - Friday afternoon before five
+    - At the start of June
+    - Next Monday morning
+    - By Wednesday afternoon
+    correct_answer: By Wednesday afternoon
+    explanation_en: Selin confirms marketing and legal promised the shared packet by Wednesday afternoon.
+    explanation_tr: Selin pazarlama ve hukukun ortak paketi çarşamba öğleden sonraya vereceğini söyler.
+  topic_tags:
+  - sales
+  - briefing
+  - metrics
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b1.onboarding-flow-user-interview
+  title: Listening to a New User Setup Review
+  cefr_level: B1
+  category: product_discovery
+  scenario_context: UX researcher Owen interviews clinic coordinator Pelin after her first week trying a scheduling web app.
+  speakers:
+  - id: owen
+    name: Owen
+    role: UX Researcher
+    accent: American
+  - id: pelin
+    name: Pelin
+    role: Clinic Coordinator
+    accent: Turkish
+  audio_ref: audio/listening/b1_onboarding_flow_user_interview.mp3
+  duration_seconds: 49
+  transcript_items:
+  - index: 1
+    speaker_id: owen
+    start_ms: 0
+    end_ms: 7063
+    text_en: Thanks for joining, Pelin. Walk me back to Tuesday when you first opened your empty workspace.
+    text_tr: Katıldığın için teşekkürler Pelin. Salı günü boş çalışma alanını ilk açtığın ana geri dönelim.
+  - index: 2
+    speaker_id: pelin
+    start_ms: 7463
+    end_ms: 14227
+    text_en: Honestly, Owen, staring at a blank schedule grid made me hesitate for almost fifteen minutes.
+    text_tr: Dürüst olmak gerekirse Owen, boş bir program ızgarasına bakmak neredeyse on beş dakika tereddüt etmeme yol açtı.
+  - index: 3
+    speaker_id: owen
+    start_ms: 14627
+    end_ms: 18165
+    text_en: What confused you most on that very first screen?
+    text_tr: O ilk ekranda kafanı en çok ne karıştırdı?
+  - index: 4
+    speaker_id: pelin
+    start_ms: 18565
+    end_ms: 24209
+    text_en: I was unsure whether to enter doctors' room hours first or upload patient categories.
+    text_tr: Önce doktorların oda saatlerini mi girmeliyim yoksa hasta kategorilerini mi yüklemeliyim emin olamadım.
+  - index: 5
+    speaker_id: owen
+    start_ms: 24609
+    end_ms: 28218
+    text_en: How did you eventually figure out the right sequence?
+    text_tr: Sonunda doğru sırayı nasıl çözdün?
+  - index: 6
+    speaker_id: pelin
+    start_ms: 28618
+    end_ms: 34701
+    text_en: I clicked into the help center video library and paused every step twice until room rules clicked.
+    text_tr: Yardım merkezi video kütüphanesine girip oda kuralları oturana kadar her adımı iki kez durdurdum.
+  - index: 7
+    speaker_id: owen
+    start_ms: 35101
+    end_ms: 39649
+    text_en: Once room templates were set up, how did inviting nurses feel?
+    text_tr: Oda şablonları kurulduktan sonra hemşireleri davet etmek nasıldı?
+  - index: 8
+    speaker_id: pelin
+    start_ms: 40049
+    end_ms: 47808
+    text_en: Super intuitive! Everything afterward took five minutes, yet that blank initial page nearly made me quit.
+    text_tr: Çok sezgiseldi! Sonraki her şey beş dakika sürdü, ama o boş başlangıç sayfası neredeyse vazgeçmeme yol açacaktı.
+  key_vocabulary:
+  - word: template
+    context_note_tr: hazır başlangıç şablonu
+  - word: hesitate
+    context_note_tr: tereddüt etmek, duraksamak
+  - word: intuitive
+    context_note_tr: ilk bakışta anlaşılır, sezgisel
+  comprehension_questions:
+  - id: q_listening_b1_onboarding-flow-user-interview_01
+    question_en: What caused Pelin to hesitate when she first opened the workspace?
+    options:
+    - An overwhelming blank schedule grid with no starting order
+    - Broken email links when inviting nurses
+    - Missing password recovery buttons
+    - Slow network loading from clinic tablets
+    correct_answer: An overwhelming blank schedule grid with no starting order
+    explanation_en: Pelin explains staring at a blank schedule grid without knowing whether to add rooms or patient lists
+      made her pause 15 minutes.
+    explanation_tr: Pelin boş program ekranında önce oda saatlerini mi hasta kategorilerini mi gireceğini bilemediğini söyler.
+  - id: q_listening_b1_onboarding-flow-user-interview_02
+    question_en: How did Pelin solve her initial setup confusion?
+    options:
+    - By calling technical support on Sunday
+    - By importing an old colleague's spreadsheet
+    - By skipping room configuration completely
+    - By watching and repeatedly pausing help-center videos
+    correct_answer: By watching and repeatedly pausing help-center videos
+    explanation_en: She went to the help center video library and paused steps repeatedly.
+    explanation_tr: Yardım merkezindeki videoları her adımda durdurarak izlediğini anlatır.
+  - id: q_listening_b1_onboarding-flow-user-interview_03
+    question_en: How was the experience after room templates were configured?
+    options:
+    - Still frustrating until staff called Owen
+    - Very intuitive, taking only five minutes to invite nurses
+    - Blocked by missing patient permissions
+    - Too complex for nurses to verify
+    correct_answer: Very intuitive, taking only five minutes to invite nurses
+    explanation_en: Pelin praises inviting nurses afterward as super intuitive, taking five minutes.
+    explanation_tr: Sonraki adımların çok sezgisel olduğunu ve hemşire davetinin beş dakika sürdüğünü söyler.
+  - id: q_listening_b1_onboarding-flow-user-interview_04
+    question_en: Why is Owen conducting this interview?
+    options:
+    - To uncover early product friction experienced by new customers
+    - To sell Pelin an annual enterprise software plan
+    - To verify doctors' hospital licensing numbers
+    - To train nurses on hardware security keys
+    correct_answer: To uncover early product friction experienced by new customers
+    explanation_en: As UX researcher, Owen walks through Pelin's first-week onboarding experience to spot friction.
+    explanation_tr: UX araştırmacısı Owen ilk hafta kullanımındaki sürtünme noktalarını anlamak için görüşmektedir.
+  - id: q_listening_b1_onboarding-flow-user-interview_05
+    question_en: What critical warning does Pelin give at the end?
+    options:
+    - The blank starting screen almost caused her to abandon setup
+    - Inviting additional nurses should cost extra fees
+    - Video tutorials should be deleted from the help center
+    - Clinics prefer manual paper calendars over web tools
+    correct_answer: The blank starting screen almost caused her to abandon setup
+    explanation_en: Pelin concludes that the blank initial page nearly made her quit despite liking later flows.
+    explanation_tr: Pelin son cümlede boş başlangıç ekranının neredeyse vazgeçmesine neden olacağını belirtir.
+  topic_tags:
+  - ux
+  - onboarding
+  - interviews
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b1.payment-receipt-email-delay
+  title: Investigating Slow Email Receipts
+  cefr_level: B1
+  category: incident_response
+  scenario_context: Customer support lead Hakan checks in with backend engineer Priya about why paid checkout confirmations
+    arrive forty minutes late.
+  speakers:
+  - id: hakan
+    name: Hakan
+    role: Support Team Lead
+    accent: Turkish
+  - id: priya
+    name: Priya
+    role: Backend Engineer
+    accent: Indian
+  audio_ref: audio/listening/b1_payment_receipt_email_delay.mp3
+  duration_seconds: 58
+  transcript_items:
+  - index: 1
+    speaker_id: hakan
+    start_ms: 0
+    end_ms: 8263
+    text_en: Priya, do you have a second? Twenty customers asked why payment receipts took forty minutes to reach their inbox.
+    text_tr: Priya, bir dakikan var mı? Yirmi müşteri ödeme makbuzlarının neden kırk dakika geciktiğini sordu.
+  - index: 2
+    speaker_id: priya
+    start_ms: 8663
+    end_ms: 15756
+    text_en: Let me pull up the mail worker dashboard right now. Payments themselves are clearing normally, right?
+    text_tr: Hemen posta çalışanı panosunu açayım. Ödemelerin kendisi normal onaylanıyor, değil mi?
+  - index: 3
+    speaker_id: hakan
+    start_ms: 16156
+    end_ms: 24820
+    text_en: Yes, cards settle instantly. Only the PDF receipt email sits delayed, causing duplicate support chats.
+    text_tr: Evet, kartlar anında geçiyor. Yalnızca PDF makbuz e-postası gecikiyor, bu da mükerrer destek sohbetlerine yol
+      açıyor.
+  - index: 4
+    speaker_id: priya
+    start_ms: 25220
+    end_ms: 33167
+    text_en: Aha—look at that queue spike. Marketing launched a quarterly newsletter batch onto the same mail server ten minutes
+      earlier.
+    text_tr: Aha—şu kuyruk sıçramasına bak. Pazarlama on dakika önce aynı posta sunucusundan üç aylık bülten gönderimi başlatmış.
+  - index: 5
+    speaker_id: hakan
+    start_ms: 33567
+    end_ms: 39081
+    text_en: So three hundred thousand marketing emails blocked urgent checkout receipts behind them?
+    text_tr: Yani üç yüz bin pazarlama e-postası acil ödeme makbuzlarını geride mi bekletti?
+  - index: 6
+    speaker_id: priya
+    start_ms: 39481
+    end_ms: 46079
+    text_en: Exactly, plus the external provider throttled our shared sender address slightly because of volume.
+    text_tr: Kesinlikle, ayrıca harici sağlayıcı hacim yüzünden ortak gönderici adresimizi biraz yavaşlattı.
+  - index: 7
+    speaker_id: hakan
+    start_ms: 46479
+    end_ms: 50248
+    text_en: How soon will today's remaining receipt backlog clear?
+    text_tr: Bugün kalan makbuz kuyruğu ne kadar sürede temizlenir?
+  - index: 8
+    speaker_id: priya
+    start_ms: 50648
+    end_ms: 57635
+    text_en: I paused bulk newsletters and routed transactional receipts to a dedicated lane—the queue should clear within
+      five minutes.
+    text_tr: Toplu bültenleri duraklattım ve işlemsel makbuzları ayrı bir hatta yönlendirdim; kuyruk beş dakika içinde temizlenmeli.
+  key_vocabulary:
+  - word: backlog
+    context_note_tr: bekleyen iş veya mesaj kuyruğu
+  - word: throttle
+    context_note_tr: gönderim hızını kısıtlamak
+  - word: isolate
+    context_note_tr: sorunu ayrı bir hat üzerinden ayrıştırmak
+  comprehension_questions:
+  - id: q_listening_b1_payment-receipt-email-delay_01
+    question_en: Are customer credit card charges failing during this incident?
+    options:
+    - No, card charges succeed immediately; only confirmation emails lag
+    - Yes, marketing removed payment links accidentally
+    - Yes, checkout cards fail for forty minutes straight
+    - No, only PDF invoices from last year disappeared
+    correct_answer: No, card charges succeed immediately; only confirmation emails lag
+    explanation_en: Hakan confirms payments settle instantly while only PDF receipt emails arrive forty minutes late.
+    explanation_tr: Hakan kart ödemelerinin anında geçtiğini, yalnızca makbuz e-postalarının geciktiğini doğrular.
+  - id: q_listening_b1_payment-receipt-email-delay_02
+    question_en: What caused the sudden email server bottleneck?
+    options:
+    - Office internet dropped on the third floor
+    - A large quarterly marketing newsletter shared the exact same mail lane
+    - Support staff sent too many manual replies
+    - Cloud database disks ran out of PDF space
+    correct_answer: A large quarterly marketing newsletter shared the exact same mail lane
+    explanation_en: Priya spots marketing's 300,000-email newsletter batch using the same mail server.
+    explanation_tr: Priya pazarlamanın aynı sunucudan başlattığı toplu bülten gönderiminin kuyruğu doldurduğunu tespit eder.
+  - id: q_listening_b1_payment-receipt-email-delay_03
+    question_en: Why did the external email vendor slow down delivery further?
+    options:
+    - The company invoice was thirty days overdue
+    - Customers flagged payment receipts as spam
+    - Hardware security keys expired overnight
+    - High sudden volume on the shared sender address triggered throttling
+    correct_answer: High sudden volume on the shared sender address triggered throttling
+    explanation_en: Priya explains the external provider throttled their shared sender address due to volume.
+    explanation_tr: Harici sağlayıcının ortak adresteki yüksek hacim nedeniyle hız kısıtı uyguladığı belirtilir.
+  - id: q_listening_b1_payment-receipt-email-delay_04
+    question_en: What immediate fix does Priya apply to clear receipts quickly?
+    options:
+    - Cancels all customer credit card settlements temporarily
+    - Asks twenty support agents to email PDFs manually
+    - Deletes queued receipts older than ten minutes
+    - Pauses newsletters and switches receipts onto a dedicated lane
+    correct_answer: Pauses newsletters and switches receipts onto a dedicated lane
+    explanation_en: Priya pauses bulk newsletters and moves transactional receipts to an isolated priority lane.
+    explanation_tr: Priya bültenleri durdurup ödeme makbuzlarını ayrı bir hatta yönlendirir.
+  - id: q_listening_b1_payment-receipt-email-delay_05
+    question_en: How soon does Priya expect the backlog to clear?
+    options:
+    - After quarterly marketing closes
+    - At nine o'clock tomorrow
+    - Within five minutes
+    - About forty minutes
+    correct_answer: Within five minutes
+    explanation_en: Priya predicts the isolated queue will clear within five minutes.
+    explanation_tr: Priya ayrıştırılmış kuyruğun beş dakika içinde boşalacağını öngörür.
+  topic_tags:
+  - incident
+  - queues
+  - email-delivery
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b1.extending-catering-service-terms
+  title: Renewing the Office Lunch Catering Plan
+  cefr_level: B1
+  category: negotiation
+  scenario_context: Workplace partner Deniz negotiates next quarter's hybrid-week catering minimums and dietary labels with
+    vendor manager Marcus.
+  speakers:
+  - id: deniz
+    name: Deniz
+    role: Workplace Experience Lead
+    accent: Turkish
+  - id: marcus
+    name: Marcus
+    role: Catering Account Manager
+    accent: British
+  audio_ref: audio/listening/b1_extending_catering_service_terms.mp3
+  duration_seconds: 62
+  transcript_items:
+  - index: 1
+    speaker_id: deniz
+    start_ms: 0
+    end_ms: 8958
+    text_en: Thanks for coming by, Marcus. Employees love the hot bowls, yet hybrid schedules mean Fridays are much quieter
+      now.
+    text_tr: Uğradığın için teşekkürler Marcus. Çalışanlar sıcak kaseleri çok seviyor ama hibrit düzen nedeniyle cumaları
+      artık çok daha sakin.
+  - index: 2
+    speaker_id: marcus
+    start_ms: 9358
+    end_ms: 16041
+    text_en: We noticed fewer trays clearing on Fridays lately. Are you looking to adjust portion counts?
+    text_tr: Son zamanlarda cumaları daha az tepsinin tükendiğini fark ettik. Porsiyon sayılarını mı ayarlamak istiyorsunuz?
+  - index: 3
+    speaker_id: deniz
+    start_ms: 16441
+    end_ms: 24305
+    text_en: Yes. Under our current contract we guarantee eighty daily meals all week, creating food waste every Friday.
+    text_tr: Evet. Mevcut sözleşmede tüm hafta günde seksen öğün garanti ediyoruz, bu da her cuma yemek israfı yaratıyor.
+  - index: 4
+    speaker_id: marcus
+    start_ms: 24705
+    end_ms: 31878
+    text_en: I understand. We prefer reducing waste too—what split feels realistic across Monday through Friday?
+    text_tr: Anlıyorum. Biz de israfı azaltmayı tercih ederiz; pazartesiden cumaya hangi dağılım gerçekçi olur?
+  - index: 5
+    speaker_id: deniz
+    start_ms: 32278
+    end_ms: 38721
+    text_en: If we raise Tuesday through Thursday guarantees to ninety meals, could Friday drop to forty-five?
+    text_tr: Salı-perşembe garantisini doksana çıkarırsak cumayı kırk beşe düşürebilir miyiz?
+  - index: 6
+    speaker_id: marcus
+    start_ms: 39121
+    end_ms: 46029
+    text_en: That keeps total weekly volume almost unchanged, so kitchen planning stays profitable for our team.
+    text_tr: Bu haftalık toplam hacmi neredeyse aynı tutar, yani mutfak planlaması ekibimiz için kârlı kalır.
+  - index: 7
+    speaker_id: deniz
+    start_ms: 46429
+    end_ms: 54042
+    text_en: Great! One tiny extra request—could every tray include clear allergen icons in both English and Turkish?
+    text_tr: Harika! Küçük bir ek ricam daha var; her tepside hem İngilizce hem Türkçe net alerjen simgeleri olabilir mi?
+  - index: 8
+    speaker_id: marcus
+    start_ms: 54442
+    end_ms: 61330
+    text_en: Done. Our print kitchen can add bilingual allergen cards starting first Monday of next month.
+    text_tr: Tamamdır. Baskı ekibimiz gelecek ayın ilk pazartesinden itibaren iki dilli alerjen kartları ekleyebilir.
+  key_vocabulary:
+  - word: hybrid
+    context_note_tr: ofis ve evden karışık çalışma düzeni
+  - word: minimum
+    context_note_tr: günlük asgari porsiyon sayısı
+  - word: waste
+    context_note_tr: artan yemek israfı
+  comprehension_questions:
+  - id: q_listening_b1_extending-catering-service-terms_01
+    question_en: Why is Friday office catering generating food waste lately?
+    options:
+    - Allergen labels discouraged staff from eating
+    - Fewer staff come on site Fridays under hybrid work schedules
+    - Marcus's kitchen closes every Friday afternoon
+    - Employees dislike hot lunch bowls on weekends
+    correct_answer: Fewer staff come on site Fridays under hybrid work schedules
+    explanation_en: Deniz links quieter hybrid Fridays with a rigid 80-meal daily contract causing leftover waste.
+    explanation_tr: Deniz hibrit çalışmada cuma katılımlarının düşmesine rağmen sabit seksen porsiyon garantisinin israfa
+      yol açtığını anlatır.
+  - id: q_listening_b1_extending-catering-service-terms_02
+    question_en: What revised daily schedule does Deniz propose?
+    options:
+    - Eliminating Friday lunches altogether
+    - Forty-five meals across all five days
+    - Ninety meals midweek and forty-five on Fridays
+    - One hundred twenty meals every single day
+    correct_answer: Ninety meals midweek and forty-five on Fridays
+    explanation_en: Deniz proposes 90 guaranteed meals Tuesday–Thursday and dropping Friday to 45.
+    explanation_tr: Deniz salı-perşembe arası doksan, cuma günü ise kırk beş öğün önerir.
+  - id: q_listening_b1_extending-catering-service-terms_03
+    question_en: Why does Marcus happily accept Deniz's redistributed counts?
+    options:
+    - Friday meals double in unit contract price
+    - He wants fewer deliveries per calendar month
+    - Total weekly meal volume stays roughly identical for his kitchen
+    - Staff agreed to clean catering trays themselves
+    correct_answer: Total weekly meal volume stays roughly identical for his kitchen
+    explanation_en: Marcus notes the weekly volume stays almost unchanged, preserving profitability.
+    explanation_tr: Marcus haftalık toplam hacmin neredeyse aynı kalmasının mutfak kârlılığını koruduğunu belirtir.
+  - id: q_listening_b1_extending-catering-service-terms_04
+    question_en: What extra detail does Deniz ask Marcus to add on trays?
+    options:
+    - Clear allergen icons in both English and Turkish
+    - Calorie prices printed on separate receipts
+    - Weekly dietary feedback forms
+    - Spare cold sandwiches for Monday mornings
+    correct_answer: Clear allergen icons in both English and Turkish
+    explanation_en: Deniz requests bilingual allergen icons on every tray.
+    explanation_tr: Deniz her tepsiye İngilizce ve Türkçe alerjen simgeleri eklenmesini rica eder.
+  - id: q_listening_b1_extending-catering-service-terms_05
+    question_en: When will the bilingual allergen cards go live?
+    options:
+    - The first Monday of next month
+    - Only after next quarter closes
+    - Starting next January
+    - Right away this coming Friday
+    correct_answer: The first Monday of next month
+    explanation_en: Marcus commits to adding bilingual cards starting the first Monday of next month.
+    explanation_tr: Marcus iki dilli kartların gelecek ayın ilk pazartesi gününden itibaren konacağını söyler.
+  topic_tags:
+  - negotiation
+  - workplace
+  - vendors
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b1.mobile-search-speed-handoff
+  title: Speeding Up Mobile Search Results
+  cefr_level: B1
+  category: engineering_meeting
+  scenario_context: Android developer Emre and API engineer Sofia diagnose why vocabulary search lags while typing quickly
+    on tablets.
+  speakers:
+  - id: emre
+    name: Emre
+    role: Android Engineer
+    accent: Turkish
+  - id: sofia
+    name: Sofia
+    role: Mobile Data Engineer
+    accent: British
+  audio_ref: audio/listening/b1_mobile_search_speed_handoff.mp3
+  duration_seconds: 62
+  transcript_items:
+  - index: 1
+    speaker_id: emre
+    start_ms: 0
+    end_ms: 7668
+    text_en: Sofia, on our reading library screen, typing a fast seven-letter word makes the search bar freeze for a moment.
+    text_tr: Sofia, okuma kütüphanesi ekranında hızlıca yedi harfli bir kelime yazınca arama çubuğu anlık donuyor.
+  - index: 2
+    speaker_id: sofia
+    start_ms: 8068
+    end_ms: 14986
+    text_en: Interesting. Is the client running a full local database query on every single keystroke right now?
+    text_tr: İlginç. İstemci şu an her tek tuş vuruşunda tam yerel veritabanı sorgusu mu çalıştırıyor?
+  - index: 3
+    speaker_id: emre
+    start_ms: 15386
+    end_ms: 22619
+    text_en: Yes, typing 'deliver' triggers seven separate wildcard scans back to back across the entire articles table.
+    text_tr: Evet, 'deliver' yazmak tüm makaleler tablosunda art arda yedi ayrı genel tarama tetikliyor.
+  - index: 4
+    speaker_id: sofia
+    start_ms: 23019
+    end_ms: 29998
+    text_en: Aha—first, add a two-hundred-millisecond debounce delay so you only query after a brief pause in typing.
+    text_tr: Aha—ilk olarak yazmada kısa bir duraklamadan sonra sorgu atmak için iki yüz milisaniyelik bekleme (debounce)
+      ekle.
+  - index: 5
+    speaker_id: emre
+    start_ms: 30398
+    end_ms: 37806
+    text_en: Good catch. Should we also switch SQLite from leading-wildcard matching toward a prefix search index?
+    text_tr: Güzel nokta. SQLite'ı da başından genel eşlemeden ön ek arama dizinine mi geçirsek?
+  - index: 6
+    speaker_id: sofia
+    start_ms: 38206
+    end_ms: 47054
+    text_en: Definitely for titles over two characters! Matching prefixes hits the index immediately instead of scanning every
+      summary paragraph.
+    text_tr: İki karakterden uzun başlıklarda kesinlikle! Ön ek eşleşmesi her özet paragrafını taramak yerine doğrudan dizine
+      çarpar.
+  - index: 7
+    speaker_id: emre
+    start_ms: 47454
+    end_ms: 53652
+    text_en: I will test both updates on my older tablet tonight and check whether frame drops vanish completely.
+    text_tr: Her iki güncellemeyi bu akşam eski tabletimde test edip kare düşüşlerinin tamamen kaybolup kaybolmadığına bakacağım.
+  - index: 8
+    speaker_id: sofia
+    start_ms: 54052
+    end_ms: 60800
+    text_en: Awesome. Drop the before-and-after timing chart in our pull request once tests stay green.
+    text_tr: Süper. Testler yeşil kaldığında çekme isteğine öncesi-sonrası süre grafiğini de bırak.
+  key_vocabulary:
+  - word: debounce
+    context_note_tr: tuş vuruşlarını kısa bekletip tek sorgu atma
+  - word: prefix
+    context_note_tr: kelime başı ön eki
+  - word: freeze
+    context_note_tr: arayüzün kısa süre donması
+  comprehension_questions:
+  - id: q_listening_b1_mobile-search-speed-handoff_01
+    question_en: What symptom does Emre observe when typing quickly into mobile search?
+    options:
+    - Saved reading bookmarks disappear silently
+    - Audio MP3 playback echoes twice
+    - The search input freezes momentarily on long words
+    - The tablet battery drains in ten minutes
+    correct_answer: The search input freezes momentarily on long words
+    explanation_en: Emre notes typing a quick seven-letter word freezes the search bar momentarily.
+    explanation_tr: Emre hızlıca yedi harfli bir kelime yazıldığında arama çubuğunun anlık donduğunu söyler.
+  - id: q_listening_b1_mobile-search-speed-handoff_02
+    question_en: Why does typing 'deliver' cause heavy redundant database work?
+    options:
+    - SQLite converts English letters into Turkish definitions live
+    - The app uploads every keystroke over mobile cellular links
+    - Each button tap reloads cover WebP images from disk
+    - Every keystroke runs an immediate full-table wildcard query
+    correct_answer: Every keystroke runs an immediate full-table wildcard query
+    explanation_en: Typing seven letters fires seven consecutive full-table wildcard scans.
+    explanation_tr: Yedi harf yazmanın art arda yedi tam tablo taramasını tetiklediği anlatılır.
+  - id: q_listening_b1_mobile-search-speed-handoff_03
+    question_en: What UI timing tweak does Sofia advise first?
+    options:
+    - Disabling offline search altogether
+    - Waiting 200 milliseconds after typing pauses before querying
+    - Blocking users from typing more than three characters
+    - Moving search filters onto a hidden dialog
+    correct_answer: Waiting 200 milliseconds after typing pauses before querying
+    explanation_en: Sofia recommends adding a 200ms debounce delay before dispatching the query.
+    explanation_tr: Sofia 200 milisaniyelik debounce gecikmesi eklenmesini önerir.
+  - id: q_listening_b1_mobile-search-speed-handoff_04
+    question_en: How does prefix matching speed up the query itself?
+    options:
+    - It uses a fast SQL index rather than scanning full summary text
+    - It caches results on an external website
+    - It removes shorter A2 articles from search scope
+    - It stores text inside unindexed JSON files
+    correct_answer: It uses a fast SQL index rather than scanning full summary text
+    explanation_en: Sofia notes prefix queries use the index cleanly instead of scanning every paragraph.
+    explanation_tr: Sofia ön ek aramasının tüm paragrafları taramak yerine doğrudan dizini kullandığını açıklar.
+  - id: q_listening_b1_mobile-search-speed-handoff_05
+    question_en: What evidence should Emre attach to the code review?
+    options:
+    - Written surveys from clinic coordinators
+    - Three pages of server logs
+    - Updated tablet battery receipts
+    - Before-and-after query timing benchmarks alongside green tests
+    correct_answer: Before-and-after query timing benchmarks alongside green tests
+    explanation_en: Sofia asks for a before-and-after timing chart on the pull request once tests pass.
+    explanation_tr: Sofia testler geçince çekme isteğine öncesi-sonrası süre grafiğinin konmasını ister.
+  topic_tags:
+  - android
+  - performance
+  - search
+  related_ids: []
+  status: APPROVED
+  version: 1

@@ -1,0 +1,709 @@
+- id: listening.b2.q3-hiring-freeze-briefing
+  title: Leadership Briefing on Selective Q3 Hiring
+  cefr_level: B2
+  category: executive_briefing
+  scenario_context: CFO Daniel updates Engineering Director Leyla on Q3 headcount pacing and exception approvals ahead of
+    the all-hands Q&A.
+  speakers:
+  - id: daniel
+    name: Daniel
+    role: Chief Financial Officer
+    accent: American
+  - id: leyla
+    name: Leyla
+    role: Director of Engineering
+    accent: Turkish
+  audio_ref: audio/listening/b2_q3_hiring_freeze_briefing.mp3
+  duration_seconds: 70
+  transcript_items:
+  - index: 1
+    speaker_id: daniel
+    start_ms: 0
+    end_ms: 9783
+    text_en: Thanks for hopping on early, Leyla. Before tomorrow's town hall, I wanted to align tightly on how we explain
+      our Q3 hiring pause.
+    text_tr: Erken bağlandığın için teşekkürler Leyla. Yarınki genel toplantıdan önce üçüncü çeyrek işe alım duraklamamızı
+      nasıl anlatacağımız konusunda netleşmek istedim.
+  - index: 2
+    speaker_id: leyla
+    start_ms: 10183
+    end_ms: 18501
+    text_en: Appreciated, Daniel. Rumors move rapidly when teams see open job links quietly archived without context.
+    text_tr: Çok iyi olur Daniel. Ekipler açık ilan bağlantılarının bağlam olmadan arşive kaldırıldığını görünce söylentiler
+      hızla yayılıyor.
+  - index: 3
+    speaker_id: daniel
+    start_ms: 18901
+    end_ms: 28729
+    text_en: 'Fair point. To be explicit: enterprise renewals remain healthy, yet extended buyer procurement pushed cash collections
+      into Q4.'
+    text_tr: Haklısın. Açık konuşmak gerekirse kurumsal yenilemeler sağlıklı, ancak uzayan alıcı süreçleri nakit tahsilatını
+      dördüncü çeyreğe kaydırdı.
+  - index: 4
+    speaker_id: leyla
+    start_ms: 29129
+    end_ms: 36532
+    text_en: So are we freezing critical backfills too, or strictly holding net-new expansion roles until collections land?
+    text_tr: Peki kritik ayrılan rol ikamelerini de mi donduruyoruz, yoksa yalnızca net yeni genişleme rollerini mi bekletiyoruz?
+  - index: 5
+    speaker_id: daniel
+    start_ms: 36932
+    end_ms: 46539
+    text_en: Crucial distinction—legitimate attrition backfills inside revenue-critical payment teams remain pre-approved,
+      alongside our two senior security searches.
+    text_tr: 'Kritik ayrım: gelir açısından hayati ödeme ekiplerindeki meşru ayrılma ikameleri ile iki kıdemli güvenlik aramamız
+      önceden onaylı kalıyor.'
+  - index: 6
+    speaker_id: leyla
+    start_ms: 46939
+    end_ms: 51393
+    text_en: What about offers already extended verbally by recruiters this week?
+    text_tr: Peki işe alım uzmanlarının bu hafta sözlü olarak zaten uzattığı teklifler ne olacak?
+  - index: 7
+    speaker_id: daniel
+    start_ms: 51793
+    end_ms: 60745
+    text_en: Every active verbal offer in late stages honors its commitment cleanly; rescinding signed pipelines would destroy
+      employer reputation needlessly.
+    text_tr: İleri aşamadaki her sözlü teklif sözünü temiz biçimde tutacak; ilerlemiş adayları geri çekmek işveren itibarımızı
+      gereksiz yere zedeler.
+  - index: 8
+    speaker_id: leyla
+    start_ms: 61145
+    end_ms: 69738
+    text_en: That nuance protects morale tremendously. Let us put exact backfill vs expansion criteria on slide four tomorrow.
+    text_tr: Bu incelik morali olağanüstü korur. Yarın dördüncü slayda kesin ikame ve genişleme ölçütlerini koyalım.
+  key_vocabulary:
+  - word: headcount
+    context_note_tr: planlanan toplam çalışan sayısı
+  - word: backfill
+    context_note_tr: ayrılan kişinin yerine yapılan işe alım
+  - word: morale
+    context_note_tr: ekip morali ve motivasyonu
+  comprehension_questions:
+  - id: q_listening_b2_q3-hiring-freeze-briefing_01
+    question_en: Why is the company moderating net-new hiring for Q3?
+    options:
+    - Recruiters lost access to external job boards
+    - Security engineers demanded double compensation tiers
+    - Enterprise customers canceled core platform renewals
+    - Slower corporate buyer cycles shifted cash collections into Q4
+    correct_answer: Slower corporate buyer cycles shifted cash collections into Q4
+    explanation_en: Daniel notes renewals stay healthy, but longer procurement shifted incoming cash timing to Q4.
+    explanation_tr: Daniel yenilemelerin sağlıklı olduğunu ancak uzayan satın alma süreçlerinin nakit girişini dördüncü çeyreğe
+      kaydırdığını açıklar.
+  - id: q_listening_b2_q3-hiring-freeze-briefing_02
+    question_en: Which roles remain exempt from the Q3 hiring hold?
+    options:
+    - Seasonal interns across all regional offices
+    - Essential backfills in payment squads plus two senior security hires
+    - Every planned junior expansion role in marketing
+    - Zero roles—every open job link stays frozen
+    correct_answer: Essential backfills in payment squads plus two senior security hires
+    explanation_en: Daniel confirms critical payment team backfills and two senior security roles remain active.
+    explanation_tr: Ödeme ekiplerindeki ikamelerin ve iki kıdemli güvenlik rolünün onaylı kaldığı belirtilir.
+  - id: q_listening_b2_q3-hiring-freeze-briefing_03
+    question_en: How will leadership treat candidates with active verbal offers?
+    options:
+    - Honor them cleanly to protect employer trust
+    - Switch salaried offers into hourly freelance work
+    - Postpone their start dates indefinitely until next spring
+    - Rescind all offers immediately before town hall
+    correct_answer: Honor them cleanly to protect employer trust
+    explanation_en: Daniel insists honoring active late-stage verbal offers so reputation isn't harmed.
+    explanation_tr: Daniel işveren itibarını korumak için ileri aşamadaki sözlü tekliflerin tutulacağını vurgular.
+  - id: q_listening_b2_q3-hiring-freeze-briefing_04
+    question_en: Why did Leyla urge proactive clarity before tomorrow's town hall?
+    options:
+    - Silent archived job postings spark damaging rumors among staff
+    - Finance forgot to prepare slide four numbers
+    - Recruiters wanted higher weekly interview quotas
+    - Directors prefer hiding budget limits indefinitely
+    correct_answer: Silent archived job postings spark damaging rumors among staff
+    explanation_en: Leyla notes rumors race ahead whenever open links vanish without explanation.
+    explanation_tr: Leyla açıklamasız kapanan ilanların ekip içinde hızlı söylentilere yol açtığını söyler.
+  - id: q_listening_b2_q3-hiring-freeze-briefing_05
+    question_en: What will appear on slide four of tomorrow's briefing?
+    options:
+    - Explicit rules distinguishing allowed backfills from paused expansion roles
+    - A full list of confidential individual salaries
+    - Cancelation dates for cloud testing servers
+    - Names of clients currently overdue on invoices
+    correct_answer: Explicit rules distinguishing allowed backfills from paused expansion roles
+    explanation_en: Leyla recommends displaying clear backfill vs expansion criteria on slide four.
+    explanation_tr: Leyla dördüncü slaytta net ikame ve genişleme ölçütlerinin gösterilmesini önerir.
+  topic_tags:
+  - headcount
+  - finance
+  - executive-briefing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b2.warehouse-scanner-ux-discovery
+  title: Observing Barcode Scanner Pain Points
+  cefr_level: B2
+  category: product_discovery
+  scenario_context: Product manager Tariq interviews fulfillment floor supervisor Elena after shadowing workers using handheld
+    Android barcode scanners.
+  speakers:
+  - id: tariq
+    name: Tariq
+    role: Product Manager
+    accent: Turkish
+  - id: elena
+    name: Elena
+    role: Warehouse Shift Supervisor
+    accent: British
+  audio_ref: audio/listening/b2_warehouse_scanner_ux_discovery.mp3
+  duration_seconds: 66
+  transcript_items:
+  - index: 1
+    speaker_id: tariq
+    start_ms: 0
+    end_ms: 9228
+    text_en: Thanks for letting me shadow night-shift packers yesterday, Elena. Observing live cold-storage bays taught me
+      more than three dashboards.
+    text_tr: Dün gece vardiyasındaki paketleyicileri yerinde izlememe izin verdiğin için teşekkürler Elena. Soğuk depo koridorlarını
+      canlı görmek bana üç panodan fazlasını öğretti.
+  - index: 2
+    speaker_id: elena
+    start_ms: 9628
+    end_ms: 17671
+    text_en: Right? Office monitors look clean, whereas operators here juggle thick winter gloves under bright bay skylights.
+    text_tr: Değil mi? Ofis ekranları temiz görünür, oysa buradaki operatörler parlak tavan ışıkları altında kalın kış eldivenleriyle
+      çalışıyor.
+  - index: 3
+    speaker_id: tariq
+    start_ms: 18071
+    end_ms: 24584
+    text_en: I noticed packers pausing every six scans just to squint at the tiny green toast message at screen bottom.
+    text_tr: Paketleyicilerin her altı taramada bir ekran altındaki küçücük yeşil onay mesajını seçebilmek için gözlerini
+      kısarak duraksadığını fark ettim.
+  - index: 4
+    speaker_id: elena
+    start_ms: 24984
+    end_ms: 33657
+    text_en: Exactly! And because loud conveyor rollers drown out quiet beeps, workers accidentally scan the same pallet twice.
+    text_tr: Kesinlikle! Üstelik gürültülü konveyör bantları cılız bip sesini bastırdığı için çalışanlar aynı paleti yanlışlıkla
+      iki kez okutuyor.
+  - index: 5
+    speaker_id: tariq
+    start_ms: 34057
+    end_ms: 41000
+    text_en: Plus pressing that tiny twelve-millimeter 'Confirm Quantity' icon with protective gloves took two or three tries.
+    text_tr: Ayrıca o küçücük on iki milimetrelik 'Miktarı Onayla' simgesine koruyucu eldivenle basmak iki veya üç deneme
+      aldı.
+  - index: 6
+    speaker_id: elena
+    start_ms: 41400
+    end_ms: 48369
+    text_en: If you mapped physical side volume buttons to increment counts cleanly, gloved staff would never miss a box.
+    text_tr: Yan taraftaki fiziksel ses düğmelerini miktar artıracak şekilde ayarlarsanız eldivenli personel tek kutu bile
+      kaçırmaz.
+  - index: 7
+    speaker_id: tariq
+    start_ms: 48769
+    end_ms: 57141
+    text_en: Brilliant idea—combine side-button triggers with stronger wrist-strap vibration patterns and a full-width high-contrast
+      confirmation flash.
+    text_tr: Harika fikir—yan düğme tetikleyicilerini daha güçlü titreşim desenleri ve tam genişlikte yüksek kontrastlı bir
+      onay parıltısıyla birleştirelim.
+  - index: 8
+    speaker_id: elena
+    start_ms: 57541
+    end_ms: 64775
+    text_en: Test that build on Lane Three next Thursday; my fastest packers will give you unfiltered feedback in ten minutes.
+    text_tr: Bu sürümü gelecek perşembe Üçüncü Hat'ta test et; en hızlı paketleyicilerim on dakikada filtresiz geri bildirim
+      verecektir.
+  key_vocabulary:
+  - word: glare
+    context_note_tr: ekranı okumayı zorlaştıran parlama
+  - word: gloves
+    context_note_tr: dokunmatiği zorlaştıran koruyucu eldiven
+  - word: confirmation
+    context_note_tr: işlemin bittiğini doğrulayan sesli/dokunsal uyarı
+  comprehension_questions:
+  - id: q_listening_b2_warehouse-scanner-ux-discovery_01
+    question_en: Why did packers fail to notice tiny confirmation messages during floor observation?
+    options:
+    - Scanners refused to read barcodes in cold aisles
+    - Wi-Fi connections dropped near the printer closet
+    - Supervisors turned off display screens to save power
+    - Bright warehouse glare and small bottom toast text forced squinting
+    correct_answer: Bright warehouse glare and small bottom toast text forced squinting
+    explanation_en: Tariq and Elena tie low legibility to bright skylights glare plus tiny toast messages at screen bottom.
+    explanation_tr: Parlak tavan ışığı parlaması ile alttaki çok küçük yeşil uyarı yazısının okunmayı zorlaştırdığı belirtilir.
+  - id: q_listening_b2_warehouse-scanner-ux-discovery_02
+    question_en: What causes duplicate accidental pallet scans on busy shifts?
+    options:
+    - Workers use personal smartphones instead of scanners
+    - Elderly software servers duplicate database IDs
+    - Conveyor noise drowns out faint scanner confirmation beeps
+    - Inventory clerks delete barcodes manually every hour
+    correct_answer: Conveyor noise drowns out faint scanner confirmation beeps
+    explanation_en: Elena explains noisy conveyor rollers drown out subtle confirmation tones.
+    explanation_tr: Elena konveyör gürültüsünün zayıf bip seslerini bastırması yüzünden çift okutma yapıldığını açıklar.
+  - id: q_listening_b2_warehouse-scanner-ux-discovery_03
+    question_en: What hardware shortcut does Elena propose for gloved packers?
+    options:
+    - Ordering thinner cotton gloves for cold-storage bays
+    - Installing voice microphones over noisy conveyors
+    - Binding physical side volume keys to increment item quantities
+    - Enlarging screen fonts to thirty-six points only
+    correct_answer: Binding physical side volume keys to increment item quantities
+    explanation_en: Elena suggests mapping physical side volume buttons to increment quantities cleanly.
+    explanation_tr: Elena eldivenli çalışanlar için yan fiziksel ses düğmelerinin miktar artırmasını önerir.
+  - id: q_listening_b2_warehouse-scanner-ux-discovery_04
+    question_en: Which sensory feedback additions does Tariq commit to building?
+    options:
+    - Bilingual paper checklists taped to pallets
+    - Quiet acoustic chimes for late-night shifts
+    - Removing confirmation notifications entirely
+    - Stronger vibration haptics and full-width high-contrast flashes
+    correct_answer: Stronger vibration haptics and full-width high-contrast flashes
+    explanation_en: Tariq plans stronger haptic vibrations plus a full-width high-contrast flash alongside side-button mapping.
+    explanation_tr: Tariq güçlü titreşim geri bildirimi ve yüksek kontrastlı tam genişlikte onay uyarısı eklemeyi planlar.
+  - id: q_listening_b2_warehouse-scanner-ux-discovery_05
+    question_en: Where and when will the updated prototype run its live pilot?
+    options:
+    - Monday across all five regional depots simultaneously
+    - Next Thursday on Lane Three with experienced packers
+    - Right after annual Q4 inventory close
+    - Tomorrow inside Daniel's finance meeting
+    correct_answer: Next Thursday on Lane Three with experienced packers
+    explanation_en: Elena invites Tariq to pilot the build on Lane Three next Thursday.
+    explanation_tr: Elena yeni sürümün gelecek perşembe Üçüncü Hat'ta denenmesini teklif eder.
+  topic_tags:
+  - warehouse
+  - hardware-ux
+  - field-research
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b2.reporting-export-timeout-triage
+  title: Triaging Large CSV Export Timeouts
+  cefr_level: B2
+  category: incident_response
+  scenario_context: Site reliability engineer Arda and product engineer Nina troubleshoot why quarterly compliance CSV exports
+    fail with 504 gateway errors.
+  speakers:
+  - id: arda
+    name: Arda
+    role: Site Reliability Engineer
+    accent: Turkish
+  - id: nina
+    name: Nina
+    role: Senior Backend Engineer
+    accent: American
+  audio_ref: audio/listening/b2_reporting_export_timeout_triage.mp3
+  duration_seconds: 71
+  transcript_items:
+  - index: 1
+    speaker_id: arda
+    start_ms: 0
+    end_ms: 7713
+    text_en: Nina, five enterprise admins hit 504 gateway timeouts exporting their Q1 audit trail this morning.
+    text_tr: Nina, bu sabah beş kurumsal yönetici birinci çeyrek denetim kaydını dışa aktarırken 504 ağ geçidi zaman aşımı
+      aldı.
+  - index: 2
+    speaker_id: nina
+    start_ms: 8113
+    end_ms: 15366
+    text_en: Strange—normal daily downloads finish under two seconds. Did invoice volume spike in Q1?
+    text_tr: Tuhaf—olağan günlük indirmeler iki saniyenin altında bitiyor. İlk çeyrekte fatura hacmi mi sıçradı?
+  - index: 3
+    speaker_id: arda
+    start_ms: 15766
+    end_ms: 25584
+    text_en: Yes, one retail group crossed four hundred thousand rows, and the API holds the whole HTTP socket open building
+      one huge string in memory.
+    text_tr: Evet, bir perakende grubu dört yüz bin satırı geçti ve API tüm HTTP bağlantısını açık tutarak bellekte tek parça
+      dev bir metin oluşturuyor.
+  - index: 4
+    speaker_id: nina
+    start_ms: 25984
+    end_ms: 34052
+    text_en: Right, our load balancer kills synchronous requests right at sixty seconds, leaving users staring at an empty
+      error tab.
+    text_tr: Doğru, yük dengeleyicimiz eşzamanlı istekleri tam altmışıncı saniyede kesiyor ve kullanıcılar boş hata sekmesine
+      bakakalıyor.
+  - index: 5
+    speaker_id: arda
+    start_ms: 34452
+    end_ms: 42730
+    text_en: Even worse, impatient users keep clicking retry, launching four duplicate worker queries against our primary
+      database.
+    text_tr: Daha kötüsü, sabırsız kullanıcılar tekrar dene düğmesine bastıkça ana veritabanına dört mükerrer ağır sorgu biniyor.
+  - index: 6
+    speaker_id: nina
+    start_ms: 43130
+    end_ms: 52033
+    text_en: Classic cascade risk. We should convert large exports into an asynchronous background job backed by chunked cursor
+      pagination.
+    text_tr: Klasik zincirleme yük riski. Büyük dışa aktarımları parçalı imleç sayfalamasıyla çalışan arka plan işine dönüştürmeliyiz.
+  - index: 7
+    speaker_id: arda
+    start_ms: 52433
+    end_ms: 61391
+    text_en: Smart—respond within half a second with a tracking ID, stream chunks straight to S3 storage, and email an expiring
+      download link.
+    text_tr: Akıllıca—yarım saniyede takip kimliği dön, parçaları doğrudan S3 depolamaya akıt ve süresi dolan güvenli indirme
+      bağlantısı gönder.
+  - index: 8
+    speaker_id: nina
+    start_ms: 61791
+    end_ms: 69989
+    text_en: Agreed. Meanwhile, I will push a read-replica route today so Monday retries cannot starve live checkout writes.
+    text_tr: Mutabık. Bu arada pazartesi denemelerinin canlı ödeme yazmalarını boğmaması için bugün okuma kopyasına yönlendirme
+      çıkacağım.
+  key_vocabulary:
+  - word: gateway
+    context_note_tr: ağ geçidi sunucu zaman aşımı hatası
+  - word: paginate
+    context_note_tr: veriyi parça parça sayfalamak
+  - word: memory
+    context_note_tr: sunucu RAM bellek tüketimi
+  comprehension_questions:
+  - id: q_listening_b2_reporting-export-timeout-triage_01
+    question_en: What triggered 504 gateway timeouts during this morning's exports?
+    options:
+    - Email delivery queues throttled customer receipts
+    - Building 400,000 CSV rows synchronously exceeded the sixty-second proxy limit
+    - Daily reports failed under two seconds due to typo errors
+    - S3 storage buckets revoked all enterprise permissions
+    correct_answer: Building 400,000 CSV rows synchronously exceeded the sixty-second proxy limit
+    explanation_en: Building 400k rows synchronously in memory ran past the load balancer's 60-second cutoff.
+    explanation_tr: Dört yüz bin satırın eşzamanlı bellekte kurulması 60 saniyelik yük dengeleyici sınırını aştı.
+  - id: q_listening_b2_reporting-export-timeout-triage_02
+    question_en: Why did retries quickly turn a minor timeout into database stress?
+    options:
+    - Admins downgraded primary database servers manually
+    - Users clicked retry repeatedly, queuing four heavy identical queries
+    - Browsers automatically cleared CSV headers cleanly
+    - Read replicas deleted older retail rows immediately
+    correct_answer: Users clicked retry repeatedly, queuing four heavy identical queries
+    explanation_en: Arda explains frustrated users retrying launched four duplicate queries onto the primary database.
+    explanation_tr: Arda kullanıcıların tekrar denemesinin ana veritabanında mükerrer ağır sorgular yığdığını anlatır.
+  - id: q_listening_b2_reporting-export-timeout-triage_03
+    question_en: What long-term architecture replaces synchronous CSV downloads?
+    options:
+    - Increasing load balancer HTTP timeouts to sixty minutes
+    - Forbidding exports larger than two hundred lines
+    - Background jobs streaming paginated chunks to S3 with expiring links
+    - Splitting customer audits manually across monthly emails
+    correct_answer: Background jobs streaming paginated chunks to S3 with expiring links
+    explanation_en: Nina and Arda agree on async background jobs using cursor pagination streamed to S3.
+    explanation_tr: Arka planda parçalı okuyup S3'e yazan ve indirme bağlantısı gönderen asenkron mimari seçilir.
+  - id: q_listening_b2_reporting-export-timeout-triage_04
+    question_en: What rapid protection does Nina ship today while async exports are built?
+    options:
+    - Deleting expired S3 objects automatically
+    - Routing export reads to a read replica away from primary checkout writes
+    - Disabling audit downloads for retail customers completely
+    - Adding bilingual warning banners on login screens
+    correct_answer: Routing export reads to a read replica away from primary checkout writes
+    explanation_en: Nina routes heavy export reads to a read replica today to protect live checkout writes.
+    explanation_tr: Nina canlı ödeme yazmalarını korumak için bugün sorguları okuma kopyasına (read-replica) yönlendirir.
+  - id: q_listening_b2_reporting-export-timeout-triage_05
+    question_en: How fast should the initial API call reply once background jobs launch?
+    options:
+    - Two seconds per hundred thousand rows
+    - Forty minutes later alongside receipt emails
+    - Exactly sixty seconds after pagination finishes
+    - Under half a second with a job tracking ID
+    correct_answer: Under half a second with a job tracking ID
+    explanation_en: Arda states the endpoint should return a tracking ID within half a second.
+    explanation_tr: Arda API'nin yarım saniye içinde bir takip kimliğiyle yanıt vermesi gerektiğini söyler.
+  topic_tags:
+  - triage
+  - timeouts
+  - streaming
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b2.cloud-annual-commitment-negotiation
+  title: Negotiating Reserved Cloud Capacity Discounts
+  cefr_level: B2
+  category: negotiation
+  scenario_context: Infrastructure lead Kemal negotiates one-year compute commitments and egress flexibility with cloud account
+    executive Rachel.
+  speakers:
+  - id: kemal
+    name: Kemal
+    role: Infrastructure Lead
+    accent: Turkish
+  - id: rachel
+    name: Rachel
+    role: Cloud Account Executive
+    accent: American
+  audio_ref: audio/listening/b2_cloud_annual_commitment_negotiation.mp3
+  duration_seconds: 72
+  transcript_items:
+  - index: 1
+    speaker_id: rachel
+    start_ms: 0
+    end_ms: 9783
+    text_en: Good afternoon, Kemal. Looking at your steady database clusters, switching from on-demand billing could trim
+      twenty-eight percent immediately.
+    text_tr: İyi günler Kemal. Sabit duran veritabanı kümelerinize bakınca saatlik faturadan geçmek hemen yüzde yirmi sekiz
+      tasarruf sağlayabilir.
+  - index: 2
+    speaker_id: kemal
+    start_ms: 10183
+    end_ms: 18461
+    text_en: Appreciated, Rachel, yet locking rigid server families for three full years feels risky while we migrate toward
+      ARM chips.
+    text_tr: Teşekkürler Rachel, ama biz ARM işlemcilere geçiş yaparken katı sunucu ailelerine üç yıl bağlanmak riskli geliyor.
+  - index: 3
+    speaker_id: rachel
+    start_ms: 18861
+    end_ms: 27109
+    text_en: Makes complete sense. Would a flexible one-year compute commitment across any CPU family fit your roadmap safer?
+    text_tr: Çok mantıklı. Herhangi bir işlemci ailesinde esnek kullanılabilen bir yıllık hesaplama taahhüdü yol haritanıza
+      daha güvenli uyar mı?
+  - index: 4
+    speaker_id: kemal
+    start_ms: 27509
+    end_ms: 36712
+    text_en: One year across families solves flexibility! Still, our fastest rising line item is actually cross-region backup
+      egress.
+    text_tr: Aileler arası esnek bir yıllık süre sorunu çözer! Yine de en hızlı büyüyen maliyet kalemimiz aslında bölgeler
+      arası yedekleme veri çıkışı.
+  - index: 5
+    speaker_id: rachel
+    start_ms: 37112
+    end_ms: 45875
+    text_en: If your team hits the one-hundred-twenty-thousand annual spend floor, I can ask finance to bundle five terabytes
+      monthly egress credits.
+    text_tr: Ekibiniz yıllık yüz yirmi bin dolarlık harcama eşiğine ulaşırsa finanstan her ay beş terabaytlık veri çıkış kredisi
+      eklemesini isteyebilirim.
+  - index: 6
+    speaker_id: kemal
+    start_ms: 46275
+    end_ms: 53533
+    text_en: Wait—if product traffic softens unexpectedly, could any unused monthly credit roll over smoothly within the year?
+    text_tr: Bir dakika—ürün trafiği beklenmedik şekilde düşerse kullanılmayan aylık kredi yıl içinde sonraki aya devredilebilir
+      mi?
+  - index: 7
+    speaker_id: rachel
+    start_ms: 53933
+    end_ms: 62305
+    text_en: Quarterly true-ups apply to annual compute pools rather than forfeiting weekly dips, though backup credits reset
+      monthly.
+    text_tr: Yıllık hesaplama havuzları haftalık düşüşlerde yanmak yerine çeyreklik mahsuplaşır, ancak yedekleme kredileri
+      aylık sıfırlanır.
+  - index: 8
+    speaker_id: kemal
+    start_ms: 62705
+    end_ms: 71253
+    text_en: Fair transparency. Draft the one-year flexible term sheet alongside those egress credits for our CFO to review
+      Friday.
+    text_tr: Adil bir şeffaflık. Cuma günü finans direktörümüzün incelemesi için bir yıllık esnek sözleşme taslağını o veri
+      çıkış kredileriyle hazırlayın.
+  key_vocabulary:
+  - word: commitment
+    context_note_tr: yıllık kullanım taahhüdü
+  - word: discount
+    context_note_tr: taahhüt karşılığı indirim oranı
+  - word: egress
+    context_note_tr: dış ağ veri çıkış maliyeti
+  comprehension_questions:
+  - id: q_listening_b2_cloud-annual-commitment-negotiation_01
+    question_en: Why does Kemal hesitate to sign a three-year server commitment?
+    options:
+    - Databases fluctuate wildly every morning
+    - His team is actively migrating workloads toward ARM processors
+    - Rachel's cloud provider prohibits annual billing
+    - Infrastructure budgets stopped running live apps
+    correct_answer: His team is actively migrating workloads toward ARM processors
+    explanation_en: Kemal avoids rigid 3-year instance families because they are migrating toward ARM chips.
+    explanation_tr: Kemal ARM işlemcilere geçiş yaptıkları için üç yıllık katı sunucu taahhüdünden kaçınır.
+  - id: q_listening_b2_cloud-annual-commitment-negotiation_02
+    question_en: How does Rachel address Kemal's hardware migration concern?
+    options:
+    - By removing discounts from database clusters
+    - By shifting workloads back onto office servers
+    - By freezing processor pricing for ten years
+    - By offering a flexible one-year commitment across CPU families
+    correct_answer: By offering a flexible one-year commitment across CPU families
+    explanation_en: Rachel proposes a flexible one-year compute plan valid across any CPU architecture.
+    explanation_tr: Rachel tüm işlemci ailelerinde geçerli esnek bir yıllık taahhüt önerir.
+  - id: q_listening_b2_cloud-annual-commitment-negotiation_03
+    question_en: What growing bill item worries Kemal beyond raw compute?
+    options:
+    - Cross-region backup egress transfer costs
+    - Static web cache storage prices
+    - Office laptop hardware warranties
+    - Monthly technical support chats
+    correct_answer: Cross-region backup egress transfer costs
+    explanation_en: Kemal notes their fastest rising expense is cross-region backup egress.
+    explanation_tr: Kemal en hızlı artan kalemin bölgeler arası yedekleme veri çıkışı olduğunu belirtir.
+  - id: q_listening_b2_cloud-annual-commitment-negotiation_04
+    question_en: What threshold unlocks five terabytes of monthly egress credits?
+    options:
+    - Doubling regional S3 exports immediately
+    - Committing to three years on fixed legacy CPUs
+    - Meeting a $120,000 annual spend floor
+    - Signing exclusively without CFO review
+    correct_answer: Meeting a $120,000 annual spend floor
+    explanation_en: Rachel ties the 5 TB monthly egress credits to reaching the $120k annual floor.
+    explanation_tr: Beş terabaytlık kredinin yıllık 120 bin dolarlık harcama tabanına bağlı olduğu söylenir.
+  - id: q_listening_b2_cloud-annual-commitment-negotiation_05
+    question_en: What key rollover limit does Rachel clarify honestly?
+    options:
+    - All unused credits vanish nightly after midnight
+    - Egress credits reset monthly while compute adjusts across quarters
+    - CFO signatures cannot alter contract terms later
+    - Unused egress rolls forward indefinitely across five years
+    correct_answer: Egress credits reset monthly while compute adjusts across quarters
+    explanation_en: Rachel clarifies compute pools use quarterly balancing, whereas backup egress credits reset monthly.
+    explanation_tr: Rachel yedekleme kredilerinin aylık sıfırlandığını, hesaplama havuzunun çeyreklik dengelendiğini açıklar.
+  topic_tags:
+  - cloud
+  - negotiation
+  - finops
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: listening.b2.api-versioning-deprecation-sync
+  title: Planning a Safe Legacy API Sunset
+  cefr_level: B2
+  category: engineering_meeting
+  scenario_context: Platform engineer Deniz and partner success lead Jason coordinate deprecating legacy v1 webhook payloads
+    without breaking enterprise integrations.
+  speakers:
+  - id: deniz_eng
+    name: Deniz
+    role: Staff Platform Engineer
+    accent: Turkish
+  - id: jason
+    name: Jason
+    role: Partner Success Lead
+    accent: British
+  audio_ref: audio/listening/b2_api_versioning_deprecation_sync.mp3
+  duration_seconds: 70
+  transcript_items:
+  - index: 1
+    speaker_id: deniz_eng
+    start_ms: 0
+    end_ms: 9648
+    text_en: Jason, thanks for checking API telemetry with me. Supporting v1 webhooks adds two days of manual testing to every
+      billing release.
+    text_tr: Jason, API telemetrisini benimle incelediğin için teşekkürler. Eski v1 web kancalarını desteklemek her faturalama
+      sürümüne iki gün manuel test ekliyor.
+  - index: 2
+    speaker_id: jason
+    start_ms: 10048
+    end_ms: 16946
+    text_en: Totally fair to sunset it, Deniz—how many active enterprise accounts are still calling v1 endpoints?
+    text_tr: Kapatmak istemeniz çok haklı Deniz—şu an kaç aktif kurumsal hesap hâlâ v1 uç noktalarını çağırıyor?
+  - index: 3
+    speaker_id: deniz_eng
+    start_ms: 17346
+    end_ms: 24379
+    text_en: Only eleven organizations worldwide, yet three of them process major monthly invoice reconciliations.
+    text_tr: Dünya genelinde yalnızca on bir kuruluş, ancak bunların üçü çok büyük aylık fatura mutabakatları işliyor.
+  - index: 4
+    speaker_id: jason
+    start_ms: 24779
+    end_ms: 35077
+    text_en: Sending one quiet email won't move busy IT contractors. Can we inject explicit sunset warning headers into v1
+      HTTP responses first?
+    text_tr: Tek bir sessiz e-posta meşgul BT yüklenicilerini harekete geçirmez. Önce v1 HTTP yanıtlarına açık kapanma uyarı
+      başlıkları ekleyebilir miyiz?
+  - index: 5
+    speaker_id: deniz_eng
+    start_ms: 35477
+    end_ms: 44699
+    text_en: Yes! Better still, our developer portal can display a live breakdown showing exactly which webhook keys still
+      trigger v1 calls.
+    text_tr: Evet! Daha da iyisi, geliştirici portalımız hangi web kancası anahtarlarının hâlâ v1 çağrısı yaptığını canlı
+      gösterebilir.
+  - index: 6
+    speaker_id: jason
+    start_ms: 45099
+    end_ms: 51162
+    text_en: And what migration timeline protects those eleven partners fairly without breaking month-end billing?
+    text_tr: Peki ay sonu faturalamasını bozmadan o on bir ortağı adilce koruyacak geçiş takvimi nedir?
+  - index: 7
+    speaker_id: deniz_eng
+    start_ms: 51562
+    end_ms: 61000
+    text_en: Ninety-day notice starting May first, followed by two scheduled brownout hours in late July so silent scripts
+      surface safely before hard shutdown.
+    text_tr: Bir Mayıs'tan itibaren doksan gün bildirim, ardından Temmuz sonunda planlı iki kısa kesinti penceresi; böylece
+      sessiz betikler tamamen kapanmadan fark edilir.
+  - index: 8
+    speaker_id: jason
+    start_ms: 61400
+    end_ms: 69483
+    text_en: Scheduled brownouts always wake dormant owners cleanly. Let us book personal check-ins with the top three partners
+      this week.
+    text_tr: Planlı kısa kesinti provaları unutulmuş sahipleri hep temiz biçimde uyandırır. Bu hafta en büyük üç ortakla kişisel
+      görüşmeler ayarlayalım.
+  key_vocabulary:
+  - word: deprecation
+    context_note_tr: eski sürümün aşamalı olarak kullanımdan kaldırılması
+  - word: payload
+    context_note_tr: API üzerinden gönderilen veri yükü
+  - word: telemetry
+    context_note_tr: canlı kullanım ölçüm verisi
+  comprehension_questions:
+  - id: q_listening_b2_api-versioning-deprecation-sync_01
+    question_en: Why does Deniz want to retire legacy v1 webhooks?
+    options:
+    - Enterprise accounts stopped integrating with webhooks
+    - Partner IT teams requested shorter API contracts
+    - HTTP response headers broke v2 encryption keys
+    - Maintaining v1 adds two days of manual testing to every billing release
+    correct_answer: Maintaining v1 adds two days of manual testing to every billing release
+    explanation_en: Deniz says legacy v1 support costs two days of extra manual testing on each release.
+    explanation_tr: Deniz v1 desteğinin her sürümde iki gün ek manuel test yükü çıkardığını söyler.
+  - id: q_listening_b2_api-versioning-deprecation-sync_02
+    question_en: Why can't engineers simply turn v1 off tomorrow?
+    options:
+    - Telemetries failed to track v1 usage for months
+    - Contractors demanded free annual cloud credits
+    - Three of eleven remaining partners rely on it for heavy monthly invoicing
+    - Developer portal dashboards cannot display API keys
+    correct_answer: Three of eleven remaining partners rely on it for heavy monthly invoicing
+    explanation_en: Though only eleven orgs remain, three handle major invoice reconciliations on v1.
+    explanation_tr: Yalnızca on bir kurum kalsa da üçünün büyük fatura mutabakatlarını buradan yürüttüğü belirtilir.
+  - id: q_listening_b2_api-versioning-deprecation-sync_03
+    question_en: Besides email alerts, how will Deniz make outdated v1 calls visible to partner engineers?
+    options:
+    - By turning off weekend customer phone support
+    - By adding HTTP sunset headers and showing active v1 keys in the portal
+    - By deleting invoice PDFs cleanly on May first
+    - By raising v1 API prices by twenty-eight percent
+    correct_answer: By adding HTTP sunset headers and showing active v1 keys in the portal
+    explanation_en: They add sunset warning HTTP headers plus a live developer-portal breakdown of v1 keys.
+    explanation_tr: HTTP kapanma uyarı başlıkları ve geliştirici portalında canlı anahtar kırılımı eklenmesine karar verilir.
+  - id: q_listening_b2_api-versioning-deprecation-sync_04
+    question_en: What is the purpose of scheduled short 'brownouts' in late July?
+    options:
+    - To reset partner portal passwords automatically
+    - To double testing throughput before invoice close
+    - To expose forgotten scripts safely before permanent shutdown
+    - To cut S3 bandwidth during retail peak season
+    correct_answer: To expose forgotten scripts safely before permanent shutdown
+    explanation_en: Jason and Deniz explain controlled brownout hours reveal silent scripts safely while support is ready.
+    explanation_tr: Kısa planlı kesintilerin unutulmuş gizli entegrasyonları tamamen kapanmadan önce güvenli biçimde ortaya
+      çıkardığı anlatılır.
+  - id: q_listening_b2_api-versioning-deprecation-sync_05
+    question_en: What immediate action does Jason plan for the three largest remaining accounts?
+    options:
+    - Scheduling personal proactive calls this week
+    - Switching them manually without notification
+    - Writing automated newsletter summaries for July
+    - Extending their v1 grace window by three years
+    correct_answer: Scheduling personal proactive calls this week
+    explanation_en: Jason proposes personal check-ins this week with the top three partners.
+    explanation_tr: Jason bu hafta en büyük üç ortakla kişisel takip görüşmeleri ayarlamayı önerir.
+  topic_tags:
+  - api
+  - deprecation
+  - platform
+  related_ids: []
+  status: APPROVED
+  version: 1

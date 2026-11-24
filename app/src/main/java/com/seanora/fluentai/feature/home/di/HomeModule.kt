@@ -1,7 +1,6 @@
 package com.seanora.fluentai.feature.home.di
 
 import com.seanora.fluentai.feature.home.data.HomeRepository
-import com.seanora.fluentai.feature.home.data.MockHomeRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

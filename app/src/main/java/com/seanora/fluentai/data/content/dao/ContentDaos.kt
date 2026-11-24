@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.seanora.fluentai.data.content.entity.ChunkEntity
 import com.seanora.fluentai.data.content.entity.ContentMetadataEntity
 import com.seanora.fluentai.data.content.entity.ContentRelationEntity
 import com.seanora.fluentai.data.content.entity.ExerciseEntity
@@ -256,4 +257,28 @@ interface SpeakingDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertScenarios(scenarios: List<SpeakingScenarioEntity>)
+}
+
+@Dao
+interface ChunkDao {
+    @Query("SELECT * FROM chunks WHERE id = :id")
+    fun getChunkById(id: String): Flow<ChunkEntity?>
+
+    @Query("SELECT * FROM chunks ORDER BY cefr_level ASC, chunk_en ASC")
+    fun getAllChunks(): Flow<List<ChunkEntity>>
+
+    @Query("SELECT * FROM chunks WHERE cefr_level = :level ORDER BY chunk_en ASC")
+    fun getChunksByLevel(level: String): Flow<List<ChunkEntity>>
+
+    @Query("SELECT * FROM chunks WHERE category = :category ORDER BY cefr_level ASC, chunk_en ASC")
+    fun getChunksByCategory(category: String): Flow<List<ChunkEntity>>
+
+    @Query("SELECT * FROM chunks WHERE chunk_en LIKE '%' || :query || '%' OR intent_tr LIKE '%' || :query || '%' OR meaning_en LIKE '%' || :query || '%' ORDER BY cefr_level ASC, chunk_en ASC")
+    fun searchChunks(query: String): Flow<List<ChunkEntity>>
+
+    @Query("SELECT COUNT(*) FROM chunks")
+    suspend fun getChunkCount(): Int
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertChunks(chunks: List<ChunkEntity>)
 }

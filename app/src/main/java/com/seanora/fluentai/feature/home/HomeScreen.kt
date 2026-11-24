@@ -51,6 +51,7 @@ fun HomeScreen(
     onNavigateToResume: (HomeResumeItem) -> Unit = {},
     onNavigateToSpeak: () -> Unit = {},
     onNavigateToLearn: () -> Unit = {},
+    onNavigateToModule: (String) -> Unit = { onNavigateToLearn() },
     onNavigateToProgress: () -> Unit = {},
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -61,7 +62,9 @@ fun HomeScreen(
         onNavigateToResume = onNavigateToResume,
         onNavigateToSpeak = onNavigateToSpeak,
         onNavigateToLearn = onNavigateToLearn,
-        onNavigateToProgress = onNavigateToProgress
+        onNavigateToModule = onNavigateToModule,
+        onNavigateToProgress = onNavigateToProgress,
+        onRefreshPlan = viewModel::refreshPlan,
     )
 }
 
@@ -73,7 +76,9 @@ fun HomeScreenContent(
     onNavigateToResume: (HomeResumeItem) -> Unit = {},
     onNavigateToSpeak: () -> Unit = {},
     onNavigateToLearn: () -> Unit = {},
+    onNavigateToModule: (String) -> Unit = { onNavigateToLearn() },
     onNavigateToProgress: () -> Unit = {},
+    onRefreshPlan: () -> Unit = {},
 ) {
     Box(modifier.fillMaxSize().background(DashboardColors.BackgroundPrimary)) {
         when (uiState) {
@@ -81,18 +86,33 @@ fun HomeScreenContent(
                 Modifier.align(Alignment.Center),
                 color = DashboardColors.PrimaryPink
             )
-            is HomeUiState.Error -> Text(
-                uiState.message,
-                Modifier.align(Alignment.Center).padding(DashboardSpacing.xl),
-                color = DashboardColors.TextSecondary
-            )
+            is HomeUiState.Error -> Column(
+                modifier = Modifier
+                    .align(Alignment.Center)
+                    .padding(DashboardSpacing.xl),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Text(
+                    uiState.message,
+                    color = DashboardColors.TextSecondary,
+                )
+                DashboardPrimaryButton(
+                    text = "Try again",
+                    icon = Icons.Rounded.Refresh,
+                    onClick = onRefreshPlan,
+                    minHeight = 40.dp,
+                )
+            }
             is HomeUiState.Success -> Dashboard(
                 plan = uiState.plan,
                 onActivity = onNavigateToActivity,
                 onResume = onNavigateToResume,
                 onSpeak = onNavigateToSpeak,
                 onLearn = onNavigateToLearn,
-                onProgress = onNavigateToProgress
+                onModule = onNavigateToModule,
+                onProgress = onNavigateToProgress,
+                onRefreshPlan = onRefreshPlan,
             )
         }
     }
@@ -105,7 +125,9 @@ private fun Dashboard(
     onResume: (HomeResumeItem) -> Unit,
     onSpeak: () -> Unit,
     onLearn: () -> Unit,
+    onModule: (String) -> Unit,
     onProgress: () -> Unit,
+    onRefreshPlan: () -> Unit,
 ) {
     Box(Modifier.fillMaxSize()) {
         val scrollState = rememberScrollState()
@@ -143,6 +165,9 @@ private fun Dashboard(
             FocusCard(
                 plan = plan,
                 onActivity = onActivity,
+                onModule = onModule,
+                onLearn = onLearn,
+                onRefreshPlan = onRefreshPlan,
             )
 
             Row(
@@ -526,15 +551,22 @@ private fun SpeakingPracticeCard(onSpeak: () -> Unit, modifier: Modifier = Modif
 private fun FocusCard(
     plan: TodayPlan,
     onActivity: (TodayPlanItem) -> Unit,
+    onModule: (String) -> Unit,
+    onLearn: () -> Unit,
+    onRefreshPlan: () -> Unit,
 ) = DashboardCard(
     modifier = Modifier.fillMaxWidth(),
     contentPadding = PaddingValues(horizontal = 16.dp, vertical = 12.dp),
     contentSpacing = 8.dp,
 ) {
+    val practicePlan = plan.practicePlan
+    val rationale = practicePlan?.rationale?.ifBlank { null } ?: "Practice key skills for steady progress"
     DashboardHeader(
         icon = Icons.Rounded.TrackChanges,
         title = "Today's focus",
-        subtitle = "Practice key skills for steady progress",
+        subtitle = rationale,
+        action = "Refresh",
+        onActionClick = onRefreshPlan,
     )
 
     val nextPlanItem = plan.focusItems.firstOrNull()
@@ -546,7 +578,7 @@ private fun FocusCard(
                 .background(DashboardColors.BackgroundSecondary)
                 .border(1.dp, DashboardColors.BorderSoft, RoundedCornerShape(12.dp))
                 .clickable { onActivity(nextPlanItem) }
-                .padding(horizontal = 12.dp, vertical = 8.dp),
+                .padding(horizontal = 12.dp, vertical = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
@@ -576,7 +608,7 @@ private fun FocusCard(
                     text = "${nextPlanItem.domain.replaceFirstChar { it.uppercase() }} · ${nextPlanItem.estimatedMinutes} min · ${nextPlanItem.explanation}",
                     fontSize = 11.sp,
                     color = DashboardColors.TextSecondary,
-                    maxLines = 1,
+                    maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
                 )
             }
@@ -586,6 +618,99 @@ private fun FocusCard(
                 fontWeight = FontWeight.SemiBold,
                 color = DashboardColors.PrimaryPinkDark,
             )
+        }
+    } else if (practicePlan != null && practicePlan.isCompleted) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(12.dp))
+                .background(Color(0xFFE3F7EC))
+                .border(1.dp, Color(0xFFB7E8CE), RoundedCornerShape(12.dp))
+                .clickable(onClick = onLearn)
+                .padding(horizontal = 12.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Icon(
+                Icons.Rounded.CheckCircle,
+                contentDescription = null,
+                tint = Color(0xFF1EA86A),
+                modifier = Modifier.size(20.dp),
+            )
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(
+                    text = plan.heroPractice.title,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = DashboardColors.TextPrimary,
+                )
+                Text(
+                    text = "All ${practicePlan.totalItemsCount} planned activities finished today.",
+                    fontSize = 11.sp,
+                    color = DashboardColors.TextSecondary,
+                )
+            }
+            Text(
+                text = "Explore →",
+                fontSize = 12.sp,
+                fontWeight = FontWeight.SemiBold,
+                color = Color(0xFF157A4D),
+            )
+        }
+    }
+
+    if (practicePlan != null && practicePlan.items.size > 1) {
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(
+                text = "Today's plan · ${practicePlan.completedItemsCount}/${practicePlan.totalItemsCount} completed",
+                style = DashboardTypography.Caption.copy(
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Medium,
+                    fontFeatureSettings = "tnum",
+                ),
+                color = DashboardColors.TextSecondary,
+            )
+            practicePlan.items.forEach { item ->
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(8.dp))
+                        .clickable { onActivity(item) }
+                        .padding(horizontal = 8.dp, vertical = 6.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Icon(
+                        imageVector = if (item.isCompleted) Icons.Rounded.CheckCircle else Icons.Rounded.RadioButtonUnchecked,
+                        contentDescription = if (item.isCompleted) "Completed" else "Pending",
+                        tint = if (item.isCompleted) Color(0xFF1EA86A) else DashboardColors.PrimaryPink,
+                        modifier = Modifier.size(16.dp),
+                    )
+                    Column(Modifier.weight(1f)) {
+                        Text(
+                            text = item.title,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = if (item.isCompleted) DashboardColors.TextSecondary else DashboardColors.TextPrimary,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                        )
+                        Text(
+                            text = "${item.itemType.displayName} · ${item.estimatedMinutes} min",
+                            fontSize = 11.sp,
+                            color = DashboardColors.TextSecondary,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                        )
+                    }
+                    Text(
+                        text = if (item.isCompleted) "Done" else "Start",
+                        fontSize = 11.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = if (item.isCompleted) Color(0xFF157A4D) else DashboardColors.PrimaryPinkDark,
+                    )
+                }
+            }
         }
     }
 
@@ -604,12 +729,12 @@ private fun FocusCard(
                         }
                         SkillFocusTile(
                             title = card.title,
+                            subtitle = if (item != null) "${item.estimatedMinutes} min" else "Explore",
                             icon = card.icon,
                             background = card.background,
                             iconTint = card.iconTint,
-                            enabled = item != null,
                             modifier = Modifier.weight(1f),
-                            onClick = { item?.let(onActivity) },
+                            onClick = { if (item != null) onActivity(item) else onModule(card.domain) },
                         )
                     }
                 }
@@ -621,19 +746,19 @@ private fun FocusCard(
 @Composable
 private fun SkillFocusTile(
     title: String,
+    subtitle: String,
     icon: ImageVector,
     background: Color,
     iconTint: Color,
-    enabled: Boolean,
     modifier: Modifier = Modifier,
     onClick: () -> Unit,
 ) {
     Box(
         modifier = modifier
-            .height(76.dp)
+            .height(82.dp)
             .clip(RoundedCornerShape(12.dp))
             .background(background)
-            .clickable(enabled = enabled, onClick = onClick),
+            .clickable(onClick = onClick),
         contentAlignment = Alignment.Center,
     ) {
         Column(
@@ -644,7 +769,7 @@ private fun SkillFocusTile(
                 icon,
                 contentDescription = null,
                 tint = iconTint,
-                modifier = Modifier.size(34.dp),
+                modifier = Modifier.size(30.dp),
             )
             Spacer(Modifier.height(4.dp))
             Text(
@@ -652,6 +777,13 @@ private fun SkillFocusTile(
                 fontSize = 12.sp,
                 fontWeight = FontWeight.Medium,
                 color = DashboardColors.TextPrimary,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
+            Text(
+                subtitle,
+                fontSize = 10.sp,
+                color = DashboardColors.TextSecondary,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )

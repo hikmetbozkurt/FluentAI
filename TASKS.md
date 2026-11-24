@@ -24,20 +24,32 @@ Owners:
 
 ## Active phase
 
-Phase 7 — Today's Practice
+Phase 8 — Curriculum Expansion
 
 ---
 
-## Active tasks (Phase 7 — Today's Practice)
+## Active tasks (Phase 8 — Curriculum Expansion)
+
+| ID | Status | Owner | Task | Primary files/area | Notes |
+|---|---|---|---|---|---|
+| UI-R01 | DONE | ANTIGRAVITY | Reading UI refresh: tablet layouts, illustrations, paper palette (ADR-020) | feature/reading/, assets/reading/ | Added `onAccent`/`onSuccess` contrast tokens across Paper/Light/Sepia/Dark, extracted shared `ReaderComfortToolbar` (`Standard`/`Guided` toggle, progress, 44dp+ targets), fixed dashboard duplicate card & `Start reading`/`Continue` CTA, added Library filter/search reset + CEFR badges, wide-tablet split-pane article reference during Comprehension, Review per-question scorecard, and 133/133 manifest cover tests (`testDebugUnitTest`, `lintDebug`, `assembleDebug` passed; manual tablet visual walkthrough pending) |
+| P8-001 | TODO | UNASSIGNED | Expand Speaking Scenarios Batch 1 (18 -> 60+ across all 8 categories, A2–C2) | content/speaking/, tools/ | Fill largest curriculum gap; validate, review, approve, rebuild content.db |
+| P8-002 | DONE | ANTIGRAVITY | Expand Chunks & Collocations Batch 1 (36 -> 150+ workplace/academic/natural chunks) | content/chunks/, tools/phase8/ | Added 216 chunks across A2–C2 (36 -> 252); validated with `validate_content.py` |
+| P8-003 | DONE | ANTIGRAVITY | Expand Vocabulary Batch (3,359 -> 5,000+ headwords with B2–C2 nuance & register) | content/vocab/, content/curriculum/, content/exercises/, tools/phase8/ | Added 2,231 headwords (5,590 total), 2,231 topic relations (5,592 total), and 280 balanced MCQs (`exercises_batch003.yaml`); rebuilt deterministic `content.db` |
+| P8-004 | DONE | ANTIGRAVITY | Expand Grammar Micro-Lessons & Turkish L1 Traps (100 -> 140+) | content/grammar/, content/exercises/, tools/phase8/ | Added 50 A2–C2 lessons (150 total) & 150 balanced MCQs (`exercises_batch004.yaml`, 3,492 total); verified `pytest -q` (33 passed) & Gradle |
+| P8-005 | DONE | ANTIGRAVITY | Expand Reading & Listening Batches with assets & audio | content/reading/, content/listening/, assets/ | Added 25 A2–C2 Reading articles (`108 -> 133`, +125 MCQs) + 33 `flat-editorial-v1` WebP covers (`133/133` manifest coverage) and 25 A2–C2 Listening scenarios (`100 -> 125`, +125 MCQs, `125/125` offline MP3s); rebuilt deterministic `content.db` v5 (`4,736` total MCQs), `validate_content.py`, `pytest -q`, and Gradle verified |
+
+---
+
+## Completed tasks (Phase 7 — Today's Practice)
 
 | ID | Status | Owner | Task | Primary files/area | Notes |
 |---|---|---|---|---|---|
 | P7-001 | DONE | ANTIGRAVITY | Define Today's Practice domain models & UserDatabase persistence | core/model/, data/user/ | TodayPlan, TodayPlanItem, Room entity, DAO, mappers |
 | P7-002 | DONE | ANTIGRAVITY | Implement deterministic TodayPlanner orchestrator engine | domain/today/ | Multi-domain orchestrator: reviews, mistakes, weak skills, progression |
 | P7-003 | DONE | ANTIGRAVITY | Implement TodayPracticeRepository bridging content & user state | data/repository/, domain/today/ | Repository, flow observation, completion updates, daily metrics |
-| P7-004 | IN_PROGRESS | ANTIGRAVITY | Upgrade Home UI & ViewModel with real Today's Practice loop | feature/home/ | Real TodayPlan integration, guidance CTA, module navigation, Explore preservation |
-| P7-005 | TODO | ANTIGRAVITY | Phase 7 Comprehensive Verification & Exit Pass | tests/ | Unit tests, Room tests, reproducibility & explainability exit pass |
-| UI-R01 | REVIEW | CLAUDE | Reading UI refresh: tablet layouts, illustrations, paper palette (ADR-020) | feature/reading/, assets/reading/ | UI only; content, ViewModels and navigation unchanged. Needs Gradle build + tablet check |
+| P7-004 | DONE | ANTIGRAVITY | Upgrade Home UI & ViewModel with real Today's Practice loop | feature/home/ | Real TodayPlan rationale, checklist, completion banner, Refresh/Retry, Explore module fallback |
+| P7-005 | DONE | ANTIGRAVITY | Phase 7 Comprehensive Verification & Exit Pass | tests/ | 73 suites / 373 unit tests, assembleDebug, lintDebug, end-to-end Today loop & reproducibility verified |
 
 ---
 

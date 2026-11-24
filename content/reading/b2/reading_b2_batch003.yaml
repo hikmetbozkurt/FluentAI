@@ -1,0 +1,680 @@
+- id: reading.b2.cash-flow-vs-profit-margins
+  title: Why Cash Flow Timing Matters More Than Paper Profit
+  cefr_level: B2
+  category: finance_and_economics
+  summary_en: Why profitable growing firms still face severe liquidity crunches when receivable collection lags behind payroll
+    and supplier payments.
+  summary_tr: Kârlı büyüyen şirketlerin bile alacak tahsilatı maaş ve tedarikçi ödemelerinin gerisinde kaldığında neden ciddi
+    likidite sıkışıklığı yaşadığını inceler.
+  word_count: 297
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Profitable on Paper, Strained in the Bank
+    content_en: Quarterly income statements routinely reassure founders that their business model works smoothly. Revenue
+      exceeds operating expenses, gross margins stay healthy, and net income finishes solidly positive. Yet several fast-growing
+      agencies and manufacturers quietly run out of operating cash precisely during their strongest sales quarters. Accounting
+      profit records when a contract is delivered and invoiced, whereas bank liquidity tracks when cleared funds actually
+      enter and leave the corporate checking account. Bridging that timing gap often decides whether growth feels triumphant
+      or terrifying.
+    content_tr: Üç aylık gelir tabloları genellikle kuruculara iş modellerinin sorunsuz işlediği güvenini verir. Gelir faaliyet
+      giderlerini aşar, brüt kâr marjları sağlıklı kalır ve net kâr güçlü biçimde artıda kapanır. Buna rağmen hızlı büyüyen
+      birçok ajans ve üretici, tam da en güçlü satış çeyreklerinde sessizce işletme nakdini tüketir. Muhasebe kârı bir sözleşmenin
+      teslim edilip faturalandığı anı kaydederken, banka likiditesi fiili paranın şirket hesabına ne zaman girip çıktığını
+      izler. Bu zamanlama boşluğunu kapatmak büyümenin zafer mi yoksa stres mi yaratacağını çoğu kez belirler.
+  - paragraph_index: 2
+    title: The Growth Paradox of Delayed Receivables
+    content_en: Expansion amplifies working capital demand in counterintuitive ways. Winning three major enterprise clients
+      requires hiring additional specialists immediately, ordering upstream software capacity, and funding biweekly payroll
+      upfront. Meanwhile, corporate procurement departments routinely enforce net-sixty or net-ninety payment schedules before
+      releasing wire transfers. Because cash leaves the door weekly while revenue arrives months later, rapid sales acceleration
+      actually drains bank reserves faster unless payment terms scale alongside project delivery.
+    content_tr: Genişleme, işletme sermayesi ihtiyacını sezgiye aykırı biçimde büyütür. Üç büyük kurumsal müşteri kazanmak
+      hemen ek uzmanlar işe almayı, üst düzey yazılım kapasitesi sipariş etmeyi ve iki haftalık maaş bordrosunu peşin finanse
+      etmeyi gerektirir. Öte yandan kurumsal satın alma departmanları havale çıkarmadan önce sıklıkla altmış veya doksan gün
+      vadeli ödeme planları uygular. Nakit kasadan haftalık çıkarken gelir aylar sonra geldiği için hızlı satış artışı, ödeme
+      koşulları proje teslimatıyla uyumlu hale getirilmedikçe banka rezervlerini daha da hızlı eritir.
+  - paragraph_index: 3
+    title: Managing Collection Velocity and Milestones
+    content_en: Finance leaders counter receivable lag through deliberate contract design long before invoicing begins. Breaking
+      six-month implementations into upfront mobilization deposits and measurable stage payments keeps cash inflows aligned
+      with ongoing labor effort. Automated reminder workflows sent five days before due dates catch administrative bottlenecks
+      cleanly, because overdue enterprise invoices frequently sit waiting on a missing purchase order number rather than financial
+      distress. Shortening average collection cycles by even twelve days frees substantial capital without borrowing a single
+      dollar.
+    content_tr: Finans liderleri alacak gecikmesine daha faturalama başlamadan önce bilinçli sözleşme tasarımıyla karşı koyar.
+      Altı aylık kurulumları başlangıç peşinatlarına ve ölçülebilir aşama ödemelerine bölmek nakit girişlerini süregelen iş
+      gücü maliyetiyle hizalar. Vade tarihinden beş gün önce gönderilen otomatik hatırlatma akışları idari darboğazları temiz
+      biçimde yakalar; çünkü gecikmiş kurumsal faturalar çoğu zaman finansal sıkıntıdan değil eksik bir satın alma sipariş
+      numarasından dolayı bekler. Ortalama tahsilat süresini yalnızca on iki gün kısaltmak tek kuruş borçlanmadan ciddi sermaye
+      serbest bırakır.
+  - paragraph_index: 4
+    title: Forecasting Weekly Liquidity Horizons
+    content_en: Relying solely on monthly financial close reports leaves leadership steering through a rearview mirror. Operating
+      a rolling thirteen-week cash flow forecast updated every Monday morning exposes temporary troughs weeks before payroll
+      comes due. With early visibility, treasurers can negotiate staggered supplier settlements, draw prudently on revolving
+      credit lines, or postpone discretionary equipment purchases cleanly. Disciplined cash stewardship gives profitable firms
+      the runway required to turn paper success into durable resilience.
+    content_tr: Yalnızca aylık finansal kapanış raporlarına güvenmek yönetimi dikiz aynasından araç kullanmaya zorlar. Her
+      pazartesi sabahı güncellenen hareketli on üç haftalık bir nakit akışı tahmini işletmek, maaş ödemeleri gelmeden haftalar
+      önce geçici nakit çukurlarını ortaya çıkarır. Erken görünürlük sayesinde hazine sorumluları tedarikçi ödemelerini kademelendirebilir,
+      rotatif kredi hatlarını ihtiyatlı kullanabilir veya isteğe bağlı ekipman alımlarını sorunsuz erteleyebilir. Disiplinli
+      nakit yönetimi, kârlı firmalara kağıt üzerindeki başarıyı kalıcı dayanıklılığa dönüştürmek için gereken manevra alanını
+      sağlar.
+  vocabulary_annotations:
+  - word: liquidity
+    context_definition_en: availability of cleared cash to meet short-term obligations
+    context_meaning_tr: likidite, nakit erişilebilirliği
+  - word: receivable
+    context_definition_en: invoiced amounts owed by customers awaiting payment settlement
+    context_meaning_tr: alacak
+  - word: mobilization
+    context_definition_en: upfront kickoff work funded by an initial project deposit
+    context_meaning_tr: başlangıç hazırlığı
+  - word: revolving
+    context_definition_en: flexible credit capacity that can be drawn and repaid repeatedly
+    context_meaning_tr: rotatif, yenilenebilir
+  comprehension_questions:
+  - id: q_reading_b2_cash-flow-vs-profit-margins_01
+    question_en: What creates the gap between strong paper profit and an empty bank account?
+    options:
+    - Banks freeze corporate accounts whenever margins rise
+    - Gross margin excludes all software delivery expenses
+    - Staff payroll taxes vanish during growth quarters
+    - Accounting recognizes revenue upon invoicing before cash settles
+    correct_answer: Accounting recognizes revenue upon invoicing before cash settles
+    explanation_en: Paragraph 1 distinguishes accrual accounting profit from actual timing of bank cash inflows and outflows.
+    explanation_tr: 1. paragraf tahakkuk esaslı kâr ile fiili nakit giriş-çıkış zamanlaması arasındaki farkı açıklar.
+  - id: q_reading_b2_cash-flow-vs-profit-margins_02
+    question_en: Why can rapid enterprise sales actually drain reserves faster?
+    options:
+    - Customer acquisitions eliminate gross profit completely
+    - Payroll goes out biweekly while client invoices pay months later
+    - Suppliers double material prices only during holidays
+    - Enterprise contracts legally forbid collecting upfront fees
+    correct_answer: Payroll goes out biweekly while client invoices pay months later
+    explanation_en: Paragraph 2 highlights paying labor upfront while corporate buyers enforce net-60 or net-90 schedules.
+    explanation_tr: 2. paragraf maaşların peşin ödenirken kurumsal müşterilerin 60-90 gün vadeli ödeme yapmasını vurgular.
+  - id: q_reading_b2_cash-flow-vs-profit-margins_03
+    question_en: What commonly delays overdue enterprise invoices according to Paragraph 3?
+    options:
+    - Quarterly software subscription cancellations
+    - Disagreements over conference travel budgets
+    - Administrative snags such as a missing purchase order number
+    - Intentional refusal to honor signed legal services
+    correct_answer: Administrative snags such as a missing purchase order number
+    explanation_en: Paragraph 3 notes overdue corporate invoices often wait on missing PO numbers rather than insolvency.
+    explanation_tr: 3. paragraf gecikmiş kurumsal faturaların çoğu zaman finansal sıkıntıdan değil eksik sipariş numarasından
+      beklediğini söyler.
+  - id: q_reading_b2_cash-flow-vs-profit-margins_04
+    question_en: Which contract tactic smooths cash inflows on long projects?
+    options:
+    - Replacing weekly forecasts with annual close spreadsheets
+    - Waiting until final handover to send one single bill
+    - Offering unlimited net-ninety terms on small orders
+    - Splitting pricing into kickoff deposits and stage milestones
+    correct_answer: Splitting pricing into kickoff deposits and stage milestones
+    explanation_en: Paragraph 3 recommends upfront mobilization deposits paired with stage payments aligned with labor.
+    explanation_tr: 3. paragraf başlangıç peşinatları ve aşamalı ödemeler kullanılmasını önerir.
+  - id: q_reading_b2_cash-flow-vs-profit-margins_05
+    question_en: Why maintain a rolling thirteen-week cash forecast updated weekly?
+    options:
+    - To spot short-term cash dips weeks before payroll arrives
+    - To avoid paying upstream software vendors permanently
+    - To force clients into shorter legal contract reviews
+    - To eliminate the need for monthly profit reporting
+    correct_answer: To spot short-term cash dips weeks before payroll arrives
+    explanation_en: Paragraph 4 states a rolling 13-week view reveals cash troughs early enough to adjust settlements or credit.
+    explanation_tr: 4. paragraf hareketli 13 haftalık tahminin nakit çukurlarını maaşlardan haftalar önce görünür kıldığını
+      anlatır.
+  topic_tags:
+  - cash-flow
+  - liquidity
+  - working-capital
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b2.on-call-sustainability-metrics
+  title: Measuring On-Call Load Before Engineer Burnout Starts
+  cefr_level: B2
+  category: engineering_culture
+  summary_en: Why tracking night-time alert frequency, false positives, and interruption recovery preserves reliability without
+    exhausting engineering teams.
+  summary_tr: Gece alarmlarının sıklığını, yanlış pozitifleri ve kesinti sonrası toparlanma süresini izlemenin mühendisleri
+    tüketmeden sistem güvenilirliğini nasıl koruduğunu anlatır.
+  word_count: 261
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Beyond Simple Uptime Percentages
+    content_en: Executive dashboards celebrate ninety-nine-point-nine-five percent service availability as proof of engineering
+      excellence. Beneath glowing green service charts, however, silent attrition frequently takes root inside on-call rotations.
+      When uptime relies on heroic two-in-the-morning database restarts by exhausted specialists, impressive customer metrics
+      mask severe organizational fragility. Measuring operational health accurately demands tracking human sustainability
+      alongside machine availability.
+    content_tr: Yönetici panoları yüzde doksan dokuz virgül doksan beşlik hizmet sürekliliğini mühendislik mükemmelliğinin
+      kanıtı olarak kutlar. Ancak parlayan yeşil grafiklerin altında, nöbet rotasyonları içinde çoğu zaman sessiz bir yıpranma
+      kök salar. Çalışma süresi, bitkin uzmanların sabaha karşı saat ikide yaptığı kahramanca veritabanı yeniden başlatmalarına
+      dayanıyorsa, etkileyici müşteri metrikleri ciddi kurumsal kırılganlığı gizler. Operasyonel sağlığı doğru ölçmek, makine
+      sürekliliğiyle birlikte insan sürdürülebilirliğini de izlemeyi gerektirir.
+  - paragraph_index: 2
+    title: Distinguishing Actionable Pages From Chronically Noisy Alerts
+    content_en: Alert fatigue emerges rapidly when monitoring thresholds trigger urgent phone pages for transient network
+      blips that clear themselves within two minutes. If more than thirty percent of pages require no human intervention upon
+      waking an engineer, trust in telemetry collapses quickly. Experienced reliability groups audit monthly alert precision
+      rigorously, demoting non-urgent warnings into daytime Slack digests. Protecting sleep ensures engineers respond sharply
+      during genuine payment or data crises.
+    content_tr: İzleme eşikleri iki dakika içinde kendiliğinden düzelen geçici ağ dalgalanmaları için acil telefon çağrısı
+      başlattığında alarm yorgunluğu hızla ortaya çıkar. Bir mühendisi uyandıran çağrıların yüzde otuzundan fazlası hiçbir
+      insan müdahalesi gerektirmiyorsa telemetriye duyulan güven çabucak çöker. Deneyimli güvenilirlik ekipleri aylık alarm
+      kesinliğini titizlikle denetler; acil olmayan uyarıları gündüz Slack özetlerine indirir. Uykuyu korumak mühendislerin
+      gerçek ödeme veya veri krizlerinde keskin yanıt vermesini sağlar.
+  - paragraph_index: 3
+    title: Measuring Uninterrupted Focus and Sleep Interruptions
+    content_en: Raw page counts fail to reflect true cognitive strain, because three rapid alerts within twenty minutes disrupt
+      life differently than three spaced wakes across a single night. Forward-thinking leads weight off-hours pages significantly
+      heavier than daytime interrupts and limit consecutive shifts cleanly. Even better, teams establish automatic escalation
+      freezes and quiet handover policies granting compensatory recovery hours after brutal midnight incidents. Quantifying
+      cognitive interruptions elevates reliability work from invisible duty to trackable engineering capacity.
+    content_tr: Ham çağrı sayıları gerçek bilişsel yükü yansıtmaz; çünkü yirmi dakika içindeki üç hızlı alarm, aynı geceye
+      yayılan üç ayrı uyanmadan farklı bir yük yaratır. İleri görüşlü liderler mesai dışı çağrıları gündüz kesintilerinden
+      belirgin biçimde daha ağır puanlar ve art arda nöbetleri sınırlar. Daha da iyisi, ekipler zorlu gece yarısı olaylarının
+      ardından telafi dinlenme saatleri tanıyan sessiz devir politikaları uygular. Bilişsel kesintileri sayısallaştırmak nöbet
+      işini görünmez bir görevden ölçülebilir mühendislik kapasitesine taşır.
+  - paragraph_index: 4
+    title: Stopping Feature Delivery When Pain Crosses Thresholds
+    content_en: Metrics only protect engineers when excessive toil triggers tangible priority shifts rather than sympathetic
+      slogans. Many mature product organizations enforce a quarterly toil budget capping repetitive manual incidents per rotation.
+      Whenever alert load breaches agreed limits, squads pause roadmap feature launches temporarily to harden flaky jobs and
+      automate tedious diagnostics. Linking sustainability signals directly to roadmap pacing turns reliability into a shared
+      product value.
+    content_tr: Metrikler ancak aşırı angarya boş sempatik sloganlar yerine somut öncelik değişikliklerini tetiklediğinde
+      mühendisleri korur. Birçok olgun ürün kuruluşu rotasyon başına tekrarlayan manuel olayları sınırlayan üç aylık bir angarya
+      bütçesi uygular. Alarm yükü belirlenen sınırları aştığında ekipler, kararsız işleri sağlamlaştırmak ve yorucu tanıları
+      otomatikleştirmek için yol haritası özellik lansmanlarını geçici olarak duraklatır. Sürdürülebilirlik sinyallerini doğrudan
+      ürün hızıyla ilişkilendirmek güvenilirliği ortak bir ürün değerine dönüştürür.
+  vocabulary_annotations:
+  - word: attrition
+    context_definition_en: gradual loss of skilled employees due to stress or exhaustion
+    context_meaning_tr: yıpranma ve çalışan kaybı
+  - word: telemetry
+    context_definition_en: automated measurements collected remotely from live software
+    context_meaning_tr: telemetri, sistem izleme verisi
+  - word: toil
+    context_definition_en: repetitive manual operational work lacking lasting engineering value
+    context_meaning_tr: tekrarlayan manuel angarya
+  - word: fragility
+    context_definition_en: vulnerability hidden beneath superficially strong performance metrics
+    context_meaning_tr: kırılganlık
+  comprehension_questions:
+  - id: q_reading_b2_on-call-sustainability-metrics_01
+    question_en: What problem can high customer uptime numbers conceal inside engineering teams?
+    options:
+    - Zero monitoring tools being installed on production servers
+    - Complete absence of weekend customer traffic
+    - Refusal by executives to track quarterly profit
+    - Reliance on exhausting late-night manual fixes by burned-out staff
+    correct_answer: Reliance on exhausting late-night manual fixes by burned-out staff
+    explanation_en: Paragraph 1 points out high uptime maintained via heroic 2 AM restarts hides severe organizational fragility.
+    explanation_tr: 1. paragraf sabaha karşı yapılan manuel müdahalelerle sağlanan yüksek erişilebilirliğin kurumsal kırılganlığı
+      gizlediğini söyler.
+  - id: q_reading_b2_on-call-sustainability-metrics_02
+    question_en: When does alert fatigue rapidly undermine monitoring trust?
+    options:
+    - When dashboards display green availability badges
+    - When databases restart smoothly during lunch
+    - When over 30% of wake-up pages self-resolve without action
+    - When daytime summaries arrive in Slack channels
+    correct_answer: When over 30% of wake-up pages self-resolve without action
+    explanation_en: Paragraph 2 notes alert trust collapses when over thirty percent of pages need no human intervention.
+    explanation_tr: 2. paragraf çağrıların yüzde otuzundan fazlasının müdahale gerektirmemesi halinde güvenin çöktüğünü anlatır.
+  - id: q_reading_b2_on-call-sustainability-metrics_03
+    question_en: Why measure weighted off-hours interruptions instead of raw alert totals?
+    options:
+    - Phone carriers charge more per alert after midnight
+    - Raw totals automatically delete recovery days
+    - Nighttime sleep disruptions create far steeper cognitive strain
+    - Daytime tickets never require engineering tools
+    correct_answer: Nighttime sleep disruptions create far steeper cognitive strain
+    explanation_en: Paragraph 3 contrasts grouped alerts with spaced nighttime wakes and weights off-hours interrupts heavier.
+    explanation_tr: 3. paragraf mesai dışı uyku kesintilerinin çok daha ağır bilişsel yorgunluk yarattığını vurgular.
+  - id: q_reading_b2_on-call-sustainability-metrics_04
+    question_en: What happens when a mature team's on-call toil breaches its agreed threshold?
+    options:
+    - Customer support stops answering daytime inquiries
+    - Feature launches pause temporarily so reliability work ships first
+    - Engineers switch from rotation calendars to solo shifts
+    - All alerting rules are muted until next year
+    correct_answer: Feature launches pause temporarily so reliability work ships first
+    explanation_en: Paragraph 4 describes pausing feature launches to harden flaky jobs and automate diagnostics.
+    explanation_tr: 4. paragraf sınır aşıldığında ekip güvenilirliği artırmak için özellik lansmanlarını geçici duraklattığını
+      belirtir.
+  - id: q_reading_b2_on-call-sustainability-metrics_05
+    question_en: How should teams handle non-urgent warnings that still provide useful context?
+    options:
+    - Convert every minor metric into a weekend task
+    - Route them to daytime channel digests instead of waking responders
+    - Send urgent SMS alerts to three executives
+    - Delete those logs immediately without archiving
+    correct_answer: Route them to daytime channel digests instead of waking responders
+    explanation_en: Paragraph 2 advises demoting non-urgent warnings into daytime Slack digests.
+    explanation_tr: 2. paragraf acil olmayan uyarıların gündüz Slack özetlerine indirilmesini önerir.
+  topic_tags:
+  - on-call
+  - sre
+  - burnout-prevention
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b2.cross-functional-hiring-panels
+  title: Structuring Unbiased Cross-Functional Hiring Loops
+  cefr_level: B2
+  category: leadership_and_management
+  summary_en: How standardized interview scorecards, separate domain lenses, and silent written feedback prevent groupthink
+    in cross-functional hiring.
+  summary_tr: Standart değerlendirme formlarının, ayrıştırılmış uzmanlık odaklarının ve sessiz yazılı geri bildirimin çok
+    disiplinli işe alımda grup düşüncesini nasıl önlediğini anlatır.
+  word_count: 275
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: Why Ad-Hoc Conversations Produce Inconsistent Decisions
+    content_en: When teams scale quickly, interviews often devolve into pleasant unstructured chats centered on favorite hobby
+      projects or shared former employers. Different interviewers ask completely unrelated questions depending on their mood
+      that Tuesday afternoon, making fair comparison across five candidates nearly impossible. Worse still, charismatic storytellers
+      who talk smoothly routinely outperform thoughtful candidates whose strengths require targeted probing. Replacing improvised
+      conversations with a structured rubric anchors hiring decisions in observable job evidence.
+    content_tr: Ekipler hızla büyüdüğünde mülakatlar sıklıkla favori hobi projelerine veya ortak eski işverenlere odaklanan
+      hoş ama yapılandırılmamış sohbetlere dönüşür. Farklı görüşmeciler o salı öğleden sonraki ruh hallerine göre tamamen
+      alakasız sorular sorar ve bu da beş aday arasında adil karşılaştırmayı neredeyse imkansız kılar. Daha kötüsü, akıcı
+      konuşan karizmatik anlatıcılar, güçleri hedefli sorularla ortaya çıkan derinlikli adayları sürekli geride bırakır. Doğaçlama
+      sohbetleri yapılandırılmış bir değerlendirme ölçeğiyle değiştirmek kararları gözlemlenebilir iş kanıtlarına oturtur.
+  - paragraph_index: 2
+    title: Partitioning Signals Across Functional Perspectives
+    content_en: 'A cross-functional hiring panel brings engineering, product, and design stakeholders into the same evaluation
+      loop, yet overlapping prompts waste everyone''s time. Asking a candidate to narrate the same career crisis in three
+      consecutive sessions creates fatigue without adding diagnostic clarity. Smart hiring managers partition competencies
+      deliberately before invitations go out: one interviewer probes technical architecture tradeoffs, another explores customer
+      ambiguity, and a peer tests collaborative conflict resolution. Focused ownership ensures full coverage while respecting
+      candidate stamina.'
+    content_tr: 'Çok disiplinli bir işe alım paneli mühendislik, ürün ve tasarım paydaşlarını aynı değerlendirme döngüsüne
+      getirir; ancak tekrarlayan sorular herkesin zamanını boşa harcar. Bir adaydan aynı kariyer krizini üç ardışık oturumda
+      anlatmasını istemek tanı netliği eklemeden yorgunluk yaratır. Akıllı yöneticiler davetler gitmeden önce yetkinlikleri
+      bilinçli biçimde paylaştırır: biri teknik mimari ödünleşimlerini, diğeri müşteri belirsizliğini yönetmeyi, bir başka
+      uzman ise ekip içi çatışma çözümünü inceler. Odaklı sahiplik hem tam kapsam sağlar hem adayın enerjisine saygı duyar.'
+  - paragraph_index: 3
+    title: Independent Written Scorecards Before Group Debrief
+    content_en: Bias creeps in subtly the moment interviewers compare hallway impressions before recording their own written
+      assessment. If a respected director announces enthusiasm early, junior panelists frequently soften critical concerns
+      to stay agreeable. Requiring every interviewer to submit timestamped behavioral notes and a firm score independently
+      before unlocking teammates' entries protects true signal diversity. Quiet disagreements written down beforehand fuel
+      sharp, evidence-led debriefs instead of loud hierarchy persuasion.
+    content_tr: Görüşmeciler kendi yazılı değerlendirmelerini kaydetmeden koridorda izlenim paylaştığı anda önyargı sinsi
+      biçimde devreye girer. Saygın bir direktör erken heyecan belirtirse, daha kıdemsiz panelistler uyumlu görünmek için
+      kritik endişelerini sıklıkla yumuşatır. Ekip arkadaşlarının notlarını görmeden önce her görüşmeciden bağımsız olarak
+      zaman damgalı davranışsal notlar ve net bir puan girmesini istemek gerçek sinyal çeşitliliğini korur. Önceden yazılmış
+      sessiz fikir ayrılıkları yüksek sesli hiyerarşi iknası yerine kanıta dayalı keskin tartışmaları besler.
+  - paragraph_index: 4
+    title: Calibrating Signals Around Role Priorities
+    content_en: Not every strong generalist matches the immediate bottlenecks of a specific quarterly squad. During final
+      calibration, debrief facilitators remind panelists which capabilities are non-negotiable today versus skills easily
+      coached during onboarding. Distinguishing coachable polish from foundational judgment keeps teams from rejecting outstanding
+      builders over unfamiliar domain jargon. Clear post-loop documentation also helps future cohorts refine prompts that
+      consistently produce ambiguous answers.
+    content_tr: Her güçlü genel uzman belirli bir ekibin o çeyrekteki acil darboğazlarıyla birebir örtüşmez. Son kalibrasyon
+      sırasında kolaylaştırıcılar panelistlere bugün hangi yetkinliklerin vazgeçilmez olduğunu, hangilerinin ise uyum sürecinde
+      kolayca geliştirilebileceğini hatırlatır. Öğretilebilir incelikleri temel muhakeme gücünden ayırmak, ekiplerin yabancı
+      alan jargonu yüzünden mükemmel kurucuları elemesini önler. Net döngü sonrası dokümantasyon ayrıca sürekli belirsiz yanıtlar
+      üreten soruların iyileştirilmesine yardımcı olur.
+  vocabulary_annotations:
+  - word: rubric
+    context_definition_en: a pre-defined evaluation guide scoring specific candidate criteria
+    context_meaning_tr: değerlendirme ölçeği, rubrik
+  - word: partition
+    context_definition_en: to divide responsibilities clearly so panels avoid repeating prompts
+    context_meaning_tr: bölüştürmek, paylaştırmak
+  - word: unstructured
+    context_definition_en: improvised interviews lacking standardized evaluation prompts
+    context_meaning_tr: yapılandırılmamış
+  - word: coachable
+    context_definition_en: skills or gaps that can be learned smoothly after joining
+    context_meaning_tr: eğitimle geliştirilebilir
+  comprehension_questions:
+  - id: q_reading_b2_cross-functional-hiring-panels_01
+    question_en: Why do unstructured hiring conversations often misjudge candidate quality?
+    options:
+    - Qualified applicants avoid answering Tuesday emails
+    - Structured rubrics take longer than full project trials
+    - Designers refuse to ask behavioral questions
+    - Smooth storytellers outshine strong candidates when prompts vary randomly
+    correct_answer: Smooth storytellers outshine strong candidates when prompts vary randomly
+    explanation_en: Paragraph 1 explains improvised chats reward charismatic storytellers while random questions break fair
+      comparison.
+    explanation_tr: 1. paragraf doğaçlama sohbetlerin karizmatik anlatıcıları ödüllendirip adil karşılaştırmayı bozduğunu
+      söyler.
+  - id: q_reading_b2_cross-functional-hiring-panels_02
+    question_en: How should hiring managers organize competencies across a multi-disciplinary panel?
+    options:
+    - Combine engineering and product questions into one six-hour call
+    - Let candidates pick random topics on arrival
+    - Assign distinct focus areas to each interviewer before sessions begin
+    - Ask all panelists to test identical technical trivia
+    correct_answer: Assign distinct focus areas to each interviewer before sessions begin
+    explanation_en: Paragraph 2 recommends partitioning focus areas intentionally (e.g., architecture, ambiguity, collaboration)
+      upfront.
+    explanation_tr: 2. paragraf yetkinliklerin davetler gitmeden önce görüşmeciler arasında bilinçli biçimde bölüştürülmesini
+      önerir.
+  - id: q_reading_b2_cross-functional-hiring-panels_03
+    question_en: Why require interviewers to file scorecards before reading peers' notes?
+    options:
+    - To eliminate reference checks after offers go out
+    - To lower software licensing bills on applicant trackers
+    - To keep senior opinions from swaying junior panelists silently
+    - To prevent managers from attending debrief calls
+    correct_answer: To keep senior opinions from swaying junior panelists silently
+    explanation_en: Paragraph 3 notes independent hidden submission stops respected directors' early enthusiasm from biasing
+      peers.
+    explanation_tr: 3. paragraf bağımsız girişin kıdemli yöneticilerin erken görüşlerinin diğerlerini etkilemesini önlediğini
+      belirtir.
+  - id: q_reading_b2_cross-functional-hiring-panels_04
+    question_en: What mistake can teams avoid by distinguishing core judgment from coachable polish?
+    options:
+    - Skipping technical assessments completely
+    - Rejecting capable builders merely over unfamiliar industry jargon
+    - Replacing onboarding mentors with video libraries
+    - Hiring candidates without checking conflict skills
+    correct_answer: Rejecting capable builders merely over unfamiliar industry jargon
+    explanation_en: Paragraph 4 warns teams not to reject outstanding builders just because of unfamiliar domain vocabulary.
+    explanation_tr: 4. paragraf ekiplerin yabancı alan jargonu nedeniyle güçlü adayları elemekten kaçınması gerektiğini anlatır.
+  - id: q_reading_b2_cross-functional-hiring-panels_05
+    question_en: How does saving debrief documentation benefit subsequent hiring cycles?
+    options:
+    - It identifies interview questions that fail to surface clear evidence
+    - It reduces required onboarding training to zero
+    - It hides weak spots from external design teams
+    - It automates salary negotiations without recruiters
+    correct_answer: It identifies interview questions that fail to surface clear evidence
+    explanation_en: Paragraph 4 says clear post-loop documentation helps refine prompts producing vague answers.
+    explanation_tr: 4. paragraf döngü sonrası kayıtların belirsiz yanıtlar üreten soruları iyileştirmeye yaradığını belirtir.
+  topic_tags:
+  - hiring
+  - interviews
+  - calibration
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b2.customer-churn-cohort-signals
+  title: Spotting Early Churn Signals Inside Cohort Reports
+  cefr_level: B2
+  category: business_strategy
+  summary_en: Why aggregate retention averages disguise worsening onboarding health and how cohort tables isolate root causes
+    early.
+  summary_tr: Toplam elde tutma ortalamalarının kötüleşen uyum sağlama sağlığını nasıl gizlediğini ve kohort tablolarının
+    kök nedenleri nasıl erken izole ettiğini açıklar.
+  word_count: 268
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: How Blended Retention Averages Mislead Leaders
+    content_en: Celebrating a stable ninety-five percent overall retention rate often blinds product executives to silent
+      deterioration inside recent customer arrivals. Because thousands of loyal two-year accounts dominate the denominator,
+      a severe twenty percent drop among customers who joined last month barely shifts the headline average by a fraction
+      of a point. By the time blended churn rises noticeably, teams have already lost months of corrective lead time and wasted
+      acquisition spend.
+    content_tr: Genel yüzde doksan beşlik sabit bir elde tutma oranını kutlamak, ürün yöneticilerini çoğu zaman yeni katılan
+      müşterilerdeki sessiz bozulmaya karşı kör eder. Binlerce sadık iki yıllık hesap paydada baskın olduğu için, geçen ay
+      katılan müşteriler arasındaki yüzde yirmilik sert bir düşüş manşet ortalamasını bir puanın onda biri kadar bile oynatmaz.
+      Karma müşteri kaybı belirginleştiğinde ekipler çoktan aylarca süren düzeltme süresini ve müşteri kazanım bütçesini kaybetmiş
+      olur.
+  - paragraph_index: 2
+    title: Grouping Customers by Signup Window and Segment
+    content_en: Cohort analysis cuts through averaged noise by grouping users according to the exact week or month they began
+      using the product and tracking their behavior separately across time. Reading horizontally across one row reveals how
+      quickly January signups settle into sticky habits compared to April signups. Splitting cohorts further by acquisition
+      channel or company size exposes critical contrasts—for instance, organic referrals retaining strongly while paid social
+      leads abandon setup before day ten.
+    content_tr: Kohort analizi, kullanıcıları ürünü kullanmaya başladıkları hafta veya aya göre gruplayıp zaman içindeki davranışlarını
+      ayrı ayrı izleyerek ortalama gürültüsünü keser. Tek bir satırı yatay okumak, Ocak kayıtlarının Nisan kayıtlarına kıyasla
+      kalıcı alışkanlıklara ne kadar hızlı oturduğunu gösterir. Kohortları edinim kanalına veya şirket ölçeğine göre daha
+      da bölmek çarpıcı farkları ortaya koyar; örneğin organik tavsiyeler yüksek kalıcılık gösterirken ücretli reklamların
+      onuncu günden önce kurulumu terk etmesi gibi.
+  - paragraph_index: 3
+    title: Isolating Pre-Cancellation Activation Clues
+    content_en: Customers rarely cancel subscriptions abruptly; rather, disengagement leaves predictable digital footprints
+      weeks prior to billing termination. Dropping weekly team logins, shrinking file uploads, or failure to invite a second
+      colleague within forty-eight hours act as reliable early warning alarms. Correlating retained cohorts against churned
+      groups uncovers concrete activation milestones—such as completing two real workflows—that separate durable accounts
+      from fragile trial experiments.
+    content_tr: Müşteriler abonelikleri nadiren aniden iptal eder; kopuş genellikle fatura sonlanmasından haftalar önce öngörülebilir
+      dijital izler bırakır. Azalan haftalık ekip girişleri, düşen dosya yüklemeleri veya kırk sekiz saat içinde ikinci bir
+      iş arkadaşının davet edilmemesi güvenilir erken uyarı alarmlarıdır. Kalan kohortları kaybedilen gruplarla ilişkilendirmek,
+      kalıcı hesapları kırılgan denemelerden ayıran iki gerçek iş akışı tamamlama gibi somut aktivasyon eşiklerini ortaya
+      çıkarır.
+  - paragraph_index: 4
+    title: Running Targeted Experiments on Weak Windows
+    content_en: Once cohort charts pinpoint exactly which day retention curves flatten or fall, product managers can aim surgical
+      improvements rather than redesigning the entire application blindly. If week-two drop-off follows an overwhelming empty
+      dashboard, interactive starter templates or guided setup checklists can be tested immediately against subsequent signup
+      cohorts. Comparing each new monthly row visibly proves whether changes healed onboarding or merely shifted friction
+      slightly downstream.
+    content_tr: Kohort grafikleri elde tutma eğrisinin tam olarak hangi gün düzleştiğini veya düştüğünü işaret ettiğinde,
+      ürün yöneticileri tüm uygulamayı körlemesine yeniden tasarlamak yerine cerrahi iyileştirmeler yapabilir. İkinci hafta
+      kopuşu bunaltıcı boş bir panelden sonra geliyorsa, etkileşimli başlangıç şablonları veya rehberli kurulum listeleri
+      bir sonraki kayıt kohortlarında hemen test edilebilir. Her yeni aylık satırı karşılaştırmak değişikliklerin gerçekten
+      uyumu iyileştirip iyileştirmediğini görünür biçimde kanıtlar.
+  vocabulary_annotations:
+  - word: cohort
+    context_definition_en: a group of users tracked together by shared signup date
+    context_meaning_tr: kohort, aynı dönem grubu
+  - word: denominator
+    context_definition_en: the total base of existing customers dilution hides drops inside
+    context_meaning_tr: payda
+  - word: activation
+    context_definition_en: early milestone when new users experience real core product value
+    context_meaning_tr: aktivasyon, ilk değer kazanımı
+  - word: surgical
+    context_definition_en: precisely targeted toward one specific bottleneck rather than broad changes
+    context_meaning_tr: cerrahi, nokta atışı
+  comprehension_questions:
+  - id: q_reading_b2_customer-churn-cohort-signals_01
+    question_en: Why do aggregate retention numbers fail to catch early onboarding problems?
+    options:
+    - Large numbers of older loyal accounts dilute recent losses
+    - Reporting tools ignore enterprise renewals by default
+    - New customers never affect revenue forecasts
+    - Weekly churn drops automatically in April
+    correct_answer: Large numbers of older loyal accounts dilute recent losses
+    explanation_en: Paragraph 1 notes thousands of loyal two-year accounts dominate the denominator, masking fresh cohort
+      drops.
+    explanation_tr: 1. paragraf eski sadık hesapların paydadaki ağırlığının yeni dönem düşüşlerini gizlediğini açıklar.
+  - id: q_reading_b2_customer-churn-cohort-signals_02
+    question_en: What does splitting cohorts by acquisition channel commonly reveal?
+    options:
+    - Why bank wire transfers take ninety days
+    - Whether organic users retain better than paid campaign leads
+    - How much rent headquarters paid last month
+    - Which engineers wrote legacy server code
+    correct_answer: Whether organic users retain better than paid campaign leads
+    explanation_en: Paragraph 2 illustrates splitting by channel can show organic referrals retaining far better than paid
+      social leads.
+    explanation_tr: 2. paragraf kanal ayrımının organik tavsiyelerle ücretli kampanyalar arasındaki kalıcılık farkını gösterdiğini
+      belirtir.
+  - id: q_reading_b2_customer-churn-cohort-signals_03
+    question_en: Which behavior often signals a fragile trial days before cancellation?
+    options:
+    - Failing to invite a colleague or complete core workflows
+    - Switching billing from monthly to annual terms
+    - Uploading extra compliance audit logs
+    - Changing workspace dark theme settings
+    correct_answer: Failing to invite a colleague or complete core workflows
+    explanation_en: Paragraph 3 identifies falling logins, shrinking uploads, and failing to invite a teammate within 48 hours.
+    explanation_tr: 3. paragraf azalan girişler ve 48 saat içinde ekip arkadaşı davet etmemenin erken uyarı olduğunu söyler.
+  - id: q_reading_b2_customer-churn-cohort-signals_04
+    question_en: Why trace retention horizontally along each signup row?
+    options:
+    - To judge whether recent changes fixed drop-off for newer arrivals
+    - To hide high acquisition expenses from marketing
+    - To calculate individual salesperson bonuses
+    - To combine every customer since launch into one number
+    correct_answer: To judge whether recent changes fixed drop-off for newer arrivals
+    explanation_en: Paragraphs 2 and 4 explain tracking rows chronologically proves whether newer cohorts stabilize after
+      UX tweaks.
+    explanation_tr: 2. ve 4. paragraflar satırları izlemenin yeni kohortlardaki iyileşmeyi kanıtladığını anlatır.
+  - id: q_reading_b2_customer-churn-cohort-signals_05
+    question_en: What improvement fits a week-two drop following an empty dashboard?
+    options:
+    - Raising entry tier contract prices
+    - Deleting customer history every fourteen days
+    - Starter templates and guided onboarding checklists
+    - Requiring sixty-day vendor review panels
+    correct_answer: Starter templates and guided onboarding checklists
+    explanation_en: Paragraph 4 gives starter templates or guided setup checklists as targeted fixes for empty-dashboard stalls.
+    explanation_tr: 4. paragraf boş panel kaynaklı düşüş için başlangıç şablonları ve rehberli kurulum listeleri önerir.
+  topic_tags:
+  - retention
+  - cohorts
+  - analytics
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: reading.b2.writing-decision-memos-for-peers
+  title: Replacing Status Calls With Concise Decision Memos
+  cefr_level: B2
+  category: workplace_communication
+  summary_en: How structured pre-read decision memos replace sprawling calendar invites with sharper thinking and faster distributed
+    alignment.
+  summary_tr: Yapılandırılmış ön okuma karar notlarının dağınık toplantı davetlerinin yerini alarak nasıl daha net düşünme
+    ve daha hızlı dağıtık uyum sağladığını anlatır.
+  word_count: 302
+  estimated_reading_minutes: 2
+  paragraphs:
+  - paragraph_index: 1
+    title: The Hidden Cost of Calendar Defaultism
+    content_en: When a cross-team initiative stalls over unclear scope, the instinctive reflex in many offices is booking
+      a sixty-minute video call with twelve colleagues. Because participants arrive without shared context, the first twenty
+      minutes vanish into uneven verbal summaries while quieter specialists hesitate to interrupt dominant speakers. Even
+      worse, across distributed time zones, waiting three days for an open calendar slot slows straightforward product decisions
+      unnecessarily. Writing a disciplined one-page memo before scheduling anything forces authors to untangle muddy logic
+      beforehand.
+    content_tr: Ekipler arası bir girişim belirsiz kapsam nedeniyle duraksadığında, birçok ofisteki içgüdüsel tepki on iki
+      meslektaşla altmış dakikalık bir görüntülü toplantı koymaktır. Katılımcılar ortak bir bağlam olmadan geldiği için ilk
+      yirmi dakika düzensiz sözlü özetlerle harcanırken daha sessiz uzmanlar baskın konuşmacıların sözünü kesmeye çekinir.
+      Daha da kötüsü, dağıtık saat dilimlerinde boş bir takvim aralığı için üç gün beklemek basit ürün kararlarını gereksiz
+      yere yavaşlatır. Herhangi bir şey planlamadan önce disiplinli bir tek sayfalık not yazmak yazarları bulanık mantığı
+      önceden çözmeye zorlar.
+  - paragraph_index: 2
+    title: Anatomy of a High-Signal One-Pager
+    content_en: Effective decision memos do not imitate sprawling academic essays; they respect busy readers by front-loading
+      essential context. An opening paragraph defines the exact decision required, names the single accountable decider, and
+      sets a clear feedback deadline. Subsequent sections weigh three viable options transparently, comparing implementation
+      cost, customer risk, and reversible trade-offs rather than stacking evidence toward one disguised favorite. Closing
+      explicitly with a clear recommendation invites rapid, focused agreement or pointed challenge.
+    content_tr: Etkili karar notları dağınık akademik makaleleri taklit etmez; meşgul okuyuculara temel bağlamı en başa koyarak
+      saygı gösterir. Açılış paragrafı gereken kesin kararı tanımlar, tek sorumlu karar vericinin adını yazar ve net bir geri
+      bildirim son tarihi belirler. Sonraki bölümler gizlenmiş tek bir favoriye kanıt yığmak yerine üç uygulanabilir seçeneği
+      şeffaf biçimde tartar; uygulama maliyetini, müşteri riskini ve geri döndürülebilir ödünleşimleri karşılaştırır. Net
+      bir öneriyle bitirmek hızlı uzlaşma veya odaklı itiraz çağrısı yapar.
+  - paragraph_index: 3
+    title: Commenting Async Before Live Debate
+    content_en: Publishing the memo twenty-four hours ahead turns review from a live performance test into thoughtful asynchronous
+      reading. Engineers in Istanbul and designers in Lisbon can inspect linked cost tables quietly during their peak focus
+      windows and leave inline questions where trade-offs look fragile. Frequently, eighty percent of misunderstandings resolve
+      cleanly inside margin threads before anyone ever opens a microphone. Should live discussion still remain essential,
+      the meeting runs in half the time because attendees step directly into the two remaining unresolved disagreements.
+    content_tr: Notu yirmi dört saat önceden yayımlamak incelemeyi canlı bir performans sınavından düşünceli bir eşzamansız
+      okumaya dönüştürür. İstanbul'daki mühendisler ve Lizbon'daki tasarımcılar bağlantılı maliyet tablolarını en odaklı saatlerinde
+      sakince inceleyip ödünleşimlerin zayıf göründüğü yerlere satır içi sorular bırakabilir. Çoğu zaman yanlış anlaşılmaların
+      yüzde sekseni kimse mikrofonunu açmadan kenar notu dizilerinde temizce çözülür. Canlı tartışma hâlâ gerekliyse, katılımcılar
+      doğrudan çözülememiş kalan iki anlaşmazlığa girdiği için toplantı yarı sürede tamamlanır.
+  - paragraph_index: 4
+    title: Preserving Rationale for Future Teammates
+    content_en: Verbal agreements fade rapidly from institutional memory, forcing teams six months later to relitigate why
+      an awkward API constraint or billing policy exists. Stored inside an indexed team workspace, a dated decision memo captures
+      rejected alternatives alongside chosen paths. New hires reading that archive immediately grasp why sensible engineers
+      accepted an imperfect interim design rather than tearing down functional infrastructure. Written clarity compounds organizational
+      speed quarter after quarter.
+    content_tr: Sözlü mutabakatlar kurumsal hafızadan hızla silinir ve altı ay sonra ekipleri tuhaf bir API kısıtının veya
+      fatura politikasının neden var olduğunu yeniden tartışmaya zorlar. Dizinlenmiş bir ekip çalışma alanında saklanan tarihli
+      bir karar notu, seçilen yolun yanında reddedilen alternatifleri de kaydeder. Bu arşivi okuyan yeni çalışanlar, sağduyulu
+      mühendislerin çalışan altyapıyı yıkmak yerine neden geçici kusurlu bir tasarımı kabul ettiğini hemen kavrar. Yazılı
+      netlik çeyrekten çeyreğe kurumsal hızı katlayarak artırır.
+  vocabulary_annotations:
+  - word: reflex
+    context_definition_en: an automatic unexamined habit triggered under time pressure
+    context_meaning_tr: içgüdüsel alışkanlık
+  - word: reversible
+    context_definition_en: a choice that can be safely rolled back later at low cost
+    context_meaning_tr: geri döndürülebilir
+  - word: asynchronous
+    context_definition_en: collaborating thoughtfully without requiring everyone online simultaneously
+    context_meaning_tr: eşzamansız, asenkron
+  - word: relitigate
+    context_definition_en: to re-argue past settled choices because original reasoning was lost
+    context_meaning_tr: eski bir kararı yeniden tartışmaya açmak
+  comprehension_questions:
+  - id: q_reading_b2_writing-decision-memos-for-peers_01
+    question_en: What happens during the start of unplanned twelve-person video calls?
+    options:
+    - Accountable deciders read full one-page proposals silently
+    - Every engineering specialist immediately changes time zones
+    - Time is lost giving uneven background summaries while quieter peers hold back
+    - Software links disable inline commenting automatically
+    correct_answer: Time is lost giving uneven background summaries while quieter peers hold back
+    explanation_en: Paragraph 1 points out twenty minutes go to uneven verbal summaries while quieter experts hesitate to
+      interrupt.
+    explanation_tr: 1. paragraf yirmi dakikanın düzensiz sözlü özetlere gittiğini ve daha sessiz uzmanların söz almaya çekindiğini
+      belirtir.
+  - id: q_reading_b2_writing-decision-memos-for-peers_02
+    question_en: What belongs in the opening paragraph of a strong decision memo?
+    options:
+    - The exact choice needed, the final decider, and the comment deadline
+    - Only arguments favoring one pre-selected tool
+    - Anonymous quotes from external customers
+    - A long history of unrelated quarterly budgets
+    correct_answer: The exact choice needed, the final decider, and the comment deadline
+    explanation_en: Paragraph 2 specifies defining the required decision, single decider, and clear feedback deadline right
+      up front.
+    explanation_tr: 2. paragraf giriş paragrafında gereken kararın, tek karar vericinin ve son bildirim tarihinin yazılmasını
+      şart koşar.
+  - id: q_reading_b2_writing-decision-memos-for-peers_03
+    question_en: How do margin comment threads shrink follow-up calls?
+    options:
+    - They remove cost tables before leadership opens files
+    - They force teammates in Lisbon to join midnight calls
+    - Routine questions settle ahead of time so live talks focus on core debates
+    - They prohibit designers from reading engineering options
+    correct_answer: Routine questions settle ahead of time so live talks focus on core debates
+    explanation_en: Paragraph 3 states most confusion clears in inline threads, leaving live calls to tackle just the remaining
+      disagreements.
+    explanation_tr: 3. paragraf yanlış anlaşılmaların çoğunun kenar notlarında çözülüp canlı toplantıyı yalnızca kalan pürüzlere
+      odakladığını anlatır.
+  - id: q_reading_b2_writing-decision-memos-for-peers_04
+    question_en: Why should rejected alternatives stay visible inside archived decision memos?
+    options:
+    - Future teammates understand why the chosen constraints existed
+    - To prove former managers made careless estimates
+    - To lengthen essays for academic publishing
+    - So billing policies can never change later
+    correct_answer: Future teammates understand why the chosen constraints existed
+    explanation_en: Paragraph 4 explains archived rationale stops teams from re-arguing settled constraints months later.
+    explanation_tr: 4. paragraf reddedilen seçenekleri saklamanın altı ay sonra aynı kararların tekrar tartışılmasını önlediğini
+      açıklar.
+  - id: q_reading_b2_writing-decision-memos-for-peers_05
+    question_en: How far before a potential call should a decision memo be shared?
+    options:
+    - Around twenty-four hours ahead
+    - Three weeks after launching the feature
+    - Five minutes after the call begins
+    - Sixty seconds before payroll closes
+    correct_answer: Around twenty-four hours ahead
+    explanation_en: Paragraph 3 notes publishing the memo twenty-four hours ahead enables asynchronous reading across time
+      zones.
+    explanation_tr: 3. paragraf notun yirmi dört saat önceden yayımlanmasının saat dilimleri arası eşzamansız okumaya imkan
+      verdiğini belirtir.
+  topic_tags:
+  - writing
+  - async-work
+  - decision-making
+  related_ids: []
+  status: APPROVED
+  version: 1

@@ -58,7 +58,7 @@ class TestBuildContentDb(unittest.TestCase):
                 cursor.execute("PRAGMA user_version;")
                 user_version = cursor.fetchone()[0]
                 self.assertEqual(user_version, DATABASE_SCHEMA_VERSION)
-                self.assertEqual(user_version, 4)
+                self.assertEqual(user_version, 5)
 
                 # Check integrity
                 cursor.execute("PRAGMA integrity_check;")
@@ -81,6 +81,8 @@ class TestBuildContentDb(unittest.TestCase):
                     ("idx_listening_category", "listening_scenarios"),
                     ("idx_speaking_cefr", "speaking_scenarios"),
                     ("idx_speaking_category", "speaking_scenarios"),
+                    ("idx_chunks_cefr", "chunks"),
+                    ("idx_chunks_category", "chunks"),
                     ("idx_relations_source", "content_relations"),
                     ("idx_relations_target", "content_relations"),
                     ("idx_relations_unique", "content_relations"),
@@ -163,7 +165,7 @@ class TestBuildContentDb(unittest.TestCase):
 
             cursor.execute("PRAGMA user_version;")
             user_version = cursor.fetchone()[0]
-            self.assertEqual(user_version, 4, "Packaged database must have schema version 4")
+            self.assertEqual(user_version, 5, "Packaged database must have schema version 5")
 
             cursor.execute("PRAGMA integrity_check;")
             self.assertEqual(cursor.fetchone()[0], "ok")
@@ -221,7 +223,7 @@ class TestBuildContentDb(unittest.TestCase):
             # Check content_metadata consistency
             cursor.execute("SELECT key, value FROM content_metadata;")
             meta = dict(cursor.fetchall())
-            self.assertEqual(meta.get("schema_version"), "4")
+            self.assertEqual(meta.get("schema_version"), "5")
             self.assertEqual(int(meta.get("vocab_count", -1)), raw_vocab_count)
             self.assertEqual(int(meta.get("relations_count", -1)), raw_relations_count)
             self.assertEqual(int(meta.get("topics_count", -1)), raw_topics_count)

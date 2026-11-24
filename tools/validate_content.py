@@ -23,7 +23,7 @@ import yaml
 
 VALID_CEFR_LEVELS = {"A2", "B1", "B2", "C1", "C2"}
 SEMANTIC_ID_PATTERN = re.compile(
-    r"^(vocab|grammar|exercise|topic|reading|listening|speaking|placement)\.[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*)*$"
+    r"^(vocab|grammar|exercise|topic|reading|listening|speaking|placement|chunk)\.[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+(-[a-z0-9]+)*)*$"
 )
 
 
@@ -68,6 +68,7 @@ class ContentValidator:
         self.reading_items: Dict[str, Dict[str, Any]] = {}
         self.listening_items: Dict[str, Dict[str, Any]] = {}
         self.speaking_items: Dict[str, Dict[str, Any]] = {}
+        self.chunk_items: Dict[str, Dict[str, Any]] = {}
         self.assessment_items: Dict[str, Dict[str, Any]] = {}
         self.topic_items: Dict[str, Dict[str, Any]] = {}
         self.relation_items: List[Dict[str, Any]] = []
@@ -83,6 +84,7 @@ class ContentValidator:
         self._listening_titles: Dict[str, str] = {}
         self._listening_audio_refs: Dict[str, str] = {}
         self._speaking_titles: Dict[str, str] = {}
+        self._chunk_phrases: Dict[str, str] = {}
         self._exercise_target_stems: Dict[Tuple[str, str], str] = {}
         self._assessment_probe_stems: Dict[Tuple[str, str], str] = {}
 
@@ -115,6 +117,18 @@ class ContentValidator:
             except Exception as e:
                 self.errors.append(
                     ContentValidationError(str(path), "", f"Invalid JSON Schema: {e}")
+                )
+
+        chunk_schema_path = self.schema_dir / "chunk.schema.json"
+        if chunk_schema_path.exists():
+            try:
+                with open(chunk_schema_path, "r", encoding="utf-8") as f:
+                    schema_data = json.load(f)
+                    jsonschema.Draft202012Validator.check_schema(schema_data)
+                    self.schemas["chunk"] = schema_data
+            except Exception as e:
+                self.errors.append(
+                    ContentValidationError(str(chunk_schema_path), "", f"Invalid JSON Schema: {e}")
                 )
 
     def _get_validator(self, schema_name: str) -> jsonschema.Draft202012Validator:
@@ -186,6 +200,8 @@ class ContentValidator:
             self._validate_listening_file(file_path, content)
         elif "speaking" in parts or "speaking" in filename:
             self._validate_speaking_file(file_path, content)
+        elif "chunks" in parts or "chunk" in filename:
+            self._validate_chunk_file(file_path, content)
         elif "curriculum" in parts or "relations" in filename:
             self._validate_relations_file(file_path, content)
         elif "assessment" in parts or "placement" in filename:
@@ -739,6 +755,57 @@ class ContentValidator:
                         )
 
                 self.assessment_items[probe_id] = probe
+
+    def _validate_chunk_file(self, file_path: Path, content: Any):
+        if "chunk" not in self.schemas:
+            self.errors.append(
+                ContentValidationError(str(file_path), "", "Schema file not found: chunk.schema.json")
+            )
+            return
+        if not isinstance(content, list):
+            self.errors.append(
+                ContentValidationError(str(file_path), "", "Chunk YAML must contain a top-level list of items")
+            )
+            return
+
+        validator = self._get_validator("chunk")
+        for idx, item in enumerate(content):
+            item_id = item.get("id", f"item_{idx}") if isinstance(item, dict) else f"item_{idx}"
+            errors = list(validator.iter_errors(item))
+            if errors:
+                for err in errors:
+                    loc = ".".join(str(p) for p in err.path) or "root"
+                    self.errors.append(
+                        ContentValidationError(str(file_path), item_id, f"Schema error at [{loc}]: {err.message}")
+                    )
+                continue
+
+            if not self._register_id(item["id"], file_path):
+                continue
+
+            cefr = item.get("cefr_level")
+            if cefr not in VALID_CEFR_LEVELS:
+                self.errors.append(
+                    ContentValidationError(
+                        str(file_path),
+                        item_id,
+                        f"Invalid CEFR level '{cefr}'. Must be one of {sorted(VALID_CEFR_LEVELS)}",
+                    )
+                )
+
+            phrase_key = item.get("chunk_en", "").strip().lower()
+            if phrase_key in self._chunk_phrases:
+                self.errors.append(
+                    ContentValidationError(
+                        str(file_path),
+                        item_id,
+                        f"Duplicate chunk phrase '{phrase_key}': already defined in '{self._chunk_phrases[phrase_key]}'",
+                    )
+                )
+            else:
+                self._chunk_phrases[phrase_key] = item_id
+
+            self.chunk_items[item["id"]] = item
 
     def _validate_speaking_file(self, file_path: Path, content: Any):
         if not isinstance(content, list):

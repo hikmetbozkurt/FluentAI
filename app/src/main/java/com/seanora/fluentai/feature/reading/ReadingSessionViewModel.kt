@@ -65,6 +65,13 @@ class ReadingSessionViewModel @Inject constructor(
 
     fun selectSection(section: ReadingSessionSection) = _uiState.update { it.copy(section = section) }
 
+    fun setMode(mode: ReadingSessionMode) = _uiState.update { it.copy(mode = mode) }
+
+    fun selectQuestion(index: Int) = _uiState.update { state ->
+        val last = (state.article?.comprehensionQuestions?.lastIndex ?: 0).coerceAtLeast(0)
+        state.copy(questionIndex = index.coerceIn(0, last))
+    }
+
     fun previousParagraph() = _uiState.update {
         it.copy(guidedParagraphIndex = (it.guidedParagraphIndex - 1).coerceAtLeast(0))
     }

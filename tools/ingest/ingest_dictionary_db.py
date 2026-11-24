@@ -199,10 +199,13 @@ def load_curriculum_vocab(content_db_path: Path) -> dict[str, dict]:
     return result
 
 
-def build_dictionary_db(output_path: Path, content_db_path: Path) -> None:
-    cefr_map = load_cefr_profiles()
-    ipa_map = load_ipa_dict()
-    wordset_map = load_wordset()
+def build_dictionary_db(output_path: Path, content_db_path: Path, offline_seed: bool = False) -> None:
+    if offline_seed:
+        cefr_map, ipa_map, wordset_map = {}, {}, {}
+    else:
+        cefr_map = load_cefr_profiles()
+        ipa_map = load_ipa_dict()
+        wordset_map = load_wordset()
     curriculum_map = load_curriculum_vocab(content_db_path)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -306,8 +309,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build FluentAI offline dictionary.db from open-license datasets.")
     parser.add_argument("--output", default="app/src/main/assets/dictionary.db")
     parser.add_argument("--content-db", default="app/src/main/assets/content.db")
+    parser.add_argument(
+        "--offline-seed",
+        action="store_true",
+        default=False,
+        help="Build a fast offline seed dictionary.db directly from content.db without network downloads.",
+    )
     args = parser.parse_args()
-    build_dictionary_db(Path(args.output), Path(args.content_db))
+    build_dictionary_db(Path(args.output), Path(args.content_db), offline_seed=args.offline_seed)
 
 
 if __name__ == "__main__":

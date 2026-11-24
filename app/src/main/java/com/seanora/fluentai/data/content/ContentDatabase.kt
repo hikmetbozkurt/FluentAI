@@ -2,6 +2,7 @@ package com.seanora.fluentai.data.content
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.seanora.fluentai.data.content.dao.ChunkDao
 import com.seanora.fluentai.data.content.dao.ContentMetadataDao
 import com.seanora.fluentai.data.content.dao.ContentRelationDao
 import com.seanora.fluentai.data.content.dao.ExerciseDao
@@ -11,6 +12,7 @@ import com.seanora.fluentai.data.content.dao.ReadingDao
 import com.seanora.fluentai.data.content.dao.SpeakingDao
 import com.seanora.fluentai.data.content.dao.TopicDao
 import com.seanora.fluentai.data.content.dao.VocabDao
+import com.seanora.fluentai.data.content.entity.ChunkEntity
 import com.seanora.fluentai.data.content.entity.ContentMetadataEntity
 import com.seanora.fluentai.data.content.entity.ContentRelationEntity
 import com.seanora.fluentai.data.content.entity.ExerciseEntity
@@ -29,11 +31,12 @@ import com.seanora.fluentai.data.content.entity.VocabItemEntity
         ReadingArticleEntity::class,
         ListeningScenarioEntity::class,
         SpeakingScenarioEntity::class,
+        ChunkEntity::class,
         TopicEntity::class,
         ContentRelationEntity::class,
         ContentMetadataEntity::class
     ],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 abstract class ContentDatabase : RoomDatabase() {
@@ -43,6 +46,7 @@ abstract class ContentDatabase : RoomDatabase() {
     abstract fun readingDao(): ReadingDao
     abstract fun listeningDao(): ListeningDao
     abstract fun speakingDao(): SpeakingDao
+    abstract fun chunkDao(): ChunkDao
     abstract fun topicDao(): TopicDao
     abstract fun contentRelationDao(): ContentRelationDao
     abstract fun contentMetadataDao(): ContentMetadataDao

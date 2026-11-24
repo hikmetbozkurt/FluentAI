@@ -71,22 +71,22 @@ fun GrammarDashboardScreen(
             .fillMaxSize()
             .background(DashboardColors.BackgroundPrimary)
             .verticalScroll(rememberScrollState())
-            .padding(32.dp),
-        verticalArrangement = Arrangement.spacedBy(18.dp),
+            .padding(24.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         FluentPageHeader(
             title = "Grammar",
             module = LearningModule.GRAMMAR,
             eyebrow = "Learn · Grammar",
-            subtitle = "Build accurate, natural English structures.",
+            subtitle = "Build accurate, natural English structures",
             onBack = onNavigateBack,
             backLabel = "Learn",
         )
 
         continueLesson?.let { lesson ->
             ActionSurface(
-                emoji = "⏯️",
-                title = "Continue Grammar",
+                emoji = "",
+                title = "Continue grammar",
                 detail = "${lesson.title}\n${lesson.cefrLevel} · ${lesson.category.humanize()}",
                 action = "Continue",
                 emphasized = true,
@@ -96,19 +96,19 @@ fun GrammarDashboardScreen(
 
         quickLesson?.let { lesson ->
             ActionSurface(
-                emoji = "⚡",
-                title = "Quick Grammar",
-                detail = "${lesson.title} · ${lesson.cefrLevel}\nReview one useful rule in a few minutes.",
+                emoji = "",
+                title = "Quick grammar",
+                detail = "${lesson.title} · ${lesson.cefrLevel}\nReview one useful rule in a few minutes",
                 action = "Start",
                 onClick = { onOpenLesson(lesson.id, GrammarSessionMode.QUICK, GrammarSessionSection.LEARN) },
             )
         }
 
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(16.dp)) {
-            UtilityAction("🗂️", "Browse Grammar", "Explore all ${state.lessons.size} lessons", onOpenLibrary, Modifier.weight(1f))
+            UtilityAction("", "Browse grammar", "Explore all ${state.lessons.size} lessons", onOpenLibrary, Modifier.weight(1f))
             UtilityAction(
-                "🏋️",
-                "Practice Grammar",
+                "",
+                "Practice grammar",
                 "Start recommended practice",
                 { showPracticeChooser = true },
                 Modifier.weight(1f),
@@ -116,15 +116,13 @@ fun GrammarDashboardScreen(
         }
 
         weakSpot?.let { spot ->
-            Spacer(Modifier.height(2.dp))
             FluentSectionTitle(
                 title = "Needs attention",
-                emoji = "🎯",
-                subtitle = "A structure that keeps tripping you up",
+                subtitle = "A structure that needs more practice",
                 accent = LearningModule.GRAMMAR.accent,
             )
             ActionSurface(
-                emoji = "🎯",
+                emoji = "",
                 title = spot.lesson.title,
                 detail = listOfNotNull(
                     spot.lesson.cefrLevel,

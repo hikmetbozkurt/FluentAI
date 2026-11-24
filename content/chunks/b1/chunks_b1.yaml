@@ -1,0 +1,290 @@
+- id: chunk.b1.bridge.what-i-mean-is
+  chunk_en: "What I mean is..."
+  pattern_template: "What I mean is + (that) + [Clause]"
+  cefr_level: B1
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Söylediğini netleştirmek ('Demek istediğim şu ki...')"
+  meaning_en: "Used to clarify or rephrase your point when someone might misunderstand."
+  turkish_trap:
+    incorrect_en: "My meaning is we need more time."
+    correct_en: "What I mean is that we need more time."
+    explanation_tr: "Türkçedeki 'demek istediğim' ifadesi İngilizcede 'my meaning is' değil 'What I mean is...' kalıbıyla kurulur."
+    trap_type: literal_translation
+  blueprint_slots:
+    - { role: SUBJECT, label: "Bridge frame", text_en: "What I mean is", text_tr: "Demek istediğim şu ki" }
+    - { role: VERB_BRIDGE, label: "Core clause", text_en: "we need", text_tr: "ihtiyacımız var" }
+    - { role: OBJECT, label: "What", text_en: "two more days for testing", text_tr: "test için iki gün daha" }
+  slot_variations:
+    - { slot_en: "we need two more days", full_sentence_en: "What I mean is that we need two more days for testing.", full_sentence_tr: "Demek istediğim, test için iki güne daha ihtiyacımız var." }
+    - { slot_en: "the price seems fair", full_sentence_en: "What I mean is the price seems fair for this quality.", full_sentence_tr: "Demek istediğim, bu kalite için fiyat makul görünüyor." }
+    - { slot_en: "we should start small", full_sentence_en: "What I mean is we should start small and measure results.", full_sentence_tr: "Demek istediğim, küçük başlayıp sonuçları ölçmeliyiz." }
+  topic_tags: [meetings, conversation]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.bridge.as-far-as-i-know
+  chunk_en: "As far as I know,..."
+  pattern_template: "As far as I know, + [Subject] + [Verb]"
+  cefr_level: B1
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Bildiğim kadarıyla..."
+  meaning_en: "Used to share information while signaling you are not 100% certain."
+  turkish_trap:
+    incorrect_en: "How much I know, the report is ready."
+    correct_en: "As far as I know, the report is ready."
+    explanation_tr: "'Bildiğim kadarıyla' ifadesi İngilizcede kelimesi kelimesine çevrilmez; sabit kalıp 'As far as I know,' şeklindedir."
+    trap_type: literal_translation
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Hedge frame", text_en: "As far as I know,", text_tr: "Bildiğim kadarıyla," }
+    - { role: SUBJECT, label: "Who/What", text_en: "the contract", text_tr: "sözleşme" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "is already signed", text_tr: "çoktan imzalandı" }
+  slot_variations:
+    - { slot_en: "the contract is already signed", full_sentence_en: "As far as I know, the contract is already signed.", full_sentence_tr: "Bildiğim kadarıyla sözleşme çoktan imzalandı." }
+    - { slot_en: "they moved the deadline", full_sentence_en: "As far as I know, they moved the deadline to Monday.", full_sentence_tr: "Bildiğim kadarıyla son tarihi pazartesiye aldılar." }
+    - { slot_en: "the office is open", full_sentence_en: "As far as I know, the office is open until seven.", full_sentence_tr: "Bildiğim kadarıyla ofis yediye kadar açık." }
+  topic_tags: [workplace, conversation]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.frame.for-duration-perfect
+  chunk_en: "have been [verb]-ing for..."
+  pattern_template: "[Subject] + have/has been + [Verb-ing] + for + [Duration]"
+  cefr_level: B1
+  category: SENTENCE_STARTER
+  intent_tr: "Geçmişte başlayıp hâlâ süren bir eylemin süresini söylemek"
+  meaning_en: "Connects a past start point to the present using 'for' + a length of time."
+  turkish_trap:
+    incorrect_en: "I am working here since two years."
+    correct_en: "I have been working here for two years."
+    explanation_tr: "Süre uzunluğu (iki yıl) verirken 'since' değil 'for' kullanılır ve şimdiki zaman yerine 'have been + -ing' gerekir."
+    trap_type: tense_duration
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "have been working", text_tr: "çalışıyorum" }
+    - { role: TIME_PLACE, label: "Where", text_en: "at this company", text_tr: "bu şirkette" }
+    - { role: TIME_PLACE, label: "Duration", text_en: "for two years", text_tr: "iki yıldır" }
+  slot_variations:
+    - { slot_en: "working here for two years", full_sentence_en: "I have been working at this company for two years.", full_sentence_tr: "İki yıldır bu şirkette çalışıyorum." }
+    - { slot_en: "learning English for six months", full_sentence_en: "She has been practicing daily for six months.", full_sentence_tr: "Altı aydır her gün pratik yapıyor." }
+    - { slot_en: "waiting for twenty minutes", full_sentence_en: "We have been waiting for the update for twenty minutes.", full_sentence_tr: "Yirmi dakikadır güncellemeyi bekliyoruz." }
+  topic_tags: [workplace, interviews]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.bridge.to-be-honest
+  chunk_en: "To be honest,..."
+  pattern_template: "To be honest, + [Subject] + [Verb]"
+  cefr_level: B1
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Dürüst olmak gerekirse..."
+  meaning_en: "Used to introduce a candid opinion or polite disagreement gently."
+  turkish_trap:
+    incorrect_en: "For being honest, I don't think it works."
+    correct_en: "To be honest, I don't think it will work."
+    explanation_tr: "Amaç ve giriş ifadelerinde 'for being' değil mastar yapı 'To be honest,' kullanılır."
+    trap_type: preposition_transfer
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Bridge", text_en: "To be honest,", text_tr: "Dürüst olmak gerekirse," }
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "prefer", text_tr: "tercih ederim" }
+    - { role: OBJECT, label: "What", text_en: "the simpler layout", text_tr: "daha sade tasarımı" }
+  slot_variations:
+    - { slot_en: "I prefer the simpler layout", full_sentence_en: "To be honest, I prefer the simpler layout.", full_sentence_tr: "Dürüst olmak gerekirse daha sade tasarımı tercih ederim." }
+    - { slot_en: "the schedule feels tight", full_sentence_en: "To be honest, the schedule feels a bit tight.", full_sentence_tr: "Dürüst olmak gerekirse takvim biraz sıkışık görünüyor." }
+    - { slot_en: "I haven't checked it yet", full_sentence_en: "To be honest, I haven't had time to check it yet.", full_sentence_tr: "Dürüst olmak gerekirse henüz bakmaya vaktim olmadı." }
+  topic_tags: [conversation, meetings]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.collocation.keep-in-mind
+  chunk_en: "keep in mind that..."
+  pattern_template: "[Subject] + should / need to + keep in mind that + [Clause]"
+  cefr_level: B1
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir noktayı akılda tutmak / göz önünde bulundurmak"
+  meaning_en: "To remember an important fact when planning or deciding."
+  turkish_trap:
+    incorrect_en: "We should hold in mind the budget limit."
+    correct_en: "We should keep in mind that the budget is limited."
+    explanation_tr: "Türkçede 'akılda tutmak' ifadesi 'hold in mind' değil 'keep in mind' olarak kullanılır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "need to keep in mind", text_tr: "akılda tutmalıyız" }
+    - { role: OBJECT, label: "What", text_en: "that Friday is a holiday", text_tr: "cumanın tatil olduğunu" }
+  slot_variations:
+    - { slot_en: "Friday is a holiday", full_sentence_en: "We need to keep in mind that Friday is a holiday.", full_sentence_tr: "Cumanın tatil olduğunu akılda tutmalıyız." }
+    - { slot_en: "shipping takes three days", full_sentence_en: "Keep in mind that international shipping takes three days.", full_sentence_tr: "Uluslararası kargonun üç gün sürdüğünü unutmayın." }
+    - { slot_en: "clients are in different time zones", full_sentence_en: "Please keep in mind that our clients are in different time zones.", full_sentence_tr: "Lütfen müşterilerimizin farklı saat dilimlerinde olduğunu göz önünde bulundurun." }
+  topic_tags: [workplace, planning]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.frame.depends-on
+  chunk_en: "It depends on..."
+  pattern_template: "It depends on + [Noun / Whether-Clause]"
+  cefr_level: B1
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Bir şeyin başka bir koşula bağlı olduğunu söylemek"
+  meaning_en: "Used when an answer or outcome varies according to a condition."
+  turkish_trap:
+    incorrect_en: "It is depending to the weather."
+    correct_en: "It depends on the weather."
+    explanation_tr: "'Depend' sürekli zaman (-ing) almaz ve 'to' değil her zaman 'on' edatı ile kullanılır."
+    trap_type: preposition_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Subject", text_en: "It", text_tr: "Bu" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "depends on", text_tr: "bağlı" }
+    - { role: OBJECT, label: "Condition", text_en: "the final approval", text_tr: "son onaya" }
+  slot_variations:
+    - { slot_en: "the final approval", full_sentence_en: "It depends on the final approval from finance.", full_sentence_tr: "Finanstan gelecek son onaya bağlı." }
+    - { slot_en: "how many people join", full_sentence_en: "It depends on how many people join the workshop.", full_sentence_tr: "Atölyeye kaç kişinin katılacağına bağlı." }
+    - { slot_en: "your priorities", full_sentence_en: "It really depends on your priorities this quarter.", full_sentence_tr: "Bu çeyrekteki önceliklerinize bağlı." }
+  topic_tags: [workplace, conversation]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.frame.main-reason-is
+  chunk_en: "The main reason is that..."
+  pattern_template: "The main reason + (for X) + is that + [Clause]"
+  cefr_level: B1
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: "Ana sebebi açıklamak"
+  meaning_en: "Structures a clear cause-and-effect explanation in meetings or IELTS speaking."
+  turkish_trap:
+    incorrect_en: "The main reason is because the server crashed."
+    correct_en: "The main reason is that the server crashed."
+    explanation_tr: "'Reason' zaten sebep anlamı taşıdığı için ardından 'because' tekrar edilmez; 'The main reason is that...' kullanılır."
+    trap_type: redundant_connector
+  blueprint_slots:
+    - { role: SUBJECT, label: "Topic frame", text_en: "The main reason", text_tr: "Temel sebep" }
+    - { role: VERB_BRIDGE, label: "Link", text_en: "is that", text_tr: "şu ki" }
+    - { role: OBJECT, label: "Cause", text_en: "the team lacked clear specs", text_tr: "ekibin net gereksinimleri yoktu" }
+  slot_variations:
+    - { slot_en: "the team lacked clear specs", full_sentence_en: "The main reason is that the team lacked clear specs.", full_sentence_tr: "Temel sebep, ekibin net gereksinimlere sahip olmamasıydı." }
+    - { slot_en: "remote work saves commuting time", full_sentence_en: "The main reason is that remote work saves commuting time.", full_sentence_tr: "Ana sebep, uzaktan çalışmanın yol süresinden tasarruf sağlamasıdır." }
+    - { slot_en: "costs rose sharply", full_sentence_en: "The main reason for the delay is that costs rose sharply.", full_sentence_tr: "Gecikmenin temel sebebi maliyetlerin keskin biçimde artmasıdır." }
+  topic_tags: [ielts, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.collocation.run-out-of
+  chunk_en: "run out of..."
+  pattern_template: "[Subject] + are running out of / ran out of + [Resource]"
+  cefr_level: B1
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir kaynağın (zaman, bütçe, sabır) tükenmesi"
+  meaning_en: "To finish the available supply of something."
+  turkish_trap:
+    incorrect_en: "Our time finished."
+    correct_en: "We ran out of time."
+    explanation_tr: "Türkçede 'zamanımız bitti' deriz; İngilizcede bunu doğal söylemenin yolu 'We ran out of time' kalıbıdır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "are running out of", text_tr: "tüketiyoruz / kalmıyor" }
+    - { role: OBJECT, label: "What", text_en: "time before the demo", text_tr: "demo öncesi zamanımız" }
+  slot_variations:
+    - { slot_en: "time before the demo", full_sentence_en: "We are running out of time before the demo.", full_sentence_tr: "Demo öncesinde zamanımız daralıyor." }
+    - { slot_en: "storage space", full_sentence_en: "My laptop ran out of storage space yesterday.", full_sentence_tr: "Bilgisayarımın depolama alanı dün doldu." }
+    - { slot_en: "coffee beans", full_sentence_en: "We ran out of coffee beans in the office kitchen.", full_sentence_tr: "Ofis mutfağında kahve çekirdeği bitti." }
+  topic_tags: [daily-life, workplace]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.frame.would-you-mind
+  chunk_en: "Would you mind [verb]-ing...?"
+  pattern_template: "Would you mind + [Verb-ing] + [Object]?"
+  cefr_level: B1
+  category: SENTENCE_STARTER
+  intent_tr: "Çok nazik bir rica ('... yapmanızın bir sakıncası var mı?')"
+  meaning_en: "A diplomatic way to ask a colleague or stranger for a favor."
+  turkish_trap:
+    incorrect_en: "Would you mind to check this draft?"
+    correct_en: "Would you mind checking this draft?"
+    explanation_tr: "'Mind' fiilinden sonra 'to + fiil' değil her zaman '-ing' takılı fiil (gerund) kullanılır."
+    trap_type: gerund_infinitive
+  blueprint_slots:
+    - { role: VERB_BRIDGE, label: "Polite frame", text_en: "Would you mind reviewing", text_tr: "Gözden geçirmenizin sakıncası var mı" }
+    - { role: OBJECT, label: "What", text_en: "this short proposal", text_tr: "bu kısa teklifi" }
+    - { role: TIME_PLACE, label: "When", text_en: "before 4 p.m.?", text_tr: "saat 4'ten önce?" }
+  slot_variations:
+    - { slot_en: "reviewing this short proposal", full_sentence_en: "Would you mind reviewing this short proposal before 4 p.m.?", full_sentence_tr: "Saat 4'ten önce bu kısa teklifi gözden geçirmenizin sakıncası var mı?" }
+    - { slot_en: "repeating that last point", full_sentence_en: "Would you mind repeating that last point?", full_sentence_tr: "Son noktayı tekrar etmeniz mümkün mü?" }
+    - { slot_en: "closing the door", full_sentence_en: "Would you mind closing the door? It's noisy outside.", full_sentence_tr: "Kapıyı kapatır mısınız? Dışarısı gürültülü." }
+  topic_tags: [workplace, polite-requests]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.bridge.in-other-words
+  chunk_en: "In other words,..."
+  pattern_template: "In other words, + [Simpler Restatement]"
+  cefr_level: B1
+  category: CONVERSATION_BRIDGE
+  intent_tr: "Başka bir deyişle..."
+  meaning_en: "Signals that you are restating a complex idea more simply."
+  turkish_trap:
+    incorrect_en: "With another words, the plan is delayed."
+    correct_en: "In other words, the plan is delayed."
+    explanation_tr: "'Another' tekil isim ister ve edat 'with' değil 'in'dir; sabit kalıp 'In other words,' şeklindedir."
+    trap_type: preposition_transfer
+  blueprint_slots:
+    - { role: TIME_PLACE, label: "Bridge", text_en: "In other words,", text_tr: "Başka bir deyişle," }
+    - { role: SUBJECT, label: "Who", text_en: "we", text_tr: "biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "need to cut", text_tr: "azaltmalıyız" }
+    - { role: OBJECT, label: "What", text_en: "unnecessary meetings", text_tr: "gereksiz toplantıları" }
+  slot_variations:
+    - { slot_en: "we need to cut unnecessary meetings", full_sentence_en: "In other words, we need to cut unnecessary meetings.", full_sentence_tr: "Başka bir deyişle, gereksiz toplantıları azaltmalıyız." }
+    - { slot_en: "the feature ships next month", full_sentence_en: "In other words, the feature ships next month instead.", full_sentence_tr: "Başka bir deyişle, özellik bunun yerine gelecek ay çıkıyor." }
+    - { slot_en: "quality matters more than speed", full_sentence_en: "In other words, quality matters more than speed here.", full_sentence_tr: "Başka bir deyişle, burada kalite hızdan daha önemlidir." }
+  topic_tags: [meetings, presentations]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.collocation.take-advantage-of
+  chunk_en: "take advantage of..."
+  pattern_template: "[Subject] + can / should + take advantage of + [Opportunity]"
+  cefr_level: B1
+  category: ACTION_COLLOCATION
+  intent_tr: "Bir fırsattan veya imkândan yararlanmak"
+  meaning_en: "To make good use of a chance, resource, or benefit."
+  turkish_trap:
+    incorrect_en: "We should benefit from this opportunity (valid) / make advantage of this."
+    correct_en: "We should take advantage of this opportunity."
+    explanation_tr: "'Make advantage' yanlış eşdizimdir; doğru kalıp her zaman 'take advantage of'dır."
+    trap_type: collocation_transfer
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "We", text_tr: "Biz" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "should take advantage of", text_tr: "yararlanmalıyız" }
+    - { role: OBJECT, label: "What", text_en: "the quiet morning hours", text_tr: "sabahın sessiz saatlerinden" }
+  slot_variations:
+    - { slot_en: "the quiet morning hours", full_sentence_en: "We should take advantage of the quiet morning hours.", full_sentence_tr: "Sabahın sessiz saatlerinden yararlanmalıyız." }
+    - { slot_en: "the training budget", full_sentence_en: "Every engineer should take advantage of the training budget.", full_sentence_tr: "Her mühendis eğitim bütçesinden yararlanmalıdır." }
+    - { slot_en: "the early discount", full_sentence_en: "Let's take advantage of the early conference discount.", full_sentence_tr: "Erken konferans indiriminden yararlanalım." }
+  topic_tags: [workplace, ielts]
+  status: PUBLISHED
+  version: 1
+
+- id: chunk.b1.frame.used-to-vs-be-used-to
+  chunk_en: "I'm used to [verb]-ing..."
+  pattern_template: "[Subject] + am/is/are used to + [Verb-ing / Noun]"
+  cefr_level: B1
+  category: SENTENCE_STARTER
+  intent_tr: "Bir şeye alışkın olduğunu söylemek"
+  meaning_en: "Describes something that is familiar and no longer difficult for you."
+  turkish_trap:
+    incorrect_en: "I am used to work remotely."
+    correct_en: "I am used to working remotely."
+    explanation_tr: "'Alışkın olmak' anlamındaki 'be used to' kalıbında 'to' edattır ve arkasından '-ing' gelir (eskiden yapardım = 'I used to work')."
+    trap_type: gerund_infinitive
+  blueprint_slots:
+    - { role: SUBJECT, label: "Who", text_en: "I", text_tr: "Ben" }
+    - { role: VERB_BRIDGE, label: "Verb bridge", text_en: "am used to working", text_tr: "çalışmaya alışkınım" }
+    - { role: TIME_PLACE, label: "How", text_en: "with international teams", text_tr: "uluslararası ekiplerle" }
+  slot_variations:
+    - { slot_en: "working with international teams", full_sentence_en: "I am used to working with international teams.", full_sentence_tr: "Uluslararası ekiplerle çalışmaya alışkınım." }
+    - { slot_en: "tight deadlines", full_sentence_en: "Our team is used to tight deadlines.", full_sentence_tr: "Ekibimiz sıkışık teslim tarihlerine alışkındır." }
+    - { slot_en: "waking up early", full_sentence_en: "She is used to waking up at six every day.", full_sentence_tr: "Her gün altıda uyanmaya alışkındır." }
+  topic_tags: [workplace, interviews]
+  status: PUBLISHED
+  version: 1

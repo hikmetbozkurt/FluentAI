@@ -1,5 +1,6 @@
 package com.seanora.fluentai.feature.grammar
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -47,6 +48,7 @@ import com.seanora.fluentai.app.navigation.GrammarSessionMode
 import com.seanora.fluentai.app.navigation.GrammarSessionSection
 import com.seanora.fluentai.core.designsystem.components.DetailSectionSelector
 import com.seanora.fluentai.core.designsystem.dashboard.DashboardColors
+import com.seanora.fluentai.core.designsystem.dashboard.DashboardTypography
 import com.seanora.fluentai.core.model.Exercise
 import com.seanora.fluentai.core.model.GrammarLesson
 
@@ -240,68 +242,85 @@ private fun QuickCheck(exercises: List<Exercise>, viewModel: GrammarFeatureViewM
 @Composable
 private fun SentenceBuilderPractice(state: GrammarFeatureUiState, viewModel: GrammarFeatureViewModel, onResult: (Boolean) -> Unit) {
     val question = state.currentSentence ?: return
-    Text(question.lessonTitle, color = DashboardColors.TextSecondary)
+    Text(question.lessonTitle, style = DashboardTypography.Caption, color = DashboardColors.TextSecondary)
     question.promptTr?.let { turkishPrompt ->
-        Surface(shape = RoundedCornerShape(12.dp), color = Color.White) {
-            Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                Text("Build this sentence in English", fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = DashboardColors.PrimaryPinkDark)
+        Surface(
+            shape = RoundedCornerShape(12.dp),
+            color = Color.White,
+            border = BorderStroke(1.dp, DashboardColors.BorderSoft),
+        ) {
+            Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("Build this sentence in English", style = DashboardTypography.Caption, color = DashboardColors.PrimaryPinkDark)
                 Text(turkishPrompt, fontSize = 16.sp, fontWeight = FontWeight.Medium, color = DashboardColors.TextPrimary)
+                Text(
+                    "SVO guide: Who → Verb bridge → What / Where / When",
+                    style = DashboardTypography.Caption,
+                    color = DashboardColors.TextMuted,
+                )
             }
         }
     }
-    Surface(shape = RoundedCornerShape(12.dp), color = DashboardColors.SurfacePink.copy(alpha = 0.35f)) {
+    Surface(
+        shape = RoundedCornerShape(12.dp),
+        color = DashboardColors.SurfacePink.copy(alpha = 0.35f),
+        border = BorderStroke(1.dp, DashboardColors.BorderSoft),
+    ) {
         Box(Modifier.fillMaxWidth().padding(12.dp)) {
             if (state.builtTokens.isEmpty()) {
-                Text("Tap words below in the correct order…", color = DashboardColors.TextSecondary)
+                Text("Tap words below in the correct order", style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
             } else {
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     state.builtTokens.forEachIndexed { index, token ->
                         Surface(
                             Modifier.clickable(enabled = !state.sentenceSubmitted) { viewModel.removeSentenceToken(index) },
                             shape = RoundedCornerShape(8.dp),
                             color = DashboardColors.SurfacePink,
+                            border = BorderStroke(1.dp, DashboardColors.BorderSoft),
                         ) { Text(token, Modifier.padding(horizontal = 12.dp, vertical = 8.dp), fontWeight = FontWeight.Medium, color = DashboardColors.TextPrimary) }
                     }
                 }
             }
         }
     }
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
+    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         question.scrambledTokens.forEachIndexed { idx, token ->
             val used = idx in state.builtTokenIndices
             OutlinedButton(
                 onClick = { viewModel.addSentenceTokenAt(idx) },
                 enabled = !used && !state.sentenceSubmitted,
+                shape = RoundedCornerShape(10.dp),
             ) {
                 Text(token, color = if (used) DashboardColors.TextMuted else DashboardColors.TextPrimary)
             }
         }
     }
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        OutlinedButton(onClick = viewModel::clearSentence, enabled = state.builtTokens.isNotEmpty() && !state.sentenceSubmitted) { Text("Clear", color = DashboardColors.TextPrimary) }
+        OutlinedButton(onClick = viewModel::clearSentence, enabled = state.builtTokens.isNotEmpty() && !state.sentenceSubmitted, shape = RoundedCornerShape(12.dp)) { Text("Clear", color = DashboardColors.TextPrimary) }
         Button(
             onClick = { viewModel.submitSentence()?.let(onResult) },
             enabled = state.builtTokens.isNotEmpty() && !state.sentenceSubmitted,
+            shape = RoundedCornerShape(12.dp),
         ) { Text("Check") }
     }
     state.sentenceCorrect?.let { Feedback(it, question.correctSentence, question.explanation) }
-    if (state.sentenceSubmitted) OutlinedButton(onClick = viewModel::nextSentence) { Text("Next sentence", color = DashboardColors.TextPrimary) }
+    if (state.sentenceSubmitted) OutlinedButton(onClick = viewModel::nextSentence, shape = RoundedCornerShape(12.dp)) { Text("Next sentence", color = DashboardColors.TextPrimary) }
 }
 
 @Composable
 private fun ErrorSpotterPractice(state: GrammarFeatureUiState, viewModel: GrammarFeatureViewModel, onResult: (Boolean) -> Unit) {
     val question = state.currentError ?: return
-    Text("Select the grammatically correct sentence:", fontWeight = FontWeight.SemiBold, color = DashboardColors.TextPrimary)
+    Text("Select the natural English sentence", style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
     question.orderedOptions.forEach { answer ->
         val selected = state.errorSelection == answer
         OutlinedButton(
             onClick = { viewModel.selectErrorAnswer(answer) },
             enabled = !state.errorSubmitted,
+            shape = RoundedCornerShape(12.dp),
             modifier = Modifier.fillMaxWidth(),
         ) {
             Text(
                 if (selected) "• $answer" else answer,
-                fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
+                fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal,
                 color = if (selected) DashboardColors.PrimaryPinkDark else DashboardColors.TextPrimary,
             )
         }
@@ -309,32 +328,37 @@ private fun ErrorSpotterPractice(state: GrammarFeatureUiState, viewModel: Gramma
     Button(
         onClick = { viewModel.submitErrorAnswer()?.let(onResult) },
         enabled = state.errorSelection != null && !state.errorSubmitted,
+        shape = RoundedCornerShape(12.dp),
     ) { Text("Check") }
     state.errorCorrect?.let { correct ->
         val detail = listOf(question.trapTitle, question.explanation).filter { it.isNotBlank() }.joinToString(" — ")
         Feedback(correct, question.correctSentence, detail)
     }
-    if (state.errorSubmitted) OutlinedButton(onClick = viewModel::nextError) { Text("Next example", color = DashboardColors.TextPrimary) }
+    if (state.errorSubmitted) OutlinedButton(onClick = viewModel::nextError, shape = RoundedCornerShape(12.dp)) { Text("Next example", color = DashboardColors.TextPrimary) }
 }
 
 @Composable
 private fun Feedback(correct: Boolean, correctAnswer: String, explanation: String) {
-    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         FluentAnswerVerdict(correct = correct)
-        if (!correct) Text("Correct answer: $correctAnswer", color = DashboardColors.TextPrimary)
-        if (explanation.isNotBlank()) Text(explanation, color = DashboardColors.TextSecondary)
+        if (!correct) Text("Correct answer: $correctAnswer", fontWeight = FontWeight.Medium, color = DashboardColors.TextPrimary)
+        if (explanation.isNotBlank()) Text(explanation, style = DashboardTypography.Body, color = DashboardColors.TextSecondary)
     }
 }
 
 @Composable
 private fun ReviewSection(lesson: GrammarLesson, attempted: Int, correct: Int, onPracticeAgain: () -> Unit, onFinish: () -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-        Text("Lesson complete", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = DashboardColors.TextPrimary)
-        Text(lesson.title, fontSize = 18.sp, color = DashboardColors.TextPrimary)
-        Text("$correct correct · $attempted attempted", color = DashboardColors.TextPrimary)
-        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            OutlinedButton(onClick = onPracticeAgain) { Text(if (attempted > correct) "Review mistakes" else "Practice again", color = DashboardColors.TextPrimary) }
-            Button(onClick = onFinish) { Text("Finish") }
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Text("Lesson complete", style = DashboardTypography.PageTitle, color = DashboardColors.TextPrimary)
+        Text(lesson.title, style = DashboardTypography.CardTitle, color = DashboardColors.TextPrimary)
+        Text(
+            "$correct correct · $attempted attempted",
+            style = DashboardTypography.Body.copy(fontFeatureSettings = "tnum"),
+            color = DashboardColors.TextSecondary,
+        )
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedButton(onClick = onPracticeAgain, shape = RoundedCornerShape(12.dp)) { Text(if (attempted > correct) "Review mistakes" else "Practice again", color = DashboardColors.TextPrimary) }
+            Button(onClick = onFinish, shape = RoundedCornerShape(12.dp)) { Text("Finish") }
         }
     }
 }

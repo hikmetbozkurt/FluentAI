@@ -23,7 +23,6 @@ import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -35,7 +34,6 @@ import androidx.compose.material.icons.rounded.CloudDone
 import androidx.compose.material.icons.rounded.CloudOff
 import androidx.compose.material.icons.rounded.Public
 import androidx.compose.material.icons.rounded.Refresh
-import androidx.compose.material.icons.rounded.Stop
 import androidx.compose.material.icons.rounded.Translate
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -333,61 +331,21 @@ fun LiveReadingArticleScreen(
                             .verticalScroll(scrollState)
                             .padding(top = 14.dp, bottom = 40.dp),
                     ) {
-                        // Comfort bar
-                        Surface(
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = RoundedCornerShape(16.dp),
-                            color = tokens.card,
-                            border = BorderStroke(1.dp, tokens.border),
-                        ) {
-                            FlowRow(
-                                modifier = Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
-                                horizontalArrangement = Arrangement.spacedBy(10.dp),
-                                verticalArrangement = Arrangement.spacedBy(8.dp),
-                            ) {
-                                Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                                    ReadingSurfaceStyle.entries.forEach { style ->
-                                        val active = style == surfaceStyle
-                                        Surface(
-                                            onClick = { supportViewModel.setSurfaceStyle(style) },
-                                            shape = RoundedCornerShape(50),
-                                            color = if (active) tokens.ink else tokens.elevated,
-                                        ) {
-                                            Text(
-                                                style.label,
-                                                fontSize = 12.sp,
-                                                fontWeight = FontWeight.SemiBold,
-                                                color = if (active) tokens.card else tokens.inkSecondary,
-                                                modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
-                                            )
-                                        }
-                                    }
-                                }
-                                Row(horizontalArrangement = Arrangement.spacedBy(4.dp), verticalAlignment = Alignment.CenterVertically) {
-                                    Surface(onClick = supportViewModel::decreaseFontSize, shape = CircleShape, color = tokens.elevated) {
-                                        Text("A−", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = tokens.ink, modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp))
-                                    }
-                                    Text("${fontSizeSp.toInt()}sp", fontSize = 12.sp, color = tokens.inkSecondary)
-                                    Surface(onClick = supportViewModel::increaseFontSize, shape = CircleShape, color = tokens.elevated) {
-                                        Text("A+", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = tokens.ink, modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp))
-                                    }
-                                }
-                                val speakingThis = isSpeaking && activeUtteranceTag == "live:${article.id}"
-                                Surface(
-                                    onClick = {
-                                        if (speakingThis) tts.stop()
-                                        else tts.speak(article.paragraphs.joinToString("\n\n"), TtsAccent.US, 0.92f, "live:${article.id}")
-                                    },
-                                    shape = RoundedCornerShape(50),
-                                    color = if (speakingThis) tokens.terracotta else tokens.elevated,
-                                ) {
-                                    Row(Modifier.padding(horizontal = 12.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
-                                        Icon(if (speakingThis) Icons.Rounded.Stop else Icons.AutoMirrored.Rounded.VolumeUp, null, tint = if (speakingThis) Color.White else tokens.ink, modifier = Modifier.size(16.dp))
-                                        Text(if (speakingThis) "Stop" else "Listen", fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = if (speakingThis) Color.White else tokens.ink)
-                                    }
-                                }
-                            }
-                        }
+                        val speakingThis = isSpeaking && activeUtteranceTag == "live:${article.id}"
+                        ReaderComfortToolbar(
+                            surfaceStyle = surfaceStyle,
+                            fontSizeSp = fontSizeSp,
+                            isSpeakingArticle = speakingThis,
+                            onSelectStyle = supportViewModel::setSurfaceStyle,
+                            onDecreaseFont = supportViewModel::decreaseFontSize,
+                            onIncreaseFont = supportViewModel::increaseFontSize,
+                            onToggleReadAloud = {
+                                if (speakingThis) tts.stop()
+                                else tts.speak(article.paragraphs.joinToString("\n\n"), TtsAccent.US, 0.92f, "live:${article.id}")
+                            },
+                            progressLabel = "${(scrollProgress * 100).toInt()}% read · ~${article.estimatedMinutes} min",
+                            stopLabel = "Stop",
+                        )
 
                         Spacer(Modifier.height(22.dp))
                         ReadingEyebrow("${article.cefrLevel} · ${article.category} · ${article.wordCount} words · ~${article.estimatedMinutes} min")

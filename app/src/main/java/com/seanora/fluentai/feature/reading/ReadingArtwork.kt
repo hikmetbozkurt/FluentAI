@@ -125,7 +125,7 @@ internal fun ReadingCover(
     isCover = true,
     modifier = modifier,
     contentScale = contentScale,
-    placeholder = ReadingPalette.Sand,
+    placeholder = LocalReadingTokens.current.sand,
 )
 
 @Composable
@@ -142,6 +142,6 @@ internal fun ReadingIllustrationImage(
     placeholder = if (illustration == ReadingIllustration.EMPTY || illustration == ReadingIllustration.ERROR) {
         Color.Transparent
     } else {
-        ReadingPalette.Sand
+        LocalReadingTokens.current.sand
     },
 )

@@ -1,0 +1,381 @@
+- id: grammar.a2.null-subject-dummy-it-there
+  title: Dummy 'It' and 'There' vs. Null-Subject Omission
+  cefr_level: A2
+  category: noun_phrases_and_articles
+  summary_en: English requires an explicit grammatical subject ('it' or 'there') even
+    when Turkish leaves the subject implied in verb morphology.
+  summary_tr: İngilizce, Türkçedeki gizli öznenin aksine iklim, zaman, mesafe ve genel
+    yargılarda 'it' veya 'there' öznesini zorunlu kılar.
+  explanation_en:
+  - title: Why English Uses Empty Placeholder Subjects
+    content: Every finite declarative sentence in standard English must fill the subject
+      slot before the verb. When referring to weather, time, distance, or an infinitive
+      evaluation, English inserts dummy 'it' or existential 'there'.
+    patterns:
+    - It + be + adjective + to-infinitive / that-clause
+    - There + be + noun phrase + place/time
+  explanation_tr: Türkçede 'Gerekli' veya 'Yağmur yağıyor' cümlelerinde ayrı bir zamir
+    gerekmez; oysa İngilizcede özne yeri boş bırakılamaz. Değerlendirme sıfatlarında
+    'It is...', varlık bildirmede 'There is/are...' kullanılır.
+  rules:
+  - name: Anticipatory 'It' for Evaluations
+    pattern: It + is/was + Adjective + to + Verb
+    use_cases:
+    - Stating feasibility, necessity, or difficulty without dropping the subject
+    time_markers:
+    - always
+    - today
+    - before release
+  - name: Existential 'There' for New Information
+    pattern: There + is/are + Singular/Plural Noun + Location
+    use_cases:
+    - Introducing the presence of problems, files, or schedules
+    time_markers:
+    - now
+    - this morning
+    - on the agenda
+  contrasts:
+  - structure_a: It is helpful to review daily.
+    structure_b: There is a helpful review session today.
+    difference_explanation_en: '''It'' anticipates an infinitive action; ''There''
+      introduces the existence of a noun phrase.'
+    difference_explanation_tr: '''It'' arkasından gelen eylemi (to review) işaret
+      eder; ''There'' ise bir şeyin varlığını bildirir.'
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: Gizli Özne Nedeniyle 'It' Zamirini Atlamak
+    explanation_tr: Türkçede 'Önemli' veya 'Doğru değil' yapılarında özne gizlidir.
+      Bunu birebir çevirmek fiili öznesiz bırakır ve dilbilgisi hatası doğurur.
+    incorrect_example: Is critical to back up local files before updating.
+    correct_example: It is critical to back up local files before updating.
+  examples:
+  - en: It is essential to confirm the meeting link fifteen minutes early.
+    tr: Toplantı bağlantısını on beş dakika önceden doğrulamak şarttır.
+    rule_highlight: It is essential to confirm
+    context: workplace coordination
+  - en: There are three unread client tickets waiting in the regional queue.
+    tr: Bölge kuyruğunda bekleyen üç okunmamış müşteri talebi var.
+    rule_highlight: There are three unread client tickets
+    context: support operations
+  topic_tags:
+  - grammar
+  - syntax
+  - turkish_l1_traps
+  - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.a2.definite-zero-article-basics
+  title: Definite 'The' vs. Zero Article in Everyday Workplaces
+  cefr_level: A2
+  category: noun_phrases_and_articles
+  summary_en: Use 'the' when both speaker and listener identify the specific item,
+    and omit articles with general plural/uncountable concepts and routine institutions.
+  summary_tr: Belirli ve bilinen nesnelerde 'the' kullanılırken, genel kavramlarda
+    ve 'work / school / lunch' gibi rutin ifadelerde artikel kullanılmaz.
+  explanation_en:
+  - title: Specific Reference vs. Institutional Routine
+    content: English distinguishes 'the office down the hall' (a concrete building)
+      from 'go to work' (daily occupational activity without 'the'). General uncountable
+      terms like 'feedback' or 'traffic' also take zero article unless narrowed by
+      context.
+    patterns:
+    - go to work / at work / at home (zero article)
+    - open the report / check the schedule (shared specific referent)
+  explanation_tr: Türkçede belirli/belirsiz tanımlık sistemi aynı şekilde işlemediği
+    için 'the work' veya 'the traffic in general' gibi fazla 'the' kullanımı sık görülür.
+    Genel kavramlar ve rutin yer bildirimleri sıfır artikelle kurulur.
+  rules:
+  - name: Zero Article for General Uncountables
+    pattern: Uncountable Noun (without 'the') + Verb
+    use_cases:
+    - Talking about advice, data, time, or coffee in general
+    time_markers:
+    - usually
+    - generally
+    - often
+  - name: Definite Article for Shared Context
+    pattern: the + Noun (+ identifying modifier)
+    use_cases:
+    - Referring to a document, room, or file already clear in context
+    time_markers:
+    - this morning
+    - now
+  contrasts:
+  - structure_a: Good feedback helps teams improve.
+    structure_b: The feedback from yesterday's client call was positive.
+    difference_explanation_en: General concepts omit 'the'; narrowed, specific instances
+      require 'the'.
+    difference_explanation_tr: Genel anlamdaki 'geri bildirim' artikel almaz; belirli
+      bir görüşmenin geri bildirimi ise 'the' ister.
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: Genel İsimlerin ve 'Work' Kelimesinin Önüne Fazla 'The' Koymak
+    explanation_tr: '''İşe gidiyorum'' veya ''Genelde trafik yoğun'' cümlelerinde
+      Türkçeden çevirirken gereksiz ''the'' eklemek doğallığı bozar (''go to the work''
+      yerine ''go to work'').'
+    incorrect_example: I arrive at the work early when the traffic is light.
+    correct_example: I arrive at work early when traffic is light.
+  examples:
+  - en: She stayed at work until six to finish the quarterly expense sheet.
+    tr: Üç aylık harcama tablosunu bitirmek için altıya kadar işte kaldı.
+    rule_highlight: at work ... the quarterly expense sheet
+    context: daily office routine
+  - en: Clear documentation saves time during employee onboarding.
+    tr: Net dokümantasyon çalışan oryantasyonunda zaman kazandırır.
+    rule_highlight: Clear documentation saves time
+    context: workplace training
+  topic_tags:
+  - articles
+  - workplace
+  - daily-life
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.a2.prepositions-movement-direction
+  title: 'Prepositions of Movement vs. Static Location: To, Into, Onto'
+  cefr_level: A2
+  category: prepositions_and_particles
+  summary_en: Separate dynamic directional prepositions ('to', 'into', 'onto', 'toward')
+    from static position prepositions ('at', 'in', 'on').
+  summary_tr: Türkçedeki '-e/-a' ve '-de/-da' eklerini tek prepozisyona indirgemeden
+    hareket bildiren 'to / into / onto' ile konum bildiren 'at / in / on' edatlarını
+    ayırın.
+  explanation_en:
+  - title: Destination vs. Container Entry
+    content: Use 'to' for direction toward a target ('go to Ankara', 'send to the
+      client'). Use 'into' when crossing inside a physical or digital boundary ('import
+      into the folder') and keep 'in/at' for resting position.
+    patterns:
+    - move / go / fly + to + Destination (except 'home')
+    - upload / walk / enter -> import into / put onto
+  explanation_tr: Türkçede 'ofise gitmek' ile 'dosyayı klasöre atmak' benzer yönelme
+    eki alsa da İngilizcede hedef nokta 'to', içine giriş 'into', yüzeye koyma 'onto'
+    ile anlatılır.
+  rules:
+  - name: Direction vs. Arrival
+    pattern: 'go/travel + to + Place (exception: go home; arrive in/at)'
+    use_cases:
+    - Describing trips, transfers, and sending items to recipients
+    time_markers:
+    - this afternoon
+    - next Monday
+  - name: Boundary Crossing ('Into' & 'Onto')
+    pattern: put/copy/step + into/onto + Container/Surface
+    use_cases:
+    - Entering rooms or moving files into folders/platforms
+    time_markers:
+    - before noon
+  contrasts:
+  - structure_a: She walked in the office for twenty minutes.
+    structure_b: She walked into the office at nine.
+    difference_explanation_en: '''in'' describes movement inside already; ''into''
+      shows entering from outside.'
+    difference_explanation_tr: '''in'' içeride yürümeyi, ''into'' ise dışarıdan içeri
+      girmeyi anlatır.'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: '''Arrive'', ''Enter'' ve ''Go Home'' Sonrası Fazla ''To'' Eklemek'
+    explanation_tr: '''Eve gitmek'', ''ofise varmak'' gibi yapılarda Türkçe ''-e''
+      eki nedeniyle ''go to home'' veya ''arrive to Ankara'' hatası yapılır; ''go
+      home'', ''arrive in/at'' ve ''enter + noun'' edat almaz.'
+    incorrect_example: When I arrived to the airport, I went to home quickly after
+      customs.
+    correct_example: When I arrived at the airport, I went home quickly after customs.
+  examples:
+  - en: Please copy these invoices into the shared accounting folder before Friday.
+    tr: Lütfen bu faturaları cumadan önce ortak muhasebe klasörüne kopyalayın.
+    rule_highlight: copy ... into
+    context: office admin
+  - en: We flew to Izmir on Tuesday morning and arrived at the venue on time.
+    tr: Salı sabahı İzmir'e uçtuk ve mekana tam vaktinde vardık.
+    rule_highlight: flew to ... arrived at
+    context: business travel
+  topic_tags:
+  - prepositions
+  - travel
+  - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.a2.word-order-svo-place-time
+  title: English SVO + Place-Time Word Order vs. Turkish SOV
+  cefr_level: A2
+  category: discourse_markers_and_cohesion
+  summary_en: Keep Verb and Direct Object side by side, placing Manner, Place, and
+    Time adverbs cleanly after the object.
+  summary_tr: İngilizcede fiil ile nesneyi ayırmadan, durum-yer-zaman zarflarını cümle
+    sonuna sıralama (SVO-MPT) kuralını uygulayın.
+  explanation_en:
+  - title: Do Not Split Verb and Direct Object
+    content: 'Turkish permits placing time or location between subject, object, and
+      verb. English almost never places location or time expressions between the verb
+      and its object: write ''Verb + Object + Place + Time''.'
+    patterns:
+    - Subject + Verb + Object + Manner + Place + Time
+    - Time + , + Subject + Verb + Object + Place (optional fronted time)
+  explanation_tr: Türkçede 'Raporu ofiste dün yazdım' dizimi doğaldır. Bunu İngilizceye
+    aktarırken zaman veya yeri fiil ile nesne arasına sokmak ('wrote yesterday the
+    report') hatalı dizime yol açar.
+  rules:
+  - name: Standard SVO + MPT Ordering
+    pattern: Subject + Verb + Object + Place + Time
+    use_cases:
+    - Building clean, natural statements about daily tasks and travel
+    time_markers:
+    - yesterday
+    - every Monday
+    - in the morning
+  contrasts:
+  - structure_a: Yesterday we reviewed the draft in Ankara.
+    structure_b: We reviewed the draft in Ankara yesterday.
+    difference_explanation_en: Time may appear at the very front or at the end, but
+      never between verb and object.
+    difference_explanation_tr: Zaman zarfı en başa ya da en sona gelebilir ancak asla
+      fiil ile nesnenin arasına girmez.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Fiil ile Nesne Arasına Yer veya Zaman Zarfı Koymak
+    explanation_tr: Türkçe söz dizimi etkisinden dolayı 'read every day emails' veya
+      'sent yesterday the file' kurmak çok yaygındır; nesneyi daima fiilin hemen yanına
+      getirin.
+    incorrect_example: We checked yesterday in the office the quarterly totals.
+    correct_example: We checked the quarterly totals in the office yesterday.
+  examples:
+  - en: I study business vocabulary quietly on the tablet every evening.
+    tr: Her akşam tablette sessizce iş İngilizcesi çalışırım.
+    rule_highlight: study business vocabulary quietly on the tablet every evening
+    context: daily routine
+  - en: The trainer demonstrated the new workflow clearly at our Istanbul branch last
+      week.
+    tr: Eğitmen geçen hafta İstanbul şubemizde yeni iş akışını açıkça gösterdi.
+    rule_highlight: demonstrated the new workflow clearly at our Istanbul branch last
+      week
+    context: training
+  topic_tags:
+  - word_order
+  - daily-life
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.a2.indefinite-pronouns-some-any-no
+  title: 'Indefinite Pronouns and Single Negation: Someone, Anyone, No One'
+  cefr_level: A2
+  category: noun_phrases_and_articles
+  summary_en: Avoid double negation by pairing 'no one / nothing / nowhere' with positive
+    verbs or 'anyone / anything' with negative verbs.
+  summary_tr: '''Hiç kimse ...madı'' kalıbındaki çift olumsuzluğu İngilizceye taşımayın:
+    olumsuz fiille ''anyone'', olumlu fiille ''no one'' kullanın.'
+  explanation_en:
+  - title: One Negative Element per Clause
+    content: Standard English expresses negation once per clause. Say 'Nobody called'
+      OR 'Anyone didn't call? Wait—Nobody called / We didn't call anyone'. Also remember
+      that indefinite pronouns like 'everyone' and 'nothing' take singular verbs.
+    patterns:
+    - Positive verb + no one / nothing / nowhere
+    - Negative verb (didn't / haven't) + anyone / anything / anywhere
+  explanation_tr: 'Türkçede ''Kimse aramadı'' ve ''Hiçbir şey görmedim'' cümlelerinde
+    iki olumsuzluk yan yana gelir. İngilizcede tek olumsuzluk kuralı vardır: ya fiili
+    olumsuz yapıp ''any-'' seçin ya da olumlu fiille ''no-'' kullanın.'
+  rules:
+  - name: Negative Compounds vs. Any- Compounds
+    pattern: Nobody + Verb(positive) == Subject + didn't + Verb + anybody
+    use_cases:
+    - Reporting absences, zero errors, or open offers politely
+    time_markers:
+    - yet
+    - so far
+    - today
+  contrasts:
+  - structure_a: Everyone in operations has access.
+    structure_b: Did anyone check the backup log?
+    difference_explanation_en: '''Everyone'' takes singular verb agreement (''has'');
+      ''anyone'' is standard in neutral questions.'
+    difference_explanation_tr: '''Everyone'' tekil fiil alır (''has''); sorularda
+      genelde ''anyone'' kullanılır.'
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Türkçe Çift Olumsuzluk Kalıbını Aktarmak
+    explanation_tr: '''Hiç kimse gelmedi'' veya ''Hiçbir şey bulamadık'' cümlelerini
+      ''Nobody didn''t come'' şeklinde kurmak temel bir aktarım hatasıdır.'
+    incorrect_example: Nobody didn't mention the pricing update in the chat.
+    correct_example: Nobody mentioned the pricing update in the chat.
+  examples:
+  - en: We did not notice anything unusual during the morning health check.
+    tr: Sabah durum kontrolü sırasında olağandışı hiçbir şey fark etmedik.
+    rule_highlight: did not notice anything
+    context: operations
+  - en: Nothing guarantees smooth launches like testing edge cases twice.
+    tr: Hiçbir şey sorunsuz lansmanı uç senaryoları iki kez test etmek kadar garanti
+      edemez.
+    rule_highlight: Nothing guarantees
+    context: engineering
+  topic_tags:
+  - pronouns
+  - communication
+  - negation
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.a2.say-tell-speak-talk
+  title: 'Speech Verbs in Action: Say, Tell, Speak, and Talk'
+  cefr_level: A2
+  category: verb_patterns_and_infinitives
+  summary_en: 'Choose the right valency pattern: ''tell someone something'' vs. ''say
+    something (to someone)'' and ''speak/talk with/about''.'
+  summary_tr: '''Tell'' doğrudan muhatap nesnesi isterken ''say'' söyleneni önceler
+    ve alıcıya ''to'' ile bağlanır; dil veya konu için ''speak/talk'' seçilir.'
+  explanation_en:
+  - title: Valency Differences Between Everyday Speech Verbs
+    content: While 'say' and 'tell' share meaning, their grammar diverges sharply.
+      Never drop 'to' after 'say' before a person, and never insert 'to' right after
+      'tell'.
+    patterns:
+    - tell + listener + info / to-infinitive
+    - say + words / (that)... + [to listener]
+    - speak + language / speak with someone about topic
+  explanation_tr: Türkçede 'bana söyledi / bana dedi' yapıları aynı kurguyla işlediği
+    için İngilizcede '*said me' veya '*told to me' hataları çok sıktır. 'Tell me'
+    ve 'say to me' ayrımını mekanikleştirin.
+  rules:
+  - name: Object Placement with Say vs. Tell
+    pattern: tell + Person + Clause | say + Clause (to + Person)
+    use_cases:
+    - Relaying instructions, updates, and client quotes cleanly
+    time_markers:
+    - earlier
+    - just now
+  contrasts:
+  - structure_a: She told us to wait.
+    structure_b: She said that we should wait.
+    difference_explanation_en: '''Tell'' needs a listener object before the infinitive;
+      ''say'' introduces speech directly.'
+    difference_explanation_tr: '''Tell'' hemen ardından dinleyiciyi alır; ''say''
+      doğrudan söylenen söze geçer.'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: '''Say Me'' ve ''Tell To Me'' Edat Karışıklığı'
+    explanation_tr: '''Bana dedi'' kalıbı ''told to me'' ya da ''said me'' olarak
+      yanlış aktarılır. Doğruları yalnızca ''told me'' ve ''said to me'' şeklindedir.'
+    incorrect_example: The director said me to update the timeline and told to us
+      the reason.
+    correct_example: The director told me to update the timeline and explained the
+      reason to us.
+  examples:
+  - en: Can you tell the support lead that offline sync is passing all tests?
+    tr: Destek liderine çevrimdışı eşitlemenin tüm testleri geçtiğini söyleyebilir
+      misin?
+    rule_highlight: tell the support lead that
+    context: team chat
+  - en: She speaks Turkish and German fluently when negotiating with suppliers.
+    tr: Tedarikçilerle müzakere ederken Türkçe ve Almancayı akıcı konuşur.
+    rule_highlight: speaks Turkish and German fluently
+    context: workplace profile
+  topic_tags:
+  - communication
+  - verb_patterns
+  - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1

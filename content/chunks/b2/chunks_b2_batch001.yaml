@@ -1,0 +1,2965 @@
+- id: chunk.b2.bridge.having-said-that
+  chunk_en: Having said that,...
+  pattern_template: Having said that, + [Nuanced Qualification]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Önceki ifadeyi kabul edip önemli bir şerh veya denge eklemek
+  meaning_en: Polished spoken and written bridge for introducing a balanced caveat.
+  turkish_trap:
+    incorrect_en: Saying that, we still need a backup plan.
+    correct_en: Having said that, we still need a backup plan.
+    explanation_tr: Kalıp 'Having said that,' (perfect participle) şeklindedir; 'Saying that,' doğal değildir.
+    trap_type: participle_form
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Pivot
+    text_en: Having said that,
+    text_tr: Bununla birlikte,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: cannot overlook
+    text_tr: göz ardı edemeyiz
+  - role: OBJECT
+    label: Risk
+    text_en: data privacy compliance.
+    text_tr: veri gizliliği uyumunu.
+  slot_variations:
+  - slot_en: data privacy compliance
+    full_sentence_en: Having said that, we cannot overlook data privacy compliance.
+    full_sentence_tr: Bununla birlikte veri gizliliği uyumunu göz ardı edemeyiz.
+  - slot_en: the upfront cost
+    full_sentence_en: Having said that, the upfront cost is still quite high.
+    full_sentence_tr: Bununla birlikte başlangıç maliyeti hâlâ oldukça yüksek.
+  - slot_en: team morale
+    full_sentence_en: Having said that, we should check how this affects team morale.
+    full_sentence_tr: Bununla birlikte bunun ekip moralini nasıl etkilediğini kontrol etmeliyiz.
+  topic_tags:
+  - meetings
+  - ielts
+  - negotiation
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.to-put-it-simply
+  chunk_en: To put it simply,...
+  pattern_template: To put it simply, + [Plain-English Summary]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Karmaşık bir teknik veya iş konusunu sadeleştirerek özetlemek
+  meaning_en: Executive reformulation marker for distilling complexity.
+  turkish_trap:
+    incorrect_en: To put simply, the system is overloaded.
+    correct_en: To put it simply, the system is overloaded.
+    explanation_tr: 'Kalıptaki ''it'' nesnesi düşürülmez: ''To put it simply,'' (veya ''Put simply,'').'
+    trap_type: missing_object_pronoun
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Reformulate
+    text_en: To put it simply,
+    text_tr: Basitçe ifade etmek gerekirse,
+  - role: SUBJECT
+    label: Topic
+    text_en: our current pipeline
+    text_tr: mevcut işlem hattımız
+  - role: VERB_BRIDGE
+    label: State
+    text_en: is
+    text_tr: oldu
+  - role: OBJECT
+    label: Issue
+    text_en: our main bottleneck.
+    text_tr: ana darboğazımız.
+  slot_variations:
+  - slot_en: our main bottleneck
+    full_sentence_en: To put it simply, our current pipeline is our main bottleneck.
+    full_sentence_tr: Basitçe ifade etmek gerekirse mevcut işlem hattımız ana darboğazımız.
+  - slot_en: costs exceed returns
+    full_sentence_en: To put it simply, the acquisition cost exceeds the lifetime value.
+    full_sentence_tr: Basitçe söylemek gerekirse müşteri kazanım maliyeti yaşam boyu değeri aşıyor.
+  - slot_en: we need focus
+    full_sentence_en: To put it simply, we are trying to ship too many things at once.
+    full_sentence_tr: Basitçe söylemek gerekirse aynı anda çok fazla şey çıkarmaya çalışıyoruz.
+  topic_tags:
+  - presentations
+  - leadership
+  - reformulation
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.in-terms-of
+  chunk_en: In terms of...
+  pattern_template: In terms of + [Dimension/Criterion], + [Clause]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Değerlendirmeyi belirli bir boyut/kriter açısından sınırlamak ('... açısından')
+  meaning_en: Precision framing device for comparing criteria in business and IELTS.
+  turkish_trap:
+    incorrect_en: In term of speed, this engine is superior.
+    correct_en: In terms of speed, this engine is superior.
+    explanation_tr: Kalıpta 'terms' her zaman çoğul kullanılır ('In terms of').
+    trap_type: singular_plural_idiom
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Criterion
+    text_en: In terms of scalability,
+    text_tr: Ölçeklenebilirlik açısından,
+  - role: SUBJECT
+    label: Option
+    text_en: option B
+    text_tr: B seçeneği
+  - role: VERB_BRIDGE
+    label: Evaluation
+    text_en: is clearly stronger
+    text_tr: açıkça daha güçlü
+  - role: OBJECT
+    label: Baseline
+    text_en: for future growth.
+    text_tr: gelecekteki büyüme için.
+  slot_variations:
+  - slot_en: scalability
+    full_sentence_en: In terms of scalability, option B is clearly stronger for future growth.
+    full_sentence_tr: Ölçeklenebilirlik açısından B seçeneği gelecekteki büyüme için açıkça daha güçlü.
+  - slot_en: long-term value
+    full_sentence_en: In terms of long-term value, investing in training pays off quickly.
+    full_sentence_tr: Uzun vadeli değer açısından eğitime yatırım yapmak hızla karşılığını verir.
+  - slot_en: user experience
+    full_sentence_en: In terms of user experience, the new reader feels much calmer.
+    full_sentence_tr: Kullanıcı deneyimi açısından yeni okuyucu çok daha sakin hissettiriyor.
+  topic_tags:
+  - business
+  - ielts
+  - presentations
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.with-regard-to
+  chunk_en: With regard to...
+  pattern_template: With regard to + [Topic], + [Formal Clause]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Resmi yazışma veya sunumda belirli bir gündem maddesine geçmek ('... ile ilgili olarak')
+  meaning_en: Formal transition for addressing a specific policy, contract, or point.
+  turkish_trap:
+    incorrect_en: With regards to your question, we approved it.
+    correct_en: With regard to your question, we have approved the request.
+    explanation_tr: Resmi kullanımda 'With regard to' tekil kullanılır ('regards' mektup kapanışındaki 'Best regards' içindir).
+    trap_type: register_and_form
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Topic
+    text_en: With regard to your proposal,
+    text_tr: Teklifinizle ilgili olarak,
+  - role: SUBJECT
+    label: Who
+    text_en: the committee
+    text_tr: komite
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: requested
+    text_tr: talep etti
+  - role: OBJECT
+    label: What
+    text_en: two minor revisions.
+    text_tr: iki küçük revizyon.
+  slot_variations:
+  - slot_en: your proposal
+    full_sentence_en: With regard to your proposal, the committee requested two minor revisions.
+    full_sentence_tr: Teklifinizle ilgili olarak komite iki küçük revizyon talep etti.
+  - slot_en: data retention
+    full_sentence_en: With regard to data retention, all logs are purged after ninety days.
+    full_sentence_tr: Veri saklama konusunda tüm kayıtlar doksan gün sonra temizlenir.
+  - slot_en: staffing
+    full_sentence_en: With regard to staffing, we plan to hire two senior analysts.
+    full_sentence_tr: Kadro planlamasıyla ilgili olarak iki kıdemli analist almayı planlıyoruz.
+  topic_tags:
+  - emails
+  - formal_register
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.as-far-as-x-is-concerned
+  chunk_en: As far as [X] is concerned,...
+  pattern_template: As far as + [Noun] + is/are concerned, + [Clause]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Belirli bir konu veya taraf söz konusu olduğunda net konum belirtmek
+  meaning_en: Frames a statement strictly around one stakeholder or topic.
+  turkish_trap:
+    incorrect_en: As far as budget concerned, we are safe.
+    correct_en: As far as the budget is concerned, we are on track.
+    explanation_tr: '''Is/are'' yardımcı fiili unutulmamalıdır: ''As far as X is concerned,''.'
+    trap_type: missing_copula
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Scope
+    text_en: As far as security is concerned,
+    text_tr: Güvenlik söz konusu olduğunda,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Stance
+    text_en: cannot compromise
+    text_tr: ödün veremeyiz
+  - role: OBJECT
+    label: What
+    text_en: on encryption standards.
+    text_tr: şifreleme standartlarından.
+  slot_variations:
+  - slot_en: security
+    full_sentence_en: As far as security is concerned, we cannot compromise on encryption standards.
+    full_sentence_tr: Güvenlik söz konusu olduğunda şifreleme standartlarından ödün veremeyiz.
+  - slot_en: I'm concerned
+    full_sentence_en: As far as I'm concerned, the current draft is ready to ship.
+    full_sentence_tr: Benim açımdan mevcut taslak yayınlanmaya hazır.
+  - slot_en: timeline
+    full_sentence_en: As far as the timeline is concerned, we still have a three-day buffer.
+    full_sentence_tr: Takvim söz konusu olduğunda hâlâ üç günlük payımız var.
+  topic_tags:
+  - meetings
+  - ielts
+  - leadership
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.i-see-your-point-but
+  chunk_en: I see your point, but...
+  pattern_template: I see your point, but + [Counter-Perspective]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Karşı tarafın argümanını duyduğunu gösterip nazikçe karşı çıkmak
+  meaning_en: Constructive disagreement opener for meetings and debates.
+  turkish_trap:
+    incorrect_en: I see your point, however I disagree completely with you.
+    correct_en: I see your point, but I think we should consider the long-term risk.
+    explanation_tr: Profesyonel İngilizcede doğrudan 'I disagree completely' sert kaçar; 'I see your point, but...' ile yumuşatmak
+      daha etkilidir.
+    trap_type: register_mismatch
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Acknowledge
+    text_en: I see your point,
+    text_tr: Neyi kastettiğini anlıyorum,
+  - role: SUBJECT
+    label: Pivot
+    text_en: but we
+    text_tr: ama biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: also need to consider
+    text_tr: şunu da değerlendirmeliyiz
+  - role: OBJECT
+    label: Factor
+    text_en: maintenance overhead.
+    text_tr: bakım yükünü.
+  slot_variations:
+  - slot_en: maintenance overhead
+    full_sentence_en: I see your point, but we also need to consider maintenance overhead.
+    full_sentence_tr: Neyi kastettiğini anlıyorum ama bakım yükünü de değerlendirmeliyiz.
+  - slot_en: the customer impact
+    full_sentence_en: I see your point, but how would that affect existing customers?
+    full_sentence_tr: Neyi kastettiğini anlıyorum ama bu mevcut müşterileri nasıl etkiler?
+  - slot_en: our limited bandwidth
+    full_sentence_en: I see your point, but we don't have the bandwidth this quarter.
+    full_sentence_tr: Neyi kastettiğini anlıyorum ama bu çeyrekte kapasitemiz yok.
+  topic_tags:
+  - negotiation
+  - meetings
+  - communication
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.to-be-fair
+  chunk_en: To be fair,...
+  pattern_template: To be fair, + [Balanced Credit / Defense]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Hakkını teslim ederek dengeli bir değerlendirme yapmak ('Adil olmak gerekirse...')
+  meaning_en: Adds objectivity and fairness when critiquing a person or decision.
+  turkish_trap:
+    incorrect_en: For being fair, they had very little time.
+    correct_en: To be fair, they had very little time to prepare.
+    explanation_tr: Kalıp her zaman 'To be fair,' (infinitive) ile kurulur; 'For being fair' kullanılmaz.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Balance
+    text_en: To be fair,
+    text_tr: Adil olmak gerekirse,
+  - role: SUBJECT
+    label: Who
+    text_en: the vendor
+    text_tr: tedarikçi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: resolved
+    text_tr: çözdü
+  - role: OBJECT
+    label: What
+    text_en: the outage within an hour.
+    text_tr: kesintiyi bir saat içinde.
+  slot_variations:
+  - slot_en: resolved the outage
+    full_sentence_en: To be fair, the vendor resolved the outage within an hour.
+    full_sentence_tr: Adil olmak gerekirse tedarikçi kesintiyi bir saat içinde çözdü.
+  - slot_en: tight constraints
+    full_sentence_en: To be fair, the design team was working under tight constraints.
+    full_sentence_tr: Adil olmak gerekirse tasarım ekibi sıkı kısıtlar altında çalışıyordu.
+  - slot_en: the first prototype
+    full_sentence_en: To be fair, that was only the first prototype.
+    full_sentence_tr: Adil olmak gerekirse o sadece ilk prototipti.
+  topic_tags:
+  - meetings
+  - leadership
+  - conversation
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.if-i-understand-correctly
+  chunk_en: If I understand correctly,...
+  pattern_template: If I understand correctly, + [Paraphrased Summary]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Karşı tarafı doğru anlayıp anlamadığını teyit etmek
+  meaning_en: Active-listening opener that prevents miscommunication in meetings.
+  turkish_trap:
+    incorrect_en: If I understood correct, we deploy on Tuesday.
+    correct_en: If I understand correctly, we deploy on Tuesday.
+    explanation_tr: Fiili nitelediği için sıfat ('correct') değil zarf ('correctly') kullanılmalıdır.
+    trap_type: adverb_vs_adjective
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Check
+    text_en: If I understand correctly,
+    text_tr: Doğru anladıysam,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: are prioritizing
+    text_tr: önceliklendiriyoruz
+  - role: OBJECT
+    label: What
+    text_en: offline reliability first.
+    text_tr: önce çevrimdışı güvenilirliği.
+  slot_variations:
+  - slot_en: offline reliability
+    full_sentence_en: If I understand correctly, we are prioritizing offline reliability first.
+    full_sentence_tr: Doğru anladıysam önce çevrimdışı güvenilirliği önceliklendiriyoruz.
+  - slot_en: approval needed
+    full_sentence_en: If I understand correctly, legal needs to sign off before launch.
+    full_sentence_tr: Doğru anladıysam lansmandan önce hukukun onay vermesi gerekiyor.
+  - slot_en: two separate phases
+    full_sentence_en: If I understand correctly, the rollout will happen in two phases.
+    full_sentence_tr: Doğru anladıysam yaygınlaştırma iki aşamada gerçekleşecek.
+  topic_tags:
+  - meetings
+  - communication
+  - negotiation
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.reach-a-consensus
+  chunk_en: reach a consensus (on...)
+  pattern_template: '[Subject] + reach a consensus + (on [Topic])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Grupça ortak bir karara / uzlaşıya varmak
+  meaning_en: Executive collocation for group agreement after deliberation.
+  turkish_trap:
+    incorrect_en: The board reached to a consensus on the strategy.
+    correct_en: The board reached a consensus on the strategy.
+    explanation_tr: '''Reach'' geçişli fiildir; arkasından ''to'' edatı almaz (''reach a consensus'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: The leadership team
+    text_tr: Yönetim ekibi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: reached a consensus on
+    text_tr: konusunda uzlaşıya vardı
+  - role: OBJECT
+    label: What
+    text_en: the Q4 hiring targets.
+    text_tr: 4. çeyrek işe alım hedefleri.
+  slot_variations:
+  - slot_en: the Q4 hiring targets
+    full_sentence_en: The leadership team reached a consensus on the Q4 hiring targets.
+    full_sentence_tr: Yönetim ekibi 4. çeyrek işe alım hedefleri konusunda uzlaşıya vardı.
+  - slot_en: the architecture
+    full_sentence_en: After two reviews, engineers reached a consensus on the architecture.
+    full_sentence_tr: İki incelemenin ardından mühendisler mimari konusunda uzlaştı.
+  - slot_en: pricing tiers
+    full_sentence_en: We still haven't reached a consensus on the enterprise pricing tiers.
+    full_sentence_tr: Kurumsal fiyatlandırma katmanları konusunda henüz uzlaşıya varamadık.
+  topic_tags:
+  - leadership
+  - meetings
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.raise-a-concern
+  chunk_en: raise a concern (about...)
+  pattern_template: '[Subject] + raise + a concern + (about [Topic])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir risk veya endişeyi yapıcı biçimde gündeme getirmek
+  meaning_en: Diplomatic workplace collocation for flagging potential problems.
+  turkish_trap:
+    incorrect_en: Several engineers lifted a concern about latency.
+    correct_en: Several engineers raised a concern about latency.
+    explanation_tr: Endişe veya soru gündeme getirmek için 'lift' değil 'raise' fiili kullanılır.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: A few stakeholders
+    text_tr: Birkaç paydaş
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: raised a concern about
+    text_tr: hakkında endişe dile getirdi
+  - role: OBJECT
+    label: Topic
+    text_en: the migration schedule.
+    text_tr: geçiş takvimi.
+  slot_variations:
+  - slot_en: the migration schedule
+    full_sentence_en: A few stakeholders raised a concern about the migration schedule.
+    full_sentence_tr: Birkaç paydaş geçiş takvimi hakkında endişe dile getirdi.
+  - slot_en: data security
+    full_sentence_en: I'd like to raise a concern about third-party data security.
+    full_sentence_tr: Üçüncü taraf veri güvenliği hakkında bir endişemi dile getirmek istiyorum.
+  - slot_en: accessibility
+    full_sentence_en: The audit raised serious concerns about tablet accessibility.
+    full_sentence_tr: Denetim, tablet erişilebilirliği hakkında ciddi endişeler ortaya koydu.
+  topic_tags:
+  - meetings
+  - leadership
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.meet-expectations
+  chunk_en: meet / exceed expectations
+  pattern_template: '[Subject] + meet / exceed + expectations'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Beklentileri karşılamak veya aşmak
+  meaning_en: Core performance-review and product-evaluation collocation.
+  turkish_trap:
+    incorrect_en: The new release answered all our expectations.
+    correct_en: The new release met all our expectations.
+    explanation_tr: Türkçedeki 'beklentileri karşılamak' ifadesi İngilizcede 'answer' değil 'meet expectations' ile verilir.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: What
+    text_en: The Q2 campaign
+    text_tr: 2. çeyrek kampanyası
+  - role: VERB_BRIDGE
+    label: Result
+    text_en: exceeded
+    text_tr: aştı
+  - role: OBJECT
+    label: Target
+    text_en: our revenue expectations.
+    text_tr: gelir beklentilerimizi.
+  slot_variations:
+  - slot_en: our revenue expectations
+    full_sentence_en: The Q2 campaign exceeded our revenue expectations.
+    full_sentence_tr: 2. çeyrek kampanyası gelir beklentilerimizi aştı.
+  - slot_en: customer expectations
+    full_sentence_en: Fast offline search helps the product meet customer expectations.
+    full_sentence_tr: Hızlı çevrimdışı arama, ürünün müşteri beklentilerini karşılamasına yardımcı olur.
+  - slot_en: quality expectations
+    full_sentence_en: Unfortunately, the vendor's first draft did not meet expectations.
+    full_sentence_tr: Maalesef tedarikçinin ilk taslağı beklentileri karşılamadı.
+  topic_tags:
+  - business
+  - career
+  - reviews
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.draw-a-conclusion
+  chunk_en: draw a conclusion (from...)
+  pattern_template: '[Subject] + draw a conclusion + (from [Evidence])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Veri veya gözlemlerden sonuç çıkarmak
+  meaning_en: Analytical collocation for reports, research, and IELTS essays.
+  turkish_trap:
+    incorrect_en: It is too early to take a conclusion from this test.
+    correct_en: It is too early to draw a conclusion from this test.
+    explanation_tr: Sonuç çıkarmak için 'take/extract a conclusion' değil 'draw a conclusion' kullanılır.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: It's too early
+    text_tr: Henüz çok erken
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: to draw a firm conclusion
+    text_tr: kesin bir sonuç çıkarmak için
+  - role: OBJECT
+    label: Source
+    text_en: from one week of data.
+    text_tr: bir haftalık veriden.
+  slot_variations:
+  - slot_en: one week of data
+    full_sentence_en: It's too early to draw a firm conclusion from one week of data.
+    full_sentence_tr: Bir haftalık veriden kesin bir sonuç çıkarmak için henüz çok erken.
+  - slot_en: the user interviews
+    full_sentence_en: We drew three clear conclusions from the user interviews.
+    full_sentence_tr: Kullanıcı görüşmelerinden üç net sonuç çıkardık.
+  - slot_en: hasty conclusions
+    full_sentence_en: Let's review the logs before drawing any hasty conclusions.
+    full_sentence_tr: Aceleci sonuçlar çıkarmadan önce kayıtları inceleyelim.
+  topic_tags:
+  - analysis
+  - ielts
+  - research
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.weigh-the-pros-and-cons
+  chunk_en: weigh the pros and cons
+  pattern_template: '[Subject] + weigh the pros and cons + (of [Noun/Verb-ing])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir kararın artılarını ve eksilerini tartmak
+  meaning_en: Natural idiomatic collocation for structured decision-making.
+  turkish_trap:
+    incorrect_en: We measured the pros and cons of moving offices.
+    correct_en: We weighed the pros and cons of moving offices.
+    explanation_tr: Artı-eksileri tartmak için 'measure' değil 'weigh' (tartmak) fiili kullanılır.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: need to weigh the pros and cons
+    text_tr: artılarını ve eksilerini tartmalıyız
+  - role: OBJECT
+    label: Decision
+    text_en: of building in-house.
+    text_tr: kurum içinde geliştirmenin.
+  slot_variations:
+  - slot_en: building in-house
+    full_sentence_en: We need to weigh the pros and cons of building this in-house.
+    full_sentence_tr: Bunu kurum içinde geliştirmenin artılarını ve eksilerini tartmalıyız.
+  - slot_en: switching providers
+    full_sentence_en: Before switching providers, let's carefully weigh the pros and cons.
+    full_sentence_tr: Sağlayıcı değiştirmeden önce artıları ve eksileri dikkatlice tartalım.
+  - slot_en: expanding abroad
+    full_sentence_en: The board weighed the pros and cons of expanding into Europe.
+    full_sentence_tr: Yönetim kurulu Avrupa'ya açılmanın artılarını ve eksilerini tarttı.
+  topic_tags:
+  - decision_making
+  - business
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.bridge-the-gap
+  chunk_en: bridge the gap between...
+  pattern_template: '[Subject] + bridge the gap between + [A] + and + [B]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: İki taraf veya seviye arasındaki boşluğu kapatmak
+  meaning_en: High-impact metaphor for connecting teams, theory and practice, or skills.
+  turkish_trap:
+    incorrect_en: This course closes the bridge between theory and practice.
+    correct_en: This course bridges the gap between theory and practice.
+    explanation_tr: Kalıp 'close the bridge' değil 'bridge the gap' (boşluğa köprü kurmak) şeklindedir.
+    trap_type: idiom_distortion
+  blueprint_slots:
+  - role: SUBJECT
+    label: What
+    text_en: Speaking drills
+    text_tr: Konuşma alıştırmaları
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: bridge the gap between
+    text_tr: arasındaki boşluğu kapatır
+  - role: OBJECT
+    label: Pair
+    text_en: passive knowledge and fluency.
+    text_tr: pasif bilgi ile akıcılık.
+  slot_variations:
+  - slot_en: passive knowledge and fluency
+    full_sentence_en: Speaking drills bridge the gap between passive knowledge and fluency.
+    full_sentence_tr: Konuşma alıştırmaları pasif bilgi ile akıcılık arasındaki boşluğu kapatır.
+  - slot_en: design and engineering
+    full_sentence_en: Shared tokens help bridge the gap between design and engineering.
+    full_sentence_tr: Ortak tasarım tokenları tasarım ile mühendislik arasındaki boşluğu kapatır.
+  - slot_en: junior and senior roles
+    full_sentence_en: Mentorship bridges the gap between junior and senior engineers.
+    full_sentence_tr: Mentorluk, kıdemsiz ve kıdemli mühendisler arasındaki boşluğu kapatır.
+  topic_tags:
+  - leadership
+  - learning
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.keep-in-the-loop
+  chunk_en: keep [someone] in the loop
+  pattern_template: '[Subject] + keep + [Person] + in the loop + (on/about [Topic])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Birini gelişmelerden sürekli haberdar etmek
+  meaning_en: Idiomatic workplace phrase for maintaining transparent communication.
+  turkish_trap:
+    incorrect_en: Please keep me inside the loop about the hiring.
+    correct_en: Please keep me in the loop about the hiring.
+    explanation_tr: Kalıp 'inside the loop' değil 'in the loop'tur.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Request
+    text_en: Please keep me in the loop
+    text_tr: Lütfen beni haberdar edin
+  - role: OBJECT
+    label: Topic
+    text_en: on any scope changes.
+    text_tr: kapsam değişiklikleri konusunda.
+  slot_variations:
+  - slot_en: any scope changes
+    full_sentence_en: Please keep me in the loop on any scope changes.
+    full_sentence_tr: Herhangi bir kapsam değişikliğinde lütfen beni haberdar edin.
+  - slot_en: the finance team
+    full_sentence_en: We should keep the finance team in the loop during vendor talks.
+    full_sentence_tr: Tedarikçi görüşmeleri sırasında finans ekibini gelişmelerden haberdar etmeliyiz.
+  - slot_en: the client
+    full_sentence_en: Weekly summaries keep the client in the loop without extra meetings.
+    full_sentence_tr: Haftalık özetler ekstra toplantı olmadan müşteriyi gelişmelerden haberdar tutar.
+  topic_tags:
+  - workplace
+  - communication
+  - emails
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.on-the-same-page
+  chunk_en: be / get on the same page
+  pattern_template: '[Subject] + be / get on the same page + (about/regarding [Topic])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Ekipçe aynı anlayışta ve hizada olmak
+  meaning_en: High-frequency workplace idiom for shared alignment.
+  turkish_trap:
+    incorrect_en: Let's make sure we are in the same page.
+    correct_en: Let's make sure we are on the same page.
+    explanation_tr: 'Sayfa için İngilizcede ''in'' değil ''on'' edatı kullanılır: ''on the same page''.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Goal
+    text_en: Let's do a quick sync
+    text_tr: Kısa bir eşitleme yapalım
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: to get on the same page
+    text_tr: aynı çizgiye gelmek için
+  - role: OBJECT
+    label: Topic
+    text_en: about the launch criteria.
+    text_tr: lansman kriterleri konusunda.
+  slot_variations:
+  - slot_en: the launch criteria
+    full_sentence_en: Let's do a quick sync to get on the same page about the launch criteria.
+    full_sentence_tr: Lansman kriterleri konusunda aynı çizgiye gelmek için kısa bir toplantı yapalım.
+  - slot_en: priorities
+    full_sentence_en: Now that product and engineering are on the same page, delivery is faster.
+    full_sentence_tr: Ürün ve mühendislik artık aynı çizgide olduğu için teslimat daha hızlı.
+  - slot_en: the budget
+    full_sentence_en: Before we sign, I want to make sure everyone is on the same page.
+    full_sentence_tr: İmzalamadan önce herkesin aynı anlayışta olduğundan emin olmak istiyorum.
+  topic_tags:
+  - meetings
+  - leadership
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.touch-base
+  chunk_en: touch base (with...)
+  pattern_template: '[Subject] + touch base + (with [Person]) + (about/on [Topic])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Kısaca durum değerlendirmesi yapmak / haberleşmek
+  meaning_en: Friendly professional idiom for a brief check-in.
+  turkish_trap:
+    incorrect_en: I want to touch the base with you next week.
+    correct_en: I want to touch base with you next week.
+    explanation_tr: Kalıpta 'the' artikeli kullanılmaz; doğrudan 'touch base with' denir.
+    trap_type: article_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I'll
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: touch base with
+    text_tr: kısaca görüşeceğim
+  - role: OBJECT
+    label: Whom
+    text_en: the design lead
+    text_tr: tasarım lideriyle
+  - role: TIME_PLACE
+    label: When
+    text_en: on Monday morning.
+    text_tr: Pazartesi sabahı.
+  slot_variations:
+  - slot_en: the design lead
+    full_sentence_en: I'll touch base with the design lead on Monday morning.
+    full_sentence_tr: Pazartesi sabahı tasarım lideriyle kısaca görüşeceğim.
+  - slot_en: after the holiday
+    full_sentence_en: Let's touch base right after the holiday to finalize the plan.
+    full_sentence_tr: Planı netleştirmek için tatilden hemen sonra haberleşelim.
+  - slot_en: our client
+    full_sentence_en: I touched base with our client and they are happy with the progress.
+    full_sentence_tr: Müşterimizle kısaca görüştüm, ilerlemeden memnunlar.
+  topic_tags:
+  - workplace
+  - communication
+  - emails
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.narrow-down
+  chunk_en: narrow down...
+  pattern_template: '[Subject] + narrow down + [Options/List] + (to [Subset])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Seçenekleri veya olasılıkları eleyerek daraltmak
+  meaning_en: Useful phrasal verb for shortlisting candidates, tools, or root causes.
+  turkish_trap:
+    incorrect_en: We narrowed the list until three candidates.
+    correct_en: We narrowed the list down to three candidates.
+    explanation_tr: Son sayıyı belirtirken 'until' değil 'down to' kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: narrowed the options down to
+    text_tr: seçenekleri şuna indirdik
+  - role: OBJECT
+    label: Result
+    text_en: two strong vendors.
+    text_tr: iki güçlü tedarikçiye.
+  slot_variations:
+  - slot_en: two strong vendors
+    full_sentence_en: We narrowed the options down to two strong vendors.
+    full_sentence_tr: Seçenekleri iki güçlü tedarikçiye indirdik.
+  - slot_en: the root cause
+    full_sentence_en: The logs helped us narrow down the root cause quickly.
+    full_sentence_tr: Kayıtlar kök nedeni hızla daraltmamıza yardımcı oldu.
+  - slot_en: three finalists
+    full_sentence_en: HR narrowed fifty applicants down to three finalists.
+    full_sentence_tr: İK, elli adayı üç finaliste indirdi.
+  topic_tags:
+  - decision_making
+  - problem_solving
+  - hiring
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.rule-out
+  chunk_en: rule out...
+  pattern_template: '[Subject] + rule out + [Possibility / Option]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir ihtimali veya seçeneği kesin olarak elemek
+  meaning_en: Crisp phrasal verb for eliminating hypotheses or options.
+  turkish_trap:
+    incorrect_en: We cannot rule out that to delay the launch.
+    correct_en: We cannot rule out delaying the launch.
+    explanation_tr: '''Rule out'' arkasından fiil alacaksa ''-ing'' (gerund) veya isim grubu alır.'
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: The team
+    text_tr: Ekip
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: ruled out
+    text_tr: eledi
+  - role: OBJECT
+    label: Possibility
+    text_en: a hardware failure.
+    text_tr: donanım arızası ihtimalini.
+  slot_variations:
+  - slot_en: a hardware failure
+    full_sentence_en: The team ruled out a hardware failure after running diagnostics.
+    full_sentence_tr: Ekip testleri çalıştırdıktan sonra donanım arızası ihtimalini eledi.
+  - slot_en: a price increase
+    full_sentence_en: Management hasn't ruled out a modest price increase next year.
+    full_sentence_tr: Yönetim gelecek yıl mütevazı bir fiyat artışını ihtimal dışı bırakmadı.
+  - slot_en: remote hiring
+    full_sentence_en: We shouldn't rule out remote hiring for specialist roles.
+    full_sentence_tr: Uzman roller için uzaktan işe alımı elememeliyiz.
+  topic_tags:
+  - problem_solving
+  - business
+  - analysis
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.carry-out
+  chunk_en: carry out...
+  pattern_template: '[Subject] + carry out + [Audit / Study / Survey / Test]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir denetim, araştırma veya planı sistematik olarak yürütmek
+  meaning_en: Formal phrasal verb for executing structured tasks or investigations.
+  turkish_trap:
+    incorrect_en: They carried out a meeting yesterday.
+    correct_en: They carried out a full security audit yesterday.
+    explanation_tr: '''Carry out'' toplantı için değil; araştırma, denetim, anket, test ve plan yürütmek için kullanılır.'
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: An external firm
+    text_tr: Bağımsız bir firma
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: carried out
+    text_tr: yürüttü
+  - role: OBJECT
+    label: What
+    text_en: a comprehensive security audit.
+    text_tr: kapsamlı bir güvenlik denetimi.
+  slot_variations:
+  - slot_en: a comprehensive security audit
+    full_sentence_en: An external firm carried out a comprehensive security audit.
+    full_sentence_tr: Bağımsız bir firma kapsamlı bir güvenlik denetimi yürüttü.
+  - slot_en: a customer survey
+    full_sentence_en: We carried out a customer survey across three regions.
+    full_sentence_tr: Üç bölgede bir müşteri anketi gerçekleştirdik.
+  - slot_en: load tests
+    full_sentence_en: Engineers carried out load tests before Black Friday.
+    full_sentence_tr: Mühendisler Kara Cuma öncesinde yük testleri gerçekleştirdi.
+  topic_tags:
+  - business
+  - research
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.bring-up
+  chunk_en: bring up...
+  pattern_template: '[Subject] + bring up + [Topic / Issue / Point]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Toplantıda veya sohbette bir konuyu gündeme getirmek
+  meaning_en: Natural phrasal verb for introducing a subject into discussion.
+  turkish_trap:
+    incorrect_en: I want to open this topic in the meeting.
+    correct_en: I want to bring up this topic in the meeting.
+    explanation_tr: Türkçedeki 'konu açmak' ifadesi İngilizcede 'open a topic' değil 'bring up a topic' olarak kullanılır.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I'm glad
+    text_tr: Memnun oldum
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: you brought up
+    text_tr: gündeme getirdiğine
+  - role: OBJECT
+    label: Topic
+    text_en: the onboarding bottleneck.
+    text_tr: oryantasyon darboğazını.
+  slot_variations:
+  - slot_en: the onboarding bottleneck
+    full_sentence_en: I'm glad you brought up the onboarding bottleneck.
+    full_sentence_tr: Oryantasyon darboğazını gündeme getirdiğine sevindim.
+  - slot_en: the budget question
+    full_sentence_en: She brought up the budget question right at the start.
+    full_sentence_tr: Bütçe sorusunu daha en başta gündeme getirdi.
+  - slot_en: an important point
+    full_sentence_en: Can I bring up one quick point before we wrap up?
+    full_sentence_tr: Kapatmadan önce kısa bir noktayı gündeme getirebilir miyim?
+  topic_tags:
+  - meetings
+  - conversation
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.wrap-up
+  chunk_en: wrap up...
+  pattern_template: '[Subject] + wrap up + [Meeting / Project / Task]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir toplantıyı, görevi veya projeyi toparlayıp bitirmek
+  meaning_en: Natural workplace phrasal verb for concluding an activity cleanly.
+  turkish_trap:
+    incorrect_en: Let's collect the meeting in five minutes.
+    correct_en: Let's wrap up the meeting in five minutes.
+    explanation_tr: Türkçedeki 'toplantıyı toparlamak' ifadesi 'collect' değil 'wrap up' ile verilir.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Let's
+    text_tr: Hadi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: wrap up
+    text_tr: toparlayalım
+  - role: OBJECT
+    label: What
+    text_en: this review
+    text_tr: bu incelemeyi
+  - role: TIME_PLACE
+    label: How
+    text_en: with clear next steps.
+    text_tr: net sonraki adımlarla.
+  slot_variations:
+  - slot_en: this review
+    full_sentence_en: Let's wrap up this review with clear next steps.
+    full_sentence_tr: Bu incelemeyi net sonraki adımlarla toparlayalım.
+  - slot_en: the final chapter
+    full_sentence_en: I hope to wrap up the final report before five.
+    full_sentence_tr: Son raporu saat beşten önce bitirmeyi umuyorum.
+  - slot_en: the sprint
+    full_sentence_en: We wrapped up the sprint with zero critical defects.
+    full_sentence_tr: Sprinti sıfır kritik hatayla kapattık.
+  topic_tags:
+  - meetings
+  - workplace
+  - project_management
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.back-up-claim
+  chunk_en: back up [a claim] with...
+  pattern_template: '[Subject] + back up + [Claim/Argument] + with + [Evidence]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir iddiayı veri veya kanıtla desteklemek
+  meaning_en: Strong collocation for evidence-based arguments in business and IELTS.
+  turkish_trap:
+    incorrect_en: You need to back up your claim by real numbers.
+    correct_en: You need to back up your claim with real numbers.
+    explanation_tr: Kanıt/araç eklerken 'back up ... with' edatı kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: She
+    text_tr: O
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: backed up her proposal with
+    text_tr: teklifini destekledi
+  - role: OBJECT
+    label: Evidence
+    text_en: six months of usage data.
+    text_tr: altı aylık kullanım verisiyle.
+  slot_variations:
+  - slot_en: six months of usage data
+    full_sentence_en: She backed up her proposal with six months of usage data.
+    full_sentence_tr: Teklifini altı aylık kullanım verisiyle destekledi.
+  - slot_en: concrete examples
+    full_sentence_en: In IELTS essays, always back up your points with concrete examples.
+    full_sentence_tr: IELTS denemelerinde fikirlerini her zaman somut örneklerle destekle.
+  - slot_en: customer quotes
+    full_sentence_en: He backed up his argument with direct customer quotes.
+    full_sentence_tr: Argümanını doğrudan müşteri alıntılarıyla destekledi.
+  topic_tags:
+  - presentations
+  - ielts
+  - persuasion
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.it-is-widely-accepted
+  chunk_en: It is widely accepted that...
+  pattern_template: It is widely accepted that + [General Truth / Consensus]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Geniş kabul gören bir gerçeği akademik tonda sunmak
+  meaning_en: Objective impersonal opener for essays, reports, and briefings.
+  turkish_trap:
+    incorrect_en: It is wide accepted that sleep affects memory.
+    correct_en: It is widely accepted that sleep affects memory.
+    explanation_tr: Sıfat/ortacı nitelediği için 'wide' değil zarf biçimi 'widely' kullanılmalıdır.
+    trap_type: adverb_vs_adjective
+  blueprint_slots:
+  - role: SUBJECT
+    label: Frame
+    text_en: It is widely accepted that
+    text_tr: Yaygın olarak kabul edilir ki
+  - role: VERB_BRIDGE
+    label: Subject+Verb
+    text_en: early intervention reduces
+    text_tr: erken müdahale azaltır
+  - role: OBJECT
+    label: Outcome
+    text_en: long-term healthcare costs.
+    text_tr: uzun vadeli sağlık maliyetlerini.
+  slot_variations:
+  - slot_en: long-term healthcare costs
+    full_sentence_en: It is widely accepted that early intervention reduces long-term healthcare costs.
+    full_sentence_tr: Erken müdahalenin uzun vadeli sağlık maliyetlerini azalttığı yaygın olarak kabul edilir.
+  - slot_en: consistent feedback
+    full_sentence_en: It is widely accepted that consistent feedback accelerates learning.
+    full_sentence_tr: Düzenli geri bildirimin öğrenmeyi hızlandırdığı yaygın olarak kabul edilir.
+  - slot_en: renewable energy
+    full_sentence_en: It is widely accepted that grid storage is vital for renewable energy.
+    full_sentence_tr: Şebeke depolamanın yenilenebilir enerji için hayati olduğu yaygın biçimde kabul edilir.
+  topic_tags:
+  - ielts
+  - academic
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.a-key-factor-is
+  chunk_en: A key factor behind this is...
+  pattern_template: A key factor behind + [Phenomenon] + is + [Noun / Clause]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Bir eğilimin arkasındaki temel etkeni vurgulamak
+  meaning_en: Analytical sentence frame for identifying primary drivers.
+  turkish_trap:
+    incorrect_en: A key factor behind this is because salaries rose.
+    correct_en: A key factor behind this is the rise in living costs.
+    explanation_tr: '''Factor ... is'' yapısından sonra ''because'' değil isim grubu veya ''that + cümle'' gelir.'
+    trap_type: clause_structure
+  blueprint_slots:
+  - role: SUBJECT
+    label: Frame
+    text_en: A key factor behind this shift
+    text_tr: Bu değişimin arkasındaki temel etken
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: is
+    text_tr: şudur
+  - role: OBJECT
+    label: Driver
+    text_en: the rapid adoption of cloud tools.
+    text_tr: bulut araçlarının hızla benimsenmesi.
+  slot_variations:
+  - slot_en: cloud tools
+    full_sentence_en: A key factor behind this shift is the rapid adoption of cloud tools.
+    full_sentence_tr: Bu değişimin arkasındaki temel etken bulut araçlarının hızla benimsenmesidir.
+  - slot_en: urban migration
+    full_sentence_en: A key factor behind urban migration is access to specialized jobs.
+    full_sentence_tr: Kente göçün arkasındaki temel etken uzmanlık gerektiren işlere erişimdir.
+  - slot_en: higher retention
+    full_sentence_en: A key factor behind higher retention is predictable career growth.
+    full_sentence_tr: Daha yüksek bağlılığın arkasındaki temel etken öngörülebilir kariyer gelişimidir.
+  topic_tags:
+  - ielts
+  - analysis
+  - presentations
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.this-highlights-the-need
+  chunk_en: This highlights the need for...
+  pattern_template: This highlights the need for + [Noun / Verb-ing]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Bir bulgunun hangi ihtiyacı ortaya çıkardığını vurgulamak
+  meaning_en: High-scoring transition from problem analysis to recommendation.
+  turkish_trap:
+    incorrect_en: This highlights the need of better training.
+    correct_en: This highlights the need for better training.
+    explanation_tr: '''The need'' ismi arkasından ''of'' değil ''for'' edatı alır (''the need for something'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Evidence
+    text_en: This incident
+    text_tr: Bu olay
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: highlights the need for
+    text_tr: ihtiyacını açıkça ortaya koyuyor
+  - role: OBJECT
+    label: Need
+    text_en: automated rollback checks.
+    text_tr: otomatik geri alma kontrolleri.
+  slot_variations:
+  - slot_en: automated rollback checks
+    full_sentence_en: This incident highlights the need for automated rollback checks.
+    full_sentence_tr: Bu olay otomatik geri alma kontrollerine duyulan ihtiyacı vurguluyor.
+  - slot_en: clearer policies
+    full_sentence_en: This trend highlights the need for clearer AI governance policies.
+    full_sentence_tr: Bu eğilim daha net yapay zeka yönetişim politikalarına duyulan ihtiyacı öne çıkarıyor.
+  - slot_en: public investment
+    full_sentence_en: This highlights the need for sustained public investment in rail.
+    full_sentence_tr: Bu, demiryoluna sürdürülebilir kamu yatırımı ihtiyacını vurguluyor.
+  topic_tags:
+  - ielts
+  - business
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.in-spite-of-the-fact
+  chunk_en: Despite / In spite of...
+  pattern_template: Despite + [Noun / Verb-ing], + [Contrasting Main Clause]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Bir engele rağmen gerçekleşen sonucu ifade etmek
+  meaning_en: Compact concessive structure for formal writing and executive briefings.
+  turkish_trap:
+    incorrect_en: Despite of the tight budget, we delivered on time.
+    correct_en: Despite the tight budget, we delivered on time.
+    explanation_tr: '''In spite of'' ''of'' alır ama ''Despite'' kesinlikle ''of'' almaz (''Despite of'' hatadır).'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Concession
+    text_en: Despite the tight timeline,
+    text_tr: Sıkı takvime rağmen,
+  - role: SUBJECT
+    label: Who
+    text_en: the team
+    text_tr: ekip
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: delivered
+    text_tr: teslim etti
+  - role: OBJECT
+    label: What
+    text_en: every milestone cleanly.
+    text_tr: tüm kilometre taşlarını temiz biçimde.
+  slot_variations:
+  - slot_en: the tight timeline
+    full_sentence_en: Despite the tight timeline, the team delivered every milestone cleanly.
+    full_sentence_tr: Sıkı takvime rağmen ekip tüm kilometre taşlarını temiz biçimde teslim etti.
+  - slot_en: initial doubts
+    full_sentence_en: Despite initial doubts, the offline mode became our most praised feature.
+    full_sentence_tr: Başlangıçtaki şüphelere rağmen çevrimdışı mod en çok övülen özelliğimiz oldu.
+  - slot_en: working remotely
+    full_sentence_en: Despite working across three time zones, collaboration stayed smooth.
+    full_sentence_tr: Üç saat diliminde çalışmamıza rağmen iş birliği akıcı kaldı.
+  topic_tags:
+  - ielts
+  - grammar_in_use
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.as-opposed-to
+  chunk_en: as opposed to...
+  pattern_template: '[Option A] + as opposed to + [Option B]'
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: İki yaklaşım arasındaki keskin farkı göstermek ('... yerine / aksine')
+  meaning_en: Crisp contrastive phrase for distinguishing two strategies or models.
+  turkish_trap:
+    incorrect_en: We prefer local logic as oppose to cloud calls.
+    correct_en: We prefer local logic as opposed to cloud calls.
+    explanation_tr: Kalıp pasif sıfatla 'as opposed to' şeklinde sabitlenir; 'oppose' kullanılmaz.
+    trap_type: participle_form
+  blueprint_slots:
+  - role: SUBJECT
+    label: Choice A
+    text_en: We focus on
+    text_tr: Odaklanıyoruz
+  - role: OBJECT
+    label: A
+    text_en: active speaking
+    text_tr: aktif konuşmaya
+  - role: VERB_BRIDGE
+    label: Contrast
+    text_en: as opposed to
+    text_tr: aksine / yerine
+  - role: TIME_PLACE
+    label: B
+    text_en: passive memorization.
+    text_tr: pasif ezberlemenin.
+  slot_variations:
+  - slot_en: passive memorization
+    full_sentence_en: We focus on active speaking as opposed to passive memorization.
+    full_sentence_tr: Pasif ezberleme yerine aktif konuşmaya odaklanıyoruz.
+  - slot_en: one-off workshops
+    full_sentence_en: Continuous coaching builds habits, as opposed to one-off workshops.
+    full_sentence_tr: Tek seferlik atölyelerin aksine sürekli koçluk alışkanlık kazandırır.
+  - slot_en: short-term discounts
+    full_sentence_en: The firm invested in service quality as opposed to short-term discounts.
+    full_sentence_tr: Firma kısa vadeli indirimler yerine hizmet kalitesine yatırım yaptı.
+  topic_tags:
+  - ielts
+  - presentations
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.tend-to
+  chunk_en: tend to [verb]...
+  pattern_template: '[Subject] + tend to + [Base Verb]'
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Kesin genelleme yapmadan eğilim bildirmek (yumuşatılmış ifade / hedging)
+  meaning_en: Essential academic hedging verb that avoids overgeneralization.
+  turkish_trap:
+    incorrect_en: Remote workers tend working longer hours.
+    correct_en: Remote workers tend to work longer hours.
+    explanation_tr: '''Tend'' fiilinden sonra her zaman ''to + yalın fiil'' gelir (''tend to work'').'
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Group
+    text_en: Experienced speakers
+    text_tr: Deneyimli konuşmacılar
+  - role: VERB_BRIDGE
+    label: Tendency
+    text_en: tend to pause
+    text_tr: duraklama eğilimindedir
+  - role: OBJECT
+    label: Context
+    text_en: before key arguments.
+    text_tr: temel argümanlardan önce.
+  slot_variations:
+  - slot_en: pause before key arguments
+    full_sentence_en: Experienced speakers tend to pause before key arguments.
+    full_sentence_tr: Deneyimli konuşmacılar temel argümanlardan önce duraklama eğilimindedir.
+  - slot_en: underestimate timelines
+    full_sentence_en: Software teams tend to underestimate integration timelines.
+    full_sentence_tr: Yazılım ekipleri entegrasyon sürelerini olduğundan kısa tahmin etme eğilimindedir.
+  - slot_en: shop online
+    full_sentence_en: Younger buyers tend to compare reviews online before purchasing.
+    full_sentence_tr: Genç alıcılar satın almadan önce çevrimiçi yorumları karşılaştırma eğilimindedir.
+  topic_tags:
+  - ielts
+  - hedging
+  - academic
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.it-comes-down-to
+  chunk_en: It comes down to...
+  pattern_template: It (really) comes down to + [Core Factor / Noun]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Karmaşık bir meseleyi tek bir belirleyici etkene indirgemek ('İş dönüp dolaşıp ... geliyor')
+  meaning_en: Idiomatic way to pinpoint the decisive factor in a discussion.
+  turkish_trap:
+    incorrect_en: Everything comes down on trust.
+    correct_en: Everything comes down to trust.
+    explanation_tr: Kalıp her zaman 'come down to' edatıyla kullanılır; 'on' kullanılmaz.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Frame
+    text_en: Ultimately, it comes down to
+    text_tr: Nihayetinde iş şuna geliyor
+  - role: OBJECT
+    label: Core
+    text_en: execution discipline.
+    text_tr: uygulama disiplinine.
+  slot_variations:
+  - slot_en: execution discipline
+    full_sentence_en: Ultimately, it comes down to execution discipline.
+    full_sentence_tr: Nihayetinde iş uygulama disiplinine geliyor.
+  - slot_en: how fast we adapt
+    full_sentence_en: It really comes down to how fast we adapt to user feedback.
+    full_sentence_tr: İş gerçekten kullanıcı geri bildirimine ne kadar hızlı uyum sağladığımıza bağlı.
+  - slot_en: two choices
+    full_sentence_en: 'It comes down to two choices: cut scope or move the date.'
+    full_sentence_tr: 'İki seçeneğe indirgeniyor: kapsamı daraltmak ya da tarihi ötelemek.'
+  topic_tags:
+  - leadership
+  - meetings
+  - speaking
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.not-only-but-also
+  chunk_en: Not only..., but also...
+  pattern_template: Not only + [Aux + Subject + Verb], + but + [Subject] + also + [Verb]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: İki güçlü faydayı veya etkiyi vurgulu biçimde arka arkaya sunmak
+  meaning_en: High-impact correlative structure for presentations and IELTS Band 7+.
+  turkish_trap:
+    incorrect_en: Not only it saves time, but also it cuts errors.
+    correct_en: Not only does it save time, but it also cuts errors.
+    explanation_tr: '''Not only'' cümle başına geldiğinde hemen ardından devrik yapı (''does it save'') zorunludur.'
+    trap_type: inversion_missing
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Emphasis 1
+    text_en: Not only does caching
+    text_tr: Önbellekleme sadece ... değil
+  - role: VERB_BRIDGE
+    label: Benefit 1
+    text_en: speed up loading,
+    text_tr: yüklemeyi hızlandırmakla kalmaz,
+  - role: OBJECT
+    label: Benefit 2
+    text_en: but it also lowers server costs.
+    text_tr: aynı zamanda sunucu maliyetlerini de düşürür.
+  slot_variations:
+  - slot_en: caching
+    full_sentence_en: Not only does caching speed up loading, but it also lowers server costs.
+    full_sentence_tr: Önbellekleme sadece yüklemeyi hızlandırmakla kalmaz, sunucu maliyetlerini de düşürür.
+  - slot_en: reading daily
+    full_sentence_en: Not only does reading daily build vocabulary, but it also sharpens grammar intuition.
+    full_sentence_tr: Her gün okumak yalnızca kelime dağarcığını geliştirmez, gramer sezgisini de keskinleştirir.
+  - slot_en: clear agendas
+    full_sentence_en: Not only do clear agendas shorten meetings, but they also improve decisions.
+    full_sentence_tr: Net gündemler sadece toplantıları kısaltmaz, kararları da iyileştirir.
+  topic_tags:
+  - ielts
+  - presentations
+  - grammar_in_use
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.provided-that
+  chunk_en: provided that...
+  pattern_template: '[Main Clause] + provided (that) + [Condition Clause]'
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Resmi veya sözleşmesel bir şart koşmak ('... şartıyla')
+  meaning_en: Formal conditional connector for agreements, policies, and negotiations.
+  turkish_trap:
+    incorrect_en: We can approve the grant provided that they will submit monthly reports.
+    correct_en: We can approve the grant provided that they submit monthly reports.
+    explanation_tr: '''Provided that'' koşul cümleciğinde gelecek zaman için ''will'' yerine Present Simple kullanılır.'
+    trap_type: conditional_will_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Approval
+    text_en: We can sign the renewal
+    text_tr: Yenilemeyi imzalayabiliriz
+  - role: VERB_BRIDGE
+    label: Condition
+    text_en: provided that they guarantee
+    text_tr: garanti etmeleri şartıyla
+  - role: OBJECT
+    label: Term
+    text_en: 99.9% uptime.
+    text_tr: '%99,9 kesintisiz çalışma.'
+  slot_variations:
+  - slot_en: 99.9% uptime
+    full_sentence_en: We can sign the renewal provided that they guarantee 99.9% uptime.
+    full_sentence_tr: '%99,9 kesintisiz çalışma garanti etmeleri şartıyla yenilemeyi imzalayabiliriz.'
+  - slot_en: privacy rules
+    full_sentence_en: Data sharing is permitted provided that all records are anonymized.
+    full_sentence_tr: Tüm kayıtların anonimleştirilmesi şartıyla veri paylaşımına izin verilir.
+  - slot_en: advance notice
+    full_sentence_en: You can reschedule at no fee provided that you give 24 hours' notice.
+    full_sentence_tr: 24 saat önceden haber vermeniz şartıyla ücretsiz erteleyebilirsiniz.
+  topic_tags:
+  - negotiation
+  - formal_register
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.correct-me-if-im-wrong
+  chunk_en: Correct me if I'm wrong, but...
+  pattern_template: Correct me if I'm wrong, but + [Polite Challenge / Check]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Bir hatayı veya eksik bilgiyi karşı tarafı kırmadan sorgulamak
+  meaning_en: Diplomatic opener for challenging an assumption in a meeting.
+  turkish_trap:
+    incorrect_en: Correct me if I wrong, but didn't we change that?
+    correct_en: Correct me if I'm wrong, but didn't we change that last month?
+    explanation_tr: '''Wrong'' sıfat olduğu için ''I''m'' (am) bağlantı fiili mutlaka yazılmalıdır.'
+    trap_type: missing_copula
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Softener
+    text_en: Correct me if I'm wrong, but
+    text_tr: Yanılıyorsam düzeltin ama
+  - role: SUBJECT
+    label: Fact
+    text_en: that API
+    text_tr: o API
+  - role: VERB_BRIDGE
+    label: State
+    text_en: was deprecated
+    text_tr: kullanımdan kaldırıldı
+  - role: OBJECT
+    label: When
+    text_en: in March.
+    text_tr: Mart ayında.
+  slot_variations:
+  - slot_en: deprecated in March
+    full_sentence_en: Correct me if I'm wrong, but that API was deprecated in March.
+    full_sentence_tr: Yanılıyorsam düzeltin ama o API Mart ayında kullanımdan kaldırıldı.
+  - slot_en: outside our scope
+    full_sentence_en: Correct me if I'm wrong, but isn't billing outside our scope?
+    full_sentence_tr: Yanılıyorsam düzeltin ama faturalama bizim kapsamımız dışında değil mi?
+  - slot_en: two different metrics
+    full_sentence_en: Correct me if I'm wrong, but those charts measure two different metrics.
+    full_sentence_tr: Yanılıyorsam düzeltin ama o grafikler iki farklı metriği ölçüyor.
+  topic_tags:
+  - meetings
+  - negotiation
+  - politeness
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.to-build-on-that
+  chunk_en: To build on [someone]'s point,...
+  pattern_template: To build on + [Person's/that] point, + [Extension]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Başkasının fikrinin üzerine katarak söz almak
+  meaning_en: Collaborative meeting phrase that credits a colleague while adding value.
+  turkish_trap:
+    incorrect_en: To build over Deniz's point, we could automate alerts.
+    correct_en: To build on Deniz's point, we could automate alerts.
+    explanation_tr: Bir fikrin üzerine ekleme yaparken 'build over' değil 'build on' kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Bridge
+    text_en: To build on that point,
+    text_tr: Bu noktanın üzerine eklemek gerekirse,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: could also automate
+    text_tr: otomatikleştirebiliriz de
+  - role: OBJECT
+    label: What
+    text_en: the weekly QA checks.
+    text_tr: haftalık kalite kontrollerini.
+  slot_variations:
+  - slot_en: the weekly QA checks
+    full_sentence_en: To build on that point, we could also automate the weekly QA checks.
+    full_sentence_tr: Bu noktanın üzerine eklemek gerekirse haftalık kalite kontrollerini de otomatikleştirebiliriz.
+  - slot_en: Ayşe's point
+    full_sentence_en: To build on Ayşe's point, local caching would eliminate wait times.
+    full_sentence_tr: Ayşe'nin noktasına ek olarak, yerel önbellekleme bekleme sürelerini sıfırlar.
+  - slot_en: earlier feedback
+    full_sentence_en: To build on earlier feedback, we simplified the settings screen.
+    full_sentence_tr: Önceki geri bildirimin üzerine ayarlar ekranını sadeleştirdik.
+  topic_tags:
+  - meetings
+  - leadership
+  - collaboration
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.set-a-precedent
+  chunk_en: set a precedent (for...)
+  pattern_template: '[Subject] + set a precedent + (for [Noun/Verb-ing])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Gelecekteki kararlar için emsal oluşturmak
+  meaning_en: Strategic business and policy collocation about long-term impact.
+  turkish_trap:
+    incorrect_en: This exception could make a bad precedent.
+    correct_en: This exception could set a bad precedent.
+    explanation_tr: Emsal oluşturmak için 'make' değil 'set a precedent' eşdizimi kullanılır.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Action
+    text_en: Skipping code review
+    text_tr: Kod incelemesini atlamak
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: sets a risky precedent
+    text_tr: riskli bir emsal oluşturur
+  - role: OBJECT
+    label: For whom
+    text_en: for the whole team.
+    text_tr: tüm ekip için.
+  slot_variations:
+  - slot_en: the whole team
+    full_sentence_en: Skipping code review sets a risky precedent for the whole team.
+    full_sentence_tr: Kod incelemesini atlamak tüm ekip için riskli bir emsal oluşturur.
+  - slot_en: future negotiations
+    full_sentence_en: Offering a 40% discount now will set a difficult precedent for renewals.
+    full_sentence_tr: Şimdi %40 indirim sunmak yenilemeler için zor bir emsal oluşturacaktır.
+  - slot_en: industry standards
+    full_sentence_en: The ruling set a landmark precedent for consumer data rights.
+    full_sentence_tr: Karar, tüketici veri hakları için dönüm noktası niteliğinde bir emsal oluşturdu.
+  topic_tags:
+  - leadership
+  - business
+  - law
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.allocate-resources
+  chunk_en: allocate resources to...
+  pattern_template: '[Subject] + allocate + [Resources/Budget/Time] + to + [Noun]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bütçe, zaman veya insan kaynağını belirli bir önceliğe tahsis etmek
+  meaning_en: Core management collocation for planning and prioritization.
+  turkish_trap:
+    incorrect_en: We allocated more budget for security testing.
+    correct_en: We allocated more budget to security testing.
+    explanation_tr: '''Allocate'' fiili standart olarak ''to'' edatıyla kullanılır (''allocate X to Y'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: should allocate more resources to
+    text_tr: daha fazla kaynak tahsis etmeliyiz
+  - role: OBJECT
+    label: Priority
+    text_en: customer onboarding.
+    text_tr: müşteri başlangıç sürecine.
+  slot_variations:
+  - slot_en: customer onboarding
+    full_sentence_en: We should allocate more resources to customer onboarding.
+    full_sentence_tr: Müşteri başlangıç sürecine daha fazla kaynak tahsis etmeliyiz.
+  - slot_en: core infrastructure
+    full_sentence_en: The company allocated 30% of its budget to core infrastructure.
+    full_sentence_tr: Şirket bütçesinin %30'unu temel altyapıya tahsis etti.
+  - slot_en: preventive care
+    full_sentence_en: Governments should allocate more funding to preventive healthcare.
+    full_sentence_tr: Hükümetler koruyucu sağlık hizmetlerine daha fazla fon ayırmalıdır.
+  topic_tags:
+  - management
+  - business
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.mitigate-the-risk
+  chunk_en: mitigate the risk of...
+  pattern_template: '[Subject] + mitigate the risk + of + [Noun / Verb-ing]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir riskin olasılığını veya etkisini azaltmak
+  meaning_en: Polished executive collocation for risk management.
+  turkish_trap:
+    incorrect_en: Backups mitigate the risk to lose data.
+    correct_en: Backups mitigate the risk of losing data.
+    explanation_tr: '''The risk'' ismi arkasından ''to + fiil'' değil ''of + isim/-ing'' alır.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Measure
+    text_en: Staged rollouts
+    text_tr: Kademeli yayınlar
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: mitigate the risk of
+    text_tr: riskini azaltır
+  - role: OBJECT
+    label: Hazard
+    text_en: widespread outages.
+    text_tr: yaygın kesintilerin.
+  slot_variations:
+  - slot_en: widespread outages
+    full_sentence_en: Staged rollouts mitigate the risk of widespread outages.
+    full_sentence_tr: Kademeli yayınlar yaygın kesinti riskini azaltır.
+  - slot_en: supply delays
+    full_sentence_en: Working with two suppliers mitigates the risk of supply delays.
+    full_sentence_tr: İki tedarikçiyle çalışmak tedarik gecikmesi riskini azaltır.
+  - slot_en: scope creep
+    full_sentence_en: Written specifications mitigate the risk of scope creep.
+    full_sentence_tr: Yazılı şartnameler kapsam kayması riskini azaltır.
+  topic_tags:
+  - risk_management
+  - business
+  - technology
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.streamline-the-process
+  chunk_en: streamline the process
+  pattern_template: '[Subject] + streamline + [Process / Workflow / Operations]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir iş sürecini gereksiz adımlardan arındırıp akıcı hale getirmek
+  meaning_en: High-value business verb for operational efficiency.
+  turkish_trap:
+    incorrect_en: We streamlined the process to be more faster.
+    correct_en: We streamlined the approval process to cut delays.
+    explanation_tr: '''Streamline'' zaten süreci sadeleştirip hızlandırmak anlamını taşır; ''more faster'' çift karşılaştırma
+      hatasıdır.'
+    trap_type: double_comparative
+  blueprint_slots:
+  - role: SUBJECT
+    label: What
+    text_en: Automation
+    text_tr: Otomasyon
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: streamlined
+    text_tr: yalınlaştırdı
+  - role: OBJECT
+    label: Target
+    text_en: our monthly invoicing process.
+    text_tr: aylık faturalama sürecimizi.
+  slot_variations:
+  - slot_en: monthly invoicing
+    full_sentence_en: Automation streamlined our monthly invoicing process.
+    full_sentence_tr: Otomasyon aylık faturalama sürecimizi yalınlaştırdı.
+  - slot_en: hiring workflow
+    full_sentence_en: We streamlined the hiring workflow from six interviews to three.
+    full_sentence_tr: İşe alım sürecini altı mülakattan üçe indirerek yalınlaştırdık.
+  - slot_en: customer onboarding
+    full_sentence_en: A single sign-in screen streamlined customer onboarding.
+    full_sentence_tr: Tek bir giriş ekranı müşteri başlangıç sürecini akıcı hale getirdi.
+  topic_tags:
+  - operations
+  - business
+  - productivity
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.gain-momentum
+  chunk_en: gain momentum
+  pattern_template: '[Subject] + gain / lose + momentum'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir projenin, trendin veya hareketin ivme kazanması
+  meaning_en: Vivid collocation for describing accelerating adoption or progress.
+  turkish_trap:
+    incorrect_en: The initiative won momentum after the pilot.
+    correct_en: The initiative gained momentum after the pilot.
+    explanation_tr: Türkçedeki 'ivme kazanmak' için 'win' değil 'gain momentum' (veya 'build momentum') kullanılır.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Trend
+    text_en: Local-first AI
+    text_tr: Yerel öncelikli yapay zeka
+  - role: VERB_BRIDGE
+    label: Change
+    text_en: is rapidly gaining momentum
+    text_tr: hızla ivme kazanıyor
+  - role: TIME_PLACE
+    label: Where
+    text_en: in enterprise software.
+    text_tr: kurumsal yazılımlarda.
+  slot_variations:
+  - slot_en: enterprise software
+    full_sentence_en: Local-first AI is rapidly gaining momentum in enterprise software.
+    full_sentence_tr: Yerel öncelikli yapay zeka kurumsal yazılımlarda hızla ivme kazanıyor.
+  - slot_en: the sustainability push
+    full_sentence_en: The sustainability push gained momentum after new regulations passed.
+    full_sentence_tr: Sürdürülebilirlik hamlesi yeni düzenlemelerden sonra ivme kazandı.
+  - slot_en: our redesign
+    full_sentence_en: The redesign gained momentum once we finalized the shared kit.
+    full_sentence_tr: Ortak bileşen setini bitirince yeniden tasarım ivme kazandı.
+  topic_tags:
+  - business
+  - technology
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.shed-light-on
+  chunk_en: shed light on...
+  pattern_template: '[Evidence/Study] + shed light on + [Mystery / Issue]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Belirsiz bir konuya ışık tutmak / açıklık getirmek
+  meaning_en: Refined idiom for data, audits, or research clarifying a problem.
+  turkish_trap:
+    incorrect_en: The survey threw light to user behavior.
+    correct_en: The survey shed light on user behavior.
+    explanation_tr: Doğru kalıp 'shed light on' (veya 'cast light on') şeklindedir; 'throw light to' kullanılmaz.
+    trap_type: idiom_distortion
+  blueprint_slots:
+  - role: SUBJECT
+    label: Source
+    text_en: The usability study
+    text_tr: Kullanılabilirlik çalışması
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: shed light on
+    text_tr: ışık tuttu
+  - role: OBJECT
+    label: Mystery
+    text_en: why users dropped off on step two.
+    text_tr: kullanıcıların ikinci adımda neden ayrıldığına.
+  slot_variations:
+  - slot_en: why users dropped off
+    full_sentence_en: The usability study shed light on why users dropped off on step two.
+    full_sentence_tr: Kullanılabilirlik çalışması kullanıcıların ikinci adımda neden ayrıldığına ışık tuttu.
+  - slot_en: regional sales gaps
+    full_sentence_en: Quarterly metrics shed light on regional sales gaps.
+    full_sentence_tr: Çeyreklik metrikler bölgesel satış farklarına açıklık getirdi.
+  - slot_en: long-term trends
+    full_sentence_en: Recent research sheds light on how adults retain vocabulary.
+    full_sentence_tr: Güncel araştırmalar yetişkinlerin kelimeleri nasıl kalıcı öğrendiğine ışık tutuyor.
+  topic_tags:
+  - research
+  - analysis
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.pave-the-way-for
+  chunk_en: pave the way for...
+  pattern_template: '[Milestone] + pave the way for + [Future Development]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Gelecekteki bir gelişmenin önünü açmak / zemin hazırlamak
+  meaning_en: Strong strategic metaphor for enabling future phases or innovation.
+  turkish_trap:
+    incorrect_en: This upgrade opens the road for faster releases.
+    correct_en: This upgrade paves the way for faster releases.
+    explanation_tr: Türkçedeki 'yolunu açmak' ifadesi İngilizcede 'open the road' değil 'pave the way for' ile karşılanır.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Enabler
+    text_en: A clean content schema
+    text_tr: Temiz bir içerik şeması
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: paves the way for
+    text_tr: zemin hazırlar
+  - role: OBJECT
+    label: Future
+    text_en: safe curriculum expansion.
+    text_tr: güvenli müfredat büyümesine.
+  slot_variations:
+  - slot_en: safe curriculum expansion
+    full_sentence_en: A clean content schema paves the way for safe curriculum expansion.
+    full_sentence_tr: Temiz bir içerik şeması güvenli müfredat büyümesine zemin hazırlar.
+  - slot_en: regional partnerships
+    full_sentence_en: The pilot paved the way for three regional partnerships.
+    full_sentence_tr: Pilot çalışma üç bölgesel ortaklığın önünü açtı.
+  - slot_en: wider adoption
+    full_sentence_en: Lower battery costs paved the way for wider EV adoption.
+    full_sentence_tr: Düşen batarya maliyetleri elektrikli araçların yaygınlaşmasının önünü açtı.
+  topic_tags:
+  - strategy
+  - business
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.to-a-large-extent
+  chunk_en: To a large extent,...
+  pattern_template: To a large/certain extent, + [Qualified Claim]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Bir iddiayı 'büyük ölçüde' diyerek dengeli ve akademik biçimde sınırlandırmak
+  meaning_en: Precision qualifier for IELTS opinion essays and analytical briefings.
+  turkish_trap:
+    incorrect_en: In a large extent, fluency depends on daily exposure.
+    correct_en: To a large extent, fluency depends on daily exposure.
+    explanation_tr: '''Extent'' ismi her zaman ''to'' edatıyla kullanılır (''to a large/certain extent'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Degree
+    text_en: To a large extent,
+    text_tr: Büyük ölçüde,
+  - role: SUBJECT
+    label: Outcome
+    text_en: project success
+    text_tr: proje başarısı
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: depends on
+    text_tr: bağlıdır
+  - role: OBJECT
+    label: Driver
+    text_en: early stakeholder alignment.
+    text_tr: erken paydaş hizalanmasına.
+  slot_variations:
+  - slot_en: early stakeholder alignment
+    full_sentence_en: To a large extent, project success depends on early stakeholder alignment.
+    full_sentence_tr: Proje başarısı büyük ölçüde erken paydaş hizalanmasına bağlıdır.
+  - slot_en: remote productivity
+    full_sentence_en: To a large extent, remote productivity relies on clear written goals.
+    full_sentence_tr: Uzaktan verimlilik büyük ölçüde net yazılı hedeflere dayanır.
+  - slot_en: language retention
+    full_sentence_en: To a certain extent, passive reading helps, but active recall is vital.
+    full_sentence_tr: Bir ölçüde pasif okuma yardımcı olur ama aktif hatırlama hayati önemdedir.
+  topic_tags:
+  - ielts
+  - academic
+  - hedging
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.it-remains-to-be-seen
+  chunk_en: It remains to be seen whether...
+  pattern_template: It remains to be seen + whether/how + [Clause]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Sonucun henüz netleşmediğini nesnel ve profesyonel biçimde belirtmek
+  meaning_en: Measured analytical phrase for uncertain future outcomes.
+  turkish_trap:
+    incorrect_en: It remains to see whether users will adopt the feature.
+    correct_en: It remains to be seen whether users will adopt the feature.
+    explanation_tr: Kalıp pasif mastar ('to be seen') ile kurulur; aktif 'to see' hatalıdır.
+    trap_type: passive_infinitive
+  blueprint_slots:
+  - role: SUBJECT
+    label: Frame
+    text_en: It remains to be seen
+    text_tr: Henüz belli değil / Göreceğiz
+  - role: VERB_BRIDGE
+    label: Question
+    text_en: whether the new pricing
+    text_tr: yeni fiyatlandırmanın ... olup olmayacağı
+  - role: OBJECT
+    label: Outcome
+    text_en: will boost conversions.
+    text_tr: dönüşümleri artırıp artırmayacağı.
+  slot_variations:
+  - slot_en: boost conversions
+    full_sentence_en: It remains to be seen whether the new pricing will boost conversions.
+    full_sentence_tr: Yeni fiyatlandırmanın dönüşümleri artırıp artırmayacağı henüz belli değil.
+  - slot_en: reduce congestion
+    full_sentence_en: It remains to be seen whether the toll will reduce city congestion.
+    full_sentence_tr: Geçiş ücretinin şehir trafiğini azaltıp azaltmayacağı zamanla görülecek.
+  - slot_en: scale smoothly
+    full_sentence_en: It remains to be seen how smoothly the vendor will scale.
+    full_sentence_tr: Tedarikçinin ne kadar sorunsuz ölçekleneceği henüz belli değil.
+  topic_tags:
+  - ielts
+  - analysis
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.given-that
+  chunk_en: Given that..., ...
+  pattern_template: Given that + [Known Fact], + [Logical Consequence]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Mevcut bir gerçeği veri kabul ederek mantıklı bir öneri veya sonuç çıkarmak
+  meaning_en: Crisp premise-to-conclusion connector for meetings and essays.
+  turkish_trap:
+    incorrect_en: Given the budget is tight, we should phase the rollout.
+    correct_en: Given that the budget is tight, we should phase the rollout.
+    explanation_tr: '''Given'' arkasından tam cümle alıyorsa ''Given that'' (veya isim grubu için ''Given + noun'') kullanılır.'
+    trap_type: clause_structure
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Premise
+    text_en: Given that the team is small,
+    text_tr: Ekibin küçük olduğu göz önüne alındığında,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: should focus on
+    text_tr: odaklanmalıyız
+  - role: OBJECT
+    label: Goal
+    text_en: the highest-impact fixes.
+    text_tr: en yüksek etkili düzeltmelere.
+  slot_variations:
+  - slot_en: the team is small
+    full_sentence_en: Given that the team is small, we should focus on the highest-impact fixes.
+    full_sentence_tr: Ekibin küçük olduğu düşünüldüğünde en yüksek etkili düzeltmelere odaklanmalıyız.
+  - slot_en: offline use matters
+    full_sentence_en: Given that offline use matters, local storage is essential.
+    full_sentence_tr: Çevrimdışı kullanım önemli olduğuna göre yerel depolama şarttır.
+  - slot_en: prices have stabilized
+    full_sentence_en: Given that prices have stabilized, now is a good time to renew.
+    full_sentence_tr: Fiyatlar dengelendiğine göre şimdi yenileme için iyi bir zaman.
+  topic_tags:
+  - decision_making
+  - ielts
+  - meetings
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.assuming-that
+  chunk_en: Assuming (that)...
+  pattern_template: Assuming (that) + [Premise], + [Projected Result]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Bir varsayım altında plan veya tahmin paylaşmak ('... varsayarsak')
+  meaning_en: Practical planning frame that makes dependencies explicit.
+  turkish_trap:
+    incorrect_en: Assuming that tests will pass, we ship Friday.
+    correct_en: Assuming that tests pass, we will ship on Friday.
+    explanation_tr: '''Assuming that'' koşul/varsayım cümleciğinde gelecek için ''will'' yerine Present Simple kullanılır.'
+    trap_type: conditional_will_trap
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Assumption
+    text_en: Assuming that QA passes,
+    text_tr: QA testlerinin geçtiğini varsayarsak,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Plan
+    text_en: will release
+    text_tr: yayınlayacağız
+  - role: OBJECT
+    label: When
+    text_en: on Thursday morning.
+    text_tr: Perşembe sabahı.
+  slot_variations:
+  - slot_en: QA passes
+    full_sentence_en: Assuming that QA passes, we will release on Thursday morning.
+    full_sentence_tr: QA testlerinin geçtiğini varsayarsak Perşembe sabahı yayınlayacağız.
+  - slot_en: the flight is on time
+    full_sentence_en: Assuming the flight is on time, I'll make the two o'clock briefing.
+    full_sentence_tr: Uçuşun zamanında olduğunu varsayarsak saat ikideki brifinge yetişirim.
+  - slot_en: demand holds steady
+    full_sentence_en: Assuming demand holds steady, we will break even by October.
+    full_sentence_tr: Talebin sabit kaldığını varsayarsak Ekimde başabaş noktasına ulaşırız.
+  topic_tags:
+  - project_management
+  - meetings
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.take-ownership-of
+  chunk_en: take ownership of...
+  pattern_template: '[Subject] + take ownership of + [Task / Problem / Outcome]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir görevin veya sorunun sorumluluğunu uçtan uca üstlenmek
+  meaning_en: High-trust leadership collocation for accountability.
+  turkish_trap:
+    incorrect_en: I will take the ownership for the migration.
+    correct_en: I will take ownership of the migration.
+    explanation_tr: Kalıp artikelsiz 'take ownership of' şeklindedir; 'the' ve 'for' kullanılmaz.
+    trap_type: preposition_and_article
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I'm happy
+    text_tr: Memnuniyetle
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: to take ownership of
+    text_tr: sorumluluğunu üstlenirim
+  - role: OBJECT
+    label: What
+    text_en: the release checklist.
+    text_tr: sürüm kontrol listesinin.
+  slot_variations:
+  - slot_en: the release checklist
+    full_sentence_en: I'm happy to take ownership of the release checklist.
+    full_sentence_tr: Sürüm kontrol listesinin sorumluluğunu memnuniyetle üstlenirim.
+  - slot_en: the incident follow-up
+    full_sentence_en: She took full ownership of the incident follow-up.
+    full_sentence_tr: Olay sonrası takibin tam sorumluluğunu üstlendi.
+  - slot_en: their own learning
+    full_sentence_en: Great learners take ownership of their daily practice.
+    full_sentence_tr: İyi öğrenenler günlük pratiklerinin sorumluluğunu üstlenir.
+  topic_tags:
+  - leadership
+  - career
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.push-back-on
+  chunk_en: push back on...
+  pattern_template: '[Subject] + push back on + [Request / Timeline / Scope]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Gerçekçi olmayan bir talebe profesyonelce itiraz etmek
+  meaning_en: Modern workplace phrasal verb for setting healthy boundaries.
+  turkish_trap:
+    incorrect_en: We had to push back the unrealistic deadline. (meaning 'object to')
+    correct_en: We had to push back on the unrealistic scope.
+    explanation_tr: '''Push back [tarih]'' ertelemek demektir; bir talebe itiraz etmek için ''push back on'' kullanılır.'
+    trap_type: phrasal_verb_particle
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: politely pushed back on
+    text_tr: kibarca itiraz ettik
+  - role: OBJECT
+    label: Request
+    text_en: the last-minute scope addition.
+    text_tr: son dakika kapsam eklemesine.
+  slot_variations:
+  - slot_en: last-minute scope addition
+    full_sentence_en: We politely pushed back on the last-minute scope addition.
+    full_sentence_tr: Son dakika kapsam eklemesine kibarca itiraz ettik.
+  - slot_en: the aggressive timeline
+    full_sentence_en: Engineering pushed back on the aggressive timeline with clear data.
+    full_sentence_tr: Mühendislik ekibi agresif takvime net verilerle itiraz etti.
+  - slot_en: unnecessary meetings
+    full_sentence_en: Managers should encourage teams to push back on unnecessary meetings.
+    full_sentence_tr: Yöneticiler ekipleri gereksiz toplantılara itiraz etmeye teşvik etmelidir.
+  topic_tags:
+  - negotiation
+  - leadership
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.iron-out
+  chunk_en: iron out [the details/issues]
+  pattern_template: '[Subject] + iron out + [Details / Kinks / Differences]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Kalan küçük pürüzleri veya anlaşmazlıkları gidermek
+  meaning_en: Idiomatic phrasal verb for resolving minor remaining obstacles.
+  turkish_trap:
+    incorrect_en: Let's iron the final details tomorrow.
+    correct_en: Let's iron out the final details tomorrow.
+    explanation_tr: '''Iron'' tek başına ütülemek demektir; pürüzleri gidermek için ''iron out'' kullanılır.'
+    trap_type: phrasal_verb_particle
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: just need to iron out
+    text_tr: sadece pürüzlerini gidermeliyiz
+  - role: OBJECT
+    label: What
+    text_en: a few contract details.
+    text_tr: birkaç sözleşme detayının.
+  slot_variations:
+  - slot_en: a few contract details
+    full_sentence_en: We just need to iron out a few contract details before signing.
+    full_sentence_tr: İmzalamadan önce sadece birkaç sözleşme detayındaki pürüzleri gidermemiz gerekiyor.
+  - slot_en: the remaining bugs
+    full_sentence_en: QA and dev paired up to iron out the remaining UI bugs.
+    full_sentence_tr: QA ve geliştirme ekibi kalan arayüz pürüzlerini gidermek için birlikte çalıştı.
+  - slot_en: scheduling conflicts
+    full_sentence_en: Let's iron out our scheduling conflicts before inviting the client.
+    full_sentence_tr: Müşteriyi davet etmeden önce takvim çakışmalarını çözelim.
+  topic_tags:
+  - negotiation
+  - project_management
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.from-a-practical-standpoint
+  chunk_en: From a practical standpoint,...
+  pattern_template: From a [practical/business/technical] standpoint, + [Clause]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Konuyu pratik, teknik veya ticari perspektiften çerçevelemek
+  meaning_en: Executive opener that signals the lens being used for a judgment.
+  turkish_trap:
+    incorrect_en: From practical standpoint, offline caching is better.
+    correct_en: From a practical standpoint, offline caching is better.
+    explanation_tr: '''Standpoint'' sayılabilir tekil isim olduğu için ''a'' artikeli zorunludur.'
+    trap_type: missing_article
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Lens
+    text_en: From a practical standpoint,
+    text_tr: Pratik bir bakış açısıyla,
+  - role: SUBJECT
+    label: Topic
+    text_en: simpler workflows
+    text_tr: daha sade iş akışları
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: are easier to maintain.
+    text_tr: bakımı daha kolaydır.
+  slot_variations:
+  - slot_en: simpler workflows
+    full_sentence_en: From a practical standpoint, simpler workflows are easier to maintain.
+    full_sentence_tr: Pratik bir bakış açısıyla daha sade iş akışlarının bakımı daha kolaydır.
+  - slot_en: a business standpoint
+    full_sentence_en: From a business standpoint, retention is cheaper than acquisition.
+    full_sentence_tr: Ticari açıdan mevcut kullanıcıyı tutmak yeni kazanmaktan daha ucuzdur.
+  - slot_en: a technical standpoint
+    full_sentence_en: From a technical standpoint, separating the two databases is cleaner.
+    full_sentence_tr: Teknik açıdan iki veritabanını ayırmak daha temizdir.
+  topic_tags:
+  - presentations
+  - leadership
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.not-to-mention
+  chunk_en: not to mention...
+  pattern_template: '[Point A], + not to mention + [Even Stronger Point B]'
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Sıralananlara ek olarak daha da çarpıcı bir unsuru vurgulamak ('... cabası / saymıyorum bile')
+  meaning_en: Natural emphatic addition marker for spoken and written English.
+  turkish_trap:
+    incorrect_en: It saves money, not mentioning the time saved.
+    correct_en: It saves money, not to mention the hours of manual work.
+    explanation_tr: Kalıp sabit olarak 'not to mention' şeklindedir; 'not mentioning' kullanılmaz.
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Point A
+    text_en: The delay hurt revenue,
+    text_tr: Gecikme gelire zarar verdi,
+  - role: VERB_BRIDGE
+    label: Bridge
+    text_en: not to mention
+    text_tr: şunu saymıyorum bile
+  - role: OBJECT
+    label: Point B
+    text_en: the impact on customer trust.
+    text_tr: müşteri güveni üzerindeki etkisini.
+  slot_variations:
+  - slot_en: customer trust
+    full_sentence_en: The delay hurt revenue, not to mention the impact on customer trust.
+    full_sentence_tr: Gecikme gelire zarar verdi, müşteri güveni üzerindeki etkisini saymıyorum bile.
+  - slot_en: lower stress
+    full_sentence_en: Working remotely cuts commuting costs, not to mention daily stress.
+    full_sentence_tr: Uzaktan çalışmak yol masraflarını azaltıyor, günlük stresi saymıyorum bile.
+  - slot_en: energy savings
+    full_sentence_en: The new trains are faster, not to mention far more energy-efficient.
+    full_sentence_tr: Yeni trenler daha hızlı, çok daha enerji verimli olmaları da cabası.
+  topic_tags:
+  - speaking
+  - writing
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.keep-a-close-eye-on
+  chunk_en: keep a close eye on...
+  pattern_template: '[Subject] + keep a close eye on + [Metric / Risk / Process]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Kritik bir metriği veya süreci yakından izlemek
+  meaning_en: Natural idiomatic alternative to 'monitor closely'.
+  turkish_trap:
+    incorrect_en: We should keep close eyes on server memory.
+    correct_en: We should keep a close eye on server memory.
+    explanation_tr: 'Deyimde ''eye'' tekil ve ''a'' artikeliyle kullanılır: ''keep a close eye on''.'
+    trap_type: singular_plural_idiom
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: need to keep a close eye on
+    text_tr: yakından takip etmeliyiz
+  - role: OBJECT
+    label: Metric
+    text_en: cloud API spending.
+    text_tr: bulut API harcamalarını.
+  slot_variations:
+  - slot_en: cloud API spending
+    full_sentence_en: We need to keep a close eye on cloud API spending this month.
+    full_sentence_tr: Bu ay bulut API harcamalarını yakından takip etmeliyiz.
+  - slot_en: crash rates
+    full_sentence_en: After launch, let's keep a close eye on crash rates.
+    full_sentence_tr: Lansmandan sonra çökme oranlarını yakından izleyelim.
+  - slot_en: inventory levels
+    full_sentence_en: Operations keeps a close eye on inventory levels before holidays.
+    full_sentence_tr: Operasyon ekibi tatil öncesinde stok seviyelerini yakından takip eder.
+  topic_tags:
+  - operations
+  - workplace
+  - technology
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.fall-short-of
+  chunk_en: fall short of...
+  pattern_template: '[Subject] + fall short of + [Target / Standard / Expectations]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Belirlenen hedef veya standardın gerisinde kalmak
+  meaning_en: Diplomatic, objective phrase for reporting missed targets.
+  turkish_trap:
+    incorrect_en: Q1 revenue fell short from our target.
+    correct_en: Q1 revenue fell short of our target.
+    explanation_tr: '''Fall short'' kalıbı ''from'' değil her zaman ''of'' edatıyla kullanılır.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: What
+    text_en: The initial draft
+    text_tr: İlk taslak
+  - role: VERB_BRIDGE
+    label: Result
+    text_en: fell short of
+    text_tr: gerisinde kaldı
+  - role: OBJECT
+    label: Standard
+    text_en: our editorial standards.
+    text_tr: yayın standartlarımızın.
+  slot_variations:
+  - slot_en: our editorial standards
+    full_sentence_en: The initial draft fell short of our editorial standards.
+    full_sentence_tr: İlk taslak yayın standartlarımızın gerisinde kaldı.
+  - slot_en: quarterly targets
+    full_sentence_en: Sales fell slightly short of quarterly targets due to supply issues.
+    full_sentence_tr: Tedarik sorunları nedeniyle satışlar çeyrek hedeflerinin biraz gerisinde kaldı.
+  - slot_en: public expectations
+    full_sentence_en: The transit upgrade fell short of commuter expectations.
+    full_sentence_tr: Ulaşım iyileştirmesi yolcuların beklentilerinin gerisinde kaldı.
+  topic_tags:
+  - business
+  - reviews
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.take-precedence-over
+  chunk_en: take precedence over...
+  pattern_template: '[Priority A] + take precedence over + [Priority B]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir önceliğin diğerinden önce geldiğini resmi biçimde ifade etmek
+  meaning_en: Clear prioritization collocation for governance and trade-offs.
+  turkish_trap:
+    incorrect_en: User safety takes precedence than speed.
+    correct_en: User safety takes precedence over speed.
+    explanation_tr: 'Kıyaslama edatı ''than'' değil ''over''dır: ''take precedence over''.'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Priority A
+    text_en: Data integrity
+    text_tr: Veri bütünlüğü
+  - role: VERB_BRIDGE
+    label: Rule
+    text_en: takes precedence over
+    text_tr: önceliklidir / önüne geçer
+  - role: OBJECT
+    label: Priority B
+    text_en: new feature velocity.
+    text_tr: yeni özellik hızının.
+  slot_variations:
+  - slot_en: new feature velocity
+    full_sentence_en: Data integrity takes precedence over new feature velocity.
+    full_sentence_tr: Veri bütünlüğü yeni özellik hızından önce gelir.
+  - slot_en: legal compliance
+    full_sentence_en: Legal compliance always takes precedence over marketing deadlines.
+    full_sentence_tr: Hukuki uyum her zaman pazarlama takvimlerinin önünde yer alır.
+  - slot_en: urgent outages
+    full_sentence_en: Production outages take precedence over planned sprint tasks.
+    full_sentence_tr: Canlı ortam kesintileri planlı sprint görevlerinin önüne geçer.
+  topic_tags:
+  - leadership
+  - decision_making
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.a-growing-body-of-evidence
+  chunk_en: A growing body of evidence suggests...
+  pattern_template: A growing body of evidence suggests that + [Clause]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: Artan araştırma ve kanıtların bir bulguyu desteklediğini sunmak
+  meaning_en: Academic evidence-framing opener for IELTS Band 7.5+ and executive whitepapers.
+  turkish_trap:
+    incorrect_en: A growing body of evidences suggest that sleep helps.
+    correct_en: A growing body of evidence suggests that sleep boosts memory.
+    explanation_tr: '''Evidence'' sayılamaz (''evidences'' denmez) ve özne ''a body'' tekil olduğu için fiil ''suggests''
+      olur.'
+    trap_type: uncountable_and_agreement
+  blueprint_slots:
+  - role: SUBJECT
+    label: Source
+    text_en: A growing body of evidence
+    text_tr: Artan sayıdaki kanıt
+  - role: VERB_BRIDGE
+    label: Verb
+    text_en: suggests that
+    text_tr: şunu gösteriyor ki
+  - role: OBJECT
+    label: Finding
+    text_en: spaced repetition outperforms cramming.
+    text_tr: aralıklı tekrar son dakika çalışmasından üstündür.
+  slot_variations:
+  - slot_en: spaced repetition
+    full_sentence_en: A growing body of evidence suggests that spaced repetition outperforms cramming.
+    full_sentence_tr: Artan kanıtlar aralıklı tekrarın son dakika çalışmasından üstün olduğunu gösteriyor.
+  - slot_en: four-day weeks
+    full_sentence_en: A growing body of evidence suggests that shorter weeks can preserve output.
+    full_sentence_tr: Artan kanıtlar daha kısa çalışma haftalarının üretimi koruyabileceğini gösteriyor.
+  - slot_en: green spaces
+    full_sentence_en: A growing body of evidence suggests that urban parks lower stress.
+    full_sentence_tr: Artan kanıtlar şehir parklarının stresi azalttığını gösteriyor.
+  topic_tags:
+  - ielts
+  - academic
+  - research
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.even-so
+  chunk_en: Even so,...
+  pattern_template: Even so, + [Surprising Contrast / Persistent Fact]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Önceki gerçek doğru olsa bile sonucun değişmediğini belirtmek ('Yine de / Buna rağmen...')
+  meaning_en: Concise, natural concessive bridge for speech and writing.
+  turkish_trap:
+    incorrect_en: Even so the cost is high, we will proceed.
+    correct_en: The cost is high. Even so, we will proceed.
+    explanation_tr: '''Even so'' bağlaç (''although'') değildir; önceki cümleye gönderme yapan bir zarftır ve yeni cümle başında
+      kullanılır.'
+    trap_type: conjunction_vs_adverb
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Concession
+    text_en: Even so,
+    text_tr: Buna rağmen / Yine de,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: should prepare
+    text_tr: hazırlamalıyız
+  - role: OBJECT
+    label: Plan
+    text_en: a contingency budget.
+    text_tr: bir acil durum bütçesi.
+  slot_variations:
+  - slot_en: a contingency budget
+    full_sentence_en: The risk is low. Even so, we should prepare a contingency budget.
+    full_sentence_tr: Risk düşük. Yine de bir acil durum bütçesi hazırlamalıyız.
+  - slot_en: check the edge cases
+    full_sentence_en: All unit tests passed. Even so, let's check the tablet edge cases.
+    full_sentence_tr: Tüm birim testleri geçti. Yine de tablet uç durumlarını kontrol edelim.
+  - slot_en: keep practicing
+    full_sentence_en: Grammar feels complex at first. Even so, daily exposure makes it intuitive.
+    full_sentence_tr: Gramer başta karmaşık gelir. Yine de günlük maruz kalma onu sezgisel kılar.
+  topic_tags:
+  - conversation
+  - ielts
+  - writing
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.make-the-most-of
+  chunk_en: make the most of...
+  pattern_template: '[Subject] + make the most of + [Opportunity / Time / Resource]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Mevcut zamanı veya fırsatı en verimli şekilde değerlendirmek
+  meaning_en: Positive, idiomatic phrase for maximizing limited resources.
+  turkish_trap:
+    incorrect_en: Let's make the best from this workshop.
+    correct_en: Let's make the most of this workshop.
+    explanation_tr: Kalıp 'make the most of'tur; 'from' değil 'of' edatı kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Let's
+    text_tr: Hadi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: make the most of
+    text_tr: en iyi şekilde değerlendirelim
+  - role: OBJECT
+    label: Resource
+    text_en: our thirty-minute slot.
+    text_tr: otuz dakikalık zaman dilimimizi.
+  slot_variations:
+  - slot_en: our thirty-minute slot
+    full_sentence_en: Let's make the most of our thirty-minute slot with the client.
+    full_sentence_tr: Müşteriyle olan otuz dakikalık zaman dilimimizi en iyi şekilde değerlendirelim.
+  - slot_en: quiet mornings
+    full_sentence_en: I try to make the most of quiet mornings for deep writing.
+    full_sentence_tr: Derin yazma işleri için sessiz sabahları en iyi şekilde değerlendirmeye çalışırım.
+  - slot_en: the conference
+    full_sentence_en: Prepare three questions beforehand to make the most of the conference.
+    full_sentence_tr: Konferanstan en fazla verimi almak için önceden üç soru hazırla.
+  topic_tags:
+  - productivity
+  - daily_life
+  - meetings
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.what-strikes-me-is
+  chunk_en: What strikes me is that...
+  pattern_template: What strikes me (most) is that + [Key Observation]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Dikkat çekici bulduğu bir gözlemi vurgulayarak paylaşmak
+  meaning_en: Natural pseudo-cleft opener for emphasizing a standout insight.
+  turkish_trap:
+    incorrect_en: What strikes to me is that users stayed offline.
+    correct_en: What strikes me is that users stayed offline.
+    explanation_tr: '''Strike'' burada geçişli fiildir; önüne ''to'' edatı konmaz (''strikes me'').'
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Focus
+    text_en: What strikes me most
+    text_tr: Bana en çarpıcı gelen şey
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: is that
+    text_tr: şudur ki
+  - role: OBJECT
+    label: Insight
+    text_en: retention doubled without ads.
+    text_tr: reklamsız bile bağlılık iki katına çıktı.
+  slot_variations:
+  - slot_en: retention doubled
+    full_sentence_en: What strikes me most is that retention doubled without paid ads.
+    full_sentence_tr: Bana en çarpıcı gelen şey ücretli reklam olmadan bağlılığın iki katına çıkması.
+  - slot_en: consistent phrasing
+    full_sentence_en: What strikes me is how consistently advanced speakers hedge claims.
+    full_sentence_tr: Bana dikkat çekici gelen şey ileri düzey konuşmacıların iddiaları ne kadar tutarlı yumuşattığı.
+  - slot_en: low support volume
+    full_sentence_en: What strikes me is how few support tickets we saw after release.
+    full_sentence_tr: Bana dikkat çekici gelen şey sürüm sonrası ne kadar az destek talebi geldiği.
+  topic_tags:
+  - analysis
+  - meetings
+  - speaking
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.starter.before-jumping-to-conclusions
+  chunk_en: Before jumping to conclusions,...
+  pattern_template: Before jumping to conclusions, + [Measured Next Step]
+  cefr_level: B2
+  category: SENTENCE_STARTER
+  intent_tr: Acele yargıya varmadan önce ek veri istemek
+  meaning_en: Measured leadership phrase for slowing down premature blame or assumptions.
+  turkish_trap:
+    incorrect_en: Before jump to conclusions, let's verify the logs.
+    correct_en: Before jumping to conclusions, let's verify the logs.
+    explanation_tr: '''Before'' ardından öznesiz fiil geliyorsa ''-ing'' (gerund) biçiminde kullanılır.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Caution
+    text_en: Before jumping to conclusions,
+    text_tr: Acele sonuçlara varmadan önce,
+  - role: SUBJECT
+    label: Who
+    text_en: let's
+    text_tr: hadi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: check
+    text_tr: kontrol edelim
+  - role: OBJECT
+    label: Data
+    text_en: the server metrics.
+    text_tr: sunucu metriklerini.
+  slot_variations:
+  - slot_en: the server metrics
+    full_sentence_en: Before jumping to conclusions, let's check the server metrics.
+    full_sentence_tr: Acele sonuçlara varmadan önce sunucu metriklerini kontrol edelim.
+  - slot_en: both sides
+    full_sentence_en: Before jumping to conclusions, we should hear both teams' perspectives.
+    full_sentence_tr: Acele hüküm vermeden önce iki ekibin de bakış açısını dinlemeliyiz.
+  - slot_en: regional data
+    full_sentence_en: Before jumping to conclusions, compare the numbers across regions.
+    full_sentence_tr: Acele sonuca varmadan önce rakamları bölgeler arası karşılaştıralım.
+  topic_tags:
+  - leadership
+  - problem_solving
+  - meetings
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.strike-the-right-balance
+  chunk_en: find common ground
+  pattern_template: '[Subject] + find common ground + (on [Issue])'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Farklı görüşteki taraflarla ortak bir zemin bulmak
+  meaning_en: Constructive negotiation collocation for resolving disagreements.
+  turkish_trap:
+    incorrect_en: We tried to find a common ground with the supplier.
+    correct_en: We tried to find common ground with the supplier.
+    explanation_tr: '''Common ground'' bu deyimde sayılamaz gibi artikelsiz kullanılır (''a common ground'' değil).'
+    trap_type: article_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Both teams
+    text_tr: İki ekip de
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: managed to find common ground
+    text_tr: ortak zemin bulmayı başardı
+  - role: OBJECT
+    label: Topic
+    text_en: on support hours.
+    text_tr: destek saatleri konusunda.
+  slot_variations:
+  - slot_en: support hours
+    full_sentence_en: Both teams managed to find common ground on support hours.
+    full_sentence_tr: İki ekip de destek saatleri konusunda ortak zemin bulmayı başardı.
+  - slot_en: licensing terms
+    full_sentence_en: Legal teams found common ground on the renewal licensing terms.
+    full_sentence_tr: Hukuk ekipleri yenileme lisans koşullarında ortak zemin buldu.
+  - slot_en: design trade-offs
+    full_sentence_en: It took one focused session to find common ground on UI trade-offs.
+    full_sentence_tr: Arayüz ödünleşimleri konusunda ortak zemin bulmak tek bir odaklı oturum sürdü.
+  topic_tags:
+  - negotiation
+  - leadership
+  - communication
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.drive-growth
+  chunk_en: drive sustainable growth
+  pattern_template: '[Subject] + drive + [sustainable/long-term] growth'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Sürdürülebilir büyümeyi tetiklemek ve sürdürmek
+  meaning_en: Executive verb-noun collocation for business strategy discussions.
+  turkish_trap:
+    incorrect_en: Better retention drives a sustainable growth.
+    correct_en: Better retention drives sustainable growth.
+    explanation_tr: Soyut anlamda 'growth' artikelsiz kullanılır ('a sustainable growth' denmez).
+    trap_type: article_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Driver
+    text_en: Product quality
+    text_tr: Ürün kalitesi
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: drives sustainable growth
+    text_tr: sürdürülebilir büyümeyi besler
+  - role: TIME_PLACE
+    label: Horizon
+    text_en: over the long run.
+    text_tr: uzun vadede.
+  slot_variations:
+  - slot_en: over the long run
+    full_sentence_en: Product quality drives sustainable growth over the long run.
+    full_sentence_tr: Ürün kalitesi uzun vadede sürdürülebilir büyümeyi besler.
+  - slot_en: emerging markets
+    full_sentence_en: Mobile-first tools are driving growth across emerging markets.
+    full_sentence_tr: Mobil öncelikli araçlar gelişen pazarlarda büyümeyi tetikliyor.
+  - slot_en: clean energy
+    full_sentence_en: Grid modernization can drive industrial growth while cutting emissions.
+    full_sentence_tr: Şebeke modernizasyonu emisyonları düşürürken endüstriyel büyümeyi tetikleyebilir.
+  topic_tags:
+  - business
+  - strategy
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.as-a-matter-of-fact
+  chunk_en: As a matter of fact,...
+  pattern_template: As a matter of fact, + [Confirming or Surprisingly Specific Fact]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Az önce söylenen bilgiyi somut ve güçlü bir gerçekle pekiştirmek ('Aslına bakarsan...')
+  meaning_en: Conversational amplifier introducing an exact supporting detail.
+  turkish_trap:
+    incorrect_en: As matter of fact, we already shipped the fix.
+    correct_en: As a matter of fact, we already shipped the fix.
+    explanation_tr: 'Kalıptaki ''a'' artikeli zorunludur: ''As a matter of fact,''.'
+    trap_type: missing_article
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Amplifier
+    text_en: As a matter of fact,
+    text_tr: Aslına bakarsan,
+  - role: SUBJECT
+    label: Who
+    text_en: we
+    text_tr: biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: tested
+    text_tr: test ettik
+  - role: OBJECT
+    label: What
+    text_en: that exact scenario yesterday.
+    text_tr: tam olarak o senaryoyu dün.
+  slot_variations:
+  - slot_en: that exact scenario
+    full_sentence_en: As a matter of fact, we tested that exact scenario yesterday.
+    full_sentence_tr: Aslına bakarsan tam olarak o senaryoyu dün test ettik.
+  - slot_en: cheaper per unit
+    full_sentence_en: As a matter of fact, the annual plan is 25% cheaper per month.
+    full_sentence_tr: Aslına bakarsan yıllık plan aylık bazda %25 daha ucuz.
+  - slot_en: worked together
+    full_sentence_en: As a matter of fact, I know the lead engineer from university.
+    full_sentence_tr: Aslına bakarsan baş mühendisi üniversiteden tanıyorum.
+  topic_tags:
+  - speaking
+  - conversation
+  - meetings
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.all-things-considered
+  chunk_en: All things considered,...
+  pattern_template: All things considered, + [Balanced Final Verdict]
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Tüm artıları ve eksileri hesaba katarak nihai değerlendirme yapmak ('Her şey düşünüldüğünde...')
+  meaning_en: Natural summary frame for retrospectives, reviews, and IELTS Speaking Part 3.
+  turkish_trap:
+    incorrect_en: All things considering, the migration went smoothly.
+    correct_en: All things considered, the migration went smoothly.
+    explanation_tr: 'Kalıp pasif ortaçla kurulur: ''considering'' değil ''considered'' kullanılır.'
+    trap_type: participle_voice
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Verdict
+    text_en: All things considered,
+    text_tr: Her şey göz önüne alındığında,
+  - role: SUBJECT
+    label: Event
+    text_en: the product rollout
+    text_tr: ürün yaygınlaştırması
+  - role: VERB_BRIDGE
+    label: Outcome
+    text_en: went remarkably well.
+    text_tr: dikkat çekici ölçüde iyi gitti.
+  slot_variations:
+  - slot_en: the product rollout
+    full_sentence_en: All things considered, the product rollout went remarkably well.
+    full_sentence_tr: Her şey göz önüne alındığında ürün yaygınlaştırması oldukça iyi gitti.
+  - slot_en: our budget
+    full_sentence_en: All things considered, extending the current contract is the safest option.
+    full_sentence_tr: Tüm koşullar düşünüldüğünde mevcut sözleşmeyi uzatmak en güvenli seçenek.
+  - slot_en: the travel delay
+    full_sentence_en: All things considered, we arrived in plenty of time for the keynote.
+    full_sentence_tr: Her şeye rağmen açılış konuşmasına bolca vakit varken ulaştık.
+  topic_tags:
+  - meetings
+  - ielts
+  - reviews
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.plays-a-pivotal-role
+  chunk_en: be closely linked to...
+  pattern_template: '[Factor A] + be closely linked to + [Factor B]'
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: İki değişken arasında güçlü bir ilişki olduğunu bilimsel/nesnel tonda kurmak
+  meaning_en: Accurate academic frame avoiding overclaiming strict causation.
+  turkish_trap:
+    incorrect_en: Sleep quality is closely linked with memory.
+    correct_en: Sleep quality is closely linked to memory.
+    explanation_tr: Akademik kullanımda 'linked to' standart eşdizimdir ('linked with' yerine 'to' tercih edilir).
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Factor A
+    text_en: Consistent exposure
+    text_tr: Düzenli maruz kalma
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: is closely linked to
+    text_tr: yakından ilişkilidir
+  - role: OBJECT
+    label: Factor B
+    text_en: natural phrasing.
+    text_tr: doğal ifade kurma becerisiyle.
+  slot_variations:
+  - slot_en: natural phrasing
+    full_sentence_en: Consistent exposure is closely linked to natural phrasing.
+    full_sentence_tr: Düzenli maruz kalma doğal ifade becerisiyle yakından ilişkilidir.
+  - slot_en: employee autonomy
+    full_sentence_en: High engagement is closely linked to employee autonomy.
+    full_sentence_tr: Yüksek bağlılık çalışan özerkliğiyle yakından ilişkilidir.
+  - slot_en: air quality
+    full_sentence_en: Respiratory health is closely linked to urban air quality.
+    full_sentence_tr: Solunum sağlığı kentsel hava kalitesiyle yakından bağlantılıdır.
+  topic_tags:
+  - ielts
+  - academic
+  - research
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.ielts.from-an-economic-perspective
+  chunk_en: From an economic perspective,...
+  pattern_template: From a/an [economic/social/environmental] perspective, + [Clause]
+  cefr_level: B2
+  category: IELTS_ACADEMIC_FRAME
+  intent_tr: IELTS veya strateji tartışmasını belirli bir disiplin penceresinden analiz etmek
+  meaning_en: Organizes multi-angle essays and stakeholder briefings cleanly.
+  turkish_trap:
+    incorrect_en: From economic perspective, local manufacturing creates jobs.
+    correct_en: From an economic perspective, local manufacturing creates jobs.
+    explanation_tr: '''Perspective'' sayılabilir isim olduğu için ''an/a'' artikeli zorunludur.'
+    trap_type: missing_article
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Angle
+    text_en: From an economic perspective,
+    text_tr: Ekonomik açıdan bakıldığında,
+  - role: SUBJECT
+    label: Policy
+    text_en: preventive maintenance
+    text_tr: önleyici bakım
+  - role: VERB_BRIDGE
+    label: Effect
+    text_en: protects
+    text_tr: korur
+  - role: OBJECT
+    label: Target
+    text_en: public infrastructure budgets.
+    text_tr: kamu altyapı bütçelerini.
+  slot_variations:
+  - slot_en: public infrastructure budgets
+    full_sentence_en: From an economic perspective, preventive maintenance protects public budgets.
+    full_sentence_tr: Ekonomik açıdan bakıldığında önleyici bakım kamu bütçelerini korur.
+  - slot_en: environmental perspective
+    full_sentence_en: From an environmental perspective, rail freight cuts carbon intensity.
+    full_sentence_tr: Çevresel açıdan demiryolu yük taşımacılığı karbon yoğunluğunu düşürür.
+  - slot_en: social perspective
+    full_sentence_en: From a social perspective, affordable transit expands job access.
+    full_sentence_tr: Sosyal açıdan erişilebilir toplu taşıma iş imkanlarını genişletir.
+  topic_tags:
+  - ielts
+  - academic
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.shed-weight-on-clarify
+  chunk_en: iron out / narrow / pin down...
+  pattern_template: '[Subject] + pin down + [Exact Date / Cause / Detail]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Belirsiz bir tarihi, nedeni veya koşulu kesinleştirip netleştirmek
+  meaning_en: Crisp phrasal verb meaning 'fix or identify precisely'.
+  turkish_trap:
+    incorrect_en: We still need to pin the launch date.
+    correct_en: We still need to pin down the launch date.
+    explanation_tr: Netleştirmek anlamı için 'down' edatı gereklidir ('pin down').
+    trap_type: phrasal_verb_particle
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: haven't pinned down
+    text_tr: henüz kesinleştirmedik
+  - role: OBJECT
+    label: What
+    text_en: the exact launch date
+    text_tr: kesin lansman tarihini
+  - role: TIME_PLACE
+    label: When
+    text_en: yet.
+    text_tr: henüz.
+  slot_variations:
+  - slot_en: the exact launch date
+    full_sentence_en: We haven't pinned down the exact launch date yet.
+    full_sentence_tr: Henüz kesin lansman tarihini netleştirmedik.
+  - slot_en: the root cause
+    full_sentence_en: Telemetry helped us pin down the memory leak within minutes.
+    full_sentence_tr: Telemetri bellek sızıntısını dakikalar içinde kesin olarak tespit etmemizi sağladı.
+  - slot_en: a meeting time
+    full_sentence_en: It's hard to pin down a meeting time across four time zones.
+    full_sentence_tr: Dört saat dilimi arasında kesin bir toplantı saati belirlemek zor.
+  topic_tags:
+  - workplace
+  - project_management
+  - problem_solving
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.collocation.live-up-to
+  chunk_en: live up to [expectations/hype]
+  pattern_template: '[Subject] + live up to + [Expectations / Standards / Reputation]'
+  cefr_level: B2
+  category: ACTION_COLLOCATION
+  intent_tr: Yüksek beklentilere veya üne layık performans göstermek
+  meaning_en: Natural phrasal verb for evaluating products, leaders, or experiences.
+  turkish_trap:
+    incorrect_en: The device didn't live up its marketing promises.
+    correct_en: The device didn't live up to its marketing promises.
+    explanation_tr: 'Üç parçalı öbek fiilde ''to'' edatı atlanamaz: ''live up to''.'
+    trap_type: phrasal_verb_particle
+  blueprint_slots:
+  - role: SUBJECT
+    label: Product
+    text_en: The new tablet
+    text_tr: Yeni tablet
+  - role: VERB_BRIDGE
+    label: Evaluation
+    text_en: really lived up to
+    text_tr: gerçekten hakkını verdi
+  - role: OBJECT
+    label: Standard
+    text_en: its battery life claims.
+    text_tr: pil ömrü iddialarının.
+  slot_variations:
+  - slot_en: battery life claims
+    full_sentence_en: The new tablet really lived up to its battery life claims.
+    full_sentence_tr: Yeni tablet pil ömrü iddialarının gerçekten hakkını verdi.
+  - slot_en: reputation
+    full_sentence_en: The boutique hotel lived up to its reputation for quiet hospitality.
+    full_sentence_tr: Butik otel sakin misafirperverlik konusundaki ününü hak etti.
+  - slot_en: hype
+    full_sentence_en: Did the keynote announcement live up to the industry hype?
+    full_sentence_tr: Açılış duyurusu sektördeki beklentiyi karşıladı mı?
+  topic_tags:
+  - reviews
+  - conversation
+  - business
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.b2.bridge.rather-than
+  chunk_en: rather than...
+  pattern_template: '[Action/Choice A] + rather than + [Verb-ing / Base Verb / Noun B]'
+  cefr_level: B2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Biri yerine diğerini bilinçli olarak tercih ettiğini netleştirmek
+  meaning_en: Clean comparative choice structure used heavily in B2–C2 writing and speech.
+  turkish_trap:
+    incorrect_en: Rather than to guess, let's measure latency.
+    correct_en: Rather than guessing, let's measure latency.
+    explanation_tr: '''Rather than'' cümle başında veya nesne paralelinde ''to + fiil'' yerine yalın fiil veya ''-ing'' alır.'
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Preferred
+    text_en: We built local rules
+    text_tr: Yerel kurallar kurduk
+  - role: VERB_BRIDGE
+    label: Contrast
+    text_en: rather than relying on
+    text_tr: bel bağlamak yerine
+  - role: OBJECT
+    label: Rejected
+    text_en: constant network calls.
+    text_tr: sürekli ağ çağrılarına.
+  slot_variations:
+  - slot_en: constant network calls
+    full_sentence_en: We built local rules rather than relying on constant network calls.
+    full_sentence_tr: Sürekli ağ çağrılarına bel bağlamak yerine yerel kurallar kurduk.
+  - slot_en: rewriting from scratch
+    full_sentence_en: Let's refactor the existing module rather than rewriting from scratch.
+    full_sentence_tr: Sıfırdan yeniden yazmak yerine mevcut modülü iyileştirelim.
+  - slot_en: email threads
+    full_sentence_en: A ten-minute call solves this faster than long email threads.
+    full_sentence_tr: On dakikalık bir görüşme bunu uzun e-posta zincirlerinden daha hızlı çözer.
+  topic_tags:
+  - decision_making
+  - ielts
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1

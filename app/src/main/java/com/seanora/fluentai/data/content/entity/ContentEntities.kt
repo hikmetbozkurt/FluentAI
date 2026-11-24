@@ -403,4 +403,59 @@ data class SpeakingScenarioEntity(
     val version: Int = 1
 )
 
+@Entity(
+    tableName = "chunks",
+    indices = [
+        Index(value = ["cefr_level"], name = "idx_chunks_cefr"),
+        Index(value = ["category"], name = "idx_chunks_category")
+    ]
+)
+data class ChunkEntity(
+    @PrimaryKey
+    @ColumnInfo(name = "id")
+    val id: String,
+
+    @ColumnInfo(name = "chunk_en")
+    val chunkEn: String,
+
+    @ColumnInfo(name = "pattern_template")
+    val patternTemplate: String,
+
+    @ColumnInfo(name = "cefr_level")
+    val cefrLevel: String,
+
+    @ColumnInfo(name = "category")
+    val category: String,
+
+    @ColumnInfo(name = "intent_tr")
+    val intentTr: String,
+
+    @ColumnInfo(name = "meaning_en")
+    val meaningEn: String,
+
+    @ColumnInfo(name = "turkish_trap_json")
+    val turkishTrapJson: String,
+
+    @ColumnInfo(name = "blueprint_slots_json")
+    val blueprintSlotsJson: String = "[]",
+
+    @ColumnInfo(name = "slot_variations_json")
+    val slotVariationsJson: String = "[]",
+
+    @ColumnInfo(name = "related_vocab_ids_json")
+    val relatedVocabIdsJson: String = "[]",
+
+    @ColumnInfo(name = "related_grammar_ids_json")
+    val relatedGrammarIdsJson: String = "[]",
+
+    @ColumnInfo(name = "topic_tags_json")
+    val topicTagsJson: String = "[]",
+
+    @ColumnInfo(name = "status")
+    val status: String = "PUBLISHED",
+
+    @ColumnInfo(name = "version")
+    val version: Int = 1
+)
+
 

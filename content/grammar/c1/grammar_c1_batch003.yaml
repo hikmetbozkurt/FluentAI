@@ -1,0 +1,911 @@
+- id: grammar.c1.dangling-participles-subject-alignment
+  title: Dangling Participles & Opening Modifier Subject Alignment
+  cefr_level: C1
+  category: relative_and_participle_clauses
+  summary_en: Ensure the implied doer of an opening participle phrase ('Reviewing
+    the audit, ...') matches the exact grammatical subject of the main clause that
+    follows.
+  summary_tr: Cümle başındaki ortaç yapısının ('Reviewing the log, ...') gizli öznesinin,
+    virgülden sonra gelen ana cümlenin öznesiyle birebir örtüşmesini sağlayın.
+  explanation_en:
+  - title: The Hidden Subject Rule in Fronted Modifiers
+    content: Concise executive memos frequently open with participle phrases such
+      as 'Having tested offline playback, engineers cleared release.' If you follow
+      with a passive or impersonal clause whose subject did not perform the opening
+      verb ('*Having tested playback, the build was cleared'), the participle dangles
+      ungrammatically.
+    patterns:
+    - V-ing / Having + V3, + [Agent Subject who performs the participle] + Verb
+    - V3 (passive participle), + [Patient Subject acted upon] + Verb
+  explanation_tr: Türkçede '-ince / -erek / -dikten sonra' ulaçlarının öznesi ana
+    cümlenin öznesinden farklı olsa bile anlaşılır kalabilir; ancak İngilizcede virgülden
+    sonraki ilk özne, baştaki eylemin faili sayılır.
+  rules:
+  - name: Mandatory Subject Match After Comma
+    pattern: Participle Phrase (Agent X), + Subject X + Main Verb
+    use_cases:
+    - Tightening incident summaries and executive memos without ambiguity
+    time_markers:
+    - having verified
+    - while auditing
+  contrasts:
+  - structure_a: Checking the export twice, we noticed one missing header.
+    structure_b: Checking the export twice, one missing header surfaced.
+    difference_explanation_en: Sentence A pairs 'checking' with human subject 'we';
+      Sentence B implies a spreadsheet header checked the export.
+    difference_explanation_tr: A'da kontrol eden biziz ('we'); B'de ise başlığın kendisi
+      dışa aktarımı kontrol etmiş gibi mantık hatası doğar.
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: Edilgen Ana Cümleyle Asılı Ortaç (Dangling Participle) Kurmak
+    explanation_tr: '''Raporu inceleyince önemli bir risk ortaya çıktı'' yapısını
+      ''*Reviewing the report, an important risk appeared'' şeklinde kurmak İngilizcede
+      asılı ortaç hatası verir.'
+    incorrect_example: Scanning the database for duplicates, several invalid keys
+      were rejected.
+    correct_example: Scanning the database for duplicates, the validator rejected
+      several invalid keys.
+  examples:
+  - en: Having benchmarked five compression profiles, the platform team selected lossless
+      SQLite packing.
+    tr: Beş sıkıştırma profilini kıyasladıktan sonra platform ekibi kayıpsız SQLite
+      paketlemesini seçti.
+    rule_highlight: Having benchmarked ... the platform team selected
+    context: architecture decision record
+  - en: Built for zero-connectivity commutes, the mobile engine caches every drill
+      locally.
+    tr: Bağlantısız yolculuklar için tasarlanan mobil motor her alıştırmayı yerel
+      olarak önbellekler.
+    rule_highlight: Built for ... the mobile engine caches
+    context: product spec
+  topic_tags:
+  - participles
+  - writing
+  - syntax
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.concessive-as-though-fronting
+  title: Concessive Fronting with 'As' and 'Though' (Adj/Verb + As + Subject)
+  cefr_level: C1
+  category: inversion_and_emphasis
+  summary_en: Front an adjective, adverb, or bare verb directly before 'as' or 'though'
+    ('Compelling as that pitch sounds...') to concede a point gracefully before pivoting.
+  summary_tr: Bir karşı görüşü zarifçe teslim edip kendi değerlendirmenize geçerken
+    'Sıfat/Zarf/Fiil + as/though + Özne + Fiil' devrik yapısını kullanın.
+  explanation_en:
+  - title: Refined Concession Without Repeating 'Although Very...'
+    content: 'Instead of writing ''Although the timeline seems aggressive, ...'',
+      C1 rhetoric often moves the key adjective forward: ''Aggressive as the timeline
+      seems, phased validation makes it realistic.'' Fronted singular countable nouns
+      drop ''a/an'' (''Executive though she is, ...'').'
+    patterns:
+    - Adjective / Adverb + as / though + Subject + Verb, + Main Clause
+    - Bare Infinitive + as / though + Subject + may / might, + Main Clause
+  explanation_tr: Türkçedeki 'Her ne kadar ikna edici görünse de...' veya 'Ne kadar
+    çabalarsak çabalayalım...' vurgusu İngilizcede 'Try though we may...' ya da 'Persuasive
+    as it sounds...' kalıbıyla çok doğal verilir.
+  rules:
+  - name: Concessive Predicate Fronting
+    pattern: Adj / Adv / Noun (no article) + as/though + Subject + Verb
+    use_cases:
+    - Acknowledging opponent strengths diplomatically in steering reviews
+    time_markers:
+    - nevertheless
+    - yet
+  contrasts:
+  - structure_a: Although the license appears expensive, it caps long-term exposure.
+    structure_b: Expensive as the license appears, it caps long-term exposure.
+    difference_explanation_en: Both state concession; fronting 'Expensive' creates
+      sharper contrast and executive rhythm.
+    difference_explanation_tr: '''Expensive'' sıfatını öne çekmek sıradan bir ''although''
+      cümlesine kıyasla üst düzey vurgu kazandırır.'
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Sıfat Öne Çekildiğinde 'As' Yerine 'Although' Dizmek veya Artikeli
+      Bırakmak
+    explanation_tr: '''*Compelling although it is'' ya da ''*A challenger as he is''
+      şeklindeki dizimler hatalıdır; önde isim varsa artikel atılır ve bağlaç ''as/though''
+      olur.'
+    incorrect_example: Attractive although this discount looks, unit margins remain
+      tight.
+    correct_example: Attractive as this discount looks, unit margins remain tight.
+  examples:
+  - en: Tempting though it may be to bypass integration QA, schema drift quickly surfaces.
+    tr: Entegrasyon QA'yı atlamak her ne kadar cazip görünse de şema sapması hızla
+      ortaya çıkar.
+    rule_highlight: Tempting though it may be
+    context: engineering governance
+  - en: Much as I appreciate your candor, our Q3 security freeze leaves no wiggle
+      room.
+    tr: Açık sözlülüğünüzü ne kadar takdir etsem de 3. çeyrek güvenlik dondurmamız
+      esneklik alanı bırakmıyor.
+    rule_highlight: Much as I appreciate
+    context: negotiation reply
+  topic_tags:
+  - diplomacy
+  - register
+  - emphasis
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.diplomatic-past-distancing
+  title: Diplomatic & Attitudinal Past for Tentative Requests and Soft Objections
+  cefr_level: C1
+  category: tenses_and_aspect
+  summary_en: Use Past Simple or Past Continuous ('Did you want...? / I was hoping...
+    / I wondered whether...') in present conversations to create respectful social
+    distance rather than past time reference.
+  summary_tr: Şu an konuşulan nazik isteklerde veya itirazlarda geçmiş zamanı ('I
+    was wondering / Did you need...') zaman olarak değil sosyal mesafe ve nezaket
+    yumuşatıcısı olarak kullanın.
+  explanation_en:
+  - title: Social Politeness Through Tense Backshifting
+    content: When speaking to senior clients or cross-functional directors right now,
+      'I wondered if we might adjust pricing timing' softens urgency far more tactfully
+      than bare Present Simple imperatives. Progressive past ('was hoping / was thinking')
+      sounds even more open to decline politely.
+    patterns:
+    - I was hoping / wondering + if/whether + Subject + could/might...
+    - Did you want to review + Object + before tomorrow?
+  explanation_tr: Türkçede 'Merak ediyordum acaba...' biçiminde geçmiş hikayeleme
+    zaten vardır; ancak 'Şu an bunu mu istiyordunuz?' sorusunun şimdiki zamanla ('I
+    want now') sorulması bazen fazla keskin duyulabilir.
+  rules:
+  - name: Non-Temporal Politeness Past
+    pattern: I wondered / was hoping / thought we might + V1 (present dialogue)
+    use_cases:
+    - Soliciting concessions, requesting schedule extensions, and proposing edits
+      politely
+    time_markers:
+    - right now
+    - when you have a moment
+  contrasts:
+  - structure_a: I want us to move the milestone by four days.
+    structure_b: I was hoping we might shift the milestone by four days.
+    difference_explanation_en: Sentence A states a flat demand; Sentence B leaves
+      respectful room for client counter-proposals.
+    difference_explanation_tr: A doğrudan talep koyarken B karşı tarafa saygılı müzakere
+      alanı bırakır.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Diplomatik Geçmiş Zamanı Gerçek Geçmiş Sanıp Yanlış Yanıtlamak
+    explanation_tr: '''I was wondering whether you had capacity this Friday'' cümlesi
+      geçmişi sormaz; bu cuma için nazikçe müsaitlik yoklar.'
+    incorrect_example: Give me your final figures by three, I want to close today.
+    correct_example: I was hoping we might finalize your figures by three so payroll
+      clears cleanly.
+  examples:
+  - en: I wondered whether legal might review clause six before tomorrow's steering
+      session.
+    tr: Yarınki yürütme oturumundan önce hukuk ekibinin altıncı maddeyi inceleyip
+      inceleyemeyeceğini merak ediyordum.
+    rule_highlight: wondered whether legal might
+    context: executive outreach
+  - en: Did you want us to include regional sub-totals in the board slide deck as
+      well?
+    tr: Yönetim kurulu sunumuna bölgesel alt toplamları da eklememizi ister miydiniz?
+    rule_highlight: Did you want us to include
+    context: client meeting
+  topic_tags:
+  - diplomacy
+  - register
+  - tenses
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.counterfactual-but-for-otherwise
+  title: 'Implicit Counterfactuals: ''But For'', ''Without'', and ''Otherwise / Or
+    Else'''
+  cefr_level: C1
+  category: conditionals_and_hypotheticals
+  summary_en: Express Type 2 and Type 3 conditional realities succinctly without an
+    'if'-clause by deploying 'But for + Noun', 'Without + Gerund', and mid-argument
+    'Otherwise'.
+  summary_tr: Uzun bir 'if' yan cümlesi kurmadan 'But for + İsim' (...olmasaydı),
+    'Without + -ing' ve 'Otherwise' (aksi takdirde) yapılarıyla özlü karşı-olgusal
+    sonuçlar üretin.
+  explanation_en:
+  - title: Compact Conditional Compression in Senior Prose
+    content: '''If it had not been for automated determinism checks, bad hashes would
+      have shipped'' compresses cleanly to ''But for automated determinism checks,
+      bad hashes would have shipped.'' Notice ''otherwise'' replaces a full negative
+      ''if''-clause cleanly between clauses.'
+    patterns:
+    - But for + Noun / Noun Phrase, + Subject + would (have) + Verb
+    - Real Clause; otherwise, + Subject + would (have) + Verb
+  explanation_tr: Türkçede 'Şu kontrol olmasaydı çoktan hata çıkmıştı' yapısı sıkça
+    uzun 'if it hadn't been...' ile çevrilir. C1 seviyesinde 'But for + İsim' kalıbı
+    hem çok kısa hem de resmi toplantılarda etkileyicidir.
+  rules:
+  - name: Prepositional Counterfactual ('But For')
+    pattern: But for + Noun/NP, + Subject + would have V3 (past) / would V1 (present)
+    use_cases:
+    - Highlighting critical safeguards in risk reviews and post-mortems
+    time_markers:
+    - yesterday
+    - without safeguard X
+  contrasts:
+  - structure_a: The validator caught it; otherwise, broken IDs would have packaged.
+    structure_b: The validator caught it; otherwise, broken IDs will package.
+    difference_explanation_en: Counterfactual past reality triggers 'would have V3'
+      after 'otherwise', not future 'will'.
+    difference_explanation_tr: Gerçekleşmiş geçmiş korumaya atıfta 'otherwise' sonrası
+      'will' değil 'would have V3' gelir.
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: '''But For'' Kalıbını İstisna Anlamındaki ''Except'' İle Karıştırmak'
+    explanation_tr: '''But for X'' burada ''...hariç'' değil ''X olmasaydı'' anlamına
+      gelen tam bir koşul yapısıdır ve ana cümlede mutlaka ''would/could/might (have)''
+      ister.'
+    incorrect_example: But for your quick patch, client invoices failed yesterday.
+    correct_example: But for your quick patch, client invoices would have failed yesterday.
+  examples:
+  - en: But for local SQLite prepackaging, passengers in tunnel commutes would lose
+      every session.
+    tr: Yerel SQLite ön paketlemesi olmasaydı tünel yolculuklarındaki kullanıcılar
+      tüm oturumları kaybederdi.
+    rule_highlight: But for local SQLite prepackaging ... would lose
+    context: architecture justification
+  - en: Counsel spotted the renewal trap early; otherwise, we would have locked into
+      five-year rates.
+    tr: Hukuk ekibi yenileme tuzağını erken yakaladı; aksi takdirde beş yıllık oranlara
+      kilitlenmiştik.
+    rule_highlight: otherwise, we would have locked
+    context: vendor negotiation
+  topic_tags:
+  - conditionals
+  - risk
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.reporting-attitude-modal-backshift
+  title: 'Modal Nuances in Indirect Reports: Shifting ''Must'', ''Can'', and ''May'''
+  cefr_level: C1
+  category: reported_speech
+  summary_en: Separate internal obligation ('must' -> 'had to' or kept 'must' for
+    ongoing rules) from logical deduction ('must have V3' stays unchanged), while
+    backshifting 'can/may/will'.
+  summary_tr: Dolaylı aktarımda zorunluluk bildiren 'must'ı 'had to'ya çekerken çıkarım
+    bildiren 'must'ı koruyun; 'can/may/will' kiplerini aktarım zamanına göre uyumlu
+    dönüştürün.
+  explanation_en:
+  - title: Why Deduction Modals Resist Backshifting
+    content: When reporting past necessity ('You must sign today'), shift to 'She
+      reminded us we had to sign that day.' However, when reporting logical certainty
+      ('She said it must be a cache bug' or 'must have stalled earlier'), 'must' stays
+      unchanged because English lacks '*had to have' for deduction.
+    patterns:
+    - 'Reported Duty: ''You must audit'' -> He insisted we had to audit.'
+    - 'Reported Deduction: ''It must be delayed'' -> He noted it must be delayed.'
+  explanation_tr: Türkçe aktarımda kip ayrımı bağlamdan çıkar; İngilizcede ise 'zorunda
+    kaldığını söyledi' ('had to') ile 'olmuş olmalı dedi' ('must have') yapısal olarak
+    ayrışır.
+  rules:
+  - name: Obligation vs. Epistemic Modal Reporting
+    pattern: Reporting Past Verb + that + Clause (had to = duty | might/must have
+      = inference)
+    use_cases:
+    - Summarizing legal counsel guidance and engineering post-mortem calls accurately
+    time_markers:
+    - during Tuesday's briefing
+    - under prior rules
+  contrasts:
+  - structure_a: She noted we had to encrypt local backups before shipping.
+    structure_b: She noted the timeout must have occurred before failover.
+    difference_explanation_en: Sentence A shifts binding obligation ('must' -> 'had
+      to'); Sentence B keeps epistemic certainty intact.
+    difference_explanation_tr: A cümlesi zorunluluğu ('had to'), B cümlesi ise geçmiş
+      çıkarımı ('must have') korur.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Geçmiş Çıkarım Bildiren 'Must' Yerine '*Had To Have' Kurmak
+    explanation_tr: Ana fiil geçmiş diye tahmin bildiren 'must'ı 'had to'ya çevirmek
+      anlamı zorunluluğa çevirir ve bozar.
+    incorrect_example: The on-call engineer guessed that the DNS node had to fail
+      at midnight.
+    correct_example: The on-call engineer guessed that the DNS node must have failed
+      at midnight.
+  examples:
+  - en: Security emphasized that external agencies would need temporary scoped tokens
+      rather than master keys.
+    tr: Güvenlik ekibi dış ajansların ana anahtarlar yerine sınırlı geçici belirteçlere
+      ihtiyaç duyacağını vurguladı.
+    rule_highlight: emphasized that ... would need
+    context: security review
+  - en: Site coordinators said we might switch to the quieter boardroom whenever ready.
+    tr: Saha koordinatörleri hazır olduğumuzda daha sakin toplantı odasına geçebileceğimizi
+      söyledi.
+    rule_highlight: said we might switch
+    context: executive offsite
+  topic_tags:
+  - reported_speech
+  - modals
+  - legal
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.infinitive-passive-perfect-nuance
+  title: 'Passive & Perfect Infinitives: ''To Have Done'', ''To Be Audited'''
+  cefr_level: C1
+  category: verb_patterns_and_infinitives
+  summary_en: Indicate earlier time inside infinitive clauses using perfect aspect
+    ('seems to have drifted') and passiveness using 'to be + V3' or 'to have been
+    + V3'.
+  summary_tr: Mastar yapılarının içinde ana fiilden daha önceki bir zamanı anlatmak
+    için 'to have V3', edilgenlik için 'to be V3 / to have been V3' kullanın.
+  explanation_en:
+  - title: Encoding Timeline & Voice Inside Non-Finite Verbs
+    content: Compare 'Telemetry seems to show a dip' (present match) against 'Telemetry
+      seems to have spiked overnight' (earlier completed event seen now) and 'The
+      log appears to have been truncated' (earlier + passive).
+    patterns:
+    - 'Present/Simultaneous Passive: appears / is expected + to be + V3'
+    - 'Earlier Active / Passive: seems / is thought + to have + (been) + V3'
+  explanation_tr: Türkçede 'Dün gece kopmuş görünüyor' kalıbı kolay kurulur; İngilizcede
+    bunu sadece '*seems to drop last night' yazmak zaman uyumsuzluğu yaratır, 'seems
+    to have dropped' gerekir.
+  rules:
+  - name: Anterior Time via Perfect Infinitive
+    pattern: Verb/Adj + to have + V3 (action prior to main verb)
+    use_cases:
+    - Hedging diagnostic findings and attributing prior causes carefully
+    time_markers:
+    - overnight
+    - earlier
+    - prior to merge
+  contrasts:
+  - structure_a: The sync script seems to slow down under heavy batches.
+    structure_b: The sync script seems to have stalled during midnight maintenance.
+    difference_explanation_en: Simple infinitive fits ongoing behavior; perfect infinitive
+      refers back to a finished prior episode.
+    difference_explanation_tr: Yalın mastar genel davranışı, 'to have stalled' ise
+      geçmişte yaşanıp biten olayı işaret eder.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: Geçmiş Zaman Zarfıyla Yalın Mastar ('To Happen Yesterday') Kullanmak
+    explanation_tr: Ana fiil geniş zamanda kalıp ('is likely / appears') olay geçmişteyse
+      yalın mastar yerine 'to have (been) V3' kurulmalıdır.
+    incorrect_example: The backup token appears to expire three days ago.
+    correct_example: The backup token appears to have expired three days ago.
+  examples:
+  - en: Every curriculum package is scheduled to be audited deterministically before
+      signing.
+    tr: Her müfredat paketinin imzalanmadan önce deterministik olarak denetlenmesi
+      planlanıyor.
+    rule_highlight: is scheduled to be audited
+    context: release pipeline
+  - en: We are fortunate to have caught those fifteen vocabulary collisions prior
+      to packaging.
+    tr: Paketlemeden önce o on beş kelime çakışmasını yakalamış olduğumuz için şanslıyız.
+    rule_highlight: to have caught
+    context: QA review
+  topic_tags:
+  - infinitives
+  - tenses
+  - engineering
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.get-passives-and-adversative-haves
+  title: Adversative 'Have' & Event vs. State Passives ('Was Broken' vs. 'Got Flagged')
+  cefr_level: C1
+  category: passive_and_causative
+  summary_en: Distinguish event passives ('got delayed', 'had accounts suspended')
+    from resulting state descriptions ('remained locked'), and understand involuntary
+    'have Object V3' setbacks.
+  summary_tr: Eylem odaklı edilgenlik ('got flagged') ile sonuç durumunu ('stayed
+    locked') ayırın ve kişinin başına gelen istenmeyen olayları 'had + Nesne + V3'
+    ile ifade edin.
+  explanation_en:
+  - title: Delegated Service vs. Unwanted Experience
+    content: The structure 'We had our account verified' describes commissioned action.
+      Identical syntax—'We had two flights canceled'—expresses an unwelcome incident
+      affecting 'us'. Similarly, 'get + V3' emphasizes dynamic event occurrence ('three
+      items got rejected').
+    patterns:
+    - 'Adversative Experiential: Subject + had + Object + V3 (unwelcome setback)'
+    - 'Dynamic Event Passive: Subject + got + V3 (outcome event emphasis)'
+  explanation_tr: Türkçede 'Uçuşumuzu iptal ettirdik' ile 'Uçuşumuz iptal edildi (başımıza
+    geldi)' ayrılır. İngilizcede 'We had our flight canceled' bağlama göre beklenmedik
+    mağduriyeti anlatır ve bizzat iptal ettirdik demek değildir.
+  rules:
+  - name: Context Signals Between Causative vs. Experiential 'Have'
+    pattern: Experienced Subject + had + Affected Asset + Unwelcome V3
+    use_cases:
+    - Narrating disruptions, customs holds, and denied approvals naturally
+    time_markers:
+    - last week
+    - at customs
+  contrasts:
+  - structure_a: The vendor had their security badge renewed.
+    structure_b: The vendor had their staging access revoked after failing QA.
+    difference_explanation_en: Positive 'renewed' signals arranged service; negative
+      'revoked' signals an adverse penalty imposed on the vendor.
+    difference_explanation_tr: Olumlu fiil ('renewed') yaptırılan işlemi; olumsuz
+      fiil ('revoked') ise maruz kalınan yaptırımı gösterir.
+  turkish_traps:
+  - trap_type: voice_and_causative_transfer
+    trap_title: Deneyim Bildiren 'Had My Laptop Stolen' Kalıbını 'Çaldırdım (Yaptırdım)'
+      Sanmak
+    explanation_tr: '''We had our server blocked'' cümlesi ''Sunucumuzu bilerek engellettik''
+      demek değildir; dış bir etken tarafından sunucumuza bu durumun yaşatıldığını
+      anlatır.'
+    incorrect_example: Our courier was lost three pallets at regional customs yesterday.
+    correct_example: Our courier had three pallets held at regional customs yesterday.
+  examples:
+  - en: Nearly every misnamed file got caught automatically during overnight validation.
+    tr: Neredeyse tüm hatalı adlandırılmış dosyalar gece doğrulamasında otomatik olarak
+      yakalandı.
+    rule_highlight: got caught automatically
+    context: CI engineering
+  - en: Three traveling consultants had their roaming passes throttled mid-conference.
+    tr: Seyahat eden üç danışmanın dolaşım paketleri konferans ortasında kısıtlandı.
+    rule_highlight: had their roaming passes throttled
+    context: travel incident
+  topic_tags:
+  - passive
+  - causative
+  - operations
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.comparative-clause-ellipsis-inversion
+  title: Formal Comparative Inversion & Auxiliary Ellipsis ('Than Did Legacy Builds')
+  cefr_level: C1
+  category: discourse_markers_and_cohesion
+  summary_en: Avoid repeating whole predicates after 'than' and 'as' using accurate
+    auxiliary pro-forms, and optionally invert after 'than/as' when comparing heavy
+    nominal subjects in formal writing.
+  summary_tr: '''Than'' ve ''as'' sonrasında fiili tekrarlamak yerine uygun yardımcı
+    fiille eksiltme (''than we expected'') yapın; ağır öznelerde resmi devrik dizim
+    (''than did earlier systems'') kurun.'
+  explanation_en:
+  - title: Cleaner Prose Without Trailing Auxiliary Mismatches
+    content: 'When comparing actions cleanly, match the auxiliary tense (''performs
+      more smoothly than legacy builds did'' or ''than did legacy builds'' in formal
+      reports). Always match auxiliary families: be -> be, have -> have, action ->
+      do/did.'
+    patterns:
+    - Comparative + than / as + Auxiliary + Subject (formal balanced weight)
+    - Comparative + than / as + Subject + Auxiliary (neutral)
+  explanation_tr: Türkçede 'önceki sürümlerden daha hızlı' tek öbekte kapanır. İngilizce
+    karşılaştırma tümcesinde yardımcı fiil zaman uyumu unutulursa ('*works faster
+    than it was before') hata doğar; doğrusu 'than it did' olmalıdır.
+  rules:
+  - name: Matching Comparison Auxiliaries
+    pattern: V (action) ... than + Subject + do/does/did | be/modal ... than + Subject
+      + be/modal
+    use_cases:
+    - Comparing quarterly revenue, latency metrics, or learner outcomes formally
+    time_markers:
+    - this year
+    - than in Q1
+  contrasts:
+  - structure_a: The app loads faster than it did in version 4.
+    structure_b: The new indexer preserves context better than did earlier regex scripts.
+    difference_explanation_en: Both match do/did cleanly; B inverts 'did earlier regex
+      scripts' to balance a long noun phrase smoothly.
+    difference_explanation_tr: İkisi de doğru yardımcı fiili eşler; B uzun özne nedeniyle
+      'did'i öne alarak denge sağlar.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Karşılaştırmada Eylem Fiiline Karşılık Yanlışlıkla 'Was/Is' Kullanmak
+    explanation_tr: Ana fiil 'worked / shipped / grew' ise kıyaslamanın sonunda '*than
+      it is/was before' değil 'than it did' kullanılmalıdır.
+    incorrect_example: Subscriptions grew twice as smoothly in Q4 as they were in
+      Q2.
+    correct_example: Subscriptions grew twice as smoothly in Q4 as they did in Q2.
+  examples:
+  - en: Deterministic tests safeguard data integrity more reliably than manual checks
+      ever could.
+    tr: Deterministik testler veri bütünlüğünü manuel kontrollerin olabileceğinden
+      çok daha güvenilir korur.
+    rule_highlight: than manual checks ever could
+    context: testing strategy
+  - en: Regional partners adopted self-serve billing earlier than did headquarters
+      affiliates.
+    tr: Bölge ortakları self-servis faturalamayı merkez iştiraklerinden daha erken
+      benimsedi.
+    rule_highlight: than did headquarters affiliates
+    context: executive summary
+  topic_tags:
+  - comparisons
+  - ellipsis
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.genitive-with-gerunds-formal
+  title: Possessives Before Gerund Clauses in Formal Registers ('Their Delaying Launch')
+  cefr_level: C1
+  category: verb_patterns_and_infinitives
+  summary_en: Use possessive determiners ('my / our / their / the vendor's') before
+    a gerund when the entire action forms the formal subject or prepositional object.
+  summary_tr: Resmi yazışmalarda bir eylemin kendisi özne ya da edat nesnesi olduğunda
+    ulaç ('-ing') önüne nesne zamiri ('him / them') yerine iyelik belirteci ('his
+    / their / company's') koyun.
+  explanation_en:
+  - title: Focusing on the Event Rather Than the Person
+    content: In speech, 'We appreciate them sharing logs early' passes comfortably.
+      In legal and formal executive memos, possessive modification ('We appreciate
+      their sharing logs early' or 'the board's approving the audit') keeps focus
+      on the act itself and avoids ambiguity.
+    patterns:
+    - Possessive Determiner (our / their / the client's) + V-ing + Object
+    - Object Pronoun (them / us) + V-ing (informal conversational alternative)
+  explanation_tr: Türkçede 'Onların gecikmesi sorunu büyüttü' cümlesinde '-ın' iyelik
+    eki doğal olduğu halde öğrenciler bunu İngilizceye '*Them delaying' diye aktarır.
+    Resmi metinde 'Their delaying' tercih edilir.
+  rules:
+  - name: Formal Gerund Subject Possessive
+    pattern: His / Their / Noun's + Gerund (-ing) + Singular Verb
+    use_cases:
+    - Drafting formal escalations, audit letters, and polite executive acknowledgments
+    time_markers:
+    - despite
+    - prior to
+    - upon
+  contrasts:
+  - structure_a: Legal's flagging that indemnity trap saved us thousands.
+    structure_b: We caught the clerk entering manual overrides.
+    difference_explanation_en: With '-ing' as a gerund event ('Legal's flagging'),
+      use possessive; with perception verbs ('caught him entering'), use object pronoun.
+    difference_explanation_tr: Olayın kendisi kastedildiğinde iyelik ('Legal's flagging');
+      duyu fiillerinde yakalama eyleminde ('caught the clerk') nesne hali seçilir.
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: Cümle Başında Çıplak Nesne Zamiriyle Gerund Öznesi Başlatmak
+    explanation_tr: '''Bizim geç kalmamız'' anlamında cümleyi ''*Us arriving late
+      caused concern'' şeklinde açmak resmi yazıda standart dışıdır; doğrusu ''Our
+      arriving late'' veya ''Our late arrival''dır.'
+    incorrect_example: Him ignoring three schema warnings stalled yesterday's build.
+    correct_example: His ignoring three schema warnings stalled yesterday's build.
+  examples:
+  - en: We genuinely appreciate your sharing the regional tax changes well ahead of
+      schedule.
+    tr: Bölgesel vergi değişikliklerini takvimden oldukça önce paylaşmanızı gerçekten
+      takdir ediyoruz.
+    rule_highlight: your sharing the regional tax changes
+    context: executive email
+  - en: The regulator's granting a thirty-day grace window eased regional onboarding
+      strain.
+    tr: Düzenleyicinin otuz günlük geçiş süresi tanıması bölgesel uyum yükünü hafifletti.
+    rule_highlight: The regulator's granting
+    context: policy memo
+  topic_tags:
+  - gerunds
+  - writing
+  - register
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.discourse-reformulation-clarifiers
+  title: 'Precision Reformulation & Self-Correction Markers: ''Or Rather'', ''That
+    Is to Say'''
+  cefr_level: C1
+  category: discourse_markers_and_cohesion
+  summary_en: Use explicit reformulation bridges ('or rather', 'that is to say', 'more
+    specifically', 'put another way') in speech and writing to sharpen vague terms
+    without sounding indecisive.
+  summary_tr: Konuşma veya yazıda ilk ifadeyi daha isabetli düzeltmek veya somutlaştırmak
+    için 'or rather' (daha doğrusu), 'that is to say' (yani) ve 'put another way'
+    bağlaçlarını doğru noktalayın.
+  explanation_en:
+  - title: Refining Claims Gracefully Mid-Thought
+    content: 'Strong C1 speakers rarely restart an entire sentence awkwardly; instead
+      they insert targeted clarifiers: ''or rather'' repairs word accuracy, ''that
+      is to say'' translates jargon into plain implications, and ''put another way''
+      summarizes action consequences.'
+    patterns:
+    - Broad Statement—or rather, Sharper Correction
+    - Technical Claim—that is to say, + Practical Implication
+  explanation_tr: Türkçede 'yani', 'daha doğrusu' sıkça her yere 'I mean' ile çevrilir.
+    İş İngilizcesinde resmi toplantılar ve sunumlarda 'or rather', 'more precisely'
+    veya 'in plain terms' çok daha otoriter duyulur.
+  rules:
+  - name: Selecting the Exact Reformulation Tool
+    pattern: Correction = or rather | Paraphrase = put differently | Specification
+      = more precisely
+    use_cases:
+    - Clarifying complex technical findings during Q&A sessions
+    time_markers:
+    - to clarify
+    - specifically
+  contrasts:
+  - structure_a: Latency stayed steady—or rather, p95 latency dipped slightly.
+    structure_b: Deterministic builds stay fixed—that is, identical YAML produces
+      identical SHA hashes.
+    difference_explanation_en: '''Or rather'' narrows or corrects a looser term; ''that
+      is'' unpacks what the term practically means.'
+    difference_explanation_tr: '''Or rather'' önceki ifadeyi daha isabetli düzeltir;
+      ''that is'' ise kavramın ne anlama geldiğini açar.'
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Resmi Sunumda Her Düzeltmede Yalnızca 'I Mean' Kullanmak
+    explanation_tr: Sürekli 'I mean...' tekrarı konuşmacıyı tereddütlü gösterir; 'or
+      rather' ve 'more precisely' ile kendinden emin düzeltme yapın.
+    incorrect_example: The database is frozen, I mean, the schema version won't migrate
+      automatically.
+    correct_example: The schema is locked—more precisely, any version jump requires
+      an explicit migration.
+  examples:
+  - en: The launch relies on local assets—that is to say, offline learners never wait
+      on servers.
+    tr: Lansman yerel varlıklara dayanıyor; yani çevrimdışı öğrenciler asla sunucuyu
+      beklemiyor.
+    rule_highlight: that is to say
+    context: product briefing
+  - en: Regional sales slowed—or rather, enterprise deals pushed signature dates into
+      January.
+    tr: Bölge satışları yavaşladı; daha doğrusu kurumsal anlaşmalar imza tarihlerini
+      Ocak ayına öteledi.
+    rule_highlight: or rather
+    context: finance readout
+  topic_tags:
+  - reformulation
+  - speaking
+  - discourse_markers
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.quantifier-agreement-distributive-nouns
+  title: 'Complex Subject-Verb Agreement: ''The Number of'' vs. ''A Number of'' &
+    Correlatives'
+  cefr_level: C1
+  category: noun_phrases_and_articles
+  summary_en: 'Apply semantic agreement: ''the number of + Plural'' takes a singular
+    verb (counting one figure), ''a number of + Plural'' takes plural (''several''),
+    and ''neither A nor B'' matches the closer subject.'
+  summary_tr: '''The number of'' tek bir sayısal değeri anlattığı için tekil fiil
+    alırken, ''a number of'' (''birçok'') çoğul fiil alır; ''neither... nor'' da ise
+    fiil yakın özneye uyar.'
+  explanation_en:
+  - title: Head Noun vs. Proximate Noun Agreement
+    content: Long academic or audit subjects often trap writers by putting plural
+      nouns right next to singular heads ('Each of the five regional branches HAS
+      verified', 'The number of duplicate entries HAS dropped to zero'). Meanwhile,
+      'neither/either... or/nor' agrees with whatever stands nearest the verb.
+    patterns:
+    - the number of + Plural Noun + Singular Verb ('the number has fallen')
+    - a number of + Plural Noun + Plural Verb ('a number of items have passed')
+    - neither X nor [Closer Noun] + Verb matching Closer Noun
+  explanation_tr: Türkçede özne çoğul veya bileşik olsa da fiil çoğu kez tekil çekilir
+    ('birçok dosya eklendi'). İngilizcede ise 'a number of files HAVE passed' ile
+    'each of the files HAS passed' ayrımı keskindir.
+  rules:
+  - name: Proximity & Head-Noun Agreement
+    pattern: Each/Every one of + Plural + Singular Verb | A majority/percent of +
+      [Noun] + Verb matching Noun
+    use_cases:
+    - Reporting data audit metrics and compliance percentages cleanly
+    time_markers:
+    - this quarter
+    - across batches
+  contrasts:
+  - structure_a: The number of unresolved bugs is dropping daily.
+    structure_b: A number of minor UI bugs are still awaiting review.
+    difference_explanation_en: '''The number'' = one scalar count (''is''); ''A number
+      of'' = several items (''are'').'
+    difference_explanation_tr: '''The number'' tekil sayı istatistiğidir (''is'');
+      ''A number of'' ise ''birkaç/çok sayıda'' anlamında çoğuldur (''are'').'
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: '''Each of / One of + Çoğul İsim'' Sonrası Çoğul Fiil Çekmek'
+    explanation_tr: '''Belgelerin her biri onaylandı'' yapısında sondaki çoğul isme
+      aldanıp ''*Each of the documents were signed'' demek yanlıştır; baş özne ''Each''
+      tekildir (''was signed'').'
+    incorrect_example: Neither the audit lead nor her regional deputies has objections.
+    correct_example: Neither the audit lead nor her regional deputies have objections.
+  examples:
+  - en: Every single one of the new vocabulary checks has passed automated validation.
+    tr: Yeni kelime kontrollerinin istisnasız her biri otomatik doğrulamadan geçti.
+    rule_highlight: Every single one ... has passed
+    context: validation report
+  - en: Sixty percent of enterprise training budget now goes toward interactive speaking.
+    tr: Kurumsal eğitim bütçesinin yüzde altmışı artık etkileşimli konuşma pratiğine
+      ayrılıyor.
+    rule_highlight: Sixty percent of ... budget ... goes
+    context: market report
+  topic_tags:
+  - agreement
+  - data
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.negative-infinitive-split-position
+  title: 'Scope of Negation: Placing ''Not'' in Infinitives, Clauses, and Modals'
+  cefr_level: C1
+  category: modals_and_semi_modals
+  summary_en: Change clause meaning cleanly by shifting negation placement ('decided
+    not to launch' vs. 'didn't decide to launch') and separating 'must not' (prohibition)
+    from 'need not / don't have to' (no obligation).
+  summary_tr: '''Karar vermedi'' ile ''yapmama kararı aldı'' arasındaki farkı ''not
+    to V1'' konumunu doğru seçerek kurun; yasak bildiren ''must not''ı gereksizlik
+    bildiren ''need not''tan ayırın.'
+  explanation_en:
+  - title: Where 'Not' Lands Changes Legal and Operational Intent
+    content: 'In contract and planning notes, ''We advised him not to sign'' commands
+      restraint, whereas ''We didn''t advise him to sign'' simply reports silence.
+      Also put ''not'' directly before ''to'': ''not to rush'', avoiding awkward split-negation
+      unless emphasizing contrast.'
+    patterns:
+    - Verb + not + to + Infinitive (explicit decision to refrain)
+    - need not + V1 / doesn't have to + V1 (optionality) vs. must not + V1 (strict
+      ban)
+  explanation_tr: Türkçede 'yapmamamızı söyledi' ile 'yapmamızı söylemedi' ince fark
+    taşır. Ayrıca 'needn't / don't have to' mecburiyetsizliği anlatırken 'mustn't'
+    kesin yasak bildirir.
+  rules:
+  - name: Negative Non-Finite Positioning
+    pattern: Main Verb + (Object) + not + to-Infinitive / Participle
+    use_cases:
+    - Drafting clear SOP instructions, compliance prohibitions, and executive decisions
+    time_markers:
+    - under policy
+    - before merge
+  contrasts:
+  - structure_a: Reviewers needn't audit unchanged seed files twice.
+    structure_b: Reviewers mustn't commit raw API tokens into test fixtures.
+    difference_explanation_en: '''Needn''t'' saves unnecessary work (optional); ''mustn''t''
+      states an absolute security ban.'
+    difference_explanation_tr: '''Needn''t'' gerek olmadığını (isteğe bağlılığı),
+      ''mustn''t'' ise kesin yasağı belirtir.'
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Yasak Yerine Gereksizlik İçin 'Mustn't' Kullanmak
+    explanation_tr: '''Toplantıya katılmak zorunda değilsin'' anlamında ''*You mustn''t
+      join'' demek ''Katılman yasak'' gibi sert ve yanlış bir mesaj verir; doğrusu
+      ''You don''t have to / needn''t join''dir.'
+    incorrect_example: Contractors decided to not upload debug traces, though they
+      mustn't use staging.
+    correct_example: Contractors decided not to upload debug traces, though they needn't
+      wipe staging.
+  examples:
+  - en: The committee opted not to expand third-party tracking before Q2.
+    tr: Komite ikinci çeyrekten önce üçüncü taraf izlemeyi genişletmeme kararı aldı.
+    rule_highlight: opted not to expand
+    context: policy minutes
+  - en: Offline flashcards must not rely on live API lookups when network bars disappear.
+    tr: Çevrimdışı kartlar ağ sinyali kesildiğinde canlı API sorgularına dayanmamalıdır.
+    rule_highlight: must not rely
+    context: architecture rule
+  topic_tags:
+  - modals
+  - legal
+  - negation
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.restrictive-which-what-whatever
+  title: 'Universal Concession & Free Relatives: ''Whatever'', ''However'', ''Whichever'''
+  cefr_level: C1
+  category: relative_and_participle_clauses
+  summary_en: Handle universal conditions and open choices cleanly using 'however
+    + adj/adv', 'whichever' (bounded set), and 'whatever' (open range) cleanly.
+  summary_tr: Sınırsız veya koşulsuz kuralları ifade ederken 'however + sıfat/zarf'
+    (ne kadar ... olursa olsun), 'whichever' (sınırlı seçenekten hangisi) ve 'whatever'
+    yapılarını doğru sırada kurun.
+  explanation_en:
+  - title: '''However + Adjective'' Always Pulls Its Adjective Forward'
+    content: 'Unlike conversational ''how'', concessive ''however'' behaves like ''no
+      matter how'': pull the modified adjective or adverb right after ''however''
+      before writing Subject + Verb (''However urgent the ticket is...'', NOT ''*However
+      the ticket is urgent'').'
+    patterns:
+    - However + Adj / Adv + Subject + Verb (concessive degree)
+    - Whichever + [Bounded Option] + Subject + chooses, + Main Clause
+  explanation_tr: Türkçede 'Talep ne kadar acil olursa olsun' cümlesinde sıfat yükleme
+    yakın durur; İngilizcede ise 'however' sıfatı hemen yanına çeker ('However small
+    the error is'). Ayrıca sınırlı seçenekte 'whatever' yerine 'whichever' seçilir.
+  rules:
+  - name: Degree-Pull with 'However'
+    pattern: However + Adjective/Adverb + Subject + Verb (+ may be)
+    use_cases:
+    - Setting unconditional SLAs, safety mandates, and fallback contracts
+    time_markers:
+    - regardless of
+    - at any tier
+  contrasts:
+  - structure_a: Whichever of the two pricing tiers you choose, offline review stays
+      included.
+    structure_b: Whatever feedback comes out of testing, publish the raw scorecard.
+    difference_explanation_en: '''Whichever'' selects from the defined pair (two tiers);
+      ''whatever'' covers any unspecified future feedback.'
+    difference_explanation_tr: '''Whichever'' belli iki seçenek arasından seçim yaparken
+      ''whatever'' sınırsız genel kapsamı kapsar.'
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: '''However'' Bağlacının Yanındaki Sıfatı Cümle Sonunda Bırakmak'
+    explanation_tr: '''*However this change looks minor'' dizimi yanlıştır; ''however''
+      anlamca ''ne kadar'' demekse hemen arkasına sıfatı almalıdır: ''However minor
+      this change looks''.'
+    incorrect_example: However the deadline seems tight, never skip determinism tests.
+    correct_example: However tight the deadline seems, never skip determinism tests.
+  examples:
+  - en: However subtle an accent variation may sound, semantic intelligibility matters
+      first.
+    tr: Bir aksan farklılığı ne kadar ince duyulursa duyulsun, önce anlamsal anlaşılırlık
+      önem taşır.
+    rule_highlight: However subtle ... may sound
+    context: coaching principle
+  - en: Whichever region leads pilot adoption will validate offline audio packs first.
+    tr: Pilot benimsemeye hangi bölge öncülük ederse etsin önce çevrimdışı ses paketlerini
+      doğrulayacaktır.
+    rule_highlight: Whichever region leads
+    context: rollout plan
+  topic_tags:
+  - conditionals
+  - policy
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.c1.prepositional-complement-variation
+  title: 'Executive Prepositional Government: ''Stem From'', ''Account For'', ''Comply
+    With'''
+  cefr_level: C1
+  category: prepositions_and_particles
+  summary_en: Lock formal business and analytical verb-preposition frames—'comply
+    with', 'stem from', 'account for', 'refrain from', 'attribute X to Y'—without
+    mixing semantic neighbors.
+  summary_tr: Analitik ve kurumsal fiillerin zorunlu edat eşleşmelerini ('stem from,
+    comply with, attribute X to Y, hinge on') yakın anlamlı komşularının edatlarıyla
+    karıştırmadan kurun.
+  explanation_en:
+  - title: Preventing Synonym Preposition Drift
+    content: 'Learners often cross-wire synonyms: mixing ''obey'' (no preposition)
+      with ''comply with'', ''depend on'' with ''hinge upon/on'', or ''cause by''
+      with ''stem from''. Notice too ''attribute effect A to cause B'' versus ''result
+      from cause B''.'
+    patterns:
+    - comply with [rule] / adhere to [standard] / abide by [terms]
+    - stem from [root cause] | attribute [effect] to [source]
+  explanation_tr: Türkçede 'kurala uymak' tek '-a' ekiyle kurulurken İngilizcede 'comply
+    WITH', 'adhere TO', 'obey (edatsız)' şeklinde her fiil kendi sabit edatına bağlıdır.
+  rules:
+  - name: Cause vs. Compliance Frame Accuracy
+    pattern: Effect stems from Cause | Analyst attributes Effect to Cause
+    use_cases:
+    - Describing root-cause analyses, regulatory audits, and KPI drivers
+    time_markers:
+    - in Q3
+    - across logs
+  contrasts:
+  - structure_a: The gain stems from better caching.
+    structure_b: Engineering attributed the gain to better caching.
+    difference_explanation_en: '''Stem from'' puts the effect in active subject position;
+      ''attribute X to Y'' credits a cause explicitly.'
+    difference_explanation_tr: '''Stem from'' sonucun kaynağını doğrudan anlatır;
+      ''attribute X to Y'' etken özneyle ilişkilendirir.'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: '''Comply To'' veya ''Result By'' Gibi Çapraz Edat Eşleşmeleri'
+    explanation_tr: '''Adhere to'' yüzünden ''*comply to'' yazmak veya ''caused by''
+      yüzünden ''*stem by'' demek C1 yazılarında sıkça düzeltilen edat kaymalarıdır.'
+    incorrect_example: All subcontractors must comply to security rules that stem
+      by recent audits.
+    correct_example: All subcontractors must comply with security rules that stem
+      from recent audits.
+  examples:
+  - en: Nearly eighty percent of support tickets stemmed from two confusing onboarding
+      steps.
+    tr: Destek taleplerinin neredeyse yüzde sekseni iki kafa karıştırıcı ilk kullanım
+      adımından kaynaklandı.
+    rule_highlight: stemmed from
+    context: root-cause memo
+  - en: Long-term enterprise trust hinges on predictable security responses rather
+      than slogans.
+    tr: Uzun vadeli kurumsal güven sloganlardan ziyade öngörülebilir güvenlik yanıtlarına
+      dayanır.
+    rule_highlight: hinges on
+    context: leadership strategy
+  topic_tags:
+  - prepositions
+  - analysis
+  - governance
+  related_ids: []
+  status: APPROVED
+  version: 1

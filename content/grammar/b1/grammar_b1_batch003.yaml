@@ -1,0 +1,488 @@
+- id: grammar.b1.since-for-during-ago
+  title: 'Duration and Time Anchors: Since, For, During, and Ago'
+  cefr_level: B1
+  category: tenses_and_aspect
+  summary_en: Separate duration length ('for'), starting point ('since'), named period
+    ('during'), and past countback ('ago') cleanly.
+  summary_tr: '''For'' (süre uzunluğu), ''since'' (başlangıç noktası), ''during''
+    (belirli dönem içi) ve ''ago'' (tamamlanmış geçmiş) zaman bağlaçlarını doğru zamanlarla
+    eşleştirin.'
+  explanation_en:
+  - title: Anchored Time vs. Elapsed Duration
+    content: '''For'' measures how long something lasts (''for three hours''); ''since''
+      marks when an ongoing state started (''since Monday''); ''during'' sits before
+      a noun event (''during the flight''); and ''ago'' pairs strictly with Past Simple.'
+    patterns:
+    - have/has + V3 / been V-ing + for [duration] / since [start point]
+    - during + [noun period] | Past Simple + [duration] + ago
+  explanation_tr: Türkçede '3 yıldır çalışıyorum' ve '3 yıl önce başladım' benzer
+    kelimelerle kurulsa da İngilizcede 'since' arkasına sayısal süre almaz ('*since
+    3 years'), 'during' cümle almaz ve 'ago' Present Perfect ile yan yana gelmez.
+  rules:
+  - name: Present Perfect Duration Pairing
+    pattern: Present Perfect (+ Continuous) + for [length] / since [starting date/clause]
+    use_cases:
+    - Explaining tenure, ongoing outages, or project history
+    time_markers:
+    - since Q1
+    - for six months
+    - recently
+  - name: Event-Contained 'During' vs. Completed 'Ago'
+    pattern: during + the workshop / summit | [Past Simple] + two weeks + ago
+    use_cases:
+    - Pinpointing when a completed past step occurred
+    time_markers:
+    - ago
+    - during last sprint
+  contrasts:
+  - structure_a: We have maintained offline sync for two years.
+    structure_b: We launched offline sync two years ago.
+    difference_explanation_en: '''For'' + Perfect covers continuing span up to now;
+      ''ago'' + Past Simple marks a finished past point.'
+    difference_explanation_tr: '''For'' bugüne süren zamanı, ''ago'' ise geçmişte
+      kalıp bitmiş başlangıç anını belirtir.'
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: '''Since'' İle Uzunluk Kullanmak ve ''Ago'' İle Perfect Kurmak'
+    explanation_tr: '''İki yıldan beri'' ifadesini ''*since two years'' ya da ''*I
+      have joined three years ago'' diye kurmak Türkçe öğrencilerin en sık yaptığı
+      zaman aktarım hatasıdır.'
+    incorrect_example: I have joined this company since four years ago.
+    correct_example: I joined this company four years ago and have worked here for
+      four years.
+  examples:
+  - en: No database alerts have fired since we upgraded the validation script on Tuesday.
+    tr: Salı günü doğrulama betiğini güncellediğimizden beri hiçbir veritabanı uyarısı
+      tetiklenmedi.
+    rule_highlight: have fired since we upgraded
+    context: engineering review
+  - en: Learners revised thirty collocations offline during the flight to Frankfurt.
+    tr: Öğrenciler Frankfurt uçuşu sırasında çevrimdışı olarak otuz eşdizimlilik tekrar
+      etti.
+    rule_highlight: during the flight
+    context: business travel
+  topic_tags:
+  - tenses
+  - time
+  - workplace
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.embedded-indirect-questions
+  title: Indirect and Embedded Questions in Polite Work Requests
+  cefr_level: B1
+  category: reported_speech
+  summary_en: Keep Subject + Verb order inside embedded questions ('Could you tell
+    me when the audit starts?') without repeating 'do/did' inversion.
+  summary_tr: Kibar soru kalıplarının içine yerleşen sorularda tekrar yardımcı fiil
+    devirmesi yapmayıp düz cümle sırasını (Özne + Yüklem) koruyun.
+  explanation_en:
+  - title: Inversion Happens Only Once
+    content: In 'Could you confirm where the contract is?', only the outer frame ('Could
+      you') inverts. The embedded clause reverts strictly to affirmative Subject +
+      Verb order, dropping dummy 'do/does/did'.
+    patterns:
+    - Could you tell me + wh-word + Subject + Verb...?
+    - I was wondering whether + Subject + Verb...
+  explanation_tr: Türkçede 'Nerede olduğunu sorabilir miyim?' tek bir soru bütünüdür.
+    İngilizcede ise 'Do you know where is the file?' demek çifte soru devirmesi hatasıdır;
+    doğrusu 'where the file is' dizimidir.
+  rules:
+  - name: Embedded Statement Syntax
+    pattern: Polite Opener + wh-word / if / whether + Subject + Verb
+    use_cases:
+    - Softening direct questions in client emails and cross-team meetings
+    time_markers:
+    - when convenient
+    - today
+  contrasts:
+  - structure_a: When does finance close the ledger?
+    structure_b: Could you let me know when finance closes the ledger?
+    difference_explanation_en: Direct questions invert with 'does'; embedded polite
+      questions restore regular verb conjugation.
+    difference_explanation_tr: Doğrudan soruda 'does' ile devirme yapılır; kibar gömülü
+      soruda 'closes' düz haline döner.
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Kibar Soru İçinde Yardımcı Fiili İkinci Kez Devirmek
+    explanation_tr: Kibar girişin ardına 'where is he' veya 'why did they leave' eklemek
+      yerine 'where he is' ve 'why they left' düz sırasını korumalısınız.
+    incorrect_example: Could you clarify why did the build script fail yesterday?
+    correct_example: Could you clarify why the build script failed yesterday?
+  examples:
+  - en: I was wondering whether the vendor sent the signed SLA yet.
+    tr: Tedarikçinin imzalı SLA'yı henüz gönderip göndermediğini merak ediyordum.
+    rule_highlight: whether the vendor sent
+    context: client email
+  - en: Do you happen to know which branch currently owns that migration?
+    tr: Şu anda o geçişin hangi dalda yürütüldüğünü biliyor musunuz acaba?
+    rule_highlight: which branch currently owns
+    context: team standup
+  topic_tags:
+  - questions
+  - emails
+  - register
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.zero-article-generics-abstract
+  title: Zero Article vs. Definite 'The' in Abstract and Plural Generics
+  cefr_level: B1
+  category: noun_phrases_and_articles
+  summary_en: Omit 'the' when making general statements about plural nouns or abstract
+    uncountables ('Metrics guide decisions'), and add 'the' only for defined subsets.
+  summary_tr: Çoğul genel ifadelerde ve soyut kavramlarda genelleme yaparken 'the'
+    kullanmayın; yalnızca belirli bir alt kümeyi daralttığınızda 'the' ekleyin.
+  explanation_en:
+  - title: Generic Truths vs. Narrowed Reference
+    content: Abstract nouns (trust, software, advice, compliance) and plural categories
+      (managers, budgets) take zero article when speaking generally. Add 'the' as
+      soon as a prepositional phrase or clause pins down which subset you mean.
+    patterns:
+    - Plural/Uncountable Noun + Verb (general truth)
+    - the + Noun + of / that-clause (specified scope)
+  explanation_tr: Türkçede 'Müşteriler hızı sever' ile 'Dünkü toplantıdaki müşteriler'
+    biçimsel olarak aynı isim kalıbıyla başlar. İngilizcede ilki 'Clients value speed',
+    ikincisi ise 'The clients from yesterday's call' biçiminde ayrılır.
+  rules:
+  - name: Zero Article for Generalizations
+    pattern: Abstract/Plural Subject + Present Verb
+    use_cases:
+    - Formulating business principles, policies, and report generalizations
+    time_markers:
+    - in general
+    - typically
+  contrasts:
+  - structure_a: Privacy builds user trust.
+    structure_b: The privacy rules approved last quarter apply globally.
+    difference_explanation_en: Broad 'privacy' has no article; qualified 'privacy
+      rules approved last quarter' takes 'the'.
+    difference_explanation_tr: Genel olarak 'mahremiyet' artikel almaz; belirli çeyrekte
+      onaylanan kurallar 'the' alır.
+  turkish_traps:
+  - trap_type: null_subject_transfer
+    trap_title: Genel İfadelerde 'The + Çoğul/Soyut İsim' Hatası
+    explanation_tr: Soyut veya genel çoğul öznelere 'the' eklemek ('The software engineers
+      need autonomy') cümleyi sanki odadaki belli bir ekipten bahsediyormuş gibi yanlış
+      daraltır.
+    incorrect_example: The communication and the patience are essential for the managers.
+    correct_example: Communication and patience are essential for managers.
+  examples:
+  - en: Clear naming conventions save engineers hours during debugging.
+    tr: Net adlandırma kuralları mühendislere hata ayıklamada saatler kazandırır.
+    rule_highlight: Clear naming conventions save engineers
+    context: engineering
+  - en: The naming conventions documented in AGENTS.md apply to every batch.
+    tr: AGENTS.md içinde belgelenen adlandırma kuralları her pakete uygulanır.
+    rule_highlight: The naming conventions documented in
+    context: governance
+  topic_tags:
+  - articles
+  - writing
+  - academic
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.verb-preposition-direct-traps
+  title: Transitive Verbs Without Prepositions vs. Mandatory Verb-Preposition Pairs
+  cefr_level: B1
+  category: prepositions_and_particles
+  summary_en: Avoid adding extra prepositions after direct transitive verbs like 'discuss'
+    or 'enter', while keeping mandatory partners on 'depend on', 'listen to', and
+    'explain to'.
+  summary_tr: '''Discuss / mention / enter'' gibi fiiller doğrudan nesne alırken,
+    ''depend on / explain to / agree with'' gibi fiillerin zorunlu edatlarını düşürmeyin.'
+  explanation_en:
+  - title: Direct Objects vs. Prepositional Bridges
+    content: 'Because Turkish case suffixes (''-i'', ''-e'', ''-le'') do not map one-to-one
+      to English prepositions, learners frequently swap them: inserting ''about''
+      after ''discuss'' while omitting ''to'' in ''explain to me''.'
+    patterns:
+    - discuss / enter / emphasize / attend + Object (NO preposition)
+    - explain [something] + to [listener] | depend on | insist on
+  explanation_tr: Türkçede 'konuyu tartışmak' yerine 'hakkında tartışmak' gibi düşünülerek
+    '*discuss about', ya da 'bana açıkla' diye düşünülerek '*explain me' hatası yapılır.
+  rules:
+  - name: Direct Transitive Verbs (Zero Preposition)
+    pattern: discuss / approach / mention / reach + Object
+    use_cases:
+    - Running crisp meetings and written status briefs
+    time_markers:
+    - in today's sync
+    - later
+  - name: '''Explain Something to Someone'''
+    pattern: explain + Topic + to + Listener
+    use_cases:
+    - Clarifying complex fixes to clients or teammates
+    time_markers:
+    - briefly
+  contrasts:
+  - structure_a: Let us discuss the Q3 roadmap.
+    structure_b: Let us talk about the Q3 roadmap.
+    difference_explanation_en: '''Discuss'' is direct transitive; only ''talk'' or
+      ''speak'' uses ''about''.'
+    difference_explanation_tr: '''Discuss'' doğrudan nesne alır; ''about'' yalnızca
+      ''talk'' veya ''speak'' ile gelir.'
+  turkish_traps:
+  - trap_type: preposition_trap
+    trap_title: '''Discuss About'' Eklemesi ve ''Explain Me'' Eksiltmesi'
+    explanation_tr: '''Bana anlat'' kalıbından kaynaklanan ''*explain me'' ve ''hakkında
+      tartışmak''tan doğan ''*discuss about'' kurumsal konuşmalarda hemen göze çarpan
+      klasik B1 tuzaklarıdır.'
+    incorrect_example: Please explain me this chart before we discuss about the pricing.
+    correct_example: Please explain this chart to me before we discuss the pricing.
+  examples:
+  - en: Whether we ship Friday depends on final validation counts.
+    tr: Cuma günü çıkış yapıp yapmayacağımız nihai doğrulama sayılarına bağlıdır.
+    rule_highlight: depends on final validation counts
+    context: release planning
+  - en: Every contractor must attend the security briefing before receiving access.
+    tr: Her yüklenici erişim almadan önce güvenlik brifingine katılmalıdır.
+    rule_highlight: attend the security briefing
+    context: onboarding
+  topic_tags:
+  - prepositions
+  - meetings
+  - turkish_l1_traps
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.phrasal-verb-particle-separability
+  title: Separable vs. Inseparable Phrasal Verbs & Pronoun Position
+  cefr_level: B1
+  category: verb_patterns_and_infinitives
+  summary_en: Place object pronouns strictly between verb and particle for separable
+    phrasal verbs ('follow it up'), while keeping full nouns flexible.
+  summary_tr: Ayrılabilir öbek fiillerde zamir nesneyi ('it / them') mutlaka fiil
+    ile edat arasına koyun ('turn it off'); tam isimlerde her iki yer de geçerlidir.
+  explanation_en:
+  - title: Why Pronouns Cannot Trail Separable Particles
+    content: 'With separable transitive phrasal verbs (''bring up'', ''sort out'',
+      ''hand over''), noun phrases may sit in the middle or at the end, yet short
+      pronouns MUST sit inside: ''write it down'', never ''*write down it''. Inseparable
+      verbs like ''look into'' keep objects after the particle.'
+    patterns:
+    - 'Separable: Verb + Pronoun + Particle (''sort it out'')'
+    - 'Inseparable: Verb + Particle + Noun/Pronoun (''look into it'')'
+  explanation_tr: Türkçede ayrı fiil+edat ayrışması olmadığı için öğrenciler 'pick
+    up it' veya 'call off it' sırasını kullanır. Kısa zamirler ('it, them, her') ayrılabilir
+    fiillerde kesinlikle ortaya yerleşir.
+  rules:
+  - name: Middle Placement for Pronoun Objects
+    pattern: Verb + it/them/me + off/up/out/over/down
+    use_cases:
+    - Referring back to tickets, calls, or tasks naturally in conversation
+    time_markers:
+    - right away
+    - before 5 p.m.
+  contrasts:
+  - structure_a: We will sort it out before launch.
+    structure_b: We will look into it before launch.
+    difference_explanation_en: '''Sort out'' is separable (pronoun in middle); ''look
+      into'' is prepositional inseparable (pronoun after).'
+    difference_explanation_tr: '''Sort out'' ayrılabilir olduğu için zamiri ortaya
+      alır; ''look into'' ayrılmazdır.'
+  turkish_traps:
+  - trap_type: word_order_svo_vs_sov
+    trap_title: Ayrılabilir Öbek Fiillerde Zamiri Sona Atmak ('*Write Down It')
+    explanation_tr: '''Dosyayı doldur'' için ''fill in the form'' doğruyken ''onu
+      doldur'' derken ''*fill in it'' demek yanlıştır; doğrusu ''fill it in'' olmalıdır.'
+    incorrect_example: Here is the customs form; please fill out it before boarding.
+    correct_example: Here is the customs form; please fill it out before boarding.
+  examples:
+  - en: I noticed a minor typo on slide three and fixed it up right away.
+    tr: Üçüncü slaytta ufak bir yazım hatası fark edip hemen düzelttim.
+    rule_highlight: fixed it up
+    context: team presentation
+  - en: Can you bring that pricing concern up during tomorrow's vendor call?
+    tr: O fiyatlandırma endişesini yarınki tedarikçi görüşmesinde gündeme getirebilir
+      misin?
+    rule_highlight: bring that pricing concern up
+    context: meetings
+  topic_tags:
+  - phrasal_verbs
+  - speaking
+  - word_order
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.if-vs-whether-uncertainty
+  title: 'Indirect Choices and Doubt: If vs. Whether in Work Clauses'
+  cefr_level: B1
+  category: conditionals_and_hypotheticals
+  summary_en: Use 'whether' instead of 'if' after prepositions, before infinitives,
+    as a sentence subject, or directly before 'or not'.
+  summary_tr: Dolaylı belirsizliklerde edatlardan sonra, mastarlardan önce ve doğrudan
+    'or not' ile birlikte 'if' yerine 'whether' tercih edin.
+  explanation_en:
+  - title: Where 'Whether' Is Mandatory and Cleaner
+    content: In casual speech after 'know' or 'ask', 'if' and 'whether' often overlap.
+      However, formal writing and structural grammar enforce 'whether' right after
+      prepositions ('depends on whether'), before 'to + verb' ('decide whether to
+      ship'), and alongside 'whether or not'.
+    patterns:
+    - Preposition + whether + Subject + Verb
+    - decide / discuss + whether to + Verb
+    - whether or not + Clause (contrastive concession)
+  explanation_tr: Türkçede '-ip -mediği' anlamını tek kalıp verdiği için tüm bağlamlara
+    'if' yerleştirme eğilimi vardır. 'Depends on if...' veya 'wonder if to go' hatalıdır;
+    her ikisinde 'whether' gereklidir.
+  rules:
+  - name: Whether After Prepositions & Infinitives
+    pattern: Preposition + whether + Clause | Verb + whether + to-Infinitive
+    use_cases:
+    - Expressing conditional scope, procurement choices, and architectural decisions
+    time_markers:
+    - before deployment
+    - this quarter
+  contrasts:
+  - structure_a: Please ask if she is available.
+    structure_b: Our decision depends on whether capacity holds.
+    difference_explanation_en: '''Ask if'' is acceptable in simple indirect yes/no
+      questions; after prepositions (''on''), only ''whether'' works.'
+    difference_explanation_tr: Basit sorma cümlelerinde 'if' uygunken edattan ('on')
+      sonra yalnızca 'whether' gelebilir.
+  turkish_traps:
+  - trap_type: conditional_overgeneralization
+    trap_title: Edat veya Mastar Önünde 'If' Kullanmak
+    explanation_tr: Türkçe '-ip -mediği' ekini otomatik olarak 'if' ile eşleştirmek
+      '*depends on if we pass' gibi hatalı cümlelere yol açar; edat sonrası daima
+      'whether' kullanın.
+    incorrect_example: Approval depends on if legal decides if to add a grace period.
+    correct_example: Approval depends on whether legal decides to add a grace period.
+  examples:
+  - en: Engineers are still evaluating whether to compress local audio or split downloads.
+    tr: Mühendisler hâlâ yerel sesi sıkıştırmak ya da indirmeleri bölmek konusunda
+      karar değerlendiriyor.
+    rule_highlight: evaluating whether to compress
+    context: architecture decision
+  - en: The offline validator runs deterministically whether or not Wi-Fi is active.
+    tr: Çevrimdışı doğrulayıcı Wi-Fi açık olsa da olmasa da deterministik biçimde
+      çalışır.
+    rule_highlight: whether or not
+    context: reliability spec
+  topic_tags:
+  - conditionals
+  - decision_making
+  - writing
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.stative-vs-dynamic-verbs
+  title: 'Stative vs. Dynamic Verbs: Resisting Present Continuous Overuse'
+  cefr_level: B1
+  category: tenses_and_aspect
+  summary_en: Keep mental-state and possession verbs ('know', 'own', 'belong', 'prefer',
+    'seem') in Simple forms while spotting action exceptions like 'thinking' or 'having
+    dinner'.
+  summary_tr: Türkçedeki '-yor' ekinin her fiile uyabilmesinin aksine, durum bildiren
+    fiilleri ('know, belong, prefer, contain') İngilizcede sürekli kipte (-ing) kullanmayın.
+  explanation_en:
+  - title: States vs. Voluntary Actions
+    content: 'Verbs expressing knowledge, belief, preference, ownership, or appearance
+      take Simple Present for present truth (''I prefer option B''). A few dual verbs
+      switch meaning in Continuous: ''have'' (possession) vs. ''having lunch'' (event),
+      ''think'' (opinion) vs. ''thinking about'' (active pondering).'
+    patterns:
+    - 'Stative: know / own / contain / seem / believe (NO -ing)'
+    - 'Dynamic shift: think (opinion) vs. be thinking about (considering)'
+  explanation_tr: Türkçede 'Biliyorum, istiyorum, sahip oluyorum, içeriyor' tamamen
+    doğaldır. Bu yüzden '*I am knowing', '*It is containing' gibi kalıplar yaygın
+    B1 hatalarıdır.
+  rules:
+  - name: Simple Forms for Mental & Ownership States
+    pattern: Subject + Base/Simple Verb (know/need/contain/belong)
+    use_cases:
+    - Describing system specifications, user ownership, and preferences
+    time_markers:
+    - currently
+    - right now
+  contrasts:
+  - structure_a: I think this offline schema is clean.
+    structure_b: I am thinking about splitting the vocabulary script.
+    difference_explanation_en: '''Think'' (opinion) stays Simple; ''thinking about''
+      signals active ongoing deliberation.'
+    difference_explanation_tr: Görüş bildirirken 'think' sade kalır; zihinde tartma
+      eyleminde 'thinking about' kullanılır.
+  turkish_traps:
+  - trap_type: aspect_confusion
+    trap_title: Türkçe '-yor' Etkisiyle Durum Fiillerine '-ing' Eklemek
+    explanation_tr: '''Dosya 500 satır içeriyor'' cümlesini ''*The file is containing
+      500 rows'' diye çevirmek ''-yor'' aktarımından doğar; doğrusu ''contains''tır.'
+    incorrect_example: Right now I am needing your password and this module is belonging
+      to billing.
+    correct_example: Right now I need your approval and this module belongs to billing.
+  examples:
+  - en: The local package currently contains over five thousand validated entries.
+    tr: Yerel paket şu anda beş binden fazla doğrulanmış kayıt içeriyor.
+    rule_highlight: currently contains
+    context: technical status
+  - en: Leadership is weighing whether to expand speaking coaching next quarter.
+    tr: Yönetim gelecek çeyrekte konuşma koçluğunu genişletmeyi değerlendiriyor.
+    rule_highlight: is weighing whether
+    context: strategy
+  topic_tags:
+  - tenses
+  - aspect
+  - turkish_l1_traps
+  related_ids: []
+  status: APPROVED
+  version: 1
+- id: grammar.b1.question-tags-and-echo-replies
+  title: Question Tags and Polite Confirmation Replies vs. Invariant 'Değil Mi?'
+  cefr_level: B1
+  category: modals_and_semi_modals
+  summary_en: Match question tag auxiliary verbs and polarity inversely to the main
+    clause instead of appending an invariant 'isn't it?'.
+  summary_tr: Türkçedeki sabit 'değil mi?' yerine İngilizcede ana cümlenin yardımcı
+    fiiline ve olumlu/olumsuz zıtlığına göre değişen soru kuyrukları (tag questions)
+    kurun.
+  explanation_en:
+  - title: Matching Polarity, Auxiliary, and Pronoun
+    content: Positive statements take negative tags; negative statements take positive
+      tags. The tag always borrows the tense auxiliary ('do/does/did', 'have/has',
+      'will', 'can', 'is/are') and replaces the noun subject with a pronoun.
+    patterns:
+    - Positive Clause ('You synced the files') + Negative Tag (', didn't you?')
+    - Negative Clause ('It hasn't crashed') + Positive Tag (', has it?')
+  explanation_tr: Türkçede 'Geldin değil mi?', 'Seviyorsun değil mi?' kalıpları hep
+    aynı sabit ifadeyi kullanır. İngilizcede '*You called him, isn't it?' yanlış aktarımdır;
+    'did' veya 'didn't' eşleşmelidir.
+  rules:
+  - name: Polarity Flip + Tense Auxiliary
+    pattern: Main Clause (+ / -) + , + Auxiliary (- / +) + Subject Pronoun?
+    use_cases:
+    - Checking shared understanding softly in meetings and live calls
+    time_markers:
+    - right now
+    - yesterday
+  contrasts:
+  - structure_a: The validator passed all checks, didn't it?
+    structure_b: There wasn't a duplicate key left, was there?
+    difference_explanation_en: Past Simple uses 'didn't it'; 'there wasn't' flips
+      polarity and keeps existential 'there'.
+    difference_explanation_tr: Geçmiş zamanlı cümlede 'didn't it', 'there' yapısında
+      ise 'was there' kullanılır.
+  turkish_traps:
+  - trap_type: tense_transfer
+    trap_title: Her Cümlenin Sonuna Sabit 'Isn't It?' Eklemek
+    explanation_tr: '''Değil mi?'' karşılığı olarak özne ve zaman gözetmeden ''isn''t
+      it?'' demek doğallığı bozar. Ana yüklemin yardımcı fiilini çekin.'
+    incorrect_example: You already emailed the invoice to accounting, isn't it?
+    correct_example: You already emailed the invoice to accounting, didn't you?
+  examples:
+  - en: We agreed on freezing schema edits until Monday, didn't we?
+    tr: Pazartesiye kadar şema değişikliklerini dondurmakta anlaşmıştık, değil mi?
+    rule_highlight: didn't we
+    context: team sync
+  - en: I am scheduled for the first client slot tomorrow, aren't I?
+    tr: Yarın ilk müşteri oturumu benim takvimimde, değil mi?
+    rule_highlight: aren't I
+    context: calendar check
+  topic_tags:
+  - speaking
+  - meetings
+  - modals
+  related_ids: []
+  status: APPROVED
+  version: 1

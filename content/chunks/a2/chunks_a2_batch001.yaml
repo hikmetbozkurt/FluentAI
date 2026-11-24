@@ -1,0 +1,796 @@
+- id: chunk.a2.starter.i-would-like-to
+  chunk_en: I would like to...
+  pattern_template: I would like to + [Base Verb] + [Object]
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Kibar bir şekilde bir şey istemek veya hedef belirtmek
+  meaning_en: Polite, professional way to state a request, preference, or plan.
+  turkish_trap:
+    incorrect_en: I would like booking a meeting room.
+    correct_en: I would like to book a meeting room.
+    explanation_tr: '''Would like'' yapısından sonra fiil ''-ing'' ile değil mutlaka ''to + yalın fiil'' ile gelir.'
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Polite desire
+    text_en: would like to schedule
+    text_tr: planlamak istiyorum
+  - role: OBJECT
+    label: What
+    text_en: a short call tomorrow
+    text_tr: yarın kısa bir görüşme
+  slot_variations:
+  - slot_en: a short call tomorrow
+    full_sentence_en: I would like to schedule a short call tomorrow.
+    full_sentence_tr: Yarın kısa bir görüşme planlamak istiyorum.
+  - slot_en: the project timeline
+    full_sentence_en: I would like to confirm the project timeline today.
+    full_sentence_tr: Proje takvimini bugün teyit etmek istiyorum.
+  - slot_en: a window seat
+    full_sentence_en: I would like to request a window seat, please.
+    full_sentence_tr: Cam kenarı bir koltuk rica etmek istiyorum.
+  topic_tags:
+  - workplace
+  - daily_life
+  - politeness
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.starter.is-it-possible-to
+  chunk_en: Is it possible to...?
+  pattern_template: Is it possible to + [Base Verb] + [Object]?
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Bir şeyin mümkün olup olmadığını kibarca sormak
+  meaning_en: Softens a request in emails, meetings, and customer service.
+  turkish_trap:
+    incorrect_en: Is possible to move the meeting to Friday?
+    correct_en: Is it possible to move the meeting to Friday?
+    explanation_tr: Türkçede 'mümkün mü' öznesiz kurulur ama İngilizcede 'it' sahte öznesi zorunludur.
+    trap_type: null_subject_transfer
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Question frame
+    text_en: Is it possible to move
+    text_tr: Taşımak mümkün mü
+  - role: OBJECT
+    label: What
+    text_en: our review session
+    text_tr: değerlendirme toplantımızı
+  - role: TIME_PLACE
+    label: When
+    text_en: to Friday morning?
+    text_tr: Cuma sabahına?
+  slot_variations:
+  - slot_en: our review session
+    full_sentence_en: Is it possible to move our review session to Friday morning?
+    full_sentence_tr: Değerlendirme toplantımızı Cuma sabahına taşımak mümkün mü?
+  - slot_en: an early check-in
+    full_sentence_en: Is it possible to arrange an early check-in at the hotel?
+    full_sentence_tr: Otelde erken giriş ayarlamak mümkün mü?
+  - slot_en: the updated slides
+    full_sentence_en: Is it possible to share the updated slides before noon?
+    full_sentence_tr: Güncel slaytları öğleden önce paylaşmak mümkün mü?
+  topic_tags:
+  - workplace
+  - requests
+  - travel
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.starter.thank-you-for-ing
+  chunk_en: Thank you for [verb]-ing...
+  pattern_template: Thank you for + [Verb-ing / Noun]
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Yapılan bir iş veya destek için profesyonelce teşekkür etmek
+  meaning_en: Standard email and conversation opener to express appreciation.
+  turkish_trap:
+    incorrect_en: Thank you for send the report quickly.
+    correct_en: Thank you for sending the report quickly.
+    explanation_tr: '''For'' edatından sonra gelen fiil her zaman ''-ing'' (gerund) biçiminde kullanılır.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Thanks
+    text_en: Thank you for sending
+    text_tr: Gönderdiğiniz için teşekkürler
+  - role: OBJECT
+    label: What
+    text_en: the invoice
+    text_tr: faturayı
+  - role: TIME_PLACE
+    label: How/When
+    text_en: so promptly.
+    text_tr: bu kadar hızlı.
+  slot_variations:
+  - slot_en: sending the invoice
+    full_sentence_en: Thank you for sending the invoice so promptly.
+    full_sentence_tr: Faturayı bu kadar hızlı gönderdiğiniz için teşekkür ederim.
+  - slot_en: joining the call
+    full_sentence_en: Thank you for joining the call on short notice.
+    full_sentence_tr: Kısa sürede çağrıya katıldığınız için teşekkürler.
+  - slot_en: explaining the process
+    full_sentence_en: Thank you for explaining the onboarding process clearly.
+    full_sentence_tr: Oryantasyon sürecini net açıkladığınız için teşekkür ederim.
+  topic_tags:
+  - emails
+  - workplace
+  - politeness
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.take-a-break
+  chunk_en: take a break
+  pattern_template: '[Subject] + take + a (short) break + (from [Noun/Verb-ing])'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Kısa bir mola vermek
+  meaning_en: Natural collocation for pausing work or study briefly.
+  turkish_trap:
+    incorrect_en: Let's make a break for ten minutes.
+    correct_en: Let's take a break for ten minutes.
+    explanation_tr: Türkçedeki 'mola vermek / yapmak' ifadesi İngilizcede 'make a break' değil 'take a break' olarak kullanılır.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Let's
+    text_tr: Hadi
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: take a short break
+    text_tr: kısa bir mola verelim
+  - role: TIME_PLACE
+    label: When
+    text_en: before the next workshop.
+    text_tr: sonraki atölyeden önce.
+  slot_variations:
+  - slot_en: before the next workshop
+    full_sentence_en: Let's take a short break before the next workshop.
+    full_sentence_tr: Sonraki atölyeden önce kısa bir mola verelim.
+  - slot_en: from the screen
+    full_sentence_en: I try to take a five-minute break from the screen every hour.
+    full_sentence_tr: Her saat başı ekrandan beş dakikalık mola vermeye çalışıyorum.
+  - slot_en: for coffee
+    full_sentence_en: We usually take a break for coffee around eleven.
+    full_sentence_tr: Genellikle saat on bir civarında kahve molası veririz.
+  topic_tags:
+  - daily_life
+  - workplace
+  - health
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.make-a-mistake
+  chunk_en: make a mistake
+  pattern_template: '[Subject] + make + a mistake + (in [Noun/Verb-ing])'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Hata yapmak
+  meaning_en: Essential verb-noun collocation for errors in work or speech.
+  turkish_trap:
+    incorrect_en: I did a small mistake in the spreadsheet.
+    correct_en: I made a small mistake in the spreadsheet.
+    explanation_tr: Türkçedeki 'yapmak' fiili nedeniyle 'do a mistake' hatası sık yapılır; doğru eşdizim 'make a mistake'tir.
+    trap_type: collocation_error
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: made a small mistake
+    text_tr: küçük bir hata yaptım
+  - role: TIME_PLACE
+    label: Where
+    text_en: in the budget table.
+    text_tr: bütçe tablosunda.
+  slot_variations:
+  - slot_en: in the budget table
+    full_sentence_en: I made a small mistake in the budget table.
+    full_sentence_tr: Bütçe tablosunda küçük bir hata yaptım.
+  - slot_en: when typing the address
+    full_sentence_en: She made a mistake when typing the email address.
+    full_sentence_tr: E-posta adresini yazarken bir hata yaptı.
+  - slot_en: while speaking
+    full_sentence_en: Don't worry if you make a mistake while speaking English.
+    full_sentence_tr: İngilizce konuşurken hata yaparsan endişelenme.
+  topic_tags:
+  - daily_life
+  - workplace
+  - learning
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.do-research
+  chunk_en: do research on...
+  pattern_template: '[Subject] + do + (some) research on + [Topic]'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir konu hakkında araştırma yapmak
+  meaning_en: Correct collocation using 'do' with uncountable 'research'.
+  turkish_trap:
+    incorrect_en: We need to make a research about competitors.
+    correct_en: We need to do research on competitors.
+    explanation_tr: '''Research'' sayılamaz (a research denmez) ve ''make'' değil ''do'' fiiliyle kullanılır.'
+    trap_type: uncountable_and_collocation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: Our team
+    text_tr: Ekibimiz
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: is doing research on
+    text_tr: üzerinde araştırma yapıyor
+  - role: OBJECT
+    label: Topic
+    text_en: local cloud providers.
+    text_tr: yerel bulut sağlayıcıları.
+  slot_variations:
+  - slot_en: local cloud providers
+    full_sentence_en: Our team is doing research on local cloud providers.
+    full_sentence_tr: Ekibimiz yerel bulut sağlayıcıları üzerine araştırma yapıyor.
+  - slot_en: customer habits
+    full_sentence_en: We did some research on customer habits before launching.
+    full_sentence_tr: Lansmandan önce müşteri alışkanlıkları hakkında biraz araştırma yaptık.
+  - slot_en: train routes
+    full_sentence_en: I did research on train routes across northern Italy.
+    full_sentence_tr: Kuzey İtalya'daki tren rotaları hakkında araştırma yaptım.
+  topic_tags:
+  - workplace
+  - education
+  - research
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.get-in-touch
+  chunk_en: get in touch with...
+  pattern_template: '[Subject] + get in touch with + [Person/Team]'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Biriyle iletişime geçmek
+  meaning_en: Friendly, natural phrase for contacting someone by phone, email, or chat.
+  turkish_trap:
+    incorrect_en: I will pass to contact with the supplier.
+    correct_en: I will get in touch with the supplier.
+    explanation_tr: Türkçedeki 'iletişime geçmek' kelimesi kelimesine çevrilmez; doğal İngilizce kalıp 'get in touch with'tir.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: will get in touch with
+    text_tr: iletişime geçeceğim
+  - role: OBJECT
+    label: Whom
+    text_en: the IT helpdesk
+    text_tr: BT destek ekibiyle
+  - role: TIME_PLACE
+    label: When
+    text_en: this afternoon.
+    text_tr: bu öğleden sonra.
+  slot_variations:
+  - slot_en: the IT helpdesk
+    full_sentence_en: I will get in touch with the IT helpdesk this afternoon.
+    full_sentence_tr: Bu öğleden sonra BT destek ekibiyle iletişime geçeceğim.
+  - slot_en: our client in Berlin
+    full_sentence_en: Please get in touch with our client in Berlin today.
+    full_sentence_tr: Lütfen bugün Berlin'deki müşterimizle iletişime geçin.
+  - slot_en: the landlord
+    full_sentence_en: I got in touch with the landlord about the heating.
+    full_sentence_tr: Isıtma konusunda ev sahibiyle iletişime geçtim.
+  topic_tags:
+  - communication
+  - workplace
+  - emails
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.save-time
+  chunk_en: save time by [verb]-ing...
+  pattern_template: '[Subject] + save time + by + [Verb-ing]'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir yöntemle zaman kazanmak / tasarruf etmek
+  meaning_en: Explains practical efficiency in work and daily routines.
+  turkish_trap:
+    incorrect_en: We can win time by using templates.
+    correct_en: We can save time by using templates.
+    explanation_tr: Türkçede 'zaman kazanmak' denir ama İngilizcede 'win time' kullanılmaz; doğrusu 'save time'dır.
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: We
+    text_tr: Biz
+  - role: VERB_BRIDGE
+    label: Benefit
+    text_en: can save time by using
+    text_tr: kullanarak zaman kazanabiliriz
+  - role: OBJECT
+    label: Method
+    text_en: shared email templates.
+    text_tr: ortak e-posta şablonları.
+  slot_variations:
+  - slot_en: shared email templates
+    full_sentence_en: We can save time by using shared email templates.
+    full_sentence_tr: Ortak e-posta şablonları kullanarak zaman kazanabiliriz.
+  - slot_en: taking the express train
+    full_sentence_en: You will save time by taking the express train to the airport.
+    full_sentence_tr: Havalimanına ekspres trenle giderek zaman kazanacaksın.
+  - slot_en: preparing notes early
+    full_sentence_en: I save time by preparing my meeting notes the night before.
+    full_sentence_tr: Toplantı notlarımı bir gece önceden hazırlayarak zaman kazanıyorum.
+  topic_tags:
+  - productivity
+  - workplace
+  - daily_life
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.spend-time-on
+  chunk_en: spend [time] [verb]-ing / on...
+  pattern_template: '[Subject] + spend + [Time] + [Verb-ing / on + Noun]'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir işe belirli bir süre ayırmak / harcamak
+  meaning_en: Describes how time is allocated across tasks and habits.
+  turkish_trap:
+    incorrect_en: I spend two hours to answer emails every day.
+    correct_en: I spend two hours answering emails every day.
+    explanation_tr: '''Spend + süre'' yapısından sonra fiil ''to'' ile değil doğrudan ''-ing'' ile gelir.'
+    trap_type: infinitive_vs_gerund
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Time spent
+    text_en: spend twenty minutes reading
+    text_tr: yirmi dakika okuyarak geçiririm
+  - role: OBJECT
+    label: What
+    text_en: industry news
+    text_tr: sektör haberlerini
+  - role: TIME_PLACE
+    label: When
+    text_en: every morning.
+    text_tr: her sabah.
+  slot_variations:
+  - slot_en: reading industry news
+    full_sentence_en: I spend twenty minutes reading industry news every morning.
+    full_sentence_tr: Her sabah yirmi dakikamı sektör haberlerini okuyarak geçiririm.
+  - slot_en: reviewing pull requests
+    full_sentence_en: She spends an hour reviewing pull requests after lunch.
+    full_sentence_tr: Öğle yemeğinden sonra bir saatini kod incelemelerine ayırır.
+  - slot_en: on manual reports
+    full_sentence_en: We spend too much time on manual reports.
+    full_sentence_tr: Manuel raporlara çok fazla zaman harcıyoruz.
+  topic_tags:
+  - daily_life
+  - productivity
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.bridge.by-the-way
+  chunk_en: By the way,...
+  pattern_template: By the way, + [Clause]
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Sohbette akla gelen ilgili veya yan bir konuya geçmek ('Bu arada...')
+  meaning_en: Natural transition for adding an extra point or reminder.
+  turkish_trap:
+    incorrect_en: In the meantime, did you receive my file?
+    correct_en: By the way, did you receive my file?
+    explanation_tr: '''Bu arada'' anlamında konu değiştirmek için ''In the meantime'' (bu esnada) değil ''By the way,'' kullanılır.'
+    trap_type: false_friend
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Bridge
+    text_en: By the way,
+    text_tr: Bu arada,
+  - role: SUBJECT
+    label: Who
+    text_en: did you
+    text_tr: sen
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: receive
+    text_tr: aldın mı
+  - role: OBJECT
+    label: What
+    text_en: the updated contract?
+    text_tr: güncel sözleşmeyi?
+  slot_variations:
+  - slot_en: the updated contract
+    full_sentence_en: By the way, did you receive the updated contract?
+    full_sentence_tr: Bu arada, güncel sözleşmeyi aldın mı?
+  - slot_en: the office Wi-Fi password
+    full_sentence_en: By the way, the office Wi-Fi password changed today.
+    full_sentence_tr: Bu arada, ofis Wi-Fi şifresi bugün değişti.
+  - slot_en: our lunch spot
+    full_sentence_en: By the way, there is a great new cafe near the station.
+    full_sentence_tr: Bu arada, istasyonun yakınında harika yeni bir kafe var.
+  topic_tags:
+  - conversation
+  - daily_life
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.bridge.for-example
+  chunk_en: For example,...
+  pattern_template: For example, + [Clause / Noun Phrase]
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Söylenen bir fikri somut örnekle desteklemek
+  meaning_en: Clear connector for giving concrete illustrations in speech and writing.
+  turkish_trap:
+    incorrect_en: For example to automate invoices helps the team.
+    correct_en: For example, automating invoices helps the team.
+    explanation_tr: '''For example,'' sonrasında tam bir cümle geliyorsa özne olarak mastar (''to automate'') yerine ''-ing''
+      (''automating'') kullanılır.'
+    trap_type: gerund_subject
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Marker
+    text_en: For example,
+    text_tr: Örneğin,
+  - role: SUBJECT
+    label: Who
+    text_en: many teams
+    text_tr: birçok ekip
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: use
+    text_tr: kullanır
+  - role: OBJECT
+    label: What
+    text_en: short daily check-ins.
+    text_tr: kısa günlük durum toplantıları.
+  slot_variations:
+  - slot_en: short daily check-ins
+    full_sentence_en: For example, many teams use short daily check-ins.
+    full_sentence_tr: Örneğin, birçok ekip kısa günlük durum toplantıları kullanır.
+  - slot_en: walking after dinner
+    full_sentence_en: For example, walking after dinner helps me sleep better.
+    full_sentence_tr: Örneğin, akşam yemeğinden sonra yürümek daha iyi uyumama yardımcı oluyor.
+  - slot_en: public libraries
+    full_sentence_en: For example, public libraries offer quiet spaces for studying.
+    full_sentence_tr: Örneğin, halk kütüphaneleri çalışmak için sessiz alanlar sunar.
+  topic_tags:
+  - communication
+  - ielts
+  - workplace
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.bridge.actually-i-think
+  chunk_en: Actually,...
+  pattern_template: Actually, + [Correction / Surprising Fact]
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Bir bilgiyi kibarca düzeltmek veya gerçeği netleştirmek ('Aslında...')
+  meaning_en: Softens corrections and introduces real facts in natural conversation.
+  turkish_trap:
+    incorrect_en: Actually, I live in Istanbul now. (meaning 'currently')
+    correct_en: Currently, I live in Istanbul. / Actually, I moved to Izmir last year.
+    explanation_tr: '''Actually'' ''şu anda/güncel olarak'' (currently) demek değildir; ''aslında'' anlamında düzeltme veya
+      netleştirme için kullanılır.'
+    trap_type: false_friend
+  blueprint_slots:
+  - role: TIME_PLACE
+    label: Bridge
+    text_en: Actually,
+    text_tr: Aslında,
+  - role: SUBJECT
+    label: Topic
+    text_en: the deadline
+    text_tr: teslim tarihi
+  - role: VERB_BRIDGE
+    label: State
+    text_en: is on
+    text_tr: günüdür
+  - role: OBJECT
+    label: When
+    text_en: Thursday, not Wednesday.
+    text_tr: Çarşamba değil Perşembe.
+  slot_variations:
+  - slot_en: Thursday, not Wednesday
+    full_sentence_en: Actually, the deadline is on Thursday, not Wednesday.
+    full_sentence_tr: Aslında teslim tarihi Çarşamba değil Perşembe.
+  - slot_en: already finished
+    full_sentence_en: Actually, we already finished the first draft yesterday.
+    full_sentence_tr: Aslında ilk taslağı dün çoktan bitirdik.
+  - slot_en: prefer tea
+    full_sentence_en: Actually, I prefer tea in the afternoon.
+    full_sentence_tr: Aslında öğleden sonraları çay tercih ederim.
+  topic_tags:
+  - conversation
+  - workplace
+  - daily_life
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.starter.let-me-know-if
+  chunk_en: Let me know if...
+  pattern_template: Let me know if + [Subject] + [Present Simple Verb]
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Bir gelişme veya ihtiyaç olursa haber vermesini istemek
+  meaning_en: Universal polite closing in workplace emails and chat messages.
+  turkish_trap:
+    incorrect_en: Let me know if you will need any help.
+    correct_en: Let me know if you need any help.
+    explanation_tr: '''If'' koşul cümleciği içinde gelecek anlamı olsa bile ''will'' yerine Present Simple (''need'') kullanılır.'
+    trap_type: conditional_will_trap
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Prompt
+    text_en: Let me know if
+    text_tr: Bana haber verin eğer
+  - role: SUBJECT
+    label: Who
+    text_en: you
+    text_tr: siz
+  - role: OBJECT
+    label: Condition
+    text_en: need any extra data.
+    text_tr: ek veriye ihtiyaç duyarsanız.
+  slot_variations:
+  - slot_en: need any extra data
+    full_sentence_en: Let me know if you need any extra data.
+    full_sentence_tr: Ek veriye ihtiyaç duyarsanız bana haber verin.
+  - slot_en: that time works
+    full_sentence_en: Let me know if that time works for your team.
+    full_sentence_tr: Bu saatin ekibiniz için uygun olup olmadığını bana bildirin.
+  - slot_en: have any questions
+    full_sentence_en: Please let me know if you have any questions about the invoice.
+    full_sentence_tr: Fatura hakkında sorunuz olursa lütfen bana haber verin.
+  topic_tags:
+  - emails
+  - workplace
+  - communication
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.starter.i-am-afraid-that
+  chunk_en: I'm afraid (that)...
+  pattern_template: I'm afraid (that) + [Bad News / Polite Refusal]
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Olumsuz bir haberi veya reddi kibarca iletmek ('Maalesef...')
+  meaning_en: Polite softener meaning 'unfortunately', not fear.
+  turkish_trap:
+    incorrect_en: Unfortunately I can't come, I am scary to miss it.
+    correct_en: I'm afraid I can't attend the meeting today.
+    explanation_tr: '''I''m afraid'' burada korku bildirmez; Türkçedeki kibar ''Maalesef / Üzgünüm ama'' anlamını verir.'
+    trap_type: literal_translation
+  blueprint_slots:
+  - role: SUBJECT
+    label: Softener
+    text_en: I'm afraid
+    text_tr: Maalesef
+  - role: VERB_BRIDGE
+    label: State
+    text_en: I can't join
+    text_tr: katılamayacağım
+  - role: OBJECT
+    label: What
+    text_en: today's call.
+    text_tr: bugünkü görüşmeye.
+  slot_variations:
+  - slot_en: today's call
+    full_sentence_en: I'm afraid I can't join today's call.
+    full_sentence_tr: Maalesef bugünkü görüşmeye katılamayacağım.
+  - slot_en: fully booked
+    full_sentence_en: I'm afraid the conference room is fully booked until three.
+    full_sentence_tr: Maalesef toplantı odası saat üçe kadar tamamen dolu.
+  - slot_en: delayed by weather
+    full_sentence_en: I'm afraid the delivery is delayed by bad weather.
+    full_sentence_tr: Maalesef teslimat kötü hava nedeniyle gecikti.
+  topic_tags:
+  - politeness
+  - workplace
+  - emails
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.make-sure-that
+  chunk_en: make sure (that)...
+  pattern_template: Make sure (that) + [Subject] + [Present Simple Verb]
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Bir şeyin kesinlikle yapıldığından emin olmak
+  meaning_en: Practical instruction or commitment to double-check something.
+  turkish_trap:
+    incorrect_en: Make sure that you will save the file.
+    correct_en: Make sure that you save the file.
+    explanation_tr: '''Make sure'' sonrasında gelecek zaman için ''will'' yerine Present Simple kullanılır.'
+    trap_type: tense_transfer
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Instruction
+    text_en: Please make sure
+    text_tr: Lütfen emin olun
+  - role: SUBJECT
+    label: Who
+    text_en: everyone
+    text_tr: herkesin
+  - role: OBJECT
+    label: Action
+    text_en: has access to the folder.
+    text_tr: klasöre erişimi olduğundan.
+  slot_variations:
+  - slot_en: has access to the folder
+    full_sentence_en: Please make sure everyone has access to the folder.
+    full_sentence_tr: Lütfen herkesin klasöre erişimi olduğundan emin olun.
+  - slot_en: back up your files
+    full_sentence_en: Make sure you back up your files before the update.
+    full_sentence_tr: Güncellemeden önce dosyalarını yedeklediğinden emin ol.
+  - slot_en: lock the office door
+    full_sentence_en: Make sure you lock the office door when you leave.
+    full_sentence_tr: Çıkarken ofis kapısını kilitlediğinden emin ol.
+  topic_tags:
+  - workplace
+  - daily_life
+  - instructions
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.collocation.ask-for-help
+  chunk_en: ask [someone] for...
+  pattern_template: '[Subject] + ask + [Person] + for + [Noun]'
+  cefr_level: A2
+  category: ACTION_COLLOCATION
+  intent_tr: Birinden yardım, bilgi veya izin istemek
+  meaning_en: Correct preposition pattern with 'ask' when requesting something.
+  turkish_trap:
+    incorrect_en: I asked feedback to my manager.
+    correct_en: I asked my manager for feedback.
+    explanation_tr: Türkçedeki 'birinden bir şey istemek' yapısında İngilizcede 'ask + kişi + for + istenen şey' sırası kullanılır.
+    trap_type: preposition_trap
+  blueprint_slots:
+  - role: SUBJECT
+    label: Who
+    text_en: I
+    text_tr: Ben
+  - role: VERB_BRIDGE
+    label: Action
+    text_en: asked my manager for
+    text_tr: yöneticimden istedim
+  - role: OBJECT
+    label: What
+    text_en: honest feedback.
+    text_tr: dürüst geri bildirim.
+  slot_variations:
+  - slot_en: honest feedback
+    full_sentence_en: I asked my manager for honest feedback.
+    full_sentence_tr: Yöneticimden dürüst geri bildirim istedim.
+  - slot_en: an extension
+    full_sentence_en: We asked the client for a two-day extension.
+    full_sentence_tr: Müşteriden iki günlük ek süre istedik.
+  - slot_en: directions
+    full_sentence_en: She asked a local shopkeeper for directions to the museum.
+    full_sentence_tr: Müzeye giden yolu yerel bir esnafa sordu.
+  topic_tags:
+  - communication
+  - workplace
+  - travel
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.starter.how-about-ing
+  chunk_en: How about [verb]-ing...?
+  pattern_template: How about + [Verb-ing / Noun]?
+  cefr_level: A2
+  category: SENTENCE_STARTER
+  intent_tr: Samimi ve yapıcı bir öneri sunmak ('... yapmaya ne dersin?')
+  meaning_en: Natural way to propose a time, place, or practical next step.
+  turkish_trap:
+    incorrect_en: How about to meet at ten o'clock?
+    correct_en: How about meeting at ten o'clock?
+    explanation_tr: '''How about'' edat içerdiği için ardından gelen fiil ''to'' değil ''-ing'' alır.'
+    trap_type: preposition_gerund
+  blueprint_slots:
+  - role: VERB_BRIDGE
+    label: Suggestion
+    text_en: How about testing
+    text_tr: Test etmeye ne dersiniz
+  - role: OBJECT
+    label: What
+    text_en: the new layout
+    text_tr: yeni tasarımı
+  - role: TIME_PLACE
+    label: When
+    text_en: with five users first?
+    text_tr: önce beş kullanıcıyla?
+  slot_variations:
+  - slot_en: testing the new layout
+    full_sentence_en: How about testing the new layout with five users first?
+    full_sentence_tr: Önce beş kullanıcıyla yeni tasarımı test etmeye ne dersiniz?
+  - slot_en: meeting at ten
+    full_sentence_en: How about meeting at ten o'clock tomorrow?
+    full_sentence_tr: Yarın saat onda buluşmaya ne dersin?
+  - slot_en: ordering lunch early
+    full_sentence_en: How about ordering lunch early before the rush?
+    full_sentence_tr: Yoğunluktan önce öğle yemeğini erken sipariş etmeye ne dersin?
+  topic_tags:
+  - conversation
+  - meetings
+  - daily_life
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
+- id: chunk.a2.bridge.because-of
+  chunk_en: because of...
+  pattern_template: '[Main Clause] + because of + [Noun Phrase]'
+  cefr_level: A2
+  category: CONVERSATION_BRIDGE
+  intent_tr: Bir isim grubuyla neden belirtmek ('... yüzünden / nedeniyle')
+  meaning_en: Links a result to a noun phrase cause rather than a full clause.
+  turkish_trap:
+    incorrect_en: The flight was delayed because heavy snow.
+    correct_en: The flight was delayed because of heavy snow.
+    explanation_tr: '''Because'' arkasından tam cümle alır; tek başına isim grubu geliyorsa mutlaka ''because of'' kullanılır.'
+    trap_type: preposition_vs_conjunction
+  blueprint_slots:
+  - role: SUBJECT
+    label: Result
+    text_en: The launch
+    text_tr: Lansman
+  - role: VERB_BRIDGE
+    label: Link
+    text_en: was delayed because of
+    text_tr: nedeniyle ertelendi
+  - role: OBJECT
+    label: Cause
+    text_en: a sudden server issue.
+    text_tr: ani bir sunucu sorunu.
+  slot_variations:
+  - slot_en: a sudden server issue
+    full_sentence_en: The launch was delayed because of a sudden server issue.
+    full_sentence_tr: Lansman ani bir sunucu sorunu nedeniyle ertelendi.
+  - slot_en: heavy traffic
+    full_sentence_en: I arrived ten minutes late because of heavy traffic.
+    full_sentence_tr: Yoğun trafik nedeniyle on dakika geç geldim.
+  - slot_en: the holiday schedule
+    full_sentence_en: Shipping takes longer this week because of the holiday schedule.
+    full_sentence_tr: Tatil takvimi nedeniyle kargo bu hafta daha uzun sürüyor.
+  topic_tags:
+  - workplace
+  - travel
+  - ielts
+  related_vocab_ids: []
+  related_grammar_ids: []
+  status: PUBLISHED
+  version: 1
